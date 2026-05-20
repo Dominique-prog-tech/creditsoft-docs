@@ -12,3 +12,7 @@ We gaan er hier een lap op geven.
 ## Over deze handleiding
 
 Deze documentatie wordt actief onderhouden. Suggesties of fouten gespot? Laat het ons weten.
+
+## Test-afbeelding
+
+![Test](images/test.JPEG)
