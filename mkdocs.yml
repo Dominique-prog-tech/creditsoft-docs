@@ -1,0 +1,52 @@
+site_name: CreditSoft Documentatie
+site_description: Officiële handleiding voor CreditSoft
+site_author: Dominique
+site_url: https://Dominique-prog-tech.github.io/creditsoft-docs/
+
+theme:
+  name: material
+  language: nl
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Schakel naar donkere modus
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Schakel naar lichte modus
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.tabs.link
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+  - attr_list
+  - md_in_html
+
+nav:
+  - Home: index.md
+  - Aan de slag:
+    - Installatie: getting-started/installatie.md
+    - Eerste stappen: getting-started/eerste-stappen.md
+  - Gebruikershandleiding:
+    - Overzicht: gebruikers/overzicht.md
