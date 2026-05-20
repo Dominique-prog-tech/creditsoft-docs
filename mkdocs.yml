@@ -1,7 +1,7 @@
 site_name: CreditSoft Documentatie
 site_description: Officiële handleiding voor CreditSoft
 site_author: Dominique
-site_url: https://Dominique-prog-tech.github.io/creditsoft-docs/
+site_url: https://docs.creditsoft.be/
 
 theme:
   name: material
