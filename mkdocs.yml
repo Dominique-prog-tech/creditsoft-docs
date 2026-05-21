@@ -43,10 +43,81 @@ markdown_extensions:
   - attr_list
   - md_in_html
 
+extra:
+  generator: false
+
 nav:
   - Home: index.md
+
   - Aan de slag:
-    - Installatie: getting-started/installatie.md
-    - Eerste stappen: getting-started/eerste-stappen.md
-  - Gebruikershandleiding:
-    - Overzicht: gebruikers/overzicht.md
+    - Installatie: aan-de-slag/installatie.md
+    - Eerste aanmelding: aan-de-slag/eerste-aanmelding.md
+    - Interface-overzicht: aan-de-slag/interface-overzicht.md
+    - Dashboard: aan-de-slag/dashboard.md
+
+  - Kredietdossiers:
+    - Overzicht: kredietdossiers/overzicht.md
+    - Nieuw dossier aanmaken: kredietdossiers/nieuw-dossier-aanmaken.md
+    - Dossier bewerken: kredietdossiers/dossier-bewerken.md
+    - Documenten beheren: kredietdossiers/documenten-beheren.md
+    - Workflow en statussen: kredietdossiers/workflow-statussen.md
+    - In afwerking: kredietdossiers/in-afwerking.md
+    - In te dienen dossiers: kredietdossiers/in-te-dienen.md
+    - Opvolging na akte: kredietdossiers/opvolging-na-akte.md
+    - Contracten overzicht: kredietdossiers/contracten-overzicht.md
+    - LOA overzicht: kredietdossiers/loa-overzicht.md
+    - SSV overzicht: kredietdossiers/ssv-overzicht.md
+
+  - CRM:
+    - Overzicht: crm/overzicht.md
+    - Bedrijven: crm/bedrijven.md
+    - Contacten: crm/contacten.md
+    - Accountants: crm/accountants.md
+    - Immokantoren: crm/immokantoren.md
+    - Notarissen: crm/notarissen.md
+    - Schatters: crm/schatters.md
+    - Panden: crm/panden.md
+    - CRM-rapporten: crm/crm-rapporten.md
+
+  - Kredieten-beheer:
+    - Dashboard kredieten: kredieten-beheer/dashboard-kredieten.md
+    - Commissieschema's: kredieten-beheer/commissieschemas.md
+    - Commissiebeheer: kredieten-beheer/commissiebeheer.md
+    - Commissie-controle: kredieten-beheer/commissie-controle.md
+    - Documenten valideren: kredieten-beheer/documenten-valideren.md
+    - Tussenpersonen: kredieten-beheer/tussenpersonen.md
+    - Financiële instellingen: kredieten-beheer/financiele-instellingen.md
+    - Verzekeringsmaatschappijen: kredieten-beheer/verzekeringsmaatschappijen.md
+    - Schattingen: kredieten-beheer/schattingen.md
+    - Statistiek portefeuille: kredieten-beheer/statistiek-portefeuille.md
+    - Rapporten kredieten: kredieten-beheer/rapporten-kredieten.md
+
+  - Taken:
+    - Takenbeheer: taken/takenbeheer.md
+
+  - Werk:
+    - Telefoons: werk/telefoons.md
+    - Agenda: werk/agenda.md
+    - Archief: werk/archief.md
+    - Groepsmail: werk/groepsmail.md
+
+  - Beheer:
+    - Bedrijfsprofiel: beheer/bedrijfsprofiel.md
+    - Algemene instellingen: beheer/algemene-instellingen.md
+    - Stamgegevens: beheer/stamgegevens.md
+    - Kredietdocumenten: beheer/kredietdocumenten.md
+    - Nummering: beheer/nummering.md
+    - Verlof en feestdagen: beheer/verlof-en-feestdagen.md
+    - Mail accounts: beheer/mail-accounts.md
+    - Mail templates: beheer/mail-templates.md
+    - Personeel: beheer/personeel.md
+    - Portaal-instellingen: beheer/portaal-instellingen.md
+
+  - Mijn gebruiker:
+    - Mijn profiel: gebruiker/mijn-profiel.md
+    - Supportticket aanmaken: gebruiker/supportticket-aanmaken.md
+    - Sessie afsluiten: gebruiker/sessie-afsluiten.md
+
+  - Concepten:
+    - Begrippenlijst: concepten/begrippenlijst.md
+    - Workflow-overzicht: concepten/workflow-overzicht.md

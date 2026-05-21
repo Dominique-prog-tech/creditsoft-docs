@@ -1,18 +1,41 @@
 # CreditSoft Documentatie
 
-Welkom bij de officiële handleiding van **CreditSoft**.
-We gaan er hier een lap op geven.
+Welkom bij de officiële handleiding van **CreditSoft** — uw platform voor kredietbemiddeling.
+
+Deze handleiding helpt u CreditSoft optimaal te benutten: van uw eerste aanmelding tot het beheer van uw volledige kredietportefeuille.
 
 ## Snel aan de slag
 
-- [Installatie](getting-started/installatie.md) — installeer en configureer CreditSoft.
-- [Eerste stappen](getting-started/eerste-stappen.md) — de basisflow leren kennen.
-- [Volledige gebruikershandleiding](gebruikers/overzicht.md) — alle functionaliteit in detail.
+Nieuw met CreditSoft? Begin hier:
 
-## Over deze handleiding
+- [Installatie](aan-de-slag/installatie.md) — uw systeem voorbereiden
+- [Eerste aanmelding](aan-de-slag/eerste-aanmelding.md) — uw account activeren
+- [Interface-overzicht](aan-de-slag/interface-overzicht.md) — de lay-out leren kennen
+- [Dashboard](aan-de-slag/dashboard.md) — uw startscherm verkennen
 
-Deze documentatie wordt actief onderhouden. Suggesties of fouten gespot? Laat het ons weten.
+## Belangrijkste functionaliteiten
 
-## Test-afbeelding
+| Onderdeel | Wat u erin doet |
+|---|---|
+| [Kredietdossiers](kredietdossiers/overzicht.md) | Dossiers aanmaken, opvolgen en afsluiten — het hart van CreditSoft |
+| [CRM](crm/overzicht.md) | Klanten, contacten, partners en panden beheren |
+| [Kredieten-beheer](kredieten-beheer/dashboard-kredieten.md) | Commissies, tussenpersonen, financiële instellingen, rapporten |
+| [Taken](taken/takenbeheer.md) | Uw werkdag plannen en opvolgen |
+| [Werk](werk/agenda.md) | Communicatie: telefoons, agenda, mails |
+| [Beheer](beheer/bedrijfsprofiel.md) | Configuratie, instellingen, personeel |
 
-![Test](images/test.JPEG)
+## Begrippen kennen
+
+Niet vertrouwd met termen als LOA, SSV of FSMA-erkenning? Raadpleeg de [begrippenlijst](concepten/begrippenlijst.md) of het [workflow-overzicht](concepten/workflow-overzicht.md) voor de grote lijnen.
+
+## Hulp nodig
+
+- **Vragen of problemen?** Maak een [supportticket](gebruiker/supportticket-aanmaken.md) aan vanuit CreditSoft.
+- **Iets onduidelijk in deze handleiding?** Laat het ons weten zodat we de documentatie kunnen verbeteren.
+
+---
+
+!!! tip "Handleiding gebruiken"
+    - Gebruik de **zoekbalk** bovenaan om snel een onderwerp te vinden.
+    - Wissel tussen **lichte en donkere modus** via het zon-/maan-icoon rechtsboven.
+    - Klik op **navigatiekaders** in de zijbalk om secties uit te klappen.
