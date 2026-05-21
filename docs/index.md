@@ -4,8 +4,6 @@ Welkom bij de officiële handleiding van **CreditSoft** — uw platform voor kre
 
 Deze handleiding helpt u CreditSoft optimaal te benutten: van uw eerste aanmelding tot het beheer van uw volledige kredietportefeuille.
 
-We gaan dit verder uitwerken in de nabije toekomst.
-
 ## Snel aan de slag
 
 Nieuw met CreditSoft? Begin hier:
