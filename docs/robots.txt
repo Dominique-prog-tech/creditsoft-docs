@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /
+
+# Documentatie in opbouw — indexering tijdelijk geblokkeerd.
+# Wanneer de docs grotendeels voltooid zijn, wordt dit vervangen door
+# een Allow-policy en sitemap-verwijzing.
