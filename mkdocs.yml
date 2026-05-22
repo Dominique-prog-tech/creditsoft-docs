@@ -2,6 +2,10 @@ site_name: CreditSoft Documentatie
 site_description: Officiële handleiding voor CreditSoft
 site_author: Dominique
 site_url: https://docs.creditsoft.be/
+copyright: >
+  CreditSoft &copy; 2026 — eigendom van
+  <a href="https://www.adm-concept.be" target="_blank" rel="noopener">ADM-Concept</a>.
+  Alle rechten voorbehouden.
 
 theme:
   name: material
