@@ -12,6 +12,9 @@ theme:
   language: nl
   logo: images/logo.svg
   favicon: images/logo.svg
+  font:
+    text: Inter
+    code: JetBrains Mono
   palette:
     - scheme: default
       primary: indigo
