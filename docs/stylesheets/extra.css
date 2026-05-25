@@ -1,24 +1,13 @@
 /* Compact font sizing — Inter heeft een grotere x-hoogte dan Roboto default.
-   Lichte reductie zodat de docs visueel compacter ogen, met behoud van
-   brand-consistentie met de marketing-website. */
+   Lichte reductie van body-grootte zodat de docs visueel compacter ogen,
+   met behoud van brand-consistentie met de marketing-website.
+
+   Headings gebruiken in Material em-eenheden (proportioneel aan body),
+   dus die schalen automatisch mee — NIET expliciet overschrijven. */
 
 .md-typeset {
   font-size: 0.76rem;
   line-height: 1.65;
-}
-
-.md-typeset h1 {
-  font-size: 2rem;
-  line-height: 1.2;
-}
-
-.md-typeset h2 {
-  font-size: 1.5rem;
-  line-height: 1.3;
-}
-
-.md-typeset h3 {
-  font-size: 1.2rem;
 }
 
 /* Sidebar en nav iets compacter */
