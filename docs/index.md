@@ -1,4 +1,4 @@
-# CreditSoft Documentatie
+﻿# CreditSoft Documentatie
 
 !!! info "Documentatie in opbouw"
     Deze handleiding wordt actief uitgewerkt. Sommige pagina's bevatten nog
@@ -13,29 +13,29 @@ Deze handleiding helpt u CreditSoft optimaal te benutten: van uw eerste aanmeldi
 
 Nieuw met CreditSoft? Begin hier:
 
-- [Installatie](aan-de-slag/installatie.md) — uw systeem voorbereiden
-- [Eerste aanmelding](aan-de-slag/eerste-aanmelding.md) — uw account activeren
-- [Interface-overzicht](aan-de-slag/interface-overzicht.md) — de lay-out leren kennen
-- [Dashboard](aan-de-slag/dashboard.md) — uw startscherm verkennen
+- [Installatie](getting-started/installation.md) — uw systeem voorbereiden
+- [Eerste aanmelding](getting-started/first-login.md) — uw account activeren
+- [Interface-overzicht](getting-started/interface.md) — de lay-out leren kennen
+- [Dashboard](getting-started/dashboard.md) — uw startscherm verkennen
 
 ## Belangrijkste functionaliteiten
 
 | Onderdeel | Wat u erin doet |
 |---|---|
-| [Kredietdossiers](kredietdossiers/overzicht.md) | Dossiers aanmaken, opvolgen en afsluiten — het hart van CreditSoft |
-| [CRM](crm/overzicht.md) | Klanten, contacten, partners en panden beheren |
-| [Kredieten-beheer](kredieten-beheer/dashboard-kredieten.md) | Commissies, tussenpersonen, financiële instellingen, rapporten |
-| [Taken](taken/takenbeheer.md) | Uw werkdag plannen en opvolgen |
-| [Werk](werk/agenda.md) | Communicatie: telefoons, agenda, mails |
-| [Beheer](beheer/bedrijfsprofiel.md) | Configuratie, instellingen, personeel |
+| [Kredietdossiers](credit-files/overview.md) | Dossiers aanmaken, opvolgen en afsluiten — het hart van CreditSoft |
+| [CRM](crm/overview.md) | Klanten, contacten, partners en panden beheren |
+| [Kredieten-beheer](credit-management/dashboard.md) | Commissies, tussenpersonen, financiële instellingen, rapporten |
+| [Taken](tasks/management.md) | Uw werkdag plannen en opvolgen |
+| [Werk](work/calendar.md) | Communicatie: telefoons, agenda, mails |
+| [Beheer](settings/company-profile.md) | Configuratie, instellingen, personeel |
 
 ## Begrippen kennen
 
-Niet vertrouwd met termen als LOA, SSV of FSMA-erkenning? Raadpleeg de [begrippenlijst](concepten/begrippenlijst.md) of het [workflow-overzicht](concepten/workflow-overzicht.md) voor de grote lijnen.
+Niet vertrouwd met termen als LOA, SSV of FSMA-erkenning? Raadpleeg de [begrippenlijst](concepts/glossary.md) of het [workflow-overzicht](concepts/workflow.md) voor de grote lijnen.
 
 ## Hulp nodig
 
-- **Vragen of problemen?** Maak een [supportticket](gebruiker/supportticket-aanmaken.md) aan vanuit CreditSoft.
+- **Vragen of problemen?** Maak een [supportticket](account/support-ticket.md) aan vanuit CreditSoft.
 - **Iets onduidelijk in deze handleiding?** Laat het ons weten zodat we de documentatie kunnen verbeteren.
 
 ---

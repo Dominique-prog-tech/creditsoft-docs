@@ -1,4 +1,4 @@
-# Accountants
+﻿# Accountants
 
 Accountants en boekhouders zijn belangrijke partners voor de kredietmakelaar. Zij bezorgen vaak de financiële documenten die nodig zijn voor de kredietaanvraag.
 
@@ -33,4 +33,4 @@ Klik in de sidebar onder **CRM** op **Accountants**.
 
 ## Zie ook
 
-- [Mail templates](../beheer/mail-templates.md) — voor templates om documenten op te vragen.
+- [Mail templates](../settings/mail-templates.md) — voor templates om documenten op te vragen.

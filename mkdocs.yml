@@ -55,6 +55,111 @@ markdown_extensions:
   - attr_list
   - md_in_html
 
+plugins:
+  - search:
+      lang:
+        - nl
+        - fr
+  - i18n:
+      docs_structure: suffix
+      reconfigure_material: true
+      reconfigure_search: true
+      languages:
+        - locale: nl
+          default: true
+          name: Nederlands
+          build: true
+          site_name: CreditSoft Documentatie
+          site_description: Officiële handleiding voor CreditSoft
+        - locale: fr
+          name: Français
+          build: true
+          site_name: CreditSoft Documentation
+          site_description: Manuel officiel de CreditSoft
+          copyright: >
+            CreditSoft &copy; 2026 — propriété d'<a href="https://www.adm-concept.be" target="_blank" rel="noopener">ADM-Concept</a>.
+            Tous droits réservés.
+          theme:
+            language: fr
+            palette:
+              - scheme: default
+                primary: indigo
+                accent: indigo
+                toggle:
+                  icon: material/brightness-7
+                  name: Passer en mode sombre
+              - scheme: slate
+                primary: indigo
+                accent: indigo
+                toggle:
+                  icon: material/brightness-4
+                  name: Passer en mode clair
+          nav_translations:
+            Home: Accueil
+            Aan de slag: Premiers pas
+            Installatie: Installation
+            Eerste aanmelding: Première connexion
+            Interface-overzicht: Aperçu de l'interface
+            Dashboard: Tableau de bord
+            Kredietdossiers: Dossiers de crédit
+            Overzicht: Aperçu
+            Nieuw dossier aanmaken: Créer un nouveau dossier
+            Dossier bewerken: Modifier le dossier
+            Documenten beheren: Gérer les documents
+            Workflow en statussen: Workflow et statuts
+            In afwerking: En finalisation
+            In te dienen dossiers: Dossiers à soumettre
+            Opvolging na akte: Suivi après acte
+            Contracten overzicht: Aperçu des contrats
+            LOA overzicht: Aperçu LOA
+            SSV overzicht: Aperçu SSV
+            CRM: CRM
+            Bedrijven: Entreprises
+            Contacten: Contacts
+            Accountants: Comptables
+            Immokantoren: Agences immobilières
+            Notarissen: Notaires
+            Schatters: Estimateurs
+            Panden: Biens immobiliers
+            CRM-rapporten: Rapports CRM
+            Kredieten-beheer: Gestion des crédits
+            Dashboard kredieten: Tableau de bord crédits
+            "Commissieschema's": Barèmes de commission
+            Commissiebeheer: Gestion des commissions
+            Commissie-controle: Contrôle des commissions
+            Documenten valideren: Valider les documents
+            Tussenpersonen: Intermédiaires
+            Financiële instellingen: Institutions financières
+            Verzekeringsmaatschappijen: Compagnies d'assurance
+            Schattingen: Estimations
+            Statistiek portefeuille: Statistiques portefeuille
+            Rapporten kredieten: Rapports crédits
+            Taken: Tâches
+            Takenbeheer: Gestion des tâches
+            Werk: Travail
+            Telefoons: Téléphones
+            Agenda: Agenda
+            Archief: Archives
+            Groepsmail: E-mail groupé
+            Beheer: Configuration
+            Bedrijfsprofiel: Profil d'entreprise
+            Algemene instellingen: Paramètres généraux
+            Stamgegevens: Données de base
+            Kredietdocumenten: Documents de crédit
+            Nummering: Numérotation
+            Verlof en feestdagen: Congés et jours fériés
+            Mail accounts: Comptes mail
+            Mail templates: Modèles de mail
+            Personeel: Personnel
+            Portaal-instellingen: Paramètres du portail
+            Mijn gebruiker: Mon utilisateur
+            Mijn profiel: Mon profil
+            Supportticket aanmaken: Créer un ticket de support
+            Sessie afsluiten: Fermer la session
+            Concepten: Concepts
+            Begrippenlijst: Glossaire
+            Workflow-overzicht: Aperçu du workflow
+
 extra:
   generator: false
 
@@ -62,74 +167,74 @@ nav:
   - Home: index.md
 
   - Aan de slag:
-    - Installatie: aan-de-slag/installatie.md
-    - Eerste aanmelding: aan-de-slag/eerste-aanmelding.md
-    - Interface-overzicht: aan-de-slag/interface-overzicht.md
-    - Dashboard: aan-de-slag/dashboard.md
+    - Installatie: getting-started/installation.md
+    - Eerste aanmelding: getting-started/first-login.md
+    - Interface-overzicht: getting-started/interface.md
+    - Dashboard: getting-started/dashboard.md
 
   - Kredietdossiers:
-    - Overzicht: kredietdossiers/overzicht.md
-    - Nieuw dossier aanmaken: kredietdossiers/nieuw-dossier-aanmaken.md
-    - Dossier bewerken: kredietdossiers/dossier-bewerken.md
-    - Documenten beheren: kredietdossiers/documenten-beheren.md
-    - Workflow en statussen: kredietdossiers/workflow-statussen.md
-    - In afwerking: kredietdossiers/in-afwerking.md
-    - In te dienen dossiers: kredietdossiers/in-te-dienen.md
-    - Opvolging na akte: kredietdossiers/opvolging-na-akte.md
-    - Contracten overzicht: kredietdossiers/contracten-overzicht.md
-    - LOA overzicht: kredietdossiers/loa-overzicht.md
-    - SSV overzicht: kredietdossiers/ssv-overzicht.md
+    - Overzicht: credit-files/overview.md
+    - Nieuw dossier aanmaken: credit-files/new-file.md
+    - Dossier bewerken: credit-files/edit-file.md
+    - Documenten beheren: credit-files/documents.md
+    - Workflow en statussen: credit-files/workflow-statuses.md
+    - In afwerking: credit-files/finalizing.md
+    - In te dienen dossiers: credit-files/to-submit.md
+    - Opvolging na akte: credit-files/post-deed-followup.md
+    - Contracten overzicht: credit-files/contracts.md
+    - LOA overzicht: credit-files/loa.md
+    - SSV overzicht: credit-files/ssv.md
 
   - CRM:
-    - Overzicht: crm/overzicht.md
-    - Bedrijven: crm/bedrijven.md
-    - Contacten: crm/contacten.md
+    - Overzicht: crm/overview.md
+    - Bedrijven: crm/companies.md
+    - Contacten: crm/contacts.md
     - Accountants: crm/accountants.md
-    - Immokantoren: crm/immokantoren.md
-    - Notarissen: crm/notarissen.md
-    - Schatters: crm/schatters.md
-    - Panden: crm/panden.md
-    - CRM-rapporten: crm/crm-rapporten.md
+    - Immokantoren: crm/real-estate-agents.md
+    - Notarissen: crm/notaries.md
+    - Schatters: crm/appraisers.md
+    - Panden: crm/properties.md
+    - CRM-rapporten: crm/reports.md
 
   - Kredieten-beheer:
-    - Dashboard kredieten: kredieten-beheer/dashboard-kredieten.md
-    - Commissieschema's: kredieten-beheer/commissieschemas.md
-    - Commissiebeheer: kredieten-beheer/commissiebeheer.md
-    - Commissie-controle: kredieten-beheer/commissie-controle.md
-    - Documenten valideren: kredieten-beheer/documenten-valideren.md
-    - Tussenpersonen: kredieten-beheer/tussenpersonen.md
-    - Financiële instellingen: kredieten-beheer/financiele-instellingen.md
-    - Verzekeringsmaatschappijen: kredieten-beheer/verzekeringsmaatschappijen.md
-    - Schattingen: kredieten-beheer/schattingen.md
-    - Statistiek portefeuille: kredieten-beheer/statistiek-portefeuille.md
-    - Rapporten kredieten: kredieten-beheer/rapporten-kredieten.md
+    - Dashboard kredieten: credit-management/dashboard.md
+    - "Commissieschema's": credit-management/commission-schemes.md
+    - Commissiebeheer: credit-management/commissions.md
+    - Commissie-controle: credit-management/commission-control.md
+    - Documenten valideren: credit-management/document-validation.md
+    - Tussenpersonen: credit-management/intermediaries.md
+    - Financiële instellingen: credit-management/financial-institutions.md
+    - Verzekeringsmaatschappijen: credit-management/insurance-companies.md
+    - Schattingen: credit-management/appraisals.md
+    - Statistiek portefeuille: credit-management/portfolio-statistics.md
+    - Rapporten kredieten: credit-management/reports.md
 
   - Taken:
-    - Takenbeheer: taken/takenbeheer.md
+    - Takenbeheer: tasks/management.md
 
   - Werk:
-    - Telefoons: werk/telefoons.md
-    - Agenda: werk/agenda.md
-    - Archief: werk/archief.md
-    - Groepsmail: werk/groepsmail.md
+    - Telefoons: work/phone-calls.md
+    - Agenda: work/calendar.md
+    - Archief: work/archive.md
+    - Groepsmail: work/group-mail.md
 
   - Beheer:
-    - Bedrijfsprofiel: beheer/bedrijfsprofiel.md
-    - Algemene instellingen: beheer/algemene-instellingen.md
-    - Stamgegevens: beheer/stamgegevens.md
-    - Kredietdocumenten: beheer/kredietdocumenten.md
-    - Nummering: beheer/nummering.md
-    - Verlof en feestdagen: beheer/verlof-en-feestdagen.md
-    - Mail accounts: beheer/mail-accounts.md
-    - Mail templates: beheer/mail-templates.md
-    - Personeel: beheer/personeel.md
-    - Portaal-instellingen: beheer/portaal-instellingen.md
+    - Bedrijfsprofiel: settings/company-profile.md
+    - Algemene instellingen: settings/general.md
+    - Stamgegevens: settings/master-data.md
+    - Kredietdocumenten: settings/credit-documents.md
+    - Nummering: settings/numbering.md
+    - Verlof en feestdagen: settings/leave-holidays.md
+    - Mail accounts: settings/mail-accounts.md
+    - Mail templates: settings/mail-templates.md
+    - Personeel: settings/staff.md
+    - Portaal-instellingen: settings/portal.md
 
   - Mijn gebruiker:
-    - Mijn profiel: gebruiker/mijn-profiel.md
-    - Supportticket aanmaken: gebruiker/supportticket-aanmaken.md
-    - Sessie afsluiten: gebruiker/sessie-afsluiten.md
+    - Mijn profiel: account/profile.md
+    - Supportticket aanmaken: account/support-ticket.md
+    - Sessie afsluiten: account/logout.md
 
   - Concepten:
-    - Begrippenlijst: concepten/begrippenlijst.md
-    - Workflow-overzicht: concepten/workflow-overzicht.md
+    - Begrippenlijst: concepts/glossary.md
+    - Workflow-overzicht: concepts/workflow.md
