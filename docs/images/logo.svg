@@ -1,0 +1,16 @@
+<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="CreditSoft logo">
+  <defs>
+    <linearGradient id="cs-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60a5fa"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="url(#cs-bg)"/>
+  <g fill="none" stroke="white" stroke-linecap="round">
+    <!-- Euro C-shape -->
+    <path d="M44 21 A14 14 0 1 0 44 43" stroke-width="4"/>
+    <!-- Two horizontal strokes -->
+    <path d="M18 28 H38" stroke-width="3.5"/>
+    <path d="M18 36 H38" stroke-width="3.5"/>
+  </g>
+</svg>

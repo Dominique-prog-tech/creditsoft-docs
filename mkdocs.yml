@@ -10,6 +10,8 @@ copyright: >
 theme:
   name: material
   language: nl
+  logo: images/logo.svg
+  favicon: images/logo.svg
   palette:
     - scheme: default
       primary: indigo
