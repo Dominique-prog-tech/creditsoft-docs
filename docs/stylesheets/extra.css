@@ -68,3 +68,11 @@
 .md-header__button:focus-visible {
   opacity: 1;
 }
+
+/* === Globaal font-scale (mei 2026) ============================================
+   mkdocs-material gebruikt standaard html { font-size: 137.5% }.
+   Lager getal = compactere site overal (header, tabs, sidebar, body, footer).
+   Eén knop om alles proportioneel mee te schalen. */
+html {
+  font-size: 125%;
+}
