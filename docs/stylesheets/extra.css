@@ -14,3 +14,57 @@
 .md-nav {
   font-size: 0.7rem;
 }
+
+
+/* === Header verfijning (mei 2026) === */
+/* Subtiele border-bottom in plaats van Material's harde schaduw.
+   Pill-vormige zoekbalk met zachte achtergrond.
+   Subtielere header-buttons. Werkt in zowel licht als donker schema. */
+
+.md-header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: none;
+}
+[data-md-color-scheme="slate"] .md-header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Tabs-rij (navigation.tabs) sluit visueel aan op de header */
+.md-tabs {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+[data-md-color-scheme="slate"] .md-tabs {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Zachte pill-vormige zoekbalk */
+.md-search__form {
+  background-color: rgba(0, 0, 0, 0.04);
+  border-radius: 9999px;
+  height: 2.2rem;
+  transition: background-color 0.15s ease, box-shadow 0.15s ease;
+}
+.md-search__form:hover {
+  background-color: rgba(0, 0, 0, 0.06);
+}
+[data-md-toggle="search"]:checked ~ .md-header .md-search__form,
+[data-md-toggle="search"]:checked ~ .md-container .md-search__form {
+  background-color: var(--md-default-bg-color);
+  box-shadow: 0 0 0 2px var(--md-accent-fg-color);
+}
+[data-md-color-scheme="slate"] .md-search__form {
+  background-color: rgba(255, 255, 255, 0.06);
+}
+[data-md-color-scheme="slate"] .md-search__form:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Subtielere header-buttons (theme toggle, taal-switch) */
+.md-header__button {
+  opacity: 0.7;
+  transition: opacity 0.15s ease;
+}
+.md-header__button:hover,
+.md-header__button:focus-visible {
+  opacity: 1;
+}

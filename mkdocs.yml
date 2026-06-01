@@ -17,7 +17,7 @@ theme:
     code: JetBrains Mono
   palette:
     - scheme: default
-      primary: indigo
+      primary: white
       accent: indigo
       toggle:
         icon: material/brightness-7
@@ -83,7 +83,7 @@ plugins:
             language: fr
             palette:
               - scheme: default
-                primary: indigo
+                primary: white
                 accent: indigo
                 toggle:
                   icon: material/brightness-7
