@@ -40,6 +40,10 @@ theme:
 
 extra_css:
   - stylesheets/extra.css
+  - stylesheets/embed.css
+
+extra_javascript:
+  - javascripts/embed.js
 
 markdown_extensions:
   - admonition
