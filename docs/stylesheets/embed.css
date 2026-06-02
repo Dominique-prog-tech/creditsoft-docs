@@ -1,0 +1,42 @@
+/* ============================================================================
+   Embed-modus — context-aware help vanuit het platform.
+   ----------------------------------------------------------------------------
+   Wanneer een pagina geopend wordt met ?embed (of ?embed=1) in de URL, voegt
+   javascripts/embed.js de class "embed" toe aan <body>. Deze stylesheet
+   verbergt dan de volledige MkDocs-chrome (header, tabs, navigatie, TOC,
+   footer) zodat enkel de artikel-inhoud zichtbaar is. Bedoeld om de pagina
+   in een ingebed paneel/tab binnen het CreditSoft-platform te tonen.
+   ============================================================================ */
+
+body.embed .md-header,
+body.embed .md-tabs,
+body.embed .md-sidebar,
+body.embed .md-footer,
+body.embed .md-content__button,        /* "Bewerk deze pagina"-knop */
+body.embed .md-source-file,            /* laatst bijgewerkt / auteurs */
+body.embed .md-feedback {              /* "Was dit nuttig?"-blok */
+  display: none !important;
+}
+
+/* Inhoud over de volledige breedte, zonder de grid-max-width en de
+   header-marge die normaal ruimte voor de vaste header reserveert. */
+body.embed .md-grid {
+  max-width: none;
+}
+body.embed .md-main__inner {
+  margin-top: 0;
+}
+body.embed .md-content {
+  max-width: none;
+}
+body.embed .md-content__inner {
+  margin: 0 auto;
+  padding: 16px 24px 32px;
+  max-width: 52rem;        /* leesbare regelbreedte behouden */
+}
+
+/* De main neemt de volledige hoogte in (geen header meer erboven). */
+body.embed .md-container,
+body.embed .md-main {
+  display: block;
+}
