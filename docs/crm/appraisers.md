@@ -1,4 +1,4 @@
-﻿# Schatters
+# Schatters
 
 Een vastgoedschatter bepaalt de marktwaarde van een pand. Dit schattingsverslag is verplicht bij hypothecaire kredieten.
 

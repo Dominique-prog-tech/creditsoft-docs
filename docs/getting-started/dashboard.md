@@ -1,4 +1,4 @@
-﻿# Dashboard
+# Dashboard
 
 Het dashboard is uw startscherm na het aanmelden. Het geeft een snel overzicht van uw lopende dossiers, taken en actuele werkpunten.
 

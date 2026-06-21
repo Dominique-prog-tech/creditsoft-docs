@@ -1,4 +1,4 @@
-﻿# Notarissen
+# Notarissen
 
 Notarissen verlijden de notariële akte bij hypothecaire kredieten. CreditSoft houdt uw netwerk van notarissen overzichtelijk bij.
 

@@ -1,4 +1,4 @@
-﻿# Groepsmail
+# Groepsmail
 
 Met groepsmail verstuurt u één e-mail naar een groep ontvangers tegelijk — bijvoorbeeld naar al uw tussenpersonen of klanten in een bepaalde groep.
 

@@ -1,4 +1,4 @@
-﻿# Nieuw kredietdossier aanmaken
+# Nieuw kredietdossier aanmaken
 
 Deze pagina beschrijft stap voor stap hoe u een nieuw kredietdossier aanmaakt in CreditSoft.
 

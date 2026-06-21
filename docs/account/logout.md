@@ -1,4 +1,4 @@
-﻿# Sessie afsluiten
+# Sessie afsluiten
 
 Wanneer u CreditSoft niet meer actief gebruikt, sluit u uw sessie af. Dit beschermt uw gegevens, zeker op gedeelde werkstations.
 

@@ -1,4 +1,4 @@
-﻿# Commissieschema's
+# Commissieschema's
 
 Commissieschema's leggen vast hoe de commissie verdeeld wordt tussen uw kantoor, tussenpersonen en eventuele andere betrokkenen.
 

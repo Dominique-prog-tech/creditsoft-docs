@@ -1,4 +1,4 @@
-﻿# Workflow-overzicht
+# Workflow-overzicht
 
 Deze pagina geeft een globaal beeld van hoe een kredietdossier door CreditSoft "stroomt" — van eerste contact tot definitieve afsluiting.
 

@@ -1,4 +1,4 @@
-﻿# Tableau de bord crédits
+# Tableau de bord crédits
 
 Le tableau de bord crédits vous offre un aperçu spécialisé de votre portefeuille de crédits avec des statistiques, des KPI et des points d'action.
 

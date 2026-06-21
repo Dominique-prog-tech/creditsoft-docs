@@ -1,4 +1,4 @@
-﻿# Mail templates
+# Mail templates
 
 Mail templates zijn standaardteksten die u hergebruikt voor terugkerende communicatie: bevestigingsmails, documentopvragingen, status-updates.
 

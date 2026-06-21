@@ -1,4 +1,4 @@
-﻿# Begrippenlijst
+# Begrippenlijst
 
 Een overzicht van vaktermen en afkortingen die in CreditSoft en in deze handleiding gebruikt worden.
 

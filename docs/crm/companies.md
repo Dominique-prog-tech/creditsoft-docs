@@ -1,4 +1,4 @@
-﻿# Bedrijven
+# Bedrijven
 
 De bedrijven-module bevat alle organisaties waarmee u in contact staat: klantondernemingen, leveranciers, partners.
 

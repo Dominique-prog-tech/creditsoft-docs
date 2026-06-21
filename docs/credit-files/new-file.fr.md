@@ -1,4 +1,4 @@
-﻿# Créer un nouveau dossier de crédit
+# Créer un nouveau dossier de crédit
 
 Cette page décrit étape par étape comment créer un nouveau dossier de crédit dans CreditSoft.
 

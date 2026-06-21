@@ -1,4 +1,4 @@
-﻿# Tussenpersonen
+# Tussenpersonen
 
 Tussenpersonen zijn kredietbemiddelaars die dossiers aanbrengen of mee in behandeling nemen. CreditSoft beheert uw netwerk van tussenpersonen met hun erkenningen, contactgegevens en commissieschema's.
 

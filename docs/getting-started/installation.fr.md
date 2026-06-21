@@ -1,4 +1,4 @@
-﻿# Installation
+# Installation
 
 Cette page décrit comment installer CreditSoft sur votre système et les conditions requises pour votre environnement.
 

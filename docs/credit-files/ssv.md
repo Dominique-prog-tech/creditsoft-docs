@@ -1,4 +1,4 @@
-﻿# SSV overzicht
+# SSV overzicht
 
 Het SSV-overzicht groepeert dossiers volgens een specifiek werkproces of producttype binnen CreditSoft.
 

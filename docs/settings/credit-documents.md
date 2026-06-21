@@ -1,4 +1,4 @@
-﻿# Kredietdocumenten (beheer)
+# Kredietdocumenten (beheer)
 
 Hier beheert u de **types** kredietdocumenten die in dossiers gebruikt worden: hoe ze heten, of ze verplicht zijn, welke validaties gelden.
 

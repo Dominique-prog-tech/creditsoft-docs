@@ -1,4 +1,4 @@
-﻿# In te dienen dossiers
+# In te dienen dossiers
 
 Dit overzicht toont alle dossiers die volledig zijn en klaar om naar een financiële instelling te sturen.
 

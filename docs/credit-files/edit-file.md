@@ -1,4 +1,4 @@
-﻿# Dossier bewerken
+# Dossier bewerken
 
 Eens een kredietdossier is aangemaakt, kunt u op elk moment terugkeren om gegevens aan te vullen, te wijzigen of de status bij te werken.
 

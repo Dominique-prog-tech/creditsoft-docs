@@ -1,4 +1,4 @@
-﻿# LOA overzicht
+# LOA overzicht
 
 Het LOA-overzicht toont alle dossiers met een Letter of Acceptance — de formele toezegging van een financiële instelling om het krediet te verstrekken.
 

@@ -1,4 +1,4 @@
-﻿# Workflow en statussen
+# Workflow en statussen
 
 Een kredietdossier doorloopt verschillende statussen van aanmaak tot uitbetaling en opvolging. Deze pagina geeft een overzicht van alle statussen en welke acties op welk moment mogelijk zijn.
 

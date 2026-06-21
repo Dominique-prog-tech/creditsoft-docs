@@ -1,4 +1,4 @@
-﻿# Entreprises
+# Entreprises
 
 Le module Entreprises contient toutes les organisations avec lesquelles vous êtes en contact : entreprises clientes, fournisseurs, partenaires.
 

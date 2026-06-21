@@ -1,4 +1,4 @@
-﻿# Schattingen
+# Schattingen
 
 Het schattingenoverzicht toont alle vastgoedschattingen die binnen uw kantoor lopen of gearchiveerd zijn.
 

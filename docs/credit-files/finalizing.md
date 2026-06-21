@@ -1,4 +1,4 @@
-﻿# Dossiers in afwerking
+# Dossiers in afwerking
 
 Dit overzicht toont alle dossiers die nog niet klaar zijn om in te dienen bij de financiële instelling. Het is de werklijst voor uw lopende dossiers.
 

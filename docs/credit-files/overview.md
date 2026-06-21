@@ -1,4 +1,4 @@
-﻿# Kredietdossiers — Overzicht
+# Kredietdossiers — Overzicht
 
 Kredietdossiers vormen de kern van CreditSoft. Een dossier bevat alle informatie over één kredietaanvraag: de kredietnemer, de gevraagde som, het pand, betrokken tussenpersonen, documenten, contracten en de opvolging na akte.
 

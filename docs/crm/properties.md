@@ -1,4 +1,4 @@
-﻿# Panden
+# Panden
 
 Panden zijn de onroerende goederen die als zekerheid dienen voor een hypothecair krediet. CreditSoft houdt ze gestructureerd bij in een eigen module.
 

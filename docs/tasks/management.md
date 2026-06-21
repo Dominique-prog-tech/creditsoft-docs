@@ -1,4 +1,4 @@
-﻿# Takenbeheer
+# Takenbeheer
 
 Het takenbeheer in CreditSoft helpt u uw werkdag te structureren: openstaande acties, deadlines, opvolgpunten.
 

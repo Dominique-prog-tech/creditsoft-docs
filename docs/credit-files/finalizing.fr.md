@@ -1,4 +1,4 @@
-﻿# Dossiers en finalisation
+# Dossiers en finalisation
 
 Cet aperçu affiche tous les dossiers qui ne sont pas encore prêts à être soumis à l'institution financière. Il s'agit de la liste de travail pour vos dossiers en cours.
 

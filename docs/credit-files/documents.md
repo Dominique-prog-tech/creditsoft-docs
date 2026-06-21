@@ -1,4 +1,4 @@
-﻿# Documenten beheren
+# Documenten beheren
 
 Elk kredietdossier verzamelt verschillende documenten: identiteitskaarten, loonfiches, eigendomsakten, schattingsverslagen, contracten. Deze pagina beschrijft hoe u documenten aan een dossier toevoegt en beheert.
 

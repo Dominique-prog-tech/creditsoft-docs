@@ -1,4 +1,4 @@
-﻿# Suivi après acte
+# Suivi après acte
 
 Après la signature de l'acte notarié, un dossier entre dans une phase de suivi : vérifier les paiements, enregistrer les commissions, collecter d'éventuels documents.
 

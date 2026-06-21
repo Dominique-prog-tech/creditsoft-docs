@@ -1,4 +1,4 @@
-﻿# Dossiers de crédit — Vue d'ensemble
+# Dossiers de crédit — Vue d'ensemble
 
 Les dossiers de crédit constituent le cœur de CreditSoft. Un dossier contient toutes les informations relatives à une demande de crédit : l'emprunteur, le montant demandé, le bien immobilier, les intermédiaires impliqués, les documents, les contrats et le suivi après acte.
 

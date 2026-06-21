@@ -1,4 +1,4 @@
-﻿# Contacten
+# Contacten
 
 Contacten zijn individuele personen in uw CRM: kredietnemers, vertegenwoordigers van bedrijven, en alle andere natuurlijke personen waarmee u professioneel in contact staat.
 

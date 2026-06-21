@@ -1,4 +1,4 @@
-﻿# Gestion des commissions
+# Gestion des commissions
 
 L'écran de gestion des commissions vous permet de suivre toutes les commissions : à recevoir, reçues, à payer, payées.
 

@@ -1,4 +1,4 @@
-﻿# Gérer les documents
+# Gérer les documents
 
 Chaque dossier de crédit rassemble différents documents : cartes d'identité, fiches de salaire, actes de propriété, rapports d'estimation, contrats. Cette page décrit comment ajouter et gérer des documents dans un dossier.
 

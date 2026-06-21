@@ -1,4 +1,4 @@
-﻿# Opvolging na akte
+# Opvolging na akte
 
 Na het verlijden van de notariële akte gaat een dossier in een opvolgingsfase: uitbetalingen verifiëren, commissies registreren, eventuele documenten verzamelen.
 

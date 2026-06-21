@@ -1,4 +1,4 @@
-﻿# CRM — Vue d'ensemble
+# CRM — Vue d'ensemble
 
 Le module CRM regroupe tous les contacts avec lesquels vous collaborez en tant que courtier en crédit : les clients (emprunteurs), mais aussi les partenaires professionnels tels que les comptables, les agences immobilières, les notaires et les estimateurs.
 

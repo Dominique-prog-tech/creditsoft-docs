@@ -1,4 +1,4 @@
-﻿# Dossiers à soumettre
+# Dossiers à soumettre
 
 Cet aperçu affiche tous les dossiers qui sont complets et prêts à être envoyés à une institution financière.
 

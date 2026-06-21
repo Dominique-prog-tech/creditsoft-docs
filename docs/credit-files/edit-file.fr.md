@@ -1,4 +1,4 @@
-﻿# Modifier un dossier
+# Modifier un dossier
 
 Une fois un dossier de crédit créé, vous pouvez y revenir à tout moment pour compléter des données, apporter des modifications ou mettre à jour le statut.
 

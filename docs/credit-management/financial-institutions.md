@@ -1,4 +1,4 @@
-﻿# Financiële instellingen
+# Financiële instellingen
 
 De financiële instellingen zijn de banken en kredietverstrekkers waarmee uw kantoor samenwerkt. CreditSoft beheert hun contactgegevens, voorwaarden en producten.
 

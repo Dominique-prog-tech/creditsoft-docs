@@ -1,4 +1,4 @@
-﻿# CreditSoft Documentatie
+# CreditSoft Documentatie
 
 !!! info "Documentatie in opbouw"
     Deze handleiding wordt actief uitgewerkt. Sommige pagina's bevatten nog

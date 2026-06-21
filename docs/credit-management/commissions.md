@@ -1,4 +1,4 @@
-﻿# Commissiebeheer
+# Commissiebeheer
 
 Op het commissiebeheer-scherm volgt u alle commissies op: te ontvangen, ontvangen, te betalen, betaald.
 

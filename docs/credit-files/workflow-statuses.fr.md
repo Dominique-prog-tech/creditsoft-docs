@@ -1,4 +1,4 @@
-﻿# Workflow et statuts
+# Workflow et statuts
 
 Un dossier de crédit passe par différents statuts, de la création jusqu'au paiement et au suivi. Cette page donne un aperçu de tous les statuts et des actions possibles à chaque étape.
 

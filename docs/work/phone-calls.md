@@ -1,4 +1,4 @@
-﻿# Telefoons
+# Telefoons
 
 CreditSoft houdt een register bij van uw inkomende en uitgaande telefoongesprekken, gekoppeld aan contacten en dossiers.
 

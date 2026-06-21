@@ -1,4 +1,4 @@
-﻿# Intermédiaires
+# Intermédiaires
 
 Les intermédiaires sont des courtiers en crédit qui apportent ou traitent des dossiers. CreditSoft gère votre réseau d'intermédiaires avec leurs agréments, coordonnées et barèmes de commission.
 

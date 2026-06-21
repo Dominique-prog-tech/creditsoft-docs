@@ -1,4 +1,4 @@
-﻿# Mail accounts
+# Mail accounts
 
 CreditSoft kan e-mails verzenden en ontvangen. Op dit scherm beheert u de mailaccounts die het platform gebruikt.
 

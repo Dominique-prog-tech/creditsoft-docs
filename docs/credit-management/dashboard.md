@@ -1,4 +1,4 @@
-﻿# Dashboard kredieten
+# Dashboard kredieten
 
 Het kredietendashboard geeft u een gespecialiseerd overzicht van uw kredietportefeuille met statistieken, KPI's en actiepunten.
 

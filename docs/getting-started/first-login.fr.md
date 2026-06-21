@@ -1,4 +1,4 @@
-﻿# Première connexion
+# Première connexion
 
 Lors de votre première connexion à CreditSoft, vous découvrez l'écran de connexion et la navigation de base.
 

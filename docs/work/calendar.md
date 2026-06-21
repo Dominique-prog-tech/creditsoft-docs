@@ -1,4 +1,4 @@
-﻿# Agenda
+# Agenda
 
 De agenda biedt u een overzicht van uw afspraken, akten, vergaderingen en andere geplande activiteiten.
 

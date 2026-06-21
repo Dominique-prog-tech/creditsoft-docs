@@ -1,4 +1,4 @@
-﻿# Verzekeringsmaatschappijen
+# Verzekeringsmaatschappijen
 
 Bij hypothecaire kredieten komen meestal schuldsaldoverzekeringen en brandverzekeringen kijken. CreditSoft houdt de verzekeringsmaatschappijen waarmee u samenwerkt bij in een aparte module.
 

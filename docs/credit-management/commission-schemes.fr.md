@@ -1,4 +1,4 @@
-﻿# Barèmes de commission
+# Barèmes de commission
 
 Les barèmes de commission définissent la manière dont la commission est répartie entre votre cabinet, les intermédiaires et les autres parties impliquées.
 

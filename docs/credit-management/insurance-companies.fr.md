@@ -1,4 +1,4 @@
-﻿# Compagnies d'assurance
+# Compagnies d'assurance
 
 Les crédits hypothécaires impliquent généralement des assurances solde restant dû et des assurances incendie. CreditSoft gère les compagnies d'assurance avec lesquelles vous collaborez dans un module dédié.
 

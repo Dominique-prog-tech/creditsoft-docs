@@ -1,4 +1,4 @@
-﻿# Eerste aanmelding
+# Eerste aanmelding
 
 Bij uw eerste aanmelding op CreditSoft maakt u kennis met het loginscherm en de basis-navigatie.
 

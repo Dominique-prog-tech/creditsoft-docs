@@ -1,4 +1,4 @@
-﻿# Accountants
+# Accountants
 
 Accountants en boekhouders zijn belangrijke partners voor de kredietmakelaar. Zij bezorgen vaak de financiële documenten die nodig zijn voor de kredietaanvraag.
 
