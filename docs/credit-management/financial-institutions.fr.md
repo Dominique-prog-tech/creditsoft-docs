@@ -1,51 +1,29 @@
 # Institutions financières
 
-Les institutions financières sont les banques et les prêteurs avec lesquels votre cabinet collabore. CreditSoft gère leurs coordonnées, conditions et produits.
+Les institutions financières sont les **banques et prêteurs** avec lesquels votre bureau collabore — les organismes de crédit auprès desquels vous introduisez vos dossiers. CreditSoft en affiche ici les données de base.
+
+!!! info "Pendant la migration : lecture seule"
+    Cette liste est un **reflet** de votre base de données existante (héritée). Vous pouvez la **consulter et la rechercher**, mais pas encore la modifier — la gestion se fait provisoirement dans l'ancien logiciel. La mise à jour se fait via le bouton **Convertir depuis l'hérité**.
 
 ## Ouvrir l'écran
 
-Cliquez dans la sidebar sous **Crédits** sur **Institutions financières**.
+Dans la barre latérale, cliquez sur **Institutions financières**.
 
 !!! info "TODO"
-    Screenshot. Plaatsen in `docs/images/financiele-instellingen.png`.
+    Capture d'écran. À placer dans `docs/images/financiele-instellingen.png`.
 
-![Financiële instellingen](/images/financiele-instellingen.png)
+![Institutions financières](/images/financiele-instellingen.png)
 
-## Ajouter une institution financière
+## La liste
 
-!!! info "TODO"
-    Bron: `Modules\CreditManagement\FinancialInstitutionsMain.dfm`.
+Le tableau affiche par institution : **nom**, **commune**, **pays**, **téléphone**, **e-mail** et **site web**.
 
-    Champs typiques :
+- **Rechercher** — utilisez le champ de recherche en haut à droite pour chercher dans toutes les colonnes à la fois.
+- **Choisir les colonnes** — le bouton **Colonnes** affiche ou masque des colonnes ; votre choix est mémorisé.
+- **Exporter** — exportez la liste via **Excel** ou **CSV**.
 
-    - Nom de la banque / institution de crédit
-    - Adresse du siège social
-    - Personnes de contact (account manager, analystes crédit)
-    - Spécialisations (hypothécaire, crédit à la consommation, professionnel)
-    - Produits proposés
-    - Instructions de soumission (e-mail, URL du portail)
-    - Délais de traitement standard
-    - Accords de commission
+## Mettre à jour les données (conversion)
 
-## Produits par institution
+Le bouton **Convertir depuis l'hérité** récupère les institutions financières actuelles depuis votre base existante et met la liste à jour. L'opération est **répétable et sûre** : les institutions existantes sont mises à jour, les nouvelles ajoutées — sans doublons.
 
-!!! info "TODO"
-    Garde-t-on par institution les produits de crédit qu'elle propose,
-    avec les taux d'intérêt et les conditions ?
-
-## Statistiques par institution
-
-!!! info "TODO"
-    - Nombre de dossiers soumis
-    - Taux d'approbation
-    - Délai moyen entre la soumission et l'approbation
-    - Volume total de crédits
-    - Total des commissions reçues
-
-## Modèles d'e-mail par institution
-
-!!! info "TODO"
-    Des modèles d'e-mail spécifiques à chaque institution sont-ils disponibles
-    (ex. pour la soumission d'un dossier) ?
-
-    Voir aussi : [Modèles d'e-mail](../settings/mail-templates.md).
+Ce bouton est destiné à l'administrateur pendant la période de transition. Dès que ce bloc de données sera entièrement basculé vers CreditSoft, la modification deviendra possible ici et l'étape de conversion disparaîtra.

@@ -1,51 +1,29 @@
 # Financiële instellingen
 
-De financiële instellingen zijn de banken en kredietverstrekkers waarmee uw kantoor samenwerkt. CreditSoft beheert hun contactgegevens, voorwaarden en producten.
+De financiële instellingen zijn de **banken en kredietverstrekkers** waarmee uw kantoor samenwerkt — de geldschieters waar u kredietdossiers bij plaatst. CreditSoft toont hier hun basisgegevens.
+
+!!! info "Tijdens de migratie: read-only"
+    Deze lijst is een **spiegel** van uw bestaande (legacy) databank. U kunt ze **raadplegen en doorzoeken**, maar nog niet bewerken — het beheer gebeurt voorlopig nog in het oude pakket. Bijwerken gebeurt via de knop **Converteren uit legacy**.
 
 ## Het scherm openen
 
-Klik in de sidebar onder **Kredieten** op **Fin. instellingen**.
+Klik in de zijbalk op **Kredietinstellingen**.
 
 !!! info "TODO"
-    Screenshot. Plaatsen in `docs/images/financiele-instellingen.png`.
+    Screenshot van het scherm. Plaatsen in `docs/images/financiele-instellingen.png`.
 
 ![Financiële instellingen](/images/financiele-instellingen.png)
 
-## Een financiële instelling toevoegen
+## De lijst
 
-!!! info "TODO"
-    Bron: `Modules\CreditManagement\FinancialInstitutionsMain.dfm`.
+De tabel toont per instelling: **naam**, **gemeente**, **land**, **telefoon**, **e-mail** en **website**.
 
-    Typische velden:
+- **Zoeken** — gebruik het zoekveld rechtsboven om in alle kolommen tegelijk te zoeken.
+- **Kolommen kiezen** — via de knop **Kolommen** toont of verbergt u kolommen; uw keuze wordt onthouden.
+- **Exporteren** — met **Excel** of **CSV** exporteert u de lijst.
 
-    - Naam van de bank/kredietinstelling
-    - Adres hoofdzetel
-    - Contactpersonen (account manager, kredietanalisten)
-    - Specialisaties (hypothecair, consumentenkrediet, professioneel)
-    - Producten die zij aanbieden
-    - Indienings-instructies (e-mail, portaal-URL)
-    - Standaard doorlooptijden
-    - Commissie-afspraken
+## Gegevens bijwerken (conversie)
 
-## Producten per instelling
+De knop **Converteren uit legacy** haalt de actuele financiële instellingen uit uw bestaande databank en werkt de lijst bij. De actie is **herhaalbaar en veilig**: bestaande instellingen worden bijgewerkt, nieuwe toegevoegd — er ontstaan geen dubbels.
 
-!!! info "TODO"
-    Wordt per instelling bijgehouden welke kredietproducten ze aanbieden,
-    met rentevoeten en voorwaarden?
-
-## Statistieken per instelling
-
-!!! info "TODO"
-    - Aantal ingediende dossiers
-    - Goedkeuringspercentage
-    - Gemiddelde doorlooptijd van indienen tot goedkeuring
-    - Totaal kredietvolume
-    - Totaal ontvangen commissie
-
-## Mail-templates per instelling
-
-!!! info "TODO"
-    Zijn er instelling-specifieke mail-templates beschikbaar
-    (bv. voor het indienen van een dossier)?
-
-    Zie ook: [Mail templates](../settings/mail-templates.md).
+Deze knop is bedoeld voor de beheerder tijdens de overgangsperiode. Zodra dit gegevensblok volledig naar CreditSoft is overgezet, wordt bewerken hier mogelijk en verdwijnt de conversiestap.
