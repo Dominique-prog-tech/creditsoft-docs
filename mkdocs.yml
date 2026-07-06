@@ -158,6 +158,7 @@ plugins:
             Portaal-instellingen: Paramètres du portail
             Mijn gebruiker: Mon utilisateur
             Mijn profiel: Mon profil
+            Overleg: Concertation
             Supportticket aanmaken: Créer un ticket de support
             Sessie afsluiten: Fermer la session
             Concepten: Concepts
@@ -236,6 +237,7 @@ nav:
 
   - Mijn gebruiker:
     - Mijn profiel: account/profile.md
+    - Overleg: account/overleg.md
     - Supportticket aanmaken: account/support-ticket.md
     - Sessie afsluiten: account/logout.md
 
