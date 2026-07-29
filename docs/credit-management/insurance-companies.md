@@ -6,11 +6,6 @@ De verzekeraars zijn de maatschappijen voor de **schuldsaldoverzekering (SSV)** 
 
 Klik in de zijbalk op **Verzekeraars**.
 
-!!! info "TODO"
-    Screenshot van het lijstscherm. Plaatsen in `docs/images/verzekeraars.png`.
-
-![Verzekeraars](/images/verzekeraars.png)
-
 ## De lijst
 
 De tabel toont per verzekeraar: **naam**, **gemeente**, **telefoon** en **e-mail**.
@@ -32,6 +27,3 @@ Het formulier bevat de kerngegevens:
 - **Opmerkingen**
 
 Klik op **Opslaan** om te bewaren.
-
-!!! note "Beperkte fiche"
-    Dit is bewust een **keuze-fiche** voor de SSV op het kredietdossier — enkel de identiteit en contactgegevens. De uitgebreide verzekerings-functionaliteit (commissies, algemene voorwaarden, extra e-mailadressen) uit het oude pakket valt buiten de scope van CreditSoft.

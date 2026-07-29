@@ -6,11 +6,6 @@ De financiële instellingen zijn de **banken en kredietverstrekkers** waarmee uw
 
 Klik in de zijbalk op **Kredietinstellingen**.
 
-!!! info "TODO"
-    Screenshot van het lijstscherm. Plaatsen in `docs/images/financiele-instellingen.png`.
-
-![Financiële instellingen](/images/financiele-instellingen.png)
-
 ## De lijst
 
 De tabel toont per instelling: **naam**, **gemeente**, **land**, **telefoon**, **e-mail** en **website**.
@@ -49,9 +44,6 @@ Hier legt u de **standaard commissieregeling** vast die voor deze kredietverstre
 
 !!! warning "Eén type tegelijk"
     Er kan slechts **0 of 1** type van commissionering gekozen worden. Kiest u zowel *Gespreide betaling* als *Geplande betalingen*, dan geeft CreditSoft een melding bij het opslaan.
-
-!!! info "TODO"
-    Screenshot van de tab "Standaard commissionering". Plaatsen in `docs/images/financiele-instellingen-commissie.png`.
 
 ## Opslaan
 

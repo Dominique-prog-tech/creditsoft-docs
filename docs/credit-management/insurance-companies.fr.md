@@ -6,11 +6,6 @@ Les assureurs sont les compagnies pour l'**assurance solde restant dû (ASRD)** 
 
 Dans la barre latérale, cliquez sur **Assureurs**.
 
-!!! info "TODO"
-    Capture d'écran de la liste. À placer dans `docs/images/verzekeraars.png`.
-
-![Assureurs](/images/verzekeraars.png)
-
 ## La liste
 
 Le tableau affiche par assureur : **nom**, **commune**, **téléphone** et **e-mail**.
@@ -32,6 +27,3 @@ Le formulaire contient les données essentielles :
 - **Remarques**
 
 Cliquez sur **Enregistrer** pour sauvegarder.
-
-!!! note "Fiche limitée"
-    Il s'agit délibérément d'une **fiche de choix** pour l'ASRD sur le dossier de crédit — uniquement l'identité et les coordonnées. Les fonctionnalités d'assurance étendues (commissions, conditions générales, adresses e-mail supplémentaires) de l'ancien logiciel sont hors du périmètre de CreditSoft.

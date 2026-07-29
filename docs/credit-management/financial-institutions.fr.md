@@ -6,11 +6,6 @@ Les institutions financières sont les **banques et prêteurs** avec lesquels vo
 
 Dans la barre latérale, cliquez sur **Institutions financières**.
 
-!!! info "TODO"
-    Capture d'écran de la liste. À placer dans `docs/images/financiele-instellingen.png`.
-
-![Institutions financières](/images/financiele-instellingen.png)
-
 ## La liste
 
 Le tableau affiche par institution : **nom**, **commune**, **pays**, **téléphone**, **e-mail** et **site web**.
@@ -49,9 +44,6 @@ Vous y définissez le **régime de commission par défaut** applicable à ce pr�
 
 !!! warning "Un seul type à la fois"
     Il n'est possible de choisir que **0 ou 1** type de commissionnement. Si vous choisissez à la fois *Paiement échelonné* et *Paiements planifiés*, CreditSoft affiche un message lors de l'enregistrement.
-
-!!! info "TODO"
-    Capture d'écran de l'onglet « Commissionnement par défaut ». À placer dans `docs/images/financiele-instellingen-commissie.png`.
 
 ## Enregistrer
 
