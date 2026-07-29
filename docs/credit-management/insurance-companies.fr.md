@@ -1,43 +1,37 @@
-# Compagnies d'assurance
+# Assureurs
 
-Les crédits hypothécaires impliquent généralement des assurances solde restant dû et des assurances incendie. CreditSoft gère les compagnies d'assurance avec lesquelles vous collaborez dans un module dédié.
+Les assureurs sont les compagnies pour l'**assurance solde restant dû (ASRD)** liée à un dossier de crédit. CreditSoft en conserve ici les données de base sous forme de **liste de choix** ; vous sélectionnez un assureur sur le dossier.
 
 ## Ouvrir l'écran
 
-Cliquez dans la sidebar sous **Crédits** sur **Compagnies**.
+Dans la barre latérale, cliquez sur **Assureurs**.
 
 !!! info "TODO"
-    Screenshot. Plaatsen in `docs/images/verzekeringsmaatschappijen.png`.
+    Capture d'écran de la liste. À placer dans `docs/images/verzekeraars.png`.
 
-![Verzekeringsmaatschappijen](/images/verzekeringsmaatschappijen.png)
+![Assureurs](/images/verzekeraars.png)
 
-## Ajouter une compagnie d'assurance
+## La liste
 
-!!! info "TODO"
-    Bron: zoek in `Modules\InsuranceManagement\`.
+Le tableau affiche par assureur : **nom**, **commune**, **téléphone** et **e-mail**.
 
-    Champs typiques :
+- **Rechercher** — utilisez le champ de recherche pour chercher dans toutes les colonnes à la fois.
+- **Choisir les colonnes** — affichez ou masquez des colonnes ; votre choix est mémorisé.
+- **Exporter** — exportez la liste via Excel ou CSV.
+- **Nouveau / modifier** — cliquez sur **Nouvel assureur** ou sur **Modifier** dans une ligne.
+- **Supprimer** — un assureur est **archivé** (suppression douce), pas définitivement effacé.
 
-    - Nom de la compagnie
-    - Adresse
-    - Personne de contact
-    - Produits (assurance solde restant dû, assurance incendie, ...)
-    - Caractéristiques tarifaires
-    - Accords de commission
+## Ajouter ou modifier un assureur
 
-## Lier des assurances à des dossiers
+Le formulaire contient les données essentielles :
 
-!!! info "TODO"
-    Bron: `Modules\CreditManagement\CreditFileInsuranceAdd.dfm`.
-    Documenteer hoe verzekeringen aan een kredietdossier worden gekoppeld.
+- **Nom** (obligatoire)
+- **Adresse** — rue, numéro, boîte, code postal, commune, pays
+- **Contact** — téléphone, fax, e-mail, site web
+- **Numéro d'institution**
+- **Remarques**
 
-## Suivre les polices
+Cliquez sur **Enregistrer** pour sauvegarder.
 
-!!! info "TODO"
-    Le statut des polices souscrites est-il suivi (demande, active, résiliée) ?
-
-## Commissions sur les assurances
-
-!!! info "TODO"
-    Les commissions sur les assurances sont-elles traitées séparément ?
-    Apparaissent-elles sur le même [écran de gestion des commissions](commissions.md) ?
+!!! note "Fiche limitée"
+    Il s'agit délibérément d'une **fiche de choix** pour l'ASRD sur le dossier de crédit — uniquement l'identité et les coordonnées. Les fonctionnalités d'assurance étendues (commissions, conditions générales, adresses e-mail supplémentaires) de l'ancien logiciel sont hors du périmètre de CreditSoft.

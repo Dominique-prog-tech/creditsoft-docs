@@ -1,43 +1,37 @@
-# Verzekeringsmaatschappijen
+# Verzekeraars
 
-Bij hypothecaire kredieten komen meestal schuldsaldoverzekeringen en brandverzekeringen kijken. CreditSoft houdt de verzekeringsmaatschappijen waarmee u samenwerkt bij in een aparte module.
+De verzekeraars zijn de maatschappijen voor de **schuldsaldoverzekering (SSV)** bij een kredietdossier. CreditSoft houdt hier hun basisgegevens bij als **keuzelijst**; u kiest een verzekeraar op het dossier.
 
 ## Het scherm openen
 
-Klik in de sidebar onder **Kredieten** op **Maatschappijen**.
+Klik in de zijbalk op **Verzekeraars**.
 
 !!! info "TODO"
-    Screenshot. Plaatsen in `docs/images/verzekeringsmaatschappijen.png`.
+    Screenshot van het lijstscherm. Plaatsen in `docs/images/verzekeraars.png`.
 
-![Verzekeringsmaatschappijen](/images/verzekeringsmaatschappijen.png)
+![Verzekeraars](/images/verzekeraars.png)
 
-## Een verzekeringsmaatschappij toevoegen
+## De lijst
 
-!!! info "TODO"
-    Bron: zoek in `Modules\InsuranceManagement\`.
+De tabel toont per verzekeraar: **naam**, **gemeente**, **telefoon** en **e-mail**.
 
-    Typische velden:
+- **Zoeken** — gebruik het zoekveld om in alle kolommen tegelijk te zoeken.
+- **Kolommen kiezen** — toon of verberg kolommen; uw keuze wordt onthouden.
+- **Exporteren** — exporteer de lijst naar Excel of CSV.
+- **Nieuw / bewerken** — klik op **Nieuwe verzekeraar** of op **Bewerken** in een rij.
+- **Verwijderen** — een verzekeraar wordt **gearchiveerd** (soft-delete), niet definitief gewist.
 
-    - Naam van de maatschappij
-    - Adres
-    - Contactpersoon
-    - Producten (schuldsaldoverzekering, brandverzekering, ...)
-    - Tariefkenmerken
-    - Commissie-afspraken
+## Een verzekeraar toevoegen of bewerken
 
-## Verzekeringen koppelen aan dossiers
+Het formulier bevat de kerngegevens:
 
-!!! info "TODO"
-    Bron: `Modules\CreditManagement\CreditFileInsuranceAdd.dfm`.
-    Documenteer hoe verzekeringen aan een kredietdossier worden gekoppeld.
+- **Naam** (verplicht)
+- **Adres** — straat, huisnummer, bus, postcode, gemeente, land
+- **Contact** — telefoon, fax, e-mail, website
+- **Instellingsnummer**
+- **Opmerkingen**
 
-## Polissen opvolgen
+Klik op **Opslaan** om te bewaren.
 
-!!! info "TODO"
-    Wordt de status van afgesloten polissen opgevolgd (aanvraag, actief, beëindigd)?
-
-## Commissies op verzekeringen
-
-!!! info "TODO"
-    Worden commissies op verzekeringen apart behandeld?
-    Komen ze op hetzelfde [commissiebeheer-scherm](commissions.md)?
+!!! note "Beperkte fiche"
+    Dit is bewust een **keuze-fiche** voor de SSV op het kredietdossier — enkel de identiteit en contactgegevens. De uitgebreide verzekerings-functionaliteit (commissies, algemene voorwaarden, extra e-mailadressen) uit het oude pakket valt buiten de scope van CreditSoft.
