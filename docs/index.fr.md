@@ -6,7 +6,7 @@ Ce manuel **évolue avec la plateforme** : chaque fois qu'un écran est entière
 
 ## Disponible
 
-- [Institutions financières](credit-management/financial-institutions.md) — les banques et prêteurs avec lesquels vous collaborez, avec leur régime de commission par défaut.
+- [Institutions de crédit](credit-management/financial-institutions.md) — les banques et prêteurs avec lesquels vous collaborez, avec leur régime de commission par défaut.
 - [Assureurs](credit-management/insurance-companies.md) — les assureurs pour l'assurance solde restant dû (ASRD) sur un dossier de crédit.
 
 D'autres modules suivront bientôt.

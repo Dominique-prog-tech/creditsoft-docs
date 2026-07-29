@@ -1,6 +1,6 @@
-# Financiële instellingen
+# Kredietinstellingen
 
-De financiële instellingen zijn de **banken en kredietverstrekkers** waarmee uw kantoor samenwerkt — de geldschieters waar u kredietdossiers bij plaatst. Op dit scherm beheert u hun gegevens en de **standaard commissieregeling** per instelling.
+De kredietinstellingen zijn de **banken en kredietverstrekkers** waarmee uw kantoor samenwerkt — de geldschieters waar u kredietdossiers bij plaatst. Op dit scherm beheert u hun gegevens en de **standaard commissieregeling** per instelling.
 
 ## Het scherm openen
 

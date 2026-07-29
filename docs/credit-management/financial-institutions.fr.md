@@ -1,10 +1,10 @@
-# Institutions financières
+# Institutions de crédit
 
-Les institutions financières sont les **banques et prêteurs** avec lesquels votre bureau collabore — les organismes de crédit auprès desquels vous introduisez vos dossiers. Cet écran permet de gérer leurs données et le **régime de commission par défaut** de chaque institution.
+Les institutions de crédit sont les **banques et prêteurs** avec lesquels votre bureau collabore — les organismes de crédit auprès desquels vous introduisez vos dossiers. Cet écran permet de gérer leurs données et le **régime de commission par défaut** de chaque institution.
 
 ## Ouvrir l'écran
 
-Dans la barre latérale, cliquez sur **Institutions financières**.
+Dans la barre latérale, cliquez sur **Institutions de crédit**.
 
 ## La liste
 
