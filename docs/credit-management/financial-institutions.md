@@ -13,7 +13,7 @@ De tabel toont per instelling: **naam**, **gemeente**, **land**, **telefoon**, *
 - **Zoeken** — gebruik het zoekveld om in alle kolommen tegelijk te zoeken.
 - **Kolommen kiezen** — toon of verberg kolommen; uw keuze wordt onthouden.
 - **Exporteren** — exporteer de lijst naar Excel of CSV.
-- **Nieuw / bewerken** — klik op **Toevoegen** of op een rij om het bewerkscherm te openen.
+- **Nieuw / bewerken** — klik op **Nieuw**, of **dubbelklik** een rij om het bewerkscherm te openen.
 - **Verwijderen** — een instelling wordt **gearchiveerd** (soft-delete), niet definitief gewist; ze verdwijnt uit de lijst maar blijft bewaard.
 
 ## Een instelling toevoegen of bewerken
@@ -30,10 +30,6 @@ De basisgegevens van de instelling:
 - **Opmerkingen**
 - **Logo** — laad een afbeelding op; ze verschijnt onder meer op afdrukken
 
-### Tab "Social media"
-
-Optionele links naar de sociale media van de instelling: Facebook, Twitter, Google+ en Instagram.
-
 ### Tab "Standaard commissionering"
 
 Hier legt u de **standaard commissieregeling** vast die voor deze kredietverstrekker geldt. U kiest **maximaal één** van beide types (ze sluiten elkaar uit):
@@ -42,9 +38,15 @@ Hier legt u de **standaard commissieregeling** vast die voor deze kredietverstre
 - **Gespreide betaling** — de commissie wordt gespreid over een **aantal maanden**.
 - **Geplande betalingen** — u geeft een lijst op (tot 24 regels) met per regel een **maand** en een **percentage** van de totale commissie.
 
+Percentages voert u in van **0 tot 100** met twee decimalen; ze worden getoond met een %-teken (bv. *1,50 %*).
+
 !!! warning "Eén type tegelijk"
     Er kan slechts **0 of 1** type van commissionering gekozen worden. Kiest u zowel *Gespreide betaling* als *Geplande betalingen*, dan geeft CreditSoft een melding bij het opslaan.
 
+### Tab "Social media"
+
+Optionele links naar de sociale media van de instelling: Facebook, Twitter, Google+ en Instagram.
+
 ## Opslaan
 
-Klik op **Opslaan** om de instelling te bewaren. Ontbrekende verplichte velden of een ongeldige commissiekeuze worden bij het opslaan gemeld.
+Klik op **Opslaan** om de instelling te bewaren. Ontbrekende verplichte velden, een **ongeldig e-mailadres** of een ongeldige commissiekeuze worden bij het opslaan gemeld.

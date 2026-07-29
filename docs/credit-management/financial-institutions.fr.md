@@ -13,7 +13,7 @@ Le tableau affiche par institution : **nom**, **commune**, **pays**, **télépho
 - **Rechercher** — utilisez le champ de recherche pour chercher dans toutes les colonnes à la fois.
 - **Choisir les colonnes** — affichez ou masquez des colonnes ; votre choix est mémorisé.
 - **Exporter** — exportez la liste via Excel ou CSV.
-- **Nouveau / modifier** — cliquez sur **Ajouter** ou sur une ligne pour ouvrir l'écran d'édition.
+- **Nouveau / modifier** — cliquez sur **Nouveau**, ou **double-cliquez** une ligne pour ouvrir l'écran d'édition.
 - **Supprimer** — une institution est **archivée** (suppression douce), pas définitivement effacée ; elle disparaît de la liste mais reste conservée.
 
 ## Ajouter ou modifier une institution
@@ -30,10 +30,6 @@ Les données de base de l'institution :
 - **Remarques**
 - **Logo** — chargez une image ; elle apparaît notamment sur les impressions
 
-### Onglet « Réseaux sociaux »
-
-Liens facultatifs vers les réseaux sociaux de l'institution : Facebook, Twitter, Google+ et Instagram.
-
 ### Onglet « Commissionnement par défaut »
 
 Vous y définissez le **régime de commission par défaut** applicable à ce prêteur. Vous choisissez **au maximum un** des deux types (ils sont mutuellement exclusifs) :
@@ -42,9 +38,15 @@ Vous y définissez le **régime de commission par défaut** applicable à ce pr�
 - **Paiement échelonné** — la commission est répartie sur un **nombre de mois**.
 - **Paiements planifiés** — vous indiquez une liste (jusqu'à 24 lignes) avec, par ligne, un **mois** et un **pourcentage** de la commission totale.
 
+Les pourcentages se saisissent de **0 à 100** avec deux décimales ; ils sont affichés avec un signe % (p. ex. *1,50 %*).
+
 !!! warning "Un seul type à la fois"
     Il n'est possible de choisir que **0 ou 1** type de commissionnement. Si vous choisissez à la fois *Paiement échelonné* et *Paiements planifiés*, CreditSoft affiche un message lors de l'enregistrement.
 
+### Onglet « Réseaux sociaux »
+
+Liens facultatifs vers les réseaux sociaux de l'institution : Facebook, Twitter, Google+ et Instagram.
+
 ## Enregistrer
 
-Cliquez sur **Enregistrer** pour sauvegarder l'institution. Les champs obligatoires manquants ou un choix de commission invalide sont signalés lors de l'enregistrement.
+Cliquez sur **Enregistrer** pour sauvegarder l'institution. Les champs obligatoires manquants, une **adresse e-mail invalide** ou un choix de commission invalide sont signalés lors de l'enregistrement.
