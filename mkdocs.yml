@@ -101,6 +101,8 @@ plugins:
           nav_translations:
             Home: Accueil
             Aan de slag: Premiers pas
+            Navigeren in CreditSoft: Naviguer dans CreditSoft
+            Tweestapsverificatie (2FA): Vérification en deux étapes (2FA)
             Installatie: Installation
             Eerste aanmelding: Première connexion
             Interface-overzicht: Aperçu de l'interface
@@ -170,6 +172,10 @@ extra:
 
 nav:
   - Home: index.md
+
+  - Aan de slag:
+    - Navigeren in CreditSoft: getting-started/navigatie.md
+    - Tweestapsverificatie (2FA): getting-started/tweestapsverificatie.md
 
   # Groeit mee per gevalideerd scherm — voeg hier telkens één regel toe.
   - Kredieten:
