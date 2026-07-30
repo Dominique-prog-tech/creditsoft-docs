@@ -193,4 +193,4 @@ nav:
     - Groepen: crm/groups.md
 
   - Beheer:
-    - Verzendadressen: beheer/verzendadressen.md
+    - Verzendadressen: administration/sender-addresses.md

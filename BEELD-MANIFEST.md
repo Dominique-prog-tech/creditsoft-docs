@@ -43,7 +43,7 @@
 
 - [ ] `groepen-lijst.png` — het lijstscherm + de "Nieuw"-knop. Plaats bij "De lijst".
 
-## Beheer → Verzendadressen (`beheer/verzendadressen.md`)
+## Beheer → Verzendadressen (`administration/sender-addresses.md`)
 
 - [ ] `platformbeheer-hub.png` — de hub-pagina **Platformbeheer** met de groep *Communicatie* en de tegel *Verzendadressen*. Plaats bij "Het scherm openen".
 - [ ] `verzendadressen-lijst.png` — het lijstscherm (verzendnaam + e-mailadres, "Nieuw"-knop, terug-link bovenaan). Plaats bij "De lijst".
