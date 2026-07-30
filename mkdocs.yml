@@ -110,6 +110,7 @@ plugins:
             Beheer: Gestion
             Bedrijfsfiche: Fiche d'entreprise
             Gebruikers: Utilisateurs
+            Mailsjablonen: Modèles d'e-mail
             Rollen: Rôles
             Verzendadressen: Adresses d'envoi
             Installatie: Installation
@@ -198,5 +199,6 @@ nav:
   - Beheer:
     - Bedrijfsfiche: administration/company-profile.md
     - Gebruikers: administration/users.md
+    - Mailsjablonen: administration/mail-templates.md
     - Rollen: administration/roles.md
     - Verzendadressen: administration/sender-addresses.md

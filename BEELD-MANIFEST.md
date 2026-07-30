@@ -58,6 +58,10 @@
 - [ ] `rollen-lijst.png` — het scherm met de rollenlijst (de vaste rol **Tenant-beheerder** met slotje + het veld **Nieuwe rol** / **Toevoegen**). Plaats bij "Een rol aanmaken".
 - [ ] `rollen-detail.png` — een geopende rol met de **rechten** (aanvinkbaar) en rechts **Gebruikers met deze rol**. Plaats bij "Rechten toekennen".
 
+## Beheer → Mailsjablonen (`administration/mail-templates.md`)
+
+- [ ] `mailsjablonen.png` — het editorscherm: bovenaan de **Sjabloon**-keuzelijst, het **variabelen-palet** met de chips, links de taal-tabs (Onderwerp + Body HTML + Bijlagen), rechts het sticky **Voorbeeld**. Plaats bij "Variabelen".
+
 ## Beheer → Verzendadressen (`administration/sender-addresses.md`)
 
 - [ ] `platformbeheer-hub.png` — de hub-pagina **Platformbeheer** met de groep *Communicatie* en de tegel *Verzendadressen*. Plaats bij "Het scherm openen".
