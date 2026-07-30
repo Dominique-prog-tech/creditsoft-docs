@@ -110,6 +110,7 @@ plugins:
             Beheer: Gestion
             Bedrijfsfiche: Fiche d'entreprise
             Gebruikers: Utilisateurs
+            Rollen: Rôles
             Verzendadressen: Adresses d'envoi
             Installatie: Installation
             Eerste aanmelding: Première connexion
@@ -197,4 +198,5 @@ nav:
   - Beheer:
     - Bedrijfsfiche: administration/company-profile.md
     - Gebruikers: administration/users.md
+    - Rollen: administration/roles.md
     - Verzendadressen: administration/sender-addresses.md

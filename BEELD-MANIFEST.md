@@ -53,6 +53,11 @@
 - [ ] `gebruikers-lijst.png` — het lijstscherm vanuit **klant-weergave** (kolommen Gebruiker + Naam, per rij de knoppen **Fiche**, **Wachtwoord resetten**, **Verwijderen**; het aanmaakformulier bovenaan; terug-link). Plaats bij "Een collega toevoegen".
 - [ ] `gebruikers-fiche.png` — de **Fiche**-popup met Telefoon/Gsm/Vertegenwoordiging + de **Mailhandtekening**-editor, en de notitie dat naam/e-mail/functie door ADM One beheerd worden. Plaats bij "De fiche bewerken".
 
+## Beheer → Rollen & rechten (`administration/roles.md`)
+
+- [ ] `rollen-lijst.png` — het scherm met de rollenlijst (de vaste rol **Tenant-beheerder** met slotje + het veld **Nieuwe rol** / **Toevoegen**). Plaats bij "Een rol aanmaken".
+- [ ] `rollen-detail.png` — een geopende rol met de **rechten** (aanvinkbaar) en rechts **Gebruikers met deze rol**. Plaats bij "Rechten toekennen".
+
 ## Beheer → Verzendadressen (`administration/sender-addresses.md`)
 
 - [ ] `platformbeheer-hub.png` — de hub-pagina **Platformbeheer** met de groep *Communicatie* en de tegel *Verzendadressen*. Plaats bij "Het scherm openen".
