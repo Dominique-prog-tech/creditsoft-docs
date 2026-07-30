@@ -12,7 +12,7 @@ En haut, sous **Modèle**, choisissez le modèle à modifier. *(Pour l'instant i
 
 ## Variables
 
-Un modèle peut contenir des **variables** remplies automatiquement à l'envoi, par exemple `{{bedrijf.naam}}` ou `{{medewerker.voornaam}}`. Vous les trouvez dans le **panneau de variables** : **glissez** une variable vers l'objet ou le corps, ou **cliquez** dessus pour la copier. L'**Aperçu** à droite montre le modèle avec des valeurs d'exemple, pour voir immédiatement le rendu.
+Un modèle peut contenir des **variables** remplies automatiquement à l'envoi, par exemple `{{company.name}}` ou `{{employee.firstname}}`. Vous les trouvez dans le **panneau de variables** : **glissez** une variable vers l'objet ou le corps, ou **cliquez** dessus pour la copier. L'**Aperçu** à droite montre le modèle avec des valeurs d'exemple, pour voir immédiatement le rendu.
 
 ## Modifier
 

@@ -12,7 +12,7 @@ Kies bovenaan bij **Sjabloon** welk sjabloon je wil aanpassen. *(Voorlopig is er
 
 ## Variabelen
 
-Een sjabloon kan **variabelen** bevatten die bij het versturen automatisch ingevuld worden, bijvoorbeeld `{{bedrijf.naam}}` of `{{medewerker.voornaam}}`. Je vindt ze in het **variabelen-palet**: **sleep** een variabele naar het onderwerp of de body, of **klik** erop om ze te kopiëren. Het **Voorbeeld** rechts toont het sjabloon met voorbeeldwaarden, zodat je meteen ziet hoe het eruitziet.
+Een sjabloon kan **variabelen** bevatten die bij het versturen automatisch ingevuld worden, bijvoorbeeld `{{company.name}}` of `{{employee.firstname}}`. Je vindt ze in het **variabelen-palet**: **sleep** een variabele naar het onderwerp of de body, of **klik** erop om ze te kopiëren. Het **Voorbeeld** rechts toont het sjabloon met voorbeeldwaarden, zodat je meteen ziet hoe het eruitziet.
 
 ## Aanpassen
 
