@@ -48,6 +48,11 @@
 - [ ] `bedrijfsfiche.png` — het bewerkscherm met de blokken (Identiteit met **Ophalen**-knop naast BTW, Adres, Contact, Bank, Documenten & huisstijl met het logo-sleepvak) + de **Opslaan**-knop rechtsboven. Plaats bij "De gegevens".
 - [ ] `bedrijfsfiche-logo.png` — (optioneel) het logo-sleepvak in close-up. Plaats bij "Logo".
 
+## Beheer → Gebruikers (`administration/users.md`)
+
+- [ ] `gebruikers-lijst.png` — het lijstscherm vanuit **klant-weergave** (kolommen Gebruiker + Naam, per rij de knoppen **Fiche**, **Wachtwoord resetten**, **Verwijderen**; het aanmaakformulier bovenaan; terug-link). Plaats bij "Een collega toevoegen".
+- [ ] `gebruikers-fiche.png` — de **Fiche**-popup met Telefoon/Gsm/Vertegenwoordiging + de **Mailhandtekening**-editor, en de notitie dat naam/e-mail/functie door ADM One beheerd worden. Plaats bij "De fiche bewerken".
+
 ## Beheer → Verzendadressen (`administration/sender-addresses.md`)
 
 - [ ] `platformbeheer-hub.png` — de hub-pagina **Platformbeheer** met de groep *Communicatie* en de tegel *Verzendadressen*. Plaats bij "Het scherm openen".

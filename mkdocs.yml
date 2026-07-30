@@ -109,6 +109,7 @@ plugins:
             Groepen: Groupes
             Beheer: Gestion
             Bedrijfsfiche: Fiche d'entreprise
+            Gebruikers: Utilisateurs
             Verzendadressen: Adresses d'envoi
             Installatie: Installation
             Eerste aanmelding: Première connexion
@@ -195,4 +196,5 @@ nav:
 
   - Beheer:
     - Bedrijfsfiche: administration/company-profile.md
+    - Gebruikers: administration/users.md
     - Verzendadressen: administration/sender-addresses.md
