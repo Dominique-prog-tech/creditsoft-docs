@@ -43,6 +43,11 @@
 
 - [ ] `groepen-lijst.png` — het lijstscherm + de "Nieuw"-knop. Plaats bij "De lijst".
 
+## Beheer → Bedrijfsfiche (`administration/company-profile.md`)
+
+- [ ] `bedrijfsfiche.png` — het bewerkscherm met de blokken (Identiteit met **Ophalen**-knop naast BTW, Adres, Contact, Bank, Documenten & huisstijl met het logo-sleepvak) + de **Opslaan**-knop rechtsboven. Plaats bij "De gegevens".
+- [ ] `bedrijfsfiche-logo.png` — (optioneel) het logo-sleepvak in close-up. Plaats bij "Logo".
+
 ## Beheer → Verzendadressen (`administration/sender-addresses.md`)
 
 - [ ] `platformbeheer-hub.png` — de hub-pagina **Platformbeheer** met de groep *Communicatie* en de tegel *Verzendadressen*. Plaats bij "Het scherm openen".

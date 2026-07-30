@@ -108,6 +108,7 @@ plugins:
             Professionals: Professionnels
             Groepen: Groupes
             Beheer: Gestion
+            Bedrijfsfiche: Fiche d'entreprise
             Verzendadressen: Adresses d'envoi
             Installatie: Installation
             Eerste aanmelding: Première connexion
@@ -193,4 +194,5 @@ nav:
     - Groepen: crm/groups.md
 
   - Beheer:
+    - Bedrijfsfiche: administration/company-profile.md
     - Verzendadressen: administration/sender-addresses.md
