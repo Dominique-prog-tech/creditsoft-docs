@@ -33,5 +33,15 @@
 - [ ] `verzekeraars-lijst.png` — het lijstscherm (zelfde lay-out als Kredietinstellingen, met Journaal onderaan). Plaats bij "De lijst".
 - [ ] `verzekeraars-bewerken.png` — het bewerkscherm met de postcode-zoeker die de gemeente invult. Plaats bij "Een verzekeraar toevoegen of bewerken".
 
+## Relatiebeheer → Professionals (`crm/professionals.md`)
+
+- [ ] `professionals-lijst.png` — het lijstscherm met de type-filter bovenaan. Plaats bij "De lijst".
+- [ ] `professionals-algemeen.png` — bewerkscherm, tab "Algemeen", met de knop **Ophalen** naast het btw-veld. Plaats bij die tab / de tip over de KBO-ophaling.
+- [ ] `professionals-social.png` — de tab "Social media" (optioneel). Plaats bij "Onglet Réseaux sociaux".
+
+## Relatiebeheer → Groepen (`crm/groups.md`)
+
+- [ ] `groepen-lijst.png` — het lijstscherm + de "Nieuw"-knop. Plaats bij "De lijst".
+
 > Best genomen vanuit een **tester-weergave** (niet het volledige operator-menu), zodat de schermen tonen
 > wat een tester ziet.

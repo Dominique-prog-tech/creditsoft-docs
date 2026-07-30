@@ -104,6 +104,9 @@ plugins:
             Navigeren in CreditSoft: Naviguer dans CreditSoft
             Tweestapsverificatie (2FA): Vérification en deux étapes (2FA)
             Kredieten: Crédits
+            Relatiebeheer: Gestion des relations
+            Professionals: Professionnels
+            Groepen: Groupes
             Installatie: Installation
             Eerste aanmelding: Première connexion
             Interface-overzicht: Aperçu de l'interface
@@ -182,3 +185,7 @@ nav:
   - Kredieten:
     - Kredietinstellingen: credit-management/financial-institutions.md
     - Verzekeraars: credit-management/insurance-companies.md
+
+  - Relatiebeheer:
+    - Professionals: crm/professionals.md
+    - Groepen: crm/groups.md
