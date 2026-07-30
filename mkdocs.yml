@@ -107,6 +107,8 @@ plugins:
             Relatiebeheer: Gestion des relations
             Professionals: Professionnels
             Groepen: Groupes
+            Beheer: Gestion
+            Verzendadressen: Adresses d'envoi
             Installatie: Installation
             Eerste aanmelding: Première connexion
             Interface-overzicht: Aperçu de l'interface
@@ -189,3 +191,6 @@ nav:
   - Relatiebeheer:
     - Professionals: crm/professionals.md
     - Groepen: crm/groups.md
+
+  - Beheer:
+    - Verzendadressen: beheer/verzendadressen.md

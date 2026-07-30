@@ -43,5 +43,11 @@
 
 - [ ] `groepen-lijst.png` — het lijstscherm + de "Nieuw"-knop. Plaats bij "De lijst".
 
+## Beheer → Verzendadressen (`beheer/verzendadressen.md`)
+
+- [ ] `platformbeheer-hub.png` — de hub-pagina **Platformbeheer** met de groep *Communicatie* en de tegel *Verzendadressen*. Plaats bij "Het scherm openen".
+- [ ] `verzendadressen-lijst.png` — het lijstscherm (verzendnaam + e-mailadres, "Nieuw"-knop, terug-link bovenaan). Plaats bij "De lijst".
+- [ ] `verzendadressen-bewerken.png` — het bewerkscherm met de twee verplichte velden (e-mailadres + verzendnaam, rood sterretje). Plaats bij "Een verzendadres toevoegen of bewerken".
+
 > Best genomen vanuit een **tester-weergave** (niet het volledige operator-menu), zodat de schermen tonen
 > wat een tester ziet.
