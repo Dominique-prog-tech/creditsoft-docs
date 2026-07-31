@@ -111,6 +111,7 @@ plugins:
             Bedrijfsfiche: Fiche d'entreprise
             Gebruikers: Utilisateurs
             Mailsjablonen: Modèles d'e-mail
+            Mailmonitoring: Suivi des e-mails
             Rollen: Rôles
             Verzendadressen: Adresses d'envoi
             Installatie: Installation
@@ -200,5 +201,6 @@ nav:
     - Bedrijfsfiche: administration/company-profile.md
     - Gebruikers: administration/users.md
     - Mailsjablonen: administration/mail-templates.md
+    - Mailmonitoring: administration/mail-monitoring.md
     - Rollen: administration/roles.md
     - Verzendadressen: administration/sender-addresses.md

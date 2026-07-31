@@ -62,6 +62,10 @@
 
 - [ ] `mailsjablonen.png` — het editorscherm: bovenaan de **Sjabloon**-keuzelijst, het **variabelen-palet** met de chips, links de taal-tabs (Onderwerp + Body HTML + Bijlagen), rechts het sticky **Voorbeeld**. Plaats bij "Variabelen".
 
+## Beheer → Mailmonitoring (`administration/mail-monitoring.md`)
+
+- [ ] `mailmonitoring.png` — het overzicht met de kolommen Aangemaakt / Type / Naam / Aan / Onderwerp / Verzonden / Aflevering / Reden-fout (groene 'Afgeleverd'-statussen), de statusfilter + Vernieuwen bovenaan links, en zoek + '…'-exportmenu rechtsboven. Plaats bij "Wat je ziet".
+
 ## Beheer → Verzendadressen (`administration/sender-addresses.md`)
 
 - [ ] `platformbeheer-hub.png` — de hub-pagina **Platformbeheer** met de groep *Communicatie* en de tegel *Verzendadressen*. Plaats bij "Het scherm openen".
