@@ -114,6 +114,8 @@ plugins:
             Mailmonitoring: Suivi des e-mails
             Rollen: Rôles
             Verzendadressen: Adresses d'envoi
+            Prullenbak: Corbeille
+            Actielogboek: Journal d'activité
             Installatie: Installation
             Eerste aanmelding: Première connexion
             Interface-overzicht: Aperçu de l'interface
@@ -204,3 +206,5 @@ nav:
     - Mailmonitoring: administration/mail-monitoring.md
     - Rollen: administration/roles.md
     - Verzendadressen: administration/sender-addresses.md
+    - Prullenbak: administration/recycle-bin.md
+    - Actielogboek: administration/activity-log.md
