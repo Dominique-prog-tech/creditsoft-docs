@@ -104,3 +104,14 @@
       rijen. Kies bij voorkeur een beeld waar de teller een gefilterd aantal toont (bv. `2690 / 2990`), zodat
       meteen duidelijk is dat de filters samenwerken. Plaats bovenaan de pagina. Dezelfde afbeelding ook
       onder de FR-pagina.
+
+- [ ] `dashboard.png` — het volledige dashboard met de vier tegels bovenaan en de fasepijplijn eronder.
+      Kies een moment waarop er in meerdere fases dossiers staan. Plaats bovenaan de pagina.
+- [ ] `dashboard-fases.png` — het beheerscherm met links de fasetabel (enkele fases ingevuld, één met
+      Eindfase aangevinkt) en rechts de statustoewijzing. Plaats bovenaan de pagina.
+- [ ] `relaties-lijst.png` — de relatielijst met het filter op soort bovenaan en een mix van particulieren
+      en bedrijven.
+- [ ] `aanbrengers-boom.png` — de boom met één hoofdaanbrenger uitgeklapt zodat de kantoren eronder zichtbaar
+      zijn.
+- [ ] `afspraken-week.png` — de werkweekweergave met de gekleurde legende bovenaan en afspraken van
+      meerdere medewerkers.

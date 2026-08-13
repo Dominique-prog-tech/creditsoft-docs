@@ -188,6 +188,7 @@ nav:
 
   - Aan de slag:
     - Navigeren in CreditSoft: getting-started/navigatie.md
+    - Het dashboard: getting-started/dashboard.md
     - Tweestapsverificatie (2FA): getting-started/tweestapsverificatie.md
 
   # Groeit mee per gevalideerd scherm — voeg hier telkens één regel toe.
@@ -201,7 +202,10 @@ nav:
     - Verzekeringen: credit-management/insurance-contracts.md
 
   - Relatiebeheer:
+    - Relaties: crm/relations.md
     - Professionals: crm/professionals.md
+    - Aanbrengers: crm/contributors.md
+    - Afspraken: crm/meetings.md
     - Groepen: crm/groups.md
 
   - Beheer:
@@ -213,3 +217,4 @@ nav:
     - Verzendadressen: administration/sender-addresses.md
     - Prullenbak: administration/recycle-bin.md
     - Actielogboek: administration/activity-log.md
+    - Dashboard-fases: beheer/dashboard-fases.md
