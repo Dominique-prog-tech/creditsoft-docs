@@ -218,3 +218,6 @@ nav:
     - Prullenbak: administration/recycle-bin.md
     - Actielogboek: administration/activity-log.md
     - Dashboard-fases: beheer/dashboard-fases.md
+    - Keuzelijsten: beheer/keuzelijsten.md
+    - Referentielijsten: beheer/referentielijsten.md
+    - Documenttypes: beheer/documenttypes.md

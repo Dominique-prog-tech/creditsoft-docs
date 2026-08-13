@@ -115,3 +115,7 @@
       zijn.
 - [ ] `afspraken-week.png` — de werkweekweergave met de gekleurde legende bovenaan en afspraken van
       meerdere medewerkers.
+- [ ] `keuzelijsten.png` — het keuzelijsten-scherm met bovenaan de lijstkiezer en eronder de items van één
+      lijst. Kies bij voorkeur een lijst waar een item met "(verwijderd)" in staat.
+- [ ] `referentielijsten.png` — de lijstkiezer met het nummer en enkele items.
+- [ ] `documenttypes.png` — het scherm met de categorieën en enkele types, met een ingevulde hint zichtbaar.
