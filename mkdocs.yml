@@ -195,6 +195,10 @@ nav:
     - Kredietinstellingen: credit-management/financial-institutions.md
     - Verzekeraars: credit-management/insurance-companies.md
 
+  - Lijsten:
+    - Dossieropvolging: credit-management/file-follow-up.md
+    - Schattingen: credit-management/appraisals.md
+
   - Relatiebeheer:
     - Professionals: crm/professionals.md
     - Groepen: crm/groups.md
