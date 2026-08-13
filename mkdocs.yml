@@ -197,6 +197,7 @@ nav:
     - Verzekeraars: credit-management/insurance-companies.md
 
   - Lijsten:
+    - Taken: credit-management/tasks.md
     - Dossieropvolging: credit-management/file-follow-up.md
     - Schattingen: credit-management/appraisals.md
     - Verzekeringen: credit-management/insurance-contracts.md

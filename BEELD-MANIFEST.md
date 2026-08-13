@@ -119,3 +119,5 @@
       lijst. Kies bij voorkeur een lijst waar een item met "(verwijderd)" in staat.
 - [ ] `referentielijsten.png` — de lijstkiezer met het nummer en enkele items.
 - [ ] `documenttypes.png` — het scherm met de categorieën en enkele types, met een ingevulde hint zichtbaar.
+- [ ] `taken-overzicht.png` — het takenscherm met de drie filters bovenaan en een mix van soorten in de kolom
+      "Hangt aan": minstens één dossier, één relatie en één losse taak.
