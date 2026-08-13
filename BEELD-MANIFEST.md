@@ -99,3 +99,8 @@
 - [ ] `schattingen-lijst.png` — het scherm met de drie keuzelijsten en een tiental rijen, met zichtbare
       vinkjes in **Aangesteld** en **Rapport ontvangen** en gevulde aanstellingsdatums. Plaats bij
       "De kolommen". Dezelfde afbeelding ook onder de FR-pagina.
+
+- [ ] `verzekeringen-lijst.png` — het Verzekeringen-scherm met de drie keuzelijsten bovenaan en een tiental
+      rijen. Kies bij voorkeur een beeld waar de teller een gefilterd aantal toont (bv. `2690 / 2990`), zodat
+      meteen duidelijk is dat de filters samenwerken. Plaats bovenaan de pagina. Dezelfde afbeelding ook
+      onder de FR-pagina.
