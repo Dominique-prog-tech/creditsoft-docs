@@ -193,6 +193,7 @@ nav:
 
   # Groeit mee per gevalideerd scherm — voeg hier telkens één regel toe.
   - Kredieten:
+    - Kredietdossiers: credit-management/credit-files.md
     - Kredietinstellingen: credit-management/financial-institutions.md
     - Verzekeraars: credit-management/insurance-companies.md
 
