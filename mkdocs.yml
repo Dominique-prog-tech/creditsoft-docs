@@ -23,7 +23,7 @@ theme:
         icon: material/brightness-7
         name: Schakel naar donkere modus
     - scheme: slate
-      primary: indigo
+      primary: black
       accent: indigo
       toggle:
         icon: material/brightness-4
@@ -58,6 +58,10 @@ markdown_extensions:
   - tables
   - attr_list
   - md_in_html
+  # Iconen (:material-…: / :octicons-…:) voor het kaartraster op de onthaalpagina.
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 plugins:
   - search:
@@ -93,7 +97,7 @@ plugins:
                   icon: material/brightness-7
                   name: Passer en mode sombre
               - scheme: slate
-                primary: indigo
+                primary: black
                 accent: indigo
                 toggle:
                   icon: material/brightness-4
@@ -104,10 +108,14 @@ plugins:
             Navigeren in CreditSoft: Naviguer dans CreditSoft
             Tweestapsverificatie (2FA): Vérification en deux étapes (2FA)
             Kredieten: Crédits
+            Lijsten: Listes
             Relatiebeheer: Gestion des relations
             Professionals: Professionnels
             Groepen: Groupes
-            Beheer: Gestion
+            # "Beheer" stond hier ook, met vertaling "Gestion", én verderop met
+            # "Configuration". YAML slikt een dubbele sleutel zonder waarschuwing en
+            # de laatste wint — dus "Gestion" deed niets. Hier weggehaald; de
+            # overgebleven "Beheer: Configuration" verderop is de werkende.
             Bedrijfsfiche: Fiche d'entreprise
             Gebruikers: Utilisateurs
             Mailsjablonen: Modèles d'e-mail
@@ -116,6 +124,17 @@ plugins:
             Verzendadressen: Adresses d'envoi
             Prullenbak: Corbeille
             Actielogboek: Journal d'activité
+            # Ontbraken en verschenen onvertaald in de Franse navigatie (14/08/2026).
+            Het dashboard: Le tableau de bord
+            Dossieropvolging: Suivi des dossiers
+            Verzekeringen: Assurances
+            Relaties: Relations
+            Aanbrengers: Apporteurs
+            Afspraken: Rendez-vous
+            Dashboard-fases: Phases du tableau de bord
+            Keuzelijsten: Listes de choix
+            Referentielijsten: Listes de référence
+            Documenttypes: Types de documents
             Installatie: Installation
             Eerste aanmelding: Première connexion
             Interface-overzicht: Aperçu de l'interface

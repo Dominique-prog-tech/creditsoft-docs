@@ -6,13 +6,13 @@
    dus die schalen automatisch mee — NIET expliciet overschrijven. */
 
 .md-typeset {
-  font-size: 0.76rem;
-  line-height: 1.65;
+  font-size: 0.8rem;
+  line-height: 1.72;
 }
 
 /* Sidebar en nav iets compacter */
 .md-nav {
-  font-size: 0.7rem;
+  font-size: 0.72rem;
 }
 
 
@@ -74,5 +74,120 @@
    Lager getal = compactere site overal (header, tabs, sidebar, body, footer).
    Eén knop om alles proportioneel mee te schalen. */
 html {
-  font-size: 125%;
+  font-size: 130%;
+}
+
+
+/* === Merkkleur (augustus 2026) =================================================
+   De site had geen enkel merkanker: primary stond op "white", accent op indigo.
+   De kleuren hieronder komen uit het CreditSoft-logo (docs/images/logo.svg):
+   #1d4ed8 diep blauw, #60a5fa licht blauw.
+
+   Bewuste keuze: de header blijft WIT. Een volblauwe balk oogt gedateerd; het
+   merk komt terug in links, actieve navigatie en accenten. */
+:root {
+  --cs-blauw: #1d4ed8;
+  --cs-blauw-licht: #60a5fa;
+  --md-accent-fg-color: var(--cs-blauw);
+  --md-typeset-a-color: var(--cs-blauw);
+}
+[data-md-color-scheme="slate"] {
+  /* Op donkere achtergrond is #1d4ed8 te donker om te lezen — lichter nemen. */
+  --md-accent-fg-color: var(--cs-blauw-licht);
+  --md-typeset-a-color: var(--cs-blauw-licht);
+}
+
+/* Actieve pagina in de zijbalk krijgt het merkblauw i.p.v. Material's indigo */
+.md-nav__link--active,
+.md-nav__link--active:focus,
+.md-nav__link--active:hover {
+  color: var(--md-typeset-a-color);
+  font-weight: 600;
+}
+
+/* === Leeskolom (augustus 2026) =================================================
+   Gemeten op 1541 px venster: de contentkolom was 736 px — minder dan de helft,
+   met twee schaarse zijkolommen eromheen. Material's .md-grid staat standaard op
+   61rem; ruimer zetten geeft de tekst zijn plaats terug zonder de regels
+   onleesbaar lang te maken (~90 tekens blijft de bovengrens). */
+.md-grid {
+  max-width: 70rem;
+}
+
+/* === Koppen ====================================================================
+   h2 en h3 leken te veel op elkaar: zelfde kleur, nauwelijks verschil in gewicht.
+   h2 krijgt een fijne scheidingslijn zodat een lange pagina leesbaar opdeelt. */
+.md-typeset h2 {
+  font-weight: 650;
+  letter-spacing: -0.01em;
+  margin-top: 2.2em;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+}
+.md-typeset h3 {
+  font-weight: 600;
+  margin-top: 1.8em;
+}
+
+/* === Onthaalpagina =============================================================
+   De home was een titel met een bullet-lijst en daaronder 60% lege pagina.
+   Hieronder de opmaak voor het nieuwe onthaal: een kop-blok plus een kaartraster
+   (Material's ingebouwde .grid.cards, mogelijk dankzij attr_list + md_in_html). */
+.cs-hero {
+  padding: 2.2rem 0 1.6rem;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+  margin-bottom: 2rem;
+}
+.cs-hero h1 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin: 0 0 0.5rem;
+  background: linear-gradient(95deg, var(--cs-blauw), var(--cs-blauw-licht));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.cs-hero p {
+  font-size: 0.9rem;
+  color: var(--md-default-fg-color--light);
+  max-width: 34rem;
+  margin: 0;
+}
+
+/* Drie kolommen op een breed scherm: met Material's standaard (auto-fit vanaf 16rem)
+   werden het er vier, en brak de zesde kaart af op een halve rij. 20rem geeft 3×2.
+   Let op: het raster staat op de .grid-div zelf — de <ul> erbinnen is
+   display:contents, dus daar heeft grid-template-columns geen effect. */
+@media screen and (min-width: 60em) {
+  .md-typeset .grid.cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Kaartraster: rustiger rand, merkblauw bij hover, titel zonder extra marge */
+.md-typeset .grid.cards > ul > li {
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.5rem;
+  padding: 1rem 1.1rem;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
+}
+.md-typeset .grid.cards > ul > li:hover {
+  border-color: var(--md-accent-fg-color);
+  box-shadow: 0 2px 12px rgba(29, 78, 216, 0.09);
+  transform: translateY(-2px);
+}
+.md-typeset .grid.cards > ul > li > hr {
+  margin: 0.6em 0;
+  border-color: var(--md-default-fg-color--lightest);
+}
+.md-typeset .grid.cards > ul > li p:last-child {
+  color: var(--md-default-fg-color--light);
+  font-size: 0.74rem;
+  margin-bottom: 0;
+}
+
+/* Wat er nog niet is, mag zichtbaar zijn zonder klikbaar te lijken. */
+.cs-binnenkort {
+  opacity: 0.55;
+  pointer-events: none;
 }
