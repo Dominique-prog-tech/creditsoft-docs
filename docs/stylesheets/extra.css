@@ -84,14 +84,29 @@ html {
    #1d4ed8 diep blauw, #60a5fa licht blauw.
 
    Bewuste keuze: de header blijft WIT. Een volblauwe balk oogt gedateerd; het
-   merk komt terug in links, actieve navigatie en accenten. */
-:root {
+   merk komt terug in links, actieve navigatie en accenten.
+
+   ⚠️ WAAROM DE SELECTORS ER ZO UITZIEN. Deze regels stonden eerst enkel op :root,
+   en dan komt er van het merkblauw niets op de pagina terecht — gemeten op de live
+   site: de variabele klopte op <html> (#1d4ed8) terwijl elke link indigo rendeerde
+   (#4051b5). Geen specificiteitsgevecht op hetzelfde element, maar een verkeerd
+   element: Material zet `data-md-color-primary` op de BODY en declareert daar
+   `[data-md-color-primary=white] { --md-typeset-a-color: #4051b5 }`. Alles binnen
+   de body erft die body-waarde; de :root-waarde op <html> komt er nooit aan te pas.
+   In de inspector lijkt alles in orde, want op <html> staat de juiste kleur.
+
+   Vandaar `[data-md-color-primary]` erbij: dan landt onze declaratie op hetzelfde
+   element als die van Material. Voor donker maakt het twee attributen (0,2,0), zodat
+   we winnen ongeacht de laadvolgorde van de stylesheets. */
+:root,
+[data-md-color-primary] {
   --cs-blauw: #1d4ed8;
   --cs-blauw-licht: #60a5fa;
   --md-accent-fg-color: var(--cs-blauw);
   --md-typeset-a-color: var(--cs-blauw);
 }
-[data-md-color-scheme="slate"] {
+[data-md-color-scheme="slate"],
+[data-md-color-scheme="slate"][data-md-color-primary] {
   /* Op donkere achtergrond is #1d4ed8 te donker om te lezen — lichter nemen. */
   --md-accent-fg-color: var(--cs-blauw-licht);
   --md-typeset-a-color: var(--cs-blauw-licht);
@@ -186,8 +201,3 @@ html {
   margin-bottom: 0;
 }
 
-/* Wat er nog niet is, mag zichtbaar zijn zonder klikbaar te lijken. */
-.cs-binnenkort {
-  opacity: 0.55;
-  pointer-events: none;
-}
