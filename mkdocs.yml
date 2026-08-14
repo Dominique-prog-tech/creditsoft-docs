@@ -133,7 +133,6 @@ plugins:
             Afspraken: Rendez-vous
             Dashboard-fases: Phases du tableau de bord
             Keuzelijsten: Listes de choix
-            Referentielijsten: Listes de référence
             Documenttypes: Types de documents
             Installatie: Installation
             Eerste aanmelding: Première connexion
@@ -240,5 +239,4 @@ nav:
     - Actielogboek: administration/activity-log.md
     - Dashboard-fases: beheer/dashboard-fases.md
     - Keuzelijsten: beheer/keuzelijsten.md
-    - Referentielijsten: beheer/referentielijsten.md
     - Documenttypes: beheer/documenttypes.md
