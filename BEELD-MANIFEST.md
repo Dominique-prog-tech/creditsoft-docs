@@ -47,7 +47,10 @@
 ## Kredieten → Verzekeraars (`credit-management/insurance-companies.md`)
 
 - [x] `verzekeraars-lijst.png` + `-fr` — het lijstscherm. Geplaatst 15/08/2026.
-- [x] `verzekeraars-bewerken.png` + `-fr` — het bewerkscherm met de postcode-zoeker, de documenttaal en de logo-knop. Geplaatst 15/08/2026.
+- [x] `verzekeraars-fiche.png` + `-fr` — de volledige fiche op één pagina (algemene informatie met het
+      instellingsnummer en de documenttaal, opmerkingen, knoppenbalk). Geplaatst 15/08/2026.
+      *Vervangt* `verzekeraars-bewerken` — de fiche is een pagina in plaats van een pop-up. Het
+      screenshot-script knipte daar nog `.dxbl-popup` uit; die clip is weg, anders faalt de opname.
 
 ## Relatiebeheer → Professionals (`crm/professionals.md`)
 
