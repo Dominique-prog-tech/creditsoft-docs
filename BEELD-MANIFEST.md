@@ -45,8 +45,8 @@
 
 ## Kredieten → Verzekeraars (`credit-management/insurance-companies.md`)
 
-- [ ] `verzekeraars-lijst.png` — het lijstscherm (zelfde lay-out als Kredietinstellingen, met Journaal onderaan). Plaats bij "De lijst".
-- [ ] `verzekeraars-bewerken.png` — het bewerkscherm met de postcode-zoeker die de gemeente invult. Plaats bij "Een verzekeraar toevoegen of bewerken".
+- [x] `verzekeraars-lijst.png` + `-fr` — het lijstscherm. Geplaatst 15/08/2026.
+- [x] `verzekeraars-bewerken.png` + `-fr` — het bewerkscherm met de postcode-zoeker, de documenttaal en de logo-knop. Geplaatst 15/08/2026.
 
 ## Relatiebeheer → Professionals (`crm/professionals.md`)
 
