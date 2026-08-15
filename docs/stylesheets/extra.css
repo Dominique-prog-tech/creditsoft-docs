@@ -201,3 +201,40 @@ html {
   margin-bottom: 0;
 }
 
+
+/* === Schermafbeeldingen (15/08/2026) ===========================================
+   Twee mankementen die Dominique aanwees op de eerste geplaatste beelden:
+
+   1. Een staand beeld (een pop-up/fiche) nam de VOLLE breedte van de tekstkolom en
+      werd daardoor loodrecht enorm — een fiche van 1240x1700 wordt op een kolom van
+      ~720px zo'n duizend pixels hoog. Vandaar een hoogtebegrenzing i.p.v. enkel een
+      breedtebegrenzing: staande beelden krimpen mee, liggende (lijstschermen) vullen
+      gewoon de kolom zoals het hoort.
+
+   2. Onze schermen hebben een WITTE achtergrond, de pagina ook. Zonder rand zweeft
+      het beeld in het niets en zie je niet waar het begint of eindigt. Vandaar een
+      haarlijn rond elk beeld.
+
+   ⚠️ `:not(.twemoji)`: Material rendert emoji als <img>. Zonder die uitzondering
+   krijgt elke emoji in de tekst een kadertje. */
+.md-typeset img:not(.twemoji):not(.emojione) {
+  display: block;
+  margin: 1.3rem auto;
+  max-width: 100%;
+  max-height: 30rem;
+  width: auto;
+  /* Bewust GEEN --md-default-fg-color--lightest: die staat op 7 % zwart en is tegen
+     een witte schermafbeelding praktisch onzichtbaar — precies het probleem dat deze
+     regel moet oplossen. Vandaar een eigen, iets stevigere lijn. */
+  border: 1px solid rgba(0, 0, 0, 0.16);
+  border-radius: 0.4rem;
+  /* Heel lichte schaduw: geeft het beeld iets van diepte zonder op te vallen. */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+/* In donkere modus is --lightest bijna onzichtbaar tegen de donkere achtergrond;
+   daar is een iets steviger lijn nodig om hetzelfde effect te krijgen. */
+[data-md-color-scheme="slate"] .md-typeset img:not(.twemoji):not(.emojione) {
+  border-color: rgba(255, 255, 255, 0.22);
+  box-shadow: none;
+}
