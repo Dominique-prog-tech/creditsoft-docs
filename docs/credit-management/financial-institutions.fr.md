@@ -47,8 +47,12 @@ Vous y définissez le **régime de commission par défaut** applicable à ce pr�
 
 Les pourcentages se saisissent de **0 à 100** avec deux décimales ; ils sont affichés avec un signe % (p. ex. *1,50 %*).
 
-!!! warning "Un seul type à la fois"
-    Il n'est possible de choisir que **0 ou 1** type de commissionnement. Si vous choisissez à la fois *Paiement échelonné* et *Paiements planifiés*, CreditSoft affiche un message lors de l'enregistrement.
+Sous la liste des paiements planifiés, un **total courant** s'affiche : *Total : 75 % sur 100 %*. Dès que vous atteignez 100 %, il passe au vert.
+
+!!! warning "Ce que CreditSoft contrôle à l'enregistrement"
+    - **Un seul type à la fois** — il n'est possible de choisir que **0 ou 1** type de commissionnement. Si vous choisissez à la fois *Paiement échelonné* et *Paiements planifiés*, l'enregistrement est refusé.
+    - **Nombre de mois** — si vous cochez *Paiement échelonné*, le **nombre de mois** doit être renseigné.
+    - **Total de 100 %** — pour les *Paiements planifiés*, le **pourcentage direct** et tous les pourcentages planifiés doivent totaliser **exactement 100 %**. Le message affiche le total actuel, pour que vous voyiez ce qu'il manque.
 
 ### Onglet « Réseaux sociaux »
 

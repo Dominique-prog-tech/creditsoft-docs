@@ -47,8 +47,12 @@ Hier legt u de **standaard commissieregeling** vast die voor deze kredietverstre
 
 Percentages voert u in van **0 tot 100** met twee decimalen; ze worden getoond met een %-teken (bv. *1,50 %*).
 
-!!! warning "Eén type tegelijk"
-    Er kan slechts **0 of 1** type van commissionering gekozen worden. Kiest u zowel *Gespreide betaling* als *Geplande betalingen*, dan geeft CreditSoft een melding bij het opslaan.
+Onder de lijst met geplande betalingen ziet u een **lopend totaal**: *Totaal: 75 % van 100 %*. Zodra u op 100 % staat, kleurt het groen.
+
+!!! warning "Wat CreditSoft controleert bij het opslaan"
+    - **Eén type tegelijk** — er kan slechts **0 of 1** type van commissionering gekozen worden. Kiest u zowel *Gespreide betaling* als *Geplande betalingen*, dan wordt het opslaan geweigerd.
+    - **Aantal maanden** — vinkt u *Gespreide betaling* aan, dan moet het **aantal maanden** ingevuld zijn.
+    - **Samen 100 %** — bij *Geplande betalingen* moeten het **percentage direct** en alle geplande percentages **samen exact 100 %** vormen. De melding toont het huidige totaal, zodat u ziet hoeveel er ontbreekt.
 
 ### Tab "Social media"
 
