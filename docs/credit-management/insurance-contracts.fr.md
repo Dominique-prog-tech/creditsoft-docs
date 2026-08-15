@@ -13,7 +13,7 @@ Dans la barre latérale, cliquez sur **Listes**, puis sur **Assurances**.
 En haut figurent trois listes de choix. Chacune est réglée par défaut sur « tous » et, ensemble, elles agissent comme un seul filtre.
 
 - **Produit** — les produits d'assurance que vous proposez. Si vous n'en avez qu'un, la liste n'en propose qu'un.
-- **Statut** — où en est la police : offre, acceptation médicale, police disponible, police signée, etc. En bas de cette liste figure **Aucun statut renseigné** : ce sont les polices reprises de l'ancien programme sans qu'un statut y ait jamais été apposé. Ce choix vous permet de les appeler de manière ciblée pour les mettre à jour.
+- **Statut** — où en est la police : offre, acceptation médicale, police disponible, police signée, etc. En bas de cette liste figure **Aucun statut renseigné** : les polices qui n'ont pas encore de statut. Ce choix vous permet de les appeler de manière ciblée pour les mettre à jour.
 - **Responsable** — le collaborateur qui suit le dossier.
 
 À droite des listes de choix figure le nombre de lignes affichées sur le total, par exemple `2690 / 2990`.

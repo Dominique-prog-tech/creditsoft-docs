@@ -232,6 +232,20 @@ html {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
 }
 
+/* Uitzondering op de hoogtebegrenzing hierboven: een BEWERKSCHERM is sinds 15/08/2026
+   geen pop-up meer maar een volledige pagina, en dus bijna vierkant. Met de cap van
+   30rem krimpt zo'n beeld tot ~550px breed en is er van de veldnamen niets meer te
+   lezen. Deze beelden vullen daarom de volle tekstkolom.
+
+   Gebruik: zet `{ .volle-breedte }` achter de afbeelding (werkt dankzij `attr_list`):
+       ![alt](../images/x-fiche.png "titel"){ .volle-breedte }
+   Enkel voor beelden van een volledig bewerkscherm — niet voor lijsten (die zijn
+   liggend en vullen de kolom sowieso) en niet voor uitsneden. */
+.md-typeset img.volle-breedte:not(.twemoji):not(.emojione) {
+  max-height: none;
+  width: 100%;
+}
+
 /* In donkere modus is --lightest bijna onzichtbaar tegen de donkere achtergrond;
    daar is een iets steviger lijn nodig om hetzelfde effect te krijgen. */
 [data-md-color-scheme="slate"] .md-typeset img:not(.twemoji):not(.emojione) {

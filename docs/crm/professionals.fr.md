@@ -35,10 +35,6 @@ L'écran d'édition est divisé en trois onglets.
 
 Un **contact de facturation** et une **adresse e-mail de facturation** distincts (liés à l'adresse de l'onglet *Général*).
 
-### Onglet « Réseaux sociaux »
-
-Liens facultatifs : Facebook, Twitter / X, Instagram et LinkedIn.
-
 ## Enregistrer
 
 Cliquez sur **Enregistrer** pour sauvegarder. Une **adresse e-mail** modifiée est vérifiée pour sa validité.

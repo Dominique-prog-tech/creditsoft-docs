@@ -15,7 +15,7 @@ Le tableau affiche par institution : **nom**, **commune**, **téléphone**, **e-
 - **Rechercher** — utilisez le champ de recherche pour chercher dans toutes les colonnes à la fois.
 - **Choisir les colonnes** — affichez ou masquez des colonnes ; votre choix est mémorisé.
 - **Exporter** — exportez la liste via Excel ou CSV.
-- **Nouveau / modifier** — cliquez sur **Nouveau**, ou **double-cliquez** une ligne pour ouvrir l'écran d'édition.
+- **Nouveau / modifier** — cliquez sur **Nouveau**, ou **double-cliquez** une ligne pour ouvrir la fiche.
 - **Supprimer** — une institution est **archivée** (suppression douce), pas définitivement effacée ; elle disparaît de la liste mais reste conservée.
 
 ### Journal
@@ -24,24 +24,31 @@ Le tableau affiche par institution : **nom**, **commune**, **téléphone**, **e-
 par institution, vos **tâches, notes, pièces jointes et courriers**, ainsi que le **journal** des modifications.
 Le tiroir retient si vous l'avez laissé ouvert ou fermé.
 
-## Ajouter ou modifier une institution
+## La fiche d'une institution
 
-L'écran d'édition est divisé en trois onglets.
+**Nouveau** et un double-clic ouvrent tous deux la **fiche sur une page entière**. En haut figure un lien de
+retour vers la liste, suivi du nom de l'institution.
 
-### Onglet « Informations générales »
+![La fiche de l'institution de crédit AXA Bank sur toute la page : en haut le bloc Informations générales avec le nom, l'adresse, les coordonnées et la langue des documents, en dessous le bloc Commissionnement par défaut avec un pourcentage direct de 40 % et quatre paiements planifiés totalisant 100 %, en bas le large bloc Remarques et une barre avec les boutons Enregistrer, Annuler et Supprimer.](../images/kredietinstellingen-fiche-fr.png "La fiche complète d'une institution de crédit, avec les données générales, le commissionnement et les remarques"){ .volle-breedte }
 
-![L'écran d'édition d'une institution de crédit, onglet Informations générales : nom AXA Bank, adresse Bankstraat 49 à 2000 Antwerpen, pays Belgique, téléphone, e-mail et site web, la langue des documents sur Néerlandais, un champ pour les remarques et en bas le bouton pour choisir un logo.](../images/kredietinstellingen-algemeen-fr.png "Compléter les données de base d'une institution de crédit")
+La fiche se compose de trois blocs, avec en bas une barre de boutons qui reste visible.
 
-Les données de base de l'institution :
+### Informations générales
 
 - **Nom** (obligatoire)
-- **Adresse** — rue, numéro, boîte, code postal, commune, pays. Tapez dans le champ du code postal et choisissez dans la liste : la **commune est complétée automatiquement**. L'inverse fonctionne également.
+- **Adresse** — rue, numéro, boîte, code postal, commune, pays.
 - **Contact** — téléphone, fax, e-mail, site web
-- **Langue des documents** — la langue dans laquelle vous correspondez avec cette institution (néerlandais ou français). Elle détermine la langue des modèles d'e-mail et des documents établis pour cette institution.
-- **Remarques**
-- **Logo** — chargez une image ; elle apparaît notamment sur les impressions
+- **Langue des documents** (obligatoire) — la langue dans laquelle vous correspondez avec cette institution (néerlandais ou français). Elle détermine la langue des modèles d'e-mail et des documents établis pour cette institution.
+- **Logo** — chargez une image ; elle apparaît notamment sur les impressions.
 
-### Onglet « Commissionnement par défaut »
+!!! tip "Code postal et commune"
+    Tapez dans le champ **Code postal** : la liste affiche à la fois le code postal et la commune, vous
+    pouvez donc chercher sur les deux — également sur *Gent* ou *Liège*. Lorsque vous choisissez un code
+    postal, la **commune est toujours complétée**, même si un nom s'y trouvait déjà. Si vous videz la
+    commune — avec la croix ou avec **Retour arrière** sur le texte sélectionné — le code postal est vidé
+    lui aussi. Les deux champs restent ainsi toujours cohérents.
+
+### Commissionnement par défaut
 
 Vous y définissez le **régime de commission par défaut** applicable à ce prêteur. Vous choisissez **au maximum un** des deux types (ils sont mutuellement exclusifs) :
 
@@ -53,17 +60,24 @@ Les pourcentages se saisissent de **0 à 100** avec deux décimales ; ils sont a
 
 Sous la liste des paiements planifiés, un **total courant** s'affiche : *Total : 75 % sur 100 %*. Dès que vous atteignez 100 %, il passe au vert.
 
-![L'onglet Commissionnement par défaut d'une institution de crédit : pourcentage direct à 40,00 %, la case Paiements planifiés cochée, trois lignes avec les mois 12, 24 et 36 pour respectivement 30,00 %, 20,00 % et 10,00 %, et en dessous, en vert, Total : 100 % sur 100 %.](../images/kredietinstellingen-commissionering-fr.png "Définir le régime de commission par défaut d'une institution de crédit")
-
 !!! warning "Ce que CreditSoft contrôle à l'enregistrement"
     - **Un seul type à la fois** — il n'est possible de choisir que **0 ou 1** type de commissionnement. Si vous choisissez à la fois *Paiement échelonné* et *Paiements planifiés*, l'enregistrement est refusé.
     - **Nombre de mois** — si vous cochez *Paiement échelonné*, le **nombre de mois** doit être renseigné.
     - **Total de 100 %** — pour les *Paiements planifiés*, le **pourcentage direct** et tous les pourcentages planifiés doivent totaliser **exactement 100 %**. Le message affiche le total actuel, pour que vous voyiez ce qu'il manque.
 
-### Onglet « Réseaux sociaux »
+### Remarques
 
-Liens facultatifs vers les réseaux sociaux de l'institution : Facebook, Twitter, Google+ et Instagram.
+En bas se trouve un large champ **Remarques**, sur toute la largeur de la fiche, pour vos notes libres sur cette
+institution.
 
 ## Enregistrer
 
-Cliquez sur **Enregistrer** pour sauvegarder l'institution. Les champs obligatoires manquants, une **adresse e-mail invalide** ou un choix de commission invalide sont signalés lors de l'enregistrement.
+La barre de boutons du bas reste visible pendant que vous faites défiler la fiche :
+
+- **Enregistrer** — sauvegarde l'institution.
+- **Annuler** — retourne à la liste sans sauvegarder.
+- **Supprimer** — archive l'institution (à droite dans la barre).
+
+À l'enregistrement, les **champs obligatoires manquants** (nom, langue des documents), une **adresse e-mail
+invalide** et un choix de commission invalide sont signalés. L'adresse e-mail est contrôlée dès qu'il y a
+quelque chose dans le champ, même si vous ne l'avez pas modifiée vous-même.

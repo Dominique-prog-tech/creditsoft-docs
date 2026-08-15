@@ -35,10 +35,6 @@ Het bewerkscherm is opgedeeld in drie tabbladen.
 
 Een apart **facturatiecontact** en **facturatie-e-mailadres** (bij het adres uit de tab *Algemeen*).
 
-### Tab "Social media"
-
-Optionele links: Facebook, Twitter / X, Instagram en LinkedIn.
-
 ## Opslaan
 
 Klik op **Opslaan** om te bewaren. Een gewijzigd **e-mailadres** wordt op geldigheid gecontroleerd.

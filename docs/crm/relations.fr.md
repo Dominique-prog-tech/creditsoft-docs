@@ -1,6 +1,6 @@
 # Relations
 
-Toutes les personnes et entreprises avec lesquelles vous êtes en contact figurent dans une seule liste : clients, garants, propriétaires et personnes de contact. C'étaient autrefois des listes distinctes ; c'est désormais un seul écran avec un filtre.
+Toutes les personnes et entreprises avec lesquelles vous êtes en contact figurent dans une seule liste : clients, garants, propriétaires et personnes de contact — un seul écran avec un filtre.
 
 <!-- AFBEELDING: de relatielijst met het filter op soort bovenaan -->
 
@@ -22,7 +22,7 @@ Double-cliquez sur une ligne pour ouvrir la fiche.
 | Partie | Ce que vous pouvez y renseigner |
 |---|---|
 | **Identité** | Nom, date et lieu de naissance, numéro de registre national, carte d'identité |
-| **Contact** | Téléphone, GSM, e-mail, site web et réseaux sociaux |
+| **Contact** | Téléphone, GSM, e-mail et site web |
 | **Adresse** | Rue, numéro, boîte, code postal, commune et pays |
 | **Famille et profession** | État civil, régime matrimonial, partenaire, enfants à charge, profession et employeur |
 

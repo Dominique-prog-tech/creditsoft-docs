@@ -1,6 +1,6 @@
 # Relaties
 
-Alle personen en bedrijven waarmee u te maken hebt, staan in één lijst: klanten, borgen, eigenaars en contactpersonen. Vroeger waren dat aparte lijsten; nu is het één scherm met een filter.
+Alle personen en bedrijven waarmee u te maken hebt, staan in één lijst: klanten, borgen, eigenaars en contactpersonen — één scherm met een filter.
 
 <!-- AFBEELDING: de relatielijst met het filter op soort bovenaan -->
 
@@ -22,7 +22,7 @@ Dubbelklik op een rij om de fiche te openen.
 | Onderdeel | Wat u erin kwijt kan |
 |---|---|
 | **Identiteit** | Naam, geboortedatum en -plaats, rijksregisternummer, identiteitskaart |
-| **Contact** | Telefoon, gsm, e-mail, website en sociale media |
+| **Contact** | Telefoon, gsm, e-mail en website |
 | **Adres** | Straat, huisnummer, bus, postcode, gemeente en land |
 | **Gezin en beroep** | Burgerlijke staat, huwelijksstelsel, partner, kinderen ten laste, beroep en werkgever |
 

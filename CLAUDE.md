@@ -82,6 +82,21 @@ De docs-navigatie volgt **één-op-één de sidebar** die de gebruiker ziet:
   worden verwijderd uit de source. Niet documenteren.
 - **Portaal-module**: nog in ontwikkeling. Later toevoegen, niet in v1.
 
+### Beschrijf wat er ís, niet wat er veranderd is
+De handleiding beschrijft **de huidige toestand**, punt. Geen "voortaan", "nieuw", "niet meer",
+"vroeger waren dat aparte lijsten", "overgekomen uit het vorige programma" — en ook geen impliciete
+vergelijking zoals "de fiche is een pagina, **geen venster over de lijst heen**". Frans idem:
+*désormais*, *auparavant*, *l'ancien programme*.
+
+**Waarom:** wie de handleiding leest kent de vorige versie niet, of niet meer. Een verandering is
+nieuws op het moment dat ze gebeurt — dat hoort in de **release notes**, die daar precies voor
+bestaan. In de handleiding veroudert zo'n zin stil: over een jaar staat er "voortaan" bij iets dat
+er al twaalf maanden zo uitziet.
+
+Uitzondering: een **datafeit** dat een gebruiker vandaag tegenkomt mag je uitleggen, maar zonder de
+geschiedenis erbij. *"Polissen waar nog geen status op staat"* — niet *"polissen die uit het vorige
+programma zijn overgekomen zonder status"*.
+
 ## Vaktermen die uitleg verdienen
 
 Deze termen komen vaak voor en horen in `docs/concepten/begrippenlijst.md`:

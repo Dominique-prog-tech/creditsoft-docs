@@ -68,6 +68,23 @@ plugins:
       lang:
         - nl
         - fr
+  # Klik op een schermafbeelding = schermvullend openen, met zoom en pijltjes tussen de beelden van
+  # dezelfde pagina. Nodig omdat een bewerkscherm van 2560 px breed in een tekstkolom van ~830 px
+  # onleesbaar klein wordt. Staat vóór `i18n`: die plugin bouwt per taal een aparte pagina, en glightbox
+  # moet op elke gebouwde pagina passeren.
+  - glightbox:
+      touchNavigation: true
+      loop: false
+      effect: zoom
+      slide_effect: slide
+      width: 100%
+      height: auto
+      zoomable: true
+      draggable: true
+      # Alleen echte schermafbeeldingen, geen emoji-iconen en geen logo in de kopbalk.
+      skip_classes:
+        - twemoji
+        - emojione
   - i18n:
       docs_structure: suffix
       reconfigure_material: true

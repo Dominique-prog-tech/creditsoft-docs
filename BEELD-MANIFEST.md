@@ -37,11 +37,12 @@
 ## Kredieten → Kredietinstellingen (`credit-management/financial-institutions.md`)
 
 - [x] `kredietinstellingen-lijst.png` + `-fr` — het lijstscherm (grid + zoekveld + "Nieuw"). Geplaatst 15/08/2026.
-- [x] `kredietinstellingen-algemeen.png` + `-fr` — bewerkscherm, tab "Algemene informatie". Geplaatst 15/08/2026,
+- [x] `kredietinstellingen-fiche.png` + `-fr` — de volledige fiche op één pagina (algemene informatie,
+      commissionering met het groene totaal, opmerkingen, knoppenbalk). Geplaatst 15/08/2026,
       nadat de `AdmOne:ApiKey` in de dev-secrets stond: daarvóór toonde het land `BE` in plaats van "België",
       omdat de referentiedienst `401` gaf en de keuzelijst terugviel op een gewoon tekstveld.
-- [x] `kredietinstellingen-commissionering.png` + `-fr` — tab "Standaard commissionering" met de
-      percentage-opmaak en het groene totaal. Geplaatst 15/08/2026.
+      *Vervangt de twee oude tabbeelden* (`-algemeen`, `-commissionering`) — de fiche is sinds 15/08/2026 een
+      pagina in plaats van een pop-up met tabbladen.
 
 ## Kredieten → Verzekeraars (`credit-management/insurance-companies.md`)
 
@@ -52,7 +53,6 @@
 
 - [ ] `professionals-lijst.png` — het lijstscherm met de type-filter bovenaan. Plaats bij "De lijst".
 - [ ] `professionals-algemeen.png` — bewerkscherm, tab "Algemeen", met de knop **Ophalen** naast het btw-veld. Plaats bij die tab / de tip over de KBO-ophaling.
-- [ ] `professionals-social.png` — de tab "Social media" (optioneel). Plaats bij "Onglet Réseaux sociaux".
 
 ## Relatiebeheer → Groepen (`crm/groups.md`)
 

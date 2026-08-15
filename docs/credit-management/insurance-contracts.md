@@ -13,7 +13,7 @@ Klik in de zijbalk op **Lijsten** en dan op **Verzekeringen**.
 Bovenaan staan drie keuzelijsten. Elk staat standaard op "alle", en samen werken ze als één filter.
 
 - **Product** — welke verzekeringsproducten u voert. Werkt u met één soort, dan staat er ook één keuze.
-- **Status** — waar de polis staat: offerte, medische acceptatie, polis beschikbaar, polis getekend, en zo verder. Onderaan deze lijst staat **Geen status ingevuld**: dat zijn de polissen die uit het vorige programma zijn overgekomen zonder dat er ooit een status op gezet is. Met die keuze roept u ze gericht op om ze bij te werken.
+- **Status** — waar de polis staat: offerte, medische acceptatie, polis beschikbaar, polis getekend, en zo verder. Onderaan deze lijst staat **Geen status ingevuld**: polissen waar nog geen status op staat. Met die keuze roept u ze gericht op om ze bij te werken.
 - **Verantwoordelijke** — de medewerker die het dossier opvolgt.
 
 Rechts van de keuzelijsten ziet u hoeveel rijen u nu toont van het totaal, bijvoorbeeld `2690 / 2990`.
