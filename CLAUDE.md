@@ -115,7 +115,30 @@ Deze termen komen vaak voor en horen in `docs/concepten/begrippenlijst.md`:
 - Formaat: PNG voor UI met tekst, JPG voor foto's
 - Resolutie: max 1920px breed
 - Compressie: via ImageOptim voor publicatie
-- **Alt-text altijd beschrijvend** (niet alleen "screenshot")
+- **Claude maakt de beelden zelf** met `docs/tools/gen-screenshots.mjs` in de app-repo, **altijd uit de
+  demo-tenant** — nooit uit kredietunie of WAVE, want die dragen echte klantnamen en deze site is publiek.
+- **Per taal een eigen beeld** zodra er tekst op staat, en op een schermafbeelding is dat altijd zo.
+  Bestandsnamen blijven Nederlands; het Franse beeld krijgt het achtervoegsel `-fr`
+  (`kredietinstellingen-lijst.png` / `kredietinstellingen-lijst-fr.png`).
+
+#### Alt-tekst is verplicht — bij élke afbeelding
+
+Geen `![](…)`, geen `![screenshot](…)`. De vorm is altijd:
+
+```markdown
+![Beschrijf wat er te zien is, in een volle zin.](../images/bestand.png "Korte titel bij het beeld")
+```
+
+Waarom dit niet optioneel is:
+- **Toegankelijkheid** — een schermlezer leest de alt-tekst voor; zonder tekst bestaat het beeld niet.
+- **Vindbaarheid (SEO)** — zoekmachines lezen de alt-tekst, niet het beeld.
+- **Laadt het beeld niet**, dan blijft de alt-tekst staan. Die zin moet op zichzelf iets zeggen.
+
+Regels:
+- Schrijf de alt-tekst **in de taal van de pagina** (NL op de NL-pagina, FR op de FR-pagina).
+- Beschrijf **wat er te zien is en welke waarden erin staan** — concrete labels en getallen, niet
+  "schermafbeelding van het scherm". Wat je opschrijft is precies wat een lezer mist zonder het beeld.
+- De **title** (tussen aanhalingstekens) is de korte samenvatting; die verschijnt als tooltip.
 
 ### Markdown-conventies
 - Eén `# H1` per pagina (de paginatitel).
@@ -133,8 +156,10 @@ Deze termen komen vaak voor en horen in `docs/concepten/begrippenlijst.md`:
 ### Links
 - Tussen pagina's: relatieve paden met `.md` extensie
   (bv. `[Zie tussenpersonen](../crm/contacten.md)`)
-- Naar afbeeldingen: absoluut vanaf docs-root
-  (bv. `![Login](/images/login.png)`)
+- Naar afbeeldingen: **relatief** vanaf de pagina (vanuit `docs/credit-management/` →
+  `![…](../images/bestand.png)`). Blijft ook werken als de site ooit onder een subpad draait.
+  ⚠️ Hier stond tot 15/08/2026 "absoluut vanaf docs-root", terwijl `BEELD-MANIFEST.md` relatief
+  voorschreef. Nu op één lijn: **relatief**.
 
 ### Vormgeving — vloot-afspraak
 

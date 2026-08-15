@@ -1,13 +1,25 @@
 # Beeld-manifest — nog toe te voegen screenshots
 
-> **Werkafspraak.** Claude onderhoudt de handleiding-tekst (NL/FR) en houdt hieronder bij **welke
-> screenshots** nog nodig zijn. Dominique voegt de afbeeldingen later in **één batch** toe — dit
-> tijdens het overlopen doen kost te veel tijd. Dit bestand staat bewust **buiten** `docs/` zodat het
-> niet mee gepubliceerd wordt.
+> **Werkafspraak — bijgewerkt 15/08/2026.** Claude onderhoudt de handleiding-tekst (NL/FR), **maakt de
+> schermafbeeldingen zelf** en houdt hieronder bij wat er nog ontbreekt. Dominique levert geen beelden
+> meer aan; hij beoordeelt bij de moeilijke beelden of de getoonde toestand klopt. Dit bestand staat
+> bewust **buiten** `docs/` zodat het niet mee gepubliceerd wordt.
 >
-> **Conventie.** Afbeeldingen komen in `docs/images/`. Vanuit een pagina verwijs je relatief, bv. vanuit
-> `docs/credit-management/…` → `![alt](../images/bestand.png)`. Zet dezelfde afbeelding onder beide talen
-> (de NL- en FR-variant van de pagina) tenzij de schermtaal verschilt.
+> *(Tot 14/08 gold de omgekeerde afspraak — Dominique voegde ze in één batch toe. Dat leverde in twee
+> weken nul beelden op, vandaar de omkering.)*
+>
+> **Maken:** `node docs/tools/gen-screenshots.mjs [naam]` in de app-repo. Vereist een draaiende app op
+> poort 5345 en een gevulde demo-tenant. ⚠️ **Altijd uit `tenant_demo`** — nooit uit kredietunie of WAVE:
+> die dragen echte klantnamen en deze site is publiek.
+>
+> **Conventie.** Afbeeldingen komen in `docs/images/`. Vanuit een pagina verwijs je **relatief**, bv.
+> vanuit `docs/credit-management/…` → `![alt](../images/bestand.png "title")`.
+>
+> **Per taal een eigen beeld.** Op een schermafbeelding staat altijd tekst, dus de FR-pagina krijgt het
+> FR-beeld. Bestandsnaam blijft Nederlands, met achtervoegsel `-fr`.
+>
+> **Alt-tekst is verplicht** — een volle beschrijvende zin in de taal van de pagina, plus een `title`.
+> Toegankelijkheid én vindbaarheid. De volledige regel staat in `CLAUDE.md`.
 >
 > Streep af (`[x]`) wat geplaatst is. Claude vult nieuwe rijen aan zodra er schermen wijzigen.
 
@@ -24,9 +36,13 @@
 
 ## Kredieten → Kredietinstellingen (`credit-management/financial-institutions.md`)
 
-- [ ] `kredietinstellingen-lijst.png` — het lijstscherm (grid + zoekveld + "Nieuw"). Plaats bij "De lijst".
-- [ ] `kredietinstellingen-algemeen.png` — bewerkscherm, tab "Algemene informatie". Plaats bij die tab.
-- [ ] `kredietinstellingen-commissionering.png` — tab "Standaard commissionering" met de percentage-opmaak (bv. 1,50 %). Plaats bij die tab.
+- [x] `kredietinstellingen-lijst.png` + `-fr` — het lijstscherm (grid + zoekveld + "Nieuw"). Geplaatst 15/08/2026.
+- [ ] `kredietinstellingen-algemeen.png` + `-fr` — bewerkscherm, tab "Algemene informatie". **Geblokkeerd:** het
+      beeld toont `BE` in plaats van "België"/"Belgique", omdat de landkeuzelijst lokaal terugvalt op een
+      tekstveld — de referentiedienst van ADM One geeft `401 Unauthorized` (geen geldige `AdmOne:ApiKey` in de
+      dev-secrets). Zodra die sleutel er staat: `node docs/tools/gen-screenshots.mjs kredietinstellingen-algemeen`.
+- [x] `kredietinstellingen-commissionering.png` + `-fr` — tab "Standaard commissionering" met de
+      percentage-opmaak en het groene totaal. Geplaatst 15/08/2026.
 
 ## Kredieten → Verzekeraars (`credit-management/insurance-companies.md`)
 

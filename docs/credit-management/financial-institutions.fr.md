@@ -8,6 +8,8 @@ Dans la barre latérale, cliquez sur **Institutions de crédit**.
 
 ## La liste
 
+![L'écran Institutions de crédit dans CreditSoft : une liste de banques et de prêteurs avec les colonnes nom, commune, téléphone, e-mail et site web, avec en haut les boutons Nouveau et Exporter ainsi qu'un champ de recherche.](../images/kredietinstellingen-lijst-fr.png "Aperçu des institutions de crédit avec lesquelles le bureau collabore")
+
 Le tableau affiche par institution : **nom**, **commune**, **téléphone**, **e-mail** et **site web**.
 
 - **Rechercher** — utilisez le champ de recherche pour chercher dans toutes les colonnes à la fois.
@@ -48,6 +50,8 @@ Vous y définissez le **régime de commission par défaut** applicable à ce pr�
 Les pourcentages se saisissent de **0 à 100** avec deux décimales ; ils sont affichés avec un signe % (p. ex. *1,50 %*).
 
 Sous la liste des paiements planifiés, un **total courant** s'affiche : *Total : 75 % sur 100 %*. Dès que vous atteignez 100 %, il passe au vert.
+
+![L'onglet Commissionnement par défaut d'une institution de crédit : pourcentage direct à 40,00 %, la case Paiements planifiés cochée, trois lignes avec les mois 12, 24 et 36 pour respectivement 30,00 %, 20,00 % et 10,00 %, et en dessous, en vert, Total : 100 % sur 100 %.](../images/kredietinstellingen-commissionering-fr.png "Définir le régime de commission par défaut d'une institution de crédit")
 
 !!! warning "Ce que CreditSoft contrôle à l'enregistrement"
     - **Un seul type à la fois** — il n'est possible de choisir que **0 ou 1** type de commissionnement. Si vous choisissez à la fois *Paiement échelonné* et *Paiements planifiés*, l'enregistrement est refusé.

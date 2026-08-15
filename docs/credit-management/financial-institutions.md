@@ -8,6 +8,8 @@ Klik in de zijbalk op **Kredietinstellingen**.
 
 ## De lijst
 
+![Het scherm Kredietinstellingen in CreditSoft: een lijst van banken en kredietverstrekkers met kolommen voor naam, gemeente, telefoon, e-mail en website, met bovenaan de knoppen Nieuw en Exporteren en een zoekveld.](../images/kredietinstellingen-lijst.png "Overzicht van de kredietinstellingen waarmee het kantoor samenwerkt")
+
 De tabel toont per instelling: **naam**, **gemeente**, **telefoon**, **e-mail** en **website**.
 
 - **Zoeken** — gebruik het zoekveld om in alle kolommen tegelijk te zoeken.
@@ -48,6 +50,8 @@ Hier legt u de **standaard commissieregeling** vast die voor deze kredietverstre
 Percentages voert u in van **0 tot 100** met twee decimalen; ze worden getoond met een %-teken (bv. *1,50 %*).
 
 Onder de lijst met geplande betalingen ziet u een **lopend totaal**: *Totaal: 75 % van 100 %*. Zodra u op 100 % staat, kleurt het groen.
+
+![Het tabblad Standaard commissionering van een kredietinstelling: percentage direct op 40,00 %, het vinkje Geplande betalingen aangevinkt, drie regels met maand 12, 24 en 36 voor respectievelijk 30,00 %, 20,00 % en 10,00 %, en daaronder in het groen Totaal: 100 % van 100 %.](../images/kredietinstellingen-commissionering.png "De standaard commissieregeling van een kredietinstelling instellen")
 
 !!! warning "Wat CreditSoft controleert bij het opslaan"
     - **Eén type tegelijk** — er kan slechts **0 of 1** type van commissionering gekozen worden. Kiest u zowel *Gespreide betaling* als *Geplande betalingen*, dan wordt het opslaan geweigerd.
