@@ -8,13 +8,19 @@ Klik in de zijbalk op **Kredietinstellingen**.
 
 ## De lijst
 
-De tabel toont per instelling: **naam**, **gemeente**, **land**, **telefoon**, **e-mail** en **website**.
+De tabel toont per instelling: **naam**, **gemeente**, **telefoon**, **e-mail** en **website**.
 
 - **Zoeken** — gebruik het zoekveld om in alle kolommen tegelijk te zoeken.
 - **Kolommen kiezen** — toon of verberg kolommen; uw keuze wordt onthouden.
 - **Exporteren** — exporteer de lijst naar Excel of CSV.
 - **Nieuw / bewerken** — klik op **Nieuw**, of **dubbelklik** een rij om het bewerkscherm te openen.
 - **Verwijderen** — een instelling wordt **gearchiveerd** (soft-delete), niet definitief gewist; ze verdwijnt uit de lijst maar blijft bewaard.
+
+### Journaal
+
+Rechts op het scherm zit de lade **Journaal**. Selecteer een instelling en klap ze open: daar houdt u per
+instelling uw **taken, notities, bijlagen en mailverkeer** bij, plus het **logboek** van de wijzigingen. De lade
+onthoudt of u ze open of dicht liet staan.
 
 ## Een instelling toevoegen of bewerken
 
@@ -25,8 +31,9 @@ Het bewerkscherm is opgedeeld in drie tabbladen.
 De basisgegevens van de instelling:
 
 - **Naam** (verplicht)
-- **Adres** — straat, huisnummer, bus, postcode, gemeente, land
+- **Adres** — straat, huisnummer, bus, postcode, gemeente, land. Typ in het postcodeveld en kies uit de lijst: de **gemeente wordt automatisch ingevuld**. Omgekeerd werkt het ook.
 - **Contact** — telefoon, fax, e-mail, website
+- **Documenttaal** — de taal waarin u met deze instelling correspondeert (Nederlands of Frans). Ze bepaalt in welke taal de mailsjablonen en documenten voor deze instelling worden opgemaakt.
 - **Opmerkingen**
 - **Logo** — laad een afbeelding op; ze verschijnt onder meer op afdrukken
 

@@ -8,13 +8,19 @@ Dans la barre latérale, cliquez sur **Institutions de crédit**.
 
 ## La liste
 
-Le tableau affiche par institution : **nom**, **commune**, **pays**, **téléphone**, **e-mail** et **site web**.
+Le tableau affiche par institution : **nom**, **commune**, **téléphone**, **e-mail** et **site web**.
 
 - **Rechercher** — utilisez le champ de recherche pour chercher dans toutes les colonnes à la fois.
 - **Choisir les colonnes** — affichez ou masquez des colonnes ; votre choix est mémorisé.
 - **Exporter** — exportez la liste via Excel ou CSV.
 - **Nouveau / modifier** — cliquez sur **Nouveau**, ou **double-cliquez** une ligne pour ouvrir l'écran d'édition.
 - **Supprimer** — une institution est **archivée** (suppression douce), pas définitivement effacée ; elle disparaît de la liste mais reste conservée.
+
+### Journal
+
+À droite de l'écran se trouve le tiroir **Journal**. Sélectionnez une institution et ouvrez-le : vous y tenez,
+par institution, vos **tâches, notes, pièces jointes et courriers**, ainsi que le **journal** des modifications.
+Le tiroir retient si vous l'avez laissé ouvert ou fermé.
 
 ## Ajouter ou modifier une institution
 
@@ -25,8 +31,9 @@ L'écran d'édition est divisé en trois onglets.
 Les données de base de l'institution :
 
 - **Nom** (obligatoire)
-- **Adresse** — rue, numéro, boîte, code postal, commune, pays
+- **Adresse** — rue, numéro, boîte, code postal, commune, pays. Tapez dans le champ du code postal et choisissez dans la liste : la **commune est complétée automatiquement**. L'inverse fonctionne également.
 - **Contact** — téléphone, fax, e-mail, site web
+- **Langue des documents** — la langue dans laquelle vous correspondez avec cette institution (néerlandais ou français). Elle détermine la langue des modèles d'e-mail et des documents établis pour cette institution.
 - **Remarques**
 - **Logo** — chargez une image ; elle apparaît notamment sur les impressions
 
