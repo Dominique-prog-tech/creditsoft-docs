@@ -136,6 +136,16 @@ Deze termen komen vaak voor en horen in `docs/concepten/begrippenlijst.md`:
 - Naar afbeeldingen: absoluut vanaf docs-root
   (bv. `![Login](/images/login.png)`)
 
+### Vormgeving — vloot-afspraak
+
+De drie docs-sites (CreditSoft, Nimble, CleanOps) delen één opzet. De afspraak én de drie gemeten
+valkuilen staan in **`~/projects/adm-appkit/docs/docs-site-vormgeving.md`** — lees dat vóór je iets aan
+de vorm wijzigt, en **stem een wijziging af met de andere twee**.
+
+Kort: merkkleur uit `logo.svg`, header wit in licht en zwart in donker, en drie valkuilen die er alle
+drie uitzien alsof alles klopt (een `:root`-regel die niet werkt, een palet dat op twee plaatsen staat,
+en meten binnen een seconde na een themawissel). **Niet hier overschrijven — verwijs ernaar.**
+
 ## TODO-markers — conventie
 
 Skeleton-pagina's bevatten TODO-blokken in deze vorm:
@@ -160,46 +170,14 @@ af is, verwijder je het TODO-blok.
 6. **Lokaal previewen**: `mkdocs serve` op de Mac.
 7. **Commit + push** — auto-deploy naar docs.creditsoft.be.
 
-## Pagina-template
+## Een pagina schrijven
 
-```markdown
-# [Naam van het scherm]
+Gebruik **`/adm-toolkit:handleiding-schrijven <scherm>`**. Die loopt de hele procedure af: de source
+lezen, de pagina-template, NL én FR, de `nav` in `mkdocs.yml`, en de entry in de hulplade van de app.
 
-[Eén alinea: wanneer en waarom gebruikt een makelaar dit scherm.]
+Daar staan ook de stijlregels die vroeger hier stonden — geen verzonnen functionaliteit, geen
+Amerikaanse SaaS-toon, actief formuleren, en zelf geen schermafdrukken plaatsen.
 
-## Het scherm openen
-
-[Hoe navigeer je hier in CreditSoft — via welke menu-actie.]
-
-## Velden en functies
-
-[Per veld of sectie een korte uitleg.]
-
-## Veelgemaakte fouten
-
-!!! warning
-    [Wat gaat vaak fout, en hoe vermijd je dat.]
-
-## Zie ook
-
-- [Gerelateerde pagina](relatief-pad.md)
-```
-
-## Wat NIET doen
-
-- Geen functionaliteit verzinnen die niet in de source staat.
-- Geen tone-of-voice imiteren van Amerikaanse SaaS-docs ("Awesome!", "You're
-  all set!"). Belgisch-professioneel, ingetogen.
-- Geen Engels mixen met Nederlands behalve voor vaktermen die in het
-  vakgebied courant Engels zijn.
-- Geen "the system will…" formuleringen. Actief: "U klikt op X, en Y verschijnt."
-- Geen lange paragrafen — splits in stappen of lijsten.
-
-## Bij twijfel
-
-- **Twijfel over functionaliteit**: lees de source, of markeer met
-  `[TODO: bevestigen]`.
-- **Twijfel over schrijfstijl**: kijk naar bestaande afgewerkte pagina's
-  in de repo voor referentie.
-- **Twijfel over structuur**: blijf bij de hoofdstuk-indeling die hier
-  beschreven staat, voeg geen ad-hoc secties toe.
+> Tot 15/08/2026 stond die template hier uitgeschreven, en identiek in de twee andere docs-repo's:
+> 113 regels die drie keer onderhouden moesten worden. De **schrijfflow** hierboven blijft wél
+> repo-eigen — die verschilt echt per platform.
