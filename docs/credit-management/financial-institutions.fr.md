@@ -30,6 +30,8 @@ L'écran d'édition est divisé en trois onglets.
 
 ### Onglet « Informations générales »
 
+![L'écran d'édition d'une institution de crédit, onglet Informations générales : nom AXA Bank, adresse Bankstraat 49 à 2000 Antwerpen, pays Belgique, téléphone, e-mail et site web, la langue des documents sur Néerlandais, un champ pour les remarques et en bas le bouton pour choisir un logo.](../images/kredietinstellingen-algemeen-fr.png "Compléter les données de base d'une institution de crédit")
+
 Les données de base de l'institution :
 
 - **Nom** (obligatoire)

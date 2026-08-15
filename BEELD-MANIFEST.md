@@ -37,10 +37,9 @@
 ## Kredieten → Kredietinstellingen (`credit-management/financial-institutions.md`)
 
 - [x] `kredietinstellingen-lijst.png` + `-fr` — het lijstscherm (grid + zoekveld + "Nieuw"). Geplaatst 15/08/2026.
-- [ ] `kredietinstellingen-algemeen.png` + `-fr` — bewerkscherm, tab "Algemene informatie". **Geblokkeerd:** het
-      beeld toont `BE` in plaats van "België"/"Belgique", omdat de landkeuzelijst lokaal terugvalt op een
-      tekstveld — de referentiedienst van ADM One geeft `401 Unauthorized` (geen geldige `AdmOne:ApiKey` in de
-      dev-secrets). Zodra die sleutel er staat: `node docs/tools/gen-screenshots.mjs kredietinstellingen-algemeen`.
+- [x] `kredietinstellingen-algemeen.png` + `-fr` — bewerkscherm, tab "Algemene informatie". Geplaatst 15/08/2026,
+      nadat de `AdmOne:ApiKey` in de dev-secrets stond: daarvóór toonde het land `BE` in plaats van "België",
+      omdat de referentiedienst `401` gaf en de keuzelijst terugviel op een gewoon tekstveld.
 - [x] `kredietinstellingen-commissionering.png` + `-fr` — tab "Standaard commissionering" met de
       percentage-opmaak en het groene totaal. Geplaatst 15/08/2026.
 

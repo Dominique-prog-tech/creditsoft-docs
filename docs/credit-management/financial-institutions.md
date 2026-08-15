@@ -30,6 +30,8 @@ Het bewerkscherm is opgedeeld in drie tabbladen.
 
 ### Tab "Algemene informatie"
 
+![Het bewerkscherm van een kredietinstelling, tabblad Algemene informatie: naam AXA Bank, adres Bankstraat 49 in 2000 Antwerpen, land België, telefoon, e-mail en website, de documenttaal op Nederlands, een veld voor opmerkingen en onderaan de knop om een logo te kiezen.](../images/kredietinstellingen-algemeen.png "De basisgegevens van een kredietinstelling invullen")
+
 De basisgegevens van de instelling:
 
 - **Naam** (verplicht)
