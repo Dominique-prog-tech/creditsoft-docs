@@ -37,7 +37,7 @@ De fiche bestaat uit twee blokken, met onderaan een knoppenbalk die in beeld bli
 
 - **Naam** (verplicht)
 - **Adres** — straat, huisnummer, bus, postcode, gemeente, land.
-- **Contact** — telefoon, fax, e-mail, website
+- **Contact** — telefoon, e-mail, website
 - **Instellingsnummer** — het nummer waaronder de maatschappij bij u bekendstaat.
 - **Documenttaal** (verplicht) — de taal waarin u met deze maatschappij correspondeert (Nederlands of Frans). Ze bepaalt in welke taal de mailsjablonen en documenten voor deze verzekeraar worden opgemaakt.
 - **Logo** — laad een afbeelding op; ze verschijnt onder meer op afdrukken.

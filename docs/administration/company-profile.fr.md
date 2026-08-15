@@ -15,7 +15,7 @@ Les champs sont regroupés en blocs :
 
 - **Identité** — nom (en lecture seule), TVA / n° d'entreprise, numéro FSMA.
 - **Adresse** — rue, numéro, boîte, code postal, commune, pays.
-- **Contact** — téléphone, fax, e-mail, site web.
+- **Contact** — téléphone, e-mail, site web.
 - **Banque** — IBAN, BIC et numéro de compte (avec un second compte si nécessaire).
 - **Documents et charte graphique** — votre logo.
 

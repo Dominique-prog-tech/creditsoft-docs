@@ -15,7 +15,7 @@ De velden staan gegroepeerd in blokken:
 
 - **Identiteit** — naam (alleen-lezen), BTW / ondernemingsnr., FSMA-nummer.
 - **Adres** — straat, nummer, bus, postcode, gemeente, land.
-- **Contact** — telefoon, fax, e-mail, website.
+- **Contact** — telefoon, e-mail, website.
 - **Bank** — IBAN, BIC en rekeningnummer (met een tweede rekening indien nodig).
 - **Documenten & huisstijl** — je logo.
 

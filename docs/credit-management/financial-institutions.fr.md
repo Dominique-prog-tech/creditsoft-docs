@@ -37,7 +37,7 @@ La fiche se compose de trois blocs, avec en bas une barre de boutons qui reste v
 
 - **Nom** (obligatoire)
 - **Adresse** — rue, numéro, boîte, code postal, commune, pays.
-- **Contact** — téléphone, fax, e-mail, site web
+- **Contact** — téléphone, e-mail, site web
 - **Langue des documents** (obligatoire) — la langue dans laquelle vous correspondez avec cette institution (néerlandais ou français). Elle détermine la langue des modèles d'e-mail et des documents établis pour cette institution.
 - **Logo** — chargez une image ; elle apparaît notamment sur les impressions.
 

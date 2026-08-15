@@ -37,7 +37,7 @@ De fiche bestaat uit drie blokken, met onderaan een knoppenbalk die in beeld bli
 
 - **Naam** (verplicht)
 - **Adres** — straat, huisnummer, bus, postcode, gemeente, land.
-- **Contact** — telefoon, fax, e-mail, website
+- **Contact** — telefoon, e-mail, website
 - **Documenttaal** (verplicht) — de taal waarin u met deze instelling correspondeert (Nederlands of Frans). Ze bepaalt in welke taal de mailsjablonen en documenten voor deze instelling worden opgemaakt.
 - **Logo** — laad een afbeelding op; ze verschijnt onder meer op afdrukken.
 

@@ -37,7 +37,7 @@ La fiche se compose de deux blocs, avec en bas une barre de boutons qui reste vi
 
 - **Nom** (obligatoire)
 - **Adresse** — rue, numéro, boîte, code postal, commune, pays.
-- **Contact** — téléphone, fax, e-mail, site web
+- **Contact** — téléphone, e-mail, site web
 - **Numéro d'institution** — le numéro sous lequel la compagnie est connue chez vous.
 - **Langue des documents** (obligatoire) — la langue dans laquelle vous correspondez avec cette compagnie (néerlandais ou français). Elle détermine la langue des modèles d'e-mail et des documents établis pour cet assureur.
 - **Logo** — chargez une image ; elle apparaît notamment sur les impressions.
