@@ -54,8 +54,11 @@
 
 ## Relatiebeheer → Professionals (`crm/professionals.md`)
 
-- [ ] `professionals-lijst.png` — het lijstscherm met de type-filter bovenaan. Plaats bij "De lijst".
-- [ ] `professionals-algemeen.png` — bewerkscherm, tab "Algemeen", met de knop **Ophalen** naast het btw-veld. Plaats bij die tab / de tip over de KBO-ophaling.
+- [x] `professionals-lijst.png` + `-fr` — het lijstscherm met de typefilter bovenaan. Geplaatst 15/08/2026.
+- [x] `professionals-fiche.png` + `-fr` — de volledige fiche op één pagina (Algemeen met het verplichte type en
+      de knop **Ophalen** naast het btw-veld, Facturatie, Opmerkingen, knoppenbalk). Geplaatst 15/08/2026.
+      ⚠️ Het gekozen demo-record heeft géén btw-nummer, dus de knop **Ophalen** staat uitgegrijsd op het beeld.
+      Bij een volgende opname beter een record met btw kiezen.
 
 ## Relatiebeheer → Groepen (`crm/groups.md`)
 
