@@ -2,7 +2,7 @@
 
 Les listes de choix sont les valeurs qui apparaissent partout dans les fiches, dans les champs à choisir : civilité, type d'entreprise, nationalité, statut de dossier, et des dizaines d'autres.
 
-<!-- AFBEELDING: het keuzelijsten-scherm met bovenaan de lijstkiezer en eronder de items -->
+![L'écran Listes de choix dans CreditSoft : en haut le sélecteur qui permet de choisir une liste — ici Nationalité — et en dessous un tableau avec les colonnes Ordre, Néerlandais et Français, avec en haut à droite les boutons Nouvel élément, Choisir les colonnes, Exporter et un champ de recherche.](../images/keuzelijsten-fr.png "La gestion des listes de choix, avec la liste des nationalités ouverte")
 
 ## Ouvrir l'écran
 
@@ -15,10 +15,17 @@ Choisissez en haut **quelle liste** vous voulez modifier. Les éléments de cett
 | Champ | À quoi il sert |
 |---|---|
 | **Nom (NL)** et **Nom (FR)** | Le texte tel que vos collaborateurs le voient dans le champ de choix |
-| **Ordre** | Détermine la position de l'élément dans la liste ; à ordre égal, le tri est alphabétique |
-| **Couleur** | Uniquement pour les listes où une couleur est visible, comme le statut de dossier |
+| **Ordre** | Détermine la position de l'élément dans la liste |
 
 Renseignez toujours **les deux langues**. Si vous laissez le français vide, un collègue francophone verra le texte néerlandais.
+
+!!! tip "Quand l'ordre vous est utile"
+    Si vous laissez **Ordre** à zéro, la liste est triée par ordre alphabétique — et ce **dans la langue de
+    celui qui regarde**. Un collègue francophone voit donc la même liste rangée selon son propre alphabet.
+
+    Ne renseignez l'ordre que pour les listes qui décrivent un **parcours** plutôt qu'un ensemble : un statut de
+    contrat va de *Offre* à *Introduit* puis *Réalisé*, et l'afficher alphabétiquement le rend illisible. Pour
+    des listes comme la nationalité ou la profession, laissez simplement l'ordre à zéro.
 
 ## Supprimer un élément
 

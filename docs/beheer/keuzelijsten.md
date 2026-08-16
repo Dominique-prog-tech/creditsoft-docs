@@ -2,7 +2,7 @@
 
 De keuzelijsten zijn de waarden die overal in de fiches in de keuzevelden verschijnen: aanspreking, bedrijfstype, nationaliteit, dossierstatus, en tientallen andere.
 
-<!-- AFBEELDING: het keuzelijsten-scherm met bovenaan de lijstkiezer en eronder de items -->
+![Het scherm Keuzelijsten in CreditSoft: bovenaan de kiezer waarmee u een lijst selecteert — hier Nationaliteit — en daaronder een tabel met de kolommen Volgorde, Nederlands en Frans, met rechtsboven de knoppen Nieuw item, Kolommen kiezen, Exporteren en een zoekveld.](../images/keuzelijsten.png "Het beheer van de keuzelijsten, met de nationaliteitenlijst geopend")
 
 ## Het scherm openen
 
@@ -15,10 +15,17 @@ Kies bovenaan **welke lijst** u wil bewerken. Daaronder verschijnen de items van
 | Veld | Waarvoor |
 |---|---|
 | **Naam (NL)** en **Naam (FR)** | De tekst zoals uw medewerkers hem in het keuzeveld zien |
-| **Volgorde** | Bepaalt waar het item in de lijst staat; gelijke volgorde sorteert alfabetisch |
-| **Kleur** | Enkel bij lijsten waar een kleur zichtbaar is, zoals de dossierstatus |
+| **Volgorde** | Bepaalt waar het item in de lijst staat |
 
 Vul altijd **beide talen** in. Laat u het Frans leeg, dan ziet een Franstalige collega de Nederlandse tekst.
+
+!!! tip "Wanneer u de volgorde nodig hebt"
+    Laat u **Volgorde** op nul staan, dan sorteert de lijst alfabetisch — en wel **in de taal van wie kijkt**.
+    Een Franstalige collega ziet dezelfde lijst dus op zijn eigen alfabet gerangschikt.
+
+    Zet de volgorde alleen bij lijsten die een **weg** beschrijven in plaats van een verzameling: een
+    contractstatus loopt van *Offerte* over *Ingediend* naar *Gerealiseerd*, en dat alfabetisch tonen maakt ze
+    onleesbaar. Voor lijsten als nationaliteit of beroep laat u de volgorde gewoon op nul.
 
 ## Een item verwijderen
 
