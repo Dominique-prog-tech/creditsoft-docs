@@ -1,10 +1,10 @@
 # Gebruikers
 
-Op het scherm **Gebruikers** beheer je wie in je kantoor toegang heeft tot CreditSoft: je voegt een collega toe, bewerkt zijn fiche, reset een wachtwoord of verwijdert een login.
+Op het scherm **Gebruikers** beheert u wie in uw kantoor toegang heeft tot CreditSoft: u voegt een collega toe, bewerkt zijn fiche, reset een wachtwoord of verwijdert een login.
 
 ## Het scherm openen
 
-Klik in de zijbalk op **Platformbeheer** en daarna op de tegel **Gebruikers** (onder *Toegang*). Bovenaan brengt de link **← Terug naar platformbeheer** je terug naar het overzicht.
+Klik in de zijbalk op **Platformbeheer** en daarna op de tegel **Gebruikers** (onder *Toegang*). Bovenaan brengt de link **← Terug naar platformbeheer** u terug naar het overzicht.
 
 ## Een collega toevoegen
 
@@ -19,14 +19,14 @@ Klik op **Gebruiker aanmaken**. De collega verschijnt in de lijst en wijzigt zij
 
 ## De fiche bewerken
 
-Klik bij een gebruiker op **Fiche**. Hier vul je de CreditSoft-gegevens in:
+Klik bij een gebruiker op **Fiche**. Hier vult u de CreditSoft-gegevens in:
 
 - **Telefoon** en **Gsm**
 - **Vertegenwoordiging**
 - **Mailhandtekening** — een opgemaakte handtekening (tekst en eventueel een afbeelding) die in uitgaande mails gebruikt wordt.
 
 !!! note "Naam, e-mail en functie"
-    Die worden door ADM One beheerd en kan je hier niet wijzigen.
+    Die worden door ADM One beheerd en kunt u hier niet wijzigen.
 
 Klik op **Opslaan**.
 

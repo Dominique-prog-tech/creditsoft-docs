@@ -35,10 +35,10 @@ Werd er in één keer veel gewijzigd, dan toont het logboek de eerste vier velde
 - **Onderliggende regels.** Het logboek gaat over de fiche zelf. Wijzigt u bij een relatie een **adres**, dan is
   dat een eigen record en verschijnt het hier niet.
 
-## U kan er niets aan veranderen
+## U kunt er niets aan veranderen
 
 Het logboek is **alleen-lezen**. Er is geen knop om een regel te wijzigen of te verwijderen, ook niet voor een
-beheerder. Dat is geen tekortkoming maar de bedoeling: een geschiedenis waarin u kan schrappen, is geen
+beheerder. Dat is geen tekortkoming maar de bedoeling: een geschiedenis waarin u kunt schrappen, is geen
 geschiedenis.
 
 ## Wie het mag zien

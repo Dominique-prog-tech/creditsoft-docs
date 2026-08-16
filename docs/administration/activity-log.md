@@ -10,7 +10,7 @@ beheerder achteraf nagaan wat er precies gebeurd is.
 
 Klik in de zijbalk op **Platformbeheer** en daarna op de tegel **Actielogboek** (onder *Gegevens*).
 
-## Wat je ziet
+## Wat u ziet
 
 Elke regel is één handeling, met onder meer:
 
@@ -27,7 +27,7 @@ wijzigingen aan één record. De twee vullen elkaar aan.
 
 ## Goed om weten
 
-- Het Actielogboek toont enkel de handelingen van **jouw kantoor** — je ziet nooit de gegevens van een
+- Het Actielogboek toont enkel de handelingen van **uw kantoor** — u ziet nooit de gegevens van een
   andere klant.
-- Inkijken kan je per rol regelen bij **Platformbeheer → Rollen**.
+- Inkijken kunt u per rol regelen bij **Platformbeheer → Rollen**.
 - Het logboek is een **naslagwerk**: regels worden bijgehouden, niet bewerkt of gewist.

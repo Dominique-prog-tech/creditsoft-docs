@@ -1,14 +1,14 @@
 # Mailmonitoring
 
-Op het scherm **Mailmonitoring** zie je in één overzicht **al het verstuurde mailverkeer** met de **afleverstatus**. Zo weet een beheerder meteen wat afgeleverd is en wat niet toegekomen is, zonder per kredietinstelling, verzekeraar of relatie te moeten gaan kijken.
+Op het scherm **Mailmonitoring** ziet u in één overzicht **al het verstuurde mailverkeer** met de **afleverstatus**. Zo weet een beheerder meteen wat afgeleverd is en wat niet toegekomen is, zonder per kredietinstelling, verzekeraar of relatie te moeten gaan kijken.
 
 ![Het scherm Mailmonitoring in CreditSoft: een tabel met per verstuurde mail het tijdstip, de bestemmeling, het onderwerp en twee statuskolommen — Verzonden en Aflevering — plus een kolom voor de reden bij een fout.](../images/mailmonitoring.png "De status van elke mail die CreditSoft verstuurde")
 
 ## Het scherm openen
 
-Klik in de zijbalk op **Platformbeheer** en daarna op de tegel **Mailmonitoring** (onder *Communicatie*). Bovenaan brengt de link **← Terug naar platformbeheer** je terug naar het overzicht.
+Klik in de zijbalk op **Platformbeheer** en daarna op de tegel **Mailmonitoring** (onder *Communicatie*). Bovenaan brengt de link **← Terug naar platformbeheer** u terug naar het overzicht.
 
-## Wat je ziet
+## Wat u ziet
 
 Elke rij is één verstuurde mail. De kolommen:
 
@@ -26,9 +26,9 @@ Elke rij is één verstuurde mail. De kolommen:
 - **Statusfilter** (bovenaan links) — toon bijvoorbeeld enkel **Niet afgeleverd**, **Geweigerd (bounce)** of **Mislukt** om snel de probleemgevallen te vinden. Standaard staat hij op **Alle**.
 - **Vernieuwen** — haalt de recentste status opnieuw op.
 - **Zoeken** (rechtsboven) — zoek vrij in de lijst, bijvoorbeeld op ontvanger of onderwerp.
-- Met de knop **…** rechtsboven kan je de lijst **exporteren** (Excel of CSV).
+- Met de knop **…** rechtsboven kunt u de lijst **exporteren** (Excel of CSV).
 
 ## Goed om weten
 
 - De afleverstatus komt rechtstreeks van het verzendplatform: **Afgeleverd**, **Geweigerd (bounce)**, **Mislukt**, … Dat is de betrouwbare bron.
-- De kolommen **Type** en **Naam** vullen zich voor mail die je **vanuit een fiche** verstuurt (bv. vanuit een kredietinstelling). Mail die daarvóór verstuurd werd, blijft in die twee kolommen leeg.
+- De kolommen **Type** en **Naam** vullen zich voor mail die u **vanuit een fiche** verstuurt (bv. vanuit een kredietinstelling). Mail die daarvóór verstuurd werd, blijft in die twee kolommen leeg.
