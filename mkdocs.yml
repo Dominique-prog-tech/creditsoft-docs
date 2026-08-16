@@ -151,6 +151,9 @@ plugins:
             Dashboard-fases: Phases du tableau de bord
             Keuzelijsten: Listes de choix
             Documenttypes: Types de documents
+            Uw voorkeuren: Vos préférences
+            Mijn gegevens: Mes données
+            Wachtwoord wijzigen: Changer le mot de passe
             # Bijgekomen 16/08/2026 met het journaal-luik en de nav-regel voor "Werken met lijsten".
             Werken met lijsten: Travailler avec les listes
             Journaal: Journal
@@ -238,6 +241,10 @@ nav:
     # hier staat — een bestand toevoegen is dus niet genoeg.
     - Werken met lijsten: getting-started/lijsten.md
     - Het dashboard: getting-started/dashboard.md
+    # Het "algemene zaken"-blok (16/08/2026): wat elke gebruiker over zijn eigen account beslist.
+    - Uw voorkeuren: getting-started/voorkeuren.md
+    - Mijn gegevens: getting-started/mijn-gegevens.md
+    - Wachtwoord wijzigen: getting-started/wachtwoord.md
     - Tweestapsverificatie (2FA): getting-started/tweestapsverificatie.md
 
   # Het journaal hangt aan zes schermen en werkt overal hetzelfde. Daarom één keer beschreven, en

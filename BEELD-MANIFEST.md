@@ -166,3 +166,16 @@ fotograferen leert de lezer niets. Dezelfde afbeelding telkens ook onder de FR-p
 - [ ] `journaal-logboek.png` — de tab **Logboek** met bovenaan een **Gewijzigd**-regel die een echte
       veldwijziging toont (oude waarde doorstreept → nieuwe) en eronder de **Aangemaakt**-regel met de
       knop *+ zoveel andere velden*. Dát beeld verklaart de pagina in één oogopslag.
+
+## Aan de slag → het algemene-zaken-blok (`getting-started/*`) — toegevoegd 16/08/2026
+
+Uit **tenant_demo**, aangemeld als een gewone medewerker (niet als operator: die heeft geen
+medewerkersfiche en dan staan de blokken Contact en Mailhandtekening er niet).
+
+- [ ] `voorkeuren.png` — het voorkeuren-paneel open naast een gevuld scherm, met profielfoto,
+      accentkleur, omgevingsgrootte, taal en Beveiliging in beeld. Voor `getting-started/voorkeuren.md`.
+- [ ] `mijn-gegevens.png` — het scherm met de drie blokken zichtbaar: Contact (met een gekozen
+      agendakleur), Mailhandtekening met wat tekst erin, en onderaan Beveiliging.
+- [ ] `wachtwoord.png` — het scherm met de drie velden. Uiteraard leeg; nooit een echt wachtwoord in beeld.
+- [ ] `tweestapsverificatie.png` — het instelscherm met de QR-code. ⚠️ De QR-code hoort bij een
+      wegwerp-testaccount: een code uit een echt account is een sleutel.

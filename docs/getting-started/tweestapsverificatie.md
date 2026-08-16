@@ -15,7 +15,7 @@ Tweestapsverificatie staat nu **aan**.
 
 Na het inschakelen krijgt u een reeks **herstelcodes**. Bewaar die op een veilige plaats. Elke code is **eenmalig** bruikbaar en dient als noodoplossing als u uw authenticator-app niet bij de hand hebt.
 
-Je kan later altijd **nieuwe herstelcodes** aanmaken via hetzelfde scherm; de oude vervallen dan.
+U kunt later altijd **nieuwe herstelcodes** aanmaken via hetzelfde scherm; de oude vervallen dan.
 
 ## Aanmelden met tweestapsverificatie
 

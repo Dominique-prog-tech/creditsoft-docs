@@ -28,12 +28,9 @@ En haut à droite, vous trouverez quelques raccourcis :
 
 ## Vos préférences
 
-Cliquez sur votre **avatar** en haut à droite pour ouvrir le panneau des préférences. Vous pouvez y :
+Cliquez sur votre **avatar** en haut à droite pour ouvrir le panneau des préférences : votre photo de profil,
+la couleur d'accent, la taille de l'affichage, la langue et la vérification en deux étapes.
 
-- **Photo de profil** — cliquez sur *Choisir une photo…* pour définir une image. Elle apparaîtra ensuite dans la barre supérieure.
-- **Couleur d'accent** — choisissez la couleur d'accent de l'application.
-- **Taille de l'environnement** — choisissez entre **Compact**, **Normal** et **Confortable**. Cela ajuste la taille du texte et des espacements selon votre préférence.
-- **Langue** — basculez entre **Néerlandais** et **Français**. Toute l'application suit immédiatement, y compris les listes et les filtres.
-- **Vérification en deux étapes** — sécurisez davantage votre compte. Voir [Vérification en deux étapes (2FA)](tweestapsverificatie.md).
-
-Vos choix sont mémorisés pour votre prochaine connexion.
+Ce qu'il contient exactement — et pourquoi votre langue et vos couleurs ne vous **suivent pas** sur un autre
+ordinateur — est expliqué sous [Vos préférences](voorkeuren.md). Vos propres coordonnées, votre couleur
+d'agenda et votre signature d'e-mail figurent sous [Mes données](mijn-gegevens.md).
