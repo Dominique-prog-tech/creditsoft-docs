@@ -66,7 +66,9 @@
 
 ## Beheer → Bedrijfsfiche (`administration/company-profile.md`)
 
-- [ ] `bedrijfsfiche.png` — het bewerkscherm met de blokken (Identiteit met **Ophalen**-knop naast BTW, Adres, Contact, Bank, Documenten & huisstijl met het logo-sleepvak) + de **Opslaan**-knop rechtsboven. Plaats bij "De gegevens".
+- [x] `bedrijfsfiche.png` + `-fr` — het scherm met de vijf blokken (Identiteit met de **Ophalen**-knop naast
+      het btw-nummer, Contact, Adres, Bank, Documenten & huisstijl met het logo-sleepvak) en de **Opslaan**-knop
+      rechtsboven. Geplaatst 16/08/2026.
 - [ ] `bedrijfsfiche-logo.png` — (optioneel) het logo-sleepvak in close-up. Plaats bij "Logo".
 
 ## Beheer → Gebruikers (`administration/users.md`)
