@@ -3,7 +3,7 @@
 L'**Historique** montre ce qui est arrivé à cette fiche : qui a modifié quel champ, quand, et de quelle valeur
 vers quelle autre. C'est la question *« qui a changé cela ? »* — répondue sans que personne doive s'en souvenir.
 
-<!-- AFBEELDING: le tiroir du journal sur l'onglet Historique avec une création et deux modifications -->
+![La partie Historique avec les modifications d'une relation, la plus récente en haut : par ligne l'étiquette, le moment, l'utilisateur et, par champ, l'ancienne valeur barrée suivie de la nouvelle.](../images/journaal-logboek-fr.png "L'historique d'une relation")
 
 ## Ce que vous voyez
 

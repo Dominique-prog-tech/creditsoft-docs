@@ -7,7 +7,7 @@ mail. Dat is het **journaal**.
 Het journaal hangt niet aan één scherm. Het werkt op elke fiche waar het zinvol is, en het werkt er telkens op
 dezelfde manier. Wat u hier leest, geldt dus voor al die schermen samen.
 
-<!-- AFBEELDING: de lijst Relaties met de journaal-lade rechts open op de tab Taken -->
+![De lijst Relaties met rechts de journaal-lade open op het onderdeel Taken; de geselecteerde rij links en de inhoud van de lade rechts horen bij elkaar.](../images/journaal-lade.png "De journaal-lade naast de lijst")
 
 ## Waar u het vindt
 

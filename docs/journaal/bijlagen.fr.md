@@ -4,7 +4,7 @@ Sous **Pièces jointes**, vous conservez les fichiers qui appartiennent à une f
 fiche de paie, une offre signée, un plan. Ils restent auprès de la fiche, même lorsque la personne qui les a
 téléversés n'est plus là.
 
-<!-- AFBEELDING: le tiroir du journal sur l'onglet Pièces jointes avec un tableau de fichiers téléversés -->
+![La partie Pièces jointes avec trois fichiers PDF téléversés, dans un tableau avec nom, description, taille et date de téléversement.](../images/journaal-bijlagen-fr.png "Les pièces jointes liées à une relation")
 
 ## Téléverser des fichiers
 

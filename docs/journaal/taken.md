@@ -4,7 +4,7 @@ Een **taak** is iets dat nog moet gebeuren, met een naam erop en een datum tegen
 [journaal](overzicht.md) staat ze bij de fiche waarover ze gaat: een taak bij een dossier, een taak bij een
 relatie. Zo hoeft u niet te onthouden waar iets bij hoorde — u opent de fiche en het staat er.
 
-<!-- AFBEELDING: de journaal-lade op de tab Taken met twee taken in de lijst -->
+![Het onderdeel Taken met twee taken: een openstaande met hoge prioriteit, een vervaldatum en een herinnering, en een afgewerkte met lage prioriteit.](../images/journaal-taken.png "Taken bij een relatie")
 
 ## Een taak aanmaken
 

@@ -7,7 +7,7 @@ C'est le **journal**.
 Le journal n'appartient pas à un seul écran. Il fonctionne sur chaque fiche où cela a du sens, et toujours de la
 même manière. Ce que vous lisez ici vaut donc pour tous ces écrans à la fois.
 
-<!-- AFBEELDING: la liste Relations avec le tiroir du journal ouvert à droite sur l'onglet Tâches -->
+![La liste Relations avec, à droite, le tiroir du journal ouvert sur la partie Tâches ; la ligne sélectionnée à gauche et le contenu du tiroir à droite vont de pair.](../images/journaal-lade-fr.png "Le tiroir du journal à côté de la liste")
 
 ## Où le trouver
 

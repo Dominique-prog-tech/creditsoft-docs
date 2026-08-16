@@ -4,7 +4,7 @@ Une **tâche** est quelque chose qui doit encore être fait, avec un nom dessus 
 [journal](overzicht.md), elle figure auprès de la fiche qu'elle concerne : une tâche sur un dossier, une tâche
 sur une relation. Vous ne devez donc pas retenir à quoi elle se rattachait — vous ouvrez la fiche et elle est là.
 
-<!-- AFBEELDING: le tiroir du journal sur l'onglet Tâches avec deux tâches dans la liste -->
+![La partie Tâches avec deux tâches : une tâche ouverte de priorité haute, avec date d'échéance et rappel, et une tâche terminée de priorité basse.](../images/journaal-taken-fr.png "Les tâches liées à une relation")
 
 ## Créer une tâche
 

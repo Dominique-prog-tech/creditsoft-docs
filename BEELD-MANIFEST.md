@@ -146,26 +146,25 @@
 - [ ] `taken-overzicht.png` — het takenscherm met de drie filters bovenaan en een mix van soorten in de kolom
       "Hangt aan": minstens één dossier, één relatie en één losse taak.
 
-## Journaal (`journaal/*.md`) — toegevoegd 16/08/2026
+## Journaal (`journaal/*.md`) — ✅ AFGEWERKT 16/08/2026
 
-Alle zes uit **tenant_demo**, met de journaal-lade open naast de lijst Relaties (of een ander scherm waar
-de lade toevallig het best gevuld is). Kies telkens een rij die écht inhoud heeft: een lege tab
-fotograferen leert de lezer niets. Dezelfde afbeelding telkens ook onder de FR-pagina.
+Zes beelden, beide talen, uit **tenant_demo** met de lade open naast de lijst Relaties.
 
-- [ ] `journaal-lade.png` — de lijst Relaties met de lade rechts open op **Taken**, zodat de rail, de
-      schakelaar bovenaan en de samenhang met de geselecteerde rij in één beeld staan. Voor
-      `journaal/overzicht.md`.
-- [ ] `journaal-taken.png` — de tab **Taken** met twee taken: één met een verantwoordelijke en een
-      vervaldatum, één zonder, zodat het verschil zichtbaar is.
-- [ ] `journaal-notities.png` — de tab **Notities** met één notitie met inhoud, en de aangemaakt-regel
-      eronder leesbaar.
-- [ ] `journaal-bijlagen.png` — de tab **Bijlagen** met drie tot vier bestanden, waaronder minstens één PDF
-      (die krijgt als enige *Bekijken* in het menu) en één met een ingevulde omschrijving.
-- [ ] `journaal-mailverkeer.png` — de tab **Mailverkeer** met een verstuurd bericht, het label *Uitgaand*
-      en een zichtbare status.
-- [ ] `journaal-logboek.png` — de tab **Logboek** met bovenaan een **Gewijzigd**-regel die een echte
-      veldwijziging toont (oude waarde doorstreept → nieuwe) en eronder de **Aangemaakt**-regel met de
-      knop *+ zoveel andere velden*. Dát beeld verklaart de pagina in één oogopslag.
+⚠️ **De demo-tenant had nul journaal-inhoud.** Geen taak, notitie, bijlage of mail — het journaal was er dus
+niet te tonen, laat staan te fotograferen. Opgelost met de actie **Journaal vullen** op het conversiescherm
+(`JournaalTestData`), die acht relaties voorziet van taken, notities, bijlagen en uitgaande mail. Herhaalbaar:
+staat er al inhoud, dan doet ze niets.
+
+- [x] `journaal-lade` — de lijst mét de lade ernaast, voor `overzicht.md`.
+- [x] `journaal-taken` — een openstaande taak met hoge prioriteit en een afgewerkte.
+- [x] `journaal-notities` — een notitie met titel, datum en inhoud.
+- [x] `journaal-bijlagen` — drie PDF's met naam, omschrijving, grootte en datum.
+- [x] `journaal-mailverkeer` — twee uitgaande berichten met hun afleverstatus.
+- [x] `journaal-logboek` — de record-historiek. Die was al gevuld: 7688 regels op relaties.
+
+⚠️ **Geen beeld van de PDF-weergave** (de actie *Bekijken* op Bijlagen). Die viewer rendert op macOS een zwart
+vlak — een beperking van de ontwikkelomgeving, niet van de app. Een beeld daarvan zou een fout tonen die een
+gebruiker op Windows niet heeft. De gegenereerde PDF's zijn wél geldig; nagekeken met `file` en Quick Look.
 
 ## Aan de slag → het algemene-zaken-blok (`getting-started/*`) — ✅ AFGEWERKT 16/08/2026
 

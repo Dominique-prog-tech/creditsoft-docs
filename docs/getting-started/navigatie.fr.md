@@ -22,11 +22,42 @@ En haut à gauche se trouve un bouton pour **réduire** le menu. Une fois rédui
 
 ## La barre supérieure
 
-En haut à droite, vous trouverez quelques raccourcis :
+En haut à droite figurent les boutons que vous emportez partout, de gauche à droite :
 
-- **Retour d'information** (l'icône bulle de texte) — envoyez-nous un signalement ou une suggestion. Votre message nous parvient directement.
-- **Aide** (le point d'interrogation) — ouvre l'explication de l'écran sur lequel vous vous trouvez, avec un lien vers ce manuel complet.
-- **Votre avatar** (le bouton rond avec vos initiales ou votre photo) — ouvre vos **préférences personnelles**.
+- **Nouvelle tâche** — notez quelque chose à faire **sans devoir d'abord ouvrir un dossier ou une relation**.
+  Pratique lorsque vous êtes au téléphone et ne voulez rien oublier. Ce que vous créez ici se retrouve dans
+  l'écran [Tâches](../credit-management/tasks.md), avec les tâches rattachées à un dossier ou une relation.
+- **Clair ou sombre** (le croissant de lune) — bascule entre l'affichage clair et sombre.
+- **Notifications** (la cloche) — voir ci-dessous.
+- **Retour d'information** (l'icône de bulle) — envoyez-nous une remarque ou une suggestion. Votre message
+  nous parvient directement.
+- **Aide** (le point d'interrogation) — ouvre l'explication de l'écran où vous vous trouvez, avec un lien vers
+  ce manuel complet.
+- **Demander au manuel** — voir ci-dessous.
+- **Votre avatar** (le bouton rond portant vos initiales ou votre photo) — ouvre vos
+  [préférences](voorkeuren.md).
+
+### La cloche : vos tâches en retard
+
+La cloche compte les **tâches qui vous sont attribuées et dont la date d'échéance est dépassée**. Uniquement
+les vôtres — pas celles de tout le bureau, sans quoi le chiffre ne dirait rien de ce que vous devez faire.
+
+Cliquez dessus pour voir de quelles tâches il s'agit. S'il n'y a rien, c'est que rien n'est en retard.
+
+!!! note "Pourquoi *Tout marquer comme lu* ne fait rien"
+    Une tâche en retard n'est pas un message que l'on écarte d'un clic : elle disparaît lorsqu'on la
+    **termine ou la reporte**. Le compteur suit donc la réalité, et non un statut de lecture. Le bouton
+    *Tout marquer comme lu* est bien présent — il appartient au panneau de notifications lui-même — mais reste
+    sans effet ici.
+
+### Demander au manuel
+
+Ce bouton ouvre un **assistant** qui répond à votre question en langage courant, sur la base de ce manuel.
+Demandez par exemple *« où trouver l'historique d'une relation ? »* et vous obtenez la réponse avec une
+référence à la page dont elle provient.
+
+Il puise exclusivement dans le manuel. Si une information ne s'y trouve pas, il le dit — et c'est alors une
+lacune du manuel, non un manque de l'application. Faites-le-nous savoir via le bouton de retour d'information.
 
 ## Vos préférences
 

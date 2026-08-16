@@ -4,7 +4,7 @@ Een **notitie** is wat u wil vastleggen zonder dat er iemand iets mee moet doen:
 gezegd is, waarom een dossier stilligt, welke afspraak er mondeling gemaakt werd. Waar een
 [taak](taken.md) vooruitkijkt, kijkt een notitie terug.
 
-<!-- AFBEELDING: de journaal-lade op de tab Notities met een notitie in de lijst -->
+![Het onderdeel Notities met een notitie: titel, datum en de inhoud van het gesprek, met onderaan wie ze aanmaakte en wanneer.](../images/journaal-notities.png "Notities bij een relatie")
 
 ## Een notitie aanmaken
 

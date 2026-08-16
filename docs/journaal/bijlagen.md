@@ -4,7 +4,7 @@ Onder **Bijlagen** bewaart u de bestanden die bij een fiche horen: een identitei
 getekende offerte, een plan. Ze blijven bij de fiche staan, ook wanneer degene die ze opgeladen heeft er niet
 meer is.
 
-<!-- AFBEELDING: de journaal-lade op de tab Bijlagen met een tabel van opgeladen bestanden -->
+![Het onderdeel Bijlagen met drie opgeladen PDF-bestanden in een tabel met naam, omschrijving, grootte en datum van opladen.](../images/journaal-bijlagen.png "Bijlagen bij een relatie")
 
 ## Bestanden opladen
 

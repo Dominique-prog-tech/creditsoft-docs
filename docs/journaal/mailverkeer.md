@@ -3,7 +3,7 @@
 Onder **Mailverkeer** staat de correspondentie die vanuit CreditSoft over deze fiche vertrokken is — wie wat
 wanneer gekregen heeft, en of het aangekomen is. U kunt er ook meteen een nieuw bericht opstellen.
 
-<!-- AFBEELDING: de journaal-lade op de tab Mailverkeer met een verstuurd bericht in de lijst -->
+![Het onderdeel Mailverkeer met twee uitgaande berichten, elk met het label Uitgaand, de afleverstatus, de afzender, de bestemmeling en het begin van de tekst.](../images/journaal-mailverkeer.png "Mailverkeer bij een relatie")
 
 ## Een bericht versturen
 

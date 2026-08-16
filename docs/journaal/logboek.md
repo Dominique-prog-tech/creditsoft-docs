@@ -4,7 +4,7 @@ Het **Logboek** toont wat er met deze fiche gebeurd is: wie welk veld wijzigde, 
 naar welke. Het is de vraag *"wie heeft dat aangepast?"* — beantwoord zonder dat iemand het zich moet
 herinneren.
 
-<!-- AFBEELDING: de journaal-lade op de tab Logboek met een aanmaak en twee wijzigingen -->
+![Het onderdeel Logboek met de wijzigingen van een relatie, jongste bovenaan: per regel het label, het tijdstip, de gebruiker en per veld de oude waarde doorstreept met de nieuwe erachter.](../images/journaal-logboek.png "Het logboek van een relatie")
 
 ## Wat u ziet
 

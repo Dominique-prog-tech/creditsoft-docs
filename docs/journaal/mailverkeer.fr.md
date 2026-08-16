@@ -3,7 +3,7 @@
 Sous **Courrier** figure la correspondance partie de CreditSoft au sujet de cette fiche — qui a reçu quoi et
 quand, et si le message est bien arrivé. Vous pouvez aussi y rédiger immédiatement un nouveau message.
 
-<!-- AFBEELDING: le tiroir du journal sur l'onglet Courrier avec un message envoyé dans la liste -->
+![La partie Courrier avec deux messages sortants, chacun portant l'étiquette Sortant, le statut de remise, l'expéditeur, le destinataire et le début du texte.](../images/journaal-mailverkeer-fr.png "Le courrier lié à une relation")
 
 ## Envoyer un message
 

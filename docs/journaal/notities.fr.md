@@ -4,7 +4,7 @@ Une **note** est ce que vous voulez consigner sans que quelqu'un doive en faire 
 lors d'un appel, pourquoi un dossier est à l'arrêt, quel accord a été conclu oralement. Là où une
 [tâche](taken.md) regarde vers l'avant, une note regarde en arrière.
 
-<!-- AFBEELDING: le tiroir du journal sur l'onglet Notes avec une note dans la liste -->
+![La partie Notes avec une note : titre, date et contenu de l'entretien, avec en bas son auteur et la date de création.](../images/journaal-notities-fr.png "Les notes liées à une relation")
 
 ## Créer une note
 
