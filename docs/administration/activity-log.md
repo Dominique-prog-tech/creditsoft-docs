@@ -4,6 +4,8 @@ Het **Actielogboek** toont *wie wat wanneer deed* in CreditSoft. Het is een door
 belangrijke handelingen — denk aan aanmelden, een export, een statuswijziging of een verwijdering. Zo kan een
 beheerder achteraf nagaan wat er precies gebeurd is.
 
+![Het scherm Actielogboek in CreditSoft: een tabel met de kolommen Tijdstip, Gebruiker, Actie, Samenvatting, Entiteit en Uitkomst, gevuld met aanmeldingen en beheerhandelingen.](../images/actielogboek.png "Het actielogboek: wie deed wat, en wanneer")
+
 ## Het scherm openen
 
 Klik in de zijbalk op **Platformbeheer** en daarna op de tegel **Actielogboek** (onder *Gegevens*).

@@ -2,7 +2,7 @@
 
 Hier beheert u het **mastersjabloon** van verwachte documenten. Dat is de lijst waaruit u op een kredietdossier de documentchecklist samenstelt: loonfiche, aanslagbiljet, compromis, en zo verder.
 
-<!-- AFBEELDING: het documenttypes-scherm met de categorieën en enkele types -->
+![Het scherm Documenttypes in CreditSoft: een tabel met de omschrijving van elk verwacht document in het Nederlands en het Frans, met de categorie waartoe het behoort.](../images/documenttypes.png "De documenten die op de checklist van een kredietdossier kunnen staan")
 
 ## Het scherm openen
 

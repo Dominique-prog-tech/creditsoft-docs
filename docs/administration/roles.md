@@ -2,6 +2,8 @@
 
 Op het scherm **Rollen & rechten** bepaal je welke rollen er in je kantoor bestaan en welke rechten daaraan hangen, en wijs je je gebruikers aan die rollen toe. Een rol is een **bundel rechten**: iemand die rol krijgt, krijgt alle rechten van die bundel.
 
+![Het scherm Rollen & rechten in CreditSoft: bovenaan een keuzelijst voor de tenant en daaronder drie kolommen — links de rollen met de systeemrol Tenant-beheerder en een veld om een nieuwe rol toe te voegen, in het midden de uitleg bij de rechten van die rol, en rechts de lijst gebruikers met deze rol.](../images/rollen.png "De rollen van een kantoor, met de rechten en de toegewezen gebruikers ernaast")
+
 ## Het scherm openen
 
 Klik in de zijbalk op **Platformbeheer** en daarna op de tegel **Rollen** (onder *Toegang*). Bovenaan brengt de link **← Terug naar platformbeheer** je terug naar het overzicht.

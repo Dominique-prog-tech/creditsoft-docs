@@ -2,6 +2,8 @@
 
 L'écran **Rôles et droits** vous permet de définir quels rôles existent dans votre bureau et quels droits y sont associés, et d'attribuer ces rôles à vos utilisateurs. Un rôle est un **ensemble de droits** : celui qui reçoit le rôle obtient tous les droits de cet ensemble.
 
+![L'écran Rôles et droits dans CreditSoft : en haut une liste déroulante pour le tenant et en dessous trois colonnes — à gauche les rôles avec le rôle système Administrateur de tenant et un champ pour ajouter un rôle, au centre l'explication des droits de ce rôle, et à droite la liste des utilisateurs ayant ce rôle.](../images/rollen-fr.png "Les rôles d'un bureau, avec les droits et les utilisateurs attribués")
+
 ## Ouvrir l'écran
 
 Dans la barre latérale, cliquez sur **Administration**, puis sur la tuile **Rôles** (sous *Accès*). En haut, le lien **← Retour à l'administration** vous ramène à l'aperçu.

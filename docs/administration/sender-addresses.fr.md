@@ -2,6 +2,8 @@
 
 Les adresses d'envoi sont les **adresses e-mail utilisables comme expéditeur** lorsque CreditSoft envoie des e-mails. Vous constituez ici une courte liste ; lors de la rédaction d'un modèle d'e-mail, vous choisissez ensuite l'adresse d'envoi à utiliser. L'envoi lui-même passe par la connexion e-mail sécurisée avec ADM One.
 
+![L'écran Adresses d'envoi dans CreditSoft : un tableau avec les colonnes Nom de l'expéditeur et E-mail, avec en haut les boutons pour ajouter une adresse et exporter.](../images/verzendadressen-fr.png "Les adresses avec lesquelles CreditSoft envoie vos e-mails")
+
 ## Ouvrir l'écran
 
 Dans la barre latérale, cliquez sur **Administration**, puis sur la tuile **Adresses d'envoi** (sous *Communication*). En haut de l'écran, le lien **← Retour à l'administration** vous ramène à l'aperçu.

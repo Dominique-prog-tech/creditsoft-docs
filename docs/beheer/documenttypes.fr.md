@@ -2,7 +2,7 @@
 
 Vous gérez ici le **modèle maître** des documents attendus. C'est la liste à partir de laquelle vous composez la check-list documentaire sur un dossier de crédit : fiche de paie, avertissement-extrait de rôle, compromis, et ainsi de suite.
 
-<!-- AFBEELDING: het documenttypes-scherm met de categorieën en enkele types -->
+![L'écran Types de documents dans CreditSoft : un tableau avec la description de chaque document attendu en néerlandais et en français, avec la catégorie à laquelle il appartient.](../images/documenttypes-fr.png "Les documents qui peuvent figurer sur la liste de contrôle d'un dossier de crédit")
 
 ## Ouvrir l'écran
 

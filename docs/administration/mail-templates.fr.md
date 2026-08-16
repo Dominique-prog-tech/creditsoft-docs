@@ -2,6 +2,8 @@
 
 L'écran **Modèles d'e-mail** vous permet d'adapter le texte de vos e-mails sortants. Les modèles sont **fixes** — vous en choisissez un dans la liste et le modifiez ; vous n'en créez pas de nouveaux et n'en supprimez pas (ainsi chaque modèle reste lié à son rôle). Chaque modèle est **bilingue** (NL/FR).
 
+![L'écran Modèles d'e-mail dans CreditSoft : en haut le choix du modèle et de l'expéditeur, en dessous à gauche les onglets Néerlandais et Français avec l'objet et un éditeur de texte pour le contenu, et à droite un aperçu de l'e-mail.](../images/mailsjablonen-fr.png "Modifier un modèle d'e-mail, avec l'aperçu à côté")
+
 ## Ouvrir l'écran
 
 Dans la barre latérale, cliquez sur **Administration**, puis sur la tuile **Modèles d'e-mail** (sous *Communication*). En haut, le lien **← Retour à l'administration** vous ramène à l'aperçu.

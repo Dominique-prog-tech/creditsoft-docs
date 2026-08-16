@@ -4,6 +4,8 @@ Le **Journal d'activité** montre *qui a fait quoi et quand* dans CreditSoft. Il
 des actions importantes — connexion, export, changement de statut ou suppression, par exemple. Un
 administrateur peut ainsi vérifier après coup ce qui s'est exactement passé.
 
+![L'écran Journal d'activité dans CreditSoft : un tableau avec les colonnes Moment, Utilisateur, Action, Résumé, Entité et Résultat, rempli de connexions et d'opérations de gestion.](../images/actielogboek-fr.png "Le journal d'activité : qui a fait quoi, et quand")
+
 ## Ouvrir l'écran
 
 Cliquez dans la barre latérale sur **Administration**, puis sur la tuile **Journal d'activité** (sous

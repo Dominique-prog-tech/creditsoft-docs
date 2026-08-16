@@ -2,7 +2,7 @@
 
 Op dit scherm bepaalt u zelf hoe uw dossiers op het dashboard **gegroepeerd en geteld** worden. Het bevat twee losse instellingen die niets met elkaar te maken hebben.
 
-<!-- AFBEELDING: het scherm Dashboard-fases met links de fasetabel en rechts de statustoewijzing -->
+![Het scherm Dashboard-fases in CreditSoft: bovenaan de fases met hun naam in beide talen, hun volgorde en de vinkjes eindfase en opvolging, met rechts de koppeling van elke dossierstatus aan een fase; daaronder de koppeling van elke contractstatus aan een van de vier KPI-tegels.](../images/dashboard-fases.png "Instellen hoe dossiers gegroepeerd en geteld worden op het dashboard")
 
 !!! info "Elke wijziging wordt meteen bewaard"
     Er is geen bewaarknop. Past u een naam aan of kiest u een andere fase, dan staat het er meteen. Wilt u een koppeling ongedaan maken, klik dan op het kruisje in de keuzelijst.

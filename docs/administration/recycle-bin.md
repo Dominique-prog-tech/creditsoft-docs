@@ -2,6 +2,8 @@
 
 In de **Prullenbak** vind je de records die verwijderd zijn. Bij CreditSoft wordt niets meteen definitief gewist: een verwijderd record verhuist naar de Prullenbak en blijft **herstelbaar**. Zo kan een beheerder een per ongeluk verwijderde relatie, aanbrenger of dossier zonder gegevensverlies terugzetten.
 
+![Het scherm Prullenbak in CreditSoft: een tabel met de kolommen Type, Naam en Verwijderd op, met achter elke rij een knop Herstellen, en bovenaan een zoekveld en een exportknop.](../images/prullenbak.png "De prullenbak met verwijderde records en de knop om ze te herstellen")
+
 ## Het scherm openen
 
 Klik in de zijbalk op **Platformbeheer** en daarna op de tegel **Prullenbak** (onder *Gegevens*).

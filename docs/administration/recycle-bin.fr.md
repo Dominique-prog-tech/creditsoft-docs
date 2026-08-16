@@ -2,6 +2,8 @@
 
 Dans la **Corbeille**, vous trouvez les enregistrements qui ont été supprimés. Dans CreditSoft, rien n'est effacé définitivement tout de suite : un enregistrement supprimé est déplacé vers la Corbeille et reste **récupérable**. Un administrateur peut ainsi restaurer une relation, un apporteur ou un dossier supprimé par erreur, sans perte de données.
 
+![L'écran Corbeille dans CreditSoft : un tableau avec les colonnes Type, Nom et Supprimé le, avec derrière chaque ligne un bouton Restaurer, et en haut un champ de recherche et un bouton d'exportation.](../images/prullenbak-fr.png "La corbeille avec les enregistrements supprimés et le bouton pour les restaurer")
+
 ## Ouvrir l'écran
 
 Cliquez dans la barre latérale sur **Administration**, puis sur la tuile **Corbeille** (sous *Données*).

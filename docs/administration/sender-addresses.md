@@ -2,6 +2,8 @@
 
 Verzendadressen zijn de **e-mailadressen die als afzender** gebruikt kunnen worden wanneer CreditSoft e-mails verstuurt. U legt hier een korte lijst aan; bij het opstellen van een mailsjabloon kiest u vervolgens welk verzendadres gebruikt wordt. Het versturen zelf verloopt via de beveiligde mailkoppeling met ADM One.
 
+![Het scherm Verzendadressen in CreditSoft: een tabel met de kolommen Afzendernaam en E-mail, met bovenaan de knoppen om een adres toe te voegen en te exporteren.](../images/verzendadressen.png "De adressen waarmee CreditSoft uw mails verstuurt")
+
 ## Het scherm openen
 
 Klik in de zijbalk op **Platformbeheer** en daarna op de tegel **Verzendadressen** (onder *Communicatie*). Bovenaan het scherm brengt de link **← Terug naar platformbeheer** u terug naar het overzicht.
