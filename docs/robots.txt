@@ -1,6 +1,20 @@
 User-agent: *
-Disallow: /
+Allow: /
 
-# Documentatie in opbouw — indexering tijdelijk geblokkeerd.
-# Wanneer de docs grotendeels voltooid zijn, wordt dit vervangen door
-# een Allow-policy en sitemap-verwijzing.
+Sitemap: https://docs.creditsoft.be/sitemap.xml
+
+# Indexering aangezet op 16/08/2026, beslist door Dominique.
+#
+# Tot dan stond hier `Disallow: /` met de nota "documentatie in opbouw". Waarom het nu wél mag: de
+# handleiding telt 34 pagina's in NL en FR, de teksten zijn gevalideerd vóór ze geschreven werden, en
+# het technische fundament klopt — site_url is gezet, elke pagina draagt een canonical, en NL/FR zijn
+# met hreflang aan elkaar geknoopt. Zoekmachines zien dus twee talen van één pagina en geen duplicaat.
+# De sitemap hierboven genereert mkdocs bij elke build zelf; die hoeft niemand bij te houden.
+#
+# ⚠️ WAT DIT VAN ONS VRAAGT: een URL die geïndexeerd is en daarna verhuist, wordt een 404 in de
+# zoekresultaten. Vanaf nu hoort bij het hernoemen of verplaatsen van een pagina dus een omleiding, niet
+# enkel een nieuwe naam. Dat was vóór vandaag gratis en is het nu niet meer.
+#
+# ⚠️ Twee luiken hadden op dat moment nog geen schermafbeeldingen: het journaal (0 van 6) en het
+# kredietluik (2 van 7). Bewust aanvaard — beelden bepalen niet of een pagina juist of vindbaar is, wel
+# hoe verzorgd ze oogt. Ze komen bij die luiken zelf.
