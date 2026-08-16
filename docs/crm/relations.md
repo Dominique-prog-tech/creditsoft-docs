@@ -24,8 +24,11 @@ De tabel toont per relatie: **naam**, **type**, **e-mail**, **telefoon**, **geme
 
 ### Journaal
 
-Rechts op het scherm zit de lade **Journaal**. Selecteer een relatie en klap ze open: daar houdt u per relatie
-uw **taken, notities, bijlagen en mailverkeer** bij, plus het **logboek** van de wijzigingen.
+Rechts op het scherm zit de lade **Journaal**. Selecteer een relatie en klap ze open: daar staat wat er rond
+die fiche gebeurt — [taken](../journaal/taken.md), [notities](../journaal/notities.md), [bijlagen](../journaal/bijlagen.md),
+[mailverkeer](../journaal/mailverkeer.md) en het [logboek](../journaal/logboek.md) van de wijzigingen.
+
+De lade werkt op elk scherm hetzelfde; [Het journaal](../journaal/overzicht.md) legt uit hoe.
 
 ## Twee fiches samenvoegen
 

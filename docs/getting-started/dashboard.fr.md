@@ -17,6 +17,10 @@ Les tuiles colorées comptent des **contrats**, pas des dossiers. Chaque tuile r
 
 Quels statuts de contrat comptent dans quelle tuile, c'est vous qui le déterminez — voir [la répartition en phases](../beheer/dashboard-fases.md). Les statuts que vous ne rattachez nulle part ne comptent dans aucune tuile.
 
+!!! tip "Des tirets au lieu de chiffres ?"
+    C'est qu'aucun statut de contrat n'est encore lié à une tuile. Vous voyez un tiret et non un zéro, car
+    zéro signifierait qu'il n'y a réellement rien à compter. Sous les tuiles, une phrase vous mène au réglage.
+
 ## Le pipeline : les dossiers par phase
 
 Sous les tuiles, vos dossiers sont regroupés par **phase**. Une phase est un groupe de statuts que vous composez vous-même — par exemple *En traitement*, *Introduit*, *Finalisé*.

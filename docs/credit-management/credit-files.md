@@ -15,7 +15,7 @@ U ziet uw dossiers met dossiernummer, status, kredietbedrag, quotiteit en akteda
 - **Zoeken** — rechtsboven, zoekt over alle kolommen.
 - **Filteren** — komt u vanaf het dashboard, dan staat de lijst al gefilterd op die fase of status. Bovenaan ziet u dan welke filter actief is, met een knop **Filter wissen** ernaast.
 - **Kolommen kiezen** en **Exporteren** — via de knoppen rechtsboven. De export volgt de taal van uw scherm.
-- **Journaal** — klik rechts op de rail **Journaal** om taken, notities, bijlagen en mailverkeer van het geselecteerde dossier te zien zonder het te openen.
+- **[Journaal](../journaal/overzicht.md)** — klik rechts op de rail **Journaal** om de [taken](../journaal/taken.md), [notities](../journaal/notities.md), [bijlagen](../journaal/bijlagen.md), het [mailverkeer](../journaal/mailverkeer.md) en het [logboek](../journaal/logboek.md) van het geselecteerde dossier te zien zonder het te openen.
 
 **Dubbelklik** een rij om het dossier te openen.
 

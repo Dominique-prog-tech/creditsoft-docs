@@ -20,9 +20,11 @@ De tabel toont per instelling: **naam**, **gemeente**, **telefoon**, **e-mail** 
 
 ### Journaal
 
-Rechts op het scherm zit de lade **Journaal**. Selecteer een instelling en klap ze open: daar houdt u per
-instelling uw **taken, notities, bijlagen en mailverkeer** bij, plus het **logboek** van de wijzigingen. De lade
-onthoudt of u ze open of dicht liet staan.
+Rechts op het scherm zit de lade **Journaal**. Selecteer een instelling en klap ze open: daar staat wat er rond
+die fiche gebeurt — [taken](../journaal/taken.md), [notities](../journaal/notities.md), [bijlagen](../journaal/bijlagen.md),
+[mailverkeer](../journaal/mailverkeer.md) en het [logboek](../journaal/logboek.md) van de wijzigingen.
+
+De lade werkt op elk scherm hetzelfde; [Het journaal](../journaal/overzicht.md) legt uit hoe.
 
 ## De fiche van een instelling
 

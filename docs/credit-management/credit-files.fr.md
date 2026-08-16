@@ -15,7 +15,7 @@ Vous voyez vos dossiers avec le numéro de dossier, le statut, le montant du cr�
 - **Rechercher** — en haut à droite ; la recherche porte sur toutes les colonnes.
 - **Filtrer** — si vous arrivez depuis le tableau de bord, la liste est déjà filtrée sur cette phase ou ce statut. Le filtre actif s'affiche alors en haut, avec un bouton **Effacer le filtre** à côté.
 - **Sélecteur de colonne** et **Exporter** — via les boutons en haut à droite. L'export suit la langue de votre écran.
-- **Journal** — cliquez à droite sur le rail **Journal** pour consulter les tâches, notes, pièces jointes et courriels du dossier sélectionné sans l'ouvrir.
+- **[Journal](../journaal/overzicht.md)** — cliquez à droite sur le rail **Journal** pour consulter les [tâches](../journaal/taken.md), [notes](../journaal/notities.md), [pièces jointes](../journaal/bijlagen.md), le [courrier](../journaal/mailverkeer.md) et l'[historique](../journaal/logboek.md) du dossier sélectionné sans l'ouvrir.
 
 **Double-cliquez** une ligne pour ouvrir le dossier.
 

@@ -151,6 +151,16 @@ plugins:
             Dashboard-fases: Phases du tableau de bord
             Keuzelijsten: Listes de choix
             Documenttypes: Types de documents
+            # Bijgekomen 16/08/2026 met het journaal-luik en de nav-regel voor "Werken met lijsten".
+            Werken met lijsten: Travailler avec les listes
+            Journaal: Journal
+            Het journaal: Le journal
+            Notities: Notes
+            Bijlagen: Pièces jointes
+            Mailverkeer: Courrier
+            # "Historique" en niet "Journal": de lade heet in het Frans al Journal. In het Nederlands
+            # speelt dat niet — daar staat Logboek in de lade Journaal. Ook zo in de toepassing zelf.
+            Logboek: Historique
             Installatie: Installation
             Eerste aanmelding: Première connexion
             Interface-overzicht: Aperçu de l'interface
@@ -223,8 +233,22 @@ nav:
 
   - Aan de slag:
     - Navigeren in CreditSoft: getting-started/navigatie.md
+    # Stond tot 16/08/2026 wél op de schijf maar niet hier: de pagina was enkel te bereiken via een
+    # link ín een andere pagina, niet via het menu. Met een expliciete nav toont mkdocs enkel wat
+    # hier staat — een bestand toevoegen is dus niet genoeg.
+    - Werken met lijsten: getting-started/lijsten.md
     - Het dashboard: getting-started/dashboard.md
     - Tweestapsverificatie (2FA): getting-started/tweestapsverificatie.md
+
+  # Het journaal hangt aan zes schermen en werkt overal hetzelfde. Daarom één keer beschreven, en
+  # vanuit die zes pagina's aangehaald — niet zes keer herhaald en zes keer bij te werken.
+  - Journaal:
+    - Het journaal: journaal/overzicht.md
+    - Taken: journaal/taken.md
+    - Notities: journaal/notities.md
+    - Bijlagen: journaal/bijlagen.md
+    - Mailverkeer: journaal/mailverkeer.md
+    - Logboek: journaal/logboek.md
 
   # Groeit mee per gevalideerd scherm — voeg hier telkens één regel toe.
   - Kredieten:

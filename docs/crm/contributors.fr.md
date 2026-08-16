@@ -21,7 +21,12 @@ Le tableau affiche par apporteur : **nom**, **type**, **qualité**, **e-mail**, 
 
 ### Journal
 
-À droite de l'écran se trouve le tiroir **Journal** : par apporteur, vos **tâches, notes, pièces jointes et courriers**, ainsi que le **journal** des modifications.
+À droite de l'écran se trouve le tiroir **Journal**. Sélectionnez un apporteur et ouvrez-le : vous y trouvez ce
+qui se passe autour de cette fiche — [tâches](../journaal/taken.md), [notes](../journaal/notities.md),
+[pièces jointes](../journaal/bijlagen.md), [courrier](../journaal/mailverkeer.md) et l'[historique](../journaal/logboek.md)
+des modifications.
+
+Le tiroir fonctionne de la même manière sur chaque écran ; [Le journal](../journaal/overzicht.md) explique comment.
 
 ## La fiche d'un apporteur
 

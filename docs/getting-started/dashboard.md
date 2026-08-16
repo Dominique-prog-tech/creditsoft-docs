@@ -17,6 +17,11 @@ De gekleurde tegels tellen **contracten**, niet dossiers. Elke tegel staat voor 
 
 Welke contractstatussen in welke tegel meetellen, bepaalt u zelf — zie [de fase-indeling](../beheer/dashboard-fases.md). Statussen die u nergens koppelt, tellen in geen enkele tegel mee.
 
+!!! tip "Staan er streepjes in plaats van cijfers?"
+    Dan is er nog géén enkele contractstatus aan een tegel gekoppeld. U ziet een streepje en geen nul, want
+    nul zou betekenen dat er echt niets te tellen valt. Onder de tegels staat een zin die u naar de instelling
+    brengt.
+
 ## De pijplijn: dossiers per fase
 
 Onder de tegels staan uw dossiers gegroepeerd per **fase**. Een fase is een groep statussen die u zelf samenstelt — bijvoorbeeld *In behandeling*, *Ingediend*, *Afgewerkt*.
