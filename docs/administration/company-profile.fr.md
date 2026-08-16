@@ -1,6 +1,6 @@
 # Fiche d'entreprise
 
-La fiche d'entreprise contient les données de votre propre bureau — utilisées sur les documents et lors de l'envoi d'e-mails. Vous les modifiez directement et cliquez sur **Enregistrer** (en haut à droite).
+La fiche d'entreprise contient les données de votre propre bureau — utilisées sur les documents et lors de l'envoi d'e-mails. Vous les modifiez directement et cliquez sur **Enregistrer** en bas de l'écran.
 
 !!! note "Le nom"
     Le **nom** de votre bureau est géré par ADM One et ne peut pas être modifié ici.
@@ -36,6 +36,6 @@ Saisissez votre **numéro de TVA / d'entreprise** et cliquez sur **Récupérer**
 
 ## Enregistrer
 
-Cliquez sur **Enregistrer** en haut à droite. Si vous saisissez une adresse e-mail, elle doit avoir une forme
+Cliquez sur **Enregistrer** en bas — ce bouton reste visible pendant que vous faites défiler l'écran. Si vous saisissez une adresse e-mail, elle doit avoir une forme
 valide. Le **numéro de téléphone est mis en forme** dans la notation officielle : si vous tapez `09/3724829`,
 vous lirez `09 372 48 29` après l'enregistrement.
