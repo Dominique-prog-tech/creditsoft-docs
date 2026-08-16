@@ -28,7 +28,9 @@ Rechts op het scherm zit de lade **Journaal**. Selecteer een relatie en klap ze 
 die fiche gebeurt — [taken](../journaal/taken.md), [notities](../journaal/notities.md), [bijlagen](../journaal/bijlagen.md),
 [mailverkeer](../journaal/mailverkeer.md) en het [logboek](../journaal/logboek.md) van de wijzigingen.
 
-De lade werkt op elk scherm hetzelfde; [Het journaal](../journaal/overzicht.md) legt uit hoe.
+Opent u de fiche, dan staan dezelfde onderdelen bovenaan als **tabbladen** — u hoeft dus niet terug
+naar de lijst om ze te raadplegen. Lade en tabbladen tonen hetzelfde en werken op elk scherm gelijk;
+[Het journaal](../journaal/overzicht.md) legt uit hoe.
 
 ## Twee fiches samenvoegen
 
@@ -61,11 +63,13 @@ Een relatie is ofwel een **particulier** ofwel een **bedrijf**. Dat kiest u bove
 ## De fiche van een relatie
 
 **Nieuw** en een dubbelklik openen allebei de **fiche als een volledige pagina**. Bovenaan staat een
-terugkeerlink naar de lijst, met daarnaast de soort en de naam.
+terugkeerknop naar de lijst, met daarnaast de soort en de naam.
 
 ![De fiche van particulier Alain Adriaenssens over de volle pagina: het tabblad Algemene informatie met type, naam, voornaam, telefoon, gsm, documenttaal en het hoofdadres links, en rechts het interne nummer, de aanspreking, e-mail en website, daaronder het brede blok Opmerkingen en een balk met de knoppen Opslaan, Annuleren en Verwijderen.](../images/relaties-fiche.png "De volledige fiche van een relatie, met de algemene gegevens en de opmerkingen"){ .volle-breedte }
 
-De fiche heeft **twee tabbladen**, en daaronder een blok **Opmerkingen** en een knoppenbalk die in beeld blijft.
+De gegevens van de relatie staan op **twee tabbladen**, met daarnaast de tabbladen van het
+[journaal](../journaal/overzicht.md). Elk van de twee sluit af met een blok **Opmerkingen** — het is telkens
+hetzelfde veld — en onderaan blijft de knoppenbalk in beeld.
 
 ### Tabblad "Algemene informatie" (particulier)
 

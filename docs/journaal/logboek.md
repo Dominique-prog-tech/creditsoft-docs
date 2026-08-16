@@ -44,7 +44,7 @@ geschiedenis.
 ## Wie het mag zien
 
 Het Logboek vraagt hetzelfde recht als het [Actielogboek](../administration/activity-log.md). Heeft u dat niet,
-dan verschijnt het onderdeel niet in de lade. U regelt dat bij [Rollen](../administration/roles.md).
+dan verschijnt het onderdeel niet — niet in de lade en niet als tabblad op de fiche. U regelt dat bij [Rollen](../administration/roles.md).
 
 ## Verschil met het Actielogboek
 

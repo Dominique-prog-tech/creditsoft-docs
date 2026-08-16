@@ -7,23 +7,37 @@ mail. Dat is het **journaal**.
 Het journaal hangt niet aan één scherm. Het werkt op elke fiche waar het zinvol is, en het werkt er telkens op
 dezelfde manier. Wat u hier leest, geldt dus voor al die schermen samen.
 
-![De lijst Relaties met rechts de journaal-lade open op het onderdeel Taken; de geselecteerde rij links en de inhoud van de lade rechts horen bij elkaar.](../images/journaal-lade.png "De journaal-lade naast de lijst")
-
 ## Waar u het vindt
 
-Rechts op het scherm zit een smalle **rail** met het woord *Journaal*. Klik erop en de lade schuift open naast
-de lijst. De lade toont altijd het journaal van de **rij die u geselecteerd hebt** — klikt u een andere rij aan,
-dan volgt de lade mee. U hoeft de fiche dus niet te openen om te zien wat eraan hangt.
+Op **twee plaatsen**, met dezelfde inhoud: naast de lijst, en in de fiche zelf.
+
+### Naast de lijst
+
+Rechts op een lijstscherm zit een smalle **rail** met het woord *Journaal*. Klik erop en de lade schuift open
+naast de lijst. De lade toont altijd het journaal van de **rij die u geselecteerd hebt** — klikt u een andere
+rij aan, dan volgt de lade mee. U hoeft de fiche dus niet te openen om te zien wat eraan hangt.
 
 Staat er nog niets geselecteerd, dan vraagt de lade u eerst een rij te kiezen.
+
+![De lijst Relaties met rechts de journaal-lade open op het onderdeel Taken; de geselecteerde rij links en de inhoud van de lade rechts horen bij elkaar.](../images/journaal-lade.png "De journaal-lade naast de lijst")
 
 !!! tip "De hoogte is instelbaar"
     U kunt de lade hoger of lager slepen aan de rand. Die keuze blijft bewaard voor de volgende keer.
 
+### In de fiche
+
+Opent u een fiche, dan staan dezelfde onderdelen bovenaan als **tabbladen**, rechts van de tabbladen van de
+fiche zelf. Zo blijft alles bij de hand terwijl u aan het record werkt.
+
+![De fiche van een relatie met bovenaan links de tabbladen van de fiche en rechts de tabbladen Taken, Notities, Bijlagen, Mailverkeer en Logboek; het tabblad Taken staat open met de takenlijst eronder.](../images/relaties-fiche-journaal.png "Het journaal als tabbladen op de fiche")
+
+Het is dezelfde inhoud als in de lade. Een taak die u hier toevoegt, ziet uw collega ook wanneer hij de rij in
+de lijst aanklikt.
+
 ## De vijf onderdelen
 
-Bovenaan de lade staan de onderdelen naast elkaar. In een smalle lade ziet u van de niet-actieve onderdelen
-enkel het icoon; wijs het aan om de naam te zien.
+In de lade staan de onderdelen bovenaan naast elkaar; in een smalle lade ziet u van de niet-actieve onderdelen
+enkel het icoon — wijs het aan om de naam te zien. Op een fiche staan ze voluit als tabbladen.
 
 | Onderdeel | Waarvoor |
 |---|---|
@@ -37,12 +51,17 @@ enkel het icoon; wijs het aan om de naam te zien.
 
 Het journaal staat op de zes hoofdfiches van CreditSoft:
 
-- [Kredietdossiers](../credit-management/credit-files.md)
-- [Relaties](../crm/relations.md)
-- [Professionals](../crm/professionals.md)
-- [Aanbrengers](../crm/contributors.md)
-- [Kredietinstellingen](../credit-management/financial-institutions.md)
-- [Verzekeraars](../credit-management/insurance-companies.md)
+| Scherm | Naast de lijst | Als tabbladen in de fiche |
+|---|---|---|
+| [Relaties](../crm/relations.md) | ✔ | ✔ |
+| [Professionals](../crm/professionals.md) | ✔ | ✔ |
+| [Aanbrengers](../crm/contributors.md) | ✔ | ✔ |
+| [Kredietinstellingen](../credit-management/financial-institutions.md) | ✔ | ✔ |
+| [Verzekeraars](../credit-management/insurance-companies.md) | ✔ | ✔ |
+| [Kredietdossiers](../credit-management/credit-files.md) | ✔ | — |
+
+Bij een kredietdossier werkt u met het journaal via de lade naast de lijst. Het dossierscherm zelf toont zoveel
+gegevens dat het een eigen indeling heeft.
 
 ## Niet iedereen ziet hetzelfde
 

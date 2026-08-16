@@ -29,7 +29,9 @@ qui se passe autour de cette fiche — [tâches](../journaal/taken.md), [notes](
 [pièces jointes](../journaal/bijlagen.md), [courrier](../journaal/mailverkeer.md) et l'[historique](../journaal/logboek.md)
 des modifications.
 
-Le tiroir fonctionne de la même manière sur chaque écran ; [Le journal](../journaal/overzicht.md) explique comment.
+Lorsque vous ouvrez la fiche, les mêmes parties figurent en haut sous forme d'**onglets** — vous ne devez
+donc pas revenir à la liste pour les consulter. Le tiroir et les onglets affichent la même chose et
+fonctionnent de manière identique sur chaque écran ; [Le journal](../journaal/overzicht.md) explique comment.
 
 ## Fusionner deux fiches
 
@@ -62,12 +64,14 @@ Une relation est soit un **particulier**, soit une **entreprise**. Vous le chois
 
 ## La fiche d'une relation
 
-**Nouveau** et un double-clic ouvrent tous deux la **fiche sur une page entière**. En haut figure un lien de
+**Nouveau** et un double-clic ouvrent tous deux la **fiche sur une page entière**. En haut figure un bouton de
 retour vers la liste, suivi du type et du nom.
 
 ![La fiche du particulier Alain Adriaenssens sur toute la page : l'onglet Informations générales avec le type, le nom, le prénom, le téléphone, le GSM, la langue des documents et l'adresse principale à gauche, et à droite le numéro interne, la formule d'appel, l'e-mail et le site web, en dessous le large bloc Remarques et une barre avec les boutons Enregistrer, Annuler et Supprimer.](../images/relaties-fiche-fr.png "La fiche complète d'une relation, avec les données générales et les remarques"){ .volle-breedte }
 
-La fiche comporte **deux onglets**, puis un bloc **Remarques** et une barre de boutons qui reste visible.
+Les données de la relation figurent sur **deux onglets**, à côté desquels se trouvent les onglets du
+[journal](../journaal/overzicht.md). Chacun des deux se termine par un bloc **Remarques** — il s'agit chaque
+fois du même champ — et la barre de boutons reste visible en bas.
 
 ### Onglet « Informations générales » (particulier)
 

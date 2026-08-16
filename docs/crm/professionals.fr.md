@@ -26,11 +26,13 @@ qui se passe autour de cette fiche — [tâches](../journaal/taken.md), [notes](
 [pièces jointes](../journaal/bijlagen.md), [courrier](../journaal/mailverkeer.md) et l'[historique](../journaal/logboek.md)
 des modifications.
 
-Le tiroir fonctionne de la même manière sur chaque écran ; [Le journal](../journaal/overzicht.md) explique comment.
+Lorsque vous ouvrez la fiche, les mêmes parties figurent en haut sous forme d'**onglets** — vous ne devez
+donc pas revenir à la liste pour les consulter. Le tiroir et les onglets affichent la même chose et
+fonctionnent de manière identique sur chaque écran ; [Le journal](../journaal/overzicht.md) explique comment.
 
 ## La fiche d'un professionnel
 
-**Nouveau** et un double-clic ouvrent tous deux la **fiche sur une page entière**. En haut figure un lien de
+**Nouveau** et un double-clic ouvrent tous deux la **fiche sur une page entière**. En haut figure un bouton de
 retour vers la liste, suivi du type et du nom.
 
 ![La fiche de l'agence immobilière Baken Immo Aalst sur toute la page : le bloc Général avec le type, le nom, l'adresse Beukenlaan 50 à 1000 Bruxelles, le téléphone et l'e-mail, le numéro de TVA avec le bouton Récupérer et la langue des documents sur Français, en dessous le bloc Facturation et le large bloc Remarques, avec en bas les boutons Enregistrer, Annuler et Supprimer.](../images/professionals-fiche-fr.png "La fiche complète d'un professionnel, avec les données générales, les coordonnées de facturation et les remarques"){ .volle-breedte }

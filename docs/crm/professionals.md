@@ -25,12 +25,14 @@ Rechts op het scherm zit de lade **Journaal**. Selecteer een professional en kla
 die fiche gebeurt — [taken](../journaal/taken.md), [notities](../journaal/notities.md), [bijlagen](../journaal/bijlagen.md),
 [mailverkeer](../journaal/mailverkeer.md) en het [logboek](../journaal/logboek.md) van de wijzigingen.
 
-De lade werkt op elk scherm hetzelfde; [Het journaal](../journaal/overzicht.md) legt uit hoe.
+Opent u de fiche, dan staan dezelfde onderdelen bovenaan als **tabbladen** — u hoeft dus niet terug
+naar de lijst om ze te raadplegen. Lade en tabbladen tonen hetzelfde en werken op elk scherm gelijk;
+[Het journaal](../journaal/overzicht.md) legt uit hoe.
 
 ## De fiche van een professional
 
 **Nieuw** en een dubbelklik openen allebei de **fiche als een volledige pagina**. Bovenaan staat een
-terugkeerlink naar de lijst, met daarnaast het type en de naam.
+terugkeerknop naar de lijst, met daarnaast het type en de naam.
 
 ![De fiche van makelaarskantoor Baken Immo Aalst over de volle pagina: het blok Algemeen met type, naam, adres Beukenlaan 50 in 1000 Brussel, telefoon en e-mail, het btw-nummer met de knop Ophalen en de documenttaal op Frans, daaronder het blok Facturatie en het brede blok Opmerkingen, met onderaan de knoppen Opslaan, Annuleren en Verwijderen.](../images/professionals-fiche.png "De volledige fiche van een professional, met de algemene gegevens, de facturatiecontactgegevens en de opmerkingen"){ .volle-breedte }
 

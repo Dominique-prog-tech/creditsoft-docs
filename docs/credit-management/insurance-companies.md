@@ -24,12 +24,14 @@ Rechts op het scherm zit de lade **Journaal**. Selecteer een verzekeraar en klap
 die fiche gebeurt — [taken](../journaal/taken.md), [notities](../journaal/notities.md), [bijlagen](../journaal/bijlagen.md),
 [mailverkeer](../journaal/mailverkeer.md) en het [logboek](../journaal/logboek.md) van de wijzigingen.
 
-De lade werkt op elk scherm hetzelfde; [Het journaal](../journaal/overzicht.md) legt uit hoe.
+Opent u de fiche, dan staan dezelfde onderdelen bovenaan als **tabbladen** — u hoeft dus niet terug
+naar de lijst om ze te raadplegen. Lade en tabbladen tonen hetzelfde en werken op elk scherm gelijk;
+[Het journaal](../journaal/overzicht.md) legt uit hoe.
 
 ## De fiche van een verzekeraar
 
 **Nieuw** en een dubbelklik openen allebei de **fiche als een volledige pagina**. Bovenaan staat een
-terugkeerlink naar de lijst, met daarnaast de naam van de maatschappij.
+terugkeerknop naar de lijst, met daarnaast de naam van de maatschappij.
 
 ![De fiche van verzekeraar AXA over de volle pagina: het blok Algemene informatie met naam, adres Zuidlaan 47 in 2800 Mechelen, land België, telefoon, e-mail en website, het instellingsnummer VZ8278 en de documenttaal op Nederlands, daaronder het brede blok Opmerkingen en een balk met de knoppen Opslaan, Annuleren en Verwijderen.](../images/verzekeraars-fiche.png "De volledige fiche van een verzekeraar, met de algemene gegevens en de opmerkingen"){ .volle-breedte }
 

@@ -25,11 +25,13 @@ qui se passe autour de cette fiche — [tâches](../journaal/taken.md), [notes](
 [pièces jointes](../journaal/bijlagen.md), [courrier](../journaal/mailverkeer.md) et l'[historique](../journaal/logboek.md)
 des modifications.
 
-Le tiroir fonctionne de la même manière sur chaque écran ; [Le journal](../journaal/overzicht.md) explique comment.
+Lorsque vous ouvrez la fiche, les mêmes parties figurent en haut sous forme d'**onglets** — vous ne devez
+donc pas revenir à la liste pour les consulter. Le tiroir et les onglets affichent la même chose et
+fonctionnent de manière identique sur chaque écran ; [Le journal](../journaal/overzicht.md) explique comment.
 
 ## La fiche d'une institution
 
-**Nouveau** et un double-clic ouvrent tous deux la **fiche sur une page entière**. En haut figure un lien de
+**Nouveau** et un double-clic ouvrent tous deux la **fiche sur une page entière**. En haut figure un bouton de
 retour vers la liste, suivi du nom de l'institution.
 
 ![La fiche de l'institution de crédit AXA Bank sur toute la page : en haut le bloc Informations générales avec le nom, l'adresse, les coordonnées et la langue des documents, en dessous le bloc Commissionnement par défaut avec un pourcentage direct de 40 % et quatre paiements planifiés totalisant 100 %, en bas le large bloc Remarques et une barre avec les boutons Enregistrer, Annuler et Supprimer.](../images/kredietinstellingen-fiche-fr.png "La fiche complète d'une institution de crédit, avec les données générales, le commissionnement et les remarques"){ .volle-breedte }

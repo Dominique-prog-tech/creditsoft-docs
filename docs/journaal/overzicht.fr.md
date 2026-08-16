@@ -7,24 +7,40 @@ C'est le **journal**.
 Le journal n'appartient pas à un seul écran. Il fonctionne sur chaque fiche où cela a du sens, et toujours de la
 même manière. Ce que vous lisez ici vaut donc pour tous ces écrans à la fois.
 
-![La liste Relations avec, à droite, le tiroir du journal ouvert sur la partie Tâches ; la ligne sélectionnée à gauche et le contenu du tiroir à droite vont de pair.](../images/journaal-lade-fr.png "Le tiroir du journal à côté de la liste")
-
 ## Où le trouver
 
-À droite de l'écran se trouve un **rail** étroit portant le mot *Journal*. Cliquez dessus et le tiroir s'ouvre à
-côté de la liste. Il affiche toujours le journal de la **ligne que vous avez sélectionnée** — sélectionnez une
-autre ligne et le tiroir suit. Vous ne devez donc pas ouvrir la fiche pour voir ce qui s'y rattache.
+À **deux endroits**, avec le même contenu : à côté de la liste, et dans la fiche même.
+
+### À côté de la liste
+
+À droite d'un écran de liste se trouve un **rail** étroit portant le mot *Journal*. Cliquez dessus et le tiroir
+s'ouvre à côté de la liste. Il affiche toujours le journal de la **ligne que vous avez sélectionnée** —
+sélectionnez une autre ligne et le tiroir suit. Vous ne devez donc pas ouvrir la fiche pour voir ce qui s'y
+rattache.
 
 Si rien n'est encore sélectionné, le tiroir vous invite d'abord à choisir une ligne.
+
+![La liste Relations avec, à droite, le tiroir du journal ouvert sur la partie Tâches ; la ligne sélectionnée à gauche et le contenu du tiroir à droite vont de pair.](../images/journaal-lade-fr.png "Le tiroir du journal à côté de la liste")
 
 !!! tip "La hauteur est réglable"
     Vous pouvez agrandir ou réduire le tiroir en tirant sur son bord. Ce choix reste enregistré pour la fois
     suivante.
 
+### Dans la fiche
+
+Lorsque vous ouvrez une fiche, les mêmes parties figurent en haut sous forme d'**onglets**, à droite des onglets
+de la fiche elle-même. Tout reste ainsi à portée de main pendant que vous travaillez sur le dossier.
+
+![La fiche d'une relation avec, en haut à gauche, les onglets de la fiche et, à droite, les onglets Tâches, Notes, Pièces jointes, Courrier et Historique ; l'onglet Tâches est ouvert et la liste des tâches figure en dessous.](../images/relaties-fiche-journaal-fr.png "Le journal sous forme d'onglets sur la fiche")
+
+Il s'agit du même contenu que dans le tiroir. Une tâche que vous ajoutez ici, votre collègue la voit également
+lorsqu'il sélectionne la ligne dans la liste.
+
 ## Les cinq parties
 
-Les parties figurent côte à côte en haut du tiroir. Dans un tiroir étroit, seules les icônes des parties
-inactives sont visibles ; survolez-les pour en voir le nom.
+Dans le tiroir, les parties figurent côte à côte en haut ; dans un tiroir étroit, seules les icônes des parties
+inactives sont visibles — survolez-les pour en voir le nom. Sur une fiche, elles figurent en toutes lettres sous
+forme d'onglets.
 
 | Partie | À quoi elle sert |
 |---|---|
@@ -38,12 +54,17 @@ inactives sont visibles ; survolez-les pour en voir le nom.
 
 Le journal figure sur les six fiches principales de CreditSoft :
 
-- [Dossiers de crédit](../credit-management/credit-files.md)
-- [Relations](../crm/relations.md)
-- [Professionnels](../crm/professionals.md)
-- [Apporteurs](../crm/contributors.md)
-- [Institutions de crédit](../credit-management/financial-institutions.md)
-- [Assureurs](../credit-management/insurance-companies.md)
+| Écran | À côté de la liste | En onglets dans la fiche |
+|---|---|---|
+| [Relations](../crm/relations.md) | ✔ | ✔ |
+| [Professionnels](../crm/professionals.md) | ✔ | ✔ |
+| [Apporteurs](../crm/contributors.md) | ✔ | ✔ |
+| [Institutions de crédit](../credit-management/financial-institutions.md) | ✔ | ✔ |
+| [Assureurs](../credit-management/insurance-companies.md) | ✔ | ✔ |
+| [Dossiers de crédit](../credit-management/credit-files.md) | ✔ | — |
+
+Pour un dossier de crédit, vous utilisez le journal via le tiroir situé à côté de la liste. L'écran du dossier
+lui-même affiche tant de données qu'il possède sa propre organisation.
 
 ## Tout le monde ne voit pas la même chose
 

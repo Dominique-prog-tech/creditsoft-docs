@@ -25,7 +25,9 @@ Rechts op het scherm zit de lade **Journaal**. Selecteer een aanbrenger en klap 
 die fiche gebeurt — [taken](../journaal/taken.md), [notities](../journaal/notities.md), [bijlagen](../journaal/bijlagen.md),
 [mailverkeer](../journaal/mailverkeer.md) en het [logboek](../journaal/logboek.md) van de wijzigingen.
 
-De lade werkt op elk scherm hetzelfde; [Het journaal](../journaal/overzicht.md) legt uit hoe.
+Opent u de fiche, dan staan dezelfde onderdelen bovenaan als **tabbladen** — u hoeft dus niet terug
+naar de lijst om ze te raadplegen. Lade en tabbladen tonen hetzelfde en werken op elk scherm gelijk;
+[Het journaal](../journaal/overzicht.md) legt uit hoe.
 
 ## De fiche van een aanbrenger
 

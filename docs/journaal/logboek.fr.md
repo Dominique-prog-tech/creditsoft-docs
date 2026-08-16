@@ -44,7 +44,7 @@ effacer n'est pas un historique.
 ## Qui peut le voir
 
 L'Historique demande le même droit que le [Journal d'activité](../administration/activity-log.md). Si vous ne
-l'avez pas, la partie n'apparaît pas dans le tiroir. Cela se règle sous [Rôles](../administration/roles.md).
+l'avez pas, la partie n'apparaît pas — ni dans le tiroir, ni comme onglet sur la fiche. Cela se règle sous [Rôles](../administration/roles.md).
 
 ## Différence avec le Journal d'activité
 

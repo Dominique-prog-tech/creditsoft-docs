@@ -103,6 +103,15 @@
 
 - [ ] `actielogboek.png` — het Actielogboek-scherm met de regels (kolommen **Wanneer** / **Wie** / **Actie** / **Onderwerp**). Plaats bij "Wat je ziet".
 
+> ⛔ **GEBLOKKEERD, 16/08/2026 — het scherm is stuk, niet het schot.** `/beheer/audit` toont de foutkaart
+> "Er ging iets mis". De oorzaak zit in de **fundering**: `AuditLog.razor` geeft `Fill="true"` door aan
+> `AdmGrid`, waar `Fill` een private berekende property is en geen parameter. Sinds AppKit **0.168.0**, en
+> dus ook op productie. Gemeld aan ADM One (`adm-creditsoft/docs/berichten/2026-08-16-admone-auditlog-fill.md`);
+> de fix is één woord (`FullHeight="true"`).
+>
+> Het is een **runtime**-fout, dus de build en de tests bleven groen — het schermafbeeldingen-script vond
+> hem, niet het oog. Zodra de fix binnen is: `node docs/tools/gen-screenshots.mjs actielogboek`.
+
 > Best genomen vanuit een **tester-weergave** (niet het volledige operator-menu), zodat de schermen tonen
 > wat een tester ziet.
 
@@ -164,6 +173,18 @@ staat er al inhoud, dan doet ze niets.
 - [x] `journaal-bijlagen` — drie PDF's met naam, omschrijving, grootte en datum.
 - [x] `journaal-mailverkeer` — twee uitgaande berichten met hun afleverstatus.
 - [x] `journaal-logboek` — de record-historiek. Die was al gevuld: 7688 regels op relaties.
+- [x] `relaties-fiche-journaal` — het journaal **als tabbladen op de fiche**, met het tabblad Taken open.
+      Bijgekomen 16/08/2026, toen het journaal ook in de fiche verscheen. Bewust een tweede beeld naast
+      `journaal-lade`: dat toont de lade naast de lijst, dit toont de tabbladen — twee plaatsen, dezelfde
+      inhoud, en de handleiding beschrijft ze allebei.
+
+> ⚠️ **De vijf fiche-beelden zijn op 16/08/2026 allemaal opnieuw genomen**, want de tabstrook maakt elke fiche
+> hoger. Bij die ronde bleek het schot van Verzekeraars zijn Opmerkingen-blok kwijt: elke fiche had in het
+> script een met de hand gemeten `vensterHoogte`, en die klopte niet meer. Zo'n te krap schot **faalt niet**
+> — het toont gewoon minder, en ziet er verder precies uit als een geslaagd beeld.
+>
+> Daarom meet het script de benodigde hoogte nu zelf (`vulHoogte: true`) in plaats van een getal te dragen.
+> Een veld bijzetten of een blok toevoegen kan dat niet meer stilzwijgend afknippen.
 
 ⚠️ **Geen beeld van de PDF-weergave** (de actie *Bekijken* op Bijlagen). Die viewer rendert op macOS een zwart
 vlak — een beperking van de ontwikkelomgeving, niet van de app. Een beeld daarvan zou een fout tonen die een

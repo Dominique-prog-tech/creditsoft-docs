@@ -25,11 +25,13 @@ qui se passe autour de cette fiche — [tâches](../journaal/taken.md), [notes](
 [pièces jointes](../journaal/bijlagen.md), [courrier](../journaal/mailverkeer.md) et l'[historique](../journaal/logboek.md)
 des modifications.
 
-Le tiroir fonctionne de la même manière sur chaque écran ; [Le journal](../journaal/overzicht.md) explique comment.
+Lorsque vous ouvrez la fiche, les mêmes parties figurent en haut sous forme d'**onglets** — vous ne devez
+donc pas revenir à la liste pour les consulter. Le tiroir et les onglets affichent la même chose et
+fonctionnent de manière identique sur chaque écran ; [Le journal](../journaal/overzicht.md) explique comment.
 
 ## La fiche d'un assureur
 
-**Nouveau** et un double-clic ouvrent tous deux la **fiche sur une page entière**. En haut figure un lien de
+**Nouveau** et un double-clic ouvrent tous deux la **fiche sur une page entière**. En haut figure un bouton de
 retour vers la liste, suivi du nom de la compagnie.
 
 ![La fiche de l'assureur AXA sur toute la page : le bloc Informations générales avec le nom, l'adresse Zuidlaan 47 à 2800 Mechelen, le pays Belgique, le téléphone, l'e-mail et le site web, le numéro d'institution VZ8278 et la langue des documents sur Néerlandais, en dessous le large bloc Remarques et une barre avec les boutons Enregistrer, Annuler et Supprimer.](../images/verzekeraars-fiche-fr.png "La fiche complète d'un assureur, avec les données générales et les remarques"){ .volle-breedte }
