@@ -3,7 +3,7 @@
 Uw wachtwoord verandert u op één scherm, met drie velden: uw **huidige** wachtwoord, het **nieuwe**, en dat
 nieuwe **nog een keer** ter bevestiging.
 
-<!-- AFBEELDING: het scherm Wachtwoord wijzigen met de drie velden -->
+![Het scherm Wachtwoord wijzigen met drie lege velden onder elkaar: Huidig wachtwoord, Nieuw wachtwoord en Bevestig nieuw wachtwoord, met daaronder de knop Opslaan.](../images/wachtwoord.png "Het scherm Wachtwoord wijzigen")
 
 ## Wanneer u het te zien krijgt
 

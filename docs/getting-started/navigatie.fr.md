@@ -2,6 +2,8 @@
 
 Cette page offre un bref aperçu de la façon de vous repérer dans CreditSoft : le menu de gauche, la barre supérieure et vos préférences personnelles.
 
+![La fenêtre principale de CreditSoft : à gauche le menu principal avec les groupes CRM, Crédit, Listes et Configuration, en haut à droite la rangée de boutons avec le retour d'information, l'aide et l'avatar, et en bas à gauche Administration, Portail client et Se déconnecter.](../images/navigatie-fr.png "Les éléments fixes de la fenêtre principale")
+
 ## Le menu de gauche
 
 À gauche se trouve le **menu principal**. Il affiche les écrans auxquels vous avez accès ; cliquez sur un élément pour l'ouvrir. Le menu est regroupé — les écrans de travail quotidien se trouvent en haut, les écrans de gestion sous l'en-tête **Gestion**.

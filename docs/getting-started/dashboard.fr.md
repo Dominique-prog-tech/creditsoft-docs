@@ -2,7 +2,7 @@
 
 Le tableau de bord est votre écran d'accueil. D'un coup d'œil, vous voyez combien de dossiers se trouvent dans quelle phase et ce que font les indicateurs.
 
-<!-- AFBEELDING: het volledige dashboard met de vier tegels bovenaan en de fasepijplijn eronder -->
+![Le tableau de bord avec en haut les quatre tuiles d'indicateurs, en dessous le graphique du volume réalisé par mois ainsi que la répartition par institution et par responsable, et en bas le pipeline des dossiers par phase.](../images/dashboard-startscherm-fr.png "Le tableau de bord"){ .volle-breedte }
 
 ## Les quatre tuiles du haut
 

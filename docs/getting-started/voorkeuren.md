@@ -3,7 +3,7 @@
 Klik rechtsboven op uw **avatar** — de ronde knop met uw initialen of foto — en er schuift een paneel open
 met alles wat u zelf over uw eigen werkomgeving beslist.
 
-<!-- AFBEELDING: het voorkeuren-paneel open, met profielfoto, accentkleur, omgevingsgrootte, taal en beveiliging -->
+![Het voorkeuren-paneel open aan de rechterkant, met achtereenvolgens Profielfoto, Accentkleur met elf kleurbollen, Omgevingsgrootte met Compact, Normaal en Comfortabel, Taal met Nederlands en Français, Beveiliging met Tweestapsverificatie, en onderaan Alle voorkeuren en Afmelden.](../images/voorkeuren.png "Het voorkeuren-paneel")
 
 ## Wat u kunt instellen
 

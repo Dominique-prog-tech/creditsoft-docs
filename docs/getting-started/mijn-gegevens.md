@@ -5,7 +5,7 @@ krijgt en wat er onderaan uw mails staat. U hebt hier geen beheerder voor nodig.
 
 U opent het scherm via uw **avatar** rechtsboven → **Alle voorkeuren…**
 
-<!-- AFBEELDING: het scherm Mijn gegevens met de blokken Contact en Mailhandtekening -->
+![Het scherm Mijn gegevens met drie blokken: Contact met telefoon, gsm, vertegenwoordiging en een gekozen kleur in de agenda, daaronder Mailhandtekening met een opmaakbalk en een ingevulde handtekening, en onderaan Beveiliging met de knoppen Wachtwoord wijzigen en Tweestapsverificatie.](../images/mijn-gegevens.png "Uw eigen medewerkersfiche"){ .volle-breedte }
 
 ## Contact
 

@@ -2,6 +2,8 @@
 
 Deze pagina geeft een kort overzicht van hoe u uw weg vindt in CreditSoft: het menu links, de balk bovenaan en uw persoonlijke voorkeuren.
 
+![Het hoofdvenster van CreditSoft: links het hoofdmenu met de groepen CRM, Krediet, Lijsten en Beheer, rechtsboven de knoppenrij met feedback, help en de avatar, en onderaan links Platformbeheer, Klantenportaal en Afmelden.](../images/navigatie.png "De vaste onderdelen van het hoofdvenster")
+
 ## Het menu links
 
 Aan de linkerkant staat het **hoofdmenu**. Het toont de schermen waartoe u toegang hebt; klik op een item om het te openen. Het menu is gegroepeerd — de dagelijkse werkschermen staan bovenaan, beheer-schermen onder de kop **Beheer**.

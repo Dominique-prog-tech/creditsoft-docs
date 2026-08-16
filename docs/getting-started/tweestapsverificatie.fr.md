@@ -2,6 +2,8 @@
 
 La **vérification en deux étapes** sécurise davantage votre compte. En plus de votre mot de passe, CreditSoft demande alors, lors de la connexion, un **code à usage unique** issu d'une application d'authentification (par exemple Google Authenticator, Microsoft Authenticator ou Authy). Ainsi, personne ne peut se connecter avec votre seul mot de passe.
 
+![L'écran Vérification en deux étapes dans son état initial : l'explication sur une application d'authentification, le message indiquant que la vérification en deux étapes est désactivée, et le bouton Activer.](../images/tweestapsverificatie-fr.png "Où activer la vérification en deux étapes")
+
 ## Activer
 
 1. En haut à droite, cliquez sur votre **avatar** et choisissez **Vérification en deux étapes**.

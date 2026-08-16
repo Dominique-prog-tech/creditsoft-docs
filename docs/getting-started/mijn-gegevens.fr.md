@@ -6,7 +6,7 @@ administrateur pour cela.
 
 Vous ouvrez l'écran via votre **avatar** en haut à droite → **Toutes les préférences…**
 
-<!-- AFBEELDING: l'écran Mes données avec les blocs Contact et Signature d'e-mail -->
+![L'écran Mes données avec trois blocs : Contact avec téléphone, GSM, représentation et une couleur d'agenda choisie, en dessous Signature d'e-mail avec une barre de mise en forme et une signature remplie, et en bas Sécurité avec les boutons Changer le mot de passe et Vérification en deux étapes.](../images/mijn-gegevens-fr.png "Votre propre fiche de collaborateur"){ .volle-breedte }
 
 ## Contact
 

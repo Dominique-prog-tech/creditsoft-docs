@@ -3,7 +3,7 @@
 Cliquez en haut à droite sur votre **avatar** — le bouton rond portant vos initiales ou votre photo — et un
 panneau s'ouvre avec tout ce que vous décidez vous-même de votre environnement de travail.
 
-<!-- AFBEELDING: le panneau des préférences ouvert, avec photo de profil, couleur d'accent, taille de l'environnement, langue et sécurité -->
+![Le panneau des préférences ouvert à droite, avec successivement Photo de profil, Couleur d'accent et ses onze pastilles, Taille de l'environnement avec Compact, Normal et Confortable, Langue avec Nederlands et Français, Sécurité avec la vérification en deux étapes, et en bas Toutes les préférences et Se déconnecter.](../images/voorkeuren-fr.png "Le panneau des préférences")
 
 ## Ce que vous pouvez régler
 

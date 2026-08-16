@@ -2,7 +2,7 @@
 
 Het dashboard is uw startscherm. In één oogopslag ziet u hoeveel dossiers er in welke fase zitten en wat de kerncijfers doen.
 
-<!-- AFBEELDING: het volledige dashboard met de vier tegels bovenaan en de fasepijplijn eronder -->
+![Het dashboard met bovenaan de vier kerncijfer-tegels, daaronder de grafiek van het gerealiseerde volume per maand en de verdeling per instelling en per verantwoordelijke, en onderaan de pijplijn met de dossiers per fase.](../images/dashboard-startscherm.png "Het dashboard"){ .volle-breedte }
 
 ## De vier tegels bovenaan
 

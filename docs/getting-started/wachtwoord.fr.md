@@ -3,7 +3,7 @@
 Vous changez votre mot de passe sur un seul écran, comportant trois champs : votre mot de passe **actuel**, le
 **nouveau**, et ce nouveau mot de passe **une seconde fois** en confirmation.
 
-<!-- AFBEELDING: l'écran Changer le mot de passe avec les trois champs -->
+![L'écran Changer le mot de passe avec trois champs vides les uns sous les autres : Mot de passe actuel, Nouveau mot de passe et Confirmez le nouveau mot de passe, suivis du bouton Enregistrer.](../images/wachtwoord-fr.png "L'écran Changer le mot de passe")
 
 ## Quand vous le rencontrez
 

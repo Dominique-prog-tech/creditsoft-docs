@@ -167,15 +167,25 @@ fotograferen leert de lezer niets. Dezelfde afbeelding telkens ook onder de FR-p
       veldwijziging toont (oude waarde doorstreept → nieuwe) en eronder de **Aangemaakt**-regel met de
       knop *+ zoveel andere velden*. Dát beeld verklaart de pagina in één oogopslag.
 
-## Aan de slag → het algemene-zaken-blok (`getting-started/*`) — toegevoegd 16/08/2026
+## Aan de slag → het algemene-zaken-blok (`getting-started/*`) — ✅ AFGEWERKT 16/08/2026
 
-Uit **tenant_demo**, aangemeld als een gewone medewerker (niet als operator: die heeft geen
-medewerkersfiche en dan staan de blokken Contact en Mailhandtekening er niet).
+Alle veertien pagina's van *Aan de slag* dragen nu een beeld, in beide talen. Gemaakt met
+`node docs/tools/gen-screenshots.mjs <naam>`, uit **tenant_demo**.
 
-- [ ] `voorkeuren.png` — het voorkeuren-paneel open naast een gevuld scherm, met profielfoto,
-      accentkleur, omgevingsgrootte, taal en Beveiliging in beeld. Voor `getting-started/voorkeuren.md`.
-- [ ] `mijn-gegevens.png` — het scherm met de drie blokken zichtbaar: Contact (met een gekozen
-      agendakleur), Mailhandtekening met wat tekst erin, en onderaan Beveiliging.
-- [ ] `wachtwoord.png` — het scherm met de drie velden. Uiteraard leeg; nooit een echt wachtwoord in beeld.
-- [ ] `tweestapsverificatie.png` — het instelscherm met de QR-code. ⚠️ De QR-code hoort bij een
-      wegwerp-testaccount: een code uit een echt account is een sleutel.
+- [x] `navigatie` — het hoofdvenster met menu, knoppenrij en de onderste snelkoppelingen.
+- [x] `dashboard-startscherm` — tegels, grafieken en de fasepijplijn in één beeld.
+- [x] `voorkeuren` — het paneel open, met alle vijf de instellingen zichtbaar.
+- [x] `mijn-gegevens` — de drie blokken Contact, Mailhandtekening en Beveiliging.
+- [x] `wachtwoord` — de drie lege velden. Blijft leeg: nooit een wachtwoord in beeld, ook geen verzonnen.
+- [x] `tweestapsverificatie` — de **beginstand**, vóór *Activeren*.
+
+⚠️ **Waarom er geen QR-code op het 2FA-beeld staat.** Die verschijnt pas ná het klikken op *Activeren*, en
+een QR-code ís een sleutel: hij bevat het geheim waarmee de codes gemaakt worden. Zo'n beeld hoort niet in
+een publieke handleiding, ook niet dat van een wegwerpaccount — "het is toch maar lokaal" is precies de
+redenering waarmee je er ooit één publiceert die het niet is. De beginstand toont wat de gebruiker als
+eerste ziet en bevat niets geheims; de stap met de QR staat in woorden beschreven.
+
+⚠️ **`mijn-gegevens` vraagt een aangemelde gebruiker mét medewerkersfiche.** De operator `admin` heeft er
+standaard geen en ziet dan enkel een waarschuwing. In de **lokale** demo-tenant kreeg hij er daarom één, met
+`show_in_pickers = false` zodat hij niet als verantwoordelijke in andere beelden opduikt. De zes
+demo-medewerkers zijn bewust zonder wachtwoord aangemaakt en kunnen dus niet aanmelden.
