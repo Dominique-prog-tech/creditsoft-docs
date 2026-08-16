@@ -8,7 +8,9 @@ Klik in de zijbalk op **CRM** en dan op **Relaties**.
 
 ## De lijst
 
-![Het scherm Relaties in CreditSoft: een lijst van particulieren en bedrijven met kolommen voor naam, type, gemeente, telefoon en e-mail, met bovenaan een filter op soort, de knoppen Nieuw en Exporteren en een zoekveld.](../images/relaties-lijst.png "Overzicht van alle relaties van het kantoor")
+![Het scherm Relaties in CreditSoft: een lijst van particulieren en bedrijven met kolommen voor naam, type, e-mail, telefoon, gemeente, gsm en intern nummer, met bovenaan een filter op soort, de knoppen Samenvoegen, Nieuwe relatie en Exporteren en een zoekveld.](../images/relaties-lijst.png "Overzicht van alle relaties van het kantoor")
+
+De tabel toont per relatie: **naam**, **type**, **e-mail**, **telefoon**, **gemeente**, **gsm** en **intern nummer**.
 
 - **Filter op soort** — bovenaan kiest u alles, enkel de particulieren of enkel de bedrijven.
 - **Zoeken** — het zoekveld zoekt in alle kolommen tegelijk.
@@ -16,6 +18,7 @@ Klik in de zijbalk op **CRM** en dan op **Relaties**.
 - **Kolommen kiezen** — toon of verberg kolommen; uw keuze wordt onthouden.
 - **Exporteren** — naar Excel of CSV, met de filters die op dat moment aan staan.
 - **Nieuw / bewerken** — klik op **Nieuw**, of **dubbelklik** een rij om de fiche te openen.
+- **Samenvoegen** — twee fiches voor dezelfde partij samenvoegen; zie hieronder.
 - **Verwijderen** — een relatie wordt **gearchiveerd** (soft-delete), niet definitief gewist.
 - **Groeperen** — met [groepen](groups.md) deelt u relaties in zoals het u past: per regio, per kantoor, per campagne.
 
@@ -23,6 +26,25 @@ Klik in de zijbalk op **CRM** en dan op **Relaties**.
 
 Rechts op het scherm zit de lade **Journaal**. Selecteer een relatie en klap ze open: daar houdt u per relatie
 uw **taken, notities, bijlagen en mailverkeer** bij, plus het **logboek** van de wijzigingen.
+
+## Twee fiches samenvoegen
+
+Staat dezelfde persoon of hetzelfde bedrijf twee keer in de lijst, dan voegt u de fiches samen met de knop
+**Samenvoegen** bovenaan. Selecteer eerst de fiche die u wil **behouden**, klik dan op de knop en kies in het
+venster welke fiche daarin moet opgaan.
+
+Voor u bevestigt, toont CreditSoft **wat de verdwijnende fiche draagt**: haar kredietdossiers, adressen,
+afspraken, taken, notities, bijlagen en mailverkeer. Alles daarvan verhuist mee naar de fiche die u behoudt.
+
+!!! warning "De behouden fiche houdt haar eigen velden"
+    Naam, adres, e-mail, geboortedatum: die blijven zoals ze op de **behouden** fiche staan. Wil u iets van de
+    andere fiche bewaren — bijvoorbeeld een recenter adres of een rijksregisternummer dat daar wél ingevuld is
+    — neem dat dan **eerst** over. Na het samenvoegen is het weg.
+
+    Samenvoegen kan niet ongedaan gemaakt worden.
+
+Na afloop toont het venster hoeveel er precies verhuisd is, per soort. Staat er niets in die lijst, dan hing
+er aan de verdwenen fiche ook niets vast.
 
 ## Particulier of bedrijf
 
