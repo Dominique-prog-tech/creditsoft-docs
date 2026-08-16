@@ -130,8 +130,9 @@
       Kies een moment waarop er in meerdere fases dossiers staan. Plaats bovenaan de pagina.
 - [ ] `dashboard-fases.png` — het beheerscherm met links de fasetabel (enkele fases ingevuld, één met
       Eindfase aangevinkt) en rechts de statustoewijzing. Plaats bovenaan de pagina.
-- [ ] `relaties-lijst.png` — de relatielijst met het filter op soort bovenaan en een mix van particulieren
-      en bedrijven.
+- [x] `relaties-lijst.png` + `-fr` — de relatielijst met het filter op soort bovenaan. Geplaatst 15/08/2026.
+- [x] `relaties-fiche.png` + `-fr` — de volledige fiche op één pagina, tabblad *Algemene informatie* van een
+      particulier, met Opmerkingen en de knoppenbalk. Geplaatst 15/08/2026.
 - [ ] `aanbrengers-boom.png` — de boom met één hoofdaanbrenger uitgeklapt zodat de kantoren eronder zichtbaar
       zijn.
 - [ ] `afspraken-week.png` — de werkweekweergave met de gekleurde legende bovenaan en afspraken van

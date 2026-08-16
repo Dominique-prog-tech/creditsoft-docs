@@ -2,39 +2,92 @@
 
 Toutes les personnes et entreprises avec lesquelles vous êtes en contact figurent dans une seule liste : clients, garants, propriétaires et personnes de contact — un seul écran avec un filtre.
 
-<!-- AFBEELDING: de relatielijst met het filter op soort bovenaan -->
-
 ## Ouvrir l'écran
 
 Dans la barre latérale, cliquez sur **CRM**, puis sur **Relations**.
 
+## La liste
+
+![L'écran Relations dans CreditSoft : une liste de particuliers et d'entreprises avec les colonnes nom, type, commune, téléphone et e-mail, avec en haut un filtre par type, les boutons Nouveau et Exporter ainsi qu'un champ de recherche.](../images/relaties-lijst-fr.png "Aperçu de toutes les relations du bureau")
+
+- **Filtrer par type** — en haut, choisissez tout, uniquement les particuliers ou uniquement les entreprises.
+- **Rechercher** — le champ de recherche cherche dans toutes les colonnes à la fois.
+- **Trier et filtrer** — cliquez sur un en-tête pour trier ; sous chaque en-tête se trouve un champ de filtre.
+- **Choisir les colonnes** — affichez ou masquez des colonnes ; votre choix est mémorisé.
+- **Exporter** — vers Excel ou CSV, avec les filtres actifs à ce moment-là.
+- **Nouveau / modifier** — cliquez sur **Nouveau**, ou **double-cliquez** une ligne pour ouvrir la fiche.
+- **Supprimer** — une relation est **archivée** (suppression douce), pas définitivement effacée.
+- **Grouper** — avec les [groupes](groups.md), vous classez les relations comme il vous convient : par région, par bureau, par campagne.
+
+### Journal
+
+À droite de l'écran se trouve le tiroir **Journal**. Sélectionnez une relation et ouvrez-le : vous y tenez, par
+relation, vos **tâches, notes, pièces jointes et courriers**, ainsi que le **journal** des modifications.
+
 ## Particulier ou entreprise
 
-Une relation est soit un **particulier**, soit une **entreprise**. Vous le choisissez à la création et cela détermine les champs affichés : pour un particulier la date de naissance et l'état civil, pour une entreprise le numéro de TVA et la forme juridique.
+Une relation est soit un **particulier**, soit une **entreprise**. Vous le choisissez en haut de la fiche et cela détermine les champs affichés : pour un particulier la date de naissance et l'état civil, pour une entreprise la forme juridique et le numéro de TVA.
 
 !!! tip "Récupérer automatiquement les données d'entreprise"
-    Si vous renseignez le **numéro de TVA** d'une entreprise, CreditSoft récupère le nom, la forme juridique et l'adresse directement depuis la Banque-Carrefour des Entreprises. Vous n'avez rien à retaper et aucune faute de frappe ne s'y glisse.
+    Si vous renseignez le **numéro de TVA** d'une entreprise et cliquez sur **Récupérer**, CreditSoft reprend
+    le nom, la forme juridique et l'adresse directement depuis la Banque-Carrefour des Entreprises. Vous n'avez
+    rien à retaper et aucune faute de frappe ne s'y glisse.
 
-## La fiche
+## La fiche d'une relation
 
-Double-cliquez sur une ligne pour ouvrir la fiche.
+**Nouveau** et un double-clic ouvrent tous deux la **fiche sur une page entière**. En haut figure un lien de
+retour vers la liste, suivi du type et du nom.
 
-| Partie | Ce que vous pouvez y renseigner |
-|---|---|
-| **Identité** | Nom, date et lieu de naissance, numéro de registre national, carte d'identité |
-| **Contact** | Téléphone, GSM, e-mail et site web |
-| **Adresse** | Rue, numéro, boîte, code postal, commune et pays |
-| **Famille et profession** | État civil, régime matrimonial, partenaire, enfants à charge, profession et employeur |
+![La fiche du particulier Alain Adriaenssens sur toute la page : l'onglet Informations générales avec le type, le nom, le prénom, le téléphone, le GSM, la langue des documents et l'adresse principale à gauche, et à droite le numéro interne, la formule d'appel, l'e-mail et le site web, en dessous le large bloc Remarques et une barre avec les boutons Enregistrer, Annuler et Supprimer.](../images/relaties-fiche-fr.png "La fiche complète d'une relation, avec les données générales et les remarques"){ .volle-breedte }
+
+La fiche comporte **deux onglets**, puis un bloc **Remarques** et une barre de boutons qui reste visible.
+
+### Onglet « Informations générales » (particulier)
+
+- **Nom** (obligatoire) et **prénom**
+- **Langue des documents** (obligatoire) — voir ci-dessous
+- **Contact** — téléphone, GSM, e-mail, site web
+- **E-mail invalide** — une case à cocher pour signaler qu'une adresse ne fonctionne plus, sans la supprimer
+- **Formule d'appel** et **numéro interne**
+- **Adresse principale** — rue, numéro, boîte, code postal, commune, pays
+
+### Onglet « Informations complémentaires » (particulier)
+
+Tout ce dont vous avez besoin pour un dossier de crédit : **date, lieu et pays de naissance**, **numéro de
+registre national**, **nationalité**, sexe, langue, **carte d'identité** avec ses dates de validité, **état
+civil**, régime et date de mariage, **partenaire**, enfants et personnes à charge, **profession**, employeur,
+en service depuis, type de contrat et fonction. Ainsi que le **type de contact**, la **source de contact** et
+la date du premier contact.
+
+### Pour une entreprise
+
+Les onglets s'appellent alors **Général** et **Divers**. Le premier porte la raison sociale, la **forme
+juridique**, le numéro de TVA avec le bouton **Récupérer**, le numéro interne, la langue des documents et les
+coordonnées ; sur le second, vous indiquez si l'entreprise est un **client** et/ou un **fournisseur**.
 
 ### La langue des documents
 
-Chaque fiche comporte une **langue des documents**. Elle détermine dans quelle langue cette personne reçoit ses courriers et ses e-mails — indépendamment de la langue dans laquelle vous travaillez. Un client francophone reçoit donc des documents en français, même si votre écran est en néerlandais.
+Chaque fiche porte une **langue des documents**. Elle détermine la langue dans laquelle cette relation reçoit ses courriers et e-mails — indépendamment de la langue dans laquelle vous travaillez vous-même. Un client francophone reçoit donc des documents en français, même si votre écran est en néerlandais.
 
-Ce champ est obligatoire. Si vous le laissez vide, le programme ne sait pas quelle langue de modèle utiliser.
+Ce champ est **obligatoire**. Si vous le laissez vide, le programme ne sait pas quelle langue de modèle utiliser.
 
-## Travailler avec la liste
+!!! tip "Code postal et commune"
+    Tapez dans le champ **Code postal** : la liste affiche à la fois le code postal et la commune, vous
+    pouvez donc chercher sur les deux — également sur *Gent* ou *Liège*. Lorsque vous choisissez un code
+    postal, la **commune est toujours complétée**. Si vous videz la commune — avec la croix ou avec **Retour
+    arrière** sur le texte sélectionné — le code postal est vidé lui aussi.
 
-- **Rechercher** — le champ de recherche en haut à droite porte sur tout ce que vous voyez.
-- **Trier et filtrer** — cliquez sur un en-tête de colonne pour trier ; sous chaque en-tête se trouve un champ de filtre.
-- **Exporter** — vers Excel ou CSV, avec les filtres actifs à ce moment-là.
-- **Regrouper** — avec les [groupes](groups.md), vous classez les relations comme vous le souhaitez : par région, par bureau, par campagne.
+## Enregistrer
+
+La barre de boutons du bas reste visible pendant que vous faites défiler la fiche : **Enregistrer**,
+**Annuler** et, à droite, **Supprimer**.
+
+À l'enregistrement, les **champs obligatoires manquants** et une **adresse e-mail invalide** sont signalés.
+L'adresse e-mail est contrôlée dès qu'il y a quelque chose dans le champ, même si vous ne l'avez pas modifiée
+vous-même. Les **numéros de téléphone sont mis en forme** dans la notation officielle : si vous tapez
+`09/3724829`, vous lirez `09 372 48 29` après l'enregistrement.
+
+!!! warning "Cette relation existe peut-être déjà"
+    S'il existe déjà une relation portant **le même nom ou la même adresse e-mail**, CreditSoft vous montre
+    laquelle et vous demande si vous voulez tout de même enregistrer. C'est un avertissement, pas un blocage —
+    les homonymes existent. Cela évite de créer une deuxième fois ce qui existe déjà.
