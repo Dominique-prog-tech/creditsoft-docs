@@ -101,8 +101,8 @@ Dit veld is **verplicht**. Laat u het leeg, dan weet het programma niet welke sj
 
 ## Opslaan
 
-De knoppenbalk onderaan blijft in beeld terwijl u door de fiche scrolt: **Opslaan**, **Annuleren** en, rechts,
-**Verwijderen**.
+De knoppenbalk onderaan blijft in beeld terwijl u door de fiche scrolt. De knoppen staan rechts:
+**Opslaan**, **Annuleren** en **Verwijderen**.
 
 Bij het opslaan worden **ontbrekende verplichte velden** en een **ongeldig e-mailadres** gemeld. Het
 e-mailadres wordt gecontroleerd zolang er iets in het veld staat, ook als u het niet zelf hebt gewijzigd.

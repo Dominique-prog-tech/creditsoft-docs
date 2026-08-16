@@ -96,6 +96,6 @@ Vous déterminez par apporteur s'il voit l'onglet des commissions et celui des d
 
 ## Enregistrer
 
-La barre de boutons du bas reste visible : **Enregistrer**, **Annuler** et, à droite, **Portail** et **Supprimer**.
+La barre de boutons du bas reste visible. Les boutons se trouvent à droite : **Enregistrer**, **Annuler**, **Portail** et **Supprimer**.
 
 À l'enregistrement, les **champs obligatoires manquants** (nom, langue des documents) et une **adresse e-mail invalide** sont signalés. Les **numéros de téléphone sont mis en forme** dans la notation officielle : si vous tapez `09/3724829`, vous lirez `09 372 48 29` après l'enregistrement.

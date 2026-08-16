@@ -102,8 +102,8 @@ Ce champ est **obligatoire**. Si vous le laissez vide, le programme ne sait pas 
 
 ## Enregistrer
 
-La barre de boutons du bas reste visible pendant que vous faites défiler la fiche : **Enregistrer**,
-**Annuler** et, à droite, **Supprimer**.
+La barre de boutons du bas reste visible pendant que vous faites défiler la fiche. Les boutons se trouvent à
+droite : **Enregistrer**, **Annuler** et **Supprimer**.
 
 À l'enregistrement, les **champs obligatoires manquants** et une **adresse e-mail invalide** sont signalés.
 L'adresse e-mail est contrôlée dès qu'il y a quelque chose dans le champ, même si vous ne l'avez pas modifiée

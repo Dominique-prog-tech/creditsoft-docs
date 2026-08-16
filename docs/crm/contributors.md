@@ -96,6 +96,6 @@ Per aanbrenger bepaalt u of hij het commissie-tabblad en het documenten-tabblad 
 
 ## Opslaan
 
-De knoppenbalk onderaan blijft in beeld: **Opslaan**, **Annuleren** en, rechts, **Portaal** en **Verwijderen**.
+De knoppenbalk onderaan blijft in beeld. De knoppen staan rechts: **Opslaan**, **Annuleren**, **Portaal** en **Verwijderen**.
 
 Bij het opslaan worden **ontbrekende verplichte velden** (naam, documenttaal) en een **ongeldig e-mailadres** gemeld. **Telefoonnummers worden opgemaakt** in de officiële notatie: typt u `09/3724829`, dan staat er na het bewaren `09 372 48 29`.
