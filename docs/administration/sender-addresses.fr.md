@@ -42,12 +42,7 @@ Pendant que vous saisissez une adresse, CreditSoft vérifie le domaine par rappo
 - **Vert** — le domaine est enregistré. Les e-mails de cette adresse partiront au nom de votre bureau.
 - **Orange** — le domaine n'est pas encore enregistré. Vous pouvez enregistrer et utiliser l'adresse, mais la distribution pourrait s'interrompre plus tard.
 
-Pour faire enregistrer votre propre domaine, **deux étapes** sont nécessaires, et vous avez besoin des deux :
-
-1. Le domaine doit être enregistré chez **SMTP2GO** (SPF/DKIM).
-2. **ADM** ajoute le domaine à la liste de votre plateforme.
-
-Demandez les deux ensemble à votre personne de contact chez ADM.
+Pour envoyer depuis votre propre domaine, **adressez-en la demande à votre personne de contact chez ADM**. Nous nous chargeons de l'enregistrement ; vous n'avez rien à configurer vous-même. Dès que le domaine est enregistré, il apparaît ici parmi les domaines autorisés et le contrôle passe au vert.
 
 ## Bloquer les e-mails sortants
 

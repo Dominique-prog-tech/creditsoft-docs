@@ -42,12 +42,7 @@ Terwijl u een adres intikt, controleert CreditSoft het domein tegen die lijst:
 - **Groen** — het domein is geregistreerd. Mail van dit adres vertrekt op naam van uw kantoor.
 - **Oranje** — het domein is nog niet geregistreerd. U kan het adres wél bewaren en gebruiken, maar de aflevering kan later stilvallen.
 
-Om een eigen domein te laten registreren zijn er **twee stappen**, en u hebt ze allebei nodig:
-
-1. Het domein moet bij **SMTP2GO** geregistreerd zijn (SPF/DKIM).
-2. **ADM** zet het domein op de lijst van uw platform.
-
-Vraag die twee samen aan bij uw contactpersoon bij ADM.
+Wilt u mailen vanaf een eigen domein, **vraag dat dan aan bij uw contactpersoon bij ADM**. Wij zorgen voor de registratie; u hoeft zelf niets in te stellen. Zodra het domein geregistreerd is, verschijnt het hier bij de toegelaten domeinen en kleurt de controle groen.
 
 ## Uitgaande mail blokkeren
 
