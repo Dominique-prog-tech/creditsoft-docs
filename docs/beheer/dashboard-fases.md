@@ -20,7 +20,7 @@ Een **fase** is een kolom in de pijplijn op het dashboard: een groep dossierstat
 
 **Eindfase** is belangrijker dan het lijkt. Een dossier dat zonder gevolg is afgesloten, blijft anders eindeloos "lopen" in uw statistieken. Zet u de fase waarin dat dossier terechtkomt op eindfase, dan stopt de klok.
 
-**Opvolging** gebruikt u voor fases waar het krediet rond is maar er nog stukken ontbreken — de akte is gepasseerd en er wacht nog een attest. Die dossiers verschijnen dan in het overzicht [Dossieropvolging](../credit-management/file-follow-up.md) onder *Opvolging na akte*.
+**Opvolging** gebruikt u voor fases waar het krediet rond is maar er nog stukken ontbreken — de akte is gepasseerd en er wacht nog een attest. Die dossiers verschijnen dan in het overzicht [Globaal overzicht](../credit-management/global-overview.md) onder *Opvolging na akte*.
 
 Onderaan de tabel staat een lege regel: vul daar een naam in om een fase toe te voegen.
 

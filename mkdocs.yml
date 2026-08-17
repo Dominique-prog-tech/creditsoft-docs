@@ -143,7 +143,7 @@ plugins:
             Actielogboek: Journal d'activité
             # Ontbraken en verschenen onvertaald in de Franse navigatie (14/08/2026).
             Het dashboard: Le tableau de bord
-            Dossieropvolging: Suivi des dossiers
+            Globaal overzicht: Aperçu global
             Verzekeringen: Assurances
             Relaties: Relations
             Aanbrengers: Apporteurs
@@ -265,7 +265,7 @@ nav:
 
   - Lijsten:
     - Taken: credit-management/tasks.md
-    - Dossieropvolging: credit-management/file-follow-up.md
+    - Globaal overzicht: credit-management/global-overview.md
     - Schattingen: credit-management/appraisals.md
     - Verzekeringen: credit-management/insurance-contracts.md
 

@@ -1,10 +1,10 @@
-# Dossieropvolging
+# Globaal overzicht
 
-Dossieropvolging is uw werklijst: **alle kredietdossiers op één scherm**, met hun status, hoe lang ze al lopen en wat er nog openstaat. Waar u op de kredietdossierlijst één dossier tegelijk bekijkt, ziet u hier het geheel — en filtert u naar wat vandaag uw aandacht vraagt.
+Het globaal overzicht is uw werklijst: **alle kredietdossiers op één scherm**, met hun status, hoe lang ze al lopen en wat er nog openstaat. Waar u op de kredietdossierlijst één dossier tegelijk bekijkt, ziet u hier het geheel — en filtert u naar wat vandaag uw aandacht vraagt.
 
 ## Het scherm openen
 
-Klik in de zijbalk op **Lijsten** en dan op **Dossieropvolging**.
+Klik in de zijbalk op **Lijsten** en dan op **Globaal overzicht**.
 
 ## Kiezen wat u wil zien
 

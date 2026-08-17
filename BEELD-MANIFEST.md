@@ -115,12 +115,12 @@
 > Best genomen vanuit een **tester-weergave** (niet het volledige operator-menu), zodat de schermen tonen
 > wat een tester ziet.
 
-## Lijsten → Dossieropvolging (`credit-management/file-follow-up.md`)
+## Lijsten → Globaal overzicht (`credit-management/global-overview.md`)
 
-- [ ] `dossieropvolging-lijst.png` — het volledige scherm met de vier keuzelijsten bovenaan, de teller
+- [ ] `globaal-overzicht-lijst.png` — het volledige scherm met de vier keuzelijsten bovenaan, de teller
       (bv. `128 / 3988`) en een tiental rijen. Zorg dat de kolom **Status** gekleurde statussen toont en dat er
       in **Ontbrekende stukken / info** enkele rijen gevuld zijn. Plaats bij "De kolommen".
-- [ ] `dossieropvolging-voorinstelling.png` — de eerste keuzelijst opengeklapt met **Lopend**,
+- [ ] `globaal-overzicht-voorinstelling.png` — de eerste keuzelijst opengeklapt met **Lopend**,
       **Opvolging na akte** en **Alle dossiers**. Plaats bij "Kiezen wat u wil zien".
 - [ ] `dashboard-fases.png` — het scherm **Platformbeheer → Dashboard-fases**, met links de fases
       (eindfase/opvolging aangevinkt) en rechts de statuskoppelingen. Plaats bij het tip-kader over de

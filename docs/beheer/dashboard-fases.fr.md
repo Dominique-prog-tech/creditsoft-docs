@@ -20,7 +20,7 @@ Une **phase** est une colonne du pipeline sur le tableau de bord : un groupe de 
 
 **Phase finale** est plus important qu'il n'y paraît. Un dossier clôturé sans suite continuerait sinon à « courir » indéfiniment dans vos statistiques. Si vous marquez comme finale la phase où ce dossier aboutit, le compteur s'arrête.
 
-**Suivi** s'utilise pour les phases où le crédit est bouclé mais où des pièces manquent encore — l'acte est passé et il reste une attestation à recevoir. Ces dossiers apparaissent alors dans l'aperçu [Suivi des dossiers](../credit-management/file-follow-up.md) sous *Suivi après acte*.
+**Suivi** s'utilise pour les phases où le crédit est bouclé mais où des pièces manquent encore — l'acte est passé et il reste une attestation à recevoir. Ces dossiers apparaissent alors dans l'aperçu [Aperçu global](../credit-management/global-overview.md) sous *Suivi après acte*.
 
 En bas du tableau figure une ligne vide : saisissez-y un nom pour ajouter une phase.
 

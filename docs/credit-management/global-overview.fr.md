@@ -1,10 +1,10 @@
-# Suivi des dossiers
+# Aperçu global
 
 Le suivi des dossiers est votre liste de travail : **tous les dossiers de crédit sur un seul écran**, avec leur statut, leur ancienneté et ce qui reste en suspens. Là où la liste des dossiers de crédit vous montre un dossier à la fois, vous voyez ici l'ensemble — et vous filtrez sur ce qui demande votre attention aujourd'hui.
 
 ## Ouvrir l'écran
 
-Dans la barre latérale, cliquez sur **Listes**, puis sur **Suivi des dossiers**.
+Dans la barre latérale, cliquez sur **Listes**, puis sur **Aperçu global**.
 
 ## Choisir ce que vous voulez voir
 
