@@ -12,17 +12,13 @@ Les filtres se trouvent à deux endroits et agissent ensemble.
 
 **En haut** figurent sept listes de choix : statut du dossier, statut du contrat, produit, type de produit, organisme, intermédiaire et sales. Chacune ne propose que les valeurs présentes dans vos données — pas de choix qui ne donnent rien.
 
-**Sous les en-têtes de colonne**, la recherche est libre. Tapez une partie d'un nom de client ou d'un numéro de contrat : la liste se réduit à mesure que vous tapez.
+**Par ailleurs**, vous recherchez avec le champ de recherche en haut à droite (qui porte sur toutes les colonnes affichées), avec l'entonnoir sur un en-tête de colonne, ou avec le générateur de filtres pour les fourchettes et les combinaisons.
 
 ## Rechercher sur une fourchette
 
-Pour le **montant**, la **durée**, le **taux** et la **date de l'acte**, deux champs figurent sous l'en-tête de colonne : *de* et *à*.
+Pour rechercher sur une fourchette — tous les contrats **entre** deux montants, ou tous les actes de cette année — utilisez le **générateur de filtres**. Il combine deux conditions : *montant supérieur ou égal à 200.000* et *montant inférieur ou égal à 250.000*.
 
-- Compléter les deux recherche entre ces deux valeurs, bornes comprises. De `1000` à `5000` retient aussi un contrat de 5000 exactement.
-- Ne remplir que **de** signifie « à partir de ». Ne remplir que **à** signifie « jusqu'à ».
-- Vider un champ supprime cette borne ; vider les deux désactive le filtre de la colonne.
-
-Vous recherchez ainsi par exemple tous les contrats de plus de 250 000 euros dont la durée ne dépasse pas 240 mois, en complétant un seul champ dans chacune des deux colonnes.
+La manière de l'ouvrir et de le composer est décrite dans [Filtrer et rechercher dans les listes](filteren-in-lijsten.md). Le même principe vaut pour la durée, le taux et la date de l'acte.
 
 ## Les colonnes
 
@@ -46,5 +42,5 @@ Via **Choisir les colonnes**, vous en ajoutez six : le numéro de contrat provis
 
 - **Ouvrir le dossier** — double-cliquez sur la ligne. Vous arrivez sur le dossier de crédit ; un contrat n'a pas de fiche propre.
 - **Rechercher** — le champ de recherche en haut à droite porte sur tout ce que vous voyez.
-- **Trier** — cliquez sur un en-tête de colonne.
+- **Trier et filtrer** — cliquez sur un en-tête pour trier ; l'entonnoir sur l'en-tête filtre sur cette colonne. Pour les fourchettes et les combinaisons, voir [Filtrer et rechercher dans les listes](filteren-in-lijsten.md).
 - **Exporter** — vers Excel ou CSV, avec les filtres actifs à ce moment-là.

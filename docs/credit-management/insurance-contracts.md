@@ -44,7 +44,7 @@ Via **Kolommen kiezen** zet u er twee bij: de **rente** van het contract en de *
 
 - **Het dossier openen** — dubbelklik op de rij; u komt op het kredietdossier waar de polis bij hoort.
 - **Zoeken** — het zoekveld rechtsboven zoekt in alles wat u ziet, ook in de namen.
-- **Sorteren en filteren** — klik op een kolomkop om te sorteren; onder elke kop staat een filterveld.
+- **Sorteren en filteren** — klik op een kolomkop om te sorteren. Beweeg over een kolomkop voor het trechtertje: daarmee filtert u op die kolom. Voor bereiken en combinaties, zie [Filteren en zoeken in lijsten](filteren-in-lijsten.md).
 - **Kolommen kiezen** — met de knop naast Exporteren zet u kolommen aan of uit. Uw keuze blijft bewaard.
 - **Exporteren** — naar Excel of CSV, met de filters die op dat moment aan staan.
 - **Afdrukken** — met **Afdruk lijst**, zie hieronder.

@@ -264,10 +264,14 @@ nav:
     - Verzekeraars: credit-management/insurance-companies.md
 
   - Lijsten:
+    # Bovenaan: geldt voor élke lijst, dus lees je die eerst. De schermpagina's verwijzen ernaar
+    # in plaats van de uitleg te herhalen.
+    - Filteren en zoeken in lijsten: credit-management/filteren-in-lijsten.md
     - Taken: credit-management/tasks.md
     - Globaal overzicht: credit-management/global-overview.md
     - Schattingen: credit-management/appraisals.md
     - Verzekeringen: credit-management/insurance-contracts.md
+    - Contractenoverzicht: credit-management/contract-overview.md
 
   - Relatiebeheer:
     - Relaties: crm/relations.md

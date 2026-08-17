@@ -12,17 +12,13 @@ De filters zitten op twee plaatsen, en ze werken samen.
 
 **Bovenaan** staan zeven keuzelijsten: dossierstatus, contractstatus, product, producttype, instelling, tussenpersoon en sales. Elk toont enkel de waarden die in uw gegevens voorkomen — geen keuzes die niets opleveren.
 
-**Onder de kolomkoppen** zoekt u vrij. Typ een stuk van een klantnaam of een contractnummer en de lijst versmalt terwijl u typt.
+**Verder** zoekt u met het zoekveld rechtsboven (dat kijkt in alle zichtbare kolommen), met het trechtertje op een kolomkop, of met de filterbouwer voor bereiken en combinaties.
 
 ## Zoeken op een bereik
 
-Bij **bedrag**, **looptijd**, **interest** en **datum akte** staan onder de kolomkop twee vakjes: *van* en *tot*.
+Wilt u zoeken op een vork — alle contracten **tussen** twee bedragen, of alle aktes van dit jaar — dan gebruikt u de **filterbouwer**. Die combineert twee voorwaarden: *bedrag is groter dan of gelijk aan 200.000* én *bedrag is kleiner dan of gelijk aan 250.000*.
 
-- Beide invullen zoekt tussen die twee waarden, grenzen inbegrepen. `1000` tot `5000` vindt ook een contract van precies 5000.
-- Enkel **van** invullen betekent "vanaf". Enkel **tot** betekent "tot en met".
-- Een vakje leegmaken haalt die grens weg; beide leeg maken zet de kolomfilter uit.
-
-Zo zoekt u bijvoorbeeld alle contracten boven 250 000 euro met een looptijd tot 240 maanden, door in twee kolommen elk één vakje in te vullen.
+Hoe u die opent en samenstelt, staat beschreven in [Filteren en zoeken in lijsten](filteren-in-lijsten.md). Datzelfde werkt op looptijd, interest en op de datum van de akte.
 
 ## De kolommen
 
@@ -46,5 +42,5 @@ Via **Kolommen kiezen** zet u er zes bij: het tijdelijke contractnummer, het pro
 
 - **Het dossier openen** — dubbelklik op de rij. U komt op het kredietdossier; een contract heeft geen eigen fiche.
 - **Zoeken** — het zoekveld rechtsboven zoekt in alles wat u ziet.
-- **Sorteren** — klik op een kolomkop.
+- **Sorteren en filteren** — klik op een kolomkop om te sorteren; het trechtertje op de kop filtert op die kolom. Voor bereiken en combinaties, zie [Filteren en zoeken in lijsten](filteren-in-lijsten.md).
 - **Exporteren** — naar Excel of CSV, met de filters die op dat moment aan staan.

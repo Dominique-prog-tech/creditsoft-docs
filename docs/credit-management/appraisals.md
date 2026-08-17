@@ -37,7 +37,7 @@ De lijst staat gesorteerd op schatter, zodat u per kantoor ziet wat er openstaat
 
 - **Het dossier openen** — dubbelklik op de rij; u komt op het kredietdossier waar de schatting bij hoort.
 - **Zoeken** — het zoekveld rechtsboven zoekt in alles wat u ziet, ook in de namen van de aanvragers.
-- **Sorteren** — klik op een kolomkop.
+- **Sorteren en filteren** — klik op een kolomkop om te sorteren; het trechtertje op de kop filtert op die kolom. Voor bereiken en combinaties, zie [Filteren en zoeken in lijsten](filteren-in-lijsten.md).
 - **Exporteren** — naar Excel of CSV.
 
 !!! note "Werkt u niet met schatters?"

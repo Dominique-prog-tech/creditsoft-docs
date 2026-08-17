@@ -37,7 +37,7 @@ La liste est triée par expert, de sorte que vous voyez par bureau ce qui reste 
 
 - **Ouvrir le dossier** — double-cliquez sur la ligne ; vous arrivez sur le dossier de crédit auquel l'expertise se rattache.
 - **Rechercher** — le champ de recherche en haut à droite porte sur tout ce que vous voyez, y compris les noms des demandeurs.
-- **Trier** — cliquez sur un en-tête de colonne.
+- **Trier et filtrer** — cliquez sur un en-tête pour trier ; l'entonnoir sur l'en-tête filtre sur cette colonne. Pour les fourchettes et les combinaisons, voir [Filtrer et rechercher dans les listes](filteren-in-lijsten.md).
 - **Exporter** — vers Excel ou CSV.
 
 !!! note "Vous ne travaillez pas avec des experts ?"

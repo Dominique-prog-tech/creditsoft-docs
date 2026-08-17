@@ -45,7 +45,7 @@ Via **Choisir les colonnes** (l'icône à côté d'Exporter), vous ajoutez neuf 
 
 - **Ouvrir un dossier** — double-cliquez sur la ligne.
 - **Rechercher** — le champ de recherche en haut à droite porte sur tout ce que vous voyez.
-- **Trier** — cliquez sur un en-tête de colonne.
+- **Trier et filtrer** — cliquez sur un en-tête pour trier ; l'entonnoir sur l'en-tête filtre sur cette colonne. Pour les fourchettes et les combinaisons, voir [Filtrer et rechercher dans les listes](filteren-in-lijsten.md).
 - **Exporter** — vers Excel ou CSV, filtres compris.
 - **Imprimer** — avec **Imprimer la liste**, voir ci-dessous.
 

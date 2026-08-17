@@ -45,7 +45,7 @@ Via **Kolommen kiezen** (het icoon naast Exporteren) zet u negen extra kolommen 
 
 - **Een dossier openen** — dubbelklik op de rij.
 - **Zoeken** — het zoekveld rechtsboven zoekt in alles wat u ziet.
-- **Sorteren** — klik op een kolomkop.
+- **Sorteren en filteren** — klik op een kolomkop om te sorteren; het trechtertje op de kop filtert op die kolom. Voor bereiken en combinaties, zie [Filteren en zoeken in lijsten](filteren-in-lijsten.md).
 - **Exporteren** — naar Excel of CSV, inclusief uw filters.
 - **Afdrukken** — met **Afdruk lijst**, zie hieronder.
 
