@@ -6,7 +6,7 @@ Le suivi des dossiers est votre liste de travail : **tous les dossiers de crédi
 
 Dans la barre latérale, cliquez sur **Listes**, puis sur **Aperçu global**.
 
-![L'aperçu global : en haut les listes de choix pour la présélection, le statut, l'institution, le responsable et le sales, en dessous le tableau indiquant par dossier le numéro interne, les demandeurs, le statut, la phase, l'institution, l'intermédiaire, le montant du crédit, le délai, les pièces manquantes et les dates.](../images/globaal-overzicht-lijst-fr.png "Tous les dossiers sur un écran, avec leur phase et leur délai"){ .volle-breedte }
+![L'aperçu global : en haut les listes de choix pour la présélection, le statut, l'institution, le responsable et le sales, avec à côté le nombre de dossiers affichés, le total du montant du crédit et le bouton Imprimer la liste ; en dessous le tableau indiquant par dossier le numéro interne, les demandeurs, le statut, la phase, l'institution, l'intermédiaire, le montant du crédit, le délai, les pièces manquantes et les dates.](../images/globaal-overzicht-lijst-fr.png "Tous les dossiers sur un écran, avec leur phase et leur délai"){ .volle-breedte }
 
 ## Choisir ce que vous voulez voir
 
@@ -16,7 +16,7 @@ Cinq listes de choix figurent en haut. La première détermine quelle partie de 
 - **Suivi après acte** — les dossiers qui, selon votre répartition en phases, demandent un suivi *et* pour lesquels des remarques restent ouvertes. C'est votre liste des « il reste quelque chose à faire ici ».
 - **Tous les dossiers** — sans restriction.
 
-Vous filtrez ensuite par **statut**, **institution**, **responsable** et **sales**. Ces deux derniers ne sont pas identiques : le responsable assure le suivi du dossier, le sales l'a apporté — et il s'agit souvent d'une autre personne. À droite des listes de choix figure le nombre de dossiers affichés sur le total, par exemple `128 / 3988`.
+Vous filtrez ensuite par **statut**, **institution**, **responsable** et **sales**. Ces deux derniers ne sont pas identiques : le responsable assure le suivi du dossier, le sales l'a apporté — et il s'agit souvent d'une autre personne. À droite des listes de choix figure le nombre de dossiers affichés sur le total, par exemple `128 / 3988`, et à côté le **total du montant du crédit** pour ces dossiers. Ce total suit vos filtres : si vous sélectionnez un seul responsable, vous lisez immédiatement le volume de crédit dont cette personne a la charge.
 
 !!! tip "C'est vous qui déterminez quels dossiers relèvent de quel choix"
     Les choix **En cours** et **Suivi après acte** suivent la répartition en phases de votre bureau. Vous la configurez sous **Administration → Phases du tableau de bord** : vous y rattachez chaque statut de dossier à une phase et indiquez quelle phase est une phase finale et laquelle demande un suivi. Tant qu'un statut n'est pas réparti, il relève de « En cours ».
@@ -47,6 +47,21 @@ Via **Choisir les colonnes** (l'icône à côté d'Exporter), vous ajoutez neuf 
 - **Rechercher** — le champ de recherche en haut à droite porte sur tout ce que vous voyez.
 - **Trier** — cliquez sur un en-tête de colonne.
 - **Exporter** — vers Excel ou CSV, filtres compris.
+- **Imprimer** — avec **Imprimer la liste**, voir ci-dessous.
+
+## Imprimer ou transmettre la liste
+
+**Imprimer la liste** génère un pdf des dossiers que vous voyez à cet instant. L'impression suit donc vos filtres : ce que vous avez écarté n'y figure pas. L'en-tête du document indique la sélection utilisée et le nombre de dossiers ; le bas de chaque page reprend la date de génération et la pagination. Ainsi, la personne qui retrouve le pdf plus tard sait de quoi il s'agit.
+
+L'impression n'est pas identique au tableau affiché à l'écran. Elle reprend les demandeurs, l'intermédiaire, la quotité, le statut, le montant du crédit, les pièces manquantes, l'introduction, la présence d'un expert désigné, la date d'effet et la date limite des conditions suspensives.
+
+Dès que l'impression est prête, elle s'affiche dans une fenêtre d'aperçu offrant deux possibilités :
+
+- **Envoyer par courriel** — une fenêtre de rédaction s'ouvre avec le pdf déjà en pièce jointe, sur la base de votre modèle général. Vous complétez vous-même les destinataires et adaptez le texte si nécessaire.
+- **Télécharger** — vous conservez le pdf sur votre ordinateur.
+
+!!! tip "Avec *Suivi après acte*, vous obtenez un autre aperçu"
+    Lorsque la première liste de choix est sur **Suivi après acte**, le bouton **Imprimer la liste** génère l'aperçu propre à cette liste. Ce document est axé sur le suivi et reprend, par dossier, le numéro interne, le demandeur, l'investissement total, les fonds propres, le crédit demandé, le montant du crédit, l'introduction, la date d'effet, l'intermédiaire, le responsable, les pièces manquantes et l'institution.
 
 ## Des statuts qui apparaissent deux fois
 

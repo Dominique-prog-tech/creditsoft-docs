@@ -2,7 +2,7 @@
 
 Op dit scherm ziet u alle **schuldsaldoverzekeringen** van uw kantoor op één plaats: wie verzekerd is, bij welke maatschappij, voor welk bedrag en hoe ver de polis staat.
 
-![Het scherm Verzekeringen: bovenaan de keuzelijsten voor product, status en verantwoordelijke, daaronder de tabel met per polis de aanvragers, de maatschappij, het product, de datum, het bedrag, de looptijd, de status, het contractnummer, of ze voorlopig is, de verzekerden en de verantwoordelijke.](../images/verzekeringen-lijst.png "Alle schuldsaldoverzekeringen van het kantoor"){ .volle-breedte }
+![Het scherm Verzekeringen: bovenaan de keuzelijsten voor product, status en verantwoordelijke, met daarnaast het aantal getoonde polissen en de knop Afdruk lijst; daaronder de tabel met per polis de aanvragers, de maatschappij, het product, de datum, het bedrag, de looptijd, de status, het contractnummer, of ze voorlopig is, de verzekerden en de verantwoordelijke.](../images/verzekeringen-lijst.png "Alle schuldsaldoverzekeringen van het kantoor"){ .volle-breedte }
 
 ## Het scherm openen
 
@@ -47,6 +47,18 @@ Via **Kolommen kiezen** zet u er twee bij: de **rente** van het contract en de *
 - **Sorteren en filteren** — klik op een kolomkop om te sorteren; onder elke kop staat een filterveld.
 - **Kolommen kiezen** — met de knop naast Exporteren zet u kolommen aan of uit. Uw keuze blijft bewaard.
 - **Exporteren** — naar Excel of CSV, met de filters die op dat moment aan staan.
+- **Afdrukken** — met **Afdruk lijst**, zie hieronder.
+
+## De lijst afdrukken of doorsturen
+
+**Afdruk lijst** maakt een pdf van de polissen die u op dat moment ziet. De afdruk volgt dus uw filters: wat u weggefilterd hebt, staat er niet in. Bovenaan het document leest u welke selectie u gebruikte en hoeveel polissen erin zitten; onderaan elke bladzijde staan de aanmaakdatum en de paginanummering.
+
+De afdruk is niet hetzelfde als de tabel op uw scherm. Ze toont de naam, de maatschappij, de datum, het bedrag, de looptijd, de rente, de status van de polis, de status van het dossier, of de polis voorlopig is, het contractnummer, de verzekerden, de link en het product. De rente en de status van het dossier staan er dus altijd in, ook wanneer u die kolommen op het scherm niet hebt aanstaan.
+
+Zodra de afdruk klaar is, verschijnt ze in een voorbeeldvenster met twee mogelijkheden:
+
+- **Doorsturen per mail** — er opent een mailvenster met de pdf al als bijlage, opgesteld op uw algemene sjabloon. U vult zelf de ontvangers aan en past de tekst aan waar nodig.
+- **Downloaden** — u bewaart de pdf op uw computer.
 
 !!! note "Welke contracten hier verschijnen"
     Dit scherm toont de contracten van producten die als **schuldsaldoverzekering** ingesteld staan. Welke producten dat zijn, bepaalt u zelf: onder **Platformbeheer → Keuzelijsten** staat bij elk product welke soort het is. Zet u daar een nieuw verzekeringsproduct bij, dan verschijnt het hier vanzelf. Leningen en hypothecaire kredieten horen niet in deze lijst; die vindt u op het kredietdossier zelf.

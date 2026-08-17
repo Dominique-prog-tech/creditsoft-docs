@@ -130,7 +130,15 @@
 ## Lijsten → Globaal overzicht (`credit-management/global-overview.md`)
 
 - [x] `globaal-overzicht-lijst.png` + `-fr` — het volledige scherm met de **vijf** keuzelijsten (sales kwam
-      erbij op 17/08), de teller en een tiental rijen. Geplaatst 17/08/2026.
+      erbij op 17/08), de teller, het **totaal van het kredietbedrag**, de knop **Afdruk lijst** en een tiental
+      rijen. Vernieuwd 17/08/2026 na de afdrukketen. ⚠️ Vensterbreedte in `gen-screenshots.mjs` op **2000**
+      gezet: op 1700 viel Ingangsdatum half af en Verantwoordelijke helemaal buiten beeld, terwijl de
+      alt-tekst de datums wél noemt.
+- [ ] `afdrukvoorbeeld.png` — het venster **Afdrukvoorbeeld** met de pdf erin en de knoppen *Doorsturen per
+      mail* en *Downloaden*. Plaats bij "De lijst afdrukken of doorsturen". ⚠️ **Kan niet met het script**: op
+      macOS toont dat venster een terugval-weergave die leeg blijft; enkel op Windows rendert de pdf-viewer.
+      Dit beeld moet dus met de hand van een Windows-machine komen. Dezelfde afbeelding is bruikbaar onder
+      Verzekeringen én Globaal overzicht.
 - [ ] `globaal-overzicht-voorinstelling.png` — de eerste keuzelijst opengeklapt met **Lopend**,
       **Opvolging na akte** en **Alle dossiers**. Plaats bij "Kiezen wat u wil zien".
 - [ ] `dashboard-fases.png` — het scherm **Platformbeheer → Dashboard-fases**, met links de fases
@@ -142,8 +150,8 @@
 - [x] `schattingen-lijst.png` + `-fr` — het scherm met de drie keuzelijsten, zichtbare vinkjes in
       **Aangesteld** en gevulde aanstellingsdatums. Geplaatst 17/08/2026.
 
-- [x] `verzekeringen-lijst.png` + `-fr` — het Verzekeringen-scherm met de drie keuzelijsten en een tiental
-      rijen. Geplaatst 17/08/2026.
+- [x] `verzekeringen-lijst.png` + `-fr` — het Verzekeringen-scherm met de drie keuzelijsten, de teller, de
+      knop **Afdruk lijst** en een tiental rijen. Vernieuwd 17/08/2026 na de afdrukketen.
 
 - [ ] `dashboard.png` — het volledige dashboard met de vier tegels bovenaan en de fasepijplijn eronder.
       Kies een moment waarop er in meerdere fases dossiers staan. Plaats bovenaan de pagina.
