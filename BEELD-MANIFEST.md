@@ -97,8 +97,14 @@
 ## Beheer → Verzendadressen (`administration/sender-addresses.md`)
 
 - [ ] `platformbeheer-hub.png` — de hub-pagina **Platformbeheer** met de groep *Communicatie* en de tegel *Verzendadressen*. Plaats bij "Het scherm openen".
-- [ ] `verzendadressen-lijst.png` — het lijstscherm (verzendnaam + e-mailadres, "Nieuw"-knop, terug-link bovenaan). Plaats bij "De lijst".
-- [ ] `verzendadressen-bewerken.png` — het bewerkscherm met de twee verplichte velden (e-mailadres + verzendnaam, rood sterretje). Plaats bij "Een verzendadres toevoegen of bewerken".
+- [x] `verzendadressen.png` + `-fr` — het volledige scherm: het kader met het standaardadres van ADM One en de
+      toegelaten domeinen, de schakelaar om uitgaande mail te blokkeren, en de tabel met de kolom **Standaard**
+      waarin het standaardadres groen aangeduid staat. Vernieuwd 17/08/2026.
+      ⚠️ Genomen met de blokkade-schakelaar **uit**: dat is de normale toestand bij een klant. Op de demo-tenant
+      staat hij daarna weer aan, anders kan een demonstratie echte mail versturen.
+- [ ] `verzendadressen-bewerken.png` — het bewerkscherm met de twee verplichte velden én de domeincontrole
+      eronder (groen bij een geregistreerd domein, oranje bij een onbekend). Plaats bij "Uw eigen domein
+      gebruiken". ⚠️ Vraagt een geopende pop-up, dus niet met het huidige script te maken.
 
 ## Beheer → Prullenbak (`administration/recycle-bin.md`)
 
