@@ -2,20 +2,41 @@
 
 Le dossier de crédit est le cœur de CreditSoft. Tout ce qui se rapporte à une demande de crédit — les demandeurs, le bien, les contrats, les parties concernées et les documents demandés — figure au même endroit, sur une seule page.
 
-<!-- AFBEELDING: la liste des dossiers de crédit, avec le filtre de statut en haut -->
-
 ## Ouvrir l'écran
 
 Dans la barre latérale, cliquez sur **Crédit**, puis sur **Dossiers de crédit**.
 
 ## La liste
 
-Vous voyez vos dossiers avec le numéro de dossier, le statut, le montant du crédit, la quotité et la date d'acte.
+![La liste des dossiers de crédit : en haut les filtres par statut, intermédiaire et date, en dessous le tableau indiquant par dossier le numéro, le statut, le montant du crédit, le demandeur, l'intermédiaire, l'institution, la date de dépôt et la date d'effet.](../images/kredietdossiers-lijst-fr.png "Tous les dossiers de crédit du bureau"){ .volle-breedte }
 
-- **Rechercher** — en haut à droite ; la recherche porte sur toutes les colonnes.
-- **Filtrer** — si vous arrivez depuis le tableau de bord, la liste est déjà filtrée sur cette phase ou ce statut. Le filtre actif s'affiche alors en haut, avec un bouton **Effacer le filtre** à côté.
-- **Sélecteur de colonne** et **Exporter** — via les boutons en haut à droite. L'export suit la langue de votre écran.
-- **[Journal](../journaal/overzicht.md)** — cliquez à droite sur le rail **Journal** pour consulter les [tâches](../journaal/taken.md), [notes](../journaal/notities.md), [pièces jointes](../journaal/bijlagen.md), le [courrier](../journaal/mailverkeer.md) et l'[historique](../journaal/logboek.md) du dossier sélectionné sans l'ouvrir.
+Par dossier, vous voyez qui en fait la demande, par qui il passe et où il en est :
+
+| Colonne | Ce qu'elle affiche |
+|---|---|
+| **N° de dossier** | Le numéro interne du dossier |
+| **Statut** | Où en est le dossier |
+| **Montant du crédit** | Le montant effectivement accordé |
+| **Demandeur** | Tous les demandeurs du dossier, à la suite |
+| **Intermédiaire** | L'apporteur par lequel le dossier est arrivé |
+| **Institution** | L'institution de crédit |
+| **Date de dépôt** | Quand le dossier a été introduit |
+| **Date d'effet** | Quand le crédit prend effet |
+
+Via le **sélecteur de colonnes**, vous en ajoutez cinq autres : *Crédit demandé*, *Investissement total*, *Fonds propres*, *Quotité* et *Bien*. Elles sont masquées par défaut, car tous les bureaux ne les remplissent pas. Votre choix est mémorisé pour la fois suivante.
+
+### Rechercher et filtrer
+
+- **Rechercher** — le champ de recherche porte sur toutes les colonnes **visibles**. Si vous activez une colonne via le sélecteur, la recherche s'y applique aussitôt.
+- **Statut** et **Intermédiaire** — les deux listes de choix du haut. Elles n'affichent que ce qui figure dans vos dossiers, donc aucun statut sans dossier.
+- **Plage de dates** — renseignez **du** et/ou **au**. La liste de choix voisine détermine *sur quelle* date porte cette plage : sur la **date de dépôt** (par défaut) ou sur la **date d'effet**.
+- **Depuis le tableau de bord** — si vous arrivez depuis une phase du tableau de bord, la liste est déjà filtrée. Le filtre actif s'affiche en haut, avec un bouton **Effacer le filtre** à côté.
+- **Exporter** — vers Excel ou CSV, avec les filtres actifs à ce moment-là. L'export suit la langue de votre écran.
+
+!!! tip "Les dossiers sans date sortent d'une plage de dates"
+    Si vous renseignez une plage, les dossiers dont cette date est encore vide disparaissent. C'est voulu : un dossier sans date d'effet n'est tout simplement ni avant ni après un jour donné. Pour les revoir, videz la plage.
+
+**[Journal](../journaal/overzicht.md)** — cliquez à droite sur le rail **Journal** pour consulter les [tâches](../journaal/taken.md), [notes](../journaal/notities.md), [pièces jointes](../journaal/bijlagen.md), le [courrier](../journaal/mailverkeer.md) et l'[historique](../journaal/logboek.md) du dossier sélectionné sans l'ouvrir.
 
 **Double-cliquez** une ligne pour ouvrir le dossier.
 

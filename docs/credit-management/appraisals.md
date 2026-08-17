@@ -2,6 +2,8 @@
 
 Op dit scherm volgt u de **vastgoedschattingen** op: welke schatter aan welk dossier is toegewezen, wanneer de schatting werd besteld en uitgevoerd, en of het rapport binnen is.
 
+![Het scherm Schattingen: bovenaan de keuzelijsten voor schatter, verantwoordelijke en stadium, daaronder de tabel met per schatting de schatter, de aanvragers, het dossiernummer, of er iemand is aangesteld, de datums van aanstelling en uitvoering, of het rapport ontvangen is, en de sales.](../images/schattingen-lijst.png "De vastgoedschattingen en hoe ver ze staan"){ .volle-breedte }
+
 ## Het scherm openen
 
 Klik in de zijbalk op **Lijsten** en dan op **Schattingen**.
@@ -40,3 +42,7 @@ De lijst staat gesorteerd op schatter, zodat u per kantoor ziet wat er openstaat
 
 !!! note "Werkt u niet met schatters?"
     Dan blijft deze lijst leeg. Schattingen komen op het kredietdossier terecht als een betrokken derde partij van het type *schatter*; is dat bij u niet in gebruik, dan is dit scherm zonder inhoud en kunt u het gerust laten staan.
+
+## De volgorde
+
+De lijst staat op naam van de schatter, alfabetisch. Dossiers waar **nog geen schatter** aan hangt, komen achteraan — anders zou de eerste pagina vol staan met rijen waarin bijna alles leeg is. Zoekt u net die dossiers, kies dan bovenaan het stadium **Nog aan te stellen**.

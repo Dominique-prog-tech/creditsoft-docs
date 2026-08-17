@@ -22,6 +22,11 @@
 > Toegankelijkheid én vindbaarheid. De volledige regel staat in `CLAUDE.md`.
 >
 > Streep af (`[x]`) wat geplaatst is. Claude vult nieuwe rijen aan zodra er schermen wijzigen.
+>
+> ⚠️ **Brede lijstschermen schiet je op 1700 px** (`vensterBreedte` in het script), niet op de standaard 1280.
+> Gemeten 17/08/2026 op het beeld zelf: bij 1280 brak de werkbalk van Kredietdossiers over twee rijen en viel
+> de laatste kolom buiten beeld. Een beeld dat een gebroken werkbalk toont, leert de lezer een lay-out die
+> hij zelf nooit ziet.
 
 ## Aan de slag → Navigeren in CreditSoft (`getting-started/navigatie.md`)
 
@@ -115,11 +120,17 @@
 > Best genomen vanuit een **tester-weergave** (niet het volledige operator-menu), zodat de schermen tonen
 > wat een tester ziet.
 
+## Krediet → Kredietdossiers (`credit-management/credit-files.md`)
+
+- [x] `kredietdossiers-lijst.png` + `-fr` — de lijst met de drie filters (status, tussenpersoon, datumbereik)
+      en de acht standaardkolommen. Geplaatst 17/08/2026.
+- [ ] `kredietdossier-fiche.png` — het geopende dossier met de blokken Dossiergegevens en Pand. **Wacht op de
+      aftoets van het dossierscherm zelf** (het kredietgedeelte); de plaatshouder staat nog in de pagina.
+
 ## Lijsten → Globaal overzicht (`credit-management/global-overview.md`)
 
-- [ ] `globaal-overzicht-lijst.png` — het volledige scherm met de vier keuzelijsten bovenaan, de teller
-      (bv. `128 / 3988`) en een tiental rijen. Zorg dat de kolom **Status** gekleurde statussen toont en dat er
-      in **Ontbrekende stukken / info** enkele rijen gevuld zijn. Plaats bij "De kolommen".
+- [x] `globaal-overzicht-lijst.png` + `-fr` — het volledige scherm met de **vijf** keuzelijsten (sales kwam
+      erbij op 17/08), de teller en een tiental rijen. Geplaatst 17/08/2026.
 - [ ] `globaal-overzicht-voorinstelling.png` — de eerste keuzelijst opengeklapt met **Lopend**,
       **Opvolging na akte** en **Alle dossiers**. Plaats bij "Kiezen wat u wil zien".
 - [ ] `dashboard-fases.png` — het scherm **Platformbeheer → Dashboard-fases**, met links de fases
@@ -128,14 +139,11 @@
 
 ## Lijsten → Schattingen (`credit-management/appraisals.md`)
 
-- [ ] `schattingen-lijst.png` — het scherm met de drie keuzelijsten en een tiental rijen, met zichtbare
-      vinkjes in **Aangesteld** en **Rapport ontvangen** en gevulde aanstellingsdatums. Plaats bij
-      "De kolommen". Dezelfde afbeelding ook onder de FR-pagina.
+- [x] `schattingen-lijst.png` + `-fr` — het scherm met de drie keuzelijsten, zichtbare vinkjes in
+      **Aangesteld** en gevulde aanstellingsdatums. Geplaatst 17/08/2026.
 
-- [ ] `verzekeringen-lijst.png` — het Verzekeringen-scherm met de drie keuzelijsten bovenaan en een tiental
-      rijen. Kies bij voorkeur een beeld waar de teller een gefilterd aantal toont (bv. `2690 / 2990`), zodat
-      meteen duidelijk is dat de filters samenwerken. Plaats bovenaan de pagina. Dezelfde afbeelding ook
-      onder de FR-pagina.
+- [x] `verzekeringen-lijst.png` + `-fr` — het Verzekeringen-scherm met de drie keuzelijsten en een tiental
+      rijen. Geplaatst 17/08/2026.
 
 - [ ] `dashboard.png` — het volledige dashboard met de vier tegels bovenaan en de fasepijplijn eronder.
       Kies een moment waarop er in meerdere fases dossiers staan. Plaats bovenaan de pagina.

@@ -2,7 +2,7 @@
 
 Cet écran vous montre toutes les **assurances solde restant dû** de votre bureau au même endroit : qui est assuré, auprès de quelle compagnie, pour quel montant et où en est la police.
 
-<!-- AFBEELDING: het volledige Verzekeringen-scherm met de drie filters bovenaan -->
+![L'écran Assurances : en haut les listes de choix pour le produit, le statut et le responsable, en dessous le tableau indiquant par police les demandeurs, la compagnie, le produit, la date, le montant, la durée, le statut, le numéro de contrat, son caractère provisoire, les assurés et le responsable.](../images/verzekeringen-lijst-fr.png "Toutes les assurances solde restant dû du bureau"){ .volle-breedte }
 
 ## Ouvrir l'écran
 
@@ -34,6 +34,11 @@ En haut figurent trois listes de choix. Chacune est réglée par défaut sur « 
 | **Assurés** | Qui est assuré — il ne s'agit pas nécessairement du demandeur |
 | **Responsable** | Le collaborateur qui suit le dossier |
 | **Lien** | Si le lien de demande a été envoyé au client |
+
+Via le **sélecteur de colonnes**, vous en ajoutez deux : le **taux** du contrat et le **statut du dossier**.
+
+!!! tip "Statut de la police ou statut du dossier ?"
+    Ce sont deux choses différentes, volontairement placées côte à côte. **Statut** concerne la police — offre, acceptation médicale, signée. **Statut du dossier** concerne le dossier de crédit auquel cette police se rattache. Une police peut déjà être signée alors que le dossier est toujours en cours, et inversement. Si *Statut* est souvent vide, c'est qu'aucun statut de police n'a jamais été renseigné dans vos données ; *Statut du dossier* est toujours présent.
 
 ## Travailler avec la liste
 

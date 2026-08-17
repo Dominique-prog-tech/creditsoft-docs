@@ -6,15 +6,17 @@ Le suivi des dossiers est votre liste de travail : **tous les dossiers de crédi
 
 Dans la barre latérale, cliquez sur **Listes**, puis sur **Aperçu global**.
 
+![L'aperçu global : en haut les listes de choix pour la présélection, le statut, l'institution, le responsable et le sales, en dessous le tableau indiquant par dossier le numéro interne, les demandeurs, le statut, la phase, l'institution, l'intermédiaire, le montant du crédit, le délai, les pièces manquantes et les dates.](../images/globaal-overzicht-lijst-fr.png "Tous les dossiers sur un écran, avec leur phase et leur délai"){ .volle-breedte }
+
 ## Choisir ce que vous voulez voir
 
-Quatre listes de choix figurent en haut. La première détermine quelle partie de vos dossiers s'affiche :
+Cinq listes de choix figurent en haut. La première détermine quelle partie de vos dossiers s'affiche :
 
 - **En cours** — tout ce qui n'est pas encore clôturé. C'est l'affichage par défaut à l'ouverture de l'écran.
 - **Suivi après acte** — les dossiers qui, selon votre répartition en phases, demandent un suivi *et* pour lesquels des remarques restent ouvertes. C'est votre liste des « il reste quelque chose à faire ici ».
 - **Tous les dossiers** — sans restriction.
 
-Vous filtrez ensuite par **statut**, **institution** et **responsable**. À droite des listes de choix figure le nombre de dossiers affichés sur le total, par exemple `128 / 3988`.
+Vous filtrez ensuite par **statut**, **institution**, **responsable** et **sales**. Ces deux derniers ne sont pas identiques : le responsable assure le suivi du dossier, le sales l'a apporté — et il s'agit souvent d'une autre personne. À droite des listes de choix figure le nombre de dossiers affichés sur le total, par exemple `128 / 3988`.
 
 !!! tip "C'est vous qui déterminez quels dossiers relèvent de quel choix"
     Les choix **En cours** et **Suivi après acte** suivent la répartition en phases de votre bureau. Vous la configurez sous **Administration → Phases du tableau de bord** : vous y rattachez chaque statut de dossier à une phase et indiquez quelle phase est une phase finale et laquelle demande un suivi. Tant qu'un statut n'est pas réparti, il relève de « En cours ».
@@ -37,7 +39,7 @@ Vous filtrez ensuite par **statut**, **institution** et **responsable**. À droi
 
 Le **délai de traitement** continue de courir jusqu'à aujourd'hui tant qu'il n'y a pas d'acte. Si un dossier se trouve dans une phase finale sans acte — refusé ou sans suite — la cellule reste vide : le compteur ne continue alors pas inutilement.
 
-Via **Choisir les colonnes** (l'icône à côté d'Exporter), vous ajoutez huit colonnes supplémentaires : quotité, investissement, fonds propres, crédit demandé, les deux échéances, la désignation éventuelle d'un expert, et le responsable commercial.
+Via **Choisir les colonnes** (l'icône à côté d'Exporter), vous ajoutez neuf colonnes supplémentaires : quotité, investissement, fonds propres, crédit demandé, la date limite des conditions suspensives, la date limite de signature de l'acte, la **validité** de l'offre, la désignation éventuelle d'un expert, et le responsable commercial.
 
 ## Travailler avec la liste
 

@@ -2,7 +2,7 @@
 
 Op dit scherm ziet u alle **schuldsaldoverzekeringen** van uw kantoor op één plaats: wie verzekerd is, bij welke maatschappij, voor welk bedrag en hoe ver de polis staat.
 
-<!-- AFBEELDING: het volledige Verzekeringen-scherm met de drie filters bovenaan -->
+![Het scherm Verzekeringen: bovenaan de keuzelijsten voor product, status en verantwoordelijke, daaronder de tabel met per polis de aanvragers, de maatschappij, het product, de datum, het bedrag, de looptijd, de status, het contractnummer, of ze voorlopig is, de verzekerden en de verantwoordelijke.](../images/verzekeringen-lijst.png "Alle schuldsaldoverzekeringen van het kantoor"){ .volle-breedte }
 
 ## Het scherm openen
 
@@ -34,6 +34,11 @@ Rechts van de keuzelijsten ziet u hoeveel rijen u nu toont van het totaal, bijvo
 | **Verzekerden** | Wie er verzekerd is — dat hoeft niet dezelfde persoon te zijn als de aanvrager |
 | **Verantwoordelijke** | De medewerker die het dossier opvolgt |
 | **Link** | Of de aanvraaglink naar de klant verstuurd is |
+
+Via **Kolommen kiezen** zet u er twee bij: de **rente** van het contract en de **status van het dossier**.
+
+!!! tip "Status van de polis of status van het dossier?"
+    Dat zijn twee verschillende dingen, en ze staan met opzet naast elkaar. **Status** gaat over de polis — offerte, medische acceptatie, getekend. **Status dossier** gaat over het kredietdossier waar die polis bij hoort. Een polis kan al getekend zijn terwijl het dossier nog loopt, en omgekeerd. Staat *Status* vaak leeg, dan is er in uw gegevens nooit een polisstatus ingevuld; *Status dossier* is er altijd.
 
 ## Werken met de lijst
 

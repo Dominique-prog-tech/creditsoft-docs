@@ -2,6 +2,8 @@
 
 Cet écran vous permet de suivre les **expertises immobilières** : quel expert est désigné pour quel dossier, quand l'expertise a été commandée et exécutée, et si le rapport est arrivé.
 
+![L'écran Expertises : en haut les listes de choix pour l'expert, le responsable et le stade, en dessous le tableau indiquant par expertise l'expert, les demandeurs, le numéro de dossier, la désignation éventuelle, les dates de désignation et d'exécution, la réception du rapport et le sales.](../images/schattingen-lijst-fr.png "Les expertises immobilières et leur état d'avancement"){ .volle-breedte }
+
 ## Ouvrir l'écran
 
 Dans la barre latérale, cliquez sur **Listes**, puis sur **Expertises**.
@@ -40,3 +42,7 @@ La liste est triée par expert, de sorte que vous voyez par bureau ce qui reste 
 
 !!! note "Vous ne travaillez pas avec des experts ?"
     Cette liste reste alors vide. Les expertises arrivent sur le dossier de crédit sous la forme d'un tiers concerné de type *expert* ; si vous n'utilisez pas cette possibilité, cet écran est sans contenu et vous pouvez le laisser tel quel.
+
+## L'ordre d'affichage
+
+La liste est classée par nom d'expert, dans l'ordre alphabétique. Les dossiers auxquels **aucun expert** n'est encore rattaché figurent à la fin — sinon la première page serait remplie de lignes presque entièrement vides. Si vous cherchez précisément ces dossiers, choisissez le stade **À désigner** en haut.
