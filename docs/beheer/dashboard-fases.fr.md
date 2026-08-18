@@ -32,11 +32,16 @@ En bas du tableau figure une ligne vide : saisissez-y un nom pour ajouter une ph
 - Si vous ne rattachez pas un statut, ces dossiers apparaissent sur le tableau de bord sous **non classés**.
 - Les statuts que vous n'utilisez plus mais qui restent liés à d'anciens dossiers demeurent dans cette liste. C'est voulu : ces dossiers doivent pouvoir aboutir quelque part.
 
-## Partie 3 — Les tuiles d'indicateurs
+## Partie 3 — Que signifie chaque statut de contrat ?
 
-En bas, vous déterminez quels **statuts de contrat** comptent dans les quatre tuiles colorées du haut du tableau de bord. Ceci est totalement indépendant des phases : les phases concernent les dossiers, les tuiles les contrats.
+En bas, vous indiquez pour chaque **statut de contrat** ce qu'il signifie : *réalisé*, *à introduire* ou *introduit*. Les quatre tuiles colorées en haut du tableau de bord se remplissent alors d'elles-mêmes. Cela n'a rien à voir avec les phases : les phases concernent les dossiers, ceci concerne les contrats.
 
-Les statuts de contrat non rattachés ne comptent nulle part. Si une tuile affiche zéro alors que vous savez qu'il existe des contrats, c'est probablement qu'aucun statut n'y est encore rattaché.
+Vous ne choisissez donc **pas** directement une tuile. Ce ne serait d'ailleurs pas possible : *Actes* et *LOA* comptent toutes deux des contrats **réalisés** et ne diffèrent que par la catégorie de produit — crédit hypothécaire d'un côté, prêt à tempérament de l'autre. Quel produit relève de quelle tuile est fixé dans votre liste de produits.
+
+Les statuts sans signification ne comptent nulle part. Si une tuile reste à zéro alors que vous savez qu'il existe des contrats, c'est probablement que le statut concerné ne porte pas encore de signification.
+
+!!! info "La liste est groupée par origine"
+    Les statuts de contrat proviennent de trois listes différentes : celle des **contrats de crédit**, une liste **historique** antérieure au modèle de contrat, et celle des **assurances solde restant dû**. Vous ne pouvez pas donner de signification aux statuts d'assurance — les indicateurs sont des chiffres de crédit. Ils figurent tout de même dans la liste, avec la mention *sans objet*, pour que vous ne cherchiez pas un statut que vous croiriez manquant.
 
 !!! warning "Pourquoi certains statuts apparaissent-ils en double ?"
-    Dans les données reprises, il arrive que deux statuts portent le même nom — par exemple deux fois *Sans suite*. Ce n'est pas une erreur : ce sont deux statuts distincts issus de l'ancien programme, chacun avec ses propres dossiers. Rattachez-les tous deux à la même phase et vos collaborateurs n'y verront que du feu.
+    Dans les données reprises, il arrive que deux statuts portent le même nom — par exemple deux fois *Sans suite*. Ce n'est pas une erreur : ce sont deux statuts distincts de l'ancien programme, chacun avec ses propres dossiers. Donnez-leur la même signification et vos collaborateurs n'y verront que du feu.

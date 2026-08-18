@@ -2,24 +2,28 @@
 
 Le tableau de bord est votre écran d'accueil. D'un coup d'œil, vous voyez combien de dossiers se trouvent dans quelle phase et ce que font les indicateurs.
 
-![Le tableau de bord avec en haut les quatre tuiles d'indicateurs, en dessous le graphique du volume réalisé par mois ainsi que la répartition par institution et par responsable, et en bas le pipeline des dossiers par phase.](../images/dashboard-startscherm-fr.png "Le tableau de bord"){ .volle-breedte }
+![Le tableau de bord : en haut les quatre indicateurs — Actes avec l'année, À introduire, Introduits et LOA avec la mention « toutes les années » — en dessous le graphique en barres du volume réalisé par mois et deux graphiques en anneau répartissant le volume par institution et par responsable, et en bas le pipeline Dossiers par phase avec En traitement, Introduit, Finalisé, Sans suite et Refusé.](../images/dashboard-startscherm-fr.png "Le tableau de bord : indicateurs, graphiques et pipeline par phase"){ .volle-breedte }
 
 ## Les quatre tuiles du haut
 
-Les tuiles colorées comptent des **contrats**, pas des dossiers. Chaque tuile représente une étape du traitement administratif :
+Les tuiles colorées comptent des **contrats**, pas des dossiers. Chaque tuile combine deux éléments : ce que **signifie** un statut de contrat, et de quelle **catégorie de produit** il s'agit.
 
-| Tuile | Ce qui y est compté |
-|---|---|
-| **Actes** | Les contrats dont l'acte est passé |
-| **À introduire** | Les contrats prêts à être introduits |
-| **Introduits** | Les contrats déposés auprès de l'organisme |
-| **LOA** | Les contrats au dernier stade avant traitement |
+| Tuile | Ce qui y est compté | Période |
+|---|---|---|
+| **Actes** | Les crédits **hypothécaires** réalisés | l'année choisie |
+| **À introduire** | Les contrats encore à introduire, quel que soit le produit | toutes les années |
+| **Introduits** | Les crédits **hypothécaires** introduits | toutes les années |
+| **LOA** | Les **prêts à tempérament** réalisés | toutes les années |
 
-Quels statuts de contrat comptent dans quelle tuile, c'est vous qui le déterminez — voir [la répartition en phases](../beheer/dashboard-fases.md). Les statuts que vous ne rattachez nulle part ne comptent dans aucune tuile.
+**LOA signifie prêt à tempérament** (*lening op afbetaling*). Cette tuile compte donc la même chose que *Actes* — des contrats réalisés — mais pour une autre catégorie de produit. Cette distinction provient de votre liste de produits et est fixe ; vous n'avez pas à la configurer.
+
+Vous indiquez uniquement **ce que signifie un statut de contrat** : *réalisé*, *à introduire* ou *introduit*. Cela se fait sous [Administration → Phases du tableau de bord](../beheer/dashboard-fases.md), en bas, sous *Statuts de contrat*. Les statuts sans signification ne comptent nulle part.
+
+!!! info "Pourquoi une seule tuile suit-elle l'année ?"
+    Des flèches au-dessus des tuiles permettent de changer d'année. Seule la tuile **Actes** suit cette année : elle compte sur la date de l'acte, et cette date est connue. Les trois autres comptent tout ce qui a jamais été encodé, car les dates des contrats doivent encore être reprises de l'ancien programme. Le libellé sous chaque tuile indique lui-même la période concernée — *2026* ou *toutes les années* — pour que vous ne lisiez pas quatre chiffres comme quatre chiffres annuels.
 
 !!! tip "Des tirets au lieu de chiffres ?"
-    C'est qu'aucun statut de contrat n'est encore lié à une tuile. Vous voyez un tiret et non un zéro, car
-    zéro signifierait qu'il n'y a réellement rien à compter. Sous les tuiles, une phrase vous mène au réglage.
+    C'est qu'aucun statut de contrat ne porte encore de signification. Vous voyez un tiret et non un zéro, car zéro signifierait qu'il n'y a réellement rien à compter. Sous les tuiles, une phrase vous mène au réglage.
 
 ## Le pipeline : les dossiers par phase
 

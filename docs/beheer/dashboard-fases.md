@@ -32,11 +32,16 @@ Rechts staan al uw dossierstatussen. Kies per status in welke fase hij thuishoor
 - Koppelt u een status niet, dan komen die dossiers op het dashboard onder **niet ingedeeld**.
 - Statussen die u niet meer gebruikt maar die nog aan oude dossiers hangen, blijven in deze lijst staan. Dat is bewust: die dossiers moeten ergens terechtkunnen.
 
-## Deel 3 — De KPI-tegels
+## Deel 3 — Wat betekent elke contractstatus?
 
-Onderaan bepaalt u welke **contractstatussen** meetellen in de vier gekleurde tegels bovenaan het dashboard. Dit staat helemaal los van de fases: fases gaan over dossiers, de tegels over contracten.
+Onderaan geeft u per **contractstatus** aan wat hij betekent: *gerealiseerd*, *in te dienen* of *ingediend*. Daarmee vullen de vier gekleurde tegels bovenaan het dashboard zich vanzelf. Dit staat helemaal los van de fases: fases gaan over dossiers, dit gaat over contracten.
 
-Niet-gekoppelde contractstatussen tellen nergens mee. Ziet u een tegel op nul staan terwijl u weet dat er contracten zijn, dan is er waarschijnlijk nog geen status aan die tegel gekoppeld.
+U kiest dus **niet** rechtstreeks een tegel. Dat kan ook niet: *Aktes* en *LOA* tellen allebei **gerealiseerde** contracten en verschillen alleen in productsoort — hypothecair krediet tegenover lening op afbetaling. Welk product bij welke tegel hoort, ligt vast in uw productenlijst.
+
+Statussen zonder betekenis tellen nergens mee. Staat een tegel op nul terwijl u weet dat er contracten zijn, dan draagt de betrokken status waarschijnlijk nog geen betekenis.
+
+!!! info "De lijst is gegroepeerd per herkomst"
+    Contractstatussen komen uit drie verschillende lijsten: die van de **kredietcontracten**, een **historische** lijst van vóór het contractmodel, en die van de **schuldsaldoverzekeringen**. Verzekeringsstatussen kan u geen betekenis geven — de kerncijfers zijn kredietcijfers. Ze staan er wel bij, met de vermelding *niet van toepassing*, zodat u niet zoekt naar een status die u meent te missen.
 
 !!! warning "Waarom staan sommige statussen er dubbel?"
-    In de overgezette gegevens komt het voor dat twee statussen dezelfde naam dragen — bijvoorbeeld tweemaal *Zonder gevolg*. Dat is geen fout: het zijn twee verschillende statussen uit het vorige programma, elk met hun eigen dossiers. Koppel ze allebei aan dezelfde fase, dan zien uw medewerkers er niets van.
+    In de overgezette gegevens komt het voor dat twee statussen dezelfde naam dragen — bijvoorbeeld tweemaal *Zonder gevolg*. Dat is geen fout: het zijn twee verschillende statussen uit het vorige programma, elk met hun eigen dossiers. Geef ze allebei dezelfde betekenis, dan zien uw medewerkers er niets van.

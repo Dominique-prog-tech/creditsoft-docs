@@ -39,6 +39,17 @@
 - [ ] `2fa-inschakelen.png` — het inschakelscherm met QR-code + sleutel + codeveld. Plaats bij "Inschakelen".
 - [ ] `2fa-aanmelden.png` — de 2FA-uitdaging bij het aanmelden (codeveld + "Gebruik een herstelcode"). Plaats bij "Aanmelden met tweestapsverificatie".
 
+## Aan de slag → Het dashboard (`getting-started/dashboard.md`)
+
+- [x] `dashboard-startscherm.png` + `-fr` — vernieuwd 18/08/2026, ná ADR-0007: de tegels dragen nu hun
+      periode ("· 2026" tegenover "· alle jaren") en de pijplijn toont vijf fases. Het oude beeld toonde
+      een dashboard van vóór die wijziging.
+      ⚠️ Op dit beeld is *Volume per verantwoordelijke* grotendeels **Onbekend**: de gegenereerde dossiers
+      dragen legacy-gebruikers-id's die niet naar de demo-medewerkers wijzen. Eerlijk, maar het oogt als
+      een gebrek — op te lossen in de testdata-generator, niet in het beeld.
+- [x] `dashboard-fases.png` + `-fr` — vernieuwd 18/08/2026: het onderste blok heet nu
+      *Contractstatussen — wat betekent elke status?* in plaats van de koppeling aan een KPI-tegel.
+
 ## Lijsten → Rapporten (`credit-management/reports.md`)
 
 - [x] `rapporten-bibliotheek.png` + `-fr` — de negen tegels in drie groepen. Geplaatst 18/08/2026.

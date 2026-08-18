@@ -2,25 +2,28 @@
 
 Het dashboard is uw startscherm. In één oogopslag ziet u hoeveel dossiers er in welke fase zitten en wat de kerncijfers doen.
 
-![Het dashboard met bovenaan de vier kerncijfer-tegels, daaronder de grafiek van het gerealiseerde volume per maand en de verdeling per instelling en per verantwoordelijke, en onderaan de pijplijn met de dossiers per fase.](../images/dashboard-startscherm.png "Het dashboard"){ .volle-breedte }
+![Het dashboard: bovenaan de vier kerncijfers — Aktes met het jaartal erbij, In te dienen, Ingediend en LOA met de vermelding "alle jaren" — daaronder de staafgrafiek van het gerealiseerde volume per maand en twee ringgrafieken met de verdeling per instelling en per verantwoordelijke, en onderaan de pijplijn Dossiers per fase met In behandeling, Ingediend, Afgewerkt, Zonder gevolg en Geweigerd.](../images/dashboard-startscherm.png "Het dashboard: kerncijfers, grafieken en de pijplijn per fase"){ .volle-breedte }
 
 ## De vier tegels bovenaan
 
-De gekleurde tegels tellen **contracten**, niet dossiers. Elke tegel staat voor een stadium in de administratieve afhandeling:
+De gekleurde tegels tellen **contracten**, niet dossiers. Elke tegel is een combinatie van twee dingen: wat een contractstatus **betekent**, en om welke **productsoort** het gaat.
 
-| Tegel | Wat erin geteld wordt |
-|---|---|
-| **Aktes** | Contracten waarvan de akte gepasseerd is |
-| **In te dienen** | Contracten die klaarstaan om ingediend te worden |
-| **Ingediend** | Contracten die bij de instelling liggen |
-| **LOA** | Contracten in het laatste stadium vóór afhandeling |
+| Tegel | Wat erin geteld wordt | Periode |
+|---|---|---|
+| **Aktes** | Gerealiseerde **hypothecaire** kredieten | het gekozen jaar |
+| **In te dienen** | Contracten die nog ingediend moeten worden, ongeacht het product | alle jaren |
+| **Ingediend** | Ingediende **hypothecaire** kredieten | alle jaren |
+| **LOA** | Gerealiseerde **leningen op afbetaling** | alle jaren |
 
-Welke contractstatussen in welke tegel meetellen, bepaalt u zelf — zie [de fase-indeling](../beheer/dashboard-fases.md). Statussen die u nergens koppelt, tellen in geen enkele tegel mee.
+**LOA staat voor Lening Op Afbetaling.** Die tegel telt dus hetzelfde als *Aktes* — gerealiseerde contracten — maar voor een andere productsoort. Dat onderscheid komt uit uw productenlijst en ligt vast; u hoeft het niet in te stellen.
+
+U geeft alleen aan **wat een contractstatus betekent**: *gerealiseerd*, *in te dienen* of *ingediend*. Dat doet u onder [Platformbeheer → Dashboard-fases](../beheer/dashboard-fases.md), onderaan bij *Contractstatussen*. Statussen zonder betekenis tellen nergens mee.
+
+!!! info "Waarom telt maar één tegel per jaar?"
+    Boven de tegels staan pijltjes om van jaar te wisselen. Alleen **Aktes** volgt dat jaar: die telt op de datum van de akte, en die datum is bekend. De drie andere tegels tellen alles wat er ooit is ingegeven, omdat de datums van de contracten nog uit het vorige programma moeten worden overgezet. Het label onder elke tegel zegt zelf over welke periode ze gaat — *2026* of *alle jaren* — zodat u vier cijfers niet per ongeluk als vier jaarcijfers leest.
 
 !!! tip "Staan er streepjes in plaats van cijfers?"
-    Dan is er nog géén enkele contractstatus aan een tegel gekoppeld. U ziet een streepje en geen nul, want
-    nul zou betekenen dat er echt niets te tellen valt. Onder de tegels staat een zin die u naar de instelling
-    brengt.
+    Dan draagt nog geen enkele contractstatus een betekenis. U ziet een streepje en geen nul, want nul zou betekenen dat er echt niets te tellen valt. Onder de tegels staat een zin die u naar de instelling brengt.
 
 ## De pijplijn: dossiers per fase
 
