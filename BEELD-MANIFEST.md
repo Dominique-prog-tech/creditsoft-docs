@@ -158,8 +158,15 @@
 
 - [x] `kredietdossiers-lijst.png` + `-fr` — de lijst met de drie filters (status, tussenpersoon, datumbereik)
       en de acht standaardkolommen. Geplaatst 17/08/2026.
-- [ ] `kredietdossier-fiche.png` — het geopende dossier met de blokken Dossiergegevens en Pand. **Wacht op de
-      aftoets van het dossierscherm zelf** (het kredietgedeelte); de plaatshouder staat nog in de pagina.
+- [ ] `kredietdossier-fiche.png` + `-fr` — het geopende dossier. De aftoets van dit scherm is op 18/08/2026
+      gedaan, dus de wachtstand is opgeheven en het beeld **staat nu in `gen-screenshots.mjs`** — draaien
+      volstaat. Het moet tonen: de kopkaart met **Eigenaar** en **Sales** als keuzelijst (gevuld, niet leeg),
+      het vinkje *inhouden* naast het commissiebedrag, links de datums en het pand met *Interne opmerkingen*
+      onderaan, rechts de contracten, en onderaan rechts de twee tabbladen **Partijen** en **Opmerkingen**.
+      ⚠️ Vensterbreedte **1920**: de cockpit is op twee kolommen gebouwd en past exact op 1920×1080. Smaller
+      schuift de rechterkolom eronder, en dan toont het beeld een indeling die niemand zo ziet.
+      De plaatshouder `<!-- AFBEELDING: ... -->` staat nog in de pagina (NL en FR) en mag weg zodra het beeld
+      er staat.
 
 ## Lijsten → Globaal overzicht (`credit-management/global-overview.md`)
 

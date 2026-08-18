@@ -44,16 +44,21 @@ Via **Kolommen kiezen** zet u er nog vijf bij: *Gevraagd krediet*, *Totale inves
 
 <!-- AFBEELDING: een geopend kredietdossier met de blokken Dossiergegevens en Pand -->
 
-Het dossier is één doorlopende pagina met blokken. U hoeft niet door tabbladen te klikken: alles staat onder elkaar, in de volgorde waarin u er doorgaans mee werkt.
+Het dossier is één pagina. Bovenaan staat het kernblok met de gegevens die u het vaakst nodig hebt; daaronder staan links de datums en het pand, rechts de contracten. Onderaan rechts staan **Partijen** en **Opmerkingen** naast elkaar als tabbladen — twee lijsten die dezelfde plaats delen, zodat u niet hoeft te scrollen om ze allebei te bereiken.
 
 ### Dossiergegevens
 
 Het kernblok: intern nummer, eigenaar, sales, **status**, kredietsoort, doel, financiële instelling en tussenpersoon. Daaronder de bedragen — kredietbedrag, quotiteit en commissiebedrag — en de sleuteldatums: indiening, goedkeuring, ondertekening van het aanbod en de uiterste datum voor de opschortende voorwaarden.
 
-Twee vinkjes verdienen aandacht:
+**Eigenaar** en **Sales** zijn keuzelijsten van uw medewerkers. U kan erin typen om te zoeken, en met het kruisje maakt u het veld weer leeg.
 
-- **Commissie inhouden** — bepaalt of de commissie van dit dossier ingehouden wordt.
+Drie vinkjes verdienen aandacht:
+
+- **Inhouden** — naast het commissiebedrag: bepaalt of de commissie van dit dossier ingehouden wordt.
 - **Weergeven in dashboard** — laat dit dossier meetellen in de fasetellingen op het dashboard.
+- **Getekend aanbod verzonden** — u hebt het ondertekende aanbod doorgestuurd.
+
+Onderaan het blok staat **Interne opmerkingen**: één vrij tekstveld voor uw eigen notities bij dit dossier. Dat is iets anders dan het tabblad *Opmerkingen*, waar elke regel de gebruiker en de datum draagt.
 
 ### Pand
 
@@ -81,8 +86,10 @@ Achter **Gevraagde documenten…** staat de documentchecklist van dit dossier. P
 
 ### Opmerkingen
 
-Onderaan noteert u ontbrekende stukken of losse informatie, met wie het schreef en wanneer.
+Het tabblad naast *Partijen*. Hier noteert u alles wat bij dit dossier gezegd of afgesproken is — een telefoon met de klant, een afspraak met de bank, een stuk dat u nog verwacht. Elke regel draagt wie ze schreef en wanneer.
 
 ## Afdrukken
 
-De knop **Afdruk overzicht** is voorzien; de rapporten zelf volgen in een latere versie.
+De knop **Afdruk overzicht** maakt een pdf van dit dossier: de gegevens, de aanvragers, de contracten en de opmerkingen, met uw eigen briefhoofd erboven. U kan die pdf downloaden of meteen doorsturen per e-mail.
+
+Zoekt u cijfers over **meerdere** dossiers — per status, per kredietverstrekker, per tussenpersoon of per sales verantwoordelijke — dan vindt u die onder [Rapporten](reports.md).

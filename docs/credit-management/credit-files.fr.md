@@ -44,16 +44,21 @@ Via le **sélecteur de colonnes**, vous en ajoutez cinq autres : *Crédit demand
 
 <!-- AFBEELDING: un dossier de crédit ouvert avec les blocs Données du dossier et Bien -->
 
-Le dossier forme une seule page continue, composée de blocs. Vous ne devez pas naviguer entre des onglets : tout se suit dans l'ordre dans lequel vous travaillez habituellement.
+Le dossier tient sur une seule page. En haut, le bloc principal reprend les données dont vous avez le plus souvent besoin ; en dessous, les dates et le bien à gauche, les contrats à droite. En bas à droite, **Parties** et **Remarques** figurent côte à côte sous forme d'onglets — deux listes qui partagent le même emplacement, pour que vous puissiez atteindre l'une et l'autre sans faire défiler la page.
 
 ### Données du dossier
 
 Le bloc central : numéro interne, propriétaire, sales, **statut**, type de crédit, but, institution financière et intermédiaire. En dessous, les montants — montant du crédit, quotité et montant de commission — ainsi que les dates clés : introduction, approbation, signature de l'offre et date limite des conditions suspensives.
 
-Deux cases méritent votre attention :
+**Propriétaire** et **Sales** sont des listes déroulantes de vos collaborateurs. Vous pouvez y taper pour rechercher, et la croix vide à nouveau le champ.
 
-- **Retenir la commission** — détermine si la commission de ce dossier est retenue.
+Trois cases méritent votre attention :
+
+- **Retenir** — à côté du montant de commission : détermine si la commission de ce dossier est retenue.
 - **Afficher dans le tableau de bord** — fait entrer ce dossier dans le comptage des phases du tableau de bord.
+- **Offre signée envoyée** — vous avez transmis l'offre signée.
+
+En bas du bloc figure **Remarques internes** : un champ de texte libre pour vos propres notes sur ce dossier. C'est autre chose que l'onglet *Remarques*, où chaque ligne porte l'auteur et la date.
 
 ### Bien
 
@@ -81,8 +86,10 @@ Derrière **Documents demandés…** se trouve la liste de contrôle des documen
 
 ### Remarques
 
-En bas, vous notez les pièces manquantes ou les informations diverses, avec l'auteur et la date.
+L'onglet à côté de *Parties*. Vous y notez tout ce qui a été dit ou convenu sur ce dossier — un appel avec le client, un rendez-vous à la banque, une pièce que vous attendez encore. Chaque ligne porte son auteur et sa date.
 
 ## Impression
 
-Le bouton **Aperçu d'impression** est prévu ; les rapports eux-mêmes suivront dans une version ultérieure.
+Le bouton **Aperçu d'impression** génère un pdf de ce dossier : les données, les demandeurs, les contrats et les remarques, surmontés de votre propre en-tête. Vous pouvez télécharger ce pdf ou l'envoyer directement par courriel.
+
+Vous cherchez des chiffres portant sur **plusieurs** dossiers — par statut, par prêteur, par intermédiaire ou par responsable commercial ? Vous les trouverez sous [Rapports](reports.md).
