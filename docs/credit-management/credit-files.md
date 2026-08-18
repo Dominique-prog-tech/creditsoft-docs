@@ -42,7 +42,7 @@ Via **Kolommen kiezen** zet u er nog vijf bij: *Gevraagd krediet*, *Totale inves
 
 ## Het dossier
 
-<!-- AFBEELDING: een geopend kredietdossier met de blokken Dossiergegevens en Pand -->
+![Een geopend kredietdossier: bovenaan de kopkaart met status, intern nummer, eigenaar en sales als keuzelijst, de financiële instelling, de tussenpersoon, het kredietbedrag met het vinkje inhouden ernaast en de datum akte, met rechts de knoppen Opslaan, Annuleren, Afdruk overzicht en Verwijderen. Daaronder links de datums, het type dossier, de schattingswaarde en de quotiteit met de vinkjes Weergeven in dashboard en Getekend aanbod verzonden en het veld Interne opmerkingen; rechts de contracten en onderaan de tabbladen Partijen en Opmerkingen.](../images/kredietdossier-fiche.png "Het kredietdossier: alles op één pagina"){ .volle-breedte }
 
 Het dossier is één pagina. Bovenaan staat het kernblok met de gegevens die u het vaakst nodig hebt; daaronder staan links de datums en het pand, rechts de contracten. Onderaan rechts staan **Partijen** en **Opmerkingen** naast elkaar als tabbladen — twee lijsten die dezelfde plaats delen, zodat u niet hoeft te scrollen om ze allebei te bereiken.
 

@@ -158,7 +158,7 @@
 
 - [x] `kredietdossiers-lijst.png` + `-fr` — de lijst met de drie filters (status, tussenpersoon, datumbereik)
       en de acht standaardkolommen. Geplaatst 17/08/2026.
-- [ ] `kredietdossier-fiche.png` + `-fr` — het geopende dossier. De aftoets van dit scherm is op 18/08/2026
+- [x] `kredietdossier-fiche.png` + `-fr` — het geopende dossier. **Geplaatst 18/08/2026** (DEMO-4934). De aftoets van dit scherm is op 18/08/2026
       gedaan, dus de wachtstand is opgeheven en het beeld **staat nu in `gen-screenshots.mjs`** — draaien
       volstaat. Het moet tonen: de kopkaart met **Eigenaar** en **Sales** als keuzelijst (gevuld, niet leeg),
       het vinkje *inhouden* naast het commissiebedrag, links de datums en het pand met *Interne opmerkingen*
