@@ -95,7 +95,12 @@
 
 ## Relatiebeheer → Groepen (`crm/groups.md`)
 
-- [ ] `groepen-lijst.png` — het lijstscherm + de "Nieuw"-knop. Plaats bij "De lijst".
+- [x] `groepen-lijst.png` + `-fr` — het lijstscherm met de vier demo-groepen, de knop **Nieuw** en het
+      zoekveld. Geplaatst 18/08/2026; de demo-tenant had tot dan géén groepen, dus dit beeld was leeg te maken.
+- [x] `aanbrenger-groepering.png` + `-fr` — de aanbrengersfiche (Kompas Vastgoed Pelt) met het veld
+      **Groepering** ingevuld in het blok Identiteit. Plaats bij "Een aanbrenger in een groep zetten".
+      Geplaatst 18/08/2026. ⚠️ Het schot zoekt die aanbrenger expliciet op: de eerste rij van de lijst draagt
+      meestal géén groep, en een leeg veld toont niet wat de zin ernaast beweert.
 
 ## Beheer → Bedrijfsfiche (`administration/company-profile.md`)
 
