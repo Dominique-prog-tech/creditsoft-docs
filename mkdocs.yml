@@ -178,6 +178,10 @@ plugins:
             In te dienen dossiers: Dossiers à soumettre
             Opvolging na akte: Suivi après acte
             Contracten overzicht: Aperçu des contrats
+            # Het nav-item heet Contractenoverzicht (één woord); zonder deze regel bleef het onvertaald
+            # in de Franse navigatie staan. Gezien 18/08/2026.
+            Contractenoverzicht: Aperçu des contrats
+            Rapporten: Rapports
             LOA overzicht: Aperçu LOA
             SSV overzicht: Aperçu SSV
             CRM: CRM
@@ -272,6 +276,7 @@ nav:
     - Schattingen: credit-management/appraisals.md
     - Verzekeringen: credit-management/insurance-contracts.md
     - Contractenoverzicht: credit-management/contract-overview.md
+    - Rapporten: credit-management/reports.md
 
   - Relatiebeheer:
     - Relaties: crm/relations.md

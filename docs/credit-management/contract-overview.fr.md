@@ -6,6 +6,8 @@ Tous les **contrats de tous les dossiers** au même endroit. Là où l'écran *A
 
 Dans la barre latérale, cliquez sur **Listes**, puis sur **Aperçu des contrats**.
 
+![L'aperçu des contrats : en haut les sept listes de choix pour le statut du dossier, le statut du contrat, le produit, le type de produit, l'organisme, l'intermédiaire et le sales, avec à côté le nombre de contrats, le bouton Exporter et le champ de recherche ; en dessous le tableau indiquant par contrat le numéro interne du dossier, les noms des clients, le produit, l'organisme, le montant, la durée, le taux, la date de l'acte, le statut du contrat et le numéro de contrat.](../images/contractenoverzicht-lijst-fr.png "Tous les contrats de tous les dossiers sur un seul écran"){ .volle-breedte }
+
 ## Choisir ce que vous voulez voir
 
 Les filtres se trouvent à deux endroits et agissent ensemble.

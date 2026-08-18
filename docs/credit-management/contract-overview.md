@@ -6,6 +6,8 @@ Alle **contracten van alle dossiers** op één plaats. Waar het scherm *Verzeker
 
 Klik in de zijbalk op **Lijsten** en dan op **Contractenoverzicht**.
 
+![Het contractenoverzicht: bovenaan de zeven keuzelijsten voor dossierstatus, contractstatus, product, producttype, instelling, tussenpersoon en sales, met daarnaast het aantal contracten, de knop Exporteren en het zoekveld; daaronder de tabel met per contract het interne dossiernummer, de namen van de klanten, het product, de instelling, het bedrag, de looptijd, de interest, de datum van de akte, de contractstatus en het contractnummer.](../images/contractenoverzicht-lijst.png "Alle contracten van alle dossiers op één scherm"){ .volle-breedte }
+
 ## Kiezen wat u wil zien
 
 De filters zitten op twee plaatsen, en ze werken samen.

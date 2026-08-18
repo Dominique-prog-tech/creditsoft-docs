@@ -39,6 +39,23 @@
 - [ ] `2fa-inschakelen.png` — het inschakelscherm met QR-code + sleutel + codeveld. Plaats bij "Inschakelen".
 - [ ] `2fa-aanmelden.png` — de 2FA-uitdaging bij het aanmelden (codeveld + "Gebruik een herstelcode"). Plaats bij "Aanmelden met tweestapsverificatie".
 
+## Lijsten → Rapporten (`credit-management/reports.md`)
+
+- [x] `rapporten-bibliotheek.png` + `-fr` — de negen tegels in drie groepen. Geplaatst 18/08/2026.
+- [x] `rapporten-periode.png` + `-fr` — het parameter-venster van één rapport (Van / Tot en met).
+      Geplaatst 18/08/2026.
+- [x] `rapporten-voorbeeld.png` + `-fr` — de eerste bladzijde van *Status periodiek op aktedatum* als pdf,
+      met briefhoofd, cirkeldiagram, tabel en totalen. Geplaatst 18/08/2026. ⚠️ Dit beeld komt niet uit het
+      scherm maar uit de pdf zelf (`pdftoppm -r 150`, bovenste 880 px). De demo-tenant moet daarvoor een
+      statusbetekenis-mapping hebben, anders is het rapport leeg.
+
+## Lijsten → Contractenoverzicht (`credit-management/contract-overview.md`)
+
+- [x] `contractenoverzicht-lijst.png` + `-fr` — het lijstscherm met de zeven keuzelijsten en de tabel tot en
+      met het contractnummer. Geplaatst 18/08/2026, op 1700 px: op 1280 viel de kolom *Contractnr.*
+      halverwege een woord af. ⚠️ Deze pagina stond hier tot dan niet in het manifest en had daardoor als
+      enige lijstscherm géén beeld — tekst en helplade waren wél tweetalig af. Dominique zag het gat.
+
 ## Kredieten → Kredietinstellingen (`credit-management/financial-institutions.md`)
 
 - [x] `kredietinstellingen-lijst.png` + `-fr` — het lijstscherm (grid + zoekveld + "Nieuw"). Geplaatst 15/08/2026.
