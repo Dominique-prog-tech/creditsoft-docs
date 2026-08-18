@@ -6,7 +6,7 @@ De keuzelijsten zijn de waarden die overal in de fiches in de keuzevelden versch
 
 ## Het scherm openen
 
-Klik in de zijbalk op **Beheer** en dan op **Keuzelijsten**.
+Klik links onderaan op **Platformbeheer** en dan op de tegel **Keuzelijsten**, in de groep *Gegevens*.
 
 Kies bovenaan **welke lijst** u wil bewerken. Daaronder verschijnen de items van die lijst.
 

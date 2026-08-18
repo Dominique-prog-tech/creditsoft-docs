@@ -6,7 +6,7 @@ Les listes de choix sont les valeurs qui apparaissent partout dans les fiches, d
 
 ## Ouvrir l'écran
 
-Dans la barre latérale, cliquez sur **Gestion**, puis sur **Listes de choix**.
+En bas à gauche, cliquez sur **Administration**, puis sur la tuile **Listes de choix**, dans le groupe *Données*.
 
 Choisissez en haut **quelle liste** vous voulez modifier. Les éléments de cette liste apparaissent en dessous.
 

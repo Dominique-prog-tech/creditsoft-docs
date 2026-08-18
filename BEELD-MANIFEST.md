@@ -274,3 +274,10 @@ eerste ziet en bevat niets geheims; de stap met de QR staat in woorden beschreve
 standaard geen en ziet dan enkel een waarschuwing. In de **lokale** demo-tenant kreeg hij er daarom één, met
 `show_in_pickers = false` zodat hij niet als verantwoordelijke in andere beelden opduikt. De zes
 demo-medewerkers zijn bewust zonder wachtwoord aangemaakt en kunnen dus niet aanmelden.
+
+## Beheer → Documenttypes (`beheer/documenttypes.md`)
+
+- [x] `documenttypes.png` + `-fr` — de lijst met de twee filters, de teller en de knop Categorieën beheren.
+      Vernieuwd 18/08/2026 na de opruiming (werkbalk in de lijst i.p.v. ernaast).
+- [x] `documenttypes-categorieen.png` + `-fr` — het venster Categorieën beheren met de kolommen Nederlands,
+      Frans en **Types**. Geplaatst 18/08/2026.

@@ -6,7 +6,7 @@ Hier beheert u het **mastersjabloon** van verwachte documenten. Dat is de lijst 
 
 ## Het scherm openen
 
-Klik in de zijbalk op **Beheer** en dan op **Documenttypes**.
+Klik links onderaan op **Platformbeheer** en dan op de tegel **Documenttypes**, in de groep *Gegevens*.
 
 ## Wat u per type invult
 
@@ -17,6 +17,25 @@ Klik in de zijbalk op **Beheer** en dan op **Documenttypes**.
 | **Categorie** | Groepeert de types op de checklist, zodat een lange lijst overzichtelijk blijft |
 
 De **hint** is de moeite waard: die staat op de plaats waar iemand twijfelt, en scheelt een telefoontje.
+
+## De lijst doorzoeken
+
+Met **218 types** wordt zoeken belangrijker dan bladeren. Bovenaan de lijst staan daarom twee filters:
+
+- **Categorie** — toont enkel de types van één categorie.
+- **Zonder Franse omschrijving** — toont wat er nog te vertalen valt. Een type zonder Franse tekst is niet stuk: het toont dan gewoon de Nederlandse. Maar werkt u tweetalig, dan wilt u die lijst leeg krijgen, en met dit filter ziet u meteen welke.
+
+De teller ernaast zegt hoeveel er getoond worden van het totaal.
+
+**Dubbelklik** een rij om ze te bewerken. **Verwijderen** doet u in datzelfde venster; het type wordt gearchiveerd, niet gewist — dossiers waar het al op staat, blijven het gewoon tonen.
+
+## Categorieën beheren
+
+Achter de knop **Categorieën beheren** staat de lijst van categorieën. Ook een categorie heeft een Nederlandse en een Franse naam; laat u de Franse leeg, dan toont de app de Nederlandse.
+
+![Het venster Categorieën beheren: een lijst met per categorie de Nederlandse naam, de Franse naam en een kolom Types met het aantal documenttypes dat eronder hangt, met bovenaan een zoekveld en de knop Nieuwe categorie.](../images/documenttypes-categorieen.png "De categorieën waarin u de documenttypes groepeert"){ .volle-breedte }
+
+De kolom **Types** zegt hoeveel documenttypes er onder elke categorie hangen. Dat cijfer is er met een reden: een categorie verwijderen die nog types draagt, kan niet. U krijgt dan te zien hoeveel er in de weg staan, zodat u ze eerst kunt verplaatsen.
 
 ## Hoe dit doorwerkt op een dossier
 
