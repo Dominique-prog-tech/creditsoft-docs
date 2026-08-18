@@ -42,9 +42,9 @@ Via **Kolommen kiezen** zet u er nog vijf bij: *Gevraagd krediet*, *Totale inves
 
 ## Het dossier
 
-![Een geopend kredietdossier: bovenaan de kopkaart met status, intern nummer, eigenaar en sales als keuzelijst, de financiële instelling, de tussenpersoon, het kredietbedrag met het vinkje inhouden ernaast en de datum akte, met rechts de knoppen Opslaan, Annuleren, Afdruk overzicht en Verwijderen. Daaronder links de datums, het type dossier, de schattingswaarde en de quotiteit met de vinkjes Weergeven in dashboard en Getekend aanbod verzonden en het veld Interne opmerkingen; rechts de contracten en onderaan de tabbladen Partijen en Opmerkingen.](../images/kredietdossier-fiche.png "Het kredietdossier: alles op één pagina"){ .volle-breedte }
+![Een geopend kredietdossier: bovenaan de kopkaart met status, intern nummer, eigenaar en sales als keuzelijst, de financiële instelling, de tussenpersoon, het kredietbedrag met het vinkje inhouden ernaast en de datum akte, met rechts de knoppen Opslaan, Annuleren, Afdruk overzicht en Verwijderen. Daaronder links de datums, het type dossier, de schattingswaarde en de quotiteit met de vinkjes Weergeven in dashboard en Getekend aanbod verzonden en het veld Interne opmerkingen; rechts de contracten en onderaan de tabbladen Partijen, Opmerkingen en Gevraagde documenten met de teller 2/4.](../images/kredietdossier-fiche.png "Het kredietdossier: alles op één pagina"){ .volle-breedte }
 
-Het dossier is één pagina. Bovenaan staat het kernblok met de gegevens die u het vaakst nodig hebt; daaronder staan links de datums en het pand, rechts de contracten. Onderaan rechts staan **Partijen** en **Opmerkingen** naast elkaar als tabbladen — twee lijsten die dezelfde plaats delen, zodat u niet hoeft te scrollen om ze allebei te bereiken.
+Het dossier is één pagina. Bovenaan staat het kernblok met de gegevens die u het vaakst nodig hebt; daaronder staan links de datums en het pand, rechts de contracten. Onderaan rechts staan **Partijen**, **Opmerkingen** en **Gevraagde documenten** naast elkaar als tabbladen — drie lijsten die dezelfde plaats delen, zodat u niet hoeft te scrollen om ze alle drie te bereiken.
 
 ### Dossiergegevens
 
@@ -82,7 +82,14 @@ Achter de knop **Borgen, SSV & reducties…** vindt u drie lijsten bij elkaar: b
 
 ### Gevraagde documenten
 
-Achter **Gevraagde documenten…** staat de documentchecklist van dit dossier. Per document houdt u bij of het **aanwezig**, **gevalideerd** of **geweigerd** is — bij een weigering noteert u de reden. Zo ziet u in één oogopslag wat er nog ontbreekt.
+Het derde tabblad, naast *Partijen* en *Opmerkingen*: de lijst van stukken die u van deze klant verwacht.
+
+In de titel staan **twee getallen** — *Gevraagde documenten (3/6)* betekent drie gevalideerd van de zes die u vraagt. Zo ziet u hoe ver dit dossier staat zonder het tabblad te openen. Links staat wat **gevalideerd** is, niet wat binnen is: een stuk dat u nog moet nakijken telt niet mee als in orde.
+
+**Dubbelklik** een regel om ze te openen. Daar zet u of het document **aanwezig**, **gevalideerd** of **geweigerd** is — bij een weigering noteert u de reden — en daar vindt u ook de bestanden die erbij horen. Met **Document toevoegen** zet u er een stuk bij.
+
+!!! tip "Welke documenten u kan opvragen, bepaalt u zelf"
+    De lijst waaruit u kiest, beheert u onder [Platformbeheer → Documenttypes](../beheer/documenttypes.md). Elk kantoor vraagt andere stukken op, dus die lijst is van u.
 
 ### Opmerkingen
 
