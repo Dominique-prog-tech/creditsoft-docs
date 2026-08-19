@@ -281,3 +281,13 @@ demo-medewerkers zijn bewust zonder wachtwoord aangemaakt en kunnen dus niet aan
       Vernieuwd 18/08/2026 na de opruiming (werkbalk in de lijst i.p.v. ernaast).
 - [x] `documenttypes-categorieen.png` + `-fr` — het venster Categorieën beheren met de kolommen Nederlands,
       Frans en **Types**. Geplaatst 18/08/2026.
+
+## Beheer → Klantenportaal (`beheer/klantportaal.md`)
+
+- [x] `klantportaal-vormgeving.png` + `-fr` — het vormgevingsscherm mét het levende voorbeeld ernaast.
+      Geplaatst 19/08/2026. ⚠️ Vensterbreedte **1700**: op 1280 zakt de voorbeeldkolom (col-xl-5) onder het
+      formulier en toont het beeld een indeling die niemand met een normaal scherm ziet.
+- [x] `klantportaal-klant.png` + `-fr` — het portaal met alle vier de statussen (DEMO-3940 draagt ze alle
+      vier; een willekeurig dossier toont er meestal één). Geschoten via de voorbeeldroute, dus mét de gele
+      balk — dat staat zo in de tekst uitgelegd, en zo komt er geen uitnodigingssleutel in een schermafdruk.
+      Geplaatst 19/08/2026.
