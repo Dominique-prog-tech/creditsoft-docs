@@ -284,8 +284,10 @@ demo-medewerkers zijn bewust zonder wachtwoord aangemaakt en kunnen dus niet aan
 
 ## Kredieten → Te valideren documenten (`credit-management/document-validation.md`)
 
-- [x] `documenten-valideren.png` + `-fr` — de wachtrij met negentien stukken, de eerste rij geopend.
+- [x] `documenten-valideren.png` + `-fr` — de wachtrij met negentien stukken, **zonder** een rij te openen.
       Geplaatst 19/08/2026. ⚠️ Vensterbreedte **1700**: op 1280 passen de zes kolommen niet naast elkaar.
+      ⚠️ Bewust géén rij open: het beoordeelpaneel zweeft over de lijst en dekt dan Aangeleverd, Bestanden en
+      Eigenaar af — net de kolommen die de tekst eronder uitlegt.
       ⚠️ Het beeld heeft gevulde demo-data nodig — de generator hangt sinds 19/08/2026 bijlagen aan de
       wachtende stukken, anders staat er in de kolom *Bestanden* overal een 0 en oogt het scherm leeg.
 
