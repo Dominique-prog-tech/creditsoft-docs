@@ -18,9 +18,11 @@ Klik links onderaan op **Platformbeheer** en dan op de tegel **Documenttypes**, 
 
 De **hint** is de moeite waard: die staat op de plaats waar iemand twijfelt, en scheelt een telefoontje.
 
+De app zet de **eerste letter** van een omschrijving in hoofdletter, zodat de lijst gelijk oogt. De rest van uw tekst blijft onaangeroerd: afkortingen als *BTW*, *EPC* of *IPT* houden hun hoofdletters, en een omschrijving die met een cijfer of een haakje begint — *3 laatste loonfiches*, *(Getekend) akkoord bod* — wordt niet verbouwd. Hetzelfde geldt voor de naam van een categorie.
+
 ## De lijst doorzoeken
 
-Met **218 types** wordt zoeken belangrijker dan bladeren. Bovenaan de lijst staan daarom twee filters:
+Bij enkele honderden types wordt zoeken belangrijker dan bladeren. Bovenaan de lijst staan daarom twee filters:
 
 - **Categorie** — toont enkel de types van één categorie.
 - **Zonder Franse omschrijving** — toont wat er nog te vertalen valt. Een type zonder Franse tekst is niet stuk: het toont dan gewoon de Nederlandse. Maar werkt u tweetalig, dan wilt u die lijst leeg krijgen, en met dit filter ziet u meteen welke.

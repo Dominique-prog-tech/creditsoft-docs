@@ -121,11 +121,11 @@
 
 ## Beheer → Mailsjablonen (`administration/mail-templates.md`)
 
-- [ ] `mailsjablonen.png` — het editorscherm: bovenaan de **Sjabloon**-keuzelijst, het **variabelen-palet** met de chips, links de taal-tabs (Onderwerp + Body HTML + Bijlagen), rechts het sticky **Voorbeeld**. Plaats bij "Variabelen".
+- [x] `mailsjablonen.png` — het editorscherm: bovenaan de **Sjabloon**-keuzelijst, het **variabelen-palet** met de chips, links de taal-tabs (Onderwerp + Body HTML + Bijlagen), rechts het sticky **Voorbeeld**. Plaats bij "Variabelen".
 
 ## Beheer → Mailmonitoring (`administration/mail-monitoring.md`)
 
-- [ ] `mailmonitoring.png` — het overzicht met de kolommen Aangemaakt / Type / Naam / Aan / Onderwerp / Verzonden / Aflevering / Reden-fout (groene 'Afgeleverd'-statussen), de statusfilter + Vernieuwen bovenaan links, en zoek + '…'-exportmenu rechtsboven. Plaats bij "Wat je ziet".
+- [x] `mailmonitoring.png` — het overzicht met de kolommen Aangemaakt / Type / Naam / Aan / Onderwerp / Verzonden / Aflevering / Reden-fout (groene 'Afgeleverd'-statussen), de statusfilter + Vernieuwen bovenaan links, en zoek + '…'-exportmenu rechtsboven. Plaats bij "Wat je ziet".
 
 ## Beheer → Verzendadressen (`administration/sender-addresses.md`)
 
@@ -141,11 +141,11 @@
 
 ## Beheer → Prullenbak (`administration/recycle-bin.md`)
 
-- [ ] `prullenbak.png` — het Prullenbak-scherm met de verwijderde records **gegroepeerd per soort** (bv. Relaties, Kredietinstellingen, …) met de kolommen **Naam** / **Verwijderd op** en de knop **Herstellen**. Plaats bij "Wat je ziet".
+- [x] `prullenbak.png` — het Prullenbak-scherm met de verwijderde records **gegroepeerd per soort** (bv. Relaties, Kredietinstellingen, …) met de kolommen **Naam** / **Verwijderd op** en de knop **Herstellen**. Plaats bij "Wat je ziet".
 
 ## Beheer → Actielogboek (`administration/activity-log.md`)
 
-- [ ] `actielogboek.png` — het Actielogboek-scherm met de regels (kolommen **Wanneer** / **Wie** / **Actie** / **Onderwerp**). Plaats bij "Wat je ziet".
+- [x] `actielogboek.png` — het Actielogboek-scherm met de regels (kolommen **Wanneer** / **Wie** / **Actie** / **Onderwerp**). Plaats bij "Wat je ziet".
 
 > ⛔ **GEBLOKKEERD, 16/08/2026 — het scherm is stuk, niet het schot.** `/beheer/audit` toont de foutkaart
 > "Er ging iets mis". De oorzaak zit in de **fundering**: `AuditLog.razor` geeft `Fill="true"` door aan
@@ -187,7 +187,7 @@
       Verzekeringen én Globaal overzicht.
 - [ ] `globaal-overzicht-voorinstelling.png` — de eerste keuzelijst opengeklapt met **Lopend**,
       **Opvolging na akte** en **Alle dossiers**. Plaats bij "Kiezen wat u wil zien".
-- [ ] `dashboard-fases.png` — het scherm **Platformbeheer → Dashboard-fases**, met links de fases
+- [x] `dashboard-fases.png` — het scherm **Platformbeheer → Dashboard-fases**, met links de fases
       (eindfase/opvolging aangevinkt) en rechts de statuskoppelingen. Plaats bij het tip-kader over de
       fase-indeling. Dezelfde afbeelding ook onder de FR-pagina.
 
@@ -201,7 +201,7 @@
 
 - [ ] `dashboard.png` — het volledige dashboard met de vier tegels bovenaan en de fasepijplijn eronder.
       Kies een moment waarop er in meerdere fases dossiers staan. Plaats bovenaan de pagina.
-- [ ] `dashboard-fases.png` — het beheerscherm met links de fasetabel (enkele fases ingevuld, één met
+- [x] `dashboard-fases.png` — het beheerscherm met links de fasetabel (enkele fases ingevuld, één met
       Eindfase aangevinkt) en rechts de statustoewijzing. Plaats bovenaan de pagina.
 - [x] `relaties-lijst.png` + `-fr` — de relatielijst met het filter op soort bovenaan. Geplaatst 15/08/2026.
 - [x] `relaties-fiche.png` + `-fr` — de volledige fiche op één pagina, tabblad *Algemene informatie* van een
@@ -210,10 +210,10 @@
       zijn.
 - [ ] `afspraken-week.png` — de werkweekweergave met de gekleurde legende bovenaan en afspraken van
       meerdere medewerkers.
-- [ ] `keuzelijsten.png` — het keuzelijsten-scherm met bovenaan de lijstkiezer en eronder de items van één
+- [x] `keuzelijsten.png` — het keuzelijsten-scherm met bovenaan de lijstkiezer en eronder de items van één
       lijst. Kies bij voorkeur een lijst waar een item met "(verwijderd)" in staat.
 - [ ] `referentielijsten.png` — de lijstkiezer met het nummer en enkele items.
-- [ ] `documenttypes.png` — het scherm met de categorieën en enkele types, met een ingevulde hint zichtbaar.
+- [x] `documenttypes.png` — het scherm met de categorieën en enkele types, met een ingevulde hint zichtbaar.
 - [x] `taken-overzicht.png` + `-fr` — het takenscherm met de drie filters en een gevulde kolom
       Verantwoordelijke. Geplaatst 16/08/2026.
       ⚠️ Die kolom is niet vanzelf gevuld: de eerste versie van de journaal-testdata wees niemand aan, en dan

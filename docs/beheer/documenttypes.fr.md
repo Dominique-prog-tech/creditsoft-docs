@@ -18,9 +18,11 @@ En bas à gauche, cliquez sur **Administration**, puis sur la tuile **Types de d
 
 L'**indication** en vaut la peine : elle figure là où quelqu'un hésite, et évite un appel téléphonique.
 
+L'application met la **première lettre** d'une description en majuscule, pour que la liste reste homogène. Le reste de votre texte n'est pas touché : les abréviations comme *TVA*, *PEB* ou *EIP* gardent leurs majuscules, et une description qui commence par un chiffre ou une parenthèse — *3 dernières fiches de paie*, *(Signé) accord sur l'offre* — n'est pas retouchée. Il en va de même pour le nom d'une catégorie.
+
 ## Parcourir la liste
 
-Avec **218 types**, la recherche devient plus importante que le défilement. Deux filtres figurent donc en haut de la liste :
+Avec plusieurs centaines de types, la recherche devient plus importante que le défilement. Deux filtres figurent donc en haut de la liste :
 
 - **Catégorie** — n'affiche que les types d'une seule catégorie.
 - **Sans description française** — montre ce qu'il reste à traduire. Un type sans texte français n'est pas cassé : il affiche simplement le néerlandais. Mais si vous travaillez dans les deux langues, vous voudrez vider cette liste, et ce filtre vous montre aussitôt lesquels.
