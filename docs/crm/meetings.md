@@ -24,6 +24,19 @@ Klik op een leeg tijdvak. In het venster dat opent, vult u in:
 - **Locatie** — kantoor, bij de klant, of een adres.
 - **Verantwoordelijken** — één hoofdverantwoordelijke (die de kleur bepaalt) en eventueel bijkomende collega's.
 
+![Het venster om een afspraak in te boeken: titel, verantwoordelijken, begin- en einddatum met uur, hele dag, terugkerend, locatie, contact, tussenpersoon, de twee vinkjes voor de bevestiging, en een omschrijving.](../images/afspraak-venster.png "Alles wat bij één afspraak hoort, op één scherm")
+
+## Een bevestiging sturen
+
+Onder **Contact** en **Tussenpersoon** staan twee vinkjes: **Bevestiging naar het contact** en **Bevestiging naar de tussenpersoon**. Vinkt u er één aan en bewaart u, dan opent het mailvenster met de bevestiging al ingevuld: de ontvanger, het onderwerp met de datum, en een blok met wanneer en waar de afspraak doorgaat.
+
+De mail vertrekt **niet vanzelf**. U leest ze na, voegt eventueel een zin toe, en verstuurt zelf. Vinkt u beide aan, dan komt eerst het contact en daarna de tussenpersoon.
+
+!!! tip "Waar u de verstuurde bevestiging terugvindt"
+    Op de fiche van het contact of de tussenpersoon, onder **Journaal → Mailverkeer**. Daar staat wat er precies verstuurd is, met datum en ontvanger.
+
+De tekst zelf past u aan bij **Platformbeheer → Mailsjablonen**, sjabloon *Bevestiging afspraak*. De plaatshouders `{{meeting.date}}`, `{{meeting.from}}`, `{{meeting.to}}` en `{{meeting.location}}` vult CreditSoft in met de gegevens van de afspraak.
+
 ## Een afspraak wijzigen
 
 - **Verplaatsen** — sleep de afspraak naar een ander moment.
