@@ -93,6 +93,14 @@ La colonne **Statut** indique en un mot où en est chaque pièce : *Demandé* (r
 - **Approuver** — la pièce est en ordre et compte dans le compteur en haut.
 - **Refuser** — vous indiquez un motif. Il est obligatoire : votre client le lit dans son portail et sait ainsi ce qui ne va pas. Par défaut, un e-mail part également avec un **nouveau lien vers le portail**, afin qu'il puisse fournir à nouveau immédiatement. Ce qu'il avait envoyé est conservé.
 
+### Le journal de ce dossier
+
+Le bouton **Journal** en haut ouvre un panneau à cinq onglets : **Tâches**, **Notes**, **Pièces jointes**, **Courrier** et l'**Historique** — le tout pour ce dossier.
+
+Sous *Courrier*, vous retrouvez l'invitation envoyée à votre client ainsi que l'e-mail concernant les pièces refusées, chacun avec son statut de livraison. Vous pouvez aussi y rédiger un courriel : le destinataire est alors déjà rempli avec le premier demandeur du dossier.
+
+Le panneau flotte au-dessus de la fiche et la masque temporairement. Sur un écran large, cliquez l'**épingle** en haut à droite du panneau : la fiche se décale et les deux s'affichent côte à côte. Ce choix est mémorisé.
+
 ### Inviter votre client
 
 Le bouton **Inviter le client**, au-dessus de la liste, envoie à votre client un e-mail contenant un **lien personnel**. Il y voit les pièces que vous demandez et les téléverse — sans mot de passe, sans compte.

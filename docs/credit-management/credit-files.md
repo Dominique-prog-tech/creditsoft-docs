@@ -93,6 +93,14 @@ De kolom **Status** zegt in één woord waar elk stuk staat: *Gevraagd* (nog nie
 - **Goedkeuren** — het stuk staat in orde en telt mee in de teller bovenaan.
 - **Afkeuren** — u geeft een reden op. Die is verplicht: uw klant leest ze in zijn portaal en weet zo wat er scheelt. Standaard vertrekt er ook een e-mail met een **nieuwe portaallink**, zodat hij meteen opnieuw kan aanleveren. Wat hij eerder stuurde, blijft bewaard.
 
+### Het journaal van dit dossier
+
+De knop **Journaal** bovenaan opent een paneel met vijf tabbladen: **Taken**, **Notities**, **Bijlagen**, **Mailverkeer** en het **Logboek** — alles van dít dossier.
+
+Onder *Mailverkeer* vindt u de uitnodiging terug die u naar uw klant stuurde, en de mail over stukken die u afkeurde, elk met hun afleverstatus. U kan er ook zelf een mail opstellen; de ontvanger staat dan al ingevuld met de eerste aanvrager van het dossier.
+
+Het paneel zweeft over de fiche en dekt ze tijdelijk af. Werkt u op een breed scherm, klik dan het **pinnetje** rechtsboven in het paneel: dan schuift de fiche opzij en staan beide naast elkaar. Die keuze wordt onthouden.
+
 ### Uw klant uitnodigen
 
 De knop **Klant uitnodigen** boven de lijst stuurt uw klant een e-mail met een **persoonlijke link**. Daarmee ziet hij welke stukken u vraagt en laadt hij ze op — zonder wachtwoord, zonder account.
