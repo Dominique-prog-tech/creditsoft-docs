@@ -6,7 +6,7 @@ Ce que vos clients fournissent via le **portail client** se retrouve ici : une s
 
 Dans le menu de gauche, cliquez sur **Documents à valider**, sous *Crédit*. Le nombre à côté indique combien de pièces attendent ; s'il n'y a pas de nombre, il n'y a rien à faire.
 
-![L'écran Documents à valider avec dix-neuf pièces en attente : par ligne le numéro de dossier, le demandeur, le document demandé, la date de fourniture avec le temps d'attente en jours, le nombre de fichiers et le propriétaire du dossier.](../images/documenten-valideren-fr.png "Tout ce qui attend une évaluation, tous dossiers confondus"){ .volle-breedte }
+![L'écran Documents à valider avec dix-huit pièces en attente : par ligne le numéro de dossier, le demandeur, le document demandé, la date de fourniture avec le temps d'attente en jours, le nombre de fichiers et le propriétaire du dossier.](../images/documenten-valideren-fr.png "Tout ce qui attend une évaluation, tous dossiers confondus"){ .volle-breedte }
 
 ## Celui qui attend le plus longtemps figure en haut
 

@@ -284,7 +284,7 @@ demo-medewerkers zijn bewust zonder wachtwoord aangemaakt en kunnen dus niet aan
 
 ## Kredieten → Te valideren documenten (`credit-management/document-validation.md`)
 
-- [x] `documenten-valideren.png` + `-fr` — de wachtrij met negentien stukken, **zonder** een rij te openen.
+- [x] `documenten-valideren.png` + `-fr` — de wachtrij met achttien stukken, **zonder** een rij te openen.
       Geplaatst 19/08/2026. ⚠️ Vensterbreedte **1700**: op 1280 passen de zes kolommen niet naast elkaar.
       ⚠️ Bewust géén rij open: het beoordeelpaneel zweeft over de lijst en dekt dan Aangeleverd, Bestanden en
       Eigenaar af — net de kolommen die de tekst eronder uitlegt.
@@ -300,3 +300,9 @@ demo-medewerkers zijn bewust zonder wachtwoord aangemaakt en kunnen dus niet aan
       vier; een willekeurig dossier toont er meestal één). Geschoten via de voorbeeldroute, dus mét de gele
       balk — dat staat zo in de tekst uitgelegd, en zo komt er geen uitnodigingssleutel in een schermafdruk.
       Geplaatst 19/08/2026.
+
+---
+
+**Alle beelden opnieuw genomen op 19/08/2026**, na het documentvalidatie-blok. Reden: de navigatie zelf
+veranderde (het item **Te valideren** met zijn teller kwam erbij), en die staat op élk beeld. Wie enkel de
+gewijzigde schermen herneemt, houdt een handleiding waarin de zijbalk per pagina anders oogt.
