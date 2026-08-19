@@ -95,7 +95,7 @@ De kolom **Status** zegt in één woord waar elk stuk staat: *Gevraagd* (nog nie
 
 ### Het journaal van dit dossier
 
-De knop **Journaal** bovenaan opent een paneel met vijf tabbladen: **Taken**, **Notities**, **Bijlagen**, **Mailverkeer** en het **Logboek** — alles van dít dossier.
+De knop **Journaal** rechtsboven, op de regel met het dossiernummer, opent een paneel met vijf tabbladen: **Taken**, **Notities**, **Bijlagen**, **Mailverkeer** en het **Logboek** — alles van dít dossier.
 
 Onder *Mailverkeer* vindt u de uitnodiging terug die u naar uw klant stuurde, en de mail over stukken die u afkeurde, elk met hun afleverstatus. U kan er ook zelf een mail opstellen; de ontvanger staat dan al ingevuld met de eerste aanvrager van het dossier.
 

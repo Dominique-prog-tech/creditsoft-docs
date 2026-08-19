@@ -95,7 +95,7 @@ La colonne **Statut** indique en un mot où en est chaque pièce : *Demandé* (r
 
 ### Le journal de ce dossier
 
-Le bouton **Journal** en haut ouvre un panneau à cinq onglets : **Tâches**, **Notes**, **Pièces jointes**, **Courrier** et l'**Historique** — le tout pour ce dossier.
+Le bouton **Journal** en haut à droite, sur la ligne du numéro de dossier, ouvre un panneau à cinq onglets : **Tâches**, **Notes**, **Pièces jointes**, **Courrier** et l'**Historique** — le tout pour ce dossier.
 
 Sous *Courrier*, vous retrouvez l'invitation envoyée à votre client ainsi que l'e-mail concernant les pièces refusées, chacun avec son statut de livraison. Vous pouvez aussi y rédiger un courriel : le destinataire est alors déjà rempli avec le premier demandeur du dossier.
 
