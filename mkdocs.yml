@@ -169,6 +169,7 @@ plugins:
             Interface-overzicht: Aperçu de l'interface
             Dashboard: Tableau de bord
             Kredietdossiers: Dossiers de crédit
+            Te valideren documenten: Documents à valider
             Overzicht: Aperçu
             Nieuw dossier aanmaken: Créer un nouveau dossier
             Dossier bewerken: Modifier le dossier
@@ -264,6 +265,7 @@ nav:
   # Groeit mee per gevalideerd scherm — voeg hier telkens één regel toe.
   - Kredieten:
     - Kredietdossiers: credit-management/credit-files.md
+    - Te valideren documenten: credit-management/document-validation.md
     - Kredietinstellingen: credit-management/financial-institutions.md
     - Verzekeraars: credit-management/insurance-companies.md
 
