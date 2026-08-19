@@ -93,6 +93,17 @@ De kolom **Status** zegt in één woord waar elk stuk staat: *Gevraagd* (nog nie
 - **Goedkeuren** — het stuk staat in orde en telt mee in de teller bovenaan.
 - **Afkeuren** — u geeft een reden op. Die is verplicht: uw klant leest ze in zijn portaal en weet zo wat er scheelt. Standaard vertrekt er ook een e-mail met een **nieuwe portaallink**, zodat hij meteen opnieuw kan aanleveren. Wat hij eerder stuurde, blijft bewaard.
 
+### Uw klant uitnodigen
+
+De knop **Klant uitnodigen** boven de lijst stuurt uw klant een e-mail met een **persoonlijke link**. Daarmee ziet hij welke stukken u vraagt en laadt hij ze op — zonder wachtwoord, zonder account.
+
+U kiest de ontvanger uit de aanvragers van het dossier; hun naam en adres staan erbij, en u kan ook een ander adres intikken. De mail vertrekt uit uw sjabloon *Uitnodiging klantenportaal* en wordt **bewaard bij het mailverkeer van dit dossier**, zodat u later kan terugvinden wanneer en naar wie u ze stuurde.
+
+Heeft uw klant geen e-mailadres, gebruik dan **Enkel de link maken**: u krijgt de link te zien en bezorgt hem zelf, bijvoorbeeld telefonisch.
+
+!!! warning "De link is elke keer nieuw"
+    Een uitnodiging wordt niet bewaard en kan niet teruggehaald worden — enkel een afdruk ervan. Verstuurt u er een tweede, dan krijgt uw klant een nieuwe link; de oude blijft werken tot ze vervalt.
+
 Met **Bestanden** beheert u de bijlagen zelf — handig wanneer een stuk per post of per mail binnenkomt in plaats van via het portaal. Met **Document toevoegen** zet u een extra gevraagd stuk op de lijst.
 
 !!! tip "Alles op één lijst"

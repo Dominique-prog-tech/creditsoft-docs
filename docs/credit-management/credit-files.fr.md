@@ -93,6 +93,17 @@ La colonne **Statut** indique en un mot où en est chaque pièce : *Demandé* (r
 - **Approuver** — la pièce est en ordre et compte dans le compteur en haut.
 - **Refuser** — vous indiquez un motif. Il est obligatoire : votre client le lit dans son portail et sait ainsi ce qui ne va pas. Par défaut, un e-mail part également avec un **nouveau lien vers le portail**, afin qu'il puisse fournir à nouveau immédiatement. Ce qu'il avait envoyé est conservé.
 
+### Inviter votre client
+
+Le bouton **Inviter le client**, au-dessus de la liste, envoie à votre client un e-mail contenant un **lien personnel**. Il y voit les pièces que vous demandez et les téléverse — sans mot de passe, sans compte.
+
+Vous choisissez le destinataire parmi les demandeurs du dossier ; leur nom et leur adresse sont indiqués, et vous pouvez aussi saisir une autre adresse. Le courriel provient de votre modèle *Invitation portail client* et est **conservé dans le courrier de ce dossier**, afin que vous puissiez retrouver quand et à qui vous l'avez envoyé.
+
+Si votre client n'a pas d'adresse e-mail, utilisez **Créer uniquement le lien** : le lien s'affiche et vous le transmettez vous-même, par téléphone par exemple.
+
+!!! warning "Le lien est nouveau à chaque fois"
+    Une invitation n'est pas conservée et ne peut pas être récupérée — seule une empreinte l'est. Si vous en envoyez une deuxième, votre client reçoit un nouveau lien ; l'ancien continue de fonctionner jusqu'à son expiration.
+
 Le bouton **Fichiers** vous permet de gérer les pièces jointes vous-même — pratique lorsqu'un document arrive par courrier ou par e-mail plutôt que via le portail. Le bouton **Ajouter un document** ajoute une pièce demandée à la liste.
 
 !!! tip "Tout sur une seule liste"
