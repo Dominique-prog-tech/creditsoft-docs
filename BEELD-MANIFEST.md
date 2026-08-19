@@ -208,7 +208,7 @@
       particulier, met Opmerkingen en de knoppenbalk. Geplaatst 15/08/2026.
 - [ ] `aanbrengers-boom.png` — de boom met één hoofdaanbrenger uitgeklapt zodat de kantoren eronder zichtbaar
       zijn.
-- [ ] `afspraken-week.png` — de werkweekweergave met de gekleurde legende bovenaan en afspraken van
+- [x] `afspraken-week.png` — de werkweekweergave met de gekleurde legende bovenaan en afspraken van
       meerdere medewerkers.
 - [x] `keuzelijsten.png` — het keuzelijsten-scherm met bovenaan de lijstkiezer en eronder de items van één
       lijst. Kies bij voorkeur een lijst waar een item met "(verwijderd)" in staat.

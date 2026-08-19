@@ -16,6 +16,10 @@ Vous ouvrez l'écran via votre **avatar** en haut à droite → **Toutes les pr�
   l'[agenda](../crm/meetings.md). Choisissez-en une dans la liste, ou laissez le champ vide : CreditSoft en
   choisit alors une lui-même.
 
+- **Agenda à partir de** et **Agenda jusqu'à** — les heures d'ouverture de l'[agenda](../crm/meetings.md). Si
+  vous les laissez vides, le réglage de votre bureau s'applique. Si un rendez-vous tombe en dehors de ces
+  heures, l'agenda élargit l'affichage ce jour-là : vous ne perdez donc rien de vue en resserrant vos heures.
+
 !!! tip "Pourquoi mieux vaut choisir cette couleur vous-même"
     Si vous laissez le champ vide, CreditSoft attribue les couleurs par ordre alphabétique. Qu'un collègue
     arrive et se classe avant vous, et toutes les couleurs se décalent : du jour au lendemain, la vôtre a

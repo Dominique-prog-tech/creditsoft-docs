@@ -2,7 +2,7 @@
 
 L'agenda est **partagé** : chacun voit les rendez-vous de tous les collaborateurs, chacun dans sa propre couleur.
 
-<!-- AFBEELDING: de weekweergave met de gekleurde legende bovenaan en enkele afspraken -->
+![L'agenda de CreditSoft en affichage semaine de travail : en haut la légende des couleurs avec six collaborateurs, en dessous la grille du lundi au vendredi qui commence à 8 heures, avec les rendez-vous sous forme de blocs colorés à leur heure.](../images/afspraken-week-fr.png "L'agenda partagé, chaque collaborateur dans sa propre couleur"){ .volle-breedte }
 
 ## Ouvrir l'écran
 
@@ -33,3 +33,9 @@ Cliquez sur une plage libre. Dans la fenêtre qui s'ouvre, vous renseignez :
 ## Choisir l'affichage
 
 En haut à droite, vous basculez entre jour, semaine de travail, semaine et mois. La semaine de travail affiche du lundi au vendredi et constitue l'affichage le plus pratique pour une semaine de bureau ordinaire.
+
+## Les heures affichées
+
+L'agenda s'ouvre de 8 à 18 heures. Si vous souhaitez d'autres heures, réglez-les vous-même dans [Mes données](../getting-started/mijn-gegevens.md) sous **Agenda à partir de** et **Agenda jusqu'à**. Si vous les laissez vides, le réglage de votre bureau s'applique.
+
+Si un rendez-vous tombe en dehors de ces heures, l'agenda élargit l'affichage ce jour-là. Un rendez-vous matinal ou tardif reste donc visible, même s'il sort de vos propres heures.

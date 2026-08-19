@@ -2,7 +2,7 @@
 
 De agenda is **gedeeld**: iedereen ziet de afspraken van alle medewerkers, elk in zijn eigen kleur.
 
-<!-- AFBEELDING: de weekweergave met de gekleurde legende bovenaan en enkele afspraken -->
+![De agenda van CreditSoft in werkweekweergave: bovenaan de kleurlegende met zes medewerkers, daaronder het rooster van maandag tot vrijdag dat om 8 uur begint, met de afspraken als gekleurde blokken op hun uur.](../images/afspraken-week.png "De gedeelde agenda, elke medewerker in zijn eigen kleur"){ .volle-breedte }
 
 ## Het scherm openen
 
@@ -33,3 +33,9 @@ Klik op een leeg tijdvak. In het venster dat opent, vult u in:
 ## De weergave kiezen
 
 Rechtsboven schakelt u tussen dag, werkweek, week en maand. De werkweek toont maandag tot vrijdag en is de handigste weergave voor een gewone kantoorweek.
+
+## De uren die u ziet
+
+De agenda opent van 8 tot 18 uur. Wilt u andere uren, dan stelt u die zelf in bij [Mijn gegevens](../getting-started/mijn-gegevens.md) onder **Agenda vanaf** en **Agenda tot**. Laat u ze leeg, dan geldt de instelling van uw kantoor.
+
+Staat er een afspraak buiten die uren, dan toont de agenda die dag vanzelf ruimer. Een vroege of late afspraak blijft dus zichtbaar, ook als ze buiten uw eigen uren valt.

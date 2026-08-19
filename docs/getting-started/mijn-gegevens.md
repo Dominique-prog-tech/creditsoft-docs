@@ -14,6 +14,10 @@ U opent het scherm via uw **avatar** rechtsboven → **Alle voorkeuren…**
 - **Kleur in de agenda** — de kleur waarmee uw afspraken in de [agenda](../crm/meetings.md) getoond worden.
   Kies er een uit de lijst, of laat het veld leeg: dan kiest CreditSoft zelf een kleur.
 
+- **Agenda vanaf** en **Agenda tot** — de uren waarop de [agenda](../crm/meetings.md) opent. Laat u ze leeg,
+  dan geldt de instelling van uw kantoor. Staat er een afspraak buiten die uren, dan toont de agenda die dag
+  vanzelf ruimer: u verliest dus niets uit het oog door uw uren smaller te zetten.
+
 !!! tip "Waarom u die kleur beter zelf kiest"
     Laat u het leeg, dan deelt CreditSoft de kleuren uit op alfabetische volgorde. Komt er een collega bij die
     vóór u sorteert, dan schuiven alle kleuren op en heeft u van de ene dag op de andere een andere kleur.
