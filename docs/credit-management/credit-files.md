@@ -86,7 +86,17 @@ Het derde tabblad, naast *Partijen* en *Opmerkingen*: de lijst van stukken die u
 
 In de titel staan **twee getallen** — *Gevraagde documenten (3/6)* betekent drie gevalideerd van de zes die u vraagt. Zo ziet u hoe ver dit dossier staat zonder het tabblad te openen. Links staat wat **gevalideerd** is, niet wat binnen is: een stuk dat u nog moet nakijken telt niet mee als in orde.
 
-**Dubbelklik** een regel om ze te openen. Daar zet u of het document **aanwezig**, **gevalideerd** of **geweigerd** is — bij een weigering noteert u de reden — en daar vindt u ook de bestanden die erbij horen. Met **Document toevoegen** zet u er een stuk bij.
+De kolom **Status** zegt in één woord waar elk stuk staat: *Gevraagd* (nog niets binnen), *Ontvangen* (aangeleverd, wacht op u), *In orde* (goedgekeurd) of *Opnieuw sturen* (afgekeurd, met de reden ernaast).
+
+**Dubbelklik** een regel om ze te beoordelen. U ziet welke bestanden uw klant stuurde, met hun grootte en het tijdstip; het **vergrootglas** opent een PDF zonder hem eerst te downloaden. Daarna kiest u:
+
+- **Goedkeuren** — het stuk staat in orde en telt mee in de teller bovenaan.
+- **Afkeuren** — u geeft een reden op. Die is verplicht: uw klant leest ze in zijn portaal en weet zo wat er scheelt. Standaard vertrekt er ook een e-mail met een **nieuwe portaallink**, zodat hij meteen opnieuw kan aanleveren. Wat hij eerder stuurde, blijft bewaard.
+
+Met **Bestanden** beheert u de bijlagen zelf — handig wanneer een stuk per post of per mail binnenkomt in plaats van via het portaal. Met **Document toevoegen** zet u een extra gevraagd stuk op de lijst.
+
+!!! tip "Alles op één lijst"
+    Wilt u niet dossier per dossier kijken wat er binnenkwam, gebruik dan [Te valideren documenten](document-validation.md): dezelfde handelingen, maar over al uw dossiers heen, met een teller in het menu.
 
 !!! tip "Welke documenten u kan opvragen, bepaalt u zelf"
     De lijst waaruit u kiest, beheert u onder [Platformbeheer → Documenttypes](../beheer/documenttypes.md). Elk kantoor vraagt andere stukken op, dus die lijst is van u.

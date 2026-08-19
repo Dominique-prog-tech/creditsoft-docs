@@ -86,7 +86,17 @@ Le troisième onglet, à côté de *Parties* et *Remarques* : la liste des pièc
 
 Le titre porte **deux chiffres** — *Documents demandés (3/6)* signifie trois validés sur les six que vous demandez. Vous voyez ainsi l'état d'avancement du dossier sans ouvrir l'onglet. Le chiffre de gauche indique ce qui est **validé**, pas ce qui est arrivé : une pièce qu'il vous reste à contrôler ne compte pas comme en ordre.
 
-**Double-cliquez** une ligne pour l'ouvrir. Vous y indiquez si le document est **présent**, **validé** ou **refusé** — en cas de refus, vous notez le motif — et vous y trouvez également les fichiers qui s'y rattachent. Le bouton **Ajouter un document** vous permet d'en ajouter un.
+La colonne **Statut** indique en un mot où en est chaque pièce : *Demandé* (rien reçu), *Reçu* (fourni, en attente de votre contrôle), *En ordre* (approuvé) ou *À renvoyer* (refusé, avec le motif à côté).
+
+**Double-cliquez** une ligne pour l'évaluer. Vous voyez les fichiers envoyés par votre client, avec leur taille et l'heure ; la **loupe** ouvre un PDF sans devoir le télécharger. Ensuite, vous choisissez :
+
+- **Approuver** — la pièce est en ordre et compte dans le compteur en haut.
+- **Refuser** — vous indiquez un motif. Il est obligatoire : votre client le lit dans son portail et sait ainsi ce qui ne va pas. Par défaut, un e-mail part également avec un **nouveau lien vers le portail**, afin qu'il puisse fournir à nouveau immédiatement. Ce qu'il avait envoyé est conservé.
+
+Le bouton **Fichiers** vous permet de gérer les pièces jointes vous-même — pratique lorsqu'un document arrive par courrier ou par e-mail plutôt que via le portail. Le bouton **Ajouter un document** ajoute une pièce demandée à la liste.
+
+!!! tip "Tout sur une seule liste"
+    Si vous ne voulez pas vérifier dossier par dossier ce qui est arrivé, utilisez [Documents à valider](document-validation.md) : les mêmes actions, mais tous dossiers confondus, avec un compteur dans le menu.
 
 !!! tip "Les documents que vous pouvez demander, c'est vous qui les déterminez"
     La liste dans laquelle vous choisissez se gère sous [Administration → Types de documents](../beheer/documenttypes.md). Chaque bureau demande d'autres pièces : cette liste est la vôtre.
