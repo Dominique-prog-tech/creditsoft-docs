@@ -29,6 +29,8 @@ Saisissez votre **numéro de TVA / d'entreprise** et cliquez sur **Récupérer**
 
 **Glissez** une image dans la zone du logo ou **cliquez** dessus pour choisir un fichier (PNG ou JPG, max. 4 Mo). Le bouton **Supprimer** retire le logo.
 
+![Le bloc Documents et identité visuelle avec, en dessous, l'intitulé Logo et une zone en pointillés portant une flèche vers le haut, le texte « Glissez une image ici » et, en dessous, « ou cliquez pour sélectionner · PNG ou JPG, max. 4 Mo ».](../images/bedrijfsfiche-logo-fr.png "La zone du logo : glisser ou cliquer pour choisir un fichier")
+
 !!! tip "Code postal et commune"
     Tapez dans le champ **Code postal** : la liste affiche à la fois le code postal et la commune, vous pouvez
     donc chercher sur les deux. Lorsque vous choisissez un code postal, la **commune est complétée**. Si vous

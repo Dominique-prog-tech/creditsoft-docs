@@ -12,6 +12,8 @@ Dans la barre latérale, cliquez sur **Listes**, puis sur **Aperçu global**.
 
 Cinq listes de choix figurent en haut. La première détermine quelle partie de vos dossiers s'affiche :
 
+![L'aperçu global avec la première liste de choix dépliée : Tous les dossiers, En cours — surligné en bleu comme choix actuel — et Suivi après acte. À côté, les quatre autres listes, le compteur « 2246 sur 4000 » et le bouton Imprimer la liste ; en dessous, le tableau des dossiers.](../images/globaal-overzicht-voorinstelling-fr.png "La première liste de choix : quelle partie de vos dossiers s'affiche"){ .volle-breedte }
+
 - **En cours** — tout ce qui n'est pas encore clôturé. C'est l'affichage par défaut à l'ouverture de l'écran.
 - **Suivi après acte** — les dossiers qui, selon votre répartition en phases, demandent un suivi *et* pour lesquels des remarques restent ouvertes. C'est votre liste des « il reste quelque chose à faire ici ».
 - **Tous les dossiers** — sans restriction.

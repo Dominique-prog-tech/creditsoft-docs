@@ -68,6 +68,8 @@ lacune du manuel, non un manque de l'application. Faites-le-nous savoir via le b
 Cliquez sur votre **avatar** en haut à droite pour ouvrir le panneau des préférences : votre photo de profil,
 la couleur d'accent, la taille de l'affichage, la langue et la vérification en deux étapes.
 
+![Le panneau des préférences qui s'ouvre à droite : en haut vos initiales et votre nom, en dessous Photo de profil avec le bouton Choisir une photo, onze couleurs d'accent sous forme de pastilles dont la bleue est sélectionnée, Taille de l'interface avec Compact, Normal et Confortable, Langue avec Nederlands et Français, Sécurité avec le bouton Vérification en deux étapes, et en bas Toutes les préférences et Se déconnecter.](../images/voorkeuren-paneel-fr.png "Le panneau des préférences, ouvert via votre avatar"){ width="330" }
+
 Ce qu'il contient exactement — et pourquoi votre langue et vos couleurs ne vous **suivent pas** sur un autre
 ordinateur — est expliqué sous [Vos préférences](voorkeuren.md). Vos propres coordonnées, votre couleur
 d'agenda et votre signature d'e-mail figurent sous [Mes données](mijn-gegevens.md).

@@ -66,6 +66,8 @@ handleiding, geen gebrek aan de toepassing. Laat het ons weten via de feedback-k
 Klik op uw **avatar** rechtsboven om het voorkeuren-paneel te openen: uw profielfoto, de accentkleur, de
 grootte van de weergave, de taal en tweestapsverificatie.
 
+![Het voorkeuren-paneel dat rechts openschuift: bovenaan uw initialen en naam, daaronder Profielfoto met de knop Kies foto, elf accentkleuren als gekleurde bolletjes waarvan de blauwe gekozen is, Omgevingsgrootte met Compact, Normaal en Comfortabel, Taal met Nederlands en Français, Beveiliging met de knop Tweestapsverificatie, en onderaan Alle voorkeuren en Afmelden.](../images/voorkeuren-paneel.png "Het voorkeuren-paneel, geopend via uw avatar"){ width="330" }
+
 Wat er precies in staat — en waarom uw taal en kleuren níét meeverhuizen naar een andere computer — leest u op
 [Uw voorkeuren](voorkeuren.md). Uw eigen contactgegevens, agendakleur en mailhandtekening staan op
 [Mijn gegevens](mijn-gegevens.md).

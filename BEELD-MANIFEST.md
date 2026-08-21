@@ -32,7 +32,7 @@
 
 - [x] `menu-links.png` + `-fr` — GEPLAATST 21/08/2026, met CRM en Krediet opengeklapt — het hoofdmenu links (dagelijkse schermen + de "Beheer"-groep). Plaats bij "Het menu links".
 - [x] `hoofdbalk.png` + `-fr` — GEPLAATST 21/08/2026 — de balk bovenaan met de iconen (feedback, help, avatar). Plaats bij "De balk bovenaan".
-- [ ] `voorkeuren-paneel.png` — het geopende voorkeuren-paneel (foto / accentkleur / grootte / taal / 2FA). Plaats bij "Je voorkeuren".
+- [x] `voorkeuren-paneel.png` + `-fr` — GEPLAATST 21/08/2026, uitgesneden op het paneel zelf — het geopende voorkeuren-paneel (foto / accentkleur / grootte / taal / 2FA). Plaats bij "Je voorkeuren".
 
 ## Aan de slag → Tweestapsverificatie (`getting-started/tweestapsverificatie.md`)
 
@@ -112,7 +112,7 @@
 - [x] `bedrijfsfiche.png` + `-fr` — het scherm met de vijf blokken (Identiteit met de **Ophalen**-knop naast
       het btw-nummer, Contact, Adres, Bank, Documenten & huisstijl met het logo-sleepvak) en de **Opslaan**-knop
       rechtsboven. Geplaatst 16/08/2026.
-- [ ] `bedrijfsfiche-logo.png` — (optioneel) het logo-sleepvak in close-up. Plaats bij "Logo".
+- [x] `bedrijfsfiche-logo.png` + `-fr` — GEPLAATST 21/08/2026 — (optioneel) het logo-sleepvak in close-up. Plaats bij "Logo".
 
 ## Beheer → Gebruikers (`administration/users.md`)
 
@@ -190,12 +190,14 @@
       rijen. Vernieuwd 17/08/2026 na de afdrukketen. ⚠️ Vensterbreedte in `gen-screenshots.mjs` op **2000**
       gezet: op 1700 viel Ingangsdatum half af en Verantwoordelijke helemaal buiten beeld, terwijl de
       alt-tekst de datums wél noemt.
-- [ ] `afdrukvoorbeeld.png` — het venster **Afdrukvoorbeeld** met de pdf erin en de knoppen *Doorsturen per
+- [⏸] `afdrukvoorbeeld.png` — **uitgesteld op vraag van Dominique (21/08/2026).** Let op voor wie het
+      oppakt: de PDF-viewer werkt niet op macOS (zie [[pdf-viewer-bijlagen]]), dus dit beeld moet
+      vermoedelijk op Windows gemaakt worden. Vraag was — het venster **Afdrukvoorbeeld** met de pdf erin en de knoppen *Doorsturen per
       mail* en *Downloaden*. Plaats bij "De lijst afdrukken of doorsturen". ⚠️ **Kan niet met het script**: op
       macOS toont dat venster een terugval-weergave die leeg blijft; enkel op Windows rendert de pdf-viewer.
       Dit beeld moet dus met de hand van een Windows-machine komen. Dezelfde afbeelding is bruikbaar onder
       Verzekeringen én Globaal overzicht.
-- [ ] `globaal-overzicht-voorinstelling.png` — de eerste keuzelijst opengeklapt met **Lopend**,
+- [x] `globaal-overzicht-voorinstelling.png` + `-fr` — GEPLAATST 21/08/2026, met de keuzelijst opengeklapt — de eerste keuzelijst opengeklapt met **Lopend**,
       **Opvolging na akte** en **Alle dossiers**. Plaats bij "Kiezen wat u wil zien".
 - [x] `dashboard-fases.png` — het scherm **Platformbeheer → Dashboard-fases**, met links de fases
       (eindfase/opvolging aangevinkt) en rechts de statuskoppelingen. Plaats bij het tip-kader over de

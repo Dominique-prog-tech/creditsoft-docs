@@ -29,6 +29,8 @@ Vul uw **BTW / ondernemingsnummer** in en klik op **Ophalen**. De adresgegevens 
 
 **Sleep** een afbeelding naar het logovak of **klik** erop om een bestand te kiezen (PNG of JPG, max 4 MB). Met **Verwijderen** haalt u het logo weer weg.
 
+![Het blok Documenten en huisstijl met eronder het label Logo en een gestippeld sleepvak met een pijl omhoog, de tekst "Sleep een afbeelding hierheen" en daaronder "of klik om te selecteren · PNG of JPG, max 4 MB".](../images/bedrijfsfiche-logo.png "Het logovak: slepen of klikken om een bestand te kiezen")
+
 !!! tip "Postcode en gemeente"
     Typ in het veld **Postcode**: de keuzelijst toont zowel de postcode als de gemeente, dus u kunt op beide
     zoeken. Kiest u een postcode, dan wordt de **gemeente mee ingevuld**. Maakt u de gemeente leeg — met het

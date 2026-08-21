@@ -12,6 +12,8 @@ Klik in de zijbalk op **Lijsten** en dan op **Globaal overzicht**.
 
 Bovenaan staan vijf keuzelijsten. De eerste bepaalt welk deel van uw dossiers u ziet:
 
+![Het globaal overzicht met de eerste keuzelijst opengeklapt: Alle dossiers, Lopend — blauw gemarkeerd als de huidige keuze — en Opvolging na akte. Ernaast de vier andere keuzelijsten, de teller "2246 van 4000" en de knop Afdruk lijst; eronder de tabel met dossiers.](../images/globaal-overzicht-voorinstelling.png "De eerste keuzelijst: welk deel van uw dossiers u ziet"){ .volle-breedte }
+
 - **Lopend** — alles wat nog niet is afgerond. Dit is de standaardweergave als u het scherm opent.
 - **Opvolging na akte** — dossiers die volgens uw fase-indeling opvolging vragen én waarbij nog opmerkingen openstaan. Dit is uw lijst van "hier moet nog iets gebeuren".
 - **Alle dossiers** — geen beperking.
