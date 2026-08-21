@@ -14,9 +14,14 @@ En haut figure une légende avec les collaborateurs. Chaque rendez-vous prend la
 
 Un collègue n'apparaît pas dans la légende ? C'est que la case **Afficher dans les listes de choix** est désactivée sur sa fiche de collaborateur. Cela se fait délibérément pour les personnes qui ont accès au programme mais ne travaillent pas sur les dossiers — un gérant, par exemple.
 
-La liste déroulante **Tous les collaborateurs** en haut vous permet de n'en garder qu'un. Ce filtre voit plus large que la couleur : il affiche aussi les rendez-vous où cette personne figure comme responsable **supplémentaire**.
+Avec **Collaborateurs** en haut, vous cochez qui vous souhaitez voir. Si vous ne cochez personne, vous les voyez tous. Ce filtre voit plus large que la couleur : il affiche aussi les rendez-vous où quelqu'un figure comme responsable **supplémentaire**.
+
+!!! tip "Cocher deux noms affiche les deux agendas"
+    Si vous cochez Jan *et* Piet, vous voyez les rendez-vous de Jan *et* ceux de Piet — pas uniquement ceux où ils figurent ensemble.
 
 La pastille grise **Sans responsable** rassemble les rendez-vous issus de l'ancien programme dont on ne peut plus déterminer à qui ils appartenaient. Vous pouvez les ouvrir et y désigner quelqu'un après coup.
+
+La pastille **ambre** **Via la page de réservation** est nouvelle : ce sont les rendez-vous qu'un visiteur a réservés lui-même sur votre [page de réservation](online-afspraken.md). Ils sont hachurés tant qu'aucun collaborateur n'y figure — voir [Ce qu'une réservation en ligne fait dans votre agenda](#ce-quune-reservation-en-ligne-fait-dans-votre-agenda).
 
 ## Créer un rendez-vous
 
@@ -51,8 +56,38 @@ Le texte lui-même se modifie dans **Gestion de la plateforme → Modèles d'e-m
 
 En haut à droite, vous basculez entre jour, semaine de travail, semaine et mois. La semaine de travail affiche du lundi au vendredi et constitue l'affichage le plus pratique pour une semaine de bureau ordinaire.
 
+### Fusionné ou par collaborateur
+
+En haut figurent deux boutons :
+
+| Bouton | Ce que vous voyez |
+|---|---|
+| **Fusionné** | Un seul agenda où tout le monde figure ensemble, distingué par la couleur. C'est l'affichage par défaut. |
+| **Par collaborateur** | Une colonne par collaborateur, côte à côte, chacune avec sa couleur en tête. |
+
+**Par collaborateur** est l'affichage pour attribuer : vous voyez d'un coup d'œil qui est encore libre à neuf heures, et vous faites glisser le rendez-vous vers sa colonne.
+
+Ce bouton bascule automatiquement en **affichage journalier**. Une semaine entière avec une colonne par collaborateur donne trente colonnes pour six collègues, et vous défilez alors latéralement dans votre propre agenda. Si vous voulez tout de même une semaine, choisissez-la simplement en haut à droite.
+
+!!! info "Le filtre fonctionne dans les deux"
+    Si vous cochez trois collaborateurs, vous voyez dans le premier affichage uniquement leurs rendez-vous, et dans le second trois colonnes.
+
 ## Les heures affichées
 
 L'agenda s'ouvre de 8 à 18 heures. Si vous souhaitez d'autres heures, réglez-les vous-même dans [Mes données](../getting-started/mijn-gegevens.md) sous **Agenda à partir de** et **Agenda jusqu'à**. Si vous les laissez vides, le réglage de votre bureau s'applique.
 
 Si un rendez-vous tombe en dehors de ces heures, l'agenda élargit l'affichage ce jour-là. Un rendez-vous matinal ou tardif reste donc visible, même s'il sort de vos propres heures.
+
+## Ce qu'une réservation en ligne fait dans votre agenda
+
+Lorsque quelqu'un réserve un moment sur votre [page de réservation](online-afspraken.md), ce rendez-vous figure **immédiatement dans l'agenda** — en ambre, hachuré, et au nom du visiteur.
+
+Il n'a alors pas encore de collaborateur. C'est délibéré : c'est votre bureau qui a libéré l'heure, et on décide seulement ensuite qui mène l'entretien.
+
+**L'attribution se fait comme pour tout autre rendez-vous.** Ouvrez-le et choisissez un **responsable principal**, ou passez l'agenda en **Par collaborateur** et faites-le glisser vers la bonne colonne. Dès lors, il prend sa couleur et figure normalement dans son agenda.
+
+!!! info "Ce que contient le rendez-vous"
+    L'adresse e-mail, le numéro de téléphone et ce que le visiteur a écrit se retrouvent dans la description et dans les coordonnées du rendez-vous.
+
+!!! warning "Le visiteur annule ?"
+    Si personne n'y figurait encore, le rendez-vous disparaît. S'il était déjà attribué, il **reste affiché**, barré et en rouge, avec la pastille **Annulé par le visiteur** dans la légende. Ainsi, le collègue qui l'avait dans son agenda voit que quelque chose a changé, plutôt que d'attendre pour rien.
