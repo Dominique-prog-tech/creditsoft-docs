@@ -120,6 +120,13 @@ plugins:
                   icon: material/brightness-4
                   name: Passer en mode clair
           nav_translations:
+            # Eén regel per nav-item, niet meer. Deze tabel telde ooit 108 regels
+            # voor 51 menu-items: resten van de oude mappenstructuur
+            # (credit-files/, settings/, work/, account/) die in juli 2026
+            # vervangen is. mkdocs negeert wat het niet tegenkomt, dus het viel
+            # nooit op — maar wie een vertaling toevoegde zocht in een lijst
+            # waarvan de helft ruis was, en zag daardoor "Contracten overzicht"
+            # over het hoofd toen "Contractenoverzicht" nodig was.
             Home: Accueil
             Aan de slag: Premiers pas
             Navigeren in CreditSoft: Naviguer dans CreditSoft
@@ -167,21 +174,8 @@ plugins:
             # "Historique" en niet "Journal": de lade heet in het Frans al Journal. In het Nederlands
             # speelt dat niet — daar staat Logboek in de lade Journaal. Ook zo in de toepassing zelf.
             Logboek: Historique
-            Installatie: Installation
-            Eerste aanmelding: Première connexion
-            Interface-overzicht: Aperçu de l'interface
-            Dashboard: Tableau de bord
             Kredietdossiers: Dossiers de crédit
             Te valideren documenten: Documents à valider
-            Overzicht: Aperçu
-            Nieuw dossier aanmaken: Créer un nouveau dossier
-            Dossier bewerken: Modifier le dossier
-            Documenten beheren: Gérer les documents
-            Workflow en statussen: Workflow et statuts
-            In afwerking: En finalisation
-            In te dienen dossiers: Dossiers à soumettre
-            Opvolging na akte: Suivi après acte
-            Contracten overzicht: Aperçu des contrats
             # Het nav-item heet Contractenoverzicht (één woord); zonder deze regel bleef het onvertaald
             # in de Franse navigatie staan. Gezien 18/08/2026.
             Contractenoverzicht: Aperçu des contrats
@@ -191,55 +185,11 @@ plugins:
             Filteren en zoeken in lijsten: Filtrer et rechercher dans les listes
             Klantenportaal: Portail client
             Rapporten: Rapports
-            LOA overzicht: Aperçu LOA
-            SSV overzicht: Aperçu SSV
-            CRM: CRM
-            Bedrijven: Entreprises
-            Contacten: Contacts
-            Accountants: Comptables
-            Immokantoren: Agences immobilières
-            Notarissen: Notaires
-            Schatters: Estimateurs
-            Panden: Biens immobiliers
-            CRM-rapporten: Rapports CRM
-            Kredieten-beheer: Gestion des crédits
-            Dashboard kredieten: Tableau de bord crédits
-            "Commissieschema's": Barèmes de commission
-            Commissiebeheer: Gestion des commissions
-            Commissie-controle: Contrôle des commissions
-            Documenten valideren: Valider les documents
-            Tussenpersonen: Intermédiaires
             Kredietinstellingen: Institutions de crédit
             Verzekeraars: Assureurs
             Schattingen: Estimations
-            Statistiek portefeuille: Statistiques portefeuille
-            Rapporten kredieten: Rapports crédits
             Taken: Tâches
-            Takenbeheer: Gestion des tâches
-            Werk: Travail
-            Telefoons: Téléphones
-            Agenda: Agenda
-            Archief: Archives
-            Groepsmail: E-mail groupé
             Beheer: Configuration
-            Bedrijfsprofiel: Profil d'entreprise
-            Algemene instellingen: Paramètres généraux
-            Stamgegevens: Données de base
-            Kredietdocumenten: Documents de crédit
-            Nummering: Numérotation
-            Verlof en feestdagen: Congés et jours fériés
-            Mail accounts: Comptes mail
-            Mail templates: Modèles de mail
-            Personeel: Personnel
-            Portaal-instellingen: Paramètres du portail
-            Mijn gebruiker: Mon utilisateur
-            Mijn profiel: Mon profil
-            Overleg: Concertation
-            Supportticket aanmaken: Créer un ticket de support
-            Sessie afsluiten: Fermer la session
-            Concepten: Concepts
-            Begrippenlijst: Glossaire
-            Workflow-overzicht: Aperçu du workflow
 
 extra:
   generator: false
