@@ -110,6 +110,16 @@
       allebei staan ze woordelijk in de tekst. Een afdruk van de mail zelf zou een echte tenant tonen — daar
       staan namen van leads in.
 
+## Relatiebeheer → Online afspraken (`crm/online-afspraken.md`)
+
+- [x] `online-afspraken-agenda.png` + `-fr` — GEPLAATST 21/08/2026 — de agenda in werkweek-weergave: dinsdag
+      een geboekt moment in het grijs op naam van *Demo Bezoeker*, daaronder een vrij moment in het groen, met
+      de boekingslink erboven.
+- [x] `online-afspraken-instellingen.png` + `-fr` — GEPLAATST 21/08/2026 — de zijlade open naast de agenda:
+      Locaties boven, dan de velden van de boekingspagina tot en met het antwoordadres.
+- [x] **De boekingspagina zelf: bewust GEEN beeld.** Die pagina wordt door ADM One gehost en draagt de huisstijl
+      van het platform; een afdruk hier zou verouderen zodra daar iets wijzigt, zonder dat wij het zien.
+
 ## Relatiebeheer → Leads vanaf uw website (`crm/leads-webformulier.md`)
 
 - [x] **Bewust GEEN beelden.** Deze pagina beschrijft een koppeling, geen scherm: wat de makelaar te zien krijgt

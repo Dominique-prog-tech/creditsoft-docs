@@ -149,6 +149,7 @@ plugins:
             Relaties: Relations
             Aanbrengers: Apporteurs
             Afspraken: Rendez-vous
+            Online afspraken: Rendez-vous en ligne
             Dashboard-fases: Phases du tableau de bord
             Keuzelijsten: Listes de choix
             Documenttypes: Types de documents
@@ -288,6 +289,7 @@ nav:
     - Professionals: crm/professionals.md
     - Aanbrengers: crm/contributors.md
     - Afspraken: crm/meetings.md
+    - Online afspraken: crm/online-afspraken.md
     - Groepen: crm/groups.md
 
   - Beheer:
