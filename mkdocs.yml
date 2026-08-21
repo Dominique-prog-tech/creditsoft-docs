@@ -185,6 +185,11 @@ plugins:
             # Het nav-item heet Contractenoverzicht (één woord); zonder deze regel bleef het onvertaald
             # in de Franse navigatie staan. Gezien 18/08/2026.
             Contractenoverzicht: Aperçu des contrats
+            # Ontbraken en stonden onvertaald in het Franse menu, terwijl de pagina's
+            # zelf wél Frans zijn: je klikte op "Klantenportaal" en belandde op
+            # "Portail client". Gezien 21/08/2026 op de live site.
+            Filteren en zoeken in lijsten: Filtrer et rechercher dans les listes
+            Klantenportaal: Portail client
             Rapporten: Rapports
             LOA overzicht: Aperçu LOA
             SSV overzicht: Aperçu SSV
