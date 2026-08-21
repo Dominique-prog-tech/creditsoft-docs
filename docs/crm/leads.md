@@ -1,0 +1,74 @@
+# Leads
+
+Iemand vult uw contactformulier in, belt, of wordt doorverwezen door een tevreden klant. Dat is een **lead**: een vraag van iemand die nog geen klant is. Het scherm *Leads* houdt bij wie er aangeklopt heeft, hoe lang die al wacht, en wie hem opvolgt.
+
+## Het scherm openen
+
+Klik in de zijbalk op **CRM** en dan op **Leads**.
+
+## De lijst
+
+![Het scherm Leads in CreditSoft: een lijst met kolommen voor naam, status, wacht al, bron, e-mail, telefoon, bedrag en opvolging, met bovenaan een filter op status en de knop Nieuwe lead.](../images/leads-lijst.png "De werklijst van uw instroom, met wie het langst wacht bovenaan")
+
+De lijst opent op **wie het langst wacht**, niet op wie het laatst binnenkwam. Per lead ziet u: **naam**, **status**, **wacht al**, **bron**, **e-mail**, **telefoon**, **bedrag** en **opvolging**.
+
+- **Wacht al** — de tijd sinds de vraag binnenkwam, zolang er nog geen contact was. Vanaf twee dagen kleurt ze rood. Is er contact geweest, dan staat er een streepje: de klok is gestopt.
+- **Opvolging** — de medewerker die deze lead opvolgt. Staat er **niemand** in het rood, dan is dit van niemand en blijft het liggen.
+- **Filter op status** — bovenaan kiest u alle statussen, of één ervan.
+- **Zoeken** — het zoekveld zoekt in alle kolommen tegelijk.
+- **Kolommen kiezen** — toon of verberg kolommen; uw keuze wordt onthouden.
+- **Exporteren** — naar Excel of CSV, met de filters die op dat moment aan staan.
+- **Nieuw / bewerken** — klik op **Nieuwe lead**, of **dubbelklik** een rij om de fiche te openen.
+- **Verwijderen** — een lead wordt **gearchiveerd**, niet definitief gewist.
+
+Naast *Leads* in het menu staat een teller: het aantal leads dat nog op een eerste contact wacht.
+
+## De vijf statussen
+
+| Status | Wat het betekent |
+|---|---|
+| **Nieuw** | Binnengekomen, nog niemand heeft contact opgenomen. |
+| **Gecontacteerd** | Er is contact geweest. Vanaf hier stopt de klok van de wachttijd. |
+| **Gekwalificeerd** | Een echte vraag met een echte kans — de moeite om er tijd in te steken. |
+| **Gewonnen** | Klant geworden. |
+| **Verloren** | Niets geworden. Noteer waarom; dat leest later als een patroon. |
+
+Meer standen zijn er bewust niet. Een kantoor van vijf mensen heeft geen verkooptrechter van acht fasen nodig; het heeft nodig dat niets blijft liggen.
+
+## De fiche
+
+Dubbelklik een lead om zijn fiche te openen. Bovenaan staat zijn naam, zijn status, en hoe lang hij al wacht.
+
+![De fiche van een lead in CreditSoft: bovenaan de naam met de status Nieuw en de melding wacht al 3 dagen, daaronder de blokken Wie, De vraag en Opvolging.](../images/lead-fiche.png "De fiche van een lead: wie, wat hij vroeg, en wie opvolgt"){ .volle-breedte }
+
+De fiche heeft drie blokken.
+
+### Wie
+
+**Voornaam**, **Naam**, **Bedrijf**, **E-mail** en **Telefoon**. Geen van die velden is op zich verplicht, maar er moet er **minstens één** ingevuld zijn — zonder herkenning is een lead niet op te volgen.
+
+### De vraag
+
+- **Bron** — waar deze lead vandaan komt: *website*, *telefoon*, *doorverwijzing*, *Facebook*, wat u ook gebruikt. Het veld stelt voor wat u eerder al invulde, zodat de schrijfwijze gelijk blijft, maar u kunt vrij typen. Zo blijft de bronlijst van úw kantoor, en niet van een lijst die wij bedacht hebben.
+- **Bedrag** — het bedrag waar het over gaat, voor zover u het al weet.
+- **Herkomst** — verscheen deze lead via een koppeling, dan staat hier welke. Dit veld is niet bewerkbaar; het is een vaststelling, geen invoer.
+- **Vraag** — de vraag zoals ze binnenkwam, in vrije tekst.
+
+### Opvolging
+
+- **Status** — een van de vijf hierboven.
+- **Opvolging door** — de medewerker die belt. Laat u dit leeg, dan toont de lijst **niemand** in het rood.
+- **Eerste contact** — zodra er contact geweest is, staat hier het tijdstip. Was er nog geen contact, dan staat er een knop **Contact gehad**: één klik zet het tijdstip én de status op *Gecontacteerd*, zonder dat u eerst in een keuzelijst hoeft.
+- **Reden van verlies** — verschijnt zodra u de status op *Verloren* zet.
+
+## Een lead toevoegen
+
+Klik op **Nieuwe lead**, vul in wat u weet, en klik op **Bewaren**.
+
+!!! info "Dezelfde persoon meldt zich twee keer aan"
+    Vult iemand twee keer uw formulier in, of belt hij nadat hij al gemaild had, dan wordt dat **één lead**. CreditSoft herkent hem aan zijn e-mailadres of zijn telefoonnummer en hangt de nieuwe vraag onder de bestaande, met de datum erbij. U krijgt dan de melding dat de persoon er al stond.
+
+    Een **gewonnen of verloren** lead telt daar niet in mee. Wie een jaar later terugkomt, is een nieuwe vraag en geen heropening van een afgesloten dossier.
+
+!!! tip "Waarom de wachttijd en niet de datum"
+    Een datum moet u omrekenen; een wachttijd niet. En bij leads is dat het enige getal dat telt: wie twee dagen wacht, heeft intussen het volgende kantoor gebeld.

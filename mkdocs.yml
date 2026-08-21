@@ -281,6 +281,7 @@ nav:
     - Rapporten: credit-management/reports.md
 
   - Relatiebeheer:
+    - Leads: crm/leads.md
     - Relaties: crm/relations.md
     - Professionals: crm/professionals.md
     - Aanbrengers: crm/contributors.md

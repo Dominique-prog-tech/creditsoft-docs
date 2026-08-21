@@ -90,6 +90,17 @@
       *Vervangt* `verzekeraars-bewerken` — de fiche is een pagina in plaats van een pop-up. Het
       screenshot-script knipte daar nog `.dxbl-popup` uit; die clip is weg, anders faalt de opname.
 
+## Relatiebeheer → Leads (`crm/leads.md`)
+
+- [x] `leads-lijst.png` + `-fr` — GEPLAATST 21/08/2026, op 1700 px — de werklijst met alle vijf de statussen
+      vertegenwoordigd, de kolom *Wacht al* met "3 dagen" in het rood bovenaan, en de kolom *Opvolging* met
+      zowel namen als "niemand" in het rood. ⚠️ Die spreiding is geen toeval: ze komt uit `DemoLeads` in
+      `TestDataGenerator`. Toont het beeld ooit zes keer "niemand", dan is de naamresolutie van de opvolger
+      stuk — dat was de fout van 21/08, en ze was alleen op het beeld te zien, niet in een test.
+- [x] `lead-fiche.png` + `-fr` — GEPLAATST 21/08/2026, volle hoogte — de fiche van de lead die het langst
+      wacht (Sofie Delcourt): de drie blokken, de wachttijd in het rood in de kop, en de knop *Contact gehad*
+      op de plaats waar anders het tijdstip van het eerste contact staat.
+
 ## Relatiebeheer → Professionals (`crm/professionals.md`)
 
 - [x] `professionals-lijst.png` + `-fr` — het lijstscherm met de typefilter bovenaan. Geplaatst 15/08/2026.
