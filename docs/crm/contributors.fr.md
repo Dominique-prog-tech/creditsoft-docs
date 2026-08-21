@@ -34,7 +34,7 @@ fonctionnent de manière identique sur chaque écran ; [Le journal](../journaal/
 
 **Nouveau** et un double-clic ouvrent tous deux la **fiche sur une page entière**, avec cinq blocs — Identité, Agrément et statut, Contact et adresse, Commission et Remarques — et, en bas, une barre de boutons qui reste visible.
 
-![La fiche de l'apporteur Baken Immo Aarschot sur toute la page, avec les blocs Identité, Agrément et statut, Contact et adresse et Commission, et en bas les boutons Enregistrer, Annuler, Portail et Supprimer.](../images/aanbrengers-fiche-fr.png "La fiche complète d'un apporteur, avec l'identité, l'agrément, le contact et la commission"){ .volle-breedte }
+![La fiche d'un apporteur sur toute la page, avec les cinq blocs Identité (y compris le groupement), Agrément et statut, Contact et adresse, Commission et Remarques, et en bas les boutons Enregistrer, Annuler, Portail et Supprimer.](../images/aanbrengers-fiche-fr.png "La fiche complète d'un apporteur, avec l'identité, l'agrément, le contact et la commission"){ .volle-breedte }
 
 ### Identité
 

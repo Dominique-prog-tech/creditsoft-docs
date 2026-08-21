@@ -33,7 +33,7 @@ naar de lijst om ze te raadplegen. Lade en tabbladen tonen hetzelfde en werken o
 
 **Nieuw** en een dubbelklik openen allebei de **fiche als een volledige pagina**, met vijf blokken — Identiteit, Erkenning en status, Contact en adres, Commissie en Opmerkingen — en onderaan een knoppenbalk die in beeld blijft.
 
-![De fiche van aanbrenger Baken Immo Aarschot over de volle pagina, met de blokken Identiteit, Erkenning en status, Contact en adres en Commissie, en onderaan de knoppen Opslaan, Annuleren, Portaal en Verwijderen.](../images/aanbrengers-fiche.png "De volledige fiche van een aanbrenger, met identiteit, erkenning, contact en commissie"){ .volle-breedte }
+![De fiche van een aanbrenger over de volle pagina, met de vijf blokken Identiteit (inclusief de groepering), Erkenning en status, Contact en adres, Commissie en Opmerkingen, en onderaan de knoppen Opslaan, Annuleren, Portaal en Verwijderen.](../images/aanbrengers-fiche.png "De volledige fiche van een aanbrenger, met identiteit, erkenning, contact en commissie"){ .volle-breedte }
 
 ### Identiteit
 
