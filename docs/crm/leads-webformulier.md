@@ -33,6 +33,22 @@ Stuur die **link** door aan uw webbouwer, en niet een kopie van de tekst. Een do
 
 De **websitesleutel** geeft u apart mee. Die hoort niet in een e-mail met de rest van de uitleg te staan.
 
+## Wie krijgt er bericht?
+
+Standaard: **niemand**. De leads komen gewoon in de lijst terecht, en wie die elke ochtend opent, heeft niets meer nodig.
+
+Wilt u wél een mail zodra er iemand aanklopt, dan stelt u dat in bij **Platformbeheer → Communicatie → Leadmeldingen**. Vul daar één of meer e-mailadressen in, gescheiden door een puntkomma.
+
+!!! tip "Een gedeelde bus is vaak beter dan één persoon"
+    `info@kantoor.be` blijft werken wanneer iemand met verlof is. Eén naam in dat veld betekent dat er twee weken lang niemand kijkt.
+
+**Wat er in dat bericht staat** — wie het is, wat hij vroeg, via welk formulier hij binnenkwam, en een link die de lead meteen opent — past u aan bij de [mailsjablonen](../administration/mail-templates.md). Zoek daar het sjabloon *Nieuwe lead via de website*.
+
+Twee dingen die bewust zo werken:
+
+- **Voegt u zelf een lead toe** in het scherm, dan volgt er géén mail. U staat er op dat moment al naar te kijken, en een melding over iets wat u net zelf deed, leert u meldingen wegklikken.
+- **Stelt dezelfde persoon een tweede vraag**, dan krijgt u wél bericht, maar met de vermelding dat ze bij een bestaande lead gezet is. Anders zou u een nieuwe rij zoeken die er niet is.
+
 ## Wat er in de lead terechtkomt
 
 | Op de leadfiche | Waar het vandaan komt |

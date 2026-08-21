@@ -33,6 +33,22 @@ Transmettez ce **lien**, et non une copie du texte. Un document transféré viei
 
 La **clé de site web**, vous la communiquez séparément. Elle n'a pas sa place dans un e-mail contenant le reste des explications.
 
+## Qui est averti ?
+
+Par défaut : **personne**. Les leads arrivent simplement dans la liste, et qui l'ouvre chaque matin n'a besoin de rien de plus.
+
+Si vous souhaitez tout de même un e-mail dès que quelqu'un se manifeste, réglez-le sous **Administration → Communication → Notifications de leads**. Indiquez-y une ou plusieurs adresses e-mail, séparées par un point-virgule.
+
+!!! tip "Une boîte partagée vaut souvent mieux qu'une seule personne"
+    `info@bureau.be` continue de fonctionner quand quelqu'un est en congé. Un seul nom dans ce champ signifie que personne ne regarde pendant deux semaines.
+
+**Le contenu de ce message** — qui c'est, ce qu'il a demandé, par quel formulaire il est arrivé, et un lien qui ouvre directement le lead — se modifie dans les [modèles d'e-mail](../administration/mail-templates.md). Cherchez-y le modèle *Nouveau lead via le site web*.
+
+Deux points fonctionnent délibérément ainsi :
+
+- **Si vous ajoutez vous-même un lead** dans l'écran, aucun e-mail ne suit. Vous l'avez déjà sous les yeux, et une notification pour quelque chose que vous venez de faire vous apprend à ignorer les notifications.
+- **Si la même personne pose une deuxième question**, vous êtes averti, mais avec la mention qu'elle a été rattachée à un lead existant. Sinon, vous chercheriez une nouvelle ligne qui n'existe pas.
+
 ## Ce qui aboutit dans le lead
 
 | Sur la fiche du lead | D'où cela provient |
