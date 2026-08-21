@@ -93,3 +93,29 @@ Klik op **Nieuwe lead**, vul in wat u weet, en klik op **Bewaren**.
 
 !!! tip "Waarom de wachttijd en niet de datum"
     Een datum moet u omrekenen; een wachttijd niet. En bij leads is dat het enige getal dat telt: wie twee dagen wacht, heeft intussen het volgende kantoor gebeld.
+
+## Het dagelijkse bericht
+
+De kolom **Wacht al** kleurt rood, maar dat helpt enkel zolang iemand de lijst opent. Wie het druk heeft opent hem niet, en dat zijn net de dagen waarop er leads binnenkomen. Daarom kan CreditSoft u elke ochtend één mail sturen over wat blijft liggen.
+
+U zet dat aan bij **Platformbeheer → Communicatie → Leadmeldingen**: vul daar in na hoeveel dagen een lead moet opvallen. Laat u dat veld leeg, dan komt er geen bericht. Het gaat naar dezelfde adressen als de melding bij een binnengekomen lead.
+
+In die mail staan drie groepen:
+
+| Groep | Wanneer een lead erin staat |
+|---|---|
+| **Nog niet gecontacteerd** | Hij wacht langer dan het ingestelde aantal dagen en er is nog geen eerste contact geweest. |
+| **Zonder opvolger** | Er staat niemand bij *Opvolging*. |
+| **Gekwalificeerd, maar geen taak of afspraak** | Hij staat op *Gekwalificeerd*, maar er staat niets ingepland. |
+
+!!! info "Waarom een lead zonder opvolger meteen gemeld wordt"
+    Bij de eerste groep wacht CreditSoft het ingestelde aantal dagen af. Bij deze niet: een lead die van niemand is, wordt door niemand opgepakt. Daar verandert wachten niets aan.
+
+De derde groep is de stilste van de drie. Zo'n lead oogt in de lijst gezond — gecontacteerd, met een opvolger, en als kansrijk bestempeld — en juist daarom valt het niet op dat er sindsdien niets meer gebeurd is. Een taak of een afspraak **vooruit** haalt hem er weer uit. Een afspraak van vorige maand niet: dat is precies iemand die stilgevallen is.
+
+Staan er meer dan tien leads in één groep, dan noemt de mail de tien die het langst wachten en meldt eronder hoeveel er nog zijn. Met zestig regels in een mail is niemand geholpen; de link naar de lijst staat eronder.
+
+!!! tip "Geen bericht is goed nieuws"
+    Is er niets te melden, dan komt er ook geen mail. Een dagelijks bericht dat elke ochtend *alles in orde* zegt, wordt binnen de week een filterregel — en dan mist u ook de mail die er wél toe doet.
+
+Wat er in die mail staat, past u aan bij de [mailsjablonen](../administration/mail-templates.md), onder het sjabloon *Dagelijks leadoverzicht*.

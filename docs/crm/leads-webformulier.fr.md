@@ -44,6 +44,8 @@ Si vous souhaitez tout de même un e-mail dès que quelqu'un se manifeste, régl
 
 **Le contenu de ce message** — qui c'est, ce qu'il a demandé, par quel formulaire il est arrivé, et un lien qui ouvre directement le lead — se modifie dans les [modèles d'e-mail](../administration/mail-templates.md). Cherchez-y le modèle *Nouveau lead via le site web*.
 
+Sur ce même écran, vous réglez aussi l'**avis quotidien** sur les leads qui restent en plan — voir [L'avis quotidien](leads.md#lavis-quotidien).
+
 Deux points fonctionnent délibérément ainsi :
 
 - **Si vous ajoutez vous-même un lead** dans l'écran, aucun e-mail ne suit. Vous l'avez déjà sous les yeux, et une notification pour quelque chose que vous venez de faire vous apprend à ignorer les notifications.

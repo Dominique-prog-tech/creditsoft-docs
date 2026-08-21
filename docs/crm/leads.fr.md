@@ -93,3 +93,29 @@ Cliquez sur **Nouveau lead**, complétez ce que vous savez, puis cliquez sur **E
 
 !!! tip "Pourquoi le temps d'attente et non la date"
     Une date, il faut la convertir ; un temps d'attente, non. Et pour un lead, c'est le seul chiffre qui compte : celui qui attend deux jours a entre-temps appelé le bureau suivant.
+
+## L'avis quotidien
+
+La colonne **En attente depuis** passe au rouge, mais cela n'aide que tant que quelqu'un ouvre la liste. Qui est débordé ne l'ouvre pas, et ce sont précisément les jours où des leads arrivent. CreditSoft peut donc vous envoyer chaque matin un seul e-mail sur ce qui reste en plan.
+
+Vous l'activez sous **Administration → Communication → Notifications de leads** : indiquez-y après combien de jours un lead doit se signaler. Si vous laissez ce champ vide, aucun message n'est envoyé. Il part vers les mêmes adresses que l'avis d'arrivée d'un lead.
+
+Cet e-mail comporte trois groupes :
+
+| Groupe | Quand un lead s'y trouve |
+|---|---|
+| **Pas encore contacté** | Il attend depuis plus longtemps que le nombre de jours réglé et aucun premier contact n'a eu lieu. |
+| **Sans responsable** | Personne ne figure sous *Suivi*. |
+| **Qualifié, mais sans tâche ni rendez-vous** | Il est au statut *Qualifié*, mais rien n'est planifié. |
+
+!!! info "Pourquoi un lead sans responsable est signalé immédiatement"
+    Pour le premier groupe, CreditSoft attend le nombre de jours réglé. Pour celui-ci, non : un lead qui n'appartient à personne n'est repris par personne. Attendre n'y change rien.
+
+Le troisième groupe est le plus silencieux des trois. Un tel lead paraît sain dans la liste — contacté, avec un responsable, et jugé prometteur — et c'est justement pour cela qu'on ne remarque pas que plus rien ne s'est passé depuis. Une tâche ou un rendez-vous **à venir** l'en retire. Un rendez-vous du mois dernier, non : c'est précisément quelqu'un qui s'est arrêté en chemin.
+
+Si un groupe compte plus de dix leads, l'e-mail cite les dix qui attendent le plus longtemps et indique en dessous combien il en reste. Soixante lignes dans un e-mail n'aident personne ; le lien vers la liste se trouve juste en dessous.
+
+!!! tip "Pas de message est une bonne nouvelle"
+    S'il n'y a rien à signaler, aucun e-mail ne part. Un avis quotidien qui répète chaque matin que *tout va bien* devient une règle de filtrage en une semaine — et vous manquez alors aussi le message qui compte vraiment.
+
+Le contenu de cet e-mail se modifie dans les [modèles d'e-mail](../administration/mail-templates.md), sous le modèle *Aperçu quotidien des leads*.

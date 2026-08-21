@@ -106,6 +106,10 @@
       bewust niet op beeld: die vraagt een demo-lead die samenvalt met een bestaande relatie, en zo'n rij oogt
       vreemd in de leadlijst. De handleiding beschrijft hem in een waarschuwingsblok.
 
+- [x] **Het dagelijkse bericht: bewust GEEN beeld.** Het instelscherm *Leadmeldingen* telt twee velden, en
+      allebei staan ze woordelijk in de tekst. Een afdruk van de mail zelf zou een echte tenant tonen — daar
+      staan namen van leads in.
+
 ## Relatiebeheer → Leads vanaf uw website (`crm/leads-webformulier.md`)
 
 - [x] **Bewust GEEN beelden.** Deze pagina beschrijft een koppeling, geen scherm: wat de makelaar te zien krijgt

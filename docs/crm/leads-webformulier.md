@@ -44,6 +44,8 @@ Wilt u wél een mail zodra er iemand aanklopt, dan stelt u dat in bij **Platform
 
 **Wat er in dat bericht staat** — wie het is, wat hij vroeg, via welk formulier hij binnenkwam, en een link die de lead meteen opent — past u aan bij de [mailsjablonen](../administration/mail-templates.md). Zoek daar het sjabloon *Nieuwe lead via de website*.
 
+Op datzelfde scherm stelt u ook het **dagelijkse bericht** in over leads die blijven liggen — zie [Het dagelijkse bericht](leads.md#het-dagelijkse-bericht).
+
 Twee dingen die bewust zo werken:
 
 - **Voegt u zelf een lead toe** in het scherm, dan volgt er géén mail. U staat er op dat moment al naar te kijken, en een melding over iets wat u net zelf deed, leert u meldingen wegklikken.
