@@ -270,8 +270,16 @@
       particulier, met Opmerkingen en de knoppenbalk. Geplaatst 15/08/2026.
 - [x] `aanbrengers-boom.png` — ACHTERHAALD: `aanbrengers-lijst.png` op crm/contributors.md ís de boom (nagekeken 21/08/2026) — de boom met één hoofdaanbrenger uitgeklapt zodat de kantoren eronder zichtbaar
       zijn.
-- [x] `afspraken-week.png` — de werkweekweergave met de gekleurde legende bovenaan en afspraken van
-      meerdere medewerkers.
+- [x] `afspraken-week.png` + `-fr` — de werkweekweergave met de gekleurde legende bovenaan en afspraken
+      van meerdere medewerkers. **Hernomen 21/08/2026** (v0.85.0): de werkbalk heeft er een
+      medewerkerfilter en twee weergaveknoppen bij gekregen, en de week toont nu de twee
+      demo-boekingen van dinsdag 25/08 — de toegewezen in de kleur van Simon, de vrije in amber.
+- [x] `afspraken-per-medewerker.png` + `-fr` — GEPLAATST 21/08/2026 — de kolomweergave op dinsdag
+      25/08: acht kolommen, met de boeking van Simon in zijn kolom en de nog niet toegewezen boeking
+      in de eigen kolom *Via de boekingspagina*. Dát is het beeld waar de handleiding het slepen uitlegt.
+      ⚠️ Beide beelden komen uit `tools/beelden-agenda.mjs`. Dat script navigeert op de **volledige
+      datumtitel** en niet op een aantal klikken: de dagweergave begint niet waar de werkweek eindigde
+      (dat gaf een leeg zaterdagbeeld), en zoeken op enkel het dagnummer liep door tot 25 september.
 - [x] `keuzelijsten.png` — het keuzelijsten-scherm met bovenaan de lijstkiezer en eronder de items van één
       lijst. Kies bij voorkeur een lijst waar een item met "(verwijderd)" in staat.
 - [x] `referentielijsten.png` — ACHTERHAALD: gedekt door `keuzelijsten.png` op beheer/keuzelijsten.md (nagekeken 21/08/2026) — de lijstkiezer met het nummer en enkele items.

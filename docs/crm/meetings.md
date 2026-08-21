@@ -67,6 +67,8 @@ Bovenaan staan twee knoppen:
 
 **Per medewerker** is de weergave om iets toe te wijzen: u ziet in één blik wie er om negen uur nog vrij is, en u sleept de afspraak naar zijn kolom.
 
+![De agenda in de weergave per medewerker: acht kolommen naast elkaar met bovenaan de naam van elke medewerker in zijn eigen kleur, dan een kolom Via de boekingspagina en een kolom Zonder verantwoordelijke. In de kolom van Simon Van Acker staat een toegewezen boeking, in de boekingskolom staat een nog niet toegewezen boeking in amber met streepjes.](../images/afspraken-per-medewerker.png "Elke medewerker zijn kolom — en de online boekingen apart, klaar om toe te wijzen"){ .volle-breedte }
+
 Die knop schakelt vanzelf naar de **dagweergave**. Een hele week met een kolom per medewerker levert bij zes collega's dertig kolommen op, en dan scrolt u zijwaarts door uw eigen agenda. Wilt u toch een week zien, dan kiest u die gewoon rechtsboven.
 
 !!! info "Het filter werkt in allebei"
