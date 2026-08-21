@@ -110,6 +110,16 @@
       allebei staan ze woordelijk in de tekst. Een afdruk van de mail zelf zou een echte tenant tonen — daar
       staan namen van leads in.
 
+## Relatiebeheer → Vragenlijst vooraf (`crm/online-afspraken-vragenlijst.md`)
+
+- [ ] `vragenlijst-bewerken.png` + `-fr` — het bewerkscherm met drie of vier vragen ingevuld, zodat de tabel
+      met zijn vier kolommen en de pijltjes zichtbaar is. ⚠️ Neem het beeld met de mailtekst ÉN de vragen
+      ingevuld: het waarschuwingsblok eronder hoort er dan niet te staan, en dat is precies de toestand die
+      een lezer wil herkennen.
+- [ ] `vragenlijst-bezoeker.png` + `-fr` — de proefpagina zoals de bezoeker ze ziet. Dat is een pagina van
+      ADM One in onze huisstijl; ze verandert dus mee wanneer dáár iets wijzigt. Bij een volgende ronde
+      opnieuw nemen.
+
 ## Relatiebeheer → Online afspraken (`crm/online-afspraken.md`)
 
 - [x] `online-afspraken-agenda.png` + `-fr` — GEPLAATST 21/08/2026 — de agenda in werkweek-weergave: dinsdag
