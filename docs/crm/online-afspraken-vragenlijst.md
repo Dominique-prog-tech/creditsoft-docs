@@ -21,6 +21,8 @@ De pagina blijft geldig tot het begin van de afspraak. Daarna heeft ze geen zin 
 
 Daarom staat dat blok bovenaan het scherm. Stond het onderaan, dan zou u tien vragen opstellen en pas achteraf ontdekken waarom er niets vertrekt.
 
+![Het scherm Vragenlijst vooraf in CreditSoft: bovenaan de zin en de knoptekst voor de bevestigingsmail in NL en FR, daaronder de titel en inleiding van de pagina, en onderaan een tabel met vier vragen, elk met een Nederlandse en een Franse tekst en een soort antwoord.](../images/vragenlijst-bewerken.png "De mailtekst staat bovenaan: zonder die zin vertrekt er geen link")
+
 ## De vragen
 
 Elke rij is één vraag, in het Nederlands en het Frans, met een **soort antwoord**:
@@ -48,6 +50,8 @@ De volgorde in de tabel is de volgorde op de pagina; met de pijltjes verplaatst 
 Met **Proefpagina maken** krijgt u een link naar precies wat de bezoeker ziet — geen nabootsing, maar dezelfde pagina. Handig om te controleren of uw vragen leesbaar zijn en of de Franse versie klopt.
 
 Die proefpagina **vervalt vanzelf na een dag**, en wat u erop invult komt nergens terecht. Met **Intrekken** haalt u ze meteen weg.
+
+![De vragenlijst zoals een bezoeker ze ziet: de titel Even vooraf, een korte inleiding, en vier vragen onder elkaar — een getalveld, een tekstveld, twee knoppen Ja en Nee, en een groter tekstvak — met onderaan de knop Vragenlijst invullen.](../images/vragenlijst-bezoeker.png "Wat de bezoeker krijgt: elk soort antwoord geeft een ander veld")
 
 ## Wat er met de antwoorden gebeurt
 

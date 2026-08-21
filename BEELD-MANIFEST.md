@@ -112,13 +112,16 @@
 
 ## Relatiebeheer → Vragenlijst vooraf (`crm/online-afspraken-vragenlijst.md`)
 
-- [ ] `vragenlijst-bewerken.png` + `-fr` — het bewerkscherm met drie of vier vragen ingevuld, zodat de tabel
-      met zijn vier kolommen en de pijltjes zichtbaar is. ⚠️ Neem het beeld met de mailtekst ÉN de vragen
-      ingevuld: het waarschuwingsblok eronder hoort er dan niet te staan, en dat is precies de toestand die
-      een lezer wil herkennen.
-- [ ] `vragenlijst-bezoeker.png` + `-fr` — de proefpagina zoals de bezoeker ze ziet. Dat is een pagina van
-      ADM One in onze huisstijl; ze verandert dus mee wanneer dáár iets wijzigt. Bij een volgende ronde
-      opnieuw nemen.
+- [x] `vragenlijst-bewerken.png` + `-fr` — GEPLAATST 21/08/2026 — het bewerkscherm met vier vragen, elk met
+      een ander soort antwoord (getal, korte tekst, ja/nee, langere tekst). Mailtekst én vragen ingevuld, dus
+      géén waarschuwingsblok: dat is de toestand die een lezer wil herkennen.
+      ⚠️ Het script haalt vóór de opname de focus weg. Zonder dat staat de cursor in het eerste veld, scrolt
+      dat veld naar het einde van zijn tekst, en lijkt er op het beeld iets af te ontbreken.
+- [x] `vragenlijst-bezoeker.png` + `-fr` — GEPLAATST 21/08/2026 — een ECHTE proefpagina, geen nabootsing: het
+      script maakt er één, fotografeert ze en trekt ze weer in. Te zien is hoe elk soort antwoord een ander
+      veld oplevert (getalveld, tekstveld, Ja/Nee-knoppen, tekstvak).
+      ⚠️ Dit is een pagina van ADM One in onze huisstijl. Ze verandert dus mee wanneer dáár iets wijzigt —
+      bij een volgende ronde opnieuw nemen, ook als er bij ons niets veranderde.
 
 ## Relatiebeheer → Online afspraken (`crm/online-afspraken.md`)
 

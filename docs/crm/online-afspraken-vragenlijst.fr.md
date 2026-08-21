@@ -21,6 +21,8 @@ La page reste valable jusqu'au début du rendez-vous. Ensuite, elle n'a plus de 
 
 C'est pourquoi ce bloc figure en haut de l'écran. S'il était en bas, vous rédigeriez dix questions et découvririez seulement ensuite pourquoi rien ne part.
 
+![L'écran Questionnaire préalable dans CreditSoft : en haut la phrase et le texte du bouton pour l'e-mail de confirmation en NL et FR, en dessous le titre et l'introduction de la page, et en bas un tableau de quatre questions, chacune avec un texte néerlandais et français et un type de réponse.](../images/vragenlijst-bewerken-fr.png "Le texte de l'e-mail figure en haut : sans cette phrase, aucun lien ne part")
+
 ## Les questions
 
 Chaque ligne est une question, en néerlandais et en français, avec un **type de réponse** :
@@ -48,6 +50,8 @@ L'ordre du tableau est celui de la page ; les flèches permettent de déplacer u
 Avec **Créer une page d'essai**, vous obtenez un lien vers exactement ce que voit le visiteur — pas une imitation, mais la même page. Pratique pour vérifier si vos questions sont lisibles et si la version française est correcte.
 
 Cette page d'essai **expire d'elle-même après un jour**, et ce que vous y saisissez n'aboutit nulle part. Avec **Retirer**, vous la supprimez immédiatement.
+
+![Le questionnaire tel que le voit un visiteur : le titre Avant notre entretien, une courte introduction, et quatre questions les unes sous les autres — un champ numérique, un champ texte, deux boutons Oui et Non, et une zone de texte plus grande — avec en bas le bouton Remplir le questionnaire.](../images/vragenlijst-bezoeker-fr.png "Ce que reçoit le visiteur : chaque type de réponse donne un champ différent")
 
 ## Ce qu'il advient des réponses
 
