@@ -39,9 +39,12 @@ Si la même personne ou la même entreprise figure deux fois dans la liste, fusi
 **Fusionner** en haut. Sélectionnez d'abord la fiche que vous voulez **conserver**, cliquez sur le bouton,
 puis choisissez dans la fenêtre celle qui doit y être absorbée.
 
-Avant que vous confirmiez, CreditSoft montre **ce que porte la fiche appelée à disparaître** : ses dossiers de
-crédit, adresses, rendez-vous, tâches, notes, pièces jointes et courriers. Tout cela est repris par la fiche
-conservée.
+Avant que vous confirmiez, la fenêtre affiche les **données qui seront perdues** : adresse e-mail, téléphone,
+GSM, numéro de TVA, et la présence éventuelle de remarques sur la fiche. Vous voyez ainsi d'emblée s'il s'y
+trouve quelque chose que vous préférez reprendre au préalable.
+
+**Après** la fusion, vous obtenez un aperçu de **ce qui a été déplacé**, par type : dossiers de crédit,
+adresses, rendez-vous, tâches, notes, pièces jointes et courriers.
 
 !!! warning "La fiche conservée garde ses propres champs"
     Nom, adresse, e-mail, date de naissance : ils restent tels quels sur la fiche **conservée**. Si vous voulez
@@ -84,11 +87,19 @@ fois du même champ — et la barre de boutons reste visible en bas.
 
 ### Onglet « Informations complémentaires » (particulier)
 
-Tout ce dont vous avez besoin pour un dossier de crédit : **date, lieu et pays de naissance**, **numéro de
-registre national**, **nationalité**, sexe, langue, **carte d'identité** avec ses dates de validité, **état
-civil**, régime et date de mariage, **partenaire**, enfants et personnes à charge, **profession**, employeur,
-en service depuis, type de contrat et fonction. Ainsi que le **type de contact**, la **source de contact** et
-la date du premier contact.
+Tout ce dont vous avez besoin pour un dossier de crédit — mais pas tout à l'écran en même temps.
+
+**Par défaut, vous voyez** la **date** et le **lieu de naissance**, le **numéro de registre national**, la
+**nationalité**, l'**état civil**, la **profession**, le **type de contact**, la **source de contact** et la
+date du premier contact. S'y ajoute **Source (lead)** : d'où vient ce prospect.
+
+Le bouton **Plus de champs** déploie le reste : pays de naissance, sexe, langue, **carte d'identité** avec ses
+dates de validité, régime et date de mariage, **partenaire**, enfants et personnes à charge, employeur, en
+service depuis, type de contrat et fonction. **Moins de champs** les replie.
+
+!!! tip "Pourquoi pas tout d'un coup"
+    La plupart des fiches n'ont pas besoin de cette seconde série. Elle est bien là, mais hors écran, pour que
+    vous n'ayez pas à faire défiler vingt champs vides avant d'atteindre l'onglet suivant.
 
 ### Pour une entreprise
 

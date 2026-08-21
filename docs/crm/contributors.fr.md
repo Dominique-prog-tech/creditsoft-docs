@@ -32,13 +32,13 @@ fonctionnent de manière identique sur chaque écran ; [Le journal](../journaal/
 
 ## La fiche d'un apporteur
 
-**Nouveau** et un double-clic ouvrent tous deux la **fiche sur une page entière**, avec quatre blocs et, en bas, une barre de boutons qui reste visible.
+**Nouveau** et un double-clic ouvrent tous deux la **fiche sur une page entière**, avec cinq blocs — Identité, Agrément et statut, Contact et adresse, Commission et Remarques — et, en bas, une barre de boutons qui reste visible.
 
 ![La fiche de l'apporteur Baken Immo Aarschot sur toute la page, avec les blocs Identité, Agrément et statut, Contact et adresse et Commission, et en bas les boutons Enregistrer, Annuler, Portail et Supprimer.](../images/aanbrengers-fiche-fr.png "La fiche complète d'un apporteur, avec l'identité, l'agrément, le contact et la commission"){ .volle-breedte }
 
 ### Identité
 
-Qui est cet intermédiaire et quel rôle il joue : **type d'intermédiaire** (principal, bureau ou sous-agent), **rattaché à** — l'apporteur sous lequel il se trouve dans l'arborescence —, **forme juridique**, **relation**, **formule d'appel**, **qualité**, le nom ou la **raison sociale** avec le **type d'entreprise**, le **numéro de TVA**, le **numéro d'agent** et la **langue des documents** (obligatoire).
+Qui est cet intermédiaire et quel rôle il joue : **type d'intermédiaire** (principal, bureau ou sous-agent), **rattaché à** — l'apporteur sous lequel il se trouve dans l'arborescence —, **forme juridique**, **relation**, **formule d'appel**, **qualité**, le nom ou la **raison sociale** avec le **type d'entreprise**, le **numéro de TVA**, le **numéro d'agent**, la **langue des documents** (obligatoire) et le **groupement** — le groupe auquel appartient cet intermédiaire, issu de votre liste sous [Groupes](groups.md).
 
 !!! tip "Récupérer automatiquement les données d'entreprise"
     Saisissez le **numéro de TVA** et cliquez sur **Récupérer** : CreditSoft reprend le nom, la forme juridique
@@ -60,16 +60,25 @@ Téléphone, GSM, e-mail, site web et l'adresse.
 
 L'**IBAN** sur lequel sa commission est versée, le **pourcentage standard** et le **mode de paiement**.
 
+Le mode de paiement détermine les champs qui apparaissent ensuite :
+
+- **Paiement récurrent** — le pourcentage versé immédiatement, et sur combien de mois le solde est étalé.
+- **Montant fixe** — le montant lui-même.
+- **Paiement planifié** — un tableau de 24 lignes où vous indiquez, par ligne, le mois et le pourcentage.
+
 ## Fusionner deux fiches
 
 Si le même intermédiaire figure deux fois dans la liste, fusionnez les fiches avec le bouton **Fusionner** en
 haut. Sélectionnez d'abord la fiche que vous voulez **conserver**, cliquez sur le bouton, puis choisissez dans
 la fenêtre celle qui doit y être absorbée.
 
-Avant que vous confirmiez, CreditSoft montre **ce que porte la fiche appelée à disparaître** : ses dossiers,
-commissions, tâches, notes, pièces jointes et courriers. Tout cela est repris par la fiche conservée. Les
-bureaux et collaborateurs situés en dessous dans l'arborescence, les comptes bancaires, les paiements
-planifiés et les documents demandés suivent également.
+Avant que vous confirmiez, la fenêtre affiche les **coordonnées qui seront perdues** : l'adresse e-mail, le
+numéro de téléphone et le numéro de TVA de la fiche appelée à disparaître. Vous voyez ainsi d'emblée s'il s'y
+trouve quelque chose que vous préférez reprendre au préalable.
+
+**Après** la fusion, vous obtenez un aperçu de **ce qui a été déplacé**, par type : dossiers, commissions,
+tâches, notes, pièces jointes et courriers. Les bureaux et collaborateurs situés en dessous dans
+l'arborescence, les comptes bancaires, les paiements planifiés et les documents demandés suivent également.
 
 !!! warning "La fiche conservée garde ses propres champs"
     Nom, adresse, e-mail, accord de commission : ils restent tels quels sur la fiche **conservée**. Si vous
@@ -105,4 +114,6 @@ Vous déterminez par apporteur s'il voit l'onglet des commissions et celui des d
 
 La barre de boutons du bas reste visible. Les boutons se trouvent à droite : **Enregistrer**, **Annuler**, **Portail** et **Supprimer**.
 
-À l'enregistrement, les **champs obligatoires manquants** (nom, langue des documents) et une **adresse e-mail invalide** sont signalés. Les **numéros de téléphone sont mis en forme** dans la notation officielle : si vous tapez `09/3724829`, vous lirez `09 372 48 29` après l'enregistrement.
+**Enregistrer** reste désactivé tant que le nom ou la langue des documents manque — vous ne recevez donc pas de message a posteriori, le bouton ne se libère simplement pas. Une **adresse e-mail invalide** est signalée en direct sous le champ pendant que vous tapez. Les **numéros de téléphone sont mis en forme** dans la notation officielle : si vous tapez `09/3724829`, vous lirez `09 372 48 29` après l'enregistrement.
+
+**Supprimer** demande d'abord confirmation, en rappelant le nom de l'apporteur. La fiche part alors à la corbeille, où vous pouvez au besoin la récupérer.

@@ -38,8 +38,11 @@ Staat dezelfde persoon of hetzelfde bedrijf twee keer in de lijst, dan voegt u d
 **Samenvoegen** bovenaan. Selecteer eerst de fiche die u wil **behouden**, klik dan op de knop en kies in het
 venster welke fiche daarin moet opgaan.
 
-Voor u bevestigt, toont CreditSoft **wat de verdwijnende fiche draagt**: haar kredietdossiers, adressen,
-afspraken, taken, notities, bijlagen en mailverkeer. Alles daarvan verhuist mee naar de fiche die u behoudt.
+Voor u bevestigt, toont het venster de **gegevens die verloren gaan**: e-mailadres, telefoon, gsm, btw-nummer
+en of er opmerkingen op de fiche staan. Zo ziet u meteen of daar iets bij is dat u liever eerst overneemt.
+
+Ná het samenvoegen krijgt u een overzicht van **wat er verhuisd is**, per soort: kredietdossiers, adressen,
+afspraken, taken, notities, bijlagen en mailverkeer.
 
 !!! warning "De behouden fiche houdt haar eigen velden"
     Naam, adres, e-mail, geboortedatum: die blijven zoals ze op de **behouden** fiche staan. Wil u iets van de
@@ -82,11 +85,19 @@ hetzelfde veld — en onderaan blijft de knoppenbalk in beeld.
 
 ### Tabblad "Bijkomende informatie" (particulier)
 
-Alles wat u voor een kredietdossier nodig hebt: **geboortedatum, -plaats en -land**, **rijksregisternummer**,
-**nationaliteit**, geslacht, taal, **identiteitskaart** met geldigheidsdata, **burgerlijke staat**,
-huwelijksstelsel en -datum, **partner**, kinderen en personen ten laste, **beroep**, werkgever, in dienst
-sinds, contracttype en functie. Verder het **contacttype**, de **contactbron** en de datum van het eerste
-contact.
+Alles wat u voor een kredietdossier nodig hebt — maar niet alles tegelijk in beeld.
+
+**Standaard ziet u** de **geboortedatum** en **-plaats**, het **rijksregisternummer**, de **nationaliteit**,
+de **burgerlijke staat**, het **beroep**, het **contacttype**, de **contactbron** en de datum van het eerste
+contact. Daar staat ook **Bron (lead)** bij: waar deze prospect vandaan kwam.
+
+Met de knop **Meer velden** klapt de rest open: geboorteland, geslacht, taal, **identiteitskaart** met
+geldigheidsdata, huwelijksstelsel en -datum, **partner**, kinderen en personen ten laste, werkgever, in dienst
+sinds, contracttype en functie. **Minder velden** klapt ze weer dicht.
+
+!!! tip "Waarom niet alles ineens"
+    De meeste fiches hebben die tweede reeks niet nodig. Ze staan er wel, maar buiten beeld, zodat u niet door
+    twintig lege velden hoeft te scrollen om bij het volgende tabblad te raken.
 
 ### Bij een bedrijf
 

@@ -13,7 +13,8 @@ En bas à gauche, cliquez sur **Administration**, puis sur la tuile **Types de d
 | Champ | À quoi il sert |
 |---|---|
 | **Description (NL/FR)** | Telle qu'elle apparaît sur la check-list d'un dossier |
-| **Indication** | Une brève précision pour votre collaborateur ou le client — par exemple « les trois derniers mois » |
+| **Indication (NL)** et **Indication (FR)** | Une brève précision pour votre collaborateur ou le client — par exemple « les trois derniers mois ». Dans les deux langues, car votre client la lit dans la sienne |
+| **Afficher l'indication** | Si cette case est décochée, l'indication est conservée mais n'est affichée nulle part — pas même au client dans le portail. Dans la liste, la case vous indique si l'indication est visible |
 | **Catégorie** | Regroupe les types sur la check-list, pour qu'une longue liste reste lisible |
 
 L'**indication** en vaut la peine : elle figure là où quelqu'un hésite, et évite un appel téléphonique.

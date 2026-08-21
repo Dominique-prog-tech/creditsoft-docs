@@ -21,18 +21,22 @@ De lijst is gesorteerd op wachttijd. Achter de datum ziet u hoeveel dagen een st
 | **Bestanden** | Hoeveel bestanden hij onder dat ene stuk plaatste |
 | **Eigenaar** | De beheerder van het dossier |
 
-Bovenaan kan u filteren op **eigenaar** — zo houdt u enkel uw eigen dossiers over — en op **wachttijd**, om te zien wat te lang blijft liggen.
+Bovenaan kan u filteren op **eigenaar** — zo houdt u enkel uw eigen dossiers over — en op **wachttijd**, om te zien wat te lang blijft liggen. Het getal naast de schermtitel zegt hoeveel stukken er op dat moment wachten; hetzelfde getal staat naast het menu-item.
 
 ## Een stuk beoordelen
 
-Klik een rij aan. Onder de lijst verschijnt wat de klant stuurde: elk bestand met zijn grootte en het tijdstip. Klik de bestandsnaam om te downloaden, of **Bekijken** om een PDF te openen zonder hem op te slaan.
+Klik een rij aan. Rechts klapt een paneel open — vanzelf, u hoeft het niet open te doen — met wat de klant stuurde: elk bestand met zijn grootte en het tijdstip. Klik de bestandsnaam om te downloaden, of **Bekijken** om een PDF te openen zonder hem op te slaan.
+
+Met het **speldje** bovenaan het paneel zet u het vast, zodat het openblijft terwijl u door de lijst gaat. Op een smaller scherm laat u het beter zweven: dan dekt het enkel af wat u op dat moment toch niet leest.
+
+De knop **Dossier openen** brengt u vanuit het paneel naar het volledige dossier.
 
 Daarna kiest u:
 
 - **Goedkeuren** — het stuk staat afgevinkt op de documentchecklist van het dossier. Klaar.
 - **Afkeuren** — u geeft een reden op. Die is verplicht, want zonder reden weet uw klant niet wat hij anders moet doen. Het stuk komt terug op zijn lijstje te staan, met uw reden erbij, en hij kan opnieuw aanleveren.
 
-Wilt u meerdere stukken tegelijk afhandelen — een klant die zes bestanden in één keer opstuurde — vink dan de rijen aan. Boven de lijst verschijnt dan een balk met **Goedkeuren** en **Afkeuren** voor de hele selectie.
+Wilt u meerdere stukken tegelijk afhandelen — een klant die zes bestanden in één keer opstuurde — vink dan de rijen aan. Boven de lijst verschijnt een balk met **Goedkeuren** en **Afkeuren** voor de hele selectie. Bij het afkeuren vraagt CreditSoft ook hier één reden, die voor alle aangevinkte stukken geldt.
 
 !!! info "Wat de klant stuurde, blijft bewaard"
     Ook na een afkeuring blijven de bestanden staan. Zo kan u achteraf nog nagaan wat er precies aangeleverd werd en waarom het niet volstond.
@@ -45,7 +49,10 @@ Die link is bewust nieuw: de oorspronkelijke sleutel wordt nergens bewaard, dus 
 
 De tekst van die mail komt uit het mailsjabloon **Ongeldige documenten**. U kan die zelf aanpassen bij de mailsjablonen — de plaatsen waar uw klant zijn naam, het dossiernummer, de afgekeurde stukken en de portaallink leest, zijn samenvoegvelden die automatisch ingevuld worden.
 
-Keurt u stukken van **meerdere klanten** tegelijk af, dan wordt het verwittigen uitgezet: één mail voor verschillende klanten bestaat niet.
+Keurt u stukken van **meerdere dossiers** tegelijk af, dan kan het verwittigen niet aangezet worden — het vakje staat uit en blijft uit. Die stukken horen bij verschillende klanten, en één mail voor verschillende klanten bestaat niet. Verwittig hen elk apart vanuit hun eigen dossier.
+
+!!! warning "Als de mail niet vertrekt"
+    Lukt het versturen niet — een storing bij de mailserver, bijvoorbeeld — dan verschijnt bovenaan een balk: *de stukken zijn afgekeurd, maar de klant is niet verwittigd*. Het afkeuren zelf is dan wél gebeurd. U hoeft dat niet over te doen; enkel het verwittigen moet nog.
 
 ## Een stuk zonder bestand
 

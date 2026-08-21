@@ -56,9 +56,9 @@ En haut de chaque rapport figurent le nom et les coordonnées de votre **fiche d
 ## Ce qu'il faut savoir sur les chiffres
 
 !!! info "Tout tourne autour de la date d'acte"
-    À un rapport près, tous les rapports regardent la **date d'acte** du dossier pour déterminer s'il tombe dans votre période. *Introduits par mois* utilise la date d'introduction, et *Statut par période sur la date d'encodage* la date d'encodage.
+    À deux rapports près, tous les rapports regardent la **date d'acte** du dossier pour déterminer s'il tombe dans votre période. *Introduits par mois* utilise la date d'introduction, et *Statut par période sur la date d'encodage* la date d'encodage.
 
-!!! warning "Quatre rapports dépendent de vos réglages de statut"
+!!! warning "Cinq rapports dépendent de vos réglages de statut"
     Les rapports sur les dossiers **réalisés** et **actés** doivent savoir quel statut de contrat signifie « réalisé » ou « introduit » dans votre bureau. Vous établissez ce lien sous **Administration → Phases du tableau de bord**, en bas, sous *Tuiles KPI*. Tant que ce n'est pas configuré, l'écran vous le dit avant d'imprimer — vous n'obtenez pas une page blanche sans explication.
 
 !!! tip "Un dossier peut donner plusieurs lignes"

@@ -25,6 +25,13 @@ Per dossier ziet u wie het aanvraagt, via wie het loopt en waar het staat:
 
 Via **Kolommen kiezen** zet u er nog vijf bij: *Gevraagd krediet*, *Totale investering*, *Eigen middelen*, *Quotiteit* en *Pand*. Ze staan standaard uit omdat lang niet elk kantoor ze invult. Uw keuze wordt onthouden voor de volgende keer.
 
+### Een dossier aanmaken
+
+Met **Nieuw dossier** bovenaan de lijst maakt u een leeg dossier aan. Het krijgt meteen de eerste dossierstatus van uw kantoor en opent als fiche, met de cursor op **Status** — zo begint u waar de meeste dossiers beginnen.
+
+!!! note "Eerst uw statussen instellen"
+    Hebt u nog geen dossierstatussen ingesteld, dan meldt CreditSoft dat en maakt hij geen dossier aan. Stel ze eerst in bij **Keuzelijsten**.
+
 ### Zoeken en filteren
 
 - **Zoeken** — het zoekveld zoekt over alle **zichtbare** kolommen. Zet u een kolom aan via **Kolommen kiezen**, dan zoekt u er meteen ook in.
@@ -48,7 +55,12 @@ Het dossier is één pagina. Bovenaan staat het kernblok met de gegevens die u h
 
 ### Dossiergegevens
 
-Het kernblok: intern nummer, eigenaar, sales, **status**, kredietsoort, doel, financiële instelling en tussenpersoon. Daaronder de bedragen — kredietbedrag, quotiteit en commissiebedrag — en de sleuteldatums: indiening, goedkeuring, ondertekening van het aanbod en de uiterste datum voor de opschortende voorwaarden.
+Het kopblok bovenaan draagt wat u het vaakst nodig hebt: intern nummer, **eigenaar**, **sales**, **status**, financiële instelling, tussenpersoon, het kredietbedrag met het vinkje *Inhouden*, en de datum van de akte.
+
+In de kaart eronder links staan het doel, het type dossier, de quotiteit en de sleuteldatums: indiening, goedkeuring, ondertekening van het aanbod en de uiterste datum voor de opschortende voorwaarden.
+
+!!! tip "Een leeg bedrag blijft leeg"
+    Laat u een bedrag oningevuld, dan blijft het leeg — het wordt geen € 0. Dat onderscheid telt: bij een dossier zonder kredietbedrag ziet u dat het nog niet bekend is, niet dat het nul zou zijn.
 
 **Eigenaar** en **Sales** zijn keuzelijsten van uw medewerkers. U kan erin typen om te zoeken, en met het kruisje maakt u het veld weer leeg.
 
@@ -62,7 +74,9 @@ Onderaan het blok staat **Interne opmerkingen**: één vrij tekstveld voor uw ei
 
 ### Pand
 
-Het pandadres, het pandtype, de schattingswaarde en tot wanneer het EPC geldig is. Met de knop **Investeringsfiche & pand…** opent u de volledige investeringsberekening: aankoop, nieuwbouw, renovatie, notariskosten, hypotheekinschrijving en alle overige posten, met onderaan de **totale investering** en de **eigen inbreng**.
+Op de fiche zelf staat de **schattingswaarde**, met de quotiteit ernaast.
+
+De rest van het pand zit achter de knop **Investeringsfiche & pand…**: het pandadres, het pandtype, tot wanneer het EPC geldig is en het vinkje **Vrije keuze brandverzekering**. In datzelfde venster maakt u de volledige investeringsberekening — aankoop, nieuwbouw, renovatie, notariskosten, hypotheekinschrijving en alle overige posten, met onderaan de **totale investering** en de **eigen inbreng**.
 
 ### Kredietaanvragers
 
@@ -70,7 +84,9 @@ Wie het krediet aanvraagt. Koppel een bestaande relatie met **+ Aanvrager koppel
 
 ### Contracten
 
-De kredietcontracten onder dit dossier: bedrag, looptijd, rentevoet, maandlast, startdatum en product.
+De kredietcontracten onder dit dossier. De lijst toont nummer, product, status, bedrag, looptijd, rentevoet en instelling; maandlast en startdatum vindt u op het contract zelf.
+
+Het contractvenster past zich aan de **productsoort** aan: bij een gewoon krediet vraagt het producttype, rentevoet, variabiliteit en maandlast, bij een schuldsaldoverzekering komen daar premie, type en periodiciteit bij, plus het aanvinken van wie verzekerd is.
 
 ### Partijen
 
@@ -108,6 +124,8 @@ De knop **Klant uitnodigen** boven de lijst stuurt uw klant een e-mail met een *
 U kiest de ontvanger uit de aanvragers van het dossier; hun naam en adres staan erbij, en u kan ook een ander adres intikken. De mail vertrekt uit uw sjabloon *Uitnodiging klantenportaal* en wordt **bewaard bij het mailverkeer van dit dossier**, zodat u later kan terugvinden wanneer en naar wie u ze stuurde.
 
 Heeft uw klant geen e-mailadres, gebruik dan **Enkel de link maken**: u krijgt de link te zien en bezorgt hem zelf, bijvoorbeeld telefonisch.
+
+Met **Bekijk als klant** ernaast opent u het portaal in een nieuw tabblad, precies zoals uw klant het ziet. Handig om te controleren wat u vraagt vóór u de uitnodiging verstuurt. Wat u daar oplaadt, komt écht op het dossier terecht — een gele balk bovenaan herinnert u daaraan.
 
 !!! warning "De link is elke keer nieuw"
     Een uitnodiging wordt niet bewaard en kan niet teruggehaald worden — enkel een afdruk ervan. Verstuurt u er een tweede, dan krijgt uw klant een nieuwe link; de oude blijft werken tot ze vervalt.

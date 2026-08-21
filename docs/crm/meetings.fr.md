@@ -14,13 +14,17 @@ En haut figure une légende avec les collaborateurs. Chaque rendez-vous prend la
 
 Un collègue n'apparaît pas dans la légende ? C'est que la case **Afficher dans les listes de choix** est désactivée sur sa fiche de collaborateur. Cela se fait délibérément pour les personnes qui ont accès au programme mais ne travaillent pas sur les dossiers — un gérant, par exemple.
 
+La liste déroulante **Tous les collaborateurs** en haut vous permet de n'en garder qu'un. Ce filtre voit plus large que la couleur : il affiche aussi les rendez-vous où cette personne figure comme responsable **supplémentaire**.
+
+La pastille grise **Sans responsable** rassemble les rendez-vous issus de l'ancien programme dont on ne peut plus déterminer à qui ils appartenaient. Vous pouvez les ouvrir et y désigner quelqu'un après coup.
+
 ## Créer un rendez-vous
 
 Cliquez sur une plage libre. Dans la fenêtre qui s'ouvre, vous renseignez :
 
 - **Objet et description** — le sujet du rendez-vous.
 - **Contact** — la relation que vous rencontrez.
-- **Apporteur** — si le rendez-vous passe par un intermédiaire.
+- **Intermédiaire** — si le rendez-vous passe par un intermédiaire.
 - **Lieu** — le bureau, chez le client, ou une adresse.
 - **Responsables** — un responsable principal (qui détermine la couleur) et éventuellement des collègues supplémentaires.
 
@@ -35,7 +39,7 @@ Le courriel ne part **pas tout seul**. Vous le relisez, ajoutez éventuellement 
 !!! tip "Où retrouver la confirmation envoyée"
     Sur la fiche du contact ou de l'intermédiaire, sous **Journal → Courrier**. Vous y voyez ce qui a été envoyé exactement, avec la date et le destinataire.
 
-Le texte lui-même se modifie dans **Gestion de la plateforme → Modèles d'e-mail**, modèle *Confirmation de rendez-vous*. Les espaces réservés `{{meeting.date}}`, `{{meeting.from}}`, `{{meeting.to}}` et `{{meeting.location}}` sont remplis par CreditSoft avec les données du rendez-vous.
+Le texte lui-même se modifie dans **Gestion de la plateforme → Modèles d'e-mail**, modèle *Confirmation de rendez-vous*. Les espaces réservés `{{meeting.subject}}`, `{{meeting.date}}`, `{{meeting.from}}`, `{{meeting.to}}` et `{{meeting.location}}` sont remplis par CreditSoft avec les données du rendez-vous. Si vous préférez ne pas composer vous-même, utilisez `{{meeting.details}}` : c'est un bloc prêt à l'emploi indiquant quand et où.
 
 ## Modifier un rendez-vous
 

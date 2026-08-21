@@ -31,13 +31,13 @@ naar de lijst om ze te raadplegen. Lade en tabbladen tonen hetzelfde en werken o
 
 ## De fiche van een aanbrenger
 
-**Nieuw** en een dubbelklik openen allebei de **fiche als een volledige pagina**, met vier blokken en onderaan een knoppenbalk die in beeld blijft.
+**Nieuw** en een dubbelklik openen allebei de **fiche als een volledige pagina**, met vijf blokken — Identiteit, Erkenning en status, Contact en adres, Commissie en Opmerkingen — en onderaan een knoppenbalk die in beeld blijft.
 
 ![De fiche van aanbrenger Baken Immo Aarschot over de volle pagina, met de blokken Identiteit, Erkenning en status, Contact en adres en Commissie, en onderaan de knoppen Opslaan, Annuleren, Portaal en Verwijderen.](../images/aanbrengers-fiche.png "De volledige fiche van een aanbrenger, met identiteit, erkenning, contact en commissie"){ .volle-breedte }
 
 ### Identiteit
 
-Wie deze tussenpersoon is en welke rol hij speelt: **type tussenpersoon** (hoofd, kantoor of sub), **valt onder** — de aanbrenger waaronder hij hangt in de boom —, **rechtsvorm**, **relatie**, **aanspreking**, **hoedanigheid**, de naam of **bedrijfsnaam** met het **bedrijfstype**, het **btw-nummer**, het **aanbrengernummer** en de **documenttaal** (verplicht).
+Wie deze tussenpersoon is en welke rol hij speelt: **type tussenpersoon** (hoofd, kantoor of sub), **valt onder** — de aanbrenger waaronder hij hangt in de boom —, **rechtsvorm**, **relatie**, **aanspreking**, **hoedanigheid**, de naam of **bedrijfsnaam** met het **bedrijfstype**, het **btw-nummer**, het **aanbrengernummer**, de **documenttaal** (verplicht) en de **groepering** — de groep waartoe deze tussenpersoon behoort, uit uw lijst bij [Groepen](groups.md).
 
 !!! tip "Bedrijfsgegevens automatisch ophalen"
     Vul het **btw-nummer** in en klik op **Ophalen**: CreditSoft haalt naam, rechtsvorm en adres rechtstreeks
@@ -59,16 +59,25 @@ Telefoon, gsm, e-mail, website en het adres.
 
 De **IBAN** waarop zijn commissie betaald wordt, het **standaard percentage** en de **betaalwijze**.
 
+De betaalwijze bepaalt welke velden er daarna bijkomen:
+
+- **Recurrente betaling** — het percentage dat direct uitbetaald wordt, en over hoeveel maanden de rest gespreid wordt.
+- **Vast bedrag** — het bedrag zelf.
+- **Geplande betaling** — een tabel van 24 regels waarin u per regel de maand en het percentage zet.
+
 ## Twee fiches samenvoegen
 
 Staat dezelfde tussenpersoon twee keer in de lijst, dan voegt u de fiches samen met de knop **Samenvoegen**
 bovenaan. Selecteer eerst de fiche die u wil **behouden**, klik dan op de knop en kies in het venster welke
 fiche daarin moet opgaan.
 
-Voor u bevestigt, toont CreditSoft **wat de verdwijnende fiche draagt**: haar dossiers, commissies, taken,
-notities, bijlagen en mailverkeer. Alles daarvan verhuist mee naar de fiche die u behoudt. Ook de
-onderliggende kantoren en medewerkers uit de boom, de bankrekeningen, de geplande betalingen en de gevraagde
-documenten gaan mee.
+Voor u bevestigt, toont het venster de **contactgegevens die verloren gaan**: het e-mailadres, het
+telefoonnummer en het btw-nummer van de fiche die verdwijnt. Zo ziet u meteen of daar iets bij staat dat u
+liever eerst overneemt.
+
+Ná het samenvoegen krijgt u een overzicht van **wat er verhuisd is**, per soort: dossiers, commissies, taken,
+notities, bijlagen en mailverkeer. Ook de onderliggende kantoren en medewerkers uit de boom, de
+bankrekeningen, de geplande betalingen en de gevraagde documenten gaan mee.
 
 !!! warning "De behouden fiche houdt haar eigen velden"
     Naam, adres, e-mail, commissie-afspraak: die blijven zoals ze op de **behouden** fiche staan. Wil u iets
@@ -104,4 +113,6 @@ Per aanbrenger bepaalt u of hij het commissie-tabblad en het documenten-tabblad 
 
 De knoppenbalk onderaan blijft in beeld. De knoppen staan rechts: **Opslaan**, **Annuleren**, **Portaal** en **Verwijderen**.
 
-Bij het opslaan worden **ontbrekende verplichte velden** (naam, documenttaal) en een **ongeldig e-mailadres** gemeld. **Telefoonnummers worden opgemaakt** in de officiële notatie: typt u `09/3724829`, dan staat er na het bewaren `09 372 48 29`.
+**Opslaan** blijft uitgeschakeld zolang de naam of de documenttaal ontbreekt — u krijgt dus geen melding achteraf, de knop komt gewoon niet vrij. Een **ongeldig e-mailadres** wordt live onder het veld gemeld terwijl u typt. **Telefoonnummers worden opgemaakt** in de officiële notatie: typt u `09/3724829`, dan staat er na het bewaren `09 372 48 29`.
+
+**Verwijderen** vraagt eerst bevestiging, met de naam van de aanbrenger erbij. De fiche verhuist dan naar de prullenbak, waar u ze desnoods terughaalt.

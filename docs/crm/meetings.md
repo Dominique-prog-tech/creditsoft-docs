@@ -14,13 +14,17 @@ Bovenaan staat een legende met de medewerkers. Elke afspraak krijgt de kleur van
 
 Verschijnt een collega niet in de legende? Dan staat op zijn medewerkerfiche het vinkje **Toon in keuzelijsten** uit. Dat gebeurt bewust voor mensen die wel toegang hebben tot het programma maar niet meewerken aan de dossiers — een zaakvoerder bijvoorbeeld.
 
+Met de keuzelijst **Alle medewerkers** bovenaan houdt u één iemand over. Dat filter kijkt ruimer dan de kleur: het toont ook de afspraken waarop die persoon als **bijkomende** verantwoordelijke staat.
+
+Het grijze bolletje **Zonder verantwoordelijke** verzamelt de afspraken die uit het vorige programma kwamen en waarvan niet meer te achterhalen is van wie ze waren. U kan ze aanklikken en er alsnog iemand op zetten.
+
 ## Een afspraak maken
 
 Klik op een leeg tijdvak. In het venster dat opent, vult u in:
 
 - **Onderwerp en omschrijving** — waar de afspraak over gaat.
 - **Contact** — de relatie waarmee u afspreekt.
-- **Aanbrenger** — als de afspraak via een tussenpersoon loopt.
+- **Tussenpersoon** — als de afspraak via een tussenpersoon loopt.
 - **Locatie** — kantoor, bij de klant, of een adres.
 - **Verantwoordelijken** — één hoofdverantwoordelijke (die de kleur bepaalt) en eventueel bijkomende collega's.
 
@@ -35,7 +39,7 @@ De mail vertrekt **niet vanzelf**. U leest ze na, voegt eventueel een zin toe, e
 !!! tip "Waar u de verstuurde bevestiging terugvindt"
     Op de fiche van het contact of de tussenpersoon, onder **Journaal → Mailverkeer**. Daar staat wat er precies verstuurd is, met datum en ontvanger.
 
-De tekst zelf past u aan bij **Platformbeheer → Mailsjablonen**, sjabloon *Bevestiging afspraak*. De plaatshouders `{{meeting.date}}`, `{{meeting.from}}`, `{{meeting.to}}` en `{{meeting.location}}` vult CreditSoft in met de gegevens van de afspraak.
+De tekst zelf past u aan bij **Platformbeheer → Mailsjablonen**, sjabloon *Bevestiging afspraak*. De plaatshouders `{{meeting.subject}}`, `{{meeting.date}}`, `{{meeting.from}}`, `{{meeting.to}}` en `{{meeting.location}}` vult CreditSoft in met de gegevens van de afspraak. Wilt u het niet zelf samenstellen, gebruik dan `{{meeting.details}}`: dat is een kant-en-klaar blokje met wanneer en waar.
 
 ## Een afspraak wijzigen
 

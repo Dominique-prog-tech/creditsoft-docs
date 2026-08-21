@@ -25,6 +25,13 @@ Par dossier, vous voyez qui en fait la demande, par qui il passe et où il en es
 
 Via le **sélecteur de colonnes**, vous en ajoutez cinq autres : *Crédit demandé*, *Investissement total*, *Fonds propres*, *Quotité* et *Bien*. Elles sont masquées par défaut, car tous les bureaux ne les remplissent pas. Votre choix est mémorisé pour la fois suivante.
 
+### Créer un dossier
+
+Avec **Nouveau dossier** en haut de la liste, vous créez un dossier vide. Il reçoit d'emblée le premier statut de dossier de votre bureau et s'ouvre comme fiche, le curseur sur **Statut** — vous commencez donc là où commencent la plupart des dossiers.
+
+!!! note "Configurez d'abord vos statuts"
+    Si vous n'avez pas encore configuré de statuts de dossier, CreditSoft le signale et ne crée pas de dossier. Configurez-les d'abord dans **Listes de choix**.
+
 ### Rechercher et filtrer
 
 - **Rechercher** — le champ de recherche porte sur toutes les colonnes **visibles**. Si vous activez une colonne via le sélecteur, la recherche s'y applique aussitôt.
@@ -48,7 +55,12 @@ Le dossier tient sur une seule page. En haut, le bloc principal reprend les donn
 
 ### Données du dossier
 
-Le bloc central : numéro interne, propriétaire, sales, **statut**, type de crédit, but, institution financière et intermédiaire. En dessous, les montants — montant du crédit, quotité et montant de commission — ainsi que les dates clés : introduction, approbation, signature de l'offre et date limite des conditions suspensives.
+Le bloc d'en-tête porte ce dont vous avez le plus souvent besoin : numéro interne, **propriétaire**, **sales**, **statut**, institution financière, intermédiaire, le montant du crédit avec la case *Retenir*, et la date de l'acte.
+
+Dans la carte en dessous à gauche figurent le but, le type de dossier, la quotité et les dates clés : introduction, approbation, signature de l'offre et date limite des conditions suspensives.
+
+!!! tip "Un montant vide reste vide"
+    Si vous laissez un montant non renseigné, il reste vide — il ne devient pas 0 €. La distinction compte : pour un dossier sans montant de crédit, vous voyez qu'il n'est pas encore connu, et non qu'il serait nul.
 
 **Propriétaire** et **Sales** sont des listes déroulantes de vos collaborateurs. Vous pouvez y taper pour rechercher, et la croix vide à nouveau le champ.
 
@@ -62,7 +74,9 @@ En bas du bloc figure **Remarques internes** : un champ de texte libre pour vos 
 
 ### Bien
 
-L'adresse du bien, le type de bien, la valeur estimée et la date de validité du PEB. Le bouton **Fiche d'investissement & bien…** ouvre le calcul d'investissement complet : achat, construction neuve, rénovation, frais de notaire, inscription hypothécaire et tous les autres postes, avec en bas l'**investissement total** et l'**apport propre**.
+Sur la fiche elle-même figure la **valeur estimée**, avec la quotité à côté.
+
+Le reste du bien se trouve derrière le bouton **Fiche d'investissement & bien…** : l'adresse du bien, le type de bien, la date de validité du PEB et la case **Libre choix de l'assurance incendie**. Dans cette même fenêtre, vous établissez le calcul d'investissement complet — achat, construction neuve, rénovation, frais de notaire, inscription hypothécaire et tous les autres postes, avec en bas l'**investissement total** et l'**apport propre**.
 
 ### Demandeurs de crédit
 
@@ -70,7 +84,9 @@ Qui demande le crédit. Rattachez une relation existante avec **+ Rattacher un d
 
 ### Contrats
 
-Les contrats de crédit rattachés à ce dossier : montant, durée, taux d'intérêt, charge mensuelle, date de début et produit.
+Les contrats de crédit rattachés à ce dossier. La liste affiche le numéro, le produit, le statut, le montant, la durée, le taux d'intérêt et l'institution ; la charge mensuelle et la date de début se trouvent sur le contrat lui-même.
+
+La fenêtre du contrat s'adapte au **type de produit** : pour un crédit ordinaire elle demande le type de produit, le taux, la variabilité et la charge mensuelle ; pour une assurance solde restant dû s'y ajoutent la prime, le type et la périodicité, ainsi que la désignation des personnes assurées.
 
 ### Parties
 
@@ -108,6 +124,8 @@ Le bouton **Inviter le client**, au-dessus de la liste, envoie à votre client u
 Vous choisissez le destinataire parmi les demandeurs du dossier ; leur nom et leur adresse sont indiqués, et vous pouvez aussi saisir une autre adresse. Le courriel provient de votre modèle *Invitation portail client* et est **conservé dans le courrier de ce dossier**, afin que vous puissiez retrouver quand et à qui vous l'avez envoyé.
 
 Si votre client n'a pas d'adresse e-mail, utilisez **Créer uniquement le lien** : le lien s'affiche et vous le transmettez vous-même, par téléphone par exemple.
+
+Avec **Voir comme le client** à côté, vous ouvrez le portail dans un nouvel onglet, exactement tel que votre client le voit. Pratique pour vérifier ce que vous demandez avant d'envoyer l'invitation. Ce que vous y déposez arrive réellement sur le dossier — un bandeau jaune en haut vous le rappelle.
 
 !!! warning "Le lien est nouveau à chaque fois"
     Une invitation n'est pas conservée et ne peut pas être récupérée — seule une empreinte l'est. Si vous en envoyez une deuxième, votre client reçoit un nouveau lien ; l'ancien continue de fonctionner jusqu'à son expiration.
