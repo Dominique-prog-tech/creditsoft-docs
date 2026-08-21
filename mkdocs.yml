@@ -145,6 +145,7 @@ plugins:
             Het dashboard: Le tableau de bord
             Globaal overzicht: Aperçu global
             Verzekeringen: Assurances
+            Leads vanaf uw website: Leads depuis votre site web
             Relaties: Relations
             Aanbrengers: Apporteurs
             Afspraken: Rendez-vous
@@ -282,6 +283,7 @@ nav:
 
   - Relatiebeheer:
     - Leads: crm/leads.md
+    - Leads vanaf uw website: crm/leads-webformulier.md
     - Relaties: crm/relations.md
     - Professionals: crm/professionals.md
     - Aanbrengers: crm/contributors.md

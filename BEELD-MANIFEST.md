@@ -106,6 +106,13 @@
       bewust niet op beeld: die vraagt een demo-lead die samenvalt met een bestaande relatie, en zo'n rij oogt
       vreemd in de leadlijst. De handleiding beschrijft hem in een waarschuwingsblok.
 
+## Relatiebeheer → Leads vanaf uw website (`crm/leads-webformulier.md`)
+
+- [x] **Bewust GEEN beelden.** Deze pagina beschrijft een koppeling, geen scherm: wat de makelaar te zien krijgt
+      is de gewone leadlijst, en die staat al op `leads-lijst.png`. Een schermafdruk van een contactformulier zou
+      bovendien een website van een klant tonen, of een verzonnen site die niets bewijst. Wat hier telt is de
+      uitleg en de doorverwijzing naar de technische pagina van ADM One.
+
 ## Relatiebeheer → Professionals (`crm/professionals.md`)
 
 - [x] `professionals-lijst.png` + `-fr` — het lijstscherm met de typefilter bovenaan. Geplaatst 15/08/2026.
