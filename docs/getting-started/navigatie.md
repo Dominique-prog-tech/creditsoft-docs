@@ -8,6 +8,8 @@ Deze pagina geeft een kort overzicht van hoe u uw weg vindt in CreditSoft: het m
 
 Aan de linkerkant staat het **hoofdmenu**. Het toont de schermen waartoe u toegang hebt; klik op een item om het te openen. Het menu is gegroepeerd — de dagelijkse werkschermen staan bovenaan, beheer-schermen onder de kop **Beheer**.
 
+![Het hoofdmenu links, met Home en Dashboard bovenaan, de opengeklapte groep CRM met Relaties, Professionals, Afspraken, Aanbrengers en Groepen, de opengeklapte groep Krediet met Kredietdossiers, Te valideren met een blauw teller-bolletje, Kredietinstellingen, Verzekeraars, Borderel en Fiche 281.50, daaronder de dichtgeklapte groepen Lijsten en Beheer, en onderaan Platformbeheer, Klantenportaal en Afmelden.](../images/menu-links.png "Het hoofdmenu links, met twee groepen opengeklapt"){ width="240" }
+
 Welke items u ziet, hangt af van uw rol: niet iedereen heeft toegang tot alle schermen.
 
 ### Het menu in- en uitklappen
@@ -21,6 +23,8 @@ Bovenaan links staat een knop om het menu **in te klappen**. Klapt u het in, dan
 - **Het versienummer** (bijvoorbeeld *v0.3.0*) — klik erop om **"Wat is nieuw"** te openen: de release notes met de nieuwste updates en verbeteringen.
 
 ## De balk bovenaan
+
+![De balk bovenaan met links het CreditSoft-logo en rechts de knoppen: Nieuwe taak, de maan voor donkere weergave, het belletje met een teller, feedback, de vraagteken-hulp, de AI-assistent en de avatar met uw initialen.](../images/hoofdbalk.png "De balk bovenaan, met de knoppen die u overal bij u hebt")
 
 Rechtsboven staan de knoppen die u overal bij u hebt, van links naar rechts:
 

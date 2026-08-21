@@ -21,6 +21,8 @@ Cliquez sur **Créer l'utilisateur**. Le collègue apparaît dans la liste et mo
 
 À côté d'un utilisateur, cliquez sur **Fiche**. Vous y complétez les données propres à CreditSoft :
 
+![La fenêtre Fiche d'un collaborateur : en haut son nom et son identifiant, avec la note indiquant que le nom, l'e-mail et la fonction sont gérés par ADM One ; en dessous les champs Téléphone, GSM et Représentation, la liste Couleur dans l'agenda, la case Afficher dans les listes de choix avec son explication, et en bas la Signature d'e-mail mise en forme avec sa barre d'outils.](../images/gebruikers-fiche-fr.png "La fiche d'un collaborateur, avec ses coordonnées et sa signature d'e-mail")
+
 - **Téléphone** et **GSM**
 - **Représentation**
 - **Signature d'e-mail** — une signature mise en forme (texte et éventuellement une image) utilisée dans les e-mails sortants.

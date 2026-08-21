@@ -21,6 +21,8 @@ Klik op **Gebruiker aanmaken**. De collega verschijnt in de lijst en wijzigt zij
 
 Klik bij een gebruiker op **Fiche**. Hier vult u de CreditSoft-gegevens in:
 
+![Het venster Fiche van een medewerker: bovenaan zijn naam en aanmeldadres met de notitie dat naam, e-mail en functie door ADM One beheerd worden, daaronder de velden Telefoon, Gsm en Vertegenwoordiging, de keuzelijst Kleur in de agenda, het vinkje Toon in keuzelijsten met uitleg, en onderaan de opgemaakte Mailhandtekening met zijn werkbalk.](../images/gebruikers-fiche.png "De fiche van een medewerker, met zijn contactgegevens en mailhandtekening")
+
 - **Telefoon** en **Gsm**
 - **Vertegenwoordiging**
 - **Mailhandtekening** — een opgemaakte handtekening (tekst en eventueel een afbeelding) die in uitgaande mails gebruikt wordt.

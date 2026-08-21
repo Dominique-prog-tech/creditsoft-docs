@@ -8,6 +8,8 @@ Les adresses d'envoi sont les **adresses e-mail utilisées comme expéditeur** l
 
 Dans la barre latérale, cliquez sur **Administration**, puis sur la tuile **Adresses d'envoi** (sous *Communication*). En haut de l'écran, le lien **← Retour à l'administration** vous ramène à l'aperçu.
 
+![La page d'accueil Administration avec les tuiles regroupées par thème : Entreprise avec Fiche d'entreprise, Communication avec Adresses d'envoi, Modèles d'e-mail et Suivi des e-mails, Accès avec Utilisateurs et Rôles, Données avec Listes de choix, Portail client, Types de documents, Corbeille et Journal des actions, et Tableau de bord avec Phases du tableau de bord.](../images/platformbeheer-hub-fr.png "Administration : tous les écrans de gestion réunis, regroupés par thème")
+
 ## Pourquoi c'est important
 
 Tant que vous ne désignez pas d'adresse d'envoi, CreditSoft ne peut envoyer aucun e-mail. C'est voulu : sans votre propre adresse, vos e-mails partiraient de l'adresse de votre fournisseur de logiciel, et un aperçu de dossier arriverait chez un notaire au nom de quelqu'un d'autre que votre bureau.
@@ -27,6 +29,8 @@ Le tableau indique, par adresse d'envoi, le **nom de l'expéditeur**, l'**adress
 ## Ajouter ou modifier une adresse d'envoi
 
 Une adresse d'envoi comporte deux champs, tous deux **obligatoires** (signalés par un astérisque rouge) :
+
+![La fenêtre Modifier l'adresse d'envoi avec les deux champs obligatoires Adresse e-mail et Nom d'expéditeur, chacun marqué d'un astérisque rouge, et en dessous un message orange indiquant que le domaine n'est pas encore enregistré chez ADM — l'adresse peut être conservée, mais la distribution risque de s'interrompre par la suite. En bas, les boutons Enregistrer, Annuler et Supprimer.](../images/verzendadressen-bewerken-fr.png "Modifier une adresse d'envoi, avec le contrôle de domaine sous les champs")
 
 - **Adresse e-mail** — l'adresse qui apparaît comme expéditeur, par exemple `info@votrebureau.be`.
 - **Nom de l'expéditeur** — le nom que le destinataire verra comme expéditeur, par exemple *Bureau de courtage Exemple*.

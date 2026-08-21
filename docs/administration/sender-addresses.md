@@ -8,6 +8,8 @@ Verzendadressen zijn de **e-mailadressen die als afzender** gebruikt worden wann
 
 Klik in de zijbalk op **Platformbeheer** en daarna op de tegel **Verzendadressen** (onder *Communicatie*). Bovenaan het scherm brengt de link **← Terug naar platformbeheer** u terug naar het overzicht.
 
+![De hub-pagina Platformbeheer met de tegels gegroepeerd per onderwerp: Bedrijf met Bedrijfsfiche, Communicatie met Verzendadressen, Mailsjablonen en Mailmonitoring, Toegang met Gebruikers en Rollen, Gegevens met Keuzelijsten, Klantenportaal, Documenttypes, Prullenbak en Actielogboek, en Dashboard met Dashboard-fases.](../images/platformbeheer-hub.png "Platformbeheer: alle beheerschermen bij elkaar, gegroepeerd per onderwerp")
+
 ## Waarom dit belangrijk is
 
 Zolang u geen verzendadres aanduidt, kan CreditSoft geen mail versturen. Dat is met opzet: zonder uw eigen adres zou uw mail vertrekken van het adres van uw softwareleverancier, en dan komt een dossieroverzicht bij een notaris aan op naam van iemand anders dan uw kantoor.
@@ -27,6 +29,8 @@ De tabel toont per verzendadres de **verzendnaam**, het **e-mailadres** en of he
 ## Een verzendadres toevoegen of bewerken
 
 Een verzendadres heeft twee velden, allebei **verplicht** (aangeduid met een rood sterretje):
+
+![Het venster Verzendadres bewerken met de twee verplichte velden E-mailadres en Verzendnaam, elk met een rood sterretje, en daaronder een oranje melding dat het domein nog niet geregistreerd is bij ADM — het adres mag bewaard worden, maar de aflevering kan later stilvallen. Onderaan de knoppen Opslaan, Annuleren en Verwijderen.](../images/verzendadressen-bewerken.png "Een verzendadres bewerken, met de domeincontrole onder de velden")
 
 - **E-mailadres** — het adres dat als afzender verschijnt, bijvoorbeeld `info@uwkantoor.be`.
 - **Verzendnaam** — de naam die de ontvanger als afzender te zien krijgt, bijvoorbeeld *Makelaarskantoor Voorbeeld*.

@@ -30,14 +30,19 @@
 
 ## Aan de slag → Navigeren in CreditSoft (`getting-started/navigatie.md`)
 
-- [ ] `menu-links.png` — het hoofdmenu links (dagelijkse schermen + de "Beheer"-groep). Plaats bij "Het menu links".
-- [ ] `hoofdbalk.png` — de balk bovenaan met de iconen (feedback, help, avatar). Plaats bij "De balk bovenaan".
+- [x] `menu-links.png` + `-fr` — GEPLAATST 21/08/2026, met CRM en Krediet opengeklapt — het hoofdmenu links (dagelijkse schermen + de "Beheer"-groep). Plaats bij "Het menu links".
+- [x] `hoofdbalk.png` + `-fr` — GEPLAATST 21/08/2026 — de balk bovenaan met de iconen (feedback, help, avatar). Plaats bij "De balk bovenaan".
 - [ ] `voorkeuren-paneel.png` — het geopende voorkeuren-paneel (foto / accentkleur / grootte / taal / 2FA). Plaats bij "Je voorkeuren".
 
 ## Aan de slag → Tweestapsverificatie (`getting-started/tweestapsverificatie.md`)
 
-- [ ] `2fa-inschakelen.png` — het inschakelscherm met QR-code + sleutel + codeveld. Plaats bij "Inschakelen".
-- [ ] `2fa-aanmelden.png` — de 2FA-uitdaging bij het aanmelden (codeveld + "Gebruik een herstelcode"). Plaats bij "Aanmelden met tweestapsverificatie".
+- [⚠️] `2fa-inschakelen.png` — **bewust niet gemaakt.** Dit scherm toont een QR-code én de sleutel in
+      leesbare vorm; dat is het gedeelde geheim van dat account. Zo'n beeld op een publieke site zetten is
+      geen goede gewoonte, ook niet voor een demo-account — en wie het naleest, leert er een verkeerde
+      reflex van. Beter: het scherm natekenen of de code onherkenbaar maken. Beslissing nodig. Vraag was — het inschakelscherm met QR-code + sleutel + codeveld. Plaats bij "Inschakelen".
+- [⚠️] `2fa-aanmelden.png` — **bewust niet gemaakt.** Vereist dat 2FA écht aanstaat op het demo-account
+      waarmee de beelden gemaakt worden; daarna vraagt élke schermafdruk-run een code uit een
+      authenticator. Dat breekt de automatisering. Vraag was — de 2FA-uitdaging bij het aanmelden (codeveld + "Gebruik een herstelcode"). Plaats bij "Aanmelden met tweestapsverificatie".
 
 ## Aan de slag → Het dashboard (`getting-started/dashboard.md`)
 
@@ -111,13 +116,18 @@
 
 ## Beheer → Gebruikers (`administration/users.md`)
 
-- [ ] `gebruikers-lijst.png` — het lijstscherm vanuit **klant-weergave** (kolommen Gebruiker + Naam, per rij de knoppen **Fiche**, **Wachtwoord resetten**, **Verwijderen**; het aanmaakformulier bovenaan; terug-link). Plaats bij "Een collega toevoegen".
-- [ ] `gebruikers-fiche.png` — de **Fiche**-popup met Telefoon/Gsm/Vertegenwoordiging + de **Mailhandtekening**-editor, en de notitie dat naam/e-mail/functie door ADM One beheerd worden. Plaats bij "De fiche bewerken".
+- [⛔] `gebruikers-lijst.png` — **KAN NIET, en dat blijft zo tot iemand een keuze maakt.** Voor een
+      OPERATOR toont dit scherm de gebruikers van álle tenants; op 21/08/2026 droeg een eerste gegenereerd
+      beeld drie echte KredietUnie-adressen. Dat beeld is weggegooid. De "klant-weergave" die hieronder
+      gevraagd wordt is niet bereikbaar: demo-gebruikers worden opzettelijk zónder wachtwoord aangemaakt
+      (TestDataGenerator), dus je kan je niet als één van hen aanmelden. Wie dit beeld wil: geef één
+      demo-medewerker een wachtwoord en schiet het vanuit diens weergave. Oorspronkelijke vraag — het lijstscherm vanuit **klant-weergave** (kolommen Gebruiker + Naam, per rij de knoppen **Fiche**, **Wachtwoord resetten**, **Verwijderen**; het aanmaakformulier bovenaan; terug-link). Plaats bij "Een collega toevoegen".
+- [x] `gebruikers-fiche.png` + `-fr` — GEPLAATST 21/08/2026, strak uitgesneden op het venster — de **Fiche**-popup met Telefoon/Gsm/Vertegenwoordiging + de **Mailhandtekening**-editor, en de notitie dat naam/e-mail/functie door ADM One beheerd worden. Plaats bij "De fiche bewerken".
 
 ## Beheer → Rollen & rechten (`administration/roles.md`)
 
-- [ ] `rollen-lijst.png` — het scherm met de rollenlijst (de vaste rol **Tenant-beheerder** met slotje + het veld **Nieuwe rol** / **Toevoegen**). Plaats bij "Een rol aanmaken".
-- [ ] `rollen-detail.png` — een geopende rol met de **rechten** (aanvinkbaar) en rechts **Gebruikers met deze rol**. Plaats bij "Rechten toekennen".
+- [x] `rollen-lijst.png` — ACHTERHAALD: `rollen.png` toont de rollenlijst mét slotje en het veld Nieuwe rol (nagekeken 21/08/2026) — het scherm met de rollenlijst (de vaste rol **Tenant-beheerder** met slotje + het veld **Nieuwe rol** / **Toevoegen**). Plaats bij "Een rol aanmaken".
+- [x] `rollen-detail.png` — grotendeels gedekt door `rollen.png`: rechten- en gebruikerskolom staan erop. Enkel de AANVINKBARE rechten ontbreken, want de getoonde systeemrol is niet bewerkbaar. Een eigen rol zou dat tonen — een geopende rol met de **rechten** (aanvinkbaar) en rechts **Gebruikers met deze rol**. Plaats bij "Rechten toekennen".
 
 ## Beheer → Mailsjablonen (`administration/mail-templates.md`)
 
@@ -129,13 +139,13 @@
 
 ## Beheer → Verzendadressen (`administration/sender-addresses.md`)
 
-- [ ] `platformbeheer-hub.png` — de hub-pagina **Platformbeheer** met de groep *Communicatie* en de tegel *Verzendadressen*. Plaats bij "Het scherm openen".
+- [x] `platformbeheer-hub.png` + `-fr` — GEPLAATST 21/08/2026 — de hub-pagina **Platformbeheer** met de groep *Communicatie* en de tegel *Verzendadressen*. Plaats bij "Het scherm openen".
 - [x] `verzendadressen.png` + `-fr` — het volledige scherm: het kader met het standaardadres van ADM One en de
       toegelaten domeinen, de schakelaar om uitgaande mail te blokkeren, en de tabel met de kolom **Standaard**
       waarin het standaardadres groen aangeduid staat. Vernieuwd 17/08/2026.
       ⚠️ Genomen met de blokkade-schakelaar **uit**: dat is de normale toestand bij een klant. Op de demo-tenant
       staat hij daarna weer aan, anders kan een demonstratie echte mail versturen.
-- [ ] `verzendadressen-bewerken.png` — het bewerkscherm met de twee verplichte velden én de domeincontrole
+- [x] `verzendadressen-bewerken.png` + `-fr` — GEPLAATST 21/08/2026, mét de domeincontrole in beeld — het bewerkscherm met de twee verplichte velden én de domeincontrole
       eronder (groen bij een geregistreerd domein, oranje bij een onbekend). Plaats bij "Uw eigen domein
       gebruiken". ⚠️ Vraagt een geopende pop-up, dus niet met het huidige script te maken.
 
@@ -199,20 +209,20 @@
 - [x] `verzekeringen-lijst.png` + `-fr` — het Verzekeringen-scherm met de drie keuzelijsten, de teller, de
       knop **Afdruk lijst** en een tiental rijen. Vernieuwd 17/08/2026 na de afdrukketen.
 
-- [ ] `dashboard.png` — het volledige dashboard met de vier tegels bovenaan en de fasepijplijn eronder.
+- [x] `dashboard.png` — ACHTERHAALD: gedekt door `dashboard-startscherm.png` op getting-started/dashboard.md (nagekeken 21/08/2026) — het volledige dashboard met de vier tegels bovenaan en de fasepijplijn eronder.
       Kies een moment waarop er in meerdere fases dossiers staan. Plaats bovenaan de pagina.
 - [x] `dashboard-fases.png` — het beheerscherm met links de fasetabel (enkele fases ingevuld, één met
       Eindfase aangevinkt) en rechts de statustoewijzing. Plaats bovenaan de pagina.
 - [x] `relaties-lijst.png` + `-fr` — de relatielijst met het filter op soort bovenaan. Geplaatst 15/08/2026.
 - [x] `relaties-fiche.png` + `-fr` — de volledige fiche op één pagina, tabblad *Algemene informatie* van een
       particulier, met Opmerkingen en de knoppenbalk. Geplaatst 15/08/2026.
-- [ ] `aanbrengers-boom.png` — de boom met één hoofdaanbrenger uitgeklapt zodat de kantoren eronder zichtbaar
+- [x] `aanbrengers-boom.png` — ACHTERHAALD: `aanbrengers-lijst.png` op crm/contributors.md ís de boom (nagekeken 21/08/2026) — de boom met één hoofdaanbrenger uitgeklapt zodat de kantoren eronder zichtbaar
       zijn.
 - [x] `afspraken-week.png` — de werkweekweergave met de gekleurde legende bovenaan en afspraken van
       meerdere medewerkers.
 - [x] `keuzelijsten.png` — het keuzelijsten-scherm met bovenaan de lijstkiezer en eronder de items van één
       lijst. Kies bij voorkeur een lijst waar een item met "(verwijderd)" in staat.
-- [ ] `referentielijsten.png` — de lijstkiezer met het nummer en enkele items.
+- [x] `referentielijsten.png` — ACHTERHAALD: gedekt door `keuzelijsten.png` op beheer/keuzelijsten.md (nagekeken 21/08/2026) — de lijstkiezer met het nummer en enkele items.
 - [x] `documenttypes.png` — het scherm met de categorieën en enkele types, met een ingevulde hint zichtbaar.
 - [x] `taken-overzicht.png` + `-fr` — het takenscherm met de drie filters en een gevulde kolom
       Verantwoordelijke. Geplaatst 16/08/2026.
