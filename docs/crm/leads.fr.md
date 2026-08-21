@@ -61,6 +61,27 @@ La fiche comporte trois blocs.
 - **Premier contact** — dès qu'il y a eu contact, l'heure s'affiche ici. S'il n'y a pas encore eu de contact, un bouton **Contact établi** apparaît : un clic fixe l'heure *et* met le statut sur *Contacté*, sans devoir passer par une liste de choix.
 - **Motif de la perte** — apparaît dès que vous mettez le statut sur *Perdu*.
 
+## Du lead au client
+
+Si cela aboutit, cliquez sur la fiche sur **En faire un client**.
+
+![La fenêtre En faire un client dans CreditSoft : des listes de choix pour Type et Langue des documents, avec le message indiquant que le nom, l'e-mail et le téléphone proviennent du lead.](../images/lead-klant-maken-fr.png "Ce que le lead ignore, CreditSoft le demande ici")
+
+CreditSoft ne demande que ce que le lead ignore :
+
+- **Type** — particulier ou société. Si le lead porte un nom de société, ce champ est déjà sur *Société*.
+- **Langue des documents** — obligatoire sur toute fiche client : elle détermine dans quelle langue ce client reçoit ses courriers et ses e-mails.
+- **Forme juridique** — uniquement pour une société.
+
+Le nom, l'e-mail et le téléphone proviennent du lead. Vous complétez le reste sur la fiche client, vers laquelle vous êtes dirigé immédiatement.
+
+!!! warning "Cette personne existe-t-elle déjà ?"
+    Si CreditSoft reconnaît une relation portant le même nom ou la même adresse e-mail, la fenêtre change : cette relation s'affiche et le bouton devient **Rattacher**. Le lead est alors rattaché au client existant, sans deuxième fiche. Vous pouvez malgré tout en créer un nouveau — mais c'est délibérément le second choix.
+
+**Le lead ne disparaît pas.** Il reste dans la liste en *Gagné*, avec en haut de sa fiche un lien vers son client. Un an plus tard, vous voyez ainsi toujours quel canal a apporté des clients et lequel n'a apporté que du bruit — c'est toute la raison de tenir les leads à part.
+
+Vous créez ensuite un dossier de crédit de la manière habituelle : **Crédit → Dossiers de crédit → Nouveau**, en y associant ce client.
+
 ## Ajouter un lead
 
 Cliquez sur **Nouveau lead**, complétez ce que vous savez, puis cliquez sur **Enregistrer**.

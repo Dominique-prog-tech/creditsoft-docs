@@ -101,6 +101,11 @@
       wacht (Sofie Delcourt): de drie blokken, de wachttijd in het rood in de kop, en de knop *Contact gehad*
       op de plaats waar anders het tijdstip van het eerste contact staat.
 
+- [x] `lead-klant-maken.png` + `-fr` — GEPLAATST 21/08/2026, uitgesneden op het venster — het conversievenster
+      in zijn normale vorm (Soort + Documenttaal, beide met een rood sterretje). ⚠️ De KOPPEL-variant staat
+      bewust niet op beeld: die vraagt een demo-lead die samenvalt met een bestaande relatie, en zo'n rij oogt
+      vreemd in de leadlijst. De handleiding beschrijft hem in een waarschuwingsblok.
+
 ## Relatiebeheer → Professionals (`crm/professionals.md`)
 
 - [x] `professionals-lijst.png` + `-fr` — het lijstscherm met de typefilter bovenaan. Geplaatst 15/08/2026.

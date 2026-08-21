@@ -61,6 +61,27 @@ De fiche heeft drie blokken.
 - **Eerste contact** — zodra er contact geweest is, staat hier het tijdstip. Was er nog geen contact, dan staat er een knop **Contact gehad**: één klik zet het tijdstip én de status op *Gecontacteerd*, zonder dat u eerst in een keuzelijst hoeft.
 - **Reden van verlies** — verschijnt zodra u de status op *Verloren* zet.
 
+## Van lead naar klant
+
+Wordt er iets van, dan klikt u op de fiche op **Klant van maken**.
+
+![Het venster Klant van maken in CreditSoft: keuzelijsten voor Soort en Documenttaal, met de melding dat naam, e-mailadres en telefoonnummer uit de lead komen.](../images/lead-klant-maken.png "Wat de lead niet weet, vraagt CreditSoft hier")
+
+CreditSoft vraagt alleen wat de lead niet weet:
+
+- **Soort** — particulier of bedrijf. Staat er een bedrijfsnaam op de lead, dan staat dit al op *Bedrijf*.
+- **Documenttaal** — verplicht op elke klantenfiche: ze bepaalt in welke taal die klant zijn brieven en mails krijgt.
+- **Rechtsvorm** — enkel bij een bedrijf.
+
+Naam, e-mailadres en telefoonnummer komen uit de lead. De rest vult u aan op de klantenfiche, waar u meteen naartoe springt.
+
+!!! warning "Bestaat die persoon al?"
+    Herkent CreditSoft een relatie met dezelfde naam of hetzelfde e-mailadres, dan verandert het venster: u ziet die relatie staan en de knop heet **Koppelen**. De lead wordt dan aan de bestaande klant gehangen, zonder tweede fiche. Wilt u toch een nieuwe, dan kan dat — maar het is bewust de tweede keuze.
+
+**De lead verdwijnt niet.** Hij blijft in de lijst staan als *Gewonnen*, met bovenaan zijn fiche een link naar zijn klant. Zo blijft na een jaar zichtbaar welk kanaal klanten opleverde en welk kanaal enkel ruis — en dat is de hele reden om leads apart bij te houden.
+
+Een kredietdossier maakt u daarna op de gewone manier: **Krediet → Kredietdossiers → Nieuw**, met die klant erbij.
+
 ## Een lead toevoegen
 
 Klik op **Nieuwe lead**, vul in wat u weet, en klik op **Bewaren**.
