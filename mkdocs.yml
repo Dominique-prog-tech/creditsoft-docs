@@ -44,6 +44,11 @@ extra_css:
 
 extra_javascript:
   - javascripts/embed.js
+  # Plausible Analytics — cookieloos, geen persoonsgegevens, EU-hosting; dus
+  # geen toestemmingsbanner nodig. Via extra_javascript belandt dit in ELKE
+  # gegenereerde pagina, ook in pagina's die er later bij komen.
+  - https://plausible.io/js/pa-v61a-O_ctqLqhyQttSSLc.js
+  - javascripts/plausible-init.js
 
 markdown_extensions:
   - admonition
@@ -159,6 +164,7 @@ plugins:
             Online afspraken: Rendez-vous en ligne
             Vragenlijst vooraf: Questionnaire préalable
             Dashboard-fases: Phases du tableau de bord
+            Verlof & sluitingsdagen: Congés & jours de fermeture
             Keuzelijsten: Listes de choix
             Documenttypes: Types de documents
             Uw voorkeuren: Vos préférences
@@ -264,6 +270,7 @@ nav:
     - Prullenbak: administration/recycle-bin.md
     - Actielogboek: administration/activity-log.md
     - Dashboard-fases: beheer/dashboard-fases.md
+    - Verlof & sluitingsdagen: beheer/afwezigheden.md
     - Keuzelijsten: beheer/keuzelijsten.md
     - Documenttypes: beheer/documenttypes.md
     - Klantenportaal: beheer/klantportaal.md
