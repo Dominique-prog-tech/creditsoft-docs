@@ -305,6 +305,11 @@ niet te tonen, laat staan te fotograferen. Opgelost met de actie **Journaal vull
 staat er al inhoud, dan doet ze niets.
 
 - [x] `journaal-lade` — de lijst mét de lade ernaast, voor `overzicht.md`.
+- [x] `kantoorprofiel-vragenlijst.png` — GEPLAATST 22/08/2026 — de vragenlijst-editor met het voorbeeld
+  ernaast. ⚠️ **Dit beeld komt uit `adm-appkit/docs/schermen/`, niet uit onze demo-tenant.** Het is een
+  AppKit-scherm en dus in elke app identiek; zelf konden we het niet maken omdat het scherm de klant uit de
+  aanmelding afleidt en ons operator-account aan geen enkel kantoor hangt. Wijzigt het scherm, haal het beeld
+  dan opnieuw daar op — niet zelf namaken.
 - [x] `afwezigheden.png` + `-fr` — GEPLAATST 22/08/2026 — het scherm Verlof & sluitingsdagen met de drie
   soorten én de badge "Hele kantoor" op één beeld.
 - [x] `agenda-afwezigheid.png` + `-fr` — GEPLAATST 22/08/2026 — de agenda in kolomweergave met twee

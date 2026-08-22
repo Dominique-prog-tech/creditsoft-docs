@@ -24,10 +24,33 @@ visiteur ouvre la page — et il est alors trop tard pour l'ajuster tranquilleme
 
 ## Le questionnaire
 
-En bas de cet écran figurent deux champs pour un **questionnaire** que le visiteur remplit avant son rendez-vous.
+Vous composez ici les questions auxquelles un visiteur répond **avant** son rendez-vous. S'il y a un
+questionnaire, il en reçoit le lien dans son e-mail de confirmation. Si vous laissez vide, il n'y a pas de lien —
+ni de phrase qui renvoie vers rien.
 
-Ce questionnaire est en cours de refonte : un véritable éditeur remplacera les champs techniques qui s'y trouvent
-aujourd'hui. **En attendant, mieux vaut les laisser vides.**
+![L'éditeur de questionnaire : en haut le titre en néerlandais et en français, en dessous deux questions numérotées avec leur texte dans les deux langues et une liste déroulante pour le type de réponse, avec des flèches et une corbeille à côté ; à droite un aperçu de ce que voit le visiteur.](../images/kantoorprofiel-vragenlijst.png "Composer le questionnaire, avec l'aperçu à côté"){ .volle-breedte }
+
+Pour chaque question, vous saisissez le texte en **néerlandais et en français**, et choisissez le type de réponse
+attendu :
+
+| Type | Pour quoi |
+|---|---|
+| **Réponse courte** | Une ligne — un nom, un montant sous forme de texte |
+| **Texte long** | Plusieurs lignes, par exemple « pour quoi souhaitez-vous emprunter ? » |
+| **Nombre** · **Date** · **Adresse e-mail** · **Numéro de téléphone** | Le visiteur reçoit le champ de saisie adéquat |
+| **Oui / non** | Deux boutons au lieu d'une zone de texte |
+
+Les **flèches** modifient l'ordre, la **corbeille** supprime une question. À droite, vous voyez immédiatement ce
+que reçoit le visiteur — inutile d'attendre que quelqu'un ouvre réellement la page.
+
+!!! tip "Réécrire une question ne casse rien"
+    Les réponses déjà reçues restent rattachées à leur question, même si vous en modifiez ensuite le texte. Vous
+    pouvez donc reformuler une question plus clairement en toute tranquillité.
+
+!!! warning "Vous posez des questions sur des données personnelles ?"
+    Renseignez alors votre **déclaration de confidentialité** (plus haut sur ce même écran). Le lien apparaît au
+    bas du questionnaire, et c'est justifié : revenus, propriété et crédits en cours ne sont pas des questions
+    anodines sur une page publique.
 
 ## Votre page sur votre propre site
 
@@ -65,3 +88,8 @@ vous auriez un nouveau logo alors même que le formulaire a été refusé.
 Uniquement les personnes disposant du droit **Gérer le profil du bureau**. Il n'existe pas de mode
 consultation : qui n'a pas le droit ne voit pas l'écran. Ce qui s'y trouve est de toute façon visible
 publiquement sur vos pages ; il s'agit de savoir qui peut le *modifier*.
+
+!!! warning "Un administrateur ADM ne voit rien ici"
+    Cet écran affiche le profil de **votre** bureau, qu'il déduit de votre connexion. Un compte d'administrateur
+    ADM n'est rattaché à aucun bureau et reçoit donc le message *« Votre connexion n'est liée à aucun bureau »*.
+    Connectez-vous avec votre propre compte pour configurer votre profil.
