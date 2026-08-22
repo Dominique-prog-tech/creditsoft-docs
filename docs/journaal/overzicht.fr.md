@@ -36,7 +36,7 @@ de la fiche elle-même. Tout reste ainsi à portée de main pendant que vous tra
 Il s'agit du même contenu que dans le tiroir. Une tâche que vous ajoutez ici, votre collègue la voit également
 lorsqu'il sélectionne la ligne dans la liste.
 
-## Les cinq parties
+## Les parties
 
 Dans le tiroir, les parties figurent côte à côte en haut ; dans un tiroir étroit, seules les icônes des parties
 inactives sont visibles — survolez-les pour en voir le nom. Sur une fiche, elles figurent en toutes lettres sous
@@ -45,13 +45,14 @@ forme d'onglets.
 | Partie | À quoi elle sert |
 |---|---|
 | [Dossiers de crédit](kredietdossiers.md) | Les dossiers de ce client — **uniquement sur une relation** |
-
-> Le tiroir s'ouvre sur la **première** partie de cette liste. Pour une relation, il s'agit des *Dossiers de crédit*.
 | [Tâches](taken.md) | Ce qui doit encore être fait, par qui, et pour quand |
 | [Notes](notities.md) | Ce que vous voulez consigner sans que ce soit une tâche |
+| [Appels](gesprekken.md) | Les appels téléphoniques concernant cette fiche |
 | [Pièces jointes](bijlagen.md) | Les documents et fichiers liés à cette fiche |
 | [Courrier](mailverkeer.md) | Les e-mails partis de CreditSoft au sujet de cette fiche |
 | [Historique](logboek.md) | Qui a modifié quel champ, et de quelle valeur vers quelle autre |
+
+Le tiroir s'ouvre sur la **première** partie de cette liste. Pour une relation, il s'agit des *Dossiers de crédit*.
 
 ## Sur quels écrans
 

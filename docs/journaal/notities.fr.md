@@ -1,8 +1,11 @@
 # Notes
 
-Une **note** est ce que vous voulez consigner sans que quelqu'un doive en faire quelque chose : ce qui s'est dit
-lors d'un appel, pourquoi un dossier est à l'arrêt, quel accord a été conclu oralement. Là où une
+Une **note** est ce que vous voulez consigner sans que quelqu'un doive en faire quelque chose : pourquoi un
+dossier est à l'arrêt, quel accord a été conclu oralement, ce que vous ne voulez pas oublier. Là où une
 [tâche](taken.md) regarde vers l'avant, une note regarde en arrière.
+
+S'agissait-il du **téléphone** ? Utilisez alors les [Appels](gesprekken.md) : vous y consignez aussi qui a
+appelé, dans quel sens et ce que l'appel a donné.
 
 ![La partie Notes avec une note : titre, date et contenu de l'entretien, avec en bas son auteur et la date de création.](../images/journaal-notities-fr.png "Les notes liées à une relation")
 

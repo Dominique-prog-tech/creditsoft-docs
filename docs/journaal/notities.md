@@ -1,8 +1,11 @@
 # Notities
 
-Een **notitie** is wat u wil vastleggen zonder dat er iemand iets mee moet doen: wat er in een telefoongesprek
-gezegd is, waarom een dossier stilligt, welke afspraak er mondeling gemaakt werd. Waar een
-[taak](taken.md) vooruitkijkt, kijkt een notitie terug.
+Een **notitie** is wat u wil vastleggen zonder dat er iemand iets mee moet doen: waarom een dossier stilligt,
+welke afspraak er mondeling gemaakt werd, wat u niet wil vergeten. Waar een [taak](taken.md) vooruitkijkt,
+kijkt een notitie terug.
+
+Ging het over de **telefoon**? Gebruik dan [Gesprekken](gesprekken.md): daar houdt u ook bij wie er belde, in
+welke richting en wat het opleverde.
 
 ![Het onderdeel Notities met een notitie: titel, datum en de inhoud van het gesprek, met onderaan wie ze aanmaakte en wanneer.](../images/journaal-notities.png "Notities bij een relatie")
 

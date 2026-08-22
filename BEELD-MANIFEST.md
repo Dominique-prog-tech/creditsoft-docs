@@ -305,6 +305,9 @@ niet te tonen, laat staan te fotograferen. Opgelost met de actie **Journaal vull
 staat er al inhoud, dan doet ze niets.
 
 - [x] `journaal-lade` — de lijst mét de lade ernaast, voor `overzicht.md`.
+- [x] `journaal-gesprekken.png` + `-fr` — GEPLAATST 22/08/2026 — het onderdeel Gesprekken met twee
+  telefoongesprekken naast elkaar: één uitgaand/Uitgevoerd (groen) en één inkomend/Open (oranje), zodat
+  beide labelkleuren op één beeld staan. De testdata maakt er nu twaalf aan (`JournaalTestData`).
 - [x] `journaal-taken` — een openstaande taak met hoge prioriteit en een afgewerkte.
 - [x] `journaal-notities` — een notitie met titel, datum en inhoud.
 - [x] `journaal-bijlagen` — drie PDF's met naam, omschrijving, grootte en datum.

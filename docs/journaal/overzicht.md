@@ -34,7 +34,7 @@ fiche zelf. Zo blijft alles bij de hand terwijl u aan het record werkt.
 Het is dezelfde inhoud als in de lade. Een taak die u hier toevoegt, ziet uw collega ook wanneer hij de rij in
 de lijst aanklikt.
 
-## De vijf onderdelen
+## De onderdelen
 
 In de lade staan de onderdelen bovenaan naast elkaar; in een smalle lade ziet u van de niet-actieve onderdelen
 enkel het icoon — wijs het aan om de naam te zien. Op een fiche staan ze voluit als tabbladen.
@@ -42,13 +42,14 @@ enkel het icoon — wijs het aan om de naam te zien. Op een fiche staan ze volui
 | Onderdeel | Waarvoor |
 |---|---|
 | [Kredietdossiers](kredietdossiers.md) | De dossiers van deze klant — **alleen op een relatie** |
-
-> De lade opent op het **eerste** onderdeel uit deze lijst. Bij een relatie is dat *Kredietdossiers*.
 | [Taken](taken.md) | Wat er nog moet gebeuren, voor wie, en tegen wanneer |
 | [Notities](notities.md) | Wat u wil vastleggen zonder dat het een taak is |
+| [Gesprekken](gesprekken.md) | De telefoongesprekken die over deze fiche gingen |
 | [Bijlagen](bijlagen.md) | Documenten en bestanden bij deze fiche |
 | [Mailverkeer](mailverkeer.md) | De mails die vanuit CreditSoft over deze fiche vertrokken |
 | [Logboek](logboek.md) | Wie welk veld wijzigde, en van welke waarde naar welke |
+
+De lade opent op het **eerste** onderdeel uit deze lijst. Bij een relatie is dat *Kredietdossiers*.
 
 ## Op welke schermen
 

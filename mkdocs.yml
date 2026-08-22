@@ -169,6 +169,7 @@ plugins:
             Journaal: Journal
             Het journaal: Le journal
             Notities: Notes
+            Gesprekken: Appels
             Bijlagen: Pièces jointes
             Mailverkeer: Courrier
             # "Historique" en niet "Journal": de lade heet in het Frans al Journal. In het Nederlands
@@ -219,6 +220,7 @@ nav:
     - Kredietdossiers: journaal/kredietdossiers.md
     - Taken: journaal/taken.md
     - Notities: journaal/notities.md
+    - Gesprekken: journaal/gesprekken.md
     - Bijlagen: journaal/bijlagen.md
     - Mailverkeer: journaal/mailverkeer.md
     - Logboek: journaal/logboek.md
