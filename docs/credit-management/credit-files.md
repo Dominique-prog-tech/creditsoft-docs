@@ -88,30 +88,6 @@ De kredietcontracten onder dit dossier. De lijst toont nummer, product, status, 
 
 Het contractvenster past zich aan de **productsoort** aan: bij een gewoon krediet vraagt het producttype, rentevoet, variabiliteit en maandlast, bij een schuldsaldoverzekering komen daar premie, type en periodiciteit bij, plus het aanvinken van wie verzekerd is.
 
-Naast **Maandlast** staat een knop **Bereken**. Die neemt het bedrag, de looptijd en de rentevoet die u er al
-invulde, rekent er de gewone annuïteit uit en zet het resultaat in het veld — handig tijdens een klantgesprek,
-en het scheelt de rekenmachine ernaast. De knop blijft grijs tot bedrag én looptijd ingevuld zijn. Is er geen
-rentevoet, dan rekent hij met een renteloze lening: bedrag gedeeld door looptijd.
-
-De knop **overschrijft** wat er staat, zonder te vragen. Dat is met opzet — wie erop duwt terwijl er al iets
-staat, wil precies dat. Bewaren gebeurt pas met **Opslaan**, dus een misklik kost u een *Annuleren* en geen
-gegevens.
-
-!!! warning "Hij rekent één soort aflossing"
-    *Bereken* geeft een **gewone, gelijkblijvende annuïteit**: elke maand hetzelfde bedrag, kapitaal en rente
-    samen. Dat klopt voor een persoonlijke lening, een renovatiekrediet en de meeste hypothecaire kredieten met
-    vaste mensualiteiten.
-
-    Het klopt **niet** bij een product waar de aflossing anders loopt:
-
-    - een **stijgend** krediet (Crescendo) begint met een lagere maandlast die daarna klimt — de knop komt daar
-      ongeveer een zesde te hoog uit;
-    - een **aflossingsvrij** krediet betaalt alleen rente, dus de werkelijke maandlast ligt veel lager;
-    - bij een **overbruggingskrediet** betekent het veld iets anders.
-
-    In die gevallen laat u het veld staan zoals de kredietverstrekker het opgaf. De knop weet niet welk soort
-    product u voor u hebt — daarom zegt hij het in de tooltip in plaats van te doen alsof.
-
 ### Partijen
 
 De betrokken professionals — immokantoor, notaris, schatter of accountant. Per partij houdt u bij of ze **aangesteld** is en of het **verslag ontvangen** is, met de bijhorende datums en contactgegevens.

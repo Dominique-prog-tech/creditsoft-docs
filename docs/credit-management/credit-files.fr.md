@@ -88,30 +88,6 @@ Les contrats de crédit rattachés à ce dossier. La liste affiche le numéro, l
 
 La fenêtre du contrat s'adapte au **type de produit** : pour un crédit ordinaire elle demande le type de produit, le taux, la variabilité et la charge mensuelle ; pour une assurance solde restant dû s'y ajoutent la prime, le type et la périodicité, ainsi que la désignation des personnes assurées.
 
-À côté de **Charge mensuelle** figure un bouton **Calculer**. Il reprend le montant, la durée et le taux que
-vous avez déjà saisis, en calcule l'annuité ordinaire et inscrit le résultat dans le champ — pratique pendant un
-entretien client, et cela évite la calculatrice. Le bouton reste grisé tant que le montant et la durée ne sont
-pas remplis. En l'absence de taux, il calcule un prêt sans intérêt : le montant divisé par la durée.
-
-Le bouton **écrase** la valeur existante, sans demander confirmation. C'est voulu — qui l'actionne alors qu'une
-valeur figure déjà veut précisément cela. L'enregistrement ne se fait qu'avec **Enregistrer** : une fausse
-manœuvre vous coûte un *Annuler*, pas des données.
-
-!!! warning "Il calcule un seul type d'amortissement"
-    *Calculer* donne une **annuité ordinaire et constante** : chaque mois le même montant, capital et intérêts
-    confondus. Cela vaut pour un prêt à tempérament, un crédit rénovation et la plupart des crédits
-    hypothécaires à mensualités fixes.
-
-    Cela ne vaut **pas** pour un produit dont l'amortissement évolue autrement :
-
-    - un crédit **progressif** (Crescendo) démarre avec une mensualité plus basse qui augmente ensuite — le
-      bouton y aboutit à environ un sixième de trop ;
-    - un crédit **sans amortissement** ne paie que les intérêts, la mensualité réelle est donc bien plus basse ;
-    - pour un **crédit de soudure**, le champ signifie autre chose.
-
-    Dans ces cas, laissez la valeur telle que l'organisme prêteur l'a communiquée. Le bouton ignore quel type de
-    produit vous avez devant vous — c'est pourquoi il le dit dans l'infobulle plutôt que de faire semblant.
-
 ### Parties
 
 Les professionnels concernés — agence immobilière, notaire, expert ou comptable. Pour chaque partie, vous suivez si elle est **désignée** et si le **rapport a été reçu**, avec les dates et coordonnées correspondantes.
