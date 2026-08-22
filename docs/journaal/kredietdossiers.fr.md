@@ -5,19 +5,23 @@ La rubrique **Dossiers de crédit** affiche les dossiers dans lesquels cette rel
 recherchez, et vous voulez voir immédiatement quel crédit est en cours sans devoir retourner à la liste des
 dossiers.
 
-![L'onglet Dossiers de crédit sur la fiche d'une relation : un tableau avec le numéro de dossier, le statut, le montant du crédit, la date d'introduction et la date de l'acte, l'introduction la plus récente en haut.](../images/journaal-kredietdossiers-fr.png "Les dossiers de ce client, le plus récent en haut"){ .volle-breedte }
+![L'onglet Dossiers de crédit sur la fiche d'une relation : sept dossiers les uns sous les autres, chacun avec le numéro à gauche, le montant du crédit à droite, et en dessous en gris le statut, la date d'introduction et si l'acte est déjà passé.](../images/journaal-kredietdossiers-fr.png "Les dossiers de ce client, le plus récent en haut"){ .volle-breedte }
 
 ## Ce que vous voyez
 
-| Colonne | Signification |
-|---|---|
-| **N° dossier** | Le numéro interne du dossier. |
-| **Statut** | Où en est le dossier — *Actif*, *Réalisé*, *Sans suite*… |
-| **Montant du crédit** | Le montant total de la demande. |
-| **Date d'introduction** | Quand le dossier a été introduit. La liste est triée sur cette date. |
-| **Date de l'acte** | Quand l'acte a été passé. **Vide signifie : le dossier est toujours en cours.** |
+Chaque dossier occupe sa propre ligne. En haut le **numéro de dossier** et à droite le **montant du
+crédit** ; en dessous, en gris, le reste :
 
-**Double-cliquez sur une ligne** pour ouvrir le dossier.
+**Actif · Introduit le 27/04/2026 · en cours**
+
+| Élément | Signification |
+|---|---|
+| Le **statut** | Où en est le dossier — *Actif*, *Réalisé*, *Sans suite*… |
+| **Introduit le** | Quand le dossier a été introduit. La liste est triée sur cette date, la plus récente en haut. |
+| **acte** ou **en cours** | Si l'acte a été passé, sa date figure ici. Sinon, le dossier est toujours en cours. |
+
+**Cliquez sur une ligne** pour ouvrir le dossier. Pour retrouver un dossier précis, le champ de recherche en
+haut filtre sur le numéro et le statut.
 
 ## Ce que ce n'est pas
 

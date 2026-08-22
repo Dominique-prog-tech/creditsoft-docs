@@ -4,19 +4,23 @@ Het onderdeel **Kredietdossiers** toont de dossiers waarin deze relatie als **aa
 bovenaan. Het bestaat voor één moment: de klant belt, u zoekt hem op, en u wilt meteen zien welk krediet er
 loopt zonder eerst naar de dossierlijst terug te moeten.
 
-![Het tabblad Kredietdossiers op de fiche van een relatie: een tabel met dossiernummer, status, kredietbedrag, datum indiening en datum akte, de recentste indiening bovenaan.](../images/journaal-kredietdossiers.png "De dossiers van deze klant, recentste bovenaan"){ .volle-breedte }
+![Het tabblad Kredietdossiers op de fiche van een relatie: zeven dossiers onder elkaar, elk met het dossiernummer links, het kredietbedrag rechts, en daaronder in het grijs de status, de indieningsdatum en of de akte er al is.](../images/journaal-kredietdossiers.png "De dossiers van deze klant, recentste bovenaan"){ .volle-breedte }
 
 ## Wat u ziet
 
-| Kolom | Betekenis |
-|---|---|
-| **Dossiernr.** | Het interne nummer van het dossier. |
-| **Status** | Waar het dossier staat — *Actief*, *Gerealiseerd*, *Zonder gevolg* … |
-| **Kredietbedrag** | Het totale bedrag van de aanvraag. |
-| **Datum indiening** | Wanneer het dossier is ingediend. Hierop is de lijst gesorteerd. |
-| **Datum akte** | Wanneer de akte verleden is. **Leeg betekent: het dossier loopt nog.** |
+Elk dossier staat op een eigen regel. Bovenaan het **dossiernummer** en rechts het **kredietbedrag**;
+eronder in het grijs de rest:
 
-**Dubbelklik op een regel** om het dossier te openen.
+**Actief · Ingediend 27/04/2026 · loopt nog**
+
+| Wat | Betekenis |
+|---|---|
+| De **status** | Waar het dossier staat — *Actief*, *Gerealiseerd*, *Zonder gevolg* … |
+| **Ingediend** | Wanneer het dossier is ingediend. Hierop is de lijst gesorteerd, recentste bovenaan. |
+| **akte** of **loopt nog** | Is de akte verleden, dan staat die datum er. Zo niet, dan loopt het dossier nog. |
+
+**Klik op een regel** om het dossier te openen. Zoekt u iets bepaalds, dan filtert het zoekveld bovenaan op
+dossiernummer en status.
 
 ## Wat het niet is
 
