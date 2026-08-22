@@ -97,6 +97,21 @@ De knop **overschrijft** wat er staat, zonder te vragen. Dat is met opzet — wi
 staat, wil precies dat. Bewaren gebeurt pas met **Opslaan**, dus een misklik kost u een *Annuleren* en geen
 gegevens.
 
+!!! warning "Hij rekent één soort aflossing"
+    *Bereken* geeft een **gewone, gelijkblijvende annuïteit**: elke maand hetzelfde bedrag, kapitaal en rente
+    samen. Dat klopt voor een persoonlijke lening, een renovatiekrediet en de meeste hypothecaire kredieten met
+    vaste mensualiteiten.
+
+    Het klopt **niet** bij een product waar de aflossing anders loopt:
+
+    - een **stijgend** krediet (Crescendo) begint met een lagere maandlast die daarna klimt — de knop komt daar
+      ongeveer een zesde te hoog uit;
+    - een **aflossingsvrij** krediet betaalt alleen rente, dus de werkelijke maandlast ligt veel lager;
+    - bij een **overbruggingskrediet** betekent het veld iets anders.
+
+    In die gevallen laat u het veld staan zoals de kredietverstrekker het opgaf. De knop weet niet welk soort
+    product u voor u hebt — daarom zegt hij het in de tooltip in plaats van te doen alsof.
+
 ### Partijen
 
 De betrokken professionals — immokantoor, notaris, schatter of accountant. Per partij houdt u bij of ze **aangesteld** is en of het **verslag ontvangen** is, met de bijhorende datums en contactgegevens.
