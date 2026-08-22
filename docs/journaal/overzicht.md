@@ -41,6 +41,7 @@ enkel het icoon — wijs het aan om de naam te zien. Op een fiche staan ze volui
 
 | Onderdeel | Waarvoor |
 |---|---|
+| [Kredietdossiers](kredietdossiers.md) | De dossiers van deze klant — **alleen op een relatie** |
 | [Taken](taken.md) | Wat er nog moet gebeuren, voor wie, en tegen wanneer |
 | [Notities](notities.md) | Wat u wil vastleggen zonder dat het een taak is |
 | [Bijlagen](bijlagen.md) | Documenten en bestanden bij deze fiche |

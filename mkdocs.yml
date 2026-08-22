@@ -214,6 +214,9 @@ nav:
   # vanuit die zes pagina's aangehaald — niet zes keer herhaald en zes keer bij te werken.
   - Journaal:
     - Het journaal: journaal/overzicht.md
+    # Staat vooraan omdat hij dat in de toepassing ook doet: bij een relatie is dit het eerste tabblad na de
+    # fiche zelf. Enkel op een relatie — zie de opsomming in overzicht.md.
+    - Kredietdossiers: journaal/kredietdossiers.md
     - Taken: journaal/taken.md
     - Notities: journaal/notities.md
     - Bijlagen: journaal/bijlagen.md

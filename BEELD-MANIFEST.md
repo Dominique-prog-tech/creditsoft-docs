@@ -292,6 +292,11 @@
 
 ## Journaal (`journaal/*.md`) — ✅ AFGEWERKT 16/08/2026
 
+- [x] `journaal-kredietdossiers.png` + `-fr` — GEPLAATST 22/08/2026 — het tabblad Kredietdossiers op de fiche
+      van een relatie met zeven dossiers, gesorteerd op indieningsdatum. Gekozen relatie: Dominique Michiels
+      in tenant_demo, de relatie met de meeste dossiers — bij minder dan drie rijen leest de tabel als een
+      randgeval in plaats van als het normale beeld.
+
 Zes beelden, beide talen, uit **tenant_demo** met de lade open naast de lijst Relaties.
 
 ⚠️ **De demo-tenant had nul journaal-inhoud.** Geen taak, notitie, bijlage of mail — het journaal was er dus
