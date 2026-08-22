@@ -78,7 +78,17 @@ Die knop schakelt vanzelf naar de **dagweergave**. Een hele week met een kolom p
 
 De agenda opent van 8 tot 18 uur. Wilt u andere uren, dan stelt u die zelf in bij [Mijn gegevens](../getting-started/mijn-gegevens.md) onder **Agenda vanaf** en **Agenda tot**. Laat u ze leeg, dan geldt de instelling van uw kantoor.
 
-Staat er een afspraak buiten die uren, dan toont de agenda die dag vanzelf ruimer. Een vroege of late afspraak blijft dus zichtbaar, ook als ze buiten uw eigen uren valt.
+Staat er in de **getoonde periode** een afspraak buiten die uren, dan toont de agenda ruimer. Een vroege of
+late afspraak blijft dus zichtbaar, ook als ze buiten uw eigen uren valt. Bladert u naar een week zonder zo'n
+afspraak, dan staan uw eigen uren er weer.
+
+!!! tip "Meerdaagse afspraken laten uw uren met rust"
+    Een verlof of een tweedaagse opleiding moet ook een beginuur hebben, en dat is vaak een willekeurige waarde —
+    middernacht, of twee uur 's nachts. Zulke afspraken **verruimen uw agenda niet**: ze verschijnen in de balk
+    bovenaan, over de dagen die ze beslaan, en blijven daar volledig zichtbaar.
+
+    Gaat het om **verlof**, dan hoort het eigenlijk bij [Verlof & sluitingsdagen](../beheer/afwezigheden.md).
+    Daar arceert het de agenda van iedereen, in plaats van als blok in één kolom te staan.
 
 ## Wat een online boeking in uw agenda doet
 

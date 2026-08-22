@@ -78,7 +78,17 @@ Ce bouton bascule automatiquement en **affichage journalier**. Une semaine enti�
 
 L'agenda s'ouvre de 8 à 18 heures. Si vous souhaitez d'autres heures, réglez-les vous-même dans [Mes données](../getting-started/mijn-gegevens.md) sous **Agenda à partir de** et **Agenda jusqu'à**. Si vous les laissez vides, le réglage de votre bureau s'applique.
 
-Si un rendez-vous tombe en dehors de ces heures, l'agenda élargit l'affichage ce jour-là. Un rendez-vous matinal ou tardif reste donc visible, même s'il sort de vos propres heures.
+Si un rendez-vous de la **période affichée** tombe en dehors de ces heures, l'agenda élargit l'affichage. Un
+rendez-vous matinal ou tardif reste donc visible, même s'il sort de vos propres heures. Si vous naviguez vers une
+semaine sans un tel rendez-vous, vos propres heures reviennent.
+
+!!! tip "Les rendez-vous de plusieurs jours laissent vos heures tranquilles"
+    Un congé ou une formation de deux jours doit lui aussi porter une heure de début, souvent arbitraire —
+    minuit, ou deux heures du matin. Ces rendez-vous **n'élargissent pas** votre agenda : ils apparaissent dans
+    la barre du haut, sur les jours qu'ils couvrent, et y restent entièrement visibles.
+
+    S'il s'agit d'un **congé**, sa place est en réalité sous [Congés & jours de fermeture](../beheer/afwezigheden.md).
+    Il y hachure l'agenda de tout le monde au lieu de n'occuper qu'une colonne.
 
 ## Ce qu'une réservation en ligne fait dans votre agenda
 
