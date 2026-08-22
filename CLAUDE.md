@@ -32,7 +32,11 @@ noodzakelijk technisch onderlegd.
 ## Bronnen op deze machine
 
 ### Delphi-source (read-only)
-- **Pad**: `D:\@newProjects\platform-creditsoft-delphi\`
+- **Pad**: `~/projects/platform-creditsoft-delphi` — gekloond **naast** `adm-creditsoft`, bewust niet erin.
+  > ⚠️ Hier stond tot 23/08/2026 `D:\@newProjects\platform-creditsoft-delphi\`, onder de kop "Bronnen op
+  > **deze** machine". Dat is het pad op de Parallels-VM, niet op de Mac waar de documentatie geschreven wordt.
+  > Een verkeerd pad onder die kop laat de source er onbereikbaar uitzien, en dan wordt er geraden in plaats
+  > van gelezen — precies wat de regel hieronder verbiedt.
 - **Repo**: ADM-Concept/platform-creditsoft-delphi (private)
 - **Autoritieve bron** voor: schermen, velden, validaties, foutmeldingen,
   bedrijfsregels, menu-structuur.
@@ -80,7 +84,11 @@ De docs-navigatie volgt **één-op-één de sidebar** die de gebruiker ziet:
 ### Wat NIET te documenteren
 - **`Modules\Rental\` en `Modules\Inventory\`**: verouderde modules,
   worden verwijderd uit de source. Niet documenteren.
-- **Portaal-module**: nog in ontwikkeling. Later toevoegen, niet in v1.
+- ~~**Portaal-module**: nog in ontwikkeling.~~ **Vervallen 23/08/2026** — er draaien er intussen **twee** op
+  productie: het **klantenportaal** (de eindklant levert documenten aan) en het **aanbrengersportaal**
+  (dossiers, commissies, en sinds v0.95.0 een overzichtsscherm). Wat er nog niet is: handleidingpagina's voor
+  die twee doelgroepen. Ze staan daarom als uitzondering **mét reden** in de deploy-poort; die uitzondering
+  hoort weg zodra de pagina's er zijn.
 
 ### Beschrijf wat er ís, niet wat er veranderd is
 De handleiding beschrijft **de huidige toestand**, punt. Geen "voortaan", "nieuw", "niet meer",
@@ -97,12 +105,37 @@ Uitzondering: een **datafeit** dat een gebruiker vandaag tegenkomt mag je uitleg
 geschiedenis erbij. *"Polissen waar nog geen status op staat"* — niet *"polissen die uit het vorige
 programma zijn overgekomen zonder status"*.
 
+### Een nieuwe FUNCTIE op een bestaand scherm valt buiten elke controle
+De bouw bewaakt **nieuwe schermen**: een route zonder help-entry, een help-entry zonder handleidingpagina in
+NL én FR, een pagina die niet in de nav staat — dat wordt allemaal rood. Maar een **knop, een blok of een
+kolom die je aan een bestaand scherm toevoegt** raakt geen enkele van die controles. Het scherm had immers al
+een help-entry en al een handleidingpagina.
+
+**Dus: voeg je iets toe aan een scherm dat al bestaat, ga dan zélf naar de handleidingpagina van dat scherm.**
+Er is geen test die je eraan herinnert, en die komt er ook niet — een controle die zou moeten raden welke
+wijziging "een functie" is en welke een correctie, geeft vals alarm tot niemand er nog naar kijkt.
+
+**Waarom deze regel er staat.** Op 22/08/2026 ging het op één dag twee keer mis: het signaalblok op het
+dashboard en een Bereken-knop op de kredietdossierfiche stonden in géén enkele handleidingpagina. Allebei
+nieuwe functies op bestaande schermen, allebei door alle controles heen gegleden. Dominique vond het zelf, en
+zijn vraag was terecht: *"moet ik dan echt iedere keer alles controleren?"*
+
+Dezelfde regel geldt voor de **zijlade**: een nieuw blok op een bestaand scherm hoort in de help-entry van dat
+scherm bijgeschreven, niet enkel in de handleiding.
+
 ## Vaktermen die uitleg verdienen
 
 Deze termen komen vaak voor en horen in `docs/concepten/begrippenlijst.md`:
 
 - **LOA** (Letter of Acceptance / Toezeggingsbrief)
-- **SSV** (waarschijnlijk Sociale Schuldenvergelijking of Schuldsanering — bevestigen)
+- **SSV** = **schuldsaldoverzekering** (FR: *assurance solde restant dû*). De verzekering die de openstaande
+  schuld aflost bij overlijden van de kredietnemer.
+  > ⚠️ Hier stond tot 23/08/2026 *"waarschijnlijk Sociale Schuldenvergelijking of Schuldsanering —
+  > bevestigen"*. Allebei fout. Bevestigd uit drie onafhankelijke bronnen: de Delphi-source kent
+  > `schuldsaldoverzekering` en `schuldsaldopolis`, een SSV-contract in onze eigen code wijst naar een
+  > **verzekeraar**, en de productenlijst van een echte tenant bevat *100% SSV Hypo Protect Classic* en
+  > *SSV AG Insurance of Cardif*. Een gok met "bevestigen" erbij is de gevaarlijkste vorm: niemand voelt zich
+  > aangesproken, en na een tijd leest ze als een feit.
 - **Akte** (notariële akte bij hypothecair krediet)
 - **Tussenpersoon** (kredietbemiddelaar, niet hetzelfde als accountant of makelaar)
 - **Schatter / schatting** (vastgoedschatter, waarderingsdocument)
