@@ -164,6 +164,7 @@ plugins:
             Online afspraken: Rendez-vous en ligne
             Vragenlijst vooraf: Questionnaire préalable
             Dashboard-fases: Phases du tableau de bord
+            Uw publieke pagina's: Vos pages publiques
             Verlof & sluitingsdagen: Congés & jours de fermeture
             Keuzelijsten: Listes de choix
             Documenttypes: Types de documents
@@ -270,6 +271,7 @@ nav:
     - Prullenbak: administration/recycle-bin.md
     - Actielogboek: administration/activity-log.md
     - Dashboard-fases: beheer/dashboard-fases.md
+    - Uw publieke pagina's: beheer/kantoorprofiel.md
     - Verlof & sluitingsdagen: beheer/afwezigheden.md
     - Keuzelijsten: beheer/keuzelijsten.md
     - Documenttypes: beheer/documenttypes.md
