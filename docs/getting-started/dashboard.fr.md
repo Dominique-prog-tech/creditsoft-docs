@@ -25,6 +25,28 @@ Vous indiquez uniquement **ce que signifie un statut de contrat** : *réalisé*,
 !!! tip "Des tirets au lieu de chiffres ?"
     C'est qu'aucun statut de contrat ne porte encore de signification. Vous voyez un tiret et non un zéro, car zéro signifierait qu'il n'y a réellement rien à compter. Sous les tuiles, une phrase vous mène au réglage.
 
+## Ce qui arrive à échéance
+
+Sous les quatre tuiles figurent deux blocs qui indiquent ce qui **demande une action aujourd'hui** : *Délai
+dépassé* et *Délai proche*. Ils examinent quatre dates d'un dossier de crédit — la date limite pour signer
+l'**offre**, pour passer l'**acte**, l'échéance des **conditions suspensives**, et la validité du **certificat
+PEB**.
+
+Chaque ligne indique le client, le type de délai et sa date. Un clic vous mène au dossier.
+
+Seuls les dossiers **en cours** sont pris en compte : si le statut d'un dossier relève d'une phase finale, il
+disparaît de ces blocs. Un dossier dont le statut n'est classé nulle part y reste — non classé ne prouve pas
+qu'un dossier est terminé.
+
+!!! tip "L'horizon, c'est vous qui le choisissez"
+    Quatorze jours par défaut. Vous le modifiez sous **Gestion &rarr; Phases du tableau de bord**.
+
+**Les délais dépassés restent toujours visibles**, même anciens. C'est voulu : un délai échu depuis des mois sur
+un dossier encore en cours n'est pas du bruit mais une trouvaille — soit le statut est erroné, soit le dossier
+est à l'arrêt. Chaque bloc affiche les huit plus récents et indique combien il en reste.
+
+Rien à signaler ? Le bloc le dit, au lieu de rester vide.
+
 ## Le pipeline : les dossiers par phase
 
 Sous les tuiles, vos dossiers sont regroupés par **phase**. Une phase est un groupe de statuts que vous composez vous-même — par exemple *En traitement*, *Introduit*, *Finalisé*.

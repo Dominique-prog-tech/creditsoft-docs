@@ -88,6 +88,15 @@ De kredietcontracten onder dit dossier. De lijst toont nummer, product, status, 
 
 Het contractvenster past zich aan de **productsoort** aan: bij een gewoon krediet vraagt het producttype, rentevoet, variabiliteit en maandlast, bij een schuldsaldoverzekering komen daar premie, type en periodiciteit bij, plus het aanvinken van wie verzekerd is.
 
+Naast **Maandlast** staat een knop **Bereken**. Die neemt het bedrag, de looptijd en de rentevoet die u er al
+invulde, rekent er de gewone annuïteit uit en zet het resultaat in het veld — handig tijdens een klantgesprek,
+en het scheelt de rekenmachine ernaast. De knop blijft grijs tot bedrag én looptijd ingevuld zijn. Is er geen
+rentevoet, dan rekent hij met een renteloze lening: bedrag gedeeld door looptijd.
+
+De knop **overschrijft** wat er staat, zonder te vragen. Dat is met opzet — wie erop duwt terwijl er al iets
+staat, wil precies dat. Bewaren gebeurt pas met **Opslaan**, dus een misklik kost u een *Annuleren* en geen
+gegevens.
+
 ### Partijen
 
 De betrokken professionals — immokantoor, notaris, schatter of accountant. Per partij houdt u bij of ze **aangesteld** is en of het **verslag ontvangen** is, met de bijhorende datums en contactgegevens.

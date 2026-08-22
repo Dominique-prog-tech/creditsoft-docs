@@ -25,6 +25,28 @@ U geeft alleen aan **wat een contractstatus betekent**: *gerealiseerd*, *in te d
 !!! tip "Staan er streepjes in plaats van cijfers?"
     Dan draagt nog geen enkele contractstatus een betekenis. U ziet een streepje en geen nul, want nul zou betekenen dat er echt niets te tellen valt. Onder de tegels staat een zin die u naar de instelling brengt.
 
+## Wat er afloopt
+
+Onder de vier tegels staan twee blokken die zeggen wat er **vandaag actie vraagt**: *Termijn verstreken* en
+*Termijn nadert*. Ze kijken naar vier datums op een kredietdossier — de uiterste datum om de **offerte** te
+tekenen, om de **akte** te verlijden, de vervaldag van de **opschortende voorwaarden**, en tot wanneer het
+**EPC-attest** geldig is.
+
+Per regel ziet u de klant, over welke termijn het gaat en wanneer die valt. Klik erop en u staat op het dossier.
+
+Alleen dossiers die **nog lopen** tellen mee: staat de status van een dossier in een eindfase, dan verdwijnt het
+uit deze blokken. Een dossier waarvan de status nergens is ingedeeld blijft er wél in staan — niet-ingedeeld is
+geen bewijs dat een dossier af is.
+
+!!! tip "Hoever het vooruitkijkt, kiest u zelf"
+    Standaard veertien dagen. U verzet dat bij **Beheer &rarr; Dashboard-fases**.
+
+**Verstreken termijnen blijven altijd staan**, ook oudere. Dat is met opzet: een termijn die maanden geleden
+verliep op een dossier dat nog loopt, is geen ruis maar een vondst — ofwel klopt de status niet, ofwel ligt het
+dossier stil. Elk blok toont de acht meest recente en zegt hoeveel er nog achter zitten.
+
+Staat er niets? Dan zegt het blok dat, in plaats van leeg te blijven.
+
 ## De pijplijn: dossiers per fase
 
 Onder de tegels staan uw dossiers gegroepeerd per **fase**. Een fase is een groep statussen die u zelf samenstelt — bijvoorbeeld *In behandeling*, *Ingediend*, *Afgewerkt*.
