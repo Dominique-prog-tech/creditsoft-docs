@@ -41,8 +41,9 @@ De **nota** is vrij en optioneel — handig voor "bereikbaar per mail" of "verva
 
 ## Wettelijke feestdagen hoeft u niet in te voeren
 
-Nieuwjaar, Pasen, 21 juli en de andere zijn voor elk kantoor gelijk. Die komen centraal en verschijnen vanzelf;
-u hoeft er niets voor te doen en u kunt ze hier ook niet aanpassen.
+Nieuwjaar, Pasen, 21 juli en de andere zijn voor elk kantoor gelijk. **Ze staan er al** — de agenda arceert ze
+net als een sluitingsdag, en ze schuiven elk jaar vanzelf mee. Drie ervan hangen aan Pasen en verspringen dus
+per jaar; ook dat gebeurt zonder dat u er iets voor doet. U kunt ze hier niet aanpassen, en dat hoeft ook niet.
 
 Wat u hier wél zet, is wat **uw** kantoor eigen is: een brugdag na Hemelvaart, de week tussen Kerst en
 Nieuwjaar, bouwverlof.

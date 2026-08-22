@@ -43,8 +43,10 @@ La **note** est libre et facultative — pratique pour « joignable par e-mail �
 
 ## Vous ne devez pas encoder les jours fériés légaux
 
-Le Nouvel An, Pâques, le 21 juillet et les autres sont identiques pour chaque bureau. Ils proviennent de la
-source centrale et apparaissent d'eux-mêmes ; vous n'avez rien à faire et vous ne pouvez pas les modifier ici.
+Le Nouvel An, Pâques, le 21 juillet et les autres sont identiques pour chaque bureau. **Ils y figurent déjà** —
+l'agenda les hachure comme un jour de fermeture, et ils se décalent d'eux-mêmes chaque année. Trois d'entre eux
+dépendent de Pâques et changent donc de date chaque année ; cela aussi se fait sans intervention. Vous ne pouvez
+pas les modifier ici, et ce n'est pas nécessaire.
 
 Ce que vous encodez ici est propre à **votre** bureau : un pont après l'Ascension, la semaine entre Noël et
 Nouvel An, le congé du bâtiment.
