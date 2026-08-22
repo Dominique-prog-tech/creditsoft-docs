@@ -19,7 +19,7 @@ rij aan, dan volgt de lade mee. U hoeft de fiche dus niet te openen om te zien w
 
 Staat er nog niets geselecteerd, dan vraagt de lade u eerst een rij te kiezen.
 
-![De lijst Relaties met rechts de journaal-lade open op het onderdeel Taken; de geselecteerde rij links en de inhoud van de lade rechts horen bij elkaar.](../images/journaal-lade.png "De journaal-lade naast de lijst")
+![De lijst Relaties met rechts de journaal-lade, open op het onderdeel Kredietdossiers met drie dossiers van de gekozen klant; de geselecteerde rij links en de inhoud van de lade rechts horen bij elkaar.](../images/journaal-lade.png "De journaal-lade naast de lijst")
 
 !!! tip "De hoogte is instelbaar"
     U kunt de lade hoger of lager slepen aan de rand. Die keuze blijft bewaard voor de volgende keer.
@@ -42,6 +42,8 @@ enkel het icoon — wijs het aan om de naam te zien. Op een fiche staan ze volui
 | Onderdeel | Waarvoor |
 |---|---|
 | [Kredietdossiers](kredietdossiers.md) | De dossiers van deze klant — **alleen op een relatie** |
+
+> De lade opent op het **eerste** onderdeel uit deze lijst. Bij een relatie is dat *Kredietdossiers*.
 | [Taken](taken.md) | Wat er nog moet gebeuren, voor wie, en tegen wanneer |
 | [Notities](notities.md) | Wat u wil vastleggen zonder dat het een taak is |
 | [Bijlagen](bijlagen.md) | Documenten en bestanden bij deze fiche |

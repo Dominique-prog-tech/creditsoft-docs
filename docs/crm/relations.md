@@ -25,8 +25,12 @@ De tabel toont per relatie: **naam**, **type**, **e-mail**, **telefoon**, **geme
 ### Journaal
 
 Rechts op het scherm zit de lade **Journaal**. Selecteer een relatie en klap ze open: daar staat wat er rond
-die fiche gebeurt — [taken](../journaal/taken.md), [notities](../journaal/notities.md), [bijlagen](../journaal/bijlagen.md),
+die fiche gebeurt — de [kredietdossiers](../journaal/kredietdossiers.md) van deze klant,
+[taken](../journaal/taken.md), [notities](../journaal/notities.md), [bijlagen](../journaal/bijlagen.md),
 [mailverkeer](../journaal/mailverkeer.md) en het [logboek](../journaal/logboek.md) van de wijzigingen.
+
+Het onderdeel **Kredietdossiers** staat alleen bij een relatie: het toont de dossiers waarin die persoon als
+aanvrager staat, recentste bovenaan. Belt een klant, dan gaat u van zijn fiche rechtstreeks naar zijn dossier.
 
 Opent u de fiche, dan staan dezelfde onderdelen bovenaan als **tabbladen** — u hoeft dus niet terug
 naar de lijst om ze te raadplegen. Lade en tabbladen tonen hetzelfde en werken op elk scherm gelijk;

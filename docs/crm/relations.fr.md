@@ -25,9 +25,14 @@ Le tableau affiche par relation : **nom**, **type**, **e-mail**, **téléphone**
 ### Journal
 
 À droite de l'écran se trouve le tiroir **Journal**. Sélectionnez une relation et ouvrez-le : vous y trouvez ce
-qui se passe autour de cette fiche — [tâches](../journaal/taken.md), [notes](../journaal/notities.md),
+qui se passe autour de cette fiche — les [dossiers de crédit](../journaal/kredietdossiers.md) de ce client,
+les [tâches](../journaal/taken.md), [notes](../journaal/notities.md),
 [pièces jointes](../journaal/bijlagen.md), [courrier](../journaal/mailverkeer.md) et l'[historique](../journaal/logboek.md)
 des modifications.
+
+La rubrique **Dossiers de crédit** ne figure que sur une relation : elle affiche les dossiers dans lesquels
+cette personne est demandeur, le plus récent en haut. Quand un client appelle, vous passez de sa fiche
+directement à son dossier.
 
 Lorsque vous ouvrez la fiche, les mêmes parties figurent en haut sous forme d'**onglets** — vous ne devez
 donc pas revenir à la liste pour les consulter. Le tiroir et les onglets affichent la même chose et
