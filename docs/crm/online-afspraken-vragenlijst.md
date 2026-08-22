@@ -15,6 +15,20 @@ Zodra iemand een moment boekt, zet CreditSoft een pagina met uw vragen klaar en 
 
 De pagina blijft geldig tot het begin van de afspraak. Daarna heeft ze geen zin meer.
 
+## Twee plaatsen, één die wint
+
+Een vragenlijst kan op **twee** plaatsen staan:
+
+- bij **één kantoor** — dat is dit scherm;
+- op uw **kantoorprofiel** ([Beheer → Uw publieke pagina's](../beheer/kantoorprofiel.md)), en dan geldt ze voor
+  al uw publieke pagina's.
+
+Staat er op allebei een lijst, dan krijgt de bezoeker die van het **kantoorprofiel** te zien.
+
+Bovenaan dit scherm leest u wat er werkelijk gebeurt: óf dat dit de lijst is die uw bezoeker krijgt, óf dat ze
+niet gebruikt wordt. In dat tweede geval blijft wat u hier bewaart gewoon bewaard — het verschijnt alleen
+nergens zolang het kantoorprofiel een eigen lijst draagt.
+
 ## De zin in de mail staat bovenaan, en dat is met opzet
 
 **Zonder die zin en die knoptekst komt er géén link in de mail** — ook al staan uw vragen klaar. Er wordt niets voor u verzonnen: die mail draagt uw naam en uw logo, dus de woorden erin zijn de uwe.

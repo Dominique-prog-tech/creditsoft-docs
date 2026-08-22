@@ -15,6 +15,20 @@ Dès que quelqu'un réserve un moment, CreditSoft prépare une page avec vos que
 
 La page reste valable jusqu'au début du rendez-vous. Ensuite, elle n'a plus de sens.
 
+## Deux endroits, un seul qui l'emporte
+
+Un questionnaire peut figurer à **deux** endroits :
+
+- sur **un bureau** — c'est cet écran ;
+- sur votre **profil de bureau** ([Gestion → Vos pages publiques](../beheer/kantoorprofiel.md)), et il vaut
+  alors pour toutes vos pages publiques.
+
+Si un questionnaire figure aux deux endroits, c'est celui du **profil de bureau** que le visiteur voit.
+
+En haut de cet écran, vous lisez ce qui se passe réellement : soit qu'il s'agit bien de la liste que votre
+visiteur verra, soit qu'elle n'est pas utilisée. Dans ce second cas, ce que vous enregistrez ici reste
+conservé — cela n'apparaît simplement nulle part tant que le profil de bureau porte sa propre liste.
+
 ## La phrase de l'e-mail figure en haut, et c'est délibéré
 
 **Sans cette phrase et ce texte de bouton, aucun lien ne figure dans l'e-mail** — même si vos questions sont prêtes. Rien n'est inventé à votre place : cet e-mail porte votre nom et votre logo, les mots qu'il contient sont donc les vôtres.
