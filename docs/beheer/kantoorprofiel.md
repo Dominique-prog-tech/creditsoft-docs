@@ -19,8 +19,24 @@ opent, en dan is het te laat om het nog rustig bij te stellen.
 | **Teksten** | De begroeting en de uitleg die de bezoeker leest. |
 | **Telefoon, website, afzendernaam** | Wat er in de bevestigingsmail en op de pagina staat. |
 | **Privacyverklaring** | Zie hieronder. |
-| **Vragenlijst** | De vragen die een bezoeker beantwoordt vóór hij bevestigt. |
+| **Vragenlijst** | ⚠️ Niet hier invullen — zie hieronder. |
 | **Inbeddomeinen** | Zie hieronder. |
+
+## De vragenlijst stelt u elders samen
+
+Onderaan dit scherm staan twee velden met **(JSON)** in het opschrift. **Gebruik die niet.** Ze zijn bedoeld
+voor technisch beheer, niet om een vragenlijst mee samen te stellen.
+
+Uw vragenlijst maakt u bij **CRM → Online afspraken**, bij het kantoor waarvoor ze geldt: daar voegt u vragen
+toe, herschikt u ze en typt u ze in het Nederlands en het Frans naast elkaar. Zie
+[Vragenlijst vooraf](../crm/online-afspraken-vragenlijst.md).
+
+!!! warning "Staat er hier tóch iets, dan wint dat"
+    Vult iemand die JSON-velden in, dan krijgt uw bezoeker díe lijst te zien en niet de lijst die u bij Online
+    afspraken samenstelde. Uw editor waarschuwt u daar wel voor, maar u kunt het gedoe missen door hier gewoon
+    niets in te vullen.
+
+Dat er twee plaatsen zijn voor dezelfde vragenlijst is niet de bedoeling. Het wordt herbekeken.
 
 ## Uw pagina op uw eigen website
 

@@ -19,8 +19,24 @@ visiteur ouvre la page — et il est alors trop tard pour l'ajuster tranquilleme
 | **Textes** | Le message d'accueil et les explications que lit le visiteur. |
 | **Téléphone, site web, nom d'expéditeur** | Ce qui figure dans l'e-mail de confirmation et sur la page. |
 | **Déclaration de confidentialité** | Voir ci-dessous. |
-| **Questionnaire** | Les questions auxquelles un visiteur répond avant de confirmer. |
+| **Questionnaire** | ⚠️ À ne pas remplir ici — voir ci-dessous. |
 | **Domaines d'intégration** | Voir ci-dessous. |
+
+## Le questionnaire se compose ailleurs
+
+En bas de cet écran figurent deux champs dont l'intitulé comporte **(JSON)**. **Ne les utilisez pas.** Ils sont
+destinés à la gestion technique, pas à composer un questionnaire.
+
+Votre questionnaire se crée sous **CRM → Rendez-vous en ligne**, sur le bureau auquel il s'applique : vous y
+ajoutez des questions, les réorganisez et les saisissez en néerlandais et en français côte à côte. Voir
+[Questionnaire préalable](../crm/online-afspraken-vragenlijst.md).
+
+!!! warning "Si quelque chose y figure malgré tout, c'est cela qui l'emporte"
+    Si quelqu'un remplit ces champs JSON, votre visiteur verra cette liste-là et non celle que vous avez composée
+    sous Rendez-vous en ligne. Votre éditeur vous en avertit, mais vous évitez tout le problème en ne remplissant
+    simplement rien ici.
+
+Le fait qu'il existe deux endroits pour le même questionnaire n'est pas voulu. Cela sera revu.
 
 ## Votre page sur votre propre site
 
