@@ -90,38 +90,22 @@ De docs-navigatie volgt **één-op-één de sidebar** die de gebruiker ziet:
   die twee doelgroepen. Ze staan daarom als uitzondering **mét reden** in de deploy-poort; die uitzondering
   hoort weg zodra de pagina's er zijn.
 
-### Beschrijf wat er ís, niet wat er veranderd is
-De handleiding beschrijft **de huidige toestand**, punt. Geen "voortaan", "nieuw", "niet meer",
-"vroeger waren dat aparte lijsten", "overgekomen uit het vorige programma" — en ook geen impliciete
-vergelijking zoals "de fiche is een pagina, **geen venster over de lijst heen**". Frans idem:
-*désormais*, *auparavant*, *l'ancien programme*.
+### De schrijfregels staan in de AppKit, niet hier
 
-**Waarom:** wie de handleiding leest kent de vorige versie niet, of niet meer. Een verandering is
-nieuws op het moment dat ze gebeurt — dat hoort in de **release notes**, die daar precies voor
-bestaan. In de handleiding veroudert zo'n zin stil: over een jaar staat er "voortaan" bij iets dat
-er al twaalf maanden zo uitziet.
+**Bron: `~/projects/adm-appkit/docs/handleiding-schrijfregels.md`.** Lees dat vóór je aan een pagina begint.
 
-Uitzondering: een **datafeit** dat een gebruiker vandaag tegenkomt mag je uitleggen, maar zonder de
-geschiedenis erbij. *"Polissen waar nog geen status op staat"* — niet *"polissen die uit het vorige
-programma zijn overgekomen zonder status"*.
+Daar staan de regels die voor CreditSoft, Nimble én CleanOps gelden — beschrijf wat er ís (met de impliciete
+vergelijking als valstrik), een nieuwe functie op een bestaand scherm ontsnapt aan elke controle, release notes
+beloven enkel wat een tester kan bereiken, beelden per taal en altijd allemaal hernemen, en de drie gates bij
+een vrijgave.
 
-### Een nieuwe FUNCTIE op een bestaand scherm valt buiten elke controle
-De bouw bewaakt **nieuwe schermen**: een route zonder help-entry, een help-entry zonder handleidingpagina in
-NL én FR, een pagina die niet in de nav staat — dat wordt allemaal rood. Maar een **knop, een blok of een
-kolom die je aan een bestaand scherm toevoegt** raakt geen enkele van die controles. Het scherm had immers al
-een help-entry en al een handleidingpagina.
+> ⚠️ **Kopieer die regels hier niet naartoe.** Ze stonden tot 23/08/2026 volledig in dít bestand. Toen Dominique
+> vroeg of Nimble dezelfde regels kon hanteren, was de verleiding om ze over te zetten — en dat is precies hoe
+> het playbook uiteenliep tot 224 regels tegen 478 zonder dat iemand het verschil kon zien. Eén bron, drie
+> lezers.
 
-**Dus: voeg je iets toe aan een scherm dat al bestaat, ga dan zélf naar de handleidingpagina van dat scherm.**
-Er is geen test die je eraan herinnert, en die komt er ook niet — een controle die zou moeten raden welke
-wijziging "een functie" is en welke een correctie, geeft vals alarm tot niemand er nog naar kijkt.
-
-**Waarom deze regel er staat.** Op 22/08/2026 ging het op één dag twee keer mis: het signaalblok op het
-dashboard en een Bereken-knop op de kredietdossierfiche stonden in géén enkele handleidingpagina. Allebei
-nieuwe functies op bestaande schermen, allebei door alle controles heen gegleden. Dominique vond het zelf, en
-zijn vraag was terecht: *"moet ik dan echt iedere keer alles controleren?"*
-
-Dezelfde regel geldt voor de **zijlade**: een nieuw blok op een bestaand scherm hoort in de help-entry van dat
-scherm bijgeschreven, niet enkel in de handleiding.
+Wat hierboven staat over **stijl** (u-vorm, korte zinnen, geen IT-jargon) is wél CreditSoft-eigen en blijft hier:
+het gaat over onze doelgroep, niet over de vloot.
 
 ## Vaktermen die uitleg verdienen
 
