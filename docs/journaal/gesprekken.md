@@ -45,8 +45,7 @@ De gesprekken staan onder elkaar, het recentste bovenaan. Per gesprek ziet u het
 resultaat als label, en daaronder het verslag. De grijze regel eronder zegt wanneer het gesprek plaatsvond, wie
 het voerde en wie het noteerde.
 
-Staat er geen uur bij de datum, dan komt het gesprek uit de vorige versie van CreditSoft en is enkel de dag
-bewaard.
+Staat er geen uur bij de datum, dan is van dat gesprek enkel de dag bewaard.
 
 ## Aanpassen of verwijderen
 

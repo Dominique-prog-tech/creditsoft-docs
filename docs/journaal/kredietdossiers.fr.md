@@ -37,5 +37,5 @@ Deux messages distincts, au sens différent :
 
 - *« Cette relation ne figure dans aucun dossier de crédit. »* — il n'y en a pas, et c'est exact.
 - *« Cette relation n'est pas encore liée à des dossiers de la version précédente. »* — la relation ne porte
-  pas encore de numéro de l'ancienne plateforme. Les dossiers de cette période ne peuvent donc pas lui être
-  rattachés. C'est une question de reprise des données, pas de cette fiche.
+  pas encore de numéro de liaison. Sans ce numéro, CreditSoft ne peut rattacher aucun dossier existant à cette
+  relation. C'est une question de reprise des données, pas de cette fiche.

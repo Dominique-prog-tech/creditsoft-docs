@@ -20,7 +20,7 @@ De gekleurde tegels tellen **contracten**, niet dossiers. Elke tegel is een comb
 U geeft alleen aan **wat een contractstatus betekent**: *gerealiseerd*, *in te dienen* of *ingediend*. Dat doet u onder [Platformbeheer → Dashboard-fases](../beheer/dashboard-fases.md), onderaan bij *Contractstatussen*. Statussen zonder betekenis tellen nergens mee.
 
 !!! info "Waarom telt maar één tegel per jaar?"
-    Boven de tegels staan pijltjes om van jaar te wisselen. Alleen **Aktes** volgt dat jaar: die telt op de datum van de akte, en die datum is bekend. De drie andere tegels tellen alles wat er ooit is ingegeven, omdat de datums van de contracten nog uit het vorige programma moeten worden overgezet. Het label onder elke tegel zegt zelf over welke periode ze gaat — *2026* of *alle jaren* — zodat u vier cijfers niet per ongeluk als vier jaarcijfers leest.
+    Boven de tegels staan pijltjes om van jaar te wisselen. Alleen **Aktes** volgt dat jaar: die telt op de datum van de akte, en die datum is bekend. De drie andere tegels tellen alles wat er ooit is ingegeven, omdat de datums van die contracten nog niet allemaal ingevuld zijn. Het label onder elke tegel zegt zelf over welke periode ze gaat — *2026* of *alle jaren* — zodat u vier cijfers niet per ongeluk als vier jaarcijfers leest.
 
 !!! tip "Staan er streepjes in plaats van cijfers?"
     Dan draagt nog geen enkele contractstatus een betekenis. U ziet een streepje en geen nul, want nul zou betekenen dat er echt niets te tellen valt. Onder de tegels staat een zin die u naar de instelling brengt.

@@ -19,9 +19,9 @@ Avec **Collaborateurs** en haut, vous cochez qui vous souhaitez voir. Si vous ne
 !!! tip "Cocher deux noms affiche les deux agendas"
     Si vous cochez Jan *et* Piet, vous voyez les rendez-vous de Jan *et* ceux de Piet — pas uniquement ceux où ils figurent ensemble.
 
-La pastille grise **Sans responsable** rassemble les rendez-vous issus de l'ancien programme dont on ne peut plus déterminer à qui ils appartenaient. Vous pouvez les ouvrir et y désigner quelqu'un après coup.
+La pastille grise **Sans responsable** rassemble les rendez-vous dont on ne sait pas à qui ils appartiennent. Vous pouvez les ouvrir et y désigner quelqu'un après coup.
 
-La pastille **ambre** **Via la page de réservation** est nouvelle : ce sont les rendez-vous qu'un visiteur a réservés lui-même sur votre [page de réservation](online-afspraken.md). Ils sont hachurés tant qu'aucun collaborateur n'y figure — voir [Ce qu'une réservation en ligne fait dans votre agenda](#ce-quune-reservation-en-ligne-fait-dans-votre-agenda).
+La pastille **ambre** **Via la page de réservation** rassemble les rendez-vous qu'un visiteur a réservés lui-même sur votre [page de réservation](online-afspraken.md). Ils sont hachurés tant qu'aucun collaborateur n'y figure — voir [Ce qu'une réservation en ligne fait dans votre agenda](#ce-quune-reservation-en-ligne-fait-dans-votre-agenda).
 
 ## Créer un rendez-vous
 

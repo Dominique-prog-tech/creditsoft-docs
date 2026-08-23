@@ -21,7 +21,7 @@ U kunt later altijd **nieuwe herstelcodes** aanmaken via hetzelfde scherm; de ou
 
 ## Aanmelden met tweestapsverificatie
 
-Vanaf nu vraagt CreditSoft na uw gebruikersnaam en wachtwoord een extra stap: **voer de code uit uw authenticator-app in** en klik op **Verifiëren**.
+Staat tweestapsverificatie aan, dan vraagt CreditSoft na uw gebruikersnaam en wachtwoord een extra stap: **voer de code uit uw authenticator-app in** en klik op **Verifiëren**.
 
 Hebt u uw app niet bij de hand? Klik dan op **App niet beschikbaar? Gebruik een herstelcode** en voer een van uw bewaarde herstelcodes in.
 

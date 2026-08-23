@@ -21,7 +21,7 @@ Vous pouvez à tout moment générer de **nouveaux codes de récupération** via
 
 ## Se connecter avec la vérification en deux étapes
 
-Désormais, après votre nom d'utilisateur et votre mot de passe, CreditSoft demande une étape supplémentaire : **saisissez le code de votre application d'authentification** et cliquez sur **Vérifier**.
+Lorsque la vérification en deux étapes est active, CreditSoft demande une étape supplémentaire après votre nom d'utilisateur et votre mot de passe : **saisissez le code de votre application d'authentification** et cliquez sur **Vérifier**.
 
 Vous n'avez pas votre application à portée de main ? Cliquez alors sur **Application indisponible ? Utilisez un code de récupération** et saisissez l'un de vos codes de récupération conservés.
 

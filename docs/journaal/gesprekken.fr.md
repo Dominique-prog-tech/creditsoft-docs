@@ -46,8 +46,7 @@ Les appels figurent les uns sous les autres, le plus récent en haut. Pour chaqu
 sens et le résultat sous forme d'étiquettes, puis le compte rendu. La ligne grise en dessous indique quand
 l'appel a eu lieu, qui l'a mené et qui l'a noté.
 
-Si la date ne porte pas d'heure, l'appel provient de la version précédente de CreditSoft et seul le jour a été
-conservé.
+Si la date ne porte pas d'heure, seul le jour de cet appel a été conservé.
 
 ## Modifier ou supprimer
 

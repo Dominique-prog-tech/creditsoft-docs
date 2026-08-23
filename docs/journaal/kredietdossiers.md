@@ -35,5 +35,5 @@ Twee verschillende meldingen, met een verschillende betekenis:
 
 - *"Deze relatie staat in geen enkel kredietdossier."* — er is niets, en dat klopt.
 - *"Deze relatie is nog niet gekoppeld aan dossiers uit de vorige versie."* — de relatie draagt nog geen
-  nummer uit het oude platform. Dossiers uit die periode kunnen dan niet aan haar gekoppeld worden. Dat is een
-  kwestie van de overzetting, niet van deze fiche.
+  koppelnummer. Zonder dat nummer kan CreditSoft geen bestaande dossiers aan haar hangen. Dat is een kwestie
+  van de gegevensovername, niet van deze fiche.

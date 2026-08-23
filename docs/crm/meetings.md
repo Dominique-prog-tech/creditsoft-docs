@@ -19,9 +19,9 @@ Met **Medewerkers** bovenaan vinkt u aan wie u wil zien. Vinkt u niemand aan, da
 !!! tip "Twee namen aanvinken toont beide agenda's"
     Vinkt u Jan én Piet aan, dan ziet u de afspraken van Jan *en* die van Piet — niet enkel die waar ze samen op staan.
 
-Het grijze bolletje **Zonder verantwoordelijke** verzamelt de afspraken die uit het vorige programma kwamen en waarvan niet meer te achterhalen is van wie ze waren. U kan ze aanklikken en er alsnog iemand op zetten.
+Het grijze bolletje **Zonder verantwoordelijke** verzamelt de afspraken waarvan niet bekend is van wie ze zijn. U kan ze aanklikken en er alsnog iemand op zetten.
 
-Het **amberkleurige** bolletje **Via de boekingspagina** is nieuw: dat zijn afspraken die een bezoeker zelf geboekt heeft op uw [boekingspagina](online-afspraken.md). Ze staan in strepen zolang er nog geen medewerker op staat — zie [Wat een online boeking in uw agenda doet](#wat-een-online-boeking-in-uw-agenda-doet).
+Het **amberkleurige** bolletje **Via de boekingspagina** verzamelt de afspraken die een bezoeker zelf geboekt heeft op uw [boekingspagina](online-afspraken.md). Ze staan in strepen zolang er nog geen medewerker op staat — zie [Wat een online boeking in uw agenda doet](#wat-een-online-boeking-in-uw-agenda-doet).
 
 ## Een afspraak maken
 
