@@ -34,6 +34,7 @@ dossiernummer en status.
 Twee verschillende meldingen, met een verschillende betekenis:
 
 - *"Deze relatie staat in geen enkel kredietdossier."* — er is niets, en dat klopt.
-- *"Deze relatie is nog niet gekoppeld aan dossiers uit de vorige versie."* — de relatie draagt nog geen
-  koppelnummer. Zonder dat nummer kan CreditSoft geen bestaande dossiers aan haar hangen. Dat is een kwestie
-  van de gegevensovername, niet van deze fiche.
+- *"Deze relatie is nog niet gekoppeld aan bestaande dossiers."* —
+  hier is niet *niets gevonden* — hier kon niet gezocht worden. Er kan dus wel een dossier bestaan dat nog
+  niet aan deze fiche vasthangt. Dat is een kwestie van de gegevensovername, niet van iets dat u hier moet
+  invullen.

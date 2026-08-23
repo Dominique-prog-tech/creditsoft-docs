@@ -36,6 +36,6 @@ haut filtre sur le numéro et le statut.
 Deux messages distincts, au sens différent :
 
 - *« Cette relation ne figure dans aucun dossier de crédit. »* — il n'y en a pas, et c'est exact.
-- *« Cette relation n'est pas encore liée à des dossiers de la version précédente. »* — la relation ne porte
-  pas encore de numéro de liaison. Sans ce numéro, CreditSoft ne peut rattacher aucun dossier existant à cette
-  relation. C'est une question de reprise des données, pas de cette fiche.
+- *« Cette relation n'est pas encore liée à des dossiers existants. »* — la recherche n'a pas eu lieu : un
+  dossier peut exister sans être encore rattaché à cette fiche. C'est une question de reprise des données, pas
+  de quelque chose à compléter ici.
