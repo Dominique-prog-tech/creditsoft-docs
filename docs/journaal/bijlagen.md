@@ -16,19 +16,20 @@ Klik **Toevoegen**. In het venster dat opent:
    opladen; ze verschijnen in een lijstje dat u nog kan bijwerken vóór u bewaart.
 3. Klik **Bewaren**.
 
-!!! warning "Maximaal 10 MB per bestand"
+!!! warning "Maximaal 2 MB per bestand"
     Grotere bestanden worden geweigerd. Een scan die over die grens gaat, is meestal op een te hoge resolutie
     gemaakt — scan opnieuw op een lagere instelling, of splits het document.
 
 ## Wat u in de lijst ziet
 
-De bijlagen staan in een tabel met **Naam**, **Omschrijving**, **Grootte** en **Opgeladen op**.
+Op een fiche staan de bijlagen in een tabel met **Naam**, **Omschrijving**, **Grootte** en **Opgeladen op**.
 
-Werkt u in de **zijlade** naast een lijst, dan is er minder plaats. Daar blijven **Naam** en **Omschrijving**
-als kolom staan; **Grootte** en **Opgeladen op** schuiven mee naar een tweede regel onder de bestandsnaam. U
-ziet dus hetzelfde, alleen anders geschikt — en u hoeft niet zijwaarts te schuiven.
+Werkt u in de **zijlade** naast een lijst, dan is er te weinig plaats voor kolommen. Daar krijgt elke bijlage
+een eigen blok: bovenaan de bestandsnaam, daaronder grootte en datum op één regel, en daaronder de
+omschrijving over de volle breedte. Het **⋯**-menu staat rechtsboven in het blok. U ziet dezelfde gegevens,
+onder elkaar in plaats van naast elkaar, en u hoeft niet zijwaarts te schuiven.
 
-Een lange bestandsnaam breekt over meerdere regels in plaats van de tabel uit het paneel te duwen.
+Een lange bestandsnaam of een lange omschrijving breekt over meerdere regels.
 
 ## Een bijlage openen
 

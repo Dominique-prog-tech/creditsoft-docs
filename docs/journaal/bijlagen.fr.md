@@ -17,19 +17,21 @@ Cliquez sur **Ajouter**. Dans la fenêtre qui s'ouvre :
    avant d'enregistrer.
 3. Cliquez sur **Enregistrer**.
 
-!!! warning "10 Mo maximum par fichier"
+!!! warning "2 Mo maximum par fichier"
     Les fichiers plus volumineux sont refusés. Un scan qui dépasse cette limite a généralement été réalisé à une
     résolution trop élevée — rescannez à un réglage plus bas, ou scindez le document.
 
 ## Ce que la liste affiche
 
-Les pièces jointes figurent dans un tableau avec **Nom**, **Description**, **Taille** et **Téléversé le**.
+Sur une fiche, les pièces jointes figurent dans un tableau avec **Nom**, **Description**, **Taille** et
+**Téléversé le**.
 
-Si vous travaillez dans le **volet latéral** à côté d'une liste, la place est plus réduite. **Nom** et
-**Description** y restent des colonnes ; **Taille** et **Téléversé le** passent sur une deuxième ligne sous le
-nom du fichier. Vous voyez donc la même chose, autrement disposée — et sans devoir défiler latéralement.
+Si vous travaillez dans le **volet latéral** à côté d'une liste, la place manque pour des colonnes. Chaque
+pièce jointe y forme un bloc : le nom du fichier en haut, puis la taille et la date sur une ligne, puis la
+description sur toute la largeur. Le menu **⋯** se trouve en haut à droite du bloc. Vous voyez les mêmes
+informations, les unes sous les autres au lieu de côte à côte, sans devoir défiler latéralement.
 
-Un nom de fichier long se répartit sur plusieurs lignes au lieu de pousser le tableau hors du panneau.
+Un nom de fichier long ou une description longue se répartit sur plusieurs lignes.
 
 ## Ouvrir une pièce jointe
 
