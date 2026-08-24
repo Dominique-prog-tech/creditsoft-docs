@@ -394,3 +394,20 @@ demo-medewerkers zijn bewust zonder wachtwoord aangemaakt en kunnen dus niet aan
 **Alle beelden opnieuw genomen op 19/08/2026**, na het documentvalidatie-blok. Reden: de navigatie zelf
 veranderde (het item **Te valideren** met zijn teller kwam erbij), en die staat op élk beeld. Wie enkel de
 gewijzigde schermen herneemt, houdt een handleiding waarin de zijbalk per pagina anders oogt.
+
+## Aanbrengersportaal (23/08/2026) — 4 beelden
+
+⚠️ **Uit `tenant_demo`, nooit uit een echte klant.** En je hebt er een portaallogin voor nodig: die maak je
+aan op de fiche van een aanbrenger via de knop **Portaal**.
+
+| pagina | beeld | wat erop moet staan |
+|---|---|---|
+| `portaal/overzicht` | `portaal-overzicht.png` | de vier tegels, de zin eronder over het aantal kantoren, en de maandgrafiek met gevulde staven |
+| `portaal/dossiers` | `portaal-dossiers.png` | de lijst met dossiernummer, status, instelling en bedrag |
+| `portaal/dossiers` | `portaal-dossierdetail.png` | het dossier open, met de blokken Kredietgegevens, Pand, Aanvragers en Leningen |
+| `portaal/commissies` | `portaal-commissies.png` | de jaarkeuze met totaal, de tabel per maand, en het detail eronder |
+
+⚠️ **De tegel *Commissie* en het blok *Documenten* staan er alleen bij de juiste rechten.** Zet die aan op
+de fiche vóór je het beeld neemt, anders toont de handleiding minder dan ze beschrijft.
+
+Per taal een eigen beeld: schakel het portaal om met NL/FR rechtsboven.

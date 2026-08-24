@@ -259,6 +259,14 @@ nav:
     - Online afspraken: crm/online-afspraken.md
     - Groepen: crm/groups.md
 
+  # Het aanbrengersportaal (23/08/2026). Eigen hoofdstuk en niet onder Relatiebeheer: die pagina's gaan over
+  # wat de MAKELAAR met een aanbrenger doet, deze over wat de AANBRENGER zelf ziet. Twee lezers, twee plekken.
+  - Aanbrengersportaal:
+    - Het aanbrengersportaal: portaal/index.md
+    - Overzicht: portaal/overzicht.md
+    - Mijn dossiers: portaal/dossiers.md
+    - Mijn commissies: portaal/commissies.md
+
   - Beheer:
     - Bedrijfsfiche: administration/company-profile.md
     - Gebruikers: administration/users.md
