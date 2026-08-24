@@ -1,5 +1,7 @@
 # Filteren en zoeken in lijsten
 
+<!-- AFBEELDING: een lijst met de filterrij open, een actief filter op één kolom en het zoekveld gevuld. -->
+
 Elke lijst in CreditSoft werkt op dezelfde manier. Wat u hier leest, geldt dus even goed voor de kredietdossiers als voor de verzekeringen, de contracten, de relaties of de aanbrengers.
 
 Er zijn vier manieren om een lijst te versmallen, van snel naar krachtig. Ze werken samen: wat u met de ene wegfiltert, blijft weg wanneer u de andere gebruikt.

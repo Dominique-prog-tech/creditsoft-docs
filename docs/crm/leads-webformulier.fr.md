@@ -1,5 +1,9 @@
 # Leads depuis votre site web
 
+<!-- Volontairement SANS image. Cette page décrit un raccordement, pas un écran : ce que le courtier voit est
+     la liste des leads habituelle, déjà illustrée par leads-lijst-fr.png. Une capture d'un formulaire de
+     contact montrerait en outre le site d'un client, ou un site inventé qui ne prouve rien. -->
+
 Le formulaire de contact de votre site web peut déposer ses envois directement dans CreditSoft. Celui qui remplit le formulaire figure en moins d'une minute dans votre [liste de leads](leads.md) — sans que personne ne doive éplucher une boîte mail ou recopier quoi que ce soit.
 
 !!! info "Cela s'active bureau par bureau"

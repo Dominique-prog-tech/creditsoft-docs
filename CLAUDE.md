@@ -190,8 +190,26 @@ Regels:
   (bv. `[Zie tussenpersonen](../crm/contacten.md)`)
 - Naar afbeeldingen: **relatief** vanaf de pagina (vanuit `docs/credit-management/` →
   `![…](../images/bestand.png)`). Blijft ook werken als de site ooit onder een subpad draait.
-  ⚠️ Hier stond tot 15/08/2026 "absoluut vanaf docs-root", terwijl `BEELD-MANIFEST.md` relatief
+  ⚠️ Hier stond tot 15/08/2026 "absoluut vanaf docs-root", terwijl het beeld-manifest relatief
   voorschreef. Nu op één lijn: **relatief**.
+
+### Een beeld dat nog moet komen
+
+Markeer het **ín de pagina**, in deze ene vorm:
+
+```markdown
+<!-- AFBEELDING: het klantenoverzicht met drie rijen, zijbalk ingeklapt -->
+```
+
+Zet erbij wat er op het beeld moet staan, uit welke tenant (altijd `tenant_demo`), en welke rechten aan
+moeten staan als het scherm daarvan afhangt.
+
+⚠️ **Geen apart manifestbestand meer.** `BEELD-MANIFEST.md` is op 23/08/2026 opgeruimd: alles erin was
+afgewerkt op één beslissing na, en die staat nu als commentaar in de pagina zelf. Een lijst ernaast werkt
+enkel voor wie weet dat ze bestaat, terwijl een markering in de tekst meeverhuist bij een herschrijving en
+vanzelf verdwijnt zodra het beeld er staat. Zie
+`~/projects/adm-appkit/docs/handleiding-schrijfregels.md` §4 — dat is de bron, en ze geldt voor alle drie
+de docs-repo's.
 
 ### Vormgeving — vloot-afspraak
 

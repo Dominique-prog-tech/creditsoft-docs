@@ -1,5 +1,7 @@
 # Filtrer et rechercher dans les listes
 
+<!-- AFBEELDING: une liste avec la ligne de filtre ouverte, un filtre actif sur une colonne et le champ de recherche rempli. -->
+
 Toutes les listes de CreditSoft fonctionnent de la même manière. Ce que vous lisez ici vaut donc aussi bien pour les dossiers de crédit que pour les assurances, les contrats, les relations ou les apporteurs.
 
 Il existe quatre façons de restreindre une liste, de la plus rapide à la plus puissante. Elles se combinent : ce que vous écartez avec l'une reste écarté lorsque vous utilisez l'autre.

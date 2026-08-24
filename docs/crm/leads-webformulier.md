@@ -1,5 +1,9 @@
 # Leads vanaf uw website
 
+<!-- Bewust GEEN afbeelding. Deze pagina beschrijft een koppeling, geen scherm: wat de makelaar ziet is de
+     gewone leadlijst, en die staat al op leads-lijst.png. Een schermafdruk van een contactformulier toont
+     bovendien de website van een klant, of een verzonnen site die niets bewijst. -->
+
 Het contactformulier van uw website kan zijn inzendingen rechtstreeks in CreditSoft zetten. Wie het formulier invult, staat binnen de minuut in uw [leadlijst](leads.md) — zonder dat iemand een mailbox moet uitpluizen of iets moet overtypen.
 
 !!! info "Dit wordt per kantoor aangezet"
