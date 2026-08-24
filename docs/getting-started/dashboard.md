@@ -47,6 +47,23 @@ dossier stil. Elk blok toont de acht meest recente en zegt hoeveel er nog achter
 
 Staat er niets? Dan zegt het blok dat, in plaats van leeg te blijven.
 
+## De drie grafieken
+
+Onder de tegels staan drie grafieken. Ze gaan alle drie over **hetzelfde jaar** — dat u met de pijltjes
+bovenaan kiest — en over het **gerealiseerde volume**, dus over kredieten die effectief doorgingen.
+
+- **Gerealiseerd volume per maand** — één staaf per maand. Zo ziet u meteen welke maanden dragen en welke
+  achterblijven.
+- **Volume per instelling** — een ringgrafiek met de verdeling over de kredietinstellingen. Dossiers waar
+  geen instelling op staat, komen samen onder *Onbekend*.
+- **Volume per verantwoordelijke** — dezelfde verdeling, maar per medewerker. Ook hier vangt *Onbekend* de
+  dossiers zonder verantwoordelijke op.
+
+Is er in het gekozen jaar niets te tonen, dan staat er *"Geen gegevens."* in plaats van een lege ring. Een
+grafiek die leegblijft terwijl de tegels wél cijfers tonen, betekent bijna altijd dat het jaartal
+hierboven niet staat waar u denkt.
+
+
 ## De pijplijn: dossiers per fase
 
 Onder de tegels staan uw dossiers gegroepeerd per **fase**. Een fase is een groep statussen die u zelf samenstelt — bijvoorbeeld *In behandeling*, *Ingediend*, *Afgewerkt*.

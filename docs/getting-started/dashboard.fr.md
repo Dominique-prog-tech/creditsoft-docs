@@ -47,6 +47,23 @@ est à l'arrêt. Chaque bloc affiche les huit plus récents et indique combien i
 
 Rien à signaler ? Le bloc le dit, au lieu de rester vide.
 
+## Les trois graphiques
+
+Sous les tuiles figurent trois graphiques. Ils portent tous les trois sur **la même année** — celle que vous
+choisissez avec les flèches en haut — et sur le **volume réalisé**, donc sur les crédits effectivement
+aboutis.
+
+- **Volume réalisé par mois** — une barre par mois. Vous voyez ainsi d'emblée quels mois portent le
+  résultat et lesquels décrochent.
+- **Volume par institution** — un graphique en anneau répartissant le volume entre les institutions de
+  crédit. Les dossiers sans institution sont regroupés sous *Inconnu*.
+- **Volume par responsable** — la même répartition, mais par collaborateur. Ici aussi, *Inconnu* recueille
+  les dossiers sans responsable.
+
+S'il n'y a rien à afficher pour l'année choisie, la mention *« Aucune donnée. »* remplace l'anneau vide. Un
+graphique qui reste vide alors que les tuiles affichent des chiffres signifie presque toujours que l'année
+en haut n'est pas celle que vous croyez.
+
 ## Le pipeline : les dossiers par phase
 
 Sous les tuiles, vos dossiers sont regroupés par **phase**. Une phase est un groupe de statuts que vous composez vous-même — par exemple *En traitement*, *Introduit*, *Finalisé*.

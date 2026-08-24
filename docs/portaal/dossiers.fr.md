@@ -6,6 +6,8 @@ Les dossiers dans lesquels vous figurez comme apporteur.
 
 Dans le portail, cliquez en haut sur **Mes dossiers**.
 
+<!-- AFBEELDING: la liste Mes dossiers avec les colonnes numéro de dossier, statut, institution et montant, et le compteur au-dessus. -->
+
 ## La liste
 
 Au-dessus de la liste figure le nombre de dossiers. Pour chacun, vous voyez le **numéro de dossier**, le
@@ -15,6 +17,8 @@ Si vous êtes apporteur principal et que votre bureau l'a réglé ainsi, les dos
 collaborateurs qui dépendent de vous s'y trouvent également. Sinon, vous ne voyez que vos propres dossiers.
 
 Cliquez sur un numéro de dossier pour l'ouvrir.
+
+<!-- AFBEELDING: un dossier ouvert avec les blocs Données du crédit, Bien, Demandeurs et Prêts ; bloc Documents visible, donc avec le droit documents activé. -->
 
 ## Consulter un dossier
 

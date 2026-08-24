@@ -15,6 +15,8 @@ L'année se choisit en haut. Seules les années où des écritures existent figu
 
 À côté de l'année s'affichent le **total** et le nombre d'**écritures**.
 
+<!-- AFBEELDING: Mes commissions avec le choix de l'année et le total annuel, le tableau par mois et le détail en dessous. -->
+
 ## Par mois
 
 Un tableau reprenant, par mois, le nombre d'écritures et le total. Vous voyez ainsi d'un coup d'œil quel

@@ -7,6 +7,8 @@ ce qui les concerne, et rien de votre bureau.
 Ces pages décrivent ce qu'un apporteur voit. En tant que courtier, vous les lisez pour savoir ce que vous
 distribuez lorsque vous accordez un accès.
 
+<!-- AFBEELDING: la fenêtre Accès au portail sur une fiche apporteur, avec le mot de passe temporaire, les boutons et les quatre droits en dessous. Depuis tenant_demo, en français. -->
+
 ## Donner accès
 
 L'accès se règle sur la fiche de l'apporteur.

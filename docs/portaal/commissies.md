@@ -15,6 +15,8 @@ Bovenaan kiest u het jaar. Alleen jaren waarin er effectief geboekt is, staan in
 
 Naast het jaar staat het **totaal** en hoeveel **boekingen** dat zijn.
 
+<!-- AFBEELDING: Mijn commissies met de jaarkeuze en het jaartotaal, de tabel per maand en het detail eronder. -->
+
 ## Per maand
 
 Een tabel met per maand het aantal boekingen en het totaal. Zo ziet u in één blik waar een maand
