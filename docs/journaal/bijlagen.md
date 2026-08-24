@@ -16,7 +16,7 @@ Klik **Toevoegen**. In het venster dat opent:
    opladen; ze verschijnen in een lijstje dat u nog kan bijwerken vóór u bewaart.
 3. Klik **Bewaren**.
 
-!!! warning "Maximaal 2 MB per bestand"
+!!! warning "Maximaal 10 MB per bestand"
     Grotere bestanden worden geweigerd. Een scan die over die grens gaat, is meestal op een te hoge resolutie
     gemaakt — scan opnieuw op een lagere instelling, of splits het document.
 

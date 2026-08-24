@@ -17,7 +17,7 @@ Cliquez sur **Ajouter**. Dans la fenêtre qui s'ouvre :
    avant d'enregistrer.
 3. Cliquez sur **Enregistrer**.
 
-!!! warning "2 Mo maximum par fichier"
+!!! warning "10 Mo maximum par fichier"
     Les fichiers plus volumineux sont refusés. Un scan qui dépasse cette limite a généralement été réalisé à une
     résolution trop élevée — rescannez à un réglage plus bas, ou scindez le document.
 
