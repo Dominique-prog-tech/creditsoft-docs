@@ -24,6 +24,12 @@ Klik **Toevoegen**. In het venster dat opent:
 
 De bijlagen staan in een tabel met **Naam**, **Omschrijving**, **Grootte** en **Opgeladen op**.
 
+Werkt u in de **zijlade** naast een lijst, dan is er minder plaats. Daar blijven **Naam** en **Omschrijving**
+als kolom staan; **Grootte** en **Opgeladen op** schuiven mee naar een tweede regel onder de bestandsnaam. U
+ziet dus hetzelfde, alleen anders geschikt — en u hoeft niet zijwaarts te schuiven.
+
+Een lange bestandsnaam breekt over meerdere regels in plaats van de tabel uit het paneel te duwen.
+
 ## Een bijlage openen
 
 - **Klik op de bestandsnaam** om het bestand te downloaden.

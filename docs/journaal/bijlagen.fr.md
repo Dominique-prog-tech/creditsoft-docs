@@ -25,6 +25,12 @@ Cliquez sur **Ajouter**. Dans la fenêtre qui s'ouvre :
 
 Les pièces jointes figurent dans un tableau avec **Nom**, **Description**, **Taille** et **Téléversé le**.
 
+Si vous travaillez dans le **volet latéral** à côté d'une liste, la place est plus réduite. **Nom** et
+**Description** y restent des colonnes ; **Taille** et **Téléversé le** passent sur une deuxième ligne sous le
+nom du fichier. Vous voyez donc la même chose, autrement disposée — et sans devoir défiler latéralement.
+
+Un nom de fichier long se répartit sur plusieurs lignes au lieu de pousser le tableau hors du panneau.
+
 ## Ouvrir une pièce jointe
 
 - **Cliquez sur le nom du fichier** pour le télécharger.
