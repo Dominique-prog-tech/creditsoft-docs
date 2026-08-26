@@ -45,7 +45,9 @@ Cette barre fait trois choses :
 
 ## Ce qui est conservé
 
-Vos filtres, l'ordre de vos colonnes, leurs largeurs et les colonnes que vous avez affichées ou masquées sont conservés par liste dans votre navigateur. Si vous revenez demain sur le même écran, vous le retrouvez tel que vous l'avez laissé — et la barre de filtre en bas vous indique aussitôt ce qui est encore actif.
+Vos filtres, l'ordre de vos colonnes, leurs largeurs et les colonnes que vous avez affichées ou masquées sont conservés par liste dans votre navigateur. Si vous revenez demain sur le même écran, votre mise en page est toujours là — et la barre de filtre en bas vous indique aussitôt quels filtres sont encore actifs.
+
+**Ce que vous avez tapé dans le champ de recherche n'est pas conservé.** C'est voulu : une recherche est un geste du moment, pas un réglage. Vous ouvrez ainsi chaque liste avec tout à l'écran, sans qu'un ancien terme de recherche reste actif à votre insu.
 
 ## L'exportation et l'impression suivent vos filtres
 

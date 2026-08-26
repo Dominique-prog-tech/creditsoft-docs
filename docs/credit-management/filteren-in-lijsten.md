@@ -45,7 +45,9 @@ Met **Voorwaarde toevoegen** zet u er een tweede bij, en met de keuze **En / Of*
 
 ## Wat er bewaard blijft
 
-Uw filters, uw kolomvolgorde, uw kolombreedtes en welke kolommen u aan of uit zette, blijven per lijst bewaard in uw browser. Komt u morgen terug op hetzelfde scherm, dan staat het zoals u het achterliet — en de filterbalk onderaan toont u meteen wat er nog actief is.
+Uw filters, uw kolomvolgorde, uw kolombreedtes en welke kolommen u aan of uit zette, blijven per lijst bewaard in uw browser. Komt u morgen terug op hetzelfde scherm, dan staat uw indeling er nog — en de filterbalk onderaan toont u meteen welke filters nog actief zijn.
+
+**Wat u in het zoekveld typte, blijft niet bewaard.** Dat is bewust: zoeken is een handeling van dat moment, geen instelling. Zo begint u elke lijst met alles in beeld, en blijft er nooit een oude zoekterm hangen die u niet meer ziet staan.
 
 ## Exporteren en afdrukken volgen uw filters
 
