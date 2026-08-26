@@ -62,7 +62,7 @@ Double-cliquez une ligne dans la liste.
 
 ![La fiche d'un bordereau : en haut les données générales avec le numéro, la date du document, l'apporteur et le montant, en dessous les lignes de commission avec la période, le dossier, la description et le montant, et en bas les boutons Imprimer, Envoyer, Marquer payé et Retirer.](../images/borderel-fiche-fr.png "Un bordereau, avec ses lignes et les quatre actions"){ .volle-breedte }
 
-En haut figurent les **données générales** : numéro, date du document, apporteur et montant, ainsi que la date d'**envoi** et d'**impression**. En dessous se trouvent les **lignes de commission**, avec les mêmes données que sur l'impression : date d'acte, dossier, client, bien, prêteur, montant du crédit et commission, triées par date d'acte. Si une ligne n'est rattachée à aucun dossier, la mention **libre** apparaît : il s'agit d'une commission libre, par exemple une indemnité mensuelle ou une correction, et sa description figure dans la colonne Client.
+En haut figurent les **données générales** : numéro, date du document, apporteur et montant, ainsi que la date d'**envoi** et d'**impression**. En dessous se trouvent les **lignes de commission**, avec les mêmes données que sur l'impression : date d'acte, votre référence, client, bien, prêteur, montant du crédit et commission, triées par date d'acte. Si une ligne n'est rattachée à aucun dossier, la mention **libre** apparaît : il s'agit d'une commission libre, par exemple une indemnité mensuelle ou une correction, et sa description figure dans la colonne Client.
 
 Quatre boutons figurent en bas.
 
@@ -70,7 +70,7 @@ Quatre boutons figurent en bas.
 
 Ouvre l'**aperçu avant impression** : un pdf en format paysage, avec votre en-tête — logo, adresse, coordonnées et numéro FSMA issus de votre fiche d'entreprise — et à droite l'adresse de l'apporteur avec son numéro de TVA, de sorte que le document se lise comme un décompte qui lui est adressé.
 
-Chaque ligne de commission indique la **date d'acte**, le **numéro de dossier**, le **client**, le **bien**, le **prêteur**, le **montant du crédit** et la **commission**. Les lignes sont triées par date d'acte. Une commission libre n'a pas de dossier : vous y lisez la description à la place. Le total figure en bas, et les en-têtes de colonnes se répètent sur chaque page avec un numéro de page.
+Chaque ligne de commission indique la **date d'acte**, **votre référence**, le **client**, le **bien**, le **prêteur**, le **montant du crédit** et la **commission**. Les lignes sont triées par date d'acte. Une commission libre n'a pas de dossier : vous y lisez la description à la place. Le total figure en bas, et les en-têtes de colonnes se répètent sur chaque page avec un numéro de page.
 
 Depuis cette fenêtre, vous pouvez **télécharger** le fichier ou le **transférer par e-mail** à qui vous voulez. C'est autre chose que le bouton *Envoyer* voisin : celui-ci adresse le bordereau à l'apporteur lui-même, accompagné de votre texte type.
 
@@ -96,6 +96,9 @@ Vous indiquez la **date de paiement** et vous confirmez. Le bordereau figure dè
 Retire le bordereau dans son entièreté. Les lignes de commission redeviennent disponibles et réapparaissent sous *En attente* dans l'aperçu, ce qui vous permet de décompter cette période à nouveau.
 
 C'est possible **tant que le bordereau n'est pas payé**. S'il l'est, le bouton disparaît : annulez d'abord le paiement.
+
+!!! info "La colonne Votre référence"
+    Il s'agit de la **référence que l'intermédiaire a lui-même donnée au dossier** — pas d'un numéro attribué par CreditSoft. Si un bureau ne travaille pas avec des références, cette colonne reste vide pour tous ses dossiers. Ce n'est pas une information manquante.
 
 !!! tip "À quoi sert le retrait"
     Le plus souvent à une période mal choisie, ou lorsque vous constatez qu'un schéma de commission manquait encore. Retirez, complétez, et recréez la série.

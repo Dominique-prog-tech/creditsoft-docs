@@ -108,6 +108,3 @@ CreditSoft prépare les montants mensuels pour le bordereau et la fiche 281.50.
     [:octicons-arrow-right-24: Premiers pas](getting-started/navigatie.md)
 
 </div>
-
-Ce manuel **évolue avec la plateforme** : chaque fois qu'un écran est entièrement
-vérifié et publié, la page correspondante est ajoutée.

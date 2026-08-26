@@ -108,6 +108,3 @@ en CreditSoft zet de maandbedragen klaar voor het borderel en de fiche 281.50.
     [:octicons-arrow-right-24: Aan de slag](getting-started/navigatie.md)
 
 </div>
-
-Deze handleiding **groeit mee met het platform**: telkens een scherm volledig is
-nagekeken en vrijgegeven, komt de bijhorende pagina erbij.

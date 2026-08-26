@@ -62,7 +62,7 @@ Dubbelklik een regel in de lijst.
 
 ![De fiche van één borderel: bovenaan de algemene gegevens met nummer, documentdatum, aanbrenger en bedrag, daaronder de commissielijnen met periode, dossier, omschrijving en bedrag, en onderaan de knoppen Afdrukken, Mailen, Betaald markeren en Intrekken.](../images/borderel-fiche.png "Eén borderel, met zijn lijnen en de vier acties"){ .volle-breedte }
 
-Bovenaan staan de **algemene gegevens**: nummer, documentdatum, aanbrenger en bedrag, en of het al **verstuurd** en **afgedrukt** werd. Daaronder staan de **commissielijnen**, met dezelfde gegevens als op de afdruk: aktedatum, dossier, klant, pand, kredietverstrekker, kredietbedrag en commissie, gesorteerd op aktedatum. Hangt een lijn niet aan een dossier, dan staat er **vrij**: dat is een vrije commissie, bijvoorbeeld een maandelijkse vergoeding of een correctie, en de omschrijving ervan leest u in de kolom Klant.
+Bovenaan staan de **algemene gegevens**: nummer, documentdatum, aanbrenger en bedrag, en of het al **verstuurd** en **afgedrukt** werd. Daaronder staan de **commissielijnen**, met dezelfde gegevens als op de afdruk: aktedatum, uw kenmerk, klant, pand, kredietverstrekker, kredietbedrag en commissie, gesorteerd op aktedatum. Hangt een lijn niet aan een dossier, dan staat er **vrij**: dat is een vrije commissie, bijvoorbeeld een maandelijkse vergoeding of een correctie, en de omschrijving ervan leest u in de kolom Klant.
 
 Onderaan staan vier knoppen.
 
@@ -70,7 +70,7 @@ Onderaan staan vier knoppen.
 
 Opent het **afdrukvoorbeeld**: een pdf op een liggend blad, met uw briefhoofd — logo, adres, contactgegevens en FSMA-nummer uit uw bedrijfsfiche — en rechts het adres van de aanbrenger met zijn btw-nummer, zodat het document leest als een afrekening die aan hém gericht is.
 
-Per commissielijn staat er: de **aktedatum**, het **dossiernummer**, de **klant**, het **pand**, de **kredietverstrekker**, het **kredietbedrag** en de **commissie**. De lijnen staan op aktedatum gesorteerd. Een vrije commissie heeft geen dossier: daar leest u de omschrijving in de plaats. Onderaan het totaal, en de kolomkoppen staan op elke bladzijde opnieuw met een paginanummer.
+Per commissielijn staat er: de **aktedatum**, **uw kenmerk**, de **klant**, het **pand**, de **kredietverstrekker**, het **kredietbedrag** en de **commissie**. De lijnen staan op aktedatum gesorteerd. Een vrije commissie heeft geen dossier: daar leest u de omschrijving in de plaats. Onderaan het totaal, en de kolomkoppen staan op elke bladzijde opnieuw met een paginanummer.
 
 Vanuit dat venster kan u het bestand **downloaden** of **doorsturen per mail** naar wie u wil. Dat laatste is iets anders dan de knop *Mailen* hiernaast: die stuurt het borderel naar de aanbrenger zelf, met uw vaste begeleidende tekst.
 
@@ -96,6 +96,9 @@ U geeft de **betaaldatum** op en bevestigt. Het borderel staat vanaf dan als bet
 Trekt het hele borderel terug. De commissielijnen komen weer vrij en verschijnen opnieuw onder *Openstaand* in het overzicht, zodat u die periode opnieuw kan afrekenen.
 
 Dat kan **zolang het borderel niet betaald is**. Is het wel betaald, dan verdwijnt de knop: zet eerst de betaling terug.
+
+!!! info "De kolom Uw kenmerk"
+    Dat is het **kenmerk dat de tussenpersoon zelf aan het dossier gaf** — geen nummer dat CreditSoft uitdeelt. Werkt een kantoor daar niet mee, dan blijft die kolom leeg voor al zijn dossiers. Dat is geen ontbrekende informatie.
 
 !!! tip "Waarvoor intrekken dient"
     Meestal voor een verkeerd gekozen periode, of wanneer u merkt dat er nog een commissieschema ontbrak. Trek in, vul aan, en maak de ronde opnieuw aan.
