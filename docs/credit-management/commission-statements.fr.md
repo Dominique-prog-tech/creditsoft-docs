@@ -68,7 +68,11 @@ Quatre boutons figurent en bas.
 
 ### Imprimer
 
-Génère un pdf avec votre en-tête : l'apporteur, la période, toutes les lignes avec le numéro de dossier et le client, et le total. Les en-têtes de colonnes se répètent sur chaque page, avec un numéro de page en bas. Le fichier s'ouvre dans un nouvel onglet ; de là, vous l'enregistrez ou l'imprimez.
+Ouvre l'**aperçu avant impression** : un pdf avec votre en-tête — logo, adresse et numéro FSMA issus de votre fiche d'entreprise — reprenant l'apporteur, la période, toutes les lignes avec le numéro de dossier et le client, et le total. Les en-têtes de colonnes se répètent sur chaque page, avec un numéro de page en bas.
+
+<!-- AFBEELDING: l'aperçu avant impression d'un bordereau, avec en haut les boutons Transférer par e-mail et Télécharger -->
+
+Depuis cette fenêtre, vous pouvez **télécharger** le fichier ou le **transférer par e-mail** à qui vous voulez. C'est autre chose que le bouton *Envoyer* voisin : celui-ci adresse le bordereau à l'apporteur lui-même, accompagné de votre texte type.
 
 CreditSoft retient la date d'impression — vous la relisez sous *Imprimé le*.
 

@@ -68,7 +68,11 @@ Onderaan staan vier knoppen.
 
 ### Afdrukken
 
-Maakt een pdf met uw briefhoofd: de aanbrenger, de periode, alle lijnen met het dossiernummer en de klant erbij, en het totaal. De kolomkoppen staan op elke bladzijde opnieuw, met een paginanummer onderaan. Het bestand opent in een nieuw tabblad; van daaruit bewaart of drukt u het af.
+Opent het **afdrukvoorbeeld**: een pdf met uw briefhoofd — logo, adres en FSMA-nummer uit uw bedrijfsfiche — met de aanbrenger, de periode, alle lijnen met het dossiernummer en de klant erbij, en het totaal. De kolomkoppen staan op elke bladzijde opnieuw, met een paginanummer onderaan.
+
+<!-- AFBEELDING: het afdrukvoorbeeld van een borderel, met bovenaan de knoppen Doorsturen per mail en Downloaden -->
+
+Vanuit dat venster kan u het bestand **downloaden** of **doorsturen per mail** naar wie u wil. Dat laatste is iets anders dan de knop *Mailen* hiernaast: die stuurt het borderel naar de aanbrenger zelf, met uw vaste begeleidende tekst.
 
 CreditSoft onthoudt wanneer u afdrukte — dat leest u terug bij *Afgedrukt op*.
 
