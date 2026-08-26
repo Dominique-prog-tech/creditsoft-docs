@@ -6,7 +6,7 @@ Commissielijnen uit **afgelopen** perioden die nooit op een borderel zijn beland
 
 Ga naar **Platformbeheer** onderaan het menu, en klik onder *Krediet* op de tegel **Restanten commissie**.
 
-<!-- AFBEELDING: het scherm Restanten commissie met de drie kerncijfers en de lijst met per regel de reden -->
+![Het scherm Restanten commissie: bovenaan het totaalbedrag, het aantal lijnen en het aantal dossiers, daaronder de lijst met per regel de aanbrenger, het dossier, de reden als label — Nooit afgerekend of Schema stopgezet — de periode van en tot, het aantal lijnen en het bedrag.](../images/commissie-restanten.png "Wat er is blijven staan, met de reden erbij"){ .volle-breedte }
 
 Staat er niets, dan meldt het scherm dat gewoon. Dat is de gezonde toestand.
 

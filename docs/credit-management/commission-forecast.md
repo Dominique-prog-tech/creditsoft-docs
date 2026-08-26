@@ -12,7 +12,7 @@ Wat al op een borderel staat, telt niet mee. Dat is immers afgerekend.
 
 Klik in het menu links op **Vooruitzicht**, onder *Lijsten*.
 
-<!-- AFBEELDING: het scherm Vooruitzicht met de drie kerncijfers, de staafgrafiek per maand en het ringdiagram per aanbrenger -->
+![Het scherm Vooruitzicht: bovenaan drie kerncijfers met het totaal verwacht, de volgende twaalf maanden en het aantal aanbrengers, daaronder een melding over openstaande lijnen uit afgelopen perioden, dan een staafgrafiek van het verwachte bedrag per maand naast een ringdiagram met de verdeling per aanbrenger, en onderaan de lijst per aanbrenger met de periode, het aantal lijnen en het bedrag.](../images/commissie-vooruitzicht.png "Wat er de komende achttien maanden nog uitbetaald moet worden"){ .volle-breedte }
 
 ## De drie cijfers bovenaan
 

@@ -12,7 +12,7 @@ Ce qui figure déjà sur un bordereau ne compte pas. C'est décompté.
 
 Dans le menu de gauche, cliquez sur **Perspective**, sous *Listes*.
 
-<!-- AFBEELDING: l'écran Perspective avec les trois chiffres clés, le graphique par mois et la répartition par apporteur -->
+![L'écran Perspective : en haut trois chiffres clés avec le total attendu, les douze prochains mois et le nombre d'apporteurs, en dessous un message concernant les lignes ouvertes de périodes écoulées, puis un graphique du montant attendu par mois à côté d'une répartition par apporteur, et en bas la liste par apporteur avec la période, le nombre de lignes et le montant.](../images/commissie-vooruitzicht-fr.png "Ce qu'il reste à payer dans les dix-huit prochains mois"){ .volle-breedte }
 
 ## Les trois chiffres en haut
 
