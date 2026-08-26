@@ -141,6 +141,16 @@ plugins:
             Relatiebeheer: Gestion des relations
             Professionals: Professionnels
             Groepen: Groupes
+            # Deze zes ontbraken (gemeten 26/08/2026): het hele aanbrengersportaal-hoofdstuk kwam erbij
+            # zonder vertalingen, waardoor "Aanbrengersportaal" onvertaald tussen zeven Franse tabbladen
+            # bovenaan stond. De Franse termen zijn overgenomen uit de APP zelf, niet zelf verzonnen —
+            # handleiding en scherm horen hetzelfde te zeggen.
+            Leads: Leads
+            Aanbrengersportaal: Portail apporteurs
+            Het aanbrengersportaal: Le portail apporteurs
+            Overzicht: Aperçu
+            Mijn dossiers: Mes dossiers
+            Mijn commissies: Mes commissions
             # "Beheer" stond hier ook, met vertaling "Gestion", én verderop met
             # "Configuration". YAML slikt een dubbele sleutel zonder waarschuwing en
             # de laatste wint — dus "Gestion" deed niets. Hier weggehaald; de

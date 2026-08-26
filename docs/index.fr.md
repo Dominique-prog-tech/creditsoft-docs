@@ -19,7 +19,7 @@ e-mails et des tableurs se trouve ici, auprès du dossier auquel cela appartient
 </div>
 </div>
 <div class="cs-onthaal__beeld" markdown>
-![Le tableau de bord de CreditSoft : le nombre de dossiers par phase, et en dessous les dossiers qui demandent attention.](images/dashboard-startscherm-fr.png){ .off-glb }
+![Le tableau de bord de CreditSoft : le nombre de dossiers par phase, et en dessous les dossiers qui demandent attention.](images/dashboard-startscherm-fr.png "Le tableau de bord de CreditSoft"){ .off-glb }
 </div>
 </div>
 

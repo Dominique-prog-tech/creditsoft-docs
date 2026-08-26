@@ -19,7 +19,7 @@ hier bij het dossier waar het thuishoort.
 </div>
 </div>
 <div class="cs-onthaal__beeld" markdown>
-![Het dashboard van CreditSoft: het aantal dossiers per fase, met daaronder de dossiers die aandacht vragen.](images/dashboard-startscherm.png){ .off-glb }
+![Het dashboard van CreditSoft: het aantal dossiers per fase, met daaronder de dossiers die aandacht vragen.](images/dashboard-startscherm.png "Het dashboard van CreditSoft"){ .off-glb }
 </div>
 </div>
 
