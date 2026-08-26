@@ -68,7 +68,9 @@ Quatre boutons figurent en bas.
 
 ### Imprimer
 
-Ouvre l'**aperçu avant impression** : un pdf avec votre en-tête — logo, adresse et numéro FSMA issus de votre fiche d'entreprise — reprenant l'apporteur, la période, toutes les lignes avec le numéro de dossier et le client, et le total. Les en-têtes de colonnes se répètent sur chaque page, avec un numéro de page en bas.
+Ouvre l'**aperçu avant impression** : un pdf en format paysage, avec votre en-tête — logo, adresse, coordonnées et numéro FSMA issus de votre fiche d'entreprise — et à droite l'adresse de l'apporteur avec son numéro de TVA, de sorte que le document se lise comme un décompte qui lui est adressé.
+
+Chaque ligne de commission indique la **date d'acte**, le **numéro de dossier**, le **client**, le **bien**, le **prêteur**, le **montant du crédit** et la **commission**. Les lignes sont triées par date d'acte. Une commission libre n'a pas de dossier : vous y lisez la description à la place. Le total figure en bas, et les en-têtes de colonnes se répètent sur chaque page avec un numéro de page.
 
 <!-- AFBEELDING: l'aperçu avant impression d'un bordereau, avec en haut les boutons Transférer par e-mail et Télécharger -->
 
