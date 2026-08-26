@@ -22,7 +22,9 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: pip install mkdocs-material mkdocs-material-extensions mkdocs-static-i18n mkdocs-glightbox
+      # Vastgelegde versies — zie requirements.txt voor het waarom (MkDocs 2.0 schrapt de plugins waar de
+      # tweetaligheid op steunt; een onbepaalde install zou dat op een willekeurige dag binnenhalen).
+      - run: pip install -r requirements.txt
       - run: mkdocs build
       - uses: actions/upload-pages-artifact@v3
         with:

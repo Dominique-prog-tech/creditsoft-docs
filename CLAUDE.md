@@ -221,6 +221,26 @@ Kort: merkkleur uit `logo.svg`, header wit in licht en zwart in donker, en drie 
 drie uitzien alsof alles klopt (een `:root`-regel die niet werkt, een palet dat op twee plaatsen staat,
 en meten binnen een seconde na een themawissel). **Niet hier overschrijven — verwijs ernaar.**
 
+## ⚠️ Aandachtspunt: MkDocs 2.0 breekt deze opzet
+
+`mkdocs build --strict` geeft sinds 26/08/2026 een waarschuwing van het Material-team: **MkDocs 2.0 schrapt
+het plugin-systeem en herschrijft het theming-systeem.** Twee dingen waar deze handleiding volledig op steunt:
+
+- **`mkdocs-static-i18n`** — dat is de héle tweetaligheid. Zonder plugins geen `nl`/`fr`-opbouw, geen
+  `nav_translations`, geen taalwissel bovenaan.
+- **theme-overrides** — de eigen opmaak van de onthaalpagina en de kaartrasters.
+
+**Wat er wél al aan gedaan is.** `deploy.yml` installeerde de plugins zónder versienummer — elke bouw haalde
+binnen wat er die dag nieuw stond. De dag van de 2.0-release had de eerstvolgende push de tweetaligheid dus
+stilgelegd, bij een commit die er niets mee te maken had. Sinds 26/08/2026 staan de versies vast in
+`requirements.txt` en installeert CI daaruit.
+
+**Opwaarderen doe je bewust**: versienummer omhoog, `mkdocs build --strict` lokaal draaien, de **Franse
+bovenbalk** nakijken (daar zag je de vorige fout ook), pas dan committen. Nooit blind `pip install -U`.
+
+⚠️ **Dit raakt ook `nimble-docs` en `cleanops-docs`** — die draaien dezelfde opzet. Wie dit als eerste
+oplost, lost het voor alle drie op.
+
 ## TODO-markers — conventie
 
 Skeleton-pagina's bevatten TODO-blokken in deze vorm:
