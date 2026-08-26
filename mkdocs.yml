@@ -173,6 +173,7 @@ plugins:
             Afspraken: Rendez-vous
             Online afspraken: Rendez-vous en ligne
             Borderel: Bordereau
+            Commissie-instellingen: Paramètres de commission
             Dashboard-fases: Phases du tableau de bord
             Uw publieke pagina's: Vos pages publiques
             Verlof & sluitingsdagen: Congés & jours de fermeture
@@ -288,6 +289,7 @@ nav:
     - Verzendadressen: administration/sender-addresses.md
     - Prullenbak: administration/recycle-bin.md
     - Actielogboek: administration/activity-log.md
+    - Commissie-instellingen: beheer/commissie-instellingen.md
     - Dashboard-fases: beheer/dashboard-fases.md
     - Uw publieke pagina's: beheer/kantoorprofiel.md
     - Verlof & sluitingsdagen: beheer/afwezigheden.md

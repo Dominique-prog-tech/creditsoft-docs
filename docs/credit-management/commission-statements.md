@@ -98,4 +98,4 @@ Dat kan **zolang het borderel niet betaald is**. Is het wel betaald, dan verdwij
 
 ## Per maand of per kwartaal
 
-Standaard verzamelt een ronde één maand. Rekent uw kantoor per kwartaal af, dan verzamelt een ronde drie maanden tegelijk en kiest u bij het aanmaken een kwartaal in plaats van een maand. Die keuze geldt voor uw hele kantoor en wordt één keer ingesteld; vraag ernaar bij uw beheerder.
+Standaard verzamelt een ronde één maand. Rekent uw kantoor per kwartaal af, dan verzamelt een ronde drie maanden tegelijk en kiest u bij het aanmaken een kwartaal in plaats van een maand. Die keuze geldt voor uw hele kantoor en stelt u in bij [Commissie-instellingen](../beheer/commissie-instellingen.md), onder Platformbeheer.
