@@ -62,7 +62,7 @@ Dubbelklik een regel in de lijst.
 
 ![De fiche van één borderel: bovenaan de algemene gegevens met nummer, documentdatum, aanbrenger en bedrag, daaronder de commissielijnen met periode, dossier, omschrijving en bedrag, en onderaan de knoppen Afdrukken, Mailen, Betaald markeren en Intrekken.](../images/borderel-fiche.png "Eén borderel, met zijn lijnen en de vier acties"){ .volle-breedte }
 
-Bovenaan staan de **algemene gegevens**: nummer, documentdatum, aanbrenger en bedrag, en of het al **verstuurd** en **afgedrukt** werd. Daaronder staan de **commissielijnen** — periode, dossier, omschrijving en bedrag. Hangt een lijn niet aan een dossier, dan staat er **vrij**: dat is een vrije commissie, bijvoorbeeld een maandelijkse vergoeding of een correctie.
+Bovenaan staan de **algemene gegevens**: nummer, documentdatum, aanbrenger en bedrag, en of het al **verstuurd** en **afgedrukt** werd. Daaronder staan de **commissielijnen**, met dezelfde gegevens als op de afdruk: aktedatum, dossier, klant, pand, kredietverstrekker, kredietbedrag en commissie, gesorteerd op aktedatum. Hangt een lijn niet aan een dossier, dan staat er **vrij**: dat is een vrije commissie, bijvoorbeeld een maandelijkse vergoeding of een correctie, en de omschrijving ervan leest u in de kolom Klant.
 
 Onderaan staan vier knoppen.
 
