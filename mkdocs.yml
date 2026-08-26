@@ -172,6 +172,7 @@ plugins:
             Aanbrengers: Apporteurs
             Afspraken: Rendez-vous
             Online afspraken: Rendez-vous en ligne
+            Borderel: Bordereau
             Dashboard-fases: Phases du tableau de bord
             Uw publieke pagina's: Vos pages publiques
             Verlof & sluitingsdagen: Congés & jours de fermeture
@@ -247,6 +248,7 @@ nav:
     - Te valideren documenten: credit-management/document-validation.md
     - Kredietinstellingen: credit-management/financial-institutions.md
     - Verzekeraars: credit-management/insurance-companies.md
+    - Borderel: credit-management/commission-statements.md
 
   - Lijsten:
     # Bovenaan: geldt voor élke lijst, dus lees je die eerst. De schermpagina's verwijzen ernaar
