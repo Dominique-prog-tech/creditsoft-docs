@@ -15,7 +15,7 @@ L'année se choisit en haut. Seules les années où des écritures existent figu
 
 À côté de l'année s'affichent le **total** et le nombre d'**écritures**.
 
-<!-- AFBEELDING: Mes commissions avec le choix de l'année et le total annuel, le tableau par mois et le détail en dessous. -->
+![L'écran Mes commissions du portail des apporteurs : en haut le choix de l'année avec le total annuel, puis un tableau avec le montant par mois et le détail par dossier.](../images/portaal-commissies-fr.png "Mes commissions dans le portail des apporteurs")
 
 ## Par mois
 

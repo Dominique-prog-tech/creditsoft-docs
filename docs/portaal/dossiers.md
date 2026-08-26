@@ -6,7 +6,7 @@ De dossiers waarin u als aanbrenger staat.
 
 Klik in het portaal bovenaan op **Mijn dossiers**.
 
-<!-- AFBEELDING: de lijst Mijn dossiers met de kolommen dossiernummer, status, instelling en kredietbedrag, en het aantal erboven. -->
+![De lijst Mijn dossiers in het aanbrengersportaal, met per rij het dossiernummer, de status, de instelling en het kredietbedrag, en bovenaan het aantal gevonden dossiers.](../images/portaal-dossiers.png "Mijn dossiers in het aanbrengersportaal")
 
 ## De lijst
 
@@ -18,7 +18,7 @@ kantoren en medewerkers onder u. Anders ziet u enkel uw eigen dossiers.
 
 Klik op een dossiernummer om het dossier te openen.
 
-<!-- AFBEELDING: een geopend dossier met de blokken Kredietgegevens, Pand, Aanvragers en Leningen; documentenblok zichtbaar, dus met het documentenrecht aan. -->
+![Een geopend dossier in het aanbrengersportaal met de blokken Kredietgegevens, Pand, Aanvragers en Leningen onder elkaar, en het documentenblok onderaan.](../images/portaal-dossier-detail.png "Een dossier openen in het aanbrengersportaal")
 
 ## Een dossier bekijken
 

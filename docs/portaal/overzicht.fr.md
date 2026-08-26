@@ -6,7 +6,7 @@ L'écran d'accueil du portail. Il montre d'un coup d'œil comment se déroule l'
 
 Dans le portail, cliquez en haut sur **Aperçu**.
 
-<!-- AFBEELDING: l'Aperçu avec les quatre tuiles, la phrase en dessous sur le nombre de bureaux, et le graphique mensuel rempli. Depuis tenant_demo, portail en français, avec un accès portant les droits de commission — sinon la tuile Commission manque. -->
+![L'Aperçu du portail des apporteurs avec quatre tuiles — crédits conclus, en cours, commission et nombre de bureaux — puis la phrase indiquant sur combien de bureaux portent les chiffres, un graphique mensuel en barres et la liste des derniers dossiers conclus.](../images/portaal-overzicht-fr.png "L'écran d'aperçu du portail des apporteurs")
 
 ## Les quatre chiffres
 

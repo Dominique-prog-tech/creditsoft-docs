@@ -6,7 +6,7 @@ Het openingsscherm van het portaal. Het toont in één blik hoe het jaar loopt.
 
 Klik in het portaal bovenaan op **Overzicht**.
 
-<!-- AFBEELDING: het Overzicht met de vier tegels, de zin eronder over het aantal kantoren, en de maandgrafiek met gevulde staven. Uit tenant_demo, met een portaallogin die de commissierechten draagt — anders ontbreekt de tegel Commissie. -->
+![Het Overzicht van het aanbrengersportaal met vier tegels — afgesloten kredieten, in behandeling, commissie en het aantal kantoren — daaronder de zin over hoeveel kantoren de cijfers beslaan, een staafgrafiek per maand en de lijst met de laatst afgesloten dossiers.](../images/portaal-overzicht.png "Het overzichtsscherm van het aanbrengersportaal")
 
 ## De vier cijfers
 

@@ -15,7 +15,7 @@ Bovenaan kiest u het jaar. Alleen jaren waarin er effectief geboekt is, staan in
 
 Naast het jaar staat het **totaal** en hoeveel **boekingen** dat zijn.
 
-<!-- AFBEELDING: Mijn commissies met de jaarkeuze en het jaartotaal, de tabel per maand en het detail eronder. -->
+![Het scherm Mijn commissies in het aanbrengersportaal: bovenaan de jaarkeuze met het jaartotaal, daaronder een tabel met het bedrag per maand en het detail per dossier.](../images/portaal-commissies.png "Mijn commissies in het aanbrengersportaal")
 
 ## Per maand
 

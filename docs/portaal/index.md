@@ -7,7 +7,7 @@ kantoor.
 Deze pagina's beschrijven wat een aanbrenger te zien krijgt. Als makelaar leest u ze om te weten wat u
 uitdeelt wanneer u iemand toegang geeft.
 
-<!-- AFBEELDING: het venster Portaaltoegang op een aanbrengersfiche, met het tijdelijke wachtwoord, de knoppen en de vier rechten eronder. Uit tenant_demo. -->
+![Het venster Portaaltoegang op een aanbrengersfiche: het eenmalig getoonde tijdelijke wachtwoord, de knoppen Nieuw tijdelijk wachtwoord en Deactiveren, en daaronder de vinkjes voor commissies, documenten en wat deze aanmelding van zijn kantoren mag zien.](../images/portaal-toegang.png "Portaaltoegang instellen op een aanbrengersfiche")
 
 ## Toegang geven
 
