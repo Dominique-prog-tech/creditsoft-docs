@@ -117,11 +117,21 @@ De knop **Journaal** rechtsboven, op de regel met het dossiernummer, opent een p
 
 Op dit tabblad staat per aanbrenger wat er voor dit dossier afgesproken is: het bedrag, de vorm — gespreid, in termijnen of een vast bedrag — en de toestand. Hangen er veel schema's aan één dossier, dan staan ze gegroepeerd per aanbrenger, met het totaal ernaast; klik op een naam om de schema's eronder open te vouwen.
 
-Wat u met een schema kan doen, hangt af van zijn toestand:
+<!-- AFBEELDING: het journaalpaneel op het tabblad Commissieschema's, uit tenant_demo, met de werkbalk (teller, zoekveld, Toevoegen, exportmenu) en één groep per aanbrenger waarvan er één uitgeklapt staat met een actief schema en zijn knoppen Wijzigen · Herberekenen · Stopzetten. Recht Commissieschema's beheren moet aan staan. -->
 
-- **Nog niet actief** — u kan het **activeren**. Dan zet CreditSoft alle maandbedragen ineens klaar, tot het einde van de looptijd. Zolang er niets uitbetaald is, kan u het ook nog **verwijderen**.
-- **Actief** — u kan het **herberekenen** of **stopzetten**. Herberekenen toont eerst wat er zou veranderen: per maand het oude en het nieuwe bedrag, hoeveel al uitbetaalde maanden ongewijzigd blijven, en het totaal daarna. Pas als u bevestigt, gebeurt het.
-- **Stopgezet** — er staat enkel nog wanneer. Vanaf de stopmaand vervallen de maanden die nog niet uitbetaald waren; wat er vóór die maand stond, blijft.
+<!-- AFBEELDING: de fiche van een commissieschema, uit tenant_demo, op een schema met geplande betalingen — zodat de sectie Termijnen met enkele regels en de totaalregel Samen zichtbaar is. -->
+
+Boven de lijst staat de knop **Toevoegen**. Daarmee maakt u een nieuw schema voor dit dossier: u kiest de aanbrenger, het totale commissiebedrag, de startdatum en de uitbetalingsvorm. Kiest u *Gespreid*, dan vult u aan welk deel direct uitbetaald wordt en over hoeveel maanden de rest verdeeld wordt. Kiest u *Geplande betalingen*, dan zet u zelf de termijnen: per termijn hoeveel maanden na de startdatum, en welk percentage van de totale commissie. Een schema mag tot 24 termijnen dragen, en die hoeven samen geen 100 % te vormen.
+
+Een nieuw schema staat eerst op *nog niet actief*: er is nog niets geboekt. Pas wanneer u het activeert, zet CreditSoft de maandbedragen klaar.
+
+Naast **Toevoegen** staat een zoekveld — handig op een dossier met veel schema's — en een menu om de lijst te **exporteren** naar Excel of CSV.
+
+Wat u verder met een schema kan doen, hangt af van zijn toestand:
+
+- **Nog niet actief** — u kan het **wijzigen** of **activeren**. Dan zet CreditSoft alle maandbedragen ineens klaar, tot het einde van de looptijd. Zolang er niets uitbetaald is, kan u het ook nog **verwijderen**.
+- **Actief** — u kan het **wijzigen**, **herberekenen** of **stopzetten**. Wijzigt u een actief schema, dan herberekent CreditSoft meteen de maanden die nog niet uitbetaald zijn. Herberekenen toont eerst wat er zou veranderen: per maand het oude en het nieuwe bedrag, hoeveel al uitbetaalde maanden ongewijzigd blijven, en het totaal daarna. Pas als u bevestigt, gebeurt het.
+- **Stopgezet** — er staat enkel nog wanneer; wijzigen kan niet meer. Bij het stopzetten geeft u zelf de datum op vanaf wanneer het schema stopt, en waarom. Vanaf die maand vervallen de maanden die nog niet uitbetaald waren; wat er vóór die maand stond, blijft.
 
 !!! note "Wat uitbetaald is, blijft"
     Een maand die op een borderel gestaan heeft, wordt door geen enkele van deze handelingen nog gewijzigd — ook niet bij een herberekening. Daardoor kan het totaal ná een herberekening afwijken van het schemabedrag. Dat is geen fout: het verleden is uitbetaald en gerapporteerd.
