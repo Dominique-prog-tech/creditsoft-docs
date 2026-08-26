@@ -22,8 +22,24 @@ De tabel toont per aanbrenger: **naam**, **type**, **hoedanigheid**, **e-mail**,
 ### Journaal
 
 Rechts op het scherm zit de lade **Journaal**. Selecteer een aanbrenger en klap ze open: daar staat wat er rond
-die fiche gebeurt — [taken](../journaal/taken.md), [notities](../journaal/notities.md), [bijlagen](../journaal/bijlagen.md),
-[mailverkeer](../journaal/mailverkeer.md) en het [logboek](../journaal/logboek.md) van de wijzigingen.
+die fiche gebeurt — de **vrije commissieschema's**, [taken](../journaal/taken.md), [notities](../journaal/notities.md),
+[bijlagen](../journaal/bijlagen.md), [mailverkeer](../journaal/mailverkeer.md) en het
+[logboek](../journaal/logboek.md) van de wijzigingen.
+
+#### Vrije commissieschema's
+
+Dit tabblad toont de commissies van deze aanbrenger die **niet aan een kredietdossier hangen** — bijvoorbeeld een
+maandelijkse vergoeding voor dossiers van vóór een aansluiting, of een correctie. U herkent ze aan hun
+**omschrijving**; die staat vooraan op elk blokje, met daaronder het bedrag, de uitbetalingsvorm en de startdatum.
+
+Toevoegen, wijzigen, activeren, herberekenen en stopzetten werken hier precies zoals bij de schema's op een
+kredietdossier — [Kredietdossiers](../credit-management/credit-files.md) beschrijft ze in detail. Twee verschillen:
+u vult zelf een omschrijving in in plaats van een dossier te kiezen, en de aanbrenger ligt vast omdat u op zijn
+fiche staat.
+
+!!! note "Een bedrag mag negatief zijn"
+    Een commissie die u terugneemt — bijvoorbeeld omdat de aanbrenger ze zelf al ontvangen heeft — voert u in als
+    een **negatief** bedrag. Dat geldt zowel hier als bij de schema's op een dossier.
 
 Opent u de fiche, dan staan dezelfde onderdelen bovenaan als **tabbladen** — u hoeft dus niet terug
 naar de lijst om ze te raadplegen. Lade en tabbladen tonen hetzelfde en werken op elk scherm gelijk;

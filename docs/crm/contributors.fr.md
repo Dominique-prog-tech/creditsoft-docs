@@ -22,9 +22,23 @@ Le tableau affiche par apporteur : **nom**, **type**, **qualité**, **e-mail**, 
 ### Journal
 
 À droite de l'écran se trouve le tiroir **Journal**. Sélectionnez un apporteur et ouvrez-le : vous y trouvez ce
-qui se passe autour de cette fiche — [tâches](../journaal/taken.md), [notes](../journaal/notities.md),
-[pièces jointes](../journaal/bijlagen.md), [courrier](../journaal/mailverkeer.md) et l'[historique](../journaal/logboek.md)
-des modifications.
+qui se passe autour de cette fiche — les **schémas de commission libres**, les [tâches](../journaal/taken.md), les
+[notes](../journaal/notities.md), les [pièces jointes](../journaal/bijlagen.md), le [courrier](../journaal/mailverkeer.md)
+et l'[historique](../journaal/logboek.md) des modifications.
+
+#### Schémas de commission libres
+
+Cet onglet reprend les commissions de cet apporteur qui ne sont **pas liées à un dossier de crédit** — par exemple une
+indemnité mensuelle pour des dossiers antérieurs à une affiliation, ou une correction. Vous les reconnaissez à leur
+**description** : elle figure en tête de chaque bloc, avec en dessous le montant, la forme de paiement et la date de début.
+
+Ajouter, modifier, activer, recalculer et arrêter y fonctionnent exactement comme pour les schémas d'un dossier de
+crédit — [Dossiers de crédit](../credit-management/credit-files.md) les décrit en détail. Deux différences : vous
+saisissez vous-même une description au lieu de choisir un dossier, et l'apporteur est fixé puisque vous êtes sur sa fiche.
+
+!!! note "Un montant peut être négatif"
+    Une commission que vous reprenez — parce que l'apporteur l'a déjà perçue lui-même, par exemple — s'encode comme un
+    montant **négatif**. Cela vaut ici comme pour les schémas liés à un dossier.
 
 Lorsque vous ouvrez la fiche, les mêmes parties figurent en haut sous forme d'**onglets** — vous ne devez
 donc pas revenir à la liste pour les consulter. Le tiroir et les onglets affichent la même chose et
