@@ -1,6 +1,8 @@
 # Filteren en zoeken in lijsten
 
-<!-- AFBEELDING: een lijst met de filterrij open, een actief filter op één kolom en het zoekveld gevuld. -->
+![De relatielijst met het zoekveld gevuld met "Cuypers": de treffers staan geel gemarkeerd in de naam- en e-mailkolom, en onderaan is het aantal pagina's teruggelopen van 270 naar 2.](../images/filteren-zoekveld.png "Zoeken in een lijst")
+
+<!-- AFBEELDING: dezelfde lijst met een kolomfilter actief, zodat onderaan de balk met de actieve filter zichtbaar is (zie punt 4). Het trechtertje verschijnt pas bij muisbeweging over de kolomkop, dus dit beeld moet met de hand genomen worden. -->
 
 Elke lijst in CreditSoft werkt op dezelfde manier. Wat u hier leest, geldt dus even goed voor de kredietdossiers als voor de verzekeringen, de contracten, de relaties of de aanbrengers.
 

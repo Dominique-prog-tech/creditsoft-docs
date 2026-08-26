@@ -1,6 +1,8 @@
 # Filtrer et rechercher dans les listes
 
-<!-- AFBEELDING: une liste avec la ligne de filtre ouverte, un filtre actif sur une colonne et le champ de recherche rempli. -->
+![La liste des relations avec le champ de recherche rempli avec « Cuypers » : les correspondances sont surlignées en jaune dans les colonnes Nom et E-mail, et en bas le nombre de pages est passé de 270 à 2.](../images/filteren-zoekveld-fr.png "Rechercher dans une liste")
+
+<!-- AFBEELDING: la même liste avec un filtre de colonne actif, pour que la barre du filtre actif soit visible en bas (voir point 4). L'entonnoir n'apparaît qu'au survol de l'en-tête, donc cette capture doit être prise à la main. -->
 
 Toutes les listes de CreditSoft fonctionnent de la même manière. Ce que vous lisez ici vaut donc aussi bien pour les dossiers de crédit que pour les assurances, les contrats, les relations ou les apporteurs.
 
