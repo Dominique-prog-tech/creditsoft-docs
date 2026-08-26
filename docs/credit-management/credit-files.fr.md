@@ -117,10 +117,7 @@ Le bouton **Journal** en haut à droite, sur la ligne du numéro de dossier, ouv
 
 Cet onglet indique, par apporteur, ce qui a été convenu pour ce dossier : le montant, la forme — étalé, par échéances ou montant fixe — et l'état. Si un dossier porte de nombreux schémas, ils sont regroupés par apporteur avec le total à côté ; cliquez sur un nom pour déplier les schémas en dessous.
 
-<!-- AFBEELDING: het journaalpaneel op het tabblad Schémas de commission in het FRANS, uit tenant_demo, met de werkbalk en één uitgeklapte groep met een actief schema (Modifier · Recalculer · Arrêter).
-     ⚠️ NOG NIET GEMAAKT, en niet omdat het scherm niet klaar is: in tenant_demo missen 290 van de 434
-     keuzelijst-items hun Franse label, waardoor het dossierformulier achter de lade Nederlandse waarden
-     toont ("Persoonlijke lening") op een Frans beeld. Eerst die labels aanvullen, dan dit beeld. -->
+![Le panneau Journal d'un dossier de crédit sur l'onglet Schémas de commission : en haut le nombre de schémas, un champ de recherche, le bouton Ajouter et un menu pour exporter ; en dessous le groupe par apporteur avec le nombre de schémas et le montant total, et à l'intérieur un schéma avec son montant, l'état Actif, la forme et la date de début, ainsi que les boutons Modifier, Recalculer et Arrêter.](../images/commissieschemas-journaal-fr.png "Les schémas de commission d'un dossier de crédit"){ .volle-breedte }
 
 Au-dessus de la liste se trouve le bouton **Ajouter**. Il crée un nouveau schéma pour ce dossier : vous choisissez l'apporteur, le montant total de la commission, la date de début et la forme de paiement. Si vous choisissez *Étalé*, vous complétez la part payée immédiatement et le nombre de mois sur lequel le reste est réparti. Si vous choisissez *Paiements planifiés*, vous fixez vous-même les échéances : par échéance, combien de mois après la date de début et quel pourcentage de la commission totale. Un schéma peut porter jusqu'à 24 échéances, et leur somme ne doit pas nécessairement atteindre 100 %.
 
@@ -135,6 +132,12 @@ Ce que vous pouvez faire ensuite dépend de l'état du schéma :
 - **Pas encore actif** — vous pouvez le **modifier** ou l'**activer**. CreditSoft prépare alors tous les montants mensuels en une fois, jusqu'à la fin de la durée. Tant que rien n'est payé, vous pouvez aussi le **supprimer**.
 - **Actif** — vous pouvez le **modifier**, le **recalculer** ou l'**arrêter**. Si vous modifiez un schéma actif, CreditSoft recalcule immédiatement les mois qui ne sont pas encore payés. Le recalcul montre d'abord ce qui changerait : par mois l'ancien et le nouveau montant, combien de mois déjà payés restent inchangés, et le total après. Cela ne se produit qu'après votre confirmation.
 - **Arrêté** — seule la date reste affichée ; la modification n'est plus possible. À l'arrêt, vous indiquez vous-même à partir de quelle date le schéma s'arrête, et pourquoi. À partir de ce mois, les mois non encore payés disparaissent ; ce qui précède ce mois reste.
+
+!!! tip "Un rappel lors de l'enregistrement"
+    Si vous enregistrez un dossier dont l'intermédiaire n'a pas encore de schéma de commission, un message vous
+    le rappelle. Le dossier est enregistré normalement — c'est un rappel, pas un blocage. Si vous ne voyez pas ce
+    message et souhaitez l'avoir, demandez à votre administrateur de l'activer ; il est désactivé par défaut, car
+    tous les bureaux ne travaillent pas avec des schémas de commission.
 
 !!! note "Ce qui est payé reste"
     Un mois qui a figuré sur un bordereau n'est plus modifié par aucune de ces actions — pas même lors d'un recalcul. Le total après un recalcul peut donc différer du montant du schéma. Ce n'est pas une erreur : le passé a été payé et rapporté.

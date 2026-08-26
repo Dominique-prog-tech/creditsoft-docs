@@ -133,6 +133,12 @@ Wat u verder met een schema kan doen, hangt af van zijn toestand:
 - **Actief** — u kan het **wijzigen**, **herberekenen** of **stopzetten**. Wijzigt u een actief schema, dan herberekent CreditSoft meteen de maanden die nog niet uitbetaald zijn. Herberekenen toont eerst wat er zou veranderen: per maand het oude en het nieuwe bedrag, hoeveel al uitbetaalde maanden ongewijzigd blijven, en het totaal daarna. Pas als u bevestigt, gebeurt het.
 - **Stopgezet** — er staat enkel nog wanneer; wijzigen kan niet meer. Bij het stopzetten geeft u zelf de datum op vanaf wanneer het schema stopt, en waarom. Vanaf die maand vervallen de maanden die nog niet uitbetaald waren; wat er vóór die maand stond, blijft.
 
+!!! tip "Een herinnering bij het bewaren"
+    Bewaart u een dossier waarvoor de tussenpersoon nog geen commissieschema heeft, dan verschijnt daar een
+    melding over. Het dossier wordt gewoon bewaard — het is een herinnering, geen blokkade. Ziet u die melding
+    niet en wilt u ze wel, vraag dan uw beheerder om ze aan te zetten; ze staat standaard uit omdat niet elk
+    kantoor met commissieschema's werkt.
+
 !!! note "Wat uitbetaald is, blijft"
     Een maand die op een borderel gestaan heeft, wordt door geen enkele van deze handelingen nog gewijzigd — ook niet bij een herberekening. Daardoor kan het totaal ná een herberekening afwijken van het schemabedrag. Dat is geen fout: het verleden is uitbetaald en gerapporteerd.
 
