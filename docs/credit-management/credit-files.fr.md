@@ -8,7 +8,7 @@ Dans la barre latérale, cliquez sur **Crédit**, puis sur **Dossiers de crédit
 
 ## La liste
 
-![La liste des dossiers de crédit : en haut les filtres par statut, intermédiaire et date, en dessous le tableau indiquant par dossier le numéro, le statut, le montant du crédit, le demandeur, l'intermédiaire, l'institution, la date de dépôt et la date d'effet.](../images/kredietdossiers-lijst-fr.png "Tous les dossiers de crédit du bureau"){ .volle-breedte }
+![La liste des dossiers de crédit : en haut les filtres par statut et par intermédiaire avec le nombre de dossiers trouvés, en dessous le tableau indiquant par dossier la référence de l'apporteur, le statut, le montant du crédit, le demandeur, l'intermédiaire, l'institution, la date de dépôt et la date d'effet.](../images/kredietdossiers-lijst-fr.png "Tous les dossiers de crédit du bureau"){ .volle-breedte }
 
 Par dossier, vous voyez qui en fait la demande, par qui il passe et où il en est :
 
@@ -36,12 +36,9 @@ Avec **Nouveau dossier** en haut de la liste, vous créez un dossier vide. Il re
 
 - **Rechercher** — le champ de recherche porte sur toutes les colonnes **visibles**. Si vous activez une colonne via le sélecteur, la recherche s'y applique aussitôt.
 - **Statut** et **Intermédiaire** — les deux listes de choix du haut. Elles n'affichent que ce qui figure dans vos dossiers, donc aucun statut sans dossier.
-- **Plage de dates** — renseignez **du** et/ou **au**. La liste de choix voisine détermine *sur quelle* date porte cette plage : sur la **date de dépôt** (par défaut) ou sur la **date d'effet**.
+- **Par date** — les colonnes **Date de dépôt** et **Date d'effet** se filtrent via l'entonnoir sur l'en-tête de colonne, ou via le constructeur de filtres pour une plage telle que « entre le 1er janvier et le 30 juin ». Voir [Filtrer et rechercher dans les listes](filteren-in-lijsten.md).
 - **Depuis le tableau de bord** — si vous arrivez depuis une phase du tableau de bord, la liste est déjà filtrée. Le filtre actif s'affiche en haut, avec un bouton **Effacer le filtre** à côté.
 - **Exporter** — vers Excel ou CSV, avec les filtres actifs à ce moment-là. L'export suit la langue de votre écran.
-
-!!! tip "Les dossiers sans date sortent d'une plage de dates"
-    Si vous renseignez une plage, les dossiers dont cette date est encore vide disparaissent. C'est voulu : un dossier sans date d'effet n'est tout simplement ni avant ni après un jour donné. Pour les revoir, videz la plage.
 
 **[Journal](../journaal/overzicht.md)** — cliquez à droite sur le rail **Journal** pour consulter les [tâches](../journaal/taken.md), [notes](../journaal/notities.md), les appels, [pièces jointes](../journaal/bijlagen.md), le [courrier](../journaal/mailverkeer.md), les schémas de commission et l'[historique](../journaal/logboek.md) du dossier sélectionné sans l'ouvrir.
 

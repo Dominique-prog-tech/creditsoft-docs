@@ -8,7 +8,7 @@ Klik in de zijbalk op **Krediet** en dan op **Kredietdossiers**.
 
 ## De lijst
 
-![De lijst met kredietdossiers: bovenaan de filters op status, tussenpersoon en datum, daaronder de tabel met per dossier het dossiernummer, de status, het kredietbedrag, de aanvrager, de tussenpersoon, de instelling, de datum van indiening en de ingangsdatum.](../images/kredietdossiers-lijst.png "Alle kredietdossiers van het kantoor"){ .volle-breedte }
+![De lijst met kredietdossiers: bovenaan de filters op status en tussenpersoon met het aantal gevonden dossiers, daaronder de tabel met per dossier het kenmerk van de aanbrenger, de status, het kredietbedrag, de aanvrager, de tussenpersoon, de instelling, de datum van indiening en de ingangsdatum.](../images/kredietdossiers-lijst.png "Alle kredietdossiers van het kantoor"){ .volle-breedte }
 
 Per dossier ziet u wie het aanvraagt, via wie het loopt en waar het staat:
 
@@ -36,12 +36,9 @@ Met **Nieuw dossier** bovenaan de lijst maakt u een leeg dossier aan. Het krijgt
 
 - **Zoeken** — het zoekveld zoekt over alle **zichtbare** kolommen. Zet u een kolom aan via **Kolommen kiezen**, dan zoekt u er meteen ook in.
 - **Status** en **Tussenpersoon** — de twee keuzelijsten bovenaan. Ze tonen alleen wat in uw dossiers voorkomt, dus geen statussen zonder dossier.
-- **Datumbereik** — vul **van** en/of **tot** in. Met de keuzelijst ernaast bepaalt u op *welke* datum dat bereik werkt: op de **datum van indiening** (standaard) of op de **ingangsdatum**.
+- **Op datum** — de kolommen **Datum indiening** en **Ingangsdatum** filtert u via het trechtertje op de kolomkop, of via de filterbouwer voor een bereik zoals "tussen 1 januari en 30 juni". Zie [Filteren en zoeken in lijsten](filteren-in-lijsten.md).
 - **Vanaf het dashboard** — klikt u door vanaf een fase op het dashboard, dan staat de lijst al gefilterd. Bovenaan ziet u welke filter actief is, met een knop **Filter wissen** ernaast.
 - **Exporteren** — naar Excel of CSV, met de filters die op dat moment aan staan. De export volgt de taal van uw scherm.
-
-!!! tip "Dossiers zonder datum vallen buiten een datumbereik"
-    Vult u een datumbereik in, dan verdwijnen de dossiers waar die datum nog leeg is. Dat is bedoeld: een dossier zonder ingangsdatum is nu eenmaal niet "voor of na" een bepaalde dag. Wilt u ze toch zien, maak dan het bereik leeg.
 
 **[Journaal](../journaal/overzicht.md)** — klik rechts op de rail **Journaal** om de [taken](../journaal/taken.md), [notities](../journaal/notities.md), gesprekken, [bijlagen](../journaal/bijlagen.md), het [mailverkeer](../journaal/mailverkeer.md), de commissieschema's en het [logboek](../journaal/logboek.md) van het geselecteerde dossier te zien zonder het te openen.
 
