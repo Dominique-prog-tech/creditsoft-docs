@@ -6,7 +6,7 @@ Twee keuzes die bepalen hoe CreditSoft met commissie omgaat. Ze gelden voor uw h
 
 Ga naar **Platformbeheer** onderaan het menu, en klik onder *Krediet* op de tegel **Commissie-instellingen**.
 
-<!-- AFBEELDING: het scherm Commissie-instellingen met de twee blokken: de afrekenperiode en de waarschuwing -->
+![Het scherm Commissie-instellingen met twee blokken: bovenaan de keuze tussen afrekenen per maand of per kwartaal met een waarschuwing dat bestaande borderellen niet veranderen, daaronder het vinkje om te waarschuwen bij een dossier zonder commissieschema.](../images/commissie-instellingen.png "De twee keuzes die voor uw hele kantoor gelden"){ .volle-breedte }
 
 ## Afrekenen per maand of per kwartaal
 

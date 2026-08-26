@@ -6,7 +6,7 @@ Pour chaque dossier de crédit, CreditSoft calcule la commission qui revient à 
 
 Dans le menu de gauche, cliquez sur **Bordereau**, sous *Crédit*.
 
-<!-- AFBEELDING: l'écran Bordereau sur l'onglet Aperçu, avec le filtre Statut sur En attente et une vingtaine de lignes -->
+![L'écran Bordereau sur l'onglet Aperçu : par ligne un apporteur avec l'année, le mois, le statut En attente, le nombre d'écritures et le montant total, avec en haut les filtres Statut et Toutes les années.](../images/borderel-overzicht-fr.png "Ce qui reste à payer par apporteur"){ .volle-breedte }
 
 En haut se trouvent deux onglets, et la différence entre les deux est importante :
 
@@ -30,7 +30,7 @@ Le second filtre vous permet de choisir une **année**.
 
 Vous y trouvez chaque bordereau que vous avez créé : numéro, date du document, apporteur, montant et statut de paiement.
 
-<!-- AFBEELDING: l'onglet Bordereaux avec le bouton Créer une nouvelle série en haut et une liste de bordereaux -->
+![L'onglet Bordereaux : une liste reprenant par ligne le numéro, la date du document, l'apporteur, le montant et le statut, avec en haut le bouton Créer une nouvelle série.](../images/borderel-borderellen-fr.png "Chaque bordereau créé, avec son statut"){ .volle-breedte }
 
 !!! info "Le numéro"
     Les bordereaux que vous créez dans CreditSoft reçoivent un numéro par année — *2026-0001*, *2026-0002*, et ainsi de suite. Les bordereaux plus anciens portent un numéro précédé d'un dièse, comme *#6127* : c'est la référence qui permet de les retrouver dans vos données.
@@ -43,7 +43,7 @@ Cliquez en haut sur **Créer une nouvelle série**. Vous choisissez trois élém
 - la **période** — un mois, ou un trimestre si votre bureau décompte par trimestre ;
 - la **date du document**, celle qui figurera sur le bordereau. Aujourd'hui par défaut. Si vous décomptez le mois de décembre début janvier, vous pouvez librement l'adapter ici.
 
-<!-- AFBEELDING: la fenêtre Créer une nouvelle série avec l'année, le mois et la date du document remplis, et le bouton Afficher l'aperçu -->
+![La fenêtre Créer une nouvelle série avec les champs Année, Mois et Date du document remplis, et les boutons Afficher l'aperçu et Annuler en dessous.](../images/borderel-nieuwe-ronde-fr.png "Choisir l'année, la période et la date du document"){ .volle-breedte }
 
 Cliquez ensuite sur **Afficher l'aperçu**. Vous voyez par apporteur combien de lignes sont reprises et pour quel montant, avec le total en bas. **Rien n'est encore enregistré** — vous pouvez tout à fait choisir une autre période et regarder à nouveau.
 
@@ -60,7 +60,7 @@ Une période ne peut être décomptée qu'une seule fois. Si vous essayez une de
 
 Double-cliquez une ligne dans la liste.
 
-<!-- AFBEELDING: la fiche d'un bordereau : les données générales en haut, les lignes de commission en dessous, les boutons en bas -->
+![La fiche d'un bordereau : en haut les données générales avec le numéro, la date du document, l'apporteur et le montant, en dessous les lignes de commission avec la période, le dossier, la description et le montant, et en bas les boutons Imprimer, Envoyer, Marquer payé et Retirer.](../images/borderel-fiche-fr.png "Un bordereau, avec ses lignes et les quatre actions"){ .volle-breedte }
 
 En haut figurent les **données générales** : numéro, date du document, apporteur et montant, ainsi que la date d'**envoi** et d'**impression**. En dessous se trouvent les **lignes de commission** — période, dossier, description et montant. Si une ligne n'est rattachée à aucun dossier, la mention **libre** apparaît : il s'agit d'une commission libre, par exemple une indemnité mensuelle ou une correction.
 
@@ -71,8 +71,6 @@ Quatre boutons figurent en bas.
 Ouvre l'**aperçu avant impression** : un pdf en format paysage, avec votre en-tête — logo, adresse, coordonnées et numéro FSMA issus de votre fiche d'entreprise — et à droite l'adresse de l'apporteur avec son numéro de TVA, de sorte que le document se lise comme un décompte qui lui est adressé.
 
 Chaque ligne de commission indique la **date d'acte**, le **numéro de dossier**, le **client**, le **bien**, le **prêteur**, le **montant du crédit** et la **commission**. Les lignes sont triées par date d'acte. Une commission libre n'a pas de dossier : vous y lisez la description à la place. Le total figure en bas, et les en-têtes de colonnes se répètent sur chaque page avec un numéro de page.
-
-<!-- AFBEELDING: l'aperçu avant impression d'un bordereau, avec en haut les boutons Transférer par e-mail et Télécharger -->
 
 Depuis cette fenêtre, vous pouvez **télécharger** le fichier ou le **transférer par e-mail** à qui vous voulez. C'est autre chose que le bouton *Envoyer* voisin : celui-ci adresse le bordereau à l'apporteur lui-même, accompagné de votre texte type.
 

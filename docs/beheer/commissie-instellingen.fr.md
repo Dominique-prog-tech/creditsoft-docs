@@ -6,7 +6,7 @@ Deux choix qui déterminent la manière dont CreditSoft traite les commissions. 
 
 Rendez-vous dans **Gestion de la plateforme** en bas du menu, puis cliquez sous *Crédit* sur la tuile **Paramètres de commission**.
 
-<!-- AFBEELDING: l'écran Paramètres de commission avec les deux blocs : la périodicité du décompte et l'avertissement -->
+![L'écran Paramètres de commission avec deux blocs : en haut le choix entre un décompte mensuel ou trimestriel, avec un avertissement indiquant que les bordereaux existants ne changent pas, en dessous la case à cocher pour avertir en cas de dossier sans schéma de commission.](../images/commissie-instellingen-fr.png "Les deux choix valables pour tout votre bureau"){ .volle-breedte }
 
 ## Décompter par mois ou par trimestre
 

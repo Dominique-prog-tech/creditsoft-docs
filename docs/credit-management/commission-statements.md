@@ -6,7 +6,7 @@ CreditSoft rekent bij elk kredietdossier uit welke commissie uw tussenpersoon to
 
 Klik in het menu links op **Borderel**, onder *Krediet*.
 
-<!-- AFBEELDING: het scherm Borderel op het tabblad Overzicht, met de filter Toestand op Openstaand en een twintigtal rijen -->
+![Het scherm Borderel op het tabblad Overzicht: per rij een aanbrenger met jaar, maand, de toestand Openstaand, het aantal boekingen en het totaalbedrag, met bovenaan de filters Toestand en Alle jaren.](../images/borderel-overzicht.png "Wat er per aanbrenger nog uitbetaald moet worden"){ .volle-breedte }
 
 Bovenaan staan twee tabbladen, en het verschil ertussen is belangrijk:
 
@@ -30,7 +30,7 @@ Met de tweede filter kiest u een **jaar**.
 
 Hier staat elk borderel dat u ooit aanmaakte: nummer, documentdatum, aanbrenger, bedrag en of het betaald is.
 
-<!-- AFBEELDING: het tabblad Borderellen met de knop Nieuwe ronde aanmaken bovenaan en een lijst borderellen -->
+![Het tabblad Borderellen: een lijst met per rij het nummer, de documentdatum, de aanbrenger, het bedrag en de toestand, met bovenaan de knop Nieuwe ronde aanmaken.](../images/borderel-borderellen.png "Elk borderel dat u aanmaakte, met zijn toestand"){ .volle-breedte }
 
 !!! info "Het nummer"
     Borderellen die u in CreditSoft aanmaakt, krijgen een nummer per jaar — *2026-0001*, *2026-0002*, en zo verder. Bij oudere borderellen staat er een nummer met een hekje ervoor, zoals *#6127*: dat is het kenmerk waarmee dat borderel in uw gegevens terug te vinden is.
@@ -43,7 +43,7 @@ Klik bovenaan op **Nieuwe ronde aanmaken**. U kiest drie dingen:
 - de **periode** — een maand, of een kwartaal wanneer uw kantoor per kwartaal afrekent;
 - de **documentdatum**, de datum die op het borderel komt te staan. Standaard vandaag. Rekent u begin januari de maand december af, dan zet u die hier gerust op de datum die u wil.
 
-<!-- AFBEELDING: het venster Nieuwe ronde aanmaken met jaar, maand en documentdatum ingevuld en de knop Voorbeeld tonen -->
+![Het venster Nieuwe ronde aanmaken met de velden Jaar, Maand en Documentdatum ingevuld, en de knoppen Voorbeeld tonen en Annuleren eronder.](../images/borderel-nieuwe-ronde.png "Jaar, periode en documentdatum kiezen"){ .volle-breedte }
 
 Klik daarna op **Voorbeeld tonen**. U krijgt per aanbrenger te zien hoeveel lijnen er meegaan en voor welk bedrag, met het totaal onderaan. **Er is dan nog niets vastgelegd** — u kan gerust een andere periode kiezen en opnieuw kijken.
 
@@ -60,7 +60,7 @@ Een periode kan maar één keer afgerekend worden. Probeert u het een tweede kee
 
 Dubbelklik een regel in de lijst.
 
-<!-- AFBEELDING: de fiche van één borderel: bovenaan de algemene gegevens, daaronder de commissielijnen, onderaan de knoppen -->
+![De fiche van één borderel: bovenaan de algemene gegevens met nummer, documentdatum, aanbrenger en bedrag, daaronder de commissielijnen met periode, dossier, omschrijving en bedrag, en onderaan de knoppen Afdrukken, Mailen, Betaald markeren en Intrekken.](../images/borderel-fiche.png "Eén borderel, met zijn lijnen en de vier acties"){ .volle-breedte }
 
 Bovenaan staan de **algemene gegevens**: nummer, documentdatum, aanbrenger en bedrag, en of het al **verstuurd** en **afgedrukt** werd. Daaronder staan de **commissielijnen** — periode, dossier, omschrijving en bedrag. Hangt een lijn niet aan een dossier, dan staat er **vrij**: dat is een vrije commissie, bijvoorbeeld een maandelijkse vergoeding of een correctie.
 
@@ -71,8 +71,6 @@ Onderaan staan vier knoppen.
 Opent het **afdrukvoorbeeld**: een pdf op een liggend blad, met uw briefhoofd — logo, adres, contactgegevens en FSMA-nummer uit uw bedrijfsfiche — en rechts het adres van de aanbrenger met zijn btw-nummer, zodat het document leest als een afrekening die aan hém gericht is.
 
 Per commissielijn staat er: de **aktedatum**, het **dossiernummer**, de **klant**, het **pand**, de **kredietverstrekker**, het **kredietbedrag** en de **commissie**. De lijnen staan op aktedatum gesorteerd. Een vrije commissie heeft geen dossier: daar leest u de omschrijving in de plaats. Onderaan het totaal, en de kolomkoppen staan op elke bladzijde opnieuw met een paginanummer.
-
-<!-- AFBEELDING: het afdrukvoorbeeld van een borderel, met bovenaan de knoppen Doorsturen per mail en Downloaden -->
 
 Vanuit dat venster kan u het bestand **downloaden** of **doorsturen per mail** naar wie u wil. Dat laatste is iets anders dan de knop *Mailen* hiernaast: die stuurt het borderel naar de aanbrenger zelf, met uw vaste begeleidende tekst.
 
