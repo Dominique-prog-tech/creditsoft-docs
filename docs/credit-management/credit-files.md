@@ -117,13 +117,13 @@ De knop **Journaal** rechtsboven, op de regel met het dossiernummer, opent een p
 
 Op dit tabblad staat per aanbrenger wat er voor dit dossier afgesproken is: het bedrag, de vorm — gespreid, in termijnen of een vast bedrag — en de toestand. Hangen er veel schema's aan één dossier, dan staan ze gegroepeerd per aanbrenger, met het totaal ernaast; klik op een naam om de schema's eronder open te vouwen.
 
-<!-- AFBEELDING: het journaalpaneel op het tabblad Commissieschema's, uit tenant_demo, met de werkbalk (teller, zoekveld, Toevoegen, exportmenu) en één groep per aanbrenger waarvan er één uitgeklapt staat met een actief schema en zijn knoppen Wijzigen · Herberekenen · Stopzetten. Recht Commissieschema's beheren moet aan staan. -->
-
-<!-- AFBEELDING: de fiche van een commissieschema, uit tenant_demo, op een schema met geplande betalingen — zodat de sectie Termijnen met enkele regels en de totaalregel Samen zichtbaar is. -->
+![Het journaalpaneel van een kredietdossier op het tabblad Commissieschema's: bovenaan het aantal schema's, een zoekveld, de knop Toevoegen en een menu om te exporteren; daaronder de groep per aanbrenger met het aantal schema's en het totaalbedrag, en daarin één schema met zijn bedrag, de toestand Actief, de vorm en de startdatum, en de knoppen Wijzigen, Herberekenen en Stopzetten.](../images/commissieschemas-journaal.png "De commissieschema's van een kredietdossier"){ .volle-breedte }
 
 Boven de lijst staat de knop **Toevoegen**. Daarmee maakt u een nieuw schema voor dit dossier: u kiest de aanbrenger, het totale commissiebedrag, de startdatum en de uitbetalingsvorm. Kiest u *Gespreid*, dan vult u aan welk deel direct uitbetaald wordt en over hoeveel maanden de rest verdeeld wordt. Kiest u *Geplande betalingen*, dan zet u zelf de termijnen: per termijn hoeveel maanden na de startdatum, en welk percentage van de totale commissie. Een schema mag tot 24 termijnen dragen, en die hoeven samen geen 100 % te vormen.
 
 Een nieuw schema staat eerst op *nog niet actief*: er is nog niets geboekt. Pas wanneer u het activeert, zet CreditSoft de maandbedragen klaar.
+
+![De fiche van een commissieschema: bovenaan de sectie Algemene gegevens met de aanbrenger, de totale commissie en de startdatum, daaronder de keuze van de uitbetaling tussen gespreid, geplande betalingen en een vast bedrag, en een veld voor een opmerking; onderaan de sectie Termijnen met per termijn de maand en het percentage, een knop om een termijn toe te voegen en de regel Samen met het totaal van de percentages.](../images/commissieschema-fiche.png "Een commissieschema met geplande betalingen"){ .volle-breedte }
 
 Naast **Toevoegen** staat een zoekveld — handig op een dossier met veel schema's — en een menu om de lijst te **exporteren** naar Excel of CSV.
 

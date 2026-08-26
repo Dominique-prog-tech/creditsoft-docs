@@ -117,13 +117,16 @@ Le bouton **Journal** en haut à droite, sur la ligne du numéro de dossier, ouv
 
 Cet onglet indique, par apporteur, ce qui a été convenu pour ce dossier : le montant, la forme — étalé, par échéances ou montant fixe — et l'état. Si un dossier porte de nombreux schémas, ils sont regroupés par apporteur avec le total à côté ; cliquez sur un nom pour déplier les schémas en dessous.
 
-<!-- AFBEELDING: het journaalpaneel op het tabblad Schémas de commission in het FRANS, uit tenant_demo, met de werkbalk en één uitgeklapte groep met een actief schema (Modifier · Recalculer · Arrêter). -->
-
-<!-- AFBEELDING: de fiche van een commissieschema in het FRANS, uit tenant_demo, op een schema met paiements planifiés — met de sectie Échéances en de totaalregel Total. -->
+<!-- AFBEELDING: het journaalpaneel op het tabblad Schémas de commission in het FRANS, uit tenant_demo, met de werkbalk en één uitgeklapte groep met een actief schema (Modifier · Recalculer · Arrêter).
+     ⚠️ NOG NIET GEMAAKT, en niet omdat het scherm niet klaar is: in tenant_demo missen 290 van de 434
+     keuzelijst-items hun Franse label, waardoor het dossierformulier achter de lade Nederlandse waarden
+     toont ("Persoonlijke lening") op een Frans beeld. Eerst die labels aanvullen, dan dit beeld. -->
 
 Au-dessus de la liste se trouve le bouton **Ajouter**. Il crée un nouveau schéma pour ce dossier : vous choisissez l'apporteur, le montant total de la commission, la date de début et la forme de paiement. Si vous choisissez *Étalé*, vous complétez la part payée immédiatement et le nombre de mois sur lequel le reste est réparti. Si vous choisissez *Paiements planifiés*, vous fixez vous-même les échéances : par échéance, combien de mois après la date de début et quel pourcentage de la commission totale. Un schéma peut porter jusqu'à 24 échéances, et leur somme ne doit pas nécessairement atteindre 100 %.
 
 Un nouveau schéma est d'abord *pas encore actif* : rien n'est encore comptabilisé. Ce n'est qu'à l'activation que CreditSoft prépare les montants mensuels.
+
+![La fiche d'un schéma de commission : en haut la section Données générales avec l'apporteur, la commission totale et la date de début, en dessous le choix du paiement entre étalé, paiements planifiés et montant fixe, ainsi qu'un champ pour une remarque ; en bas la section Échéances avec, par échéance, le mois et le pourcentage, un bouton pour ajouter une échéance et la ligne Total reprenant la somme des pourcentages.](../images/commissieschema-fiche-fr.png "Un schéma de commission avec des paiements planifiés"){ .volle-breedte }
 
 À côté d'**Ajouter** se trouvent un champ de recherche — pratique sur un dossier qui porte de nombreux schémas — et un menu pour **exporter** la liste vers Excel ou CSV.
 
