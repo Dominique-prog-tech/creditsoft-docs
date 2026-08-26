@@ -4,14 +4,53 @@ hide:
   - toc
 ---
 
-<div class="cs-hero" markdown>
+<div class="cs-onthaal" markdown>
+<div class="cs-onthaal__tekst" markdown>
 
-# CreditSoft — Manuel
+# Chaque dossier de crédit, de la demande à la commission
 
-Tout sur votre plateforme de courtage en crédit : de votre première connexion à
-la gestion des dossiers, des relations et des commissions.
+CreditSoft réunit vos dossiers, demandeurs, biens, documents et commissions dans
+une seule application. Ce que vous gérez aujourd'hui dans des dossiers, des
+e-mails et des tableurs se trouve ici, auprès du dossier auquel cela appartient.
 
+<div class="cs-knoppen" markdown>
+[Démarrer](getting-started/navigatie.md){ .cs-knop .cs-knop--vol }
+[Tous les sujets](#tous-les-sujets){ .cs-knop .cs-knop--rand }
 </div>
+</div>
+<div class="cs-onthaal__beeld" markdown>
+![Le tableau de bord de CreditSoft : le nombre de dossiers par phase, et en dessous les dossiers qui demandent attention.](images/dashboard-startscherm-fr.png){ .off-glb }
+</div>
+</div>
+
+<div class="cs-pijlers" markdown>
+<div class="cs-pijler" markdown>
+<span class="cs-pijler__merk">:material-folder-open-outline:</span>
+
+### Tout auprès du dossier
+
+Demandeurs, biens, contrats, documents et le journal complet se trouvent auprès du
+dossier de crédit lui-même. Plus personne ne doit chercher où une pièce est rangée.
+</div>
+<div class="cs-pijler" markdown>
+<span class="cs-pijler__merk">:material-account-multiple-check-outline:</span>
+
+### Votre client fournit lui-même
+
+Via le portail client, votre client téléverse ses documents avec un lien personnel.
+Vous les évaluez ; ce que vous refusez est automatiquement redemandé.
+</div>
+<div class="cs-pijler" markdown>
+<span class="cs-pijler__merk">:material-calculator-variant-outline:</span>
+
+### Une commission qui se calcule
+
+Fixez par apporteur ce qui a été convenu — direct, étalé ou par échéances — et
+CreditSoft prépare les montants mensuels pour le bordereau et la fiche 281.50.
+</div>
+</div>
+
+## Tous les sujets
 
 <div class="grid cards" markdown>
 

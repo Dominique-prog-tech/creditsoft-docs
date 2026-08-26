@@ -4,14 +4,53 @@ hide:
   - toc
 ---
 
-<div class="cs-hero" markdown>
+<div class="cs-onthaal" markdown>
+<div class="cs-onthaal__tekst" markdown>
 
-# CreditSoft — Handleiding
+# Elk kredietdossier van aanvraag tot commissie
 
-Alles over uw platform voor kredietbemiddeling: van uw eerste aanmelding tot het
-beheer van dossiers, relaties en commissies.
+CreditSoft brengt uw dossiers, aanvragers, panden, documenten en commissies samen
+in één toepassing. Wat u vandaag in mappen, mails en rekenbladen bijhoudt, staat
+hier bij het dossier waar het thuishoort.
 
+<div class="cs-knoppen" markdown>
+[Aan de slag](getting-started/navigatie.md){ .cs-knop .cs-knop--vol }
+[Alle onderwerpen](#alle-onderwerpen){ .cs-knop .cs-knop--rand }
 </div>
+</div>
+<div class="cs-onthaal__beeld" markdown>
+![Het dashboard van CreditSoft: het aantal dossiers per fase, met daaronder de dossiers die aandacht vragen.](images/dashboard-startscherm.png){ .off-glb }
+</div>
+</div>
+
+<div class="cs-pijlers" markdown>
+<div class="cs-pijler" markdown>
+<span class="cs-pijler__merk">:material-folder-open-outline:</span>
+
+### Alles bij het dossier
+
+Aanvragers, panden, contracten, documenten en het volledige journaal staan bij het
+kredietdossier zelf. Niemand hoeft nog te zoeken waar een stuk bewaard is.
+</div>
+<div class="cs-pijler" markdown>
+<span class="cs-pijler__merk">:material-account-multiple-check-outline:</span>
+
+### Uw klant levert zelf aan
+
+Via het klantenportaal laadt uw klant zijn documenten op met een persoonlijke link.
+U beoordeelt ze; wat u afkeurt, vraagt de toepassing automatisch opnieuw.
+</div>
+<div class="cs-pijler" markdown>
+<span class="cs-pijler__merk">:material-calculator-variant-outline:</span>
+
+### Commissie die zichzelf rekent
+
+Leg per aanbrenger vast wat er afgesproken is — direct, gespreid of in termijnen —
+en CreditSoft zet de maandbedragen klaar voor het borderel en de fiche 281.50.
+</div>
+</div>
+
+## Alle onderwerpen
 
 <div class="grid cards" markdown>
 

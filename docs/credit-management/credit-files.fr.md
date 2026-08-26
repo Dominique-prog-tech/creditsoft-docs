@@ -43,7 +43,7 @@ Avec **Nouveau dossier** en haut de la liste, vous créez un dossier vide. Il re
 !!! tip "Les dossiers sans date sortent d'une plage de dates"
     Si vous renseignez une plage, les dossiers dont cette date est encore vide disparaissent. C'est voulu : un dossier sans date d'effet n'est tout simplement ni avant ni après un jour donné. Pour les revoir, videz la plage.
 
-**[Journal](../journaal/overzicht.md)** — cliquez à droite sur le rail **Journal** pour consulter les [tâches](../journaal/taken.md), [notes](../journaal/notities.md), [pièces jointes](../journaal/bijlagen.md), le [courrier](../journaal/mailverkeer.md) et l'[historique](../journaal/logboek.md) du dossier sélectionné sans l'ouvrir.
+**[Journal](../journaal/overzicht.md)** — cliquez à droite sur le rail **Journal** pour consulter les [tâches](../journaal/taken.md), [notes](../journaal/notities.md), les appels, [pièces jointes](../journaal/bijlagen.md), le [courrier](../journaal/mailverkeer.md), les schémas de commission et l'[historique](../journaal/logboek.md) du dossier sélectionné sans l'ouvrir.
 
 **Double-cliquez** une ligne pour ouvrir le dossier.
 
@@ -111,7 +111,22 @@ La colonne **Statut** indique en un mot où en est chaque pièce : *Demandé* (r
 
 ### Le journal de ce dossier
 
-Le bouton **Journal** en haut à droite, sur la ligne du numéro de dossier, ouvre un panneau à cinq onglets : **Tâches**, **Notes**, **Pièces jointes**, **Courrier** et l'**Historique** — le tout pour ce dossier.
+Le bouton **Journal** en haut à droite, sur la ligne du numéro de dossier, ouvre un panneau à sept onglets : **Tâches**, **Notes**, **Appels**, **Pièces jointes**, **Courrier**, **Schémas de commission** et l'**Historique** — le tout pour ce dossier.
+
+#### Schémas de commission
+
+Cet onglet indique, par apporteur, ce qui a été convenu pour ce dossier : le montant, la forme — étalé, par échéances ou montant fixe — et l'état. Si un dossier porte de nombreux schémas, ils sont regroupés par apporteur avec le total à côté ; cliquez sur un nom pour déplier les schémas en dessous.
+
+Ce que vous pouvez faire dépend de l'état du schéma :
+
+- **Pas encore actif** — vous pouvez l'**activer**. CreditSoft prépare alors tous les montants mensuels en une fois, jusqu'à la fin de la durée. Tant que rien n'est payé, vous pouvez aussi le **supprimer**.
+- **Actif** — vous pouvez le **recalculer** ou l'**arrêter**. Le recalcul montre d'abord ce qui changerait : par mois l'ancien et le nouveau montant, combien de mois déjà payés restent inchangés, et le total après. Cela ne se produit qu'après votre confirmation.
+- **Arrêté** — seule la date reste affichée. À partir du mois d'arrêt, les mois non encore payés disparaissent ; ce qui précède ce mois reste.
+
+!!! note "Ce qui est payé reste"
+    Un mois qui a figuré sur un bordereau n'est plus modifié par aucune de ces actions — pas même lors d'un recalcul. Le total après un recalcul peut donc différer du montant du schéma. Ce n'est pas une erreur : le passé a été payé et rapporté.
+
+    Pour la même raison, un schéma ne peut plus être supprimé dès qu'un mois a été payé. Si vous voulez malgré tout l'arrêter, utilisez **Arrêter**.
 
 Sous *Courrier*, vous retrouvez l'invitation envoyée à votre client ainsi que l'e-mail concernant les pièces refusées, chacun avec son statut de livraison. Vous pouvez aussi y rédiger un courriel : le destinataire est alors déjà rempli avec le premier demandeur du dossier.
 

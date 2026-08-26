@@ -252,3 +252,79 @@ html {
   border-color: rgba(255, 255, 255, 0.22);
   box-shadow: none;
 }
+
+/* === Onthaalpagina als PRODUCTPAGINA ==========================================
+   Deze site staat op `Allow: /` met een sitemap: wie "creditsoft" googelt komt hier
+   binnen zonder ooit een aanmeldscherm te zien. De voorpagina is dus het eerste wat
+   iemand van CreditSoft ziet, en zes tegels die het menu herhalen zijn daar te
+   weinig voor. Zelfde redenering als bij Nimble (26/08/2026); de opmaak is van ons.
+
+   De oude .cs-hero blijft ongemoeid: die wordt elders nog gebruikt. */
+.cs-onthaal {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
+  gap: 2.5rem;
+  align-items: center;
+  padding: 1.5rem 0 2.5rem;
+}
+.cs-onthaal__tekst h1 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  margin: 0 0 0.75rem;
+  background: linear-gradient(95deg, var(--cs-blauw), var(--cs-blauw-licht));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.cs-onthaal__tekst > p {
+  font-size: 0.95rem;
+  color: var(--md-default-fg-color--light);
+  margin: 0 0 1.25rem;
+}
+.cs-onthaal__beeld img {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  box-shadow: 0 12px 32px rgb(0 0 0 / 12%);
+}
+
+/* ⚠️ Onder 76rem naast elkaar zetten geeft een beeld van 300 px waarop niets meer
+   te zien is. Dan liever onder elkaar, met het beeld eerst weggelaten op een gsm:
+   een schermafdruk van een backoffice op 375 px toont niets en kost enkel laadtijd. */
+@media screen and (max-width: 76rem) {
+  .cs-onthaal { grid-template-columns: 1fr; gap: 1.5rem; }
+}
+@media screen and (max-width: 44rem) {
+  .cs-onthaal__beeld { display: none; }
+}
+
+.cs-knoppen { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+.cs-knop {
+  display: inline-block;
+  padding: 0.55rem 1.1rem;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-decoration: none !important;
+}
+.cs-knop--vol { background: var(--cs-blauw); color: #fff !important; }
+.cs-knop--vol:hover { filter: brightness(1.08); }
+.cs-knop--rand {
+  border: 1px solid var(--md-default-fg-color--lighter);
+  color: var(--md-default-fg-color) !important;
+}
+.cs-knop--rand:hover { border-color: var(--cs-blauw); color: var(--cs-blauw) !important; }
+
+.cs-pijlers {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1.5rem;
+  padding: 1.5rem 0 2rem;
+  border-top: 1px solid var(--md-default-fg-color--lightest);
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+  margin-bottom: 2rem;
+}
+.cs-pijler h3 { margin: 0.4rem 0 0.4rem; font-size: 0.95rem; }
+.cs-pijler p { font-size: 0.82rem; color: var(--md-default-fg-color--light); margin: 0; }
+.cs-pijler__merk .twemoji, .cs-pijler__merk svg { width: 1.6rem; height: 1.6rem; fill: var(--cs-blauw); }

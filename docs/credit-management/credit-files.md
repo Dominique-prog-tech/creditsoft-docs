@@ -43,7 +43,7 @@ Met **Nieuw dossier** bovenaan de lijst maakt u een leeg dossier aan. Het krijgt
 !!! tip "Dossiers zonder datum vallen buiten een datumbereik"
     Vult u een datumbereik in, dan verdwijnen de dossiers waar die datum nog leeg is. Dat is bedoeld: een dossier zonder ingangsdatum is nu eenmaal niet "voor of na" een bepaalde dag. Wilt u ze toch zien, maak dan het bereik leeg.
 
-**[Journaal](../journaal/overzicht.md)** — klik rechts op de rail **Journaal** om de [taken](../journaal/taken.md), [notities](../journaal/notities.md), [bijlagen](../journaal/bijlagen.md), het [mailverkeer](../journaal/mailverkeer.md) en het [logboek](../journaal/logboek.md) van het geselecteerde dossier te zien zonder het te openen.
+**[Journaal](../journaal/overzicht.md)** — klik rechts op de rail **Journaal** om de [taken](../journaal/taken.md), [notities](../journaal/notities.md), gesprekken, [bijlagen](../journaal/bijlagen.md), het [mailverkeer](../journaal/mailverkeer.md), de commissieschema's en het [logboek](../journaal/logboek.md) van het geselecteerde dossier te zien zonder het te openen.
 
 **Dubbelklik** een rij om het dossier te openen.
 
@@ -111,7 +111,22 @@ De kolom **Status** zegt in één woord waar elk stuk staat: *Gevraagd* (nog nie
 
 ### Het journaal van dit dossier
 
-De knop **Journaal** rechtsboven, op de regel met het dossiernummer, opent een paneel met vijf tabbladen: **Taken**, **Notities**, **Bijlagen**, **Mailverkeer** en het **Logboek** — alles van dít dossier.
+De knop **Journaal** rechtsboven, op de regel met het dossiernummer, opent een paneel met zeven tabbladen: **Taken**, **Notities**, **Gesprekken**, **Bijlagen**, **Mailverkeer**, **Commissieschema's** en het **Logboek** — alles van dít dossier.
+
+#### Commissieschema's
+
+Op dit tabblad staat per aanbrenger wat er voor dit dossier afgesproken is: het bedrag, de vorm — gespreid, in termijnen of een vast bedrag — en de toestand. Hangen er veel schema's aan één dossier, dan staan ze gegroepeerd per aanbrenger, met het totaal ernaast; klik op een naam om de schema's eronder open te vouwen.
+
+Wat u met een schema kan doen, hangt af van zijn toestand:
+
+- **Nog niet actief** — u kan het **activeren**. Dan zet CreditSoft alle maandbedragen ineens klaar, tot het einde van de looptijd. Zolang er niets uitbetaald is, kan u het ook nog **verwijderen**.
+- **Actief** — u kan het **herberekenen** of **stopzetten**. Herberekenen toont eerst wat er zou veranderen: per maand het oude en het nieuwe bedrag, hoeveel al uitbetaalde maanden ongewijzigd blijven, en het totaal daarna. Pas als u bevestigt, gebeurt het.
+- **Stopgezet** — er staat enkel nog wanneer. Vanaf de stopmaand vervallen de maanden die nog niet uitbetaald waren; wat er vóór die maand stond, blijft.
+
+!!! note "Wat uitbetaald is, blijft"
+    Een maand die op een borderel gestaan heeft, wordt door geen enkele van deze handelingen nog gewijzigd — ook niet bij een herberekening. Daardoor kan het totaal ná een herberekening afwijken van het schemabedrag. Dat is geen fout: het verleden is uitbetaald en gerapporteerd.
+
+    Om dezelfde reden kan een schema niet meer verwijderd worden zodra er één maand uitbetaald is. Wilt u dan toch stoppen, gebruik **Stopzetten**.
 
 Onder *Mailverkeer* vindt u de uitnodiging terug die u naar uw klant stuurde, en de mail over stukken die u afkeurde, elk met hun afleverstatus. U kan er ook zelf een mail opstellen; de ontvanger staat dan al ingevuld met de eerste aanvrager van het dossier.
 
