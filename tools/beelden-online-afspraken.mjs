@@ -71,38 +71,18 @@ for (const [cultuur, achtervoegsel] of [['nl-BE', ''], ['fr-BE', '-fr']]) {
   await page.waitForTimeout(1500);
   await beeld(`online-afspraken-instellingen${achtervoegsel}`);
 
-  // ── De vragenlijst ──
-  await page.goto(`${BASIS}/crm/online-afspraken/vragenlijst/${DEMO_KANTOOR}`, { waitUntil: 'load' });
-  await page.locator('table').waitFor({ timeout: 20000 });
-  await page.waitForTimeout(1200);
-
-  // ⚠️ De focus weghalen vóór de opname. De fiche-schil zet hem op het eerste veld; dat veld scrolt dan naar
-  //    het einde van zijn tekst en staat op het beeld afgeknipt — alsof er iets ontbreekt.
-  await page.evaluate(() => (document.activeElement instanceof HTMLElement) && document.activeElement.blur());
-  await page.waitForTimeout(400);
-  await beeld(`vragenlijst-bewerken${achtervoegsel}`);
-
-  // ── Wat de bezoeker ziet ──
-  // ⚠️ Een ECHTE proefpagina bij ADM One, geen nabootsing — dat is het hele punt van dat beeld. Ze vervalt
-  //    vanzelf na een dag; we trekken haar hieronder toch meteen in.
-  await page.getByRole('button', { name: /Proefpagina maken|Créer une page d'essai/ }).click();
-  await page.locator('code').waitFor({ timeout: 20000 });
-  const proeflink = (await page.locator('code').innerText()).trim();
-
-  const bezoeker = await ctx.newPage();
-  await bezoeker.goto(proeflink, { waitUntil: 'load' });
-  await bezoeker.waitForTimeout(1500);
-  if (cultuur.startsWith('fr')) {
-    // De pagina opent in het Nederlands; de bezoeker kiest zelf zijn taal.
-    await bezoeker.getByRole('button', { name: 'FR' }).click().catch(() => {});
-    await bezoeker.waitForTimeout(800);
-  }
-  await bezoeker.screenshot({ path: `${UIT}/vragenlijst-bezoeker${achtervoegsel}.png` });
-  console.log('geschreven: vragenlijst-bezoeker' + achtervoegsel + '.png');
-  await bezoeker.close();
-
-  await page.getByRole('button', { name: /Intrekken|Retirer/ }).click().catch(() => {});
-  await page.waitForTimeout(800);
+  // ── De vragenlijst: HIER WEGGEHAALD op 26/08/2026 ──
+  //
+  // Dit script trok vier beelden van de vragenlijst via /crm/online-afspraken/vragenlijst/{kantoor}.
+  // DIE ROUTE BESTAAT NIET MEER: de vragenlijst-editor is verhuisd naar /beheer/kantoorprofiel, en de
+  // handleiding toont er sindsdien een nieuw beeld van (kantoorprofiel-vragenlijst.png).
+  //
+  // Het script bleef ondertussen vragenlijst-bewerken{,-fr}.png en vragenlijst-bezoeker{,-fr}.png
+  // aanmaken — vier bestanden die geen enkele pagina nog gebruikte. Ze zijn verwijderd; dit blok gaat mee,
+  // anders staan ze er na de volgende ronde gewoon weer.
+  //
+  // Het stuk maakte ook een ECHTE proefpagina bij ADM One aan en trok die daarna weer in. Dat is nu weg,
+  // dus het script raakt ADM One niet meer.
 }
 
 await browser.close();
