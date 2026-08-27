@@ -6,7 +6,7 @@ De documenten van uw kantoor, geordend in mappen — modeldocumenten, tarieffich
 
 Klik in het menu links op **Documenten**, onder *Lijsten*.
 
-![Het scherm Documentbibliotheek: links de boom met mappen en submappen, per regel de map, voor wie ze bedoeld is als gekleurd label en het aantal documenten; rechts de gekozen map met haar omschrijving, de knoppen om ze te bewerken of te verwijderen, en daaronder haar documenten.](../images/documentbibliotheek.png "De bibliotheek van het kantoor, met per map de doelgroep"){ .volle-breedte }
+![Het scherm Documentbibliotheek: links de boom met mappen en submappen, per regel de map, voor wie ze bedoeld is als gekleurd label en het aantal documenten; rechts de gekozen map met haar omschrijving, de knoppen om ze een plaats op te schuiven, te bewerken of te verwijderen, en daaronder haar documenten.](../images/documentbibliotheek.png "De bibliotheek van het kantoor, met per map de doelgroep"){ .volle-breedte }
 
 ## Het verschil met Bijlagen
 
@@ -19,6 +19,12 @@ De bibliotheek is iets anders: ze hangt aan **niets**. Ze is van uw kantoor, en 
 De bibliotheek gaat **twee niveaus** diep: mappen en submappen. Met **Nieuwe map** maakt u er een aan; koos u eerst een hoofdmap, dan stelt CreditSoft die al voor als bovenliggende map.
 
 Een map draagt een naam in het **Nederlands en het Frans**, en optioneel een omschrijving in beide talen. Ontbreekt de naam in de taal van de gebruiker, dan toont het scherm de andere — een map zonder naam is erger dan een map in de verkeerde taal.
+
+### De volgorde van de mappen
+
+De mappen staan in de volgorde die u zelf bepaalt. Kies een map en gebruik de knoppen **↑** en **↓** rechtsboven om ze een plaats op te schuiven. Staat een map al bovenaan of onderaan, dan is de bijhorende knop uitgeschakeld.
+
+Een map schuift enkel op **binnen haar eigen niveau**: een submap blijft bij haar hoofdmap en verhuist er niet uit. Wilt u een map onder een andere hoofdmap hangen, gebruik dan *Map bewerken* en kies daar een andere bovenliggende map.
 
 !!! warning "Een map verwijderen lukt pas als ze leeg is"
     Zitten er nog submappen of documenten in, dan weigert CreditSoft en zegt waarom. Dat is bedoeld: een map die met haar inhoud verdwijnt, laat documenten achter die nergens meer hangen.

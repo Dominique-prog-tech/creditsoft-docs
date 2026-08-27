@@ -6,7 +6,7 @@ Les documents de votre bureau, classés en dossiers — modèles de documents, f
 
 Dans le menu de gauche, cliquez sur **Documents**, sous *Listes*.
 
-![L'écran Bibliothèque de documents : à gauche l'arborescence des dossiers et sous-dossiers, avec par ligne le dossier, à qui il est destiné sous forme d'étiquette colorée et le nombre de documents ; à droite le dossier choisi avec sa description, les boutons pour le modifier ou le supprimer, et en dessous ses documents.](../images/documentbibliotheek-fr.png "La bibliothèque du bureau, avec par dossier son public"){ .volle-breedte }
+![L'écran Bibliothèque de documents : à gauche l'arborescence des dossiers et sous-dossiers, avec par ligne le dossier, à qui il est destiné sous forme d'étiquette colorée et le nombre de documents ; à droite le dossier choisi avec sa description, les boutons pour le déplacer d'une place, le modifier ou le supprimer, et en dessous ses documents.](../images/documentbibliotheek-fr.png "La bibliothèque du bureau, avec par dossier son public"){ .volle-breedte }
 
 ## La différence avec les Pièces jointes
 
@@ -19,6 +19,12 @@ La bibliothèque est autre chose : elle n'est rattachée à **rien**. Elle appar
 La bibliothèque compte **deux niveaux** : dossiers et sous-dossiers. Avec **Nouveau dossier**, vous en créez un ; si vous aviez d'abord sélectionné un dossier principal, CreditSoft le propose déjà comme dossier parent.
 
 Un dossier porte un nom en **néerlandais et en français**, et éventuellement une description dans les deux langues. Si le nom manque dans la langue de l'utilisateur, l'écran affiche l'autre — un dossier sans nom est pire qu'un dossier dans la mauvaise langue.
+
+### L'ordre des dossiers
+
+Les dossiers apparaissent dans l'ordre que vous déterminez vous-même. Sélectionnez un dossier et utilisez les boutons **↑** et **↓** en haut à droite pour le déplacer d'une place. Si un dossier se trouve déjà tout en haut ou tout en bas, le bouton correspondant est désactivé.
+
+Un dossier se déplace uniquement **au sein de son propre niveau** : un sous-dossier reste rattaché à son dossier principal et n'en sort pas. Pour rattacher un dossier à un autre dossier principal, utilisez *Modifier le dossier* et choisissez-y un autre dossier parent.
 
 !!! warning "Un dossier ne peut être supprimé que s'il est vide"
     S'il contient encore des sous-dossiers ou des documents, CreditSoft refuse et vous indique pourquoi. C'est voulu : un dossier qui disparaîtrait avec son contenu laisserait des documents rattachés à rien.
