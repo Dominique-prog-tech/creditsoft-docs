@@ -35,11 +35,10 @@ C'est le cœur de cet écran. Par dossier, vous choisissez un seul public :
 
 Le public figure comme étiquette colorée sur chaque dossier : vous voyez ainsi d'un coup d'œil ce qui aboutit où.
 
-!!! info "Un document peut restreindre ce choix, jamais l'élargir"
-    Si un dossier est sur *Apporteurs*, vous pouvez néanmoins placer un document précis sur *Interne*. L'inverse n'est pas possible : un document ne devient jamais visible là où son dossier ne l'est pas. Ainsi, aucun document ne peut être partagé selon le réglage tout en restant introuvable en pratique.
+!!! warning "Le public vaut pour l'ensemble du dossier"
+    Tout ce qui se trouve dans un dossier partage son public. Il n'existe **aucun** réglage par document : si vous placez un dossier sur *Apporteurs*, vos intermédiaires voient **chaque** document qu'il contient.
 
-!!! note "Clients finaux : vous enregistrez déjà ce choix"
-    L'affichage dans le portail client est encore en construction. Vous pouvez déjà définir le public ; pour l'instant, rien ne change pour vos clients.
+    Pour mettre quelque chose à l'abri, créez un dossier distinct. C'est une manipulation de plus, mais l'étiquette colorée du dossier vous montre aussitôt ce qui est partagé — et c'est précisément ce que vous voulez pouvoir vérifier.
 
 ## Les documents d'un dossier
 
@@ -48,3 +47,12 @@ Choisissez un dossier et ses documents apparaissent à droite. Avec **Pièce joi
 ## Ce que voient vos intermédiaires
 
 Dans leur portail, ils trouvent la rubrique **Documents** : les mêmes dossiers, mais uniquement ce qui leur est destiné, avec les noms dans leur propre langue. Ils peuvent ouvrir et télécharger les documents — le téléversement et la gestion des dossiers, c'est vous.
+
+## Ce que voient vos clients
+
+Un client qui accède au portail via son lien d'invitation voit en bas le bloc **Documents de votre bureau** : tout ce qui se trouve dans les dossiers que vous avez réglés sur *Clients finaux*. Il peut les ouvrir ou les enregistrer, rien de plus.
+
+Contrairement à vos intermédiaires, il ne voit **aucune arborescence** — uniquement les fichiers, avec le nom de leur dossier en légende. Un client vient là pour une seule chose, et une arborescence à parcourir ne l'aide pas.
+
+!!! note "S'il n'y a rien, il n'y a rien"
+    Tant qu'aucun dossier n'est réglé sur *Clients finaux*, ou que ces dossiers sont vides, le bloc n'apparaît pas du tout. Votre client voit alors simplement ses propres pièces, comme avant.

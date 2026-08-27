@@ -35,11 +35,10 @@ Dit is de kern van het scherm. Per map kiest u één doelgroep:
 
 De doelgroep staat als gekleurd label bij elke map, zodat u in één oogopslag ziet wat waar terechtkomt.
 
-!!! info "Een document kan de keuze enger maken, nooit ruimer"
-    Staat een map op *Aanbrengers*, dan kunt u één document daarin toch op *Intern* zetten. Omgekeerd kan niet: een document wordt nooit zichtbaar op een plek waar zijn map dat niet is. Zo kan er geen document bestaan dat volgens de instelling gedeeld is maar in werkelijkheid nergens te vinden.
+!!! warning "De doelgroep geldt voor de hele map"
+    Alles wat in een map staat, deelt haar doelgroep. Er is **geen** instelling per document: zet u een map op *Aanbrengers*, dan zien uw tussenpersonen élk document erin.
 
-!!! note "Eindklanten: de keuze bewaart u nu al"
-    De weergave in het klantenportaal wordt nog gebouwd. U kunt de doelgroep al instellen; voorlopig verandert er voor uw klanten niets.
+    Wilt u iets afschermen, maak er dan een aparte map voor. Dat is één handeling meer, maar u ziet aan het gekleurde label van de map meteen wat er gedeeld is — en dat is precies wat u wil kunnen nazien.
 
 ## Documenten in een map
 
@@ -48,3 +47,12 @@ Kies een map en rechts verschijnen haar documenten. Met **Bijlage** laadt u er e
 ## Wat uw tussenpersonen zien
 
 In hun portaal vinden zij het onderdeel **Documenten**: dezelfde mappen, maar alleen wat voor hen bedoeld is, met de namen in hun eigen taal. Zij kunnen de documenten openen en downloaden — opladen en mappen beheren doet u.
+
+## Wat uw klanten zien
+
+Een klant die via zijn uitnodigingslink in het portaal komt, ziet onderaan het blok **Documenten van uw kantoor**: alles uit de mappen die u op *Eindklanten* zette. Hij kan ze openen of bewaren, meer niet.
+
+Anders dan bij uw tussenpersonen ziet hij **geen mappenstructuur** — enkel de bestanden, met de naam van hun map als bijschrift. Een klant komt daar voor één ding, en een boom om door te klikken helpt hem niet.
+
+!!! note "Staat er niets in, dan staat er niets"
+    Zolang geen enkele map op *Eindklanten* staat, of die mappen leeg zijn, verschijnt het blok helemaal niet. Uw klant ziet dan gewoon zijn eigen stukken, zoals voordien.
