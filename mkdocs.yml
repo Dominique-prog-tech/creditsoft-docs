@@ -221,6 +221,7 @@ nav:
 
   - Aan de slag:
     - Navigeren in CreditSoft: getting-started/navigatie.md
+    - Zoeken vanaf elk scherm: getting-started/zoeken.md
     # Stond tot 16/08/2026 wél op de schijf maar niet hier: de pagina was enkel te bereiken via een
     # link ín een andere pagina, niet via het menu. Met een expliciete nav toont mkdocs enkel wat
     # hier staat — een bestand toevoegen is dus niet genoeg.

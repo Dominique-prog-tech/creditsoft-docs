@@ -31,6 +31,7 @@ Rechtsboven staan de knoppen die u overal bij u hebt, van links naar rechts:
 - **Nieuwe taak** — noteer iets dat moet gebeuren **zonder eerst een dossier of relatie te openen**. Handig
   wanneer u aan de telefoon zit en iets niet wil vergeten. Wat u hier maakt, komt in het scherm
   [Taken](../credit-management/tasks.md) terecht, samen met de taken die bij een dossier of relatie horen.
+- **Zoeken** (het vergrootglas) — zoek vanaf elk scherm naar een relatie, een dossier, een aanbrenger, een professional of een lead. Zie [Zoeken vanaf elk scherm](zoeken.md).
 - **Licht of donker** (het maantje) — wisselt tussen de lichte en de donkere weergave.
 - **Meldingen** (het belletje) — zie hieronder.
 - **Feedback** (het tekstballon-icoon) — stuur ons een melding of suggestie. Uw bericht komt rechtstreeks bij

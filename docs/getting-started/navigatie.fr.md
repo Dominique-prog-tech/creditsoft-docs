@@ -31,6 +31,7 @@ En haut à droite figurent les boutons que vous emportez partout, de gauche à d
 - **Nouvelle tâche** — notez quelque chose à faire **sans devoir d'abord ouvrir un dossier ou une relation**.
   Pratique lorsque vous êtes au téléphone et ne voulez rien oublier. Ce que vous créez ici se retrouve dans
   l'écran [Tâches](../credit-management/tasks.md), avec les tâches rattachées à un dossier ou une relation.
+- **Rechercher** (la loupe) — recherchez depuis n'importe quel écran une relation, un dossier, un apporteur, un professionnel ou un prospect. Voir [Rechercher depuis n'importe quel écran](zoeken.fr.md).
 - **Clair ou sombre** (le croissant de lune) — bascule entre l'affichage clair et sombre.
 - **Notifications** (la cloche) — voir ci-dessous.
 - **Retour d'information** (l'icône de bulle) — envoyez-nous une remarque ou une suggestion. Votre message
