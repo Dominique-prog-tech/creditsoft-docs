@@ -6,7 +6,7 @@ Le suivi des dossiers est votre liste de travail : **tous les dossiers de crédi
 
 Dans la barre latérale, cliquez sur **Listes**, puis sur **Aperçu global**.
 
-![L'aperçu global : en haut les listes de choix pour la présélection, le statut, l'institution, le responsable et le sales, avec à côté le nombre de dossiers affichés, le total du montant du crédit et le bouton Imprimer la liste ; en dessous le tableau indiquant par dossier le numéro interne, les demandeurs, le statut, la phase, l'institution, l'intermédiaire, le montant du crédit, le délai, les remarques et les dates.](../images/globaal-overzicht-lijst-fr.png "Tous les dossiers sur un écran, avec leur phase et leur délai"){ .volle-breedte }
+![L'aperçu global : en haut les listes de choix pour la présélection, le statut, l'institution, le responsable et le sales, avec à côté le nombre de dossiers affichés, le total du montant du crédit et le bouton Imprimer la liste ; en dessous le tableau indiquant par dossier le numéro interne, les demandeurs, le statut, la phase, l'institution, l'apporteur, le montant du crédit, le délai, les remarques et les dates.](../images/globaal-overzicht-lijst-fr.png "Tous les dossiers sur un écran, avec leur phase et leur délai"){ .volle-breedte }
 
 ## Choisir ce que vous voulez voir
 
@@ -32,7 +32,7 @@ Vous filtrez ensuite par **statut**, **institution**, **responsable** et **sales
 | **Statut** | Le statut du dossier, dans la couleur que vous lui avez donnée |
 | **Phase** | La phase dont relève ce statut |
 | **Institution** | L'organisme de crédit |
-| **Intermédiaire** | L'apporteur |
+| **Apporteur** | L'apporteur |
 | **Montant du crédit** | Le montant total du crédit |
 | **Délai de traitement** | Nombre de jours entre l'introduction et l'acte |
 | **Remarques** | Les remarques ouvertes sur le dossier |
@@ -55,7 +55,7 @@ Via **Choisir les colonnes** (l'icône à côté d'Exporter), vous ajoutez neuf 
 
 **Imprimer la liste** génère un pdf des dossiers que vous voyez à cet instant. L'impression suit donc vos filtres : ce que vous avez écarté n'y figure pas. L'en-tête du document indique la sélection utilisée et le nombre de dossiers ; le bas de chaque page reprend la date de génération et la pagination. Ainsi, la personne qui retrouve le pdf plus tard sait de quoi il s'agit.
 
-L'impression n'est pas identique au tableau affiché à l'écran. Elle reprend les demandeurs, l'intermédiaire, la quotité, le statut, le montant du crédit, les remarques, l'introduction, la présence d'un expert désigné, la date d'effet et la date limite des conditions suspensives.
+L'impression n'est pas identique au tableau affiché à l'écran. Elle reprend les demandeurs, l'apporteur, la quotité, le statut, le montant du crédit, les remarques, l'introduction, la présence d'un expert désigné, la date d'effet et la date limite des conditions suspensives.
 
 Dès que l'impression est prête, elle s'affiche dans une fenêtre d'aperçu offrant deux possibilités :
 
@@ -63,7 +63,7 @@ Dès que l'impression est prête, elle s'affiche dans une fenêtre d'aperçu off
 - **Télécharger** — vous conservez le pdf sur votre ordinateur.
 
 !!! tip "Avec *Suivi après acte*, vous obtenez un autre aperçu"
-    Lorsque la première liste de choix est sur **Suivi après acte**, le bouton **Imprimer la liste** génère l'aperçu propre à cette liste. Ce document est axé sur le suivi et reprend, par dossier, le numéro interne, le demandeur, l'investissement total, les fonds propres, le crédit demandé, le montant du crédit, l'introduction, la date d'effet, l'intermédiaire, le responsable, les remarques et l'institution.
+    Lorsque la première liste de choix est sur **Suivi après acte**, le bouton **Imprimer la liste** génère l'aperçu propre à cette liste. Ce document est axé sur le suivi et reprend, par dossier, le numéro interne, le demandeur, l'investissement total, les fonds propres, le crédit demandé, le montant du crédit, l'introduction, la date d'effet, l'apporteur, le responsable, les remarques et l'institution.
 
 ## Des statuts qui apparaissent deux fois
 

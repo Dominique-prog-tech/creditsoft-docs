@@ -4,11 +4,14 @@ Deze pagina geeft een kort overzicht van hoe u uw weg vindt in CreditSoft: het m
 
 ![Het hoofdvenster van CreditSoft: links het hoofdmenu met de groepen CRM, Krediet, Lijsten en Beheer, rechtsboven de knoppenrij met feedback, help en de avatar, en onderaan links Platformbeheer, Klantenportaal en Afmelden.](../images/navigatie.png "De vaste onderdelen van het hoofdvenster")
 
+Na het aanmelden komt u op uw **dashboard**. Geeft uw rol daar geen toegang toe, dan ziet u een korte
+startpagina die u naar het menu verwijst.
+
 ## Het menu links
 
 Aan de linkerkant staat het **hoofdmenu**. Het toont de schermen waartoe u toegang hebt; klik op een item om het te openen. Het menu is gegroepeerd — de dagelijkse werkschermen staan bovenaan, beheer-schermen onder de kop **Beheer**.
 
-![Het hoofdmenu links, met Home en Dashboard bovenaan, de opengeklapte groep CRM met Relaties, Professionals, Afspraken, Aanbrengers en Groepen, de opengeklapte groep Krediet met Kredietdossiers, Te valideren met een blauw teller-bolletje, Kredietinstellingen, Verzekeraars, Borderel en Fiche 281.50, daaronder de dichtgeklapte groepen Lijsten en Beheer, en onderaan Platformbeheer, Klantenportaal en Afmelden.](../images/menu-links.png "Het hoofdmenu links, met twee groepen opengeklapt"){ width="240" }
+![Het hoofdmenu links, met Dashboard bovenaan, de opengeklapte groep CRM met Relaties, Professionals, Afspraken, Aanbrengers en Groepen, de opengeklapte groep Krediet met Kredietdossiers, Te valideren met een blauw teller-bolletje, Kredietinstellingen, Verzekeraars, Borderel en Fiche 281.50, daaronder de dichtgeklapte groepen Lijsten en Beheer, en onderaan Platformbeheer, Klantenportaal en Afmelden.](../images/menu-links.png "Het hoofdmenu links, met twee groepen opengeklapt"){ width="240" }
 
 Welke items u ziet, hangt af van uw rol: niet iedereen heeft toegang tot alle schermen.
 
@@ -61,6 +64,29 @@ naar de pagina waar het vandaan komt.
 
 Hij put uitsluitend uit de handleiding. Staat iets er niet in, dan zegt hij dat — en dan is dat een gat in de
 handleiding, geen gebrek aan de toepassing. Laat het ons weten via de feedback-knop.
+
+### Vraag het uw eigen cijfers
+
+!!! info "Alleen met een eigen AI-sleutel"
+    Deze tweede assistent verschijnt **alleen** wanneer uw kantoor in het ADM One-portaal een eigen
+    AI-sleutel heeft ingesteld. Staat die er niet, dan bestaat deze lade niet en verandert er niets voor u.
+    De hulp-assistent hierboven werkt wél altijd — die loopt op onze centrale sleutel.
+
+Waar de hulp-assistent uit de handleiding put, kijkt deze naar **uw eigen dossiers**. U stelt uw vraag in
+gewone taal en krijgt een tabel terug. Zes vragen zijn voorbereid:
+
+| Vraag | Wat u krijgt |
+|---|---|
+| Dossiers per status | Aantal kredietdossiers per status in een periode — te tellen op ingavedatum of op aktedatum |
+| Ingediend per maand | Aantal ingediende dossiers per maand, met het totale krediet- en commissiebedrag |
+| Geakteerde dossiers | De dossiers met een akte in een periode, met kredietverstrekker, bedrag en aktedatum |
+| Gerealiseerde dossiers | De gerealiseerde dossiers in een periode, met kredietbedrag en commissie per dossier |
+| Per aanbrenger | Wat elke aanbrenger opbracht: aantal dossiers, kredietbedrag en commissie |
+| Per kredietverstrekker | Wat er per kredietverstrekker gerealiseerd is, met de gemiddelde quotiteit |
+
+!!! note "Dezelfde cijfers als uw rapporten"
+    Deze zes vragen lopen over precies dezelfde berekening als de rapporten onder **Lijsten**. Ze geven dus
+    altijd hetzelfde getal — anders zou u niet weten welk van de twee u moet geloven.
 
 ## Uw voorkeuren
 

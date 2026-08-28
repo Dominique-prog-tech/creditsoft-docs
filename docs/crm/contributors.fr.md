@@ -1,6 +1,6 @@
 # Apporteurs
 
-Vos intermédiaires figurent dans une **arborescence** : un apporteur principal, en dessous ses bureaux, et en dessous les collaborateurs individuels. Vous voyez ainsi immédiatement qui relève de qui.
+Vos apporteurs figurent dans une **arborescence** : un apporteur principal, en dessous ses bureaux, et en dessous les collaborateurs individuels. Vous voyez ainsi immédiatement qui relève de qui.
 
 ## Ouvrir l'écran
 
@@ -8,7 +8,7 @@ Dans la barre latérale, cliquez sur **CRM**, puis sur **Apporteurs**.
 
 ## La liste
 
-![L'écran Apporteurs dans CreditSoft : une arborescence avec les intermédiaires principaux et les bureaux en dessous, avec les colonnes nom, type, qualité, e-mail, numéro d'agent, commune, GSM et actif, et en haut les boutons Fusionner, Nouveau et Exporter.](../images/aanbrengers-lijst-fr.png "Aperçu des apporteurs, organisés en arborescence")
+![L'écran Apporteurs dans CreditSoft : une arborescence avec les apporteurs principaux et les bureaux en dessous, avec les colonnes nom, type, qualité, e-mail, numéro d'agent, commune, GSM et actif, et en haut les boutons Fusionner, Nouveau et Exporter.](../images/aanbrengers-lijst-fr.png "Aperçu des apporteurs, organisés en arborescence")
 
 Le tableau affiche par apporteur : **nom**, **type**, **qualité**, **e-mail**, **numéro d'agent**, **commune**, **GSM** et **actif**.
 
@@ -16,7 +16,7 @@ Le tableau affiche par apporteur : **nom**, **type**, **qualité**, **e-mail**, 
 - **Rechercher** — le champ de recherche cherche dans toutes les colonnes à la fois.
 - **Choisir les colonnes** — affichez ou masquez des colonnes ; les largeurs que vous réglez sont également conservées pour la prochaine fois.
 - **Exporter** — vers Excel ou CSV.
-- **Fusionner** — si deux fiches existent pour le même intermédiaire, vous les fusionnez ; voir ci-dessous.
+- **Fusionner** — si deux fiches existent pour le même apporteur, vous les fusionnez ; voir ci-dessous.
 - **Nouveau / modifier** — cliquez sur **Nouveau**, ou **double-cliquez** une ligne pour ouvrir la fiche.
 
 ### Journal
@@ -52,7 +52,7 @@ fonctionnent de manière identique sur chaque écran ; [Le journal](../journaal/
 
 ### Identité
 
-Qui est cet intermédiaire et quel rôle il joue : **type d'intermédiaire** (principal, bureau ou sous-agent), **rattaché à** — l'apporteur sous lequel il se trouve dans l'arborescence —, **forme juridique**, **relation**, **formule d'appel**, **qualité**, le nom ou la **raison sociale** avec le **type d'entreprise**, le **numéro de TVA**, le **numéro d'agent**, la **langue des documents** (obligatoire) et le **groupement** — le groupe auquel appartient cet intermédiaire, issu de votre liste sous [Groupes](groups.md).
+Qui est cet apporteur et quel rôle il joue : **type d'apporteur** (principal, bureau ou sous-agent), **rattaché à** — l'apporteur sous lequel il se trouve dans l'arborescence —, **forme juridique**, **relation**, **formule d'appel**, **qualité**, le nom ou la **raison sociale** avec le **type d'entreprise**, le **numéro de TVA**, le **numéro d'agent**, la **langue des documents** (obligatoire) et le **groupement** — le groupe auquel appartient cet apporteur, issu de votre liste sous [Groupes](groups.md).
 
 !!! tip "Récupérer automatiquement les données d'entreprise"
     Saisissez le **numéro de TVA** et cliquez sur **Récupérer** : CreditSoft reprend le nom, la forme juridique
@@ -60,7 +60,7 @@ Qui est cet intermédiaire et quel rôle il joue : **type d'intermédiaire** (pr
 
 ### Agrément et statut
 
-Cet intermédiaire peut-il exercer, et la collaboration est-elle toujours en cours ? Le **numéro FSMA** avec une case indiquant si l'inscription est en ordre, et s'il est **actif** — avec la date depuis laquelle — ou **arrêté**, avec la date correspondante.
+Cet apporteur peut-il exercer, et la collaboration est-elle toujours en cours ? Le **numéro FSMA** avec une case indiquant si l'inscription est en ordre, et s'il est **actif** — avec la date depuis laquelle — ou **arrêté**, avec la date correspondante.
 
 ### Contact et adresse
 
@@ -82,7 +82,7 @@ Le mode de paiement détermine les champs qui apparaissent ensuite :
 
 ## Fusionner deux fiches
 
-Si le même intermédiaire figure deux fois dans la liste, fusionnez les fiches avec le bouton **Fusionner** en
+Si le même apporteur figure deux fois dans la liste, fusionnez les fiches avec le bouton **Fusionner** en
 haut. Sélectionnez d'abord la fiche que vous voulez **conserver**, cliquez sur le bouton, puis choisissez dans
 la fenêtre celle qui doit y être absorbée.
 

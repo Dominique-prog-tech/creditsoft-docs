@@ -6,13 +6,13 @@ Alle **contracten van alle dossiers** op één plaats. Waar het scherm *Verzeker
 
 Klik in de zijbalk op **Lijsten** en dan op **Contractenoverzicht**.
 
-![Het contractenoverzicht: bovenaan de zeven keuzelijsten voor dossierstatus, contractstatus, product, producttype, instelling, tussenpersoon en sales, met daarnaast het aantal contracten, de knop Exporteren en het zoekveld; daaronder de tabel met per contract het interne dossiernummer, de namen van de klanten, het product, de instelling, het bedrag, de looptijd, de interest, de datum van de akte, de contractstatus en het contractnummer.](../images/contractenoverzicht-lijst.png "Alle contracten van alle dossiers op één scherm"){ .volle-breedte }
+![Het contractenoverzicht: bovenaan de zeven keuzelijsten voor dossierstatus, contractstatus, product, producttype, instelling, aanbrenger en sales, met daarnaast het aantal contracten, de knop Exporteren en het zoekveld; daaronder de tabel met per contract het interne dossiernummer, de namen van de klanten, het product, de instelling, het bedrag, de looptijd, de interest, de datum van de akte, de contractstatus en het contractnummer.](../images/contractenoverzicht-lijst.png "Alle contracten van alle dossiers op één scherm"){ .volle-breedte }
 
 ## Kiezen wat u wil zien
 
 De filters zitten op twee plaatsen, en ze werken samen.
 
-**Bovenaan** staan zeven keuzelijsten: dossierstatus, contractstatus, product, producttype, instelling, tussenpersoon en sales. Elk toont enkel de waarden die in uw gegevens voorkomen — geen keuzes die niets opleveren.
+**Bovenaan** staan zeven keuzelijsten: dossierstatus, contractstatus, product, producttype, instelling, aanbrenger en sales. Elk toont enkel de waarden die in uw gegevens voorkomen — geen keuzes die niets opleveren.
 
 **Verder** zoekt u met het zoekveld rechtsboven (dat kijkt in alle zichtbare kolommen), met het trechtertje op een kolomkop, of met de filterbouwer voor bereiken en combinaties.
 
@@ -35,7 +35,7 @@ Hoe u die opent en samenstelt, staat beschreven in [Filteren en zoeken in lijste
 | **Contractstatus** | Waar het contract staat |
 | **Contractnr.** | Het contractnummer |
 
-Via **Kolommen kiezen** zet u er zes bij: het tijdelijke contractnummer, het producttype, de status van het dossier, de tussenpersoon, de sales en de begindatum van het contract.
+Via **Kolommen kiezen** zet u er zes bij: het tijdelijke contractnummer, het producttype, de status van het dossier, de aanbrenger, de sales en de begindatum van het contract.
 
 !!! tip "Producttype en contractnummer staan standaard verborgen"
     Niet elk kantoor gebruikt die velden. Werkt u er wel mee, zet ze dan bij via **Kolommen kiezen** — uw keuze blijft bewaard.

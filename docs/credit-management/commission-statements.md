@@ -1,6 +1,6 @@
 # Borderel
 
-CreditSoft rekent bij elk kredietdossier uit welke commissie uw tussenpersoon toekomt, en boekt die per maand. Op dit scherm zet u de volgende stap: u **rekent af**. Per aanbrenger maakt u een borderel, drukt het af of mailt het door, en legt vast wanneer het betaald werd.
+CreditSoft rekent bij elk kredietdossier uit welke commissie uw aanbrenger toekomt, en boekt die per maand. Op dit scherm zet u de volgende stap: u **rekent af**. Per aanbrenger maakt u een borderel, drukt het af of mailt het door, en legt vast wanneer het betaald werd.
 
 ## Het scherm openen
 
@@ -68,7 +68,7 @@ Onderaan staan vier knoppen.
 
 ### Afdrukken
 
-Opent het **afdrukvoorbeeld**: een pdf op een liggend blad, met uw briefhoofd — logo, adres, contactgegevens en FSMA-nummer uit uw bedrijfsfiche — en rechts het adres van de aanbrenger met zijn btw-nummer, zodat het document leest als een afrekening die aan hém gericht is.
+Opent het **afdrukvoorbeeld**: een pdf op een liggend blad, met uw briefhoofd — logo, adres, contactgegevens en FSMA-nr. uit uw bedrijfsfiche — en rechts het adres van de aanbrenger met zijn btw-nummer, zodat het document leest als een afrekening die aan hém gericht is.
 
 Per commissielijn staat er: de **aktedatum**, **uw kenmerk**, de **klant**, het **pand**, de **kredietverstrekker**, het **kredietbedrag** en de **commissie**. De lijnen staan op aktedatum gesorteerd. Een vrije commissie heeft geen dossier: daar leest u de omschrijving in de plaats. Onderaan het totaal, en de kolomkoppen staan op elke bladzijde opnieuw met een paginanummer.
 
@@ -98,7 +98,7 @@ Trekt het hele borderel terug. De commissielijnen komen weer vrij en verschijnen
 Dat kan **zolang het borderel niet betaald is**. Is het wel betaald, dan verdwijnt de knop: zet eerst de betaling terug.
 
 !!! info "De kolom Uw kenmerk"
-    Dat is het **kenmerk dat de tussenpersoon zelf aan het dossier gaf** — geen nummer dat CreditSoft uitdeelt. Werkt een kantoor daar niet mee, dan blijft die kolom leeg voor al zijn dossiers. Dat is geen ontbrekende informatie.
+    Dat is het **kenmerk dat de aanbrenger zelf aan het dossier gaf** — geen nummer dat CreditSoft uitdeelt. Werkt een kantoor daar niet mee, dan blijft die kolom leeg voor al zijn dossiers. Dat is geen ontbrekende informatie.
 
 !!! tip "Waarvoor intrekken dient"
     Meestal voor een verkeerd gekozen periode, of wanneer u merkt dat er nog een commissieschema ontbrak. Trek in, vul aan, en maak de ronde opnieuw aan.

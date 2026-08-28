@@ -20,7 +20,7 @@ Klik in het menu links op **Vooruitzicht**, onder *Lijsten*.
 |---|---|
 | **Verwacht vanaf deze maand** | Alles wat nog moet komen, over de gekozen periode, met het aantal lijnen erbij |
 | **Volgende 12 maanden** | Wat daarvan in het eerstvolgende jaar valt |
-| **Aanbrengers** | Hoeveel tussenpersonen het betreft |
+| **Aanbrengers** | Hoeveel aanbrengers het betreft |
 
 ## De grafiek: waar uw commissiestroom heen gaat
 
@@ -37,7 +37,7 @@ Onderaan staat per aanbrenger het verwachte bedrag, het aantal lijnen en de peri
 
 ## Op de fiche van een aanbrenger
 
-Elke aanbrengersfiche heeft een tabblad **Vooruitzicht** met hetzelfde beeld, dan enkel voor hem en over zijn volledige looptijd. Handig wanneer een tussenpersoon vraagt wat hij nog mag verwachten.
+Elke aanbrengersfiche heeft een tabblad **Vooruitzicht** met hetzelfde beeld, dan enkel voor hem en over zijn volledige looptijd. Handig wanneer een aanbrenger vraagt wat hij nog mag verwachten.
 
 ## Wat er niet in staat
 

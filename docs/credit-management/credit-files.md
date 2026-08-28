@@ -8,7 +8,7 @@ Klik in de zijbalk op **Krediet** en dan op **Kredietdossiers**.
 
 ## De lijst
 
-![De lijst met kredietdossiers: bovenaan de filters op status en tussenpersoon met het aantal gevonden dossiers, daaronder de tabel met per dossier het kenmerk van de aanbrenger, de status, het kredietbedrag, de aanvrager, de tussenpersoon, de instelling, de datum van indiening en de ingangsdatum.](../images/kredietdossiers-lijst.png "Alle kredietdossiers van het kantoor"){ .volle-breedte }
+![De lijst met kredietdossiers: bovenaan de filters op status en aanbrenger met het aantal gevonden dossiers, daaronder de tabel met per dossier het kenmerk van de aanbrenger, de status, het kredietbedrag, de aanvrager, de aanbrenger, de instelling, de datum van indiening en de ingangsdatum.](../images/kredietdossiers-lijst.png "Alle kredietdossiers van het kantoor"){ .volle-breedte }
 
 Per dossier ziet u wie het aanvraagt, via wie het loopt en waar het staat:
 
@@ -18,7 +18,7 @@ Per dossier ziet u wie het aanvraagt, via wie het loopt en waar het staat:
 | **Status** | Waar het dossier staat |
 | **Kredietbedrag** | Het effectief toegekende bedrag |
 | **Aanvrager** | Alle aanvragers van het dossier, na elkaar |
-| **Tussenpersoon** | De aanbrenger via wie het dossier binnenkwam |
+| **Aanbrenger** | De aanbrenger via wie het dossier binnenkwam |
 | **Instelling** | De kredietinstelling |
 | **Datum indiening** | Wanneer het dossier is ingediend |
 | **Ingangsdatum** | Wanneer het krediet ingaat |
@@ -35,7 +35,7 @@ Met **Nieuw dossier** bovenaan de lijst maakt u een leeg dossier aan. Het krijgt
 ### Zoeken en filteren
 
 - **Zoeken** — het zoekveld zoekt over alle **zichtbare** kolommen. Zet u een kolom aan via **Kolommen kiezen**, dan zoekt u er meteen ook in.
-- **Status** en **Tussenpersoon** — de twee keuzelijsten bovenaan. Ze tonen alleen wat in uw dossiers voorkomt, dus geen statussen zonder dossier.
+- **Status** en **Aanbrenger** — de twee keuzelijsten bovenaan. Ze tonen alleen wat in uw dossiers voorkomt, dus geen statussen zonder dossier.
 - **Op datum** — de kolommen **Datum indiening** en **Ingangsdatum** filtert u via het trechtertje op de kolomkop, of via de filterbouwer voor een bereik zoals "tussen 1 januari en 30 juni". Zie [Filteren en zoeken in lijsten](filteren-in-lijsten.md).
 - **Vanaf het dashboard** — klikt u door vanaf een fase op het dashboard, dan staat de lijst al gefilterd. Bovenaan ziet u welke filter actief is, met een knop **Filter wissen** ernaast.
 - **Exporteren** — naar Excel of CSV, met de filters die op dat moment aan staan. De export volgt de taal van uw scherm.
@@ -46,13 +46,13 @@ Met **Nieuw dossier** bovenaan de lijst maakt u een leeg dossier aan. Het krijgt
 
 ## Het dossier
 
-![Een geopend kredietdossier: bovenaan de kopkaart met status, intern nummer, eigenaar en sales als keuzelijst, de financiële instelling, de tussenpersoon, het kredietbedrag met het vinkje inhouden ernaast en de datum akte, met rechts de knoppen Opslaan, Annuleren, Afdruk overzicht en Verwijderen. Daaronder links de datums, het type dossier, de schattingswaarde en de quotiteit met de vinkjes Weergeven in dashboard en Getekend aanbod verzonden en het veld Interne opmerkingen; rechts de contracten en onderaan de tabbladen Partijen, Opmerkingen en Gevraagde documenten met de teller 4/4.](../images/kredietdossier-fiche.png "Het kredietdossier: alles op één pagina"){ .volle-breedte }
+![Een geopend kredietdossier: bovenaan de kopkaart met status, intern nummer, eigenaar en sales als keuzelijst, de financiële instelling, de aanbrenger, het kredietbedrag met het vinkje inhouden ernaast en de datum akte, met rechts de knoppen Opslaan, Annuleren, Afdruk overzicht en Verwijderen. Daaronder links de datums, het type dossier, de schattingswaarde en de quotiteit met de vinkjes Weergeven in dashboard en Getekend aanbod verzonden en het veld Interne opmerkingen; rechts de contracten en onderaan de tabbladen Partijen, Opmerkingen en Gevraagde documenten met de teller 4/4.](../images/kredietdossier-fiche.png "Het kredietdossier: alles op één pagina"){ .volle-breedte }
 
 Het dossier is één pagina. Bovenaan staat het kernblok met de gegevens die u het vaakst nodig hebt; daaronder staan links de datums en het pand, rechts de contracten. Onderaan rechts staan **Partijen**, **Opmerkingen** en **Gevraagde documenten** naast elkaar als tabbladen — drie lijsten die dezelfde plaats delen, zodat u niet hoeft te scrollen om ze alle drie te bereiken.
 
 ### Dossiergegevens
 
-Het kopblok bovenaan draagt wat u het vaakst nodig hebt: intern nummer, **eigenaar**, **sales**, **status**, financiële instelling, tussenpersoon, het kredietbedrag met het vinkje *Inhouden*, en de datum van de akte.
+Het kopblok bovenaan draagt wat u het vaakst nodig hebt: intern nummer, **eigenaar**, **sales**, **status**, financiële instelling, aanbrenger, het kredietbedrag met het vinkje *Inhouden*, en de datum van de akte.
 
 In de kaart eronder links staan het doel, het type dossier, de quotiteit en de sleuteldatums: indiening, goedkeuring, ondertekening van het aanbod en de uiterste datum voor de opschortende voorwaarden.
 
@@ -131,7 +131,7 @@ Wat u verder met een schema kan doen, hangt af van zijn toestand:
 - **Stopgezet** — er staat enkel nog wanneer; wijzigen kan niet meer. Bij het stopzetten geeft u zelf de datum op vanaf wanneer het schema stopt, en waarom. Vanaf die maand vervallen de maanden die nog niet uitbetaald waren; wat er vóór die maand stond, blijft.
 
 !!! tip "Een herinnering bij het bewaren"
-    Bewaart u een dossier waarvoor de tussenpersoon nog geen commissieschema heeft, dan verschijnt daar een
+    Bewaart u een dossier waarvoor de aanbrenger nog geen commissieschema heeft, dan verschijnt daar een
     melding over. Het dossier wordt gewoon bewaard — het is een herinnering, geen blokkade. Ziet u die melding
     niet en wilt u ze wel, vraag dan uw beheerder om ze aan te zetten; ze staat standaard uit omdat niet elk
     kantoor met commissieschema's werkt.
@@ -174,4 +174,4 @@ Het tabblad naast *Partijen*. Hier noteert u alles wat bij dit dossier gezegd of
 
 De knop **Afdruk overzicht** maakt een pdf van dit dossier: de gegevens, de aanvragers, de contracten en de opmerkingen, met uw eigen briefhoofd erboven. U kan die pdf downloaden of meteen doorsturen per e-mail.
 
-Zoekt u cijfers over **meerdere** dossiers — per status, per kredietverstrekker, per tussenpersoon of per sales verantwoordelijke — dan vindt u die onder [Rapporten](reports.md).
+Zoekt u cijfers over **meerdere** dossiers — per status, per kredietverstrekker, per aanbrenger of per sales verantwoordelijke — dan vindt u die onder [Rapporten](reports.md).

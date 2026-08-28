@@ -11,11 +11,11 @@ Klik in de zijbalk op **Platformbeheer** en daarna op de tegel **Bedrijfsfiche**
 
 ## De gegevens
 
-![De bedrijfsfiche van CreditSoft: het blok Identiteit met de alleen-lezen naam, het btw-nummer met de knop Ophalen en het FSMA-nummer, daarnaast Contact met telefoon, e-mail en website, daaronder Adres en Bank met IBAN, BIC en rekeningnummer, en onderaan Documenten en huisstijl met het sleepvak voor het logo.](../images/bedrijfsfiche.png "De gegevens van het eigen kantoor, zoals ze op documenten en in mails verschijnen"){ .volle-breedte }
+![De bedrijfsfiche van CreditSoft: het blok Identiteit met de alleen-lezen naam, het btw-nummer met de knop Ophalen en het FSMA-nr., daarnaast Contact met telefoon, e-mail en website, daaronder Adres en Bank met IBAN, BIC en rekeningnummer, en onderaan Documenten en huisstijl met het sleepvak voor het logo.](../images/bedrijfsfiche.png "De gegevens van het eigen kantoor, zoals ze op documenten en in mails verschijnen"){ .volle-breedte }
 
 De velden staan gegroepeerd in blokken:
 
-- **Identiteit** — naam (alleen-lezen), BTW / ondernemingsnr., FSMA-nummer.
+- **Identiteit** — naam (alleen-lezen), BTW / ondernemingsnr., FSMA-nr..
 - **Adres** — straat, nummer, bus, postcode, gemeente, land.
 - **Contact** — telefoon, e-mail, website.
 - **Bank** — IBAN, BIC en rekeningnummer (met een tweede rekening indien nodig).

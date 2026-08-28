@@ -1,14 +1,14 @@
 # Rapporten
 
-Negen vaste rapporten over uw kredietdossiers: hoeveel er per status staan, wat er gerealiseerd werd, per kredietverstrekker, per tussenpersoon of per sales verantwoordelijke. U kiest een rapport, geeft een periode op, en krijgt een pdf die u kan **downloaden** of meteen **doorsturen per e-mail**.
+Negen vaste rapporten over uw kredietdossiers: hoeveel er per status staan, wat er gerealiseerd werd, per kredietverstrekker, per aanbrenger of per sales verantwoordelijke. U kiest een rapport, geeft een periode op, en krijgt een pdf die u kan **downloaden** of meteen **doorsturen per e-mail**.
 
 ## Het scherm openen
 
 Klik in de zijbalk op **Lijsten** en dan op **Rapporten**.
 
-![De rapportenbibliotheek met negen tegels in drie groepen: Kredietdossiers met Status periodiek op ingavedatum, Status periodiek op aktedatum, Ingediend gegroepeerd per maand, Geakteerd gedurende een bepaalde periode en Gerealiseerd + commissiebedrag; Tussenpersonen en medewerkers met twee tegels; Kredietverstrekkers met de gerealiseerde dossiers en de gemiddelde quotiteit.](../images/rapporten-bibliotheek.png "De negen rapporten, gegroepeerd per onderwerp"){ .volle-breedte }
+![De rapportenbibliotheek met negen tegels in drie groepen: Kredietdossiers met Status periodiek op ingavedatum, Status periodiek op aktedatum, Ingediend gegroepeerd per maand, Geakteerd gedurende een bepaalde periode en Gerealiseerd + commissiebedrag; Aanbrengers en medewerkers met twee tegels; Kredietverstrekkers met de gerealiseerde dossiers en de gemiddelde quotiteit.](../images/rapporten-bibliotheek.png "De negen rapporten, gegroepeerd per onderwerp"){ .volle-breedte }
 
-Elk rapport is een tegel. De tegels staan in drie groepen — **Kredietdossiers**, **Tussenpersonen en medewerkers** en **Kredietverstrekkers** — zodat u leest wat er bestaat in plaats van het te moeten zoeken.
+Elk rapport is een tegel. De tegels staan in drie groepen — **Kredietdossiers**, **Aanbrengers en medewerkers** en **Kredietverstrekkers** — zodat u leest wat er bestaat in plaats van het te moeten zoeken.
 
 ## Een rapport maken
 
@@ -39,11 +39,11 @@ Bovenaan elk rapport staan de naam en de gegevens uit uw **bedrijfsfiche**, met 
 | **Geakteerd gedurende een bepaalde periode** | Uw werklijst na de akte: dossiers met een akte in de periode waarvan het contract **nog niet op gerealiseerd** staat, gegroepeerd per kredietverstrekker, met contractnummer en aktedatum. |
 | **Gerealiseerd + commissiebedrag** | Elk gerealiseerd dossier op één regel: kredietverstrekker, aktedatum, sales verantwoordelijke, klant, kredietbedrag en commissiebedrag. |
 
-### Tussenpersonen en medewerkers
+### Aanbrengers en medewerkers
 
 | Rapport | Wat u krijgt |
 |---|---|
-| **Tussenpersonen — gerealiseerde dossiers** | Per tussenpersoon de dossiers die in de periode werden gerealiseerd, met een subtotaal per tussenpersoon. |
+| **Aanbrengers — gerealiseerde dossiers** | Per aanbrenger de dossiers die in de periode werden gerealiseerd, met een subtotaal per aanbrenger. |
 | **Sales verantwoordelijke — gerealiseerde dossiers** | Dezelfde lijst, maar gegroepeerd per sales verantwoordelijke. |
 
 ### Kredietverstrekkers

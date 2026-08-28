@@ -31,7 +31,7 @@ Een commissieschema loopt **hoogstens 24 maanden**. Een lijn uit 2019 hoort dus 
 Een knop om die lijnen alsnog te betalen, zou van deze opkuislijst een uitbetaalknop maken. Dan betaalt iemand € 30.000 uit in de overtuiging dat hij een achterstand inhaalt.
 
 !!! warning "Wat u wél kan doen"
-    Open het dossier en kijk naar de commissieschema's. Hoort die lijn bij een schema dat nooit had mogen bestaan, dan is het schema zelf de plek om in te grijpen. Gaat het om iets dat de tussenpersoon werkelijk toekomt, dan spreekt u dat met hem af en boekt u het als een **vrije commissie** op zijn fiche — met een omschrijving die zegt waarover het gaat.
+    Open het dossier en kijk naar de commissieschema's. Hoort die lijn bij een schema dat nooit had mogen bestaan, dan is het schema zelf de plek om in te grijpen. Gaat het om iets dat de aanbrenger werkelijk toekomt, dan spreekt u dat met hem af en boekt u het als een **vrije commissie** op zijn fiche — met een omschrijving die zegt waarover het gaat.
 
 ## Wie dit ziet
 

@@ -87,7 +87,7 @@ fois du même champ — et la barre de boutons reste visible en bas.
 - **Langue des documents** (obligatoire) — voir ci-dessous
 - **Contact** — téléphone, GSM, e-mail, site web
 - **E-mail invalide** — une case à cocher pour signaler qu'une adresse ne fonctionne plus, sans la supprimer
-- **Formule d'appel** et **numéro interne**
+- **Formule d'appel** et **N° interne**
 - **Adresse principale** — rue, numéro, boîte, code postal, commune, pays
 
 ### Onglet « Informations complémentaires » (particulier)

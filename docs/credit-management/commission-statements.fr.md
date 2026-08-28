@@ -1,6 +1,6 @@
 # Bordereau
 
-Pour chaque dossier de crédit, CreditSoft calcule la commission qui revient à votre intermédiaire et la comptabilise par mois. Sur cet écran, vous passez à l'étape suivante : vous **décomptez**. Par apporteur, vous créez un bordereau, vous l'imprimez ou vous l'envoyez, et vous enregistrez la date de paiement.
+Pour chaque dossier de crédit, CreditSoft calcule la commission qui revient à votre apporteur et la comptabilise par mois. Sur cet écran, vous passez à l'étape suivante : vous **décomptez**. Par apporteur, vous créez un bordereau, vous l'imprimez ou vous l'envoyez, et vous enregistrez la date de paiement.
 
 ## Ouvrir l'écran
 
@@ -98,7 +98,7 @@ Retire le bordereau dans son entièreté. Les lignes de commission redeviennent 
 C'est possible **tant que le bordereau n'est pas payé**. S'il l'est, le bouton disparaît : annulez d'abord le paiement.
 
 !!! info "La colonne Votre référence"
-    Il s'agit de la **référence que l'intermédiaire a lui-même donnée au dossier** — pas d'un numéro attribué par CreditSoft. Si un bureau ne travaille pas avec des références, cette colonne reste vide pour tous ses dossiers. Ce n'est pas une information manquante.
+    Il s'agit de la **référence que l'apporteur a lui-même donnée au dossier** — pas d'un numéro attribué par CreditSoft. Si un bureau ne travaille pas avec des références, cette colonne reste vide pour tous ses dossiers. Ce n'est pas une information manquante.
 
 !!! tip "À quoi sert le retrait"
     Le plus souvent à une période mal choisie, ou lorsque vous constatez qu'un schéma de commission manquait encore. Retirez, complétez, et recréez la série.

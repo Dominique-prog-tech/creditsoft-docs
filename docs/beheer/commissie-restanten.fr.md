@@ -31,7 +31,7 @@ Un schéma de commission court **au maximum 24 mois**. Une ligne de 2019 relève
 Un bouton pour payer ces lignes malgré tout transformerait cette liste de nettoyage en bouton de paiement. Quelqu'un verserait alors 30 000 € en croyant rattraper un retard.
 
 !!! warning "Ce que vous pouvez faire"
-    Ouvrez le dossier et examinez les schémas de commission. Si la ligne relève d'un schéma qui n'aurait jamais dû exister, c'est le schéma lui-même qu'il faut corriger. S'il s'agit de quelque chose qui revient réellement à l'intermédiaire, convenez-en avec lui et comptabilisez-le comme **commission libre** sur sa fiche — avec une description qui dit de quoi il s'agit.
+    Ouvrez le dossier et examinez les schémas de commission. Si la ligne relève d'un schéma qui n'aurait jamais dû exister, c'est le schéma lui-même qu'il faut corriger. S'il s'agit de quelque chose qui revient réellement à l'apporteur, convenez-en avec lui et comptabilisez-le comme **commission libre** sur sa fiche — avec une description qui dit de quoi il s'agit.
 
 ## Qui voit cet écran
 

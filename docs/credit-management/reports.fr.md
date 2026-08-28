@@ -1,14 +1,14 @@
 # Rapports
 
-Neuf rapports fixes sur vos dossiers de crédit : combien de dossiers par statut, ce qui a été réalisé, par prêteur, par intermédiaire ou par responsable commercial. Vous choisissez un rapport, indiquez une période, et obtenez un pdf que vous pouvez **télécharger** ou **envoyer directement par courriel**.
+Neuf rapports fixes sur vos dossiers de crédit : combien de dossiers par statut, ce qui a été réalisé, par prêteur, par apporteur ou par responsable commercial. Vous choisissez un rapport, indiquez une période, et obtenez un pdf que vous pouvez **télécharger** ou **envoyer directement par courriel**.
 
 ## Ouvrir l'écran
 
 Dans la barre latérale, cliquez sur **Listes**, puis sur **Rapports**.
 
-![La bibliothèque de rapports avec neuf tuiles réparties en trois groupes : Dossiers de crédit avec Statut par période sur la date d'encodage, Statut par période sur la date d'acte, Introduits par mois, Actés durant une période déterminée et Réalisés + montant de commission ; Intermédiaires et collaborateurs avec deux tuiles ; Prêteurs avec les dossiers réalisés et la quotité moyenne.](../images/rapporten-bibliotheek-fr.png "Les neuf rapports, groupés par sujet"){ .volle-breedte }
+![La bibliothèque de rapports avec neuf tuiles réparties en trois groupes : Dossiers de crédit avec Statut par période sur la date d'encodage, Statut par période sur la date d'acte, Introduits par mois, Actés durant une période déterminée et Réalisés + montant de commission ; Apporteurs et collaborateurs avec deux tuiles ; Prêteurs avec les dossiers réalisés et la quotité moyenne.](../images/rapporten-bibliotheek-fr.png "Les neuf rapports, groupés par sujet"){ .volle-breedte }
 
-Chaque rapport est une tuile. Les tuiles sont réparties en trois groupes — **Dossiers de crédit**, **Intermédiaires et collaborateurs** et **Prêteurs** — pour que vous lisiez ce qui existe au lieu de devoir le chercher.
+Chaque rapport est une tuile. Les tuiles sont réparties en trois groupes — **Dossiers de crédit**, **Apporteurs et collaborateurs** et **Prêteurs** — pour que vous lisiez ce qui existe au lieu de devoir le chercher.
 
 ## Créer un rapport
 
@@ -39,11 +39,11 @@ En haut de chaque rapport figurent le nom et les coordonnées de votre **fiche d
 | **Actés durant une période déterminée** | Votre liste de travail après l'acte : les dossiers dont l'acte tombe dans la période et dont le contrat n'est **pas encore réalisé**, groupés par prêteur, avec numéro de contrat et date d'acte. |
 | **Réalisés + montant de commission** | Chaque dossier réalisé sur une ligne : prêteur, date d'acte, responsable commercial, client, montant du crédit et de la commission. |
 
-### Intermédiaires et collaborateurs
+### Apporteurs et collaborateurs
 
 | Rapport | Ce que vous obtenez |
 |---|---|
-| **Intermédiaires — dossiers réalisés** | Par intermédiaire, les dossiers réalisés durant la période, avec un sous-total par intermédiaire. |
+| **Apporteurs — dossiers réalisés** | Par apporteur, les dossiers réalisés durant la période, avec un sous-total par apporteur. |
 | **Responsable commercial — dossiers réalisés** | La même liste, mais groupée par responsable commercial. |
 
 ### Prêteurs

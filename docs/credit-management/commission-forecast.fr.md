@@ -20,7 +20,7 @@ Dans le menu de gauche, cliquez sur **Perspective**, sous *Listes*.
 |---|---|
 | **Attendu à partir de ce mois** | Tout ce qui reste à venir sur la période choisie, avec le nombre de lignes |
 | **Les 12 prochains mois** | La part qui tombe dans l'année à venir |
-| **Apporteurs** | Le nombre d'intermédiaires concernés |
+| **Apporteurs** | Le nombre d'apporteurs concernés |
 
 ## Le graphique : où va votre flux de commissions
 
@@ -37,7 +37,7 @@ En bas figurent, par apporteur, le montant attendu, le nombre de lignes et la p�
 
 ## Sur la fiche d'un apporteur
 
-Chaque fiche d'apporteur comporte un onglet **Perspective** avec la même vue, limitée à lui et sur toute sa durée. Pratique lorsqu'un intermédiaire demande ce qu'il peut encore attendre.
+Chaque fiche d'apporteur comporte un onglet **Perspective** avec la même vue, limitée à lui et sur toute sa durée. Pratique lorsqu'un apporteur demande ce qu'il peut encore attendre.
 
 ## Ce qui n'y figure pas
 

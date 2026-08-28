@@ -20,7 +20,7 @@ Dit bepaalt wat er in één borderel valt.
 
 ## Waarschuwen bij een dossier zonder commissieschema
 
-Staat dit aan, dan krijgt u een herinnering wanneer u een kredietdossier bewaart waarvoor de tussenpersoon nog geen commissieschema heeft.
+Staat dit aan, dan krijgt u een herinnering wanneer u een kredietdossier bewaart waarvoor de aanbrenger nog geen commissieschema heeft.
 
 Het is een **herinnering, geen blokkade**: het dossier wordt gewoon bewaard. Zet het uit als uw kantoor niet met commissieschema's werkt — anders verschijnt de melding bij elke bewaaractie van elk dossier.
 

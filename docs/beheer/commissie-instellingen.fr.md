@@ -20,7 +20,7 @@ Ce choix détermine ce qu'un bordereau regroupe.
 
 ## Avertir pour un dossier sans schéma de commission
 
-Si cette option est active, vous recevez un rappel lorsque vous enregistrez un dossier de crédit dont l'intermédiaire n'a pas encore de schéma de commission.
+Si cette option est active, vous recevez un rappel lorsque vous enregistrez un dossier de crédit dont l'apporteur n'a pas encore de schéma de commission.
 
 C'est un **rappel, pas un blocage** : le dossier est enregistré normalement. Désactivez-le si votre bureau ne travaille pas avec des schémas de commission — sinon le message apparaît à chaque enregistrement de chaque dossier.
 

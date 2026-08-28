@@ -84,7 +84,7 @@ hetzelfde veld — en onderaan blijft de knoppenbalk in beeld.
 - **Documenttaal** (verplicht) — zie hieronder
 - **Contact** — telefoon, gsm, e-mail, website
 - **E-mail ongeldig** — een vinkje om te markeren dat een adres niet meer werkt, zonder het weg te gooien
-- **Aanspreking** en **intern nummer**
+- **Aanspreking** en **Intern nr.**
 - **Hoofdadres** — straat, huisnummer, bus, postcode, gemeente, land
 
 ### Tabblad "Bijkomende informatie" (particulier)

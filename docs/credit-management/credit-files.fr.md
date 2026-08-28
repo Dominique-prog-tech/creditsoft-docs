@@ -8,7 +8,7 @@ Dans la barre latérale, cliquez sur **Crédit**, puis sur **Dossiers de crédit
 
 ## La liste
 
-![La liste des dossiers de crédit : en haut les filtres par statut et par intermédiaire avec le nombre de dossiers trouvés, en dessous le tableau indiquant par dossier la référence de l'apporteur, le statut, le montant du crédit, le demandeur, l'intermédiaire, l'institution, la date de dépôt et la date d'effet.](../images/kredietdossiers-lijst-fr.png "Tous les dossiers de crédit du bureau"){ .volle-breedte }
+![La liste des dossiers de crédit : en haut les filtres par statut et par apporteur avec le nombre de dossiers trouvés, en dessous le tableau indiquant par dossier la référence de l'apporteur, le statut, le montant du crédit, le demandeur, l'apporteur, l'institution, la date de dépôt et la date d'effet.](../images/kredietdossiers-lijst-fr.png "Tous les dossiers de crédit du bureau"){ .volle-breedte }
 
 Par dossier, vous voyez qui en fait la demande, par qui il passe et où il en est :
 
@@ -18,7 +18,7 @@ Par dossier, vous voyez qui en fait la demande, par qui il passe et où il en es
 | **Statut** | Où en est le dossier |
 | **Montant du crédit** | Le montant effectivement accordé |
 | **Demandeur** | Tous les demandeurs du dossier, à la suite |
-| **Intermédiaire** | L'apporteur par lequel le dossier est arrivé |
+| **Apporteur** | L'apporteur par lequel le dossier est arrivé |
 | **Institution** | L'institution de crédit |
 | **Date de dépôt** | Quand le dossier a été introduit |
 | **Date d'effet** | Quand le crédit prend effet |
@@ -35,7 +35,7 @@ Avec **Nouveau dossier** en haut de la liste, vous créez un dossier vide. Il re
 ### Rechercher et filtrer
 
 - **Rechercher** — le champ de recherche porte sur toutes les colonnes **visibles**. Si vous activez une colonne via le sélecteur, la recherche s'y applique aussitôt.
-- **Statut** et **Intermédiaire** — les deux listes de choix du haut. Elles n'affichent que ce qui figure dans vos dossiers, donc aucun statut sans dossier.
+- **Statut** et **Apporteur** — les deux listes de choix du haut. Elles n'affichent que ce qui figure dans vos dossiers, donc aucun statut sans dossier.
 - **Par date** — les colonnes **Date de dépôt** et **Date d'effet** se filtrent via l'entonnoir sur l'en-tête de colonne, ou via le constructeur de filtres pour une plage telle que « entre le 1er janvier et le 30 juin ». Voir [Filtrer et rechercher dans les listes](filteren-in-lijsten.md).
 - **Depuis le tableau de bord** — si vous arrivez depuis une phase du tableau de bord, la liste est déjà filtrée. Le filtre actif s'affiche en haut, avec un bouton **Effacer le filtre** à côté.
 - **Exporter** — vers Excel ou CSV, avec les filtres actifs à ce moment-là. L'export suit la langue de votre écran.
@@ -46,13 +46,13 @@ Avec **Nouveau dossier** en haut de la liste, vous créez un dossier vide. Il re
 
 ## Le dossier
 
-![Un dossier de crédit ouvert : en haut le bloc principal avec le statut, le numéro interne, le propriétaire et le responsable commercial sous forme de listes déroulantes, l'institution financière, l'intermédiaire, le montant du crédit avec la case Retenir à côté et la date d'acte, et à droite les boutons Enregistrer, Annuler, Aperçu d'impression et Supprimer. En dessous, à gauche les dates, le type de dossier, la valeur estimée et la quotité avec les cases Afficher dans le tableau de bord et Offre signée envoyée ainsi que le champ Remarques internes ; à droite les contrats et en bas les onglets Parties, Remarques et Documents demandés avec le compteur 4/4.](../images/kredietdossier-fiche-fr.png "Le dossier de crédit : tout sur une seule page"){ .volle-breedte }
+![Un dossier de crédit ouvert : en haut le bloc principal avec le statut, le numéro interne, le propriétaire et le responsable commercial sous forme de listes déroulantes, l'institution financière, l'apporteur, le montant du crédit avec la case Retenir à côté et la date d'acte, et à droite les boutons Enregistrer, Annuler, Aperçu d'impression et Supprimer. En dessous, à gauche les dates, le type de dossier, la valeur estimée et la quotité avec les cases Afficher dans le tableau de bord et Offre signée envoyée ainsi que le champ Remarques internes ; à droite les contrats et en bas les onglets Parties, Remarques et Documents demandés avec le compteur 4/4.](../images/kredietdossier-fiche-fr.png "Le dossier de crédit : tout sur une seule page"){ .volle-breedte }
 
 Le dossier tient sur une seule page. En haut, le bloc principal reprend les données dont vous avez le plus souvent besoin ; en dessous, les dates et le bien à gauche, les contrats à droite. En bas à droite, **Parties**, **Remarques** et **Documents demandés** figurent côte à côte sous forme d'onglets — trois listes qui partagent le même emplacement, pour que vous puissiez les atteindre toutes les trois sans faire défiler la page.
 
 ### Données du dossier
 
-Le bloc d'en-tête porte ce dont vous avez le plus souvent besoin : numéro interne, **propriétaire**, **sales**, **statut**, institution financière, intermédiaire, le montant du crédit avec la case *Retenir*, et la date de l'acte.
+Le bloc d'en-tête porte ce dont vous avez le plus souvent besoin : numéro interne, **propriétaire**, **sales**, **statut**, institution financière, apporteur, le montant du crédit avec la case *Retenir*, et la date de l'acte.
 
 Dans la carte en dessous à gauche figurent le but, le type de dossier, la quotité et les dates clés : introduction, approbation, signature de l'offre et date limite des conditions suspensives.
 
@@ -131,7 +131,7 @@ Ce que vous pouvez faire ensuite dépend de l'état du schéma :
 - **Arrêté** — seule la date reste affichée ; la modification n'est plus possible. À l'arrêt, vous indiquez vous-même à partir de quelle date le schéma s'arrête, et pourquoi. À partir de ce mois, les mois non encore payés disparaissent ; ce qui précède ce mois reste.
 
 !!! tip "Un rappel lors de l'enregistrement"
-    Si vous enregistrez un dossier dont l'intermédiaire n'a pas encore de schéma de commission, un message vous
+    Si vous enregistrez un dossier dont l'apporteur n'a pas encore de schéma de commission, un message vous
     le rappelle. Le dossier est enregistré normalement — c'est un rappel, pas un blocage. Si vous ne voyez pas ce
     message et souhaitez l'avoir, demandez à votre administrateur de l'activer ; il est désactivé par défaut, car
     tous les bureaux ne travaillent pas avec des schémas de commission.
@@ -174,4 +174,4 @@ L'onglet à côté de *Parties*. Vous y notez tout ce qui a été dit ou convenu
 
 Le bouton **Aperçu d'impression** génère un pdf de ce dossier : les données, les demandeurs, les contrats et les remarques, surmontés de votre propre en-tête. Vous pouvez télécharger ce pdf ou l'envoyer directement par courriel.
 
-Vous cherchez des chiffres portant sur **plusieurs** dossiers — par statut, par prêteur, par intermédiaire ou par responsable commercial ? Vous les trouverez sous [Rapports](reports.md).
+Vous cherchez des chiffres portant sur **plusieurs** dossiers — par statut, par prêteur, par apporteur ou par responsable commercial ? Vous les trouverez sous [Rapports](reports.md).

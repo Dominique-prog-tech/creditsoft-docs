@@ -4,11 +4,14 @@ Cette page offre un bref aperçu de la façon de vous repérer dans CreditSoft :
 
 ![La fenêtre principale de CreditSoft : à gauche le menu principal avec les groupes CRM, Crédit, Listes et Configuration, en haut à droite la rangée de boutons avec le retour d'information, l'aide et l'avatar, et en bas à gauche Administration, Portail client et Se déconnecter.](../images/navigatie-fr.png "Les éléments fixes de la fenêtre principale")
 
+Après la connexion, vous arrivez sur votre **tableau de bord**. Si votre rôle n'y donne pas accès, une
+courte page d'accueil vous renvoie vers le menu.
+
 ## Le menu de gauche
 
 À gauche se trouve le **menu principal**. Il affiche les écrans auxquels vous avez accès ; cliquez sur un élément pour l'ouvrir. Le menu est regroupé — les écrans de travail quotidien se trouvent en haut, les écrans de gestion sous l'en-tête **Gestion**.
 
-![Le menu principal à gauche, avec Accueil et Tableau de bord en haut, le groupe CRM déplié avec Relations, Professionnels, Rendez-vous, Apporteurs et Groupes, le groupe Crédit déplié avec Dossiers de crédit, À valider avec une pastille bleue de comptage, Institutions de crédit, Assureurs, Bordereau et Fiche 281.50, en dessous les groupes repliés Listes et Gestion, et tout en bas Administration, Portail client et Se déconnecter.](../images/menu-links-fr.png "Le menu principal à gauche, avec deux groupes dépliés"){ width="240" }
+![Le menu principal à gauche, avec Tableau de bord en haut, le groupe CRM déplié avec Relations, Professionnels, Rendez-vous, Apporteurs et Groupes, le groupe Crédit déplié avec Dossiers de crédit, À valider avec une pastille bleue de comptage, Institutions de crédit, Assureurs, Bordereau et Fiche 281.50, en dessous les groupes repliés Listes et Gestion, et tout en bas Administration, Portail client et Se déconnecter.](../images/menu-links-fr.png "Le menu principal à gauche, avec deux groupes dépliés"){ width="240" }
 
 Les éléments visibles dépendent de votre rôle : tout le monde n'a pas accès à tous les écrans.
 
@@ -63,6 +66,29 @@ référence à la page dont elle provient.
 
 Il puise exclusivement dans le manuel. Si une information ne s'y trouve pas, il le dit — et c'est alors une
 lacune du manuel, non un manque de l'application. Faites-le-nous savoir via le bouton de retour d'information.
+
+### Interroger vos propres chiffres
+
+!!! info "Uniquement avec votre propre clé IA"
+    Ce second assistant n'apparaît **que** si votre bureau a configuré sa propre clé IA dans le portail
+    ADM One. À défaut, ce panneau n'existe pas et rien ne change pour vous. L'assistant d'aide ci-dessus
+    fonctionne toujours : il utilise notre clé centrale.
+
+Là où l'assistant d'aide puise dans le manuel, celui-ci consulte **vos propres dossiers**. Vous posez votre
+question en langage courant et recevez un tableau. Six questions sont préparées :
+
+| Question | Ce que vous obtenez |
+|---|---|
+| Dossiers par statut | Nombre de dossiers de crédit par statut sur une période — comptés sur la date d'encodage ou la date d'acte |
+| Introduits par mois | Nombre de dossiers introduits par mois, avec le montant total du crédit et des commissions |
+| Dossiers actés | Les dossiers avec un acte sur une période, avec le prêteur, le montant et la date d'acte |
+| Dossiers réalisés | Les dossiers réalisés sur une période, avec le montant du crédit et la commission par dossier |
+| Par apporteur | Ce que chaque apporteur a rapporté : nombre de dossiers, montant du crédit et commission |
+| Par prêteur | Ce qui a été réalisé par prêteur, avec la quotité moyenne |
+
+!!! note "Les mêmes chiffres que vos rapports"
+    Ces six questions utilisent exactement le même calcul que les rapports sous **Listes**. Elles donnent donc
+    toujours le même chiffre — sinon, vous ne sauriez auquel des deux vous fier.
 
 ## Vos préférences
 

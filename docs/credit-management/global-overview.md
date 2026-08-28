@@ -6,7 +6,7 @@ Het globaal overzicht is uw werklijst: **alle kredietdossiers op één scherm**,
 
 Klik in de zijbalk op **Lijsten** en dan op **Globaal overzicht**.
 
-![Het globaal overzicht: bovenaan de keuzelijsten voor voorinstelling, status, instelling, verantwoordelijke en sales, met daarnaast het aantal getoonde dossiers, het totaal van het kredietbedrag en de knop Afdruk lijst; daaronder de tabel met per dossier het interne nummer, de aanvragers, de status, de fase, de instelling, de tussenpersoon, het kredietbedrag, de doorlooptijd, de opmerkingen en de datums.](../images/globaal-overzicht-lijst.png "Alle dossiers op één scherm, met hun fase en doorlooptijd"){ .volle-breedte }
+![Het globaal overzicht: bovenaan de keuzelijsten voor voorinstelling, status, instelling, verantwoordelijke en sales, met daarnaast het aantal getoonde dossiers, het totaal van het kredietbedrag en de knop Afdruk lijst; daaronder de tabel met per dossier het interne nummer, de aanvragers, de status, de fase, de instelling, de aanbrenger, het kredietbedrag, de doorlooptijd, de opmerkingen en de datums.](../images/globaal-overzicht-lijst.png "Alle dossiers op één scherm, met hun fase en doorlooptijd"){ .volle-breedte }
 
 ## Kiezen wat u wil zien
 
@@ -32,7 +32,7 @@ Daarnaast filtert u op **status**, **instelling**, **verantwoordelijke** en **sa
 | **Status** | De dossierstatus, in de kleur die u aan die status gaf |
 | **Fase** | De fase waar die status onder valt |
 | **Instelling** | De kredietinstelling |
-| **Tussenpersoon** | De aanbrenger |
+| **Aanbrenger** | De aanbrenger |
 | **Kredietbedrag** | Het totale kredietbedrag |
 | **Doorlooptijd** | Aantal dagen tussen de indiening en de akte |
 | **Opmerkingen** | De openstaande opmerkingen op het dossier |
@@ -55,7 +55,7 @@ Via **Kolommen kiezen** (het icoon naast Exporteren) zet u negen extra kolommen 
 
 **Afdruk lijst** maakt een pdf van de dossiers die u op dat moment ziet. De afdruk volgt dus uw filters: wat u weggefilterd hebt, staat er niet in. Bovenaan het document leest u welke selectie u gebruikte en hoeveel dossiers erin zitten; onderaan elke bladzijde staan de aanmaakdatum en de paginanummering. Zo weet ook iemand die de pdf later terugvindt waar hij naar kijkt.
 
-De afdruk is niet hetzelfde als de tabel op uw scherm. Ze toont de aanvragers, de tussenpersoon, de quotiteit, de status, het kredietbedrag, de opmerkingen, de indiening, of er een schatter is aangesteld, de ingangsdatum en de uiterste datum voor de opschortende voorwaarden.
+De afdruk is niet hetzelfde als de tabel op uw scherm. Ze toont de aanvragers, de aanbrenger, de quotiteit, de status, het kredietbedrag, de opmerkingen, de indiening, of er een schatter is aangesteld, de ingangsdatum en de uiterste datum voor de opschortende voorwaarden.
 
 Zodra de afdruk klaar is, verschijnt ze in een voorbeeldvenster met twee mogelijkheden:
 
@@ -63,7 +63,7 @@ Zodra de afdruk klaar is, verschijnt ze in een voorbeeldvenster met twee mogelij
 - **Downloaden** — u bewaart de pdf op uw computer.
 
 !!! tip "Bij *Opvolging na akte* krijgt u een ander overzicht"
-    Staat de eerste keuzelijst op **Opvolging na akte**, dan geeft **Afdruk lijst** het overzicht dat bij die lijst hoort. Dat document is op de opvolging gericht en toont per dossier het interne nummer, de aanvrager, de totale investering, de eigen middelen, het gevraagde krediet, het kredietbedrag, de indiening, de ingangsdatum, de tussenpersoon, de verantwoordelijke, de opmerkingen en de instelling.
+    Staat de eerste keuzelijst op **Opvolging na akte**, dan geeft **Afdruk lijst** het overzicht dat bij die lijst hoort. Dat document is op de opvolging gericht en toont per dossier het interne nummer, de aanvrager, de totale investering, de eigen middelen, het gevraagde krediet, het kredietbedrag, de indiening, de ingangsdatum, de aanbrenger, de verantwoordelijke, de opmerkingen en de instelling.
 
 ## Statussen die twee keer voorkomen
 

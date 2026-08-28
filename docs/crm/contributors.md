@@ -1,6 +1,6 @@
 # Aanbrengers
 
-Uw tussenpersonen staan in een **boom**: een hoofdaanbrenger, daaronder zijn kantoren, en daaronder de individuele medewerkers. Zo ziet u meteen wie bij wie hoort.
+Uw aanbrengers staan in een **boom**: een hoofdaanbrenger, daaronder zijn kantoren, en daaronder de individuele medewerkers. Zo ziet u meteen wie bij wie hoort.
 
 ## Het scherm openen
 
@@ -8,7 +8,7 @@ Klik in de zijbalk op **CRM** en dan op **Aanbrengers**.
 
 ## De lijst
 
-![Het scherm Aanbrengers in CreditSoft: een boomlijst met hoofdtussenpersonen en de kantoren eronder, met kolommen voor naam, type, hoedanigheid, e-mail, agentnummer, gemeente, gsm en actief, en bovenaan de knoppen Samenvoegen, Nieuw en Exporteren.](../images/aanbrengers-lijst.png "Overzicht van de aanbrengers, geordend als een boom")
+![Het scherm Aanbrengers in CreditSoft: een boomlijst met hoofdaanbrengers en de kantoren eronder, met kolommen voor naam, type, hoedanigheid, e-mail, agentnummer, gemeente, gsm en actief, en bovenaan de knoppen Samenvoegen, Nieuw en Exporteren.](../images/aanbrengers-lijst.png "Overzicht van de aanbrengers, geordend als een boom")
 
 De tabel toont per aanbrenger: **naam**, **type**, **hoedanigheid**, **e-mail**, **agentnummer**, **gemeente**, **gsm** en **actief**.
 
@@ -16,7 +16,7 @@ De tabel toont per aanbrenger: **naam**, **type**, **hoedanigheid**, **e-mail**,
 - **Zoeken** — het zoekveld zoekt in alle kolommen tegelijk.
 - **Kolommen kiezen** — toon of verberg kolommen; ook de breedtes die u instelt, blijven bewaard voor de volgende keer.
 - **Exporteren** — naar Excel of CSV.
-- **Samenvoegen** — staan er twee fiches voor dezelfde tussenpersoon, dan voegt u ze samen: de gekozen rij blijft, de andere gaat erin op.
+- **Samenvoegen** — staan er twee fiches voor dezelfde aanbrenger, dan voegt u ze samen: de gekozen rij blijft, de andere gaat erin op.
 - **Nieuw / bewerken** — klik op **Nieuw**, of **dubbelklik** een rij om de fiche te openen.
 
 ### Journaal
@@ -53,7 +53,7 @@ naar de lijst om ze te raadplegen. Lade en tabbladen tonen hetzelfde en werken o
 
 ### Identiteit
 
-Wie deze tussenpersoon is en welke rol hij speelt: **type tussenpersoon** (hoofd, kantoor of sub), **valt onder** — de aanbrenger waaronder hij hangt in de boom —, **rechtsvorm**, **relatie**, **aanspreking**, **hoedanigheid**, de naam of **bedrijfsnaam** met het **bedrijfstype**, het **btw-nummer**, het **aanbrengernummer**, de **documenttaal** (verplicht) en de **groepering** — de groep waartoe deze tussenpersoon behoort, uit uw lijst bij [Groepen](groups.md).
+Wie deze aanbrenger is en welke rol hij speelt: **type aanbrenger** (hoofd, kantoor of sub), **valt onder** — de aanbrenger waaronder hij hangt in de boom —, **rechtsvorm**, **relatie**, **aanspreking**, **hoedanigheid**, de naam of **bedrijfsnaam** met het **bedrijfstype**, het **btw-nummer**, het **aanbrengernummer**, de **documenttaal** (verplicht) en de **groepering** — de groep waartoe deze aanbrenger behoort, uit uw lijst bij [Groepen](groups.md).
 
 !!! tip "Bedrijfsgegevens automatisch ophalen"
     Vul het **btw-nummer** in en klik op **Ophalen**: CreditSoft haalt naam, rechtsvorm en adres rechtstreeks
@@ -61,7 +61,7 @@ Wie deze tussenpersoon is en welke rol hij speelt: **type tussenpersoon** (hoofd
 
 ### Erkenning en status
 
-Mag deze tussenpersoon bemiddelen, en loopt de samenwerking nog? Het **FSMA-nummer** met een vinkje of de inschrijving in orde is, en of hij **actief** is — met de datum vanaf wanneer, of **gestopt** met de datum sinds wanneer.
+Mag deze aanbrenger bemiddelen, en loopt de samenwerking nog? Het **FSMA-nr.** met een vinkje of de inschrijving in orde is, en of hij **actief** is — met de datum vanaf wanneer, of **gestopt** met de datum sinds wanneer.
 
 ### Contact en adres
 
@@ -83,7 +83,7 @@ De betaalwijze bepaalt welke velden er daarna bijkomen:
 
 ## Twee fiches samenvoegen
 
-Staat dezelfde tussenpersoon twee keer in de lijst, dan voegt u de fiches samen met de knop **Samenvoegen**
+Staat dezelfde aanbrenger twee keer in de lijst, dan voegt u de fiches samen met de knop **Samenvoegen**
 bovenaan. Selecteer eerst de fiche die u wil **behouden**, klik dan op de knop en kies in het venster welke
 fiche daarin moet opgaan.
 

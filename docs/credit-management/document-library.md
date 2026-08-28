@@ -36,13 +36,13 @@ Dit is de kern van het scherm. Per map kiest u één doelgroep:
 | Doelgroep | Wie ziet het |
 |---|---|
 | **Intern** | Alleen uw eigen medewerkers |
-| **Aanbrengers** | Ook uw tussenpersonen, in hun portaal |
+| **Aanbrengers** | Ook uw aanbrengers, in hun portaal |
 | **Eindklanten** | Ook uw klanten |
 
 De doelgroep staat als gekleurd label bij elke map, zodat u in één oogopslag ziet wat waar terechtkomt.
 
 !!! warning "De doelgroep geldt voor de hele map"
-    Alles wat in een map staat, deelt haar doelgroep. Er is **geen** instelling per document: zet u een map op *Aanbrengers*, dan zien uw tussenpersonen élk document erin.
+    Alles wat in een map staat, deelt haar doelgroep. Er is **geen** instelling per document: zet u een map op *Aanbrengers*, dan zien uw aanbrengers élk document erin.
 
     Wilt u iets afschermen, maak er dan een aparte map voor. Dat is één handeling meer, maar u ziet aan het gekleurde label van de map meteen wat er gedeeld is — en dat is precies wat u wil kunnen nazien.
 
@@ -50,7 +50,7 @@ De doelgroep staat als gekleurd label bij elke map, zodat u in één oogopslag z
 
 Kies een map en rechts verschijnen haar documenten. Met **Bijlage** laadt u er een op — slepen mag ook. Per document kunt u een omschrijving zetten, het openen of het verwijderen.
 
-## Wat uw tussenpersonen zien
+## Wat uw aanbrengers zien
 
 In hun portaal vinden zij het onderdeel **Documenten**: dezelfde mappen, maar alleen wat voor hen bedoeld is, met de namen in hun eigen taal. Zij kunnen de documenten openen en downloaden — opladen en mappen beheren doet u.
 
@@ -58,7 +58,7 @@ In hun portaal vinden zij het onderdeel **Documenten**: dezelfde mappen, maar al
 
 Een klant die via zijn uitnodigingslink in het portaal komt, ziet onderaan het blok **Documenten van uw kantoor**: alles uit de mappen die u op *Eindklanten* zette. Hij kan ze openen of bewaren, meer niet.
 
-Anders dan bij uw tussenpersonen ziet hij **geen mappenstructuur** — enkel de bestanden, met de naam van hun map als bijschrift. Een klant komt daar voor één ding, en een boom om door te klikken helpt hem niet.
+Anders dan bij uw aanbrengers ziet hij **geen mappenstructuur** — enkel de bestanden, met de naam van hun map als bijschrift. Een klant komt daar voor één ding, en een boom om door te klikken helpt hem niet.
 
 !!! note "Staat er niets in, dan staat er niets"
     Zolang geen enkele map op *Eindklanten* staat, of die mappen leeg zijn, verschijnt het blok helemaal niet. Uw klant ziet dan gewoon zijn eigen stukken, zoals voordien.

@@ -36,13 +36,13 @@ C'est le cœur de cet écran. Par dossier, vous choisissez un seul public :
 | Public | Qui le voit |
 |---|---|
 | **Interne** | Uniquement vos propres collaborateurs |
-| **Apporteurs** | Également vos intermédiaires, dans leur portail |
+| **Apporteurs** | Également vos apporteurs, dans leur portail |
 | **Clients finaux** | Également vos clients |
 
 Le public figure comme étiquette colorée sur chaque dossier : vous voyez ainsi d'un coup d'œil ce qui aboutit où.
 
 !!! warning "Le public vaut pour l'ensemble du dossier"
-    Tout ce qui se trouve dans un dossier partage son public. Il n'existe **aucun** réglage par document : si vous placez un dossier sur *Apporteurs*, vos intermédiaires voient **chaque** document qu'il contient.
+    Tout ce qui se trouve dans un dossier partage son public. Il n'existe **aucun** réglage par document : si vous placez un dossier sur *Apporteurs*, vos apporteurs voient **chaque** document qu'il contient.
 
     Pour mettre quelque chose à l'abri, créez un dossier distinct. C'est une manipulation de plus, mais l'étiquette colorée du dossier vous montre aussitôt ce qui est partagé — et c'est précisément ce que vous voulez pouvoir vérifier.
 
@@ -50,7 +50,7 @@ Le public figure comme étiquette colorée sur chaque dossier : vous voyez ainsi
 
 Choisissez un dossier et ses documents apparaissent à droite. Avec **Pièce jointe**, vous en téléversez un — le glisser-déposer fonctionne aussi. Par document, vous pouvez saisir une description, l'ouvrir ou le supprimer.
 
-## Ce que voient vos intermédiaires
+## Ce que voient vos apporteurs
 
 Dans leur portail, ils trouvent la rubrique **Documents** : les mêmes dossiers, mais uniquement ce qui leur est destiné, avec les noms dans leur propre langue. Ils peuvent ouvrir et télécharger les documents — le téléversement et la gestion des dossiers, c'est vous.
 
@@ -58,7 +58,7 @@ Dans leur portail, ils trouvent la rubrique **Documents** : les mêmes dossiers,
 
 Un client qui accède au portail via son lien d'invitation voit en bas le bloc **Documents de votre bureau** : tout ce qui se trouve dans les dossiers que vous avez réglés sur *Clients finaux*. Il peut les ouvrir ou les enregistrer, rien de plus.
 
-Contrairement à vos intermédiaires, il ne voit **aucune arborescence** — uniquement les fichiers, avec le nom de leur dossier en légende. Un client vient là pour une seule chose, et une arborescence à parcourir ne l'aide pas.
+Contrairement à vos apporteurs, il ne voit **aucune arborescence** — uniquement les fichiers, avec le nom de leur dossier en légende. Un client vient là pour une seule chose, et une arborescence à parcourir ne l'aide pas.
 
 !!! note "S'il n'y a rien, il n'y a rien"
     Tant qu'aucun dossier n'est réglé sur *Clients finaux*, ou que ces dossiers sont vides, le bloc n'apparaît pas du tout. Votre client voit alors simplement ses propres pièces, comme avant.
