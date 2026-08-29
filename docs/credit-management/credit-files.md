@@ -120,7 +120,7 @@ Boven de lijst staat de knop **Toevoegen**. Daarmee maakt u een nieuw schema voo
 
 Een nieuw schema staat eerst op *nog niet actief*: er is nog niets geboekt. Pas wanneer u het activeert, zet CreditSoft de maandbedragen klaar.
 
-![De fiche van een commissieschema: bovenaan de sectie Algemene gegevens met de aanbrenger, de totale commissie en de startdatum, daaronder de keuze van de uitbetaling tussen gespreid, geplande betalingen en een vast bedrag, en een veld voor een opmerking; onderaan de sectie Termijnen met per termijn de maand en het percentage, een knop om een termijn toe te voegen en de regel Samen met het totaal van de percentages.](../images/commissieschema-fiche.png "Een commissieschema met geplande betalingen"){ .volle-breedte }
+![De fiche van een commissieschema: bovenaan de sectie Algemene gegevens met de aanbrenger, de totale commissie en de startdatum, daaronder de keuze van de uitbetaling tussen gespreid, geplande betalingen en een vast bedrag, en een veld voor een opmerking; onderaan de sectie Geplande betalingen met per betaling de maand en het percentage, een knop om een termijn toe te voegen en de regel Samen met het totaal van de percentages.](../images/commissieschema-fiche.png "Een commissieschema met geplande betalingen"){ .volle-breedte }
 
 Naast **Toevoegen** staat een zoekveld — handig op een dossier met veel schema's — en een menu om de lijst te **exporteren** naar Excel of CSV.
 

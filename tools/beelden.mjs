@@ -47,8 +47,11 @@ const HANDWERK = { 'rapporten-voorbeeld': 'één blad uit een gerenderd rapport,
 const ID = {
   dossier:  '00038c40-df6b-4992-83e4-13847c7a0a59',
   // dossier dát een commissieschema draagt — het vorige had er geen, en dan is er niets te tonen.
-  dossierMetSchema: '1b174033-5caa-4f1f-981d-b336a78009f4',
-  schema:   '2f2a33cc-b4f3-4fd4-aaf3-deb8612256fb',
+  // ⚠️ DEMO-1654: een dossier met een ACTIEF schema. Hier stond een dossier waarvan het schema op "Nog niet
+  // actief" staat, en dan verschijnen de knoppen Herberekenen en Stopzetten niet — terwijl het bijschrift ze
+  // wél belooft. Een schema in de verkeerde toestand toont niet de helft van het scherm.
+  dossierMetSchema: 'd2954524-fbed-49e5-972a-7e5c50e926db',
+  schema:   '00273359-e86e-4e78-9f09-22cacf71d327',   // het actieve schema van DEMO-1654
   // ⚠️ Een aanbrenger die AL portaaltoegang heeft. Met een aanbrenger zónder toegang toont het venster
   // "Deze aanbrenger heeft nog geen portaaltoegang" — en dan mist het beeld precies de knoppen waar de
   // handleiding naar verwijst (Nieuw tijdelijk wachtwoord, Deactiveren).
@@ -60,8 +63,16 @@ const ID = {
   // documenttaal Frans; nagemeten in tenant_demo). Hier stond een notariskantoor, en het beeld toonde dus
   // een ander bedrijf dan het bijschrift. Geen enkele controle merkte dat: één merkteken volstond.
   prof:     '7ebc3535-636b-4ca2-94b7-97faad46e34c',
-  fin:      '0610525c-a434-455b-a42f-3d29468bff48',
-  verz:     '176e7f4d-648c-4734-b4cc-01f702aa8c18',
+  // ⚠️ Demetris — de enige kredietinstelling in tenant_demo die het blok Standaard commissionering ECHT
+  // toont: 50 % direct en vijf geplande betalingen die samen 100 % vormen. Hier stond Credimo, dat er geen
+  // heeft, terwijl het bijschrift die betalingen beschrijft. Een fiche zonder het geval leert niets.
+  fin:      '5427b583-7b10-460f-83b3-c4719f4aaad9',
+  // ⚠️ AXA — de verzekeraar die het bijschrift beschrijft (Zuidlaan 47, 2800 Mechelen, VZ8278). Hier stond
+  // Patronale, en dat is een fiche met louter een naam: elke verzekeraar in tenant_demo stond op adres,
+  // telefoon en instellingsnummer LEEG na een her-seed. Het beeld toonde dus een leeg formulier onder een
+  // bijschrift vol gegevens. De gegevens staan terug op dit record; verdwijnen ze weer, dan meldt de
+  // alt-controle het.
+  verz:     '631dcec1-ee1d-4ae7-a5f1-797b57ca73b8',
   borderel: '000245d0-80b0-4ba8-8354-cdcb377fc5bd',
 };
 
@@ -187,7 +198,20 @@ const SCHOTEN = [
       await p.evaluate(() => { const h = [...document.querySelectorAll('h3,h4')].find(e => /huisstijl|documenten/i.test(e.textContent||'')); h?.scrollIntoView(); });
       await p.waitForTimeout(1200);
   }],
-  ['afspraken-per-medewerker',  '/crm/afspraken'],
+  ['afspraken-per-medewerker',  '/crm/afspraken', async p => {
+      // ⚠️ Stond hier als kaal paginabezoek. Dat de kolomweergave in beeld kwam, was TOEVAL: de agenda
+      // onthoudt de gekozen weergave per gebruiker. Bij een verse gebruiker of na een reset toont hetzelfde
+      // recept de samengevoegde weergave — en dan is het beeld niet wat het bijschrift zegt.
+      await p.getByText(/^(Per medewerker|Par collaborateur)$/).first().click();
+      await p.waitForTimeout(2500);
+      // ⚠️ En de belofte is "een kolom per medewerker". Dat is geen tekst maar een STRUCTUUR, dus tellen we
+      // de kolomkoppen. Een merkteken op een medewerkersnaam bewijst niets: die naam staat ook in de legende
+      // boven de samengevoegde weergave.
+      const kolommen = await p.evaluate(() =>
+        new Set([...document.querySelectorAll('.dxbl-sc-resource-hr')]
+          .map(e => e.textContent?.trim()).filter(Boolean)).size);
+      if (kolommen < 2) throw new Error(`slechts ${kolommen} medewerkerskolom(men) — dit is niet de weergave per medewerker`);
+  }],
   // ⚠️ HET BEELD TOONDE HET VERKEERDE SCHERM. Het recept wees naar /beheer/afwezigheden — het beheerscherm
   // "Verlof & sluitingsdagen" — terwijl het in de handleiding onder de kop "Wat u in de agenda ziet" staat
   // en de alt de AGENDA belooft met gearceerde kolommen. Er viel voor dit beeld geen merkteken af te
@@ -215,7 +239,11 @@ const SCHOTEN = [
       if (gearceerd < 2) throw new Error(`slechts ${gearceerd} gearceerde cellen — de handleiding belooft twee afwezige medewerkers`);
   }],
   ['portaal-dossier-detail',    '/portal-intermediary/dossiers',  async p => {
-      const r = p.locator('tr').nth(1); if (await r.count()) { await r.dblclick(); await p.waitForTimeout(3500); }
+      // ⚠️ HET BEELD TOONDE DE LIJST. In dit portaal opent een dossier via de LINK op het kenmerk, niet met een
+      // dubbelklik op de rij — die doet niets. En het merkteken stond op "Kredietbedrag", wat óók een kolomkop
+      // van de lijst is: de controle bevestigde dus keurig het verkeerde scherm.
+      await p.locator('table a, tbody a').first().click();
+      await p.waitForTimeout(3500);
   }],
   ['klantportaal-klant',        '/beheer/klantportaal'],
   ['rapporten-periode',         '/rapporten', async p => {
@@ -369,7 +397,9 @@ const VERWACHT = {
   'voorkeuren-paneel':          /Kies foto|Choisir une photo|Omgevingsgrootte|Taille/i,
   'voorkeuren':                 /Kies foto|Choisir une photo|Omgevingsgrootte|Taille/i,
   'journaal-lade':              /Kredietdossiers|Dossiers de crédit/i,
-  'commissieschemas-journaal':  /schema|barème|schéma/i,
+  // ⚠️ Niet op "schema" — dat staat al in de paginatitel en bewijst enkel dat je op het juiste TABBLAD zit.
+  // Herberekenen verschijnt alleen bij een ACTIEF schema, en dát is wat het bijschrift belooft.
+  'commissieschemas-journaal':  /Herberekenen|Recalculer/i,
   'online-afspraken-instellingen': /Vragenlijst|Questionnaire|Locaties|Lieux/i,
   'filteren-zoekveld':          /Cuypers/i,
   'gebruikers-fiche':           /Mailhandtekening|Signature|Toon in keuzelijsten|listes de choix/i,
@@ -381,6 +411,7 @@ const VERWACHT = {
   'keuzelijsten':               /Nationaliteit|Nationalité|Volgorde|Ordre/i,
   'rollen':                     /Tenant-beheerder|Administrateur de tenant/i,
   'aanbrenger-groepering':      /Groepering|Groupement/i,
+  'afspraken-per-medewerker':   /Samengevoegd|Fusionné/,   // de echte controle telt de kolommen, in het recept
   'afspraak-venster':           /Terugkerend|Récurrent|Hele dag|Journée entière/i,
   'keuzelijsten':               /Nationaliteit|Nationalité/,
   'rapporten-periode':          /Afdrukken|Imprimer/,
@@ -394,7 +425,7 @@ const VERWACHT = {
   'globaal-overzicht-voorinstelling': /Alle dossiers|Tous les dossiers/i,
   'rapporten-periode':          /Periode|Période/i,
   'klantportaal-klant':         /Voorbeeld|Aperçu/i,
-  'portaal-dossier-detail':     /Kredietgegevens|Données du crédit|Kredietbedrag/i,
+  'portaal-dossier-detail':     /Aanvragers|Demandeurs/i,   // staat op het DETAIL, niet op de lijst
   'bedrijfsfiche-logo':         /Logo/i,
   'commissieschema-fiche':      /Algemene gegevens|Données générales/i,
 };
@@ -468,7 +499,15 @@ page.on('pageerror', e => fouten.push(e.message.slice(0, 100)));
 // NIET in dit bestand; het komt uit een omgevingsvariabele. Ontbreekt die, dan worden de portaalbeelden
 // overgeslagen MET een melding — nooit stilzwijgend, en nooit met een weigerscherm als resultaat.
 const PORTAAL_GEBRUIKER = process.env.CS_PORTAAL_USER || 'aanbrenger2@demo.example';
-const PORTAAL_WW = process.env.CS_PORTAAL_PW || null;
+// ⚠️ Ook uit USER-SECRETS, net als het beheerderswachtwoord hierboven — niet enkel uit een omgevingsvariabele.
+// Zolang het alleen via CS_PORTAAL_PW kon, werden de vier portaalbeelden bij élke ronde overgeslagen: wie de
+// variabele niet toevallig gezet had, kreeg een nette melding en vier verouderde beelden. Een melding die je
+// elke keer ziet, lees je op den duur niet meer.
+const PORTAAL_WW = process.env.CS_PORTAAL_PW
+  || (existsSync(SECRETS)
+      ? JSON.parse(readFileSync(SECRETS, 'utf8').replace(/^\uFEFF/, ''))['Dev:PortaalPassword']
+      : null)
+  || null;
 
 // Eén element fotograferen. `bevat` kiest uit meerdere gelijkaardige (welke .adm-card), `minBreed`
 // weert het chevron-menu dat óók [role=dialog] draagt maar 161 breed is.

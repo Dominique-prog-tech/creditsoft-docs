@@ -2,7 +2,7 @@
 
 Le tableau de bord est votre écran d'accueil. D'un coup d'œil, vous voyez combien de dossiers se trouvent dans quelle phase et ce que font les indicateurs.
 
-![Le tableau de bord : en haut les quatre indicateurs — Actes avec l'année, À introduire, Introduits et LOA avec la mention « toutes les années » — en dessous le graphique en barres du volume réalisé par mois et deux graphiques en anneau répartissant le volume par institution et par responsable, et en bas le pipeline Dossiers par phase avec En traitement, Introduit, Finalisé, Sans suite et Refusé.](../images/dashboard-startscherm-fr.png "Le tableau de bord : indicateurs, graphiques et pipeline par phase"){ .volle-breedte }
+![Le tableau de bord : en haut les quatre indicateurs — Actes avec l'année, À introduire, Introduit et LOA avec la mention « toutes les années » — en dessous le graphique en barres du volume réalisé par mois et deux graphiques en anneau répartissant le volume par institution et par responsable, et en bas le pipeline Dossiers par phase avec En traitement, Introduit, Finalisé, Sans suite et Refusé.](../images/dashboard-startscherm-fr.png "Le tableau de bord : indicateurs, graphiques et pipeline par phase"){ .volle-breedte }
 
 ## Les quatre tuiles du haut
 

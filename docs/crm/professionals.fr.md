@@ -35,7 +35,7 @@ fonctionnent de manière identique sur chaque écran ; [Le journal](../journaal/
 **Nouveau** et un double-clic ouvrent tous deux la **fiche sur une page entière**. En haut figure un bouton de
 retour vers la liste, suivi du type et du nom.
 
-![La fiche de l'agence immobilière Baken Immo Aalst sur toute la page : le bloc Général avec le type, le nom, l'adresse Beukenlaan 50 à 1000 Bruxelles, le téléphone et l'e-mail, le numéro de TVA avec le bouton Récupérer et la langue des documents sur Français, en dessous le bloc Facturation et le large bloc Remarques, avec en bas les boutons Enregistrer, Annuler et Supprimer.](../images/professionals-fiche-fr.png "La fiche complète d'un professionnel, avec les données générales, les coordonnées de facturation et les remarques"){ .volle-breedte }
+![La fiche de l'agence immobilière Baken Immo Aalst sur toute la page : le bloc Général avec le type, le nom, l'adresse Beukenlaan 50 à 1000 Brussel, le téléphone et l'e-mail, le numéro de TVA avec le bouton Récupérer et la langue des documents sur Français, en dessous le bloc Facturation et le large bloc Remarques, avec en bas les boutons Enregistrer, Annuler et Supprimer.](../images/professionals-fiche-fr.png "La fiche complète d'un professionnel, avec les données générales, les coordonnées de facturation et les remarques"){ .volle-breedte }
 
 La fiche se compose de trois blocs, avec en bas une barre de boutons qui reste visible.
 

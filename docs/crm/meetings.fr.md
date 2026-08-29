@@ -67,7 +67,7 @@ En haut figurent deux boutons :
 
 **Par collaborateur** est l'affichage pour attribuer : vous voyez d'un coup d'œil qui est encore libre à neuf heures, et vous faites glisser le rendez-vous vers sa colonne.
 
-![L'agenda en affichage par collaborateur : huit colonnes côte à côte avec en haut le nom de chaque collaborateur dans sa propre couleur, puis une colonne Via la page de réservation et une colonne Sans responsable. Dans la colonne de Simon Van Acker figure une réservation attribuée, dans la colonne des réservations une réservation pas encore attribuée, en ambre et hachurée.](../images/afspraken-per-medewerker-fr.png "Chaque collaborateur sa colonne — et les réservations en ligne à part, prêtes à être attribuées"){ .volle-breedte }
+![L'agenda en affichage par collaborateur : une colonne par collaborateur côte à côte, avec en haut le nom dans sa propre couleur et en dessous les rendez-vous de cette personne. S'il existe des réservations issues de la page de réservation que personne n'a encore prises en charge, une colonne supplémentaire s'y ajoute.](../images/afspraken-per-medewerker-fr.png "Chaque collaborateur sa colonne — et les réservations en ligne à part, prêtes à être attribuées"){ .volle-breedte }
 
 Ce bouton bascule automatiquement en **affichage journalier**. Une semaine entière avec une colonne par collaborateur donne trente colonnes pour six collègues, et vous défilez alors latéralement dans votre propre agenda. Si vous voulez tout de même une semaine, choisissez-la simplement en haut à droite.
 
