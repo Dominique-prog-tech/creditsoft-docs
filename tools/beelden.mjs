@@ -703,7 +703,15 @@ for (const taal of ['nl-BE', 'fr-BE']) {
         const zoek = naam === 'menu-links' || naam === 'hoofdbalk' ? tekst
           : await page.evaluate(() => document.body.innerText + '\n' +
               [...document.querySelectorAll('input, textarea, select')]
-                .map(e => e.value || '').join('\n'));
+                // ⚠️ ALLEEN ZICHTBARE VELDEN. Een verborgen veld staat per definitie niet op het beeld, dus
+                // het hoort niet in een beeldcontrole — en er staat er één bij dat er echt niet in mag: het
+                // ASP.NET-antiforgery-token (prefix CfDJ8, de handtekening van Data Protection). De
+                // Nimble-sessie kreeg dat op 29/08/2026 in haar bewaarde ronde, en dat bestand gaat bij hen
+                // in git. Bij ons niet — het staat in .gitignore en wij bewaren de innerText en niet deze
+                // samenstelling — maar dat is geluk en geen ontwerp, dus hier het filter.
+                .filter(e => e.type !== 'hidden' && e.type !== 'password' && e.offsetParent !== null)
+                .map(e => (e.value || '').replace(/[A-Za-z0-9_-]{22,}/g, ''))
+                .join('\n'));
         const ontbreekt = ontbrekendeTermen(volledigeAlt, zoek, NIET_SCHERMTEKST);
         if (ontbreekt.length) altAfwijkingen.push(`${naam}${achtervoegsel}: ${ontbreekt.join(', ')}`);
       }
