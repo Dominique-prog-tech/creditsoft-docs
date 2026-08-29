@@ -16,6 +16,12 @@
 // handleiding staat publiek.
 import { readFileSync, existsSync, readdirSync, writeFileSync } from 'node:fs';
 import { chromium } from '/Users/dominique/projects/adm-creditsoft/src/Host/CreditSoft.Host.Web/bin/Debug/net10.0/.playwright/package/index.mjs';
+// ⚠️ DE GEDEELDE KERN. De beslissingen die niets met een browser te maken hebben — de alt-controle, de
+// vormgrendel, de schermbesluiten en de verantwoording — wonen sinds 29/08/2026 in adm-appkit, zodat
+// CleanOps en Nimble ze niet opnieuw moeten leren. De aansturing (SCHOTEN, VERWACHT, de recepten) blijft
+// hier, want die hangt aan onze eigen routes.
+import { NIET_SCHERMTEKST_BASIS, ontbrekendeTermen, pngMaat, vormBesluit, schermBesluit, verantwoording }
+  from '/Users/dominique/projects/adm-appkit/tools/beeldgenerator/kern.mjs';
 
 const BASIS = 'http://localhost:5345';
 const UIT = '/Users/dominique/projects/creditsoft-docs/docs/images';
@@ -519,26 +525,10 @@ const PORTAAL_WW = process.env.CS_PORTAAL_PW
 // de alt en meldt wat er níét op het scherm staat. Het is een RAPPORT, geen blokkade: een alt mag namen
 // dragen die geen schermtekst zijn ("een blauw teller-bolletje", "Regio Zuid"). Wat hier verschijnt,
 // moet een mens beoordelen — maar het verschijnt tenminste.
-const NIET_SCHERMTEKST = new Set(['CreditSoft', 'ADM', 'One', 'Nederlands', 'Frans', 'Néerlandais',
-  'Français', 'Demo', 'Kredietkantoor', 'Regio', 'Zuid', 'Noord', 'Voorbeeld', 'Testkantoor', 'Het', 'De',
-  'Een', 'Der', 'Le', 'La', 'Les', 'Un', 'Une', 'Il', 'Elle', 'En', 'Op', 'In', 'Met', 'Van', 'Bij']);
-function altTermen(alt) {
-  // ⚠️ HOOFDLETTERONGEVOELIG EN GENORMALISEERD. De eerste versie meldde 46 beelden, en de meeste daarvan
-  // waren ruis van de controle zelf: kaartkoppen staan in de app in KAPITALEN (CSS text-transform), dus
-  // "Identiteit" leek te ontbreken terwijl er IDENTITEIT stond. En "België" werd afgekapt tot "Belgi"
-  // omdat de ë in samengestelde vorm (NFD) uit het woord viel. Een controle die vooral zichzelf meet,
-  // begraaft de echte vondst.
-  const alt2 = alt.normalize('NFC');
-  const zonderEerste = alt2.replace(/(^|[.:;!?]\s+)([A-ZÀ-Þ])/g, (m, a, b) => a + b.toLowerCase());
-  const uit = new Set();
-  for (const m of zonderEerste.matchAll(/([A-ZÀ-Þ][\wÀ-ÿ'’.-]{3,})/g)) {
-    // ⚠️ Leestekens eraf. Zonder \b (die werkt niet betrouwbaar naast een ë) slikt de match het punt
-    // aan het zinseinde mee, en dan zoek je naar "Contact." op een scherm waar "Contact" staat.
-    const term = m[1].replace(/[.,;:!?'’-]+$/, '');
-    if (term.length >= 4 && !NIET_SCHERMTEKST.has(term)) uit.add(term);
-  }
-  return [...uit];
-}
+// ⚠️ De basis staat in de AppKit; dit zijn de CreditSoft-EIGEN woorden die in een alt met een hoofdletter
+// staan maar geen schermtekst zijn — de productnaam en de namen van proefkantoren uit tenant_demo.
+const NIET_SCHERMTEKST = new Set([...NIET_SCHERMTEKST_BASIS,
+  'CreditSoft', 'Kredietkantoor', 'Regio', 'Zuid', 'Noord', 'Testkantoor']);
 
 async function kiesElement(page, el) {
   let loc = page.locator(el.kies);
@@ -576,6 +566,11 @@ async function meldAan(page, user, ww, kiesTenant) {
 await meldAan(page, gebruiker, wachtwoord, true);
 
 let ok = 0; const mislukt = []; const ongecontroleerd = []; const overgeslagenPortaal = []; const zwakGecontroleerd = []; const handwerk = []; const gegroeid = []; const altAfwijkingen = []; const schermteksten = {};
+// ⚠️ De KERN eist de NAMEN, niet een telling: hij controleert dat élk bestand op schijf in precies één
+// uitslaglijst zit. Onze eigen controle hieronder kijkt of er een RECEPT bestaat — dat is iets anders, en
+// allebei zijn ze nodig. Een beeld kan een recept hebben en toch in geen enkele uitslag belanden.
+const misluktMet = (regel) => { mislukt.push(regel); verantwoord.mislukt.push(regel.split(' — ')[0]); };
+const verantwoord = { geschreven: [], zwak: [], ongecontroleerd: [], portaal: [], handwerk: [], mislukt: [] };
 let alsAanbrenger = false;
 for (const taal of ['nl-BE', 'fr-BE']) {
   await page.goto(`${BASIS}/culture/set?c=${taal}`); await page.waitForLoadState('networkidle');
@@ -587,6 +582,7 @@ for (const taal of ['nl-BE', 'fr-BE']) {
     const portaal = AANBRENGER_PORTAAL.includes(naam);
     if (portaal && !PORTAAL_WW) {
       if (!overgeslagenPortaal.includes(naam)) overgeslagenPortaal.push(naam);
+      verantwoord.portaal.push(`${naam}${achtervoegsel}`);
       continue;
     }
     if (portaal !== alsAanbrenger) {
@@ -595,7 +591,8 @@ for (const taal of ['nl-BE', 'fr-BE']) {
       await page.goto(`${BASIS}/culture/set?c=${taal}`); await page.waitForLoadState('networkidle');
       alsAanbrenger = portaal;
     }
-    if (HANDWERK[naam]) { if (!handwerk.includes(naam)) handwerk.push(naam); continue; }
+    if (HANDWERK[naam]) { if (!handwerk.includes(naam)) handwerk.push(naam);
+                          verantwoord.handwerk.push(`${naam}${achtervoegsel}`); continue; }
     // ⚠️ Het kantoorprofiel bestaat enkel in het Nederlands (AppKit-scherm, niet vertaald) — geen FR-beeld.
     if (naam === 'kantoorprofiel-vragenlijst' && achtervoegsel) continue;
     try {
@@ -613,7 +610,7 @@ for (const taal of ['nl-BE', 'fr-BE']) {
       const tekst = vormNu.element
         ? await (await kiesElement(page, vormNu.element)).innerText().catch(() => '')
         : await page.locator('body').innerText();
-      if (/Er ging iets mis|Er is een fout|Une erreur/i.test(tekst)) { mislukt.push(`${naam}${achtervoegsel} — foutmelding op het scherm`); continue; }
+      if (/Er ging iets mis|Er is een fout|Une erreur/i.test(tekst)) { misluktMet(`${naam}${achtervoegsel} — foutmelding op het scherm`); continue; }
 
       // ⚠️ "GEEN TOEGANG" IS NOOIT EEN GELDIG BEELD, en dat moest hard: op 29/08/2026 zijn vier
       // portaalbeelden vervangen door dit scherm. De generator meldt aan als `admin`, en dat account is geen
@@ -625,18 +622,15 @@ for (const taal of ['nl-BE', 'fr-BE']) {
       // op de inhoud: een echt scherm draagt tientallen regels tekst, een weigerpagina een handvol.
       // ⚠️ Bij een ELEMENTschot slaat de ondergrens niet op: een dialoogvenster of de bovenbalk draagt
       // weinig tekst, en dat is juist de bedoeling. De grens geldt voor paginaschoten.
-      const regels = tekst.split('\n').map(r => r.trim()).filter(Boolean);
       // ⚠️ Eén scherm is ECHT zo kort: wachtwoord-wijzigen draagt drie velden en een knop, punt. Een
       // uitzondering mét reden, geen verlaagde grens voor iedereen — dan vangt hij niets meer.
       const KORT_MAG = { 'wachtwoord': 'drie velden en een knop; korter kan dit scherm niet zijn' };
-      if (!(VORM[naam + achtervoegsel] || VORM[naam] || {}).element && !KORT_MAG[naam] && regels.length < 18) {
-        mislukt.push(`${naam}${achtervoegsel} — scherm draagt maar ${regels.length} regels tekst; te leeg om een beeld te zijn`);
-        continue;
-      }
-      if (/Geen toegang|Accès refusé|niet de nodige rechten|droits nécessaires/i.test(tekst)) {
-        mislukt.push(`${naam}${achtervoegsel} — GEEN TOEGANG met dit account; het beeld is NIET overschreven`);
-        continue;
-      }
+      // ⚠️ Onze weigertekst is ruimer dan die van de kern: het portaal zegt óók "niet de nodige rechten".
+      const besluit = schermBesluit({
+        tekst, isElementSchot: !!(VORM[naam + achtervoegsel] || VORM[naam] || {}).element,
+        magKortZijn: !!KORT_MAG[naam],
+        geenToegang: /Geen toegang|Accès refusé|niet de nodige rechten|droits nécessaires/i });
+      if (!besluit.ok) { misluktMet(`${naam}${achtervoegsel} — ${besluit.reden}`); continue; }
 
       // ⚠️ DE BELOFTE MOET OP HET SCHERM STAAN, anders schrijven we niets.
       const eigen = VERWACHT[naam];
@@ -649,7 +643,7 @@ for (const taal of ['nl-BE', 'fr-BE']) {
       if (eigen) {
         // handgeschreven merkteken: dat MOET kloppen, geen inkorting
         if (!eigen.test(tekst)) {
-          mislukt.push(`${naam}${achtervoegsel} — belofte niet op het scherm: ${String(eigen)}`);
+          misluktMet(`${naam}${achtervoegsel} — belofte niet op het scherm: ${String(eigen)}`);
           continue;
         }
       } else if (afgeleid) {
@@ -664,12 +658,14 @@ for (const taal of ['nl-BE', 'fr-BE']) {
           if (new RegExp(kandidaat.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'i').test(tekst)) { gevonden = kandidaat; break; }
         }
         if (!gevonden) {
-          mislukt.push(`${naam}${achtervoegsel} — belofte niet op het scherm, zelfs niet "${w[0]}" (uit: "${afgeleid}")`);
+          misluktMet(`${naam}${achtervoegsel} — belofte niet op het scherm, zelfs niet "${w[0]}" (uit: "${afgeleid}")`);
           continue;
         }
-        if (gevonden.split(/\s+/).length === 1) zwakGecontroleerd.push(`${naam}${achtervoegsel} → "${gevonden}"`);
+        if (gevonden.split(/\s+/).length === 1) { zwakGecontroleerd.push(`${naam}${achtervoegsel} → "${gevonden}"`);
+                                                    verantwoord.zwak.push(`${naam}${achtervoegsel}`); }
       } else {
         ongecontroleerd.push(`${naam}${achtervoegsel}`);
+        verantwoord.ongecontroleerd.push(`${naam}${achtervoegsel}`);
       }
 
       // ⚠️⚠️ DE VORM MOET KLOPPEN, EN DIT IS DE BELANGRIJKSTE GRENDEL VAN DIT SCRIPT.
@@ -690,22 +686,13 @@ for (const taal of ['nl-BE', 'fr-BE']) {
       const vorm = VORM[naam + achtervoegsel] || VORM[naam] || {};
       const nieuw = vorm.element ? await elementSchot(page, vorm.element) : await page.screenshot();
       if (existsSync(doel)) {
-        const oud = readFileSync(doel);
-        const maat = (b) => `${b.readUInt32BE(16)}×${b.readUInt32BE(20)}`;
-        if (maat(oud) !== maat(nieuw)) {
-          // ⚠️ BIJ EEN ELEMENTSCHOT IS DE VORM GEEN KADERKEUZE. Het beeld is precies zo groot als het
-          // element; groeit het dialoogvenster (een veld erbij, een sterretje dat een regel doet wrappen),
-          // dan HOORT het beeld mee te groeien. lead-klant-maken werd op 29/08/2026 66px hoger door de
-          // verplicht-sterretjes. Blokkeren zou het beeld bevriezen op een venster dat niet meer bestaat.
-          // Wél melden: een onverwachte sprong is nieuws, geen ruis.
-          if (vorm.element) {
-            gegroeid.push(`${naam}${achtervoegsel}: ${maat(oud)} → ${maat(nieuw)}`);
-          } else {
-            mislukt.push(`${naam}${achtervoegsel} — VORM WIJKT AF: bestaand ${maat(oud)}, nieuw ${maat(nieuw)}. `
-                       + `Niet overschreven; dit beeld heeft een eigen venster of uitsnede.`);
-            continue;
-          }
+        const besluitVorm = vormBesluit({
+          bestaandeMaat: pngMaat(readFileSync(doel)), nieuweMaat: pngMaat(nieuw),
+          isElementSchot: !!vorm.element });
+        if (besluitVorm.besluit === 'weigeren') {
+          misluktMet(`${naam}${achtervoegsel} — ${besluitVorm.reden}`); continue;
         }
+        if (besluitVorm.besluit === 'gegroeid') gegroeid.push(`${naam}${achtervoegsel}: ${besluitVorm.reden}`);
       }
       // ⚠️ De hele alt als specificatie — een rapport, geen blokkade (zie altTermen).
       const volledigeAlt = ALT[naam + achtervoegsel] || '';
@@ -717,8 +704,7 @@ for (const taal of ['nl-BE', 'fr-BE']) {
           : await page.evaluate(() => document.body.innerText + '\n' +
               [...document.querySelectorAll('input, textarea, select')]
                 .map(e => e.value || '').join('\n'));
-        const zoekK = zoek.normalize('NFC').toLowerCase();
-        const ontbreekt = altTermen(volledigeAlt).filter(t => !zoekK.includes(t.toLowerCase()));
+        const ontbreekt = ontbrekendeTermen(volledigeAlt, zoek, NIET_SCHERMTEKST);
         if (ontbreekt.length) altAfwijkingen.push(`${naam}${achtervoegsel}: ${ontbreekt.join(', ')}`);
       }
       // ⚠️ De schermtekst bewaren. Een ronde kost 25 minuten; een controle die achteraf bedacht wordt,
@@ -726,7 +712,8 @@ for (const taal of ['nl-BE', 'fr-BE']) {
       schermteksten[`${naam}${achtervoegsel}`] = tekst;
       writeFileSync(doel, nieuw);
       ok++;
-    } catch (e) { mislukt.push(`${naam}${achtervoegsel} — ${e.message.slice(0, 60)}`); }
+      verantwoord.geschreven.push(`${naam}${achtervoegsel}`);
+    } catch (e) { misluktMet(`${naam}${achtervoegsel} — ${e.message.slice(0, 60)}`); }
   }
 }
 await browser.close();
@@ -780,7 +767,30 @@ if (!filter) {
   } else {
     writeFileSync('/Users/dominique/projects/creditsoft-docs/tools/.schermteksten.json',
               JSON.stringify(schermteksten, null, 1));
-console.log('\n✅ elk beeld op schijf zit in een lijst — niets stil overgeslagen.');
+    // ⚠️ EN DE STRENGERE CONTROLE VAN DE KERN. Die hierboven vraagt "bestaat er een recept?"; deze vraagt
+    // "is dit bestand in deze ronde ergens terechtgekomen?" — en dat is niet hetzelfde. Een beeld met een
+    // recept dat halverwege wegvalt zonder in een lijst te belanden, leest als geslaagd.
+    const opSchijfVolledig = readdirSync(UIT).filter(f => f.endsWith('.png')).map(f => f.replace('.png', ''));
+    // ⚠️ DE LIJSTEN MOETEN ELKAAR UITSLUITEN, en dat had ik mis. "Zwak gecontroleerd" is geen uitkomst
+    // naast "geschreven" maar een KWALIFICATIE erop: zo'n beeld is wél geschreven. Bij de eerste ronde met
+    // deze controle stonden 66 beelden dus in twee lijsten. De controle zei dat meteen — precies waarvoor
+    // ze bestaat, en meteen op zichzelf toegepast.
+    const zwakOfOngecontroleerd = new Set([...verantwoord.zwak, ...verantwoord.ongecontroleerd]);
+    const uitsluitend = { ...verantwoord,
+      geschreven: verantwoord.geschreven.filter(n => !zwakOfOngecontroleerd.has(n)) };
+    const { nergens, meermaals } = verantwoording(opSchijfVolledig, uitsluitend);
+    if (nergens.length || meermaals.length) {
+      if (nergens.length) {
+        console.log(`\n⚠️ ${nergens.length} beelden zitten in GEEN ENKELE uitslaglijst van deze ronde:`);
+        console.log('   ' + nergens.join(', '));
+      }
+      if (meermaals.length) {
+        console.log(`\n⚠️ ${meermaals.length} beelden zitten in MEER DAN ÉÉN uitslaglijst:`);
+        console.log('   ' + meermaals.join(', '));
+      }
+    } else {
+      console.log('\n✅ elk beeld op schijf zit in een lijst — niets stil overgeslagen.');
+    }
   }
 }
 
