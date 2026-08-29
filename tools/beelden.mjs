@@ -47,6 +47,15 @@ const VORM = JSON.parse(readFileSync(new URL('./beeldvorm.json', import.meta.url
 // ⚠️ Wat NIET afleidbaar is en dus een tabel blijft: de acht ELEMENTschoten. Een selector als
 // `header.topbar` of `aside.sidebar` valt uit geen enkele PNG te lezen. Na de verbouwing draagt
 // beeldvorm.json dus alleen nog die acht, en niet meer 88 maten.
+//
+// ⏭️ EN METEEN DIT ERBIJ, want het is bijna gratis: MELDEN WELK BEELD NERGENS GEBRUIKT WORDT. Onze
+// verantwoording kijkt van de schijf naar de uitslaglijsten; wat ze niet ziet, is een beeld dat keurig
+// geschoten wordt maar in GEEN ENKELE handleidingpagina staat. De Nimble-sessie vond er zo één (een
+// scherm dat nog achter de beta-gate zit) en bij ons zou dat even onzichtbaar zijn.
+//
+// De gegevens liggen er al: ALT wordt opgebouwd door de markdown af te zoeken op
+// ![alt](../images/naam.png). Een bestand op schijf zonder ALT-entry staat dus nergens. Dat is een
+// vergelijking en een rapportregel, geen nieuw mechanisme.
 
 // ⚠️ WELK ACCOUNT. Vier portaalbeelden zijn op 29/08/2026 vervangen door een "Geen toegang"-scherm omdat de
 // generator als `admin` was aangemeld — en dat account is geen aanbrenger. Het weigerscherm werd netjes
