@@ -33,7 +33,7 @@ Klik op een leeg tijdvak. In het venster dat opent, vult u in:
 - **Locatie** — kantoor, bij de klant, of een adres.
 - **Verantwoordelijken** — één hoofdverantwoordelijke (die de kleur bepaalt) en eventueel bijkomende collega's.
 
-![Het venster om een afspraak in te boeken: titel, verantwoordelijken, begin- en einddatum met uur, hele dag, terugkerend, locatie, contact, aanbrenger, de twee vinkjes voor de bevestiging, en een omschrijving.](../images/afspraak-venster.png "Alles wat bij één afspraak hoort, op één scherm")
+![Het venster van een afspraak, hier een bestaande: titel, hoofdverantwoordelijke en bijkomende verantwoordelijken, begin- en einddatum met uur, hele dag, terugkerend, locatie, contact, aanbrenger, de twee vinkjes voor de bevestiging, en een omschrijving.](../images/afspraak-venster.png "Alles wat bij één afspraak hoort, op één scherm")
 
 ## Een bevestiging sturen
 

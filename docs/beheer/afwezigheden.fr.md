@@ -27,7 +27,7 @@ La **note** est libre et facultative — pratique pour « joignable par e-mail �
 
 ## Ce que vous voyez dans l'agenda
 
-![L'agenda en vue par colonnes : les colonnes de deux collaborateurs absents sont hachurées en diagonale, les quatre autres colonnes restent blanches.](../images/agenda-afwezigheid-fr.png "Colonnes hachurées dans l'agenda")
+![L'agenda en vue par colonnes : les colonnes de deux collaborateurs absents sont hachurées en diagonale, les autres colonnes restent blanches.](../images/agenda-afwezigheid-fr.png "Colonnes hachurées dans l'agenda")
 
 - Dans la **vue par colonnes** (une colonne par collaborateur), le congé de chaque personne apparaît dans sa
   propre colonne.

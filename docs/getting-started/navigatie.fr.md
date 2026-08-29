@@ -11,7 +11,7 @@ courte page d'accueil vous renvoie vers le menu.
 
 À gauche se trouve le **menu principal**. Il affiche les écrans auxquels vous avez accès ; cliquez sur un élément pour l'ouvrir. Le menu est regroupé — les écrans de travail quotidien se trouvent en haut, les écrans de gestion sous l'en-tête **Gestion**.
 
-![Le menu principal à gauche, avec Tableau de bord en haut, le groupe CRM déplié avec Relations, Professionnels, Rendez-vous, Apporteurs et Groupes, le groupe Crédit déplié avec Dossiers de crédit, À valider avec une pastille bleue de comptage, Institutions de crédit, Assureurs, Bordereau et Fiche 281.50, en dessous les groupes repliés Listes et Gestion, et tout en bas Administration, Portail client et Se déconnecter.](../images/menu-links-fr.png "Le menu principal à gauche, avec deux groupes dépliés"){ width="240" }
+![Le menu principal à gauche, avec Tableau de bord en haut, le groupe CRM déplié avec Leads, Relations, Professionnels, Rendez-vous, Rendez-vous en ligne, Apporteurs et Groupes, le groupe Crédit déplié avec Dossiers de crédit, À valider avec une pastille bleue de comptage, Institutions de crédit, Assureurs, Bordereau et Fiche 281.50, en dessous les groupes repliés Listes et Gestion, et tout en bas Administration, Portail client et Se déconnecter.](../images/menu-links-fr.png "Le menu principal à gauche, avec deux groupes dépliés"){ width="240" }
 
 Les éléments visibles dépendent de votre rôle : tout le monde n'a pas accès à tous les écrans.
 

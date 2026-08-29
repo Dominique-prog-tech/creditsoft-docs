@@ -21,12 +21,26 @@ const BASIS = 'http://localhost:5345';
 const UIT = '/Users/dominique/projects/creditsoft-docs/docs/images';
 const BREED = 1700, HOOG = 900;
 
+// ⚠️ DE VORM PER BEELD. De bestaande beelden zijn NIET één formaat: ze dragen elf vensterbreedtes, elf hoogtes
+// en acht ELEMENTschoten (een dialoogvenster, het linkermenu, de bovenbalk). Dat is
+// gekozen werk — 2000 breed waar de kolommen anders niet passen, 560×246 omdat dat precies één venster is.
+// Op 29/08/2026 heeft een versie zonder deze tabel 162 beelden vervangen door volledige schermafdrukken op
+// één formaat. Die tabel is AFGELEID uit de bestaande bestanden (tools/beeldvorm.json), niet verzonnen.
+const VORM = JSON.parse(readFileSync(new URL('./beeldvorm.json', import.meta.url), 'utf8'));
+
 // ⚠️ WELK ACCOUNT. Vier portaalbeelden zijn op 29/08/2026 vervangen door een "Geen toegang"-scherm omdat de
 // generator als `admin` was aangemeld — en dat account is geen aanbrenger. Het weigerscherm werd netjes
 // afgedrukt en over het echte beeld gezet. Een schot verklaart nu welk account het nodig heeft; wie er geen
 // opgeeft, krijgt de beheerder.
 const AANBRENGER_PORTAAL = ['portaal-overzicht', 'portaal-dossiers', 'portaal-commissies',
                             'portaal-documenten', 'portaal-dossier-detail'];
+
+// ⚠️ MET DE HAND UITGESNEDEN. Deze twee beelden tonen een stuk scherm dat geen enkel element is:
+// rapporten-voorbeeld is één blad uit een gerenderd rapport, kantoorprofiel-vragenlijst een uitsnede
+// dwars door de editor en het voorbeeldpaneel heen. Er ís geen recept. De generator laat ze staan en
+// ZEGT dat — een beeld dat niemand kan hernemen, hoort geen stille faler te zijn.
+const HANDWERK = { 'rapporten-voorbeeld': 'één blad uit een gerenderd rapport, met de hand uitgesneden',
+                   'kantoorprofiel-vragenlijst': 'uitsnede dwars door editor én voorbeeldpaneel' };
 
 // Vaste proefgegevens uit tenant_demo. ⚠️ Kies op INHOUD, niet op aantal: een fiche met een leeg journaal
 // levert beelden op die "Nog geen taken" tonen waar er eerst iets stond.
@@ -42,7 +56,10 @@ const ID = {
   relatie:  '09ee4eb1-5c32-4e3d-ade5-a0fe4fd9ded2',   // draagt bijlagen én journaal-items
   aanbrenger:'0447a42c-66a4-4afd-9939-80050a0b3279',
   lead:     'd87a24fd-a6aa-4d42-a412-25dbd99b45ba',
-  prof:     '0073554f-f710-4170-8ea0-a55c2c512ba6',
+  // ⚠️ Baken Immo Aalst — de fiche die de handleiding letterlijk beschrijft (Beukenlaan 50, 1000 Brussel,
+  // documenttaal Frans; nagemeten in tenant_demo). Hier stond een notariskantoor, en het beeld toonde dus
+  // een ander bedrijf dan het bijschrift. Geen enkele controle merkte dat: één merkteken volstond.
+  prof:     '7ebc3535-636b-4ca2-94b7-97faad46e34c',
   fin:      '0610525c-a434-455b-a42f-3d29468bff48',
   verz:     '176e7f4d-648c-4734-b4cc-01f702aa8c18',
   borderel: '000245d0-80b0-4ba8-8354-cdcb377fc5bd',
@@ -67,7 +84,16 @@ const SCHOTEN = [
   ['documentbibliotheek',          '/document-library'],
   ['taken-overzicht',              '/taken'],
   ['afwezigheden',                 '/beheer/afwezigheden'],
-  ['keuzelijsten',                 '/beheer/keuzelijsten'],
+  ['keuzelijsten',                 '/beheer/keuzelijsten', async p => {
+      // ⚠️ Zonder gekozen lijsttype toont dit scherm "Kies bovenaan een lijsttype" en een tabel met NUL
+      // rijen. Het beeld was dus leeg, terwijl het bijschrift de lijst Nationaliteit met gevulde kolommen
+      // belooft. Een lege pagina haalt elke controle die naar afwezigheid kijkt — vandaar dat dit
+      // maandenlang onopgemerkt bleef.
+      await p.getByText(/Kies een lijsttype|Choisissez un type de liste/).first().click();
+      await p.waitForTimeout(1200);
+      await p.getByText(/^(Nationaliteit|Nationalité)$/).first().click();
+      await p.waitForTimeout(2500);
+  }],
   ['documenttypes',                '/beheer/documenttypes'],
   ['dashboard-fases',              '/beheer/dashboard-fases'],
   ['commissie-instellingen',       '/beheer/commissie-instellingen'],
@@ -162,32 +188,89 @@ const SCHOTEN = [
       await p.waitForTimeout(1200);
   }],
   ['afspraken-per-medewerker',  '/crm/afspraken'],
-  ['agenda-afwezigheid',        '/beheer/afwezigheden'],
+  // ⚠️ HET BEELD TOONDE HET VERKEERDE SCHERM. Het recept wees naar /beheer/afwezigheden — het beheerscherm
+  // "Verlof & sluitingsdagen" — terwijl het in de handleiding onder de kop "Wat u in de agenda ziet" staat
+  // en de alt de AGENDA belooft met gearceerde kolommen. Er viel voor dit beeld geen merkteken af te
+  // leiden, dus de beloftecontrole zweeg erover: het stond bij "niet gecontroleerd" en niet bij "fout".
+  // De arcering hangt bovendien aan de DATUM — het verlof in tenant_demo loopt 18–24/08 — dus één week
+  // terugbladeren hoort bij het recept.
+  ['agenda-afwezigheid',        '/crm/afspraken', async p => {
+      await p.getByText(/^(Per medewerker|Par collaborateur)$/).first().click();
+      await p.waitForTimeout(1500);
+      // ⚠️ 22/08/2026 is de ENIGE dag waarop twee medewerkers samen afwezig zijn in tenant_demo (Eva Coppens
+      // 18–24/08 verlof, Jana Michiels 22/08 opleiding). Terugbladeren tot die dag in beeld staat — tellen
+      // hoeveel keer je moet klikken werkt niet, want de weergave (dag/week) onthoudt zichzelf per gebruiker.
+      let gevonden = false;
+      for (let i = 0; i < 40 && !gevonden; i++) {
+        if (/22 (augustus|août) 2026/.test(await p.locator('body').innerText())) { gevonden = true; break; }
+        await p.locator('.dxbl-sc-nav-prev, button[title*="vorige" i], button[title*="précédent" i]')
+               .first().click().catch(() => {});
+        await p.waitForTimeout(400);
+      }
+      if (!gevonden) throw new Error('22/08/2026 niet bereikt — de agenda staat op een andere weergave');
+      await p.waitForTimeout(2000);
+      // ⚠️ EN NU HET ENIGE DAT ER ECHT TOE DOET. Een merkteken op "Eva Coppens" bewijst niets: dat is een
+      // kolomkop en staat er ook zonder verlof. De ARCERING is de belofte, dus die meten we in de DOM.
+      const gearceerd = await p.evaluate(() => document.querySelectorAll('.adm-afwezig').length);
+      if (gearceerd < 2) throw new Error(`slechts ${gearceerd} gearceerde cellen — de handleiding belooft twee afwezige medewerkers`);
+  }],
   ['portaal-dossier-detail',    '/portal-intermediary/dossiers',  async p => {
       const r = p.locator('tr').nth(1); if (await r.count()) { await r.dblclick(); await p.waitForTimeout(3500); }
   }],
   ['klantportaal-klant',        '/beheer/klantportaal'],
-  ['rapporten-periode',         '/rapporten'],
+  ['rapporten-periode',         '/rapporten', async p => {
+      // ⚠️ Een kaal paginabezoek gaf de rapportenBIBLIOTHEEK, niet het venster met Van/Tot en met en de
+      // knoppen Afdrukken en Sluiten. Het rapport moet eerst aangeklikt worden.
+      await p.getByText(/Gerealiseerd \+ commissiebedrag|Réalisés \+ montant/).first().click();
+      await p.waitForTimeout(2500);
+  }],
   ['rapporten-voorbeeld',       '/rapporten'],
-  ['gebruikers-fiche',          '/administration/users'],
+  ['gebruikers-fiche',          '/administration/users', async p => {
+      // ⚠️ Stond hier als kaal paginabezoek — en dan is er geen fiche te fotograferen. De fiche zit achter
+      // de chevron van de rij (vloot-regel: alles in een lijst-werkbalk is de chevron-knop).
+      await p.locator('tbody tr').first().locator('button').first().click();
+      await p.waitForTimeout(1200);
+      await p.locator('[role=dialog]').first().getByText(/^(Fiche)$/).first().click();
+      await p.waitForTimeout(2500);
+  }],
   // ⚠️ Een EIGEN ROUTE, geen tabblad. Het dossierscherm heeft geen tabblad "Commissieschema's" — die zitten
   // in het journaal, achter de knop rechtsboven. Ik klikte op iets dat er niet is, in beide talen.
   ['commissieschema-fiche',     `/credit-files/${ID.dossierMetSchema}/commissieschema/${ID.schema}`],
   ['afspraak-venster',          '/crm/afspraken', async p => {
       // ⚠️ Stond hier als kaal paginabezoek — dan toont het beeld de agenda en niet het venster dat de
       // handleiding belooft. De beloftecontrole ving dat; met het oog was het niet opgevallen.
-      await knop(p, 'Nieuwe afspraak', 'Nouveau rendez-vous').catch(async () => {
-        await p.locator('button:has-text("Nieuw"), button:has-text("Nouveau")').first().click();
-        await p.waitForTimeout(2500);
-      });
+      // ⚠️ EN ER IS GEEN KNOP. "Nieuwe afspraak" / "Nouveau rendez-vous" is de TITEL van het venster
+      // (Meetings.razor, sleutel new_title), niet het opschrift van een knop. Het venster opent door in
+      // een lege cel van de agenda te dubbelklikken. In het Nederlands sloeg de tekstklik toevallig aan
+      // op de titel van een reeds open venster; in het Frans liep hij in een time-out van 30 seconden.
+      // ⚠️ EN HET WERD HET VERKEERDE VENSTER. De terugval `button:has-text("Nieuw")` pakte "Nieuwe taak" uit
+      // de bovenbalk — die staat op ELKE pagina. Het beeld toonde daardoor het TAKENvenster op het
+      // takenscherm, terwijl de handleiding een afspraakvenster belooft met Terugkerend, Hele dag, Locatie
+      // en Aanbrenger. Het oude merkteken "Verantwoordelijke" liet dat door: dat woord staat in beide.
+      // De cel opent enkel met een ECHTE muis-dubbelklik; locator.dblclick loopt op een overlay vast.
+      const cel = await p.locator('.dxbl-sc-time-cell:visible').nth(12).boundingBox();
+      await p.mouse.dblclick(cel.x + cel.width / 2, cel.y + cel.height / 2);
+      await p.waitForTimeout(3000);
   }],
   ['globaal-overzicht-voorinstelling', '/credit-files/overview', async p => {
-      // de eerste keuzelijst opengeklapt — ook dit was een kaal paginabezoek
-      await p.locator('.dxbl-combobox, select').first().click();
+      // ⚠️ Het is GEEN keuzelijst maar een werkbalkknop met de huidige voorinstelling als opschrift
+      // ("Lopend" / "En cours"). Op `.dxbl-combobox, select` mikken liep in beide talen in een time-out.
+      // ⚠️ Op de ROL "button" mikken klikt het omhulsel aan en niet het opschrift: de lijst klapt dan niet
+      // open, zonder fout. Gemeten: op de exacte tekst klikken werkt wél. Beide talen, want het opschrift
+      // is de huidige voorinstelling.
+      await p.getByText(/^(Lopend|En cours)$/).first().click();
       await p.waitForTimeout(2000);
   }],
   ['hoofdbalk',                 '/dashboard'],
-  ['menu-links',                '/dashboard'],
+  ['menu-links',                '/dashboard', async p => {
+      // ⚠️ De alt-tekst belooft de OPENGEKLAPTE groepen CRM en Krediet. Dichtgeklapt toont het menu
+      // "Kredietinstellingen" niet en is het beeld niet wat de handleiding zegt dat het is.
+      for (const [nl, fr] of [['CRM', 'CRM'], ['Krediet', 'Crédit']]) {
+        const g = p.locator('aside.sidebar').getByText(new RegExp(`^(${nl}|${fr})$`)).first();
+        if (await g.count()) { await g.click().catch(() => {}); await p.waitForTimeout(600); }
+      }
+      await p.waitForTimeout(800);
+  }],
   // ⚠️ Deze twee stonden in GEEN van beide lijsten en werden stil overgeslagen. Gevonden door de
   // zelfcontrole onderaan — die vergelijkt met de MAP, niet met een lijst die ik met de hand bijhoud.
   ['verzendadressen-bewerken',  '/administration/sender-addresses', async p => {
@@ -289,8 +372,24 @@ const VERWACHT = {
   'commissieschemas-journaal':  /schema|barème|schéma/i,
   'online-afspraken-instellingen': /Vragenlijst|Questionnaire|Locaties|Lieux/i,
   'filteren-zoekveld':          /Cuypers/i,
-  'gebruikers-fiche':           /Rol|Rôle/i,
-  'afspraak-venster':           /Verantwoordelijke|Responsable|Titel|Titre/i,
+  'gebruikers-fiche':           /Mailhandtekening|Signature|Toon in keuzelijsten|listes de choix/i,
+  'hoofdbalk':                  /Nieuwe taak|Nouvelle tâche/i,
+  'menu-links':                 /Kredietinstellingen|Institutions de crédit/i,
+  'documenten-valideren':       /Te valideren|À valider|Wachttijd|attente/i,
+  'taken-overzicht':            /Vervaldatum|Échéance|Prioriteit|Priorité/i,
+  'wachtwoord':                 /Huidig wachtwoord|Mot de passe actuel/i,
+  'keuzelijsten':               /Nationaliteit|Nationalité|Volgorde|Ordre/i,
+  'rollen':                     /Tenant-beheerder|Administrateur de tenant/i,
+  'aanbrenger-groepering':      /Groepering|Groupement/i,
+  'afspraak-venster':           /Terugkerend|Récurrent|Hele dag|Journée entière/i,
+  'keuzelijsten':               /Nationaliteit|Nationalité/,
+  'rapporten-periode':          /Afdrukken|Imprimer/,
+  'professionals-fiche':        /Baken Immo Aalst/,
+  'kredietdossiers-lijst':      /Kenmerk aanbr|Référence apporteur|Kredietbedrag|Montant du crédit/i,
+  // ⚠️ De ARCERING is niet in tekst te vatten. Dit merkteken bewijst enkel dat we op de kolomweergave
+  // zitten; dát twee kolommen gearceerd staan, moet een mens zien. Beter een controle die zegt wat ze
+  // wél meet dan een beeld dat helemaal ongecontroleerd blijft.
+  'agenda-afwezigheid':         /Eva Coppens/,   // zwak merkteken; de ECHTE controle op de arcering zit in het recept
   'verzendadressen-bewerken':   /Verzendnaam|Nom d'expéditeur|E-mailadres/i,
   'globaal-overzicht-voorinstelling': /Alle dossiers|Tous les dossiers/i,
   'rapporten-periode':          /Periode|Période/i,
@@ -371,6 +470,54 @@ page.on('pageerror', e => fouten.push(e.message.slice(0, 100)));
 const PORTAAL_GEBRUIKER = process.env.CS_PORTAAL_USER || 'aanbrenger2@demo.example';
 const PORTAAL_WW = process.env.CS_PORTAAL_PW || null;
 
+// Eén element fotograferen. `bevat` kiest uit meerdere gelijkaardige (welke .adm-card), `minBreed`
+// weert het chevron-menu dat óók [role=dialog] draagt maar 161 breed is.
+// ── De alt-tekst als SPECIFICATIE, niet als losse zin ────────────────────────────────────────────────
+// ⚠️ Tot 29/08/2026 toetste de generator één merkteken per beeld: staat dát woord op het scherm, dan
+// geldt het beeld als juist. Een alt die zegt "de groep CRM met Relaties, Professionals, Afspraken,
+// Aanbrengers en Groepen" haalde die toets op het woord "Relaties" — terwijl er ondertussen ook Leads en
+// Online afspraken in stonden en één opsomming dus niet meer klopte. Dit leest ELKE hoofdletterterm uit
+// de alt en meldt wat er níét op het scherm staat. Het is een RAPPORT, geen blokkade: een alt mag namen
+// dragen die geen schermtekst zijn ("een blauw teller-bolletje", "Regio Zuid"). Wat hier verschijnt,
+// moet een mens beoordelen — maar het verschijnt tenminste.
+const NIET_SCHERMTEKST = new Set(['CreditSoft', 'ADM', 'One', 'Nederlands', 'Frans', 'Néerlandais',
+  'Français', 'Demo', 'Kredietkantoor', 'Regio', 'Zuid', 'Noord', 'Voorbeeld', 'Testkantoor', 'Het', 'De',
+  'Een', 'Der', 'Le', 'La', 'Les', 'Un', 'Une', 'Il', 'Elle', 'En', 'Op', 'In', 'Met', 'Van', 'Bij']);
+function altTermen(alt) {
+  // ⚠️ HOOFDLETTERONGEVOELIG EN GENORMALISEERD. De eerste versie meldde 46 beelden, en de meeste daarvan
+  // waren ruis van de controle zelf: kaartkoppen staan in de app in KAPITALEN (CSS text-transform), dus
+  // "Identiteit" leek te ontbreken terwijl er IDENTITEIT stond. En "België" werd afgekapt tot "Belgi"
+  // omdat de ë in samengestelde vorm (NFD) uit het woord viel. Een controle die vooral zichzelf meet,
+  // begraaft de echte vondst.
+  const alt2 = alt.normalize('NFC');
+  const zonderEerste = alt2.replace(/(^|[.:;!?]\s+)([A-ZÀ-Þ])/g, (m, a, b) => a + b.toLowerCase());
+  const uit = new Set();
+  for (const m of zonderEerste.matchAll(/([A-ZÀ-Þ][\wÀ-ÿ'’.-]{3,})/g)) {
+    // ⚠️ Leestekens eraf. Zonder \b (die werkt niet betrouwbaar naast een ë) slikt de match het punt
+    // aan het zinseinde mee, en dan zoek je naar "Contact." op een scherm waar "Contact" staat.
+    const term = m[1].replace(/[.,;:!?'’-]+$/, '');
+    if (term.length >= 4 && !NIET_SCHERMTEKST.has(term)) uit.add(term);
+  }
+  return [...uit];
+}
+
+async function kiesElement(page, el) {
+  let loc = page.locator(el.kies);
+  if (el.bevat) loc = loc.filter({ hasText: new RegExp(el.bevat, 'i') });
+  if (el.minBreed) {
+    const n = await loc.count();
+    for (let i = 0; i < n; i++) {
+      const b = await loc.nth(i).boundingBox();
+      if (b && b.width >= el.minBreed) return loc.nth(i);
+    }
+    throw new Error(`geen element van ${el.kies} breder dan ${el.minBreed}px`);
+  }
+  return loc.first();
+}
+async function elementSchot(page, el) {
+  return await (await kiesElement(page, el)).screenshot({ timeout: 15000 });
+}
+
 async function meldAan(page, user, ww, kiesTenant) {
   await page.goto(`${BASIS}/login`);
   await page.locator('input[type="text"], input[name*="ser" i]').first().fill(user);
@@ -389,7 +536,7 @@ async function meldAan(page, user, ww, kiesTenant) {
 
 await meldAan(page, gebruiker, wachtwoord, true);
 
-let ok = 0; const mislukt = []; const ongecontroleerd = []; const overgeslagenPortaal = []; const zwakGecontroleerd = [];
+let ok = 0; const mislukt = []; const ongecontroleerd = []; const overgeslagenPortaal = []; const zwakGecontroleerd = []; const handwerk = []; const gegroeid = []; const altAfwijkingen = []; const schermteksten = {};
 let alsAanbrenger = false;
 for (const taal of ['nl-BE', 'fr-BE']) {
   await page.goto(`${BASIS}/culture/set?c=${taal}`); await page.waitForLoadState('networkidle');
@@ -409,14 +556,24 @@ for (const taal of ['nl-BE', 'fr-BE']) {
       await page.goto(`${BASIS}/culture/set?c=${taal}`); await page.waitForLoadState('networkidle');
       alsAanbrenger = portaal;
     }
+    if (HANDWERK[naam]) { if (!handwerk.includes(naam)) handwerk.push(naam); continue; }
     // ⚠️ Het kantoorprofiel bestaat enkel in het Nederlands (AppKit-scherm, niet vertaald) — geen FR-beeld.
     if (naam === 'kantoorprofiel-vragenlijst' && achtervoegsel) continue;
     try {
       fouten.length = 0;
+      // ⚠️ Vensterbreedte VÓÓR het laden: een lijst met veel kolommen rendert anders op 1280 dan op 2000,
+      // en dat is precies waarom die beelden elk hun eigen breedte hebben.
+      const v = VORM[naam + achtervoegsel] || VORM[naam] || {};
+      await page.setViewportSize({ width: v.breedte || BREED, height: v.hoogte || 860 });
       await page.goto(`${BASIS}${url}`, { waitUntil: 'domcontentloaded' });
       await page.waitForTimeout(3500);
       if (na) await na(page);
-      const tekst = await page.locator('body').innerText();
+      // ⚠️ BIJ EEN ELEMENTSCHOT TOETSEN WE HET ELEMENT. De belofte van `hoofdbalk` is "CreditSoft-logo en
+      // rechts…" — dat toetsen tegen de hele pagina zegt niets over de bovenbalk, en tegen het menu evenmin.
+      const vormNu = VORM[naam + achtervoegsel] || VORM[naam] || {};
+      const tekst = vormNu.element
+        ? await (await kiesElement(page, vormNu.element)).innerText().catch(() => '')
+        : await page.locator('body').innerText();
       if (/Er ging iets mis|Er is een fout|Une erreur/i.test(tekst)) { mislukt.push(`${naam}${achtervoegsel} — foutmelding op het scherm`); continue; }
 
       // ⚠️ "GEEN TOEGANG" IS NOOIT EEN GELDIG BEELD, en dat moest hard: op 29/08/2026 zijn vier
@@ -427,8 +584,13 @@ for (const taal of ['nl-BE', 'fr-BE']) {
       // ⚠️ EEN BIJNA-LEEG SCHERM IS NOOIT EEN GELDIG BEELD. De beloftecontrole kijkt of iets AANWEZIG is;
       // een lege of geweigerde pagina haalt elke controle die naar afwezigheid zoekt. Vandaar een ondergrens
       // op de inhoud: een echt scherm draagt tientallen regels tekst, een weigerpagina een handvol.
+      // ⚠️ Bij een ELEMENTschot slaat de ondergrens niet op: een dialoogvenster of de bovenbalk draagt
+      // weinig tekst, en dat is juist de bedoeling. De grens geldt voor paginaschoten.
       const regels = tekst.split('\n').map(r => r.trim()).filter(Boolean);
-      if (regels.length < 18) {
+      // ⚠️ Eén scherm is ECHT zo kort: wachtwoord-wijzigen draagt drie velden en een knop, punt. Een
+      // uitzondering mét reden, geen verlaagde grens voor iedereen — dan vangt hij niets meer.
+      const KORT_MAG = { 'wachtwoord': 'drie velden en een knop; korter kan dit scherm niet zijn' };
+      if (!(VORM[naam + achtervoegsel] || VORM[naam] || {}).element && !KORT_MAG[naam] && regels.length < 18) {
         mislukt.push(`${naam}${achtervoegsel} — scherm draagt maar ${regels.length} regels tekst; te leeg om een beeld te zijn`);
         continue;
       }
@@ -486,16 +648,43 @@ for (const taal of ['nl-BE', 'fr-BE']) {
       // Zolang dit script geen vorm per beeld draagt (venstergrootte + optionele uitsnede), mag het een
       // bestaand beeld met een ANDERE afmeting niet overschrijven. Het meldt en laat staan.
       const doel = `${UIT}/${naam}${achtervoegsel}.png`;
-      const nieuw = await page.screenshot();
+      const vorm = VORM[naam + achtervoegsel] || VORM[naam] || {};
+      const nieuw = vorm.element ? await elementSchot(page, vorm.element) : await page.screenshot();
       if (existsSync(doel)) {
         const oud = readFileSync(doel);
         const maat = (b) => `${b.readUInt32BE(16)}×${b.readUInt32BE(20)}`;
         if (maat(oud) !== maat(nieuw)) {
-          mislukt.push(`${naam}${achtervoegsel} — VORM WIJKT AF: bestaand ${maat(oud)}, nieuw ${maat(nieuw)}. `
-                     + `Niet overschreven; dit beeld heeft een eigen venster of uitsnede.`);
-          continue;
+          // ⚠️ BIJ EEN ELEMENTSCHOT IS DE VORM GEEN KADERKEUZE. Het beeld is precies zo groot als het
+          // element; groeit het dialoogvenster (een veld erbij, een sterretje dat een regel doet wrappen),
+          // dan HOORT het beeld mee te groeien. lead-klant-maken werd op 29/08/2026 66px hoger door de
+          // verplicht-sterretjes. Blokkeren zou het beeld bevriezen op een venster dat niet meer bestaat.
+          // Wél melden: een onverwachte sprong is nieuws, geen ruis.
+          if (vorm.element) {
+            gegroeid.push(`${naam}${achtervoegsel}: ${maat(oud)} → ${maat(nieuw)}`);
+          } else {
+            mislukt.push(`${naam}${achtervoegsel} — VORM WIJKT AF: bestaand ${maat(oud)}, nieuw ${maat(nieuw)}. `
+                       + `Niet overschreven; dit beeld heeft een eigen venster of uitsnede.`);
+            continue;
+          }
         }
       }
+      // ⚠️ De hele alt als specificatie — een rapport, geen blokkade (zie altTermen).
+      const volledigeAlt = ALT[naam + achtervoegsel] || '';
+      if (volledigeAlt) {
+        // ⚠️ VELDWAARDEN STAAN NIET IN innerText. DevExpress zet ze in `value`, dus een alt die zegt
+        // "adres Beukenlaan 50 in 1000 Brussel" leek altijd te liegen, ook op de juiste fiche. Dat is ruis
+        // die de echte vondsten begraaft, dus lezen we de waarden erbij.
+        const zoek = naam === 'menu-links' || naam === 'hoofdbalk' ? tekst
+          : await page.evaluate(() => document.body.innerText + '\n' +
+              [...document.querySelectorAll('input, textarea, select')]
+                .map(e => e.value || '').join('\n'));
+        const zoekK = zoek.normalize('NFC').toLowerCase();
+        const ontbreekt = altTermen(volledigeAlt).filter(t => !zoekK.includes(t.toLowerCase()));
+        if (ontbreekt.length) altAfwijkingen.push(`${naam}${achtervoegsel}: ${ontbreekt.join(', ')}`);
+      }
+      // ⚠️ De schermtekst bewaren. Een ronde kost 25 minuten; een controle die achteraf bedacht wordt,
+      // zou daar telkens opnieuw op moeten wachten. Nu kan ze op deze bestanden draaien.
+      schermteksten[`${naam}${achtervoegsel}`] = tekst;
       writeFileSync(doel, nieuw);
       ok++;
     } catch (e) { mislukt.push(`${naam}${achtervoegsel} — ${e.message.slice(0, 60)}`); }
@@ -508,6 +697,22 @@ if (zwakGecontroleerd.length) {
   console.log(`\n◐ ${zwakGecontroleerd.length} beelden zijn maar ZWAK gecontroleerd — enkel op één woord:`);
   console.log('   ' + zwakGecontroleerd.slice(0, 40).join(', ') + (zwakGecontroleerd.length > 40 ? ' …' : ''));
   console.log('   Eén woord bewijst dat je op het juiste SCHERM zit, niet dat de juiste TOESTAND getoond wordt.');
+}
+if (altAfwijkingen.length) {
+  console.log(`\n🔎 ${altAfwijkingen.length} beelden dragen een alt-tekst met woorden die NIET op het scherm staan:`);
+  for (const a of altAfwijkingen) console.log(`   ${a}`);
+  console.log('   Een alt mag namen dragen die geen schermtekst zijn. Wat hier staat, vraagt een oordeel —');
+  console.log('   maar een opsomming die niet meer klopt, staat hier ook. Loop ze na.');
+}
+if (handwerk.length) {
+  console.log(`\n✋ ${handwerk.length} beelden zijn MET DE HAND uitgesneden en dus NIET hernomen:`);
+  for (const n of handwerk) console.log(`   ${n} — ${HANDWERK[n]}`);
+  console.log('   Ze staan er nog zoals ze waren. Wijzigt dat scherm, dan moet iemand ze opnieuw uitsnijden.');
+}
+if (gegroeid.length) {
+  console.log(`\n📐 ${gegroeid.length} elementschoten zijn van GROOTTE veranderd (het element zelf groeide):`);
+  for (const g of gegroeid) console.log(`   ${g}`);
+  console.log('   Ze zijn wél geschreven — bij een elementschot is de grootte het element, geen kaderkeuze.');
 }
 if (overgeslagenPortaal.length) {
   console.log(`\n⚠️ ${overgeslagenPortaal.length} PORTAALBEELDEN OVERGESLAGEN — geen aanbrenger-wachtwoord:`);
@@ -534,7 +739,9 @@ if (!filter) {
     console.log('   ' + vergeten.join(', '));
     console.log('   Voeg ze toe aan SCHOTEN, of aan ZONDER_RECEPT met de reden.');
   } else {
-    console.log('\n✅ elk beeld op schijf zit in een lijst — niets stil overgeslagen.');
+    writeFileSync('/Users/dominique/projects/creditsoft-docs/tools/.schermteksten.json',
+              JSON.stringify(schermteksten, null, 1));
+console.log('\n✅ elk beeld op schijf zit in een lijst — niets stil overgeslagen.');
   }
 }
 

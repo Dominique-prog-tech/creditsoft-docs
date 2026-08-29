@@ -26,7 +26,7 @@ De **nota** is vrij en optioneel — handig voor "bereikbaar per mail" of "verva
 
 ## Wat u in de agenda ziet
 
-![De agenda in kolomweergave: de kolommen van twee afwezige medewerkers zijn diagonaal gearceerd, de vier andere kolommen zijn gewoon wit.](../images/agenda-afwezigheid.png "Gearceerde kolommen in de agenda")
+![De agenda in kolomweergave: de kolommen van twee afwezige medewerkers zijn diagonaal gearceerd, de andere kolommen zijn gewoon wit.](../images/agenda-afwezigheid.png "Gearceerde kolommen in de agenda")
 
 - In de **kolomweergave** (één kolom per medewerker) ziet u het verlof van elke persoon in zijn eigen kolom.
 - In de **gewone weergave** is er geen kolom per persoon. Daar arceren enkel de dagen waarop het **kantoor**

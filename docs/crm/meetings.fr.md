@@ -33,7 +33,7 @@ Cliquez sur une plage libre. Dans la fenêtre qui s'ouvre, vous renseignez :
 - **Lieu** — le bureau, chez le client, ou une adresse.
 - **Responsables** — un responsable principal (qui détermine la couleur) et éventuellement des collègues supplémentaires.
 
-![La fenêtre pour encoder un rendez-vous : titre, responsables, dates et heures de début et de fin, journée entière, récurrence, lieu, contact, apporteur, les deux cases pour la confirmation, et une description.](../images/afspraak-venster-fr.png "Tout ce qui concerne un rendez-vous, sur un seul écran")
+![La fenêtre d’un rendez-vous, ici existant : titre, responsable principal et responsables supplémentaires, dates et heures de début et de fin, journée entière, récurrence, lieu, contact, apporteur, les deux cases pour la confirmation, et une description.](../images/afspraak-venster-fr.png "Tout ce qui concerne un rendez-vous, sur un seul écran")
 
 ## Envoyer une confirmation
 

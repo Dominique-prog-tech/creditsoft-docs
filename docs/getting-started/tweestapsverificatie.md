@@ -2,7 +2,7 @@
 
 Met **tweestapsverificatie** beveiligt u uw account extra. Naast uw wachtwoord vraagt CreditSoft dan bij het aanmelden een **eenmalige code** uit een authenticator-app (bijvoorbeeld Google Authenticator, Microsoft Authenticator of Authy). Zo kan niemand met alleen uw wachtwoord binnengeraken.
 
-![Het scherm Tweestapsverificatie in zijn beginstand: de uitleg over een authenticator-app, de melding dat tweestapsverificatie uitgeschakeld is, en de knop Activeren.](../images/tweestapsverificatie.png "Waar u tweestapsverificatie aanzet")
+![Het scherm Tweestapsverificatie in zijn beginstand: de uitleg over een authenticator-app, de melding dat tweestapsverificatie uitgeschakeld is, en de knop Inschakelen.](../images/tweestapsverificatie.png "Waar u tweestapsverificatie aanzet")
 
 ## Inschakelen
 

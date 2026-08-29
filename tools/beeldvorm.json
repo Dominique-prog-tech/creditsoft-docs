@@ -1,0 +1,383 @@
+{
+ "aanbrenger-groepering": {
+  "breedte": 1280,
+  "hoogte": 860
+ },
+ "aanbrengers-fiche": {
+  "breedte": 1280,
+  "hoogte": 860
+ },
+ "aanbrengers-lijst": {
+  "breedte": 1280,
+  "hoogte": 860
+ },
+ "actielogboek": {
+  "breedte": 1280,
+  "hoogte": 860
+ },
+ "afspraak-venster": {
+  "breedte": 1500,
+  "hoogte": 1000
+ },
+ "afspraken-per-medewerker": {
+  "breedte": 2000,
+  "hoogte": 860
+ },
+ "afspraken-week": {
+  "breedte": 1700,
+  "hoogte": 1100
+ },
+ "afwezigheden": {
+  "breedte": 1500,
+  "hoogte": 860
+ },
+ "agenda-afwezigheid": {
+  "breedte": 1600,
+  "hoogte": 860
+ },
+ "bedrijfsfiche": {
+  "breedte": 1280,
+  "hoogte": 1127
+ },
+ "bedrijfsfiche-logo": {
+  "breedte": 1280,
+  "element": {
+   "bevat": "huisstijl|graphique",
+   "kies": ".adm-card"
+  },
+  "hoogte": 860
+ },
+ "borderel-borderellen": {
+  "breedte": 1700,
+  "hoogte": 860
+ },
+ "borderel-fiche": {
+  "breedte": 1700,
+  "hoogte": 860
+ },
+ "borderel-nieuwe-ronde": {
+  "breedte": 1700,
+  "hoogte": 860
+ },
+ "borderel-overzicht": {
+  "breedte": 1700,
+  "hoogte": 860
+ },
+ "commissie-instellingen": {
+  "breedte": 1280,
+  "hoogte": 860
+ },
+ "commissie-restanten": {
+  "breedte": 1700,
+  "hoogte": 860
+ },
+ "commissie-vooruitzicht": {
+  "breedte": 1700,
+  "hoogte": 860
+ },
+ "commissieschema-fiche": {
+  "breedte": 1700,
+  "hoogte": 860
+ },
+ "commissieschemas": {
+  "breedte": 1900,
+  "hoogte": 860
+ },
+ "commissieschemas-journaal": {
+  "breedte": 1280,
+  "hoogte": 860
+ },
+ "contractenoverzicht-lijst": {
+  "breedte": 1700,
+  "hoogte": 860
+ },
+ "dashboard-fases": {
+  "breedte": 1280,
+  "hoogte": 1250
+ },
+ "dashboard-startscherm": {
+  "breedte": 1280,
+  "hoogte": 1240
+ },
+ "documentbibliotheek": {
+  "breedte": 1500,
+  "hoogte": 860
+ },
+ "documenten-valideren": {
+  "breedte": 1700,
+  "hoogte": 860
+ },
+ "documenttypes": {
+  "breedte": 1280,
+  "hoogte": 860
+ },
+ "documenttypes-categorieen": {
+  "breedte": 1280,
+  "hoogte": 860
+ },
+ "fiche-281-50": {
+  "breedte": 1700,
+  "hoogte": 860
+ },
+ "filteren-zoekveld": {
+  "breedte": 1700,
+  "hoogte": 860
+ },
+ "gebruikers-fiche": {
+  "breedte": 1280,
+  "element": {
+   "kies": ".dxbl-modal, [role=dialog]",
+   "minBreed": 400
+  },
+  "hoogte": 860
+ },
+ "globaal-overzicht-lijst": {
+  "breedte": 2000,
+  "hoogte": 860
+ },
+ "globaal-overzicht-voorinstelling": {
+  "breedte": 2000,
+  "hoogte": 860
+ },
+ "groepen-lijst": {
+  "breedte": 1280,
+  "hoogte": 860
+ },
+ "hoofdbalk": {
+  "breedte": 1280,
+  "element": {
+   "kies": "header.topbar"
+  },
+  "hoogte": 860
+ },
+ "journaal-bijlagen": {
+  "breedte": 1280,
+  "hoogte": 860
+ },
+ "journaal-gesprekken": {
+  "breedte": 1280,
+  "hoogte": 860
+ },
+ "journaal-kredietdossiers": {
+  "breedte": 1280,
+  "hoogte": 860
+ },
+ "journaal-lade": {
+  "breedte": 1280,
+  "hoogte": 860
+ },
+ "journaal-logboek": {
+  "breedte": 1280,
+  "hoogte": 860
+ },
+ "journaal-mailverkeer": {
+  "breedte": 1280,
+  "hoogte": 860
+ },
+ "journaal-notities": {
+  "breedte": 1280,
+  "hoogte": 860
+ },
+ "journaal-taken": {
+  "breedte": 1280,
+  "hoogte": 860
+ },
+ "keuzelijsten": {
+  "breedte": 1280,
+  "hoogte": 860
+ },
+ "klantportaal-klant": {
+  "breedte": 1280,
+  "hoogte": 860
+ },
+ "klantportaal-vormgeving": {
+  "breedte": 1700,
+  "hoogte": 1112
+ },
+ "klantportaal-vormgeving-fr": {
+  "breedte": 1700,
+  "hoogte": 1155
+ },
+ "kredietdossier-fiche": {
+  "breedte": 1920,
+  "hoogte": 860
+ },
+ "kredietdossiers-lijst": {
+  "breedte": 1700,
+  "hoogte": 860
+ },
+ "kredietinstellingen-fiche": {
+  "breedte": 1280,
+  "hoogte": 860
+ },
+ "kredietinstellingen-lijst": {
+  "breedte": 1280,
+  "hoogte": 860
+ },
+ "lead-fiche": {
+  "breedte": 1280,
+  "hoogte": 860
+ },
+ "lead-klant-maken": {
+  "breedte": 1280,
+  "element": {
+   "kies": ".dxbl-modal, .dxbl-popup, [role=dialog]",
+   "minBreed": 400
+  },
+  "hoogte": 860
+ },
+ "leads-lijst": {
+  "breedte": 1700,
+  "hoogte": 860
+ },
+ "mailmonitoring": {
+  "breedte": 1280,
+  "hoogte": 860
+ },
+ "mailsjablonen": {
+  "breedte": 1280,
+  "hoogte": 1100
+ },
+ "menu-links": {
+  "breedte": 1280,
+  "element": {
+   "kies": "aside.sidebar"
+  },
+  "hoogte": 860
+ },
+ "mijn-gegevens": {
+  "breedte": 1280,
+  "hoogte": 1180
+ },
+ "navigatie": {
+  "breedte": 1280,
+  "hoogte": 860
+ },
+ "online-afspraken-agenda": {
+  "breedte": 1700,
+  "hoogte": 860
+ },
+ "online-afspraken-instellingen": {
+  "breedte": 1700,
+  "hoogte": 2378
+ },
+ "online-afspraken-instellingen-fr": {
+  "breedte": 1700,
+  "hoogte": 2430
+ },
+ "platformbeheer-hub": {
+  "breedte": 1280,
+  "hoogte": 994
+ },
+ "platformbeheer-hub-fr": {
+  "breedte": 1280,
+  "hoogte": 1038
+ },
+ "portaal-commissies": {
+  "breedte": 720,
+  "hoogte": 400
+ },
+ "portaal-dossier-detail": {
+  "breedte": 720,
+  "hoogte": 400
+ },
+ "portaal-dossiers": {
+  "breedte": 720,
+  "hoogte": 400
+ },
+ "portaal-overzicht": {
+  "breedte": 720,
+  "hoogte": 400
+ },
+ "portaal-toegang": {
+  "breedte": 1700,
+  "hoogte": 860
+ },
+ "professionals-fiche": {
+  "breedte": 1280,
+  "hoogte": 860
+ },
+ "professionals-lijst": {
+  "breedte": 1280,
+  "hoogte": 860
+ },
+ "prullenbak": {
+  "breedte": 1280,
+  "hoogte": 860
+ },
+ "rapporten-bibliotheek": {
+  "breedte": 1280,
+  "hoogte": 1180
+ },
+ "rapporten-bibliotheek-fr": {
+  "breedte": 1280,
+  "hoogte": 1144
+ },
+ "rapporten-periode": {
+  "breedte": 1280,
+  "hoogte": 860
+ },
+ "relaties-fiche": {
+  "breedte": 1280,
+  "hoogte": 860
+ },
+ "relaties-fiche-journaal": {
+  "breedte": 1280,
+  "hoogte": 860
+ },
+ "relaties-lijst": {
+  "breedte": 1280,
+  "hoogte": 860
+ },
+ "rollen": {
+  "breedte": 1280,
+  "hoogte": 860
+ },
+ "schattingen-lijst": {
+  "breedte": 1700,
+  "hoogte": 860
+ },
+ "taken-overzicht": {
+  "breedte": 1280,
+  "hoogte": 860
+ },
+ "tweestapsverificatie": {
+  "breedte": 1280,
+  "hoogte": 860
+ },
+ "verzekeraars-fiche": {
+  "breedte": 1280,
+  "hoogte": 860
+ },
+ "verzekeraars-lijst": {
+  "breedte": 1280,
+  "hoogte": 860
+ },
+ "verzekeringen-lijst": {
+  "breedte": 1700,
+  "hoogte": 860
+ },
+ "verzendadressen": {
+  "breedte": 1280,
+  "hoogte": 860
+ },
+ "verzendadressen-bewerken": {
+  "breedte": 1280,
+  "hoogte": 860
+ },
+ "voorkeuren": {
+  "breedte": 1280,
+  "hoogte": 860
+ },
+ "voorkeuren-paneel": {
+  "breedte": 1280,
+  "element": {
+   "kies": ".prefs-panel"
+  },
+  "hoogte": 860
+ },
+ "wachtwoord": {
+  "breedte": 1280,
+  "hoogte": 860
+ }
+}
