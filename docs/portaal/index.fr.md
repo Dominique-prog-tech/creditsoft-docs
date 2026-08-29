@@ -7,7 +7,7 @@ ce qui les concerne, et rien de votre bureau.
 Ces pages décrivent ce qu'un apporteur voit. En tant que courtier, vous les lisez pour savoir ce que vous
 distribuez lorsque vous accordez un accès.
 
-![La fenêtre Accès au portail sur une fiche apporteur : le mot de passe temporaire affiché une seule fois, les boutons Nouveau mot de passe temporaire et Désactiver, et en dessous les cases pour les commissions, les documents et ce que cet accès peut voir de ses bureaux.](../images/portaal-toegang-fr.png "Configurer l'accès au portail sur une fiche apporteur")
+![La fenêtre Accès au portail sur une fiche apporteur : l'identifiant de l'apporteur avec les boutons Nouveau mot de passe temporaire et Désactiver, et en dessous les cases pour les commissions, les documents et ce que cet accès peut voir de ses bureaux.](../images/portaal-toegang-fr.png "Configurer l'accès au portail sur une fiche apporteur")
 
 ## Donner accès
 
