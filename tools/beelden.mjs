@@ -34,6 +34,20 @@ const BREED = 1700, HOOG = 900;
 // één formaat. Die tabel is AFGELEID uit de bestaande bestanden (tools/beeldvorm.json), niet verzonnen.
 const VORM = JSON.parse(readFileSync(new URL('./beeldvorm.json', import.meta.url), 'utf8'));
 
+// ⏭️ MEENEMEN BIJ DE VOLGENDE BEELDRONDE (afgesproken 29/08/2026). De Nimble-sessie doet dit beter en
+// het is de moeite: zij houden GEEN afgeleide tabel bij maar lezen de bestaande PNG-header rechtstreeks
+// op het moment dat ze het venster zetten.
+//
+// Waarom dat beter is: dan lezen het venster én de vormgrendel HETZELFDE bestand, en kunnen ze per
+// definitie niet van mening verschillen. Onze tabel kan dat wel — en heeft dat gedaan. Ik leidde hem af
+// uit de Nederlandse bestanden en liet Frans meeliften; vier Franse pagina's staan op een andere hoogte
+// ("Institutions de crédit" is langer dan "Kredietinstellingen") en werden dus verkeerd geschreven. De
+// grendel ving het, maar dat is reparatie en geen preventie. Eén bron minder die kan verouderen.
+//
+// ⚠️ Wat NIET afleidbaar is en dus een tabel blijft: de acht ELEMENTschoten. Een selector als
+// `header.topbar` of `aside.sidebar` valt uit geen enkele PNG te lezen. Na de verbouwing draagt
+// beeldvorm.json dus alleen nog die acht, en niet meer 88 maten.
+
 // ⚠️ WELK ACCOUNT. Vier portaalbeelden zijn op 29/08/2026 vervangen door een "Geen toegang"-scherm omdat de
 // generator als `admin` was aangemeld — en dat account is geen aanbrenger. Het weigerscherm werd netjes
 // afgedrukt en over het echte beeld gezet. Een schot verklaart nu welk account het nodig heeft; wie er geen
