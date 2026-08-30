@@ -11,7 +11,7 @@ courte page d'accueil vous renvoie vers le menu.
 
 À gauche se trouve le **menu principal**. Il affiche les écrans auxquels vous avez accès ; cliquez sur un élément pour l'ouvrir. Le menu est regroupé — les écrans de travail quotidien se trouvent en haut, les écrans de gestion sous l'en-tête **Gestion**.
 
-![Le menu principal à gauche, avec Tableau de bord en haut, le groupe CRM déplié avec Leads, Relations, Professionnels, Rendez-vous, Rendez-vous en ligne, Apporteurs et Groupes, le groupe Crédit déplié avec Dossiers de crédit, À valider avec une pastille bleue de comptage, Institutions de crédit, Assureurs, Bordereau et Fiche 281.50, en dessous les groupes repliés Listes et Gestion, et tout en bas Administration, Portail client et Se déconnecter.](../images/menu-links-fr.png "Le menu principal à gauche, avec deux groupes dépliés"){ width="240" }
+![Le menu principal à gauche, avec Tableau de bord en haut, le groupe CRM déplié avec Leads, Relations, Professionnels, Rendez-vous, Rendez-vous en ligne, Apporteurs et Groupes, le groupe Crédit déplié avec Dossiers de crédit, À valider avec une pastille bleue de comptage, Institutions de crédit, Assureurs, Bordereau et Fiche 281.50, en dessous les groupes repliés Listes et Gestion, et tout en bas Administration, Portail client et Se déconnecter.](../images/menu-links-fr.png "Le menu principal à gauche, avec deux groupes dépliés"){ .eigen-breedte style="width:240px" }
 
 Les éléments visibles dépendent de votre rôle : tout le monde n'a pas accès à tous les écrans.
 
@@ -113,7 +113,7 @@ question en langage courant et recevez un tableau. Six questions sont préparée
 Cliquez sur votre **avatar** en haut à droite pour ouvrir le panneau des préférences : votre photo de profil,
 la couleur d'accent, la taille de l'affichage, la langue et la vérification en deux étapes.
 
-![Le panneau des préférences qui s'ouvre à droite : en haut vos initiales et votre nom, en dessous Photo de profil avec le bouton Choisir une photo, onze couleurs d'accent sous forme de pastilles dont la bleue est sélectionnée, Taille de l'interface avec Compact, Normal et Confortable, Langue avec Nederlands et Français, Sécurité avec le bouton Vérification en deux étapes, et en bas Toutes les préférences et Se déconnecter.](../images/voorkeuren-paneel-fr.png "Le panneau des préférences, ouvert via votre avatar"){ width="330" }
+![Le panneau des préférences qui s'ouvre à droite : en haut vos initiales et votre nom, en dessous Photo de profil avec le bouton Choisir une photo, onze couleurs d'accent sous forme de pastilles dont la bleue est sélectionnée, Taille de l'interface avec Compact, Normal et Confortable, Langue avec Nederlands et Français, Sécurité avec le bouton Vérification en deux étapes, et en bas Toutes les préférences et Se déconnecter.](../images/voorkeuren-paneel-fr.png "Le panneau des préférences, ouvert via votre avatar"){ .eigen-breedte style="width:330px" }
 
 Ce qu'il contient exactement — et pourquoi votre langue et vos couleurs ne vous **suivent pas** sur un autre
 ordinateur — est expliqué sous [Vos préférences](voorkeuren.md). Vos propres coordonnées, votre couleur

@@ -8,7 +8,7 @@ Verzendadressen zijn de **e-mailadressen die als afzender** gebruikt worden wann
 
 Klik in de zijbalk op **Platformbeheer** en daarna op de tegel **Verzendadressen** (onder *Communicatie*). Bovenaan het scherm brengt de link **← Terug naar platformbeheer** u terug naar het overzicht.
 
-![De hub-pagina Platformbeheer met de tegels gegroepeerd per onderwerp: Bedrijf met Bedrijfsfiche, Communicatie met Verzendadressen, Mailsjablonen en Mailmonitoring, Toegang met Gebruikers en Rollen, Gegevens met Keuzelijsten, Klantenportaal, Documenttypes, Prullenbak en Actielogboek, en Dashboard met Dashboard-fases.](../images/platformbeheer-hub.png "Platformbeheer: alle beheerschermen bij elkaar, gegroepeerd per onderwerp")
+![De hub-pagina Platformbeheer met de tegels gegroepeerd per onderwerp: Bedrijf met Bedrijfsfiche, Communicatie met Verzendadressen, Mailsjablonen en Mailmonitoring, Toegang met Gebruikers en Rollen, Gegevens met Keuzelijsten, Klantenportaal, Documenttypes, Prullenbak en Actielogboek, en Dashboard met Dashboard-fases.](../images/platformbeheer-hub.png "Platformbeheer: alle beheerschermen bij elkaar, gegroepeerd per onderwerp"){ .volle-breedte }
 
 ## Waarom dit belangrijk is
 

@@ -11,7 +11,7 @@ startpagina die u naar het menu verwijst.
 
 Aan de linkerkant staat het **hoofdmenu**. Het toont de schermen waartoe u toegang hebt; klik op een item om het te openen. Het menu is gegroepeerd — de dagelijkse werkschermen staan bovenaan, beheer-schermen onder de kop **Beheer**.
 
-![Het hoofdmenu links, met Dashboard bovenaan, de opengeklapte groep CRM met Leads, Relaties, Professionals, Afspraken, Online afspraken, Aanbrengers en Groepen, de opengeklapte groep Krediet met Kredietdossiers, Te valideren met een blauw teller-bolletje, Kredietinstellingen, Verzekeraars, Borderel en Fiche 281.50, daaronder de dichtgeklapte groepen Lijsten en Beheer, en onderaan Platformbeheer, Klantenportaal en Afmelden.](../images/menu-links.png "Het hoofdmenu links, met twee groepen opengeklapt"){ width="240" }
+![Het hoofdmenu links, met Dashboard bovenaan, de opengeklapte groep CRM met Leads, Relaties, Professionals, Afspraken, Online afspraken, Aanbrengers en Groepen, de opengeklapte groep Krediet met Kredietdossiers, Te valideren met een blauw teller-bolletje, Kredietinstellingen, Verzekeraars, Borderel en Fiche 281.50, daaronder de dichtgeklapte groepen Lijsten en Beheer, en onderaan Platformbeheer, Klantenportaal en Afmelden.](../images/menu-links.png "Het hoofdmenu links, met twee groepen opengeklapt"){ .eigen-breedte style="width:240px" }
 
 Welke items u ziet, hangt af van uw rol: niet iedereen heeft toegang tot alle schermen.
 
@@ -111,7 +111,7 @@ gewone taal en krijgt een tabel terug. Zes vragen zijn voorbereid:
 Klik op uw **avatar** rechtsboven om het voorkeuren-paneel te openen: uw profielfoto, de accentkleur, de
 grootte van de weergave, de taal en tweestapsverificatie.
 
-![Het voorkeuren-paneel dat rechts openschuift: bovenaan uw initialen en naam, daaronder Profielfoto met de knop Kies foto, elf accentkleuren als gekleurde bolletjes waarvan de blauwe gekozen is, Omgevingsgrootte met Compact, Normaal en Comfortabel, Taal met Nederlands en Français, Beveiliging met de knop Tweestapsverificatie, en onderaan Alle voorkeuren en Afmelden.](../images/voorkeuren-paneel.png "Het voorkeuren-paneel, geopend via uw avatar"){ width="330" }
+![Het voorkeuren-paneel dat rechts openschuift: bovenaan uw initialen en naam, daaronder Profielfoto met de knop Kies foto, elf accentkleuren als gekleurde bolletjes waarvan de blauwe gekozen is, Omgevingsgrootte met Compact, Normaal en Comfortabel, Taal met Nederlands en Français, Beveiliging met de knop Tweestapsverificatie, en onderaan Alle voorkeuren en Afmelden.](../images/voorkeuren-paneel.png "Het voorkeuren-paneel, geopend via uw avatar"){ .eigen-breedte style="width:330px" }
 
 Wat er precies in staat — en waarom uw taal en kleuren níét meeverhuizen naar een andere computer — leest u op
 [Uw voorkeuren](voorkeuren.md). Uw eigen contactgegevens, agendakleur en mailhandtekening staan op

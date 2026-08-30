@@ -246,6 +246,32 @@ html {
   width: 100%;
 }
 
+/* Voor een beeld dat BEWUST SMAL is: een uitsnede van de menubalk, een zijpaneel.
+   Die dragen een eigen `width=` in de markdown, en tot 30/08/2026 won `max-height`
+   daarvan — het beeld kromp mee en stond smaller dan bedoeld. Gemeten op de site:
+   menu-links.png stond op 171px terwijl er `width="240"` staat (29 % te smal), en
+   voorkeuren-paneel.png op 241px bij `width="330"` (27 %).
+
+   ⚠️ NIET `.volle-breedte` gebruiken voor deze: die zet `width: 100%` en rekt een
+   uitsnede van een menubalk uit over de hele tekstkolom. Twee verschillende
+   problemen, twee klassen — de hoogtegrens opheffen is niet hetzelfde als de
+   breedte opvullen.
+
+   ⚠️ HET `width=`-ATTRIBUUT WERKT HIER NIET, en het heeft dat nooit gedaan. Een
+   presentatie-attribuut verliest van ELKE auteursregel, en hierboven staat
+   `width: auto` op alle beelden. Zolang `max-height` gold, viel dat niet op: die
+   bepaalde de breedte, en 171px léék op een gehoorzaamd `width="240"`. Zodra de
+   hoogtegrens weg is, springt zo'n beeld naar zijn volle eigen breedte — 442px
+   voor een menubalk-uitsnede die 240px hoort te zijn. Een INLINE stijl wint wel.
+
+   Gebruik: ![alt](../images/menu-links.png "titel"){ .eigen-breedte style="width:240px" }
+   De maat is de LEVENSGROTE maat: het menu is 240px in de app, het
+   voorkeurenpaneel 330px. Het beeld zelf is dubbel zo groot, voor een scherpe
+   weergave. */
+.md-typeset img.eigen-breedte:not(.twemoji):not(.emojione) {
+  max-height: none;
+}
+
 /* In donkere modus is --lightest bijna onzichtbaar tegen de donkere achtergrond;
    daar is een iets steviger lijn nodig om hetzelfde effect te krijgen. */
 [data-md-color-scheme="slate"] .md-typeset img:not(.twemoji):not(.emojione) {

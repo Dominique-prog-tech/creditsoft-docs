@@ -13,6 +13,22 @@ Daar is de uitzondering `{ .volle-breedte }` voor. Die stond op vier van de zes 
 beeld verschijnt. Dominique zag het met het oog op 16/08/2026, en dat is precies de reden voor dit
 script — een fout die enkel opvalt als iemand er toevallig naar kijkt, hoort gemeten te worden.
 
+TWEE KLASSEN, WANT TWEE PROBLEMEN
+---------------------------------
+Tot 30/08/2026 wees dit script altijd naar `.volle-breedte`, en dat advies was voor een deel van de
+meldingen fout. Een beeld dat BEWUST SMAL is — een uitsnede van de menubalk, een zijpaneel — draagt een
+eigen `width=` in de markdown. `.volle-breedte` zet `width: 100%` en zou zo'n uitsnede over de hele
+tekstkolom uitrekken.
+
+Die beelden worden wél afgekapt (gemeten op de site: `menu-links.png` stond op 171 px terwijl er
+`width="240"` staat, en `voorkeuren-paneel.png` op 241 px bij `width="330"` — de `max-height` wint van
+het attribuut en het beeld krimpt mee). Ze hebben dus `{ .eigen-breedte }` nodig: die heft enkel de
+hoogtegrens op en laat de breedte met rust.
+
+⚠️ De DETECTIE was in alle gevallen juist; enkel het ADVIES was het niet. Een controle die het goede
+probleem vindt maar de verkeerde oplossing noemt, wordt genegeerd of verkeerd opgevolgd — allebei
+erger dan zwijgen.
+
 DE DREMPEL
 ----------
 Gemeten op docs.creditsoft.be, niet geschat: de tekstkolom is 863 px breed en de `max-height` komt op
@@ -28,6 +44,7 @@ import pathlib, re, struct, sys
 DREMPEL = 624 / 863
 WORTEL = pathlib.Path(__file__).resolve().parent.parent
 BEELD = re.compile(r'!\[[^\]]*\]\(([^)\s]*?/images/([^)\s]+\.png))[^)]*\)(\{[^}]*\})?')
+HEEFT_BREEDTE = re.compile(r'\bwidth\s*=')
 
 
 def png_afmeting(p: pathlib.Path):
@@ -53,11 +70,37 @@ def main() -> int:
                 continue
             w, h = afm
             gemeten += 1
-            if h / w > DREMPEL and "volle-breedte" not in (m.group(3) or ""):
+            attrs = m.group(3) or ""
+            eigen = "eigen-breedte" in attrs
+            volle = "volle-breedte" in attrs
+
+            # ⚠️ Een `width=`-attribuut op een beeld doet NIETS: een presentatie-attribuut verliest van
+            # elke auteursregel, en `extra.css` zet `width: auto` op alle beelden. Zolang `max-height`
+            # gold viel dat niet op — die bepaalde de breedte, en het attribuut leek gehoorzaamd te
+            # worden. Melden, óók bij een laag beeld: het is een instelling die niet doet wat er staat.
+            if HEEFT_BREEDTE.search(attrs):
+                fouten.append(
+                    f"{md.relative_to(WORTEL)}: {p.name} draagt `width=`, en dat doet niets — CSS wint "
+                    f"van een presentatie-attribuut. Gebruik `style=\"width:…px\"`.")
+                continue
+
+            # Twee klassen die elkaar tegenspreken: `volle-breedte` wint in de CSS (ze komt later), dus
+            # het beeld wordt uitgerekt terwijl de auteur het smal bedoelde. Melden, niet stil kiezen.
+            if eigen and volle:
+                fouten.append(
+                    f"{md.relative_to(WORTEL)}: {p.name} draagt ZOWEL `.volle-breedte` als "
+                    f"`.eigen-breedte`. Die spreken elkaar tegen — kies er één.")
+                continue
+
+            if h / w > DREMPEL and not (volle or eigen):
+                # Het advies volgt uit de BEDOELING van de auteur: staat er een eigen breedte, dan is het
+                # beeld bewust smal en mag `.volle-breedte` er niet op.
                 fouten.append(
                     f"{md.relative_to(WORTEL)}: {p.name} is {w}×{h} (verhouding {h/w:.2f}) en wordt in de "
                     f"hoogte afgekapt — het beeld staat dan te smal. Zet `{{ .volle-breedte }}` achter de "
-                    f"afbeelding.")
+                    f"afbeelding: het hoort de tekstkolom te vullen. Is het beeld BEWUST smal (een uitsnede "
+                    f'van een menubalk, een zijpaneel), gebruik dan `{{ .eigen-breedte style="width:…px" }}` '
+                    f"— die heft enkel de hoogtegrens op.")
 
     if not gemeten:
         print("✗ Nul beelden gemeten. Dat is geen 'in orde' — staan de afbeeldingen wel in docs/images/?",

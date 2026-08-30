@@ -60,7 +60,7 @@ Si vous travaillez à plusieurs endroits, ajoutez-les sous **Paramètres → Lie
 
 Sous **Paramètres** à droite, vous réglez ce que voit le visiteur :
 
-![Le volet Paramètres de l'écran Rendez-vous en ligne : en haut Lieux avec des champs pour le nom et l'adresse, en dessous La page de réservation avec les champs Nom en haut, Texte d'accueil, Adresse sous le nom, Texte supplémentaire dans la confirmation, Adresse de notification et Adresse de réponse.](../images/online-afspraken-instellingen-fr.png "Tout ce que vous réglez une seule fois se trouve dans le volet de droite")
+![Le volet Paramètres de l'écran Rendez-vous en ligne : en haut Lieux avec des champs pour le nom et l'adresse, en dessous La page de réservation avec les champs Nom en haut, Texte d'accueil, Adresse sous le nom, Texte supplémentaire dans la confirmation, Adresse de notification et Adresse de réponse.](../images/online-afspraken-instellingen-fr.png "Tout ce que vous réglez une seule fois se trouve dans le volet de droite"){ .volle-breedte }
 
 | Champ | Où cela figure |
 |---|---|

@@ -60,7 +60,7 @@ Werkt u op meerdere plaatsen, voeg ze dan toe onder **Instellingen → Locaties*
 
 Onder **Instellingen** rechts stelt u in wat de bezoeker te zien krijgt:
 
-![De zijlade Instellingen van het scherm Online afspraken: bovenaan Locaties met velden voor naam en adres, daaronder De boekingspagina met de velden Naam bovenaan, Welkomsttekst, Adres onder de naam, Extra tekst in de bevestiging, Meldingsadres en Antwoordadres.](../images/online-afspraken-instellingen.png "Alles wat u één keer instelt, zit in de lade rechts")
+![De zijlade Instellingen van het scherm Online afspraken: bovenaan Locaties met velden voor naam en adres, daaronder De boekingspagina met de velden Naam bovenaan, Welkomsttekst, Adres onder de naam, Extra tekst in de bevestiging, Meldingsadres en Antwoordadres.](../images/online-afspraken-instellingen.png "Alles wat u één keer instelt, zit in de lade rechts"){ .volle-breedte }
 
 | Veld | Waar het staat |
 |---|---|

@@ -8,7 +8,7 @@ Les adresses d'envoi sont les **adresses e-mail utilisées comme expéditeur** l
 
 Dans la barre latérale, cliquez sur **Administration**, puis sur la tuile **Adresses d'envoi** (sous *Communication*). En haut de l'écran, le lien **← Retour à l'administration** vous ramène à l'aperçu.
 
-![La page d'accueil Administration avec les tuiles regroupées par thème : Entreprise avec Fiche d'entreprise, Communication avec Adresses d'envoi, Modèles d'e-mail et Suivi des e-mails, Accès avec Utilisateurs et Rôles, Données avec Listes de choix, Portail client, Types de documents, Corbeille et Journal des actions, et Tableau de bord avec Phases du tableau de bord.](../images/platformbeheer-hub-fr.png "Administration : tous les écrans de gestion réunis, regroupés par thème")
+![La page d'accueil Administration avec les tuiles regroupées par thème : Entreprise avec Fiche d'entreprise, Communication avec Adresses d'envoi, Modèles d'e-mail et Suivi des e-mails, Accès avec Utilisateurs et Rôles, Données avec Listes de choix, Portail client, Types de documents, Corbeille et Journal des actions, et Tableau de bord avec Phases du tableau de bord.](../images/platformbeheer-hub-fr.png "Administration : tous les écrans de gestion réunis, regroupés par thème"){ .volle-breedte }
 
 ## Pourquoi c'est important
 

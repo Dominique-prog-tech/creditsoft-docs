@@ -25,6 +25,12 @@ jobs:
       # Vastgelegde versies — zie requirements.txt voor het waarom (MkDocs 2.0 schrapt de plugins waar de
       # tweetaligheid op steunt; een onbepaalde install zou dat op een willekeurige dag binnenhalen).
       - run: pip install -r requirements.txt
+      # ⚠️ VÓÓR de bouw, en hij mag de deploy TEGENHOUDEN. Deze controle bestond sinds 16/08/2026 maar
+      # draaide nergens automatisch — ze was dus zelf het soort fout waartegen ze geschreven is: iets dat
+      # enkel opvalt wanneer iemand er toevallig naar kijkt. Op 30/08 stonden er tien beelden fout, en
+      # niets had dat ooit gemeld.
+      - name: Beeldbreedtes controleren
+        run: python3 tools/check-beeldbreedte.py
       - run: mkdocs build
       - uses: actions/upload-pages-artifact@v3
         with:
