@@ -2,7 +2,7 @@
 
 Le tableau de bord est votre écran d'accueil. D'un coup d'œil, vous voyez combien de dossiers se trouvent dans quelle phase et ce que font les indicateurs.
 
-![Le tableau de bord : en haut les quatre indicateurs — Actes avec l'année, À introduire, Introduit et LOA avec la mention « toutes les années » — en dessous le graphique en barres du volume réalisé par mois et deux graphiques en anneau répartissant le volume par institution et par responsable, et en bas le pipeline Dossiers par phase avec En traitement, Introduit, Finalisé, Sans suite et Refusé.](../images/dashboard-startscherm-fr.png "Le tableau de bord : indicateurs, graphiques et pipeline par phase"){ .volle-breedte }
+![Le tableau de bord : en haut les quatre indicateurs — Actes avec l'année, À introduire, Introduit et LOA avec la mention « toutes les années » — en dessous les deux blocs Délai dépassé et Délai proche avec par ligne le client, le type de délai et la date, et au bas de chaque bloc le bouton pour afficher les autres ; plus bas le graphique en barres du volume réalisé par mois et deux graphiques en anneau répartissant le volume par institution et par responsable.](../images/dashboard-startscherm-fr.png "Le tableau de bord : indicateurs, délais qui arrivent à échéance et graphiques"){ .volle-breedte }
 
 ## Les quatre tuiles du haut
 
@@ -70,6 +70,8 @@ en haut n'est pas celle que vous croyez.
 ## Le pipeline : les dossiers par phase
 
 Sous les tuiles, vos dossiers sont regroupés par **phase**. Une phase est un groupe de statuts que vous composez vous-même — par exemple *En traitement*, *Introduit*, *Finalisé*.
+
+![Le pipeline Dossiers par phase avec quatre cartes : En traitement avec 442 dossiers, Introduit avec 1800, Finalisé avec 430 et Sans suite avec 1328, ces deux dernières portant la mention phase finale. Chaque carte affiche le montant total et, en dessous, les statuts qui en relèvent, avec par statut le nombre de dossiers et le montant.](../images/dashboard-pijplijn-fr.png "Vos dossiers regroupés par phase, avec les statuts en dessous"){ .volle-breedte }
 
 - Cliquez sur une phase pour voir les dossiers concernés.
 - Les dossiers dont le statut n'a pas été classé sont regroupés sous **non classés**.

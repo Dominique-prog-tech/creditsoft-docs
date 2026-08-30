@@ -130,6 +130,8 @@ voordat er sprake is van een kredietaanvraag.
 In de titel staan twee getallen. *Gevraagde documenten (2/5)* betekent twee gevalideerd van de vijf die u
 vraagt.
 
+![Het tabblad Gevraagde documenten op de fiche van Alain Adriaenssens: bovenaan de knoppen Document toevoegen, Klant uitnodigen en Bekijken als klant, daaronder een tabel met de kolommen Document, Status en Reden, met één regel — Laatste 3 loonfiches met de status Ontvangen.](../images/relaties-gevraagde-documenten.png "De stukken die u van deze relatie verwacht, met hun status"){ .volle-breedte }
+
 - **Document toevoegen** — kies een documenttype uit de lijst en het komt op de checklist.
 - **Klant uitnodigen** — stuurt een e-mail met een link naar het **klantenportaal**,
   waar deze persoon zijn stukken oplaadt. Heeft ze geen e-mailadres, dan maakt u enkel de link en bezorgt u

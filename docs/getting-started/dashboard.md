@@ -2,7 +2,7 @@
 
 Het dashboard is uw startscherm. In één oogopslag ziet u hoeveel dossiers er in welke fase zitten en wat de kerncijfers doen.
 
-![Het dashboard: bovenaan de vier kerncijfers — Aktes met het jaartal erbij, In te dienen, Ingediend en LOA met de vermelding "alle jaren" — daaronder de staafgrafiek van het gerealiseerde volume per maand en twee ringgrafieken met de verdeling per instelling en per verantwoordelijke, en onderaan de pijplijn Dossiers per fase met In behandeling, Ingediend, Afgewerkt, Zonder gevolg en Geweigerd.](../images/dashboard-startscherm.png "Het dashboard: kerncijfers, grafieken en de pijplijn per fase"){ .volle-breedte }
+![Het dashboard: bovenaan de vier kerncijfers — Aktes met het jaartal erbij, In te dienen, Ingediend en LOA met de vermelding "alle jaren" — daaronder de twee blokken Termijn verstreken en Termijn nadert met per regel de klant, de soort termijn en de datum, en onderaan elk blok de knop om de overige te tonen; nog lager de staafgrafiek van het gerealiseerde volume per maand en twee ringgrafieken met de verdeling per instelling en per verantwoordelijke.](../images/dashboard-startscherm.png "Het dashboard: kerncijfers, aflopende termijnen en de grafieken"){ .volle-breedte }
 
 ## De vier tegels bovenaan
 
@@ -70,6 +70,8 @@ hierboven niet staat waar u denkt.
 ## De pijplijn: dossiers per fase
 
 Onder de tegels staan uw dossiers gegroepeerd per **fase**. Een fase is een groep statussen die u zelf samenstelt — bijvoorbeeld *In behandeling*, *Ingediend*, *Afgewerkt*.
+
+![De pijplijn Dossiers per fase met vier kaarten: In behandeling met 442 dossiers, Ingediend met 1800, Afgewerkt met 430 en Zonder gevolg met 1328, de laatste twee met het merkteken eindfase. Elke kaart toont het totaalbedrag en daaronder de statussen die eronder vallen, met per status het aantal dossiers en het bedrag.](../images/dashboard-pijplijn.png "Uw dossiers gegroepeerd per fase, met de statussen eronder"){ .volle-breedte }
 
 - Klik op een fase om de dossiers erachter te zien.
 - Dossiers met een status die u niet hebt ingedeeld, komen samen onder **niet ingedeeld**.

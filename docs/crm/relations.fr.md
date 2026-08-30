@@ -132,6 +132,8 @@ d'identité avant qu'il soit question d'une demande de crédit.
 
 Le titre affiche deux nombres. *Documents demandés (2/5)* signifie deux validés sur les cinq demandés.
 
+![L'onglet Documents demandés sur la fiche d'Alain Adriaenssens : en haut les boutons Ajouter un document, Inviter le client et Voir comme le client, en dessous un tableau avec les colonnes Document, Statut et Motif, avec une seule ligne — Les 3 derniers versements de salaire au statut Reçu.](../images/relaties-gevraagde-documenten-fr.png "Les pièces que vous attendez de cette relation, avec leur statut"){ .volle-breedte }
+
 - **Ajouter un document** — choisissez un type de document dans la liste et il rejoint la checklist.
 - **Inviter le client** — envoie un e-mail avec un lien vers le **portail client**,
   où cette personne dépose ses pièces. Si elle n'a pas d'adresse e-mail, vous créez uniquement le lien et le

@@ -184,6 +184,20 @@ const SCHOTEN = [
   ['journaal-logboek',          `/crm/relaties/${ID.relatie}`, p => tab(p, 'Logboek', 'Historique')],
   ['journaal-kredietdossiers',  `/crm/relaties/${ID.relatie}`, p => tab(p, 'Kredietdossiers', 'Dossiers de crédit')],
   ['relaties-fiche-journaal',   `/crm/relaties/${ID.relatie}`, p => tab(p, 'Taken', 'Tâches')],
+  // ⚠️ Deze relatie is BEWUST Alain Adriaenssens: hij draagt één gevraagd stuk in de toestand
+  // "Ontvangen" (aangeleverd, nog niet beoordeeld). Een relatie zonder stukken toont een lege lijst en
+  // bewijst niets over de statuskolom die het bijschrift beschrijft. De VERWACHT-regel hieronder valt
+  // om zodra dat stuk verdwijnt — bijvoorbeeld na een her-seed.
+  ['relaties-gevraagde-documenten', `/crm/relaties/${ID.relatie}`,
+     // ⚠️ NIET via tab(): die bouwt een VERANKERDE regex (^…$) en dit tablabel draagt een teller —
+     // "Gevraagde documenten (1)". Dan matcht er niets, en .last().click() loopt in een time-out van 30 s.
+     // Daarom werkt tab() wél voor "Taken" en niet hier: dat label heeft geen teller.
+     // ⚠️ En let op met het zelf naproeven: een losse tekst in hasText is een SUBSTRING en vindt het tabblad
+     // wel. Dan test je een andere matcher dan de code gebruikt en denk je dat je selector deugt.
+     async p => {
+       await p.getByRole('tab', { name: /Gevraagde documenten|Documents demand/i }).first().click();
+       await p.waitForTimeout(2500);
+     }],
 
   // vensters en lades
   ['borderel-borderellen',      '/commissie/borderel',            p => tab(p, 'Borderellen', 'Bordereaux')],
@@ -208,11 +222,27 @@ const SCHOTEN = [
       // ⚠️ GEEN ESCAPE. Die sloot de HELE lade, niet enkel het keuzemenu — en dan toont het beeld een dossier
       // zónder journaalpaneel, terwijl de alt-tekst juist dat paneel belooft. Het menu sluit vanzelf zodra je
       // een onderdeel kiest; dat is de enige klik die nodig is.
-      await tab(p, "Commissieschema's", "(Schémas|Barèmes) de commission");
+      // ⚠️ HIER STOND `tab(p, "Commissieschema's", …)`, en dat werkte om de VERKEERDE reden: de lade opende
+      // toevallig ÓP Commissieschema's, dus die tekst stond op de kiezerknop. Sinds CreditSoft v1.51.0 opent
+      // ze op Taken en verdween die tekst — waarna dit recept 30 seconden op niets wachtte. De knop zelf
+      // heeft een eigen klasse en die verandert niet mee met wat er toevallig in staat.
+      await p.locator('button.adm-section-switch-btn').first().click();
+      await p.waitForTimeout(1200);
       await p.locator('button.adm-menu-item')
              .filter({ hasText: /Commissieschema|Schémas de commission|Barèmes de commission/i })
              .first().click();
       await p.waitForTimeout(3000);
+  }],
+  // ⚠️ De pijplijn staat ONDERAAN het dashboard en valt buiten het schot van dashboard-startscherm — de
+  // handleiding beschrijft hem in een eigen sectie en had er geen beeld bij. Dit schot scrolt ernaartoe.
+  // Vraagt een INGEVULDE fase-indeling in tenant_demo: zonder koppeling status→fase valt alles onder
+  // "Niet ingedeeld" en toont het scherm één kaart plus een melding. Die indeling is er sinds 30/08/2026.
+  ['dashboard-pijplijn',        '/dashboard', async p => {
+      await p.evaluate(() => {
+        const h = [...document.querySelectorAll('h5')].find(e => /Dossiers per fase|Dossiers par phase/i.test(e.textContent||''));
+        h?.scrollIntoView({ block: 'start' });
+      });
+      await p.waitForTimeout(1500);
   }],
   ['voorkeuren-paneel',         '/dashboard',                     p => avatar(p)],
   ['voorkeuren',                '/dashboard',                     p => avatar(p)],
@@ -435,6 +465,10 @@ const VERWACHT = {
   'hoofdbalk':                  /Nieuwe taak|Nouvelle tâche/i,
   'menu-links':                 /Kredietinstellingen|Institutions de crédit/i,
   'documenten-valideren':       /Te valideren|À valider|Wachttijd|attente/i,
+  // Op een FASENAAM en niet op de kop: die staat er ook wanneer alles onder "Niet ingedeeld" valt.
+  'dashboard-pijplijn':         /In behandeling|En traitement|Zonder gevolg|Sans suite/i,
+  // Niet op het TABBLAD zoeken maar op de INHOUD: het tablabel staat er ook bij een lege lijst.
+  'relaties-gevraagde-documenten': /Laatste 3 loonfiches|3 derniers|Ontvangen|Reçu/i,
   'taken-overzicht':            /Vervaldatum|Échéance|Prioriteit|Priorité/i,
   'wachtwoord':                 /Huidig wachtwoord|Mot de passe actuel/i,
   'keuzelijsten':               /Nationaliteit|Nationalité|Volgorde|Ordre/i,
