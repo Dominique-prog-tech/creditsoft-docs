@@ -49,9 +49,9 @@ Avec **Nouveau dossier** en haut de la liste, vous créez un dossier vide. Le st
 
 ## Le dossier
 
-![Un dossier de crédit ouvert : en haut le bloc principal avec le statut, le numéro interne, le propriétaire et le responsable commercial sous forme de listes déroulantes, l'institution financière, l'apporteur, le montant du crédit avec la case Retenir à côté et la date d'acte, et à droite les boutons Enregistrer, Annuler, Aperçu d'impression et Supprimer. En dessous, à gauche les dates, le type de dossier, la valeur estimée et la quotité avec les cases Afficher dans le tableau de bord et Offre signée envoyée ainsi que le champ Remarques internes ; à droite les contrats et en bas les onglets Parties, Remarques et Documents demandés avec le compteur 4/4.](../images/kredietdossier-fiche-fr.png "Le dossier de crédit : tout sur une seule page"){ .volle-breedte }
+![Un dossier de crédit ouvert : en haut le bloc principal avec le statut, le numéro interne, le propriétaire et le responsable commercial sous forme de listes déroulantes, l'institution financière, l'apporteur, le montant du crédit avec la case Retenir à côté et la date d'acte, et à droite les boutons Enregistrer, Annuler, Aperçu d'impression et Supprimer. En dessous, à gauche les dates, le type de dossier, la valeur estimée et la quotité avec les cases Afficher dans le tableau de bord et Offre signée envoyée ainsi que le champ Remarques internes ; à droite les contrats et en bas les onglets Parties, Remarques et Demandés avec le compteur 4/4.](../images/kredietdossier-fiche-fr.png "Le dossier de crédit : tout sur une seule page"){ .volle-breedte }
 
-Le dossier tient sur une seule page. En haut, le bloc principal reprend les données dont vous avez le plus souvent besoin ; en dessous, les dates et le bien à gauche, les contrats à droite. En bas à droite, **Parties**, **Remarques** et **Documents demandés** figurent côte à côte sous forme d'onglets — trois listes qui partagent le même emplacement, pour que vous puissiez les atteindre toutes les trois sans faire défiler la page.
+Le dossier tient sur une seule page. En haut, le bloc principal reprend les données dont vous avez le plus souvent besoin ; en dessous, les dates et le bien à gauche, les contrats à droite. En bas à droite, **Parties**, **Remarques** et **Demandés** figurent côte à côte sous forme d'onglets — trois listes qui partagent le même emplacement, pour que vous puissiez les atteindre toutes les trois sans faire défiler la page.
 
 ### Données du dossier
 
@@ -100,7 +100,7 @@ Derrière le bouton **Garants, ASRD & réductions…**, trois listes sont réuni
 
 Le troisième onglet, à côté de *Parties* et *Remarques* : la liste des pièces que vous attendez de ce client.
 
-Le titre porte **deux chiffres** — *Documents demandés (3/6)* signifie trois validés sur les six que vous demandez. Vous voyez ainsi l'état d'avancement du dossier sans ouvrir l'onglet. Le chiffre de gauche indique ce qui est **validé**, pas ce qui est arrivé : une pièce qu'il vous reste à contrôler ne compte pas comme en ordre.
+Le titre porte **deux chiffres** — *Demandés (3/6)* signifie trois validés sur les six que vous demandez. Vous voyez ainsi l'état d'avancement du dossier sans ouvrir l'onglet. Le chiffre de gauche indique ce qui est **validé**, pas ce qui est arrivé : une pièce qu'il vous reste à contrôler ne compte pas comme en ordre.
 
 La colonne **Statut** indique en un mot où en est chaque pièce : *Demandé* (rien reçu), *Reçu* (fourni, en attente de votre contrôle), *En ordre* (approuvé) ou *À renvoyer* (refusé, avec le motif à côté).
 

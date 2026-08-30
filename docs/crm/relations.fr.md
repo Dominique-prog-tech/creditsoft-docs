@@ -75,13 +75,13 @@ Une relation est soit un **particulier**, soit une **entreprise**. Vous le chois
 **Nouveau** et un double-clic ouvrent tous deux la **fiche sur une page entière**. En haut figure un bouton de
 retour vers la liste, suivi du type et du nom.
 
-![La fiche du particulier Alain Adriaenssens sur toute la page : l'onglet Informations générales avec le type, le nom, le prénom, le téléphone, le GSM, la langue des documents et l'adresse principale à gauche, et à droite le numéro interne, la formule d'appel, l'e-mail et le site web, en dessous le large bloc Remarques et une barre avec les boutons Enregistrer, Annuler et Supprimer.](../images/relaties-fiche-fr.png "La fiche complète d'une relation, avec les données générales et les remarques"){ .volle-breedte }
+![La fiche du particulier Alain Adriaenssens sur toute la page : l'onglet Général avec le type, le nom, le prénom, le téléphone, le GSM, la langue des documents et l'adresse principale à gauche, et à droite le numéro interne, la formule d'appel, l'e-mail et le site web, en dessous le large bloc Remarques et une barre avec les boutons Enregistrer, Annuler et Supprimer.](../images/relaties-fiche-fr.png "La fiche complète d'une relation, avec les données générales et les remarques"){ .volle-breedte }
 
 Les données de la relation figurent sur **deux onglets**, à côté desquels se trouvent les onglets du
 [journal](../journaal/overzicht.md). Chacun des deux se termine par un bloc **Remarques** — il s'agit chaque
 fois du même champ — et la barre de boutons reste visible en bas.
 
-### Onglet « Informations générales » (particulier)
+### Onglet « Général » (particulier)
 
 - **Nom** (obligatoire) et **prénom**
 - **Langue des documents** (obligatoire) — voir ci-dessous
@@ -90,7 +90,7 @@ fois du même champ — et la barre de boutons reste visible en bas.
 - **Formule d'appel** et **N° interne**
 - **Adresse principale** — rue, numéro, boîte, code postal, commune, pays
 
-### Onglet « Informations complémentaires » (particulier)
+### Onglet « Complémentaire » (particulier)
 
 Tout ce dont vous avez besoin pour un dossier de crédit — mais pas tout à l'écran en même temps.
 
@@ -126,13 +126,13 @@ Ce champ est **obligatoire**. Si vous le laissez vide, le programme ne sait pas 
 
 ## Documents demandés
 
-La fiche comporte l'onglet **Documents demandés** : les pièces que vous attendez de cette personne. Vous
+La fiche comporte l'onglet **Demandés** : les pièces que vous attendez de cette personne. Vous
 n'avez **pas besoin d'un dossier** pour cela — un prospect peut fournir ses fiches de paie et sa carte
 d'identité avant qu'il soit question d'une demande de crédit.
 
-Le titre affiche deux nombres. *Documents demandés (2/5)* signifie deux validés sur les cinq demandés.
+Le titre affiche deux nombres. *Demandés (2/5)* signifie deux validés sur les cinq demandés.
 
-![L'onglet Documents demandés sur la fiche d'Alain Adriaenssens : en haut les boutons Ajouter un document, Inviter le client et Voir comme le client, en dessous un tableau avec les colonnes Document, Statut et Motif, avec une seule ligne — Les 3 derniers versements de salaire au statut Reçu.](../images/relaties-gevraagde-documenten-fr.png "Les pièces que vous attendez de cette relation, avec leur statut"){ .volle-breedte }
+![L'onglet Demandés sur la fiche d'Alain Adriaenssens : en haut les boutons Ajouter un document, Inviter le client et Voir comme le client, en dessous un tableau avec les colonnes Document, Statut et Motif, avec une seule ligne — Les 3 derniers versements de salaire au statut Reçu.](../images/relaties-gevraagde-documenten-fr.png "Les pièces que vous attendez de cette relation, avec leur statut"){ .volle-breedte }
 
 - **Ajouter un document** — choisissez un type de document dans la liste et il rejoint la checklist. La
   liste est groupée par **catégorie**, avec le nom de la catégorie en en-tête. C'est nécessaire, car une

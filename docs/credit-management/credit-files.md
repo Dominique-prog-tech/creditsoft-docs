@@ -49,9 +49,9 @@ Met **Nieuw dossier** bovenaan de lijst maakt u een leeg dossier aan. Welke stat
 
 ## Het dossier
 
-![Een geopend kredietdossier: bovenaan de kopkaart met status, intern nummer, eigenaar en sales als keuzelijst, de financiële instelling, de aanbrenger, het kredietbedrag met het vinkje inhouden ernaast en de datum akte, met rechts de knoppen Opslaan, Annuleren, Afdruk overzicht en Verwijderen. Daaronder links de datums, het type dossier, de schattingswaarde en de quotiteit met de vinkjes Weergeven in dashboard en Getekend aanbod verzonden en het veld Interne opmerkingen; rechts de contracten en onderaan de tabbladen Partijen, Opmerkingen en Gevraagde documenten met de teller 4/4.](../images/kredietdossier-fiche.png "Het kredietdossier: alles op één pagina"){ .volle-breedte }
+![Een geopend kredietdossier: bovenaan de kopkaart met status, intern nummer, eigenaar en sales als keuzelijst, de financiële instelling, de aanbrenger, het kredietbedrag met het vinkje inhouden ernaast en de datum akte, met rechts de knoppen Opslaan, Annuleren, Afdruk overzicht en Verwijderen. Daaronder links de datums, het type dossier, de schattingswaarde en de quotiteit met de vinkjes Weergeven in dashboard en Getekend aanbod verzonden en het veld Interne opmerkingen; rechts de contracten en onderaan de tabbladen Partijen, Opmerkingen en Gevraagd met de teller 4/4.](../images/kredietdossier-fiche.png "Het kredietdossier: alles op één pagina"){ .volle-breedte }
 
-Het dossier is één pagina. Bovenaan staat het kernblok met de gegevens die u het vaakst nodig hebt; daaronder staan links de datums en het pand, rechts de contracten. Onderaan rechts staan **Partijen**, **Opmerkingen** en **Gevraagde documenten** naast elkaar als tabbladen — drie lijsten die dezelfde plaats delen, zodat u niet hoeft te scrollen om ze alle drie te bereiken.
+Het dossier is één pagina. Bovenaan staat het kernblok met de gegevens die u het vaakst nodig hebt; daaronder staan links de datums en het pand, rechts de contracten. Onderaan rechts staan **Partijen**, **Opmerkingen** en **Gevraagd** naast elkaar als tabbladen — drie lijsten die dezelfde plaats delen, zodat u niet hoeft te scrollen om ze alle drie te bereiken.
 
 ### Dossiergegevens
 
@@ -100,7 +100,7 @@ Achter de knop **Borgen, SSV & reducties…** vindt u drie lijsten bij elkaar: b
 
 Het derde tabblad, naast *Partijen* en *Opmerkingen*: de lijst van stukken die u van deze klant verwacht.
 
-In de titel staan **twee getallen** — *Gevraagde documenten (3/6)* betekent drie gevalideerd van de zes die u vraagt. Zo ziet u hoe ver dit dossier staat zonder het tabblad te openen. Links staat wat **gevalideerd** is, niet wat binnen is: een stuk dat u nog moet nakijken telt niet mee als in orde.
+In de titel staan **twee getallen** — *Gevraagd (3/6)* betekent drie gevalideerd van de zes die u vraagt. Zo ziet u hoe ver dit dossier staat zonder het tabblad te openen. Links staat wat **gevalideerd** is, niet wat binnen is: een stuk dat u nog moet nakijken telt niet mee als in orde.
 
 De kolom **Status** zegt in één woord waar elk stuk staat: *Gevraagd* (nog niets binnen), *Ontvangen* (aangeleverd, wacht op u), *In orde* (goedgekeurd) of *Opnieuw sturen* (afgekeurd, met de reden ernaast).
 

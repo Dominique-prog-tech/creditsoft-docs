@@ -72,13 +72,13 @@ Een relatie is ofwel een **particulier** ofwel een **bedrijf**. Dat kiest u bove
 **Nieuw** en een dubbelklik openen allebei de **fiche als een volledige pagina**. Bovenaan staat een
 terugkeerknop naar de lijst, met daarnaast de soort en de naam.
 
-![De fiche van particulier Alain Adriaenssens over de volle pagina: het tabblad Algemene informatie met type, naam, voornaam, telefoon, gsm, documenttaal en het hoofdadres links, en rechts het interne nummer, de aanspreking, e-mail en website, daaronder het brede blok Opmerkingen en een balk met de knoppen Opslaan, Annuleren en Verwijderen.](../images/relaties-fiche.png "De volledige fiche van een relatie, met de algemene gegevens en de opmerkingen"){ .volle-breedte }
+![De fiche van particulier Alain Adriaenssens over de volle pagina: het tabblad Algemeen met type, naam, voornaam, telefoon, gsm, documenttaal en het hoofdadres links, en rechts het interne nummer, de aanspreking, e-mail en website, daaronder het brede blok Opmerkingen en een balk met de knoppen Opslaan, Annuleren en Verwijderen.](../images/relaties-fiche.png "De volledige fiche van een relatie, met de algemene gegevens en de opmerkingen"){ .volle-breedte }
 
 De gegevens van de relatie staan op **twee tabbladen**, met daarnaast de tabbladen van het
 [journaal](../journaal/overzicht.md). Elk van de twee sluit af met een blok **Opmerkingen** — het is telkens
 hetzelfde veld — en onderaan blijft de knoppenbalk in beeld.
 
-### Tabblad "Algemene informatie" (particulier)
+### Tabblad "Algemeen" (particulier)
 
 - **Naam** (verplicht) en **voornaam**
 - **Documenttaal** (verplicht) — zie hieronder
@@ -87,7 +87,7 @@ hetzelfde veld — en onderaan blijft de knoppenbalk in beeld.
 - **Aanspreking** en **Intern nr.**
 - **Hoofdadres** — straat, huisnummer, bus, postcode, gemeente, land
 
-### Tabblad "Bijkomende informatie" (particulier)
+### Tabblad "Bijkomend" (particulier)
 
 Alles wat u voor een kredietdossier nodig hebt — maar niet alles tegelijk in beeld.
 
@@ -123,14 +123,14 @@ Dit veld is **verplicht**. Laat u het leeg, dan weet het programma niet welke sj
 
 ## Gevraagde documenten
 
-Op de fiche staat het tabblad **Gevraagde documenten**: de stukken die u van deze persoon verwacht. U hebt
+Op de fiche staat het tabblad **Gevraagd**: de stukken die u van deze persoon verwacht. U hebt
 daarvoor **geen dossier nodig** — een prospect kan zijn loonbrieven en zijn identiteitskaart aanleveren
 voordat er sprake is van een kredietaanvraag.
 
-In de titel staan twee getallen. *Gevraagde documenten (2/5)* betekent twee gevalideerd van de vijf die u
+In de titel staan twee getallen. *Gevraagd (2/5)* betekent twee gevalideerd van de vijf die u
 vraagt.
 
-![Het tabblad Gevraagde documenten op de fiche van Alain Adriaenssens: bovenaan de knoppen Document toevoegen, Klant uitnodigen en Bekijken als klant, daaronder een tabel met de kolommen Document, Status en Reden, met één regel — Laatste 3 loonfiches met de status Ontvangen.](../images/relaties-gevraagde-documenten.png "De stukken die u van deze relatie verwacht, met hun status"){ .volle-breedte }
+![Het tabblad Gevraagd op de fiche van Alain Adriaenssens: bovenaan de knoppen Document toevoegen, Klant uitnodigen en Bekijken als klant, daaronder een tabel met de kolommen Document, Status en Reden, met één regel — Laatste 3 loonfiches met de status Ontvangen.](../images/relaties-gevraagde-documenten.png "De stukken die u van deze relatie verwacht, met hun status"){ .volle-breedte }
 
 - **Document toevoegen** — kies een documenttype uit de lijst en het komt op de checklist. De lijst is
   gegroepeerd per **categorie**, met de naam van de categorie als kop erboven. Dat is nodig omdat
