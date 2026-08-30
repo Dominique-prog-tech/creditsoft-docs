@@ -159,12 +159,15 @@ const SCHOTEN = [
   // om zodra dat stuk verdwijnt — bijvoorbeeld na een her-seed.
   ['relaties-gevraagde-documenten', `/crm/relaties/${ID.relatie}`,
      // ⚠️ NIET via tab(): die bouwt een VERANKERDE regex (^…$) en dit tablabel draagt een teller —
-     // "Gevraagde documenten (1)". Dan matcht er niets, en .last().click() loopt in een time-out van 30 s.
+     // "Gevraagd (1)". Dan matcht er niets, en .last().click() loopt in een time-out van 30 s.
      // Daarom werkt tab() wél voor "Taken" en niet hier: dat label heeft geen teller.
      // ⚠️ En let op met het zelf naproeven: een losse tekst in hasText is een SUBSTRING en vindt het tabblad
      // wel. Dan test je een andere matcher dan de code gebruikt en denk je dat je selector deugt.
+     // ⚠️ HET LABEL IS OP 30/08/2026 HERNOEMD: "Gevraagde documenten" → "Gevraagd" (FR "Demandés"), omdat
+     // de tabrij van een relatiefiche niet paste. Dit recept liep daarna in precies die time-out van 30 s
+     // waar de opmerking hierboven voor waarschuwt — de generator ving het, twee beelden vielen uit.
      async p => {
-       await p.getByRole('tab', { name: /Gevraagde documenten|Documents demand/i }).first().click();
+       await p.getByRole('tab', { name: /^(Gevraagd|Demandés)\s*\(/i }).first().click();
        await p.waitForTimeout(2500);
      }],
 
