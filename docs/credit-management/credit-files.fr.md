@@ -27,7 +27,10 @@ Via le **sélecteur de colonnes**, vous en ajoutez cinq autres : *Crédit demand
 
 ### Créer un dossier
 
-Avec **Nouveau dossier** en haut de la liste, vous créez un dossier vide. Il reçoit d'emblée le premier statut de dossier de votre bureau et s'ouvre comme fiche, le curseur sur **Statut** — vous commencez donc là où commencent la plupart des dossiers.
+Avec **Nouveau dossier** en haut de la liste, vous créez un dossier vide. Le statut de départ varie d'un bureau à l'autre : CreditSoft le demande donc une fois plutôt que de le deviner. La liste ne propose que les statuts **en usage** ; ceux que vous avez retirés n'y figurent pas.
+
+!!! tip "Configurez-le une fois et la question disparaît"
+    Si vous fixez le statut de départ sous **Administration → Phases du tableau de bord**, il n'est plus demandé et un nouveau dossier s'ouvre directement comme fiche.
 
 !!! note "Configurez d'abord vos statuts"
     Si vous n'avez pas encore configuré de statuts de dossier, CreditSoft le signale et ne crée pas de dossier. Configurez-les d'abord dans **Listes de choix**.

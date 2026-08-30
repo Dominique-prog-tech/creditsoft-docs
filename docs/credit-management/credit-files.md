@@ -27,7 +27,10 @@ Via **Kolommen kiezen** zet u er nog vijf bij: *Gevraagd krediet*, *Totale inves
 
 ### Een dossier aanmaken
 
-Met **Nieuw dossier** bovenaan de lijst maakt u een leeg dossier aan. Het krijgt meteen de eerste dossierstatus van uw kantoor en opent als fiche, met de cursor op **Status** — zo begint u waar de meeste dossiers beginnen.
+Met **Nieuw dossier** bovenaan de lijst maakt u een leeg dossier aan. Welke status het begin is, verschilt per kantoor, dus vraagt CreditSoft dat één keer in plaats van te gokken. De lijst toont alleen statussen die **in gebruik** zijn: wat u hebt afgevoerd, komt er niet in.
+
+!!! tip "Eén keer instellen en de vraag verdwijnt"
+    Legt u de beginstatus vast bij **Platformbeheer → Dashboard-fases**, dan wordt ze niet meer gevraagd en opent een nieuw dossier meteen als fiche.
 
 !!! note "Eerst uw statussen instellen"
     Hebt u nog geen dossierstatussen ingesteld, dan meldt CreditSoft dat en maakt hij geen dossier aan. Stel ze eerst in bij **Keuzelijsten**.

@@ -20,7 +20,7 @@ Les tuiles colorées comptent des **contrats**, pas des dossiers. Chaque tuile c
 Vous indiquez uniquement **ce que signifie un statut de contrat** : *réalisé*, *à introduire* ou *introduit*. Cela se fait sous [Administration → Phases du tableau de bord](../beheer/dashboard-fases.md), en bas, sous *Statuts de contrat*. Les statuts sans signification ne comptent nulle part.
 
 !!! info "Pourquoi une seule tuile suit-elle l'année ?"
-    Des flèches au-dessus des tuiles permettent de changer d'année. Seule la tuile **Actes** suit cette année : elle compte sur la date de l'acte, et cette date est connue. Les trois autres comptent tout ce qui a jamais été encodé, car les dates de ces contrats ne sont pas toutes renseignées. Le libellé sous chaque tuile indique lui-même la période concernée — *2026* ou *toutes les années* — pour que vous ne lisiez pas quatre chiffres comme quatre chiffres annuels.
+    Des flèches au-dessus des tuiles permettent de changer d'année. Seule la tuile **Actes** suit cette année : elle compte sur la date de l'acte, et cette date est connue. Les trois autres comptent tout ce qui a jamais été encodé, car les dates de ces contrats ne sont pas toutes renseignées. Le libellé sous chaque tuile indique lui-même la période concernée — *2026* ou *toutes les années* — pour que vous ne lisiez pas quatre chiffres comme quatre chiffres annuels. Survolez les flèches et l'information s'y trouve aussi : l'année s'applique à *Actes* et aux trois graphiques.
 
 !!! tip "Des tirets au lieu de chiffres ?"
     C'est qu'aucun statut de contrat ne porte encore de signification. Vous voyez un tiret et non un zéro, car zéro signifierait qu'il n'y a réellement rien à compter. Sous les tuiles, une phrase vous mène au réglage.
@@ -59,8 +59,9 @@ aboutis.
   résultat et lesquels décrochent.
 - **Volume par institution** — un graphique en anneau répartissant le volume entre les institutions de
   crédit. Les dossiers sans institution sont regroupés sous *Inconnu*.
-- **Volume par responsable** — la même répartition, mais par collaborateur. Ici aussi, *Inconnu* recueille
-  les dossiers sans responsable.
+- **Volume par responsable** — la même répartition, mais par collaborateur. Les dossiers sans personne
+  attribuée sont regroupés sous *Sans responsable*. Si c'est la plus grande part, ce n'est pas un problème
+  technique mais du travail : personne n'a encore été désigné.
 
 S'il n'y a rien à afficher pour l'année choisie, la mention *« Aucune donnée. »* remplace l'anneau vide. Un
 graphique qui reste vide alors que les tuiles affichent des chiffres signifie presque toujours que l'année

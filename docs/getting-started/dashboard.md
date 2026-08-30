@@ -20,7 +20,7 @@ De gekleurde tegels tellen **contracten**, niet dossiers. Elke tegel is een comb
 U geeft alleen aan **wat een contractstatus betekent**: *gerealiseerd*, *in te dienen* of *ingediend*. Dat doet u onder [Platformbeheer → Dashboard-fases](../beheer/dashboard-fases.md), onderaan bij *Contractstatussen*. Statussen zonder betekenis tellen nergens mee.
 
 !!! info "Waarom telt maar één tegel per jaar?"
-    Boven de tegels staan pijltjes om van jaar te wisselen. Alleen **Aktes** volgt dat jaar: die telt op de datum van de akte, en die datum is bekend. De drie andere tegels tellen alles wat er ooit is ingegeven, omdat de datums van die contracten nog niet allemaal ingevuld zijn. Het label onder elke tegel zegt zelf over welke periode ze gaat — *2026* of *alle jaren* — zodat u vier cijfers niet per ongeluk als vier jaarcijfers leest.
+    Boven de tegels staan pijltjes om van jaar te wisselen. Alleen **Aktes** volgt dat jaar: die telt op de datum van de akte, en die datum is bekend. De drie andere tegels tellen alles wat er ooit is ingegeven, omdat de datums van die contracten nog niet allemaal ingevuld zijn. Het label onder elke tegel zegt zelf over welke periode ze gaat — *2026* of *alle jaren* — zodat u vier cijfers niet per ongeluk als vier jaarcijfers leest. Wijst u de pijltjes aan, dan staat het er ook: het jaar geldt voor *Aktes* en voor de drie grafieken.
 
 !!! tip "Staan er streepjes in plaats van cijfers?"
     Dan draagt nog geen enkele contractstatus een betekenis. U ziet een streepje en geen nul, want nul zou betekenen dat er echt niets te tellen valt. Onder de tegels staat een zin die u naar de instelling brengt.
@@ -58,8 +58,9 @@ bovenaan kiest — en over het **gerealiseerde volume**, dus over kredieten die 
   achterblijven.
 - **Volume per instelling** — een ringgrafiek met de verdeling over de kredietinstellingen. Dossiers waar
   geen instelling op staat, komen samen onder *Onbekend*.
-- **Volume per verantwoordelijke** — dezelfde verdeling, maar per medewerker. Ook hier vangt *Onbekend* de
-  dossiers zonder verantwoordelijke op.
+- **Volume per verantwoordelijke** — dezelfde verdeling, maar per medewerker. Dossiers waar niemand op
+  staat, komen samen onder *Geen eigenaar*. Is dat het grootste stuk, dan is dat geen storing maar werk: er
+  is nog niemand aangeduid.
 
 Is er in het gekozen jaar niets te tonen, dan staat er *"Geen gegevens."* in plaats van een lege ring. Een
 grafiek die leegblijft terwijl de tegels wél cijfers tonen, betekent bijna altijd dat het jaartal
