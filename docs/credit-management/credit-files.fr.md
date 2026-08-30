@@ -106,9 +106,11 @@ La colonne **Statut** indique en un mot où en est chaque pièce : *Demandé* (r
 - **Approuver** — la pièce est en ordre et compte dans le compteur en haut.
 - **Refuser** — vous indiquez un motif. Il est obligatoire : votre client le lit dans son portail et sait ainsi ce qui ne va pas. Par défaut, un e-mail part également avec un **nouveau lien vers le portail**, afin qu'il puisse fournir à nouveau immédiatement. Ce qu'il avait envoyé est conservé.
 
+Si finalement vous ne demandez pas une pièce, **Supprimer** dans cette même fenêtre la retire de la liste. Elle part à la [corbeille](../administration/recycle-bin.md) et n'est donc pas définitivement effacée ; le compteur en haut en décompte une aussitôt.
+
 ### Le journal de ce dossier
 
-Le bouton **Journal** en haut à droite, sur la ligne du numéro de dossier, ouvre un panneau à sept onglets : **Tâches**, **Notes**, **Appels**, **Pièces jointes**, **Courrier**, **Schémas de commission** et l'**Historique** — le tout pour ce dossier.
+Le bouton **Journal** en haut à droite, sur la ligne du numéro de dossier, ouvre un panneau à sept onglets : **Tâches**, **Notes**, **Appels**, **Pièces jointes**, **Schémas de commission**, **Courrier** et l'**Historique** — le tout pour ce dossier. Le panneau s'ouvre sur **Tâches** : ce qu'il reste à faire sur ce dossier.
 
 #### Schémas de commission
 

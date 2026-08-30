@@ -39,11 +39,13 @@ disparaît de ces blocs. Un dossier dont le statut n'est classé nulle part y re
 qu'un dossier est terminé.
 
 !!! tip "L'horizon, c'est vous qui le choisissez"
-    Quatorze jours par défaut. Vous le modifiez sous **Gestion &rarr; Phases du tableau de bord**.
+    Quatorze jours par défaut. Vous le modifiez sous **Administration &rarr; Phases du tableau de bord**.
 
 **Les délais dépassés restent toujours visibles**, même anciens. C'est voulu : un délai échu depuis des mois sur
 un dossier encore en cours n'est pas du bruit mais une trouvaille — soit le statut est erroné, soit le dossier
-est à l'arrêt. Chaque bloc affiche les huit plus récents et indique combien il en reste.
+est à l'arrêt. Chaque bloc affiche les huit plus récents. S'il y en a davantage, cliquez sur
+**Afficher les … autres** : la liste complète se déplie dans le bloc même, avec sa propre barre de
+défilement, pour que le reste du tableau de bord ne bouge pas. **En afficher moins** la replie.
 
 Rien à signaler ? Le bloc le dit, au lieu de rester vide.
 
@@ -70,6 +72,10 @@ Sous les tuiles, vos dossiers sont regroupés par **phase**. Une phase est un gr
 
 - Cliquez sur une phase pour voir les dossiers concernés.
 - Les dossiers dont le statut n'a pas été classé sont regroupés sous **non classés**.
+
+Si **aucun** statut n'est encore lié à une phase, tous vos dossiers figurent sous *non classés* et le
+tableau de bord le signale en une phrase, avec un bouton **Configurer les phases**. Rien ne manque alors
+à vos dossiers — seule la répartition.
 
 !!! tip "Quelque chose figure dans la mauvaise colonne ?"
     Cela tient alors à la répartition et non au dossier. Un dossier suit la phase de son statut ; si vous déplacez un statut vers une autre phase, tous les dossiers portant ce statut suivent. Vous ajustez cela sous **Administration → Phases du tableau de bord**.

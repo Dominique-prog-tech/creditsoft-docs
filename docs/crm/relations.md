@@ -121,10 +121,32 @@ Dit veld is **verplicht**. Laat u het leeg, dan weet het programma niet welke sj
     ingevuld**. Maakt u de gemeente leeg — met het kruisje, of met **Backspace** op de geselecteerde tekst —
     dan wordt de postcode mee leeggemaakt.
 
+## Gevraagde documenten
+
+Op de fiche staat het tabblad **Gevraagde documenten**: de stukken die u van deze persoon verwacht. U hebt
+daarvoor **geen dossier nodig** — een prospect kan zijn loonbrieven en zijn identiteitskaart aanleveren
+voordat er sprake is van een kredietaanvraag.
+
+In de titel staan twee getallen. *Gevraagde documenten (2/5)* betekent twee gevalideerd van de vijf die u
+vraagt.
+
+- **Document toevoegen** — kies een documenttype uit de lijst en het komt op de checklist.
+- **Klant uitnodigen** — stuurt een e-mail met een link naar het **klantenportaal**,
+  waar deze persoon zijn stukken oplaadt. Heeft ze geen e-mailadres, dan maakt u enkel de link en bezorgt u
+  die zelf.
+- **Bekijken als klant** — opent in een nieuw tabblad wat uw klant te zien krijgt. Uw fiche blijft
+  openstaan, zodat u beide naast elkaar kunt leggen.
+
+**Dubbelklik** een regel om ze te beoordelen: u ziet de bestanden die binnenkwamen en keurt ze goed of af,
+net als [op een kredietdossier](../credit-management/credit-files.md#gevraagde-documenten). Vraagt u een stuk
+toch niet, dan haalt **Verwijderen** het van de lijst — het verhuist naar de
+[prullenbak](../administration/recycle-bin.md) en is niet definitief weg.
+
 ## Opslaan
 
 De knoppenbalk onderaan blijft in beeld terwijl u door de fiche scrolt. De knoppen staan rechts:
-**Opslaan**, **Annuleren** en **Verwijderen**.
+**Opslaan**, **Annuleren** en **Nieuw kredietdossier**, met **Verwijderen** op afstand aan het einde —
+die staat er los van, want u klikt hem zelden en per ongeluk nooit graag.
 
 Bij het opslaan worden **ontbrekende verplichte velden** en een **ongeldig e-mailadres** gemeld. Het
 e-mailadres wordt gecontroleerd zolang er iets in het veld staat, ook als u het niet zelf hebt gewijzigd.

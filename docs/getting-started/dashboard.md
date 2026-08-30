@@ -39,11 +39,13 @@ uit deze blokken. Een dossier waarvan de status nergens is ingedeeld blijft er w
 geen bewijs dat een dossier af is.
 
 !!! tip "Hoever het vooruitkijkt, kiest u zelf"
-    Standaard veertien dagen. U verzet dat bij **Beheer &rarr; Dashboard-fases**.
+    Standaard veertien dagen. U verzet dat bij **Platformbeheer &rarr; Dashboard-fases**.
 
 **Verstreken termijnen blijven altijd staan**, ook oudere. Dat is met opzet: een termijn die maanden geleden
 verliep op een dossier dat nog loopt, is geen ruis maar een vondst — ofwel klopt de status niet, ofwel ligt het
-dossier stil. Elk blok toont de acht meest recente en zegt hoeveel er nog achter zitten.
+dossier stil. Elk blok toont de acht meest recente. Zitten er meer achter, dan klikt u op
+**Toon de … andere**: de volledige lijst klapt open in het blok zelf, met een eigen schuifbalk zodat de
+rest van het dashboard op zijn plaats blijft. **Toon er minder** klapt ze weer dicht.
 
 Staat er niets? Dan zegt het blok dat, in plaats van leeg te blijven.
 
@@ -70,6 +72,10 @@ Onder de tegels staan uw dossiers gegroepeerd per **fase**. Een fase is een groe
 
 - Klik op een fase om de dossiers erachter te zien.
 - Dossiers met een status die u niet hebt ingedeeld, komen samen onder **niet ingedeeld**.
+
+Hebt u **nog geen enkele** status aan een fase gekoppeld, dan staan al uw dossiers onder *niet ingedeeld*
+en zegt het dashboard dat met één zin en een knop **Fases instellen**. Er ontbreekt dan niets aan uw
+dossiers — enkel de indeling.
 
 !!! tip "Staat er iets in de verkeerde kolom?"
     Dan ligt dat aan de indeling en niet aan het dossier. Een dossier volgt de fase van zijn status; verhuist u een status naar een andere fase, dan verhuizen alle dossiers met die status mee. U past dat aan onder **Platformbeheer → Dashboard-fases**.

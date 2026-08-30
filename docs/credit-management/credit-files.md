@@ -106,9 +106,11 @@ De kolom **Status** zegt in één woord waar elk stuk staat: *Gevraagd* (nog nie
 - **Goedkeuren** — het stuk staat in orde en telt mee in de teller bovenaan.
 - **Afkeuren** — u geeft een reden op. Die is verplicht: uw klant leest ze in zijn portaal en weet zo wat er scheelt. Standaard vertrekt er ook een e-mail met een **nieuwe portaallink**, zodat hij meteen opnieuw kan aanleveren. Wat hij eerder stuurde, blijft bewaard.
 
+Vraagt u een stuk toch niet, dan haalt **Verwijderen** in datzelfde venster het van de lijst. Het verhuist naar de [prullenbak](../administration/recycle-bin.md) en is dus niet definitief weg; de teller bovenaan telt er meteen één minder.
+
 ### Het journaal van dit dossier
 
-De knop **Journaal** rechtsboven, op de regel met het dossiernummer, opent een paneel met zeven tabbladen: **Taken**, **Notities**, **Gesprekken**, **Bijlagen**, **Mailverkeer**, **Commissieschema's** en het **Logboek** — alles van dít dossier.
+De knop **Journaal** rechtsboven, op de regel met het dossiernummer, opent een paneel met zeven tabbladen: **Taken**, **Notities**, **Gesprekken**, **Bijlagen**, **Commissieschema's**, **Mailverkeer** en het **Logboek** — alles van dít dossier. Het paneel opent op **Taken**: wat er nog te doen is bij dit dossier.
 
 #### Commissieschema's
 

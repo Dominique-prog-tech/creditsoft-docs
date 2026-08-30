@@ -124,10 +124,31 @@ Ce champ est **obligatoire**. Si vous le laissez vide, le programme ne sait pas 
     postal, la **commune est toujours complétée**. Si vous videz la commune — avec la croix ou avec **Retour
     arrière** sur le texte sélectionné — le code postal est vidé lui aussi.
 
+## Documents demandés
+
+La fiche comporte l'onglet **Documents demandés** : les pièces que vous attendez de cette personne. Vous
+n'avez **pas besoin d'un dossier** pour cela — un prospect peut fournir ses fiches de paie et sa carte
+d'identité avant qu'il soit question d'une demande de crédit.
+
+Le titre affiche deux nombres. *Documents demandés (2/5)* signifie deux validés sur les cinq demandés.
+
+- **Ajouter un document** — choisissez un type de document dans la liste et il rejoint la checklist.
+- **Inviter le client** — envoie un e-mail avec un lien vers le **portail client**,
+  où cette personne dépose ses pièces. Si elle n'a pas d'adresse e-mail, vous créez uniquement le lien et le
+  transmettez vous-même.
+- **Voir comme le client** — ouvre dans un nouvel onglet ce que votre client voit. Votre fiche reste
+  ouverte, ce qui vous permet de comparer les deux côte à côte.
+
+**Double-cliquez** une ligne pour l'évaluer : vous voyez les fichiers reçus et les approuvez ou les refusez,
+comme [sur un dossier de crédit](../credit-management/credit-files.md). Si finalement
+vous ne demandez pas une pièce, **Supprimer** la retire de la liste — elle part à la
+[corbeille](../administration/recycle-bin.md) et n'est pas définitivement effacée.
+
 ## Enregistrer
 
 La barre de boutons du bas reste visible pendant que vous faites défiler la fiche. Les boutons se trouvent à
-droite : **Enregistrer**, **Annuler** et **Supprimer**.
+droite : **Enregistrer**, **Annuler** et **Nouveau dossier de crédit**, avec **Supprimer** à distance, tout
+au bout — il est mis à l'écart, car vous l'utilisez rarement et jamais volontiers par erreur.
 
 À l'enregistrement, les **champs obligatoires manquants** et une **adresse e-mail invalide** sont signalés.
 L'adresse e-mail est contrôlée dès qu'il y a quelque chose dans le champ, même si vous ne l'avez pas modifiée
