@@ -4,6 +4,39 @@ Le tableau de bord est votre écran d'accueil. D'un coup d'œil, vous voyez comb
 
 ![Le tableau de bord : en haut les quatre indicateurs — Actes avec l'année, À introduire, Introduit et LOA avec la mention « toutes les années » — en dessous les deux blocs Délai dépassé et Délai proche avec par ligne le client, le type de délai et la date, et au bas de chaque bloc le bouton pour afficher les autres ; plus bas le graphique en barres du volume réalisé par mois et deux graphiques en anneau répartissant le volume par institution et par responsable.](../images/dashboard-startscherm-fr.png "Le tableau de bord : indicateurs, délais qui arrivent à échéance et graphiques"){ .volle-breedte }
 
+## Pour commencer
+
+Si votre environnement contient encore des **données d'exemple**, le bloc *Pour commencer* s'affiche en haut
+du tableau de bord. Il vous indique les trois réglages qui déterminent le reste, avec un compteur indiquant
+combien vous en avez faits.
+
+![Le bloc Pour commencer en haut du tableau de bord : à gauche le titre avec l'explication que les données sont des exemples, à droite un anneau affichant le compteur 0 sur 3, en dessous trois cartes côte à côte — Complétez votre Fiche d'entreprise, Configurez vos Adresses d'envoi et Ajoutez vos Utilisateurs — chacune avec une courte explication et un bouton Ouvrir, et en bas à droite le lien Masquer. En haut, dans la barre, figure le marqueur jaune Données d'exemple.](../images/dashboard-aan-de-slag-fr.png "Les trois réglages à faire en priorité, avec le compteur qui suit votre travail"){ .volle-breedte }
+
+| Étape | Pourquoi celle-ci d'abord |
+|---|---|
+| **Complétez votre Fiche d'entreprise** | Votre nom, votre adresse et votre logo apparaissent sur chaque lettre et chaque document que vous envoyez |
+| **Configurez vos Adresses d'envoi** | Sans adresse d'envoi, aucun e-mail ne part de votre environnement |
+| **Ajoutez vos Utilisateurs** | Ils apparaîtront ensuite comme propriétaire d'un dossier et comme responsable d'une tâche |
+
+Cliquez sur **Ouvrir** à côté d'une étape et vous arrivez sur le bon écran.
+
+**Vous n'avez aucune case à cocher.** Une étape se coche d'elle-même dès que vous y avez modifié quelque
+chose. Le compteur regarde ce que *vous* avez fait, pas ce qui est présent : votre environnement arrive avec
+un nom d'exemple, une adresse d'envoi d'exemple et une liste de collaborateurs d'exemple, et ceux-là ne
+comptent pas.
+
+!!! tip "Vous pouvez vous exercer librement"
+    Les dossiers, relations et tâches que vous voyez sont fictifs. Vous pouvez les modifier et les supprimer
+    sans rien casser. Aucun e-mail ne part non plus de cet environnement vers l'extérieur tant que les données
+    d'exemple sont présentes.
+
+Si vous ne souhaitez pas voir le bloc, cliquez sur **Masquer**. Ce choix ne vaut que pour vous et reste
+conservé ; vos collègues continuent de voir le bloc. Une fois les trois étapes faites, il disparaît de
+lui-même.
+
+Faites-nous savoir quand les données d'exemple peuvent être supprimées. Ce que vous avez encodé vous-même
+sera conservé, et l'envoi d'e-mails est activé à ce moment-là.
+
 ## Les quatre tuiles du haut
 
 Les tuiles colorées comptent des **contrats**, pas des dossiers. Chaque tuile combine deux éléments : ce que **signifie** un statut de contrat, et de quelle **catégorie de produit** il s'agit.

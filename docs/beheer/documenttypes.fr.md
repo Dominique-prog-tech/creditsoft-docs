@@ -15,7 +15,7 @@ En bas à gauche, cliquez sur **Administration**, puis sur la tuile **Types de d
 | **Description (NL/FR)** | Telle qu'elle apparaît sur la check-list d'un dossier |
 | **Indication (NL)** et **Indication (FR)** | Une brève précision pour votre collaborateur ou le client — par exemple « les trois derniers mois ». Dans les deux langues, car votre client la lit dans la sienne |
 | **Afficher l'indication** | Si cette case est décochée, l'indication est conservée mais n'est affichée nulle part — pas même au client dans le portail. Dans la liste, la case vous indique si l'indication est visible |
-| **Catégorie** | Regroupe les types sur la check-list, pour qu'une longue liste reste lisible |
+| **Catégorie** | Regroupe les types dans la liste de choix où votre collaborateur demande une pièce : le nom de la catégorie apparaît en en-tête. Sans catégorie, des types de même nom se suivent sans que personne ne voie lequel il lui faut |
 
 L'**indication** en vaut la peine : elle figure là où quelqu'un hésite, et évite un appel téléphonique.
 

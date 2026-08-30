@@ -15,7 +15,7 @@ Klik links onderaan op **Platformbeheer** en dan op de tegel **Documenttypes**, 
 | **Omschrijving (NL/FR)** | Zoals het op de checklist van een dossier verschijnt |
 | **Hint (NL)** en **Hint (FR)** | Een korte toelichting voor uw medewerker of de klant — bijvoorbeeld "de laatste drie maanden". In beide talen, want uw klant leest ze in de zijne |
 | **Hint tonen** | Staat dit vinkje uit, dan blijft de hint bewaard maar wordt hij nergens getoond — ook niet aan de klant in het portaal. In de lijst ziet u aan het vinkje of de hint zichtbaar is |
-| **Categorie** | Groepeert de types op de checklist, zodat een lange lijst overzichtelijk blijft |
+| **Categorie** | Groepeert de types in de keuzelijst waaruit uw medewerker een stuk opvraagt: de naam van de categorie staat er als kop boven. Zonder categorie staan gelijknamige types onder elkaar zonder dat iemand ziet welke hij nodig heeft |
 
 De **hint** is de moeite waard: die staat op de plaats waar iemand twijfelt, en scheelt een telefoontje.
 

@@ -134,7 +134,11 @@ Le titre affiche deux nombres. *Documents demandés (2/5)* signifie deux validé
 
 ![L'onglet Documents demandés sur la fiche d'Alain Adriaenssens : en haut les boutons Ajouter un document, Inviter le client et Voir comme le client, en dessous un tableau avec les colonnes Document, Statut et Motif, avec une seule ligne — Les 3 derniers versements de salaire au statut Reçu.](../images/relaties-gevraagde-documenten-fr.png "Les pièces que vous attendez de cette relation, avec leur statut"){ .volle-breedte }
 
-- **Ajouter un document** — choisissez un type de document dans la liste et il rejoint la checklist.
+- **Ajouter un document** — choisissez un type de document dans la liste et il rejoint la checklist. La
+  liste est groupée par **catégorie**, avec le nom de la catégorie en en-tête. C'est nécessaire, car une
+  même pièce existe pour plusieurs types de dossiers : *Données du notaire* existe séparément pour Achat,
+  Succession, Refinancement et cinq autres. Tapez une partie du nom et chaque résultat reste sous sa
+  propre catégorie, de sorte que vous voyez laquelle il vous faut.
 - **Inviter le client** — envoie un e-mail avec un lien vers le **portail client**,
   où cette personne dépose ses pièces. Si elle n'a pas d'adresse e-mail, vous créez uniquement le lien et le
   transmettez vous-même.

@@ -4,6 +4,36 @@ Het dashboard is uw startscherm. In één oogopslag ziet u hoeveel dossiers er i
 
 ![Het dashboard: bovenaan de vier kerncijfers — Aktes met het jaartal erbij, In te dienen, Ingediend en LOA met de vermelding "alle jaren" — daaronder de twee blokken Termijn verstreken en Termijn nadert met per regel de klant, de soort termijn en de datum, en onderaan elk blok de knop om de overige te tonen; nog lager de staafgrafiek van het gerealiseerde volume per maand en twee ringgrafieken met de verdeling per instelling en per verantwoordelijke.](../images/dashboard-startscherm.png "Het dashboard: kerncijfers, aflopende termijnen en de grafieken"){ .volle-breedte }
 
+## Aan de slag
+
+Draagt uw omgeving nog **voorbeeldgegevens**, dan staat bovenaan het dashboard het blok *Aan de slag*. Het
+wijst u de drie instellingen aan die de rest bepalen, met een teller die zegt hoeveel u er af hebt.
+
+![Het blok Aan de slag bovenaan het dashboard: links de titel met de uitleg dat de gegevens voorbeelden zijn, rechts een ring met de teller 0 van 3, daaronder drie kaarten naast elkaar — Vul uw Bedrijfsfiche in, Stel uw Verzendadressen in en Voeg uw Gebruikers toe — elk met een korte uitleg en een knop Openen, en rechtsonder de link Verbergen. Bovenaan in de balk staat het gele merkteken Voorbeeldgegevens.](../images/dashboard-aan-de-slag.png "De drie instellingen die u het best als eerste doet, met de teller die meeloopt met uw werk"){ .volle-breedte }
+
+| Stap | Waarom die eerst |
+|---|---|
+| **Vul uw Bedrijfsfiche in** | Uw naam, adres en logo verschijnen op elke brief en elk document dat u verstuurt |
+| **Stel uw Verzendadressen in** | Zonder verzendadres vertrekt er geen enkele e-mail uit uw omgeving |
+| **Voeg uw Gebruikers toe** | Zij verschijnen daarna als eigenaar van een dossier en als verantwoordelijke van een taak |
+
+Klik op **Openen** bij een stap en u staat op het juiste scherm.
+
+**U hoeft nergens een vinkje te zetten.** Een stap vinkt zichzelf af zodra u er iets aan gewijzigd hebt. De
+teller kijkt naar wat *u* hebt gedaan, niet naar wat er staat: uw omgeving komt met een voorbeeldnaam, een
+voorbeeld-verzendadres en een lijst voorbeeldmedewerkers, en die tellen niet mee.
+
+!!! tip "U kunt vrij oefenen"
+    De dossiers, relaties en taken die u ziet zijn verzonnen. U kunt ze bewerken en verwijderen zonder iets
+    stuk te maken. Er vertrekt ook geen e-mail uit deze omgeving naar buiten, zolang de voorbeeldgegevens er
+    staan.
+
+Wilt u het blok niet zien, klik dan op **Verbergen**. Die keuze geldt voor u alleen en blijft bewaard; uw
+collega's zien het blok gewoon verder. Hebt u alle drie de stappen gedaan, dan verdwijnt het vanzelf.
+
+Laat ons weten wanneer de voorbeeldgegevens weg mogen. Wat u zelf hebt ingevoerd blijft dan staan, en het
+verzenden van e-mail gaat op dat moment open.
+
 ## De vier tegels bovenaan
 
 De gekleurde tegels tellen **contracten**, niet dossiers. Elke tegel is een combinatie van twee dingen: wat een contractstatus **betekent**, en om welke **productsoort** het gaat.

@@ -44,6 +44,24 @@ Rechtsboven staan de knoppen die u overal bij u hebt, van links naar rechts:
 - **Vraag het de handleiding** — zie hieronder.
 - **Uw avatar** (de ronde knop met uw initialen of foto) — opent uw [voorkeuren](voorkeuren.md).
 
+### Het merkteken links van de knoppen
+
+Draagt uw omgeving nog voorbeeldgegevens, dan staat er links van de knoppen een geel merkteken. Het is geen
+foutmelding maar een toestand, en het zegt welke:
+
+| Wat er staat | Wat het betekent |
+|---|---|
+| **Voorbeeldgegevens** | Uw omgeving is van u en blijft bestaan; er staan nog voorbeelden in om mee te leren werken |
+| **Proefversie** · **Proef: nog … dagen** · **Proef: laatste dag** | Een proefomgeving, met de resterende tijd erbij |
+| **Proef verlopen** | De proefperiode is voorbij |
+
+Wijs het merkteken aan en u leest wat er geldt. In alle gevallen: **er vertrekt geen e-mail uit deze omgeving
+naar buiten** zolang de voorbeeldgegevens er staan. Zodra ze verwijderd worden, gaat het verzenden open en
+blijft alles wat u zelf hebt ingevoerd gewoon staan.
+
+Het [dashboard](dashboard.md#aan-de-slag) toont in diezelfde situatie het blok *Aan de slag*, met de drie
+instellingen die u het best als eerste doet.
+
 ### Het belletje: uw achterstallige taken
 
 Het belletje telt de **taken die bij u openstaan en waarvan de vervaldatum voorbij is**. Nadrukkelijk enkel

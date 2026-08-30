@@ -244,6 +244,24 @@ const SCHOTEN = [
       });
       await p.waitForTimeout(1500);
   }],
+  // ⚠️ Het blok "Aan de slag" staat BOVENAAN het dashboard en verschijnt ALLEEN in een omgeving met
+  // voorbeeldgegevens. Twee dingen kunnen het stil wegnemen, en dan levert dit schot een beeld van iets
+  // anders zonder te melden dat het misging:
+  //   · de proefvlag weg (de demo-opruiming haalt hem weg — dan hoort het blok er ook niet meer te staan);
+  //   · de voorkeur `creditsoft.aandeslag.weggeklikt` op true voor de gebruiker die het schot maakt.
+  // Daarom controleert dit recept dat het blok er ÉCHT staat en faalt het luid als dat niet zo is.
+  ['dashboard-aan-de-slag',     '/dashboard', async p => {
+      await p.waitForTimeout(1200);
+      const blok = p.locator('.adm-aan-de-slag, [class*="aan-de-slag"], [class*="aandeslag"]').first();
+      if (await blok.count() === 0) {
+        const tekst = await p.locator('body').innerText();
+        if (!/Aan de slag|Pour commencer/.test(tekst))
+          throw new Error('Het blok "Aan de slag" staat NIET op het dashboard — geen proefvlag, of weggeklikt '
+                        + 'door deze gebruiker (wis reference.adm_user_preferences waar key like \'%aandeslag%\').');
+      }
+      await p.evaluate(() => window.scrollTo(0, 0));
+      await p.waitForTimeout(800);
+  }],
   ['voorkeuren-paneel',         '/dashboard',                     p => avatar(p)],
   ['voorkeuren',                '/dashboard',                     p => avatar(p)],
   ['filteren-zoekveld',         '/crm/relaties',                  async p => {
@@ -462,6 +480,9 @@ const VERWACHT = {
   'online-afspraken-instellingen': /Vragenlijst|Questionnaire|Locaties|Lieux/i,
   'filteren-zoekveld':          /Cuypers/i,
   'gebruikers-fiche':           /Mailhandtekening|Signature|Toon in keuzelijsten|listes de choix/i,
+  // ⚠️ Niet op de kop "Aan de slag": die zegt enkel dat het blok er staat, niet dat de STAPPEN erin staan —
+  // en het blok toont ook een klaar-toestand zonder stappen. Deze zin komt alleen voor als eerste stap.
+  'dashboard-aan-de-slag':      /Vul uw Bedrijfsfiche in|Complétez votre Fiche d'entreprise/i,
   'hoofdbalk':                  /Nieuwe taak|Nouvelle tâche/i,
   'menu-links':                 /Kredietinstellingen|Institutions de crédit/i,
   'documenten-valideren':       /Te valideren|À valider|Wachttijd|attente/i,

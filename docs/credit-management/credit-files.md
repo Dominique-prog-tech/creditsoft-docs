@@ -163,7 +163,7 @@ Met **Bekijk als klant** ernaast opent u het portaal in een nieuw tabblad, preci
 !!! warning "De link is elke keer nieuw"
     Een uitnodiging wordt niet bewaard en kan niet teruggehaald worden — enkel een afdruk ervan. Verstuurt u er een tweede, dan krijgt uw klant een nieuwe link; de oude blijft werken tot ze vervalt.
 
-Met **Bestanden** beheert u de bijlagen zelf — handig wanneer een stuk per post of per mail binnenkomt in plaats van via het portaal. Met **Document toevoegen** zet u een extra gevraagd stuk op de lijst.
+Met **Bestanden** beheert u de bijlagen zelf — handig wanneer een stuk per post of per mail binnenkomt in plaats van via het portaal. Met **Document toevoegen** zet u een extra gevraagd stuk op de lijst. Die keuzelijst is gegroepeerd per **categorie**: eenzelfde stuk bestaat vaak voor meerdere soorten dossiers — *Gegevens notaris* apart voor Aankoop, Erfenis, Herfinanciering en nog vijf andere — en de kop erboven zegt telkens over welke het gaat.
 
 !!! tip "Alles op één lijst"
     Wilt u niet dossier per dossier kijken wat er binnenkwam, gebruik dan [Te valideren documenten](document-validation.md): dezelfde handelingen, maar over al uw dossiers heen, met een teller in het menu.

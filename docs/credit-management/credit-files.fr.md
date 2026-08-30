@@ -163,7 +163,7 @@ Avec **Voir comme le client** à côté, vous ouvrez le portail dans un nouvel o
 !!! warning "Le lien est nouveau à chaque fois"
     Une invitation n'est pas conservée et ne peut pas être récupérée — seule une empreinte l'est. Si vous en envoyez une deuxième, votre client reçoit un nouveau lien ; l'ancien continue de fonctionner jusqu'à son expiration.
 
-Le bouton **Fichiers** vous permet de gérer les pièces jointes vous-même — pratique lorsqu'un document arrive par courrier ou par e-mail plutôt que via le portail. Le bouton **Ajouter un document** ajoute une pièce demandée à la liste.
+Le bouton **Fichiers** vous permet de gérer les pièces jointes vous-même — pratique lorsqu'un document arrive par courrier ou par e-mail plutôt que via le portail. Le bouton **Ajouter un document** ajoute une pièce demandée à la liste. Cette liste de choix est groupée par **catégorie** : une même pièce existe souvent pour plusieurs types de dossiers — *Données du notaire* séparément pour Achat, Succession, Refinancement et cinq autres — et l'en-tête indique chaque fois de laquelle il s'agit.
 
 !!! tip "Tout sur une seule liste"
     Si vous ne voulez pas vérifier dossier par dossier ce qui est arrivé, utilisez [Documents à valider](document-validation.md) : les mêmes actions, mais tous dossiers confondus, avec un compteur dans le menu.
