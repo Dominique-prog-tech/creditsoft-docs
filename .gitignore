@@ -4,3 +4,6 @@ __pycache__/
 .DS_Store
 *.py
 tools/.schermteksten.json
+
+# Filmuitvoer — mp4 hoort niet in git (FILMS-SPEC §7)
+tools/.films-uit/
