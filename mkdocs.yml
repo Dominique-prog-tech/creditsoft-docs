@@ -180,6 +180,7 @@ plugins:
             Dashboard-fases: Phases du tableau de bord
             Uw publieke pagina's: Vos pages publiques
             Verlof & sluitingsdagen: Congés & jours de fermeture
+            Instellingen: Paramètres
             Keuzelijsten: Listes de choix
             Documenttypes: Types de documents
             Uw voorkeuren: Vos préférences
@@ -302,6 +303,7 @@ nav:
     - Dashboard-fases: beheer/dashboard-fases.md
     - Uw publieke pagina's: beheer/kantoorprofiel.md
     - Verlof & sluitingsdagen: beheer/afwezigheden.md
+    - Instellingen: beheer/instellingen.md
     - Keuzelijsten: beheer/keuzelijsten.md
     - Documenttypes: beheer/documenttypes.md
     - Klantenportaal: beheer/klantportaal.md
