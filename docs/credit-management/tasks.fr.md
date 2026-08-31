@@ -2,7 +2,7 @@
 
 Cet écran rassemble toutes vos tâches, **tous modules confondus** : les tâches sur un dossier de crédit, sur une fiche de relation, chez un apporteur ou chez une institution — ainsi que les tâches libres, qui ne se rattachent à rien.
 
-![L'écran des tâches avec, en haut, les filtres sur le statut, le responsable et le type, et en dessous la liste indiquant, par tâche, ce à quoi elle se rattache, les dates de début et d'échéance, le statut, la priorité et le responsable.](../images/taken-overzicht-fr.png "Toutes vos tâches sur un écran")
+![L'écran des tâches avec, en haut, les filtres sur le statut, le responsable et le type, et en dessous la liste avec, devant chaque tâche, un cercle permettant de la cocher, et indiquant, par tâche, ce à quoi elle se rattache, les dates de début et d'échéance, le statut, la priorité et le responsable.](../images/taken-overzicht-fr.png "Toutes vos tâches sur un écran")
 
 ## Ouvrir l'écran
 
@@ -50,7 +50,8 @@ Une tâche quitte ce compteur lorsqu'elle est **terminée ou reportée**. Voir
 
 ## Travailler avec la liste
 
-- **Ouvrir ce à quoi la tâche se rattache** — double-cliquez sur la ligne. Pour une tâche libre, rien ne se passe : il n'y a pas d'écran vers lequel aller.
+- **Cocher** — cliquez sur le cercle devant la tâche. Elle passe à *Terminé* et le cercle devient une coche ; un second clic la rouvre. Vous ne devez donc pas ouvrir la tâche pour la clôturer.
+- **Ouvrir** — double-cliquez sur la ligne. La fenêtre de modification s'ouvre, avec en haut un lien vers la fiche ou le dossier auquel la tâche se rattache. Pour une tâche libre, ce lien est absent : il n'y a rien vers quoi aller.
 - **Rechercher** — le champ de recherche en haut à droite porte sur tout ce que vous voyez.
 - **Exporter** — vers Excel ou CSV, avec les filtres actifs à ce moment-là.
 

@@ -2,7 +2,7 @@
 
 Op dit scherm staan al uw taken samen, **over alle modules heen**: taken op een kredietdossier, op een relatiefiche, bij een aanbrenger of bij een instelling — én de losse taken die aan niets hangen.
 
-![Het takenscherm met bovenaan de filters op status, verantwoordelijke en soort, en daaronder de lijst met per taak waar ze aan hangt, de start- en vervaldatum, de status, de prioriteit en de verantwoordelijke.](../images/taken-overzicht.png "Al uw taken op één scherm")
+![Het takenscherm met bovenaan de filters op status, verantwoordelijke en soort, en daaronder de lijst met vóór elke taak een cirkel om ze af te vinken, en per taak waar ze aan hangt, de start- en vervaldatum, de status, de prioriteit en de verantwoordelijke.](../images/taken-overzicht.png "Al uw taken op één scherm")
 
 ## Het scherm openen
 
@@ -50,7 +50,8 @@ Een taak verdwijnt uit die teller door ze **af te werken of te verzetten**. Zie
 
 ## Werken met de lijst
 
-- **Openen waar de taak aan hangt** — dubbelklik op de rij. Bij een losse taak gebeurt er niets, want er is geen scherm om naartoe te gaan.
+- **Afvinken** — klik op de cirkel vóór de taak. Ze gaat op *Afgewerkt* en de cirkel wordt een vinkje; nog een klik zet ze terug open. U hoeft de taak dus niet te openen om ze af te werken.
+- **Openen** — dubbelklik op de rij. Het bewerkvenster gaat open, met bovenaan een link naar de fiche of het dossier waar de taak aan hangt. Bij een losse taak staat die link er niet, want er is niets om naartoe te gaan.
 - **Zoeken** — het zoekveld rechtsboven zoekt in alles wat u ziet.
 - **Exporteren** — naar Excel of CSV, met de filters die op dat moment aan staan.
 
