@@ -527,7 +527,23 @@ for (const map of ['', 'getting-started/', 'crm/', 'credit-management/', 'beheer
 
 const browser = await chromium.launch();
 const ctx = await browser.newContext({ viewport: { width: BREED, height: HOOG }, deviceScaleFactor: 2 });
+const VERBERG_VERSIE = '.nav-version { visibility: hidden !important; }';
+let badgeGezien = 0;
 const page = await ctx.newPage();
+
+// ⚠️ HET VERSIENUMMER GAAT UIT DE BEELDEN. Linksonder in de zijbalk staat "v1.70.0 nieuw", en de zijbalk
+// staat op ELK beeld. Bij elke release verspringt dat nummer, en dan is de hele ronde van 162 beelden
+// verouderd — voor nul informatie: het versienummer is geen onderdeel van wat de handleiding uitlegt.
+// De regel "herneem ze allemaal" is er voor ECHTE wijzigingen aan de zijbalk, niet voor dit.
+//
+// `visibility: hidden` en niet `display: none`: de badge houdt zo zijn ruimte, dus de afmetingen van de
+// beelden blijven gelijk en de vormgrendel verderop blijft geldig. Met `display: none` zou de zijbalk
+// inschuiven en zou elk bestaand beeld als "andere vorm" geweigerd worden.
+await ctx.addInitScript(() => {
+  const stijl = document.createElement('style');
+  stijl.textContent = '.nav-version { visibility: hidden !important; }';
+  document.addEventListener('DOMContentLoaded', () => document.head.appendChild(stijl));
+});
 const fouten = [];
 page.on('pageerror', e => fouten.push(e.message.slice(0, 100)));
 
@@ -699,6 +715,30 @@ for (const taal of ['nl-BE', 'fr-BE']) {
       // bestaand beeld met een ANDERE afmeting niet overschrijven. Het meldt en laat staan.
       const doel = `${UIT}/${naam}${achtervoegsel}.png`;
       const vorm = VORM[naam + achtervoegsel] || VORM[naam] || {};
+      // ⚠️ HIER opnieuw aanbrengen, en niet enkel bij het laden. Gemeten op 31/08/2026: een schot dat KLIKT
+      // om te navigeren (rapporten-periode) verliest de ingespoten stijl — Blazor's enhanced navigation
+      // vervangt de <head> en gooit hem weg. Vóór de klik stond hij er, erna niet meer. Daarom vlak vóór
+      // elk schot opnieuw; addStyleTag is idempotent genoeg voor dit doel.
+      await page.addStyleTag({ content: VERBERG_VERSIE }).catch(() => {});
+
+      // Staat de badge écht uit? De klasse `.nav-version` woont in de AppKit-schil, niet in deze repo.
+      // Hernoemt ze daar, dan grijpt de CSS niet meer en verschijnt het versienummer weer op alle beelden.
+      //
+      // ⚠️ ONTBREKEN is GEEN fout: niet elk scherm draagt de zijbalk (de wachtwoordpagina bijvoorbeeld).
+      // Een per-beeld-eis dat ze bestaat, weigerde op 31/08 tien geldige beelden. Het hernoemen vangen we
+      // op RONDE-niveau: is ze op geen énkel beeld gevonden, dan is de klasse weg.
+      const badge = await page.evaluate(() => {
+        const el = document.querySelector('.nav-version');
+        if (!el) return 'ontbreekt';
+        return getComputedStyle(el).visibility === 'hidden' ? 'verborgen' : 'ZICHTBAAR';
+      });
+      if (badge === 'verborgen') badgeGezien++;
+      if (badge === 'ZICHTBAAR') {
+        misluktMet(`${naam}${achtervoegsel} — versiebadge ZICHTBAAR: de filter op .nav-version grijpt hier `
+          + `niet. Het versienummer zou op dit beeld komen te staan.`);
+        continue;
+      }
+
       const nieuw = vorm.element ? await elementSchot(page, vorm.element) : await page.screenshot();
       if (existsSync(doel)) {
         const besluitVorm = vormBesluit({
@@ -821,4 +861,19 @@ if (!filter && ZONDER_RECEPT.length) {
   console.log(`\n⚠️ ${ZONDER_RECEPT.length} beelden hebben NOG GEEN RECEPT en zijn dus NIET hernomen:`);
   console.log('   ' + ZONDER_RECEPT.join(', '));
   console.log('   Ze staan dus nog op de oude toestand. Voeg een recept toe in SCHOTEN met een `na`.');
+}
+
+// ⚠️ DE FILTER ZELF, OP RONDE-NIVEAU. Per beeld is "de badge ontbreekt" geen fout — niet elk scherm draagt
+// de zijbalk. Maar is ze op GEEN ENKEL beeld gevonden, dan bestaat de klasse `.nav-version` niet meer (ze
+// woont in de AppKit-schil, niet hier) en heeft de filter dus niets meer gedaan. Zonder deze controle zou
+// het versienummer stil op alle beelden terugkeren en zou de hele ronde bij elke release weer verouderen.
+if (!filter) {
+  if (badgeGezien === 0) {
+    console.log('\n⛔ DE VERSIEFILTER HEEFT NIETS GEDAAN: `.nav-version` is op geen enkel beeld gevonden.');
+    console.log('   De klasse is vermoedelijk hernoemd in de AppKit-schil. Zoek de nieuwe naam op en pas');
+    console.log('   VERBERG_VERSIE aan — anders staat het versienummer weer op elk beeld.');
+    process.exitCode = 1;
+  } else {
+    console.log(`\n✅ versiebadge verborgen op ${badgeGezien} beelden — een versiebump veroudert de ronde niet.`);
+  }
 }
