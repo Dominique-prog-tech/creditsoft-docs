@@ -31,12 +31,33 @@ const UIT = new URL('./.films-uit/', import.meta.url).pathname;
 const BREED = 1920, HOOG = 1080;                  // §3.3 — gemeten: de dossierlijst past hierop, ruimer dan op 1700
 const STEM = { 'nl-BE': 'Ellen', 'fr-BE': 'Thomas' };
 const TEMPO = { 'nl-BE': 175, 'fr-BE': 175 };     // woorden/minuut voor `say`; ± 140 gesproken tempo
+
+// ── RITME ────────────────────────────────────────────────────────────────────────────────────────────────
+// ⚠️ Tot 31/08/2026 zat hier NIETS. Elke scène duurde precies zolang als haar audiofragment, en het
+// geluidsspoor plakte de fragmenten aan elkaar: het einde van zin 1 raakte het begin van zin 2. Er was dus
+// per constructie geen enkele stilte — de enige die voorkwam was toevallig, wanneer een handeling langer
+// duurde dan haar zin. Dominique hoorde dat meteen: "weinig stilte tussen de zinnen waardoor het allemaal
+// artificieel overkwam." Een betere stem lost dat NIET op; dit is tijdlijn, geen timbre.
+//
+// ⚠️ En een tweede, even structureel: de zin begon op het moment dat de HANDELING begon, niet wanneer het
+// scherm klaar stond. De kijker hoorde dus de uitleg van een scherm dat hij nog niet zag.
+const AANLOOP = 0.6;          // stilte tussen "het scherm staat er" en de eerste lettergreep
+const ADEM = 0.9;             // stilte ná de zin, vóór de volgende handeling begint
+const AANLOOP_START = 1.2;    // vóór de allereerste zin — anders val je midden in een gesprek binnen
+const NASLEEP = 1.6;          // laten uitademen op het slotbeeld — mét de slot-adem samen ± 2 s
 const filter = process.argv.slice(2).find(a => !a.startsWith('--'));
 const DROOG = process.argv.includes('--droog');
 
 // ── De cursor (§3.2) ─────────────────────────────────────────────────────────────────────────────────────
 // Playwright tekent de muisaanwijzer niet in de video. Zonder dit drukken knoppen zichzelf in, en dat leest
 // als een storing. Twintig regels, en meteen herbruikbaar voor CleanOps en Nimble.
+// ⚠️ HET VERSIENUMMER GAAT OOK UIT DE FILMS. Linksonder in de zijbalk staat "v1.72.0 nieuw", en de zijbalk
+// staat in élke film. Een film wordt hernomen wanneer het SCENARIO of het scherm wijzigt — niet bij elke
+// release. Zonder deze filter zou elke versiebump vijftien films in twee talen verouderd maken, precies de
+// reden waarom hij op 31/08/2026 in beelden.mjs kwam. Zelfde vorm: `visibility: hidden`, niet `display:none`,
+// zodat de zijbalk niet inschuift en het beeldformaat gelijk blijft.
+const VERBERG_VERSIE = '.nav-version { visibility: hidden !important; }';
+
 const CURSOR = `
   (() => {
     const maak = () => {
@@ -107,7 +128,7 @@ const tijd = s => {
 const FILMS = [
   ['kredietdossiers-basis', {
     pagina: 'credit-management/credit-files',
-    dossier: ID.dossierMetSchema,                 // DEMO-1654 — het enige met een ACTIEF schema (scène 10)
+    dossier: ID.dossierMetSchema,                 // DEMO-1089 — actief schema, gevuld journaal, alle documentstatussen
     scenes: [
       { naam: 'lijst',
         doe: async (p) => { await p.goto(`${BASIS}/credit-files`); await p.waitForLoadState('networkidle'); },
@@ -132,6 +153,7 @@ const FILMS = [
         fr: "En haut, vous cherchez dans toute la liste. Le nombre de dossiers trouvés suit." },
 
       { naam: 'openen',
+        aanloop: 1.3,   // springt naar een ANDER scherm — daar valt het meest te zien
         doe: async (p, f) => { await p.goto(`${BASIS}/credit-files/${f.dossier}`); await p.waitForLoadState('networkidle'); },
         merk: /Kredietbedrag|Montant du crédit/i,
         nl: 'We openen een bestaand dossier.',
@@ -153,6 +175,7 @@ const FILMS = [
         fr: "Sous Demandeurs de crédit figurent tous les demandeurs de ce dossier, avec leurs données et leur rôle." },
 
       { naam: 'pand',
+        aanloop: 1.3,   // springt naar een ANDER scherm — daar valt het meest te zien
         doe: async (p) => {
           await klik(p, p.locator('button', { hasText: /Investeringsfiche & pand|Fiche d'investissement & bien/ }).first());
           await p.waitForTimeout(1400);
@@ -171,21 +194,46 @@ const FILMS = [
         nl: 'Bij Gevraagd volgt u per stuk of het aangeleverd is en of het al beoordeeld werd.',
         fr: "Dans Demandés, vous suivez pièce par pièce ce qui a été fourni et ce qui a déjà été évalué." },
 
+      // ⚠️ TWEE SCÈNES, en dat was eerst één. Drie klikken na elkaar met één zin erover gaf 8,1 seconden
+      // stilte vóór die zin — de kijker zat naar drie handelingen te kijken waar niemand iets bij zei.
+      //
       { naam: 'journaal',
+        aanloop: 1.0,
         doe: async (p) => {
           await klik(p, p.locator('button', { hasText: /^(Journaal|Journal)$/ }).first());
-          await p.waitForTimeout(2000);
+          await p.locator('.adm-section-switch-btn').first().waitFor({ timeout: 10000 });
+        },
+        // ⚠️ Het merkteken is een TAAK, en dat kon tot 31/08/2026 niet. Het journaal opent op Taken, en geen
+        // enkel demo-dossier mét een commissieschema had er één — de zin over taken, notities en gesprekken
+        // speelde dus boven "Nog geen taken". JournaalTestData vult sinds vandaag het journaal van de
+        // RIJKSTE dossiers, en de ID-tabel wijst naar zo'n dossier.
+        merk: /Aktedatum bevestigen|Commissieschema nakijken/i,
+        nl: 'Elk dossier draagt zijn eigen journaal: taken, notities, gesprekken, bijlagen en mailverkeer.',
+        fr: "Chaque dossier porte son propre journal : tâches, notes, appels, pièces jointes et courrier." },
+
+      { naam: 'commissieschemas',
+        aanloop: 1.0,
+        doe: async (p) => {
           await klik(p, p.locator('.adm-section-switch-btn').first());
-          await p.waitForTimeout(900);
+          await p.locator('.adm-menu-item').first().waitFor({ timeout: 10000 });
           await klik(p, p.locator('.adm-menu-item', { hasText: /Commissieschema|Schémas de commission/ }).first());
-          await p.waitForTimeout(1800);
         },
         merk: /Herberekenen|Recalculer/i,
-        nl: 'Elk dossier draagt zijn eigen journaal: taken, notities, gesprekken, mailverkeer — en de commissieschema’s.',
-        fr: "Chaque dossier porte son propre journal : tâches, notes, appels, courrier — et les schémas de commission." },
+        nl: 'En de commissieschema’s: wat er op dit dossier per aanbrenger verdiend wordt.',
+        fr: "Et les schémas de commission : ce qui est gagné par apporteur sur ce dossier." },
 
       { naam: 'slot',
-        doe: async (p) => { await p.keyboard.press('Escape'); await p.waitForTimeout(1200); },
+        // ⚠️ KORTE aanloop, en dat is de regel: de aanloop bestaat om een NIEUW scherm te laten landen.
+        // Hier verandert er niets — het journaalpaneel gaat dicht en het dossier staat er weer. Eerst stond
+        // hier 1,0 s aanloop en 1,6 s adem, langer dan standaard, en dan duurt een zin van 4 seconden er
+        // tien. Dominique hoorde het: "de laatste zin duurde precies wat lang."
+        aanloop: 0.2, adem: 0.4,
+        doe: async (p) => {
+          await p.keyboard.press('Escape');
+          // Op een TOESTAND wachten en niet op een timer (§3.4): hier stond waitForTimeout(1200), en dat
+          // waren 1,2 seconden dode lucht bovenop de aanloop.
+          await p.locator('.adm-section-switch-btn').first().waitFor({ state: 'hidden', timeout: 8000 });
+        },
         merk: /Kredietbedrag|Montant du crédit/i,
         nl: 'Eén dossier, één pagina. Wat uitbetaald is, blijft.',
         fr: "Un dossier, une page. Ce qui a été payé, reste." },
@@ -232,9 +280,14 @@ for (const [naam, film] of FILMS) {
       recordVideo: { dir: werk, size: { width: BREED, height: HOOG } },
     });
     await ctx.addInitScript(CURSOR);
+    await ctx.addInitScript((css) => {
+      const stijl = document.createElement('style');
+      stijl.textContent = css;
+      document.addEventListener('DOMContentLoaded', () => document.head.appendChild(stijl));
+    }, VERBERG_VERSIE);
     const page = await ctx.newPage();
     const t0 = Date.now();
-    const merken = [];       // start- en eindtijd per scène, t.o.v. het begin van de opname
+    const merken = [];       // start-, spraak- en eindtijd per scène, t.o.v. het begin van de opname
     let gevallen = null;
 
     for (const [i, sc] of film.scenes.entries()) {
@@ -247,12 +300,20 @@ for (const [naam, film] of FILMS) {
         gevallen = `${sc.naam} — ${String(e).split('\n')[0].slice(0, 120)}`;
         break;
       }
-      const na = (Date.now() - t0) / 1000;
-      const rest = duren[i] - (na - start);
-      if (rest > 0) await page.waitForTimeout(rest * 1000);
-      merken.push({ naam: sc.naam, start, eind: (Date.now() - t0) / 1000 });
+      // ⚠️ De versiefilter opnieuw aanbrengen: Blazor's enhanced navigation vervangt de <head> bij een
+      // klik-navigatie en gooit de ingespoten stijl weg. Gemeten bij de beeldgenerator op 31/08/2026.
+      await page.addStyleTag({ content: VERBERG_VERSIE }).catch(() => {});
+
+      // Het scherm staat er (het merkteken is gevonden). Eerst laten LANDEN, dan pas praten — de kijker
+      // moet kunnen zien wát er veranderd is vóór iemand het uitlegt.
+      await page.waitForTimeout((sc.aanloop ?? (i === 0 ? AANLOOP_START : AANLOOP)) * 1000);
+      const spraak = (Date.now() - t0) / 1000;
+      // De zin, en daarna de adem. Die adem is geen opvulling: hij is het verschil tussen een voorlezende
+      // machine en iemand die iets uitlegt.
+      await page.waitForTimeout((duren[i] + (sc.adem ?? ADEM)) * 1000);
+      merken.push({ naam: sc.naam, start, spraak, eind: (Date.now() - t0) / 1000 });
     }
-    await page.waitForTimeout(600);
+    await page.waitForTimeout(NASLEEP * 1000);
     const videoPad = await page.video().path();
     await ctx.close(); await browser.close();
 
@@ -266,16 +327,23 @@ for (const [naam, film] of FILMS) {
     // 5 ─ GELUID ONDER HET BEELD, op de GEMETEN scènetijden — niet op de geplande.
     const lijst = [];
     let cursor = 0;
+    const stilte = (lengte, merk) => {
+      const pad = `${werk}stil-${merk}.wav`;
+      execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-f', 'lavfi',
+        '-i', 'anullsrc=r=48000:cl=stereo', '-t', String(lengte), pad]);
+      return pad;
+    };
+    // ⚠️ Op m.spraak en niet op m.start: de zin hoort te beginnen wanneer het scherm klaar staat, niet
+    // wanneer de handeling begint. De stilte ertussen is de aanloop + de adem van de vorige scène.
     for (const [i, m] of merken.entries()) {
-      if (m.start > cursor + 0.02) {
-        const stil = `${werk}stil-${i}.wav`;
-        execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-f', 'lavfi',
-          '-i', `anullsrc=r=48000:cl=stereo`, '-t', String(m.start - cursor), stil]);
-        lijst.push(stil);
-      }
+      if (m.spraak > cursor + 0.02) lijst.push(stilte(m.spraak - cursor, i));
       lijst.push(`${werk}${String(i).padStart(2, '0')}-${m.naam}.wav`);
-      cursor = m.start + duren[i];
+      cursor = m.spraak + duren[i];
     }
+    // ⚠️ En stilte tot het einde van het BEELD. Zonder dit knipt `-shortest` hieronder de nasleep eraf:
+    // het spoor is dan korter dan de opname, en de film eindigt op het laatste woord.
+    const beeldEind = merken[merken.length - 1].eind + NASLEEP;
+    if (beeldEind > cursor + 0.02) lijst.push(stilte(beeldEind - cursor, 'slot'));
     writeFileSync(`${werk}spoor.txt`, lijst.map(f => `file '${f}'`).join('\n'));
     execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-f', 'concat', '-safe', '0',
       '-i', `${werk}spoor.txt`, '-c', 'copy', `${werk}spoor.wav`]);
@@ -288,7 +356,7 @@ for (const [naam, film] of FILMS) {
     // 6 ─ Ondertitels: de tekst bestaat al, dus dat is gratis (§7)
     const vtt = ['WEBVTT', ''];
     for (const [i, m] of merken.entries())
-      vtt.push(`${tijd(m.start)} --> ${tijd(m.start + duren[i])}`, film.scenes[i][kort], '');
+      vtt.push(`${tijd(m.spraak)} --> ${tijd(m.spraak + duren[i])}`, film.scenes[i][kort], '');
     writeFileSync(`${UIT}${naam}-${kort}.vtt`, vtt.join('\n'));
 
     const lengte = Number(execFileSync('ffprobe', ['-v', 'error', '-show_entries', 'format=duration',

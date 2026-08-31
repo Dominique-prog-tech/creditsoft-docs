@@ -18,11 +18,22 @@ export const BASIS = 'http://localhost:5345';
 export const ID = {
   dossier:  '00038c40-df6b-4992-83e4-13847c7a0a59',
   // dossier dát een commissieschema draagt — het vorige had er geen, en dan is er niets te tonen.
-  // ⚠️ DEMO-1654: een dossier met een ACTIEF schema. Hier stond een dossier waarvan het schema op "Nog niet
+  // ⚠️ Een dossier met een ACTIEF schema. Hier stond ooit een dossier waarvan het schema op "Nog niet
   // actief" staat, en dan verschijnen de knoppen Herberekenen en Stopzetten niet — terwijl het bijschrift ze
   // wél belooft. Een schema in de verkeerde toestand toont niet de helft van het scherm.
-  dossierMetSchema: 'd2954524-fbed-49e5-972a-7e5c50e926db',
-  schema:   '00273359-e86e-4e78-9f09-22cacf71d327',   // het actieve schema van DEMO-1654
+  // ⚠️ DEMO-1089 en niet meer DEMO-1654 (31/08/2026). Reden: de generator vult sinds vandaag het JOURNAAL
+  // van de eerste dossiers mét een actief commissieschema, en DEMO-1654 valt daarbuiten. Op DEMO-1654 stond
+  // "Nog geen taken" terwijl beeld en film beloven dat een dossier zijn taken, notities, gesprekken en
+  // mailverkeer bij elkaar draagt. De documentatie wijst dus naar data die de generator GARANDEERT, niet
+  // omgekeerd. DEMO-1089 draagt: actief schema, 2 taken, 1 notitie, 2 gesprekken, 2 mails, 2 aanvragers, én
+  // gevraagde documenten in ALLE DRIE de toestanden (Gevraagd / Ontvangen / In orde). Dat laatste is de
+  // reden dat het DEMO-1001 niet werd: daar stond niets op "Ontvangen", en de filmscène die belooft dat je
+  // "per stuk volgt of het aangeleverd is en of het al beoordeeld werd" viel op haar eigen controle.
+  //
+  // ⚠️ En de oude opmerking hier — "het enige met een ACTIEF schema" — was gewoon onwaar: 1832 dossiers
+  // dragen er een, honderden daarvan een actief. Gemeten, niet aangenomen.
+  dossierMetSchema: '903a2553-1e1d-4a9d-baab-f456bd96145c',
+  schema:   'a9b48983-8066-4209-a315-8f950e6983dd',   // het actieve schema van DEMO-1089
   // ⚠️ Een aanbrenger die AL portaaltoegang heeft. Met een aanbrenger zónder toegang toont het venster
   // "Deze aanbrenger heeft nog geen portaaltoegang" — en dan mist het beeld precies de knoppen waar de
   // handleiding naar verwijst (Nieuw tijdelijk wachtwoord, Deactiveren).

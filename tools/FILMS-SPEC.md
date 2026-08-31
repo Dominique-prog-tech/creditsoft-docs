@@ -58,7 +58,24 @@ const FILMS = [
 
 ### 3.1 Geluid stuurt beeld, niet omgekeerd
 
-Dit is de kern van het geheel. **Eerst** de voice-over genereren, per scène één audiofragment, de duur meten. **Dan** opnemen, waarbij elke scène exact zolang duurt als haar fragment. Synchronisatie wordt zo een eigenschap van de pijplijn en geen montagestap — en daarom is er geen montagestap.
+Dit is de kern van het geheel. **Eerst** de voice-over genereren, per scène één audiofragment, de duur meten. **Dan** opnemen, waarbij de scène haar fragment volgt. Synchronisatie wordt zo een eigenschap van de pijplijn en geen montagestap — en daarom is er geen montagestap.
+
+⚠️ **Maar "exact zolang als haar fragment" was fout, en dat hoorde je.** Zo stond het hier tot 31/08/2026, en zo was het gebouwd: elke scène duurde precies de lengte van haar zin, en het geluidsspoor plakte de fragmenten aan elkaar. Er zat dus **per constructie geen enkele stilte** tussen twee zinnen — de enige die voorkwam was toevallig, wanneer een handeling langer duurde dan haar zin. Dominique hoorde het meteen aan de eerste twee films: *"weinig stilte tussen de verschillende zinnen waardoor het allemaal artificieel overkwam."* Een betere stem lost dat **niet** op; dit is tijdlijn, geen timbre.
+
+Een scène heeft daarom **drie fasen**, en de constanten staan bovenaan `films.mjs`:
+
+| Fase | Wat | Standaard |
+|---|---|---|
+| handeling | klikken, navigeren, wachten op het merkteken | zolang als nodig |
+| **aanloop** | stilte tussen "het scherm staat er" en de eerste lettergreep | `AANLOOP` 0,6 s · `1,3 s` op een scène die naar een ánder scherm springt · `AANLOOP_START` 1,2 s vóór de allereerste zin |
+| zin | het audiofragment | gemeten |
+| **adem** | stilte ná de zin, vóór de volgende handeling | `ADEM` 0,9 s |
+
+Plus `NASLEEP` 2,2 s op het slotbeeld — en het geluidsspoor wordt tot dáár met stilte aangevuld, anders knipt `ffmpeg -shortest` de nasleep eraf en eindigt de film op het laatste woord.
+
+⚠️ **De zin begint bij `spraak`, niet bij `start`.** Even structureel als het vorige: het fragment stond op het tijdstip waarop de **handeling** begon, niet waarop het scherm klaar stond. De kijker hoorde de uitleg van een scherm dat hij nog niet zag. De ondertitels hangen aan dezelfde `spraak`-tijden, dus die kloppen mee.
+
+De aanloop en de adem zijn per scène te overschrijven (`aanloop:`, `adem:`), want een slotbeeld mag langer nazinderen dan een tussenstap.
 
 ⚠️ Draai het niet om. Opnemen en er achteraf geluid onder leggen betekent dat elke tekstwijziging een handmatige hermontage vraagt, en dan is de film binnen twee releases weer het zwakste punt.
 
@@ -118,19 +135,52 @@ De alt-teksten zijn hier niet bruikbaar als specificatie, want een scène is gee
 
 ## 6. Verouderen en hernemen
 
-1. Na elke ronde schrijft de generator `tools/.films-uitslag.json`: per film en per taal de URL, plus een hash over `{route, broncode van de scènehandelingen, narratie}`.
+1. Na elke ronde schrijft de generator `tools/.films-uitslag.json`: per film en per taal de Bunny-GUID, plus een hash over `{route, broncode van de scènehandelingen, narratie}`.
 2. Wijkt de hash af, dan is de film **verouderd** en wordt hij hernomen.
 3. ⚠️ En de regel die de beeldgenerator op 28/08 geleerd heeft, geldt hier dubbel: **de zijbalk staat in élke film**. Verandert het menu, dan zijn ze allemaal verouderd, ook al wijzigde er aan het scenario niets. De hash moet dus ook de versie van de applicatie dragen — of er moet minstens een `films.mjs --alles` bestaan die alles herneemt.
 4. Een film die zijn beloftecontrole niet haalt, wordt niet gepubliceerd en blijft op de vorige versie staan. Een verouderde film is beter dan een foute.
 
 ---
 
-## 7. Publicatie
+## 7. Publicatie — Bunny Stream
 
-- De film komt **boven de eerste `##`** van de bijhorende pagina. De lezer kiest: kijken of lezen.
-- Via een MkDocs-hook op filmnaam, met taalkeuze uit het bestand (`.md` of `.fr.md`). Niet met de hand per pagina.
-- Ondertitels als `.vtt`, per taal — de tekst bestaat al, dus dat is gratis. Standaard uit.
-- ⚠️ **Geen mp4 in git.** `docs/images/` draagt 175 PNG's en dat gaat nog; vijftien films van 30 MB in twee talen niet. Object storage of Vimeo, enkel de verwijzing in de repo.
+**Beslist op 30/08/2026: Bunny Stream is de bestemming van de pijplijn. YouTube valt weg**, ook als etalage — niet in dit traject.
+
+⚠️ **WAAROM NIET YOUTUBE.** Uit hun eigen helppagina: *"You can't replace a video. Any new video you upload to YouTube will get a new URL."* Onze films zijn build-output die bij elke schermwijziging hernomen wordt. Op YouTube betekent elke herneming dus een nieuwe URL: dode links in verstuurde mails, gebookmarkte pagina's die nergens op uitkomen, kijkcijfers die telkens op nul beginnen, en abonnees die bij elke release een melding krijgen. YouTube gaat ervan uit dat een video een blijvend werkstuk is; bij ons is het een artefact van een build. Een etalage, geen bibliotheek — en dit is een bibliotheek.
+
+### 7.1 Opzet
+
+- **Eén video library per product** (nu enkel CreditSoft; CleanOps en Nimble later). Aparte libraries betekenen aparte API-sleutels en aparte toegang — dezelfde scheiding als tussen de repo's.
+- Binnen de library **een collection per taal** (`nl-BE`, `fr-BE`), zodat een taalronde in één keer te overzien is.
+- Titel van de video = filmnaam + taal. Niet sierlijk maar eenduidig; de sierlijke titel staat in de handleiding, niet in de bibliotheek.
+
+### 7.2 De embed
+
+Een `iframe` naar `https://player.mediadelivery.net/embed/{libraryId}/{guid}` (de exacte host staat in de bibliotheekinstellingen), in een houder met `padding-top: 56.25%` voor 16:9.
+
+Parameters die we zetten: `captions` op de paginataal, `showSpeed`, `rememberPosition`. De film komt **boven de eerste `##`** van de pagina; de lezer kiest zelf kijken of lezen. Plaatsing via een MkDocs-hook op **filmnaam**, met de taal uit de bestandsnaam (`.md` of `.fr.md`) — nooit met de hand per pagina.
+
+⚠️ Bunny's speler zet **geen cookies**. Dat is geen prettige bijkomstigheid maar een reden op zich: een YouTube-embed sleept een toestemmingsbanner over de hele handleiding mee, en dit niet.
+
+### 7.3 Hoofdstukken en ondertitels — gratis uit de scènelijst
+
+Bunny Stream ondersteunt hoofdstukken. Wij hebben ze al: elke scène heeft een **titel** (de scènenaam) en een **starttijd** (de som van de audioduren ervóór — die kennen we, want geluid stuurt beeld, zie §3.1). De generator zet ze mee via de API. Dat is de navigatie waar een handleidingkijker echt iets aan heeft, en ze kost ons niets.
+
+Idem voor ondertitels: de `.vtt` per taal rolt uit dezelfde narratie. Uploaden via de captions-endpoint, standaard uit.
+
+### 7.4 Vervangen zonder de link te breken
+
+De API scheidt twee stappen: eerst een video-object aanmaken (`POST .../videos`, levert een GUID), dan het bestand ernaartoe sturen (`PUT .../videos/{guid}`). Opnieuw PUT'en naar dezelfde GUID hoort dus het bestand te vervangen met behoud van de embed.
+
+⚠️ **Bunny documenteert dat niet met zoveel woorden. Ga er niet van uit — meet het in Fase 1:** upload een film, vervang hem, en controleer of de embed-URL dezelfde blijft én het nieuwe beeld toont.
+
+En bouw hoe dan ook de **indirectie**, zodat het antwoord er niet toe doet: de handleiding verwijst nooit naar een GUID maar altijd naar een **filmnaam**. `.films-uitslag.json` vertaalt filmnaam + taal → GUID, en de hook leest dat bij het bouwen. Werkt vervangen, dan wijzigt er niets. Werkt het niet, dan krijgt de film een nieuwe GUID en klopt de handleiding nog steeds vanzelf — enkel een extern gedeelde link veroudert. Zo hangt het ontwerp niet aan één onbevestigd detail.
+
+### 7.5 Wat er niet gebeurt
+
+- **Geen eigen speler.** Die van Bunny doet adaptieve kwaliteit, mobiel, ondertitels, snelheid en hoofdstukken. Zelf bouwen levert niets op.
+- **Geen mp4 in git.** `docs/images/` draagt 175 PNG's en dat gaat nog; vijftien films in twee talen niet. Enkel de verwijzing in de repo.
+- **Geen YouTube-upload in de pijplijn.** Als er later een etalagekanaal komt, is dat een aparte, handmatige stap voor een geselecteerde lijst — nooit een automatische publicatie bij elke herneming.
 
 ---
 
@@ -138,8 +188,8 @@ De alt-teksten zijn hier niet bruikbaar als specificatie, want een scène is gee
 
 Dezelfde afweging als bij `kern.mjs` op 29/08: het generieke deel hoort in `adm-appkit/tools/filmgenerator/`, zodat CleanOps en Nimble het niet opnieuw moeten leren.
 
-**Naar de AppKit:** de cursor-inspuiting, de audio-eerst-tijdsturing, de montage met ffmpeg, de intro/outro, het verslag, het uitslagbestand.
-**Blijft hier:** `FILMS`, de routes, de `ID`-tabel, de merktekens. Dat hangt aan onze eigen schermen.
+**Naar de AppKit:** de cursor-inspuiting, de audio-eerst-tijdsturing, de montage met ffmpeg, de intro/outro, de Bunny-client (uploaden, vervangen, hoofdstukken, ondertitels), het verslag, het uitslagbestand.
+**Blijft hier:** `FILMS`, de routes, de `ID`-tabel, de merktekens, en de library-ID. Dat hangt aan onze eigen schermen.
 
 ---
 
@@ -147,26 +197,29 @@ Dezelfde afweging als bij `kern.mjs` op 29/08: het generieke deel hoort in `adm-
 
 ### Fase 1 — één film, end-to-end
 `kredietdossiers-basis` in NL en FR. Montage mag met de hand, alles daarvóór niet.
-**Klaar wanneer:** twee mp4's bestaan met identiek beeldmateriaal, correcte UI-taal, zichtbare cursor, en beeld en geluid synchroon zonder bijsturing. Dominique heeft ze goedgekeurd.
+**Klaar wanneer:** twee mp4's bestaan met identiek beeldmateriaal, correcte UI-taal, zichtbare cursor, en beeld en geluid synchroon zonder bijsturing. **En:** de vervangproef uit §7.4 is uitgevoerd en het antwoord staat in dit document. Dominique heeft de films goedgekeurd.
 
 ### Fase 2 — generaliseren
 Cursor, tijdsturing en montage naar de AppKit. De resterende films schrijven en opnemen.
 **Klaar wanneer:** één commando alle films in beide talen rendert, met een verslag dat élke film in precies één uitslaglijst plaatst — dezelfde eis als bij de beelden.
 
 ### Fase 3 — inbedden en hernemen
-Hook, uitslagbestand, hashcontrole, koppeling aan de publicatiestroom.
-**Klaar wanneer:** een gerichte wijziging in één scherm precies de films markeert die dat scherm tonen, en enkel die herneemt.
+Bunny-upload, hoofdstukken, ondertitels, de hook, het uitslagbestand, de hashcontrole.
+**Klaar wanneer:** een gerichte wijziging in één scherm precies de films markeert die dat scherm tonen en enkel die herneemt, en de handleidingpagina daarna de nieuwe film toont **zonder handmatige tussenkomst** — mét hoofdstukken en ondertitels.
 
 ---
 
 ## 10. Buiten scope
 
-Commerciële video's (3 à 5, kortere montage, muziek — later te knippen uit ditzelfde beeldmateriaal), het ElevenLabs-account en de stemmen, de videohosting.
+Commerciële video's (3 à 5, kortere montage, muziek — later te knippen uit ditzelfde beeldmateriaal) en YouTube in elke vorm.
+
+⚠️ **De stem valt hier niet volledig buiten.** Het *aanschaffen* van het account en het kiezen van de stem is werk voor Dominique (§11.1); het *inbouwen* is werk voor de pijplijn en is één functie van zes regels — `spreek()` roept vandaag macOS `say` aan en morgen een API. Hier stond tot 31/08/2026 "het ElevenLabs-account en de stemmen" zonder dat onderscheid, wat §11.1 tegensprak.
 
 ---
 
-## 11. Wat Dominique nog moet beslissen
+## 11. Wat Dominique nog moet doen
 
-1. **De stem.** Standaard Nederlandse TTS klinkt Hollands; voor Vlaamse makelaars valt dat op. Eigen stem klonen (ElevenLabs, vanaf ± $6/maand mét commerciële licentie) of een gekochte stem. Idem voor Belgisch-Frans.
-2. **Waar de films staan.** Eigen object storage of Vimeo/YouTube.
-3. **Welke vijftien.** De selectie uit §1 is nog niet gemaakt.
+1. **De stem kiezen.** Standaard Nederlandse TTS klinkt Hollands; voor Vlaamse makelaars valt dat op. Eigen stem klonen (ElevenLabs, vanaf ± $6/maand mét commerciële licentie) of een gekochte stem. Idem voor Belgisch-Frans. Let op twee dingen: dat het plan een **commerciële licentie** draagt, en dat je Vlaams en Belgisch-Frans krijgt — een gekochte standaardstem geeft dat laatste meestal niet.
+   ⚠️ **Doe dit ná het ritme, niet ervoor.** Het ritme is nu op de plaatshouder-stemmen afgeregeld en goedgekeurd (31/08/2026). Wie beide tegelijk wijzigt, weet achteraf niet welke van de twee hielp.
+2. **Bunny-account en video library aanmaken**, en de API-sleutel doorgeven. Opslag vanaf $0,01/GB, streaming vanaf $0,005/GB, geen minimum — bij deze aantallen een paar euro per maand.
+3. **De selectie maken.** Welke vijftien films, volgens de regel uit §1: geen referentiepagina's.
