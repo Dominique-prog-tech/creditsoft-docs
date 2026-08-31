@@ -7,3 +7,6 @@ tools/.schermteksten.json
 
 # Filmuitvoer — mp4 hoort niet in git (FILMS-SPEC §7)
 tools/.films-uit/
+
+# gesproken fragmenten, gecachet op {tekst, stem, model} — niet in git
+tools/.films-stem/

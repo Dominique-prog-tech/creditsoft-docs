@@ -82,6 +82,23 @@ if (!wachtwoord) {
 
 export { gebruiker, wachtwoord };
 
+// ── De stem-API ──────────────────────────────────────────────────────────────────────────────────────────
+// ⚠️ UIT USER-SECRETS, zoals het wachtwoord hierboven. Nooit in git, nooit in een log, nooit in een
+// commit-tekst. Zetten doe je één keer, in de Host-map van adm-creditsoft:
+//
+//     dotnet user-secrets set "ElevenLabs:ApiKey" "<de sleutel>"
+//     dotnet user-secrets set "ElevenLabs:StemNl" "<voice-id>"
+//     dotnet user-secrets set "ElevenLabs:StemFr" "<voice-id>"
+//
+// Ontbreekt de sleutel, dan geeft dit `null` — en de aanroeper hoort dat LUID te melden en niet stil terug
+// te vallen op de Mac-stem. Een film met de plaatshouder-stem die zich als de echte voordoet, is precies de
+// soort stille terugval waar deze vloot al genoeg last van heeft gehad.
+export function stemGeheim(naam) {
+  if (!existsSync(SECRETS)) return null;
+  const geheim = JSON.parse(readFileSync(SECRETS, 'utf8').replace(/^\uFEFF/, ''));
+  return geheim[`ElevenLabs:${naam}`] ?? null;
+}
+
 
 export async function meldAan(page, user, ww, kiesTenant) {
   await page.goto(`${BASIS}/login`);

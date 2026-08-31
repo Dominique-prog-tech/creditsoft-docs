@@ -22,10 +22,11 @@
 //
 // Uitvoer: tools/.films-uit/ — NIET in git (§7: geen mp4 in git).
 
-import { mkdirSync, rmSync, existsSync, writeFileSync, readdirSync } from 'node:fs';
+import { mkdirSync, rmSync, existsSync, writeFileSync, readdirSync, copyFileSync } from 'node:fs';
+import { createHash } from 'node:crypto';
 import { execFileSync } from 'node:child_process';
 import { chromium } from '/Users/dominique/projects/adm-creditsoft/src/Host/CreditSoft.Host.Web/bin/Debug/net10.0/.playwright/package/index.mjs';
-import { BASIS, ID, gebruiker, wachtwoord, meldAan } from './aansturing.mjs';
+import { BASIS, ID, gebruiker, wachtwoord, meldAan, stemGeheim } from './aansturing.mjs';
 
 const UIT = new URL('./.films-uit/', import.meta.url).pathname;
 const BREED = 1920, HOOG = 1080;                  // §3.3 — gemeten: de dossierlijst past hierop, ruimer dan op 1700
@@ -101,13 +102,79 @@ async function beweegNaar(page, loc) {
 async function klik(page, loc) { await beweegNaar(page, loc); await loc.click(); }
 
 // ── Audio (§3.1) ─────────────────────────────────────────────────────────────────────────────────────────
-function spreek(tekst, taal, pad) {
-  execFileSync('say', ['-v', STEM[taal], '-r', String(TEMPO[taal]), '-o', pad + '.aiff', tekst]);
-  execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-i', pad + '.aiff', '-ar', '48000', '-ac', '2', pad]);
-  rmSync(pad + '.aiff', { force: true });
-  return Number(execFileSync('ffprobe',
-    ['-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', pad]).toString().trim());
+// ── WELKE STEM? Expliciet, en nooit stilzwijgend. ────────────────────────────────────────────────────────
+//
+// ⚠️ GEEN STILLE TERUGVAL. Ontbreekt de ElevenLabs-sleutel, dan valt dit NIET zwijgend terug op de Mac-stem:
+// dan zou een film met de plaatshouder-stem zich voordoen als de echte, en dat merkt niemand bij het
+// nakijken. De motor staat in het verslag van élke film, en `--stem=say` is een bewuste keuze die je typt.
+const SLEUTEL = stemGeheim('ApiKey');
+const GEVRAAGD = (process.argv.find(a => a.startsWith('--stem=')) ?? '').split('=')[1];
+const MOTOR = GEVRAAGD ?? (SLEUTEL ? 'elevenlabs' : 'say');
+if (MOTOR === 'elevenlabs' && !SLEUTEL) {
+  console.log('⛔ --stem=elevenlabs gevraagd maar er staat geen sleutel in user-secrets.');
+  console.log('   dotnet user-secrets set "ElevenLabs:ApiKey" "<de sleutel>"   (in de Host-map)');
+  process.exit(1);
 }
+const STEM_ID = { 'nl-BE': stemGeheim('StemNl'), 'fr-BE': stemGeheim('StemFr') };
+
+// Het model komt uit user-secrets als het gezet is; anders vraagt hij de API wat er beschikbaar is en kiest
+// het eerste dat nl én fr draagt. Niet uit het hoofd invullen: modelnamen wijzigen bij die dienst, en een
+// verouderde naam geeft een 400 die als "de tekst deugt niet" leest.
+let MODEL = stemGeheim('Model');
+async function kiesModel() {
+  if (MODEL) return MODEL;
+  const r = await fetch('https://api.elevenlabs.io/v1/models', { headers: { 'xi-api-key': SLEUTEL } });
+  if (!r.ok) throw new Error(`kon de modellen niet opvragen: HTTP ${r.status}`);
+  const kandidaat = (await r.json()).find(m => {
+    const t = (m.languages ?? []).map(l => (l.language_id ?? '').toLowerCase());
+    return t.includes('nl') && t.includes('fr');
+  });
+  if (!kandidaat) throw new Error('geen enkel model draagt zowel nl als fr — zet ElevenLabs:Model zelf');
+  MODEL = kandidaat.model_id;
+  console.log(`ℹ️  model gekozen: ${MODEL} (${kandidaat.name ?? '?'}) — pin het met ElevenLabs:Model`);
+  return MODEL;
+}
+
+// ⚠️ EEN CACHE, en die is niet voor de snelheid. Elke ronde genereert alle zinnen opnieuw; op 31/08/2026 heb
+// ik deze film zes keer hernomen om het RITME bij te stellen, en de tekst wijzigde daarbij geen letter. Bij
+// een betalende dienst is dat zes keer betalen voor hetzelfde. De sleutel is {tekst, stem, model}: wijzigt
+// de zin, dan verdwijnt de cache vanzelf.
+const CACHE = new URL('./.films-stem/', import.meta.url).pathname;
+mkdirSync(CACHE, { recursive: true });
+const cacheNaam = (tekst, stem, model) =>
+  `${CACHE}${createHash('sha256').update(`${model}|${stem}|${tekst}`).digest('hex').slice(0, 32)}.wav`;
+
+const duurVan = (pad) => Number(execFileSync('ffprobe',
+  ['-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', pad]).toString().trim());
+
+async function spreek(tekst, taal, pad) {
+  if (MOTOR === 'say') {
+    execFileSync('say', ['-v', STEM[taal], '-r', String(TEMPO[taal]), '-o', pad + '.aiff', tekst]);
+    execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-i', pad + '.aiff', '-ar', '48000', '-ac', '2', pad]);
+    rmSync(pad + '.aiff', { force: true });
+    return duurVan(pad);
+  }
+
+  const stem = STEM_ID[taal];
+  if (!stem) throw new Error(`geen stem voor ${taal} — zet ElevenLabs:Stem${taal.startsWith('fr') ? 'Fr' : 'Nl'}`);
+  const model = await kiesModel();
+  const uitCache = cacheNaam(tekst, stem, model);
+
+  if (!existsSync(uitCache)) {
+    const r = await fetch(`https://api.elevenlabs.io/v1/text-to-speech/${stem}`, {
+      method: 'POST',
+      headers: { 'xi-api-key': SLEUTEL, 'content-type': 'application/json', accept: 'audio/mpeg' },
+      body: JSON.stringify({ text: tekst, model_id: model }),
+    });
+    if (!r.ok) throw new Error(`stem-API: HTTP ${r.status} — ${(await r.text()).slice(0, 200)}`);
+    writeFileSync(`${uitCache}.mp3`, Buffer.from(await r.arrayBuffer()));
+    execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-i', `${uitCache}.mp3`, '-ar', '48000', '-ac', '2', uitCache]);
+    rmSync(`${uitCache}.mp3`, { force: true });
+  }
+  copyFileSync(uitCache, pad);
+  return duurVan(pad);
+}
+
 const tijd = s => {
   const h = Math.floor(s / 3600), m = Math.floor(s % 3600 / 60), r = (s % 60).toFixed(3).padStart(6, '0');
   return `${String(h).padStart(2, '0')}:${String(m).padStart(2, '0')}:${r}`;
@@ -257,12 +324,12 @@ for (const [naam, film] of FILMS) {
     console.log(`\n🎙  ${naam} · ${taal} — ${film.scenes.length} fragmenten`);
     const duren = [];
     for (const [i, sc] of film.scenes.entries()) {
-      const d = spreek(sc[kort], taal, `${werk}${String(i).padStart(2, '0')}-${sc.naam}.wav`);
+      const d = await spreek(sc[kort], taal, `${werk}${String(i).padStart(2, '0')}-${sc.naam}.wav`);
       duren.push(d);
       console.log(`     ${String(i + 1).padStart(2)} ${sc.naam.padEnd(12)} ${d.toFixed(1)}s  ${sc[kort].slice(0, 58)}…`);
     }
     const totaal = duren.reduce((a, b) => a + b, 0);
-    console.log(`     ── samen ${totaal.toFixed(0)}s gesproken (richtduur ${film.duur ?? 150}s)`);
+    console.log(`     ── samen ${totaal.toFixed(0)}s gesproken met ${MOTOR} (richtduur ${film.duur ?? 150}s)`);
     if (DROOG) continue;
 
     // 2 ─ AANMELDEN BUITEN DE OPNAME. Anders staat het inlogscherm in de film.
@@ -362,7 +429,7 @@ for (const [naam, film] of FILMS) {
     const lengte = Number(execFileSync('ffprobe', ['-v', 'error', '-show_entries', 'format=duration',
       '-of', 'csv=p=0', mp4]).toString().trim());
     console.log(`  ✅ ${naam}-${kort}.mp4 — ${lengte.toFixed(0)}s, ${film.scenes.length} scènes, ondertitels erbij`);
-    verslag.gemaakt.push(`${naam}-${kort} (${lengte.toFixed(0)}s)`);
+    verslag.gemaakt.push(`${naam}-${kort} (${lengte.toFixed(0)}s, stem: ${MOTOR})`);
   }
 }
 
