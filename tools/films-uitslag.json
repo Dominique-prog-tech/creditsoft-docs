@@ -1079,48 +1079,48 @@
       "/taken"
     ],
     "app": {
-      "sha": "3ed896900bc4e4cf80e60c07fbea3db4a0760039",
+      "sha": "e8bb224f7c329f3978eb6d9e1385b4992ea6a2b4",
       "vuil": false
     },
     "titel": "Het journaal — alles wat er met een klant gebeurde, op één plaats",
     "omschrijving": "Het journaal hangt aan elke fiche en werkt overal hetzelfde: taken met hun vervaldag en wie ze opvolgt, notities, gesprekken, bijlagen, het mailverkeer met de status van elke verzending, en het logboek dat elke veldwijziging bewaart. Plus de takenlijst die over alle fiches heen kijkt.",
     "hash": "347ba8c6bb6da511",
-    "guid": null,
+    "guid": "c486cb13-0f21-4cb1-b997-7dcbb1401de7",
     "hoofdstukken": [
       {
         "titel": "Waar het journaal staat",
-        "start": 4.46,
-        "eind": 17.14
+        "start": 4.49,
+        "eind": 17.16
       },
       {
         "titel": "Taken",
-        "start": 21.07,
-        "eind": 31.15
+        "start": 21.11,
+        "eind": 31.18
       },
       {
         "titel": "Notities",
-        "start": 35.06,
-        "eind": 44.3
+        "start": 35.1,
+        "eind": 44.34
       },
       {
         "titel": "Gesprekken",
-        "start": 48.22,
-        "eind": 57.88
+        "start": 48.26,
+        "eind": 57.92
       },
       {
         "titel": "Bijlagen",
-        "start": 61.82,
-        "eind": 72.92
+        "start": 61.84,
+        "eind": 72.93
       },
       {
         "titel": "Mailverkeer",
-        "start": 77.03,
+        "start": 77.04,
         "eind": 84.33
       },
       {
         "titel": "Het logboek",
-        "start": 88.44,
-        "eind": 98.47
+        "start": 88.47,
+        "eind": 98.51
       },
       {
         "titel": "Hetzelfde op een dossier",
@@ -1134,39 +1134,43 @@
       },
       {
         "titel": "Tot slot",
-        "start": 132.03,
-        "eind": 140.76
+        "start": 132.04,
+        "eind": 140.77
       }
-    ]
+    ],
+    "thumbnail": null,
+    "gepubliceerdOp": "2026-09-01T12:18:35.433",
+    "gepubliceerdeHash": "347ba8c6bb6da511",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/c486cb13-0f21-4cb1-b997-7dcbb1401de7"
   },
   "journaal-fr": {
     "film": "journaal",
     "taal": "fr-BE",
     "pagina": "journaal/overzicht",
-    "lengte": 163.72,
+    "lengte": 163.56,
     "routes": [
       "/crm/relaties",
       "/credit-files",
       "/taken"
     ],
     "app": {
-      "sha": "3ed896900bc4e4cf80e60c07fbea3db4a0760039",
+      "sha": "e8bb224f7c329f3978eb6d9e1385b4992ea6a2b4",
       "vuil": false
     },
     "titel": "Le journal — tout ce qui s’est passé avec un client, au même endroit",
     "omschrijving": "Le journal est rattaché à chaque fiche et fonctionne partout de la même manière : tâches avec leur échéance et leur responsable, notes, appels, pièces jointes, le courrier avec le statut de chaque envoi, et l’historique qui conserve chaque modification. Ainsi que la liste des tâches qui regarde par-dessus toutes les fiches.",
     "hash": "61e6ae2bac10e591",
-    "guid": null,
+    "guid": "ebb30908-ee1f-4b36-b0b1-7f1c3dddc88e",
     "hoofdstukken": [
       {
         "titel": "Où se trouve le journal",
-        "start": 4.46,
-        "eind": 20.25
+        "start": 4.48,
+        "eind": 20.27
       },
       {
         "titel": "Tâches",
         "start": 24.2,
-        "eind": 34.83
+        "eind": 34.84
       },
       {
         "titel": "Notes",
@@ -1175,39 +1179,43 @@
       },
       {
         "titel": "Appels",
-        "start": 56.13,
-        "eind": 68.06
+        "start": 56.12,
+        "eind": 68.05
       },
       {
         "titel": "Pièces jointes",
-        "start": 71.98,
-        "eind": 85.36
+        "start": 71.97,
+        "eind": 85.34
       },
       {
         "titel": "Courrier",
-        "start": 89.48,
-        "eind": 97.56
+        "start": 89.46,
+        "eind": 97.54
       },
       {
         "titel": "L’historique",
-        "start": 101.69,
-        "eind": 114.51
+        "start": 101.65,
+        "eind": 114.47
       },
       {
         "titel": "Identique sur un dossier",
-        "start": 119.57,
-        "eind": 131.18
+        "start": 119.38,
+        "eind": 130.99
       },
       {
         "titel": "Toutes vos tâches ensemble",
-        "start": 135.94,
-        "eind": 149.69
+        "start": 135.74,
+        "eind": 149.49
       },
       {
         "titel": "Pour conclure",
-        "start": 152.4,
-        "eind": 161.45
+        "start": 152.2,
+        "eind": 161.26
       }
-    ]
+    ],
+    "thumbnail": null,
+    "gepubliceerdOp": "2026-09-01T12:28:42.434",
+    "gepubliceerdeHash": "61e6ae2bac10e591",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/ebb30908-ee1f-4b36-b0b1-7f1c3dddc88e"
   }
 }
