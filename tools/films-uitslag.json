@@ -923,5 +923,149 @@
     "gepubliceerdOp": "2026-09-01T09:30:22.201",
     "gepubliceerdeHash": "2072a8105107fefb",
     "embed": "https://iframe.mediadelivery.net/embed/741183/06ca3fdb-5316-4493-96b1-7e2b9606b70a"
+  },
+  "documentketen-nl": {
+    "film": "documentketen",
+    "taal": "nl-BE",
+    "pagina": "credit-management/document-validation",
+    "lengte": 146.76,
+    "routes": [
+      "/credit-files",
+      "/klantportaal/voorbeeld",
+      "/krediet/documenten-valideren",
+      "/document-library"
+    ],
+    "app": {
+      "sha": "dac0ed8a4cfb948a308aaa1d1b7ed3bd1cc6063a",
+      "vuil": true
+    },
+    "titel": "De documentketen — van vragen tot beoordelen",
+    "omschrijving": "Hoe u stukken opvraagt bij uw klant en ze weer binnenkrijgt: de gevraagde documenten op een dossier met hun drie toestanden, de uitnodiging naar het klantenportaal, het portaal zoals uw klant het ziet, en het centrale scherm waar alles wat op beoordeling wacht bij elkaar staat — gesorteerd op wie het langst wacht. Plus de andere richting: de documentbibliotheek.",
+    "hash": "0cf82166a00c1aa3",
+    "guid": null,
+    "hoofdstukken": [
+      {
+        "titel": "De gevraagde stukken",
+        "start": 6.82,
+        "eind": 19.59
+      },
+      {
+        "titel": "De klant uitnodigen",
+        "start": 23.11,
+        "eind": 33.75
+      },
+      {
+        "titel": "Wat uw klant ziet",
+        "start": 38.31,
+        "eind": 47.83
+      },
+      {
+        "titel": "De klant levert aan",
+        "start": 51.16,
+        "eind": 60.3
+      },
+      {
+        "titel": "Alles wat wacht, op één scherm",
+        "start": 65.19,
+        "eind": 76.85
+      },
+      {
+        "titel": "Wie het langst wacht",
+        "start": 80.5,
+        "eind": 89.32
+      },
+      {
+        "titel": "Een stuk bekijken",
+        "start": 93.67,
+        "eind": 100.82
+      },
+      {
+        "titel": "Goedkeuren of afkeuren",
+        "start": 106.06,
+        "eind": 116.61
+      },
+      {
+        "titel": "De andere richting",
+        "start": 121.65,
+        "eind": 133.4
+      },
+      {
+        "titel": "Tot slot",
+        "start": 136.11,
+        "eind": 144.52
+      }
+    ]
+  },
+  "documentketen-fr": {
+    "film": "documentketen",
+    "taal": "fr-BE",
+    "pagina": "credit-management/document-validation",
+    "lengte": 169.04,
+    "routes": [
+      "/credit-files",
+      "/klantportaal/voorbeeld",
+      "/krediet/documenten-valideren",
+      "/document-library"
+    ],
+    "app": {
+      "sha": "dac0ed8a4cfb948a308aaa1d1b7ed3bd1cc6063a",
+      "vuil": true
+    },
+    "titel": "La chaîne des documents — de la demande à la validation",
+    "omschrijving": "Comment vous demandez des pièces à votre client et les recevez : les documents demandés sur un dossier avec leurs trois statuts, l’invitation au portail client, le portail tel que votre client le voit, et l’écran central où tout ce qui attend une validation est rassemblé — trié par ordre d’attente. Ainsi que l’autre sens : la bibliothèque de documents.",
+    "hash": "28578f8e3ed8da88",
+    "guid": null,
+    "hoofdstukken": [
+      {
+        "titel": "Les pièces demandées",
+        "start": 6.82,
+        "eind": 21.92
+      },
+      {
+        "titel": "Inviter le client",
+        "start": 25.45,
+        "eind": 36.5
+      },
+      {
+        "titel": "Ce que voit votre client",
+        "start": 41.09,
+        "eind": 51.82
+      },
+      {
+        "titel": "Le client dépose ses pièces",
+        "start": 55.13,
+        "eind": 67.48
+      },
+      {
+        "titel": "Tout ce qui attend, sur un écran",
+        "start": 72.44,
+        "eind": 85.35
+      },
+      {
+        "titel": "Qui attend le plus longtemps",
+        "start": 89.04,
+        "eind": 100.18
+      },
+      {
+        "titel": "Consulter une pièce",
+        "start": 104.45,
+        "eind": 111.27
+      },
+      {
+        "titel": "Approuver ou refuser",
+        "start": 116.53,
+        "eind": 131.11
+      },
+      {
+        "titel": "L’autre sens",
+        "start": 136.17,
+        "eind": 153.22
+      },
+      {
+        "titel": "Pour conclure",
+        "start": 155.94,
+        "eind": 166.76
+      }
+    ]
   }
 }

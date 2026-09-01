@@ -536,7 +536,7 @@ const FILMS = [
         fr: "Au-dessus de la liste, vous filtrez. Ce que vous tapez cherche dans toutes les colonnes à la fois, et la liste se réduit pendant que vous tapez." },
 
       { naam: 'werkbalk', kop: { nl: 'Exporteren', fr: "Exporter" },
-        doe: async (p) => { await beweegNaar(p, p.getByText(/^Exporteren$|^Exporter$/).first()); await p.waitForTimeout(1200); },
+        doe: async (p) => { await beweegNaar(p, p.getByText('Exporteren', { exact: true }).or(p.getByText('Exporter', { exact: true })).first()); await p.waitForTimeout(1200); },
         merk: /Exporteren|Exporter/i,
         nl: 'Wat u ziet, kunt u meenemen: exporteren geeft u precies uw huidige selectie in Excel, met uw filter en uw kolommen erin.',
         fr: "Ce que vous voyez, vous pouvez l’emporter : l’export vous donne exactement votre sélection actuelle dans Excel, avec votre filtre et vos colonnes." },
@@ -646,7 +646,7 @@ const FILMS = [
       { naam: 'samenvoegen', kop: { nl: 'Twee fiches samenvoegen', fr: 'Fusionner deux fiches' },
         doe: async (p) => {
           await p.goto(`${BASIS}/crm/relaties`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(1600);
-          await beweegNaar(p, p.getByText(/^Samenvoegen$|^Fusionner$/).first()); await p.waitForTimeout(1200);
+          await beweegNaar(p, p.getByText('Samenvoegen', { exact: true }).or(p.getByText('Fusionner', { exact: true })).first()); await p.waitForTimeout(1200);
         },
         merk: /Samenvoegen|Fusionner/i,
         nl: 'Blijkt dezelfde persoon twee keer in uw lijst te staan, dan voegt u de fiches samen. De dossiers, documenten en het journaal van beide blijven behouden.',
@@ -703,13 +703,13 @@ const FILMS = [
         fr: "Deux colonnes font le travail. En attente depuis indique depuis combien de temps personne n’a réagi, et cette horloge ne s’arrête qu’au premier contact." },
 
       { naam: 'opvolger', kop: { nl: 'Wie volgt hem op', fr: 'Qui assure le suivi' },
-        doe: async (p) => { await beweegNaar(p, p.getByText(/^niemand$|^personne$/i).first()); await p.waitForTimeout(1400); },
+        doe: async (p) => { await beweegNaar(p, p.getByText('niemand', { exact: true }).or(p.getByText('personne', { exact: true })).first()); await p.waitForTimeout(1400); },
         merk: /niemand|personne/i,
         nl: 'De tweede is Opvolging. Staat daar niemand, dan is deze aanvraag van niemand — en dat is precies de lead die wegglipt.',
         fr: "La seconde est Suivi. S’il n’y a personne, cette demande n’appartient à personne — et c’est précisément le lead qui s’échappe." },
 
       { naam: 'bron', kop: { nl: 'Waar hij vandaan komt', fr: 'D’où il provient' },
-        doe: async (p) => { await beweegNaar(p, p.getByText(/^doorverwijzing$/i).first()); await p.waitForTimeout(1400); },
+        doe: async (p) => { await beweegNaar(p, p.getByText('doorverwijzing', { exact: true }).first()); await p.waitForTimeout(1400); },
         merk: /doorverwijzing/i,
         nl: 'De kolom Bron zegt via welk kanaal iemand binnenkwam: uw contactformulier, een telefoon, of een doorverwijzing. Zo ziet u welk kanaal u klanten oplevert.',
         fr: "La colonne Source indique par quel canal la personne est arrivée : votre formulaire de contact, un appel, ou une recommandation. Vous voyez ainsi quel canal vous apporte des clients." },
@@ -760,6 +760,118 @@ const FILMS = [
         merk: /Lead|Gewonnen|Gagné/i,
         nl: 'Zo sluit de cirkel: van een vraag op uw website tot een klant met een dossier. In de volgende film gaan we naar de documenten.',
         fr: "La boucle est ainsi bouclée : d’une question sur votre site à un client avec un dossier. Dans le film suivant, nous passons aux documents." },
+    ],
+  }],
+
+  // ─────────────────────────────────────────────────────────────────────────────────────────────────────
+  // FILM 4 van de reeks (§14). De documentketen, en bewust ÉÉN RICHTING: wat er binnenkomt.
+  //
+  // ⚠️ §14 zette klantportaal + validatie + bibliotheek in één film. Bij het uitschrijven bleek dat twee
+  // verhalen: stukken die je VRAAGT en binnenkrijgt, tegenover stukken die je UITDEELT. De handleiding maakt
+  // datzelfde onderscheid zelf ("Het verschil met Bijlagen"). De bibliotheek krijgt hier één slotscène als
+  // wegwijzer naar de andere richting, niet de helft van de film.
+  //
+  // ⚠️ DE AFKEUR-SCÈNE KEURT NIETS AF. De knop opent een dialoog; die tonen we, en dan Escape. Wél iets
+  // afkeuren zou een demo-document op "geweigerd" zetten én een mail proberen te sturen — en een film hoort
+  // geen sporen achter te laten in de omgeving die hij filmt.
+  ['documentketen', {
+    pagina: 'credit-management/document-validation',
+    titel: {
+      nl: 'De documentketen — van vragen tot beoordelen',
+      fr: 'La chaîne des documents — de la demande à la validation',
+    },
+    omschrijving: {
+      nl: 'Hoe u stukken opvraagt bij uw klant en ze weer binnenkrijgt: de gevraagde documenten op een '
+        + 'dossier met hun drie toestanden, de uitnodiging naar het klantenportaal, het portaal zoals uw '
+        + 'klant het ziet, en het centrale scherm waar alles wat op beoordeling wacht bij elkaar staat — '
+        + 'gesorteerd op wie het langst wacht. Plus de andere richting: de documentbibliotheek.',
+      fr: 'Comment vous demandez des pièces à votre client et les recevez : les documents demandés sur un '
+        + 'dossier avec leurs trois statuts, l’invitation au portail client, le portail tel que votre client '
+        + 'le voit, et l’écran central où tout ce qui attend une validation est rassemblé — trié par ordre '
+        + 'd’attente. Ainsi que l’autre sens : la bibliothèque de documents.',
+    },
+    dossier: ID.dossierMetSchema,
+    uitvoeringen: { handleiding: { stem: true } },
+    scenes: [
+      { naam: 'gevraagd', kop: { nl: 'De gevraagde stukken', fr: 'Les pièces demandées' },
+        doe: async (p) => {
+          await p.goto(`${BASIS}/credit-files/${ID.dossierMetSchema}`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(2200);
+          await klik(p, tabblad(p, /^Gevraagd|^Demandés/i)); await p.waitForTimeout(2000);
+        },
+        merk: /Ontvangen|Reçu/i,
+        nl: 'Elk dossier draagt een lijst van de stukken die u nodig heeft. Elk stuk doorloopt drie toestanden: gevraagd, ontvangen, en in orde. De teller in de tabkop zegt hoeveel er al rond zijn.',
+        fr: "Chaque dossier porte la liste des pièces dont vous avez besoin. Chaque pièce passe par trois statuts : demandé, reçu, et en ordre. Le compteur dans l’onglet indique combien sont déjà réglées." },
+
+      { naam: 'uitnodigen', kop: { nl: 'De klant uitnodigen', fr: 'Inviter le client' },
+        doe: async (p) => { await beweegNaar(p, p.getByText(/Klant uitnodigen|Inviter le client/i).first()); await p.waitForTimeout(1600); },
+        merk: /Klant uitnodigen|Inviter le client/i,
+        nl: 'U nodigt uw klant uit met één knop. Hij krijgt een persoonlijke link naar zijn portaal — geen account, geen wachtwoord, en de link geldt voor dit ene dossier.',
+        fr: "Vous invitez votre client d’un seul bouton. Il reçoit un lien personnel vers son portail — pas de compte, pas de mot de passe, et le lien ne vaut que pour ce dossier." },
+
+      { naam: 'klantblik', kop: { nl: 'Wat uw klant ziet', fr: 'Ce que voit votre client' },
+        doe: async (p) => {
+          await p.goto(`${BASIS}/klantportaal/voorbeeld/${ID.dossierMetSchema}`);
+          await p.waitForLoadState('networkidle'); await p.waitForTimeout(2400);
+        },
+        merk: /Welkom bij uw dossier|Bienvenue dans votre dossier/i,
+        nl: 'Met Bekijk als klant ziet u zijn portaal precies zoals hij het krijgt: uw naam, uw kleuren, en de lijst van wat u nog nodig heeft.',
+        fr: "Avec Voir comme le client, vous voyez son portail exactement tel qu’il le reçoit : votre nom, vos couleurs, et la liste de ce dont vous avez encore besoin." },
+
+      { naam: 'opladen', kop: { nl: 'De klant levert aan', fr: 'Le client dépose ses pièces' },
+        doe: async (p) => { await p.mouse.wheel(0, 400); await p.waitForTimeout(1800); },
+        merk: /Estimation|Kostenraming|documenten|document/i,
+        nl: 'Uw klant laadt zijn stukken hier op, per gevraagd document. Hij ziet meteen wat al in orde is en wat nog niet — en u hoeft er niet achter te bellen.',
+        fr: "Votre client dépose ses pièces ici, document demandé par document demandé. Il voit immédiatement ce qui est réglé et ce qui ne l’est pas — et vous n’avez pas à le relancer." },
+
+      { naam: 'valideren', kop: { nl: 'Alles wat wacht, op één scherm', fr: 'Tout ce qui attend, sur un écran' },
+        doe: async (p) => { await p.goto(`${BASIS}/krediet/documenten-valideren`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(2400); },
+        merk: /Te valideren|À valider/i,
+        nl: 'Wat binnenkomt, komt hier samen: Te valideren documenten toont alles wat op beoordeling wacht, over al uw dossiers heen. Het getal in het menu zegt hoeveel het er zijn.',
+        fr: "Ce qui arrive se rassemble ici : Documents à valider affiche tout ce qui attend une validation, tous dossiers confondus. Le chiffre dans le menu indique combien il y en a." },
+
+      { naam: 'wachttijd', kop: { nl: 'Wie het langst wacht', fr: 'Qui attend le plus longtemps' },
+        doe: async (p) => { await beweegNaar(p, p.locator('th').nth(3)); await p.waitForTimeout(1600); },
+        // ⚠️ De Franse kolom heet "Fourni le", niet "Déposé" — dat had ik geraden en het viel op de
+        // beloftecontrole. `dagen`/`jours` staat in beide talen in de wachttijd-kolom.
+        merk: /dagen|jours/i,
+        nl: 'De lijst staat gesorteerd op wie het langst wacht. Een klant die zijn stukken vorige week opstuurde, staat dus boven wie het vanmorgen deed.',
+        fr: "La liste est triée sur celui qui attend le plus longtemps. Un client qui a envoyé ses pièces la semaine dernière figure donc au-dessus de celui qui l’a fait ce matin." },
+
+      { naam: 'openen', kop: { nl: 'Een stuk bekijken', fr: 'Consulter une pièce' },
+        doe: async (p) => { await klik(p, p.locator('td').nth(2)); await p.waitForTimeout(2200); },
+        merk: /Goedkeuren|Approuver/i,
+        nl: 'U opent een regel om te zien wat er binnengekomen is. Het bestand staat ernaast, met wie het stuurde en wanneer.',
+        fr: "Vous ouvrez une ligne pour voir ce qui est arrivé. Le fichier se trouve à côté, avec qui l’a envoyé et quand." },
+
+      { naam: 'afkeuren', kop: { nl: 'Goedkeuren of afkeuren', fr: 'Approuver ou refuser' },
+        doe: async (p) => {
+          const vak = p.locator('td input[type=checkbox]').nth(1);
+          await vak.check().catch(() => {}); await p.waitForTimeout(1000);
+          // ⚠️ NIET `getByText(/^Afkeuren$/)`. Met een REGEX eist Playwright de hele tekstinhoud van het
+          // element, en die draagt hier witruimte — de locator vond niets en de film viel op een time-out
+          // van 30 s in `boundingBox`, met een melding die naar de muis wees in plaats van naar de selector.
+          // Met een tekenreeks + `exact` matcht Playwright op de GETRIMDE tekst, en dan klopt het wel.
+          await klik(p, p.getByText('Afkeuren', { exact: true }).or(p.getByText('Refuser', { exact: true })).first());
+          await p.waitForTimeout(2200);
+        },
+        merk: /Ongeldige documenten|Documents non valides/i,
+        nl: 'Klopt het, dan keurt u goed. Klopt het niet, dan geeft u een reden — en uw klant krijgt automatisch een bericht met die reden en een nieuwe link naar zijn portaal.',
+        fr: "Si c’est correct, vous approuvez. Sinon, vous indiquez un motif — et votre client reçoit automatiquement un message avec ce motif et un nouveau lien vers son portail." },
+
+      { naam: 'bibliotheek', kop: { nl: 'De andere richting', fr: 'L’autre sens' },
+        doe: async (p) => {
+          await sluitLade(p);
+          await p.goto(`${BASIS}/document-library`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(2200);
+        },
+        merk: /Bedoeld voor|Destiné à/i,
+        nl: 'Documenten gaan ook de andere kant op. In de documentbibliotheek zet u uw eigen stukken klaar, en per map bepaalt u voor wie ze zijn: intern, uw aanbrengers, of uw klanten.',
+        fr: "Les documents circulent aussi dans l’autre sens. Dans la bibliothèque, vous mettez vos propres pièces à disposition, et par dossier vous décidez à qui elles sont destinées : en interne, à vos apporteurs, ou à vos clients." },
+
+      { naam: 'slot', kop: { nl: 'Tot slot', fr: 'Pour conclure' },
+        doe: async (p) => { await p.waitForTimeout(1200); },
+        merk: /Documentbibliotheek|Bibliothèque/i,
+        nl: 'Zo loopt de hele keten: u vraagt, uw klant levert, u beoordeelt — en niets blijft liggen omdat het op één scherm staat.',
+        fr: "Voilà toute la chaîne : vous demandez, votre client dépose, vous validez — et rien ne traîne, parce que tout figure sur un seul écran." },
     ],
   }],
 
