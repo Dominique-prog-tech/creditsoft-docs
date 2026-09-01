@@ -172,7 +172,22 @@ Idem voor ondertitels: de `.vtt` per taal rolt uit dezelfde narratie. Uploaden v
 
 De API scheidt twee stappen: eerst een video-object aanmaken (`POST .../videos`, levert een GUID), dan het bestand ernaartoe sturen (`PUT .../videos/{guid}`). Opnieuw PUT'en naar dezelfde GUID hoort dus het bestand te vervangen met behoud van de embed.
 
-⚠️ **Bunny documenteert dat niet met zoveel woorden. Ga er niet van uit — meet het in Fase 1:** upload een film, vervang hem, en controleer of de embed-URL dezelfde blijft én het nieuwe beeld toont.
+⛔ **GEMETEN OP 01/09/2026, EN HET ANTWOORD IS NEE.** Een tweede `PUT` naar dezelfde GUID wordt geweigerd:
+
+```
+400 — {"success":false,"message":"The video has already been uploaded."}
+```
+
+De proef: video-object aanmaken, de Nederlandse film (97 s) erheen sturen, wachten tot Bunny klaar was met verwerken, en dan de Franse (104 s) naar diezelfde GUID. De GUID bleef gelijk — **en dat bewijst niets**, want een upload die niets doet laat de GUID óók gelijk. De **lengte** bleef op 96 s staan, en dát is het bewijs dat er niets vervangen is. Hun eigen documentatie noemt die 400 als verwachte foutcode maar legt niet uit wanneer ze optreedt; enkel de proef gaf uitsluitsel.
+
+**Gevolg: de indirectie is geen luxe maar de dragende constructie.** Een hernomen film krijgt onvermijdelijk een NIEUWE GUID. Daarom:
+
+1. Bij een herneming maakt de generator een **nieuw** video-object aan en uploadt daarheen.
+2. Hij schrijft de nieuwe GUID in `.films-uitslag.json` onder `filmnaam + taal`.
+3. Hij **verwijdert de oude video**. Zonder die stap groeit de library bij elke ronde met vijftien video's per taal, en na een half jaar staat er niemand meer die weet welke de echte is.
+4. De MkDocs-hook leest die tabel bij het bouwen, dus de handleiding wijst altijd naar de actuele film.
+
+**Wat daardoor wél veroudert:** een embed-URL die iemand met de hand uit de handleiding kopieerde en in een mail plakte. Dat is de prijs, en ze is te dragen — de handleiding zelf klopt altijd. Wie een blijvende link nodig heeft, verwijst naar de handleidingpagina en niet naar de speler.
 
 En bouw hoe dan ook de **indirectie**, zodat het antwoord er niet toe doet: de handleiding verwijst nooit naar een GUID maar altijd naar een **filmnaam**. `.films-uitslag.json` vertaalt filmnaam + taal → GUID, en de hook leest dat bij het bouwen. Werkt vervangen, dan wijzigt er niets. Werkt het niet, dan krijgt de film een nieuwe GUID en klopt de handleiding nog steeds vanzelf — enkel een extern gedeelde link veroudert. Zo hangt het ontwerp niet aan één onbevestigd detail.
 
@@ -207,7 +222,7 @@ Dezelfde afweging als bij `kern.mjs` op 29/08: het generieke deel hoort in `adm-
 | Zichtbare cursor | ✅ nagemeten op een filmbeeld, niet aangenomen |
 | Beeld en geluid synchroon zónder montagestap | ✅ en met ritme, zie §3.1 |
 | Goedgekeurd | ✅ "klinkt héél goed", "overtuigend" |
-| Vervangproef §7.4 | ⛔ **wacht op een Bunny-account** |
+| Vervangproef §7.4 | ✅ uitgevoerd — antwoord: **vervangen kan niet**, zie §7.4 |
 
 **De stemmen** (ElevenLabs, Creator-abonnement, `eleven_multilingual_v2` gepind):
 `Christian Brison` voor het Nederlands — Vlaams, en na vergelijking met `Luc` de beste van de twee.
@@ -241,5 +256,9 @@ Commerciële video's (3 à 5, kortere montage, muziek — later te knippen uit d
 1. ~~**De stem kiezen.**~~ ✅ afgehandeld op 01/09/2026 — zie de stand bij fase 1.
    Oorspronkelijk: Standaard Nederlandse TTS klinkt Hollands; voor Vlaamse makelaars valt dat op. Eigen stem klonen (ElevenLabs, vanaf ± $6/maand mét commerciële licentie) of een gekochte stem. Idem voor Belgisch-Frans. Let op twee dingen: dat het plan een **commerciële licentie** draagt, en dat je Vlaams en Belgisch-Frans krijgt — een gekochte standaardstem geeft dat laatste meestal niet.
    ⚠️ **Doe dit ná het ritme, niet ervoor.** Het ritme is nu op de plaatshouder-stemmen afgeregeld en goedgekeurd (31/08/2026). Wie beide tegelijk wijzigt, weet achteraf niet welke van de twee hielp.
-2. **Bunny-account en video library aanmaken**, en de API-sleutel doorgeven. Opslag vanaf $0,01/GB, streaming vanaf $0,005/GB, geen minimum — bij deze aantallen een paar euro per maand.
+2. ~~**Bunny-account en video library aanmaken**~~ ✅ afgehandeld op 01/09/2026: library `creditsoft`
+   (id 741183), één regio, geen replicatie. De library-sleutel en het id staan in user-secrets onder
+   `Bunny:ApiKey` en `Bunny:LibraryId`.
+   ⚠️ De ACCOUNT-sleutel is daarbij overschreven door de library-sleutel. Wil je account-breed beheer
+   (een library voor CleanOps of Nimble), zet die dan opnieuw én onder een andere naam.
 3. **De selectie maken.** Welke vijftien films, volgens de regel uit §1: geen referentiepagina's.

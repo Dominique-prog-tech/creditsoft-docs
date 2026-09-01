@@ -93,6 +93,18 @@ export { gebruiker, wachtwoord };
 // Ontbreekt de sleutel, dan geeft dit `null` — en de aanroeper hoort dat LUID te melden en niet stil terug
 // te vallen op de Mac-stem. Een film met de plaatshouder-stem die zich als de echte voordoet, is precies de
 // soort stille terugval waar deze vloot al genoeg last van heeft gehad.
+// ── Bunny Stream ─────────────────────────────────────────────────────────────────────────────────────────
+// Zelfde plaats, zelfde regel: user-secrets, nooit in git of in een log.
+//
+//     dotnet user-secrets set "Bunny:ApiKey"    "<de sleutel van de video library>"
+//     dotnet user-secrets set "Bunny:LibraryId" "<het nummer van de library>"
+//
+export function bunnyGeheim(naam) {
+  if (!existsSync(SECRETS)) return null;
+  const geheim = JSON.parse(readFileSync(SECRETS, 'utf8').replace(/^\uFEFF/, ''));
+  return geheim[`Bunny:${naam}`] ?? null;
+}
+
 export function stemGeheim(naam) {
   if (!existsSync(SECRETS)) return null;
   const geheim = JSON.parse(readFileSync(SECRETS, 'utf8').replace(/^\uFEFF/, ''));
