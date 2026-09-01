@@ -468,13 +468,13 @@
     "film": "aan-de-slag",
     "taal": "nl-BE",
     "pagina": "getting-started/navigatie",
-    "lengte": 142.72,
+    "lengte": 145.12,
     "routes": [
       "/dashboard",
       "/crm/relaties"
     ],
     "app": {
-      "sha": "3ed896900bc4e4cf80e60c07fbea3db4a0760039",
+      "sha": "e8bb224f7c329f3978eb6d9e1385b4992ea6a2b4",
       "vuil": false
     },
     "titel": "Uw weg vinden in CreditSoft — het scherm, het zoeken en uw voorkeuren",
@@ -484,58 +484,58 @@
     "hoofdstukken": [
       {
         "titel": "Het startscherm",
-        "start": 3.52,
-        "eind": 13.13
+        "start": 3.28,
+        "eind": 12.89
       },
       {
         "titel": "Het menu links",
-        "start": 15.96,
-        "eind": 24.69
+        "start": 16.06,
+        "eind": 24.79
       },
       {
         "titel": "Zoeken vanaf elk scherm",
-        "start": 30.79,
-        "eind": 43.47
+        "start": 31.24,
+        "eind": 43.92
       },
       {
         "titel": "Hulp bij dit scherm",
-        "start": 47.69,
-        "eind": 55.63
+        "start": 48.5,
+        "eind": 56.44
       },
       {
         "titel": "De twee assistenten",
-        "start": 60.57,
-        "eind": 70.27
+        "start": 61.72,
+        "eind": 71.43
       },
       {
         "titel": "Werken met lijsten",
-        "start": 75.55,
-        "eind": 82.93
+        "start": 76.56,
+        "eind": 83.94
       },
       {
         "titel": "Sorteren",
-        "start": 86.65,
-        "eind": 92.23
+        "start": 88.02,
+        "eind": 93.59
       },
       {
         "titel": "Filteren",
-        "start": 97.18,
-        "eind": 104.43
+        "start": 98.92,
+        "eind": 106.17
       },
       {
         "titel": "Exporteren",
-        "start": 107.53,
-        "eind": 115.75
+        "start": 109.63,
+        "eind": 117.85
       },
       {
         "titel": "Uw voorkeuren",
-        "start": 119.66,
-        "eind": 130.07
+        "start": 122.12,
+        "eind": 132.52
       },
       {
         "titel": "Tot slot",
-        "start": 135.24,
-        "eind": 140.3
+        "start": 137.65,
+        "eind": 142.71
       }
     ]
   },
@@ -543,13 +543,13 @@
     "film": "aan-de-slag",
     "taal": "fr-BE",
     "pagina": "getting-started/navigatie",
-    "lengte": 162.84,
+    "lengte": 165.32,
     "routes": [
       "/dashboard",
       "/crm/relaties"
     ],
     "app": {
-      "sha": "3ed896900bc4e4cf80e60c07fbea3db4a0760039",
+      "sha": "e8bb224f7c329f3978eb6d9e1385b4992ea6a2b4",
       "vuil": false
     },
     "titel": "Se repérer dans CreditSoft — l’écran, la recherche et vos préférences",
@@ -559,58 +559,58 @@
     "hoofdstukken": [
       {
         "titel": "L'écran d'accueil",
-        "start": 3.33,
-        "eind": 13.55
+        "start": 3.3,
+        "eind": 13.51
       },
       {
         "titel": "Le menu de gauche",
-        "start": 16.39,
-        "eind": 27.96
+        "start": 16.7,
+        "eind": 28.26
       },
       {
         "titel": "Rechercher depuis tout écran",
-        "start": 34.06,
-        "eind": 49.43
+        "start": 34.71,
+        "eind": 50.08
       },
       {
         "titel": "Aide sur cet écran",
-        "start": 53.66,
-        "eind": 62.67
+        "start": 54.65,
+        "eind": 63.66
       },
       {
         "titel": "Les deux assistants",
-        "start": 67.61,
-        "eind": 77.17
+        "start": 68.94,
+        "eind": 78.51
       },
       {
         "titel": "Travailler avec les listes",
-        "start": 82.4,
-        "eind": 94.29
+        "start": 83.62,
+        "eind": 95.51
       },
       {
         "titel": "Trier",
-        "start": 98.03,
-        "eind": 103.18
+        "start": 99.6,
+        "eind": 104.75
       },
       {
         "titel": "Filtrer",
-        "start": 108.14,
-        "eind": 118.17
+        "start": 110.06,
+        "eind": 120.09
       },
       {
         "titel": "Exporter",
-        "start": 121.27,
-        "eind": 132.18
+        "start": 123.55,
+        "eind": 134.46
       },
       {
         "titel": "Vos préférences",
-        "start": 136.1,
-        "eind": 149.1
+        "start": 138.74,
+        "eind": 151.74
       },
       {
         "titel": "Pour conclure",
-        "start": 154.37,
-        "eind": 160.55
+        "start": 156.85,
+        "eind": 163.03
       }
     ]
   },
@@ -1800,7 +1800,7 @@
     "titel": "Het dashboard — uw kantoor in één scherm",
     "omschrijving": "Het startscherm gelezen zoals het bedoeld is: het jaar bovenaan dat alles stuurt, de vier tegels met aantallen en bedragen, de termijnen die vandaag actie vragen, de drie grafieken over het gerealiseerde volume, de pijplijn met uw dossiers per fase, en het scherm waar u die fases zelf samenstelt. Plus waarom uw dashboard er anders uitziet dan dat van een collega.",
     "hash": "8e8f537dfb0114cb",
-    "guid": null,
+    "guid": "f3e1d5be-49e7-4d1c-a405-f3c940067728",
     "hoofdstukken": [
       {
         "titel": "Het jaar stuurt alles",
@@ -1852,7 +1852,11 @@
         "start": 146.09,
         "eind": 152.73
       }
-    ]
+    ],
+    "thumbnail": null,
+    "gepubliceerdOp": "2026-09-01T16:25:42.372",
+    "gepubliceerdeHash": "8e8f537dfb0114cb",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/f3e1d5be-49e7-4d1c-a405-f3c940067728"
   },
   "dashboard-fr": {
     "film": "dashboard",
@@ -1870,7 +1874,7 @@
     "titel": "Le tableau de bord — votre bureau en un écran",
     "omschrijving": "L’écran d’accueil lu comme il se doit : l’année en haut qui pilote tout, les quatre tuiles avec les nombres et les montants, les délais qui demandent une action aujourd’hui, les trois graphiques du volume réalisé, le pipeline de vos dossiers par phase, et l’écran où vous composez ces phases. Ainsi que la raison pour laquelle votre tableau de bord diffère de celui d’un collègue.",
     "hash": "8806c575759f29aa",
-    "guid": null,
+    "guid": "c3b57031-750a-49dd-855a-23a70b2927c0",
     "hoofdstukken": [
       {
         "titel": "L’année pilote tout",
@@ -1921,6 +1925,140 @@
         "titel": "Pour conclure",
         "start": 172.35,
         "eind": 180.66
+      }
+    ],
+    "thumbnail": null,
+    "gepubliceerdOp": "2026-09-01T16:35:48.919",
+    "gepubliceerdeHash": "8806c575759f29aa",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/c3b57031-750a-49dd-855a-23a70b2927c0"
+  },
+  "lijsten-en-rapporten-nl": {
+    "film": "lijsten-en-rapporten",
+    "taal": "nl-BE",
+    "pagina": "credit-management/filteren-in-lijsten",
+    "lengte": 135.44,
+    "routes": [
+      "/credit-files/overview",
+      "/rapporten"
+    ],
+    "app": {
+      "sha": "e8bb224f7c329f3978eb6d9e1385b4992ea6a2b4",
+      "vuil": false
+    },
+    "titel": "Lijsten en rapporten — zoeken, filteren en meenemen",
+    "omschrijving": "Elke lijst in CreditSoft werkt hetzelfde, en dit is hoe u ze naar uw hand zet: de keuzelijsten bovenaan, het trechtertje op een kolomkop, groeperen door een kolom te verslepen, en wat u meeneemt — afdrukken en exporteren volgen altijd uw filters. Plus de negen rapporten, waar u een periode kiest en een voorbeeld krijgt dat u kan downloaden of doorsturen.",
+    "hash": "1bbe19b1f6cd139c",
+    "guid": null,
+    "hoofdstukken": [
+      {
+        "titel": "Het globaal overzicht",
+        "start": 4.88,
+        "eind": 16.86
+      },
+      {
+        "titel": "De keuzelijsten bovenaan",
+        "start": 20.86,
+        "eind": 34.75
+      },
+      {
+        "titel": "Het trechtertje",
+        "start": 39.72,
+        "eind": 49.15
+      },
+      {
+        "titel": "Toepassen",
+        "start": 53,
+        "eind": 61.36
+      },
+      {
+        "titel": "Groeperen",
+        "start": 66.03,
+        "eind": 75.23
+      },
+      {
+        "titel": "Afdrukken en exporteren",
+        "start": 79.22,
+        "eind": 89.06
+      },
+      {
+        "titel": "De rapporten",
+        "start": 93.74,
+        "eind": 101.59
+      },
+      {
+        "titel": "Kiezen wat u nodig heeft",
+        "start": 105.75,
+        "eind": 118.85
+      },
+      {
+        "titel": "Tot slot",
+        "start": 123.6,
+        "eind": 133.02
+      }
+    ]
+  },
+  "lijsten-en-rapporten-fr": {
+    "film": "lijsten-en-rapporten",
+    "taal": "fr-BE",
+    "pagina": "credit-management/filteren-in-lijsten",
+    "lengte": 161.12,
+    "routes": [
+      "/credit-files/overview",
+      "/rapporten"
+    ],
+    "app": {
+      "sha": "e8bb224f7c329f3978eb6d9e1385b4992ea6a2b4",
+      "vuil": false
+    },
+    "titel": "Listes et rapports — chercher, filtrer et emporter",
+    "omschrijving": "Toutes les listes de CreditSoft fonctionnent de la même manière, et voici comment les adapter : les listes déroulantes du haut, l’entonnoir sur un en-tête de colonne, le regroupement en déplaçant une colonne, et ce que vous emportez — l’impression et l’export suivent toujours vos filtres. Ainsi que les neuf rapports, où vous choisissez une période et obtenez un aperçu.",
+    "hash": "169070b87bb9e5a0",
+    "guid": null,
+    "hoofdstukken": [
+      {
+        "titel": "L’aperçu global",
+        "start": 4.87,
+        "eind": 18.01
+      },
+      {
+        "titel": "Les listes déroulantes du haut",
+        "start": 21.99,
+        "eind": 37.87
+      },
+      {
+        "titel": "L’entonnoir",
+        "start": 42.84,
+        "eind": 55.43
+      },
+      {
+        "titel": "Appliquer",
+        "start": 59.29,
+        "eind": 71.83
+      },
+      {
+        "titel": "Regrouper",
+        "start": 76.5,
+        "eind": 88.34
+      },
+      {
+        "titel": "Imprimer et exporter",
+        "start": 92.32,
+        "eind": 104.21
+      },
+      {
+        "titel": "Les rapports",
+        "start": 108.92,
+        "eind": 119.32
+      },
+      {
+        "titel": "Choisir ce dont vous avez besoin",
+        "start": 123.48,
+        "eind": 141.36
+      },
+      {
+        "titel": "Pour conclure",
+        "start": 146.13,
+        "eind": 158.72
       }
     ]
   }

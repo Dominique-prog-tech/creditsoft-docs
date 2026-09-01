@@ -210,7 +210,19 @@ const CURSOR = `
 //
 // `block: 'center'` en niet `scrollIntoViewIfNeeded()`: dat laatste schuift het element net binnen de rand,
 // en dan staat je onderwerp op de onderste pixelrij. Centreren leest als een bewuste camerabeweging.
+const zichtbaarheid = [];   // per scène: stond het onderwerp in beeld VÓÓR het scrollen?
+let huidigeScene = '?';
+
 async function beweegNaar(page, loc) {
+  // ⚠️ EERST METEN, DAN SCROLLEN. Zo weten we of de OUDE versie van deze functie (die niet scrolde) dit
+  // onderwerp wel of niet in beeld had — dat is de controle op alles wat vóór 01/09/2026 opgenomen is.
+  const voor = await loc.boundingBox().catch(() => null);
+  const venster0 = page.viewportSize();
+  if (voor && venster0) {
+    const inBeeld = voor.y >= 0 && voor.y + voor.height <= venster0.height;
+    zichtbaarheid.push({ scene: huidigeScene, inBeeld, y: Math.round(voor.y), venster: venster0.height });
+  }
+
   await loc.evaluate(el => el.scrollIntoView({ block: 'center', inline: 'nearest', behavior: 'instant' }))
     .catch(() => { /* een element zonder eigen scrollcontext: dan gewoon meten */ });
   await page.waitForTimeout(350);
@@ -1527,6 +1539,98 @@ const FILMS = [
     ],
   }],
 
+  // ─────────────────────────────────────────────────────────────────────────────────────────────────────
+  // FILM 11 van de reeks (§14 nummer 14). Lijsten naar je hand zetten, en wat je ermee meeneemt.
+  //
+  // ⚠️ HET GLOBAAL OVERZICHT als toneel, en niet een willekeurige lijst: het is de grootste (4.000 dossiers,
+  // twaalf kolommen) en het draagt als enige de groepeerbalk. Wat je hier ziet, geldt op elke lijst.
+  //
+  // ⚠️ GEEN SCÈNE DIE EEN RAPPORT ÉCHT OPENT. De tegel opent een venster dat een periode vraagt; dat
+  // betrouwbaar aansturen in een film kost meer dan het opbrengt, en een half geopend venster is erger dan
+  // geen. De scène toont de bibliotheek en één tegel met haar omschrijving — dat is wat de kijker moet
+  // weten om te kiezen.
+  ['lijsten-en-rapporten', {
+    pagina: 'credit-management/filteren-in-lijsten',
+    titel: {
+      nl: 'Lijsten en rapporten — zoeken, filteren en meenemen',
+      fr: 'Listes et rapports — chercher, filtrer et emporter',
+    },
+    omschrijving: {
+      nl: 'Elke lijst in CreditSoft werkt hetzelfde, en dit is hoe u ze naar uw hand zet: de keuzelijsten '
+        + 'bovenaan, het trechtertje op een kolomkop, groeperen door een kolom te verslepen, en wat u '
+        + 'meeneemt — afdrukken en exporteren volgen altijd uw filters. Plus de negen rapporten, waar u een '
+        + 'periode kiest en een voorbeeld krijgt dat u kan downloaden of doorsturen.',
+      fr: 'Toutes les listes de CreditSoft fonctionnent de la même manière, et voici comment les adapter : '
+        + 'les listes déroulantes du haut, l’entonnoir sur un en-tête de colonne, le regroupement en '
+        + 'déplaçant une colonne, et ce que vous emportez — l’impression et l’export suivent toujours vos '
+        + 'filtres. Ainsi que les neuf rapports, où vous choisissez une période et obtenez un aperçu.',
+    },
+    uitvoeringen: { handleiding: { stem: true } },
+    scenes: [
+      { naam: 'overzicht', kop: { nl: 'Het globaal overzicht', fr: 'L’aperçu global' },
+        doe: async (p) => { await p.goto(`${BASIS}/credit-files/overview`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(2800); },
+        merk: /Sleep een kolomkop|Déplacer l.entête/i,
+        nl: 'Dit is de grootste lijst van CreditSoft: al uw dossiers met hun status, fase, instelling en doorlooptijd. Wat u hier leert, werkt op elke lijst in de toepassing.',
+        fr: "Voici la plus grande liste de CreditSoft : tous vos dossiers avec leur statut, leur phase, l’organisme et la durée. Ce que vous apprenez ici fonctionne sur toutes les listes." },
+
+      { naam: 'keuzelijsten', kop: { nl: 'De keuzelijsten bovenaan', fr: 'Les listes déroulantes du haut' },
+        doe: async (p) => { await beweegNaar(p, p.getByText(/Alle sales|Tous les sales/i).first()); await p.waitForTimeout(1700); },
+        merk: /Alle sales|Tous les sales/i,
+        nl: 'Bovenaan staan de grove keuzes: status, instelling, verantwoordelijke, sales. Ernaast ziet u hoeveel dossiers er overblijven van het totaal — zo weet u altijd hoe hard u aan het filteren bent.',
+        fr: "En haut, les choix larges : statut, organisme, responsable, sales. À côté, vous voyez combien de dossiers subsistent sur le total — vous savez donc toujours à quel point vous filtrez." },
+
+      { naam: 'trechter', kop: { nl: 'Het trechtertje', fr: 'L’entonnoir' },
+        doe: async (p) => {
+          const kop = p.locator('th').nth(2);
+          await beweegNaar(p, kop); await p.waitForTimeout(900);
+          await kop.locator('button, [role=button], [class*=filter]').first().click({ force: true });
+          await p.waitForTimeout(1800);
+        },
+        merk: /Waarden|Valeurs/i,
+        nl: 'Fijner filtert u op de kolom zelf. Beweeg over een kolomkop en er verschijnt een trechtertje: daarmee kiest u precies welke waarden u wil zien.',
+        fr: "Pour affiner, filtrez sur la colonne elle-même. Survolez un en-tête et un entonnoir apparaît : vous choisissez ainsi exactement quelles valeurs afficher." },
+
+      { naam: 'toepassen', kop: { nl: 'Toepassen', fr: 'Appliquer' },
+        doe: async (p) => { await beweegNaar(p, p.getByText('Toepassen', { exact: true }).or(p.getByText('Appliquer', { exact: true })).first()); await p.waitForTimeout(1600); },
+        merk: /Toepassen|Appliquer/i,
+        nl: 'U vinkt aan wat u zoekt en klikt op Toepassen. Combineert u meerdere kolommen, dan gelden ze samen — en het aantal bovenaan zakt mee.',
+        fr: "Vous cochez ce que vous cherchez et cliquez sur Appliquer. Si vous combinez plusieurs colonnes, elles s’appliquent ensemble — et le nombre en haut diminue en conséquence." },
+
+      { naam: 'groeperen', kop: { nl: 'Groeperen', fr: 'Regrouper' },
+        doe: async (p) => {
+          await p.keyboard.press('Escape'); await p.waitForTimeout(700);
+          await beweegNaar(p, p.getByText(/Sleep een kolomkop|Déplacer l.entête/i).first()); await p.waitForTimeout(1700);
+        },
+        merk: /Sleep een kolomkop|Déplacer l.entête/i,
+        nl: 'Boven de kolommen staat een balk. Sleept u er een kolomkop naartoe, dan groepeert de lijst zich op die kolom — bijvoorbeeld per instelling of per fase.',
+        fr: "Au-dessus des colonnes se trouve une barre. En y déplaçant un en-tête, la liste se regroupe sur cette colonne — par organisme ou par phase, par exemple." },
+
+      { naam: 'meenemen', kop: { nl: 'Afdrukken en exporteren', fr: 'Imprimer et exporter' },
+        doe: async (p) => { await beweegNaar(p, p.getByText('Afdruk lijst', { exact: true }).or(p.getByText('Imprimer la liste', { exact: true })).first()); await p.waitForTimeout(1700); },
+        merk: /Afdruk lijst|Imprimer la liste/i,
+        nl: 'En dan het belangrijkste: exporteren en afdrukken volgen uw filters. Wat u op het scherm hebt staan, is wat er in het bestand komt — niet de hele lijst.',
+        fr: "Et le plus important : l’export et l’impression suivent vos filtres. Ce que vous avez à l’écran est ce qui se retrouve dans le fichier — pas la liste entière." },
+
+      { naam: 'rapporten', kop: { nl: 'De rapporten', fr: 'Les rapports' },
+        doe: async (p) => { await p.goto(`${BASIS}/rapporten`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(2400); },
+        merk: /Kies een rapport|Choisissez un rapport/i,
+        nl: 'Wilt u niet zelf filteren maar een vast overzicht, dan zijn er de rapporten: negen stuks, gegroepeerd per onderwerp.',
+        fr: "Si vous ne voulez pas filtrer vous-même mais obtenir un aperçu établi, il y a les rapports : neuf au total, groupés par thème." },
+
+      { naam: 'tegel', kop: { nl: 'Kiezen wat u nodig heeft', fr: 'Choisir ce dont vous avez besoin' },
+        doe: async (p) => { await beweegNaar(p, p.getByText(/Status periodiek op ingavedatum|Statut par période sur la date/i).first()); await p.waitForTimeout(1900); },
+        merk: /Status periodiek op ingavedatum|Statut par période sur la date/i,
+        nl: 'Elke tegel zegt in één zin wat het rapport telt en waarop het telt — op ingavedatum of op aktedatum, bijvoorbeeld. Dat verschil bepaalt uw cijfer, dus het staat er met opzet bij.',
+        fr: "Chaque tuile dit en une phrase ce que le rapport compte et sur quelle date — la date d’encodage ou la date d’acte, par exemple. Cette différence détermine votre chiffre, elle est donc mentionnée à dessein." },
+
+      { naam: 'slot', kop: { nl: 'Tot slot', fr: 'Pour conclure' },
+        doe: async (p) => { await p.goto(`${BASIS}/credit-files/overview`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(2400); },
+        merk: /Sleep een kolomkop|Déplacer l.entête/i,
+        nl: 'Zoeken, filteren, groeperen, meenemen. Vier handelingen die op elke lijst hetzelfde werken — en die u de rest van CreditSoft cadeau geven.',
+        fr: "Chercher, filtrer, regrouper, emporter. Quatre gestes identiques sur toutes les listes — et qui vous donnent le reste de CreditSoft par-dessus le marché." },
+    ],
+  }],
+
   ['kredietdossiers-basis', {
     pagina: 'credit-management/credit-files',
     // ⚠️ EEN MENSELIJKE TITEL EN OMSCHRIJVING, per taal. De technische naam ("kredietdossiers-basis-nl") is
@@ -1815,6 +1919,7 @@ for (const [naam, filmVol] of FILMS) {
     for (const [i, sc] of film.scenes.entries()) {
       const start = (Date.now() - t0) / 1000;
       try {
+        huidigeScene = `${naam}-${kort} · ${sc.naam}`;
         await sc.doe(page, film);
         // ⚠️ WACHTEN OP EEN TOESTAND, NIET OP EEN TIMER (§3.4). Het merkteken IS de toestand.
         await page.locator('body').filter({ hasText: sc.merk }).first().waitFor({ timeout: 15000 });
@@ -2008,6 +2113,19 @@ if (zonderKop.size) {
   console.log('   ' + [...zonderKop].join(', '));
   console.log("   Geef die scène een `kop: { nl: '…', fr: '…' }`; dat is wat de kijker in de speler leest.");
 }
+// ⚠️ WELKE SCÈNES STONDEN NIET IN BEELD? Tot 01/09/2026 scrolde `beweegNaar` niet: wees een scène naar iets
+// onder de vouw, dan toonde ze de bovenkant van de pagina en faalde er niets. Deze lijst zegt welke films
+// hernomen zouden moeten worden als je de OUDE opname nog gebruikt.
+const buitenBeeld = zichtbaarheid.filter(z => !z.inBeeld);
+if (buitenBeeld.length) {
+  console.log(`\n◐ ${buitenBeeld.length} scène(s) hadden hun onderwerp NIET in beeld zonder te scrollen:`);
+  buitenBeeld.forEach(z => console.log(`   ${z.scene}: y=${z.y} in een venster van ${z.venster}`));
+  console.log('   In de NIEUWE opname is dat opgelost (er wordt gescrold). Een film die vóór deze wijziging');
+  console.log('   opgenomen én gepubliceerd is, toont daar iets anders dan wat de zin belooft.');
+} else if (zichtbaarheid.length) {
+  console.log(`\n✅ alle ${zichtbaarheid.length} aangewezen onderwerpen stonden ook zonder scrollen in beeld.`);
+}
+
 if (buitenDuur.length) {
   console.log(`\n◐ ${buitenDuur.length} film(s) buiten de richtduur van ${DUUR_MIN}–${DUUR_MAX} s (§1):`);
   buitenDuur.forEach(r => console.log(`   ${r}`));
