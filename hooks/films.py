@@ -29,12 +29,67 @@ def _films() -> dict:
         return json.load(f)          # kapot = bouwfout, en dat is de bedoeling
 
 
+def _duur(seconden: float) -> str:
+    """ISO 8601, want dat is wat schema.org voor ``duration`` verwacht: PT1M36S."""
+    hele = int(round(seconden))
+    return f"PT{hele // 60}M{hele % 60}S"
+
+
+def _gegevens(film: dict, guid: str, taal: str) -> str:
+    """De VideoObject die een zoekmachine leest.
+
+    ⚠️ **Dit is wat een video vindbaar maakt, niet de metadata bij Bunny.** Zoekmachines indexeren
+    docs.creditsoft.be; de speler zelf staat op een ander domein en wordt niet gelezen. Dominique merkte op
+    01/09/2026 terecht op dat de metadata leeg stond — maar de helft die telt ontbrak hier, niet daar.
+
+    ⚠️ En Bunny NEGEERT ``description`` via zijn API (twee schrijfwijzen geprobeerd, allebei 200, allebei
+    genegeerd). Dat maakt deze plaats meteen de enige waar de omschrijving echt landt.
+    """
+    gegevens = {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        "name": film.get("titel") or film.get("film", ""),
+        "description": film.get("omschrijving", ""),
+        "embedUrl": f"https://iframe.mediadelivery.net/embed/{LIBRARY}/{guid}",
+        "inLanguage": "fr-BE" if taal == "fr" else "nl-BE",
+        "isFamilyFriendly": True,
+    }
+    if film.get("thumbnail"):
+        gegevens["thumbnailUrl"] = film["thumbnail"]
+    if film.get("lengte"):
+        gegevens["duration"] = _duur(film["lengte"])
+    if film.get("gepubliceerdOp"):
+        # Bunny geeft de datum zonder tijdzone; schema.org wil er één.
+        datum = film["gepubliceerdOp"]
+        gegevens["uploadDate"] = datum if datum.endswith("Z") else datum + "Z"
+    if film.get("hoofdstukken"):
+        # De hoofdstukken zijn ook navigatie voor de zoekmachine: ze kunnen als "key moments" verschijnen.
+        gegevens["hasPart"] = [
+            {
+                "@type": "Clip",
+                "name": h["titel"],
+                "startOffset": h["start"],
+                "endOffset": h["eind"],
+            }
+            for h in film["hoofdstukken"]
+        ]
+    return (
+        '<script type="application/ld+json">'
+        + json.dumps(gegevens, ensure_ascii=False, separators=(",", ":"))
+        + "</script>\n\n"
+    )
+
+
 def _speler(guid: str, taal: str) -> str:
     # ⚠️ Bunny's speler zet GEEN cookies. Dat is geen prettige bijkomstigheid maar een reden op zich: een
     # YouTube-embed zou een toestemmingsbanner over de hele handleiding meeslepen (FILMS-SPEC §7.2).
     bron = (
         f"https://iframe.mediadelivery.net/embed/{LIBRARY}/{guid}"
-        f"?autoplay=false&preload=false&captions={taal}&rememberPosition=true&showSpeed=true"
+        # ⚠️ GEEN `captions=` PARAMETER. Die zet de ondertitels AAN, en de nota zegt uitdrukkelijk
+        # "standaard uit" (§7.2). Met captions=nl liepen er zwarte balken over de helft van het scherm —
+        # precies over de schermafdruk die de film wil tonen. De ondertitels blijven wél beschikbaar: ze
+        # zijn geüpload en staan in het tandwielmenu van de speler, waar wie ze wil ze aanzet.
+        f"?autoplay=false&preload=false&rememberPosition=true&showSpeed=true"
     )
     return (
         '<div class="film">'
@@ -62,9 +117,10 @@ def on_page_markdown(markdown: str, page, config, files):  # noqa: ARG001
                 "Draai `node tools/bunny.mjs publiceer`, of haal de regel weg."
             )
         # Boven de eerste ## — de lezer kiest zelf: kijken of lezen (FILMS-SPEC §7.2).
+        blok = _gegevens(film, guid, taal) + _speler(guid, taal)
         kop = markdown.find("\n## ")
         if kop == -1:
-            return markdown + "\n\n" + _speler(guid, taal)
-        return markdown[:kop] + "\n\n" + _speler(guid, taal) + markdown[kop:]
+            return markdown + "\n\n" + blok
+        return markdown[:kop] + "\n\n" + blok + markdown[kop:]
 
     return markdown

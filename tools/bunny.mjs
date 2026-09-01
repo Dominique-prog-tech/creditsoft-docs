@@ -126,6 +126,7 @@ if (opdracht === 'publiceer') {
 
   const filter = process.argv[3];
   let gedaan = 0, mislukt = [];
+  const collecties = {};
 
   for (const [sleutel, f] of Object.entries(uitslag)) {
     if (filter && !sleutel.includes(filter)) continue;
@@ -143,9 +144,30 @@ if (opdracht === 'publiceer') {
     console.log(`\n▸ ${sleutel}`);
     const oudeGuid = f.guid;
 
+    // ⚠️ EEN COLLECTIE PER TAAL (§7.1), zodat een taalronde in één keer te overzien is. Aanmaken als ze nog
+    // niet bestaat: de generator hoort geen handmatige voorbereiding in het Bunny-paneel te vragen.
+    const collectieNaam = f.taal?.startsWith('fr') ? 'Français' : 'Nederlands';
+    if (!collecties[collectieNaam]) {
+      const lijst = await api('/collections?page=1&itemsPerPage=100');
+      for (const c of lijst.json?.items ?? []) collecties[c.name] = c.guid;
+      if (!collecties[collectieNaam]) {
+        const c = await api('/collections', {
+          method: 'POST', headers: { 'content-type': 'application/json' },
+          body: JSON.stringify({ name: collectieNaam }),
+        });
+        if (c.ok) { collecties[collectieNaam] = c.json.guid; console.log(`   collectie "${collectieNaam}" aangemaakt`); }
+      }
+    }
+
+    // ⚠️ EEN MENSELIJKE TITEL, geen sleutel. "kredietdossiers-basis-nl" stond als videotitel in het paneel
+    // én zou in de speler verschijnen. De omschrijving en de merktekens komen uit hetzelfde scenario, zodat
+    // er één bron is voor Bunny én voor de schema.org-gegevens op de handleidingpagina.
     const maak = await api('/videos', {
       method: 'POST', headers: { 'content-type': 'application/json' },
-      body: JSON.stringify({ title: sleutel }),
+      body: JSON.stringify({
+        title: f.titel ?? sleutel,
+        collectionId: collecties[collectieNaam] ?? undefined,
+      }),
     });
     if (!maak.ok) { mislukt.push(`${sleutel}: POST /videos → ${maak.status}`); continue; }
     const guid = maak.json.guid;
@@ -189,6 +211,53 @@ if (opdracht === 'publiceer') {
       if (!h.ok) mislukt.push(`${sleutel}: hoofdstukken → ${h.status}`);
     }
 
+    // Omschrijving en merktekens in dezelfde update als de hoofdstukken — één POST, één keer wachten.
+    const meta = await api(`/videos/${guid}`, {
+      method: 'POST', headers: { 'content-type': 'application/json' },
+      body: JSON.stringify({
+        title: f.titel ?? sleutel,
+        description: f.omschrijving ?? '',
+        metaTags: [
+          { property: 'taal', value: f.taal ?? '' },
+          { property: 'film', value: f.film ?? '' },
+          { property: 'pagina', value: f.pagina ?? '' },
+          { property: 'product', value: 'CreditSoft' },
+          { property: 'bron', value: 'creditsoft-docs/tools/films.mjs' },
+        ],
+      }),
+    });
+    console.log(`   titel + merktekens → HTTP ${meta.status}${meta.ok ? '' : ' — ' + meta.tekst.slice(0, 120)}`);
+    if (!meta.ok) mislukt.push(`${sleutel}: metadata → ${meta.status}`);
+
+    // ⚠️ TERUGLEZEN, want een 200 zegt hier niets. Bunny AANVAARDT `description` en doet er niets mee:
+    // twee schrijfwijzen geprobeerd op 01/09/2026, allebei HTTP 200, allebei bleef het veld null. Dat is
+    // een stille weigering, en zonder deze controle zou de generator "gelukt" melden over iets wat niet
+    // gebeurd is. Geen ramp — de omschrijving die telt voor zoekmachines staat in de schema.org-gegevens
+    // op de handleidingpagina, en Bunny wordt niet geïndexeerd. Maar meld het, zwijg er niet over.
+    const terug = await api(`/videos/${guid}`);
+    if (f.omschrijving && !terug.json?.description) {
+      console.log('   ⚠️ omschrijving NIET overgenomen door Bunny (bekend: het veld wordt genegeerd via de API).');
+      console.log('      De omschrijving staat wél op de handleidingpagina, en dat is wat geïndexeerd wordt.');
+    }
+
+    // De miniatuur en de datum bewaren: die voeden de schema.org-VideoObject op de handleidingpagina, en
+    // dát is wat een zoekmachine leest — Bunny zelf wordt niet geïndexeerd.
+    // ⚠️ ALLEEN OPNEMEN ALS ZE ECHT LAADT. De miniatuur-URL van een privévideo geeft 403, en een
+    // schema.org-thumbnailUrl die 403 geeft is ERGER dan geen: een zoekmachine haalt hem op, faalt, en kan
+    // de hele VideoObject verwerpen. `isPublic: true` zetten helpt niet — Bunny aanvaardt dat veld en
+    // negeert het, net als `description` (allebei geprobeerd op 01/09/2026, allebei HTTP 200, allebei
+    // ongewijzigd). Publiek maken is een instelling van de LIBRARY, niet van een video.
+    //
+    // De controle hoort HIER en niet in de MkDocs-hook: daar zou ze de sitebouw netwerkafhankelijk maken.
+    f.thumbnail = null;
+    const mini = klaar.json?.thumbnailUrl;
+    if (mini) {
+      const t = await fetch(mini, { method: 'HEAD' }).catch(() => null);
+      if (t?.ok) f.thumbnail = mini;
+      else console.log(`   ⚠️ miniatuur niet publiek bereikbaar (HTTP ${t?.status ?? '?'}) — weggelaten uit de `
+        + `zoekgegevens. Zet "Direct Play"/publieke toegang aan op de library als je haar in zoekresultaten wil.`);
+    }
+    f.gepubliceerdOp = klaar.json?.dateUploaded ?? null;
     f.guid = guid;
     f.gepubliceerdeHash = f.hash;
     f.embed = `https://iframe.mediadelivery.net/embed/${LIB}/${guid}`;
