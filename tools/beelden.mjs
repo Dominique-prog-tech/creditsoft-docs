@@ -529,6 +529,7 @@ const browser = await chromium.launch();
 const ctx = await browser.newContext({ viewport: { width: BREED, height: HOOG }, deviceScaleFactor: 2 });
 const VERBERG_VERSIE = '.nav-version { visibility: hidden !important; }';
 let badgeGezien = 0;
+const labelBotsingen = [];
 const page = await ctx.newPage();
 
 // ⚠️ HET VERSIENUMMER GAAT UIT DE BEELDEN. Linksonder in de zijbalk staat "v1.70.0 nieuw", en de zijbalk
@@ -739,6 +740,28 @@ for (const taal of ['nl-BE', 'fr-BE']) {
         continue;
       }
 
+      // ⚠️ BOTSENDE FORMULIERLABELS, en dit is gratis: de ronde staat hier tóch al, met het scherm open, in
+      // beide talen. Een DevExpress-formulierlabel staat op `white-space: nowrap`; is de vertaling langer dan
+      // haar kolom, dan breekt ze niet af maar loopt ze de buurkolom in. Frans is stelselmatig langer dan
+      // Nederlands, dus dit treft in de praktijk vooral de FR-ronde — en het valt op een schermafdruk niet op
+      // als je niet weet dat je moet kijken. Dominique zag het op 01/09/2026 zelf, in de pandfiche.
+      //
+      // Het MELDT en blokkeert niet: een botsing maakt het beeld niet fout, ze maakt het scherm lelijk.
+      const botsingen = await page.evaluate(() => {
+        const labels = [...document.querySelectorAll('.dxbl-fl-cpt')]
+          .filter(e => e.getBoundingClientRect().width > 0);
+        const uit = [];
+        for (let i = 0; i < labels.length; i++)
+          for (let j = i + 1; j < labels.length; j++) {
+            const a = labels[i].getBoundingClientRect(), b = labels[j].getBoundingClientRect();
+            if (Math.min(a.right, b.right) - Math.max(a.left, b.left) > 1
+             && Math.min(a.bottom, b.bottom) - Math.max(a.top, b.top) > 1)
+              uit.push(labels[i].textContent.trim().slice(0, 34) + ' <> ' + labels[j].textContent.trim().slice(0, 28));
+          }
+        return uit;
+      }).catch(() => []);
+      for (const b of botsingen) labelBotsingen.push(`${naam}${achtervoegsel}: ${b}`);
+
       const nieuw = vorm.element ? await elementSchot(page, vorm.element) : await page.screenshot();
       if (existsSync(doel)) {
         const besluitVorm = vormBesluit({
@@ -814,6 +837,11 @@ if (ongecontroleerd.length) {
   console.log('   Die moet iemand met eigen ogen nakijken, of geef ze een regel in VERWACHT.');
 }
 if (mislukt.length) { console.log(`\n⚠️ ${mislukt.length} MISLUKT:`); mislukt.forEach(m => console.log('   ' + m)); }
+if (labelBotsingen.length) {
+  console.log(`\n⚠️ ${labelBotsingen.length} BOTSEND FORMULIERLABEL — een vertaling past niet in haar kolom:`);
+  labelBotsingen.forEach(b => console.log('   ' + b));
+  console.log('   Kort de tekst in, of geef het veld een bredere kolom. Het beeld is niet fout, het scherm wel.');
+}
 // ⚠️ DE GENERATOR CONTROLEERT ZICHZELF. Op 28/08/2026 stonden `verzendadressen-bewerken` en `journaal-lade`
 // in GEEN van beide lijsten — niet bij de schoten, niet bij "zonder recept". Ze werden dus stil overgeslagen,
 // precies wat dit script moest voorkomen. Een lijst die je met de hand bijhoudt, raakt onvolledig; de map met
