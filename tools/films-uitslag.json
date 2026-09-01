@@ -3,7 +3,7 @@
     "film": "kredietdossiers-basis",
     "taal": "nl-BE",
     "pagina": "credit-management/credit-files",
-    "lengte": 96.68,
+    "lengte": 96.44,
     "titel": "Het kredietdossier in CreditSoft — van lijst tot journaal",
     "omschrijving": "Een rondleiding door het kredietdossier: de lijst filteren en doorzoeken, een dossier openen, de dossiergegevens, de kredietaanvragers, het pand, de gevraagde documenten, en het journaal met de taken, notities, gesprekken en commissieschema’s die bij dat ene dossier horen.",
     "hash": "b1307b41c06edc44",
@@ -11,134 +11,131 @@
     "hoofdstukken": [
       {
         "titel": "lijst",
-        "start": 2.16,
-        "eind": 9.21
+        "start": 2.13,
+        "eind": 9.19
       },
       {
         "titel": "kolommen",
-        "start": 11.21,
-        "eind": 18.31
+        "start": 11.11,
+        "eind": 18.21
       },
       {
         "titel": "zoeken",
-        "start": 22.87,
-        "eind": 27.88
+        "start": 22.71,
+        "eind": 27.73
       },
       {
         "titel": "openen",
-        "start": 31.16,
-        "eind": 33.06
+        "start": 30.88,
+        "eind": 32.79
       },
       {
         "titel": "gegevens",
-        "start": 34.97,
-        "eind": 43.19
+        "start": 34.7,
+        "eind": 42.91
       },
       {
         "titel": "aanvragers",
-        "start": 45.1,
-        "eind": 51.18
+        "start": 44.83,
+        "eind": 50.91
       },
       {
         "titel": "pand",
-        "start": 55.2,
-        "eind": 63.74
+        "start": 54.92,
+        "eind": 63.47
       },
       {
         "titel": "documenten",
-        "start": 67.77,
-        "eind": 73.25
+        "start": 67.51,
+        "eind": 72.99
       },
       {
         "titel": "journaal",
-        "start": 75.57,
-        "eind": 82.26
+        "start": 75.39,
+        "eind": 82.08
       },
       {
         "titel": "commissieschemas",
-        "start": 85.11,
-        "eind": 89.52
+        "start": 84.89,
+        "eind": 89.3
       },
       {
         "titel": "slot",
-        "start": 91.41,
-        "eind": 94.76
+        "start": 91.21,
+        "eind": 94.55
       }
-    ],
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/d6954167-a695-4638-ac6c-7042ee6542f5/thumbnail.jpg",
-    "gepubliceerdOp": "2026-09-01T04:07:22.444",
-    "gepubliceerdeHash": "b1307b41c06edc44",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/d6954167-a695-4638-ac6c-7042ee6542f5"
+    ]
   },
   "kredietdossiers-basis-fr": {
     "film": "kredietdossiers-basis",
     "taal": "fr-BE",
     "pagina": "credit-management/credit-files",
-    "lengte": 103.72,
+    "lengte": 103.64,
     "titel": "Le dossier de crédit dans CreditSoft — de la liste au journal",
     "omschrijving": "Une visite guidée du dossier de crédit : filtrer et rechercher dans la liste, ouvrir un dossier, les données du dossier, les demandeurs de crédit, le bien, les documents demandés, et le journal avec les tâches, notes, appels et schémas de commission liés à ce dossier.",
     "hash": "1c86602fd2332484",
-    "guid": "4e6ea85d-e701-4450-b4f5-49780e1f92c7",
+    "guid": "f74d9cd0-877f-4175-bfbe-6fd5733dc1c2",
     "hoofdstukken": [
       {
         "titel": "lijst",
-        "start": 2.08,
-        "eind": 9.42
+        "start": 2.13,
+        "eind": 9.47
       },
       {
         "titel": "kolommen",
-        "start": 11.36,
-        "eind": 19.71
+        "start": 11.41,
+        "eind": 19.77
       },
       {
         "titel": "zoeken",
-        "start": 24.23,
-        "eind": 30.09
+        "start": 24.29,
+        "eind": 30.14
       },
       {
         "titel": "openen",
-        "start": 33.26,
-        "eind": 35.07
+        "start": 33.34,
+        "eind": 35.16
       },
       {
         "titel": "gegevens",
-        "start": 36.98,
-        "eind": 46.23
+        "start": 37.07,
+        "eind": 46.31
       },
       {
         "titel": "aanvragers",
-        "start": 48.14,
-        "eind": 55.24
+        "start": 48.22,
+        "eind": 55.32
       },
       {
         "titel": "pand",
-        "start": 59.25,
-        "eind": 69.75
+        "start": 59.33,
+        "eind": 69.83
       },
       {
         "titel": "documenten",
-        "start": 73.8,
-        "eind": 78.81
+        "start": 73.86,
+        "eind": 78.87
       },
       {
         "titel": "journaal",
-        "start": 81.15,
-        "eind": 88.39
+        "start": 81.21,
+        "eind": 88.46
       },
       {
         "titel": "commissieschemas",
-        "start": 91.15,
-        "eind": 96.02
+        "start": 91.22,
+        "eind": 96.1
       },
       {
         "titel": "slot",
-        "start": 97.92,
-        "eind": 101.82
+        "start": 98,
+        "eind": 101.9
       }
     ],
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/4e6ea85d-e701-4450-b4f5-49780e1f92c7/thumbnail.jpg",
-    "gepubliceerdOp": "2026-09-01T04:09:04.368",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/f74d9cd0-877f-4175-bfbe-6fd5733dc1c2/thumbnail.jpg",
+    "gepubliceerdOp": "2026-09-01T04:57:58.069",
     "gepubliceerdeHash": "1c86602fd2332484",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/4e6ea85d-e701-4450-b4f5-49780e1f92c7"
+    "embed": "https://iframe.mediadelivery.net/embed/741183/f74d9cd0-877f-4175-bfbe-6fd5733dc1c2",
+    "vorigeGuid": "4e6ea85d-e701-4450-b4f5-49780e1f92c7"
   }
 }
