@@ -205,6 +205,20 @@ const kopbalkKnop = (page, patroon) => page.getByTitle(patroon).first();
 // want de tabreeks verschilt per soort relatie (een bedrijf heeft geen "Bijkomend" met geboortedatum).
 const tabblad = (page, patroon) => page.getByRole('tab').filter({ hasText: patroon }).first();
 
+// ── Een afspraakblok dat ECHT zichtbaar is ───────────────────────────────────────────────────────────────
+// ⚠️ Niet `.first()`. De agenda rendert 36 blokken waarvan de eerste buiten beeld of afgedekt is: dubbelklikken
+// liep in een time-out van 30 s. En niet op `[class*=appointment]` — DevExpress noemt ze `dxbl-sc-apt`.
+// Deze zoekt het eerste blok met een echte plaats op het scherm.
+async function zichtbareAfspraak(page) {
+  const n = await page.locator('.dxbl-sc-apt').count();
+  for (let i = 0; i < n; i++) {
+    const loc = page.locator('.dxbl-sc-apt').nth(i);
+    const bb = await loc.boundingBox().catch(() => null);
+    if (bb && bb.width > 40 && bb.height > 18 && bb.y > 100 && bb.y < 900) return loc;
+  }
+  throw new Error('geen zichtbaar afspraakblok in de agenda — staat er wel iets in deze week?');
+}
+
 // ── De hoofdstuktitel van een scène, per taal ────────────────────────────────────────────────────────────
 // Zie de noot bij `hoofdstukken:` verderop. Ontbreekt `kop`, dan valt dit terug op de interne scènenaam en
 // wordt dat GETELD — de ronde meldt het op het eind, zodat het niet opnieuw jaren onopgemerkt blijft.
@@ -1001,6 +1015,103 @@ const FILMS = [
         merk: /Hangt aan|rattache/i,
         nl: 'Het journaal is het geheugen van uw kantoor. Wie een klant overneemt, leest hier wat er gebeurd is — zonder het aan iemand te moeten vragen.',
         fr: "Le journal est la mémoire de votre bureau. Qui reprend un client y lit ce qui s’est passé — sans devoir le demander à quelqu’un." },
+    ],
+  }],
+
+  // ─────────────────────────────────────────────────────────────────────────────────────────────────────
+  // FILM 6 van de reeks (§14). De agenda, en de andere kant ervan: klanten die zelf een moment kiezen.
+  //
+  // ⚠️ GEEN SCÈNE OP DE ECHTE BOEKINGSPAGINA. De knop "Bekijken" opent
+  // platform.digitalcloud.be/afspraak/<token> — een LIVE pagina op productie-ADM One. Een film die daarheen
+  // navigeert, hangt af van een andere site en toont een werkende boekingslink. Het instellingenscherm legt
+  // uit wat er gebeurt; dat volstaat.
+  //
+  // ⚠️ De boekingslink zelf gaat GEMASKEERD in beeld (zie MASKEER_BOEKINGSLINK). Zonder dat kan elke kijker
+  // in de agenda van het demokantoor boeken.
+  //
+  // ⚠️ DE AFSPRAAK WORDT NIET BEWAARD. We openen het bewerkvenster en sluiten met Escape. Bewaren zou een
+  // demo-afspraak wijzigen én mogelijk een bevestigingsmail sturen.
+  ['afspraken', {
+    pagina: 'crm/meetings',
+    titel: {
+      nl: 'De agenda — afspraken maken en laten maken',
+      fr: 'L’agenda — prendre et faire prendre des rendez-vous',
+    },
+    omschrijving: {
+      nl: 'De agenda van uw kantoor: de kleuren die zeggen wie afwezig is en wanneer u gesloten bent, de '
+        + 'weergave per medewerker of samengevoegd, een afspraak met haar verantwoordelijken en de '
+        + 'bevestiging naar uw klant. En de andere kant: uren openzetten zodat mensen zelf een moment kiezen.',
+      fr: 'L’agenda de votre bureau : les couleurs qui indiquent qui est absent et quand vous êtes fermé, '
+        + 'l’affichage par collaborateur ou fusionné, un rendez-vous avec ses responsables et la confirmation '
+        + 'au client. Et l’autre côté : ouvrir des plages pour que les gens choisissent eux-mêmes un moment.',
+    },
+    uitvoeringen: { handleiding: { stem: true } },
+    scenes: [
+      { naam: 'agenda', kop: { nl: 'De agenda', fr: 'L’agenda' },
+        doe: async (p) => { await p.goto(`${BASIS}/crm/afspraken`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(3200); },
+        merk: /Feestdag of kantoor gesloten|Jour férié ou bureau fermé/i,
+        nl: 'De agenda toont de afspraken van uw hele kantoor. U kiest bovenaan wie u wil zien — één collega, een selectie, of iedereen samen.',
+        fr: "L’agenda affiche les rendez-vous de tout votre bureau. Vous choisissez en haut qui vous voulez voir — un collègue, une sélection, ou tout le monde ensemble." },
+
+      { naam: 'kleuren', kop: { nl: 'Wat de kleuren zeggen', fr: 'Ce que disent les couleurs' },
+        doe: async (p) => { await beweegNaar(p, p.getByText(/Feestdag of kantoor gesloten|Jour férié ou bureau fermé/i).first()); await p.waitForTimeout(1600); },
+        merk: /Afwezig|Absent/i,
+        nl: 'De achtergrond doet mee: een dag waarop het kantoor gesloten is, en de uren dat een collega afwezig is, kleuren anders. Zo plant u geen afspraak op een moment dat niet kan.',
+        fr: "L’arrière-plan participe : un jour de fermeture du bureau et les heures d’absence d’un collègue se colorent différemment. Vous ne planifiez donc pas un rendez-vous à un moment impossible." },
+
+      { naam: 'weergave', kop: { nl: 'Samen of per medewerker', fr: 'Ensemble ou par collaborateur' },
+        doe: async (p) => { await beweegNaar(p, p.getByText('Per medewerker', { exact: true }).or(p.getByText('Par collaborateur', { exact: true })).first()); await p.waitForTimeout(1600); },
+        merk: /Samengevoegd|Fusionné/i,
+        nl: 'Samengevoegd zet iedereen in één rooster; per medewerker geeft elke collega zijn eigen kolom. Het eerste is handig om te zoeken, het tweede om te plannen.',
+        fr: "Fusionné place tout le monde dans une seule grille ; par collaborateur donne à chacun sa propre colonne. Le premier sert à chercher, le second à planifier." },
+
+      { naam: 'afspraak', kop: { nl: 'Een afspraak openen', fr: 'Ouvrir un rendez-vous' },
+        doe: async (p) => {
+          const apt = await zichtbareAfspraak(p);
+          await beweegNaar(p, apt); await apt.dblclick({ force: true }); await p.waitForTimeout(2600);
+        },
+        merk: /Afspraak bewerken|Modifier le rendez-vous/i,
+        nl: 'U opent een afspraak met een dubbelklik. Naast titel, datum en uur legt u vast waar ze doorgaat en met wie: een contact, een aanbrenger, of een lead.',
+        fr: "Vous ouvrez un rendez-vous par un double-clic. Outre le titre, la date et l’heure, vous fixez où il a lieu et avec qui : un contact, un apporteur, ou un lead." },
+
+      { naam: 'verantwoordelijken', kop: { nl: 'Wie erbij is', fr: 'Qui y participe' },
+        doe: async (p) => { await beweegNaar(p, p.getByText(/Bijkomende verantwoordelijken|Responsables supplémentaires/i).first()); await p.waitForTimeout(1800); },
+        merk: /Bijkomende verantwoordelijken|Responsables supplémentaires/i,
+        nl: 'Er is één hoofdverantwoordelijke en er kunnen collega’s bij. De afspraak verschijnt dan in ieders agenda, zonder dat u ze moet kopiëren.',
+        fr: "Il y a un responsable principal et des collègues peuvent s’y ajouter. Le rendez-vous apparaît alors dans l’agenda de chacun, sans que vous deviez le copier." },
+
+      { naam: 'bevestiging', kop: { nl: 'De bevestiging', fr: 'La confirmation' },
+        doe: async (p) => { await beweegNaar(p, p.getByText(/Bevestiging naar het contact|Confirmation au contact/i).first()); await p.waitForTimeout(1800); },
+        merk: /Bevestiging naar het contact|Confirmation au contact/i,
+        nl: 'Onderaan zet u een bevestiging klaar naar uw contact, naar de aanbrenger, of naar allebei. Die vertrekt met de datum, het uur en de plaats erin.',
+        fr: "En bas, vous préparez une confirmation vers votre contact, vers l’apporteur, ou vers les deux. Elle part avec la date, l’heure et le lieu." },
+
+      { naam: 'online', kop: { nl: 'Online afspraken', fr: 'Rendez-vous en ligne' },
+        doe: async (p) => {
+          await sluitLade(p);
+          await p.goto(`${BASIS}/crm/online-afspraken`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(2600);
+        },
+        merk: /Boekingslink|Lien de réservation/i,
+        nl: 'De agenda werkt ook de andere kant op. Zet u online afspraken aan, dan krijgt uw kantoor een boekingslink die u op uw website of in uw handtekening zet.',
+        fr: "L’agenda fonctionne aussi dans l’autre sens. Si vous activez les rendez-vous en ligne, votre bureau reçoit un lien de réservation à placer sur votre site ou dans votre signature." },
+
+      { naam: 'uren', kop: { nl: 'Uren openzetten', fr: 'Ouvrir des plages' },
+        doe: async (p) => { await beweegNaar(p, p.getByText(/open te zetten|Faites glisser/i).first()); await p.waitForTimeout(1800); },
+        merk: /open te zetten|Faites glisser/i,
+        nl: 'U sleept in de agenda om uren open te zetten. Alleen die uren zijn boekbaar — de rest van uw agenda blijft van u.',
+        fr: "Vous faites glisser dans l’agenda pour ouvrir des plages. Seules ces heures sont réservables — le reste de votre agenda reste à vous." },
+
+      { naam: 'boekt', kop: { nl: 'Wat er gebeurt als iemand boekt', fr: 'Ce qui se passe quand on réserve' },
+        doe: async (p) => { await p.goto(`${BASIS}/crm/afspraken`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(2800); },
+        merk: /Feestdag of kantoor gesloten|Jour férié ou bureau fermé/i,
+        nl: 'Boekt iemand een moment, dan komt het meteen als afspraak in uw agenda, met zijn naam en zijn vraag erbij — en dat uur is voor niemand anders meer vrij.',
+        fr: "Si quelqu’un réserve un créneau, il arrive aussitôt comme rendez-vous dans votre agenda, avec son nom et sa demande — et cette heure n’est plus libre pour personne d’autre." },
+
+      { naam: 'slot', kop: { nl: 'Tot slot', fr: 'Pour conclure' },
+        doe: async (p) => { await p.waitForTimeout(1200); },
+        merk: /Feestdag of kantoor gesloten|Jour férié ou bureau fermé/i,
+        nl: 'Zo blijft één agenda genoeg: wat u zelf plant en wat uw klanten boeken, staat op dezelfde plaats.',
+        fr: "Un seul agenda suffit ainsi : ce que vous planifiez vous-même et ce que vos clients réservent figurent au même endroit." },
     ],
   }],
 

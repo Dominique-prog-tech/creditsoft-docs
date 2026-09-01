@@ -1217,5 +1217,145 @@
     "gepubliceerdOp": "2026-09-01T12:28:42.434",
     "gepubliceerdeHash": "61e6ae2bac10e591",
     "embed": "https://iframe.mediadelivery.net/embed/741183/ebb30908-ee1f-4b36-b0b1-7f1c3dddc88e"
+  },
+  "afspraken-nl": {
+    "film": "afspraken",
+    "taal": "nl-BE",
+    "pagina": "crm/meetings",
+    "lengte": 137.52,
+    "routes": [
+      "/crm/afspraken",
+      "/crm/online-afspraken"
+    ],
+    "app": {
+      "sha": "e8bb224f7c329f3978eb6d9e1385b4992ea6a2b4",
+      "vuil": false
+    },
+    "titel": "De agenda — afspraken maken en laten maken",
+    "omschrijving": "De agenda van uw kantoor: de kleuren die zeggen wie afwezig is en wanneer u gesloten bent, de weergave per medewerker of samengevoegd, een afspraak met haar verantwoordelijken en de bevestiging naar uw klant. En de andere kant: uren openzetten zodat mensen zelf een moment kiezen.",
+    "hash": "ae4c6ed1d4635650",
+    "guid": null,
+    "hoofdstukken": [
+      {
+        "titel": "De agenda",
+        "start": 5.43,
+        "eind": 14.67
+      },
+      {
+        "titel": "Wat de kleuren zeggen",
+        "start": 18.21,
+        "eind": 30.57
+      },
+      {
+        "titel": "Samen of per medewerker",
+        "start": 34.08,
+        "eind": 44.34
+      },
+      {
+        "titel": "Een afspraak openen",
+        "start": 48.88,
+        "eind": 59.32
+      },
+      {
+        "titel": "Wie erbij is",
+        "start": 63.07,
+        "eind": 71.94
+      },
+      {
+        "titel": "De bevestiging",
+        "start": 75.64,
+        "eind": 85.21
+      },
+      {
+        "titel": "Online afspraken",
+        "start": 90.81,
+        "eind": 100.52
+      },
+      {
+        "titel": "Uren openzetten",
+        "start": 104.23,
+        "eind": 111.29
+      },
+      {
+        "titel": "Wat er gebeurt als iemand boekt",
+        "start": 116.84,
+        "eind": 126.09
+      },
+      {
+        "titel": "Tot slot",
+        "start": 128.81,
+        "eind": 135.13
+      }
+    ]
+  },
+  "afspraken-fr": {
+    "film": "afspraken",
+    "taal": "fr-BE",
+    "pagina": "crm/meetings",
+    "lengte": 155,
+    "routes": [
+      "/crm/afspraken",
+      "/crm/online-afspraken"
+    ],
+    "app": {
+      "sha": "e8bb224f7c329f3978eb6d9e1385b4992ea6a2b4",
+      "vuil": false
+    },
+    "titel": "L’agenda — prendre et faire prendre des rendez-vous",
+    "omschrijving": "L’agenda de votre bureau : les couleurs qui indiquent qui est absent et quand vous êtes fermé, l’affichage par collaborateur ou fusionné, un rendez-vous avec ses responsables et la confirmation au client. Et l’autre côté : ouvrir des plages pour que les gens choisissent eux-mêmes un moment.",
+    "hash": "66c10fd7171d2a29",
+    "guid": null,
+    "hoofdstukken": [
+      {
+        "titel": "L’agenda",
+        "start": 5.39,
+        "eind": 16.96
+      },
+      {
+        "titel": "Ce que disent les couleurs",
+        "start": 20.5,
+        "eind": 33.6
+      },
+      {
+        "titel": "Ensemble ou par collaborateur",
+        "start": 37.09,
+        "eind": 48.37
+      },
+      {
+        "titel": "Ouvrir un rendez-vous",
+        "start": 52.91,
+        "eind": 64.38
+      },
+      {
+        "titel": "Qui y participe",
+        "start": 68.12,
+        "eind": 78.94
+      },
+      {
+        "titel": "La confirmation",
+        "start": 82.64,
+        "eind": 93.37
+      },
+      {
+        "titel": "Rendez-vous en ligne",
+        "start": 99.09,
+        "eind": 111.17
+      },
+      {
+        "titel": "Ouvrir des plages",
+        "start": 114.87,
+        "eind": 123.97
+      },
+      {
+        "titel": "Ce qui se passe quand on réserve",
+        "start": 129.41,
+        "eind": 141.3
+      },
+      {
+        "titel": "Pour conclure",
+        "start": 144.01,
+        "eind": 152.74
+      }
+    ]
   }
 }
