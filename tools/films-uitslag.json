@@ -1495,5 +1495,139 @@
         "eind": 140.66
       }
     ]
+  },
+  "commissie-uitbetalen-nl": {
+    "film": "commissie-uitbetalen",
+    "taal": "nl-BE",
+    "pagina": "credit-management/commission-statements",
+    "lengte": 128.28,
+    "routes": [
+      "/commissie/borderel",
+      "/commissie/vooruitzicht",
+      "/commissie/restanten",
+      "/commissie/fiche-28150"
+    ],
+    "app": {
+      "sha": "e8bb224f7c329f3978eb6d9e1385b4992ea6a2b4",
+      "vuil": false
+    },
+    "titel": "Commissie uitbetalen — borderel, vooruitzicht en restanten",
+    "omschrijving": "Wat er uit uw commissieschema’s komt: het borderel per aanbrenger met zijn lijnen, het vooruitzicht dat toont wat er de komende maanden nog uitbetaald moet worden, de restanten die nooit op een borderel belandden en waarom, en de fiche 281.50 voor de fiscus.",
+    "hash": "1100801d1bc29de6",
+    "guid": null,
+    "hoofdstukken": [
+      {
+        "titel": "De borderellen",
+        "start": 4.44,
+        "eind": 13.4
+      },
+      {
+        "titel": "Openstaand of betaald",
+        "start": 17.04,
+        "eind": 27.35
+      },
+      {
+        "titel": "Eén borderel",
+        "start": 32.28,
+        "eind": 39.07
+      },
+      {
+        "titel": "De commissielijnen",
+        "start": 42.77,
+        "eind": 52.15
+      },
+      {
+        "titel": "Het vooruitzicht",
+        "start": 57.26,
+        "eind": 66.08
+      },
+      {
+        "titel": "Wat is blijven liggen",
+        "start": 70.98,
+        "eind": 81.01
+      },
+      {
+        "titel": "De fiche 281.50",
+        "start": 85.94,
+        "eind": 97.09
+      },
+      {
+        "titel": "Wat er nog moet gebeuren",
+        "start": 100.88,
+        "eind": 112.59
+      },
+      {
+        "titel": "Tot slot",
+        "start": 117.09,
+        "eind": 125.96
+      }
+    ]
+  },
+  "commissie-uitbetalen-fr": {
+    "film": "commissie-uitbetalen",
+    "taal": "fr-BE",
+    "pagina": "credit-management/commission-statements",
+    "lengte": 142.52,
+    "routes": [
+      "/commissie/borderel",
+      "/commissie/vooruitzicht",
+      "/commissie/restanten",
+      "/commissie/fiche-28150"
+    ],
+    "app": {
+      "sha": "e8bb224f7c329f3978eb6d9e1385b4992ea6a2b4",
+      "vuil": false
+    },
+    "titel": "Payer la commission — bordereau, prévisions et reliquats",
+    "omschrijving": "Ce qui découle de vos schémas de commission : le bordereau par apporteur avec ses lignes, les prévisions de ce qu’il reste à payer les mois à venir, les reliquats qui ne sont jamais arrivés sur un bordereau et pourquoi, et la fiche 281.50 pour le fisc.",
+    "hash": "8de70b18f62e15f8",
+    "guid": null,
+    "hoofdstukken": [
+      {
+        "titel": "Les bordereaux",
+        "start": 4.5,
+        "eind": 13.74
+      },
+      {
+        "titel": "En attente ou payé",
+        "start": 17.34,
+        "eind": 30.72
+      },
+      {
+        "titel": "Un bordereau",
+        "start": 35.66,
+        "eind": 43.92
+      },
+      {
+        "titel": "Les lignes de commission",
+        "start": 47.62,
+        "eind": 59.32
+      },
+      {
+        "titel": "Les prévisions",
+        "start": 64.43,
+        "eind": 73.49
+      },
+      {
+        "titel": "Ce qui est resté en souffrance",
+        "start": 78.41,
+        "eind": 90.72
+      },
+      {
+        "titel": "La fiche 281.50",
+        "start": 95.84,
+        "eind": 109.21
+      },
+      {
+        "titel": "Ce qui doit encore être fait",
+        "start": 113,
+        "eind": 126
+      },
+      {
+        "titel": "Pour conclure",
+        "start": 130.68,
+        "eind": 140.2
+      }
+    ]
   }
 }

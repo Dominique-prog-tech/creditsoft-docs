@@ -1214,6 +1214,92 @@ const FILMS = [
     ],
   }],
 
+  // ─────────────────────────────────────────────────────────────────────────────────────────────────────
+  // FILM 8 van de reeks (§14 nummer 10). Commissie UITBETALEN — wat er uit de schema's komt.
+  //
+  // ⚠️ EEN BORDEREL IS EEN DOCUMENT, GEEN BATCH. De route verwacht een rij uit `commission.documents`
+  // (één per aanbrenger); `commission.document_batches` is de maandelijkse RONDE die ze groepeert. Met een
+  // batch-id toont het scherm "Dit borderel bestaat niet (meer)" — een correcte melding op een verkeerde
+  // vraag. Zie de noot bij ID.borderel.
+  //
+  // ⚠️ NIETS VERSTUURD, NIETS BETAALD GEZET. De scènes tonen de knoppen; ze drukken er niet op. Versturen
+  // zou een mail naar een demo-aanbrenger sturen, betaald zetten zou een boeking wijzigen in een
+  // append-only grootboek — en dat krijg je er niet meer uit.
+  ['commissie-uitbetalen', {
+    pagina: 'credit-management/commission-statements',
+    titel: {
+      nl: 'Commissie uitbetalen — borderel, vooruitzicht en restanten',
+      fr: 'Payer la commission — bordereau, prévisions et reliquats',
+    },
+    omschrijving: {
+      nl: 'Wat er uit uw commissieschema’s komt: het borderel per aanbrenger met zijn lijnen, het '
+        + 'vooruitzicht dat toont wat er de komende maanden nog uitbetaald moet worden, de restanten die '
+        + 'nooit op een borderel belandden en waarom, en de fiche 281.50 voor de fiscus.',
+      fr: 'Ce qui découle de vos schémas de commission : le bordereau par apporteur avec ses lignes, les '
+        + 'prévisions de ce qu’il reste à payer les mois à venir, les reliquats qui ne sont jamais arrivés '
+        + 'sur un bordereau et pourquoi, et la fiche 281.50 pour le fisc.',
+    },
+    uitvoeringen: { handleiding: { stem: true } },
+    scenes: [
+      { naam: 'lijst', kop: { nl: 'De borderellen', fr: 'Les bordereaux' },
+        doe: async (p) => { await p.goto(`${BASIS}/commissie/borderel`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(2400); },
+        merk: /Boekingen|Écritures/i,
+        nl: 'Een borderel is de afrekening van één aanbrenger over één periode. Deze lijst toont ze allemaal, met het aantal boekingen en het totaal.',
+        fr: "Un bordereau est le décompte d’un apporteur pour une période. Cette liste les montre tous, avec le nombre d’écritures et le total." },
+
+      { naam: 'toestand', kop: { nl: 'Openstaand of betaald', fr: 'En attente ou payé' },
+        doe: async (p) => { await beweegNaar(p, p.getByText(/^Openstaand$|^En attente$/).first()); await p.waitForTimeout(1600); },
+        merk: /Openstaand|En attente/i,
+        nl: 'De toestand zegt waar een borderel staat: openstaand zolang het niet betaald is, en betaald zodra u dat vastlegt. Zo ziet u in één blik wat er nog moet.',
+        fr: "Le statut indique où en est un bordereau : en attente tant qu’il n’est pas payé, et payé dès que vous l’enregistrez. Vous voyez ainsi d’un coup d’œil ce qui reste à faire." },
+
+      { naam: 'borderel', kop: { nl: 'Eén borderel', fr: 'Un bordereau' },
+        doe: async (p) => { await p.goto(`${BASIS}/commissie/borderel/${ID.borderel}`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(2600); },
+        merk: /Documentdatum|Date du document/i,
+        nl: 'U opent er één en ziet het nummer, de aanbrenger, het bedrag, en of het al verstuurd en afgedrukt is.',
+        fr: "Vous en ouvrez un et voyez le numéro, l’apporteur, le montant, et s’il a déjà été envoyé et imprimé." },
+
+      { naam: 'lijnen', kop: { nl: 'De commissielijnen', fr: 'Les lignes de commission' },
+        doe: async (p) => { await beweegNaar(p, p.getByText(/Commissielijnen|Lignes de commission/i).first()); await p.waitForTimeout(1800); },
+        merk: /Commissielijnen|Lignes de commission/i,
+        nl: 'Daaronder staat waar het bedrag vandaan komt: per lijn het dossier, de klant, het pand en de kredietverstrekker. Uw aanbrenger kan het dus narekenen.',
+        fr: "En dessous figure l’origine du montant : par ligne le dossier, le client, le bien et le prêteur. Votre apporteur peut donc le vérifier." },
+
+      { naam: 'vooruitzicht', kop: { nl: 'Het vooruitzicht', fr: 'Les prévisions' },
+        doe: async (p) => { await p.goto(`${BASIS}/commissie/vooruitzicht`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(2600); },
+        merk: /Volgende 12 maanden|12 prochains mois/i,
+        nl: 'Het vooruitzicht kijkt vooruit in plaats van terug: wat er nog uitbetaald moet worden, per maand en per aanbrenger. Zo weet u wat eraan komt.',
+        fr: "Les prévisions regardent en avant plutôt qu’en arrière : ce qu’il reste à payer, par mois et par apporteur. Vous savez ainsi ce qui vient." },
+
+      { naam: 'restanten', kop: { nl: 'Wat is blijven liggen', fr: 'Ce qui est resté en souffrance' },
+        doe: async (p) => { await p.goto(`${BASIS}/commissie/restanten`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(2600); },
+        // ⚠️ De Franse zin is "n'ont jamais figuré sur un bordereau" — ik had "jamais arrivé sur" geraden en
+        // de scène viel op haar eigen beloftecontrole. Geen leestekens in het merkteken (de apostrof in
+        // `n'ont` is precies waar dat eerder al misging), dus op `figuré` en `borderel`.
+        merk: /nooit op een borderel|figuré sur un bordereau/i,
+        nl: 'De restanten zijn lijnen uit afgelopen perioden die nooit op een borderel belandden. Ze komen niet meer vanzelf, en de kolom Waarom zegt wat eraan scheelt.',
+        fr: "Les reliquats sont des lignes de périodes écoulées qui ne sont jamais arrivées sur un bordereau. Elles ne viendront plus d’elles-mêmes, et la colonne Motif indique ce qui cloche." },
+
+      { naam: 'fiche', kop: { nl: 'De fiche 281.50', fr: 'La fiche 281.50' },
+        doe: async (p) => { await p.goto(`${BASIS}/commissie/fiche-28150`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(2600); },
+        merk: /Boekjaar|Exercice/i,
+        nl: 'Eén keer per jaar maakt u de fiches 281.50 op: per begunstigde wat er dat boekjaar werkelijk uitbetaald is. U drukt ze in één keer af.',
+        fr: "Une fois par an, vous établissez les fiches 281.50 : par bénéficiaire ce qui a réellement été payé cet exercice. Vous les imprimez en une fois." },
+
+      { naam: 'ontbreekt', kop: { nl: 'Wat er nog moet gebeuren', fr: 'Ce qui doit encore être fait' },
+        doe: async (p) => { await beweegNaar(p, p.getByText(/btw-nummer|numéro de TVA/i).first()); await p.waitForTimeout(1800); },
+        merk: /btw-nummer|numéro de TVA/i,
+        nl: 'Bovenaan waarschuwt het scherm wanneer begunstigden een btw-nummer of een volledig adres missen. Vul die aan vóór u de documenten opmaakt — achteraf is elk blad opnieuw.',
+        fr: "En haut, l’écran avertit lorsque des bénéficiaires n’ont pas de numéro de TVA ou d’adresse complète. Complétez-les avant d’établir les documents — après coup, chaque feuille est à refaire." },
+
+      { naam: 'slot', kop: { nl: 'Tot slot', fr: 'Pour conclure' },
+        doe: async (p) => { await p.goto(`${BASIS}/commissie/borderel`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(2200); },
+        merk: /Boekingen|Écritures/i,
+        nl: 'Van het schema tot de fiche loopt alles door: u spreekt één keer af, en de rest volgt eruit. Wat blijft liggen, blijft zichtbaar.',
+        fr: "Du schéma à la fiche, tout s’enchaîne : vous convenez une fois, et le reste en découle. Ce qui reste en souffrance reste visible." },
+    ],
+  }],
+
   ['kredietdossiers-basis', {
     pagina: 'credit-management/credit-files',
     // ⚠️ EEN MENSELIJKE TITEL EN OMSCHRIJVING, per taal. De technische naam ("kredietdossiers-basis-nl") is

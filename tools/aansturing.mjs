@@ -40,6 +40,16 @@ export const ID = {
   // handleiding naar verwijst (Nieuw tijdelijk wachtwoord, Deactiveren).
   aanbrengerMetPortaal: '05b820be-792d-4ecb-b41e-c8b00619b872',
   relatie:  '09ee4eb1-5c32-4e3d-ade5-a0fe4fd9ded2',   // draagt bijlagen én journaal-items
+  // ⚠️ Een BORDEREL-DOCUMENT, geen batch. De route /commissie/borderel/{Id} verwacht een rij uit
+  // `commission.documents` (één per aanbrenger, 5.349 stuks), niet uit `commission.document_batches`
+  // (de maandelijkse ronde, 24 stuks). Met een batch-id toont het scherm "Dit borderel bestaat niet (meer)"
+  // — een correcte melding op een verkeerde vraag, en die kostte mij een halve meting.
+  //
+  // Gekozen: openstaand (niet betaald) en met commissielijnen erop, zodat het scherm alles toont wat het
+  // belooft. Overleeft een her-seed niet; opnieuw kiezen met:
+  //   select id from commission.documents where archived_on_utc is null and not paid
+  //   order by document_date desc limit 1;
+  borderel: 'c61fccbc-4d3d-45c7-a039-60a068ab9e1a',   // 2026-1554 · Horizon Makelaars Leuven 212 · € 249,62
   aanbrenger:'0447a42c-66a4-4afd-9939-80050a0b3279',
   lead:     'd87a24fd-a6aa-4d42-a412-25dbd99b45ba',
   // ⚠️ Baken Immo Aalst — de fiche die de handleiding letterlijk beschrijft (Beukenlaan 50, 1000 Brussel,
