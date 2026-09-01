@@ -2154,7 +2154,7 @@
     "titel": "Het klantenportaal — hoe uw klant u ziet",
     "omschrijving": "Uw klant krijgt een link en belandt op een portaal. Dit is waar u bepaalt wat hij daar ziet: uw naam, uw kleur, uw logo en een welkomsttekst in beide talen. Elk veld dat u leeg laat, valt terug op uw bedrijfsfiche — u hoeft dus niets in te vullen om te beginnen. En tot slot het resultaat, zoals uw klant het krijgt.",
     "hash": "7befb05fd43224a4",
-    "guid": null,
+    "guid": "e1d54673-f008-4546-98db-852f009a7bcc",
     "hoofdstukken": [
       {
         "titel": "Uw portaal instellen",
@@ -2186,7 +2186,11 @@
         "start": 73.26,
         "eind": 78.65
       }
-    ]
+    ],
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/e1d54673-f008-4546-98db-852f009a7bcc/thumbnail.jpg",
+    "gepubliceerdOp": "2026-09-01T19:07:25.38",
+    "gepubliceerdeHash": "7befb05fd43224a4",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/e1d54673-f008-4546-98db-852f009a7bcc"
   },
   "klantportaal-fr": {
     "film": "klantportaal",
@@ -2204,7 +2208,7 @@
     "titel": "Le portail client — comment votre client vous voit",
     "omschrijving": "Votre client reçoit un lien et arrive sur un portail. C’est ici que vous déterminez ce qu’il y voit : votre nom, votre couleur, votre logo et un texte d’accueil dans les deux langues. Chaque champ laissé vide reprend votre fiche d’entreprise — vous n’avez donc rien à remplir pour démarrer. Et pour finir le résultat, tel que votre client le reçoit.",
     "hash": "ed1360d46f46c79b",
-    "guid": null,
+    "guid": "792e730f-36b1-4f3e-ae4c-2cc13b75c981",
     "hoofdstukken": [
       {
         "titel": "Configurer votre portail",
@@ -2236,6 +2240,10 @@
         "start": 82.08,
         "eind": 88.77
       }
-    ]
+    ],
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/792e730f-36b1-4f3e-ae4c-2cc13b75c981/thumbnail.jpg",
+    "gepubliceerdOp": "2026-09-01T19:10:18.669",
+    "gepubliceerdeHash": "ed1360d46f46c79b",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/792e730f-36b1-4f3e-ae4c-2cc13b75c981"
   }
 }

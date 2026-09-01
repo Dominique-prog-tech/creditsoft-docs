@@ -2312,5 +2312,9 @@ if (zonderTaal.size) {
   console.log('   De kijker van die uitvoering leest dus Nederlands in de hoofdstukkenlijst.');
 }
 if (DROOG) console.log('🅓 Droge proef — enkel geluid gemaakt, niets opgenomen.');
+// ⚠️ In MEETSTAND wordt er niets "gemaakt", dus deze waarschuwing sloeg daar altijd aan — een ronde die 24
+// opnames correct doorgemeten had, eindigde met "bedoelde je een andere naam?". Een melding die zich vergist
+// over haar eigen uitkomst, maakt de rest van het verslag verdacht.
+else if (MEET) console.log(`🔎 Meetstand — ${zichtbaarheid.length} aangewezen onderwerpen nagegaan, niets opgenomen.`);
 else if (!verslag.gemaakt.length && !verslag.gevallen.length)
   console.log("⚠️  Geen enkele film geraakt door de filter — bedoelde je een andere naam?");
