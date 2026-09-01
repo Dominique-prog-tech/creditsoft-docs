@@ -4,8 +4,8 @@
     "taal": "nl-BE",
     "pagina": "credit-management/credit-files",
     "lengte": 96.68,
-    "titel": "Het kredietdossier in CreditSoft \u2014 van lijst tot journaal",
-    "omschrijving": "Een rondleiding door het kredietdossier: de lijst filteren en doorzoeken, een dossier openen, de dossiergegevens, de kredietaanvragers, het pand, de gevraagde documenten, en het journaal met de taken, notities, gesprekken en commissieschema\u2019s die bij dat ene dossier horen.",
+    "titel": "Het kredietdossier in CreditSoft — van lijst tot journaal",
+    "omschrijving": "Een rondleiding door het kredietdossier: de lijst filteren en doorzoeken, een dossier openen, de dossiergegevens, de kredietaanvragers, het pand, de gevraagde documenten, en het journaal met de taken, notities, gesprekken en commissieschema’s die bij dat ene dossier horen.",
     "hash": "b1307b41c06edc44",
     "guid": "d6954167-a695-4638-ac6c-7042ee6542f5",
     "hoofdstukken": [
@@ -65,7 +65,7 @@
         "eind": 94.76
       }
     ],
-    "thumbnail": null,
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/d6954167-a695-4638-ac6c-7042ee6542f5/thumbnail.jpg",
     "gepubliceerdOp": "2026-09-01T04:07:22.444",
     "gepubliceerdeHash": "b1307b41c06edc44",
     "embed": "https://iframe.mediadelivery.net/embed/741183/d6954167-a695-4638-ac6c-7042ee6542f5"
@@ -75,8 +75,8 @@
     "taal": "fr-BE",
     "pagina": "credit-management/credit-files",
     "lengte": 103.72,
-    "titel": "Le dossier de cr\u00e9dit dans CreditSoft \u2014 de la liste au journal",
-    "omschrijving": "Une visite guid\u00e9e du dossier de cr\u00e9dit : filtrer et rechercher dans la liste, ouvrir un dossier, les donn\u00e9es du dossier, les demandeurs de cr\u00e9dit, le bien, les documents demand\u00e9s, et le journal avec les t\u00e2ches, notes, appels et sch\u00e9mas de commission li\u00e9s \u00e0 ce dossier.",
+    "titel": "Le dossier de crédit dans CreditSoft — de la liste au journal",
+    "omschrijving": "Une visite guidée du dossier de crédit : filtrer et rechercher dans la liste, ouvrir un dossier, les données du dossier, les demandeurs de crédit, le bien, les documents demandés, et le journal avec les tâches, notes, appels et schémas de commission liés à ce dossier.",
     "hash": "1c86602fd2332484",
     "guid": "4e6ea85d-e701-4450-b4f5-49780e1f92c7",
     "hoofdstukken": [
@@ -136,7 +136,7 @@
         "eind": 101.82
       }
     ],
-    "thumbnail": null,
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/4e6ea85d-e701-4450-b4f5-49780e1f92c7/thumbnail.jpg",
     "gepubliceerdOp": "2026-09-01T04:09:04.368",
     "gepubliceerdeHash": "1c86602fd2332484",
     "embed": "https://iframe.mediadelivery.net/embed/741183/4e6ea85d-e701-4450-b4f5-49780e1f92c7"

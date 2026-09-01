@@ -289,5 +289,31 @@ if (opdracht === 'publiceer') {
   process.exit(mislukt.length ? 1 : 0);
 }
 
-console.log(`Onbekende opdracht "${opdracht}". Gebruik: check | vervangproef`);
+if (opdracht === 'metadata') {
+  // Ververst de AFGELEIDE velden van al gepubliceerde films — miniatuur en datum — zonder opnieuw te
+  // uploaden. Nodig wanneer er aan de LIBRARY iets wijzigt in plaats van aan de film: op 01/09/2026 stond
+  // `BlockNoneReferrer` aan, waardoor de miniatuur 403 gaf voor iedereen zonder referer (dus ook voor een
+  // zoekmachine) en dus uit de zoekgegevens werd gelaten. Zo'n wijziging hoort geen nieuwe upload te kosten.
+  const UITSLAG = new URL('./films-uitslag.json', import.meta.url).pathname;
+  const uitslag = JSON.parse(readFileSync(UITSLAG, 'utf8'));
+  for (const [sleutel, f] of Object.entries(uitslag)) {
+    if (!f.guid) { console.log(`⏭  ${sleutel} — nog niet gepubliceerd`); continue; }
+    const v = await api(`/videos/${f.guid}`);
+    if (!v.ok) { console.log(`⚠️ ${sleutel} → HTTP ${v.status}`); continue; }
+    const mini = v.json?.thumbnailUrl;
+    let uit = null;
+    if (mini) {
+      const t = await fetch(mini, { method: 'HEAD' }).catch(() => null);
+      uit = t?.ok ? mini : null;
+      if (!t?.ok) console.log(`   ${sleutel}: miniatuur HTTP ${t?.status ?? '?'} — weggelaten`);
+    }
+    f.thumbnail = uit;
+    f.gepubliceerdOp = v.json?.dateUploaded ?? f.gepubliceerdOp ?? null;
+    console.log(`✅ ${sleutel} — miniatuur ${uit ? 'opgenomen' : 'weggelaten'}, ${v.json?.length ?? '?'}s`);
+  }
+  writeFileSync(UITSLAG, JSON.stringify(uitslag, null, 2) + '\n');
+  process.exit(0);
+}
+
+console.log(`Onbekende opdracht "${opdracht}". Gebruik: check | publiceer | metadata | vervangproef`);
 process.exit(1);
