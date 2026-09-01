@@ -120,18 +120,46 @@ const STEM_ID = { 'nl-BE': stemGeheim('StemNl'), 'fr-BE': stemGeheim('StemFr') }
 // Het model komt uit user-secrets als het gezet is; anders vraagt hij de API wat er beschikbaar is en kiest
 // het eerste dat nl én fr draagt. Niet uit het hoofd invullen: modelnamen wijzigen bij die dienst, en een
 // verouderde naam geeft een 400 die als "de tekst deugt niet" leest.
-let MODEL = stemGeheim('Model');
+// ⚠️ `undefined` = nog niet bepaald, `null` = bewust géén model_id meesturen. stemGeheim() geeft null
+// terug wanneer de sleutel ontbreekt, en die twee liepen door elkaar: kiesModel() zag null, dacht "al
+// bepaald" en vroeg de lijst nooit op. De film draaide dan op het standaardmodel van de API terwijl de code
+// meende multilingual_v2 te kiezen. Enkel de verslagregel "model: standaard van de API" verried het.
+let MODEL = stemGeheim('Model') ?? undefined;
+let modelGemeld = false;
 async function kiesModel() {
-  if (MODEL) return MODEL;
+  if (MODEL !== undefined) return MODEL;
   const r = await fetch('https://api.elevenlabs.io/v1/models', { headers: { 'xi-api-key': SLEUTEL } });
+
+  // ⚠️ MAG DE SLEUTEL DE LIJST NIET LEZEN, dan kiest de API zélf haar standaardmodel — een oproep zónder
+  // model_id werkt (gemeten 01/09/2026, HTTP 200). Dat is bruikbaar, maar je weet dan niet WAT er sprak, en
+  // dat mag nooit stil gebeuren: het staat in het verslag van elke film. Zet models_read op de sleutel, of
+  // pin ElevenLabs:Model, en dit verdwijnt.
+  if (r.status === 401) {
+    console.log('⚠️  De sleutel mag /v1/models niet lezen (recht models_read ontbreekt).');
+    console.log('    De API kiest dus zelf haar standaardmodel en wij weten niet welk.');
+    console.log('    → geef de sleutel models_read, of zet ElevenLabs:Model op een modelnaam.');
+    MODEL = null;              // null = geen model_id meesturen
+    return MODEL;
+  }
   if (!r.ok) throw new Error(`kon de modellen niet opvragen: HTTP ${r.status}`);
-  const kandidaat = (await r.json()).find(m => {
+
+  // ⚠️ NIET "de eerste met nl+fr" — dat was toeval en het viel verkeerd uit. Op 01/09/2026 dragen zes
+  // modellen beide talen, en de eerste is `eleven_v3`: "the most expressive model… REQUIRES MORE PROMPT
+  // ENGINEERING". Voor een pijplijn waar niemand elke zin natuneert is dat precies het verkeerde. De
+  // beschrijving van `eleven_multilingual_v2` zegt letterlijk waar wij mee bezig zijn: "best for VOICE
+  // OVERS, audiobooks, post-production". Alle vier de kandidaten hebben token_cost_factor 1, dus prijs is
+  // geen argument — enkel geschiktheid.
+  const alle = await r.json();
+  const draagtBeide = m => {
     const t = (m.languages ?? []).map(l => (l.language_id ?? '').toLowerCase());
     return t.includes('nl') && t.includes('fr');
-  });
+  };
+  const voorkeur = ['eleven_multilingual_v2'];
+  const kandidaat = alle.find(m => voorkeur.includes(m.model_id) && draagtBeide(m))
+                 ?? alle.find(draagtBeide);
   if (!kandidaat) throw new Error('geen enkel model draagt zowel nl als fr — zet ElevenLabs:Model zelf');
   MODEL = kandidaat.model_id;
-  console.log(`ℹ️  model gekozen: ${MODEL} (${kandidaat.name ?? '?'}) — pin het met ElevenLabs:Model`);
+  if (!modelGemeld) { console.log(`ℹ️  model gekozen: ${MODEL} (${kandidaat.name ?? '?'}) — pin het met ElevenLabs:Model`); modelGemeld = true; }
   return MODEL;
 }
 
@@ -142,7 +170,7 @@ async function kiesModel() {
 const CACHE = new URL('./.films-stem/', import.meta.url).pathname;
 mkdirSync(CACHE, { recursive: true });
 const cacheNaam = (tekst, stem, model) =>
-  `${CACHE}${createHash('sha256').update(`${model}|${stem}|${tekst}`).digest('hex').slice(0, 32)}.wav`;
+  `${CACHE}${createHash('sha256').update(`${model ?? 'standaard'}|${stem}|${tekst}`).digest('hex').slice(0, 32)}.wav`;
 
 const duurVan = (pad) => Number(execFileSync('ffprobe',
   ['-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', pad]).toString().trim());
@@ -164,7 +192,7 @@ async function spreek(tekst, taal, pad) {
     const r = await fetch(`https://api.elevenlabs.io/v1/text-to-speech/${stem}`, {
       method: 'POST',
       headers: { 'xi-api-key': SLEUTEL, 'content-type': 'application/json', accept: 'audio/mpeg' },
-      body: JSON.stringify({ text: tekst, model_id: model }),
+      body: JSON.stringify(model ? { text: tekst, model_id: model } : { text: tekst }),
     });
     if (!r.ok) throw new Error(`stem-API: HTTP ${r.status} — ${(await r.text()).slice(0, 200)}`);
     writeFileSync(`${uitCache}.mp3`, Buffer.from(await r.arrayBuffer()));
@@ -310,12 +338,22 @@ const FILMS = [
 
 // ── Draaien ──────────────────────────────────────────────────────────────────────────────────────────────
 mkdirSync(UIT, { recursive: true });
-const verslag = { gemaakt: [], gevallen: [] };
+const verslag = { gemaakt: [], gevallen: [] , overgeslagen: [] };
 
 for (const [naam, film] of FILMS) {
   if (filter && !naam.includes(filter)) continue;
 
   for (const taal of ['nl-BE', 'fr-BE']) {
+    // ⚠️ Een taal zonder stem wordt OVERGESLAGEN, niet gekraakt — maar wel luidop. Zo kan je het Nederlands
+    // al opnemen terwijl de Franse stem nog gekozen moet worden, zonder dat er ooit twijfel bestaat over
+    // welke talen er in deze ronde gemaakt zijn. Stil overslaan is wat een halve ronde als een hele laat
+    // lezen, en dat is precies de fout die de beeldgenerator ooit maakte.
+    if (MOTOR === 'elevenlabs' && !STEM_ID[taal]) {
+      console.log(`\n⏭  ${taal} OVERGESLAGEN — geen stem gezet.`);
+      console.log(`    dotnet user-secrets set "ElevenLabs:Stem${taal.startsWith('fr') ? 'Fr' : 'Nl'}" "<voice-id>"`);
+      verslag.overgeslagen.push(`${taal}: geen stem in user-secrets`);
+      continue;
+    }
     const kort = taal.startsWith('fr') ? 'fr' : 'nl';
     const werk = `${UIT}${naam}-${kort}/`;
     rmSync(werk, { recursive: true, force: true }); mkdirSync(werk, { recursive: true });
@@ -429,12 +467,16 @@ for (const [naam, film] of FILMS) {
     const lengte = Number(execFileSync('ffprobe', ['-v', 'error', '-show_entries', 'format=duration',
       '-of', 'csv=p=0', mp4]).toString().trim());
     console.log(`  ✅ ${naam}-${kort}.mp4 — ${lengte.toFixed(0)}s, ${film.scenes.length} scènes, ondertitels erbij`);
-    verslag.gemaakt.push(`${naam}-${kort} (${lengte.toFixed(0)}s, stem: ${MOTOR})`);
+    verslag.gemaakt.push(`${naam}-${kort} (${lengte.toFixed(0)}s, stem: ${MOTOR}, model: ${MODEL ?? 'standaard van de API'})`);
   }
 }
 
 console.log(`\n${'─'.repeat(88)}`);
 if (verslag.gemaakt.length) console.log(`✅ ${verslag.gemaakt.length} film(s): ${verslag.gemaakt.join(', ')}`);
+if (verslag.overgeslagen.length) {
+  console.log(`\n⏭  ${verslag.overgeslagen.length} overgeslagen:`);
+  verslag.overgeslagen.forEach(r => console.log(`   ${r}`));
+}
 if (verslag.gevallen.length) { console.log(`❌ ${verslag.gevallen.length} gevallen:`); verslag.gevallen.forEach(r => console.log(`   ${r}`)); }
 if (DROOG) console.log('🅓 Droge proef — enkel geluid gemaakt, niets opgenomen.');
 else if (!verslag.gemaakt.length && !verslag.gevallen.length)
