@@ -44,15 +44,26 @@ const wacht = ms => new Promise(r => setTimeout(r, ms));
 
 // Wacht tot Bunny klaar is met verwerken en geef de video terug. Zonder dit lees je de lengte van een video
 // die nog aan het transcoderen is — en dan meet je niets.
-async function verwerkt(guid, hoelang = 180) {
+// ⚠️ WACHTEN TOT BUNNY KLAAR IS, en ZEGGEN wanneer dat niet lukte.
+//
+// Deze lus gaf op na 180 s en gaf dan stilzwijgend de laatste toestand terug. De aanroeper duwde de
+// hoofdstukken vervolgens in een video van lengte 0 en kreeg `400 Chapter is out of bounds` — een melding
+// die naar de hoofdstukken wijst terwijl het probleem het WACHTEN was. Gebeurd op 01/09/2026 met
+// documentketen-nl (147 s film): status 2, lengte 0, en de ronde meldde verder "✅ gepubliceerd".
+//
+// Nu: ruimer wachten, en een expliciete vlag `opgegeven` zodat de aanroeper de hoofdstukken OVERSLAAT met
+// een leesbare reden in plaats van ze te proberen. De film zelf is dan gewoon goed geüpload; enkel de
+// hoofdstukken moeten later met `bunny.mjs hoofdstukken` bijgezet worden.
+async function verwerkt(guid, hoelang = 600) {
   for (let i = 0; i < hoelang / 5; i++) {
     const v = await api(`/videos/${guid}`);
     if (!v.ok) return v;
-    // status 4 = klaar bij Bunny; we kijken óók naar de lengte, want die is wat we meten.
+    // status 3+ = klaar bij Bunny; we kijken óók naar de lengte, want die is wat we meten.
     if (v.json?.status >= 3 && (v.json?.length ?? 0) > 0) return v;
     await wacht(5000);
   }
-  return await api(`/videos/${guid}`);
+  const laatste = await api(`/videos/${guid}`);
+  return { ...laatste, opgegeven: true };
 }
 
 async function stuur(guid, bestand) {
@@ -213,10 +224,17 @@ if (opdracht === 'publiceer') {
     // "Chapter is out of bounds of the video" (gemeten 01/09/2026): de video heeft dan nog lengte 0, dus
     // élk hoofdstuk valt erbuiten. De ondertitels hebben er geen last van — die worden wél meteen aanvaard.
     const klaar = await verwerkt(guid);
-    console.log(`   verwerkt → ${klaar.json?.length ?? '?'}s (status ${klaar.json?.status})`);
+    console.log(`   verwerkt → ${klaar.json?.length ?? '?'}s (status ${klaar.json?.status})`
+      + (klaar.opgegeven ? '  ⏳ NOG NIET KLAAR — na 10 minuten opgegeven' : ''));
 
     // Hoofdstukken — ook die hebben we al: elke scène heeft een naam en een starttijd (§7.3).
-    if (f.hoofdstukken?.length) {
+    // ⚠️ Niet proberen op een video die nog verwerkt: elk hoofdstuk valt dan buiten een lengte van 0, en de
+    // 400 die je terugkrijgt wijst naar het verkeerde probleem.
+    if (klaar.opgegeven) {
+      console.log('   hoofdstukken OVERGESLAGEN — de video was nog niet verwerkt.');
+      console.log(`   Zet ze later bij met: node tools/bunny.mjs hoofdstukken ${sleutel}`);
+      mislukt.push(`${sleutel}: hoofdstukken overgeslagen (video nog niet verwerkt)`);
+    } else if (f.hoofdstukken?.length) {
       const h = await api(`/videos/${guid}`, {
         method: 'POST', headers: { 'content-type': 'application/json' },
         // ⚠️ Afkappen op de lengte die BUNNY meet, niet die wij berekenden. Die twee schelen een fractie

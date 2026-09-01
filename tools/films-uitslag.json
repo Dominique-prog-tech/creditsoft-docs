@@ -942,7 +942,7 @@
     "titel": "De documentketen — van vragen tot beoordelen",
     "omschrijving": "Hoe u stukken opvraagt bij uw klant en ze weer binnenkrijgt: de gevraagde documenten op een dossier met hun drie toestanden, de uitnodiging naar het klantenportaal, het portaal zoals uw klant het ziet, en het centrale scherm waar alles wat op beoordeling wacht bij elkaar staat — gesorteerd op wie het langst wacht. Plus de andere richting: de documentbibliotheek.",
     "hash": "0cf82166a00c1aa3",
-    "guid": null,
+    "guid": "a2c2d8c4-c5a9-4c2e-8ecb-168a2e8b5a1f",
     "hoofdstukken": [
       {
         "titel": "De gevraagde stukken",
@@ -994,7 +994,11 @@
         "start": 136.11,
         "eind": 144.52
       }
-    ]
+    ],
+    "thumbnail": null,
+    "gepubliceerdOp": "2026-09-01T11:11:53.233",
+    "gepubliceerdeHash": "0cf82166a00c1aa3",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/a2c2d8c4-c5a9-4c2e-8ecb-168a2e8b5a1f"
   },
   "documentketen-fr": {
     "film": "documentketen",
@@ -1014,7 +1018,7 @@
     "titel": "La chaîne des documents — de la demande à la validation",
     "omschrijving": "Comment vous demandez des pièces à votre client et les recevez : les documents demandés sur un dossier avec leurs trois statuts, l’invitation au portail client, le portail tel que votre client le voit, et l’écran central où tout ce qui attend une validation est rassemblé — trié par ordre d’attente. Ainsi que l’autre sens : la bibliothèque de documents.",
     "hash": "28578f8e3ed8da88",
-    "guid": null,
+    "guid": "b4507d2e-b208-43a5-895f-9a62ea23a16b",
     "hoofdstukken": [
       {
         "titel": "Les pièces demandées",
@@ -1066,6 +1070,10 @@
         "start": 155.94,
         "eind": 166.76
       }
-    ]
+    ],
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/b4507d2e-b208-43a5-895f-9a62ea23a16b/thumbnail.jpg",
+    "gepubliceerdOp": "2026-09-01T11:14:56.53",
+    "gepubliceerdeHash": "28578f8e3ed8da88",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/b4507d2e-b208-43a5-895f-9a62ea23a16b"
   }
 }
