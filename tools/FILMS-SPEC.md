@@ -410,7 +410,48 @@ Een handgeschreven vierde lijst zou met alle drie uit de pas lopen.
 welke is uit de code niet af te leiden zonder de hele componentboom te volgen. Hij meldt die apart in plaats
 van ze stil over te slaan — juist een gedeeld component raakt véél beelden tegelijk.
 
-**Nog te bouwen:** de koppeling aan de deploy-poort. `raakt.mjs` zegt *wat* nazicht vraagt; hij weet niet of
-je het al gedaan hebt. Daarvoor moet de uitslagtabel bijhouden tegen welke app-versie een beeld of film
-gemaakt is — dat is fase 3 uit §9.
+### 13.1 De verouderingscontrole — `verouderd.mjs` (01/09/2026)
+
+`raakt.mjs` zegt *wat* een scherm toont. `verouderd.mjs` zegt of dat artefact nog **actueel** is.
+
+```
+node tools/verouderd.mjs           → het verslag
+node tools/verouderd.mjs --kort    → enkel de namen, om aan een generator te voeren; exitcode 1 bij verouderd
+```
+
+**Het merkteken is een commit-SHA, geen versienummer.** Een versiebump zegt niets over of een scherm bewoog
+— vandaag ging v1.70 naar v1.74 terwijl de meeste schermen stillagen. Met een SHA wordt "verouderd" een
+git-vraag: welke `.razor`-bestanden zijn sindsdien gewijzigd, en zit de route van dit artefact daarbij.
+
+Beide generatoren schrijven dat merkteken nu mee: `beelden.mjs` in `tools/beelden-uitslag.json` (route +
+SHA per beeld), `films.mjs` in `films-uitslag.json` (de routes uit de scènes zélf + SHA).
+
+⚠️ **Drie dingen die het bouwen leerde:**
+
+- **"Onbekend" is geen "in orde".** Een artefact zonder merkteken is van vóór deze meting. Het verslag telt
+  dat apart, want anders leest een oude ronde als een gecontroleerde ronde.
+- **De filmroutes moeten uit de SCÈNES komen.** Eerst leidde ik ze af uit de paginanaam; dat viel toevallig
+  goed uit voor `kredietdossiers-basis`, maar een overzichtsfilm die acht schermen toont hééft geen pagina en
+  zou nul routes gehad hebben.
+- **Een `catch` die stil `null` teruggeeft, liegt.** Mijn eerste `appToestand()` gaf `{sha: null}` omdat de
+  import van `execFileSync` ontbrak — het zag eruit alsof git niet bestond. Nu meldt hij de reden.
+
+⚠️ **Wat deze controle NIET ziet:** een gewijzigd component zonder eigen `@page`. Dat verschijnt óp schermen,
+en welke is uit de code niet af te leiden. Hij meldt ze apart in plaats van ze stil over te slaan.
+
+### 13.2 Melden, niet tegenhouden — en waar de melding landt
+
+**Beslist door Dominique op 01/09/2026:** een verouderd beeld of film **blokkeert geen deploy**. Het is
+cosmetisch; erop tegenhouden is irritanter dan nuttig. `verouderd.mjs` geeft daarom exitcode **0**, en enkel
+met `--streng` geeft hij 1 — voor wie hem in een script tóch als poort wil gebruiken.
+
+⚠️ **Maar een melding die niemand leest is niets waard**, en dat is het echte risico van deze keuze. Ze hoort
+daarom in het deploy-ritueel en niet in een logbestand:
+
+```
+node tools/verouderd.mjs        # vóór elke push die een scherm geraakt heeft
+```
+
+Dat staat ook in het geheugen van de sessie, zodat het niet van iemands aandacht afhangt. Loopt hij groen,
+dan is er niets te doen; meldt hij iets, dan is hernemen één commando per generator.
 

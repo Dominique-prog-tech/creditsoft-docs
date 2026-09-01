@@ -26,7 +26,7 @@ import { mkdirSync, rmSync, existsSync, writeFileSync, readFileSync, readdirSync
 import { createHash } from 'node:crypto';
 import { execFileSync } from 'node:child_process';
 import { chromium } from '/Users/dominique/projects/adm-creditsoft/src/Host/CreditSoft.Host.Web/bin/Debug/net10.0/.playwright/package/index.mjs';
-import { BASIS, ID, gebruiker, wachtwoord, meldAan, stemGeheim } from './aansturing.mjs';
+import { BASIS, ID, gebruiker, wachtwoord, meldAan, stemGeheim, appToestand } from './aansturing.mjs';
 
 const UIT = new URL('./.films-uit/', import.meta.url).pathname;
 
@@ -756,6 +756,15 @@ for (const [naam, filmVol] of FILMS) {
     const sleutel = `${stam}-${kort}`;
     uitslag[sleutel] = {
       film: naam, taal, pagina: film.pagina, lengte: Number(lengte.toFixed(2)),
+      // ⚠️ De ROUTES die deze film toont, uit de scènes zelf. Eerst leidde verouderd.mjs ze af uit de
+      // paginanaam, en dat was een gok die toevallig goed uitviel — een overzichtsfilm die acht schermen
+      // toont, heeft géén pagina en zou dan nul routes hebben gehad.
+      routes: [...new Set(film.scenes.flatMap(sc =>
+        [...String(sc.doe).matchAll(/\$\{BASIS\}(\/[a-z0-9\/_-]*)/g)]
+          .map(m => '/' + m[1].replace(/^\/+/, '').replace(/\/+$/, ''))))],
+      // ⚠️ De toestand van de APP waartegen dit opgenomen is. Daarmee kan verouderd.mjs later vragen: welke
+      // schermen zijn sindsdien gewijzigd, en toont deze film er één van?
+      app: appToestand(),
       titel: film.titel?.[kort] ?? naam,
       omschrijving: film.omschrijving?.[kort] ?? '',
       // ⚠️ De hash draagt de NARRATIE én de route, want dat zijn de twee dingen die een film inhoudelijk

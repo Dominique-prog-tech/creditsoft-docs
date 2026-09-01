@@ -23,7 +23,7 @@ import { chromium } from '/Users/dominique/projects/adm-creditsoft/src/Host/Cred
 import { NIET_SCHERMTEKST_BASIS, ontbrekendeTermen, pngMaat, vormBesluit, schermBesluit, verantwoording }
   from '/Users/dominique/projects/adm-appkit/tools/beeldgenerator/kern.mjs';
 
-import { BASIS, ID, SECRETS, gebruiker, wachtwoord, meldAan } from './aansturing.mjs';
+import { BASIS, ID, SECRETS, gebruiker, wachtwoord, meldAan, appToestand } from './aansturing.mjs';
 const UIT = '/Users/dominique/projects/creditsoft-docs/docs/images';
 const BREED = 1700, HOOG = 900;
 
@@ -527,9 +527,31 @@ for (const map of ['', 'getting-started/', 'crm/', 'credit-management/', 'beheer
 
 const browser = await chromium.launch();
 const ctx = await browser.newContext({ viewport: { width: BREED, height: HOOG }, deviceScaleFactor: 2 });
-const VERBERG_VERSIE = '.nav-version { visibility: hidden !important; }';
+// ⚠️ TWEE DINGEN GAAN UIT ELK BEELD, en om dezelfde reden: ze wijzigen zonder dat er iets wijzigt.
+//   `.nav-version` — het versienummer linksonder (zie de uitleg verderop).
+//   de SCHUIFBALK   — gemeten op 01/09/2026: `documenttypes.png` en `fiche-281-50-fr.png` verschilden van
+//                     hun vorige ronde in exact 6 pixels breed aan de rechterrand, en verder in niets. De
+//                     inhoud was regel voor regel identiek. Het is de overlay-schuifbalk van de grid, die
+//                     na een seconde wegvaagt: sta je er nét voor of nét na, dan krijg je een ander beeld.
+//                     Daardoor meldde de verouderingscontrole twee schermen als gewijzigd die niet wijzigden.
+//
+// `background: transparent` en NIET `display: none`. Een overlay-schuifbalk neemt geen ruimte in, maar een
+// klassieke wel — en die zou bij `display: none` inschuiven, waarna de vormgrendel élk bestaand beeld als
+// "andere vorm" weigert. Transparant maken werkt in beide gevallen en laat de afmetingen met rust.
+const VERBERG_VERSIE = '.nav-version { visibility: hidden !important; }'
+  + '::-webkit-scrollbar, ::-webkit-scrollbar-track, ::-webkit-scrollbar-thumb, ::-webkit-scrollbar-corner'
+  + ' { background: transparent !important; box-shadow: none !important; border-color: transparent !important; }';
 let badgeGezien = 0;
+const HERHAALPROEF = process.env.CS_HERHAALPROEF || 'documenttypes';
+let herhaalProef = null;
 const labelBotsingen = [];
+
+// ── DE UITSLAGTABEL VAN DE BEELDRONDE ────────────────────────────────────────────────────────────────────
+// ⚠️ Per beeld: tegen welke toestand van de app het geschoten is. Zonder dat kan niets later zeggen of het
+// verouderd is — en een beeld dat een gewijzigd scherm toont, ziet er even overtuigend uit als een juist.
+// De tabel staat NAAST .films-uit/ en dus IN git: verouderd.mjs leest haar, en zij hoort bij de bron.
+const BEELD_UITSLAG = new URL('./beelden-uitslag.json', import.meta.url).pathname;
+const beeldUitslag = existsSync(BEELD_UITSLAG) ? JSON.parse(readFileSync(BEELD_UITSLAG, 'utf8')) : {};
 const page = await ctx.newPage();
 
 // ⚠️ HET VERSIENUMMER GAAT UIT DE BEELDEN. Linksonder in de zijbalk staat "v1.70.0 nieuw", en de zijbalk
@@ -542,7 +564,9 @@ const page = await ctx.newPage();
 // inschuiven en zou elk bestaand beeld als "andere vorm" geweigerd worden.
 await ctx.addInitScript(() => {
   const stijl = document.createElement('style');
-  stijl.textContent = '.nav-version { visibility: hidden !important; }';
+  stijl.textContent = '.nav-version { visibility: hidden !important; }'
+    + '::-webkit-scrollbar, ::-webkit-scrollbar-track, ::-webkit-scrollbar-thumb, ::-webkit-scrollbar-corner'
+    + ' { background: transparent !important; box-shadow: none !important; border-color: transparent !important; }';
   document.addEventListener('DOMContentLoaded', () => document.head.appendChild(stijl));
 });
 const fouten = [];
@@ -763,6 +787,20 @@ for (const taal of ['nl-BE', 'fr-BE']) {
       for (const b of botsingen) labelBotsingen.push(`${naam}${achtervoegsel}: ${b}`);
 
       const nieuw = vorm.element ? await elementSchot(page, vorm.element) : await page.screenshot();
+      // ⚠️ IS DEZE RONDE HERHAALBAAR? Eén beeld wordt twee keer na elkaar geschoten, en de twee moeten
+      // byte-identiek zijn. Dat is de enige controle die de HELE familie vangt waar de schuifbalk er maar
+      // één van was: alles wat tussen twee schoten verandert zonder dat de app verandert — een animatie die
+      // nog loopt, een tooltip die vervaagt, een teller die tikt. Een filter per gevonden geval dekt enkel
+      // het geval dat je al kent; dit dekt ook de volgende.
+      //
+      // Het beeld is met opzet `documenttypes`: het draagt geen datum (dus geen ruis van de klok) en het
+      // is net het scherm waarop de schuifbalk betrapt werd. Het MELDT en blokkeert niet.
+      if (`${naam}${achtervoegsel}` === HERHAALPROEF) {
+        const tweede = vorm.element ? await elementSchot(page, vorm.element) : await page.screenshot();
+        herhaalProef = Buffer.compare(nieuw, tweede) === 0
+          ? { gelijk: true }
+          : { gelijk: false, a: nieuw.length, b: tweede.length };
+      }
       if (existsSync(doel)) {
         const besluitVorm = vormBesluit({
           bestaandeMaat: pngMaat(readFileSync(doel)), nieuweMaat: pngMaat(nieuw),
@@ -797,14 +835,40 @@ for (const taal of ['nl-BE', 'fr-BE']) {
       // zou daar telkens opnieuw op moeten wachten. Nu kan ze op deze bestanden draaien.
       schermteksten[`${naam}${achtervoegsel}`] = tekst;
       writeFileSync(doel, nieuw);
+      // ⚠️ Ook vastleggen WAARTEGEN dit beeld geschoten is: de route en de toestand van de app. Zonder die
+      // twee kan verouderd.mjs later niets zeggen, en een beeld van een gewijzigd scherm ziet er even
+      // overtuigend uit als een juist.
+      beeldUitslag[`${naam}${achtervoegsel}`] = {
+        route: (typeof url === 'string' ? url : String(url ?? '')).split('${')[0].split('?')[0].replace(/\/+$/, ''),
+        app: appToestand(),
+      };
       ok++;
       verantwoord.geschreven.push(`${naam}${achtervoegsel}`);
     } catch (e) { misluktMet(`${naam}${achtervoegsel} — ${e.message.slice(0, 60)}`); }
   }
 }
+// ⚠️ De tabel pas NA de ronde wegschrijven, en samengevoegd met wat er stond: draai je één beeld met een
+// filter, dan mogen de negentig andere niet verdampen. Zelfde reden als bij de films-uitslag.
+writeFileSync(BEELD_UITSLAG, JSON.stringify(beeldUitslag, null, 2) + '\n');
+
 await browser.close();
 
 console.log(`\n✅ ${ok} beelden geschreven — elk mét zijn belofte op het scherm`);
+
+// ⚠️ NIETS GEVONDEN IS GEEN "IN ORDE". Draaide het proefbeeld niet mee (een filter op de opdrachtregel,
+// een hernoemd schot), dan is de herhaalbaarheid deze ronde NIET gemeten — en dat moet het zeggen.
+if (herhaalProef === null) {
+  console.log(`\n◐ herhaalbaarheid NIET gemeten — '${HERHAALPROEF}' zat niet in deze ronde.`);
+  console.log('   Zet CS_HERHAALPROEF op een beeld dat wél meedraait, anders bewijst een schone ronde niets.');
+} else if (herhaalProef.gelijk) {
+  console.log(`\n✅ herhaalbaar: '${HERHAALPROEF}' twee keer na elkaar geschoten, byte-identiek.`);
+} else {
+  console.log(`\n⚠️  NIET HERHAALBAAR: '${HERHAALPROEF}' gaf twee verschillende beelden na elkaar `
+    + `(${herhaalProef.a} vs ${herhaalProef.b} bytes).`);
+  console.log('   Er verandert iets tussen twee schoten zonder dat de app verandert. Zolang dat zo is,');
+  console.log('   meldt de verouderingscontrole wijzigingen die er niet zijn — zoek het vóór je op de');
+  console.log('   uitslag van deze ronde vertrouwt.');
+}
 if (zwakGecontroleerd.length) {
   console.log(`\n◐ ${zwakGecontroleerd.length} beelden zijn maar ZWAK gecontroleerd — enkel op één woord:`);
   console.log('   ' + zwakGecontroleerd.slice(0, 40).join(', ') + (zwakGecontroleerd.length > 40 ? ' …' : ''));

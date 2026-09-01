@@ -11,6 +11,7 @@
 // kopie is. beelden.mjs verliest 61 regels en wint een import; verder blijft alles wat het deed hetzelfde.
 
 import { readFileSync, existsSync } from 'node:fs';
+import { execFileSync } from 'node:child_process';
 
 export const BASIS = 'http://localhost:5345';
 
@@ -99,6 +100,29 @@ export { gebruiker, wachtwoord };
 //     dotnet user-secrets set "Bunny:ApiKey"    "<de sleutel van de video library>"
 //     dotnet user-secrets set "Bunny:LibraryId" "<het nummer van de library>"
 //
+// ── DE TOESTAND VAN DE APP OP HET MOMENT VAN OPNEMEN ─────────────────────────────────────────────────────
+//
+// ⚠️ EEN SHA EN GEEN VERSIENUMMER. Een versiebump zegt niets over of een SCHERM wijzigde — vandaag ging
+// v1.70 naar v1.74 zonder dat de meeste schermen bewogen. Een commit-SHA laat de echte vraag stellen:
+// "welke .razor-bestanden zijn sindsdien gewijzigd", en dat is precies wat raakt.mjs beantwoordt.
+//
+// ⚠️ En hij meldt of de werkmap VUIL was. Een SHA met niet-vastgelegde wijzigingen eromheen beschrijft niet
+// wat er werkelijk gefilmd is; dan is het merkteken een benadering en dat hoort zichtbaar te zijn.
+export function appToestand() {
+  const APP = '/Users/dominique/projects/adm-creditsoft';
+  try {
+    const sha = execFileSync('git', ['-C', APP, 'rev-parse', 'HEAD'], { encoding: 'utf8' }).trim();
+    const vuil = execFileSync('git', ['-C', APP, 'status', '--porcelain'], { encoding: 'utf8' }).trim().length > 0;
+    return { sha, vuil };
+  } catch (e) {
+    // ⚠️ NIET STIL. Zonder SHA kan niets later zeggen of dit beeld verouderd is, en een lege waarde ziet er
+    // in de tabel uit als "nog niet ingevuld" in plaats van "mislukt". Mijn eerste versie ving dit weg en
+    // gaf null terug omdat de import van execFileSync ontbrak — het zag eruit alsof git niet bestond.
+    console.log(`⚠️  app-toestand niet af te lezen: ${String(e).split('\n')[0].slice(0, 120)}`);
+    return { sha: null, vuil: null };
+  }
+}
+
 export function bunnyGeheim(naam) {
   if (!existsSync(SECRETS)) return null;
   const geheim = JSON.parse(readFileSync(SECRETS, 'utf8').replace(/^\uFEFF/, ''));

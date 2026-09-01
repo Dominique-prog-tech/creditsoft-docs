@@ -4,8 +4,8 @@
     "taal": "nl-BE",
     "pagina": "credit-management/credit-files",
     "lengte": 96.84,
-    "titel": "Het kredietdossier in CreditSoft — van lijst tot journaal",
-    "omschrijving": "Een rondleiding door het kredietdossier: de lijst filteren en doorzoeken, een dossier openen, de dossiergegevens, de kredietaanvragers, het pand, de gevraagde documenten, en het journaal met de taken, notities, gesprekken en commissieschema’s die bij dat ene dossier horen.",
+    "titel": "Het kredietdossier in CreditSoft \u2014 van lijst tot journaal",
+    "omschrijving": "Een rondleiding door het kredietdossier: de lijst filteren en doorzoeken, een dossier openen, de dossiergegevens, de kredietaanvragers, het pand, de gevraagde documenten, en het journaal met de taken, notities, gesprekken en commissieschema\u2019s die bij dat ene dossier horen.",
     "hash": "b1307b41c06edc44",
     "guid": "d6954167-a695-4638-ac6c-7042ee6542f5",
     "hoofdstukken": [
@@ -64,15 +64,20 @@
         "start": 91.6,
         "eind": 94.94
       }
-    ]
+    ],
+    "app": {
+      "sha": "2ff5ae5b66d7e564047347fd96923019fe5f1c32",
+      "vuil": false,
+      "herkomst": "aangevuld 01/09/2026 \u2014 opgenomen in die sessie, niet door de generator gemerkt"
+    }
   },
   "kredietdossiers-basis-fr": {
     "film": "kredietdossiers-basis",
     "taal": "fr-BE",
     "pagina": "credit-management/credit-files",
     "lengte": 104,
-    "titel": "Le dossier de crédit dans CreditSoft — de la liste au journal",
-    "omschrijving": "Une visite guidée du dossier de crédit : filtrer et rechercher dans la liste, ouvrir un dossier, les données du dossier, les demandeurs de crédit, le bien, les documents demandés, et le journal avec les tâches, notes, appels et schémas de commission liés à ce dossier.",
+    "titel": "Le dossier de cr\u00e9dit dans CreditSoft \u2014 de la liste au journal",
+    "omschrijving": "Une visite guid\u00e9e du dossier de cr\u00e9dit : filtrer et rechercher dans la liste, ouvrir un dossier, les donn\u00e9es du dossier, les demandeurs de cr\u00e9dit, le bien, les documents demand\u00e9s, et le journal avec les t\u00e2ches, notes, appels et sch\u00e9mas de commission li\u00e9s \u00e0 ce dossier.",
     "hash": "1c86602fd2332484",
     "guid": "f74d9cd0-877f-4175-bfbe-6fd5733dc1c2",
     "hoofdstukken": [
@@ -131,15 +136,20 @@
         "start": 98.17,
         "eind": 102.07
       }
-    ]
+    ],
+    "app": {
+      "sha": "2ff5ae5b66d7e564047347fd96923019fe5f1c32",
+      "vuil": false,
+      "herkomst": "aangevuld 01/09/2026 \u2014 opgenomen in die sessie, niet door de generator gemerkt"
+    }
   },
   "kredietdossiers-basis-website-nl": {
     "film": "kredietdossiers-basis",
     "taal": "nl-BE",
     "pagina": "credit-management/credit-files",
     "lengte": 42.64,
-    "titel": "Het kredietdossier in CreditSoft — van lijst tot journaal",
-    "omschrijving": "Een rondleiding door het kredietdossier: de lijst filteren en doorzoeken, een dossier openen, de dossiergegevens, de kredietaanvragers, het pand, de gevraagde documenten, en het journaal met de taken, notities, gesprekken en commissieschema’s die bij dat ene dossier horen.",
+    "titel": "Het kredietdossier in CreditSoft \u2014 van lijst tot journaal",
+    "omschrijving": "Een rondleiding door het kredietdossier: de lijst filteren en doorzoeken, een dossier openen, de dossiergegevens, de kredietaanvragers, het pand, de gevraagde documenten, en het journaal met de taken, notities, gesprekken en commissieschema\u2019s die bij dat ene dossier horen.",
     "hash": "ed66fec463615506",
     "guid": "9129a61b-2412-4cc8-9b32-d75da739fba6",
     "hoofdstukken": [
@@ -172,15 +182,20 @@
     "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/9129a61b-2412-4cc8-9b32-d75da739fba6/thumbnail.jpg",
     "gepubliceerdOp": "2026-09-01T06:21:44.408",
     "gepubliceerdeHash": "ed66fec463615506",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/9129a61b-2412-4cc8-9b32-d75da739fba6"
+    "embed": "https://iframe.mediadelivery.net/embed/741183/9129a61b-2412-4cc8-9b32-d75da739fba6",
+    "app": {
+      "sha": "2ff5ae5b66d7e564047347fd96923019fe5f1c32",
+      "vuil": false,
+      "herkomst": "aangevuld 01/09/2026 \u2014 opgenomen in die sessie, niet door de generator gemerkt"
+    }
   },
   "kredietdossiers-basis-website-fr": {
     "film": "kredietdossiers-basis",
     "taal": "fr-BE",
     "pagina": "credit-management/credit-files",
     "lengte": 43.8,
-    "titel": "Le dossier de crédit dans CreditSoft — de la liste au journal",
-    "omschrijving": "Une visite guidée du dossier de crédit : filtrer et rechercher dans la liste, ouvrir un dossier, les données du dossier, les demandeurs de crédit, le bien, les documents demandés, et le journal avec les tâches, notes, appels et schémas de commission liés à ce dossier.",
+    "titel": "Le dossier de cr\u00e9dit dans CreditSoft \u2014 de la liste au journal",
+    "omschrijving": "Une visite guid\u00e9e du dossier de cr\u00e9dit : filtrer et rechercher dans la liste, ouvrir un dossier, les donn\u00e9es du dossier, les demandeurs de cr\u00e9dit, le bien, les documents demand\u00e9s, et le journal avec les t\u00e2ches, notes, appels et sch\u00e9mas de commission li\u00e9s \u00e0 ce dossier.",
     "hash": "1fdf1461c3cc2809",
     "guid": "ca7508c7-a5b7-49e2-b91c-d88889f9bb3e",
     "hoofdstukken": [
@@ -213,14 +228,19 @@
     "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/ca7508c7-a5b7-49e2-b91c-d88889f9bb3e/thumbnail.jpg",
     "gepubliceerdOp": "2026-09-01T06:24:21.949",
     "gepubliceerdeHash": "1fdf1461c3cc2809",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/ca7508c7-a5b7-49e2-b91c-d88889f9bb3e"
+    "embed": "https://iframe.mediadelivery.net/embed/741183/ca7508c7-a5b7-49e2-b91c-d88889f9bb3e",
+    "app": {
+      "sha": "2ff5ae5b66d7e564047347fd96923019fe5f1c32",
+      "vuil": false,
+      "herkomst": "aangevuld 01/09/2026 \u2014 opgenomen in die sessie, niet door de generator gemerkt"
+    }
   },
   "creditsoft-overzicht-website-nl": {
     "film": "creditsoft-overzicht",
     "taal": "nl-BE",
     "pagina": null,
     "lengte": 48,
-    "titel": "CreditSoft in drie kwartier minuten — de modules in het kort",
+    "titel": "CreditSoft in drie kwartier minuten \u2014 de modules in het kort",
     "omschrijving": "Een kort overzicht van CreditSoft voor kredietmakelaars: kredietdossiers, klanten, documenten, de portalen voor klant en aanbrenger, de commissieberekening, borderellen en fiche 281.50, het vooruitzicht en het beheer van uw kredietverstrekkers.",
     "hash": "2ba034757547cf75",
     "guid": "6e004248-5d64-4771-b276-b94782b663bc",
@@ -269,15 +289,20 @@
     "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/6e004248-5d64-4771-b276-b94782b663bc/thumbnail.jpg",
     "gepubliceerdOp": "2026-09-01T05:38:54.097",
     "gepubliceerdeHash": "2ba034757547cf75",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/6e004248-5d64-4771-b276-b94782b663bc"
+    "embed": "https://iframe.mediadelivery.net/embed/741183/6e004248-5d64-4771-b276-b94782b663bc",
+    "app": {
+      "sha": "2ff5ae5b66d7e564047347fd96923019fe5f1c32",
+      "vuil": false,
+      "herkomst": "aangevuld 01/09/2026 \u2014 opgenomen in die sessie, niet door de generator gemerkt"
+    }
   },
   "creditsoft-overzicht-website-fr": {
     "film": "creditsoft-overzicht",
     "taal": "fr-BE",
     "pagina": null,
     "lengte": 49.8,
-    "titel": "CreditSoft en bref — les modules en un coup d’œil",
-    "omschrijving": "Un bref aperçu de CreditSoft pour les courtiers en crédit : dossiers de crédit, clients, documents, les portails client et apporteur, le calcul des commissions, les bordereaux et la fiche 281.50, la perspective et la gestion de vos prêteurs.",
+    "titel": "CreditSoft en bref \u2014 les modules en un coup d\u2019\u0153il",
+    "omschrijving": "Un bref aper\u00e7u de CreditSoft pour les courtiers en cr\u00e9dit : dossiers de cr\u00e9dit, clients, documents, les portails client et apporteur, le calcul des commissions, les bordereaux et la fiche 281.50, la perspective et la gestion de vos pr\u00eateurs.",
     "hash": "0896bc79eefd88bc",
     "guid": "efcc1f39-03fa-497f-bb06-12dc5ede37ba",
     "hoofdstukken": [
@@ -325,7 +350,12 @@
     "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/efcc1f39-03fa-497f-bb06-12dc5ede37ba/thumbnail.jpg",
     "gepubliceerdOp": "2026-09-01T05:39:10.014",
     "gepubliceerdeHash": "0896bc79eefd88bc",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/efcc1f39-03fa-497f-bb06-12dc5ede37ba"
+    "embed": "https://iframe.mediadelivery.net/embed/741183/efcc1f39-03fa-497f-bb06-12dc5ede37ba",
+    "app": {
+      "sha": "2ff5ae5b66d7e564047347fd96923019fe5f1c32",
+      "vuil": false,
+      "herkomst": "aangevuld 01/09/2026 \u2014 opgenomen in die sessie, niet door de generator gemerkt"
+    }
   },
   "creditsoft-overzicht-website-en": {
     "film": "creditsoft-overzicht",
@@ -381,7 +411,12 @@
     "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/bc9092c4-ae00-49ed-84b7-3475506cef5b/thumbnail.jpg",
     "gepubliceerdOp": "2026-09-01T05:39:26.183",
     "gepubliceerdeHash": "682a154e1ab2d163",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/bc9092c4-ae00-49ed-84b7-3475506cef5b"
+    "embed": "https://iframe.mediadelivery.net/embed/741183/bc9092c4-ae00-49ed-84b7-3475506cef5b",
+    "app": {
+      "sha": "2ff5ae5b66d7e564047347fd96923019fe5f1c32",
+      "vuil": false,
+      "herkomst": "aangevuld 01/09/2026 \u2014 opgenomen in die sessie, niet door de generator gemerkt"
+    }
   },
   "kredietdossiers-basis-website-en": {
     "film": "kredietdossiers-basis",
@@ -422,6 +457,11 @@
     "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/9aadef14-942d-4ee8-a3a4-9e409f80eb62/thumbnail.jpg",
     "gepubliceerdOp": "2026-09-01T06:26:54.308",
     "gepubliceerdeHash": "a03e60739b44dfe4",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/9aadef14-942d-4ee8-a3a4-9e409f80eb62"
+    "embed": "https://iframe.mediadelivery.net/embed/741183/9aadef14-942d-4ee8-a3a4-9e409f80eb62",
+    "app": {
+      "sha": "2ff5ae5b66d7e564047347fd96923019fe5f1c32",
+      "vuil": false,
+      "herkomst": "aangevuld 01/09/2026 \u2014 opgenomen in die sessie, niet door de generator gemerkt"
+    }
   }
 }
