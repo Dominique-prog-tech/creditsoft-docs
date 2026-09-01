@@ -15,6 +15,7 @@
 // en 104 s — en achteraf de vraag of de lengte mee veranderd is.
 import { bunnyGeheim } from './aansturing.mjs';
 import { readFileSync, writeFileSync, existsSync } from 'node:fs';
+import { execFileSync } from 'node:child_process';
 
 const SLEUTEL = bunnyGeheim('ApiKey');
 const LIB = bunnyGeheim('LibraryId');
@@ -178,8 +179,25 @@ if (opdracht === 'publiceer') {
     if (!up.ok) { mislukt.push(`${sleutel}: upload → ${up.status} ${up.tekst}`); continue; }
 
     // Ondertitels — de tekst bestaat al, dus dat is gratis (§7.3).
+    //
+    // ⚠️ MAAR NIET BIJ EEN FILM ZONDER GELUID. Daar staat de tekst ÍN het beeld, en Bunny toont zijn
+    // ondertitelspoor er dan bovenop: twee keer dezelfde zin over elkaar. Dominique zag het op 01/09/2026
+    // op de functionaliteitspagina.
+    //
+    // Afgeleid uit het BESTAND en niet uit een vlag: het mp4 van een geluidloze film heeft geen audiokanaal,
+    // en dat is niet uit de pas te laten lopen met de werkelijkheid. Een aparte `stem: false` in de tabel
+    // zou dat wél kunnen.
+    const heeftGeluid = (() => {
+      try {
+        return execFileSync('ffprobe', ['-v', 'error', '-select_streams', 'a',
+          '-show_entries', 'stream=index', '-of', 'csv=p=0', mp4]).toString().trim().length > 0;
+      } catch { return true; }   // bij twijfel: wél ondertitels, dat is de veilige kant
+    })();
+
     const vtt = `${UIT}${sleutel}.vtt`;
-    if (existsSync(vtt)) {
+    if (!heeftGeluid) {
+      console.log('   ondertitels overgeslagen — geluidloze film, de tekst staat in het beeld');
+    } else if (existsSync(vtt)) {
       const taalcode = f.taal?.startsWith('fr') ? 'fr' : 'nl';
       const c = await api(`/videos/${guid}/captions/${taalcode}`, {
         method: 'POST', headers: { 'content-type': 'application/json' },
@@ -375,5 +393,29 @@ if (opdracht === 'miniatuur') {
   process.exit(0);
 }
 
-console.log(`Onbekende opdracht "${opdracht}". Gebruik: check | publiceer | metadata | naar-website | miniatuur | vervangproef`);
+if (opdracht === 'ondertitels-op-orde') {
+  // Haalt ondertitelsporen weg bij films ZONDER geluid, waar de tekst al in het beeld staat. Laat de
+  // gesproken films met rust. Nodig omdat de eerste publicaties ze wél kregen — zie de opmerking in
+  // `publiceer`.
+  const UITSLAG = new URL('./films-uitslag.json', import.meta.url).pathname;
+  const uitslag = JSON.parse(readFileSync(UITSLAG, 'utf8'));
+  for (const [sleutel, f] of Object.entries(uitslag)) {
+    if (!f.guid) continue;
+    const mp4 = `${UIT}${sleutel}.mp4`;
+    if (!existsSync(mp4)) { console.log(`⏭  ${sleutel} — geen mp4, kan geluid niet vaststellen`); continue; }
+    const geluid = execFileSync('ffprobe', ['-v', 'error', '-select_streams', 'a',
+      '-show_entries', 'stream=index', '-of', 'csv=p=0', mp4]).toString().trim().length > 0;
+    const v = await api(`/videos/${f.guid}`);
+    const sporen = v.json?.captions ?? [];
+    if (geluid) { console.log(`✓  ${sleutel} — gesproken, ${sporen.length} spoor/sporen blijven`); continue; }
+    if (!sporen.length) { console.log(`✓  ${sleutel} — geluidloos, geen sporen`); continue; }
+    for (const c of sporen) {
+      const d = await api(`/videos/${f.guid}/captions/${c.srclang}`, { method: 'DELETE' });
+      console.log(`🗑  ${sleutel} — spoor "${c.srclang}" weg → HTTP ${d.status}`);
+    }
+  }
+  process.exit(0);
+}
+
+console.log(`Onbekende opdracht "${opdracht}". Gebruik: check | publiceer | metadata | naar-website | miniatuur | ondertitels-op-orde | vervangproef`);
 process.exit(1);

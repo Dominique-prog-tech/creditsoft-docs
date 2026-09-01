@@ -369,3 +369,48 @@ automatiseren, en daarom hoort dit luik laatst.
 ⚠️ Punt 2 is met opzet één film en geen vijf. Dat werkte bij de handleiding: hoofdstukken-vóór-verwerking,
 de uitslagtabel in git, en de audiocache waren alle drie dingen die we bij vijftien films vijftien keer
 betaald zouden hebben.
+
+---
+
+## 13. Synchroon houden — de kaart route → artefact
+
+**Dominique's regel (01/09/2026).** Een aanpassing in het product vraagt vijf controles, in deze volgorde:
+
+1. de zijlade + vertalingen · 2. de documentatie + vertalingen · 3. de screenshots · 4. de video's ·
+5. de eventuele impact op de website — de website is **het laatst**.
+
+**Wat de deploy-poort al bewaakte** (achttien controles, gemeten op 01/09): punt 1 door `HelpEnVertaling`,
+`NlFr` en `SchermVertaling`; punt 2 door `Handleiding`, `HandleidingVers` en `HandleidingRedirects`. Punt 3
+maar half — `AfbeeldingMarkeringen` toetst alt-teksten, niets meldde dat een beeld VEROUDERD was. Punten 4
+en 5: niets.
+
+**Wat er nu is:** `tools/raakt.mjs`.
+
+```
+node tools/raakt.mjs /credit-files          → wat toont dit scherm
+node tools/raakt.mjs --gewijzigd HEAD~3     → wat is verouderd door de wijzigingen sinds die ref
+```
+
+Hij **leidt af en onderhoudt niets**: `SCHOTEN` in `beelden.mjs` kent per beeld zijn route, de scènes in
+`films.mjs` dragen hun `goto`, en `CreditSoftHelpProvider` koppelt een app-route aan een documentatiepagina.
+Een handgeschreven vierde lijst zou met alle drie uit de pas lopen.
+
+⚠️ **Drie dingen die het bouwen ervan leerde, alle drie gevonden door een meting:**
+
+- **Een ijkpunt per bron.** De eerste versie herkende 22 beelden waar er 91 zijn — mijn patroon kende alleen
+  `['naam', '/route']` en niet de vormen met een recept of met een template-literal. Zonder ondergrens had
+  het gereedschap vrolijk "niets geraakt" gemeld over een scherm dat op tien plaatsen staat.
+- **Een parameterroute telt op haar statische deel.** `@page "/credit-files/{Id:guid}"` is hetzelfde scherm
+  als het beeld dat `/credit-files/${ID.dossier}` fotografeert. Zonder afkappen viel juist het dossierdetail
+  erbuiten — het scherm waar de meeste films omheen draaien.
+- **"Niets gevonden" is geen "in orde".** Hij meldt óók welke gewijzigde schermen hij bekeek en die nergens
+  getoond worden. Zonder die regel weet je niet of het scherm nergens staat, of dat de kaart het niet zag.
+
+⚠️ **Wat hij NIET kan.** Een gewijzigd COMPONENT (`.razor` zonder eigen `@page`) verschijnt óp schermen, en
+welke is uit de code niet af te leiden zonder de hele componentboom te volgen. Hij meldt die apart in plaats
+van ze stil over te slaan — juist een gedeeld component raakt véél beelden tegelijk.
+
+**Nog te bouwen:** de koppeling aan de deploy-poort. `raakt.mjs` zegt *wat* nazicht vraagt; hij weet niet of
+je het al gedaan hebt. Daarvoor moet de uitslagtabel bijhouden tegen welke app-versie een beeld of film
+gemaakt is — dat is fase 3 uit §9.
+
