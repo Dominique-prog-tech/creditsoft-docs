@@ -1381,7 +1381,7 @@
     "titel": "Commissie instellen — het schema per dossier",
     "omschrijving": "Wat u met een aanbrenger afspreekt en hoe u het vastlegt: het overzicht van alle schema’s met hun vorm en toestand, de schemafiche op een dossier met de totale commissie, het deel dat direct uitbetaald wordt en de spreiding over de maanden, de geplande betalingen die daaruit volgen, en de twee kantoorinstellingen die bepalen hoe er afgerekend wordt.",
     "hash": "ba62771970047916",
-    "guid": null,
+    "guid": "c82bf1e0-f726-4c69-b351-dd1ebca3a164",
     "hoofdstukken": [
       {
         "titel": "Alle schema’s samen",
@@ -1428,7 +1428,11 @@
         "start": 116.53,
         "eind": 126.65
       }
-    ]
+    ],
+    "thumbnail": null,
+    "gepubliceerdOp": "2026-09-01T14:15:45.43",
+    "gepubliceerdeHash": "ba62771970047916",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/c82bf1e0-f726-4c69-b351-dd1ebca3a164"
   },
   "commissie-instellen-fr": {
     "film": "commissie-instellen",
@@ -1447,7 +1451,7 @@
     "titel": "Configurer la commission — le schéma par dossier",
     "omschrijving": "Ce que vous convenez avec un apporteur et comment vous le fixez : l’aperçu de tous les schémas avec leur forme et leur statut, la fiche du schéma sur un dossier avec la commission totale, la part payée immédiatement et l’étalement sur les mois, les paiements planifiés qui en découlent, et les deux paramètres du bureau qui déterminent le mode de décompte.",
     "hash": "15ba0bf469428dbe",
-    "guid": null,
+    "guid": "8f8a4d7c-76aa-4e04-b428-355b4fc13b8d",
     "hoofdstukken": [
       {
         "titel": "Tous les schémas ensemble",
@@ -1494,13 +1498,17 @@
         "start": 127.47,
         "eind": 140.66
       }
-    ]
+    ],
+    "thumbnail": null,
+    "gepubliceerdOp": "2026-09-01T14:25:51.921",
+    "gepubliceerdeHash": "15ba0bf469428dbe",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/8f8a4d7c-76aa-4e04-b428-355b4fc13b8d"
   },
   "commissie-uitbetalen-nl": {
     "film": "commissie-uitbetalen",
     "taal": "nl-BE",
     "pagina": "credit-management/commission-statements",
-    "lengte": 128.28,
+    "lengte": 128.32,
     "routes": [
       "/commissie/borderel",
       "/commissie/vooruitzicht",
@@ -1518,48 +1526,48 @@
     "hoofdstukken": [
       {
         "titel": "De borderellen",
-        "start": 4.44,
-        "eind": 13.4
+        "start": 4.45,
+        "eind": 13.41
       },
       {
         "titel": "Openstaand of betaald",
-        "start": 17.04,
-        "eind": 27.35
+        "start": 17.05,
+        "eind": 27.36
       },
       {
         "titel": "Eén borderel",
         "start": 32.28,
-        "eind": 39.07
+        "eind": 39.06
       },
       {
         "titel": "De commissielijnen",
-        "start": 42.77,
-        "eind": 52.15
+        "start": 42.76,
+        "eind": 52.14
       },
       {
         "titel": "Het vooruitzicht",
-        "start": 57.26,
-        "eind": 66.08
+        "start": 57.17,
+        "eind": 65.99
       },
       {
         "titel": "Wat is blijven liggen",
-        "start": 70.98,
-        "eind": 81.01
+        "start": 70.94,
+        "eind": 80.97
       },
       {
         "titel": "De fiche 281.50",
-        "start": 85.94,
-        "eind": 97.09
+        "start": 85.92,
+        "eind": 97.07
       },
       {
         "titel": "Wat er nog moet gebeuren",
-        "start": 100.88,
-        "eind": 112.59
+        "start": 100.85,
+        "eind": 112.55
       },
       {
         "titel": "Tot slot",
-        "start": 117.09,
-        "eind": 125.96
+        "start": 117.05,
+        "eind": 125.92
       }
     ]
   },
@@ -1567,7 +1575,7 @@
     "film": "commissie-uitbetalen",
     "taal": "fr-BE",
     "pagina": "credit-management/commission-statements",
-    "lengte": 142.52,
+    "lengte": 142.04,
     "routes": [
       "/commissie/borderel",
       "/commissie/vooruitzicht",
@@ -1585,48 +1593,48 @@
     "hoofdstukken": [
       {
         "titel": "Les bordereaux",
-        "start": 4.5,
-        "eind": 13.74
+        "start": 4.46,
+        "eind": 13.71
       },
       {
         "titel": "En attente ou payé",
-        "start": 17.34,
-        "eind": 30.72
+        "start": 17.33,
+        "eind": 30.71
       },
       {
         "titel": "Un bordereau",
-        "start": 35.66,
-        "eind": 43.92
+        "start": 35.6,
+        "eind": 43.86
       },
       {
         "titel": "Les lignes de commission",
-        "start": 47.62,
-        "eind": 59.32
+        "start": 47.56,
+        "eind": 59.27
       },
       {
         "titel": "Les prévisions",
-        "start": 64.43,
-        "eind": 73.49
+        "start": 64.31,
+        "eind": 73.37
       },
       {
         "titel": "Ce qui est resté en souffrance",
-        "start": 78.41,
-        "eind": 90.72
+        "start": 78.25,
+        "eind": 90.56
       },
       {
         "titel": "La fiche 281.50",
-        "start": 95.84,
-        "eind": 109.21
+        "start": 95.5,
+        "eind": 108.87
       },
       {
         "titel": "Ce qui doit encore être fait",
-        "start": 113,
-        "eind": 126
+        "start": 112.61,
+        "eind": 125.61
       },
       {
         "titel": "Pour conclure",
-        "start": 130.68,
-        "eind": 140.2
+        "start": 130.27,
+        "eind": 139.79
       }
     ]
   }

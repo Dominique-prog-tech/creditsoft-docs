@@ -49,7 +49,22 @@ const UIT = new URL('./.films-uit/', import.meta.url).pathname;
 // hoort erbij.
 const UITSLAG = new URL('./films-uitslag.json', import.meta.url).pathname;
 const uitslag = existsSync(UITSLAG) ? JSON.parse(readFileSync(UITSLAG, 'utf8')) : {};
-const bewaarUitslag = () => writeFileSync(UITSLAG, JSON.stringify(uitslag, null, 2) + '\n');
+// ⚠️ SAMENVOEGEN BIJ HET SCHRIJVEN, niet de kopie van bij het opstarten wegschrijven.
+//
+// Deze functie schreef `uitslag` weg zoals ze bij het STARTEN geladen was. Draait er tegelijk een tweede
+// proces op ditzelfde bestand — een publicatie die guids bijschrijft terwijl je een volgende film opneemt —
+// dan wint de laatste schrijver en verdwijnt het werk van de andere. Gebeurd op 01/09/2026: de publicatie
+// van commissie-instellen wiste de twee verse regels van commissie-uitbetalen volledig uit de tabel. De
+// mp4's stonden er nog; alleen wist niets meer dat ze bestonden.
+//
+// Nu: vlak vóór het schrijven het bestand OPNIEUW lezen, en enkel de sleutels overschrijven die deze ronde
+// zelf aangeraakt heeft. Wat een ander proces intussen bijschreef, blijft staan.
+const geraakt = new Set();
+const bewaarUitslag = () => {
+  const opSchijf = existsSync(UITSLAG) ? JSON.parse(readFileSync(UITSLAG, 'utf8')) : {};
+  for (const k of geraakt) opSchijf[k] = uitslag[k];
+  writeFileSync(UITSLAG, JSON.stringify(opSchijf, null, 2) + '\n');
+};
 const BREED = 1920, HOOG = 1080;                  // §3.3 — gemeten: de dossierlijst past hierop, ruimer dan op 1700
 const STEM = { 'nl-BE': 'Ellen', 'fr-BE': 'Thomas' };
 const TEMPO = { 'nl-BE': 175, 'fr-BE': 175 };     // woorden/minuut voor `say`; ± 140 gesproken tempo
@@ -1490,6 +1505,7 @@ if (process.argv.includes('--hoofdstukken')) {
         h.titel = kop(sc, kort); raak++;
       }
       console.log(`   ${sleutel}: ${rij.hoofdstukken.map(h => h.titel).join(' · ')}`);
+      geraakt.add(sleutel);
     }
   }
   bewaarUitslag();
@@ -1749,6 +1765,7 @@ for (const [naam, filmVol] of FILMS) {
         eind: Number((m.spraak + duren[i]).toFixed(2)),
       })),
     };
+    geraakt.add(sleutel);
     bewaarUitslag();
 
     verslag.gemaakt.push(`${stam}-${kort} (${lengte.toFixed(0)}s, `

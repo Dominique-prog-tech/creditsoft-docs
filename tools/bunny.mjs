@@ -135,7 +135,15 @@ if (opdracht === 'publiceer') {
   const UITSLAG = new URL('./films-uitslag.json', import.meta.url).pathname;
   if (!existsSync(UITSLAG)) { console.log('⛔ Geen .films-uitslag.json — draai eerst films.mjs'); process.exit(1); }
   const uitslag = JSON.parse(readFileSync(UITSLAG, 'utf8'));
-  const bewaar = () => writeFileSync(UITSLAG, JSON.stringify(uitslag, null, 2) + '\n');
+  // ⚠️ SAMENVOEGEN, niet de kopie van bij het opstarten wegschrijven — zie dezelfde noot in films.mjs.
+  // Een publicatie duurt minuten (Bunny hercodeert), en in die tijd neemt iemand de volgende film op. Wie
+  // dan als laatste schrijft, wist het werk van de ander. Op 01/09/2026 verdwenen zo twee verse regels.
+  const geraakt = new Set();
+  const bewaar = () => {
+    const opSchijf = existsSync(UITSLAG) ? JSON.parse(readFileSync(UITSLAG, 'utf8')) : {};
+    for (const k of geraakt) opSchijf[k] = uitslag[k];
+    writeFileSync(UITSLAG, JSON.stringify(opSchijf, null, 2) + '\n');
+  };
 
   const filter = process.argv[3];
   let gedaan = 0, mislukt = [];
@@ -314,6 +322,7 @@ if (opdracht === 'publiceer') {
     f.guid = guid;
     f.gepubliceerdeHash = f.hash;
     f.embed = `https://iframe.mediadelivery.net/embed/${LIB}/${guid}`;
+    geraakt.add(sleutel);
     bewaar();
     gedaan++;
 
@@ -333,6 +342,7 @@ if (opdracht === 'publiceer') {
       f.vorigeGuid = oudeGuid;
       console.log(`   vorige versie ${oudeGuid} blijft nog één ronde staan (crawl-respijt)`);
     }
+    geraakt.add(sleutel);
     bewaar();
   }
 
