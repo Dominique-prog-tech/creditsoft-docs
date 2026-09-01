@@ -237,6 +237,10 @@ async function zichtbareAfspraak(page) {
 // ── De hoofdstuktitel van een scène, per taal ────────────────────────────────────────────────────────────
 // Zie de noot bij `hoofdstukken:` verderop. Ontbreekt `kop`, dan valt dit terug op de interne scènenaam en
 // wordt dat GETELD — de ronde meldt het op het eind, zodat het niet opnieuw jaren onopgemerkt blijft.
+// De richtduur uit §1: korter dan een minuut zegt te weinig, boven de drie minuten kijkt niemand hem uit.
+// Een RICHTlijn en geen grens — de ronde meldt het en weigert niets.
+const DUUR_MIN = 60, DUUR_MAX = 180;
+const buitenDuur = [];
 const GAT_DREMPEL = 10;   // seconden stilte vóór een zin waarboven de ronde het meldt
 const langeGaten = [];
 const zwakkeMerken = [];
@@ -1404,6 +1408,103 @@ const FILMS = [
     ],
   }],
 
+  // ─────────────────────────────────────────────────────────────────────────────────────────────────────
+  // FILM 10 van de reeks (§14 nummer 13). Het dashboard — en waarom het van uw eigen instellingen afhangt.
+  //
+  // ⚠️ GEEN SCÈNE OVER "NIET INGEDEELD". De handleiding legt uit wat er gebeurt met statussen die aan geen
+  // enkele fase hangen — maar in de demo is álles ingedeeld, dus dat woord staat nergens op het scherm.
+  // Gemeten vóór het schrijven. Een scène erover zou een belofte zijn boven iets dat niet te zien is.
+  //
+  // ⚠️ De drie grafieken en de vier tegels volgen het JAAR bovenaan. Dat is scène 1, want zonder dat leest
+  // de rest van het scherm als een reeks losse getallen.
+  // ⚠️ DE FRANSE VERSIE STAAT BEWUST OP ±181 s, net boven de richtduur van 180 uit §1. Twee zinnen zijn al
+  // ingekort; verder snijden kost inhoud, en dit is het dichtste scherm van de app — tien scènes die elk
+  // een misverstand wegnemen. De grendel meldt het elke ronde, en dat is de bedoeling: een bewuste
+  // afwijking hoort zichtbaar te blijven.
+  //
+  // ⚠️ En verder korten helpt niet betrouwbaar: de lengte is niet tot op de seconde herhaalbaar. Eén zin
+  // inkorten gaf 180,4 → 181,2 s — de handelingen in de browser duren per opname net iets anders, en dat
+  // verschil is groter dan de winst. Wie hier op een exact getal mikt, jaagt op ruis.
+  ['dashboard', {
+    pagina: 'getting-started/dashboard',
+    titel: {
+      nl: 'Het dashboard — uw kantoor in één scherm',
+      fr: 'Le tableau de bord — votre bureau en un écran',
+    },
+    omschrijving: {
+      nl: 'Het startscherm gelezen zoals het bedoeld is: het jaar bovenaan dat alles stuurt, de vier tegels '
+        + 'met aantallen en bedragen, de termijnen die vandaag actie vragen, de drie grafieken over het '
+        + 'gerealiseerde volume, de pijplijn met uw dossiers per fase, en het scherm waar u die fases zelf '
+        + 'samenstelt. Plus waarom uw dashboard er anders uitziet dan dat van een collega.',
+      fr: 'L’écran d’accueil lu comme il se doit : l’année en haut qui pilote tout, les quatre tuiles avec '
+        + 'les nombres et les montants, les délais qui demandent une action aujourd’hui, les trois graphiques '
+        + 'du volume réalisé, le pipeline de vos dossiers par phase, et l’écran où vous composez ces phases. '
+        + 'Ainsi que la raison pour laquelle votre tableau de bord diffère de celui d’un collègue.',
+    },
+    uitvoeringen: { handleiding: { stem: true } },
+    scenes: [
+      { naam: 'jaar', kop: { nl: 'Het jaar stuurt alles', fr: 'L’année pilote tout' },
+        doe: async (p) => { await p.goto(`${BASIS}/dashboard`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(3200); },
+        merk: /Aktes|Actes/i,
+        nl: 'Dit is uw startscherm. Bovenaan staat een jaartal met twee pijltjes, en dat is de belangrijkste knop van dit scherm: de tegels en de grafieken eronder gaan allemaal over dát jaar.',
+        fr: "Voici votre écran d’accueil. En haut figure une année avec deux flèches, et c’est le bouton le plus important de cet écran : les tuiles et les graphiques en dessous portent tous sur cette année-là." },
+
+      { naam: 'tegels', kop: { nl: 'De vier tegels', fr: 'Les quatre tuiles' },
+        doe: async (p) => { await beweegNaar(p, p.getByText(/In te dienen|À introduire/i).first()); await p.waitForTimeout(1700); },
+        merk: /In te dienen|À introduire/i,
+        nl: 'De vier tegels tellen uw dossiers per groep, met het bedrag erbij: wat er nog in te dienen is, wat ingediend is, wat er getekend werd, en de aktes.',
+        fr: "Les quatre tuiles comptent vos dossiers par groupe, montant compris : ce qui reste à introduire, ce qui est introduit, ce qui a été signé, et les actes." },
+
+      { naam: 'termijnen', kop: { nl: 'Wat vandaag actie vraagt', fr: 'Ce qui demande une action' },
+        doe: async (p) => { await beweegNaar(p, p.getByText(/Termijn nadert|Délai proche/i).first()); await p.waitForTimeout(1800); },
+        merk: /Termijn nadert|Délai proche/i,
+        nl: 'Daaronder staan twee blokken die zeggen wat er nu ligt: termijn verstreken en termijn nadert. Ze kijken naar vier datums — de offerte tekenen, de akte verlijden, de opschortende voorwaarden, en het EPC-attest.',
+        fr: "En dessous, deux blocs disent ce qui est en jeu : délai dépassé et délai proche. Ils regardent quatre dates — signer l’offre, passer l’acte, les conditions suspensives, et le certificat PEB." },
+
+      { naam: 'volume', kop: { nl: 'Gerealiseerd volume', fr: 'Volume réalisé' },
+        doe: async (p) => { await beweegNaar(p, p.getByText(/Gerealiseerd volume per maand|Volume réalisé par mois/i).first()); await p.waitForTimeout(1800); },
+        merk: /Gerealiseerd volume per maand|Volume réalisé par mois/i,
+        nl: 'De eerste grafiek toont uw gerealiseerde volume per maand — dus kredieten die effectief doorgingen. Zo ziet u welke maanden dragen en welke achterblijven.',
+        fr: "Le premier graphique montre votre volume réalisé par mois — donc les crédits qui ont effectivement abouti. Vous voyez ainsi quels mois portent et lesquels sont à la traîne." },
+
+      { naam: 'verdeling', kop: { nl: 'Per instelling en per collega', fr: 'Par institution et par collègue' },
+        doe: async (p) => { await beweegNaar(p, p.getByText(/Volume per instelling|Volume par institution/i).first()); await p.waitForTimeout(1800); },
+        merk: /Volume per instelling|Volume par institution/i,
+        nl: 'Daarnaast staat hetzelfde volume verdeeld: per kredietinstelling, en per verantwoordelijke. Twee ringen die zeggen waar uw werk terechtkomt.',
+        fr: "À côté, le même volume réparti : par organisme de crédit, et par responsable. Deux anneaux qui indiquent où votre travail aboutit." },
+
+      { naam: 'eigenaar', kop: { nl: 'Geen eigenaar is werk', fr: 'Sans responsable, c’est du travail' },
+        doe: async (p) => { await beweegNaar(p, p.getByText(/Geen eigenaar|Sans responsable/i).first()); await p.waitForTimeout(1800); },
+        merk: /Geen eigenaar|Sans responsable/i,
+        nl: 'Ziet u een groot stuk Geen eigenaar staan, dan is dat geen storing maar werk: er is bij die dossiers nog niemand aangeduid. Hetzelfde geldt voor Onbekend bij de instellingen.',
+        fr: "Si vous voyez une grande part Sans responsable, ce n’est pas un dysfonctionnement mais du travail : personne n’a encore été désigné sur ces dossiers. Il en va de même pour Inconnu chez les organismes." },
+
+      { naam: 'pijplijn', kop: { nl: 'De pijplijn', fr: 'Le pipeline' },
+        doe: async (p) => { await beweegNaar(p, p.getByText(/Dossiers per fase|Dossiers par phase/i).first()); await p.waitForTimeout(1800); },
+        merk: /Dossiers per fase|Dossiers par phase/i,
+        nl: 'Onderaan staan uw dossiers gegroepeerd per fase, met per fase het aantal, het bedrag, en de statussen die eronder vallen. Klik op een fase en u ziet de dossiers erachter.',
+        fr: "En bas, vos dossiers sont regroupés par phase, avec par phase le nombre, le montant, et les statuts qui en relèvent. Cliquez sur une phase et vous voyez les dossiers derrière." },
+
+      { naam: 'fases', kop: { nl: 'De fases zijn van u', fr: 'Les phases sont les vôtres' },
+        doe: async (p) => { await p.goto(`${BASIS}/beheer/dashboard-fases`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(2600); },
+        merk: /Beginstatus van een nieuw dossier|Statut de départ/i,
+        nl: 'Die fases stelt u zelf samen. Hier bepaalt u welke statussen bij welke fase horen, en met welke status een nieuw dossier begint — CreditSoft kiest dat niet voor u, want het verschilt per kantoor.',
+        fr: "Ces phases, vous les composez vous-même : quels statuts relèvent de quelle phase, et avec quel statut commence un nouveau dossier. CreditSoft ne le choisit pas pour vous, car cela varie d’un bureau à l’autre." },
+
+      { naam: 'verschil', kop: { nl: 'Waarom uw scherm anders is', fr: 'Pourquoi votre écran diffère' },
+        doe: async (p) => { await p.goto(`${BASIS}/dashboard`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(2800); },
+        merk: /Aktes|Actes/i,
+        nl: 'Nog dit: uw dashboard toont wat u mag zien. Heeft een collega geen toegang tot bepaalde dossiers, dan tellen die ook niet mee in zijn cijfers. Twee mensen kunnen dus verschillende aantallen zien, en dat klopt.',
+        fr: "Votre tableau de bord montre ce que vous avez le droit de voir. Si un collègue n’a pas accès à certains dossiers, ceux-ci ne comptent pas dans ses chiffres. Deux personnes peuvent donc voir des nombres différents, et c’est normal." },
+
+      { naam: 'slot', kop: { nl: 'Tot slot', fr: 'Pour conclure' },
+        doe: async (p) => { await p.waitForTimeout(1200); },
+        merk: /Aktes|Actes/i,
+        nl: 'Het dashboard is geen rapport maar een werkscherm: het zegt wat er vandaag ligt, en waar u het vindt.',
+        fr: "Le tableau de bord n’est pas un rapport mais un écran de travail : il dit ce qui est en jeu aujourd’hui, et où le trouver." },
+    ],
+  }],
+
   ['kredietdossiers-basis', {
     pagina: 'credit-management/credit-files',
     // ⚠️ EEN MENSELIJKE TITEL EN OMSCHRIJVING, per taal. De technische naam ("kredietdossiers-basis-nl") is
@@ -1857,6 +1958,15 @@ for (const [naam, filmVol] of FILMS) {
     geraakt.add(sleutel);
     bewaarUitslag();
 
+    // ⚠️ §1 geeft een RICHTDUUR van 60–180 s: korter zegt te weinig, langer kijkt niemand uit. De ronde drukte
+    // de lengte wel af maar hield ze nergens tegen die richtlijn — en dan glijdt ze weg. `dashboard-fr` kwam
+    // op 183 s uit terwijl de Nederlandse op 153 stond: het Frans is stelselmatig langer, en dat is precies
+    // de kant waar het overschot ontstaat. Melden, niet weigeren.
+    if (lengte < DUUR_MIN || lengte > DUUR_MAX) buitenDuur.push(`${stam}-${kort}: ${lengte.toFixed(1)}s`);
+    // ⚠️ Eén decimaal, geen afronding. Met `toFixed(0)` meldde hij "180s buiten de grens van 60–180" —
+    // een zin die zichzelf tegenspreekt, want de echte lengte was 180,4. Wie zoiets leest, gelooft de
+    // grendel niet meer.
+
     verslag.gemaakt.push(`${stam}-${kort} (${lengte.toFixed(0)}s, `
       + `${metStem ? `stem: ${MOTOR}, model: ${MODEL ?? 'standaard van de API'}` : 'geen stem'})`);
   }
@@ -1875,6 +1985,11 @@ if (zonderKop.size) {
   console.log(`\n◐ ${zonderKop.size} scène(s) zonder hoofdstuktitel — de speler toont dan de INTERNE naam:`);
   console.log('   ' + [...zonderKop].join(', '));
   console.log("   Geef die scène een `kop: { nl: '…', fr: '…' }`; dat is wat de kijker in de speler leest.");
+}
+if (buitenDuur.length) {
+  console.log(`\n◐ ${buitenDuur.length} film(s) buiten de richtduur van ${DUUR_MIN}–${DUUR_MAX} s (§1):`);
+  buitenDuur.forEach(r => console.log(`   ${r}`));
+  console.log('   Een richtlijn, geen grens — maar wél iets om bewust te beslissen in plaats van te laten gebeuren.');
 }
 if (langeGaten.length) {
   console.log(`\n◐ ${langeGaten.length} scène(s) met meer dan ${GAT_DREMPEL} seconden stilte vóór de zin:`);

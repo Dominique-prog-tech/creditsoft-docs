@@ -1662,7 +1662,7 @@
     "titel": "Verzekeringen — het overzicht en uw verzekeraars",
     "omschrijving": "Alle schuldsaldoverzekeringen bij uw dossiers op één lijst: kiezen wat u wil zien met de drie filters bovenaan, de kolommen die ertoe doen — wie er verzekerd is, of de polis nog voorlopig is en of de aanvraaglink vertrokken is — het verschil tussen de status van de polis en die van het dossier, de lijst afdrukken of exporteren, en de fiches van uw verzekeraars.",
     "hash": "7231f312fdbba471",
-    "guid": null,
+    "guid": "b6514c73-c1f3-4a24-9c26-9a36c7919d65",
     "hoofdstukken": [
       {
         "titel": "Alle polissen samen",
@@ -1709,7 +1709,11 @@
         "start": 122.42,
         "eind": 131.06
       }
-    ]
+    ],
+    "thumbnail": null,
+    "gepubliceerdOp": "2026-09-01T15:13:12.43",
+    "gepubliceerdeHash": "7231f312fdbba471",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/b6514c73-c1f3-4a24-9c26-9a36c7919d65"
   },
   "verzekeringen-fr": {
     "film": "verzekeringen",
@@ -1727,7 +1731,7 @@
     "titel": "Assurances — l’aperçu et vos assureurs",
     "omschrijving": "Toutes les assurances solde restant dû de vos dossiers sur une seule liste : choisir ce que vous voulez voir avec les trois filtres du haut, les colonnes qui comptent — qui est assuré, si la police est encore provisoire et si le lien de demande est parti — la différence entre le statut de la police et celui du dossier, imprimer ou exporter la liste, et les fiches de vos assureurs.",
     "hash": "b262375c68b85143",
-    "guid": null,
+    "guid": "c3d86486-b7d9-47c5-bd2a-51c3620729d7",
     "hoofdstukken": [
       {
         "titel": "Toutes les polices ensemble",
@@ -1773,6 +1777,150 @@
         "titel": "Pour conclure",
         "start": 135.49,
         "eind": 144.36
+      }
+    ],
+    "thumbnail": null,
+    "gepubliceerdOp": "2026-09-01T15:23:23.083",
+    "gepubliceerdeHash": "b262375c68b85143",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/c3d86486-b7d9-47c5-bd2a-51c3620729d7"
+  },
+  "dashboard-nl": {
+    "film": "dashboard",
+    "taal": "nl-BE",
+    "pagina": "getting-started/dashboard",
+    "lengte": 153.04,
+    "routes": [
+      "/dashboard",
+      "/beheer/dashboard-fases"
+    ],
+    "app": {
+      "sha": "e8bb224f7c329f3978eb6d9e1385b4992ea6a2b4",
+      "vuil": false
+    },
+    "titel": "Het dashboard — uw kantoor in één scherm",
+    "omschrijving": "Het startscherm gelezen zoals het bedoeld is: het jaar bovenaan dat alles stuurt, de vier tegels met aantallen en bedragen, de termijnen die vandaag actie vragen, de drie grafieken over het gerealiseerde volume, de pijplijn met uw dossiers per fase, en het scherm waar u die fases zelf samenstelt. Plus waarom uw dashboard er anders uitziet dan dat van een collega.",
+    "hash": "8e8f537dfb0114cb",
+    "guid": null,
+    "hoofdstukken": [
+      {
+        "titel": "Het jaar stuurt alles",
+        "start": 5.31,
+        "eind": 17.52
+      },
+      {
+        "titel": "De vier tegels",
+        "start": 21.16,
+        "eind": 30.95
+      },
+      {
+        "titel": "Wat vandaag actie vraagt",
+        "start": 34.66,
+        "eind": 48.36
+      },
+      {
+        "titel": "Gerealiseerd volume",
+        "start": 52.07,
+        "eind": 61.73
+      },
+      {
+        "titel": "Per instelling en per collega",
+        "start": 65.43,
+        "eind": 74.16
+      },
+      {
+        "titel": "Geen eigenaar is werk",
+        "start": 77.87,
+        "eind": 88.97
+      },
+      {
+        "titel": "De pijplijn",
+        "start": 92.68,
+        "eind": 104.47
+      },
+      {
+        "titel": "De fases zijn van u",
+        "start": 109.58,
+        "eind": 123.19
+      },
+      {
+        "titel": "Waarom uw scherm anders is",
+        "start": 128.38,
+        "eind": 141.29
+      },
+      {
+        "titel": "Tot slot",
+        "start": 144,
+        "eind": 150.64
+      }
+    ]
+  },
+  "dashboard-fr": {
+    "film": "dashboard",
+    "taal": "fr-BE",
+    "pagina": "getting-started/dashboard",
+    "lengte": 181.2,
+    "routes": [
+      "/dashboard",
+      "/beheer/dashboard-fases"
+    ],
+    "app": {
+      "sha": "e8bb224f7c329f3978eb6d9e1385b4992ea6a2b4",
+      "vuil": false
+    },
+    "titel": "Le tableau de bord — votre bureau en un écran",
+    "omschrijving": "L’écran d’accueil lu comme il se doit : l’année en haut qui pilote tout, les quatre tuiles avec les nombres et les montants, les délais qui demandent une action aujourd’hui, les trois graphiques du volume réalisé, le pipeline de vos dossiers par phase, et l’écran où vous composez ces phases. Ainsi que la raison pour laquelle votre tableau de bord diffère de celui d’un collègue.",
+    "hash": "8806c575759f29aa",
+    "guid": null,
+    "hoofdstukken": [
+      {
+        "titel": "L’année pilote tout",
+        "start": 5.29,
+        "eind": 20.62
+      },
+      {
+        "titel": "Les quatre tuiles",
+        "start": 24.25,
+        "eind": 36.04
+      },
+      {
+        "titel": "Ce qui demande une action",
+        "start": 39.76,
+        "eind": 56.57
+      },
+      {
+        "titel": "Volume réalisé",
+        "start": 60.27,
+        "eind": 72.62
+      },
+      {
+        "titel": "Par institution et par collègue",
+        "start": 76.34,
+        "eind": 87.62
+      },
+      {
+        "titel": "Sans responsable, c’est du travail",
+        "start": 91.33,
+        "eind": 105.08
+      },
+      {
+        "titel": "Le pipeline",
+        "start": 108.79,
+        "eind": 123.98
+      },
+      {
+        "titel": "Les phases sont les vôtres",
+        "start": 129.07,
+        "eind": 144.81
+      },
+      {
+        "titel": "Pourquoi votre écran diffère",
+        "start": 150.36,
+        "eind": 167.87
+      },
+      {
+        "titel": "Pour conclure",
+        "start": 170.59,
+        "eind": 178.91
       }
     ]
   }
