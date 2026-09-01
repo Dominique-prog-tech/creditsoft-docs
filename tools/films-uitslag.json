@@ -3,7 +3,7 @@
     "film": "kredietdossiers-basis",
     "taal": "nl-BE",
     "pagina": "credit-management/credit-files",
-    "lengte": 96.44,
+    "lengte": 96.84,
     "titel": "Het kredietdossier in CreditSoft — van lijst tot journaal",
     "omschrijving": "Een rondleiding door het kredietdossier: de lijst filteren en doorzoeken, een dossier openen, de dossiergegevens, de kredietaanvragers, het pand, de gevraagde documenten, en het journaal met de taken, notities, gesprekken en commissieschema’s die bij dat ene dossier horen.",
     "hash": "b1307b41c06edc44",
@@ -11,58 +11,58 @@
     "hoofdstukken": [
       {
         "titel": "lijst",
-        "start": 2.13,
-        "eind": 9.19
+        "start": 2.21,
+        "eind": 9.27
       },
       {
         "titel": "kolommen",
-        "start": 11.11,
-        "eind": 18.21
+        "start": 11.26,
+        "eind": 18.37
       },
       {
         "titel": "zoeken",
-        "start": 22.71,
-        "eind": 27.73
+        "start": 23,
+        "eind": 28.02
       },
       {
         "titel": "openen",
-        "start": 30.88,
-        "eind": 32.79
+        "start": 31.28,
+        "eind": 33.18
       },
       {
         "titel": "gegevens",
-        "start": 34.7,
-        "eind": 42.91
+        "start": 35.09,
+        "eind": 43.31
       },
       {
         "titel": "aanvragers",
-        "start": 44.83,
-        "eind": 50.91
+        "start": 45.23,
+        "eind": 51.31
       },
       {
         "titel": "pand",
-        "start": 54.92,
-        "eind": 63.47
+        "start": 55.34,
+        "eind": 63.89
       },
       {
         "titel": "documenten",
-        "start": 67.51,
-        "eind": 72.99
+        "start": 67.92,
+        "eind": 73.4
       },
       {
         "titel": "journaal",
-        "start": 75.39,
-        "eind": 82.08
+        "start": 75.77,
+        "eind": 82.46
       },
       {
         "titel": "commissieschemas",
-        "start": 84.89,
-        "eind": 89.3
+        "start": 85.29,
+        "eind": 89.7
       },
       {
         "titel": "slot",
-        "start": 91.21,
-        "eind": 94.55
+        "start": 91.6,
+        "eind": 94.94
       }
     ]
   },
@@ -70,7 +70,7 @@
     "film": "kredietdossiers-basis",
     "taal": "fr-BE",
     "pagina": "credit-management/credit-files",
-    "lengte": 103.64,
+    "lengte": 104,
     "titel": "Le dossier de crédit dans CreditSoft — de la liste au journal",
     "omschrijving": "Une visite guidée du dossier de crédit : filtrer et rechercher dans la liste, ouvrir un dossier, les données du dossier, les demandeurs de crédit, le bien, les documents demandés, et le journal avec les tâches, notes, appels et schémas de commission liés à ce dossier.",
     "hash": "1c86602fd2332484",
@@ -78,64 +78,133 @@
     "hoofdstukken": [
       {
         "titel": "lijst",
-        "start": 2.13,
-        "eind": 9.47
+        "start": 2.1,
+        "eind": 9.44
       },
       {
         "titel": "kolommen",
-        "start": 11.41,
-        "eind": 19.77
+        "start": 11.46,
+        "eind": 19.82
       },
       {
         "titel": "zoeken",
-        "start": 24.29,
-        "eind": 30.14
+        "start": 24.34,
+        "eind": 30.19
       },
       {
         "titel": "openen",
-        "start": 33.34,
-        "eind": 35.16
+        "start": 33.45,
+        "eind": 35.26
       },
       {
         "titel": "gegevens",
-        "start": 37.07,
-        "eind": 46.31
+        "start": 37.17,
+        "eind": 46.42
       },
       {
         "titel": "aanvragers",
-        "start": 48.22,
-        "eind": 55.32
+        "start": 48.33,
+        "eind": 55.43
       },
       {
         "titel": "pand",
-        "start": 59.33,
-        "eind": 69.83
+        "start": 59.45,
+        "eind": 69.95
       },
       {
         "titel": "documenten",
-        "start": 73.86,
-        "eind": 78.87
+        "start": 73.98,
+        "eind": 78.99
       },
       {
         "titel": "journaal",
-        "start": 81.21,
-        "eind": 88.46
+        "start": 81.37,
+        "eind": 88.62
       },
       {
         "titel": "commissieschemas",
-        "start": 91.22,
-        "eind": 96.1
+        "start": 91.39,
+        "eind": 96.27
       },
       {
         "titel": "slot",
-        "start": 98,
-        "eind": 101.9
+        "start": 98.17,
+        "eind": 102.07
       }
-    ],
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/f74d9cd0-877f-4175-bfbe-6fd5733dc1c2/thumbnail.jpg",
-    "gepubliceerdOp": "2026-09-01T04:57:58.069",
-    "gepubliceerdeHash": "1c86602fd2332484",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/f74d9cd0-877f-4175-bfbe-6fd5733dc1c2",
-    "vorigeGuid": "4e6ea85d-e701-4450-b4f5-49780e1f92c7"
+    ]
+  },
+  "kredietdossiers-basis-website-nl": {
+    "film": "kredietdossiers-basis",
+    "taal": "nl-BE",
+    "pagina": "credit-management/credit-files",
+    "lengte": 42.8,
+    "titel": "Het kredietdossier in CreditSoft — van lijst tot journaal",
+    "omschrijving": "Een rondleiding door het kredietdossier: de lijst filteren en doorzoeken, een dossier openen, de dossiergegevens, de kredietaanvragers, het pand, de gevraagde documenten, en het journaal met de taken, notities, gesprekken en commissieschema’s die bij dat ene dossier horen.",
+    "hash": "ed66fec463615506",
+    "guid": null,
+    "hoofdstukken": [
+      {
+        "titel": "lijst",
+        "start": 2.11,
+        "eind": 10.11
+      },
+      {
+        "titel": "openen",
+        "start": 13.42,
+        "eind": 16.02
+      },
+      {
+        "titel": "gegevens",
+        "start": 17.95,
+        "eind": 26.23
+      },
+      {
+        "titel": "documenten",
+        "start": 30.31,
+        "eind": 36.1
+      },
+      {
+        "titel": "slot",
+        "start": 37.23,
+        "eind": 40.87
+      }
+    ]
+  },
+  "kredietdossiers-basis-website-fr": {
+    "film": "kredietdossiers-basis",
+    "taal": "fr-BE",
+    "pagina": "credit-management/credit-files",
+    "lengte": 43.76,
+    "titel": "Le dossier de crédit dans CreditSoft — de la liste au journal",
+    "omschrijving": "Une visite guidée du dossier de crédit : filtrer et rechercher dans la liste, ouvrir un dossier, les données du dossier, les demandeurs de crédit, le bien, les documents demandés, et le journal avec les tâches, notes, appels et schémas de commission liés à ce dossier.",
+    "hash": "1fdf1461c3cc2809",
+    "guid": null,
+    "hoofdstukken": [
+      {
+        "titel": "lijst",
+        "start": 2.21,
+        "eind": 10.35
+      },
+      {
+        "titel": "openen",
+        "start": 13.57,
+        "eind": 16.17
+      },
+      {
+        "titel": "gegevens",
+        "start": 18.08,
+        "eind": 27.01
+      },
+      {
+        "titel": "documenten",
+        "start": 31.07,
+        "eind": 37.57
+      },
+      {
+        "titel": "slot",
+        "start": 38.69,
+        "eind": 42.04
+      }
+    ]
   }
 }

@@ -80,6 +80,48 @@ const DROOG = process.argv.includes('--droog');
 // zodat de zijbalk niet inschuift en het beeldformaat gelijk blijft.
 const VERBERG_VERSIE = '.nav-version { visibility: hidden !important; }';
 
+// ── DE TEKSTBALK VOOR EEN GELUIDLOZE FILM ────────────────────────────────────────────────────────────────
+//
+// ⚠️ IN DE PAGINA EN NIET MET FFMPEG. Dezelfde weg als de cursor: een element dat de opname gewoon meeneemt.
+// Met `drawtext` van ffmpeg zou de tekst niet afbreken, geen webfont dragen en niet meeschalen — en elke
+// wijziging zou een hercodering vragen in plaats van een nieuwe opname.
+//
+// Onderaan, want daar dekt ze de minste schermtekst af. Ruim, met een donkere band eronder: een websitefilm
+// speelt op een telefoon net zo goed als op een scherm, en dunne witte tekst op een licht scherm leest daar
+// niet.
+const TEKSTBALK = `
+  (() => {
+    const zet = () => {
+      // ⚠️ Op een ontbrekende body letten. Een addInitScript draait VÓÓR de body bestaat; de eerste versie
+      // riep hier meteen appendChild aan, gooide, en dan werd window.admFilmTekst hieronder nooit meer
+      // gedefinieerd. De film kwam er zonder tekst uit en niets meldde het.
+      if (!document.body) return;
+      if (document.getElementById('adm-film-tekst')) return;
+      const el = document.createElement('div');
+      el.id = 'adm-film-tekst';
+      el.style.cssText = [
+        'position:fixed', 'left:0', 'right:0', 'bottom:0', 'z-index:2147483646',
+        'padding:28px 64px 34px', 'box-sizing:border-box',
+        'background:linear-gradient(to top, rgba(15,23,42,.96) 0%, rgba(15,23,42,.88) 62%, rgba(15,23,42,0) 100%)',
+        'color:#fff', 'font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif',
+        'font-size:30px', 'line-height:1.35', 'font-weight:600', 'letter-spacing:-.01em',
+        'text-align:center', 'pointer-events:none',
+        'opacity:0', 'transition:opacity .35s ease',
+      ].join(';');
+      document.body.appendChild(el);
+    };
+    zet();
+    document.addEventListener('DOMContentLoaded', zet);
+    window.admFilmTekst = (t) => {
+      zet();
+      const el = document.getElementById('adm-film-tekst');
+      if (!el) return;
+      el.textContent = t ?? '';
+      el.style.opacity = t ? '1' : '0';
+    };
+  })();
+`;
+
 const CURSOR = `
   (() => {
     const maak = () => {
@@ -128,6 +170,11 @@ async function klik(page, loc) { await beweegNaar(page, loc); await loc.click();
 // ⚠️ GEEN STILLE TERUGVAL. Ontbreekt de ElevenLabs-sleutel, dan valt dit NIET zwijgend terug op de Mac-stem:
 // dan zou een film met de plaatshouder-stem zich voordoen als de echte, en dat merkt niemand bij het
 // nakijken. De motor staat in het verslag van élke film, en `--stem=say` is een bewuste keuze die je typt.
+// ⚠️ De uitvoering staat NIET in de bestandsnaam van de handleidingfilm. Die heet nog steeds
+// `kredietdossiers-basis-nl`, want de uitslagtabel én de MkDocs-hook verwijzen daarnaar. Een andere
+// uitvoering krijgt haar naam er wél in: `kredietdossiers-basis-website-nl`.
+const UITVOERING = (process.argv.find(a => a.startsWith('--uitvoering=')) ?? '').split('=')[1] ?? 'handleiding';
+
 const SLEUTEL = stemGeheim('ApiKey');
 const GEVRAAGD = (process.argv.find(a => a.startsWith('--stem=')) ?? '').split('=')[1];
 const MOTOR = GEVRAAGD ?? (SLEUTEL ? 'elevenlabs' : 'say');
@@ -196,6 +243,12 @@ const cacheNaam = (tekst, stem, model) =>
 const duurVan = (pad) => Number(execFileSync('ffprobe',
   ['-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', pad]).toString().trim());
 
+// ⚠️ LEESTIJD, geen spreektijd. Een geluidloze film heeft geen audiofragment om zijn duur aan te ontlenen,
+// dus die komt uit de LENGTE van de zin. 14 tekens per seconde is een rustig ondertiteltempo — sneller leest
+// een bezoeker niet mee terwijl hij ook naar het scherm kijkt. Met een ondergrens, want een korte zin mag
+// niet voorbijflitsen.
+const leestijd = (tekst) => Math.max(2.6, tekst.length / 14);
+
 async function spreek(tekst, taal, pad) {
   if (MOTOR === 'say') {
     execFileSync('say', ['-v', STEM[taal], '-r', String(TEMPO[taal]), '-o', pad + '.aiff', tekst]);
@@ -262,6 +315,24 @@ const FILMS = [
         + 'li\u00e9s \u00e0 ce dossier.',
     },
     dossier: ID.dossierMetSchema,                 // DEMO-1089 — actief schema, gevuld journaal, alle documentstatussen
+
+    // ── UITVOERINGEN (§12) ───────────────────────────────────────────────────────────────────────────
+    // ⚠️ ÉÉN SCENARIO, MEERDERE UITVOERINGEN. De scènes hieronder zijn de enige bron: route, handeling,
+    // merkteken én zin. Een uitvoering kiest enkel WELKE scènes ze gebruikt en HOE ze klinkt. Een
+    // websitefilm met een eigen scènelijst zou apart verouderen en apart breken; een SELECTIE uit
+    // dezelfde lijst erft elke reparatie — vandaag nog gezien met het labelfixje in de pandfiche.
+    uitvoeringen: {
+      // De handleidingfilm: het volledige verhaal, met stem, ondertitels beschikbaar maar uit.
+      handleiding: { stem: true },
+
+      // De websitefilm: korter, en ZONDER STEM. Elke browser start video gedempt, dus wie niet klikt
+      // hoort niets — het beeld moet de boodschap dragen. De zinnen komen daarom IN BEELD, en hun
+      // leestijd bepaalt de scèneduur in plaats van een audiofragment.
+      website: {
+        stem: false,
+        scenes: ['lijst', 'openen', 'gegevens', 'documenten', 'slot'],
+      },
+    },
     scenes: [
       { naam: 'lijst',
         doe: async (p) => { await p.goto(`${BASIS}/credit-files`); await p.waitForLoadState('networkidle'); },
@@ -378,34 +449,58 @@ const FILMS = [
 mkdirSync(UIT, { recursive: true });
 const verslag = { gemaakt: [], gevallen: [] , overgeslagen: [] };
 
-for (const [naam, film] of FILMS) {
+for (const [naam, filmVol] of FILMS) {
   if (filter && !naam.includes(filter)) continue;
+
+  const uitv = filmVol.uitvoeringen?.[UITVOERING];
+  if (!uitv) {
+    console.log(`⏭  ${naam} — geen uitvoering "${UITVOERING}"`);
+    continue;
+  }
+  // ⚠️ Een SELECTIE uit dezelfde scènelijst, niet een eigen lijst. Zo erft elke uitvoering de reparaties
+  // van het scenario. Een naam die niet bestaat is een fout en geen stille overslag: dan mist de film een
+  // scène en niemand ziet het.
+  const gekozen = uitv.scenes
+    ? uitv.scenes.map(n => {
+        const sc = filmVol.scenes.find(x => x.naam === n);
+        if (!sc) throw new Error(`uitvoering "${UITVOERING}" van ${naam} noemt scène "${n}" die niet bestaat`);
+        return sc;
+      })
+    : filmVol.scenes;
+  const film = { ...filmVol, scenes: gekozen };
+  const metStem = uitv.stem !== false;
+  // De handleiding houdt haar bestaande naam (de uitslagtabel en de hook verwijzen ernaar).
+  const stam = UITVOERING === 'handleiding' ? naam : `${naam}-${UITVOERING}`;
+  console.log(`\n▶ ${naam} · uitvoering ${UITVOERING} — ${gekozen.length} van ${filmVol.scenes.length} scènes, `
+    + `${metStem ? 'met stem' : 'ZONDER stem (tekst in beeld)'}`);
 
   for (const taal of ['nl-BE', 'fr-BE']) {
     // ⚠️ Een taal zonder stem wordt OVERGESLAGEN, niet gekraakt — maar wel luidop. Zo kan je het Nederlands
     // al opnemen terwijl de Franse stem nog gekozen moet worden, zonder dat er ooit twijfel bestaat over
     // welke talen er in deze ronde gemaakt zijn. Stil overslaan is wat een halve ronde als een hele laat
     // lezen, en dat is precies de fout die de beeldgenerator ooit maakte.
-    if (MOTOR === 'elevenlabs' && !STEM_ID[taal]) {
+    if (metStem && MOTOR === 'elevenlabs' && !STEM_ID[taal]) {
       console.log(`\n⏭  ${taal} OVERGESLAGEN — geen stem gezet.`);
       console.log(`    dotnet user-secrets set "ElevenLabs:Stem${taal.startsWith('fr') ? 'Fr' : 'Nl'}" "<voice-id>"`);
       verslag.overgeslagen.push(`${taal}: geen stem in user-secrets`);
       continue;
     }
     const kort = taal.startsWith('fr') ? 'fr' : 'nl';
-    const werk = `${UIT}${naam}-${kort}/`;
+    const werk = `${UIT}${stam}-${kort}/`;
     rmSync(werk, { recursive: true, force: true }); mkdirSync(werk, { recursive: true });
 
     // 1 ─ GELUID EERST. Zonder dit weet niets hoelang een scène moet duren.
-    console.log(`\n🎙  ${naam} · ${taal} — ${film.scenes.length} fragmenten`);
+    console.log(`\n🎙  ${naam} · ${taal} — ${film.scenes.length} ${metStem ? 'fragmenten' : 'schermteksten'}`);
     const duren = [];
     for (const [i, sc] of film.scenes.entries()) {
-      const d = await spreek(sc[kort], taal, `${werk}${String(i).padStart(2, '0')}-${sc.naam}.wav`);
+      const d = metStem
+        ? await spreek(sc[kort], taal, `${werk}${String(i).padStart(2, '0')}-${sc.naam}.wav`)
+        : leestijd(sc[kort]);
       duren.push(d);
       console.log(`     ${String(i + 1).padStart(2)} ${sc.naam.padEnd(12)} ${d.toFixed(1)}s  ${sc[kort].slice(0, 58)}…`);
     }
     const totaal = duren.reduce((a, b) => a + b, 0);
-    console.log(`     ── samen ${totaal.toFixed(0)}s gesproken met ${MOTOR} (richtduur ${film.duur ?? 150}s)`);
+    console.log(`     ── samen ${totaal.toFixed(0)}s ${metStem ? `gesproken met ${MOTOR}` : 'leestijd'}`);
     if (DROOG) continue;
 
     // 2 ─ AANMELDEN BUITEN DE OPNAME. Anders staat het inlogscherm in de film.
@@ -423,6 +518,7 @@ for (const [naam, film] of FILMS) {
       recordVideo: { dir: werk, size: { width: BREED, height: HOOG } },
     });
     await ctx.addInitScript(CURSOR);
+    if (!metStem) await ctx.addInitScript(TEKSTBALK);
     await ctx.addInitScript((css) => {
       const stijl = document.createElement('style');
       stijl.textContent = css;
@@ -451,9 +547,27 @@ for (const [naam, film] of FILMS) {
       // moet kunnen zien wát er veranderd is vóór iemand het uitlegt.
       await page.waitForTimeout((sc.aanloop ?? (i === 0 ? AANLOOP_START : AANLOOP)) * 1000);
       const spraak = (Date.now() - t0) / 1000;
+      // ⚠️ De tekst verschijnt PAS NA de aanloop, samen met waar de stem zou beginnen. Zo leest de kijker
+      // niet over een scherm dat nog aan het laden is, en houdt de geluidloze film hetzelfde ritme als de
+      // gesproken versie — dezelfde tijdlijn, alleen een ander medium.
+      // ⚠️ NIET .catch(() => {}). Dat slikte de eerste keer op dat window.admFilmTekst niet bestond, en de
+      // film kwam er zonder tekst uit terwijl het verslag "gelukt" zei. Een geluidloze film ZONDER tekst is
+      // een lege film — dat moet de scène laten vallen, net als een ontbrekend merkteken.
+      if (!metStem) {
+        const gezet = await page.evaluate(t => {
+          if (typeof window.admFilmTekst !== 'function') return false;
+          window.admFilmTekst(t);
+          const el = document.getElementById('adm-film-tekst');
+          return !!el && el.textContent === t;
+        }, sc[kort]);
+        if (!gezet) { gevallen = `${sc.naam} — de tekstbalk kwam niet in beeld`; break; }
+      }
       // De zin, en daarna de adem. Die adem is geen opvulling: hij is het verschil tussen een voorlezende
       // machine en iemand die iets uitlegt.
-      await page.waitForTimeout((duren[i] + (sc.adem ?? ADEM)) * 1000);
+      await page.waitForTimeout(duren[i] * 1000);
+      // Tekst weg vóór de adem, zodat de volgende handeling niet onder een blijvende zin gebeurt.
+      if (!metStem) await page.evaluate(() => window.admFilmTekst?.(''));
+      await page.waitForTimeout((sc.adem ?? ADEM) * 1000);
       merken.push({ naam: sc.naam, start, spraak, eind: (Date.now() - t0) / 1000 });
     }
     await page.waitForTimeout(NASLEEP * 1000);
@@ -462,12 +576,16 @@ for (const [naam, film] of FILMS) {
 
     // 4 ─ EEN SCÈNE DIE VIEL, LAAT DE HELE FILM VALLEN (§5)
     if (gevallen) {
-      console.log(`  ❌ ${naam}-${kort} GEVALLEN op scène ${gevallen}`);
-      verslag.gevallen.push(`${naam}-${kort}: ${gevallen}`);
+      console.log(`  ❌ ${stam}-${kort} GEVALLEN op scène ${gevallen}`);
+      verslag.gevallen.push(`${stam}-${kort}: ${gevallen}`);
       continue;
     }
 
     // 5 ─ GELUID ONDER HET BEELD, op de GEMETEN scènetijden — niet op de geplande.
+    //
+    // ⚠️ Een film ZONDER stem krijgt ook geen STIL geluidsspoor. Een leeg spoor meesturen zou een
+    // audiokanaal opleveren dat nergens toe dient, en sommige spelers tonen dan een volumeknop die niets
+    // doet — dat leest als een defect. Geen kanaal is duidelijker dan een doof kanaal.
     const lijst = [];
     let cursor = 0;
     const stilte = (lengte, merk) => {
@@ -479,35 +597,42 @@ for (const [naam, film] of FILMS) {
     // ⚠️ Op m.spraak en niet op m.start: de zin hoort te beginnen wanneer het scherm klaar staat, niet
     // wanneer de handeling begint. De stilte ertussen is de aanloop + de adem van de vorige scène.
     for (const [i, m] of merken.entries()) {
+      if (!metStem) break;
       if (m.spraak > cursor + 0.02) lijst.push(stilte(m.spraak - cursor, i));
       lijst.push(`${werk}${String(i).padStart(2, '0')}-${m.naam}.wav`);
       cursor = m.spraak + duren[i];
     }
     // ⚠️ En stilte tot het einde van het BEELD. Zonder dit knipt `-shortest` hieronder de nasleep eraf:
     // het spoor is dan korter dan de opname, en de film eindigt op het laatste woord.
-    const beeldEind = merken[merken.length - 1].eind + NASLEEP;
-    if (beeldEind > cursor + 0.02) lijst.push(stilte(beeldEind - cursor, 'slot'));
-    writeFileSync(`${werk}spoor.txt`, lijst.map(f => `file '${f}'`).join('\n'));
-    execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-f', 'concat', '-safe', '0',
-      '-i', `${werk}spoor.txt`, '-c', 'copy', `${werk}spoor.wav`]);
+    if (metStem) {
+      const beeldEind = merken[merken.length - 1].eind + NASLEEP;
+      if (beeldEind > cursor + 0.02) lijst.push(stilte(beeldEind - cursor, 'slot'));
+      writeFileSync(`${werk}spoor.txt`, lijst.map(f => `file '${f}'`).join('\n'));
+      execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-f', 'concat', '-safe', '0',
+        '-i', `${werk}spoor.txt`, '-c', 'copy', `${werk}spoor.wav`]);
+    }
 
-    const mp4 = `${UIT}${naam}-${kort}.mp4`;
-    execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-i', videoPad, '-i', `${werk}spoor.wav`,
-      '-c:v', 'libx264', '-preset', 'medium', '-crf', '23', '-pix_fmt', 'yuv420p',
-      '-c:a', 'aac', '-b:a', '128k', '-shortest', mp4]);
+    const mp4 = `${UIT}${stam}-${kort}.mp4`;
+    execFileSync('ffmpeg', metStem
+      ? ['-y', '-loglevel', 'error', '-i', videoPad, '-i', `${werk}spoor.wav`,
+         '-c:v', 'libx264', '-preset', 'medium', '-crf', '23', '-pix_fmt', 'yuv420p',
+         '-c:a', 'aac', '-b:a', '128k', '-shortest', mp4]
+      : ['-y', '-loglevel', 'error', '-i', videoPad,
+         '-c:v', 'libx264', '-preset', 'medium', '-crf', '23', '-pix_fmt', 'yuv420p', '-an', mp4]);
 
     // 6 ─ Ondertitels: de tekst bestaat al, dus dat is gratis (§7)
     const vtt = ['WEBVTT', ''];
     for (const [i, m] of merken.entries())
       vtt.push(`${tijd(m.spraak)} --> ${tijd(m.spraak + duren[i])}`, film.scenes[i][kort], '');
-    writeFileSync(`${UIT}${naam}-${kort}.vtt`, vtt.join('\n'));
+    writeFileSync(`${UIT}${stam}-${kort}.vtt`, vtt.join('\n'));
 
     const lengte = Number(execFileSync('ffprobe', ['-v', 'error', '-show_entries', 'format=duration',
       '-of', 'csv=p=0', mp4]).toString().trim());
-    console.log(`  ✅ ${naam}-${kort}.mp4 — ${lengte.toFixed(0)}s, ${film.scenes.length} scènes, ondertitels erbij`);
+    console.log(`  ✅ ${stam}-${kort}.mp4 — ${lengte.toFixed(0)}s, ${film.scenes.length} scènes`
+      + `${metStem ? ', ondertitels erbij' : ', zonder geluid (tekst in beeld)'}`);
     // 7 ─ De uitslag: scènetijden voor de hoofdstukken, en een hash om veroudering te kunnen zien.
     //     De guid komt er later bij, bij het uploaden — die kent de generator hier nog niet.
-    const sleutel = `${naam}-${kort}`;
+    const sleutel = `${stam}-${kort}`;
     uitslag[sleutel] = {
       film: naam, taal, pagina: film.pagina, lengte: Number(lengte.toFixed(2)),
       titel: film.titel?.[kort] ?? naam,
@@ -527,7 +652,8 @@ for (const [naam, film] of FILMS) {
     };
     bewaarUitslag();
 
-    verslag.gemaakt.push(`${naam}-${kort} (${lengte.toFixed(0)}s, stem: ${MOTOR}, model: ${MODEL ?? 'standaard van de API'})`);
+    verslag.gemaakt.push(`${stam}-${kort} (${lengte.toFixed(0)}s, `
+      + `${metStem ? `stem: ${MOTOR}, model: ${MODEL ?? 'standaard van de API'}` : 'geen stem'})`);
   }
 }
 
