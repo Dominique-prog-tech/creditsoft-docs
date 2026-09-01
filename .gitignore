@@ -2,7 +2,12 @@
 site/
 __pycache__/
 .DS_Store
+# ⚠️ *.py houdt losse hulpscripts buiten git, MAAR een MkDocs-hook is geen hulpscript: mkdocs.yml verwijst
+# ernaar en zonder dat bestand bouwt de site helemaal niet. Op 01/09/2026 ging hooks/films.py daardoor niet
+# mee in de commit terwijl mkdocs.yml hem wél noemde — CI faalde met "The path 'hooks/films.py' isn't an
+# existing file". Lokaal viel dat niet op, want daar stond het bestand er gewoon.
 *.py
+!hooks/*.py
 tools/.schermteksten.json
 
 # Filmuitvoer — mp4 hoort niet in git (FILMS-SPEC §7)

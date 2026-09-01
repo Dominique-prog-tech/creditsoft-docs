@@ -244,6 +244,23 @@ const tijd = s => {
 const FILMS = [
   ['kredietdossiers-basis', {
     pagina: 'credit-management/credit-files',
+    // ⚠️ EEN MENSELIJKE TITEL EN OMSCHRIJVING, per taal. De technische naam ("kredietdossiers-basis-nl") is
+    // een sleutel, geen titel: hij stond als videotitel bij Bunny en zou ook in de speler verschijnen.
+    // Belangrijker nog: deze twee voeden de schema.org-VideoObject op de handleidingpagina, en dát is wat
+    // een zoekmachine leest. Bunny zelf wordt niet geïndexeerd — docs.creditsoft.be wel.
+    titel: {
+      nl: 'Het kredietdossier in CreditSoft — van lijst tot journaal',
+      fr: 'Le dossier de crédit dans CreditSoft — de la liste au journal',
+    },
+    omschrijving: {
+      nl: 'Een rondleiding door het kredietdossier: de lijst filteren en doorzoeken, een dossier openen, '
+        + 'de dossiergegevens, de kredietaanvragers, het pand, de gevraagde documenten, en het journaal met '
+        + 'de taken, notities, gesprekken en commissieschema\u2019s die bij dat ene dossier horen.',
+      fr: 'Une visite guid\u00e9e du dossier de cr\u00e9dit : filtrer et rechercher dans la liste, ouvrir un '
+        + 'dossier, les donn\u00e9es du dossier, les demandeurs de cr\u00e9dit, le bien, les documents '
+        + 'demand\u00e9s, et le journal avec les t\u00e2ches, notes, appels et sch\u00e9mas de commission '
+        + 'li\u00e9s \u00e0 ce dossier.',
+    },
     dossier: ID.dossierMetSchema,                 // DEMO-1089 — actief schema, gevuld journaal, alle documentstatussen
     scenes: [
       { naam: 'lijst',
@@ -493,6 +510,8 @@ for (const [naam, film] of FILMS) {
     const sleutel = `${naam}-${kort}`;
     uitslag[sleutel] = {
       film: naam, taal, pagina: film.pagina, lengte: Number(lengte.toFixed(2)),
+      titel: film.titel?.[kort] ?? naam,
+      omschrijving: film.omschrijving?.[kort] ?? '',
       // ⚠️ De hash draagt de NARRATIE én de route, want dat zijn de twee dingen die een film inhoudelijk
       // verouderd maken. Niet de scènetijden: die verschillen per opname met een paar honderdsten, en dan
       // zou elke ronde alles als "gewijzigd" melden.

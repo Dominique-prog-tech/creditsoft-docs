@@ -2,39 +2,42 @@
   "kredietdossiers-basis-nl": {
     "film": "kredietdossiers-basis",
     "taal": "nl-BE",
-    "lengte": 96.36,
+    "pagina": "credit-management/credit-files",
+    "lengte": 96.4,
+    "titel": "Het kredietdossier in CreditSoft — van lijst tot journaal",
+    "omschrijving": "Een rondleiding door het kredietdossier: de lijst filteren en doorzoeken, een dossier openen, de dossiergegevens, de kredietaanvragers, het pand, de gevraagde documenten, en het journaal met de taken, notities, gesprekken en commissieschema’s die bij dat ene dossier horen.",
     "hash": "b1307b41c06edc44",
     "guid": "c5a5075e-a411-4add-9c8f-bb74757afbee",
     "hoofdstukken": [
       {
         "titel": "lijst",
-        "start": 2.1,
-        "eind": 9.16
+        "start": 2.12,
+        "eind": 9.18
       },
       {
         "titel": "kolommen",
-        "start": 11.11,
-        "eind": 18.21
+        "start": 11.13,
+        "eind": 18.23
       },
       {
         "titel": "zoeken",
-        "start": 22.72,
-        "eind": 27.73
+        "start": 22.77,
+        "eind": 27.78
       },
       {
         "titel": "openen",
-        "start": 30.93,
-        "eind": 32.84
+        "start": 30.95,
+        "eind": 32.86
       },
       {
         "titel": "gegevens",
-        "start": 34.75,
-        "eind": 42.97
+        "start": 34.77,
+        "eind": 42.99
       },
       {
         "titel": "aanvragers",
-        "start": 44.88,
-        "eind": 50.96
+        "start": 44.9,
+        "eind": 50.98
       },
       {
         "titel": "pand",
@@ -49,22 +52,19 @@
       {
         "titel": "journaal",
         "start": 75.47,
-        "eind": 82.15
+        "eind": 82.16
       },
       {
         "titel": "commissieschemas",
-        "start": 84.95,
-        "eind": 89.36
+        "start": 84.97,
+        "eind": 89.39
       },
       {
         "titel": "slot",
-        "start": 91.26,
-        "eind": 94.6
+        "start": 91.28,
+        "eind": 94.63
       }
-    ],
-    "embed": "https://iframe.mediadelivery.net/embed/741183/c5a5075e-a411-4add-9c8f-bb74757afbee",
-    "gepubliceerdeHash": "b1307b41c06edc44",
-    "pagina": "credit-management/credit-files"
+    ]
   },
   "kredietdossiers-basis-fr": {
     "film": "kredietdossiers-basis",
