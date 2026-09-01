@@ -1315,6 +1315,95 @@ const FILMS = [
     ],
   }],
 
+  // ─────────────────────────────────────────────────────────────────────────────────────────────────────
+  // FILM 9 van de reeks (§14 nummer 12). Verzekeringen — het overzicht en de verzekeraars.
+  //
+  // ⚠️ HET VERZEKERINGENSCHERM IS EEN GEFILTERDE WEERGAVE over de kredietcontracten, op productcategorie
+  // DebtBalanceInsurance (= 3, níét 1 — dat is LeasingRenting). Op die verwarring liep ik op 01/09/2026:
+  // eerst telde ik de verkeerde tabel, daarna de verkeerde categoriewaarde, en beide keren leek er niets te
+  // staan terwijl er 1.194 contracten waren.
+  //
+  // ⚠️ DE TWEE STATUSSEN ZIJN HET PUNT van scène 4. `Status` gaat over de POLIS (offerte, medische
+  // acceptatie, getekend), `Status dossier` over het kredietdossier eronder. De handleiding wijdt er een
+  // kadertekst aan; een film die dat niet opheldert, laat de kijker met precies die vraag zitten.
+  ['verzekeringen', {
+    pagina: 'credit-management/insurance-contracts',
+    titel: {
+      nl: 'Verzekeringen — het overzicht en uw verzekeraars',
+      fr: 'Assurances — l’aperçu et vos assureurs',
+    },
+    omschrijving: {
+      nl: 'Alle schuldsaldoverzekeringen bij uw dossiers op één lijst: kiezen wat u wil zien met de drie '
+        + 'filters bovenaan, de kolommen die ertoe doen — wie er verzekerd is, of de polis nog voorlopig is '
+        + 'en of de aanvraaglink vertrokken is — het verschil tussen de status van de polis en die van het '
+        + 'dossier, de lijst afdrukken of exporteren, en de fiches van uw verzekeraars.',
+      fr: 'Toutes les assurances solde restant dû de vos dossiers sur une seule liste : choisir ce que vous '
+        + 'voulez voir avec les trois filtres du haut, les colonnes qui comptent — qui est assuré, si la '
+        + 'police est encore provisoire et si le lien de demande est parti — la différence entre le statut '
+        + 'de la police et celui du dossier, imprimer ou exporter la liste, et les fiches de vos assureurs.',
+    },
+    uitvoeringen: { handleiding: { stem: true } },
+    scenes: [
+      { naam: 'lijst', kop: { nl: 'Alle polissen samen', fr: 'Toutes les polices ensemble' },
+        doe: async (p) => { await p.goto(`${BASIS}/insurance-contracts`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(2600); },
+        merk: /Alle producten|Tous les produits/i,
+        nl: 'Bij een kredietdossier hoort vaak een schuldsaldoverzekering. Dit scherm haalt ze allemaal samen, over al uw dossiers heen, zodat u ze niet dossier per dossier hoeft te zoeken.',
+        fr: "Un dossier de crédit s’accompagne souvent d’une assurance solde restant dû. Cet écran les rassemble toutes, tous dossiers confondus, pour ne pas devoir les chercher dossier par dossier." },
+
+      { naam: 'kiezen', kop: { nl: 'Kiezen wat u ziet', fr: 'Choisir ce que vous voyez' },
+        doe: async (p) => { await beweegNaar(p, p.getByText(/Alle verantwoordelijken|Tous les responsables/i).first()); await p.waitForTimeout(1700); },
+        merk: /Alle verantwoordelijken|Tous les responsables/i,
+        nl: 'Bovenaan staan drie keuzes: het product, de status, en de collega die opvolgt. Zo houdt u over wat u nu nodig heeft.',
+        fr: "En haut, trois choix : le produit, le statut, et le collègue qui assure le suivi. Vous ne gardez ainsi que ce dont vous avez besoin maintenant." },
+
+      { naam: 'kolommen', kop: { nl: 'Wie er verzekerd is', fr: 'Qui est assuré' },
+        doe: async (p) => { await beweegNaar(p, p.getByText(/^Verzekerden$|^Assurés$/).first()); await p.waitForTimeout(1700); },
+        merk: /Verzekerden|Assurés/i,
+        nl: 'Eén kolom verdient uw aandacht: Verzekerden. Wie verzekerd is, hoeft niet dezelfde persoon te zijn als wie het krediet aanvraagt — en dat verschil telt bij een uitkering.',
+        fr: "Une colonne mérite votre attention : Assurés. La personne assurée n’est pas nécessairement celle qui demande le crédit — et cette différence compte lors d’une intervention." },
+
+      { naam: 'voorlopig', kop: { nl: 'Voorlopig en de link', fr: 'Provisoire et le lien' },
+        doe: async (p) => { await beweegNaar(p, p.getByText(/^Voorlopig$|^Provisoire$/).first()); await p.waitForTimeout(1700); },
+        merk: /Voorlopig|Provisoire/i,
+        nl: 'Voorlopig staat op ja zolang er nog geen polisnummer is. En de laatste kolom zegt of de aanvraaglink al naar uw klant vertrokken is — twee dingen die u wil zien zonder elke polis te openen.',
+        fr: "Provisoire reste à oui tant qu’il n’y a pas de numéro de police. Et la dernière colonne indique si le lien de demande est déjà parti chez votre client — deux choses à voir sans ouvrir chaque police." },
+
+      { naam: 'statussen', kop: { nl: 'Twee statussen, twee dingen', fr: 'Deux statuts, deux choses' },
+        doe: async (p) => { await beweegNaar(p, p.getByText(/^Status$|^Statut$/).first()); await p.waitForTimeout(1800); },
+        merk: /Contractnr|contrat/i,
+        nl: 'Let op met de status. Die gaat over de polis — offerte, medische acceptatie, getekend. De status van het dossier is iets anders, en staat er als aparte kolom naast. Een polis kan getekend zijn terwijl het dossier nog loopt.',
+        fr: "Attention au statut. Il porte sur la police — offre, acceptation médicale, signée. Le statut du dossier est autre chose et figure dans une colonne distincte. Une police peut être signée alors que le dossier est encore en cours." },
+
+      { naam: 'afdruk', kop: { nl: 'Afdrukken of exporteren', fr: 'Imprimer ou exporter' },
+        doe: async (p) => { await beweegNaar(p, p.getByText('Afdruk lijst', { exact: true }).or(p.getByText('Imprimer la liste', { exact: true })).first()); await p.waitForTimeout(1700); },
+        merk: /Afdruk lijst|Imprimer la liste/i,
+        nl: 'Wat u ziet neemt u mee: exporteren geeft u de lijst met uw filters erin, en Afdruk lijst maakt er een blad van dat u kan doorsturen.',
+        fr: "Ce que vous voyez, vous l’emportez : l’export vous donne la liste avec vos filtres, et Imprimer la liste en fait une feuille que vous pouvez transmettre." },
+
+      { naam: 'verzekeraars', kop: { nl: 'Uw verzekeraars', fr: 'Vos assureurs' },
+        doe: async (p) => { await p.goto(`${BASIS}/credit/insurance-institutions`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(2400); },
+        merk: /Afi-Esca|AG Insurance/i,
+        nl: 'De maatschappijen zelf beheert u apart. Dit is de lijst waaruit u kiest wanneer u een polis aanmaakt.',
+        fr: "Les compagnies elles-mêmes se gèrent séparément. C’est la liste dans laquelle vous choisissez lors de la création d’une police." },
+
+      { naam: 'fiche', kop: { nl: 'De fiche van een verzekeraar', fr: 'La fiche d’un assureur' },
+        doe: async (p) => {
+          const rij = p.getByText('AG Insurance', { exact: true }).first();
+          await beweegNaar(p, rij); await rij.dblclick();
+          await p.waitForLoadState('networkidle'); await p.waitForTimeout(2400);
+        },
+        merk: /Algemene informatie|Informations générales/i,
+        nl: 'Een verzekeraar heeft zijn eigen fiche met adres en contactgegevens — en hetzelfde journaal als elke andere fiche: taken, notities, gesprekken en mailverkeer.',
+        fr: "Un assureur a sa propre fiche avec adresse et coordonnées — et le même journal que toute autre fiche : tâches, notes, appels et courrier." },
+
+      { naam: 'slot', kop: { nl: 'Tot slot', fr: 'Pour conclure' },
+        doe: async (p) => { await p.goto(`${BASIS}/insurance-contracts`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(2200); },
+        merk: /Alle producten|Tous les produits/i,
+        nl: 'Zo houdt u de polissen bij zonder ze uit het oog te verliezen: één lijst, drie filters, en de dossiers eronder blijven één klik weg.',
+        fr: "Vous suivez ainsi les polices sans les perdre de vue : une liste, trois filtres, et les dossiers en dessous restent à un clic." },
+    ],
+  }],
+
   ['kredietdossiers-basis', {
     pagina: 'credit-management/credit-files',
     // ⚠️ EEN MENSELIJKE TITEL EN OMSCHRIJVING, per taal. De technische naam ("kredietdossiers-basis-nl") is

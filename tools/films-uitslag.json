@@ -1593,7 +1593,7 @@
     "titel": "Payer la commission — bordereau, prévisions et reliquats",
     "omschrijving": "Ce qui découle de vos schémas de commission : le bordereau par apporteur avec ses lignes, les prévisions de ce qu’il reste à payer les mois à venir, les reliquats qui ne sont jamais arrivés sur un bordereau et pourquoi, et la fiche 281.50 pour le fisc.",
     "hash": "8de70b18f62e15f8",
-    "guid": null,
+    "guid": "b7b96cba-ce0d-43f2-bb3c-2b54351588db",
     "hoofdstukken": [
       {
         "titel": "Les bordereaux",
@@ -1639,6 +1639,140 @@
         "titel": "Pour conclure",
         "start": 130.27,
         "eind": 139.79
+      }
+    ],
+    "thumbnail": null,
+    "gepubliceerdOp": "2026-09-01T14:54:08.78",
+    "gepubliceerdeHash": "8de70b18f62e15f8",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/b7b96cba-ce0d-43f2-bb3c-2b54351588db"
+  },
+  "verzekeringen-nl": {
+    "film": "verzekeringen",
+    "taal": "nl-BE",
+    "pagina": "credit-management/insurance-contracts",
+    "lengte": 133.36,
+    "routes": [
+      "/insurance-contracts",
+      "/credit/insurance-institutions"
+    ],
+    "app": {
+      "sha": "e8bb224f7c329f3978eb6d9e1385b4992ea6a2b4",
+      "vuil": false
+    },
+    "titel": "Verzekeringen — het overzicht en uw verzekeraars",
+    "omschrijving": "Alle schuldsaldoverzekeringen bij uw dossiers op één lijst: kiezen wat u wil zien met de drie filters bovenaan, de kolommen die ertoe doen — wie er verzekerd is, of de polis nog voorlopig is en of de aanvraaglink vertrokken is — het verschil tussen de status van de polis en die van het dossier, de lijst afdrukken of exporteren, en de fiches van uw verzekeraars.",
+    "hash": "7231f312fdbba471",
+    "guid": null,
+    "hoofdstukken": [
+      {
+        "titel": "Alle polissen samen",
+        "start": 4.66,
+        "eind": 14.97
+      },
+      {
+        "titel": "Kiezen wat u ziet",
+        "start": 18.74,
+        "eind": 26.96
+      },
+      {
+        "titel": "Wie er verzekerd is",
+        "start": 30.7,
+        "eind": 41.98
+      },
+      {
+        "titel": "Voorlopig en de link",
+        "start": 45.74,
+        "eind": 57.63
+      },
+      {
+        "titel": "Twee statussen, twee dingen",
+        "start": 61.48,
+        "eind": 78.52
+      },
+      {
+        "titel": "Afdrukken of exporteren",
+        "start": 82.26,
+        "eind": 91.5
+      },
+      {
+        "titel": "Uw verzekeraars",
+        "start": 96.3,
+        "eind": 102.8
+      },
+      {
+        "titel": "De fiche van een verzekeraar",
+        "start": 107.13,
+        "eind": 117.81
+      },
+      {
+        "titel": "Tot slot",
+        "start": 122.42,
+        "eind": 131.06
+      }
+    ]
+  },
+  "verzekeringen-fr": {
+    "film": "verzekeringen",
+    "taal": "fr-BE",
+    "pagina": "credit-management/insurance-contracts",
+    "lengte": 146.64,
+    "routes": [
+      "/insurance-contracts",
+      "/credit/insurance-institutions"
+    ],
+    "app": {
+      "sha": "e8bb224f7c329f3978eb6d9e1385b4992ea6a2b4",
+      "vuil": false
+    },
+    "titel": "Assurances — l’aperçu et vos assureurs",
+    "omschrijving": "Toutes les assurances solde restant dû de vos dossiers sur une seule liste : choisir ce que vous voulez voir avec les trois filtres du haut, les colonnes qui comptent — qui est assuré, si la police est encore provisoire et si le lien de demande est parti — la différence entre le statut de la police et celui du dossier, imprimer ou exporter la liste, et les fiches de vos assureurs.",
+    "hash": "b262375c68b85143",
+    "guid": null,
+    "hoofdstukken": [
+      {
+        "titel": "Toutes les polices ensemble",
+        "start": 4.67,
+        "eind": 17.07
+      },
+      {
+        "titel": "Choisir ce que vous voyez",
+        "start": 20.8,
+        "eind": 32.83
+      },
+      {
+        "titel": "Qui est assuré",
+        "start": 36.53,
+        "eind": 48.7
+      },
+      {
+        "titel": "Provisoire et le lien",
+        "start": 52.42,
+        "eind": 67.19
+      },
+      {
+        "titel": "Deux statuts, deux choses",
+        "start": 71.01,
+        "eind": 88.8
+      },
+      {
+        "titel": "Imprimer ou exporter",
+        "start": 92.53,
+        "eind": 103.86
+      },
+      {
+        "titel": "Vos assureurs",
+        "start": 108.64,
+        "eind": 116.21
+      },
+      {
+        "titel": "La fiche d’un assureur",
+        "start": 120.53,
+        "eind": 130.93
+      },
+      {
+        "titel": "Pour conclure",
+        "start": 135.49,
+        "eind": 144.36
       }
     ]
   }
