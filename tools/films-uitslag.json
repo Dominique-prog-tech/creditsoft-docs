@@ -10,57 +10,57 @@
     "guid": "d6954167-a695-4638-ac6c-7042ee6542f5",
     "hoofdstukken": [
       {
-        "titel": "lijst",
+        "titel": "De dossierlijst",
         "start": 2.21,
         "eind": 9.27
       },
       {
-        "titel": "kolommen",
+        "titel": "De kolommen",
         "start": 11.26,
         "eind": 18.37
       },
       {
-        "titel": "zoeken",
+        "titel": "Zoeken in de lijst",
         "start": 23,
         "eind": 28.02
       },
       {
-        "titel": "openen",
+        "titel": "Een dossier openen",
         "start": 31.28,
         "eind": 33.18
       },
       {
-        "titel": "gegevens",
+        "titel": "De dossiergegevens",
         "start": 35.09,
         "eind": 43.31
       },
       {
-        "titel": "aanvragers",
+        "titel": "De kredietaanvragers",
         "start": 45.23,
         "eind": 51.31
       },
       {
-        "titel": "pand",
+        "titel": "Het pand",
         "start": 55.34,
         "eind": 63.89
       },
       {
-        "titel": "documenten",
+        "titel": "De gevraagde documenten",
         "start": 67.92,
         "eind": 73.4
       },
       {
-        "titel": "journaal",
+        "titel": "Het journaal",
         "start": 75.77,
         "eind": 82.46
       },
       {
-        "titel": "commissieschemas",
+        "titel": "Het commissieschema",
         "start": 85.29,
         "eind": 89.7
       },
       {
-        "titel": "slot",
+        "titel": "Tot slot",
         "start": 91.6,
         "eind": 94.94
       }
@@ -82,57 +82,57 @@
     "guid": "f74d9cd0-877f-4175-bfbe-6fd5733dc1c2",
     "hoofdstukken": [
       {
-        "titel": "lijst",
+        "titel": "La liste des dossiers",
         "start": 2.1,
         "eind": 9.44
       },
       {
-        "titel": "kolommen",
+        "titel": "Les colonnes",
         "start": 11.46,
         "eind": 19.82
       },
       {
-        "titel": "zoeken",
+        "titel": "Rechercher dans la liste",
         "start": 24.34,
         "eind": 30.19
       },
       {
-        "titel": "openen",
+        "titel": "Ouvrir un dossier",
         "start": 33.45,
         "eind": 35.26
       },
       {
-        "titel": "gegevens",
+        "titel": "Les données du dossier",
         "start": 37.17,
         "eind": 46.42
       },
       {
-        "titel": "aanvragers",
+        "titel": "Les demandeurs de crédit",
         "start": 48.33,
         "eind": 55.43
       },
       {
-        "titel": "pand",
+        "titel": "Le bien",
         "start": 59.45,
         "eind": 69.95
       },
       {
-        "titel": "documenten",
+        "titel": "Les documents demandés",
         "start": 73.98,
         "eind": 78.99
       },
       {
-        "titel": "journaal",
+        "titel": "Le journal",
         "start": 81.37,
         "eind": 88.62
       },
       {
-        "titel": "commissieschemas",
+        "titel": "Le schéma de commission",
         "start": 91.39,
         "eind": 96.27
       },
       {
-        "titel": "slot",
+        "titel": "Pour conclure",
         "start": 98.17,
         "eind": 102.07
       }
@@ -154,27 +154,27 @@
     "guid": "9129a61b-2412-4cc8-9b32-d75da739fba6",
     "hoofdstukken": [
       {
-        "titel": "lijst",
+        "titel": "De dossierlijst",
         "start": 2.17,
         "eind": 10.17
       },
       {
-        "titel": "openen",
+        "titel": "Een dossier openen",
         "start": 13.31,
         "eind": 15.91
       },
       {
-        "titel": "gegevens",
+        "titel": "De dossiergegevens",
         "start": 17.83,
         "eind": 26.12
       },
       {
-        "titel": "documenten",
+        "titel": "De gevraagde documenten",
         "start": 30.19,
         "eind": 35.98
       },
       {
-        "titel": "slot",
+        "titel": "Tot slot",
         "start": 37.09,
         "eind": 40.74
       }
@@ -200,27 +200,27 @@
     "guid": "ca7508c7-a5b7-49e2-b91c-d88889f9bb3e",
     "hoofdstukken": [
       {
-        "titel": "lijst",
+        "titel": "La liste des dossiers",
         "start": 2.09,
         "eind": 10.23
       },
       {
-        "titel": "openen",
+        "titel": "Ouvrir un dossier",
         "start": 13.41,
         "eind": 16.01
       },
       {
-        "titel": "gegevens",
+        "titel": "Les données du dossier",
         "start": 17.93,
         "eind": 26.86
       },
       {
-        "titel": "documenten",
+        "titel": "Les documents demandés",
         "start": 30.9,
         "eind": 37.4
       },
       {
-        "titel": "slot",
+        "titel": "Pour conclure",
         "start": 38.51,
         "eind": 41.87
       }
@@ -246,42 +246,42 @@
     "guid": "6e004248-5d64-4771-b276-b94782b663bc",
     "hoofdstukken": [
       {
-        "titel": "dossiers",
+        "titel": "Kredietdossiers",
         "start": 2.21,
         "eind": 5.35
       },
       {
-        "titel": "klanten",
+        "titel": "Klanten en relaties",
         "start": 7.74,
         "eind": 11.52
       },
       {
-        "titel": "documenten",
+        "titel": "Documenten",
         "start": 13.88,
         "eind": 17.09
       },
       {
-        "titel": "portalen",
+        "titel": "De portalen",
         "start": 19.42,
         "eind": 22.49
       },
       {
-        "titel": "commissies",
+        "titel": "Commissie",
         "start": 24.87,
         "eind": 27.59
       },
       {
-        "titel": "borderellen",
+        "titel": "Borderellen",
         "start": 29.92,
         "eind": 34.63
       },
       {
-        "titel": "vooruitzicht",
+        "titel": "Vooruitzicht",
         "start": 37.03,
         "eind": 39.89
       },
       {
-        "titel": "instellingen",
+        "titel": "Instellingen",
         "start": 42.23,
         "eind": 45.59
       }
@@ -307,42 +307,42 @@
     "guid": "efcc1f39-03fa-497f-bb06-12dc5ede37ba",
     "hoofdstukken": [
       {
-        "titel": "dossiers",
+        "titel": "Dossiers de crédit",
         "start": 2.21,
         "eind": 5.64
       },
       {
-        "titel": "klanten",
+        "titel": "Clients et relations",
         "start": 8.04,
         "eind": 11.97
       },
       {
-        "titel": "documenten",
+        "titel": "Documents",
         "start": 14.37,
         "eind": 17.51
       },
       {
-        "titel": "portalen",
+        "titel": "Les portails",
         "start": 19.8,
         "eind": 23.02
       },
       {
-        "titel": "commissies",
+        "titel": "Commissions",
         "start": 25.39,
         "eind": 28.96
       },
       {
-        "titel": "borderellen",
+        "titel": "Bordereaux",
         "start": 31.31,
         "eind": 36.59
       },
       {
-        "titel": "vooruitzicht",
+        "titel": "Prévisions",
         "start": 39.26,
         "eind": 42.33
       },
       {
-        "titel": "instellingen",
+        "titel": "Paramètres",
         "start": 44.64,
         "eind": 47.57
       }
@@ -368,42 +368,42 @@
     "guid": "bc9092c4-ae00-49ed-84b7-3475506cef5b",
     "hoofdstukken": [
       {
-        "titel": "dossiers",
+        "titel": "Credit files",
         "start": 2.17,
         "eind": 6.24
       },
       {
-        "titel": "klanten",
+        "titel": "Clients and relations",
         "start": 8.71,
         "eind": 12.71
       },
       {
-        "titel": "documenten",
+        "titel": "Documents",
         "start": 15.11,
         "eind": 17.83
       },
       {
-        "titel": "portalen",
+        "titel": "The portals",
         "start": 20.49,
         "eind": 23.77
       },
       {
-        "titel": "commissies",
+        "titel": "Commissions",
         "start": 26.13,
         "eind": 29.49
       },
       {
-        "titel": "borderellen",
+        "titel": "Statements",
         "start": 31.82,
         "eind": 36.97
       },
       {
-        "titel": "vooruitzicht",
+        "titel": "Forecast",
         "start": 39.55,
         "eind": 42.55
       },
       {
-        "titel": "instellingen",
+        "titel": "Settings",
         "start": 44.91,
         "eind": 48.7
       }
@@ -429,27 +429,27 @@
     "guid": "9aadef14-942d-4ee8-a3a4-9e409f80eb62",
     "hoofdstukken": [
       {
-        "titel": "lijst",
+        "titel": "The file list",
         "start": 2.1,
         "eind": 9.81
       },
       {
-        "titel": "openen",
+        "titel": "Opening a file",
         "start": 12.93,
         "eind": 15.53
       },
       {
-        "titel": "gegevens",
+        "titel": "The file details",
         "start": 17.45,
         "eind": 25.66
       },
       {
-        "titel": "documenten",
+        "titel": "The requested documents",
         "start": 29.75,
         "eind": 36.82
       },
       {
-        "titel": "slot",
+        "titel": "In closing",
         "start": 37.95,
         "eind": 41.52
       }
@@ -483,57 +483,57 @@
     "guid": null,
     "hoofdstukken": [
       {
-        "titel": "start",
+        "titel": "Het startscherm",
         "start": 3.32,
         "eind": 12.93
       },
       {
-        "titel": "menu",
+        "titel": "Het menu links",
         "start": 15.79,
         "eind": 24.52
       },
       {
-        "titel": "zoeken",
+        "titel": "Zoeken vanaf elk scherm",
         "start": 30.63,
         "eind": 43.31
       },
       {
-        "titel": "hulp",
+        "titel": "Hulp bij dit scherm",
         "start": 47.55,
         "eind": 55.49
       },
       {
-        "titel": "assistenten",
+        "titel": "De twee assistenten",
         "start": 60.43,
         "eind": 70.13
       },
       {
-        "titel": "lijst",
+        "titel": "Werken met lijsten",
         "start": 75.37,
         "eind": 82.76
       },
       {
-        "titel": "sorteren",
+        "titel": "Sorteren",
         "start": 86.49,
         "eind": 92.06
       },
       {
-        "titel": "filteren",
+        "titel": "Filteren",
         "start": 97.02,
         "eind": 104.26
       },
       {
-        "titel": "werkbalk",
+        "titel": "Exporteren",
         "start": 107.38,
         "eind": 115.59
       },
       {
-        "titel": "voorkeuren",
+        "titel": "Uw voorkeuren",
         "start": 119.5,
         "eind": 129.91
       },
       {
-        "titel": "slot",
+        "titel": "Tot slot",
         "start": 135.08,
         "eind": 140.15
       }
@@ -558,57 +558,57 @@
     "guid": null,
     "hoofdstukken": [
       {
-        "titel": "start",
+        "titel": "L'écran d'accueil",
         "start": 3.34,
         "eind": 13.56
       },
       {
-        "titel": "menu",
+        "titel": "Le menu de gauche",
         "start": 16.39,
         "eind": 27.95
       },
       {
-        "titel": "zoeken",
+        "titel": "Rechercher depuis tout écran",
         "start": 34.05,
         "eind": 49.42
       },
       {
-        "titel": "hulp",
+        "titel": "Aide sur cet écran",
         "start": 53.65,
         "eind": 62.66
       },
       {
-        "titel": "assistenten",
+        "titel": "Les deux assistants",
         "start": 67.58,
         "eind": 77.14
       },
       {
-        "titel": "lijst",
+        "titel": "Travailler avec les listes",
         "start": 82.4,
         "eind": 94.28
       },
       {
-        "titel": "sorteren",
+        "titel": "Trier",
         "start": 98.01,
         "eind": 103.16
       },
       {
-        "titel": "filteren",
+        "titel": "Filtrer",
         "start": 108.13,
         "eind": 118.16
       },
       {
-        "titel": "werkbalk",
+        "titel": "Exporter",
         "start": 121.26,
         "eind": 132.17
       },
       {
-        "titel": "voorkeuren",
+        "titel": "Vos préférences",
         "start": 136.09,
         "eind": 149.09
       },
       {
-        "titel": "slot",
+        "titel": "Pour conclure",
         "start": 154.41,
         "eind": 160.58
       }

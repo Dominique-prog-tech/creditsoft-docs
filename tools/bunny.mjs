@@ -3,6 +3,7 @@
 //     node tools/bunny.mjs check       — leest de library uit; bewijst enkel dat de gegevens kloppen
 //     node tools/bunny.mjs vervangproef — de proef uit §7.4 van FILMS-SPEC.md
 //     node tools/bunny.mjs publiceer [filter] — uploadt wat gewijzigd is, mét ondertitels en hoofdstukken
+//     node tools/bunny.mjs hoofdstukken [filter] — werkt ENKEL de hoofdstukken bij van wat al online staat
 //
 // ⚠️ WAAROM DIE PROEF BESTAAT. De nota zegt: "Bunny documenteert niet met zoveel woorden dat opnieuw PUT'en
 // naar dezelfde GUID het bestand vervangt met behoud van de embed. Ga er niet van uit — MEET het." Het hele
@@ -305,6 +306,48 @@ if (opdracht === 'publiceer') {
   console.log(gedaan ? `✅ ${gedaan} film(s) gepubliceerd` : 'ℹ️  niets te publiceren');
   if (mislukt.length) { console.log(`⚠️ ${mislukt.length} probleem(en):`); mislukt.forEach(m => console.log('   ' + m)); }
   process.exit(mislukt.length ? 1 : 0);
+}
+
+if (opdracht === 'hoofdstukken') {
+  // Duwt ENKEL de hoofdstukken van al gepubliceerde films door — zonder nieuwe upload, dus zonder nieuwe
+  // guid en zonder dat één verwijzing op één pagina wijzigt.
+  //
+  // ⚠️ Waarom dit bestaat: tot 01/09/2026 was de hoofdstuktitel de INTERNE scènenaam. Een klant die de
+  // speler opende, las "lijst · kolommen · zoeken" — kleine letters, onze woorden, en op de Franse film
+  // óók in het Nederlands. Dat is niet erg genoeg om er een nieuwe upload voor te doen (een film is bij
+  // Bunny niet te vervangen), en te zichtbaar om te laten staan. Hoofdstukken zijn metadata, dus dit kan.
+  //
+  // Werkwijze: eerst `node tools/films.mjs --hoofdstukken` (schrijft de titels in de tabel), dan dit.
+  const UITSLAG = new URL('./films-uitslag.json', import.meta.url).pathname;
+  const uitslag = JSON.parse(readFileSync(UITSLAG, 'utf8'));
+  const filter = process.argv[3];
+  let raak = 0, over = 0;
+  const mislukt = [];
+  for (const [sleutel, f] of Object.entries(uitslag)) {
+    if (filter && !sleutel.includes(filter)) continue;
+    if (!f.guid) { console.log(`⏭  ${sleutel} — nog niet gepubliceerd`); over++; continue; }
+    if (!f.hoofdstukken?.length) { console.log(`⏭  ${sleutel} — geen hoofdstukken`); over++; continue; }
+    // ⚠️ Afkappen op de lengte die BUNNY meet, net als bij publiceren: onze berekende lengte en de
+    // hercodeerde lengte schelen een fractie, en één seconde te ver geeft een 400.
+    const v = await api(`/videos/${f.guid}`);
+    if (!v.ok) { mislukt.push(`${sleutel}: ophalen → ${v.status}`); continue; }
+    const lengte = v.json?.length ?? 1;
+    const h = await api(`/videos/${f.guid}`, {
+      method: 'POST', headers: { 'content-type': 'application/json' },
+      body: JSON.stringify({ chapters: f.hoofdstukken.map(x => ({
+        title: x.titel,
+        start: Math.min(Math.round(x.start), lengte - 1),
+        end: Math.min(Math.round(x.eind), lengte) })) }),
+    });
+    if (h.ok) { raak++; console.log(`✅ ${sleutel} — ${f.hoofdstukken.length} hoofdstukken: ${f.hoofdstukken.map(x => x.titel).join(' · ')}`); }
+    else mislukt.push(`${sleutel}: ${h.status} — ${h.tekst.slice(0, 100)}`);
+  }
+  console.log(`\n${raak} film(s) bijgewerkt, ${over} overgeslagen.`);
+  // ⚠️ NIETS GEVONDEN IS GEEN "IN ORDE". Raakte dit geen enkele film, dan is dat een uitkomst om te
+  // melden en niet een schone afloop — meestal een filter die niets matcht.
+  if (raak === 0) console.log('⚠️  GEEN ENKELE film bijgewerkt. Klopt het filter, en staan er guids in de tabel?');
+  if (mislukt.length) { console.log(`\n❌ ${mislukt.length} mislukt:`); mislukt.forEach(m => console.log(`   ${m}`)); process.exit(1); }
+  process.exit(0);
 }
 
 if (opdracht === 'metadata') {

@@ -170,6 +170,21 @@ async function klik(page, loc) { await beweegNaar(page, loc); await loc.click();
 // De knoppen dragen geen stabiele klasse, dus de titel is wat er is; één regex dekt de twee talen samen.
 const kopbalkKnop = (page, patroon) => page.getByTitle(patroon).first();
 
+// ── De hoofdstuktitel van een scène, per taal ────────────────────────────────────────────────────────────
+// Zie de noot bij `hoofdstukken:` verderop. Ontbreekt `kop`, dan valt dit terug op de interne scènenaam en
+// wordt dat GETELD — de ronde meldt het op het eind, zodat het niet opnieuw jaren onopgemerkt blijft.
+const zonderKop = new Set();
+const zonderTaal = new Set();
+function kop(scene, taal) {
+  if (scene.kop?.[taal]) return scene.kop[taal];
+  // ⚠️ EEN TERUGVAL DIE NIET FAALT, LIEGT. Zonder deze telling kreeg de Engelse uitvoering stilzwijgend
+  // Nederlandse hoofdstukken ("Kredietdossiers · Klanten en relaties") — een aannemelijk antwoord op de
+  // verkeerde vraag, en niets dat uitnodigde tot twijfel. Gemerkt op 01/09/2026, ná het doorduwen.
+  if (scene.kop?.nl) { zonderTaal.add(`${scene.naam} (${taal})`); return scene.kop.nl; }
+  zonderKop.add(scene.naam);
+  return scene.naam;
+}
+
 // ── Een zijlade sluiten — en de twee soorten sluiten NIET hetzelfde ──────────────────────────────────────
 // ⚠️ Gemeten op 01/09/2026: de ZOEKlade sluit met Escape, de HULPlade niet — daar blijft `.prefs-backdrop`
 // staan, en die vangt de volgende klik af. De film viel dan op een time-out van 30 s in de scène erna, en
@@ -360,28 +375,28 @@ const FILMS = [
       },
     },
     scenes: [
-      { naam: 'dossiers',
+      { naam: 'dossiers', kop: { nl: 'Kredietdossiers', fr: "Dossiers de crédit", en: "Credit files" },
         doe: async (p) => { await p.goto(`${BASIS}/credit-files`); await p.waitForLoadState('networkidle'); },
         merk: /DEMO-\d+/,
         nl: 'Alles van \u00e9\u00e9n kredietaanvraag op \u00e9\u00e9n pagina.',
         en: 'Everything about one credit application on a single page.',
         fr: "Tout d'une demande de cr\u00e9dit sur une seule page." },
 
-      { naam: 'klanten',
+      { naam: 'klanten', kop: { nl: 'Klanten en relaties', fr: "Clients et relations", en: "Clients and relations" },
         doe: async (p) => { await p.goto(`${BASIS}/crm/relaties`); await p.waitForLoadState('networkidle'); },
         merk: /Adriaenssens|Aerts|Peeters/,
         nl: 'Uw klant, zijn gezin en zijn geschiedenis: \u00e9\u00e9n fiche.',
         en: 'Your client, their family and their history: one record.',
         fr: "Votre client, sa famille et son historique : une fiche." },
 
-      { naam: 'documenten',
+      { naam: 'documenten', kop: { nl: 'Documenten', fr: "Documents", en: "Documents" },
         doe: async (p) => { await p.goto(`${BASIS}/krediet/documenten-valideren`); await p.waitForLoadState('networkidle'); },
         merk: /DEMO-\d+/,
         nl: 'Documenten opvragen, ontvangen en beoordelen.',
         en: 'Request, receive and review documents.',
         fr: "Demander, recevoir et \u00e9valuer les documents." },
 
-      { naam: 'portalen',
+      { naam: 'portalen', kop: { nl: 'De portalen', fr: "Les portails", en: "The portals" },
         // ⚠️ Het OPMAAKSCHERM en niet het echte portaal. Dat laatste vraagt een aparte aanmelding, en in een
         // doorlopende opname zou het aanmeldscherm in beeld komen. Het voorbeeldpaneel rechts toont het
         // portaal in de huisstijl, mét de voortgang en de documentstatussen — dat is wat de zin belooft.
@@ -391,28 +406,28 @@ const FILMS = [
         en: 'Your clients and brokers upload it themselves.',
         fr: "Vos clients et apporteurs d\u00e9posent eux-m\u00eames." },
 
-      { naam: 'commissies',
+      { naam: 'commissies', kop: { nl: 'Commissie', fr: "Commissions", en: "Commissions" },
         doe: async (p) => { await p.goto(`${BASIS}/commissie/schemas`); await p.waitForLoadState('networkidle'); },
         merk: /Sandbox|Baken|Meridiaan|Horizon/,
         nl: 'Commissie berekend zoals u ze afsprak.',
         en: 'Commission calculated exactly as you agreed it.',
         fr: "La commission calcul\u00e9e comme vous l'avez convenue." },
 
-      { naam: 'borderellen',
+      { naam: 'borderellen', kop: { nl: 'Borderellen', fr: "Bordereaux", en: "Statements" },
         doe: async (p) => { await p.goto(`${BASIS}/commissie/borderel`); await p.waitForLoadState('networkidle'); },
         merk: /Voorbeeld|Demo Krediet|Hypotheek/,
         nl: 'Van berekening tot borderel en fiche 281.50, zonder \u00e9\u00e9n cel Excel.',
         en: 'From calculation to statement and tax form, without a single Excel cell.',
         fr: "Du calcul au bordereau et \u00e0 la fiche 281.50, sans une seule cellule Excel." },
 
-      { naam: 'vooruitzicht',
+      { naam: 'vooruitzicht', kop: { nl: 'Vooruitzicht', fr: "Prévisions", en: "Forecast" },
         doe: async (p) => { await p.goto(`${BASIS}/commissie/vooruitzicht`); await p.waitForLoadState('networkidle'); },
         merk: /Baken|Meridiaan|Horizon|Proefmakelaars/,
         nl: 'En u ziet vooruit wat er nog binnenkomt.',
         en: 'And you see ahead what is still coming in.',
         fr: "Et vous voyez \u00e0 l'avance ce qui va rentrer." },
 
-      { naam: 'instellingen',
+      { naam: 'instellingen', kop: { nl: 'Instellingen', fr: "Paramètres", en: "Settings" },
         doe: async (p) => { await p.goto(`${BASIS}/credit/financial-institutions`); await p.waitForLoadState('networkidle'); },
         merk: /AG Insurance|Allianz|Axa/,
         nl: "Uw kredietverstrekkers, met hun eigen schema's.",
@@ -446,19 +461,19 @@ const FILMS = [
     },
     uitvoeringen: { handleiding: { stem: true } },
     scenes: [
-      { naam: 'start',
+      { naam: 'start', kop: { nl: 'Het startscherm', fr: "L'écran d'accueil" },
         doe: async (p) => { await p.goto(`${BASIS}/dashboard`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(1200); },
         merk: /Aan de slag|Pour commencer/i,
         nl: 'Dit is uw startscherm. Zolang uw omgeving voorbeeldgegevens draagt, staat bovenaan het blok Aan de slag met de drie dingen die u het eerst instelt.',
         fr: "Voici votre écran d’accueil. Tant que votre environnement contient des données d’exemple, le bloc Pour commencer affiche en haut les trois choses à configurer en premier." },
 
-      { naam: 'menu',
+      { naam: 'menu', kop: { nl: 'Het menu links', fr: "Le menu de gauche" },
         doe: async (p) => { await beweegNaar(p, p.locator('nav a, .adm-nav a').first()); await p.waitForTimeout(900); },
         merk: /KREDIET|CRÉDIT/i,
         nl: 'Links staat het menu, gegroepeerd zoals u werkt: CRM, Krediet, Lijsten en Beheer. De getallen ernaast zijn wat op u wacht.',
         fr: "À gauche, le menu, groupé comme vous travaillez : CRM, Crédit, Listes et Gestion. Les chiffres à côté indiquent ce qui vous attend." },
 
-      { naam: 'zoeken',
+      { naam: 'zoeken', kop: { nl: 'Zoeken vanaf elk scherm', fr: "Rechercher depuis tout écran" },
         doe: async (p) => {
           await klik(p, kopbalkKnop(p, /Zoeken|Rechercher/i));
           await p.waitForTimeout(900);
@@ -469,7 +484,7 @@ const FILMS = [
         nl: 'Zoeken doet u overal vandaan, met de knop bovenaan of met Command K. U typt een naam, en CreditSoft zoekt in uw relaties, dossiers, aanbrengers en taken tegelijk.',
         fr: "La recherche est accessible partout, via le bouton en haut ou avec Commande K. Vous tapez un nom et CreditSoft cherche simultanément dans vos relations, dossiers, apporteurs et tâches." },
 
-      { naam: 'hulp',
+      { naam: 'hulp', kop: { nl: 'Hulp bij dit scherm', fr: "Aide sur cet écran" },
         doe: async (p) => {
           await sluitLade(p);
           await klik(p, kopbalkKnop(p, /Hulp bij dit scherm|Aide pour cet écran/i));
@@ -482,7 +497,7 @@ const FILMS = [
         nl: 'Op elk scherm zit rechtsboven een vraagteken. Dat opent de hulp voor precies dit scherm, niet een algemene handleiding.',
         fr: "Sur chaque écran, un point d’interrogation en haut à droite ouvre l’aide de cet écran précis, et non un manuel général." },
 
-      { naam: 'assistenten',
+      { naam: 'assistenten', kop: { nl: 'De twee assistenten', fr: "Les deux assistants" },
         doe: async (p) => {
           await sluitLade(p);
           await klik(p, kopbalkKnop(p, /Vraag het de handleiding|Demander au manuel/i));
@@ -492,7 +507,7 @@ const FILMS = [
         nl: 'Komt u er niet uit, dan zijn er twee assistenten: één die de handleiding leest, en één die uw eigen cijfers opzoekt en het antwoord als tabel geeft.',
         fr: "Si vous bloquez, deux assistants existent : l’un lit le manuel, l’autre interroge vos propres chiffres et répond sous forme de tableau." },
 
-      { naam: 'lijst',
+      { naam: 'lijst', kop: { nl: 'Werken met lijsten', fr: "Travailler avec les listes" },
         doe: async (p) => {
           await sluitLade(p);
           await p.goto(`${BASIS}/crm/relaties`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(1600);
@@ -501,13 +516,13 @@ const FILMS = [
         nl: 'Elke lijst in CreditSoft werkt hetzelfde. Wat u hier leert, geldt ook voor uw dossiers, uw aanbrengers en uw taken.',
         fr: "Toutes les listes de CreditSoft fonctionnent de la même manière. Ce que vous apprenez ici vaut aussi pour vos dossiers, vos apporteurs et vos tâches." },
 
-      { naam: 'sorteren',
+      { naam: 'sorteren', kop: { nl: 'Sorteren', fr: "Trier" },
         doe: async (p) => { await klik(p, p.locator('th').nth(1)); await p.waitForTimeout(1800); },
         merk: /Naam|Nom/i,
         nl: 'U sorteert door op een kolomkop te klikken. Klikt u nog eens, dan draait de volgorde om.',
         fr: "Vous triez en cliquant sur un en-tête de colonne. Un second clic inverse l’ordre." },
 
-      { naam: 'filteren',
+      { naam: 'filteren', kop: { nl: 'Filteren', fr: "Filtrer" },
         doe: async (p) => {
           const z = p.locator('input[type="search"]:visible, input[placeholder*="oek" i]:visible, input[placeholder*="echerch" i]:visible').first();
           await klik(p, z); await z.type('Cuypers', { delay: 90 }); await p.waitForTimeout(2400);
@@ -516,13 +531,13 @@ const FILMS = [
         nl: 'Boven de lijst filtert u. Wat u typt, zoekt in alle kolommen tegelijk, en de lijst krimpt terwijl u typt.',
         fr: "Au-dessus de la liste, vous filtrez. Ce que vous tapez cherche dans toutes les colonnes à la fois, et la liste se réduit pendant que vous tapez." },
 
-      { naam: 'werkbalk',
+      { naam: 'werkbalk', kop: { nl: 'Exporteren', fr: "Exporter" },
         doe: async (p) => { await beweegNaar(p, p.getByText(/^Exporteren$|^Exporter$/).first()); await p.waitForTimeout(1200); },
         merk: /Exporteren|Exporter/i,
         nl: 'Wat u ziet, kunt u meenemen: exporteren geeft u precies uw huidige selectie in Excel, met uw filter en uw kolommen erin.',
         fr: "Ce que vous voyez, vous pouvez l’emporter : l’export vous donne exactement votre sélection actuelle dans Excel, avec votre filtre et vos colonnes." },
 
-      { naam: 'voorkeuren',
+      { naam: 'voorkeuren', kop: { nl: 'Uw voorkeuren', fr: "Vos préférences" },
         doe: async (p) => {
           await klik(p, kopbalkKnop(p, /Voorkeuren|Préférences/i));
           await p.waitForTimeout(2000);
@@ -531,7 +546,7 @@ const FILMS = [
         nl: 'Rechtsboven staan uw eigen voorkeuren: de grootte van het scherm, een licht of donker thema, en uw taal. Die keuzes zijn van u, niet van uw kantoor.',
         fr: "En haut à droite, vos préférences : la taille de l’écran, un thème clair ou sombre, et votre langue. Ces choix sont les vôtres, pas ceux de votre bureau." },
 
-      { naam: 'slot',
+      { naam: 'slot', kop: { nl: 'Tot slot', fr: "Pour conclure" },
         doe: async (p) => {
           await sluitLade(p);
           await p.goto(`${BASIS}/dashboard`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(1400);
@@ -589,20 +604,20 @@ const FILMS = [
       },
     },
     scenes: [
-      { naam: 'lijst',
+      { naam: 'lijst', kop: { nl: 'De dossierlijst', fr: "La liste des dossiers", en: "The file list" },
         doe: async (p) => { await p.goto(`${BASIS}/credit-files`); await p.waitForLoadState('networkidle'); },
         merk: /Kenmerk aanbrenger|Référence apporteur/i,
         nl: 'Het kredietdossier is het hart van CreditSoft. Alles wat bij één aanvraag hoort, staat op één pagina bij elkaar.',
         en: 'The credit file is the heart of CreditSoft. Everything about one application sits together on a single page.',
         fr: "Le dossier de crédit est le cœur de CreditSoft. Tout ce qui concerne une demande est rassemblé sur une seule page." },
 
-      { naam: 'kolommen',
+      { naam: 'kolommen', kop: { nl: 'De kolommen', fr: "Les colonnes", en: "The columns" },
         doe: async (p) => { await beweegNaar(p, p.locator('th').nth(3)); },
         merk: /Kredietbedrag|Montant du crédit/i,
         nl: 'In de lijst ziet u per dossier het kenmerk van de aanbrenger, de status, het kredietbedrag en de aanvrager.',
         fr: "Dans la liste, vous voyez par dossier la référence apporteur, le statut, le montant du crédit et le demandeur." },
 
-      { naam: 'zoeken',
+      { naam: 'zoeken', kop: { nl: 'Zoeken in de lijst', fr: "Rechercher dans la liste", en: "Searching the list" },
         doe: async (p) => {
           const vak = p.locator('input[type="search"], input[placeholder*="oek" i], input[placeholder*="echerch" i]').first();
           await klik(p, vak); await vak.type('Demetris', { delay: 90 });
@@ -612,7 +627,7 @@ const FILMS = [
         nl: 'Bovenaan zoekt u door de hele lijst. Het aantal gevonden dossiers loopt mee.',
         fr: "En haut, vous cherchez dans toute la liste. Le nombre de dossiers trouvés suit." },
 
-      { naam: 'openen',
+      { naam: 'openen', kop: { nl: 'Een dossier openen', fr: "Ouvrir un dossier", en: "Opening a file" },
         aanloop: 1.3,   // springt naar een ANDER scherm — daar valt het meest te zien
         doe: async (p, f) => { await p.goto(`${BASIS}/credit-files/${f.dossier}`); await p.waitForLoadState('networkidle'); },
         merk: /Kredietbedrag|Montant du crédit/i,
@@ -620,14 +635,14 @@ const FILMS = [
         en: 'Let us open an existing file.',
         fr: "Ouvrons un dossier existant." },
 
-      { naam: 'gegevens',
+      { naam: 'gegevens', kop: { nl: 'De dossiergegevens', fr: "Les données du dossier", en: "The file details" },
         doe: async (p) => { await p.waitForTimeout(400); },
         merk: /Datum indiening|Date de dépôt/i,
         nl: 'Bovenaan staan de dossiergegevens: de status, het kredietbedrag, de instelling en de datums van indiening en ingang.',
         en: 'At the top are the file details: the status, the credit amount, the institution and the submission and start dates.',
         fr: "En haut se trouvent les données du dossier : le statut, le montant du crédit, l'institution et les dates de dépôt et d'effet." },
 
-      { naam: 'aanvragers',
+      { naam: 'aanvragers', kop: { nl: 'De kredietaanvragers', fr: "Les demandeurs de crédit", en: "The credit applicants" },
         doe: async (p) => {
           const kop = p.locator('h6', { hasText: /Kredietaanvragers|Demandeurs de crédit/ }).first();
           await kop.scrollIntoViewIfNeeded(); await beweegNaar(p, kop);
@@ -636,7 +651,7 @@ const FILMS = [
         nl: 'Onder Kredietaanvragers staan alle aanvragers van dit dossier, met hun gegevens en hun rol.',
         fr: "Sous Demandeurs de crédit figurent tous les demandeurs de ce dossier, avec leurs données et leur rôle." },
 
-      { naam: 'pand',
+      { naam: 'pand', kop: { nl: 'Het pand', fr: "Le bien", en: "The property" },
         aanloop: 1.3,   // springt naar een ANDER scherm — daar valt het meest te zien
         doe: async (p) => {
           await klik(p, p.locator('button', { hasText: /Investeringsfiche & pand|Fiche d'investissement & bien/ }).first());
@@ -646,7 +661,7 @@ const FILMS = [
         nl: 'Achter Investeringsfiche en pand vindt u het adres, de aard en de waarde van het pand — en die waarde bepaalt mee de quotiteit.',
         fr: "Derrière Fiche d'investissement et bien, vous trouvez l'adresse, la nature et la valeur du bien — et cette valeur détermine en partie la quotité." },
 
-      { naam: 'documenten',
+      { naam: 'documenten', kop: { nl: 'De gevraagde documenten', fr: "Les documents demandés", en: "The requested documents" },
         doe: async (p) => {
           await p.keyboard.press('Escape'); await p.waitForTimeout(900);
           await klik(p, p.locator('[role="tab"]', { hasText: /^(Gevraagd|Demandés)\s*\(/ }).first());
@@ -660,7 +675,7 @@ const FILMS = [
       // ⚠️ TWEE SCÈNES, en dat was eerst één. Drie klikken na elkaar met één zin erover gaf 8,1 seconden
       // stilte vóór die zin — de kijker zat naar drie handelingen te kijken waar niemand iets bij zei.
       //
-      { naam: 'journaal',
+      { naam: 'journaal', kop: { nl: 'Het journaal', fr: "Le journal", en: "The journal" },
         aanloop: 1.0,
         doe: async (p) => {
           await klik(p, p.locator('button', { hasText: /^(Journaal|Journal)$/ }).first());
@@ -674,7 +689,7 @@ const FILMS = [
         nl: 'Elk dossier draagt zijn eigen journaal: taken, notities, gesprekken, bijlagen en mailverkeer.',
         fr: "Chaque dossier porte son propre journal : tâches, notes, appels, pièces jointes et courrier." },
 
-      { naam: 'commissieschemas',
+      { naam: 'commissieschemas', kop: { nl: 'Het commissieschema', fr: "Le schéma de commission", en: "The commission scheme" },
         aanloop: 1.0,
         doe: async (p) => {
           await klik(p, p.locator('.adm-section-switch-btn').first());
@@ -685,7 +700,7 @@ const FILMS = [
         nl: 'En de commissieschema’s: wat er op dit dossier per aanbrenger verdiend wordt.',
         fr: "Et les schémas de commission : ce qui est gagné par apporteur sur ce dossier." },
 
-      { naam: 'slot',
+      { naam: 'slot', kop: { nl: 'Tot slot', fr: "Pour conclure", en: "In closing" },
         // ⚠️ KORTE aanloop, en dat is de regel: de aanloop bestaat om een NIEUW scherm te laten landen.
         // Hier verandert er niets — het journaalpaneel gaat dicht en het dossier staat er weer. Eerst stond
         // hier 1,0 s aanloop en 1,6 s adem, langer dan standaard, en dan duurt een zin van 4 seconden er
@@ -707,6 +722,40 @@ const FILMS = [
 
 // ── Draaien ──────────────────────────────────────────────────────────────────────────────────────────────
 mkdirSync(UIT, { recursive: true });
+// ── ALLEEN DE HOOFDSTUKTITELS BIJWERKEN, zonder opnieuw op te nemen ─────────────────────────────────────
+// ⚠️ Waarom dit bestaat: een film is bij Bunny NIET te vervangen (400 The video has already been uploaded),
+// dus élke herneming kost een nieuwe guid en dus een nieuwe verwijzing op elke pagina. Een hoofdstuktitel
+// verbeteren mag dat niet waard zijn. Hoofdstukken zijn metadata (POST /videos/{guid}), dus ze kunnen
+// bijgewerkt worden op een film die al online staat: hier de tabel, en `bunny.mjs hoofdstukken` duwt ze door.
+if (process.argv.includes('--hoofdstukken')) {
+  let raak = 0, gemist = 0;
+  for (const [naam, film] of FILMS) {
+    if (filter && !naam.includes(filter)) continue;
+    for (const [sleutel, rij] of Object.entries(uitslag)) {
+      if (rij.film !== naam || !rij.hoofdstukken?.length) continue;
+      // ⚠️ `rij.taal` is de SCHERMTAAL, niet de taal van de tekst. De Engelse website-uitvoering draagt
+      // `taal: 'nl-BE'` — Engelse ondertitels over een Nederlands scherm (§12.3). Wie hierop koppelt, geeft
+      // de Engelse kijker Nederlandse hoofdstukken, en de terugvalmelding zwijgt want er ís om 'nl' gevraagd.
+      // De taal van de TEKST staat enkel in het achtervoegsel van de sleutel; vandaar deze regel.
+      const kort = sleutel.match(/-(nl|fr|en)$/)?.[1] ?? (rij.taal ?? 'nl-BE').split('-')[0];
+      // ⚠️ Op INDEX koppelen mag niet: een uitvoering gebruikt een SELECTIE van de scènes (§12), dus de
+      // vijfde rij van een websitefilm is niet de vijfde scène. Koppelen op de oude titel is even fout —
+      // die is al eens bijgewerkt. Daarom op de scènenaam, en wat niet te vinden is, blijft staan én telt.
+      for (const h of rij.hoofdstukken) {
+        const sc = film.scenes.find(x => x.naam === h.titel || x.kop?.nl === h.titel || x.kop?.fr === h.titel);
+        if (!sc) { gemist++; continue; }
+        h.titel = kop(sc, kort); raak++;
+      }
+      console.log(`   ${sleutel}: ${rij.hoofdstukken.map(h => h.titel).join(' · ')}`);
+    }
+  }
+  bewaarUitslag();
+  console.log(`\n✅ ${raak} hoofdstuktitel(s) bijgewerkt in de tabel${gemist ? `, ${gemist} niet herkend` : ''}.`);
+  if (gemist) console.log('   ⚠️ Niet-herkende hoofdstukken blijven staan zoals ze waren — kijk ze na.');
+  console.log('   Duw ze door met: node tools/bunny.mjs hoofdstukken');
+  process.exit(0);
+}
+
 const verslag = { gemaakt: [], gevallen: [] , overgeslagen: [] };
 
 for (const [naam, filmVol] of FILMS) {
@@ -917,7 +966,13 @@ for (const [naam, filmVol] of FILMS) {
       })).digest('hex').slice(0, 16),
       guid: uitslag[sleutel]?.guid ?? null,     // blijft staan tot bunny.mjs hem vervangt
       hoofdstukken: merken.map((m, i) => ({
-        titel: film.scenes[i].naam, start: Number(m.spraak.toFixed(2)),
+        // ⚠️ DE HOOFDSTUKTITEL IS WAT DE KIJKER ZIET, geen sleutel. Hier stond `film.scenes[i].naam`, en
+        // dus zag een klant in de Bunny-speler "lijst", "kolommen", "zoeken" staan — onze interne namen,
+        // kleine letters, in het Nederlands ook op de Franse film. Gemerkt op 01/09/2026 bij het bouwen
+        // van de videopagina. Een scène draagt nu `kop: { nl, fr }`; ontbreekt die, dan valt hij terug op
+        // de naam MET een melding aan het eind van de ronde — stil terugvallen is precies hoe dit ontstond.
+        titel: kop(film.scenes[i], kort),
+        start: Number(m.spraak.toFixed(2)),
         eind: Number((m.spraak + duren[i]).toFixed(2)),
       })),
     };
@@ -935,6 +990,18 @@ if (verslag.overgeslagen.length) {
   verslag.overgeslagen.forEach(r => console.log(`   ${r}`));
 }
 if (verslag.gevallen.length) { console.log(`❌ ${verslag.gevallen.length} gevallen:`); verslag.gevallen.forEach(r => console.log(`   ${r}`)); }
+// ⚠️ MELDEN, niet tegenhouden — maar wél melden. Een scène zonder `kop` levert een hoofdstuk dat onze
+// interne naam toont aan een klant, in kleine letters en in het Nederlands ook op de Franse film.
+if (zonderKop.size) {
+  console.log(`\n◐ ${zonderKop.size} scène(s) zonder hoofdstuktitel — de speler toont dan de INTERNE naam:`);
+  console.log('   ' + [...zonderKop].join(', '));
+  console.log("   Geef die scène een `kop: { nl: '…', fr: '…' }`; dat is wat de kijker in de speler leest.");
+}
+if (zonderTaal.size) {
+  console.log(`\n◐ ${zonderTaal.size} hoofdstuk(ken) vielen terug op de NEDERLANDSE titel:`);
+  console.log('   ' + [...zonderTaal].join(', '));
+  console.log('   De kijker van die uitvoering leest dus Nederlands in de hoofdstukkenlijst.');
+}
 if (DROOG) console.log('🅓 Droge proef — enkel geluid gemaakt, niets opgenomen.');
 else if (!verslag.gemaakt.length && !verslag.gevallen.length)
   console.log("⚠️  Geen enkele film geraakt door de filter — bedoelde je een andere naam?");
