@@ -261,7 +261,7 @@
   "online-afspraken-agenda": {
     "route": "/crm/online-afspraken",
     "app": {
-      "sha": "2ff5ae5b66d7e564047347fd96923019fe5f1c32",
+      "sha": "e8bb224f7c329f3978eb6d9e1385b4992ea6a2b4",
       "vuil": false
     }
   },
@@ -457,7 +457,7 @@
   "online-afspraken-instellingen": {
     "route": "/crm/online-afspraken",
     "app": {
-      "sha": "2ff5ae5b66d7e564047347fd96923019fe5f1c32",
+      "sha": "e8bb224f7c329f3978eb6d9e1385b4992ea6a2b4",
       "vuil": false
     }
   },
@@ -877,7 +877,7 @@
   "online-afspraken-agenda-fr": {
     "route": "/crm/online-afspraken",
     "app": {
-      "sha": "2ff5ae5b66d7e564047347fd96923019fe5f1c32",
+      "sha": "e8bb224f7c329f3978eb6d9e1385b4992ea6a2b4",
       "vuil": false
     }
   },
@@ -1073,7 +1073,7 @@
   "online-afspraken-instellingen-fr": {
     "route": "/crm/online-afspraken",
     "app": {
-      "sha": "2ff5ae5b66d7e564047347fd96923019fe5f1c32",
+      "sha": "e8bb224f7c329f3978eb6d9e1385b4992ea6a2b4",
       "vuil": false
     }
   },

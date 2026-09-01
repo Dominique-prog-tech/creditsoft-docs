@@ -78,6 +78,37 @@ const DROOG = process.argv.includes('--droog');
 // release. Zonder deze filter zou elke versiebump vijftien films in twee talen verouderd maken, precies de
 // reden waarom hij op 31/08/2026 in beelden.mjs kwam. Zelfde vorm: `visibility: hidden`, niet `display:none`,
 // zodat de zijbalk niet inschuift en het beeldformaat gelijk blijft.
+
+// ── DE BOEKINGSLINK GAAT GEMASKEERD IN BEELD ───────────────────────────────────────────────────────────
+// ⚠️ Het scherm Online afspraken toont de VOLLEDIGE boekingslink van het kantoor, token en al:
+//     https://platform.digitalcloud.be/afspraak/0c8d29adabfe4737a1d4b05696c24ba4
+// Dat is geen geheim — zo'n link geef je aan je klanten — maar in een GEPUBLICEERDE handleiding betekent het
+// dat iedere lezer in de agenda van het demokantoor kan boeken. Gemerkt op 01/09/2026: het stond al in het
+// gepubliceerde beeld `online-afspraken-instellingen.png`, dus dit is een reparatie en geen voorzorg.
+//
+// ⚠️ EEN WAARNEMER EN NIET ÉÉN VERVANGING. Blazor rendert dit element ná het laden, en een film loopt door —
+// een eenmalige vervanging bij het begin van een scène is er dan al of nog niet.
+//
+// ⚠️ ZELFDE LENGTE. De bolletjes vervangen het token teken voor teken, zodat het veld niet krimpt en de
+// vormgrendel van de beeldronde geldig blijft.
+const MASKEER_BOEKINGSLINK = () => {
+  const maskeer = () => {
+    for (const e of document.querySelectorAll('code, input, span')) {
+      const t = e.value ?? e.textContent ?? '';
+      const m = t.match(/\/afspraak\/([0-9a-f]{16,})/i);
+      if (!m) continue;
+      const bol = '•'.repeat(m[1].length);
+      if (e.value !== undefined && e.value !== '') e.value = t.replace(m[1], bol);
+      else e.textContent = t.replace(m[1], bol);
+    }
+  };
+  const start = () => {
+    maskeer();
+    new MutationObserver(maskeer).observe(document.body, { childList: true, subtree: true, characterData: true });
+  };
+  if (document.body) start(); else document.addEventListener('DOMContentLoaded', start);
+};
+
 const VERBERG_VERSIE = '.nav-version { visibility: hidden !important; }';
 
 // ── DE TEKSTBALK VOOR EEN GELUIDLOZE FILM ────────────────────────────────────────────────────────────────
@@ -1251,6 +1282,7 @@ for (const [naam, filmVol] of FILMS) {
       stijl.textContent = css;
       document.addEventListener('DOMContentLoaded', () => document.head.appendChild(stijl));
     }, VERBERG_VERSIE);
+    await ctx.addInitScript(MASKEER_BOEKINGSLINK);
     const page = await ctx.newPage();
     const t0 = Date.now();
     const merken = [];       // start-, spraak- en eindtijd per scène, t.o.v. het begin van de opname
