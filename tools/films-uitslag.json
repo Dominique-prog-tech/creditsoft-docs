@@ -1363,5 +1363,137 @@
     "guid": "39315493-ca50-4186-a4a9-9ad296c81550",
     "gepubliceerdeHash": "66c10fd7171d2a29",
     "embed": "https://iframe.mediadelivery.net/embed/741183/39315493-ca50-4186-a4a9-9ad296c81550"
+  },
+  "commissie-instellen-nl": {
+    "film": "commissie-instellen",
+    "taal": "nl-BE",
+    "pagina": "credit-management/commission-schemes",
+    "lengte": 128.96,
+    "routes": [
+      "/commissie/schemas",
+      "/credit-files",
+      "/beheer/commissie-instellingen"
+    ],
+    "app": {
+      "sha": "e8bb224f7c329f3978eb6d9e1385b4992ea6a2b4",
+      "vuil": false
+    },
+    "titel": "Commissie instellen — het schema per dossier",
+    "omschrijving": "Wat u met een aanbrenger afspreekt en hoe u het vastlegt: het overzicht van alle schema’s met hun vorm en toestand, de schemafiche op een dossier met de totale commissie, het deel dat direct uitbetaald wordt en de spreiding over de maanden, de geplande betalingen die daaruit volgen, en de twee kantoorinstellingen die bepalen hoe er afgerekend wordt.",
+    "hash": "ba62771970047916",
+    "guid": null,
+    "hoofdstukken": [
+      {
+        "titel": "Alle schema’s samen",
+        "start": 4.48,
+        "eind": 15.3
+      },
+      {
+        "titel": "De vorm van een schema",
+        "start": 19.13,
+        "eind": 28.65
+      },
+      {
+        "titel": "Het schema van een dossier",
+        "start": 33.6,
+        "eind": 41.96
+      },
+      {
+        "titel": "De totale commissie",
+        "start": 45.58,
+        "eind": 53.89
+      },
+      {
+        "titel": "Direct of gespreid",
+        "start": 57.6,
+        "eind": 69.12
+      },
+      {
+        "titel": "De geplande betalingen",
+        "start": 72.88,
+        "eind": 82.77
+      },
+      {
+        "titel": "De twee kantoorkeuzes",
+        "start": 87.46,
+        "eind": 96.66
+      },
+      {
+        "titel": "Wat er met bestaande gebeurt",
+        "start": 99.98,
+        "eind": 111.92
+      },
+      {
+        "titel": "Tot slot",
+        "start": 116.53,
+        "eind": 126.65
+      }
+    ]
+  },
+  "commissie-instellen-fr": {
+    "film": "commissie-instellen",
+    "taal": "fr-BE",
+    "pagina": "credit-management/commission-schemes",
+    "lengte": 142.96,
+    "routes": [
+      "/commissie/schemas",
+      "/credit-files",
+      "/beheer/commissie-instellingen"
+    ],
+    "app": {
+      "sha": "e8bb224f7c329f3978eb6d9e1385b4992ea6a2b4",
+      "vuil": false
+    },
+    "titel": "Configurer la commission — le schéma par dossier",
+    "omschrijving": "Ce que vous convenez avec un apporteur et comment vous le fixez : l’aperçu de tous les schémas avec leur forme et leur statut, la fiche du schéma sur un dossier avec la commission totale, la part payée immédiatement et l’étalement sur les mois, les paiements planifiés qui en découlent, et les deux paramètres du bureau qui déterminent le mode de décompte.",
+    "hash": "15ba0bf469428dbe",
+    "guid": null,
+    "hoofdstukken": [
+      {
+        "titel": "Tous les schémas ensemble",
+        "start": 4.43,
+        "eind": 16.87
+      },
+      {
+        "titel": "La forme d’un schéma",
+        "start": 20.48,
+        "eind": 32.28
+      },
+      {
+        "titel": "Le schéma d’un dossier",
+        "start": 37.15,
+        "eind": 45.46
+      },
+      {
+        "titel": "La commission totale",
+        "start": 49.06,
+        "eind": 58.25
+      },
+      {
+        "titel": "Immédiat ou étalé",
+        "start": 61.95,
+        "eind": 76.57
+      },
+      {
+        "titel": "Les paiements planifiés",
+        "start": 80.27,
+        "eind": 91.47
+      },
+      {
+        "titel": "Les deux choix du bureau",
+        "start": 96.09,
+        "eind": 107.1
+      },
+      {
+        "titel": "Ce qu’il advient des existants",
+        "start": 110.41,
+        "eind": 122.86
+      },
+      {
+        "titel": "Pour conclure",
+        "start": 127.47,
+        "eind": 140.66
+      }
+    ]
   }
 }

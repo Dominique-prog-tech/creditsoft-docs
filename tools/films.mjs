@@ -222,6 +222,8 @@ async function zichtbareAfspraak(page) {
 // ── De hoofdstuktitel van een scène, per taal ────────────────────────────────────────────────────────────
 // Zie de noot bij `hoofdstukken:` verderop. Ontbreekt `kop`, dan valt dit terug op de interne scènenaam en
 // wordt dat GETELD — de ronde meldt het op het eind, zodat het niet opnieuw jaren onopgemerkt blijft.
+const GAT_DREMPEL = 10;   // seconden stilte vóór een zin waarboven de ronde het meldt
+const langeGaten = [];
 const zwakkeMerken = [];
 const zonderKop = new Set();
 const zonderTaal = new Set();
@@ -1115,6 +1117,103 @@ const FILMS = [
     ],
   }],
 
+  // ─────────────────────────────────────────────────────────────────────────────────────────────────────
+  // FILM 7 van de reeks (§14 nummer 9). Commissie INSTELLEN — het schema, niet de uitbetaling.
+  //
+  // ⚠️ §14 splitst commissie bewust in twee films. Deze gaat over wat je afspreekt met een aanbrenger en
+  // hoe je dat vastlegt; de volgende over wat er daarna uit komt (borderel, vooruitzicht, restanten).
+  // Eén film over allebei zou vier minuten duren en twee verhalen door elkaar halen.
+  //
+  // ⚠️ EEN SCHEMA HANGT AAN EEN DOSSIER, niet aan een aanbrenger: de route is
+  // /credit-files/{dossier}/commissieschema/{schema}. Dat is precies het punt van scène 4.
+  //
+  // ⚠️ NIETS BEWAREN. We openen de schemafiche en tonen de velden; klikken op Bewaren zou een demo-schema
+  // wijzigen en de geplande betalingen herrekenen.
+  ['commissie-instellen', {
+    pagina: 'credit-management/commission-schemes',
+    titel: {
+      nl: 'Commissie instellen — het schema per dossier',
+      fr: 'Configurer la commission — le schéma par dossier',
+    },
+    omschrijving: {
+      nl: 'Wat u met een aanbrenger afspreekt en hoe u het vastlegt: het overzicht van alle schema’s met '
+        + 'hun vorm en toestand, de schemafiche op een dossier met de totale commissie, het deel dat direct '
+        + 'uitbetaald wordt en de spreiding over de maanden, de geplande betalingen die daaruit volgen, en '
+        + 'de twee kantoorinstellingen die bepalen hoe er afgerekend wordt.',
+      fr: 'Ce que vous convenez avec un apporteur et comment vous le fixez : l’aperçu de tous les schémas '
+        + 'avec leur forme et leur statut, la fiche du schéma sur un dossier avec la commission totale, la '
+        + 'part payée immédiatement et l’étalement sur les mois, les paiements planifiés qui en découlent, '
+        + 'et les deux paramètres du bureau qui déterminent le mode de décompte.',
+    },
+    uitvoeringen: { handleiding: { stem: true } },
+    scenes: [
+      { naam: 'overzicht', kop: { nl: 'Alle schema’s samen', fr: 'Tous les schémas ensemble' },
+        doe: async (p) => { await p.goto(`${BASIS}/commissie/schemas`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(2400); },
+        merk: /Kenmerk aanbrenger|Référence apporteur/i,
+        nl: 'Commissie begint bij een schema: wat u met een aanbrenger afspreekt voor één dossier. Dit overzicht toont ze allemaal, met de aanbrenger, de klant en het bedrag.',
+        fr: "La commission commence par un schéma : ce que vous convenez avec un apporteur pour un dossier. Cet aperçu les montre tous, avec l’apporteur, le client et le montant." },
+
+      { naam: 'vorm', kop: { nl: 'De vorm van een schema', fr: 'La forme d’un schéma' },
+        doe: async (p) => { await beweegNaar(p, p.getByText(/Alle vormen|Toutes les formes/i).first()); await p.waitForTimeout(1600); },
+        merk: /Alle vormen|Toutes les formes/i,
+        nl: 'Een schema heeft een vorm en een toestand. De vorm zegt hoe er betaald wordt; de toestand of het al loopt, nog gepland is, of afgerond.',
+        fr: "Un schéma a une forme et un statut. La forme indique comment le paiement se fait ; le statut s’il est en cours, encore planifié, ou terminé." },
+
+      { naam: 'schema', kop: { nl: 'Het schema van een dossier', fr: 'Le schéma d’un dossier' },
+        doe: async (p) => {
+          await p.goto(`${BASIS}/credit-files/${ID.dossierMetSchema}/commissieschema/${ID.schema}`);
+          await p.waitForLoadState('networkidle'); await p.waitForTimeout(2600);
+        },
+        merk: /Het deel dat niet direct|La part non payée/i,
+        nl: 'Een schema hangt altijd aan één dossier. U opent het vanuit dat dossier, en bovenaan staat het dossiernummer waar het bij hoort.',
+        fr: "Un schéma est toujours rattaché à un dossier. Vous l’ouvrez depuis ce dossier, et le numéro du dossier figure en haut." },
+
+      { naam: 'bedrag', kop: { nl: 'De totale commissie', fr: 'La commission totale' },
+        doe: async (p) => { await beweegNaar(p, p.getByText(/Totale commissie|Commission totale/i).first()); await p.waitForTimeout(1700); },
+        merk: /Totale commissie|Commission totale/i,
+        nl: 'Bovenaan legt u vast wie de aanbrenger is, hoeveel commissie er in totaal tegenover staat, en vanaf welke datum ze loopt.',
+        fr: "En haut, vous fixez qui est l’apporteur, quel montant total de commission y correspond, et à partir de quelle date elle court." },
+
+      { naam: 'spreiding', kop: { nl: 'Direct of gespreid', fr: 'Immédiat ou étalé' },
+        doe: async (p) => { await beweegNaar(p, p.getByText(/Aantal maanden|Nombre de mois/i).first()); await p.waitForTimeout(1800); },
+        merk: /Aantal maanden|Nombre de mois/i,
+        nl: 'Daaronder bepaalt u hoe er betaald wordt. Een deel kan direct, de rest wordt gelijk verdeeld over een aantal maanden — u vult het percentage en het aantal in, de rest volgt daaruit.',
+        fr: "En dessous, vous déterminez comment le paiement se fait. Une part peut être immédiate, le reste est réparti également sur un nombre de mois — vous saisissez le pourcentage et le nombre, le reste en découle." },
+
+      { naam: 'geplande', kop: { nl: 'De geplande betalingen', fr: 'Les paiements planifiés' },
+        doe: async (p) => { await beweegNaar(p, p.getByText(/Geplande betalingen|Paiements planifiés/i).first()); await p.waitForTimeout(1800); },
+        merk: /Geplande betalingen|Paiements planifiés/i,
+        nl: 'Uit die twee getallen rekent CreditSoft de geplande betalingen uit: welk bedrag in welke maand. Die lijst is wat later op een borderel belandt.',
+        fr: "À partir de ces deux chiffres, CreditSoft calcule les paiements planifiés : quel montant, quel mois. C’est cette liste qui aboutira plus tard sur un bordereau." },
+
+      { naam: 'instellingen', kop: { nl: 'De twee kantoorkeuzes', fr: 'Les deux choix du bureau' },
+        doe: async (p) => { await p.goto(`${BASIS}/beheer/commissie-instellingen`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(2400); },
+        merk: /kwartaal|trimestre/i,
+        nl: 'Twee keuzes gelden voor uw hele kantoor. De eerste: rekent u af per maand of per kwartaal. Dat bepaalt wat er in één borderel valt.',
+        fr: "Deux choix valent pour tout votre bureau. Le premier : décomptez-vous par mois ou par trimestre. Cela détermine ce qu’un bordereau regroupe." },
+
+      { naam: 'bestaande', kop: { nl: 'Wat er met bestaande gebeurt', fr: 'Ce qu’il advient des existants' },
+        // ⚠️ GEEN LOCATOR MET EEN .catch() ERACHTER. Hier stond `beweegNaar(getByText(/…|restent tels/i))`
+        // met een terugval die scrolde als het misliep. In het Nederlands matchte het, in het Frans niet —
+        // en dan wachtte Playwright eerst 30 SECONDEN op een element dat er niet kwam vóór de terugval
+        // greep. De film slaagde: het merkteken klopte, de scène duurde alleen 33,7 s in plaats van 3,5 s,
+        // met dertig seconden dode lucht erin. Een terugval die niet faalt maar wél wacht, is even stil.
+        //
+        // Deze scène wijst niet naar één element; ze toont een stuk tekst. Scrollen is dan de handeling, en
+        // die kan niet mislukken.
+        doe: async (p) => { await p.mouse.wheel(0, 320); await p.waitForTimeout(1800); },
+        merk: /Borderellen die al bestaan|bordereaux/i,
+        nl: 'Wijzigt u die keuze, dan blijven de borderellen die al bestaan zoals ze zijn. Ze geldt vanaf de volgende ronde — een afrekening die al gemaakt is, verandert nooit met terugwerkende kracht.',
+        fr: "Si vous modifiez ce choix, les bordereaux existants restent tels quels. Il vaut à partir de la série suivante — un décompte déjà établi ne change jamais rétroactivement." },
+
+      { naam: 'slot', kop: { nl: 'Tot slot', fr: 'Pour conclure' },
+        doe: async (p) => { await p.goto(`${BASIS}/commissie/schemas`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(2200); },
+        merk: /Kenmerk aanbrenger|Référence apporteur/i,
+        nl: 'Staat het schema goed, dan hoeft u er niet meer naar om te kijken. In de volgende film zien we wat er dan uit komt: het borderel, het vooruitzicht en wat blijft liggen.',
+        fr: "Si le schéma est correct, vous n’avez plus à vous en occuper. Dans le film suivant, nous verrons ce qui en découle : le bordereau, les prévisions et ce qui reste en souffrance." },
+    ],
+  }],
+
   ['kredietdossiers-basis', {
     pagina: 'credit-management/credit-files',
     // ⚠️ EEN MENSELIJKE TITEL EN OMSCHRIJVING, per taal. De technische naam ("kredietdossiers-basis-nl") is
@@ -1537,6 +1636,22 @@ for (const [naam, filmVol] of FILMS) {
         scenes: film.scenes.map(sc => [sc.naam, sc[kort], String(sc.doe)]),
       })).digest('hex').slice(0, 16),
       guid: uitslag[sleutel]?.guid ?? null,     // blijft staan tot bunny.mjs hem vervangt
+      // ⚠️ HOE LANG STAAT ER NIETS TE GEBEUREN? Een scène die op een element wacht dat nooit komt, levert
+      // dode lucht op — en de ronde meldt gewoon "✅ film gemaakt". Op 01/09/2026 stond er 33,7 s stilte in
+      // de Franse commissie-film omdat een locator daar niet matchte en pas ná 30 s terugviel. De film was
+      // technisch in orde: het merkteken klopte, de scènes stonden er. Alleen keek niemand naar de TIJD.
+      //
+      // Het gat = van het einde van de vorige zin tot het begin van de volgende. Normaal is dat het ritme
+      // (AANLOOP + ADEM ≈ 1,5 s) plus de handeling; boven de tien seconden is er iets aan het wachten.
+      ...(() => {
+        let vorig = 0;
+        merken.forEach((m, i) => {
+          const gat = m.spraak - vorig;
+          if (gat > GAT_DREMPEL) langeGaten.push(`${naam}-${kort} · ${film.scenes[i].naam}: ${gat.toFixed(1)}s stilte vóór de zin`);
+          vorig = m.spraak + duren[i];
+        });
+        return {};
+      })(),
       hoofdstukken: merken.map((m, i) => ({
         // ⚠️ DE HOOFDSTUKTITEL IS WAT DE KIJKER ZIET, geen sleutel. Hier stond `film.scenes[i].naam`, en
         // dus zag een klant in de Bunny-speler "lijst", "kolommen", "zoeken" staan — onze interne namen,
@@ -1568,6 +1683,11 @@ if (zonderKop.size) {
   console.log(`\n◐ ${zonderKop.size} scène(s) zonder hoofdstuktitel — de speler toont dan de INTERNE naam:`);
   console.log('   ' + [...zonderKop].join(', '));
   console.log("   Geef die scène een `kop: { nl: '…', fr: '…' }`; dat is wat de kijker in de speler leest.");
+}
+if (langeGaten.length) {
+  console.log(`\n◐ ${langeGaten.length} scène(s) met meer dan ${GAT_DREMPEL} seconden stilte vóór de zin:`);
+  langeGaten.forEach(r => console.log(`   ${r}`));
+  console.log('   Meestal wacht daar een locator op iets dat niet komt. De film slaagt, maar hij staat stil.');
 }
 if (zwakkeMerken.length) {
   console.log(`\n◐ ${zwakkeMerken.length} merkteken(s) matchen ÓÓK op de menutekst — ze bewijzen dus niet dat`);
