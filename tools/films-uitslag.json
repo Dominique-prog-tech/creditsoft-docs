@@ -1788,7 +1788,7 @@
     "film": "dashboard",
     "taal": "nl-BE",
     "pagina": "getting-started/dashboard",
-    "lengte": 153.04,
+    "lengte": 155,
     "routes": [
       "/dashboard",
       "/beheer/dashboard-fases"
@@ -1809,48 +1809,48 @@
       },
       {
         "titel": "De vier tegels",
-        "start": 21.16,
-        "eind": 30.95
+        "start": 21.52,
+        "eind": 31.31
       },
       {
         "titel": "Wat vandaag actie vraagt",
-        "start": 34.66,
-        "eind": 48.36
+        "start": 35.38,
+        "eind": 49.08
       },
       {
         "titel": "Gerealiseerd volume",
-        "start": 52.07,
-        "eind": 61.73
+        "start": 53.14,
+        "eind": 62.8
       },
       {
         "titel": "Per instelling en per collega",
-        "start": 65.43,
-        "eind": 74.16
+        "start": 66.86,
+        "eind": 75.59
       },
       {
         "titel": "Geen eigenaar is werk",
-        "start": 77.87,
-        "eind": 88.97
+        "start": 79.64,
+        "eind": 90.74
       },
       {
         "titel": "De pijplijn",
-        "start": 92.68,
-        "eind": 104.47
+        "start": 94.8,
+        "eind": 106.6
       },
       {
         "titel": "De fases zijn van u",
-        "start": 109.58,
-        "eind": 123.19
+        "start": 111.57,
+        "eind": 125.18
       },
       {
         "titel": "Waarom uw scherm anders is",
-        "start": 128.38,
-        "eind": 141.29
+        "start": 130.47,
+        "eind": 143.38
       },
       {
         "titel": "Tot slot",
-        "start": 144,
-        "eind": 150.64
+        "start": 146.09,
+        "eind": 152.73
       }
     ]
   },
@@ -1858,7 +1858,7 @@
     "film": "dashboard",
     "taal": "fr-BE",
     "pagina": "getting-started/dashboard",
-    "lengte": 181.2,
+    "lengte": 182.96,
     "routes": [
       "/dashboard",
       "/beheer/dashboard-fases"
@@ -1874,53 +1874,53 @@
     "hoofdstukken": [
       {
         "titel": "L’année pilote tout",
-        "start": 5.29,
-        "eind": 20.62
+        "start": 5.31,
+        "eind": 20.63
       },
       {
         "titel": "Les quatre tuiles",
-        "start": 24.25,
-        "eind": 36.04
+        "start": 24.62,
+        "eind": 36.41
       },
       {
         "titel": "Ce qui demande une action",
-        "start": 39.76,
-        "eind": 56.57
+        "start": 40.47,
+        "eind": 57.28
       },
       {
         "titel": "Volume réalisé",
-        "start": 60.27,
-        "eind": 72.62
+        "start": 61.34,
+        "eind": 73.69
       },
       {
         "titel": "Par institution et par collègue",
-        "start": 76.34,
-        "eind": 87.62
+        "start": 77.75,
+        "eind": 89.03
       },
       {
         "titel": "Sans responsable, c’est du travail",
-        "start": 91.33,
-        "eind": 105.08
+        "start": 93.09,
+        "eind": 106.84
       },
       {
         "titel": "Le pipeline",
-        "start": 108.79,
-        "eind": 123.98
+        "start": 110.89,
+        "eind": 126.07
       },
       {
         "titel": "Les phases sont les vôtres",
-        "start": 129.07,
-        "eind": 144.81
+        "start": 131.05,
+        "eind": 146.79
       },
       {
         "titel": "Pourquoi votre écran diffère",
-        "start": 150.36,
-        "eind": 167.87
+        "start": 152.14,
+        "eind": 169.64
       },
       {
         "titel": "Pour conclure",
-        "start": 170.59,
-        "eind": 178.91
+        "start": 172.35,
+        "eind": 180.66
       }
     ]
   }

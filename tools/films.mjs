@@ -202,9 +202,31 @@ const CURSOR = `
 `;
 
 // ── Bewegen, niet springen (§3.2) ────────────────────────────────────────────────────────────────────────
+// ⚠️ EERST IN BEELD BRENGEN, DAN PAS DE MUIS. Deze functie mat vroeger meteen de `boundingBox` en bewoog
+// erheen. Stond het element ONDER DE VOUW, dan gaf die box een y buiten het venster: de muis ging naar een
+// punt dat niemand ziet, de scène toonde de bovenkant van de pagina, en er faalde NIETS. Dominique zag het
+// op 01/09/2026 op het dashboard — het blok "Aan de slag" duwt daar alles omlaag, en van de grafieken was
+// enkel de titel te zien. Het raakte élke film met een lange pagina, niet enkel deze.
+//
+// `block: 'center'` en niet `scrollIntoViewIfNeeded()`: dat laatste schuift het element net binnen de rand,
+// en dan staat je onderwerp op de onderste pixelrij. Centreren leest als een bewuste camerabeweging.
 async function beweegNaar(page, loc) {
+  await loc.evaluate(el => el.scrollIntoView({ block: 'center', inline: 'nearest', behavior: 'instant' }))
+    .catch(() => { /* een element zonder eigen scrollcontext: dan gewoon meten */ });
+  await page.waitForTimeout(350);
+
   const doos = await loc.boundingBox();
   if (!doos) throw new Error('element heeft geen plaats op het scherm');
+
+  // ⚠️ EN CONTROLEER DAT HET ER ÉCHT STAAT. Zonder deze regel levert een scène die naar iets buiten beeld
+  // wijst gewoon een film op — een geslaagde ronde boven een beeld dat het onderwerp niet toont. Dat is
+  // precies de faalvorm die hierboven beschreven staat, en ze hoort te FALEN in plaats van te zwijgen.
+  const venster = page.viewportSize();
+  if (venster && (doos.y + doos.height < 0 || doos.y > venster.height)) {
+    throw new Error(`element staat buiten beeld na scrollen (y=${Math.round(doos.y)}, venster ${venster.height}) `
+      + '— de scène zou iets tonen wat de kijker niet ziet');
+  }
+
   await page.mouse.move(doos.x + doos.width / 2, doos.y + doos.height / 2, { steps: 25 });
   await page.waitForTimeout(180);
 }
