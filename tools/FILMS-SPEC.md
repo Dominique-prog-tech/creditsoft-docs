@@ -276,3 +276,96 @@ Commerciële video's (3 à 5, kortere montage, muziek — later te knippen uit d
    ⚠️ De ACCOUNT-sleutel is daarbij overschreven door de library-sleutel. Wil je account-breed beheer
    (een library voor CleanOps of Nimble), zet die dan opnieuw én onder een andere naam.
 3. **De selectie maken.** Welke vijftien films, volgens de regel uit §1: geen referentiepagina's.
+
+---
+
+## 12. VOORSTEL — drie luiken, één pijplijn (01/09/2026, nog niet besloten)
+
+Dominique wil het filmwerk uitbreiden van de handleiding naar **drie** bestemmingen: de handleiding, de
+website, en later social media. Dit hoofdstuk beschrijft hoe dat kan zonder drie generatoren te krijgen die
+uit elkaar lopen. **Het is een voorstel, geen beslissing.**
+
+### 12.1 De kern: één scenario, meerdere uitvoeringen
+
+Wat de drie delen delen is het **scenario** — de route, de handelingen, het merkteken per scène. Dat is ook
+het duurste stuk om te maken en te onderhouden: het breekt bij elke schermwijziging.
+
+Wat verschilt is de **uitvoering**: duur, geluid, ondertitels, beeldverhouding, bestemming.
+
+```js
+['kredietdossiers-basis', {
+  pagina: 'credit-management/credit-files',
+  scenes: [ /* … het bestaande scenario, ongewijzigd … */ ],
+
+  uitvoeringen: {
+    handleiding: { talen: ['nl-BE','fr-BE'], stem: true,  ondertitels: 'beschikbaar', doel: 'bunny' },
+    website:     { talen: ['nl-BE','fr-BE'], stem: false, ondertitels: 'ingebrand',   doel: 'bunny',
+                   scenes: ['lijst','openen','gegevens','documenten','slot'] },   // een SELECTIE
+  },
+}],
+```
+
+Een uitvoering kiest **welke scènes** ze gebruikt en **hoe** ze klinkt. De scènes zelf blijven één bron.
+
+⚠️ **Waarom een selectie en geen aparte scènelijst:** een websitefilm die eigen scènes heeft, verouderd
+apart en breekt apart. Een selectie uit dezelfde lijst erft elke reparatie.
+
+### 12.2 De website vraagt een ANDER soort film, geen kortere
+
+**Elke browser start video gedempt.** Wie niet klikt, hoort niets. Onze pijplijn is precies andersom
+gebouwd — het beeld wácht op de zin (§3.1). Voor de website moet het beeld de boodschap dragen.
+
+| | handleiding | website |
+|---|---|---|
+| duur | 90–100 s | 30–45 s |
+| geluid | draagt het verhaal | mag ontbreken |
+| ondertitels | standaard **uit** | **ingebrand** of standaard aan |
+| kijker | gebruiker die iets zoekt | bezoeker die twijfelt |
+
+Concreet in de pijplijn: de tijdsturing van §3.1 blijft, maar bij `stem: false` komt de **narratie als tekst
+in beeld** en bepaalt een leessnelheid de scèneduur in plaats van een audiofragment. De rest — cursor,
+merktekens, montage, upload — verandert niet.
+
+### 12.3 ⚠️ De website heeft DRIE talen, de app TWEE
+
+`creditsoft-website` draagt `nl`, `fr` én `en` (11 pagina's per taal). De app spreekt enkel `nl-BE` en
+`fr-BE` — `Program.cs` zet `AdmLocalisatie.Opties("nl-BE", "fr-BE")`. Een Engelse film zou dus een
+Nederlandstalig scherm tonen.
+
+Drie eerlijke keuzes: geen Engelse film · Engelse ondertitels over Nederlands beeld · de Engelse pagina de
+Nederlandse film geven. **Voorstel: het tweede.** Voor een productdemo ís het scherm het product, en een
+Engelstalige bezoeker die een Nederlands scherm ziet weet meteen wat hij koopt.
+
+### 12.4 Waar de film op de website komt
+
+De site is Astro met gedeelde componenten en dunne routes per taal; teksten lopen via
+`useTranslations(lang)`. Een film toevoegen is dus **één component plus één regel in de vertaaltabel** —
+hetzelfde patroon als de MkDocs-hook, en even goed te onderhouden.
+
+Bunny zet geen cookies, dus geen toestemmingsbanner. Op een verkooppagina weegt dat zwaarder dan op een
+handleiding.
+
+⚠️ **Niet enkel de hero.** Op `functionaliteit` en `van-bezoeker-tot-klant` staat iemand die al
+geïnteresseerd is; daar overtuigt een film meer dan bij een bezoeker die net binnenkomt.
+
+### 12.5 Social: het lastigste, en niet om een technische reden
+
+Verticaal 9:16 van een **desktoptoepassing** ziet er niet uit: onze opname is 1920×1080 en een verticale
+uitsnede toont een reepje. CreditSoft heeft geen mobiele weergave om op terug te vallen.
+
+Werkbare kaders: vierkant met het scherm in een band en tekst erboven · inzoomen op één zone (de
+beeldgenerator kan al element-uitsnedes) · het scherm in een laptopkader.
+
+Maar het echte werk is **redactioneel**: social vraagt een haak in de eerste twee seconden. Dat valt niet te
+automatiseren, en daarom hoort dit luik laatst.
+
+### 12.6 Voorgestelde volgorde
+
+1. ~~Franse handleidingfilm hernemen~~ ✅ gedaan 01/09/2026
+2. **Eén** websitefilm end-to-end — het geluidloze formaat bouwen, op de homepage, in drie talen
+3. Pas dan de rest van de website, en de selectie voor de handleiding
+4. Social als laatste, met een bewuste keuze van het kader
+
+⚠️ Punt 2 is met opzet één film en geen vijf. Dat werkte bij de handleiding: hoofdstukken-vóór-verwerking,
+de uitslagtabel in git, en de audiocache waren alle drie dingen die we bij vijftien films vijftien keer
+betaald zouden hebben.
