@@ -480,7 +480,7 @@
     "titel": "Uw weg vinden in CreditSoft — het scherm, het zoeken en uw voorkeuren",
     "omschrijving": "De eerste rondleiding: het startscherm met het blok Aan de slag, het menu links, zoeken over uw hele omgeving met ⌘K, de hulp bij elk scherm en de twee assistenten, werken in een lijst (sorteren, filteren, exporteren) en uw eigen voorkeuren — grootte, thema en taal.",
     "hash": "64aed0978d2fea49",
-    "guid": null,
+    "guid": "47764b3b-31b8-4d3f-b766-695c44a88810",
     "hoofdstukken": [
       {
         "titel": "Het startscherm",
@@ -537,7 +537,11 @@
         "start": 135.08,
         "eind": 140.15
       }
-    ]
+    ],
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/47764b3b-31b8-4d3f-b766-695c44a88810/thumbnail.jpg",
+    "gepubliceerdOp": "2026-09-01T08:06:54.75",
+    "gepubliceerdeHash": "64aed0978d2fea49",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/47764b3b-31b8-4d3f-b766-695c44a88810"
   },
   "aan-de-slag-fr": {
     "film": "aan-de-slag",
@@ -555,7 +559,7 @@
     "titel": "Se repérer dans CreditSoft — l’écran, la recherche et vos préférences",
     "omschrijving": "La première visite guidée : l’écran d’accueil avec le bloc Pour commencer, le menu de gauche, la recherche dans tout votre environnement avec ⌘K, l’aide sur chaque écran et les deux assistants, le travail dans une liste (trier, filtrer, exporter) et vos préférences — taille, thème et langue.",
     "hash": "a68528c5f0ca32d3",
-    "guid": null,
+    "guid": "712272ce-a0d1-4323-845a-c9c9ce20a9e0",
     "hoofdstukken": [
       {
         "titel": "L'écran d'accueil",
@@ -612,6 +616,10 @@
         "start": 154.41,
         "eind": 160.58
       }
-    ]
+    ],
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/712272ce-a0d1-4323-845a-c9c9ce20a9e0/thumbnail.jpg",
+    "gepubliceerdOp": "2026-09-01T08:07:11.072",
+    "gepubliceerdeHash": "a68528c5f0ca32d3",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/712272ce-a0d1-4323-845a-c9c9ce20a9e0"
   }
 }
