@@ -133,6 +133,7 @@ plugins:
             # waarvan de helft ruis was, en zag daardoor "Contracten overzicht"
             # over het hoofd toen "Contractenoverzicht" nodig was.
             Home: Accueil
+            Video's: Vidéos
             Aan de slag: Premiers pas
             Navigeren in CreditSoft: Naviguer dans CreditSoft
             Tweestapsverificatie (2FA): Vérification en deux étapes (2FA)
@@ -222,6 +223,10 @@ hooks:
 
 nav:
   - Home: index.md
+  # Eén overzicht van alle films. De LIJST wordt gegenereerd door hooks/films.py uit
+  # tools/films-uitslag.json — met de hand bijhouden zou betekenen dat hij stil veroudert zodra
+  # er een film bij komt, en precies dat gebeurt bij elke lijst die niemand hoeft bij te werken.
+  - "Video's": videos.md
 
   - Aan de slag:
     - Navigeren in CreditSoft: getting-started/navigatie.md
