@@ -1718,6 +1718,77 @@ const FILMS = [
     ],
   }],
 
+  // ─────────────────────────────────────────────────────────────────────────────────────────────────────
+  // FILM 13 van de reeks (§14 nummer 16), maar met een ANDERE SNEDE dan daar stond.
+  //
+  // ⚠️ §14 zei "klantenportaal — door de ogen van de klant". Dat toont film 5 (documentketen) al: de scène
+  // `klantblik` opent het portaal precies zoals de klant het krijgt. Nog een film over datzelfde beeld zou
+  // herhaling zijn.
+  //
+  // Wat er NIET in zat is de andere kant: hoe je het portaal je eigen gezicht geeft. Dat is een echt
+  // onderwerp — een klant die een link krijgt, moet ZIJN makelaar herkennen en niet een softwarepakket.
+  //
+  // ⚠️ EN NIET het AANBRENGERSportaal. `portaal/index` en `portaal/overzicht` gaan daarover, en dat luik is
+  // uitgesteld tot het af is (zie de noot bij `aanbrengers` in §14).
+  ['klantportaal', {
+    pagina: 'beheer/klantportaal',
+    titel: {
+      nl: 'Het klantenportaal — hoe uw klant u ziet',
+      fr: 'Le portail client — comment votre client vous voit',
+    },
+    omschrijving: {
+      nl: 'Uw klant krijgt een link en belandt op een portaal. Dit is waar u bepaalt wat hij daar ziet: uw '
+        + 'naam, uw kleur, uw logo en een welkomsttekst in beide talen. Elk veld dat u leeg laat, valt terug '
+        + 'op uw bedrijfsfiche — u hoeft dus niets in te vullen om te beginnen. En tot slot het resultaat, '
+        + 'zoals uw klant het krijgt.',
+      fr: 'Votre client reçoit un lien et arrive sur un portail. C’est ici que vous déterminez ce qu’il y '
+        + 'voit : votre nom, votre couleur, votre logo et un texte d’accueil dans les deux langues. Chaque '
+        + 'champ laissé vide reprend votre fiche d’entreprise — vous n’avez donc rien à remplir pour '
+        + 'démarrer. Et pour finir le résultat, tel que votre client le reçoit.',
+    },
+    uitvoeringen: { handleiding: { stem: true } },
+    scenes: [
+      { naam: 'scherm', kop: { nl: 'Uw portaal instellen', fr: 'Configurer votre portail' },
+        doe: async (p) => { await p.goto(`${BASIS}/beheer/klantportaal`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(2600); },
+        merk: /Naam zoals de klant hem ziet|Nom tel que le client le voit/i,
+        nl: 'Wanneer u een klant uitnodigt, krijgt hij een link naar zijn portaal. Op dit scherm bepaalt u wat hij daar te zien krijgt.',
+        fr: "Lorsque vous invitez un client, il reçoit un lien vers son portail. Sur cet écran, vous déterminez ce qu’il y verra." },
+
+      { naam: 'niets', kop: { nl: 'U hoeft niets in te vullen', fr: 'Rien à remplir' },
+        doe: async (p) => { await beweegNaar(p, p.getByText(/bedrijfsfiche over|fiche d.entreprise/i).first()); await p.waitForTimeout(1800); },
+        merk: /bedrijfsfiche|fiche d.entreprise/i,
+        nl: 'Om te beginnen hoeft u hier niets te doen. Elk veld dat u leeg laat, neemt de gegevens van uw bedrijfsfiche over — naam, logo, contactgegevens.',
+        fr: "Pour démarrer, vous n’avez rien à faire ici. Chaque champ laissé vide reprend les données de votre fiche d’entreprise — nom, logo, coordonnées." },
+
+      { naam: 'gezicht', kop: { nl: 'Uw naam en uw kleur', fr: 'Votre nom et votre couleur' },
+        doe: async (p) => { await beweegNaar(p, p.getByText(/Hoofdkleur|Couleur principale/i).first()); await p.waitForTimeout(1800); },
+        merk: /Hoofdkleur|Couleur principale/i,
+        nl: 'Wilt u het wél naar uw hand zetten: de naam zoals uw klant hem ziet, uw hoofdkleur, de kopbalk en uw logo. Uw klant herkent zo zijn makelaar, en niet een softwarepakket.',
+        fr: "Si vous souhaitez l’adapter : le nom tel que votre client le voit, votre couleur principale, le bandeau et votre logo. Votre client reconnaît ainsi son courtier, et non un logiciel." },
+
+      { naam: 'welkomst', kop: { nl: 'De welkomsttekst', fr: 'Le texte d’accueil' },
+        doe: async (p) => { await beweegNaar(p, p.getByText(/Welkomsttitel \(FR\)|Titre d.accueil \(FR\)/i).first()); await p.waitForTimeout(1800); },
+        merk: /Welkomsttitel|Titre d.accueil/i,
+        nl: 'De welkomsttitel en -tekst geeft u in beide talen op. Welke uw klant te zien krijgt, hangt af van zijn documenttaal — die staat op zijn relatiefiche.',
+        fr: "Le titre et le texte d’accueil se saisissent dans les deux langues. Celui que verra votre client dépend de sa langue de documents — indiquée sur sa fiche de relation." },
+
+      { naam: 'resultaat', kop: { nl: 'Wat uw klant krijgt', fr: 'Ce que reçoit votre client' },
+        doe: async (p) => {
+          await p.goto(`${BASIS}/klantportaal/voorbeeld/${ID.dossierMetSchema}`);
+          await p.waitForLoadState('networkidle'); await p.waitForTimeout(2600);
+        },
+        merk: /Welkom bij uw dossier|Bienvenue dans votre dossier/i,
+        nl: 'En dit is het resultaat: uw naam bovenaan, uw kleuren, uw welkomsttekst — en daaronder de stukken die u van hem nodig heeft.',
+        fr: "Et voici le résultat : votre nom en haut, vos couleurs, votre texte d’accueil — et en dessous les pièces dont vous avez besoin de lui." },
+
+      { naam: 'slot', kop: { nl: 'Tot slot', fr: 'Pour conclure' },
+        doe: async (p) => { await p.goto(`${BASIS}/beheer/klantportaal`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(2400); },
+        merk: /Naam zoals de klant hem ziet|Nom tel que le client le voit/i,
+        nl: 'Eén keer instellen, en elke klant die u daarna uitnodigt komt op úw portaal terecht.',
+        fr: "Une seule configuration, et chaque client que vous invitez ensuite arrive sur VOTRE portail." },
+    ],
+  }],
+
   ['kredietdossiers-basis', {
     pagina: 'credit-management/credit-files',
     // ⚠️ EEN MENSELIJKE TITEL EN OMSCHRIJVING, per taal. De technische naam ("kredietdossiers-basis-nl") is

@@ -2023,7 +2023,7 @@
     "titel": "De mailketen — van uw gegevens tot een verzonden bericht",
     "omschrijving": "Wat er allemaal klopt moet zijn vóór er één mail vertrekt, in de volgorde waarin het samenhangt: uw bedrijfsfiche die de variabelen vult, het verzendadres waar alles vanuit vertrekt, de tweetalige sjablonen met hun variabelenpalet en voorbeeld, en tot slot waar u ziet of een bericht werkelijk afgeleverd is — inclusief de reden wanneer dat niet lukte.",
     "hash": "5131f763f2a7647c",
-    "guid": null,
+    "guid": "183846f8-953c-44a2-a87f-936b102a75a9",
     "hoofdstukken": [
       {
         "titel": "Uw eigen gegevens",
@@ -2065,7 +2065,11 @@
         "start": 119.15,
         "eind": 130.39
       }
-    ]
+    ],
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/183846f8-953c-44a2-a87f-936b102a75a9/thumbnail.jpg",
+    "gepubliceerdOp": "2026-09-01T18:57:13.9",
+    "gepubliceerdeHash": "5131f763f2a7647c",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/183846f8-953c-44a2-a87f-936b102a75a9"
   },
   "mailketen-fr": {
     "film": "mailketen",
@@ -2086,7 +2090,7 @@
     "titel": "La chaîne d’e-mails — de vos données au message envoyé",
     "omschrijving": "Tout ce qui doit être en ordre avant qu’un seul e-mail parte, dans l’ordre où cela s’enchaîne : votre fiche d’entreprise qui alimente les variables, l’adresse d’expédition d’où tout part, les modèles bilingues avec leur panneau de variables et leur aperçu, et enfin l’endroit où vous voyez si un message a réellement été distribué — motif compris lorsque cela échoue.",
     "hash": "d4b02a35b2541d51",
-    "guid": null,
+    "guid": "58a8de38-3eba-4998-a12e-106f6fd27b57",
     "hoofdstukken": [
       {
         "titel": "Vos propres données",
@@ -2127,6 +2131,110 @@
         "titel": "Pour conclure",
         "start": 135.58,
         "eind": 148.86
+      }
+    ],
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/58a8de38-3eba-4998-a12e-106f6fd27b57/thumbnail.jpg",
+    "gepubliceerdOp": "2026-09-01T18:58:47.04",
+    "gepubliceerdeHash": "d4b02a35b2541d51",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/58a8de38-3eba-4998-a12e-106f6fd27b57"
+  },
+  "klantportaal-nl": {
+    "film": "klantportaal",
+    "taal": "nl-BE",
+    "pagina": "beheer/klantportaal",
+    "lengte": 81.04,
+    "routes": [
+      "/beheer/klantportaal",
+      "/klantportaal/voorbeeld"
+    ],
+    "app": {
+      "sha": "e8bb224f7c329f3978eb6d9e1385b4992ea6a2b4",
+      "vuil": false
+    },
+    "titel": "Het klantenportaal — hoe uw klant u ziet",
+    "omschrijving": "Uw klant krijgt een link en belandt op een portaal. Dit is waar u bepaalt wat hij daar ziet: uw naam, uw kleur, uw logo en een welkomsttekst in beide talen. Elk veld dat u leeg laat, valt terug op uw bedrijfsfiche — u hoeft dus niets in te vullen om te beginnen. En tot slot het resultaat, zoals uw klant het krijgt.",
+    "hash": "7befb05fd43224a4",
+    "guid": null,
+    "hoofdstukken": [
+      {
+        "titel": "Uw portaal instellen",
+        "start": 4.59,
+        "eind": 11.6
+      },
+      {
+        "titel": "U hoeft niets in te vullen",
+        "start": 15.67,
+        "eind": 25.89
+      },
+      {
+        "titel": "Uw naam en uw kleur",
+        "start": 29.94,
+        "eind": 41.32
+      },
+      {
+        "titel": "De welkomsttekst",
+        "start": 45.39,
+        "eind": 55.28
+      },
+      {
+        "titel": "Wat uw klant krijgt",
+        "start": 59.99,
+        "eind": 68.53
+      },
+      {
+        "titel": "Tot slot",
+        "start": 73.26,
+        "eind": 78.65
+      }
+    ]
+  },
+  "klantportaal-fr": {
+    "film": "klantportaal",
+    "taal": "fr-BE",
+    "pagina": "beheer/klantportaal",
+    "lengte": 91.12,
+    "routes": [
+      "/beheer/klantportaal",
+      "/klantportaal/voorbeeld"
+    ],
+    "app": {
+      "sha": "e8bb224f7c329f3978eb6d9e1385b4992ea6a2b4",
+      "vuil": false
+    },
+    "titel": "Le portail client — comment votre client vous voit",
+    "omschrijving": "Votre client reçoit un lien et arrive sur un portail. C’est ici que vous déterminez ce qu’il y voit : votre nom, votre couleur, votre logo et un texte d’accueil dans les deux langues. Chaque champ laissé vide reprend votre fiche d’entreprise — vous n’avez donc rien à remplir pour démarrer. Et pour finir le résultat, tel que votre client le reçoit.",
+    "hash": "ed1360d46f46c79b",
+    "guid": null,
+    "hoofdstukken": [
+      {
+        "titel": "Configurer votre portail",
+        "start": 4.56,
+        "eind": 13.85
+      },
+      {
+        "titel": "Rien à remplir",
+        "start": 17.94,
+        "eind": 28.16
+      },
+      {
+        "titel": "Votre nom et votre couleur",
+        "start": 32.22,
+        "eind": 46.25
+      },
+      {
+        "titel": "Le texte d’accueil",
+        "start": 50.31,
+        "eind": 62.39
+      },
+      {
+        "titel": "Ce que reçoit votre client",
+        "start": 67.09,
+        "eind": 77.44
+      },
+      {
+        "titel": "Pour conclure",
+        "start": 82.08,
+        "eind": 88.77
       }
     ]
   }
