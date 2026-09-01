@@ -455,3 +455,51 @@ node tools/verouderd.mjs        # vóór elke push die een scherm geraakt heeft
 Dat staat ook in het geheugen van de sessie, zodat het niet van iemands aandacht afhangt. Loopt hij groen,
 dan is er niets te doen; meldt hij iets, dan is hernemen één commando per generator.
 
+---
+
+## 14. DE SELECTIE — welke films, en in welke volgorde (01/09/2026)
+
+§9 fase 2 zei "de veertien andere films" zonder te zeggen wélke. Hier staat het, want een keuze die alleen
+in een gesprek leeft, is bij de volgende sessie weg.
+
+**De regel uit §1 toegepast:** een film toont een **weg**, geen scherm. Daarom is de indeling hieronder niet
+de inhoudstafel van de handleiding — verschillende pagina's zitten in één film omdat ze samen één taak zijn,
+en verschillende pagina's zitten in géén enkele film omdat je ze opzoekt in plaats van bekijkt.
+
+**De volgorde is die waarin een nieuwe gebruiker ze tegenkomt**, niet die waarin ze gemaakt worden. Film 4
+bestaat al; dat een latere film eerst gemaakt is, verandert niets aan waar hij hoort.
+
+| # | film | dekt | duur |
+|---|---|---|---|
+| 1 | `aan-de-slag` | navigatie · lijsten · voorkeuren · mijn-gegevens | 120 s |
+| 2 | `relaties` | crm/relations | 150 s |
+| 3 | `leads` | crm/leads · leads-webformulier | 150 s |
+| 4 | `kredietdossiers-basis` ✅ | credit-management/credit-files | 97 s |
+| 5 | `documentketen` | klantportaal · document-validation · document-library | 180 s |
+| 6 | `journaal` | journaal/overzicht · gesprekken · taken · bijlagen · mailverkeer | 150 s |
+| 7 | `afspraken` | crm/meetings · online-afspraken | 150 s |
+| 8 | `aanbrengers` | crm/contributors · het aanbrengersportaal | 150 s |
+| 9 | `commissie-instellen` | commission-schemes · financial-institutions | 120 s |
+| 10 | `commissie-uitbetalen` | commission-statements · commission-forecast · restanten | 180 s |
+| 11 | `fiche-281-50` | credit-management/fiche-281-50 | 90 s |
+| 12 | `verzekeringen` | insurance-contracts · insurance-companies | 120 s |
+| 13 | `dashboard` | getting-started/dashboard · beheer/dashboard-fases | 120 s |
+| 14 | `lijsten-en-rapporten` | filteren-in-lijsten · reports · global-overview | 150 s |
+| 15 | `mailketen` | kantoorprofiel · sender-addresses · mailverkeer | 120 s |
+| 16 | `klantenportaal` | portaal/index · portaal/overzicht — dóór de ogen van de klant | 120 s |
+
+### Wat er BEWUST buiten valt, en waarom
+`keuzelijsten` · `documenttypes` · `rollen` · `company-profile` · `professionals` · `appraisals` ·
+`afwezigheden` · `contract-overview` · `logboek` — dat zijn referentie- en beheerpagina's. Je opent ze om
+één ding op te zoeken en sluit ze weer. §1 noemt ze expliciet slechte filmkandidaten, en een film die een
+veldenlijst voorleest is trager dan de lijst zelf lezen.
+
+⚠️ **Buiten de film betekent niet buiten de handleiding.** Die pagina's blijven staan en blijven in de
+beeldronde. Wie ze schrapt omdat er geen film bij hoort, haalt de verkeerde conclusie uit deze tabel.
+
+### ⚠️ Reken per film op demo-werk
+Dat is geen bijwerking maar de tweede opbrengst: een film is in de praktijk een volledigheidstoets op de
+proefgegevens, en die vond op 31/08 drie keer een gat dat de tests niet zagen. Films 5, 8, 10 en 16 zijn de
+verdachten — die hangen aan ketens waar de demo dun is (aangeleverde documenten in álle toestanden, een
+aanbrenger mét portaaltoegang, restanten die écht restant zijn, een klant met een lopende uitnodiging).
+

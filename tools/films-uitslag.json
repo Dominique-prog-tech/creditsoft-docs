@@ -4,8 +4,8 @@
     "taal": "nl-BE",
     "pagina": "credit-management/credit-files",
     "lengte": 96.84,
-    "titel": "Het kredietdossier in CreditSoft \u2014 van lijst tot journaal",
-    "omschrijving": "Een rondleiding door het kredietdossier: de lijst filteren en doorzoeken, een dossier openen, de dossiergegevens, de kredietaanvragers, het pand, de gevraagde documenten, en het journaal met de taken, notities, gesprekken en commissieschema\u2019s die bij dat ene dossier horen.",
+    "titel": "Het kredietdossier in CreditSoft — van lijst tot journaal",
+    "omschrijving": "Een rondleiding door het kredietdossier: de lijst filteren en doorzoeken, een dossier openen, de dossiergegevens, de kredietaanvragers, het pand, de gevraagde documenten, en het journaal met de taken, notities, gesprekken en commissieschema’s die bij dat ene dossier horen.",
     "hash": "b1307b41c06edc44",
     "guid": "d6954167-a695-4638-ac6c-7042ee6542f5",
     "hoofdstukken": [
@@ -68,7 +68,7 @@
     "app": {
       "sha": "2ff5ae5b66d7e564047347fd96923019fe5f1c32",
       "vuil": false,
-      "herkomst": "aangevuld 01/09/2026 \u2014 opgenomen in die sessie, niet door de generator gemerkt"
+      "herkomst": "aangevuld 01/09/2026 — opgenomen in die sessie, niet door de generator gemerkt"
     }
   },
   "kredietdossiers-basis-fr": {
@@ -76,8 +76,8 @@
     "taal": "fr-BE",
     "pagina": "credit-management/credit-files",
     "lengte": 104,
-    "titel": "Le dossier de cr\u00e9dit dans CreditSoft \u2014 de la liste au journal",
-    "omschrijving": "Une visite guid\u00e9e du dossier de cr\u00e9dit : filtrer et rechercher dans la liste, ouvrir un dossier, les donn\u00e9es du dossier, les demandeurs de cr\u00e9dit, le bien, les documents demand\u00e9s, et le journal avec les t\u00e2ches, notes, appels et sch\u00e9mas de commission li\u00e9s \u00e0 ce dossier.",
+    "titel": "Le dossier de crédit dans CreditSoft — de la liste au journal",
+    "omschrijving": "Une visite guidée du dossier de crédit : filtrer et rechercher dans la liste, ouvrir un dossier, les données du dossier, les demandeurs de crédit, le bien, les documents demandés, et le journal avec les tâches, notes, appels et schémas de commission liés à ce dossier.",
     "hash": "1c86602fd2332484",
     "guid": "f74d9cd0-877f-4175-bfbe-6fd5733dc1c2",
     "hoofdstukken": [
@@ -140,7 +140,7 @@
     "app": {
       "sha": "2ff5ae5b66d7e564047347fd96923019fe5f1c32",
       "vuil": false,
-      "herkomst": "aangevuld 01/09/2026 \u2014 opgenomen in die sessie, niet door de generator gemerkt"
+      "herkomst": "aangevuld 01/09/2026 — opgenomen in die sessie, niet door de generator gemerkt"
     }
   },
   "kredietdossiers-basis-website-nl": {
@@ -148,8 +148,8 @@
     "taal": "nl-BE",
     "pagina": "credit-management/credit-files",
     "lengte": 42.64,
-    "titel": "Het kredietdossier in CreditSoft \u2014 van lijst tot journaal",
-    "omschrijving": "Een rondleiding door het kredietdossier: de lijst filteren en doorzoeken, een dossier openen, de dossiergegevens, de kredietaanvragers, het pand, de gevraagde documenten, en het journaal met de taken, notities, gesprekken en commissieschema\u2019s die bij dat ene dossier horen.",
+    "titel": "Het kredietdossier in CreditSoft — van lijst tot journaal",
+    "omschrijving": "Een rondleiding door het kredietdossier: de lijst filteren en doorzoeken, een dossier openen, de dossiergegevens, de kredietaanvragers, het pand, de gevraagde documenten, en het journaal met de taken, notities, gesprekken en commissieschema’s die bij dat ene dossier horen.",
     "hash": "ed66fec463615506",
     "guid": "9129a61b-2412-4cc8-9b32-d75da739fba6",
     "hoofdstukken": [
@@ -186,7 +186,7 @@
     "app": {
       "sha": "2ff5ae5b66d7e564047347fd96923019fe5f1c32",
       "vuil": false,
-      "herkomst": "aangevuld 01/09/2026 \u2014 opgenomen in die sessie, niet door de generator gemerkt"
+      "herkomst": "aangevuld 01/09/2026 — opgenomen in die sessie, niet door de generator gemerkt"
     }
   },
   "kredietdossiers-basis-website-fr": {
@@ -194,8 +194,8 @@
     "taal": "fr-BE",
     "pagina": "credit-management/credit-files",
     "lengte": 43.8,
-    "titel": "Le dossier de cr\u00e9dit dans CreditSoft \u2014 de la liste au journal",
-    "omschrijving": "Une visite guid\u00e9e du dossier de cr\u00e9dit : filtrer et rechercher dans la liste, ouvrir un dossier, les donn\u00e9es du dossier, les demandeurs de cr\u00e9dit, le bien, les documents demand\u00e9s, et le journal avec les t\u00e2ches, notes, appels et sch\u00e9mas de commission li\u00e9s \u00e0 ce dossier.",
+    "titel": "Le dossier de crédit dans CreditSoft — de la liste au journal",
+    "omschrijving": "Une visite guidée du dossier de crédit : filtrer et rechercher dans la liste, ouvrir un dossier, les données du dossier, les demandeurs de crédit, le bien, les documents demandés, et le journal avec les tâches, notes, appels et schémas de commission liés à ce dossier.",
     "hash": "1fdf1461c3cc2809",
     "guid": "ca7508c7-a5b7-49e2-b91c-d88889f9bb3e",
     "hoofdstukken": [
@@ -232,7 +232,7 @@
     "app": {
       "sha": "2ff5ae5b66d7e564047347fd96923019fe5f1c32",
       "vuil": false,
-      "herkomst": "aangevuld 01/09/2026 \u2014 opgenomen in die sessie, niet door de generator gemerkt"
+      "herkomst": "aangevuld 01/09/2026 — opgenomen in die sessie, niet door de generator gemerkt"
     }
   },
   "creditsoft-overzicht-website-nl": {
@@ -240,7 +240,7 @@
     "taal": "nl-BE",
     "pagina": null,
     "lengte": 48,
-    "titel": "CreditSoft in drie kwartier minuten \u2014 de modules in het kort",
+    "titel": "CreditSoft in drie kwartier minuten — de modules in het kort",
     "omschrijving": "Een kort overzicht van CreditSoft voor kredietmakelaars: kredietdossiers, klanten, documenten, de portalen voor klant en aanbrenger, de commissieberekening, borderellen en fiche 281.50, het vooruitzicht en het beheer van uw kredietverstrekkers.",
     "hash": "2ba034757547cf75",
     "guid": "6e004248-5d64-4771-b276-b94782b663bc",
@@ -293,7 +293,7 @@
     "app": {
       "sha": "2ff5ae5b66d7e564047347fd96923019fe5f1c32",
       "vuil": false,
-      "herkomst": "aangevuld 01/09/2026 \u2014 opgenomen in die sessie, niet door de generator gemerkt"
+      "herkomst": "aangevuld 01/09/2026 — opgenomen in die sessie, niet door de generator gemerkt"
     }
   },
   "creditsoft-overzicht-website-fr": {
@@ -301,8 +301,8 @@
     "taal": "fr-BE",
     "pagina": null,
     "lengte": 49.8,
-    "titel": "CreditSoft en bref \u2014 les modules en un coup d\u2019\u0153il",
-    "omschrijving": "Un bref aper\u00e7u de CreditSoft pour les courtiers en cr\u00e9dit : dossiers de cr\u00e9dit, clients, documents, les portails client et apporteur, le calcul des commissions, les bordereaux et la fiche 281.50, la perspective et la gestion de vos pr\u00eateurs.",
+    "titel": "CreditSoft en bref — les modules en un coup d’œil",
+    "omschrijving": "Un bref aperçu de CreditSoft pour les courtiers en crédit : dossiers de crédit, clients, documents, les portails client et apporteur, le calcul des commissions, les bordereaux et la fiche 281.50, la perspective et la gestion de vos prêteurs.",
     "hash": "0896bc79eefd88bc",
     "guid": "efcc1f39-03fa-497f-bb06-12dc5ede37ba",
     "hoofdstukken": [
@@ -354,7 +354,7 @@
     "app": {
       "sha": "2ff5ae5b66d7e564047347fd96923019fe5f1c32",
       "vuil": false,
-      "herkomst": "aangevuld 01/09/2026 \u2014 opgenomen in die sessie, niet door de generator gemerkt"
+      "herkomst": "aangevuld 01/09/2026 — opgenomen in die sessie, niet door de generator gemerkt"
     }
   },
   "creditsoft-overzicht-website-en": {
@@ -415,7 +415,7 @@
     "app": {
       "sha": "2ff5ae5b66d7e564047347fd96923019fe5f1c32",
       "vuil": false,
-      "herkomst": "aangevuld 01/09/2026 \u2014 opgenomen in die sessie, niet door de generator gemerkt"
+      "herkomst": "aangevuld 01/09/2026 — opgenomen in die sessie, niet door de generator gemerkt"
     }
   },
   "kredietdossiers-basis-website-en": {
@@ -461,7 +461,157 @@
     "app": {
       "sha": "2ff5ae5b66d7e564047347fd96923019fe5f1c32",
       "vuil": false,
-      "herkomst": "aangevuld 01/09/2026 \u2014 opgenomen in die sessie, niet door de generator gemerkt"
+      "herkomst": "aangevuld 01/09/2026 — opgenomen in die sessie, niet door de generator gemerkt"
     }
+  },
+  "aan-de-slag-nl": {
+    "film": "aan-de-slag",
+    "taal": "nl-BE",
+    "pagina": "getting-started/navigatie",
+    "lengte": 142.56,
+    "routes": [
+      "/dashboard",
+      "/crm/relaties"
+    ],
+    "app": {
+      "sha": "2ff5ae5b66d7e564047347fd96923019fe5f1c32",
+      "vuil": false
+    },
+    "titel": "Uw weg vinden in CreditSoft — het scherm, het zoeken en uw voorkeuren",
+    "omschrijving": "De eerste rondleiding: het startscherm met het blok Aan de slag, het menu links, zoeken over uw hele omgeving met ⌘K, de hulp bij elk scherm en de twee assistenten, werken in een lijst (sorteren, filteren, exporteren) en uw eigen voorkeuren — grootte, thema en taal.",
+    "hash": "64aed0978d2fea49",
+    "guid": null,
+    "hoofdstukken": [
+      {
+        "titel": "start",
+        "start": 3.32,
+        "eind": 12.93
+      },
+      {
+        "titel": "menu",
+        "start": 15.79,
+        "eind": 24.52
+      },
+      {
+        "titel": "zoeken",
+        "start": 30.63,
+        "eind": 43.31
+      },
+      {
+        "titel": "hulp",
+        "start": 47.55,
+        "eind": 55.49
+      },
+      {
+        "titel": "assistenten",
+        "start": 60.43,
+        "eind": 70.13
+      },
+      {
+        "titel": "lijst",
+        "start": 75.37,
+        "eind": 82.76
+      },
+      {
+        "titel": "sorteren",
+        "start": 86.49,
+        "eind": 92.06
+      },
+      {
+        "titel": "filteren",
+        "start": 97.02,
+        "eind": 104.26
+      },
+      {
+        "titel": "werkbalk",
+        "start": 107.38,
+        "eind": 115.59
+      },
+      {
+        "titel": "voorkeuren",
+        "start": 119.5,
+        "eind": 129.91
+      },
+      {
+        "titel": "slot",
+        "start": 135.08,
+        "eind": 140.15
+      }
+    ]
+  },
+  "aan-de-slag-fr": {
+    "film": "aan-de-slag",
+    "taal": "fr-BE",
+    "pagina": "getting-started/navigatie",
+    "lengte": 162.84,
+    "routes": [
+      "/dashboard",
+      "/crm/relaties"
+    ],
+    "app": {
+      "sha": "2ff5ae5b66d7e564047347fd96923019fe5f1c32",
+      "vuil": false
+    },
+    "titel": "Se repérer dans CreditSoft — l’écran, la recherche et vos préférences",
+    "omschrijving": "La première visite guidée : l’écran d’accueil avec le bloc Pour commencer, le menu de gauche, la recherche dans tout votre environnement avec ⌘K, l’aide sur chaque écran et les deux assistants, le travail dans une liste (trier, filtrer, exporter) et vos préférences — taille, thème et langue.",
+    "hash": "a68528c5f0ca32d3",
+    "guid": null,
+    "hoofdstukken": [
+      {
+        "titel": "start",
+        "start": 3.34,
+        "eind": 13.56
+      },
+      {
+        "titel": "menu",
+        "start": 16.39,
+        "eind": 27.95
+      },
+      {
+        "titel": "zoeken",
+        "start": 34.05,
+        "eind": 49.42
+      },
+      {
+        "titel": "hulp",
+        "start": 53.65,
+        "eind": 62.66
+      },
+      {
+        "titel": "assistenten",
+        "start": 67.58,
+        "eind": 77.14
+      },
+      {
+        "titel": "lijst",
+        "start": 82.4,
+        "eind": 94.28
+      },
+      {
+        "titel": "sorteren",
+        "start": 98.01,
+        "eind": 103.16
+      },
+      {
+        "titel": "filteren",
+        "start": 108.13,
+        "eind": 118.16
+      },
+      {
+        "titel": "werkbalk",
+        "start": 121.26,
+        "eind": 132.17
+      },
+      {
+        "titel": "voorkeuren",
+        "start": 136.09,
+        "eind": 149.09
+      },
+      {
+        "titel": "slot",
+        "start": 154.41,
+        "eind": 160.58
+      }
+    ]
   }
 }

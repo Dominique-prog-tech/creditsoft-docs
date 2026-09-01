@@ -164,6 +164,26 @@ async function beweegNaar(page, loc) {
 }
 async function klik(page, loc) { await beweegNaar(page, loc); await loc.click(); }
 
+// ── Een knop in de kopbalk, in BEIDE talen ───────────────────────────────────────────────────────────────
+// ⚠️ Niet op `button[title="Zoeken (⌘K)"]`. Die titel is VERTAALD — in het Frans staat er "Rechercher (⌘K)",
+// en dan draait de Nederlandse film goed en de Franse in een time-out. Elke film hierna gebruikt deze.
+// De knoppen dragen geen stabiele klasse, dus de titel is wat er is; één regex dekt de twee talen samen.
+const kopbalkKnop = (page, patroon) => page.getByTitle(patroon).first();
+
+// ── Een zijlade sluiten — en de twee soorten sluiten NIET hetzelfde ──────────────────────────────────────
+// ⚠️ Gemeten op 01/09/2026: de ZOEKlade sluit met Escape, de HULPlade niet — daar blijft `.prefs-backdrop`
+// staan, en die vangt de volgende klik af. De film viel dan op een time-out van 30 s in de scène erna, en
+// de foutmelding wees naar de knop die niet klikbaar was in plaats van naar de lade die open bleef.
+// Escape eerst (dat is wat een gebruiker doet), en pas als de backdrop blijft staan erop klikken.
+async function sluitLade(page) {
+  await page.keyboard.press('Escape');
+  await page.waitForTimeout(500);
+  if (await page.locator('.prefs-backdrop').count()) {
+    await page.locator('.prefs-backdrop').first().click({ force: true });
+    await page.waitForTimeout(700);
+  }
+}
+
 // ── Audio (§3.1) ─────────────────────────────────────────────────────────────────────────────────────────
 // ── WELKE STEM? Expliciet, en nooit stilzwijgend. ────────────────────────────────────────────────────────
 //
@@ -398,6 +418,127 @@ const FILMS = [
         nl: "Uw kredietverstrekkers, met hun eigen schema's.",
         en: 'Your lenders, each with their own commission schemes.',
         fr: "Vos pr\u00eateurs, avec leurs propres sch\u00e9mas." },
+    ],
+  }],
+
+  // ─────────────────────────────────────────────────────────────────────────────────────────────────────
+  // FILM 1 van de reeks (§14). De film die iederéén als eerste ziet: hoe je je weg vindt.
+  //
+  // ⚠️ GEEN SCÈNE MET HET BELLETJE, en dat is met opzet. Het belletje toont taken die aan JOU toegewezen
+  // zijn (`AchterstalligeTakenMelder.MijnIdsAsync`), en de demo-operator heeft er geen — het paneel zegt
+  // "Geen meldingen". Een scène die belooft "hier ziet u uw achterstallige taken" boven een leeg paneel is
+  // erger dan geen scène. Het staat wél in navigatie.md; zodra de generator de operator taken toewijst,
+  // hoort deze film een scène `belletje` te krijgen. Zie het geheugen: demo-mist-stelselmatig-randgevallen.
+  ['aan-de-slag', {
+    pagina: 'getting-started/navigatie',
+    titel: {
+      nl: 'Uw weg vinden in CreditSoft — het scherm, het zoeken en uw voorkeuren',
+      fr: 'Se repérer dans CreditSoft — l’écran, la recherche et vos préférences',
+    },
+    omschrijving: {
+      nl: 'De eerste rondleiding: het startscherm met het blok Aan de slag, het menu links, zoeken over uw '
+        + 'hele omgeving met ⌘K, de hulp bij elk scherm en de twee assistenten, werken in een lijst '
+        + '(sorteren, filteren, exporteren) en uw eigen voorkeuren — grootte, thema en taal.',
+      fr: 'La première visite guidée : l’écran d’accueil avec le bloc Pour commencer, '
+        + 'le menu de gauche, la recherche dans tout votre environnement avec ⌘K, l’aide sur chaque '
+        + 'écran et les deux assistants, le travail dans une liste (trier, filtrer, exporter) et vos '
+        + 'préférences — taille, thème et langue.',
+    },
+    uitvoeringen: { handleiding: { stem: true } },
+    scenes: [
+      { naam: 'start',
+        doe: async (p) => { await p.goto(`${BASIS}/dashboard`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(1200); },
+        merk: /Aan de slag|Pour commencer/i,
+        nl: 'Dit is uw startscherm. Zolang uw omgeving voorbeeldgegevens draagt, staat bovenaan het blok Aan de slag met de drie dingen die u het eerst instelt.',
+        fr: "Voici votre écran d’accueil. Tant que votre environnement contient des données d’exemple, le bloc Pour commencer affiche en haut les trois choses à configurer en premier." },
+
+      { naam: 'menu',
+        doe: async (p) => { await beweegNaar(p, p.locator('nav a, .adm-nav a').first()); await p.waitForTimeout(900); },
+        merk: /KREDIET|CRÉDIT/i,
+        nl: 'Links staat het menu, gegroepeerd zoals u werkt: CRM, Krediet, Lijsten en Beheer. De getallen ernaast zijn wat op u wacht.',
+        fr: "À gauche, le menu, groupé comme vous travaillez : CRM, Crédit, Listes et Gestion. Les chiffres à côté indiquent ce qui vous attend." },
+
+      { naam: 'zoeken',
+        doe: async (p) => {
+          await klik(p, kopbalkKnop(p, /Zoeken|Rechercher/i));
+          await p.waitForTimeout(900);
+          await p.keyboard.type('Cuypers', { delay: 95 });
+          await p.waitForTimeout(2600);
+        },
+        merk: /Kredietdossiers|Dossiers de crédit/i,
+        nl: 'Zoeken doet u overal vandaan, met de knop bovenaan of met Command K. U typt een naam, en CreditSoft zoekt in uw relaties, dossiers, aanbrengers en taken tegelijk.',
+        fr: "La recherche est accessible partout, via le bouton en haut ou avec Commande K. Vous tapez un nom et CreditSoft cherche simultanément dans vos relations, dossiers, apporteurs et tâches." },
+
+      { naam: 'hulp',
+        doe: async (p) => {
+          await sluitLade(p);
+          await klik(p, kopbalkKnop(p, /Hulp bij dit scherm|Aide pour cet écran/i));
+          await p.waitForTimeout(1800);
+        },
+        // ⚠️ GEEN APOSTROF IN EEN MERKTEKEN. Hier stond `d’accueil` met een typografische apostrof en de
+        // app schrijft `d'accueil` met een rechte — de Franse film viel op zijn eigen beloftecontrole
+        // terwijl het scherm perfect klopte. Kies een stuk zin zonder leesteken; dat kan altijd.
+        merk: /in welke fase zitten|dans quelle phase/i,
+        nl: 'Op elk scherm zit rechtsboven een vraagteken. Dat opent de hulp voor precies dit scherm, niet een algemene handleiding.',
+        fr: "Sur chaque écran, un point d’interrogation en haut à droite ouvre l’aide de cet écran précis, et non un manuel général." },
+
+      { naam: 'assistenten',
+        doe: async (p) => {
+          await sluitLade(p);
+          await klik(p, kopbalkKnop(p, /Vraag het de handleiding|Demander au manuel/i));
+          await p.waitForTimeout(1800);
+        },
+        merk: /Hulp-assistent|Assistant d.aide/i,
+        nl: 'Komt u er niet uit, dan zijn er twee assistenten: één die de handleiding leest, en één die uw eigen cijfers opzoekt en het antwoord als tabel geeft.',
+        fr: "Si vous bloquez, deux assistants existent : l’un lit le manuel, l’autre interroge vos propres chiffres et répond sous forme de tableau." },
+
+      { naam: 'lijst',
+        doe: async (p) => {
+          await sluitLade(p);
+          await p.goto(`${BASIS}/crm/relaties`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(1600);
+        },
+        merk: /Nieuwe relatie|Nouvelle relation/i,
+        nl: 'Elke lijst in CreditSoft werkt hetzelfde. Wat u hier leert, geldt ook voor uw dossiers, uw aanbrengers en uw taken.',
+        fr: "Toutes les listes de CreditSoft fonctionnent de la même manière. Ce que vous apprenez ici vaut aussi pour vos dossiers, vos apporteurs et vos tâches." },
+
+      { naam: 'sorteren',
+        doe: async (p) => { await klik(p, p.locator('th').nth(1)); await p.waitForTimeout(1800); },
+        merk: /Naam|Nom/i,
+        nl: 'U sorteert door op een kolomkop te klikken. Klikt u nog eens, dan draait de volgorde om.',
+        fr: "Vous triez en cliquant sur un en-tête de colonne. Un second clic inverse l’ordre." },
+
+      { naam: 'filteren',
+        doe: async (p) => {
+          const z = p.locator('input[type="search"]:visible, input[placeholder*="oek" i]:visible, input[placeholder*="echerch" i]:visible').first();
+          await klik(p, z); await z.type('Cuypers', { delay: 90 }); await p.waitForTimeout(2400);
+        },
+        merk: /Cuypers/i,
+        nl: 'Boven de lijst filtert u. Wat u typt, zoekt in alle kolommen tegelijk, en de lijst krimpt terwijl u typt.',
+        fr: "Au-dessus de la liste, vous filtrez. Ce que vous tapez cherche dans toutes les colonnes à la fois, et la liste se réduit pendant que vous tapez." },
+
+      { naam: 'werkbalk',
+        doe: async (p) => { await beweegNaar(p, p.getByText(/^Exporteren$|^Exporter$/).first()); await p.waitForTimeout(1200); },
+        merk: /Exporteren|Exporter/i,
+        nl: 'Wat u ziet, kunt u meenemen: exporteren geeft u precies uw huidige selectie in Excel, met uw filter en uw kolommen erin.',
+        fr: "Ce que vous voyez, vous pouvez l’emporter : l’export vous donne exactement votre sélection actuelle dans Excel, avec votre filtre et vos colonnes." },
+
+      { naam: 'voorkeuren',
+        doe: async (p) => {
+          await klik(p, kopbalkKnop(p, /Voorkeuren|Préférences/i));
+          await p.waitForTimeout(2000);
+        },
+        merk: /OMGEVINGSGROOTTE|TAILLE DE L.INTERFACE/i,
+        nl: 'Rechtsboven staan uw eigen voorkeuren: de grootte van het scherm, een licht of donker thema, en uw taal. Die keuzes zijn van u, niet van uw kantoor.',
+        fr: "En haut à droite, vos préférences : la taille de l’écran, un thème clair ou sombre, et votre langue. Ces choix sont les vôtres, pas ceux de votre bureau." },
+
+      { naam: 'slot',
+        doe: async (p) => {
+          await sluitLade(p);
+          await p.goto(`${BASIS}/dashboard`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(1400);
+        },
+        merk: /Dashboard|Tableau de bord/i,
+        nl: 'Dat is de weg. De rest van deze reeks gaat over wat u er onderweg mee doet.',
+        fr: "Voilà pour l’orientation. Le reste de cette série porte sur ce que vous en faites en chemin." },
     ],
   }],
 
