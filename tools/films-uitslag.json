@@ -206,5 +206,109 @@
         "eind": 42.04
       }
     ]
+  },
+  "creditsoft-overzicht-website-nl": {
+    "film": "creditsoft-overzicht",
+    "taal": "nl-BE",
+    "pagina": null,
+    "lengte": 48.12,
+    "titel": "CreditSoft in drie kwartier minuten — de modules in het kort",
+    "omschrijving": "Een kort overzicht van CreditSoft voor kredietmakelaars: kredietdossiers, klanten, documenten, de portalen voor klant en aanbrenger, de commissieberekening, borderellen en fiche 281.50, het vooruitzicht en het beheer van uw kredietverstrekkers.",
+    "hash": "2ba034757547cf75",
+    "guid": null,
+    "hoofdstukken": [
+      {
+        "titel": "dossiers",
+        "start": 2.27,
+        "eind": 5.41
+      },
+      {
+        "titel": "klanten",
+        "start": 7.85,
+        "eind": 11.64
+      },
+      {
+        "titel": "documenten",
+        "start": 14.02,
+        "eind": 17.23
+      },
+      {
+        "titel": "portalen",
+        "start": 19.57,
+        "eind": 22.64
+      },
+      {
+        "titel": "commissies",
+        "start": 25.01,
+        "eind": 27.72
+      },
+      {
+        "titel": "borderellen",
+        "start": 30.07,
+        "eind": 34.78
+      },
+      {
+        "titel": "vooruitzicht",
+        "start": 37.17,
+        "eind": 40.03
+      },
+      {
+        "titel": "instellingen",
+        "start": 42.36,
+        "eind": 45.72
+      }
+    ]
+  },
+  "creditsoft-overzicht-website-fr": {
+    "film": "creditsoft-overzicht",
+    "taal": "fr-BE",
+    "pagina": null,
+    "lengte": 50.04,
+    "titel": "CreditSoft en bref — les modules en un coup d’œil",
+    "omschrijving": "Un bref aperçu de CreditSoft pour les courtiers en crédit : dossiers de crédit, clients, documents, les portails client et apporteur, le calcul des commissions, les bordereaux et la fiche 281.50, la perspective et la gestion de vos prêteurs.",
+    "hash": "0896bc79eefd88bc",
+    "guid": null,
+    "hoofdstukken": [
+      {
+        "titel": "dossiers",
+        "start": 2.2,
+        "eind": 5.62
+      },
+      {
+        "titel": "klanten",
+        "start": 8.1,
+        "eind": 12.03
+      },
+      {
+        "titel": "documenten",
+        "start": 14.42,
+        "eind": 17.56
+      },
+      {
+        "titel": "portalen",
+        "start": 19.86,
+        "eind": 23.07
+      },
+      {
+        "titel": "commissies",
+        "start": 25.48,
+        "eind": 29.05
+      },
+      {
+        "titel": "borderellen",
+        "start": 31.43,
+        "eind": 36.71
+      },
+      {
+        "titel": "vooruitzicht",
+        "start": 39.3,
+        "eind": 42.37
+      },
+      {
+        "titel": "instellingen",
+        "start": 44.72,
+        "eind": 47.65
+      }
+    ]
   }
 }

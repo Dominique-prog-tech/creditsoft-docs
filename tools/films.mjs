@@ -295,6 +295,93 @@ const tijd = s => {
 //   Commissieschema's → Schémas de commission (in het JOURNAAL; SamenvoegPopup zegt "Barèmes de commission"
 //   voor hetzelfde begrip — twee Franse termen, gemeld aan Dominique).
 const FILMS = [
+  // ── DE OVERZICHTSFILM VOOR DE HOMEPAGE ───────────────────────────────────────────────────────────────
+  //
+  // ⚠️ EEN ANDER SOORT FILM, GEEN KORTERE. `kredietdossiers-basis` LEERT iets: hoe je een dossier opent,
+  // waar het tabblad Gevraagd zit. Dat is het verkeerde gesprek met iemand die nog niet weet wát CreditSoft
+  // is. Deze film POSITIONEERT: één scène per module, landen en één zin, geen doorklikken.
+  //
+  // Dominique zag dat zelf toen hij naar de eerste websitefilm keek — die was de handleidingfilm met zes
+  // scènes eruit, en hij was nog steeds aan het uitleggen.
+  //
+  // De acht modules zijn die van creditsoft-website zelf (`feat.*.title` in src/i18n/ui.ts), in de volgorde
+  // waarin een makelaar erover denkt: eerst het dossier, dan de mensen eromheen, dan het papierwerk, dan wat
+  // hij eraan verdient. De teksten zijn VERKOOPTEKST en komen dus niet uit de handleiding — dat is geen
+  // tweede bron voor dezelfde zin, het is andere tekst voor een ander publiek.
+  //
+  // ⚠️ Elk merkteken bewijst DATA, niet enkel het scherm. Een paginatitel verschijnt ook boven een lege
+  // lijst, en een marketingfilm van een leeg scherm is erger dan geen film.
+  ['creditsoft-overzicht', {
+    pagina: null,                                  // hoort op de website, niet op een handleidingpagina
+    titel: {
+      nl: 'CreditSoft in drie kwartier minuten — de modules in het kort',
+      fr: 'CreditSoft en bref — les modules en un coup d\u2019\u0153il',
+    },
+    omschrijving: {
+      nl: 'Een kort overzicht van CreditSoft voor kredietmakelaars: kredietdossiers, klanten, documenten, '
+        + 'de portalen voor klant en aanbrenger, de commissieberekening, borderellen en fiche 281.50, het '
+        + 'vooruitzicht en het beheer van uw kredietverstrekkers.',
+      fr: 'Un bref aper\u00e7u de CreditSoft pour les courtiers en cr\u00e9dit : dossiers de cr\u00e9dit, '
+        + 'clients, documents, les portails client et apporteur, le calcul des commissions, les bordereaux '
+        + 'et la fiche 281.50, la perspective et la gestion de vos pr\u00eateurs.',
+    },
+    uitvoeringen: {
+      website: { stem: false },                    // geen handleiding-uitvoering: deze film hoort daar niet
+    },
+    scenes: [
+      { naam: 'dossiers',
+        doe: async (p) => { await p.goto(`${BASIS}/credit-files`); await p.waitForLoadState('networkidle'); },
+        merk: /DEMO-\d+/,
+        nl: 'Alles van \u00e9\u00e9n kredietaanvraag op \u00e9\u00e9n pagina.',
+        fr: "Tout d'une demande de cr\u00e9dit sur une seule page." },
+
+      { naam: 'klanten',
+        doe: async (p) => { await p.goto(`${BASIS}/crm/relaties`); await p.waitForLoadState('networkidle'); },
+        merk: /Adriaenssens|Aerts|Peeters/,
+        nl: 'Uw klant, zijn gezin en zijn geschiedenis: \u00e9\u00e9n fiche.',
+        fr: "Votre client, sa famille et son historique : une fiche." },
+
+      { naam: 'documenten',
+        doe: async (p) => { await p.goto(`${BASIS}/krediet/documenten-valideren`); await p.waitForLoadState('networkidle'); },
+        merk: /DEMO-\d+/,
+        nl: 'Documenten opvragen, ontvangen en beoordelen.',
+        fr: "Demander, recevoir et \u00e9valuer les documents." },
+
+      { naam: 'portalen',
+        // ⚠️ Het OPMAAKSCHERM en niet het echte portaal. Dat laatste vraagt een aparte aanmelding, en in een
+        // doorlopende opname zou het aanmeldscherm in beeld komen. Het voorbeeldpaneel rechts toont het
+        // portaal in de huisstijl, mét de voortgang en de documentstatussen — dat is wat de zin belooft.
+        doe: async (p) => { await p.goto(`${BASIS}/beheer/klantportaal`); await p.waitForLoadState('networkidle'); },
+        merk: /Welkom bij uw dossier|Bienvenue dans votre dossier/,
+        nl: 'Uw klanten en aanbrengers leveren zelf aan.',
+        fr: "Vos clients et apporteurs d\u00e9posent eux-m\u00eames." },
+
+      { naam: 'commissies',
+        doe: async (p) => { await p.goto(`${BASIS}/commissie/schemas`); await p.waitForLoadState('networkidle'); },
+        merk: /Sandbox|Baken|Meridiaan|Horizon/,
+        nl: 'Commissie berekend zoals u ze afsprak.',
+        fr: "La commission calcul\u00e9e comme vous l'avez convenue." },
+
+      { naam: 'borderellen',
+        doe: async (p) => { await p.goto(`${BASIS}/commissie/borderel`); await p.waitForLoadState('networkidle'); },
+        merk: /Voorbeeld|Demo Krediet|Hypotheek/,
+        nl: 'Van berekening tot borderel en fiche 281.50, zonder \u00e9\u00e9n cel Excel.',
+        fr: "Du calcul au bordereau et \u00e0 la fiche 281.50, sans une seule cellule Excel." },
+
+      { naam: 'vooruitzicht',
+        doe: async (p) => { await p.goto(`${BASIS}/commissie/vooruitzicht`); await p.waitForLoadState('networkidle'); },
+        merk: /Baken|Meridiaan|Horizon|Proefmakelaars/,
+        nl: 'En u ziet vooruit wat er nog binnenkomt.',
+        fr: "Et vous voyez \u00e0 l'avance ce qui va rentrer." },
+
+      { naam: 'instellingen',
+        doe: async (p) => { await p.goto(`${BASIS}/credit/financial-institutions`); await p.waitForLoadState('networkidle'); },
+        merk: /AG Insurance|Allianz|Axa/,
+        nl: "Uw kredietverstrekkers, met hun eigen schema's.",
+        fr: "Vos pr\u00eateurs, avec leurs propres sch\u00e9mas." },
+    ],
+  }],
+
   ['kredietdossiers-basis', {
     pagina: 'credit-management/credit-files',
     // ⚠️ EEN MENSELIJKE TITEL EN OMSCHRIJVING, per taal. De technische naam ("kredietdossiers-basis-nl") is
