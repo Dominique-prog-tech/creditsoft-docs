@@ -210,6 +210,13 @@ const CURSOR = `
 //
 // `block: 'center'` en niet `scrollIntoViewIfNeeded()`: dat laatste schuift het element net binnen de rand,
 // en dan staat je onderwerp op de onderste pixelrij. Centreren leest als een bewuste camerabeweging.
+// ⚠️ MEETSTAND. Zonder deze vlag is de meting hieronder BESMET door haar eigen fix: scène 3 meet een pagina
+// die scène 2 al gescrold heeft, en dan staat alles "in beeld". De eerste ronde meldde zo 146 van 146 —
+// een sluitend antwoord op een vraag die niet gesteld werd.
+//
+// Met --meet scrollt `beweegNaar` NIET (het gedrag van vóór 01/09/2026), zodat de uitkomst zegt wat de
+// GEPUBLICEERDE films toonden. De ronde neemt dan ook geen video op en raakt de uitslagtabel niet aan.
+const MEET = process.argv.includes('--meet');
 const zichtbaarheid = [];   // per scène: stond het onderwerp in beeld VÓÓR het scrollen?
 let huidigeScene = '?';
 
@@ -223,9 +230,11 @@ async function beweegNaar(page, loc) {
     zichtbaarheid.push({ scene: huidigeScene, inBeeld, y: Math.round(voor.y), venster: venster0.height });
   }
 
-  await loc.evaluate(el => el.scrollIntoView({ block: 'center', inline: 'nearest', behavior: 'instant' }))
-    .catch(() => { /* een element zonder eigen scrollcontext: dan gewoon meten */ });
-  await page.waitForTimeout(350);
+  if (!MEET) {
+    await loc.evaluate(el => el.scrollIntoView({ block: 'center', inline: 'nearest', behavior: 'instant' }))
+      .catch(() => { /* een element zonder eigen scrollcontext: dan gewoon meten */ });
+    await page.waitForTimeout(350);
+  }
 
   const doos = await loc.boundingBox();
   if (!doos) throw new Error('element heeft geen plaats op het scherm');
@@ -234,7 +243,7 @@ async function beweegNaar(page, loc) {
   // wijst gewoon een film op — een geslaagde ronde boven een beeld dat het onderwerp niet toont. Dat is
   // precies de faalvorm die hierboven beschreven staat, en ze hoort te FALEN in plaats van te zwijgen.
   const venster = page.viewportSize();
-  if (venster && (doos.y + doos.height < 0 || doos.y > venster.height)) {
+  if (!MEET && venster && (doos.y + doos.height < 0 || doos.y > venster.height)) {
     throw new Error(`element staat buiten beeld na scrollen (y=${Math.round(doos.y)}, venster ${venster.height}) `
       + '— de scène zou iets tonen wat de kijker niet ziet');
   }
@@ -1631,6 +1640,84 @@ const FILMS = [
     ],
   }],
 
+  // ─────────────────────────────────────────────────────────────────────────────────────────────────────
+  // FILM 12 van de reeks (§14 nummer 15). De mailketen — en de VOLGORDE is hier het onderwerp.
+  //
+  // ⚠️ VAN BUITEN NAAR BINNEN, zoals de keten ook gebouwd is (projectgeheugen, 30/07/2026): eerst de
+  // brongegevens (bedrijfsfiche, verzendadres), dan de bouwstenen (sjabloon, variabelen), dan de kern
+  // (versturen), dan het oppervlak (waar het terechtkomt). Een film die met "mail versturen" begint, moet
+  // daarna vier keer terug — en dan snapt niemand waaróm die stukken bestaan.
+  ['mailketen', {
+    pagina: 'administration/sender-addresses',
+    titel: {
+      nl: 'De mailketen — van uw gegevens tot een verzonden bericht',
+      fr: 'La chaîne d’e-mails — de vos données au message envoyé',
+    },
+    omschrijving: {
+      nl: 'Wat er allemaal klopt moet zijn vóór er één mail vertrekt, in de volgorde waarin het samenhangt: '
+        + 'uw bedrijfsfiche die de variabelen vult, het verzendadres waar alles vanuit vertrekt, de '
+        + 'tweetalige sjablonen met hun variabelenpalet en voorbeeld, en tot slot waar u ziet of een bericht '
+        + 'werkelijk afgeleverd is — inclusief de reden wanneer dat niet lukte.',
+      fr: 'Tout ce qui doit être en ordre avant qu’un seul e-mail parte, dans l’ordre où cela s’enchaîne : '
+        + 'votre fiche d’entreprise qui alimente les variables, l’adresse d’expédition d’où tout part, les '
+        + 'modèles bilingues avec leur panneau de variables et leur aperçu, et enfin l’endroit où vous voyez '
+        + 'si un message a réellement été distribué — motif compris lorsque cela échoue.',
+    },
+    uitvoeringen: { handleiding: { stem: true } },
+    scenes: [
+      { naam: 'bedrijfsfiche', kop: { nl: 'Uw eigen gegevens', fr: 'Vos propres données' },
+        doe: async (p) => { await p.goto(`${BASIS}/administration/company-profile`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(2600); },
+        merk: /FSMA/i,
+        nl: 'Een mail begint niet bij het schrijven maar bij uw eigen gegevens. Wat hier staat — uw naam, adres, btw- en FSMA-nummer — vult straks automatisch de brieven en mails die u verstuurt.',
+        fr: "Un e-mail ne commence pas à la rédaction mais par vos propres données. Ce qui figure ici — nom, adresse, numéro de TVA et FSMA — remplira automatiquement les courriers et e-mails que vous envoyez." },
+
+      { naam: 'verzendadres', kop: { nl: 'Waar uw mail vandaan komt', fr: 'D’où part votre courrier' },
+        doe: async (p) => { await p.goto(`${BASIS}/administration/sender-addresses`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(2400); },
+        merk: /softwareleverancier|fournisseur de logiciel/i,
+        nl: 'Dan het adres waar uw mail vandaan komt. Eén ervan is de standaard, en daar vertrekt alles vanuit — ook sjablonen zonder eigen afzender. Zo komt uw mail nooit aan op naam van uw softwareleverancier.',
+        fr: "Ensuite l’adresse d’où part votre courrier. L’une d’elles est celle par défaut, et tout part de là — y compris les modèles sans expéditeur propre. Vos e-mails n’arrivent ainsi jamais au nom de votre fournisseur de logiciel." },
+
+      { naam: 'domein', kop: { nl: 'Uw eigen domein', fr: 'Votre propre domaine' },
+        doe: async (p) => { await beweegNaar(p, p.getByText(/eigen domein|propre domaine/i).first()); await p.waitForTimeout(1700); },
+        merk: /eigen domein|propre domaine/i,
+        nl: 'Wilt u mailen vanaf uw eigen domein, dan vraagt u dat aan bij ADM. Wij regelen de registratie; u hoeft zelf niets in te stellen.',
+        fr: "Si vous souhaitez envoyer depuis votre propre domaine, vous en faites la demande auprès d’ADM. Nous nous chargeons de l’enregistrement ; vous n’avez rien à configurer." },
+
+      { naam: 'sjablonen', kop: { nl: 'De sjablonen', fr: 'Les modèles' },
+        doe: async (p) => { await p.goto(`${BASIS}/administration/mail-templates`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(2600); },
+        merk: /company.name/i,
+        nl: 'Met die twee dingen op orde komen de sjablonen. Elk sjabloon bestaat in het Nederlands en het Frans, en u past er het onderwerp, de tekst, de afzender en de bijlagen van aan.',
+        fr: "Ces deux éléments en ordre, viennent les modèles. Chaque modèle existe en néerlandais et en français, et vous en adaptez l’objet, le texte, l’expéditeur et les pièces jointes." },
+
+      { naam: 'variabelen', kop: { nl: 'De variabelen', fr: 'Les variables' },
+        doe: async (p) => { await beweegNaar(p, p.getByText(/company.name/i).first()); await p.waitForTimeout(1800); },
+        merk: /company.name/i,
+        nl: 'In de tekst zet u variabelen tussen dubbele accolades. U sleept ze uit het palet, en bij het versturen worden ze vervangen door de echte gegevens — uw kantoornaam, de klant, het dossiernummer.',
+        fr: "Dans le texte, vous placez des variables entre doubles accolades. Vous les glissez depuis le panneau, et à l’envoi elles sont remplacées par les données réelles — le nom de votre bureau, le client, le numéro de dossier." },
+
+      { naam: 'verzonden', kop: { nl: 'Wat de klant kreeg', fr: 'Ce que le client a reçu' },
+        doe: async (p) => {
+          await p.goto(`${BASIS}/crm/relaties/${ID.relatie}`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(2400);
+          await klik(p, tabblad(p, /^Mailverkeer|^Courrier/i)); await p.waitForTimeout(2200);
+        },
+        merk: /ontvangstbevestiging/i,
+        nl: 'Elke verstuurde mail blijft bij de fiche staan, met de tekst zoals uw klant hem kreeg. U hoeft dus niet in uw eigen mailbox te zoeken wat er precies vertrokken is.',
+        fr: "Chaque e-mail envoyé reste sur la fiche, avec le texte tel que votre client l’a reçu. Vous ne devez donc pas chercher dans votre propre boîte ce qui est parti." },
+
+      { naam: 'monitoring', kop: { nl: 'Is het aangekomen', fr: 'Est-ce bien arrivé' },
+        doe: async (p) => { await p.goto(`${BASIS}/administration/mail-monitoring`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(2600); },
+        merk: /Aflevering|Reden|Objet|Distribution/i,
+        nl: 'En over alle fiches heen is er de mailmonitoring: elk bericht met zijn afleverstatus. Kwam iets niet aan, dan staat de reden ernaast.',
+        fr: "Et par-dessus toutes les fiches, il y a le suivi des e-mails : chaque message avec son statut de distribution. Si quelque chose n’est pas arrivé, le motif figure à côté." },
+
+      { naam: 'slot', kop: { nl: 'Tot slot', fr: 'Pour conclure' },
+        doe: async (p) => { await p.goto(`${BASIS}/administration/sender-addresses`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(2200); },
+        merk: /softwareleverancier|fournisseur de logiciel/i,
+        nl: 'Vier stukken die samenhangen: uw gegevens, uw adres, uw sjablonen, en het bewijs dat het aankwam. Staat de eerste twee goed, dan hoeft u aan de rest weinig meer te doen.',
+        fr: "Quatre éléments qui s’enchaînent : vos données, votre adresse, vos modèles, et la preuve que c’est arrivé. Si les deux premiers sont corrects, le reste ne demande plus grand-chose." },
+    ],
+  }],
+
   ['kredietdossiers-basis', {
     pagina: 'credit-management/credit-files',
     // ⚠️ EEN MENSELIJKE TITEL EN OMSCHRIJVING, per taal. De technische naam ("kredietdossiers-basis-nl") is
@@ -1901,7 +1988,7 @@ for (const [naam, filmVol] of FILMS) {
     // 3 ─ OPNEMEN. Elke scène duurt minstens zolang als haar fragment.
     const ctx = await browser.newContext({
       viewport: { width: BREED, height: HOOG }, deviceScaleFactor: 1, storageState: staat,
-      recordVideo: { dir: werk, size: { width: BREED, height: HOOG } },
+      ...(MEET ? {} : { recordVideo: { dir: werk, size: { width: BREED, height: HOOG } } }),
     });
     await ctx.addInitScript(CURSOR);
     if (!metStem) await ctx.addInitScript(TEKSTBALK);
@@ -1972,6 +2059,13 @@ for (const [naam, filmVol] of FILMS) {
       merken.push({ naam: sc.naam, start, spraak, eind: (Date.now() - t0) / 1000 });
     }
     await page.waitForTimeout(NASLEEP * 1000);
+    // ⚠️ In meetstand is er geen video: `page.video()` geeft dan null. Alles hierna gaat over het monteren
+    // van een film die we niet maken, dus daar stopt deze taal.
+    if (MEET) {
+      await ctx.close(); await browser.close();
+      console.log(`  🔎 ${stam}-${kort} gemeten${gevallen ? ` (gevallen op ${gevallen})` : ''}`);
+      continue;
+    }
     const videoPad = await page.video().path();
     await ctx.close(); await browser.close();
 
@@ -2082,8 +2176,7 @@ for (const [naam, filmVol] of FILMS) {
         eind: Number((m.spraak + duren[i]).toFixed(2)),
       })),
     };
-    geraakt.add(sleutel);
-    bewaarUitslag();
+    if (!MEET) { geraakt.add(sleutel); bewaarUitslag(); }
 
     // ⚠️ §1 geeft een RICHTDUUR van 60–180 s: korter zegt te weinig, langer kijkt niemand uit. De ronde drukte
     // de lengte wel af maar hield ze nergens tegen die richtlijn — en dan glijdt ze weg. `dashboard-fr` kwam
