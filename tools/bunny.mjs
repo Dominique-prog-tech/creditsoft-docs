@@ -3,7 +3,8 @@
 //     node tools/bunny.mjs check       — leest de library uit; bewijst enkel dat de gegevens kloppen
 //     node tools/bunny.mjs vervangproef — de proef uit §7.4 van FILMS-SPEC.md
 //     node tools/bunny.mjs publiceer [filter] — uploadt wat gewijzigd is, mét ondertitels en hoofdstukken
-//     node tools/bunny.mjs hoofdstukken [filter] — werkt ENKEL de hoofdstukken bij van wat al online staat
+//     node tools/bunny.mjs hoofdstukken [filter] [--wacht] — werkt ENKEL de hoofdstukken bij van wat al
+//        online staat. Met --wacht blijft hij tot een uur wachten tot Bunny klaar is met hercoderen.
 //
 // ⚠️ WAAROM DIE PROEF BESTAAT. De nota zegt: "Bunny documenteert niet met zoveel woorden dat opnieuw PUT'en
 // naar dezelfde GUID het bestand vervangt met behoud van de embed. Ga er niet van uit — MEET het." Het hele
@@ -364,7 +365,8 @@ if (opdracht === 'hoofdstukken') {
   // Werkwijze: eerst `node tools/films.mjs --hoofdstukken` (schrijft de titels in de tabel), dan dit.
   const UITSLAG = new URL('./films-uitslag.json', import.meta.url).pathname;
   const uitslag = JSON.parse(readFileSync(UITSLAG, 'utf8'));
-  const filter = process.argv[3];
+  const filter = process.argv.slice(3).find(a => !a.startsWith('--'));
+  const WACHT = process.argv.includes('--wacht');
   let raak = 0, over = 0;
   const mislukt = [];
   for (const [sleutel, f] of Object.entries(uitslag)) {
@@ -373,9 +375,34 @@ if (opdracht === 'hoofdstukken') {
     if (!f.hoofdstukken?.length) { console.log(`⏭  ${sleutel} — geen hoofdstukken`); over++; continue; }
     // ⚠️ Afkappen op de lengte die BUNNY meet, net als bij publiceren: onze berekende lengte en de
     // hercodeerde lengte schelen een fractie, en één seconde te ver geeft een 400.
-    const v = await api(`/videos/${f.guid}`);
+    let v = await api(`/videos/${f.guid}`);
     if (!v.ok) { mislukt.push(`${sleutel}: ophalen → ${v.status}`); continue; }
+
+    // ⚠️ MET --wacht: blijven wachten tot Bunny klaar is met hercoderen, in plaats van over te slaan.
+    //
+    // Bunny stond op 01/09/2026 de hele dag in de wachtrij: drie films op rij kregen bij het publiceren geen
+    // hoofdstukken, en telkens moest iemand later dit commando opnieuw draaien. Hoofdstukken zetten op een
+    // video van lengte 0 kan niet ("Chapter is out of bounds"), dus overslaan is juist — maar het laat wel
+    // een halve publicatie achter die iemand moet ONTHOUDEN, en dat is precies wat er vergeten wordt.
+    //
+    // Zonder de vlag blijft het gedrag zoals het was: melden en overslaan.
+    if (WACHT && (v.json?.length ?? 0) === 0) {
+      process.stdout.write(`   ${sleutel}: wachten op Bunny`);
+      for (let i = 0; i < 120 && (v.json?.length ?? 0) === 0; i++) {   // tot 60 minuten
+        await wacht(30000);
+        process.stdout.write('.');
+        v = await api(`/videos/${f.guid}`);
+      }
+      console.log((v.json?.length ?? 0) > 0 ? ` klaar (${v.json.length}s)` : ' OPGEGEVEN na 60 minuten');
+    }
+
     const lengte = v.json?.length ?? 1;
+    // ⚠️ Nog altijd niet verwerkt → niet proberen. Een hoofdstuk op een video van lengte 0 geeft een 400 die
+    // naar het verkeerde probleem wijst, en de melding hoort te zeggen dat het WACHTEN het probleem is.
+    if (lengte <= 1) {
+      console.log(`⏳ ${sleutel} — nog niet verwerkt, hoofdstukken overgeslagen.`);
+      over++; continue;
+    }
     const h = await api(`/videos/${f.guid}`, {
       method: 'POST', headers: { 'content-type': 'application/json' },
       body: JSON.stringify({ chapters: f.hoofdstukken.map(x => ({
