@@ -326,25 +326,39 @@ const FILMS = [
         + 'et la fiche 281.50, la perspective et la gestion de vos pr\u00eateurs.',
     },
     uitvoeringen: {
-      website: { stem: false },                    // geen handleiding-uitvoering: deze film hoort daar niet
+      // ⚠️ SCHERMTAAL ≠ TEKSTTAAL. De site draagt drie talen, de app maar twee — Program.cs zet
+      // AdmLocalisatie.Opties("nl-BE", "fr-BE"). Voor het Engels tonen we dus een Nederlands scherm met
+      // ENGELSE tekst in de balk: die tekst komt uit dit scenario en niet uit de app. Bij een geluidloze
+      // film is dat de enige weg — ondertitels helpen niet, want de tekst staat ín het beeld.
+      website: {
+        stem: false,
+        talen: [
+          { ui: 'nl-BE', tekst: 'nl' },
+          { ui: 'fr-BE', tekst: 'fr' },
+          { ui: 'nl-BE', tekst: 'en' },
+        ],
+      },
     },
     scenes: [
       { naam: 'dossiers',
         doe: async (p) => { await p.goto(`${BASIS}/credit-files`); await p.waitForLoadState('networkidle'); },
         merk: /DEMO-\d+/,
         nl: 'Alles van \u00e9\u00e9n kredietaanvraag op \u00e9\u00e9n pagina.',
+        en: 'Everything about one credit application on a single page.',
         fr: "Tout d'une demande de cr\u00e9dit sur une seule page." },
 
       { naam: 'klanten',
         doe: async (p) => { await p.goto(`${BASIS}/crm/relaties`); await p.waitForLoadState('networkidle'); },
         merk: /Adriaenssens|Aerts|Peeters/,
         nl: 'Uw klant, zijn gezin en zijn geschiedenis: \u00e9\u00e9n fiche.',
+        en: 'Your client, their family and their history: one record.',
         fr: "Votre client, sa famille et son historique : une fiche." },
 
       { naam: 'documenten',
         doe: async (p) => { await p.goto(`${BASIS}/krediet/documenten-valideren`); await p.waitForLoadState('networkidle'); },
         merk: /DEMO-\d+/,
         nl: 'Documenten opvragen, ontvangen en beoordelen.',
+        en: 'Request, receive and review documents.',
         fr: "Demander, recevoir et \u00e9valuer les documents." },
 
       { naam: 'portalen',
@@ -354,30 +368,35 @@ const FILMS = [
         doe: async (p) => { await p.goto(`${BASIS}/beheer/klantportaal`); await p.waitForLoadState('networkidle'); },
         merk: /Welkom bij uw dossier|Bienvenue dans votre dossier/,
         nl: 'Uw klanten en aanbrengers leveren zelf aan.',
+        en: 'Your clients and brokers upload it themselves.',
         fr: "Vos clients et apporteurs d\u00e9posent eux-m\u00eames." },
 
       { naam: 'commissies',
         doe: async (p) => { await p.goto(`${BASIS}/commissie/schemas`); await p.waitForLoadState('networkidle'); },
         merk: /Sandbox|Baken|Meridiaan|Horizon/,
         nl: 'Commissie berekend zoals u ze afsprak.',
+        en: 'Commission calculated exactly as you agreed it.',
         fr: "La commission calcul\u00e9e comme vous l'avez convenue." },
 
       { naam: 'borderellen',
         doe: async (p) => { await p.goto(`${BASIS}/commissie/borderel`); await p.waitForLoadState('networkidle'); },
         merk: /Voorbeeld|Demo Krediet|Hypotheek/,
         nl: 'Van berekening tot borderel en fiche 281.50, zonder \u00e9\u00e9n cel Excel.',
+        en: 'From calculation to statement and tax form, without a single Excel cell.',
         fr: "Du calcul au bordereau et \u00e0 la fiche 281.50, sans une seule cellule Excel." },
 
       { naam: 'vooruitzicht',
         doe: async (p) => { await p.goto(`${BASIS}/commissie/vooruitzicht`); await p.waitForLoadState('networkidle'); },
         merk: /Baken|Meridiaan|Horizon|Proefmakelaars/,
         nl: 'En u ziet vooruit wat er nog binnenkomt.',
+        en: 'And you see ahead what is still coming in.',
         fr: "Et vous voyez \u00e0 l'avance ce qui va rentrer." },
 
       { naam: 'instellingen',
         doe: async (p) => { await p.goto(`${BASIS}/credit/financial-institutions`); await p.waitForLoadState('networkidle'); },
         merk: /AG Insurance|Allianz|Axa/,
         nl: "Uw kredietverstrekkers, met hun eigen schema's.",
+        en: 'Your lenders, each with their own commission schemes.',
         fr: "Vos pr\u00eateurs, avec leurs propres sch\u00e9mas." },
     ],
   }],
@@ -561,7 +580,10 @@ for (const [naam, filmVol] of FILMS) {
   console.log(`\n▶ ${naam} · uitvoering ${UITVOERING} — ${gekozen.length} van ${filmVol.scenes.length} scènes, `
     + `${metStem ? 'met stem' : 'ZONDER stem (tekst in beeld)'}`);
 
-  for (const taal of ['nl-BE', 'fr-BE']) {
+  // ⚠️ Een uitvoering mag haar eigen talenlijst dragen, met schermtaal (`ui`) en teksttaal (`tekst`) apart.
+  // Zonder lijst: de twee talen die de app spreekt, met de tekst in diezelfde taal.
+  const talen = uitv.talen ?? [{ ui: 'nl-BE', tekst: 'nl' }, { ui: 'fr-BE', tekst: 'fr' }];
+  for (const { ui: taal, tekst: kort } of talen) {
     // ⚠️ Een taal zonder stem wordt OVERGESLAGEN, niet gekraakt — maar wel luidop. Zo kan je het Nederlands
     // al opnemen terwijl de Franse stem nog gekozen moet worden, zonder dat er ooit twijfel bestaat over
     // welke talen er in deze ronde gemaakt zijn. Stil overslaan is wat een halve ronde als een hele laat
@@ -572,7 +594,6 @@ for (const [naam, filmVol] of FILMS) {
       verslag.overgeslagen.push(`${taal}: geen stem in user-secrets`);
       continue;
     }
-    const kort = taal.startsWith('fr') ? 'fr' : 'nl';
     const werk = `${UIT}${stam}-${kort}/`;
     rmSync(werk, { recursive: true, force: true }); mkdirSync(werk, { recursive: true });
 

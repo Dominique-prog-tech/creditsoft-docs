@@ -211,104 +211,168 @@
     "film": "creditsoft-overzicht",
     "taal": "nl-BE",
     "pagina": null,
-    "lengte": 48.12,
+    "lengte": 48,
     "titel": "CreditSoft in drie kwartier minuten — de modules in het kort",
     "omschrijving": "Een kort overzicht van CreditSoft voor kredietmakelaars: kredietdossiers, klanten, documenten, de portalen voor klant en aanbrenger, de commissieberekening, borderellen en fiche 281.50, het vooruitzicht en het beheer van uw kredietverstrekkers.",
     "hash": "2ba034757547cf75",
-    "guid": null,
+    "guid": "6e004248-5d64-4771-b276-b94782b663bc",
     "hoofdstukken": [
       {
         "titel": "dossiers",
-        "start": 2.27,
-        "eind": 5.41
+        "start": 2.21,
+        "eind": 5.35
       },
       {
         "titel": "klanten",
-        "start": 7.85,
-        "eind": 11.64
+        "start": 7.74,
+        "eind": 11.52
       },
       {
         "titel": "documenten",
-        "start": 14.02,
-        "eind": 17.23
+        "start": 13.88,
+        "eind": 17.09
       },
       {
         "titel": "portalen",
-        "start": 19.57,
-        "eind": 22.64
+        "start": 19.42,
+        "eind": 22.49
       },
       {
         "titel": "commissies",
-        "start": 25.01,
-        "eind": 27.72
+        "start": 24.87,
+        "eind": 27.59
       },
       {
         "titel": "borderellen",
-        "start": 30.07,
-        "eind": 34.78
+        "start": 29.92,
+        "eind": 34.63
       },
       {
         "titel": "vooruitzicht",
-        "start": 37.17,
-        "eind": 40.03
+        "start": 37.03,
+        "eind": 39.89
       },
       {
         "titel": "instellingen",
-        "start": 42.36,
-        "eind": 45.72
+        "start": 42.23,
+        "eind": 45.59
       }
-    ]
+    ],
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/6e004248-5d64-4771-b276-b94782b663bc/thumbnail.jpg",
+    "gepubliceerdOp": "2026-09-01T05:38:54.097",
+    "gepubliceerdeHash": "2ba034757547cf75",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/6e004248-5d64-4771-b276-b94782b663bc"
   },
   "creditsoft-overzicht-website-fr": {
     "film": "creditsoft-overzicht",
     "taal": "fr-BE",
     "pagina": null,
-    "lengte": 50.04,
+    "lengte": 49.8,
     "titel": "CreditSoft en bref — les modules en un coup d’œil",
     "omschrijving": "Un bref aperçu de CreditSoft pour les courtiers en crédit : dossiers de crédit, clients, documents, les portails client et apporteur, le calcul des commissions, les bordereaux et la fiche 281.50, la perspective et la gestion de vos prêteurs.",
     "hash": "0896bc79eefd88bc",
-    "guid": null,
+    "guid": "efcc1f39-03fa-497f-bb06-12dc5ede37ba",
     "hoofdstukken": [
       {
         "titel": "dossiers",
-        "start": 2.2,
-        "eind": 5.62
+        "start": 2.21,
+        "eind": 5.64
       },
       {
         "titel": "klanten",
-        "start": 8.1,
-        "eind": 12.03
+        "start": 8.04,
+        "eind": 11.97
       },
       {
         "titel": "documenten",
-        "start": 14.42,
-        "eind": 17.56
+        "start": 14.37,
+        "eind": 17.51
       },
       {
         "titel": "portalen",
-        "start": 19.86,
-        "eind": 23.07
+        "start": 19.8,
+        "eind": 23.02
       },
       {
         "titel": "commissies",
-        "start": 25.48,
-        "eind": 29.05
+        "start": 25.39,
+        "eind": 28.96
       },
       {
         "titel": "borderellen",
-        "start": 31.43,
-        "eind": 36.71
+        "start": 31.31,
+        "eind": 36.59
       },
       {
         "titel": "vooruitzicht",
-        "start": 39.3,
-        "eind": 42.37
+        "start": 39.26,
+        "eind": 42.33
       },
       {
         "titel": "instellingen",
-        "start": 44.72,
-        "eind": 47.65
+        "start": 44.64,
+        "eind": 47.57
       }
-    ]
+    ],
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/efcc1f39-03fa-497f-bb06-12dc5ede37ba/thumbnail.jpg",
+    "gepubliceerdOp": "2026-09-01T05:39:10.014",
+    "gepubliceerdeHash": "0896bc79eefd88bc",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/efcc1f39-03fa-497f-bb06-12dc5ede37ba"
+  },
+  "creditsoft-overzicht-website-en": {
+    "film": "creditsoft-overzicht",
+    "taal": "nl-BE",
+    "pagina": null,
+    "lengte": 51.12,
+    "titel": "creditsoft-overzicht",
+    "omschrijving": "",
+    "hash": "682a154e1ab2d163",
+    "guid": "bc9092c4-ae00-49ed-84b7-3475506cef5b",
+    "hoofdstukken": [
+      {
+        "titel": "dossiers",
+        "start": 2.17,
+        "eind": 6.24
+      },
+      {
+        "titel": "klanten",
+        "start": 8.71,
+        "eind": 12.71
+      },
+      {
+        "titel": "documenten",
+        "start": 15.11,
+        "eind": 17.83
+      },
+      {
+        "titel": "portalen",
+        "start": 20.49,
+        "eind": 23.77
+      },
+      {
+        "titel": "commissies",
+        "start": 26.13,
+        "eind": 29.49
+      },
+      {
+        "titel": "borderellen",
+        "start": 31.82,
+        "eind": 36.97
+      },
+      {
+        "titel": "vooruitzicht",
+        "start": 39.55,
+        "eind": 42.55
+      },
+      {
+        "titel": "instellingen",
+        "start": 44.91,
+        "eind": 48.7
+      }
+    ],
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/bc9092c4-ae00-49ed-84b7-3475506cef5b/thumbnail.jpg",
+    "gepubliceerdOp": "2026-09-01T05:39:26.183",
+    "gepubliceerdeHash": "682a154e1ab2d163",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/bc9092c4-ae00-49ed-84b7-3475506cef5b"
   }
 }

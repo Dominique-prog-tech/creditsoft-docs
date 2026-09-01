@@ -315,5 +315,35 @@ if (opdracht === 'metadata') {
   process.exit(0);
 }
 
-console.log(`Onbekende opdracht "${opdracht}". Gebruik: check | publiceer | metadata | vervangproef`);
+if (opdracht === 'naar-website') {
+  // ⚠️ EEN GEGENEREERD BESTAND, GEEN TWEEDE BRON. creditsoft-website is een andere repo en kan
+  // films-uitslag.json niet lezen. Drie wegen waren mogelijk: met de hand overtypen (loopt uit elkaar),
+  // de website laat het bij het bouwen ophalen van docs.creditsoft.be (maakt de sitebouw afhankelijk van
+  // een externe site), of dit: één commando dat schrijft, en de uitkomst staat in git.
+  //
+  // Het bestand draagt ENKEL wat de site nodig heeft — filmnaam, taal, guid, lengte — en zegt bovenaan
+  // waar het vandaan komt, zodat niemand het met de hand gaat bewerken.
+  const UITSLAG = new URL('./films-uitslag.json', import.meta.url).pathname;
+  const DOEL = '/Users/dominique/projects/creditsoft-website/src/data/films.json';
+  const uitslag = JSON.parse(readFileSync(UITSLAG, 'utf8'));
+
+  const uit = { _bron: 'creditsoft-docs — geschreven door `node tools/bunny.mjs naar-website`, niet met de hand bewerken', films: {} };
+  let n = 0;
+  for (const [sleutel, f] of Object.entries(uitslag)) {
+    if (!f.guid) continue;
+    // enkel de website-uitvoeringen; de handleidingfilms horen niet op de site
+    const m = sleutel.match(/^(.*)-website-(nl|fr|en)$/);
+    if (!m) continue;
+    (uit.films[m[1]] ??= {})[m[2]] = { guid: f.guid, lengte: f.lengte, titel: f.titel ?? '' };
+    n++;
+  }
+  if (n === 0) { console.log('⛔ Geen enkele website-film met een guid — publiceer eerst.'); process.exit(1); }
+  writeFileSync(DOEL, JSON.stringify(uit, null, 2) + '\n');
+  console.log(`✅ ${n} film(s) naar ${DOEL}`);
+  for (const [naam, talen] of Object.entries(uit.films))
+    console.log(`   ${naam}: ${Object.keys(talen).join(', ')}`);
+  process.exit(0);
+}
+
+console.log(`Onbekende opdracht "${opdracht}". Gebruik: check | publiceer | metadata | naar-website | vervangproef`);
 process.exit(1);
