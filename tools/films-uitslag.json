@@ -637,7 +637,7 @@
     "titel": "Relaties in CreditSoft — de fiche waar alles aan hangt",
     "omschrijving": "De relatiefiche van dichtbij: de lijst doorzoeken, een fiche openen, de algemene en bijkomende gegevens, de documenttaal die bepaalt in welke taal uw klant post krijgt, de gevraagde documenten met hun drie toestanden, de kredietdossiers van die klant, en het journaal met notities en gesprekken. Plus het samenvoegen van twee fiches die dezelfde persoon blijken te zijn.",
     "hash": "cc219747c794f662",
-    "guid": null,
+    "guid": "47b4f410-8a9f-4205-8f6f-a954b74cb947",
     "hoofdstukken": [
       {
         "titel": "De relatielijst",
@@ -694,7 +694,11 @@
         "start": 146.47,
         "eind": 151.82
       }
-    ]
+    ],
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/47b4f410-8a9f-4205-8f6f-a954b74cb947/thumbnail.jpg",
+    "gepubliceerdOp": "2026-09-01T08:40:25.939",
+    "gepubliceerdeHash": "cc219747c794f662",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/47b4f410-8a9f-4205-8f6f-a954b74cb947"
   },
   "relaties-fr": {
     "film": "relaties",
@@ -711,7 +715,7 @@
     "titel": "Les relations dans CreditSoft — la fiche à laquelle tout se rattache",
     "omschrijving": "La fiche de relation de près : parcourir la liste, ouvrir une fiche, les données générales et complémentaires, la langue des documents qui détermine dans quelle langue votre client reçoit son courrier, les documents demandés avec leurs trois statuts, les dossiers de crédit de ce client, et le journal avec les notes et les appels. Ainsi que la fusion de deux fiches.",
     "hash": "dd1154ba33918143",
-    "guid": null,
+    "guid": "649ebedd-1202-4aa2-ba6c-fe000b478288",
     "hoofdstukken": [
       {
         "titel": "La liste des relations",
@@ -768,6 +772,10 @@
         "start": 164.24,
         "eind": 171.11
       }
-    ]
+    ],
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/649ebedd-1202-4aa2-ba6c-fe000b478288/thumbnail.jpg",
+    "gepubliceerdOp": "2026-09-01T08:40:42.357",
+    "gepubliceerdeHash": "dd1154ba33918143",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/649ebedd-1202-4aa2-ba6c-fe000b478288"
   }
 }
