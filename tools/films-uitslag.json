@@ -793,7 +793,7 @@
     "titel": "Leads in CreditSoft — van aanvraag tot klant",
     "omschrijving": "De werklijst van uw instroom: wie er wacht en hoe lang, uit welk kanaal hij kwam, en wie hem opvolgt. Daarna de fiche van een lead — wie hij is, wat hij vraagt, en waar hij staat — de vijf statussen, en tot slot een lead die klant geworden is, met de doorverwijzing naar zijn relatiefiche.",
     "hash": "8dee61ba3753dafa",
-    "guid": null,
+    "guid": "542ee907-6e38-418b-b9c1-538c5e3088a6",
     "hoofdstukken": [
       {
         "titel": "De werklijst",
@@ -845,7 +845,11 @@
         "start": 122.96,
         "eind": 130.95
       }
-    ]
+    ],
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/542ee907-6e38-418b-b9c1-538c5e3088a6/thumbnail.jpg",
+    "gepubliceerdOp": "2026-09-01T09:28:04.277",
+    "gepubliceerdeHash": "8dee61ba3753dafa",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/542ee907-6e38-418b-b9c1-538c5e3088a6"
   },
   "leads-fr": {
     "film": "leads",
@@ -862,7 +866,7 @@
     "titel": "Les leads dans CreditSoft — de la demande au client",
     "omschrijving": "La liste de travail de vos demandes entrantes : qui attend et depuis combien de temps, de quel canal il provient, et qui le suit. Ensuite la fiche d’un lead — qui il est, ce qu’il demande et où il en est — les cinq statuts, et pour finir un lead devenu client, avec le renvoi vers sa fiche.",
     "hash": "2072a8105107fefb",
-    "guid": null,
+    "guid": "06ca3fdb-5316-4493-96b1-7e2b9606b70a",
     "hoofdstukken": [
       {
         "titel": "La liste de travail",
@@ -914,6 +918,10 @@
         "start": 143.51,
         "eind": 154.34
       }
-    ]
+    ],
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/06ca3fdb-5316-4493-96b1-7e2b9606b70a/thumbnail.jpg",
+    "gepubliceerdOp": "2026-09-01T09:30:22.201",
+    "gepubliceerdeHash": "2072a8105107fefb",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/06ca3fdb-5316-4493-96b1-7e2b9606b70a"
   }
 }
