@@ -478,7 +478,7 @@ bestaat al; dat een latere film eerst gemaakt is, verandert niets aan waar hij h
 | 5 | `documentketen` | klantportaal · document-validation · document-library | 180 s |
 | 6 | `journaal` | journaal/overzicht · gesprekken · taken · bijlagen · mailverkeer | 150 s |
 | 7 | `afspraken` | crm/meetings · online-afspraken | 150 s |
-| 8 | `aanbrengers` | crm/contributors · het aanbrengersportaal | 150 s |
+| 8 | ~~`aanbrengers`~~ ⏸️ **UITGESTELD** | crm/contributors · het aanbrengersportaal | — |
 | 9 | `commissie-instellen` | commission-schemes · financial-institutions | 120 s |
 | 10 | `commissie-uitbetalen` | commission-statements · commission-forecast · restanten | 180 s |
 | 11 | `fiche-281-50` | credit-management/fiche-281-50 | 90 s |
@@ -487,6 +487,17 @@ bestaat al; dat een latere film eerst gemaakt is, verandert niets aan waar hij h
 | 14 | `lijsten-en-rapporten` | filteren-in-lijsten · reports · global-overview | 150 s |
 | 15 | `mailketen` | kantoorprofiel · sender-addresses · mailverkeer | 120 s |
 | 16 | `klantenportaal` | portaal/index · portaal/overzicht — dóór de ogen van de klant | 120 s |
+
+### ⏸️ Uitgesteld: `aanbrengers` (01/09/2026)
+Dominique: *"Aanbrengers zou ik persoonlijk overlaten nu, daar moet nog een gans luik van uitgewerkt worden
+(portaal)."*
+
+Dat strookt met de meting van diezelfde dag: 308 aanbrengers, waarvan 277 in een boomstructuur en 307 met
+portaaltoegang — maar **bankrekeningen, gevraagde documenten en geplande uitbetalingen staan alle drie op
+nul**, ook lokaal. Een film zou dus een half luik tonen.
+
+⚠️ **Niet schrappen, uitstellen.** Hij hoort in de reeks zodra het portaalluik af is; de plaats in de
+volgorde (na afspraken, vóór commissie) blijft kloppen.
 
 ### Wat er BEWUST buiten valt, en waarom
 `keuzelijsten` · `documenttypes` · `rollen` · `company-profile` · `professionals` · `appraisals` ·

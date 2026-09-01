@@ -15,7 +15,7 @@
 // PUT stilzwijgend niets doet, is de GUID óók gelijk. Daarom twee films met een verschillende LENGTE — 97 s
 // en 104 s — en achteraf de vraag of de lengte mee veranderd is.
 import { bunnyGeheim } from './aansturing.mjs';
-import { readFileSync, writeFileSync, existsSync } from 'node:fs';
+import { statSync, readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
 
 const SLEUTEL = bunnyGeheim('ApiKey');
@@ -189,6 +189,22 @@ if (opdracht === 'publiceer') {
     const up = await stuur(guid, mp4);
     console.log(`   upload → HTTP ${up.status}`);
     if (!up.ok) { mislukt.push(`${sleutel}: upload → ${up.status} ${up.tekst}`); continue; }
+
+    // ⚠️ HIER STOND EEN CONTROLE DIE HET VERKEERDE MAT, en ze is bewust weggehaald.
+    //
+    // Ik zag `afspraken-fr` een halfuur na de upload op `storageSize 0` staan en concludeerde dat er niets
+    // was aangekomen. Fout: `storageSize` is de opslag ná het HERCODEREN — bij de Nederlandse film 103 MB
+    // voor een video van 137 s — en blijft 0 zolang Bunny nog niet klaar is. De upload wás aangekomen; die
+    // film stond kort daarna op `status 3, lengte 155`, precies zijn echte duur.
+    //
+    // Mijn "controle" maakte dus van een trage wachtrij een mislukking, en ik heb er een dubbele lege video
+    // mee aangemaakt. Er is in deze API geen veld dat vlak na de PUT zegt of de bytes aankwamen; `length`
+    // en `encodeProgress` lopen allebei achter op het hercoderen.
+    //
+    // Wat er WEL is, staat er al: `verwerkt()` wacht en MELDT wanneer hij opgeeft, en de hoofdstukken
+    // worden dan overgeslagen met het commando om ze later bij te zetten. Dat is het eerlijke antwoord —
+    // "nog niet klaar" is iets anders dan "mislukt", en dat verschil niet kunnen maken is geen reden om
+    // het ergste te beweren.
 
     // Ondertitels — de tekst bestaat al, dus dat is gratis (§7.3).
     //

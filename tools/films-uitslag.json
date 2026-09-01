@@ -1234,7 +1234,7 @@
     "titel": "De agenda — afspraken maken en laten maken",
     "omschrijving": "De agenda van uw kantoor: de kleuren die zeggen wie afwezig is en wanneer u gesloten bent, de weergave per medewerker of samengevoegd, een afspraak met haar verantwoordelijken en de bevestiging naar uw klant. En de andere kant: uren openzetten zodat mensen zelf een moment kiezen.",
     "hash": "ae4c6ed1d4635650",
-    "guid": null,
+    "guid": "80c7a480-7f38-4a50-86b1-39b4706684c3",
     "hoofdstukken": [
       {
         "titel": "De agenda",
@@ -1286,7 +1286,11 @@
         "start": 128.81,
         "eind": 135.13
       }
-    ]
+    ],
+    "thumbnail": null,
+    "gepubliceerdOp": "2026-09-01T13:09:41.289",
+    "gepubliceerdeHash": "ae4c6ed1d4635650",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/80c7a480-7f38-4a50-86b1-39b4706684c3"
   },
   "afspraken-fr": {
     "film": "afspraken",
@@ -1304,7 +1308,6 @@
     "titel": "L’agenda — prendre et faire prendre des rendez-vous",
     "omschrijving": "L’agenda de votre bureau : les couleurs qui indiquent qui est absent et quand vous êtes fermé, l’affichage par collaborateur ou fusionné, un rendez-vous avec ses responsables et la confirmation au client. Et l’autre côté : ouvrir des plages pour que les gens choisissent eux-mêmes un moment.",
     "hash": "66c10fd7171d2a29",
-    "guid": null,
     "hoofdstukken": [
       {
         "titel": "L’agenda",
@@ -1356,6 +1359,9 @@
         "start": 144.01,
         "eind": 152.74
       }
-    ]
+    ],
+    "guid": "39315493-ca50-4186-a4a9-9ad296c81550",
+    "gepubliceerdeHash": "66c10fd7171d2a29",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/39315493-ca50-4186-a4a9-9ad296c81550"
   }
 }
