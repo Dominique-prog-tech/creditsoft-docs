@@ -22,13 +22,34 @@
 //
 // Uitvoer: tools/.films-uit/ — NIET in git (§7: geen mp4 in git).
 
-import { mkdirSync, rmSync, existsSync, writeFileSync, readdirSync, copyFileSync } from 'node:fs';
+import { mkdirSync, rmSync, existsSync, writeFileSync, readFileSync, readdirSync, copyFileSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 import { execFileSync } from 'node:child_process';
 import { chromium } from '/Users/dominique/projects/adm-creditsoft/src/Host/CreditSoft.Host.Web/bin/Debug/net10.0/.playwright/package/index.mjs';
 import { BASIS, ID, gebruiker, wachtwoord, meldAan, stemGeheim } from './aansturing.mjs';
 
 const UIT = new URL('./.films-uit/', import.meta.url).pathname;
+
+// ── DE UITSLAGTABEL (§6 en §7.4) ─────────────────────────────────────────────────────────────────────────
+//
+// ⚠️ DIT BESTAND IS DE SPIL VAN DE PUBLICATIE, en dat is het pas sinds de vervangproef van 01/09/2026: een
+// film KAN bij Bunny niet vervangen worden (400 "The video has already been uploaded"), dus elke herneming
+// levert een NIEUWE guid. De handleiding mag daarom nooit naar een guid verwijzen maar altijd naar een
+// FILMNAAM; deze tabel vertaalt naam+taal → guid, en de MkDocs-hook leest haar bij het bouwen.
+//
+// Ze draagt ook de SCÈNETIJDEN — daar maakt de generator de hoofdstukken uit — en een HASH over
+// {route, narratie} per taal, waarmee §6 kan zeggen of een film verouderd is.
+//
+// ⚠️ Bij het schrijven wordt de bestaande inhoud SAMENGEVOEGD, niet overschreven. Draai je één film, dan
+// mogen de guids van de veertien andere niet verdampen — dat zou de hele handleiding stilzwijgend leeg
+// maken, en niets zou het melden tot iemand een pagina opent.
+// ⚠️ NAAST .films-uit/ en niet erin: die map staat in .gitignore (mp4's horen niet in git) en deze tabel
+// MOET er juist wél in. De MkDocs-hook leest haar bij het bouwen van de site; staat ze er niet, dan bouwt
+// de handleiding zonder films en meldt niets. Enkel het beeldmateriaal blijft buiten git, de VERWIJZING
+// hoort erbij.
+const UITSLAG = new URL('./films-uitslag.json', import.meta.url).pathname;
+const uitslag = existsSync(UITSLAG) ? JSON.parse(readFileSync(UITSLAG, 'utf8')) : {};
+const bewaarUitslag = () => writeFileSync(UITSLAG, JSON.stringify(uitslag, null, 2) + '\n');
 const BREED = 1920, HOOG = 1080;                  // §3.3 — gemeten: de dossierlijst past hierop, ruimer dan op 1700
 const STEM = { 'nl-BE': 'Ellen', 'fr-BE': 'Thomas' };
 const TEMPO = { 'nl-BE': 175, 'fr-BE': 175 };     // woorden/minuut voor `say`; ± 140 gesproken tempo
@@ -467,6 +488,26 @@ for (const [naam, film] of FILMS) {
     const lengte = Number(execFileSync('ffprobe', ['-v', 'error', '-show_entries', 'format=duration',
       '-of', 'csv=p=0', mp4]).toString().trim());
     console.log(`  ✅ ${naam}-${kort}.mp4 — ${lengte.toFixed(0)}s, ${film.scenes.length} scènes, ondertitels erbij`);
+    // 7 ─ De uitslag: scènetijden voor de hoofdstukken, en een hash om veroudering te kunnen zien.
+    //     De guid komt er later bij, bij het uploaden — die kent de generator hier nog niet.
+    const sleutel = `${naam}-${kort}`;
+    uitslag[sleutel] = {
+      film: naam, taal, pagina: film.pagina, lengte: Number(lengte.toFixed(2)),
+      // ⚠️ De hash draagt de NARRATIE én de route, want dat zijn de twee dingen die een film inhoudelijk
+      // verouderd maken. Niet de scènetijden: die verschillen per opname met een paar honderdsten, en dan
+      // zou elke ronde alles als "gewijzigd" melden.
+      hash: createHash('sha256').update(JSON.stringify({
+        pagina: film.pagina,
+        scenes: film.scenes.map(sc => [sc.naam, sc[kort], String(sc.doe)]),
+      })).digest('hex').slice(0, 16),
+      guid: uitslag[sleutel]?.guid ?? null,     // blijft staan tot bunny.mjs hem vervangt
+      hoofdstukken: merken.map((m, i) => ({
+        titel: film.scenes[i].naam, start: Number(m.spraak.toFixed(2)),
+        eind: Number((m.spraak + duren[i]).toFixed(2)),
+      })),
+    };
+    bewaarUitslag();
+
     verslag.gemaakt.push(`${naam}-${kort} (${lengte.toFixed(0)}s, stem: ${MOTOR}, model: ${MODEL ?? 'standaard van de API'})`);
   }
 }

@@ -1,0 +1,136 @@
+{
+  "kredietdossiers-basis-nl": {
+    "film": "kredietdossiers-basis",
+    "taal": "nl-BE",
+    "lengte": 96.36,
+    "hash": "b1307b41c06edc44",
+    "guid": "c5a5075e-a411-4add-9c8f-bb74757afbee",
+    "hoofdstukken": [
+      {
+        "titel": "lijst",
+        "start": 2.1,
+        "eind": 9.16
+      },
+      {
+        "titel": "kolommen",
+        "start": 11.11,
+        "eind": 18.21
+      },
+      {
+        "titel": "zoeken",
+        "start": 22.72,
+        "eind": 27.73
+      },
+      {
+        "titel": "openen",
+        "start": 30.93,
+        "eind": 32.84
+      },
+      {
+        "titel": "gegevens",
+        "start": 34.75,
+        "eind": 42.97
+      },
+      {
+        "titel": "aanvragers",
+        "start": 44.88,
+        "eind": 50.96
+      },
+      {
+        "titel": "pand",
+        "start": 55,
+        "eind": 63.55
+      },
+      {
+        "titel": "documenten",
+        "start": 67.59,
+        "eind": 73.07
+      },
+      {
+        "titel": "journaal",
+        "start": 75.47,
+        "eind": 82.15
+      },
+      {
+        "titel": "commissieschemas",
+        "start": 84.95,
+        "eind": 89.36
+      },
+      {
+        "titel": "slot",
+        "start": 91.26,
+        "eind": 94.6
+      }
+    ],
+    "embed": "https://iframe.mediadelivery.net/embed/741183/c5a5075e-a411-4add-9c8f-bb74757afbee",
+    "gepubliceerdeHash": "b1307b41c06edc44",
+    "pagina": "credit-management/credit-files"
+  },
+  "kredietdossiers-basis-fr": {
+    "film": "kredietdossiers-basis",
+    "taal": "fr-BE",
+    "lengte": 103.84,
+    "hash": "1c86602fd2332484",
+    "guid": "f4786f5c-1d54-4548-9f31-edfafc61f897",
+    "hoofdstukken": [
+      {
+        "titel": "lijst",
+        "start": 2.1,
+        "eind": 9.44
+      },
+      {
+        "titel": "kolommen",
+        "start": 11.42,
+        "eind": 19.78
+      },
+      {
+        "titel": "zoeken",
+        "start": 24.3,
+        "eind": 30.16
+      },
+      {
+        "titel": "openen",
+        "start": 33.44,
+        "eind": 35.25
+      },
+      {
+        "titel": "gegevens",
+        "start": 37.16,
+        "eind": 46.4
+      },
+      {
+        "titel": "aanvragers",
+        "start": 48.31,
+        "eind": 55.42
+      },
+      {
+        "titel": "pand",
+        "start": 59.43,
+        "eind": 69.92
+      },
+      {
+        "titel": "documenten",
+        "start": 73.97,
+        "eind": 78.98
+      },
+      {
+        "titel": "journaal",
+        "start": 81.36,
+        "eind": 88.61
+      },
+      {
+        "titel": "commissieschemas",
+        "start": 91.37,
+        "eind": 96.25
+      },
+      {
+        "titel": "slot",
+        "start": 98.15,
+        "eind": 102.05
+      }
+    ],
+    "embed": "https://iframe.mediadelivery.net/embed/741183/f4786f5c-1d54-4548-9f31-edfafc61f897",
+    "gepubliceerdeHash": "1c86602fd2332484",
+    "pagina": "credit-management/credit-files"
+  }
+}

@@ -217,6 +217,9 @@ plugins:
 extra:
   generator: false
 
+hooks:
+  - hooks/films.py
+
 nav:
   - Home: index.md
 

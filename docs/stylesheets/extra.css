@@ -354,3 +354,22 @@ html {
 .cs-pijler h3 { margin: 0.4rem 0 0.4rem; font-size: 0.95rem; }
 .cs-pijler p { font-size: 0.82rem; color: var(--md-default-fg-color--light); margin: 0; }
 .cs-pijler__merk .twemoji, .cs-pijler__merk svg { width: 1.6rem; height: 1.6rem; fill: var(--cs-blauw); }
+
+/* ── De film boven een handleidingpagina ─────────────────────────────────────────────────────────────────
+   16:9 via padding-top, want de iframe zelf heeft geen intrinsieke hoogte (FILMS-SPEC §7.2). Een vaste
+   hoogte zou op een telefoon zwarte balken geven. */
+.film {
+  position: relative;
+  padding-top: 56.25%;
+  margin: 0 0 1.6rem;
+  border-radius: .4rem;
+  overflow: hidden;
+  background: #000;
+}
+.film iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}

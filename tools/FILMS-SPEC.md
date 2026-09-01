@@ -210,38 +210,52 @@ Dezelfde afweging als bij `kern.mjs` op 29/08: het generieke deel hoort in `adm-
 
 ## 9. Faseplan
 
-### Fase 1 — één film, end-to-end
-`kredietdossiers-basis` in NL en FR. Montage mag met de hand, alles daarvóór niet.
-**Klaar wanneer:** twee mp4's bestaan met identiek beeldmateriaal, correcte UI-taal, zichtbare cursor, en beeld en geluid synchroon zonder bijsturing. **En:** de vervangproef uit §7.4 is uitgevoerd en het antwoord staat in dit document. Dominique heeft de films goedgekeurd.
+⚠️ **HERZIEN OP 01/09/2026, op voorstel van Dominique.** De oude volgorde maakte eerst álle films en
+publiceerde pas daarna. Dan ontdek je pas na dertig mp4's dat publicatie iets terugvraagt aan de manier van
+maken. Deze dag heeft dat twee keer bewezen: de beloftecontrole en het lege demo-journaal kwamen allebei pas
+boven toen het écht draaide. Daarom nu **één keten helemaal aflopen** vóór er wordt vermenigvuldigd.
 
-**Stand op 01/09/2026 — alles behalve de vervangproef:**
+### Fase 1 — één film, van opname tot op de site ✅ **AF op 01/09/2026**
+
+`kredietdossiers-basis` in NL en FR, opgenomen, gepubliceerd, en zichtbaar op de handleidingpagina.
 
 | Eis | Stand |
 |---|---|
-| Twee mp4's, identiek beeldmateriaal, juiste UI-taal | ✅ NL 97 s · FR 104 s, elk 11 scènes |
-| Zichtbare cursor | ✅ nagemeten op een filmbeeld, niet aangenomen |
-| Beeld en geluid synchroon zónder montagestap | ✅ en met ritme, zie §3.1 |
-| Goedgekeurd | ✅ "klinkt héél goed", "overtuigend" |
-| Vervangproef §7.4 | ✅ uitgevoerd — antwoord: **vervangen kan niet**, zie §7.4 |
+| Twee mp4's, identiek beeldmateriaal, juiste UI-taal | ✅ NL 96 s · FR 104 s, elk 11 scènes |
+| Zichtbare cursor | ✅ nagemeten op een filmbeeld |
+| Beeld en geluid synchroon zónder montagestap | ✅ mét ritme, zie §3.1 |
+| Eigen Belgische stemmen | ✅ Christian Brison (nl) · Christophe Géradon (fr) |
+| Vervangproef §7.4 | ✅ uitgevoerd — antwoord: **vervangen kan niet** |
+| Geüpload mét ondertitels en hoofdstukken | ✅ `bunny.mjs publiceer` |
+| Op de handleidingpagina, in beide talen | ✅ hook `hooks/films.py`, gemeten in de browser: hij speelt |
 
-**De stemmen** (ElevenLabs, Creator-abonnement, `eleven_multilingual_v2` gepind):
-`Christian Brison` voor het Nederlands — Vlaams, en na vergelijking met `Luc` de beste van de twee.
-`Christophe Géradon` voor het Frans — Belgisch, gekozen boven `Samuel` op een langer proefstuk.
-Beide voice-id's staan in user-secrets, niet in deze repo.
+**Wat de keten onderweg leerde** — alle drie dingen die je bij vijftien films vijftien keer zou betalen:
 
-⚠️ **Vergelijk een stem op een REEKS, niet op één zin.** De eerste vergelijking gebeurde op twee zinnen en
-gaf geen uitsluitsel; op vijf zinnen achter elkaar — mét een opsomming en een zin vol datums — was het
-verschil meteen hoorbaar. Een handleidingfilm is een reeks van elf zinnen, geen zin.
+1. **Hoofdstukken kunnen pas ná het verwerken.** Meteen na de upload geeft Bunny
+   `400 Chapter is out of bounds of the video`: de video heeft dan nog lengte 0. Ondertitels hebben er geen
+   last van, die worden wél meteen aanvaard.
+2. **`films-uitslag.json` moet ÍN git.** Ze stond eerst in `.films-uit/`, en die map is genegeerd omdat
+   mp4's niet in git horen. De MkDocs-hook leest die tabel bij het bouwen; zonder haar bouwt de site
+   zwijgend zonder films.
+3. **De tabel wordt samengevoegd, niet overschreven.** Draai je één film, dan mogen de guids van de andere
+   veertien niet verdampen. Bewezen met een nepregel die de ronde moest overleven.
 
-### Fase 2 — generaliseren
-Cursor, tijdsturing en montage naar de AppKit. De resterende films schrijven en opnemen.
-**Klaar wanneer:** één commando alle films in beide talen rendert, met een verslag dat élke film in precies één uitslaglijst plaatst — dezelfde eis als bij de beelden.
+### Fase 2 — de veertien andere films
+Scenario per film schrijven (NL+FR), demo-data nakijken, opnemen, publiceren. De machinerie ligt er.
+**Klaar wanneer:** één commando alle films in beide talen rendert en publiceert, met een verslag dat élke
+film in precies één uitslaglijst plaatst — dezelfde eis als bij de beelden.
 
-### Fase 3 — inbedden en hernemen
-Bunny-upload, hoofdstukken, ondertitels, de hook, het uitslagbestand, de hashcontrole.
-**Klaar wanneer:** een gerichte wijziging in één scherm precies de films markeert die dat scherm tonen en enkel die herneemt, en de handleidingpagina daarna de nieuwe film toont **zonder handmatige tussenkomst** — mét hoofdstukken en ondertitels.
+⚠️ **Reken per film op demo-werk.** Elke film is in werkelijkheid een volledigheidstoets op de demo: film 1
+had een dossier nodig met én een journaal én gevraagde documenten in alle drie de toestanden, en dat bestond
+niet. Verwacht hetzelfde bij de documentketen, de restanten en het aanbrengersportaal.
 
----
+### Fase 3 — verouderen en hernemen
+De hashcontrole uit §6 aan een commando hangen, zodat een wijziging aan één scherm precies de films
+markeert die dat scherm tonen. De hash staat al in de tabel; wat ontbreekt is de vergelijking.
+
+⚠️ **Wat hier NIET meer bij hoort:** het generieke deel naar de AppKit tillen (§8). Die staat sinds
+24/08/2026 in de vriezer. Dat is een aparte beslissing van Dominique en geen fase.
+
 
 ## 10. Buiten scope
 
