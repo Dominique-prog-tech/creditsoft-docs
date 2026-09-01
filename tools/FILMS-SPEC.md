@@ -481,12 +481,22 @@ bestaat al; dat een latere film eerst gemaakt is, verandert niets aan waar hij h
 | 8 | ~~`aanbrengers`~~ ⏸️ **UITGESTELD** | crm/contributors · het aanbrengersportaal | — |
 | 9 | `commissie-instellen` | commission-schemes · financial-institutions | 120 s |
 | 10 | `commissie-uitbetalen` | commission-statements · commission-forecast · restanten | 180 s |
-| 11 | `fiche-281-50` | credit-management/fiche-281-50 | 90 s |
+| 11 | ~~`fiche-281-50`~~ ✅ **OPGENOMEN IN 10** | credit-management/fiche-281-50 | — |
 | 12 | `verzekeringen` | insurance-contracts · insurance-companies | 120 s |
 | 13 | `dashboard` | getting-started/dashboard · beheer/dashboard-fases | 120 s |
 | 14 | `lijsten-en-rapporten` | filteren-in-lijsten · reports · global-overview | 150 s |
 | 15 | `mailketen` | kantoorprofiel · sender-addresses · mailverkeer | 120 s |
 | 16 | `klantenportaal` | portaal/index · portaal/overzicht — dóór de ogen van de klant | 120 s |
+
+### ✅ Vervallen: `fiche-281-50` als eigen film (01/09/2026)
+Bij het uitschrijven van film 10 (`commissie-uitbetalen`) bleek de fiche 281.50 daar natuurlijk in te
+passen: ze is het jaarlijkse sluitstuk van dezelfde keten, en de scène over de ontbrekende btw-nummers hoort
+bij het borderel-verhaal en niet bij een apart filmpje van anderhalve minuut.
+
+Twee scènes dekken haar nu: het boekjaar met de begunstigden, en de waarschuwing die zegt wat er nog moet
+gebeuren vóór je de documenten opmaakt.
+
+⚠️ **De handleidingpagina blijft bestaan** en houdt haar eigen beelden — enkel de aparte FILM vervalt.
 
 ### ⏸️ Uitgesteld: `aanbrengers` (01/09/2026)
 Dominique: *"Aanbrengers zou ik persoonlijk overlaten nu, daar moet nog een gans luik van uitgewerkt worden

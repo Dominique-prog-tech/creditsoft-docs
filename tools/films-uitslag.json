@@ -1522,7 +1522,7 @@
     "titel": "Commissie uitbetalen — borderel, vooruitzicht en restanten",
     "omschrijving": "Wat er uit uw commissieschema’s komt: het borderel per aanbrenger met zijn lijnen, het vooruitzicht dat toont wat er de komende maanden nog uitbetaald moet worden, de restanten die nooit op een borderel belandden en waarom, en de fiche 281.50 voor de fiscus.",
     "hash": "1100801d1bc29de6",
-    "guid": null,
+    "guid": "8f842a27-918d-4036-954b-7ed65082363b",
     "hoofdstukken": [
       {
         "titel": "De borderellen",
@@ -1569,7 +1569,11 @@
         "start": 117.05,
         "eind": 125.92
       }
-    ]
+    ],
+    "thumbnail": null,
+    "gepubliceerdOp": "2026-09-01T14:44:01.382",
+    "gepubliceerdeHash": "1100801d1bc29de6",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/8f842a27-918d-4036-954b-7ed65082363b"
   },
   "commissie-uitbetalen-fr": {
     "film": "commissie-uitbetalen",
