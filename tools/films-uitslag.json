@@ -777,5 +777,143 @@
     "gepubliceerdOp": "2026-09-01T08:40:42.357",
     "gepubliceerdeHash": "dd1154ba33918143",
     "embed": "https://iframe.mediadelivery.net/embed/741183/649ebedd-1202-4aa2-ba6c-fe000b478288"
+  },
+  "leads-nl": {
+    "film": "leads",
+    "taal": "nl-BE",
+    "pagina": "crm/leads",
+    "lengte": 133.45,
+    "routes": [
+      "/crm/leads"
+    ],
+    "app": {
+      "sha": "4c4b57cb0c5f2aff36388a9d06276d4da08d5d93",
+      "vuil": true
+    },
+    "titel": "Leads in CreditSoft — van aanvraag tot klant",
+    "omschrijving": "De werklijst van uw instroom: wie er wacht en hoe lang, uit welk kanaal hij kwam, en wie hem opvolgt. Daarna de fiche van een lead — wie hij is, wat hij vraagt, en waar hij staat — de vijf statussen, en tot slot een lead die klant geworden is, met de doorverwijzing naar zijn relatiefiche.",
+    "hash": "8dee61ba3753dafa",
+    "guid": null,
+    "hoofdstukken": [
+      {
+        "titel": "De werklijst",
+        "start": 3.86,
+        "eind": 12.68
+      },
+      {
+        "titel": "Hoe lang iemand wacht",
+        "start": 16.02,
+        "eind": 24.24
+      },
+      {
+        "titel": "Wie volgt hem op",
+        "start": 27.55,
+        "eind": 34.75
+      },
+      {
+        "titel": "Waar hij vandaan komt",
+        "start": 38.08,
+        "eind": 48.44
+      },
+      {
+        "titel": "De fiche van een lead",
+        "start": 52.6,
+        "eind": 63.28
+      },
+      {
+        "titel": "Wat hij vraagt",
+        "start": 66.78,
+        "eind": 75.46
+      },
+      {
+        "titel": "De opvolging",
+        "start": 78.95,
+        "eind": 86.06
+      },
+      {
+        "titel": "De vijf statussen",
+        "start": 92.33,
+        "eind": 105.34
+      },
+      {
+        "titel": "Van lead naar klant",
+        "start": 109.99,
+        "eind": 120.26
+      },
+      {
+        "titel": "Tot slot",
+        "start": 122.96,
+        "eind": 130.95
+      }
+    ]
+  },
+  "leads-fr": {
+    "film": "leads",
+    "taal": "fr-BE",
+    "pagina": "crm/leads",
+    "lengte": 156.84,
+    "routes": [
+      "/crm/leads"
+    ],
+    "app": {
+      "sha": "4c4b57cb0c5f2aff36388a9d06276d4da08d5d93",
+      "vuil": true
+    },
+    "titel": "Les leads dans CreditSoft — de la demande au client",
+    "omschrijving": "La liste de travail de vos demandes entrantes : qui attend et depuis combien de temps, de quel canal il provient, et qui le suit. Ensuite la fiche d’un lead — qui il est, ce qu’il demande et où il en est — les cinq statuts, et pour finir un lead devenu client, avec le renvoi vers sa fiche.",
+    "hash": "2072a8105107fefb",
+    "guid": null,
+    "hoofdstukken": [
+      {
+        "titel": "La liste de travail",
+        "start": 3.81,
+        "eind": 16.21
+      },
+      {
+        "titel": "Depuis combien de temps on attend",
+        "start": 19.57,
+        "eind": 29.55
+      },
+      {
+        "titel": "Qui assure le suivi",
+        "start": 32.85,
+        "eind": 41.26
+      },
+      {
+        "titel": "D’où il provient",
+        "start": 44.56,
+        "eind": 58.45
+      },
+      {
+        "titel": "La fiche d’un lead",
+        "start": 62.6,
+        "eind": 77.32
+      },
+      {
+        "titel": "Ce qu’il demande",
+        "start": 80.83,
+        "eind": 92.67
+      },
+      {
+        "titel": "Le suivi",
+        "start": 96.17,
+        "eind": 104.11
+      },
+      {
+        "titel": "Les cinq statuts",
+        "start": 110.28,
+        "eind": 124.26
+      },
+      {
+        "titel": "Du lead au client",
+        "start": 128.91,
+        "eind": 140.8
+      },
+      {
+        "titel": "Pour conclure",
+        "start": 143.51,
+        "eind": 154.34
+      }
+    ]
   }
 }

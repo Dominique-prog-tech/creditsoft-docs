@@ -660,6 +660,109 @@ const FILMS = [
     ],
   }],
 
+  // ─────────────────────────────────────────────────────────────────────────────────────────────────────
+  // FILM 3 van de reeks (§14). De instroom: wie klopt er aan, en wat gebeurt ermee.
+  //
+  // ⚠️ DERDE FILM, DERDE DEMO-GAT. De leadlijst droeg VIER van de vijf statussen: "Gewonnen" ontbrak, en
+  // daarmee was de hele sectie "Van lead naar klant" uit crm/leads.md nergens te tonen — precies de stap
+  // waar het om draait. De generator zaait er nu één, mét de verwijzing naar de relatie die eruit voortkwam.
+  //
+  // ⚠️ GEEN SCÈNE OVER DE WEBSITESLEUTEL. crm/leads-webformulier.md beschrijft ze, maar er is geen scherm
+  // voor: een sleutel vraag je aan bij ADM One. Een scène erover zou een knop moeten tonen die niet bestaat.
+  // De film toont de zichtbare helft — de BRON die uit die sleutel komt en per lead in de lijst staat.
+  //
+  // ⚠️ EN GEEN GETAL IN EEN ZIN. De lijst toont "wacht al 14 dagen" waar de seed 3 dagen zegt: het
+  // ontvangstmoment wordt bij het zaaien vastgeklikt en drijft daarna mee met de kalender. Een zin die een
+  // aantal dagen noemt, klopt dus volgende maand niet meer.
+  ['leads', {
+    pagina: 'crm/leads',
+    titel: {
+      nl: 'Leads in CreditSoft — van aanvraag tot klant',
+      fr: 'Les leads dans CreditSoft — de la demande au client',
+    },
+    omschrijving: {
+      nl: 'De werklijst van uw instroom: wie er wacht en hoe lang, uit welk kanaal hij kwam, en wie hem '
+        + 'opvolgt. Daarna de fiche van een lead — wie hij is, wat hij vraagt, en waar hij staat — de vijf '
+        + 'statussen, en tot slot een lead die klant geworden is, met de doorverwijzing naar zijn relatiefiche.',
+      fr: 'La liste de travail de vos demandes entrantes : qui attend et depuis combien de temps, de quel '
+        + 'canal il provient, et qui le suit. Ensuite la fiche d’un lead — qui il est, ce qu’il demande et où '
+        + 'il en est — les cinq statuts, et pour finir un lead devenu client, avec le renvoi vers sa fiche.',
+    },
+    uitvoeringen: { handleiding: { stem: true } },
+    scenes: [
+      { naam: 'lijst', kop: { nl: 'De werklijst', fr: 'La liste de travail' },
+        doe: async (p) => { await p.goto(`${BASIS}/crm/leads`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(1800); },
+        merk: /Nieuwe lead|Nouveau lead/i,
+        nl: 'Een lead is iemand die zich meldt maar nog geen klant is. Dit scherm is geen archief maar een werklijst: het toont wat er ligt te wachten.',
+        fr: "Un lead, c’est quelqu’un qui se manifeste sans être encore client. Cet écran n’est pas une archive mais une liste de travail : il montre ce qui attend." },
+
+      { naam: 'wachttijd', kop: { nl: 'Hoe lang iemand wacht', fr: 'Depuis combien de temps on attend' },
+        doe: async (p) => { await beweegNaar(p, p.getByText(/Wacht al|En attente depuis/i).first()); await p.waitForTimeout(1400); },
+        merk: /Wacht al|En attente depuis/i,
+        nl: 'Twee kolommen doen het werk. Wacht al zegt hoe lang er nog niemand gereageerd heeft, en die klok stopt pas bij het eerste contact.',
+        fr: "Deux colonnes font le travail. En attente depuis indique depuis combien de temps personne n’a réagi, et cette horloge ne s’arrête qu’au premier contact." },
+
+      { naam: 'opvolger', kop: { nl: 'Wie volgt hem op', fr: 'Qui assure le suivi' },
+        doe: async (p) => { await beweegNaar(p, p.getByText(/^niemand$|^personne$/i).first()); await p.waitForTimeout(1400); },
+        merk: /niemand|personne/i,
+        nl: 'De tweede is Opvolging. Staat daar niemand, dan is deze aanvraag van niemand — en dat is precies de lead die wegglipt.',
+        fr: "La seconde est Suivi. S’il n’y a personne, cette demande n’appartient à personne — et c’est précisément le lead qui s’échappe." },
+
+      { naam: 'bron', kop: { nl: 'Waar hij vandaan komt', fr: 'D’où il provient' },
+        doe: async (p) => { await beweegNaar(p, p.getByText(/^doorverwijzing$/i).first()); await p.waitForTimeout(1400); },
+        merk: /doorverwijzing/i,
+        nl: 'De kolom Bron zegt via welk kanaal iemand binnenkwam: uw contactformulier, een telefoon, of een doorverwijzing. Zo ziet u welk kanaal u klanten oplevert.',
+        fr: "La colonne Source indique par quel canal la personne est arrivée : votre formulaire de contact, un appel, ou une recommandation. Vous voyez ainsi quel canal vous apporte des clients." },
+
+      { naam: 'openen', kop: { nl: 'De fiche van een lead', fr: 'La fiche d’un lead' },
+        doe: async (p) => {
+          await klik(p, p.getByText('Tom Claes').first());
+          await p.getByText('Tom Claes').first().dblclick();
+          await p.waitForLoadState('networkidle'); await p.waitForTimeout(2200);
+        },
+        merk: /Vul minstens een van deze velden|Complétez au moins un de ces champs/i,
+        nl: 'De fiche valt in drie blokken uiteen. Wie hij is: naam, bedrijf en hoe u hem bereikt. Eén van die velden volstaat — zonder herkenning is een lead niet op te volgen.',
+        fr: "La fiche se divise en trois blocs. Qui il est : nom, société et comment le joindre. Un seul de ces champs suffit — sans identification, un lead ne peut pas être suivi." },
+
+      { naam: 'vraag', kop: { nl: 'Wat hij vraagt', fr: 'Ce qu’il demande' },
+        doe: async (p) => { await beweegNaar(p, p.getByText(/Herkomst|Provenance/i).first()); await p.waitForTimeout(1600); },
+        merk: /Herkomst|Provenance/i,
+        nl: 'Het tweede blok is de vraag zelf: het bedrag, de bron, en wat hij letterlijk schreef. De herkomst zegt uit welk formulier hij kwam.',
+        fr: "Le deuxième bloc est la demande elle-même : le montant, la source, et ce qu’il a écrit littéralement. La provenance indique de quel formulaire il vient." },
+
+      { naam: 'opvolging', kop: { nl: 'De opvolging', fr: 'Le suivi' },
+        doe: async (p) => { await beweegNaar(p, p.getByText(/Eerste contact|Premier contact/i).first()); await p.waitForTimeout(1600); },
+        merk: /Eerste contact|Premier contact/i,
+        nl: 'Het derde blok is de opvolging: zijn status, wie hem opvolgt, en wanneer er voor het eerst contact geweest is.',
+        fr: "Le troisième bloc est le suivi : son statut, qui s’en occupe, et quand le premier contact a eu lieu." },
+
+      { naam: 'statussen', kop: { nl: 'De vijf statussen', fr: 'Les cinq statuts' },
+        doe: async (p) => {
+          await p.goto(`${BASIS}/crm/leads`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(1600);
+          await klik(p, p.getByText(/Alle statussen|Tous les statuts/i).first()); await p.waitForTimeout(1800);
+        },
+        merk: /Gekwalificeerd|Qualifié/i,
+        nl: 'Er zijn er vijf, en bewust niet meer: nieuw, gecontacteerd, gekwalificeerd, gewonnen en verloren. Een kantoor van vijf mensen heeft geen trechter van acht fasen nodig.',
+        fr: "Il y en a cinq, et volontairement pas plus : nouveau, contacté, qualifié, gagné et perdu. Un bureau de cinq personnes n’a pas besoin d’un entonnoir à huit phases." },
+
+      { naam: 'gewonnen', kop: { nl: 'Van lead naar klant', fr: 'Du lead au client' },
+        doe: async (p) => {
+          await p.keyboard.press('Escape'); await p.waitForTimeout(700);
+          await p.getByText('Brigitte De Rycke').first().dblclick();
+          await p.waitForLoadState('networkidle'); await p.waitForTimeout(2400);
+        },
+        merk: /bekijk de klant|voir le client/i,
+        nl: 'Wordt hij klant, dan zet u hem om. De lead blijft staan als geschiedenis van hoe die klant binnenkwam, en draagt voortaan een link naar zijn relatiefiche.',
+        fr: "S’il devient client, vous le convertissez. Le lead subsiste comme historique de la façon dont ce client est arrivé, et porte désormais un lien vers sa fiche de relation." },
+
+      { naam: 'slot', kop: { nl: 'Tot slot', fr: 'Pour conclure' },
+        doe: async (p) => { await p.waitForTimeout(1200); },
+        merk: /Lead|Gewonnen|Gagné/i,
+        nl: 'Zo sluit de cirkel: van een vraag op uw website tot een klant met een dossier. In de volgende film gaan we naar de documenten.',
+        fr: "La boucle est ainsi bouclée : d’une question sur votre site à un client avec un dossier. Dans le film suivant, nous passons aux documents." },
+    ],
+  }],
+
   ['kredietdossiers-basis', {
     pagina: 'credit-management/credit-files',
     // ⚠️ EEN MENSELIJKE TITEL EN OMSCHRIJVING, per taal. De technische naam ("kredietdossiers-basis-nl") is
