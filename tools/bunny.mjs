@@ -345,5 +345,35 @@ if (opdracht === 'naar-website') {
   process.exit(0);
 }
 
-console.log(`Onbekende opdracht "${opdracht}". Gebruik: check | publiceer | metadata | naar-website | vervangproef`);
+if (opdracht === 'miniatuur') {
+  // ⚠️ BUNNY KIEST ZELF EEN BEELD UIT HET MIDDEN, en bij ons is dat een dichte tabel. Je ziet die miniatuur
+  // alleen wanneer autoplay niet doorgaat — data-besparing, "beperk beweging", een trage verbinding — maar
+  // net dan is het de eerste indruk. Een vroeg beeld toont het scherm zoals de film begint.
+  //
+  // De seconde is instelbaar; standaard 3, want dan staat scène 1 met haar tekst in beeld.
+  const UITSLAG = new URL('./films-uitslag.json', import.meta.url).pathname;
+  const uitslag = JSON.parse(readFileSync(UITSLAG, 'utf8'));
+  const filter = process.argv[3];
+  const sec = Number(process.argv[4] ?? 3);
+  const { execFileSync } = await import('node:child_process');
+
+  for (const [sleutel, f] of Object.entries(uitslag)) {
+    if (filter && !sleutel.includes(filter)) continue;
+    if (!f.guid) { console.log(`⏭  ${sleutel} — nog niet gepubliceerd`); continue; }
+    const mp4 = `${UIT}${sleutel}.mp4`;
+    if (!existsSync(mp4)) { console.log(`⏭  ${sleutel} — geen mp4 om een beeld uit te halen`); continue; }
+
+    const beeld = `${UIT}${sleutel}-mini.jpg`;
+    execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-ss', String(sec), '-i', mp4,
+                            '-frames:v', '1', '-q:v', '2', beeld]);
+    const r = await fetch(`${BASIS}/videos/${f.guid}/thumbnail`, {
+      method: 'POST', headers: { AccessKey: SLEUTEL, 'content-type': 'image/jpeg' },
+      body: readFileSync(beeld),
+    });
+    console.log(`${r.ok ? '✅' : '⚠️'} ${sleutel} — beeld op ${sec}s → HTTP ${r.status}`);
+  }
+  process.exit(0);
+}
+
+console.log(`Onbekende opdracht "${opdracht}". Gebruik: check | publiceer | metadata | naar-website | miniatuur | vervangproef`);
 process.exit(1);

@@ -437,6 +437,14 @@ const FILMS = [
       website: {
         stem: false,
         scenes: ['lijst', 'openen', 'gegevens', 'documenten', 'slot'],
+        // ⚠️ Óók Engels, want de site draagt drie talen. Zonder deze regel zou de Engelse
+        // functionaliteitspagina een BOUWFOUT geven — het Film-component weigert een ontbrekende taal in
+        // plaats van stil niets te tonen. Engelse tekst over een Nederlands scherm; de app spreekt geen Engels.
+        talen: [
+          { ui: 'nl-BE', tekst: 'nl' },
+          { ui: 'fr-BE', tekst: 'fr' },
+          { ui: 'nl-BE', tekst: 'en' },
+        ],
       },
     },
     scenes: [
@@ -444,6 +452,7 @@ const FILMS = [
         doe: async (p) => { await p.goto(`${BASIS}/credit-files`); await p.waitForLoadState('networkidle'); },
         merk: /Kenmerk aanbrenger|Référence apporteur/i,
         nl: 'Het kredietdossier is het hart van CreditSoft. Alles wat bij één aanvraag hoort, staat op één pagina bij elkaar.',
+        en: 'The credit file is the heart of CreditSoft. Everything about one application sits together on a single page.',
         fr: "Le dossier de crédit est le cœur de CreditSoft. Tout ce qui concerne une demande est rassemblé sur une seule page." },
 
       { naam: 'kolommen',
@@ -467,12 +476,14 @@ const FILMS = [
         doe: async (p, f) => { await p.goto(`${BASIS}/credit-files/${f.dossier}`); await p.waitForLoadState('networkidle'); },
         merk: /Kredietbedrag|Montant du crédit/i,
         nl: 'We openen een bestaand dossier.',
+        en: 'Let us open an existing file.',
         fr: "Ouvrons un dossier existant." },
 
       { naam: 'gegevens',
         doe: async (p) => { await p.waitForTimeout(400); },
         merk: /Datum indiening|Date de dépôt/i,
         nl: 'Bovenaan staan de dossiergegevens: de status, het kredietbedrag, de instelling en de datums van indiening en ingang.',
+        en: 'At the top are the file details: the status, the credit amount, the institution and the submission and start dates.',
         fr: "En haut se trouvent les données du dossier : le statut, le montant du crédit, l'institution et les dates de dépôt et d'effet." },
 
       { naam: 'aanvragers',
@@ -502,6 +513,7 @@ const FILMS = [
         },
         merk: /Ontvangen|Reçu/i,
         nl: 'Bij Gevraagd volgt u per stuk of het aangeleverd is en of het al beoordeeld werd.',
+        en: 'Under Requested you track, item by item, what has been supplied and what has already been reviewed.',
         fr: "Dans Demandés, vous suivez pièce par pièce ce qui a été fourni et ce qui a déjà été évalué." },
 
       // ⚠️ TWEE SCÈNES, en dat was eerst één. Drie klikken na elkaar met één zin erover gaf 8,1 seconden
@@ -546,6 +558,7 @@ const FILMS = [
         },
         merk: /Kredietbedrag|Montant du crédit/i,
         nl: 'Eén dossier, één pagina. Wat uitbetaald is, blijft.',
+        en: 'One file, one page. What has been paid out, stays.',
         fr: "Un dossier, une page. Ce qui a été payé, reste." },
     ],
   }],

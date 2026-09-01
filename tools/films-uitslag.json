@@ -137,75 +137,83 @@
     "film": "kredietdossiers-basis",
     "taal": "nl-BE",
     "pagina": "credit-management/credit-files",
-    "lengte": 42.8,
+    "lengte": 42.64,
     "titel": "Het kredietdossier in CreditSoft — van lijst tot journaal",
     "omschrijving": "Een rondleiding door het kredietdossier: de lijst filteren en doorzoeken, een dossier openen, de dossiergegevens, de kredietaanvragers, het pand, de gevraagde documenten, en het journaal met de taken, notities, gesprekken en commissieschema’s die bij dat ene dossier horen.",
     "hash": "ed66fec463615506",
-    "guid": null,
+    "guid": "9129a61b-2412-4cc8-9b32-d75da739fba6",
     "hoofdstukken": [
       {
         "titel": "lijst",
-        "start": 2.11,
-        "eind": 10.11
+        "start": 2.17,
+        "eind": 10.17
       },
       {
         "titel": "openen",
-        "start": 13.42,
-        "eind": 16.02
+        "start": 13.31,
+        "eind": 15.91
       },
       {
         "titel": "gegevens",
-        "start": 17.95,
-        "eind": 26.23
+        "start": 17.83,
+        "eind": 26.12
       },
       {
         "titel": "documenten",
-        "start": 30.31,
-        "eind": 36.1
+        "start": 30.19,
+        "eind": 35.98
       },
       {
         "titel": "slot",
-        "start": 37.23,
-        "eind": 40.87
+        "start": 37.09,
+        "eind": 40.74
       }
-    ]
+    ],
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/9129a61b-2412-4cc8-9b32-d75da739fba6/thumbnail.jpg",
+    "gepubliceerdOp": "2026-09-01T06:21:44.408",
+    "gepubliceerdeHash": "ed66fec463615506",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/9129a61b-2412-4cc8-9b32-d75da739fba6"
   },
   "kredietdossiers-basis-website-fr": {
     "film": "kredietdossiers-basis",
     "taal": "fr-BE",
     "pagina": "credit-management/credit-files",
-    "lengte": 43.76,
+    "lengte": 43.8,
     "titel": "Le dossier de crédit dans CreditSoft — de la liste au journal",
     "omschrijving": "Une visite guidée du dossier de crédit : filtrer et rechercher dans la liste, ouvrir un dossier, les données du dossier, les demandeurs de crédit, le bien, les documents demandés, et le journal avec les tâches, notes, appels et schémas de commission liés à ce dossier.",
     "hash": "1fdf1461c3cc2809",
-    "guid": null,
+    "guid": "ca7508c7-a5b7-49e2-b91c-d88889f9bb3e",
     "hoofdstukken": [
       {
         "titel": "lijst",
-        "start": 2.21,
-        "eind": 10.35
+        "start": 2.09,
+        "eind": 10.23
       },
       {
         "titel": "openen",
-        "start": 13.57,
-        "eind": 16.17
+        "start": 13.41,
+        "eind": 16.01
       },
       {
         "titel": "gegevens",
-        "start": 18.08,
-        "eind": 27.01
+        "start": 17.93,
+        "eind": 26.86
       },
       {
         "titel": "documenten",
-        "start": 31.07,
-        "eind": 37.57
+        "start": 30.9,
+        "eind": 37.4
       },
       {
         "titel": "slot",
-        "start": 38.69,
-        "eind": 42.04
+        "start": 38.51,
+        "eind": 41.87
       }
-    ]
+    ],
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/ca7508c7-a5b7-49e2-b91c-d88889f9bb3e/thumbnail.jpg",
+    "gepubliceerdOp": "2026-09-01T06:24:21.949",
+    "gepubliceerdeHash": "1fdf1461c3cc2809",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/ca7508c7-a5b7-49e2-b91c-d88889f9bb3e"
   },
   "creditsoft-overzicht-website-nl": {
     "film": "creditsoft-overzicht",
@@ -374,5 +382,46 @@
     "gepubliceerdOp": "2026-09-01T05:39:26.183",
     "gepubliceerdeHash": "682a154e1ab2d163",
     "embed": "https://iframe.mediadelivery.net/embed/741183/bc9092c4-ae00-49ed-84b7-3475506cef5b"
+  },
+  "kredietdossiers-basis-website-en": {
+    "film": "kredietdossiers-basis",
+    "taal": "nl-BE",
+    "pagina": "credit-management/credit-files",
+    "lengte": 43.44,
+    "titel": "kredietdossiers-basis",
+    "omschrijving": "",
+    "hash": "a03e60739b44dfe4",
+    "guid": "9aadef14-942d-4ee8-a3a4-9e409f80eb62",
+    "hoofdstukken": [
+      {
+        "titel": "lijst",
+        "start": 2.1,
+        "eind": 9.81
+      },
+      {
+        "titel": "openen",
+        "start": 12.93,
+        "eind": 15.53
+      },
+      {
+        "titel": "gegevens",
+        "start": 17.45,
+        "eind": 25.66
+      },
+      {
+        "titel": "documenten",
+        "start": 29.75,
+        "eind": 36.82
+      },
+      {
+        "titel": "slot",
+        "start": 37.95,
+        "eind": 41.52
+      }
+    ],
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/9aadef14-942d-4ee8-a3a4-9e409f80eb62/thumbnail.jpg",
+    "gepubliceerdOp": "2026-09-01T06:26:54.308",
+    "gepubliceerdeHash": "a03e60739b44dfe4",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/9aadef14-942d-4ee8-a3a4-9e409f80eb62"
   }
 }
