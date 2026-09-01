@@ -170,6 +170,10 @@ async function klik(page, loc) { await beweegNaar(page, loc); await loc.click();
 // De knoppen dragen geen stabiele klasse, dus de titel is wat er is; één regex dekt de twee talen samen.
 const kopbalkKnop = (page, patroon) => page.getByTitle(patroon).first();
 
+// Een tabblad op een fiche, in beide talen. Tabbladen dragen `role=tab`; op naam is stabieler dan op index,
+// want de tabreeks verschilt per soort relatie (een bedrijf heeft geen "Bijkomend" met geboortedatum).
+const tabblad = (page, patroon) => page.getByRole('tab').filter({ hasText: patroon }).first();
+
 // ── De hoofdstuktitel van een scène, per taal ────────────────────────────────────────────────────────────
 // Zie de noot bij `hoofdstukken:` verderop. Ontbreekt `kop`, dan valt dit terug op de interne scènenaam en
 // wordt dat GETELD — de ronde meldt het op het eind, zodat het niet opnieuw jaren onopgemerkt blijft.
@@ -554,6 +558,105 @@ const FILMS = [
         merk: /Dashboard|Tableau de bord/i,
         nl: 'Dat is de weg. De rest van deze reeks gaat over wat u er onderweg mee doet.',
         fr: "Voilà pour l’orientation. Le reste de cette série porte sur ce que vous en faites en chemin." },
+    ],
+  }],
+
+  // ─────────────────────────────────────────────────────────────────────────────────────────────────────
+  // FILM 2 van de reeks (§14). De relatie is de spil: elk dossier hangt eraan, elk document, elk gesprek.
+  //
+  // ⚠️ DEZE FILM KOSTTE DEMO-WERK, precies zoals §14 voorspelde. Het tabblad "Gevraagd" was op élke relatie
+  // leeg: van 6.742 relaties droeg er ÉÉN een gevraagd document, en dat was er precies één (dossiers hadden
+  // er 17.929). De generator vult ze nu, in alle drie de toestanden. En bij het meten bleek de teller in de
+  // tabkop "Gevraagd (0)" te tonen boven drie documenten — die werd pas berekend als je het tabblad opende.
+  ['relaties', {
+    pagina: 'crm/relations',
+    titel: {
+      nl: 'Relaties in CreditSoft — de fiche waar alles aan hangt',
+      fr: 'Les relations dans CreditSoft — la fiche à laquelle tout se rattache',
+    },
+    omschrijving: {
+      nl: 'De relatiefiche van dichtbij: de lijst doorzoeken, een fiche openen, de algemene en bijkomende '
+        + 'gegevens, de documenttaal die bepaalt in welke taal uw klant post krijgt, de gevraagde documenten '
+        + 'met hun drie toestanden, de kredietdossiers van die klant, en het journaal met notities en '
+        + 'gesprekken. Plus het samenvoegen van twee fiches die dezelfde persoon blijken te zijn.',
+      fr: 'La fiche de relation de près : parcourir la liste, ouvrir une fiche, les données générales et '
+        + 'complémentaires, la langue des documents qui détermine dans quelle langue votre client reçoit son '
+        + 'courrier, les documents demandés avec leurs trois statuts, les dossiers de crédit de ce client, et '
+        + 'le journal avec les notes et les appels. Ainsi que la fusion de deux fiches.',
+    },
+    uitvoeringen: { handleiding: { stem: true } },
+    scenes: [
+      { naam: 'lijst', kop: { nl: 'De relatielijst', fr: 'La liste des relations' },
+        doe: async (p) => { await p.goto(`${BASIS}/crm/relaties`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(1500); },
+        merk: /Nieuwe relatie|Nouvelle relation/i,
+        nl: 'Een relatie is iedereen met wie u zakendoet: uw klanten, hun partners, en de bedrijven achter een aanvraag. Alles hangt hieraan vast.',
+        fr: "Une relation, c’est toute personne avec qui vous travaillez : vos clients, leurs partenaires et les sociétés derrière une demande. Tout s’y rattache." },
+
+      { naam: 'zoeken', kop: { nl: 'Zoeken in de lijst', fr: 'Rechercher dans la liste' },
+        doe: async (p) => {
+          const z = p.locator('input[type="search"]:visible, input[placeholder*="oek" i]:visible, input[placeholder*="echerch" i]:visible').first();
+          await klik(p, z); await z.type('Cuypers', { delay: 90 }); await p.waitForTimeout(2400);
+        },
+        merk: /Cuypers/i,
+        nl: 'U zoekt op naam, en de lijst krimpt terwijl u typt. Particulieren en bedrijven staan door elkaar; de kolom Type zegt welke u voor u heeft.',
+        fr: "Vous cherchez par nom et la liste se réduit pendant que vous tapez. Particuliers et sociétés sont mélangés ; la colonne Type indique ce que vous avez devant vous." },
+
+      { naam: 'openen', kop: { nl: 'Een fiche openen', fr: 'Ouvrir une fiche' },
+        doe: async (p) => { await p.goto(`${BASIS}/crm/relaties/${ID.relatie}`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(2200); },
+        merk: /Adriaenssens/i,
+        nl: 'Een fiche opent als een volledige pagina, niet als een venster. Bovenaan staat wie het is, daaronder alles wat bij die persoon hoort.',
+        fr: "Une fiche s’ouvre comme une page entière, pas comme une fenêtre. En haut, de qui il s’agit ; en dessous, tout ce qui s’y rapporte." },
+
+      { naam: 'algemeen', kop: { nl: 'De algemene gegevens', fr: 'Les données générales' },
+        doe: async (p) => { await beweegNaar(p, p.getByText(/Hoofdadres|Adresse principale/i).first()); await p.waitForTimeout(1200); },
+        merk: /Hoofdadres|Adresse principale/i,
+        nl: 'Op het eerste tabblad staan naam, contactgegevens en het hoofdadres. Het adres is gesplitst in straat, nummer, bus, postcode en gemeente, zodat het overal net staat.',
+        fr: "Le premier onglet contient le nom, les coordonnées et l’adresse principale. L’adresse est découpée en rue, numéro, boîte, code postal et commune, pour un rendu propre partout." },
+
+      { naam: 'documenttaal', kop: { nl: 'De documenttaal', fr: 'La langue des documents' },
+        doe: async (p) => { await beweegNaar(p, p.getByText(/Documenttaal|Langue des documents/i).first()); await p.waitForTimeout(1400); },
+        merk: /Documenttaal|Langue des documents/i,
+        nl: 'Eén veld verdient uw aandacht: de documenttaal. Die bepaalt in welke taal deze klant zijn brieven en mails krijgt — los van de taal waarin u zelf werkt.',
+        fr: "Un champ mérite votre attention : la langue des documents. Elle détermine dans quelle langue ce client reçoit ses courriers et e-mails, indépendamment de la langue dans laquelle vous travaillez." },
+
+      { naam: 'bijkomend', kop: { nl: 'Bijkomende gegevens', fr: 'Données complémentaires' },
+        doe: async (p) => { await klik(p, tabblad(p, /^Bijkomend|^Complémentaire/i)); await p.waitForTimeout(1800); },
+        merk: /Rijksregisternr|registre national/i,
+        nl: 'Het tweede tabblad draagt wat u voor een dossier nodig heeft: geboortedatum, rijksregisternummer, burgerlijke staat en beroep.',
+        fr: "Le deuxième onglet porte ce dont vous avez besoin pour un dossier : date de naissance, numéro de registre national, état civil et profession." },
+
+      { naam: 'gevraagd', kop: { nl: 'De gevraagde documenten', fr: 'Les documents demandés' },
+        doe: async (p) => { await klik(p, tabblad(p, /^Gevraagd|^Demandés/i)); await p.waitForTimeout(2200); },
+        merk: /Ontvangen|Reçu/i,
+        nl: 'Bij Gevraagd houdt u bij welke stukken u van deze klant nodig heeft. Elk stuk doorloopt drie toestanden: gevraagd, ontvangen, en in orde. De teller in de tabkop toont hoeveel er al in orde zijn.',
+        fr: "Sous Demandés, vous suivez les pièces dont vous avez besoin de ce client. Chaque pièce passe par trois statuts : demandé, reçu, et en ordre. Le compteur dans l’onglet indique combien sont déjà en ordre." },
+
+      { naam: 'dossiers', kop: { nl: 'De kredietdossiers', fr: 'Les dossiers de crédit' },
+        doe: async (p) => { await klik(p, tabblad(p, /^Kredietdossiers|^Dossiers de crédit/i)); await p.waitForTimeout(2000); },
+        merk: /DEMO-3699/i,
+        nl: 'Het tabblad Kredietdossiers toont elke aanvraag van deze klant, met het bedrag en de fase waarin ze zit. Van hieruit opent u het dossier zelf.',
+        fr: "L’onglet Dossiers de crédit affiche chaque demande de ce client, avec le montant et la phase où elle se trouve. De là, vous ouvrez le dossier lui-même." },
+
+      { naam: 'journaal', kop: { nl: 'Het journaal', fr: 'Le journal' },
+        doe: async (p) => { await klik(p, tabblad(p, /^Gesprekken|^Appels/i)); await p.waitForTimeout(2000); },
+        merk: /Loonbriefje opgevraagd/i,
+        nl: 'De laatste tabbladen zijn het journaal: taken, notities, gesprekken, bijlagen en mailverkeer. Wat u met deze klant afsprak, staat hier — en niet in uw hoofd.',
+        fr: "Les derniers onglets forment le journal : tâches, notes, appels, pièces jointes et courrier. Ce que vous avez convenu avec ce client est ici, et pas dans votre tête." },
+
+      { naam: 'samenvoegen', kop: { nl: 'Twee fiches samenvoegen', fr: 'Fusionner deux fiches' },
+        doe: async (p) => {
+          await p.goto(`${BASIS}/crm/relaties`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(1600);
+          await beweegNaar(p, p.getByText(/^Samenvoegen$|^Fusionner$/).first()); await p.waitForTimeout(1200);
+        },
+        merk: /Samenvoegen|Fusionner/i,
+        nl: 'Blijkt dezelfde persoon twee keer in uw lijst te staan, dan voegt u de fiches samen. De dossiers, documenten en het journaal van beide blijven behouden.',
+        fr: "Si la même personne figure deux fois dans votre liste, vous fusionnez les fiches. Les dossiers, documents et journaux des deux sont conservés." },
+
+      { naam: 'slot', kop: { nl: 'Tot slot', fr: 'Pour conclure' },
+        doe: async (p) => { await p.waitForTimeout(1200); },
+        merk: /Relaties|Relations/i,
+        nl: 'De relatie is uw vertrekpunt. In de volgende film maken we er een kredietdossier bij.',
+        fr: "La relation est votre point de départ. Dans le film suivant, nous y ajoutons un dossier de crédit." },
     ],
   }],
 

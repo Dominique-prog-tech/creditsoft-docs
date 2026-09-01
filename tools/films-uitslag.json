@@ -621,5 +621,153 @@
     "gepubliceerdOp": "2026-09-01T08:07:11.072",
     "gepubliceerdeHash": "a68528c5f0ca32d3",
     "embed": "https://iframe.mediadelivery.net/embed/741183/712272ce-a0d1-4323-845a-c9c9ce20a9e0"
+  },
+  "relaties-nl": {
+    "film": "relaties",
+    "taal": "nl-BE",
+    "pagina": "crm/relations",
+    "lengte": 154.24,
+    "routes": [
+      "/crm/relaties"
+    ],
+    "app": {
+      "sha": "2ff5ae5b66d7e564047347fd96923019fe5f1c32",
+      "vuil": true
+    },
+    "titel": "Relaties in CreditSoft — de fiche waar alles aan hangt",
+    "omschrijving": "De relatiefiche van dichtbij: de lijst doorzoeken, een fiche openen, de algemene en bijkomende gegevens, de documenttaal die bepaalt in welke taal uw klant post krijgt, de gevraagde documenten met hun drie toestanden, de kredietdossiers van die klant, en het journaal met notities en gesprekken. Plus het samenvoegen van twee fiches die dezelfde persoon blijken te zijn.",
+    "hash": "cc219747c794f662",
+    "guid": null,
+    "hoofdstukken": [
+      {
+        "titel": "De relatielijst",
+        "start": 3.62,
+        "eind": 12.49
+      },
+      {
+        "titel": "Zoeken in de lijst",
+        "start": 17.57,
+        "eind": 26.81
+      },
+      {
+        "titel": "Een fiche openen",
+        "start": 31.44,
+        "eind": 40.73
+      },
+      {
+        "titel": "De algemene gegevens",
+        "start": 43.84,
+        "eind": 56.19
+      },
+      {
+        "titel": "De documenttaal",
+        "start": 59.49,
+        "eind": 69.66
+      },
+      {
+        "titel": "Bijkomende gegevens",
+        "start": 73.39,
+        "eind": 81.7
+      },
+      {
+        "titel": "De gevraagde documenten",
+        "start": 85.81,
+        "eind": 98.91
+      },
+      {
+        "titel": "De kredietdossiers",
+        "start": 102.85,
+        "eind": 112.69
+      },
+      {
+        "titel": "Het journaal",
+        "start": 116.61,
+        "eind": 128.6
+      },
+      {
+        "titel": "Twee fiches samenvoegen",
+        "start": 134.28,
+        "eind": 143.76
+      },
+      {
+        "titel": "Tot slot",
+        "start": 146.47,
+        "eind": 151.82
+      }
+    ]
+  },
+  "relaties-fr": {
+    "film": "relaties",
+    "taal": "fr-BE",
+    "pagina": "crm/relations",
+    "lengte": 173.52,
+    "routes": [
+      "/crm/relaties"
+    ],
+    "app": {
+      "sha": "2ff5ae5b66d7e564047347fd96923019fe5f1c32",
+      "vuil": true
+    },
+    "titel": "Les relations dans CreditSoft — la fiche à laquelle tout se rattache",
+    "omschrijving": "La fiche de relation de près : parcourir la liste, ouvrir une fiche, les données générales et complémentaires, la langue des documents qui détermine dans quelle langue votre client reçoit son courrier, les documents demandés avec leurs trois statuts, les dossiers de crédit de ce client, et le journal avec les notes et les appels. Ainsi que la fusion de deux fiches.",
+    "hash": "dd1154ba33918143",
+    "guid": null,
+    "hoofdstukken": [
+      {
+        "titel": "La liste des relations",
+        "start": 3.62,
+        "eind": 14.07
+      },
+      {
+        "titel": "Rechercher dans la liste",
+        "start": 19.12,
+        "eind": 30.22
+      },
+      {
+        "titel": "Ouvrir une fiche",
+        "start": 34.84,
+        "eind": 45.66
+      },
+      {
+        "titel": "Les données générales",
+        "start": 48.76,
+        "eind": 62.88
+      },
+      {
+        "titel": "La langue des documents",
+        "start": 66.17,
+        "eind": 79.78
+      },
+      {
+        "titel": "Données complémentaires",
+        "start": 83.51,
+        "eind": 94.14
+      },
+      {
+        "titel": "Les documents demandés",
+        "start": 98.28,
+        "eind": 113.51
+      },
+      {
+        "titel": "Les dossiers de crédit",
+        "start": 117.43,
+        "eind": 129.32
+      },
+      {
+        "titel": "Le journal",
+        "start": 133.29,
+        "eind": 145.64
+      },
+      {
+        "titel": "Fusionner deux fiches",
+        "start": 151.39,
+        "eind": 161.51
+      },
+      {
+        "titel": "Pour conclure",
+        "start": 164.24,
+        "eind": 171.11
+      }
+    ]
   }
 }
