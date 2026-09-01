@@ -199,6 +199,25 @@ Dezelfde afweging als bij `kern.mjs` op 29/08: het generieke deel hoort in `adm-
 `kredietdossiers-basis` in NL en FR. Montage mag met de hand, alles daarvóór niet.
 **Klaar wanneer:** twee mp4's bestaan met identiek beeldmateriaal, correcte UI-taal, zichtbare cursor, en beeld en geluid synchroon zonder bijsturing. **En:** de vervangproef uit §7.4 is uitgevoerd en het antwoord staat in dit document. Dominique heeft de films goedgekeurd.
 
+**Stand op 01/09/2026 — alles behalve de vervangproef:**
+
+| Eis | Stand |
+|---|---|
+| Twee mp4's, identiek beeldmateriaal, juiste UI-taal | ✅ NL 97 s · FR 104 s, elk 11 scènes |
+| Zichtbare cursor | ✅ nagemeten op een filmbeeld, niet aangenomen |
+| Beeld en geluid synchroon zónder montagestap | ✅ en met ritme, zie §3.1 |
+| Goedgekeurd | ✅ "klinkt héél goed", "overtuigend" |
+| Vervangproef §7.4 | ⛔ **wacht op een Bunny-account** |
+
+**De stemmen** (ElevenLabs, Creator-abonnement, `eleven_multilingual_v2` gepind):
+`Christian Brison` voor het Nederlands — Vlaams, en na vergelijking met `Luc` de beste van de twee.
+`Christophe Géradon` voor het Frans — Belgisch, gekozen boven `Samuel` op een langer proefstuk.
+Beide voice-id's staan in user-secrets, niet in deze repo.
+
+⚠️ **Vergelijk een stem op een REEKS, niet op één zin.** De eerste vergelijking gebeurde op twee zinnen en
+gaf geen uitsluitsel; op vijf zinnen achter elkaar — mét een opsomming en een zin vol datums — was het
+verschil meteen hoorbaar. Een handleidingfilm is een reeks van elf zinnen, geen zin.
+
 ### Fase 2 — generaliseren
 Cursor, tijdsturing en montage naar de AppKit. De resterende films schrijven en opnemen.
 **Klaar wanneer:** één commando alle films in beide talen rendert, met een verslag dat élke film in precies één uitslaglijst plaatst — dezelfde eis als bij de beelden.
@@ -219,7 +238,8 @@ Commerciële video's (3 à 5, kortere montage, muziek — later te knippen uit d
 
 ## 11. Wat Dominique nog moet doen
 
-1. **De stem kiezen.** Standaard Nederlandse TTS klinkt Hollands; voor Vlaamse makelaars valt dat op. Eigen stem klonen (ElevenLabs, vanaf ± $6/maand mét commerciële licentie) of een gekochte stem. Idem voor Belgisch-Frans. Let op twee dingen: dat het plan een **commerciële licentie** draagt, en dat je Vlaams en Belgisch-Frans krijgt — een gekochte standaardstem geeft dat laatste meestal niet.
+1. ~~**De stem kiezen.**~~ ✅ afgehandeld op 01/09/2026 — zie de stand bij fase 1.
+   Oorspronkelijk: Standaard Nederlandse TTS klinkt Hollands; voor Vlaamse makelaars valt dat op. Eigen stem klonen (ElevenLabs, vanaf ± $6/maand mét commerciële licentie) of een gekochte stem. Idem voor Belgisch-Frans. Let op twee dingen: dat het plan een **commerciële licentie** draagt, en dat je Vlaams en Belgisch-Frans krijgt — een gekochte standaardstem geeft dat laatste meestal niet.
    ⚠️ **Doe dit ná het ritme, niet ervoor.** Het ritme is nu op de plaatshouder-stemmen afgeregeld en goedgekeurd (31/08/2026). Wie beide tegelijk wijzigt, weet achteraf niet welke van de twee hielp.
 2. **Bunny-account en video library aanmaken**, en de API-sleutel doorgeven. Opslag vanaf $0,01/GB, streaming vanaf $0,005/GB, geen minimum — bij deze aantallen een paar euro per maand.
 3. **De selectie maken.** Welke vijftien films, volgens de regel uit §1: geen referentiepagina's.
