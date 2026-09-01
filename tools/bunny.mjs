@@ -264,12 +264,23 @@ if (opdracht === 'publiceer') {
     bewaar();
     gedaan++;
 
-    // ⚠️ PAS NU de oude weggooien, en niet eerder. Faalt de upload halverwege, dan staat de vorige film er
-    // nog en toont de handleiding iets ouds in plaats van niets. Een verouderde film is beter dan een lege.
-    if (oudeGuid) {
-      const d = await api(`/videos/${oudeGuid}`, { method: 'DELETE' });
-      console.log(`   oude versie ${oudeGuid} verwijderd → HTTP ${d.status}`);
+    // ⚠️ ÉÉN GENERATIE RESPIJT, en dat is geen netheid maar een crawl-kwestie. Dominique wees erop op
+    // 01/09/2026: op het moment dat wij vervangen, draagt de cache van een zoekmachine nog de OUDE guid in
+    // de zoekgegevens van de pagina. Gooiden we die meteen weg, dan wijst de video-index naar een verwijderde
+    // video tot de volgende crawl — en wie de embed-link ooit kopieerde, kijkt naar niets.
+    //
+    // Daarom: de VORIGE blijft staan, de VÓÓRVORIGE gaat weg. De bibliotheek groeit dan tot hoogstens twee
+    // generaties in plaats van eindeloos, en er is altijd één ronde speling. De handleiding zelf wijst
+    // altijd naar de nieuwste — die leest de tabel bij het bouwen.
+    if (f.vorigeGuid && f.vorigeGuid !== oudeGuid) {
+      const d = await api(`/videos/${f.vorigeGuid}`, { method: 'DELETE' });
+      console.log(`   voorvorige versie ${f.vorigeGuid} opgeruimd → HTTP ${d.status}`);
     }
+    if (oudeGuid) {
+      f.vorigeGuid = oudeGuid;
+      console.log(`   vorige versie ${oudeGuid} blijft nog één ronde staan (crawl-respijt)`);
+    }
+    bewaar();
   }
 
   console.log(`\n${'─'.repeat(74)}`);
