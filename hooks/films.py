@@ -23,6 +23,36 @@ import json
 import logging
 import pathlib
 
+def _geen_dubbele_namen() -> None:
+    """Weigert te laden wanneer dit bestand twee functies met dezelfde naam draagt.
+
+    ⚠️ **Python meldt een herdefinitie niet.** Op 01/09/2026 kwam er een tweede ``_duur`` bij, voor de
+    leesbare duur op de videopagina. De laatste definitie won, en dus stond er op ELKE gepubliceerde
+    filmpagina ``duration: "2 min 13"`` in de gestructureerde gegevens waar ``PT2M13S`` hoort. De site
+    bouwde, de pagina's zagen er goed uit, en alleen een zoekmachine had het gemerkt — precies het soort
+    fout dat niet uitnodigt tot nakijken.
+
+    Deze controle draait bij het IMPORTEREN, dus bij elke bouw, ook lokaal.
+    """
+    import ast
+
+    boom = ast.parse(pathlib.Path(__file__).read_text(encoding="utf-8"))
+    gezien: dict[str, int] = {}
+    dubbel = []
+    for knoop in boom.body:
+        if isinstance(knoop, (ast.FunctionDef, ast.AsyncFunctionDef)):
+            if knoop.name in gezien:
+                dubbel.append(f"{knoop.name} (regel {gezien[knoop.name]} en {knoop.lineno})")
+            gezien[knoop.name] = knoop.lineno
+    if dubbel:
+        raise RuntimeError(
+            "hooks/films.py draagt twee functies met dezelfde naam; de laatste wint stilzwijgend:\n  "
+            + "\n  ".join(dubbel)
+        )
+
+
+_geen_dubbele_namen()
+
 TABEL = pathlib.Path(__file__).parent.parent / "tools" / "films-uitslag.json"
 LIBRARY = "741183"
 
@@ -145,7 +175,15 @@ def _navvolgorde(nav, uit=None):
     return uit
 
 
-def _duur(seconden):
+def _leesbare_duur(seconden):
+    """De duur zoals een LEZER hem leest: "2 min 23".
+
+    ⚠️ **Niet ``_duur`` noemen.** Die bestaat hierboven al en geeft ISO 8601 (``PT2M23S``), wat schema.org
+    voor ``duration`` verlangt. Toen deze functie op 01/09/2026 bijkwam onder dezelfde naam, won de laatste
+    definitie — en stond er op ELKE gepubliceerde filmpagina ``duration: "2 min 13"`` in de gestructureerde
+    gegevens. Python meldt een herdefinitie niet; de site bouwde, de pagina's zagen er goed uit, en enkel
+    een zoekmachine had het gemerkt.
+    """
     m, sec = divmod(int(round(seconden or 0)), 60)
     return f"{m} min {sec:02d}" if m else f"{sec} s"
 
@@ -184,11 +222,45 @@ def _overzicht(taal, config):
                    "    Dès que le premier film sera publié, il apparaîtra ici automatiquement.") + "\n")
 
     gekozen.sort(key=lambda f: plaats.get(f["pagina"], 10_000))
-    regels = []
+
+    # ⚠️ GESTRUCTUREERDE GEGEVENS OOK HIER. Elke filmpagina draagt haar eigen VideoObject, maar de pagina die
+    # de films VERZAMELT droeg er geen — precies de pagina die je in een zoekresultaat wil hebben wanneer
+    # iemand "CreditSoft video" zoekt. Dominique vroeg op 01/09/2026 of ze in de sitemap stond; dat was zo,
+    # maar een zoekmachine zag er een lijstje links en geen verzameling video's.
+    #
+    # Een ItemList van VideoObjects: dezelfde velden als op de losse pagina's, met de positie erbij.
+    lijst = {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Video's" if taal == "nl" else "Vidéos",
+        "numberOfItems": len(gekozen),
+        "itemListElement": [],
+    }
+    for i, film in enumerate(gekozen, start=1):
+        video = {
+            "@type": "VideoObject",
+            "name": film.get("titel") or film.get("film", ""),
+            "description": film.get("omschrijving", ""),
+            "embedUrl": f"https://iframe.mediadelivery.net/embed/{LIBRARY}/{film['guid']}",
+            "inLanguage": "fr-BE" if taal == "fr" else "nl-BE",
+            "isFamilyFriendly": True,
+        }
+        if film.get("thumbnail"):
+            video["thumbnailUrl"] = film["thumbnail"]
+        if film.get("lengte"):
+            video["duration"] = _duur(film["lengte"])
+        if film.get("gepubliceerdOp"):
+            datum = film["gepubliceerdOp"]
+            video["uploadDate"] = datum if datum.endswith("Z") else datum + "Z"
+        lijst["itemListElement"].append({"@type": "ListItem", "position": i, "item": video})
+
+    regels = ['<script type="application/ld+json">',
+              json.dumps(lijst, ensure_ascii=False),
+              "</script>", ""]
     for film in gekozen:
         titel = film.get("titel") or film.get("film", "")
         regels.append(f"### [{titel}]({film['pagina']}.md)\n")
-        regels.append(("**Duur:** " if taal == "nl" else "**Durée :** ") + _duur(film.get("lengte")) + "\n")
+        regels.append(("**Duur:** " if taal == "nl" else "**Durée :** ") + _leesbare_duur(film.get("lengte")) + "\n")
         if film.get("omschrijving"):
             regels.append(film["omschrijving"] + "\n")
         regels.append("")
