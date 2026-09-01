@@ -468,80 +468,76 @@
     "film": "aan-de-slag",
     "taal": "nl-BE",
     "pagina": "getting-started/navigatie",
-    "lengte": 142.56,
+    "lengte": 142.72,
     "routes": [
       "/dashboard",
       "/crm/relaties"
     ],
     "app": {
-      "sha": "2ff5ae5b66d7e564047347fd96923019fe5f1c32",
+      "sha": "3ed896900bc4e4cf80e60c07fbea3db4a0760039",
       "vuil": false
     },
     "titel": "Uw weg vinden in CreditSoft — het scherm, het zoeken en uw voorkeuren",
     "omschrijving": "De eerste rondleiding: het startscherm met het blok Aan de slag, het menu links, zoeken over uw hele omgeving met ⌘K, de hulp bij elk scherm en de twee assistenten, werken in een lijst (sorteren, filteren, exporteren) en uw eigen voorkeuren — grootte, thema en taal.",
-    "hash": "64aed0978d2fea49",
+    "hash": "f10ed6c6889cccbb",
     "guid": "47764b3b-31b8-4d3f-b766-695c44a88810",
     "hoofdstukken": [
       {
         "titel": "Het startscherm",
-        "start": 3.32,
-        "eind": 12.93
+        "start": 3.52,
+        "eind": 13.13
       },
       {
         "titel": "Het menu links",
-        "start": 15.79,
-        "eind": 24.52
+        "start": 15.96,
+        "eind": 24.69
       },
       {
         "titel": "Zoeken vanaf elk scherm",
-        "start": 30.63,
-        "eind": 43.31
+        "start": 30.79,
+        "eind": 43.47
       },
       {
         "titel": "Hulp bij dit scherm",
-        "start": 47.55,
-        "eind": 55.49
+        "start": 47.69,
+        "eind": 55.63
       },
       {
         "titel": "De twee assistenten",
-        "start": 60.43,
-        "eind": 70.13
+        "start": 60.57,
+        "eind": 70.27
       },
       {
         "titel": "Werken met lijsten",
-        "start": 75.37,
-        "eind": 82.76
+        "start": 75.55,
+        "eind": 82.93
       },
       {
         "titel": "Sorteren",
-        "start": 86.49,
-        "eind": 92.06
+        "start": 86.65,
+        "eind": 92.23
       },
       {
         "titel": "Filteren",
-        "start": 97.02,
-        "eind": 104.26
+        "start": 97.18,
+        "eind": 104.43
       },
       {
         "titel": "Exporteren",
-        "start": 107.38,
-        "eind": 115.59
+        "start": 107.53,
+        "eind": 115.75
       },
       {
         "titel": "Uw voorkeuren",
-        "start": 119.5,
-        "eind": 129.91
+        "start": 119.66,
+        "eind": 130.07
       },
       {
         "titel": "Tot slot",
-        "start": 135.08,
-        "eind": 140.15
+        "start": 135.24,
+        "eind": 140.3
       }
-    ],
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/47764b3b-31b8-4d3f-b766-695c44a88810/thumbnail.jpg",
-    "gepubliceerdOp": "2026-09-01T08:06:54.75",
-    "gepubliceerdeHash": "64aed0978d2fea49",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/47764b3b-31b8-4d3f-b766-695c44a88810"
+    ]
   },
   "aan-de-slag-fr": {
     "film": "aan-de-slag",
@@ -553,74 +549,70 @@
       "/crm/relaties"
     ],
     "app": {
-      "sha": "2ff5ae5b66d7e564047347fd96923019fe5f1c32",
+      "sha": "3ed896900bc4e4cf80e60c07fbea3db4a0760039",
       "vuil": false
     },
     "titel": "Se repérer dans CreditSoft — l’écran, la recherche et vos préférences",
     "omschrijving": "La première visite guidée : l’écran d’accueil avec le bloc Pour commencer, le menu de gauche, la recherche dans tout votre environnement avec ⌘K, l’aide sur chaque écran et les deux assistants, le travail dans une liste (trier, filtrer, exporter) et vos préférences — taille, thème et langue.",
-    "hash": "a68528c5f0ca32d3",
+    "hash": "55d9f58c9aa805b0",
     "guid": "712272ce-a0d1-4323-845a-c9c9ce20a9e0",
     "hoofdstukken": [
       {
         "titel": "L'écran d'accueil",
-        "start": 3.34,
-        "eind": 13.56
+        "start": 3.33,
+        "eind": 13.55
       },
       {
         "titel": "Le menu de gauche",
         "start": 16.39,
-        "eind": 27.95
+        "eind": 27.96
       },
       {
         "titel": "Rechercher depuis tout écran",
-        "start": 34.05,
-        "eind": 49.42
+        "start": 34.06,
+        "eind": 49.43
       },
       {
         "titel": "Aide sur cet écran",
-        "start": 53.65,
-        "eind": 62.66
+        "start": 53.66,
+        "eind": 62.67
       },
       {
         "titel": "Les deux assistants",
-        "start": 67.58,
-        "eind": 77.14
+        "start": 67.61,
+        "eind": 77.17
       },
       {
         "titel": "Travailler avec les listes",
         "start": 82.4,
-        "eind": 94.28
+        "eind": 94.29
       },
       {
         "titel": "Trier",
-        "start": 98.01,
-        "eind": 103.16
+        "start": 98.03,
+        "eind": 103.18
       },
       {
         "titel": "Filtrer",
-        "start": 108.13,
-        "eind": 118.16
+        "start": 108.14,
+        "eind": 118.17
       },
       {
         "titel": "Exporter",
-        "start": 121.26,
-        "eind": 132.17
+        "start": 121.27,
+        "eind": 132.18
       },
       {
         "titel": "Vos préférences",
-        "start": 136.09,
-        "eind": 149.09
+        "start": 136.1,
+        "eind": 149.1
       },
       {
         "titel": "Pour conclure",
-        "start": 154.41,
-        "eind": 160.58
+        "start": 154.37,
+        "eind": 160.55
       }
-    ],
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/712272ce-a0d1-4323-845a-c9c9ce20a9e0/thumbnail.jpg",
-    "gepubliceerdOp": "2026-09-01T08:07:11.072",
-    "gepubliceerdeHash": "a68528c5f0ca32d3",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/712272ce-a0d1-4323-845a-c9c9ce20a9e0"
+    ]
   },
   "relaties-nl": {
     "film": "relaties",
@@ -1075,5 +1067,147 @@
     "gepubliceerdOp": "2026-09-01T11:14:56.53",
     "gepubliceerdeHash": "28578f8e3ed8da88",
     "embed": "https://iframe.mediadelivery.net/embed/741183/b4507d2e-b208-43a5-895f-9a62ea23a16b"
+  },
+  "journaal-nl": {
+    "film": "journaal",
+    "taal": "nl-BE",
+    "pagina": "journaal/overzicht",
+    "lengte": 143.16,
+    "routes": [
+      "/crm/relaties",
+      "/credit-files",
+      "/taken"
+    ],
+    "app": {
+      "sha": "3ed896900bc4e4cf80e60c07fbea3db4a0760039",
+      "vuil": false
+    },
+    "titel": "Het journaal — alles wat er met een klant gebeurde, op één plaats",
+    "omschrijving": "Het journaal hangt aan elke fiche en werkt overal hetzelfde: taken met hun vervaldag en wie ze opvolgt, notities, gesprekken, bijlagen, het mailverkeer met de status van elke verzending, en het logboek dat elke veldwijziging bewaart. Plus de takenlijst die over alle fiches heen kijkt.",
+    "hash": "347ba8c6bb6da511",
+    "guid": null,
+    "hoofdstukken": [
+      {
+        "titel": "Waar het journaal staat",
+        "start": 4.46,
+        "eind": 17.14
+      },
+      {
+        "titel": "Taken",
+        "start": 21.07,
+        "eind": 31.15
+      },
+      {
+        "titel": "Notities",
+        "start": 35.06,
+        "eind": 44.3
+      },
+      {
+        "titel": "Gesprekken",
+        "start": 48.22,
+        "eind": 57.88
+      },
+      {
+        "titel": "Bijlagen",
+        "start": 61.82,
+        "eind": 72.92
+      },
+      {
+        "titel": "Mailverkeer",
+        "start": 77.03,
+        "eind": 84.33
+      },
+      {
+        "titel": "Het logboek",
+        "start": 88.44,
+        "eind": 98.47
+      },
+      {
+        "titel": "Hetzelfde op een dossier",
+        "start": 103.46,
+        "eind": 113.77
+      },
+      {
+        "titel": "Al uw taken samen",
+        "start": 118.49,
+        "eind": 129.31
+      },
+      {
+        "titel": "Tot slot",
+        "start": 132.03,
+        "eind": 140.76
+      }
+    ]
+  },
+  "journaal-fr": {
+    "film": "journaal",
+    "taal": "fr-BE",
+    "pagina": "journaal/overzicht",
+    "lengte": 163.72,
+    "routes": [
+      "/crm/relaties",
+      "/credit-files",
+      "/taken"
+    ],
+    "app": {
+      "sha": "3ed896900bc4e4cf80e60c07fbea3db4a0760039",
+      "vuil": false
+    },
+    "titel": "Le journal — tout ce qui s’est passé avec un client, au même endroit",
+    "omschrijving": "Le journal est rattaché à chaque fiche et fonctionne partout de la même manière : tâches avec leur échéance et leur responsable, notes, appels, pièces jointes, le courrier avec le statut de chaque envoi, et l’historique qui conserve chaque modification. Ainsi que la liste des tâches qui regarde par-dessus toutes les fiches.",
+    "hash": "61e6ae2bac10e591",
+    "guid": null,
+    "hoofdstukken": [
+      {
+        "titel": "Où se trouve le journal",
+        "start": 4.46,
+        "eind": 20.25
+      },
+      {
+        "titel": "Tâches",
+        "start": 24.2,
+        "eind": 34.83
+      },
+      {
+        "titel": "Notes",
+        "start": 38.74,
+        "eind": 52.21
+      },
+      {
+        "titel": "Appels",
+        "start": 56.13,
+        "eind": 68.06
+      },
+      {
+        "titel": "Pièces jointes",
+        "start": 71.98,
+        "eind": 85.36
+      },
+      {
+        "titel": "Courrier",
+        "start": 89.48,
+        "eind": 97.56
+      },
+      {
+        "titel": "L’historique",
+        "start": 101.69,
+        "eind": 114.51
+      },
+      {
+        "titel": "Identique sur un dossier",
+        "start": 119.57,
+        "eind": 131.18
+      },
+      {
+        "titel": "Toutes vos tâches ensemble",
+        "start": 135.94,
+        "eind": 149.69
+      },
+      {
+        "titel": "Pour conclure",
+        "start": 152.4,
+        "eind": 161.45
+      }
+    ]
   }
 }

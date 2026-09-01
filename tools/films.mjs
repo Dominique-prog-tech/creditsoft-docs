@@ -177,6 +177,7 @@ const tabblad = (page, patroon) => page.getByRole('tab').filter({ hasText: patro
 // ── De hoofdstuktitel van een scène, per taal ────────────────────────────────────────────────────────────
 // Zie de noot bij `hoofdstukken:` verderop. Ontbreekt `kop`, dan valt dit terug op de interne scènenaam en
 // wordt dat GETELD — de ronde meldt het op het eind, zodat het niet opnieuw jaren onopgemerkt blijft.
+const zwakkeMerken = [];
 const zonderKop = new Set();
 const zonderTaal = new Set();
 function kop(scene, taal) {
@@ -473,6 +474,9 @@ const FILMS = [
 
       { naam: 'menu', kop: { nl: 'Het menu links', fr: "Le menu de gauche" },
         doe: async (p) => { await beweegNaar(p, p.locator('nav a, .adm-nav a').first()); await p.waitForTimeout(900); },
+        // ⚠️ Dit merkteken matcht óók op de menutekst, en de grendel meldt dat terecht. Hier is het menu
+        // het ONDERWERP van de scène, dus er bestaat geen merkteken dat wél iets onderscheidt — het menu
+        // staat altijd op het scherm. Bewust laten staan; de melding hoort bij deze scène te blijven.
         merk: /KREDIET|CRÉDIT/i,
         nl: 'Links staat het menu, gegroepeerd zoals u werkt: CRM, Krediet, Lijsten en Beheer. De getallen ernaast zijn wat op u wacht.',
         fr: "À gauche, le menu, groupé comme vous travaillez : CRM, Crédit, Listes et Gestion. Les chiffres à côté indiquent ce qui vous attend." },
@@ -555,7 +559,7 @@ const FILMS = [
           await sluitLade(p);
           await p.goto(`${BASIS}/dashboard`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(1400);
         },
-        merk: /Dashboard|Tableau de bord/i,
+        merk: /Aan de slag|Pour commencer/i,
         nl: 'Dat is de weg. De rest van deze reeks gaat over wat u er onderweg mee doet.',
         fr: "Voilà pour l’orientation. Le reste de cette série porte sur ce que vous en faites en chemin." },
     ],
@@ -654,7 +658,7 @@ const FILMS = [
 
       { naam: 'slot', kop: { nl: 'Tot slot', fr: 'Pour conclure' },
         doe: async (p) => { await p.waitForTimeout(1200); },
-        merk: /Relaties|Relations/i,
+        merk: /Samenvoegen|Fusionner/i,
         nl: 'De relatie is uw vertrekpunt. In de volgende film maken we er een kredietdossier bij.',
         fr: "La relation est votre point de départ. Dans le film suivant, nous y ajoutons un dossier de crédit." },
     ],
@@ -757,7 +761,7 @@ const FILMS = [
 
       { naam: 'slot', kop: { nl: 'Tot slot', fr: 'Pour conclure' },
         doe: async (p) => { await p.waitForTimeout(1200); },
-        merk: /Lead|Gewonnen|Gagné/i,
+        merk: /bekijk de klant|voir le client/i,
         nl: 'Zo sluit de cirkel: van een vraag op uw website tot een klant met een dossier. In de volgende film gaan we naar de documenten.',
         fr: "La boucle est ainsi bouclée : d’une question sur votre site à un client avec un dossier. Dans le film suivant, nous passons aux documents." },
     ],
@@ -872,6 +876,100 @@ const FILMS = [
         merk: /Documentbibliotheek|Bibliothèque/i,
         nl: 'Zo loopt de hele keten: u vraagt, uw klant levert, u beoordeelt — en niets blijft liggen omdat het op één scherm staat.',
         fr: "Voilà toute la chaîne : vous demandez, votre client dépose, vous validez — et rien ne traîne, parce que tout figure sur un seul écran." },
+    ],
+  }],
+
+  // ─────────────────────────────────────────────────────────────────────────────────────────────────────
+  // FILM 5 van de reeks (§14). Het journaal — het blok dat aan zes schermen hangt en overal hetzelfde werkt.
+  //
+  // ⚠️ ÉÉN FICHE, ZES TABBLADEN. De verleiding is om per tabblad een ander scherm te tonen; dat maakt de
+  // film langer en het punt zwakker. Het punt IS juist dat het overal hetzelfde is — daarom blijven we op
+  // één relatie en tonen we pas op het eind dat exact hetzelfde blok op een dossier staat.
+  //
+  // ⚠️ Gekozen fiche: ID.relatie, gemeten als de rijkste (2 taken, 1 notitie, 2 gesprekken, 4 mails,
+  // 3 bijlagen). Datzelfde record draagt de handleiding en de beeldronde — één bron, één demo-afhankelijkheid.
+  ['journaal', {
+    pagina: 'journaal/overzicht',
+    titel: {
+      nl: 'Het journaal — alles wat er met een klant gebeurde, op één plaats',
+      fr: 'Le journal — tout ce qui s’est passé avec un client, au même endroit',
+    },
+    omschrijving: {
+      nl: 'Het journaal hangt aan elke fiche en werkt overal hetzelfde: taken met hun vervaldag en wie ze '
+        + 'opvolgt, notities, gesprekken, bijlagen, het mailverkeer met de status van elke verzending, en '
+        + 'het logboek dat elke veldwijziging bewaart. Plus de takenlijst die over alle fiches heen kijkt.',
+      fr: 'Le journal est rattaché à chaque fiche et fonctionne partout de la même manière : tâches avec '
+        + 'leur échéance et leur responsable, notes, appels, pièces jointes, le courrier avec le statut de '
+        + 'chaque envoi, et l’historique qui conserve chaque modification. Ainsi que la liste des tâches '
+        + 'qui regarde par-dessus toutes les fiches.',
+    },
+    uitvoeringen: { handleiding: { stem: true } },
+    scenes: [
+      { naam: 'waar', kop: { nl: 'Waar het journaal staat', fr: 'Où se trouve le journal' },
+        doe: async (p) => { await p.goto(`${BASIS}/crm/relaties/${ID.relatie}`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(2400); },
+        merk: /Mailverkeer|Courrier/i,
+        nl: 'Onderaan elke fiche staat het journaal: taken, notities, gesprekken, bijlagen, mailverkeer en het logboek. Het hangt aan zes schermen en werkt overal precies hetzelfde.',
+        fr: "Au bas de chaque fiche se trouve le journal : tâches, notes, appels, pièces jointes, courrier et historique. Il est rattaché à six écrans et fonctionne partout exactement de la même manière." },
+
+      { naam: 'taken', kop: { nl: 'Taken', fr: 'Tâches' },
+        doe: async (p) => { await klik(p, tabblad(p, /^Taken|^Tâches/i)); await p.waitForTimeout(2000); },
+        merk: /Vervalt|Échéance/i,
+        nl: 'Een taak draagt een vervaldag, een prioriteit en iemand die haar opvolgt. U kan er een herinnering aan hangen, en u vinkt ze af zonder de fiche te verlaten.',
+        fr: "Une tâche porte une échéance, une priorité et une personne qui la suit. Vous pouvez y attacher un rappel, et vous la cochez sans quitter la fiche." },
+
+      { naam: 'notities', kop: { nl: 'Notities', fr: 'Notes' },
+        doe: async (p) => { await klik(p, tabblad(p, /^Notities|^Notes/i)); await p.waitForTimeout(2000); },
+        merk: /Afspraak over de aanpak/i,
+        nl: 'Een notitie is wat u wil onthouden maar niemand moet doen. Wat u met deze klant afsprak staat hier — en niet in uw hoofd of in een los bestand.',
+        fr: "Une note, c’est ce que vous voulez retenir sans que personne doive agir. Ce que vous avez convenu avec ce client est ici, et pas dans votre tête ou dans un fichier isolé." },
+
+      { naam: 'gesprekken', kop: { nl: 'Gesprekken', fr: 'Appels' },
+        doe: async (p) => { await klik(p, tabblad(p, /^Gesprekken|^Appels/i)); await p.waitForTimeout(2000); },
+        merk: /Loonbriefje opgevraagd/i,
+        nl: 'Een gesprek noteert u met de richting erbij: inkomend of uitgaand, en wat eruit kwam. Zo ziet uw collega morgen wie er al gebeld heeft.',
+        fr: "Un appel se note avec son sens : entrant ou sortant, et ce qui en est ressorti. Votre collègue voit ainsi demain qui a déjà téléphoné." },
+
+      { naam: 'bijlagen', kop: { nl: 'Bijlagen', fr: 'Pièces jointes' },
+        doe: async (p) => { await klik(p, tabblad(p, /^Bijlagen|^Pièces jointes/i)); await p.waitForTimeout(2000); },
+        merk: /compromis.pdf/i,
+        nl: 'Bijlagen zijn de bestanden die bij deze fiche horen, met een omschrijving erbij. Dat is iets anders dan de gevraagde documenten: die volgen een status, deze staan er gewoon.',
+        fr: "Les pièces jointes sont les fichiers liés à cette fiche, avec une description. C’est autre chose que les documents demandés : ceux-là suivent un statut, celles-ci sont simplement là." },
+
+      { naam: 'mailverkeer', kop: { nl: 'Mailverkeer', fr: 'Courrier' },
+        doe: async (p) => { await klik(p, tabblad(p, /^Mailverkeer|^Courrier/i)); await p.waitForTimeout(2200); },
+        merk: /ontvangstbevestiging/i,
+        nl: 'Elke mail die naar deze klant vertrok, staat hier — met de tekst zoals hij hem kreeg, en of hij afgeleverd is.',
+        fr: "Chaque e-mail parti vers ce client figure ici — avec le texte tel qu’il l’a reçu, et s’il a bien été distribué." },
+
+      { naam: 'logboek', kop: { nl: 'Het logboek', fr: 'L’historique' },
+        doe: async (p) => { await klik(p, tabblad(p, /^Logboek|^Historique/i)); await p.waitForTimeout(2200); },
+        merk: /andere velden|autres champs/i,
+        nl: 'Het logboek houdt elke veldwijziging bij: wie wat wanneer veranderde, en van welke waarde naar welke. Daar hoeft u niets voor te doen — het gebeurt vanzelf.',
+        fr: "L’historique conserve chaque modification de champ : qui a changé quoi et quand, et de quelle valeur vers quelle autre. Vous n’avez rien à faire pour cela — c’est automatique." },
+
+      { naam: 'overal', kop: { nl: 'Hetzelfde op een dossier', fr: 'Identique sur un dossier' },
+        doe: async (p) => {
+          await p.goto(`${BASIS}/credit-files/${ID.dossierMetSchema}`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(2400);
+        },
+        // ⚠️ HET DOSSIERNUMMER, niet "Taken". Dat woord staat in het MENU van élke pagina, dus die controle
+        // zou groen staan waar je ook bent — een merkteken dat het verkeerde geval niet uitsluit.
+        merk: /DEMO-1089/i,
+        nl: 'Ditzelfde blok vindt u op een kredietdossier, een lead, een aanbrenger. Wat u hier leert, geldt overal — en wat u noteert, hangt aan het juiste record.',
+        fr: "Vous retrouvez ce même bloc sur un dossier de crédit, un lead, un apporteur. Ce que vous apprenez ici vaut partout — et ce que vous notez reste attaché au bon enregistrement." },
+
+      { naam: 'takenlijst', kop: { nl: 'Al uw taken samen', fr: 'Toutes vos tâches ensemble' },
+        doe: async (p) => { await p.goto(`${BASIS}/taken`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(2400); },
+        // ⚠️ "Hangt aan" bestaat ALLEEN op deze lijst — juist omdat ze over alle soorten fiches heen kijkt.
+        // Op "Taken" zou de controle op elke pagina slagen; hierop enkel op de goede.
+        merk: /Hangt aan|rattache/i,
+        nl: 'En omdat een taak op een fiche staat maar niet op een fiche mag blijven liggen, is er één lijst die over alles heen kijkt: al uw taken, met wat het langst wacht bovenaan.',
+        fr: "Et parce qu’une tâche vit sur une fiche sans devoir y rester coincée, une liste unique regarde par-dessus tout : toutes vos tâches, avec en haut ce qui attend le plus longtemps." },
+
+      { naam: 'slot', kop: { nl: 'Tot slot', fr: 'Pour conclure' },
+        doe: async (p) => { await p.waitForTimeout(1200); },
+        merk: /Hangt aan|rattache/i,
+        nl: 'Het journaal is het geheugen van uw kantoor. Wie een klant overneemt, leest hier wat er gebeurd is — zonder het aan iemand te moeten vragen.',
+        fr: "Le journal est la mémoire de votre bureau. Qui reprend un client y lit ce qui s’est passé — sans devoir le demander à quelqu’un." },
     ],
   }],
 
@@ -1164,6 +1262,19 @@ for (const [naam, filmVol] of FILMS) {
         await sc.doe(page, film);
         // ⚠️ WACHTEN OP EEN TOESTAND, NIET OP EEN TIMER (§3.4). Het merkteken IS de toestand.
         await page.locator('body').filter({ hasText: sc.merk }).first().waitFor({ timeout: 15000 });
+
+        // ⚠️ SLUIT DIT MERKTEKEN HET VERKEERDE GEVAL UIT? De controle hierboven kijkt naar de HELE body, en
+        // daar staat ook het MENU in — op élke pagina. Een merkteken als /Taken|Tâches/ slaagt dus overal,
+        // ook op een scherm dat niets met taken te maken heeft. Drie scènes van film 5 stonden zo, en ze
+        // waren groen. Gevonden bij het nalezen, niet door een controle; vandaar deze.
+        //
+        // De proef: matcht het merkteken óók op enkel de menutekst, dan bewijst het niets over de INHOUD.
+        // Het MELDT en blokkeert niet — soms is een menuwoord het enige eerlijke merkteken van een scherm.
+        const menuTekst = await page.evaluate(() =>
+          [...document.querySelectorAll('nav, .adm-nav, [class*=sidebar]')].map(e => e.innerText).join(' '));
+        if (menuTekst && sc.merk.test(menuTekst)) {
+          zwakkeMerken.push(`${naam}-${kort} · ${sc.naam}: ${sc.merk}`);
+        }
       } catch (e) {
         gevallen = `${sc.naam} — ${String(e).split('\n')[0].slice(0, 120)}`;
         break;
@@ -1314,6 +1425,12 @@ if (zonderKop.size) {
   console.log(`\n◐ ${zonderKop.size} scène(s) zonder hoofdstuktitel — de speler toont dan de INTERNE naam:`);
   console.log('   ' + [...zonderKop].join(', '));
   console.log("   Geef die scène een `kop: { nl: '…', fr: '…' }`; dat is wat de kijker in de speler leest.");
+}
+if (zwakkeMerken.length) {
+  console.log(`\n◐ ${zwakkeMerken.length} merkteken(s) matchen ÓÓK op de menutekst — ze bewijzen dus niet dat`);
+  console.log('   het juiste scherm getoond werd, want het menu staat op elke pagina:');
+  zwakkeMerken.forEach(r => console.log(`   ${r}`));
+  console.log('   Kies iets dat enkel op DIT scherm staat (een kolomkop, een dossiernummer, een zin uit de tekst).');
 }
 if (zonderTaal.size) {
   console.log(`\n◐ ${zonderTaal.size} hoofdstuk(ken) vielen terug op de NEDERLANDSE titel:`);
