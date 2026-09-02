@@ -22,9 +22,9 @@
 //
 // Uitvoer: tools/.films-uit/ — NIET in git (§7: geen mp4 in git).
 
-import { mkdirSync, rmSync, existsSync, writeFileSync, readFileSync, readdirSync, copyFileSync } from 'node:fs';
+import { mkdirSync, rmSync, existsSync, writeFileSync, readFileSync, readdirSync, copyFileSync, renameSync } from 'node:fs';
 import { createHash } from 'node:crypto';
-import { execFileSync } from 'node:child_process';
+import { execFileSync, spawnSync } from 'node:child_process';
 import { chromium } from '/Users/dominique/projects/adm-creditsoft/src/Host/CreditSoft.Host.Web/bin/Debug/net10.0/.playwright/package/index.mjs';
 import { BASIS, ID, gebruiker, wachtwoord, meldAan, stemGeheim, appToestand } from './aansturing.mjs';
 
@@ -323,6 +323,8 @@ async function sluitLade(page) {
 // `kredietdossiers-basis-nl`, want de uitslagtabel én de MkDocs-hook verwijzen daarnaar. Een andere
 // uitvoering krijgt haar naam er wél in: `kredietdossiers-basis-website-nl`.
 const UITVOERING = (process.argv.find(a => a.startsWith('--uitvoering=')) ?? '').split('=')[1] ?? 'handleiding';
+// Beperk de ronde tot één taal: `--taal=fr` of `--taal=nl`. Leeg = alle talen van de uitvoering.
+const TAAL = (process.argv.find(a => a.startsWith('--taal=')) ?? '').split('=')[1];
 
 const SLEUTEL = stemGeheim('ApiKey');
 const GEVRAAGD = (process.argv.find(a => a.startsWith('--stem=')) ?? '').split('=')[1];
@@ -424,6 +426,55 @@ async function spreek(tekst, taal, pad) {
   }
   copyFileSync(uitCache, pad);
   return duurVan(pad);
+}
+
+// ── Luidheid gelijktrekken ───────────────────────────────────────────────────────────────────────────
+// ⚠️ WAAROM DIT BESTAAT. De stemmen leveren niet even luid. Gemeten op de GEPUBLICEERDE films (02/09/2026):
+// Nederlands −15,0 en −15,3 LUFS, Frans −19,3 en −20,4. Vier à vijf LUFS verschil tussen twee talen van
+// dezelfde handleiding, en niemand die het merkte — je kijkt zelden dezelfde film twee keer in een andere
+// taal. De pijplijn zette het geluid wel om naar 48 kHz stereo maar liet de luidheid staan zoals de stem
+// ze toevallig gaf.
+//
+// ⚠️ OP HET HELE SPOOR EN NIET PER FRAGMENT. Elke zin apart naar hetzelfde doel duwen vlakt het verschil
+// TUSSEN zinnen uit — een terzijde wordt dan even luid als een kop. Het samengestelde spoor normaliseren
+// haalt het doel exact én laat die verhouding staan. De stiltes tellen niet mee: loudnorm meet met een
+// relatieve poort.
+//
+// ⚠️ DE LENGTE MAG NIET WIJZIGEN. De ondertitels en `-shortest` hangen aan de duur van dit spoor; schuift
+// die ook maar een halve seconde, dan lopen de ondertitels uit de pas en merkt niemand dat aan een groene
+// draai. Vandaar `linear=true` (een vaste versterking, geen dynamiek) én de controle eronder — die faalt
+// liever luid dan een film met scheve ondertitels af te leveren.
+// ⚠️ DOEL −15 EN NIET −16, en dat is gemeten en niet gekozen. De dertien Nederlandse films die NIET
+// heropgenomen worden, staan op −15,0 tot −15,3 LUFS (gemeten op de gepubliceerde bestanden op de CDN).
+// Een doel van −16 zou de heropgenomen films een LUFS onder hun buren zetten — klein, maar het is precies
+// het soort stap dat je hoort wanneer je twee films na elkaar kijkt. Wat al goed staat, is de maat.
+const LUIDHEID = { I: -15, TP: -1.5, LRA: 11 };
+
+function normaliseer(pad) {
+  // ⚠️ ffmpeg schrijft die meting naar STDERR, niet naar stdout. Met execFileSync krijg je enkel stdout
+  // terug en dan is `meet` leeg — de eerste versie hiervan liep daarop vast. spawnSync geeft beide.
+  const r = spawnSync('ffmpeg', ['-hide_banner', '-nostats', '-i', pad,
+    '-af', `loudnorm=I=${LUIDHEID.I}:TP=${LUIDHEID.TP}:LRA=${LUIDHEID.LRA}:print_format=json`,
+    '-f', 'null', '-'], { encoding: 'utf8' });
+  const meet = `${r.stdout ?? ''}${r.stderr ?? ''}`;
+  const json = (meet.match(/\{[\s\S]*?\}/g) ?? []).pop();
+  if (!json) throw new Error(`loudnorm gaf geen meting terug voor ${pad}`);
+  const m = JSON.parse(json);
+
+  const voor = duurVan(pad);
+  const tijdelijk = `${pad}.norm.wav`;
+  execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-i', pad,
+    '-af', `loudnorm=I=${LUIDHEID.I}:TP=${LUIDHEID.TP}:LRA=${LUIDHEID.LRA}`
+         + `:measured_I=${m.input_i}:measured_TP=${m.input_tp}:measured_LRA=${m.input_lra}`
+         + `:measured_thresh=${m.input_thresh}:linear=true`,
+    '-ar', '48000', '-ac', '2', tijdelijk]);
+
+  const na = duurVan(tijdelijk);
+  if (Math.abs(na - voor) > 0.05)
+    throw new Error(`normaliseren verschoof de lengte van het spoor: ${voor.toFixed(3)}s → ${na.toFixed(3)}s `
+                  + '— de ondertitels zouden uit de pas lopen. Niet negeren.');
+  renameSync(tijdelijk, pad);
+  return { van: Number(m.input_i), naar: LUIDHEID.I };
 }
 
 const tijd = s => {
@@ -1333,6 +1384,25 @@ const FILMS = [
         nl: 'Het vooruitzicht kijkt vooruit in plaats van terug: wat er nog uitbetaald moet worden, per maand en per aanbrenger. Zo weet u wat eraan komt.',
         fr: "Les prévisions regardent en avant plutôt qu’en arrière : ce qu’il reste à payer, par mois et par apporteur. Vous savez ainsi ce qui vient." },
 
+      // ⚠️ Een EIGEN scène en geen langere zin bij 'vooruitzicht'. De exportbalk staat onder de grafieken;
+      // alleen opnieuw opnemen zou hem stilzwijgend in beeld schuiven zonder dat de verteller hem noemt, en
+      // dan blijft de functie even onvindbaar als daarvoor. Het merkteken staat op de balk zelf, dus de
+      // beloftecontrole faalt zodra de scène hem niet toont.
+      // ⚠️ Deze scène moet het TABBLAD openen. Het scherm kreeg op 02/09/2026 twee tabs (Vooruitblik /
+      // Per aanbrenger); de exportkaart en de lijst wonen op de tweede. Zonder de klik filmt de scène het
+      // grafiektabblad en valt ze op haar eigen merkteken — wat precies is wat je wil, maar dan pas ná een
+      // opname van drie minuten.
+      { naam: 'transacties', kop: { nl: 'De transacties van een maand', fr: "Les transactions d'un mois" },
+        doe: async (p) => {
+          await klik(p, tabblad(p, /Per aanbrenger|Par apporteur/i));
+          await p.waitForTimeout(1400);
+          await beweegNaar(p, p.getByText(/Openstaande transacties van|Transactions en attente de/i).first());
+          await p.waitForTimeout(1600);
+        },
+        merk: /Openstaande transacties van|Transactions en attente de/i,
+        nl: 'Op het tabblad Per aanbrenger ziet u wat er in een maand nog niet afgerekend is, en haalt u die lijnen op als Excel of CSV. Dat is de lijst waarmee u fouten terugvindt vóór u uitbetaalt.',
+        fr: "Sous l’onglet Par apporteur, vous voyez ce qui n’est pas encore réglé pour un mois et vous récupérez ces lignes en Excel ou en CSV. C’est la liste qui vous permet de repérer les erreurs avant de payer." },
+
       { naam: 'restanten', kop: { nl: 'Wat is blijven liggen', fr: 'Ce qui est resté en souffrance' },
         doe: async (p) => { await p.goto(`${BASIS}/commissie/restanten`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(2600); },
         // ⚠️ De Franse zin is "n'ont jamais figuré sur un bordereau" — ik had "jamais arrivé sur" geraden en
@@ -1345,6 +1415,11 @@ const FILMS = [
       { naam: 'fiche', kop: { nl: 'De fiche 281.50', fr: 'La fiche 281.50' },
         doe: async (p) => { await p.goto(`${BASIS}/commissie/fiche-28150`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(2600); },
         merk: /Boekjaar|Exercice/i,
+        // ⚠️ De STEM krijgt het getal voluit, de ONDERTITEL houdt "281.50". Dominique hoorde het in de
+        // gepubliceerde film: op de cijfervorm maakt de Nederlandse stem er iets anders van. Frans niet —
+        // Nicolas leest "281.50" daar correct (nagemeten 02/09/2026 met spraakherkenning), dus daar staat
+        // bewust geen uitspraak.
+        uitspraak: { nl: 'Eén keer per jaar maakt u de fiches tweehonderdeenentachtig vijftig op: per begunstigde wat er dat boekjaar werkelijk uitbetaald is. U drukt ze in één keer af.' },
         nl: 'Eén keer per jaar maakt u de fiches 281.50 op: per begunstigde wat er dat boekjaar werkelijk uitbetaald is. U drukt ze in één keer af.',
         fr: "Une fois par an, vous établissez les fiches 281.50 : par bénéficiaire ce qui a réellement été payé cet exercice. Vous les imprimez en une fois." },
 
@@ -2018,7 +2093,18 @@ for (const [naam, filmVol] of FILMS) {
 
   // ⚠️ Een uitvoering mag haar eigen talenlijst dragen, met schermtaal (`ui`) en teksttaal (`tekst`) apart.
   // Zonder lijst: de twee talen die de app spreekt, met de tekst in diezelfde taal.
-  const talen = uitv.talen ?? [{ ui: 'nl-BE', tekst: 'nl' }, { ui: 'fr-BE', tekst: 'fr' }];
+  let talen = uitv.talen ?? [{ ui: 'nl-BE', tekst: 'nl' }, { ui: 'fr-BE', tekst: 'fr' }];
+  if (TAAL) {
+    const voor = talen.length;
+    talen = talen.filter(t => t.tekst === TAAL || t.ui.startsWith(TAAL));
+    // Niets gevonden is geen "in orde": zwijgen zou lezen als een geslaagde ronde zonder films.
+    if (!talen.length) throw new Error(`--taal=${TAAL} laat geen enkele taal over van de ${voor} die deze uitvoering draagt`);
+  }
+  // ⚠️ `--taal=fr` beperkt de ronde tot één taal. Zonder dit is er geen manier om ALLEEN het Frans opnieuw
+  // op te nemen: een ronde deed altijd beide, en elke nieuwe opname vraagt een nieuwe Bunny-upload met een
+  // nieuwe guid. Dertien Nederlandse films opnieuw uploaden die niets nodig hadden, is geen kleine ruis —
+  // het zijn dertien guids die in de tabel en op de handleidingpagina's moeten, en dertien oude die weg
+  // moeten. Gebouwd op 02/09/2026 voor de Franse stemwissel.
   for (const { ui: taal, tekst: kort } of talen) {
     // ⚠️ Een taal zonder stem wordt OVERGESLAGEN, niet gekraakt — maar wel luidop. Zo kan je het Nederlands
     // al opnemen terwijl de Franse stem nog gekozen moet worden, zonder dat er ooit twijfel bestaat over
@@ -2038,7 +2124,7 @@ for (const [naam, filmVol] of FILMS) {
     const duren = [];
     for (const [i, sc] of film.scenes.entries()) {
       const d = metStem
-        ? await spreek(sc[kort], taal, `${werk}${String(i).padStart(2, '0')}-${sc.naam}.wav`)
+        ? await spreek(sc.uitspraak?.[kort] ?? sc[kort], taal, `${werk}${String(i).padStart(2, '0')}-${sc.naam}.wav`)
         : leestijd(sc[kort]);
       duren.push(d);
       console.log(`     ${String(i + 1).padStart(2)} ${sc.naam.padEnd(12)} ${d.toFixed(1)}s  ${sc[kort].slice(0, 58)}…`);
@@ -2176,6 +2262,7 @@ for (const [naam, filmVol] of FILMS) {
       writeFileSync(`${werk}spoor.txt`, lijst.map(f => `file '${f}'`).join('\n'));
       execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-f', 'concat', '-safe', '0',
         '-i', `${werk}spoor.txt`, '-c', 'copy', `${werk}spoor.wav`]);
+      normaliseer(`${werk}spoor.wav`);
     }
 
     const mp4 = `${UIT}${stam}-${kort}.mp4`;

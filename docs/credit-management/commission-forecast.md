@@ -12,9 +12,11 @@ Wat al op een borderel staat, telt niet mee. Dat is immers afgerekend.
 
 Klik in het menu links op **Vooruitzicht**, onder *Lijsten*.
 
+Het scherm heeft twee tabbladen. Onder **Vooruitblik** staan de kerncijfers en de grafieken; onder **Per aanbrenger** staat de lijst, met daarboven de export van de openstaande transacties. De melding over openstaande lijnen uit afgelopen perioden staat boven de tabbladen, want ze geldt voor allebei.
+
 ![Het scherm Vooruitzicht: bovenaan drie kerncijfers met het totaal verwacht, de volgende twaalf maanden en het aantal aanbrengers, daaronder een melding over openstaande lijnen uit afgelopen perioden, dan een staafgrafiek van het verwachte bedrag per maand naast een ringdiagram met de verdeling per aanbrenger, en onderaan de lijst per aanbrenger met de periode, het aantal lijnen en het bedrag.](../images/commissie-vooruitzicht.png "Wat er de komende achttien maanden nog uitbetaald moet worden"){ .volle-breedte }
 
-## De drie cijfers bovenaan
+## De drie cijfers op Vooruitblik
 
 | Cijfer | Wat het zegt |
 |---|---|
@@ -31,13 +33,13 @@ Het ringdiagram ernaast toont hoe dat verdeeld is over uw aanbrengers: de acht g
 !!! tip "Kijk verder dan een jaar"
     De keuze **18 maanden** staat er niet toevallig standaard. Een schema loopt tot 24 maanden, dus een groot deel van wat er over anderhalf jaar binnenkomt, is nu al ingegeven. Met een venster van 12 maanden ziet u die staart niet. U kan ook op **Alles** klikken om de volledige looptijd te zien.
 
-## De lijst per aanbrenger
+## De lijst op Per aanbrenger
 
-Onderaan staat per aanbrenger het verwachte bedrag, het aantal lijnen en de periode waarover het loopt — de hoogste bedragen eerst. **Dubbelklik** een regel om zijn fiche te openen.
+Op dit tabblad staat per aanbrenger het verwachte bedrag, het aantal lijnen en de periode waarover het loopt — de hoogste bedragen eerst. **Dubbelklik** een regel om zijn fiche te openen.
 
 ## De transacties van een maand exporteren
 
-De lijst hierboven vat samen **per aanbrenger**. Wilt u de regels zelf — om een bedrag na te rekenen of een fout terug te vinden — dan haalt u ze op met de knoppen onder de grafieken.
+De lijst op dit tabblad vat samen **per aanbrenger**. Wilt u de regels zelf — om een bedrag na te rekenen of een fout terug te vinden — dan haalt u ze op met de kaart erboven.
 
 Kies een **maand** en een **jaar** en klik op **Excel** of **CSV**. U krijgt één rij per commissieboeking die in die maand valt en **nog niet op een borderel staat**:
 

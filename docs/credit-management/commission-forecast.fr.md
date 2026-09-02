@@ -12,9 +12,11 @@ Ce qui figure déjà sur un bordereau ne compte pas. C'est décompté.
 
 Dans le menu de gauche, cliquez sur **Perspective**, sous *Listes*.
 
+L'écran comporte deux onglets. Sous **Prévisions** figurent les chiffres clés et les graphiques ; sous **Par apporteur**, la liste, surmontée de l'export des transactions en attente. Le message concernant les lignes ouvertes de périodes écoulées se trouve au-dessus des onglets, car il vaut pour les deux.
+
 ![L'écran Perspective : en haut trois chiffres clés avec le total attendu, les douze prochains mois et le nombre d'apporteurs, en dessous un message concernant les lignes ouvertes de périodes écoulées, puis un graphique du montant attendu par mois à côté d'une répartition par apporteur, et en bas la liste par apporteur avec la période, le nombre de lignes et le montant.](../images/commissie-vooruitzicht-fr.png "Ce qu'il reste à payer dans les dix-huit prochains mois"){ .volle-breedte }
 
-## Les trois chiffres en haut
+## Les trois chiffres sous Prévisions
 
 | Chiffre | Ce qu'il indique |
 |---|---|
@@ -31,13 +33,13 @@ La répartition à côté montre comment cela se répartit entre vos apporteurs 
 !!! tip "Regardez au-delà d'un an"
     Le choix **18 mois** n'est pas là par hasard. Un schéma court jusqu'à 24 mois, donc une grande partie de ce qui arrivera dans un an et demi est déjà encodée aujourd'hui. Avec une fenêtre de 12 mois, vous ne voyez pas cette fin de course. Vous pouvez aussi cliquer sur **Tout** pour voir la durée complète.
 
-## La liste par apporteur
+## La liste sous Par apporteur
 
 En bas figurent, par apporteur, le montant attendu, le nombre de lignes et la période concernée — les montants les plus élevés en premier. **Double-cliquez** une ligne pour ouvrir sa fiche.
 
 ## Exporter les transactions d'un mois
 
-La liste ci-dessus récapitule **par apporteur**. Si vous voulez les lignes elles-mêmes — pour vérifier un montant ou retrouver une erreur — récupérez-les avec les boutons sous les graphiques.
+La liste de cet onglet récapitule **par apporteur**. Si vous voulez les lignes elles-mêmes — pour vérifier un montant ou retrouver une erreur — récupérez-les avec la carte au-dessus.
 
 Choisissez un **mois** et une **année**, puis cliquez sur **Excel** ou **CSV**. Vous obtenez une ligne par écriture de commission qui tombe dans ce mois et **ne figure pas encore sur un bordereau** :
 
