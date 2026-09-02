@@ -69,7 +69,7 @@ const AANBRENGER_PORTAAL = ['portaal-overzicht', 'portaal-dossiers', 'portaal-co
 // dwars door de editor en het voorbeeldpaneel heen. Er ís geen recept. De generator laat ze staan en
 // ZEGT dat — een beeld dat niemand kan hernemen, hoort geen stille faler te zijn.
 const HANDWERK = { 'rapporten-voorbeeld': 'één blad uit een gerenderd rapport, met de hand uitgesneden',
-                   'kantoorprofiel-vragenlijst': 'uitsnede dwars door editor én voorbeeldpaneel' };
+                   'kantoorprofiel-vragenlijst': 'uitsnede dwars door editor én voorbeeldpaneel — ⚠️ er is nog GEEN Franse uitsnede, en de Franse handleidingpagina toont daardoor het Nederlandse beeld' };
 
 // ⚠️ BEELDEN DIE ALTIJD WISSELEN, en waarom dat geen fout is om te repareren.
 // Deze worden WEL geschreven — ze zijn geldig — maar twee identieke rondes leveren er nooit hetzelfde
@@ -772,8 +772,6 @@ for (const taal of ['nl-BE', 'fr-BE']) {
     }
     if (HANDWERK[naam]) { if (!handwerk.includes(naam)) handwerk.push(naam);
                           verantwoord.handwerk.push(`${naam}${achtervoegsel}`); continue; }
-    // ⚠️ Het kantoorprofiel bestaat enkel in het Nederlands (AppKit-scherm, niet vertaald) — geen FR-beeld.
-    if (naam === 'kantoorprofiel-vragenlijst' && achtervoegsel) continue;
     try {
       fouten.length = 0;
       // ⚠️ Vensterbreedte VÓÓR het laden: een lijst met veel kolommen rendert anders op 1280 dan op 2000,
