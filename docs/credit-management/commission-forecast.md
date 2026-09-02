@@ -35,6 +35,27 @@ Het ringdiagram ernaast toont hoe dat verdeeld is over uw aanbrengers: de acht g
 
 Onderaan staat per aanbrenger het verwachte bedrag, het aantal lijnen en de periode waarover het loopt — de hoogste bedragen eerst. **Dubbelklik** een regel om zijn fiche te openen.
 
+## De transacties van een maand exporteren
+
+De lijst hierboven vat samen **per aanbrenger**. Wilt u de regels zelf — om een bedrag na te rekenen of een fout terug te vinden — dan haalt u ze op met de knoppen onder de grafieken.
+
+Kies een **maand** en een **jaar** en klik op **Excel** of **CSV**. U krijgt één rij per commissieboeking die in die maand valt en **nog niet op een borderel staat**:
+
+| Kolom | Wat erin staat |
+|---|---|
+| **Dossier** | Het dossiernummer, zodat u de regel meteen kan opzoeken |
+| **Aanbrenger** | De naam zoals ze in het pakket staat |
+| **Naam · Voornaam · Bedrijfsnaam** | Dezelfde aanbrenger in delen, om op te sorteren of te draaien |
+| **Financiële instelling** | De kredietverstrekker van het dossier |
+| **Datum akte · Kredietbedrag** | Uit het dossier |
+| **Commissie** | Het bedrag van deze boeking |
+| **Ontlener · Adres** | Wie het krediet nam, en het adres van het pand |
+
+De maand staat op de **huidige**. U kan ook een voorbije maand kiezen — handig wanneer u pas begin van de volgende maand nakijkt.
+
+!!! tip "Waarom deze lijst fouten laat zien"
+    Er staat enkel in wat **nog niet afgerekend** is. Het is dus precies de stapel die nog uit moet. Een regel die er niet in hoort — een dubbel schema, een verkeerde aanbrenger — valt daar sneller op dan in een lijst waar alles doorheen loopt.
+
 ## Op de fiche van een aanbrenger
 
 Elke aanbrengersfiche heeft een tabblad **Vooruitzicht** met hetzelfde beeld, dan enkel voor hem en over zijn volledige looptijd. Handig wanneer een aanbrenger vraagt wat hij nog mag verwachten.

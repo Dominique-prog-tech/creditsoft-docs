@@ -35,6 +35,27 @@ La répartition à côté montre comment cela se répartit entre vos apporteurs 
 
 En bas figurent, par apporteur, le montant attendu, le nombre de lignes et la période concernée — les montants les plus élevés en premier. **Double-cliquez** une ligne pour ouvrir sa fiche.
 
+## Exporter les transactions d'un mois
+
+La liste ci-dessus récapitule **par apporteur**. Si vous voulez les lignes elles-mêmes — pour vérifier un montant ou retrouver une erreur — récupérez-les avec les boutons sous les graphiques.
+
+Choisissez un **mois** et une **année**, puis cliquez sur **Excel** ou **CSV**. Vous obtenez une ligne par écriture de commission qui tombe dans ce mois et **ne figure pas encore sur un bordereau** :
+
+| Colonne | Ce qu'elle contient |
+|---|---|
+| **Dossier** | Le numéro de dossier, pour retrouver la ligne immédiatement |
+| **Apporteur** | Le nom tel qu'il figure dans le logiciel |
+| **Nom · Prénom · Nom de société** | Le même apporteur en parties, pour trier ou croiser |
+| **Institution financière** | Le prêteur du dossier |
+| **Date de l'acte · Montant du crédit** | Issus du dossier |
+| **Commission** | Le montant de cette écriture |
+| **Emprunteur · Adresse** | Qui a pris le crédit, et l'adresse du bien |
+
+Le mois est réglé sur le **mois en cours**. Vous pouvez aussi choisir un mois écoulé — pratique si vous ne faites la vérification qu'au début du mois suivant.
+
+!!! tip "Pourquoi cette liste révèle les erreurs"
+    Elle ne contient que ce qui n'est **pas encore réglé**. C'est donc exactement la pile qui doit encore sortir. Une ligne qui n'y a pas sa place — un schéma en double, un apporteur erroné — s'y remarque plus vite que dans une liste où tout se mélange.
+
 ## Sur la fiche d'un apporteur
 
 Chaque fiche d'apporteur comporte un onglet **Perspective** avec la même vue, limitée à lui et sur toute sa durée. Pratique lorsqu'un apporteur demande ce qu'il peut encore attendre.
