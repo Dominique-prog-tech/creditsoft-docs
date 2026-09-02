@@ -421,6 +421,45 @@ if (opdracht === 'hoofdstukken') {
   process.exit(0);
 }
 
+if (opdracht === 'titels') {
+  // Duwt de TITEL van al gepubliceerde films door naar Bunny, zonder opnieuw te uploaden.
+  //
+  // ⚠️ Waarom dit bestaat: een film is bij Bunny niet te vervangen (nieuwe upload = nieuwe guid), maar de
+  // titel WEL. Zonder dit commando kostte een tekstcorrectie een volledige heropname — nieuwe guid, tabel,
+  // handleidingpagina, en een oude video om op te ruimen. Voor een komma.
+  //
+  // ⚠️ De OMSCHRIJVING gaat NIET mee, en dat is geen vergetelheid: Bunny negeert dat veld via de API (twee
+  // schrijfwijzen geprobeerd, allebei HTTP 200, allebei genegeerd). De omschrijving landt op de
+  // handleidingpagina en in het schema van de website — dáár doet ze haar werk.
+  //
+  // Werkwijze: eerst `node tools/films.mjs --teksten` (schrijft de tekst uit het scenario in de tabel),
+  // dan dit.
+  const UITSLAG = new URL('./films-uitslag.json', import.meta.url).pathname;
+  const uitslag = JSON.parse(readFileSync(UITSLAG, 'utf8'));
+  const filter = process.argv[3];
+  let raak = 0, over = 0, mislukt = 0;
+  for (const [sleutel, f] of Object.entries(uitslag)) {
+    if (filter && !sleutel.includes(filter)) continue;
+    if (!f.guid) { over++; continue; }
+    const v = await api(`/videos/${f.guid}`);
+    if (!v.ok) { console.log(`⚠️ ${sleutel} → HTTP ${v.status}`); mislukt++; continue; }
+    if (v.json?.title === f.titel) { over++; continue; }
+    // ⚠️ content-type EXPLICIET. Zonder die header antwoordt Bunny met 415 — de api-helper zet enkel
+    // AccessKey en accept. De publiceer-tak doet het al zo; ik was het hier vergeten en de grendel meldde
+    // het meteen (3 MISLUKT, exitcode 1) in plaats van 0 bijgewerkt als succes te melden.
+    const r = await api(`/videos/${f.guid}`, {
+      method: 'POST',
+      headers: { 'content-type': 'application/json' },
+      body: JSON.stringify({ title: f.titel }),
+    });
+    if (r.ok) { raak++; console.log(`✅ ${sleutel}: "${v.json?.title}" → "${f.titel}"`); }
+    else { console.log(`⚠️ ${sleutel} → HTTP ${r.status}`); mislukt++; }
+  }
+  // Niets gewijzigd is geen "in orde": zeg wat er gebeurde, anders leest een stille ronde als een geslaagde.
+  console.log(`\n${raak ? '✅' : '◐'} ${raak} titel(s) bijgewerkt, ${over} stonden al goed of zijn niet gepubliceerd${mislukt ? `, ${mislukt} MISLUKT` : ''}.`);
+  process.exit(mislukt ? 1 : 0);
+}
+
 if (opdracht === 'metadata') {
   // Ververst de AFGELEIDE velden van al gepubliceerde films — miniatuur en datum — zonder opnieuw te
   // uploaden. Nodig wanneer er aan de LIBRARY iets wijzigt in plaats van aan de film: op 01/09/2026 stond
@@ -461,13 +500,37 @@ if (opdracht === 'naar-website') {
 
   const uit = { _bron: 'creditsoft-docs — geschreven door `node tools/bunny.mjs naar-website`, niet met de hand bewerken', films: {} };
   let n = 0;
+  const mist = [];
   for (const [sleutel, f] of Object.entries(uitslag)) {
     if (!f.guid) continue;
     // enkel de website-uitvoeringen; de handleidingfilms horen niet op de site
     const m = sleutel.match(/^(.*)-website-(nl|fr|en)$/);
     if (!m) continue;
-    (uit.films[m[1]] ??= {})[m[2]] = { guid: f.guid, lengte: f.lengte, titel: f.titel ?? '' };
+    // ⚠️ OMSCHRIJVING MEE, want de site bouwt er een schema.org-VideoObject mee. Zonder dat veld ziet
+    // Google een video zonder beschrijving en meldt Search Console "Ontbrekend veld 'description'" —
+    // binnengekomen op 02/09/2026 voor creditsoft.be.
+    //
+    // ⚠️ EN GEEN STILLE TERUGVAL MEER op ''. Een lege titel of omschrijving levert een pagina die er goed
+    // uitziet en waarvan het schema niets zegt; het Engels stond daardoor met de INTERNE FILMNAAM als
+    // titel op de site ('creditsoft-overzicht'). Ontbreekt er een tekst, dan faalt dit commando luid.
+    // ⚠️ EN EEN TITEL DIE GELIJK IS AAN DE FILMNAAM telt als ONTBREKEND. Dat is de handtekening van de
+    // terugval in films.mjs: geen titel in het scenario → de sleutel wordt de titel. Op 02/09/2026 stond
+    // daardoor 'creditsoft-overzicht' als videotitel op de Engelse homepage — zichtbaar voor een
+    // schermlezer en voor Google. `!f.titel` ving dat NIET: het veld was gevuld, alleen met onzin.
+    const tekort = [];
+    if (!f.titel || f.titel === m[1]) tekort.push(f.titel === m[1] ? 'titel (= de filmnaam)' : 'titel');
+    if (!f.omschrijving) tekort.push('omschrijving');
+    if (tekort.length) { mist.push(`${sleutel}: ${tekort.join(' + ')}`); continue; }
+    (uit.films[m[1]] ??= {})[m[2]] = {
+      guid: f.guid, lengte: f.lengte, titel: f.titel, omschrijving: f.omschrijving,
+    };
     n++;
+  }
+  if (mist.length) {
+    console.log('⛔ Deze website-films missen een tekst die het schema nodig heeft:');
+    for (const m of mist) console.log('   ' + m);
+    console.log('   Vul ze aan in het scenario (films.mjs) en neem de film opnieuw op.');
+    process.exit(1);
   }
   if (n === 0) { console.log('⛔ Geen enkele website-film met een guid — publiceer eerst.'); process.exit(1); }
   writeFileSync(DOEL, JSON.stringify(uit, null, 2) + '\n');

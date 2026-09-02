@@ -249,7 +249,7 @@
     "taal": "nl-BE",
     "pagina": null,
     "lengte": 48,
-    "titel": "CreditSoft in drie kwartier minuten — de modules in het kort",
+    "titel": "CreditSoft in het kort — een overzicht van de modules",
     "omschrijving": "Een kort overzicht van CreditSoft voor kredietmakelaars: kredietdossiers, klanten, documenten, de portalen voor klant en aanbrenger, de commissieberekening, borderellen en fiche 281.50, het vooruitzicht en het beheer van uw kredietverstrekkers.",
     "hash": "2ba034757547cf75",
     "guid": "6e004248-5d64-4771-b276-b94782b663bc",
@@ -371,8 +371,8 @@
     "taal": "nl-BE",
     "pagina": null,
     "lengte": 51.12,
-    "titel": "creditsoft-overzicht",
-    "omschrijving": "",
+    "titel": "CreditSoft at a glance — the modules in brief",
+    "omschrijving": "A short overview of CreditSoft for credit brokers: credit files, clients, documents, the client and intermediary portals, commission calculation, statements and the 281.50 form, the forecast, and managing your lenders.",
     "hash": "682a154e1ab2d163",
     "guid": "bc9092c4-ae00-49ed-84b7-3475506cef5b",
     "hoofdstukken": [
@@ -432,8 +432,8 @@
     "taal": "nl-BE",
     "pagina": "credit-management/credit-files",
     "lengte": 43.44,
-    "titel": "kredietdossiers-basis",
-    "omschrijving": "",
+    "titel": "The credit file in CreditSoft — from list to journal",
+    "omschrijving": "A guided tour of the credit file: filtering and searching the list, opening a file, the file details, the credit applicants, the property, the requested documents, and the journal with the tasks, notes, calls and commission schemes belonging to that one file.",
     "hash": "a03e60739b44dfe4",
     "guid": "9aadef14-942d-4ee8-a3a4-9e409f80eb62",
     "hoofdstukken": [
@@ -477,23 +477,23 @@
     "film": "aan-de-slag",
     "taal": "nl-BE",
     "pagina": "getting-started/navigatie",
-    "lengte": 145.16,
+    "lengte": 145.2,
     "routes": [
       "/dashboard",
       "/crm/relaties"
     ],
     "app": {
-      "sha": "e8bb224f7c329f3978eb6d9e1385b4992ea6a2b4",
+      "sha": "541e4a9ca0e42cda1a4ae99867ad8e7b66ab067a",
       "vuil": false
     },
     "titel": "Uw weg vinden in CreditSoft — het scherm, het zoeken en uw voorkeuren",
     "omschrijving": "De eerste rondleiding: het startscherm met het blok Aan de slag, het menu links, zoeken over uw hele omgeving met ⌘K, de hulp bij elk scherm en de twee assistenten, werken in een lijst (sorteren, filteren, exporteren) en uw eigen voorkeuren — grootte, thema en taal.",
     "hash": "f10ed6c6889cccbb",
-    "guid": "47764b3b-31b8-4d3f-b766-695c44a88810",
+    "guid": "271481a3-2a01-4b62-b156-2a8ab749fdd1",
     "hoofdstukken": [
       {
         "titel": "Het startscherm",
-        "start": 3.3,
+        "start": 3.31,
         "eind": 12.92
       },
       {
@@ -503,130 +503,135 @@
       },
       {
         "titel": "Zoeken vanaf elk scherm",
-        "start": 31.28,
-        "eind": 43.96
+        "start": 31.29,
+        "eind": 43.97
       },
       {
         "titel": "Hulp bij dit scherm",
-        "start": 48.56,
-        "eind": 56.5
+        "start": 48.59,
+        "eind": 56.53
       },
       {
         "titel": "De twee assistenten",
-        "start": 61.79,
-        "eind": 71.49
+        "start": 61.83,
+        "eind": 71.54
       },
       {
         "titel": "Werken met lijsten",
-        "start": 76.67,
-        "eind": 84.05
+        "start": 76.72,
+        "eind": 84.11
       },
       {
         "titel": "Sorteren",
-        "start": 88.13,
-        "eind": 93.71
+        "start": 88.19,
+        "eind": 93.76
       },
       {
         "titel": "Filteren",
-        "start": 99.03,
-        "eind": 106.28
+        "start": 99.09,
+        "eind": 106.33
       },
       {
         "titel": "Exporteren",
-        "start": 109.73,
-        "eind": 117.95
+        "start": 109.78,
+        "eind": 118
       },
       {
         "titel": "Uw voorkeuren",
-        "start": 122.21,
-        "eind": 132.61
+        "start": 122.27,
+        "eind": 132.67
       },
       {
         "titel": "Tot slot",
-        "start": 137.7,
-        "eind": 142.76
+        "start": 137.85,
+        "eind": 142.91
       }
-    ]
+    ],
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/271481a3-2a01-4b62-b156-2a8ab749fdd1/thumbnail.jpg",
+    "gepubliceerdOp": "2026-09-02T08:40:52.943",
+    "gepubliceerdeHash": "f10ed6c6889cccbb",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/271481a3-2a01-4b62-b156-2a8ab749fdd1",
+    "vorigeGuid": "47764b3b-31b8-4d3f-b766-695c44a88810"
   },
   "aan-de-slag-fr": {
     "film": "aan-de-slag",
     "taal": "fr-BE",
     "pagina": "getting-started/navigatie",
-    "lengte": 138.28,
+    "lengte": 138.24,
     "routes": [
       "/dashboard",
       "/crm/relaties"
     ],
     "app": {
-      "sha": "d0b28532ff2adf2d7565b10156cbf2a81b8ca409",
+      "sha": "541e4a9ca0e42cda1a4ae99867ad8e7b66ab067a",
       "vuil": false
     },
     "titel": "Se repérer dans CreditSoft — l’écran, la recherche et vos préférences",
     "omschrijving": "La première visite guidée : l’écran d’accueil avec le bloc Pour commencer, le menu de gauche, la recherche dans tout votre environnement avec ⌘K, l’aide sur chaque écran et les deux assistants, le travail dans une liste (trier, filtrer, exporter) et vos préférences — taille, thème et langue.",
     "hash": "55d9f58c9aa805b0",
-    "guid": "17eca87c-aaea-4421-9440-445ca0a000dc",
+    "guid": "ff585f8d-62be-49ef-a23a-b78d10a7252e",
     "hoofdstukken": [
       {
         "titel": "L'écran d'accueil",
-        "start": 3.38,
-        "eind": 12.85
+        "start": 3.31,
+        "eind": 12.78
       },
       {
         "titel": "Le menu de gauche",
-        "start": 16.06,
-        "eind": 24.56
+        "start": 15.97,
+        "eind": 24.47
       },
       {
         "titel": "Rechercher depuis tout écran",
-        "start": 31.02,
-        "eind": 41.57
+        "start": 30.91,
+        "eind": 41.46
       },
       {
         "titel": "Aide sur cet écran",
-        "start": 46.15,
-        "eind": 52.79
+        "start": 46.03,
+        "eind": 52.67
       },
       {
         "titel": "Les deux assistants",
-        "start": 58.14,
-        "eind": 65.43
+        "start": 58.02,
+        "eind": 65.32
       },
       {
         "titel": "Travailler avec les listes",
-        "start": 70.7,
-        "eind": 79.76
+        "start": 70.54,
+        "eind": 79.59
       },
       {
         "titel": "Trier",
-        "start": 83.84,
-        "eind": 88.11
+        "start": 83.66,
+        "eind": 87.94
       },
       {
         "titel": "Filtrer",
-        "start": 93.44,
-        "eind": 100.92
+        "start": 93.29,
+        "eind": 100.77
       },
       {
         "titel": "Exporter",
-        "start": 104.37,
-        "eind": 112.59
+        "start": 104.28,
+        "eind": 112.49
       },
       {
         "titel": "Vos préférences",
-        "start": 116.87,
-        "eind": 125.83
+        "start": 116.76,
+        "eind": 125.72
       },
       {
         "titel": "Pour conclure",
-        "start": 130.96,
-        "eind": 135.88
+        "start": 131.02,
+        "eind": 135.94
       }
     ],
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/17eca87c-aaea-4421-9440-445ca0a000dc/thumbnail.jpg",
-    "gepubliceerdOp": "2026-09-02T07:47:44.454",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/ff585f8d-62be-49ef-a23a-b78d10a7252e/thumbnail.jpg",
+    "gepubliceerdOp": "2026-09-02T08:47:48.635",
     "gepubliceerdeHash": "55d9f58c9aa805b0",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/17eca87c-aaea-4421-9440-445ca0a000dc",
-    "vorigeGuid": "712272ce-a0d1-4323-845a-c9c9ce20a9e0"
+    "embed": "https://iframe.mediadelivery.net/embed/741183/ff585f8d-62be-49ef-a23a-b78d10a7252e",
+    "vorigeGuid": "17eca87c-aaea-4421-9440-445ca0a000dc"
   },
   "relaties-nl": {
     "film": "relaties",
@@ -1795,39 +1800,39 @@
     "film": "dashboard",
     "taal": "nl-BE",
     "pagina": "getting-started/dashboard",
-    "lengte": 155.24,
+    "lengte": 155.2,
     "routes": [
       "/dashboard",
       "/beheer/dashboard-fases"
     ],
     "app": {
-      "sha": "e8bb224f7c329f3978eb6d9e1385b4992ea6a2b4",
+      "sha": "541e4a9ca0e42cda1a4ae99867ad8e7b66ab067a",
       "vuil": false
     },
     "titel": "Het dashboard — uw kantoor in één scherm",
     "omschrijving": "Het startscherm gelezen zoals het bedoeld is: het jaar bovenaan dat alles stuurt, de vier tegels met aantallen en bedragen, de termijnen die vandaag actie vragen, de drie grafieken over het gerealiseerde volume, de pijplijn met uw dossiers per fase, en het scherm waar u die fases zelf samenstelt. Plus waarom uw dashboard er anders uitziet dan dat van een collega.",
     "hash": "8e8f537dfb0114cb",
-    "guid": "f3e1d5be-49e7-4d1c-a405-f3c940067728",
+    "guid": "de098985-9d79-46e5-836d-910f7067195a",
     "hoofdstukken": [
       {
         "titel": "Het jaar stuurt alles",
-        "start": 5.3,
-        "eind": 17.51
+        "start": 5.31,
+        "eind": 17.53
       },
       {
         "titel": "De vier tegels",
-        "start": 21.52,
-        "eind": 31.32
+        "start": 21.5,
+        "eind": 31.3
       },
       {
         "titel": "Wat vandaag actie vraagt",
-        "start": 35.39,
-        "eind": 49.09
+        "start": 35.37,
+        "eind": 49.07
       },
       {
         "titel": "Gerealiseerd volume",
-        "start": 53.17,
-        "eind": 62.83
+        "start": 53.16,
+        "eind": 62.82
       },
       {
         "titel": "Per instelling en per collega",
@@ -1837,173 +1842,179 @@
       {
         "titel": "Geen eigenaar is werk",
         "start": 79.69,
-        "eind": 90.79
+        "eind": 90.78
       },
       {
         "titel": "De pijplijn",
-        "start": 94.86,
-        "eind": 106.65
+        "start": 94.84,
+        "eind": 106.64
       },
       {
         "titel": "De fases zijn van u",
-        "start": 111.63,
-        "eind": 125.24
+        "start": 111.71,
+        "eind": 125.31
       },
       {
         "titel": "Waarom uw scherm anders is",
-        "start": 130.54,
-        "eind": 143.46
+        "start": 130.63,
+        "eind": 143.54
       },
       {
         "titel": "Tot slot",
-        "start": 146.18,
-        "eind": 152.82
+        "start": 146.25,
+        "eind": 152.9
       }
-    ]
+    ],
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/de098985-9d79-46e5-836d-910f7067195a/thumbnail.jpg",
+    "gepubliceerdOp": "2026-09-02T08:53:58.342",
+    "gepubliceerdeHash": "8e8f537dfb0114cb",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/de098985-9d79-46e5-836d-910f7067195a",
+    "vorigeGuid": "f3e1d5be-49e7-4d1c-a405-f3c940067728"
   },
   "dashboard-fr": {
     "film": "dashboard",
     "taal": "fr-BE",
     "pagina": "getting-started/dashboard",
-    "lengte": 146.48,
+    "lengte": 146.84,
     "routes": [
       "/dashboard",
       "/beheer/dashboard-fases"
     ],
     "app": {
-      "sha": "d0b28532ff2adf2d7565b10156cbf2a81b8ca409",
+      "sha": "541e4a9ca0e42cda1a4ae99867ad8e7b66ab067a",
       "vuil": false
     },
     "titel": "Le tableau de bord — votre bureau en un écran",
     "omschrijving": "L’écran d’accueil lu comme il se doit : l’année en haut qui pilote tout, les quatre tuiles avec les nombres et les montants, les délais qui demandent une action aujourd’hui, les trois graphiques du volume réalisé, le pipeline de vos dossiers par phase, et l’écran où vous composez ces phases. Ainsi que la raison pour laquelle votre tableau de bord diffère de celui d’un collègue.",
     "hash": "8806c575759f29aa",
-    "guid": "e44175cb-32a1-49bf-8a29-8f9c2e1b5c39",
+    "guid": "34b3e48a-4b30-4f96-97c9-256c8b4b8d71",
     "hoofdstukken": [
       {
         "titel": "L’année pilote tout",
-        "start": 5.31,
-        "eind": 16.31
+        "start": 5.41,
+        "eind": 16.42
       },
       {
         "titel": "Les quatre tuiles",
-        "start": 20.32,
-        "eind": 30.07
+        "start": 20.42,
+        "eind": 30.17
       },
       {
         "titel": "Ce qui demande une action",
-        "start": 34.14,
-        "eind": 46.31
+        "start": 34.24,
+        "eind": 46.41
       },
       {
         "titel": "Volume réalisé",
-        "start": 50.37,
-        "eind": 59.57
+        "start": 50.48,
+        "eind": 59.68
       },
       {
         "titel": "Par institution et par collègue",
-        "start": 63.64,
-        "eind": 71.81
+        "start": 63.75,
+        "eind": 71.92
       },
       {
         "titel": "Sans responsable, c’est du travail",
-        "start": 75.89,
-        "eind": 87.17
+        "start": 75.99,
+        "eind": 87.28
       },
       {
         "titel": "Le pipeline",
-        "start": 91.24,
-        "eind": 100.81
+        "start": 91.34,
+        "eind": 100.91
       },
       {
         "titel": "Les phases sont les vôtres",
-        "start": 105.87,
-        "eind": 117.06
+        "start": 106.07,
+        "eind": 117.27
       },
       {
         "titel": "Pourquoi votre écran diffère",
-        "start": 122.38,
-        "eind": 134.55
+        "start": 122.72,
+        "eind": 134.88
       },
       {
         "titel": "Pour conclure",
-        "start": 137.26,
-        "eind": 144.09
+        "start": 137.6,
+        "eind": 144.43
       }
     ],
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/e44175cb-32a1-49bf-8a29-8f9c2e1b5c39/thumbnail.jpg",
-    "gepubliceerdOp": "2026-09-02T07:54:03.151",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/34b3e48a-4b30-4f96-97c9-256c8b4b8d71/thumbnail.jpg",
+    "gepubliceerdOp": "2026-09-02T08:58:16.923",
     "gepubliceerdeHash": "8806c575759f29aa",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/e44175cb-32a1-49bf-8a29-8f9c2e1b5c39",
-    "vorigeGuid": "c3b57031-750a-49dd-855a-23a70b2927c0"
+    "embed": "https://iframe.mediadelivery.net/embed/741183/34b3e48a-4b30-4f96-97c9-256c8b4b8d71",
+    "vorigeGuid": "e44175cb-32a1-49bf-8a29-8f9c2e1b5c39"
   },
   "lijsten-en-rapporten-nl": {
     "film": "lijsten-en-rapporten",
     "taal": "nl-BE",
     "pagina": "credit-management/filteren-in-lijsten",
-    "lengte": 135.48,
+    "lengte": 136,
     "routes": [
       "/credit-files/overview",
       "/rapporten"
     ],
     "app": {
-      "sha": "e8bb224f7c329f3978eb6d9e1385b4992ea6a2b4",
+      "sha": "541e4a9ca0e42cda1a4ae99867ad8e7b66ab067a",
       "vuil": false
     },
     "titel": "Lijsten en rapporten — zoeken, filteren en meenemen",
     "omschrijving": "Elke lijst in CreditSoft werkt hetzelfde, en dit is hoe u ze naar uw hand zet: de keuzelijsten bovenaan, het trechtertje op een kolomkop, groeperen door een kolom te verslepen, en wat u meeneemt — afdrukken en exporteren volgen altijd uw filters. Plus de negen rapporten, waar u een periode kiest en een voorbeeld krijgt dat u kan downloaden of doorsturen.",
     "hash": "1bbe19b1f6cd139c",
-    "guid": "70af70fd-d877-4875-8449-29b7ac58b2f8",
+    "guid": "88fa37b5-999e-4b00-9930-46678c1c3be7",
     "hoofdstukken": [
       {
         "titel": "Het globaal overzicht",
-        "start": 4.83,
-        "eind": 16.81
+        "start": 5.15,
+        "eind": 17.13
       },
       {
         "titel": "De keuzelijsten bovenaan",
-        "start": 20.8,
-        "eind": 34.68
+        "start": 21.13,
+        "eind": 35.01
       },
       {
         "titel": "Het trechtertje",
-        "start": 39.66,
-        "eind": 49.09
+        "start": 39.99,
+        "eind": 49.42
       },
       {
         "titel": "Toepassen",
-        "start": 52.95,
-        "eind": 61.31
+        "start": 53.29,
+        "eind": 61.65
       },
       {
         "titel": "Groeperen",
-        "start": 66,
-        "eind": 75.2
+        "start": 66.34,
+        "eind": 75.53
       },
       {
         "titel": "Afdrukken en exporteren",
-        "start": 79.19,
-        "eind": 89.03
+        "start": 79.52,
+        "eind": 89.37
       },
       {
         "titel": "De rapporten",
-        "start": 93.74,
-        "eind": 101.59
+        "start": 94.1,
+        "eind": 101.95
       },
       {
         "titel": "Kiezen wat u nodig heeft",
-        "start": 105.76,
-        "eind": 118.86
+        "start": 106.14,
+        "eind": 119.24
       },
       {
         "titel": "Tot slot",
-        "start": 123.64,
-        "eind": 133.06
+        "start": 124.14,
+        "eind": 133.57
       }
     ],
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/70af70fd-d877-4875-8449-29b7ac58b2f8/thumbnail.jpg",
-    "gepubliceerdOp": "2026-09-01T18:20:44.71",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/88fa37b5-999e-4b00-9930-46678c1c3be7/thumbnail.jpg",
+    "gepubliceerdOp": "2026-09-02T09:01:40.642",
     "gepubliceerdeHash": "1bbe19b1f6cd139c",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/70af70fd-d877-4875-8449-29b7ac58b2f8"
+    "embed": "https://iframe.mediadelivery.net/embed/741183/88fa37b5-999e-4b00-9930-46678c1c3be7",
+    "vorigeGuid": "70af70fd-d877-4875-8449-29b7ac58b2f8"
   },
   "lijsten-en-rapporten-fr": {
     "film": "lijsten-en-rapporten",

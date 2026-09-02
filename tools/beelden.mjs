@@ -653,6 +653,40 @@ async function elementSchot(page, el) {
 
 await meldAan(page, gebruiker, wachtwoord, true);
 
+// ── De klok moet vaststaan ────────────────────────────────────────────────────────────────────────────
+// ⚠️ WAAROM DIT EEN WEIGERING IS EN GEEN WAARSCHUWING. Bij een dagwissel veranderen er ~30 van de 178
+// beelden zonder dat er één regel code gewijzigd is: agenda, dashboard, leads, vooruitzicht, en de
+// menuteller die taken telt die vandaag vervallen. De verouderingscontrole meldt dan "30 gewijzigd", en wie
+// daarop stuurt gaat achter niets aan. Een waarschuwing die je élke ronde ziet, lees je niet meer — dus
+// stopt hij.
+//
+// Deze generator START de app niet, dus hij kan de klok niet zelf vastzetten: de variabele wordt door
+// AdmTijd één keer BIJ HET LADEN gelezen. Wat hij wél kan, is weigeren op een lopende klok te draaien.
+//
+// De losse klok blijft mogelijk, maar als EXPLICIETE uitzondering (`--losse-klok`), niet als stille
+// standaard. Faalrichting boven faalzichtbaarheid.
+const LOSSE_KLOK = process.argv.includes('--losse-klok');
+{
+  const balk = await page.locator('body').innerText();
+  const m = balk.match(/Klok vastgezet · ([\d/]+)|Horloge figée · ([\d/]+)/);
+  if (m) {
+    console.log(`🕐 klok staat vast op ${m[1] ?? m[2]} — de ronde is herhaalbaar.`);
+  } else if (LOSSE_KLOK) {
+    console.log('⚠️ --losse-klok: de app draait op de ECHTE tijd. Beelden met een datum erin verouderen morgen.');
+  } else {
+    console.log('⛔ De app draait op de echte klok. Een beeldronde bakt dan de datum van vandaag in ~30 beelden,');
+    console.log('   en die melden zich morgen als "gewijzigd" terwijl er niets gewijzigd is.');
+    console.log('');
+    console.log('   Zet in src/Host/CreditSoft.Host.Web/Properties/launchSettings.json bij het http-profiel:');
+    console.log('       "ADM_TIJD_VAST": "2026-09-01"');
+    console.log('   herstart de app, en draai deze ronde opnieuw.');
+    console.log('');
+    console.log('   Bewust op de echte tijd draaien? Voeg --losse-klok toe.');
+    await browser.close();
+    process.exit(1);
+  }
+}
+
 let ok = 0; const mislukt = []; const ongecontroleerd = []; const overgeslagenPortaal = []; const zwakGecontroleerd = []; const handwerk = []; const gegroeid = []; const altAfwijkingen = []; const schermteksten = {};
 // ⚠️ De KERN eist de NAMEN, niet een telling: hij controleert dat élk bestand op schijf in precies één
 // uitslaglijst zit. Onze eigen controle hieronder kijkt of er een RECEPT bestaat — dat is iets anders, en

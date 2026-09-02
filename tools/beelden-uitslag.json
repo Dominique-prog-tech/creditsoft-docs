@@ -136,7 +136,7 @@
     "route": "/beheer/dashboard-fases",
     "app": {
       "sha": "541e4a9ca0e42cda1a4ae99867ad8e7b66ab067a",
-      "vuil": false
+      "vuil": true
     }
   },
   "commissie-instellingen": {
@@ -213,7 +213,7 @@
     "route": "/dashboard",
     "app": {
       "sha": "541e4a9ca0e42cda1a4ae99867ad8e7b66ab067a",
-      "vuil": false
+      "vuil": true
     }
   },
   "rapporten-bibliotheek": {
@@ -493,14 +493,14 @@
     "route": "/dashboard",
     "app": {
       "sha": "541e4a9ca0e42cda1a4ae99867ad8e7b66ab067a",
-      "vuil": false
+      "vuil": true
     }
   },
   "dashboard-aan-de-slag": {
     "route": "/dashboard",
     "app": {
       "sha": "541e4a9ca0e42cda1a4ae99867ad8e7b66ab067a",
-      "vuil": false
+      "vuil": true
     }
   },
   "voorkeuren-paneel": {
@@ -752,7 +752,7 @@
     "route": "/beheer/dashboard-fases",
     "app": {
       "sha": "541e4a9ca0e42cda1a4ae99867ad8e7b66ab067a",
-      "vuil": false
+      "vuil": true
     }
   },
   "commissie-instellingen-fr": {
@@ -829,7 +829,7 @@
     "route": "/dashboard",
     "app": {
       "sha": "541e4a9ca0e42cda1a4ae99867ad8e7b66ab067a",
-      "vuil": false
+      "vuil": true
     }
   },
   "rapporten-bibliotheek-fr": {
@@ -1109,14 +1109,14 @@
     "route": "/dashboard",
     "app": {
       "sha": "541e4a9ca0e42cda1a4ae99867ad8e7b66ab067a",
-      "vuil": false
+      "vuil": true
     }
   },
   "dashboard-aan-de-slag-fr": {
     "route": "/dashboard",
     "app": {
       "sha": "541e4a9ca0e42cda1a4ae99867ad8e7b66ab067a",
-      "vuil": false
+      "vuil": true
     }
   },
   "voorkeuren-paneel-fr": {

@@ -514,8 +514,9 @@ const FILMS = [
   ['creditsoft-overzicht', {
     pagina: null,                                  // hoort op de website, niet op een handleidingpagina
     titel: {
-      nl: 'CreditSoft in drie kwartier minuten — de modules in het kort',
+      nl: 'CreditSoft in het kort — een overzicht van de modules',
       fr: 'CreditSoft en bref — les modules en un coup d\u2019\u0153il',
+      en: 'CreditSoft at a glance — the modules in brief',
     },
     omschrijving: {
       nl: 'Een kort overzicht van CreditSoft voor kredietmakelaars: kredietdossiers, klanten, documenten, '
@@ -524,6 +525,9 @@ const FILMS = [
       fr: 'Un bref aper\u00e7u de CreditSoft pour les courtiers en cr\u00e9dit : dossiers de cr\u00e9dit, '
         + 'clients, documents, les portails client et apporteur, le calcul des commissions, les bordereaux '
         + 'et la fiche 281.50, la perspective et la gestion de vos pr\u00eateurs.',
+      en: 'A short overview of CreditSoft for credit brokers: credit files, clients, documents, the client '
+        + 'and intermediary portals, commission calculation, statements and the 281.50 form, the forecast, '
+        + 'and managing your lenders.',
     },
     uitvoeringen: {
       // ⚠️ SCHERMTAAL ≠ TEKSTTAAL. De site draagt drie talen, de app maar twee — Program.cs zet
@@ -1873,6 +1877,7 @@ const FILMS = [
     titel: {
       nl: 'Het kredietdossier in CreditSoft — van lijst tot journaal',
       fr: 'Le dossier de crédit dans CreditSoft — de la liste au journal',
+      en: 'The credit file in CreditSoft — from list to journal',
     },
     omschrijving: {
       nl: 'Een rondleiding door het kredietdossier: de lijst filteren en doorzoeken, een dossier openen, '
@@ -1882,6 +1887,9 @@ const FILMS = [
         + 'dossier, les donn\u00e9es du dossier, les demandeurs de cr\u00e9dit, le bien, les documents '
         + 'demand\u00e9s, et le journal avec les t\u00e2ches, notes, appels et sch\u00e9mas de commission '
         + 'li\u00e9s \u00e0 ce dossier.',
+      en: 'A guided tour of the credit file: filtering and searching the list, opening a file, the '
+        + 'file details, the credit applicants, the property, the requested documents, and the journal '
+        + 'with the tasks, notes, calls and commission schemes belonging to that one file.',
     },
     dossier: ID.dossierMetSchema,                 // DEMO-1089 — actief schema, gevuld journaal, alle documentstatussen
 
@@ -2034,6 +2042,57 @@ mkdirSync(UIT, { recursive: true });
 // dus élke herneming kost een nieuwe guid en dus een nieuwe verwijzing op elke pagina. Een hoofdstuktitel
 // verbeteren mag dat niet waard zijn. Hoofdstukken zijn metadata (POST /videos/{guid}), dus ze kunnen
 // bijgewerkt worden op een film die al online staat: hier de tabel, en `bunny.mjs hoofdstukken` duwt ze door.
+// ── `--teksten`: titel en omschrijving verversen ZONDER op te nemen ────────────────────────────────────
+// ⚠️ WAAROM DIT BESTAAT. Titel en omschrijving worden bij het OPNEMEN in de tabel geschreven. Wijzigt
+// Dominique een tekst, dan was de enige weg de film opnieuw opnemen — en dat kost bij Bunny een NIEUWE GUID
+// voor een film waarvan geen enkel beeld verandert, plus een tabelwijziging, plus een handleidingpagina,
+// plus een oude video om op te ruimen. Voor een komma.
+//
+// Zelfde tweetrapsweg als de hoofdstukken: dit schrijft in de tabel, `bunny.mjs titels` duwt door naar Bunny.
+if (process.argv.includes('--teksten')) {
+  // ⚠️ GEEN eigen `const uitslag` hier. Die overschaduwt de module-brede (regel ~51), en `bewaarUitslag()`
+  // schrijft juist díé weg — dus muteerde dit blok een kopie en bewaarde het een onaangeroerd origineel.
+  // Het meldde daarbij vrolijk "2 tekst(en) bijgewerkt". Gevonden doordat de VOLGENDE stap er niets van zag,
+  // niet doordat hier iets roodkleurde. Een melding die niet nagerekend wordt, is een bewering.
+  let raak = 0, gelijk = 0;
+  for (const [sleutel, rij] of Object.entries(uitslag)) {
+    if (filter && !sleutel.includes(filter)) continue;
+    const film = FILMS.find(([naam]) => naam === rij.film)?.[1];
+    if (!film) continue;
+    // ⚠️ De TEKSTtaal uit de sleutel, niet rij.taal — dat is de SCHERMtaal. De Engelse website-uitvoering
+    // draagt taal 'nl-BE'; wie daarop koppelt, geeft haar Nederlandse teksten. Zelfde val als bij de
+    // hoofdstukken, en die is daar al een keer dichtgezet.
+    const kort = sleutel.match(/-(nl|fr|en)$/)?.[1] ?? (rij.taal ?? 'nl-BE').split('-')[0];
+    const titel = film.titel?.[kort];
+    const oms = film.omschrijving?.[kort];
+    if (titel === undefined && oms === undefined) continue;
+    const voor = `${rij.titel}|${rij.omschrijving}`;
+    if (titel !== undefined) rij.titel = titel;
+    if (oms !== undefined) rij.omschrijving = oms;
+    geraakt.add(sleutel);
+    if (`${rij.titel}|${rij.omschrijving}` === voor) { gelijk++; continue; }
+    raak++;
+    console.log(`   ${sleutel}: ${rij.titel}`);
+  }
+  bewaarUitslag();
+
+  // 🔨 TERUGLEZEN VAN SCHIJF. Niet "ik heb het gezet" melden maar "het stáát er" — dat is het verschil
+  // tussen een bewering en een meting, en precies wat de fout hierboven had gevangen.
+  const opSchijf = JSON.parse(readFileSync(UITSLAG, 'utf8'));
+  const mis = [...geraakt].filter(k => opSchijf[k]?.titel !== uitslag[k]?.titel
+                                    || opSchijf[k]?.omschrijving !== uitslag[k]?.omschrijving);
+  if (mis.length) {
+    console.log(`\n⛔ ${mis.length} rij(en) staan NIET op schijf zoals bedoeld: ${mis.join(', ')}`);
+    process.exit(1);
+  }
+
+  // Niets gewijzigd is geen "in orde" — zeg het, anders leest een stille ronde als een geslaagde.
+  console.log(raak
+    ? `\n✅ ${raak} tekst(en) bijgewerkt in de tabel${gelijk ? `, ${gelijk} stonden al goed` : ''}. Nu: node tools/bunny.mjs titels`
+    : `\n◐ Geen enkele tekst gewijzigd (${gelijk} stonden al goed). Staat de nieuwe tekst wel in het scenario?`);
+  process.exit(0);
+}
+
 if (process.argv.includes('--hoofdstukken')) {
   let raak = 0, gemist = 0;
   for (const [naam, film] of FILMS) {
