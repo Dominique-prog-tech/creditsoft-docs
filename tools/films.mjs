@@ -2366,6 +2366,14 @@ for (const [naam, filmVol] of FILMS) {
         scenes: film.scenes.map(sc => [sc.naam, sc[kort], String(sc.doe)]),
       })).digest('hex').slice(0, 16),
       guid: uitslag[sleutel]?.guid ?? null,     // blijft staan tot bunny.mjs hem vervangt
+      // ⚠️ vorigeGuid MOET hier ook overleven, en dat is met bloed geschreven. Deze toewijzing VERVANGT de
+      // hele rij; wat hier niet overgenomen wordt, is weg. Tot 02/09/2026 stond vorigeGuid er niet bij, dus
+      // een heropname wiste de administratie van wat bunny.mjs nog moest opruimen. Gevolg: bij de VOLGENDE
+      // publicatie zag hij geen vorigeGuid, ruimde niets op, en zette een nieuwe — de oudste guid bleef
+      // eeuwig bij Bunny staan zonder dat iets nog zei waar hij bij hoorde. Zo ontstonden drie weesvideo's
+      // (dashboard-fr, aan-de-slag-fr, kredietdossiers-basis-fr), pas gevonden door de bibliotheek met de
+      // hand tegen deze tabel te leggen. Dezelfde valkuil als met gepubliceerdeHash, één laag dieper.
+      vorigeGuid: uitslag[sleutel]?.vorigeGuid ?? undefined,
       // ⚠️ HOE LANG STAAT ER NIETS TE GEBEUREN? Een scène die op een element wacht dat nooit komt, levert
       // dode lucht op — en de ronde meldt gewoon "✅ film gemaakt". Op 01/09/2026 stond er 33,7 s stilte in
       // de Franse commissie-film omdat een locator daar niet matchte en pas ná 30 s terugviel. De film was

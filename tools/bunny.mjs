@@ -85,6 +85,28 @@ if (opdracht === 'check') {
   const items = r.json?.items ?? [];
   console.log(`✅ verbonden met library ${LIB} — ${items.length} video('s)`);
   for (const v of items) console.log(`   ${v.guid}  ${String(v.length ?? '?').padStart(4)}s  ${v.title}`);
+
+  // ⚠️ WAT NIET TOE TE WIJZEN IS, IS HET ENIGE DAT ER TOE DOET. Een lijst van 56 video's leest als "alles
+  // staat er"; pas door haar tegen films-uitslag.json te leggen bleek dat er drie in stonden die nergens bij
+  // hoorden — weesopnames van een heropname die vorigeGuid liet vallen. Gevonden op 02/09/2026 met de hand,
+  // en dat is precies één keer te vaak.
+  const tabel = JSON.parse(readFileSync(new URL('./films-uitslag.json', import.meta.url).pathname, 'utf8'));
+  const bekend = new Set();
+  for (const f of Object.values(tabel)) { if (f.guid) bekend.add(f.guid); if (f.vorigeGuid) bekend.add(f.vorigeGuid); }
+  const wezen = items.filter(v => !bekend.has(v.guid));
+  const ontbreekt = [...Object.entries(tabel)].filter(([, f]) => f.guid && !items.some(v => v.guid === f.guid));
+
+  console.log();
+  if (ontbreekt.length) {
+    console.log(`⛔ ${ontbreekt.length} film(s) uit de tabel staan NIET bij Bunny — de handleiding toont een lege speler:`);
+    for (const [k, f] of ontbreekt) console.log(`   ${f.guid}  ${k}`);
+  } else console.log('✅ elke film uit de tabel staat bij Bunny.');
+
+  if (wezen.length) {
+    console.log(`\n\u26a0\ufe0f ${wezen.length} video('s) bij Bunny horen bij GEEN ENKELE film uit de tabel:`);
+    for (const v of wezen) console.log(`   ${v.guid}  ${String(v.length ?? '?').padStart(4)}s  ${v.title}`);
+    console.log('   Ze kosten opslag en niemand weet meer waarvoor. Zet ze in een bestand en gebruik `wis`.');
+  } else console.log('✅ geen enkele video bij Bunny is onbekend — de bibliotheek is schoon.');
   process.exit(0);
 }
 
@@ -335,12 +357,25 @@ if (opdracht === 'publiceer') {
     // Daarom: de VORIGE blijft staan, de VÓÓRVORIGE gaat weg. De bibliotheek groeit dan tot hoogstens twee
     // generaties in plaats van eindeloos, en er is altijd één ronde speling. De handleiding zelf wijst
     // altijd naar de nieuwste — die leest de tabel bij het bouwen.
+    // ⚠️ EEN MISLUKTE OPRUIMING MAG DE GUID NIET LATEN VALLEN. Hier stond enkel een console.log met de
+    // HTTP-status: faalde de DELETE, dan werd f.vorigeGuid er tóch mee overschreven en was de oude guid uit
+    // de administratie verdwenen — onvindbaar behalve door de bibliotheek met de hand tegen deze tabel te
+    // leggen. Nu blijft hij staan tot hij écht weg is, en de volgende ronde probeert het opnieuw.
+    let nogOpTeRuimen = null;
     if (f.vorigeGuid && f.vorigeGuid !== oudeGuid) {
       const d = await api(`/videos/${f.vorigeGuid}`, { method: 'DELETE' });
-      console.log(`   voorvorige versie ${f.vorigeGuid} opgeruimd → HTTP ${d.status}`);
+      if (d.ok || d.status === 404) {
+        console.log(`   voorvorige versie ${f.vorigeGuid} opgeruimd → HTTP ${d.status}`);
+      } else {
+        nogOpTeRuimen = f.vorigeGuid;
+        console.log(`   \u26a0\ufe0f voorvorige versie ${f.vorigeGuid} NIET opgeruimd (HTTP ${d.status}) — `
+                    + 'ze blijft geregistreerd zodat de volgende ronde het opnieuw probeert.');
+      }
     }
     if (oudeGuid) {
-      f.vorigeGuid = oudeGuid;
+      // Kon de vóórvorige niet weg, dan houden we DIE vast: de vorige is nog vindbaar via de bibliotheek
+      // zolang ze de nieuwste-min-een is, de niet-gewiste zou anders spoorloos worden.
+      f.vorigeGuid = nogOpTeRuimen ?? oudeGuid;
       console.log(`   vorige versie ${oudeGuid} blijft nog één ronde staan (crawl-respijt)`);
     }
     geraakt.add(sleutel);
@@ -351,6 +386,51 @@ if (opdracht === 'publiceer') {
   console.log(gedaan ? `✅ ${gedaan} film(s) gepubliceerd` : 'ℹ️  niets te publiceren');
   if (mislukt.length) { console.log(`⚠️ ${mislukt.length} probleem(en):`); mislukt.forEach(m => console.log('   ' + m)); }
   process.exit(mislukt.length ? 1 : 0);
+}
+
+// ── WISSEN ────────────────────────────────────────────────────────────────────────────────────────────
+// ⛔ ONOMKEERBAAR, en daarom met drie grendels. Een video bij Bunny wissen kan niet ongedaan gemaakt worden;
+// de opname zelf staat lokaal in tools/.films-uit/ maar die map zit NIET in git (spec §7), dus na een
+// opruiming van de scratch is de film weg.
+//
+// Grendel 1: hij weigert elke guid die in films-uitslag.json als LEVENDE guid staat. Dat is de enige fout
+//            die echt duur is — een film die op de handleidingpagina staat, wegnemen.
+// Grendel 2: zonder --doen toont hij enkel wat hij ZOU doen. De droge stand is de standaard.
+// Grendel 3: hij leest de te wissen guids uit een BESTAND en verzint er zelf geen. Wat er niet in staat,
+//            wordt niet aangeraakt.
+if (opdracht === 'wis') {
+  const lijstBestand = process.argv[3];
+  const doen = process.argv.includes('--doen');
+  if (!lijstBestand) { console.log('gebruik: node bunny.mjs wis <bestand-met-guids> [--doen]'); process.exit(1); }
+
+  // De uitslag hier zelf laden: de `uitslag` van het publiceer-blok is daar lokaal.
+  const uitslagPad = new URL('./films-uitslag.json', import.meta.url).pathname;
+  const levend = new Set(Object.values(JSON.parse(readFileSync(uitslagPad, 'utf8')))
+    .filter(f => f.guid).map(f => f.guid));
+  const regels = readFileSync(lijstBestand, 'utf8').split('\n')
+    .map(r => r.trim()).filter(Boolean)
+    .map(r => { const [guid, ...rest] = r.split(/\t| {2,}/); return { guid: guid.trim(), wat: rest.join(' ').trim() }; })
+    .filter(r => /^[0-9a-f-]{36}$/.test(r.guid));
+
+  const geweigerd = regels.filter(r => levend.has(r.guid));
+  if (geweigerd.length) {
+    console.log(`\u26d4 ${geweigerd.length} guid(s) zijn IN GEBRUIK en worden niet gewist:`);
+    for (const g of geweigerd) console.log(`   ${g.guid}  ${g.wat}`);
+    console.log('   Er wordt niets gewist zolang deze lijst niet klopt.');
+    process.exit(1);
+  }
+
+  console.log(`${regels.length} video('s)${doen ? '' : ' — DROGE STAND, er wordt niets gewist'}:`);
+  let weg = 0, mislukt = 0;
+  for (const r of regels) {
+    if (!doen) { console.log(`   zou wissen: ${r.guid}  ${r.wat}`); continue; }
+    const res = await api(`/videos/${r.guid}`, { method: 'DELETE' });
+    if (res.ok) { weg++; console.log(`   \u2714 ${r.guid}  ${r.wat}`); }
+    else { mislukt++; console.log(`   \u2716 ${r.guid}  HTTP ${res.status}  ${r.wat}`); }
+  }
+  if (doen) console.log(`\n${weg} gewist, ${mislukt} mislukt.`);
+  else console.log('\nVoeg --doen toe om het echt te doen.');
+  process.exit(mislukt ? 1 : 0);
 }
 
 if (opdracht === 'hoofdstukken') {
