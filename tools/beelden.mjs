@@ -71,6 +71,17 @@ const AANBRENGER_PORTAAL = ['portaal-overzicht', 'portaal-dossiers', 'portaal-co
 const HANDWERK = { 'rapporten-voorbeeld': 'één blad uit een gerenderd rapport, met de hand uitgesneden',
                    'kantoorprofiel-vragenlijst': 'uitsnede dwars door editor én voorbeeldpaneel' };
 
+// ⚠️ BEELDEN DIE ALTIJD WISSELEN, en waarom dat geen fout is om te repareren.
+// Deze worden WEL geschreven — ze zijn geldig — maar twee identieke rondes leveren er nooit hetzelfde
+// beeld voor. Zonder deze lijst gaat een volgende ronde er opnieuw uren op jagen, precies zoals op
+// 02/09/2026 gebeurd is: van de 10 wisselende beelden waren er 8 een echte fout (de nu-lijn) en 2 dit.
+// ⚠️ Een beeld hier zetten is een BESLISSING, geen opruiming. De vraag is: kan dit beeld PRINCIPIEEL
+// stilstaan? Zo ja, hoort het hier niet en moet de oorzaak weg.
+const WISSELT_ALTIJD = {
+  'actielogboek': 'de generator meldt zich aan om te kunnen schieten, en dát staat bovenaan in het '
+    + 'actielogboek — drie verse regels per ronde. Het beeld kan niet stilstaan zolang het zichzelf meet.',
+};
+
 // Vaste proefgegevens uit tenant_demo. ⚠️ Kies op INHOUD, niet op aantal: een fiche met een leeg journaal
 // ⚠️ Vaste proefgegevens uit tenant_demo — zie tools/aansturing.mjs (ID).
 
@@ -528,6 +539,26 @@ for (const map of ['', 'getting-started/', 'crm/', 'credit-management/', 'beheer
 const browser = await chromium.launch();
 const ctx = await browser.newContext({ viewport: { width: BREED, height: HOOG }, deviceScaleFactor: 2 });
 
+// ⛔ RAAK DE BROWSERKLOK NIET AAN. Hier stond `page.clock.setFixedTime(...)`, om het "nu"-streepje van
+// DxScheduler stil te zetten — dat streepje komt uit `new Date()` in de PAGINA, en ADM_TIJD_VAST bevriest
+// enkel de server. Het leek de juiste plek. Het brak de DEVEXPRESS-GRAFIEKEN.
+//
+// Gemeten op 02/09/2026, 10 ladingen per vakje, geteld op `svg.dxc-chart`:
+//
+//                        lopende klok   Playwright-klok
+//   voorrendering aan       0/10             5/10   grafiek niet getekend
+//   voorrendering uit       0/10            10/10
+//
+// `setSystemTime` doet het even hard (4/6) — het is dus niet de STILSTAAND tijd maar de ingreep zelf:
+// Playwright hangt zijn schil voor Date, en de tekenlus van DevExpress struikelt erover. Het scherm toont
+// dan twee lege witte kaders met enkel hun titel, en dat is PERFECT STIL — de stilstandcontrole keurt het
+// goed, de beloftecontrole ook, want de titel staat er wél. Vandaar de grendel `grafiekLeeg()` hieronder.
+//
+// Het streepje van de agenda wordt gewoon door CSS verborgen (`.dxbl-sc-time-indicator` in VERBERG_VERSIE).
+// Hier stond ooit dat CSS er niet op grijpt; dat klopte niet — een STIJLREGEL blijft gelden ook wanneer
+// DevExpress hertekent, in tegenstelling tot een element uit de DOM halen.
+
+
 // ── DE BOEKINGSLINK GAAT GEMASKEERD IN BEELD ───────────────────────────────────────────────────────────
 // ⚠️ Het scherm Online afspraken toont de VOLLEDIGE boekingslink van het kantoor, token en al:
 //     https://platform.digitalcloud.be/afspraak/0c8d29adabfe4737a1d4b05696c24ba4
@@ -569,7 +600,33 @@ const MASKEER_BOEKINGSLINK = () => {
 // `background: transparent` en NIET `display: none`. Een overlay-schuifbalk neemt geen ruimte in, maar een
 // klassieke wel — en die zou bij `display: none` inschuiven, waarna de vormgrendel élk bestaand beeld als
 // "andere vorm" weigert. Transparant maken werkt in beide gevallen en laat de afmetingen met rust.
-const VERBERG_VERSIE = '.nav-version { visibility: hidden !important; }'
+// ⚠️ EN DE KLOK-PIL. Die verschijnt sinds AppKit 0.315.0 in de kopbalk zodra ADM_TIJD_VAST gezet is — en
+// dat is precies wat een beeldronde doet. Zonder deze regel bakt de ronde "Klok vastgezet · 02/09/2026" in
+// ÉLK beeld: 152 van de 178 wijzigden erdoor, en een dev-only badge zou in de handleiding belanden.
+// Gemeten en teruggedraaid op 02/09/2026, vóór het publiceren.
+//
+// `visibility: hidden` en niet `display: none`, om dezelfde reden als hieronder: de pil mag geen ruimte
+// vrijgeven, anders schuift de hele kopbalk op en weigert de vormgrendel elk bestaand beeld.
+// ⚠️ EN DE "NU"-LIJN VAN DE AGENDA. DxScheduler tekent een streepjeslijn op het huidige uur, en die komt
+// uit de klok van de BROWSER — ADM_TIJD_VAST staat op de server en reikt daar niet. Gevolg: tien
+// agendabeelden wijzigden bij élke ronde, ook met een vaste klok. Gemeten 02/09/2026 door dezelfde ronde
+// twee keer te draaien: 12 van de 178 wijzigden, en het verschil was telkens 1642 x 58 px op de hoogte van
+// dat streepje.
+// ⚠️ EN DE DEVEXPRESS-SCHUIFBALK. De regel hieronder maakt de NATIVE schuifbalken transparant, maar
+// DevExpress tekent in een raster zijn eigen duim (`dxbl-scroll-viewer-scroll-thumb`). Die stond op twee
+// identieke rondes op een net andere hoogte: een strook van 6 x 728 px, 4.373 pixels verschil op een beeld
+// dat er met het blote oog identiek uitzag. Gemeten op 02/09/2026 — de rijen waren gelijk, de volgorde ook.
+// ⚠️ DE AGENDA HEEFT TWEE NU-MERKTEKENS, geen één. `dxbl-sc-time-indicator(-line)` is de streep in het
+// raster; `dxbl-sc-time-marker-wrapper` is de blauwe streepjeslijn MET de bol op de tijdschaal, en die
+// stond hier niet. Gevolg: acht agendabeelden bleven wijzigen bij een identieke ronde. Gemeten
+// 02/09/2026 op de computed visibility: indicator=hidden, marker=visible.
+// ⛔ NIET `[class*="dxbl-sc-time-"]` gebruiken om ze samen te vangen: dat merkteken sluit het
+// verkeerde geval niet uit — het verbergt óók `dxbl-sc-time-cell` en `dxbl-sc-time-scale-cell`, en
+// dat zijn de UURLABELS. Nagemeten: met de brede filter gingen veertien elementen op hidden.
+const VERBERG_VERSIE = '.nav-version, .adm-klok-vast, .dxbl-sc-time-indicator, .dxbl-sc-time-indicator-line,'
+  + ' .dxbl-sc-time-marker-wrapper,'
+  + ' .dxbl-scroll-viewer-scroll-thumb, .dxbl-scroll-viewer-vert-scroll-bar, .dxbl-scroll-viewer-hor-scroll-bar'
+  + ' { visibility: hidden !important; }'
   + '::-webkit-scrollbar, ::-webkit-scrollbar-track, ::-webkit-scrollbar-thumb, ::-webkit-scrollbar-corner'
   + ' { background: transparent !important; box-shadow: none !important; border-color: transparent !important; }';
 let badgeGezien = 0;
@@ -754,6 +811,24 @@ for (const taal of ['nl-BE', 'fr-BE']) {
         geenToegang: /Geen toegang|Accès refusé|niet de nodige rechten|droits nécessaires/i });
       if (!besluit.ok) { misluktMet(`${naam}${achtervoegsel} — ${besluit.reden}`); continue; }
 
+      // ⚠️ EEN LEEG GRAFIEKKADER HAALT ELKE ANDERE CONTROLE. Op 02/09/2026 stond op `commissie-vooruitzicht`
+      // een kaart met haar titel ("Verwacht per maand") en daaronder wit — de grafiek was niet getekend.
+      // De beloftecontrole zag de titel en keurde goed; de stilstandcontrole zag twee identieke schoten en
+      // keurde goed, want wit is uitzonderlijk stil. Het beeld ging mee naar de handleiding.
+      // ⚠️ `.dxbl-chart-with-legend-container` en NIET `.dxbl-widget-container`. Die tweede stond hier eerst
+      // en weigerde vier beelden die helemaal geen grafiek dragen (mailsjablonen, gebruikers-fiche, in beide
+      // talen): DevExpress gebruikt hem ook voor andere widgets, en die bevatten geen svg. Nagemeten: op
+      // /beheer/mailsjablonen staan er NUL grafiekcontainers, dus het merkteken sloot het verkeerde geval
+      // niet uit. Het nauwe kader bestaat wél altijd op een grafiekscherm — 8 ladingen, telkens 2 — dus de
+      // grendel bijt nog: bij een kapotte tekenlus is er één van de twee leeg.
+      const legeGrafieken = await page.evaluate(() =>
+        [...document.querySelectorAll('.dxbl-chart-with-legend-container')].filter(e => !e.querySelector('svg')).length);
+      if (legeGrafieken > 0) {
+        misluktMet(`${naam}${achtervoegsel} — ${legeGrafieken} LEEG GRAFIEKKADER: de kaart draagt haar titel `
+          + 'maar er is geen grafiek getekend. Raakt de browserklok aan? Zie het blok bij VERBERG_VERSIE.');
+        continue;
+      }
+
       // ⚠️ DE BELOFTE MOET OP HET SCHERM STAAN, anders schrijven we niets.
       const eigen = VERWACHT[naam];
       // ⚠️ DE ALT-TEKST VAN DE JUISTE TAAL. Hier stond `ALT[naam]` — zonder het -fr-achtervoegsel — en dus
@@ -830,6 +905,21 @@ for (const taal of ['nl-BE', 'fr-BE']) {
         continue;
       }
 
+      // Dezelfde controle voor de KLOK-PIL. Die staat er alleen wanneer de klok vastgezet is — wat bij een
+      // beeldronde de bedoeling is — en ze mag op geen enkel beeld te zien zijn. Hernoemt `.adm-klok-vast`,
+      // dan grijpt de filter niet meer en staat "Klok vastgezet · <datum>" op ÉLK beeld. Dat is precies wat
+      // op 02/09/2026 gebeurde: 152 van de 178 beelden wijzigden erdoor.
+      const pil = await page.evaluate(() => {
+        const el = document.querySelector('.adm-klok-vast');
+        if (!el) return 'ontbreekt';   // klok loopt gewoon, of de pil staat niet op dit scherm
+        return getComputedStyle(el).visibility === 'hidden' ? 'verborgen' : 'ZICHTBAAR';
+      });
+      if (pil === 'ZICHTBAAR') {
+        misluktMet(`${naam}${achtervoegsel} — KLOK-PIL ZICHTBAAR: de filter op .adm-klok-vast grijpt hier `
+          + `niet. "Klok vastgezet" zou op dit beeld komen te staan.`);
+        continue;
+      }
+
       // ⚠️ BOTSENDE FORMULIERLABELS, en dit is gratis: de ronde staat hier tóch al, met het scherm open, in
       // beide talen. Een DevExpress-formulierlabel staat op `white-space: nowrap`; is de vertaling langer dan
       // haar kolom, dan breekt ze niet af maar loopt ze de buurkolom in. Frans is stelselmatig langer dan
@@ -852,7 +942,48 @@ for (const taal of ['nl-BE', 'fr-BE']) {
       }).catch(() => []);
       for (const b of botsingen) labelBotsingen.push(`${naam}${achtervoegsel}: ${b}`);
 
-      const nieuw = vorm.element ? await elementSchot(page, vorm.element) : await page.screenshot();
+      // ⚠️ HIER OPNIEUW, vlak vóór het schot — niet enkel vóór het recept. Een recept dat KLIKT om te
+      // navigeren verliest de ingespoten stijl (Blazor's enhanced navigation vervangt de <head>), en dan
+      // staat de nu-lijn of de klok-pil er tóch op. Gemeten op 02/09/2026: vijf agendabeelden bleven
+      // wijzigen ondanks de filter, omdat hun recept navigeert ná het injecteren.
+      await page.addStyleTag({ content: VERBERG_VERSIE }).catch(() => {});
+
+      // ⚠️ WACHTEN TOT DE PAGINA STIL STAAT, en enkel waar dat nodig is.
+      //
+      // Op 02/09/2026 stond op `commissie-vooruitzicht-fr` de volledige legende van de ringgrafiek (acht
+      // aanbrengersnamen), en in de volgende ronde was diezelfde plek LEEG WIT. Zelfde app, zelfde data,
+      // zelfde recept. Het schot landde vóór DevExpress de legende getekend had.
+      //
+      // ⚠️ En de generator meldde dat beeld gewoon als geslaagd: zijn merkteken voor dat scherm is het woord
+      // "Vooruitzicht", en dat stond er wél. Dat is precies wat hij zelf elke ronde zegt — één woord bewijst
+      // dat je op het juiste SCHERM zit, niet dat de juiste TOESTAND getoond wordt. Zonder de herhaalproef
+      // was dit gepubliceerd, onder een bijschrift dat de verdeling per aanbrenger belooft.
+      //
+      // GEEN legende-specifieke controle. Die dekt enkel het geval dat we nu kennen. Twee opeenvolgende
+      // schoten vergelijken dekt élke onafgemaakte rendering — een animatie die nog loopt, een teller die
+      // optelt, een grafiek die nog tekent. Alleen op schermen mét een grafiek, want het kost een extra
+      // schot en de rest van de ronde heeft het niet nodig.
+      // ⚠️ HET BEWEZEN BEELD BEWAREN, niet een nieuw schot erna. Mijn eerste versie schoot twee keer om de
+      // stilstand te BEWIJZEN en nam daarna een DERDE schot om op te slaan — waartussen alles opnieuw kon
+      // bewegen. Gemeten: 7 van de 178 wijzigden nog steeds, waaronder precies het beeld waarvoor deze
+      // controle gebouwd was. Een bewijs dat je daarna weggooit, bewijst niets.
+      // ⚠️ OP ÉLK SCHERM, niet enkel waar een grafiek staat. Mijn eerste versie keek naar `.dxc-chart` — en
+      // de agenda gebruikt `dxbl-sc-*`, dus die schermen sloeg ze over en die bleven wijzigen. Een filter
+      // per bekend geval dekt alleen wat je al kent; dit dekt élke onafgemaakte rendering.
+      //
+      // Twee opeenvolgende schoten moeten byte-identiek zijn, en het BEWEZEN beeld wordt bewaard — niet een
+      // nieuw schot erna. Dat laatste stond er eerst, en dan bewijs je iets dat je vervolgens weggooit.
+      let nieuw = null, vorige = null;
+      for (let poging = 0; poging < 6 && nieuw === null; poging++) {
+        const a = vorm.element ? await elementSchot(page, vorm.element) : await page.screenshot();
+        if (vorige && Buffer.compare(vorige, a) === 0) nieuw = a;
+        else { vorige = a; await page.waitForTimeout(400); }
+      }
+      if (nieuw === null) {
+        misluktMet(`${naam}${achtervoegsel} — het scherm stond na 6 pogingen nog niet stil. Het beeld zou `
+          + `halverwege een rendering genomen zijn (een lege legende of een halve grafiek ziet er af uit).`);
+        continue;
+      }
       // ⚠️ IS DEZE RONDE HERHAALBAAR? Eén beeld wordt twee keer na elkaar geschoten, en de twee moeten
       // byte-identiek zijn. Dat is de enige controle die de HELE familie vangt waar de schuifbalk er maar
       // één van was: alles wat tussen twee schoten verandert zonder dat de app verandert — een animatie die
@@ -862,6 +993,7 @@ for (const taal of ['nl-BE', 'fr-BE']) {
       // Het beeld is met opzet `documenttypes`: het draagt geen datum (dus geen ruis van de klok) en het
       // is net het scherm waarop de schuifbalk betrapt werd. Het MELDT en blokkeert niet.
       if (`${naam}${achtervoegsel}` === HERHAALPROEF) {
+        await page.addStyleTag({ content: VERBERG_VERSIE }).catch(() => {});
         const tweede = vorm.element ? await elementSchot(page, vorm.element) : await page.screenshot();
         herhaalProef = Buffer.compare(nieuw, tweede) === 0
           ? { gelijk: true }
@@ -950,6 +1082,13 @@ if (handwerk.length) {
   console.log(`\n✋ ${handwerk.length} beelden zijn MET DE HAND uitgesneden en dus NIET hernomen:`);
   for (const n of handwerk) console.log(`   ${n} — ${HANDWERK[n]}`);
   console.log('   Ze staan er nog zoals ze waren. Wijzigt dat scherm, dan moet iemand ze opnieuw uitsnijden.');
+}
+const wisselend = Object.keys(WISSELT_ALTIJD)
+  .filter(n => verantwoord.geschreven.some(g => g === n || g.startsWith(n + '-')));
+if (wisselend.length) {
+  console.log(`\n🔄 ${wisselend.length} beeld(en) WISSELEN bij elke ronde — geschreven, maar niet vergelijkbaar:`);
+  for (const n of wisselend) console.log(`   ${n} — ${WISSELT_ALTIJD[n]}`);
+  console.log('   Een herhaalbaarheidscontrole hoort deze over te slaan; ze rood melden leert niets.');
 }
 if (gegroeid.length) {
   console.log(`\n📐 ${gegroeid.length} elementschoten zijn van GROOTTE veranderd (het element zelf groeide):`);
