@@ -572,8 +572,8 @@ if (opdracht === 'naar-website') {
   // de website laat het bij het bouwen ophalen van docs.creditsoft.be (maakt de sitebouw afhankelijk van
   // een externe site), of dit: één commando dat schrijft, en de uitkomst staat in git.
   //
-  // Het bestand draagt ENKEL wat de site nodig heeft — filmnaam, taal, guid, lengte — en zegt bovenaan
-  // waar het vandaan komt, zodat niemand het met de hand gaat bewerken.
+  // Het bestand draagt ENKEL wat de site nodig heeft — filmnaam, taal, guid, lengte, en de vier velden van
+  // het VideoObject — en zegt bovenaan waar het vandaan komt, zodat niemand het met de hand gaat bewerken.
   const UITSLAG = new URL('./films-uitslag.json', import.meta.url).pathname;
   const DOEL = '/Users/dominique/projects/creditsoft-website/src/data/films.json';
   const uitslag = JSON.parse(readFileSync(UITSLAG, 'utf8'));
@@ -597,19 +597,39 @@ if (opdracht === 'naar-website') {
     // terugval in films.mjs: geen titel in het scenario → de sleutel wordt de titel. Op 02/09/2026 stond
     // daardoor 'creditsoft-overzicht' als videotitel op de Engelse homepage — zichtbaar voor een
     // schermlezer en voor Google. `!f.titel` ving dat NIET: het veld was gevuld, alleen met onzin.
+    // ⚠️ MINIATUUR EN DATUM OOK MEE, om dezelfde reden als de omschrijving hierboven. Zij zijn de andere
+    // twee VERPLICHTE velden van een schema.org-VideoObject; Search Console meldde ze op 05/09/2026 voor
+    // creditsoft.be ("Ontbrekend veld 'thumbnailUrl'" en "'uploadDate'"). De handleiding droeg ze al — dit
+    // bestand gaf ze alleen niet door, dus Film.astro kon niet zetten wat het nooit kreeg.
+    //
+    // ⚠️ OOK DEZE ZONDER TERUGVAL. Een VideoObject met drie van de vier verplichte velden wordt door Google
+    // niet getoond, en dat merkt niemand aan de site — precies de stille faalvorm die de twee regels
+    // hierboven al eens hebben opgeleverd.
+    //
+    // ⚠️ Ontbreekt de miniatuur, dan is dat meestal GEEN scenario-probleem maar een verlopen URL: Bunny geeft
+    // films met een eigen miniatuur een vingerafdruk in de naam (`thumbnail_ade76a6d.jpg`), en het oude
+    // `thumbnail.jpg` geeft dan 404. `bunny.mjs metadata` laat zo'n dode URL bewust weg. Draai dat commando
+    // dus eerst — de melding hieronder zegt dat er ook bij.
     const tekort = [];
     if (!f.titel || f.titel === m[1]) tekort.push(f.titel === m[1] ? 'titel (= de filmnaam)' : 'titel');
     if (!f.omschrijving) tekort.push('omschrijving');
+    if (!f.thumbnail) tekort.push('miniatuur');
+    if (!f.gepubliceerdOp) tekort.push('publicatiedatum');
     if (tekort.length) { mist.push(`${sleutel}: ${tekort.join(' + ')}`); continue; }
     (uit.films[m[1]] ??= {})[m[2]] = {
       guid: f.guid, lengte: f.lengte, titel: f.titel, omschrijving: f.omschrijving,
+      miniatuur: f.thumbnail,
+      // schema.org wil een tijdzone; Bunny geeft de datum zonder. Zelfde behandeling als in hooks/films.py.
+      gepubliceerdOp: f.gepubliceerdOp.endsWith('Z') ? f.gepubliceerdOp : f.gepubliceerdOp + 'Z',
     };
     n++;
   }
   if (mist.length) {
-    console.log('⛔ Deze website-films missen een tekst die het schema nodig heeft:');
+    console.log('⛔ Deze website-films missen iets dat het schema.org-VideoObject nodig heeft:');
     for (const m of mist) console.log('   ' + m);
-    console.log('   Vul ze aan in het scenario (films.mjs) en neem de film opnieuw op.');
+    console.log('   Teksten: vul ze aan in het scenario (films.mjs) en neem de film opnieuw op.');
+    console.log('   Miniatuur of publicatiedatum: draai eerst `node tools/bunny.mjs metadata` — die haalt');
+    console.log('   ze op bij Bunny zonder opnieuw uit te zenden, en laat een verlopen miniatuur-URL weg.');
     process.exit(1);
   }
   if (n === 0) { console.log('⛔ Geen enkele website-film met een guid — publiceer eerst.'); process.exit(1); }
