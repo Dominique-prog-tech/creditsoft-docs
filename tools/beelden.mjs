@@ -263,7 +263,22 @@ const SCHOTEN = [
       // onthoudt de gekozen weergave per gebruiker. Bij een verse gebruiker of na een reset toont hetzelfde
       // recept de samengevoegde weergave — en dan is het beeld niet wat het bijschrift zegt.
       await p.getByText(/^(Per medewerker|Par collaborateur)$/).first().click();
-      await p.waitForTimeout(2500);
+      await p.waitForTimeout(1500);
+      // ⚠️⚠️ EN NAAR EEN VASTE WERKDAG BLADEREN (06/09/2026). Dit recept liet de agenda op "vandaag" staan.
+      // ADM_TIJD_VAST bevriest de klok van de SERVER, maar DxScheduler leest "vandaag" uit de BROWSER — en
+      // die staat op de echte dag. Een ronde op zondag leverde daardoor zeven LEGE kolommen op: 42 KB minder
+      // dan het vorige beeld, en de handleiding beloofde "wie wat heeft staan" boven een lege agenda.
+      // De kolomtelling hieronder ving dat niet: kolommen zijn er ook zonder afspraken. Structuur is geen
+      // inhoud. Zelfde aanpak als `agenda-afwezigheid`: bladeren tot een vaste dag in beeld staat.
+      let gevonden = false;
+      for (let i = 0; i < 40 && !gevonden; i++) {
+        if (/2 (september|septembre) 2026/.test(await p.locator('body').innerText())) { gevonden = true; break; }
+        await p.locator('.dxbl-sc-nav-prev, button[title*="vorige" i], button[title*="précédent" i]')
+               .first().click().catch(() => {});
+        await p.waitForTimeout(400);
+      }
+      if (!gevonden) throw new Error('02/09/2026 niet bereikt — de agenda staat op een andere weergave');
+      await p.waitForTimeout(2000);
       // ⚠️ En de belofte is "een kolom per medewerker". Dat is geen tekst maar een STRUCTUUR, dus tellen we
       // de kolomkoppen. Een merkteken op een medewerkersnaam bewijst niets: die naam staat ook in de legende
       // boven de samengevoegde weergave.
@@ -271,6 +286,9 @@ const SCHOTEN = [
         new Set([...document.querySelectorAll('.dxbl-sc-resource-hr')]
           .map(e => e.textContent?.trim()).filter(Boolean)).size);
       if (kolommen < 2) throw new Error(`slechts ${kolommen} medewerkerskolom(men) — dit is niet de weergave per medewerker`);
+      // 🔨 EN DE INHOUD, want dat is waar het beeld voor bestaat.
+      const blokken = await p.evaluate(() => document.querySelectorAll('.dxbl-sc-apt').length);
+      if (blokken < 3) throw new Error(`slechts ${blokken} afspraakblok(ken) — een lege agenda toont niet wie wat heeft staan`);
   }],
   // ⚠️ HET BEELD TOONDE HET VERKEERDE SCHERM. Het recept wees naar /beheer/afwezigheden — het beheerscherm
   // "Verlof & sluitingsdagen" — terwijl het in de handleiding onder de kop "Wat u in de agenda ziet" staat
