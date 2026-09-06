@@ -13,10 +13,11 @@
 // documentatiepagina. Een handgeschreven vierde lijst zou uit elkaar lopen met alle drie.
 import { readFileSync, existsSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
+import { PAKKET } from './app.mjs';
 
 const HIER = new URL('.', import.meta.url).pathname;
-const APP = '/Users/dominique/projects/adm-creditsoft';
-const HELP = `${APP}/src/Host/CreditSoft.Host.Web/Help/CreditSoftHelpProvider.cs`;
+const APP = PAKKET.repo;
+const HELP = PAKKET.help;
 
 // ⚠️ EEN PARAMETERROUTE TELT OP HAAR STATISCHE DEEL. `@page "/credit-files/{Id:guid}"` is hetzelfde scherm
 // als het beeld dat `/credit-files/${ID.dossier}` fotografeert. Zonder dit afkappen matcht een fiche-pagina
@@ -44,8 +45,13 @@ function beelden() {
 }
 
 // ── 2. Films: elke scène draagt haar route in de `doe`-broncode.
+// ⚠️ HET DRAAIBOEK EN NIET DE MOTOR (06/09/2026). De scènes stonden tot vandaag in films.mjs; sinds de knip
+// wonen ze in draaiboek.mjs en is films.mjs enkel nog machinerie. Deze regel wees nog naar het oude bestand
+// en herkende dus 0 scènes — waar er 56 zijn. Zichtbaar geworden doordat dit gereedschap zijn eigen oogst
+// natelt en bij een onwaarschijnlijke uitkomst WEIGERT te antwoorden. Zonder die telling had het "niets
+// geraakt" gemeld op elke vraag, en dat leest als goed nieuws.
 function films() {
-  const s = readFileSync(`${HIER}films.mjs`, 'utf8');
+  const s = readFileSync(`${HIER}draaiboek.mjs`, 'utf8');
   const uit = [];
   for (const f of s.matchAll(/\['([a-z0-9-]+)',\s*\{/g)) {
     const start = f.index;

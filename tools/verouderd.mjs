@@ -13,9 +13,10 @@
 // gecontroleerde ronde.
 import { readFileSync, existsSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
+import { PAKKET } from './app.mjs';
 
 const HIER = new URL('.', import.meta.url).pathname;
-const APP = '/Users/dominique/projects/adm-creditsoft';
+const APP = PAKKET.repo;
 const KORT = process.argv.includes('--kort');
 // ⚠️ MELDEN, NIET TEGENHOUDEN — beslist door Dominique op 01/09/2026. Een verouderd beeld is cosmetisch;
 // een deploy daarop blokkeren is irritanter dan nuttig. Wie hem tóch als poort wil gebruiken (in een

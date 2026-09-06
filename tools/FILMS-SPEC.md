@@ -40,7 +40,7 @@ Een **schot** is één beeld. Een **film** is een geordende reeks **scènes**, e
 
 ⚠️ **Niet in frontmatter.** De pagina's in `docs/` dragen er geen — ze beginnen met `# Titel`. Er 122 bestanden voor openbreken is een verbouwing zonder opbrengst.
 
-De films staan als `FILMS` in `tools/films.mjs`, in dezelfde vorm als `SCHOTEN`: een naam, een route, en per scène een handeling. Eén lijst, één plaats, dezelfde leesbaarheid.
+De films staan als `FILMS` in `tools/draaiboek.mjs` (tot 06/09/2026 in `films.mjs`), in dezelfde vorm als `SCHOTEN`: een naam, een route, en per scène een handeling. Eén lijst, één plaats, dezelfde leesbaarheid.
 
 ```js
 const FILMS = [
@@ -203,8 +203,31 @@ En bouw hoe dan ook de **indirectie**, zodat het antwoord er niet toe doet: de h
 
 Dezelfde afweging als bij `kern.mjs` op 29/08: het generieke deel hoort in `adm-appkit/tools/filmgenerator/`, zodat CleanOps en Nimble het niet opnieuw moeten leren.
 
+### Stand op 06/09/2026 — de knip is gemaakt, de verhuizing nog niet
+
+Dominique gaf opdracht het generieke deel los te knippen *binnen* deze repo, zodat een latere verhuizing
+een verplaatsing wordt en geen ontleding. Wat er nu staat:
+
+| | |
+|---|---|
+| `tools/machinerie/browser.mjs` | de browser besturen — pakket-vrij, gemeten |
+| `tools/machinerie/aansturing.mjs` | geheimen, aanmelden, app-toestand — pakket-vrij, gemeten |
+| `tools/machinerie/schoon.mjs` | **bewaakt die belofte**, met ijkpunt; exitcode 1 als er een pakketnaam insluipt |
+| `tools/app.mjs` | wat CreditSoft is: poort, klant, proefgegevens, paden |
+| `tools/draaiboek.mjs` | wat er verteld wordt: 15 films, 142 scènes |
+| `tools/films.mjs` | de motor — 2474 regels werden er 866 |
+
+Het contract tussen draaiboek en motor is **zes** namen: `beweegNaar`, `klik`, `kopbalkKnop`, `tabblad`,
+`sluitLade`, `zichtbareAfspraak`. Alle zes hangen aan de AppKit-schil en aan DevExpress, niet aan
+kredietdossiers — ze werken dus meteen bij Nimble en CleanOps. Zie `tools/machinerie/LEESMIJ.md`.
+
+⚠️ Nog **niet** geknipt: `bunny.mjs` is gemengd (de API is generiek, `naar-website` is CreditSoft).
+
 **Naar de AppKit:** de cursor-inspuiting, de audio-eerst-tijdsturing, de montage met ffmpeg, de intro/outro, de Bunny-client (uploaden, vervangen, hoofdstukken, ondertitels), het verslag, het uitslagbestand.
 **Blijft hier:** `FILMS`, de routes, de `ID`-tabel, de merktekens, en de library-ID. Dat hangt aan onze eigen schermen.
+
+**Beslist door Dominique op 06/09/2026:** dezelfde **stemmen** voor alle drie de pakketten, en **één
+Bunny-account met een aparte video library per pakket** — de `LibraryId` verschilt dus per repo.
 
 ---
 
@@ -392,7 +415,7 @@ node tools/raakt.mjs --gewijzigd HEAD~3     → wat is verouderd door de wijzigi
 ```
 
 Hij **leidt af en onderhoudt niets**: `SCHOTEN` in `beelden.mjs` kent per beeld zijn route, de scènes in
-`films.mjs` dragen hun `goto`, en `CreditSoftHelpProvider` koppelt een app-route aan een documentatiepagina.
+`draaiboek.mjs` dragen hun `goto`, en `CreditSoftHelpProvider` koppelt een app-route aan een documentatiepagina.
 Een handgeschreven vierde lijst zou met alle drie uit de pas lopen.
 
 ⚠️ **Drie dingen die het bouwen ervan leerde, alle drie gevonden door een meting:**
