@@ -28,7 +28,7 @@ import { execFileSync, spawnSync } from 'node:child_process';
 import { chromium } from '/Users/dominique/projects/adm-creditsoft/src/Host/CreditSoft.Host.Web/bin/Debug/net10.0/.playwright/package/index.mjs';
 import { BASIS, ID, gebruiker, wachtwoord, meldAan, stemGeheim, appToestand } from './aansturing.mjs';
 import { FILMS } from './draaiboek.mjs';
-import { MEET, zichtbaarheid, zetScene, beweegNaar, klik } from './machinerie/browser.mjs';
+import { MEET, zichtbaarheid, zetScene, beweegNaar, klik } from '/Users/dominique/projects/adm-appkit/tools/schermmachinerie/browser.mjs';
 
 const UIT = new URL('./.films-uit/', import.meta.url).pathname;
 

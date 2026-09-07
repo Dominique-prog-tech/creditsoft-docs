@@ -10,7 +10,7 @@
 // contract tussen draaiboek en motor — en dan hoort er een reden bij. Vandaag zijn het er zes.
 
 import { BASIS, ID } from './aansturing.mjs';
-import { beweegNaar, klik, kopbalkKnop, tabblad, sluitLade, zichtbareAfspraak } from './machinerie/browser.mjs';
+import { beweegNaar, klik, kopbalkKnop, tabblad, sluitLade, zichtbareAfspraak } from '/Users/dominique/projects/adm-appkit/tools/schermmachinerie/browser.mjs';
 
 export const FILMS = [
   // ── DE OVERZICHTSFILM VOOR DE HOMEPAGE ───────────────────────────────────────────────────────────────

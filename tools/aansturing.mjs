@@ -17,7 +17,7 @@
 // werking wil wijzigen, in machinerie/. Zie machinerie/LEESMIJ.md.
 
 import { PAKKET, BASIS, ID } from './app.mjs';
-import { geheim, aanmeldgegevens, appToestand as _appToestand, meldAan as _meldAan } from './machinerie/aansturing.mjs';
+import { geheim, aanmeldgegevens, appToestand as _appToestand, meldAan as _meldAan } from '/Users/dominique/projects/adm-appkit/tools/schermmachinerie/aansturing.mjs';
 
 export { BASIS, ID };
 export const SECRETS = PAKKET.secrets;

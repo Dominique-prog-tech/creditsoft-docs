@@ -210,16 +210,20 @@ een verplaatsing wordt en geen ontleding. Wat er nu staat:
 
 | | |
 |---|---|
-| `tools/machinerie/browser.mjs` | de browser besturen — pakket-vrij, gemeten |
-| `tools/machinerie/aansturing.mjs` | geheimen, aanmelden, app-toestand — pakket-vrij, gemeten |
-| `tools/machinerie/schoon.mjs` | **bewaakt die belofte**, met ijkpunt; exitcode 1 als er een pakketnaam insluipt |
+| `adm-appkit/tools/schermmachinerie/browser.mjs` | de browser besturen — **gedeeld**, pakket-vrij |
+| `adm-appkit/tools/schermmachinerie/aansturing.mjs` | geheimen, aanmelden, app-toestand — **gedeeld** |
+| `adm-appkit/tools/schermmachinerie/schoon.mjs` | **bewaakt die belofte**, met ijkpunt; exitcode 1 bij een pakketnaam |
 | `tools/app.mjs` | wat CreditSoft is: poort, klant, proefgegevens, paden |
 | `tools/draaiboek.mjs` | wat er verteld wordt: 15 films, 142 scènes |
 | `tools/films.mjs` | de motor — 2474 regels werden er 866 |
 
 Het contract tussen draaiboek en motor is **zes** namen: `beweegNaar`, `klik`, `kopbalkKnop`, `tabblad`,
 `sluitLade`, `zichtbareAfspraak`. Alle zes hangen aan de AppKit-schil en aan DevExpress, niet aan
-kredietdossiers — ze werken dus meteen bij Nimble en CleanOps. Zie `tools/machinerie/LEESMIJ.md`.
+kredietdossiers — ze werken dus meteen bij Nimble en CleanOps.
+
+⚠️ **Sinds 07/09/2026 wonen die zes in `adm-appkit/tools/schermmachinerie/`** en niet meer hier. De naam is
+bewust niet *filmgenerator*: die laag bestuurt een browser en weet niet wat een film is — `adm-nimble` heeft
+er een consument voor die geen enkele film maakt. Zie de LEESMIJ daar.
 
 ⚠️ Nog **niet** geknipt: `bunny.mjs` is gemengd (de API is generiek, `naar-website` is CreditSoft).
 
