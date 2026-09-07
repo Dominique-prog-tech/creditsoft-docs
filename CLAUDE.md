@@ -208,7 +208,7 @@ moeten staan als het scherm daarvan afhangt.
 afgewerkt op één beslissing na, en die staat nu als commentaar in de pagina zelf. Een lijst ernaast werkt
 enkel voor wie weet dat ze bestaat, terwijl een markering in de tekst meeverhuist bij een herschrijving en
 vanzelf verdwijnt zodra het beeld er staat. Zie
-`~/projects/adm-appkit/docs/handleiding-schrijfregels.md` §4 — dat is de bron, en ze geldt voor alle drie
+`~/projects/adm-appkit/docs/handleiding-schrijfregels.md` §4 · "Beelden" — dat is de bron, en ze geldt voor alle drie
 de docs-repo's.
 
 ### Vormgeving — vloot-afspraak
