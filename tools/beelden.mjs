@@ -130,6 +130,18 @@ const SCHOTEN = [
   ['dashboard-startscherm',        '/dashboard'],
   ['rapporten-bibliotheek',        '/rapporten'],
   ['commissie-vooruitzicht',       '/commissie/vooruitzicht'],
+  // ⚠️ HET TWEEDE TABBLAD HAD GEEN BEELD. Sinds de splitsing (5d5e59f) toont het kale paginabezoek
+  //    hierboven enkel Vooruitblik, terwijl de alt-tekst nog een lijst beloofde die daar niet meer staat.
+  //    Juist dít tabblad bracht een tester in de war — het verdient een eigen beeld.
+  //    Op de tekst klikken en niet op de rol: "Per aanbrenger" staat ook in de paginabeschrijving erboven,
+  //    dus ankeren op de exacte tekst van het tabblad zelf.
+  ['commissie-vooruitzicht-aanbrengers', '/commissie/vooruitzicht', async p => {
+      //    ⚠️ ECHTE MUISKLIK OP DE PLAATS. `locator.click()` liep in beide talen in een time-out van 30
+      //    seconden: de tabstrook van DxTabs ligt onder een overlay, precies zoals de agendacel verderop.
+      const tab = await p.getByText(/^(Per aanbrenger|Par apporteur)$/).last().boundingBox();
+      await p.mouse.click(tab.x + tab.width / 2, tab.y + tab.height / 2);
+      await p.waitForTimeout(2000);
+  }],
   ['commissie-restanten',          '/commissie/restanten'],
   ['commissieschemas',             '/commissie/schemas'],
   ['fiche-281-50',                 '/commissie/fiche-28150'],
@@ -353,6 +365,31 @@ const SCHOTEN = [
       // de bovenbalk — die staat op ELKE pagina. Het beeld toonde daardoor het TAKENvenster op het
       // takenscherm, terwijl de handleiding een afspraakvenster belooft met Terugkerend, Hele dag, Locatie
       // en Aanbrenger. Het oude merkteken "Verantwoordelijke" liet dat door: dat woord staat in beide.
+      // ⚠️⚠️ EERST NAAR EEN VASTE DAG BLADEREN (07/09/2026). Dit recept keek naar "vandaag" en dat werkte
+      // zolang de ronde toevallig rond 02/09 draaide. ADM_TIJD_VAST bevriest de klok van de SERVER;
+      // DxScheduler leest "vandaag" uit de BROWSER, en die staat op de echte dag. Vijf dagen later landde
+      // cel 12 in een andere week en opende er geen nieuw-venster meer — de ronde meldde "belofte niet op
+      // het scherm" in beide talen. `afspraken-per-medewerker` en `agenda-afwezigheid` doen dit al; dit
+      // recept was de enige agenda-schot dat het niet deed. Dezelfde valkuil, derde gedaante.
+      // ⚠️ NAAR DE WEEK VAN 2 SEPTEMBER 2026, en die kop is een BEREIK: "31 augustus 2026 - 4 september
+      //    2026". Op "2 september 2026" testen matcht dus nooit — dat is de vorm die de dagweergave van
+      //    `afspraken-per-medewerker` toont, en ik nam ze klakkeloos over. Gemeten door de koppen tijdens
+      //    het terugbladeren af te drukken.
+      let opDeDag = false;
+      for (let i = 0; i < 40 && !opDeDag; i++) {
+        if (/31 (augustus|août) 2026/.test(await p.locator('body').innerText())) { opDeDag = true; break; }
+        await p.locator('.dxbl-sc-nav-prev, button[title*="vorige" i], button[title*="précédent" i]')
+               .first().click().catch(() => {});
+        await p.waitForTimeout(400);
+      }
+      if (!opDeDag) {
+        // ⚠️ De melding DRAAGT wat er wél stond. Een grendel die enkel "niet bereikt" zegt, laat de volgende
+        //    in de UI zoeken — en die zoekt makkelijk in de verkeerde klant. Mij overkwam dat.
+        const kop = (await p.locator('.dxbl-scheduler, main').first().innerText()).replace(/\s+/g, ' ').slice(0, 300);
+        console.log(`\n   ── wat de agenda toont ──\n   ${kop}\n`);
+        throw new Error('de week van 02/09/2026 niet bereikt — zie de kop hierboven');
+      }
+
       // De cel opent enkel met een ECHTE muis-dubbelklik; locator.dblclick loopt op een overlay vast.
       const cel = await p.locator('.dxbl-sc-time-cell:visible').nth(12).boundingBox();
       await p.mouse.dblclick(cel.x + cel.width / 2, cel.y + cel.height / 2);
@@ -475,6 +512,9 @@ const VERWACHT = {
   'voorkeuren-paneel':          /Kies foto|Choisir une photo|Omgevingsgrootte|Taille/i,
   'voorkeuren':                 /Kies foto|Choisir une photo|Omgevingsgrootte|Taille/i,
   'journaal-lade':              /Kredietdossiers|Dossiers de crédit/i,
+  // ⚠️ Niet op "Per aanbrenger" — dat is de tabbladnaam en staat er ook wanneer het tabblad DICHT is.
+  //    "Openstaande transacties" hoort bij de kaart die enkel op dit tabblad staat.
+  'commissie-vooruitzicht-aanbrengers': /Openstaande transacties|Transactions en attente/i,
   // ⚠️ Niet op "schema" — dat staat al in de paginatitel en bewijst enkel dat je op het juiste TABBLAD zit.
   // Herberekenen verschijnt alleen bij een ACTIEF schema, en dát is wat het bijschrift belooft.
   'commissieschemas-journaal':  /Herberekenen|Recalculer/i,

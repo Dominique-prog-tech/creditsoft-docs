@@ -14,7 +14,7 @@ Klik in het menu links op **Vooruitzicht**, onder *Lijsten*.
 
 Het scherm heeft twee tabbladen. Onder **Vooruitblik** staan de kerncijfers en de grafieken; onder **Per aanbrenger** staat de lijst, met daarboven de export van de openstaande transacties. De melding over openstaande lijnen uit afgelopen perioden staat boven de tabbladen, want ze geldt voor allebei.
 
-![Het scherm Vooruitzicht: bovenaan drie kerncijfers met het totaal verwacht, de volgende twaalf maanden en het aantal aanbrengers, daaronder een melding over openstaande lijnen uit afgelopen perioden, dan een staafgrafiek van het verwachte bedrag per maand naast een ringdiagram met de verdeling per aanbrenger, en onderaan de lijst per aanbrenger voor de gekozen maand, met het aantal lijnen en het bedrag.](../images/commissie-vooruitzicht.png "Wat er de komende achttien maanden nog uitbetaald moet worden"){ .volle-breedte }
+![Het tabblad Vooruitblik van het scherm Vooruitzicht: bovenaan drie kerncijfers met het totaal verwacht, de volgende twaalf maanden en het aantal aanbrengers, daaronder een melding over openstaande lijnen uit afgelopen perioden, en onderaan een staafgrafiek van het verwachte bedrag per maand naast een ringdiagram met de verdeling per aanbrenger.](../images/commissie-vooruitzicht.png "Wat er de komende achttien maanden nog uitbetaald moet worden"){ .volle-breedte }
 
 ## De drie cijfers op Vooruitblik
 
@@ -38,6 +38,8 @@ Het ringdiagram ernaast toont hoe dat verdeeld is over uw aanbrengers: de acht g
 Op dit tabblad staat per aanbrenger het bedrag en het aantal lijnen **van de maand die u bovenaan kiest** — de hoogste bedragen eerst. **Dubbelklik** een regel om zijn fiche te openen.
 
 Kiest u een andere maand, dan verandert de lijst mee. De cijfers erboven, de lijst en de exportknoppen tonen alle drie dezelfde maand.
+
+![Het tabblad Per aanbrenger: bovenaan een keuze van maand en jaar met daarnaast het nog niet afgerekende bedrag en het aantal commissielijnen, de knoppen Excel en CSV, en daaronder de lijst met per aanbrenger het aantal lijnen en het bedrag van die maand.](../images/commissie-vooruitzicht-aanbrengers.png "De lijst per aanbrenger volgt de maand die u bovenaan kiest"){ .volle-breedte }
 
 !!! note "Waarom de ring op *Vooruitblik* niet meebeweegt"
     Het ringdiagram op het andere tabblad gaat over het **venster** — de komende 12 of 18 maanden, of de volledige looptijd. Dat is een andere vraag dan "wat valt er in maart", en het blijft dus staan wanneer u hier een maand kiest.
