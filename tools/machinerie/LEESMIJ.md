@@ -1,4 +1,20 @@
-# De machinerie van de filmtooling
+# De machinerie: een gedeelde BROWSERLAAG, geen filmtooling
+
+⚠️⚠️ **De naam van dit mapje is misleidend, en dat is gemeten (07/09/2026 door de AppKit-sessie).** Dit
+bestand heette *"de machinerie van de filmtooling"* en dat klopt niet: `browser.mjs` bestuurt de AppKit-schil
+en DevExpress, `aansturing.mjs` leest geheimen en meldt aan. **Geen van beide weet wat een film is.**
+
+Dat verschil bepaalt waar dit hoort te landen. Zou het als `filmgenerator/` verhuizen, dan zoekt de volgende
+die schermafdrukken automatiseert daar niet, vindt niets, en **kopieert** — precies de fout waar dit bestand
+zelf voor waarschuwt met het playbook (224 regels tegen 478). En die tweede consument bestaat al:
+`adm-nimble/docs/tools/gen-screenshots.mjs`, 63 KB.
+
+📋 **Er is al precedent:** `adm-appkit/tools/beeldgenerator/` (`kern.mjs`, 277 regels, met test en README),
+en onze eigen `beelden.mjs` roept die al aan. ADM One's voorstel aan Dominique is `tools/schermmachinerie/`
+ernaast — op de naam van wat het **doet**, niet van wie het als eerste nodig had. De beslissing is van
+Dominique; dit bestand vooruitloopt daar niet op.
+
+
 
 *Geknipt op 06/09/2026, in opdracht van Dominique. Waarom, staat in
 `adm-creditsoft/docs/uniformiteit-drie-platformen.md` §"Video's".*
