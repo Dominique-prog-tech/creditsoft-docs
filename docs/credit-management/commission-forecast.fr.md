@@ -14,7 +14,7 @@ Dans le menu de gauche, cliquez sur **Perspective**, sous *Listes*.
 
 L'écran comporte deux onglets. Sous **Prévisions** figurent les chiffres clés et les graphiques ; sous **Par apporteur**, la liste, surmontée de l'export des transactions en attente. Le message concernant les lignes ouvertes de périodes écoulées se trouve au-dessus des onglets, car il vaut pour les deux.
 
-![L'écran Perspective : en haut trois chiffres clés avec le total attendu, les douze prochains mois et le nombre d'apporteurs, en dessous un message concernant les lignes ouvertes de périodes écoulées, puis un graphique du montant attendu par mois à côté d'une répartition par apporteur, et en bas la liste par apporteur avec la période, le nombre de lignes et le montant.](../images/commissie-vooruitzicht-fr.png "Ce qu'il reste à payer dans les dix-huit prochains mois"){ .volle-breedte }
+![L'écran Perspective : en haut trois chiffres clés avec le total attendu, les douze prochains mois et le nombre d'apporteurs, en dessous un message concernant les lignes ouvertes de périodes écoulées, puis un graphique du montant attendu par mois à côté d'une répartition par apporteur, et en bas la liste par apporteur pour le mois choisi, avec le nombre de lignes et le montant.](../images/commissie-vooruitzicht-fr.png "Ce qu'il reste à payer dans les dix-huit prochains mois"){ .volle-breedte }
 
 ## Les trois chiffres sous Prévisions
 
@@ -35,13 +35,30 @@ La répartition à côté montre comment cela se répartit entre vos apporteurs 
 
 ## La liste sous Par apporteur
 
-En bas figurent, par apporteur, le montant attendu, le nombre de lignes et la période concernée — les montants les plus élevés en premier. **Double-cliquez** une ligne pour ouvrir sa fiche.
+En bas figurent, par apporteur, le montant et le nombre de lignes **du mois que vous choisissez en haut** — les montants les plus élevés en premier. **Double-cliquez** une ligne pour ouvrir sa fiche.
+
+Si vous choisissez un autre mois, la liste suit. Les chiffres au-dessus, la liste et les boutons d'export portent tous les trois sur le même mois.
+
+!!! note "Pourquoi l'anneau sous *Perspective* ne bouge pas"
+    Le graphique en anneau de l'autre onglet porte sur la **fenêtre** — les 12 ou 18 prochains mois, ou la durée complète. C'est une autre question que « qu'est-ce qui tombe en mars », et il reste donc en place lorsque vous choisissez un mois ici.
 
 ## Exporter les transactions d'un mois
 
-La liste de cet onglet récapitule **par apporteur**. Si vous voulez les lignes elles-mêmes — pour vérifier un montant ou retrouver une erreur — récupérez-les avec la carte au-dessus.
+Choisissez un **mois** et une **année**, puis cliquez sur **Excel** ou **CSV**. Vous obtenez ce qui tombe dans ce mois et **ne figure pas encore sur un bordereau**.
 
-Choisissez un **mois** et une **année**, puis cliquez sur **Excel** ou **CSV**. Vous obtenez une ligne par écriture de commission qui tombe dans ce mois et **ne figure pas encore sur un bordereau** :
+Le **fichier Excel comporte deux feuilles** :
+
+| Feuille | Ce qu'elle contient |
+|---|---|
+| **Par apporteur** | Une ligne par apporteur : son total et son nombre de lignes — dans le même ordre que la liste à l'écran |
+| **Transactions** | Une ligne par écriture : les lignes qui composent ce total |
+
+Vous voyez ainsi le total *et* ce qui le compose, sans devoir créer vous-même un tableau croisé.
+
+!!! note "Le CSV contient la feuille *Transactions*"
+    Un fichier CSV ne peut porter qu'un seul tableau. Si vous voulez les totaux, choisissez **Excel**.
+
+Voici ce que contient la feuille **Transactions** :
 
 | Colonne | Ce qu'elle contient |
 |---|---|

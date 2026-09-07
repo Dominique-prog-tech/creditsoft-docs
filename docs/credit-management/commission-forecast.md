@@ -14,7 +14,7 @@ Klik in het menu links op **Vooruitzicht**, onder *Lijsten*.
 
 Het scherm heeft twee tabbladen. Onder **Vooruitblik** staan de kerncijfers en de grafieken; onder **Per aanbrenger** staat de lijst, met daarboven de export van de openstaande transacties. De melding over openstaande lijnen uit afgelopen perioden staat boven de tabbladen, want ze geldt voor allebei.
 
-![Het scherm Vooruitzicht: bovenaan drie kerncijfers met het totaal verwacht, de volgende twaalf maanden en het aantal aanbrengers, daaronder een melding over openstaande lijnen uit afgelopen perioden, dan een staafgrafiek van het verwachte bedrag per maand naast een ringdiagram met de verdeling per aanbrenger, en onderaan de lijst per aanbrenger met de periode, het aantal lijnen en het bedrag.](../images/commissie-vooruitzicht.png "Wat er de komende achttien maanden nog uitbetaald moet worden"){ .volle-breedte }
+![Het scherm Vooruitzicht: bovenaan drie kerncijfers met het totaal verwacht, de volgende twaalf maanden en het aantal aanbrengers, daaronder een melding over openstaande lijnen uit afgelopen perioden, dan een staafgrafiek van het verwachte bedrag per maand naast een ringdiagram met de verdeling per aanbrenger, en onderaan de lijst per aanbrenger voor de gekozen maand, met het aantal lijnen en het bedrag.](../images/commissie-vooruitzicht.png "Wat er de komende achttien maanden nog uitbetaald moet worden"){ .volle-breedte }
 
 ## De drie cijfers op Vooruitblik
 
@@ -35,13 +35,30 @@ Het ringdiagram ernaast toont hoe dat verdeeld is over uw aanbrengers: de acht g
 
 ## De lijst op Per aanbrenger
 
-Op dit tabblad staat per aanbrenger het verwachte bedrag, het aantal lijnen en de periode waarover het loopt — de hoogste bedragen eerst. **Dubbelklik** een regel om zijn fiche te openen.
+Op dit tabblad staat per aanbrenger het bedrag en het aantal lijnen **van de maand die u bovenaan kiest** — de hoogste bedragen eerst. **Dubbelklik** een regel om zijn fiche te openen.
+
+Kiest u een andere maand, dan verandert de lijst mee. De cijfers erboven, de lijst en de exportknoppen tonen alle drie dezelfde maand.
+
+!!! note "Waarom de ring op *Vooruitblik* niet meebeweegt"
+    Het ringdiagram op het andere tabblad gaat over het **venster** — de komende 12 of 18 maanden, of de volledige looptijd. Dat is een andere vraag dan "wat valt er in maart", en het blijft dus staan wanneer u hier een maand kiest.
 
 ## De transacties van een maand exporteren
 
-De lijst op dit tabblad vat samen **per aanbrenger**. Wilt u de regels zelf — om een bedrag na te rekenen of een fout terug te vinden — dan haalt u ze op met de kaart erboven.
+Kies een **maand** en een **jaar** en klik op **Excel** of **CSV**. U krijgt wat in die maand valt en **nog niet op een borderel staat**.
 
-Kies een **maand** en een **jaar** en klik op **Excel** of **CSV**. U krijgt één rij per commissieboeking die in die maand valt en **nog niet op een borderel staat**:
+Het **Excel-bestand heeft twee bladen**:
+
+| Blad | Wat erin staat |
+|---|---|
+| **Per aanbrenger** | Eén regel per aanbrenger: zijn totaal en zijn aantal lijnen — dezelfde volgorde als de lijst op het scherm |
+| **Transacties** | Eén regel per boeking: de lijnen die samen dat totaal vormen |
+
+Zo ziet u het totaal én waar het uit bestaat, zonder zelf een draaitabel te maken.
+
+!!! note "De CSV bevat het blad *Transacties*"
+    Een CSV-bestand kan maar één tabel dragen. Wilt u de totalen erbij, kies dan **Excel**.
+
+Dit staat er op het blad **Transacties**:
 
 | Kolom | Wat erin staat |
 |---|---|
