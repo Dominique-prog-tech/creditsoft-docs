@@ -22,6 +22,7 @@ from __future__ import annotations
 import json
 import logging
 import pathlib
+import re
 
 def _geen_dubbele_namen() -> None:
     """Weigert te laden wanneer dit bestand twee functies met dezelfde naam draagt.
@@ -294,8 +295,25 @@ def on_page_markdown(markdown: str, page, config, files):  # noqa: ARG001
             meld(f"'{film.get('film', kaal)}' is OPGENOMEN maar nog niet GEPUBLICEERD — {pad} bouwt "
                  f"zonder speler. Draai `node tools/bunny.mjs publiceer` zodra hij goedgekeurd is.")
             return markdown
-        # Boven de eerste ## — de lezer kiest zelf: kijken of lezen (FILMS-SPEC §7.2).
+        # DIRECT ONDER DE H1, vóór de inleiding (FILMS-SPEC §7.2).
+        #
+        # ⚠️ Stond tot 08/09/2026 boven de eerste `##`, dus ONDER de inleidende tekst. Op de journaal-pagina
+        # zijn dat 150 woorden: op een telefoon eerst een scherm vol tekst en dan pas de speler. Google
+        # meldde die pagina's als "video staat niet op een weergavepagina" — het oordeel dat de pagina niet
+        # OM de video draait. Twee van de 34 films waren beoordeeld; de rest was onderweg.
+        #
+        # De bedoeling van de oude plaatsing ("de lezer kiest zelf kijken of lezen") blijft overeind en wordt
+        # zelfs beter bediend: de keuze staat nu op het eerste scherm in plaats van na een scroll.
         blok = _gegevens(film, guid, taal) + _speler(guid, taal)
+        h1 = re.search(r"^# .+$", markdown, re.M)
+        if h1:
+            return markdown[:h1.end()] + "\n\n" + blok + markdown[h1.end():]
+
+        # ⚠️ TERUGVAL MÉT MELDING, niet stil. Zonder H1 kan de film nergens "onder de titel" staan; dan doen
+        # we het oude gedrag. Alle 14 filmpagina's hadden op 08/09 een H1, dus dit hoort nooit te vuren —
+        # en als het toch vuurt, wil je dat lezen in plaats van je afvragen waarom één pagina afwijkt.
+        meld(f"{pad} draagt een film maar GEEN H1-titel — speler valt terug op de oude plek (onder de "
+             f"inleiding). Zet er een `# Titel` boven.")
         kop = markdown.find("\n## ")
         if kop == -1:
             return markdown + "\n\n" + blok

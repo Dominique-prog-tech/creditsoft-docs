@@ -158,7 +158,8 @@ De alt-teksten zijn hier niet bruikbaar als specificatie, want een scène is gee
 
 Een `iframe` naar `https://player.mediadelivery.net/embed/{libraryId}/{guid}` (de exacte host staat in de bibliotheekinstellingen), in een houder met `padding-top: 56.25%` voor 16:9.
 
-Parameters die we zetten: `captions` op de paginataal, `showSpeed`, `rememberPosition`. De film komt **boven de eerste `##`** van de pagina; de lezer kiest zelf kijken of lezen. Plaatsing via een MkDocs-hook op **filmnaam**, met de taal uit de bestandsnaam (`.md` of `.fr.md`) — nooit met de hand per pagina.
+Parameters die we zetten: `captions` op de paginataal, `showSpeed`, `rememberPosition`. De film komt **direct onder de `#`-titel**, vóór de inleiding; de lezer kiest zelf kijken of lezen.
+⚠️ Stond tot 08/09/2026 boven de eerste `##`, dus ónder de inleidende tekst — op de journaal-pagina 150 woorden, op een telefoon een scherm vol. Google meldde die pagina's als *"video staat niet op een weergavepagina"*: het oordeel dat de pagina niet OM de video draait. De keuze kijken-of-lezen staat nu op het eerste scherm in plaats van na een scroll. Plaatsing via een MkDocs-hook op **filmnaam**, met de taal uit de bestandsnaam (`.md` of `.fr.md`) — nooit met de hand per pagina.
 
 ⚠️ Bunny's speler zet **geen cookies**. Dat is geen prettige bijkomstigheid maar een reden op zich: een YouTube-embed sleept een toestemmingsbanner over de hele handleiding mee, en dit niet.
 
