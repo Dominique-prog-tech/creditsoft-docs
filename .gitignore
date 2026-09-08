@@ -8,6 +8,11 @@ __pycache__/
 # existing file". Lokaal viel dat niet op, want daar stond het bestand er gewoon.
 *.py
 !hooks/*.py
+# ⚠️ En een CONTROLESCRIPT is óók geen los hulpscript: deploy.yml roept het aan, dus zonder het bestand
+# faalt de build op de runner terwijl lokaal alles klopt. tools/check-beeldbreedte.py is destijds met de
+# hand geforceerd en dat loste alleen dat ene geval op — check-films.py liep op 08/09/2026 in precies
+# dezelfde val. Vandaar een REGEL in plaats van een uitzondering per bestand.
+!tools/check-*.py
 tools/.schermteksten.json
 
 # Filmuitvoer — mp4 hoort niet in git (FILMS-SPEC §7)

@@ -32,6 +32,12 @@ jobs:
       - name: Beeldbreedtes controleren
         run: python3 tools/check-beeldbreedte.py
       - run: mkdocs build
+      # ⚠️ NA de bouw, en dat is het punt: de speler staat in geen enkel .md-bestand — hooks/films.py zet
+      # hem er tijdens de bouw in. De markdown controleren zou de vraag ontwijken. Google krijgt HTML, dus
+      # meten we HTML. Ook deze mag de deploy TEGENHOUDEN: een film die stil naar onderen schuift of zijn
+      # miniatuur verliest, hoor je anders pas weken later van Search Console.
+      - name: Films controleren (plaatsing + videogegevens)
+        run: python3 tools/check-films.py
       - uses: actions/upload-pages-artifact@v3
         with:
           path: site

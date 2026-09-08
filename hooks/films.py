@@ -279,9 +279,31 @@ def on_page_markdown(markdown: str, page, config, files):  # noqa: ARG001
     if MERK in markdown:
         return markdown.replace(MERK, _overzicht(taal, config))
 
-    for film in _films().values():
-        if film.get("pagina") != kaal or film.get("taal", "").split("-")[0] != taal:
-            continue
+    # ⚠️ KIES EXPLICIET, want er zijn MEER kandidaten dan pagina's (gemeten 08/09/2026).
+    #
+    # `kredietdossiers-basis` staat drie keer in de uitslag met dezelfde pagina en taal: de handleidingfilm
+    # van 99 seconden en twee WEBSITE-teasers van 43. Hier stond `for ... in .values()` met een `continue`,
+    # dus de EERSTE match won — en welke dat is, hangt af van de volgorde in films-uitslag.json. Die
+    # volgorde is de publicatievolgorde: één herpublicatie van een teaser en de handleidingpagina draagt
+    # stil een filmpje van 43 seconden. Het stond op 08/09 toevallig goed.
+    #
+    # Het merkteken is `routes` (de website-routes waar de film hoort). GEMETEN, niet aangenomen: 28 films
+    # dragen het en dat zijn precies de 14 handleidingfilms x 2 talen; de 6 zonder zijn de website-films.
+    # ⚠️ Mijn eerste kandidaat was `embed` — die zit óók op 20 handleidingfilms en deugde dus niet.
+    kandidaten = [f for f in _films().values()
+                  if f.get("pagina") == kaal and f.get("taal", "").split("-")[0] == taal]
+    if len(kandidaten) > 1:
+        met_routes = [f for f in kandidaten if f.get("routes")]
+        if len(met_routes) != 1:
+            # Geen stille keuze: liever een luide bouwfout dan de verkeerde film op een pagina.
+            namen = ", ".join(sorted(f"{f.get('film')} ({f.get('lengte')}s)" for f in kandidaten))
+            raise RuntimeError(
+                f"{pad}: {len(kandidaten)} films claimen deze pagina in het {taal} en `routes` wijst er "
+                f"geen aan als DE handleidingfilm — {namen}. Los dit op in films-uitslag.json in plaats "
+                f"van de keuze aan de bestandsvolgorde over te laten.")
+        kandidaten = met_routes
+
+    for film in kandidaten:
         guid = film.get("guid")
         if not guid:
             # ⚠️ MELDEN, NIET TEGENHOUDEN. Hier stond een `raise`, en die logica was verkeerd om: opnemen is
