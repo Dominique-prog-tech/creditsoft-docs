@@ -152,6 +152,8 @@ plugins:
             Overzicht: Aperçu
             Mijn dossiers: Mes dossiers
             Mijn commissies: Mes commissions
+            Afrekeningen: Décomptes
+            Afrekeningen aan mijn makelaars: Décomptes à mes courtiers
             # "Beheer" stond hier ook, met vertaling "Gestion", én verderop met
             # "Configuration". YAML slikt een dubbele sleutel zonder waarschuwing en
             # de laatste wint — dus "Gestion" deed niets. Hier weggehaald; de
@@ -296,6 +298,7 @@ nav:
     - Overzicht: portaal/overzicht.md
     - Mijn dossiers: portaal/dossiers.md
     - Mijn commissies: portaal/commissies.md
+    - Afrekeningen: portaal/afrekeningen.md
 
   - Beheer:
     - Bedrijfsfiche: administration/company-profile.md
