@@ -153,6 +153,7 @@ plugins:
             Mijn dossiers: Mes dossiers
             Mijn commissies: Mes commissions
             Afrekeningen: Décomptes
+            Een andere fiche kiezen: Choisir une autre fiche
             Afrekeningen aan mijn makelaars: Décomptes à mes courtiers
             # "Beheer" stond hier ook, met vertaling "Gestion", én verderop met
             # "Configuration". YAML slikt een dubbele sleutel zonder waarschuwing en
@@ -299,6 +300,7 @@ nav:
     - Mijn dossiers: portaal/dossiers.md
     - Mijn commissies: portaal/commissies.md
     - Afrekeningen: portaal/afrekeningen.md
+    - Een andere fiche kiezen: portaal/fiche-kiezen.md
 
   - Beheer:
     - Bedrijfsfiche: administration/company-profile.md
