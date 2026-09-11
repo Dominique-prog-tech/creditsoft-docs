@@ -34,6 +34,26 @@ vous y avez déjà reversé. C'est une aide, pas une limite : la décision vous 
 
 Ce que vous reversez apparaît immédiatement chez le courtier sous *Mes commissions*.
 
+## Demander des documents à votre client
+
+En bas d'un dossier figure **Demander des documents au client**. Vous choisissez le demandeur dans la liste
+et cliquez sur **Envoyer la demande**. Votre client reçoit un lien pour déposer ses pièces.
+
+Le lien s'affiche également à votre écran — vous l'avez donc sous la main si vous préférez le communiquer
+par téléphone.
+
+!!! info "La demande vient de vous, pas du bureau"
+    Votre client voit votre propre adresse e-mail comme expéditeur ; sa réponse vous parvient donc
+    directement.
+
+!!! warning "Pourquoi le bouton n'apparaît pas toujours"
+    Un e-mail ne peut partir que d'un domaine enregistré à cet effet. Il ne s'agit pas d'un réglage de
+    CreditSoft mais d'une sécurité d'internet même : elle empêche d'envoyer du courrier au nom d'autrui.
+
+    Si votre adresse est sur le domaine de votre bureau, cela fonctionne immédiatement. Si elle est sur un
+    domaine personnel ou sur une adresse générale comme Gmail, vous lirez brièvement pourquoi ce n'est pas
+    possible, au lieu du bouton. Votre bureau peut faire enregistrer ce domaine.
+
 ## Décompter
 
 Dans le portail, cliquez en haut sur **Décomptes**. Cette rubrique apparaît dès que vous avez reversé

@@ -33,6 +33,25 @@ doorgegeven. Dat is een hulpmiddel, geen grens: u beslist zelf.
 
 Wat u doorgeeft, verschijnt meteen bij de makelaar onder *Mijn commissies*.
 
+## Documenten opvragen bij uw klant
+
+Op een dossier staat onderaan **Documenten opvragen bij de klant**. U kiest de aanvrager uit de lijst en
+klikt op **Aanvraag versturen**. Uw klant krijgt een link waarmee hij zijn stukken oplaadt.
+
+De link verschijnt ook op uw scherm — wie hem liever telefonisch doorgeeft, heeft hem bij de hand.
+
+!!! info "De aanvraag komt van u, niet van het kantoor"
+    Uw klant ziet uw eigen e-mailadres als afzender, en zijn antwoord komt dus bij u terecht.
+
+!!! warning "Waarom u soms geen knop ziet"
+    Een e-mail kan alleen vertrekken van een domein dat daarvoor geregistreerd is. Dat is geen instelling
+    van CreditSoft maar een beveiliging van het internet zelf: ze verhindert dat iemand post verstuurt in
+    andermans naam.
+
+    Staat uw adres op het domein van uw kantoor, dan werkt het meteen. Staat het op een eigen domein of op
+    een algemeen adres zoals Gmail, dan leest u in plaats van de knop kort waarom het niet kan. Uw kantoor
+    kan dat domein laten registreren.
+
 ## Afrekenen
 
 Klik in het portaal bovenaan op **Afrekeningen**. Dat onderdeel verschijnt zodra u iets hebt doorgegeven.
