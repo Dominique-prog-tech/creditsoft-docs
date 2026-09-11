@@ -23,6 +23,17 @@ Typ onderaan bij **Nieuwe rol** een naam en klik op **Toevoegen**. De rol versch
 
 Klik op een rol om ze te openen. Aan de rechterkant vinkt u de **rechten** aan die bij de rol horen. Wijzigingen worden meteen bewaard.
 
+## Kijken en wijzigen zijn twee rechten
+
+Bij de meeste schermen staan er twee rechten naast elkaar: één om het scherm te **bekijken** en één om er te
+**bewerken**. Geeft u een rol alleen het kijkrecht, dan opent die persoon het scherm gewoon, maar de knoppen om
+te bewaren, toe te voegen of te verwijderen zijn er niet. In de agenda kan hij een afspraak dan ook niet
+verslepen of uitrekken.
+
+Op het kredietdossier gaat het iets verder: **Kredietdossiers verwijderen** is een apart recht. Wie dossiers mag
+bijwerken, hoeft ze daarom nog niet te kunnen laten verdwijnen. De kruisjes *binnen* een dossier — een partij,
+een contract, een opmerking — vallen wél onder *bewerken*.
+
 ## Gebruikers aan een rol toewijzen
 
 Bij een geopende rol ziet u de lijst **Gebruikers met deze rol**. Vink de gebruikers aan die de rol moeten krijgen (of uit om ze weer weg te halen).

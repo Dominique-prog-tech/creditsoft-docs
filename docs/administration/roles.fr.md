@@ -23,6 +23,17 @@ En bas, sous **Nouveau rôle**, saisissez un nom et cliquez sur **Ajouter**. Le 
 
 Cliquez sur un rôle pour l'ouvrir. À droite, cochez les **droits** associés au rôle. Les modifications sont enregistrées immédiatement.
 
+## Consulter et modifier sont deux droits distincts
+
+Pour la plupart des écrans, deux droits vont de pair : l'un pour **consulter** l'écran, l'autre pour y
+**modifier**. Si vous n'accordez à un rôle que le droit de consultation, la personne ouvre l'écran normalement,
+mais les boutons pour enregistrer, ajouter ou supprimer n'y sont pas. Dans l'agenda, elle ne peut alors ni
+déplacer ni redimensionner un rendez-vous.
+
+Pour le dossier de crédit, cela va un peu plus loin : **Supprimer les dossiers de crédit** est un droit distinct.
+Celui qui peut mettre les dossiers à jour ne doit pas pour autant pouvoir les faire disparaître. Les croix
+*à l'intérieur* d'un dossier — une partie, un contrat, une remarque — relèvent bien de *modifier*.
+
 ## Attribuer un rôle à des utilisateurs
 
 Lorsqu'un rôle est ouvert, vous voyez la liste **Utilisateurs ayant ce rôle**. Cochez les utilisateurs qui doivent recevoir le rôle (ou décochez pour le retirer).
