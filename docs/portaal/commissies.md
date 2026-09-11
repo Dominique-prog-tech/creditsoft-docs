@@ -17,14 +17,26 @@ Naast het jaar staat het **totaal** en hoeveel **boekingen** dat zijn.
 
 ![Het scherm Mijn commissies in het aanbrengersportaal: bovenaan de jaarkeuze met het jaartotaal, daaronder een tabel met het bedrag per maand en het detail per dossier.](../images/portaal-commissies.png "Mijn commissies in het aanbrengersportaal")
 
-## Per maand
+## De lijst per maand
 
-Een tabel met per maand het aantal boekingen en het totaal. Zo ziet u in één blik waar een maand
-uitspringt.
+Eén lijst, **gegroepeerd per maand**. De maandregel toont het aantal lijnen en het totaal van die maand;
+klik op het pijltje links om ze open te klappen. Daaronder staat elke boeking apart: de **datum**, het
+**dossier**, een **omschrijving** en het **bedrag**.
 
-## Detail
+Onderaan staat het jaartotaal. Rechtsboven kunt u zoeken, sorteren en de lijst exporteren.
 
-Daaronder elke boeking apart: de **datum**, het **dossier**, een **omschrijving** en het **bedrag**.
+!!! tip "Alles staat dicht bij het openen"
+    Dat is bewust: bij enkele duizenden boekingen is een open lijst niet te overzien. De maandregels geven
+    u het beeld, en u klapt open wat u wilt nakijken.
+
+## Het borderel van een maand
+
+Is een maand afgerekend, dan staat op de maandregel de knop **Borderel**. Daarmee opent u het
+afrekendocument van die maand — in beeld, niet als download. Wilt u het bewaren, dan gebruikt u de
+bewaarknop van uw browser.
+
+Staat er geen knop, dan is die maand nog niet afgerekend. Zijn er bij uitzondering meerdere borderellen
+in dezelfde maand, dan staan ze er alle, elk met hun nummer.
 
 !!! info "Wiens commissie ziet u hier?"
     Standaard enkel de uwe. Bent u hoofdaanbrenger én heeft uw kantoor u het recht op de cijfers van uw

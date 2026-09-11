@@ -1,10 +1,10 @@
-# Portail client
+# Apparence des portails
 
 Vos clients déposent leurs documents via un portail qui leur est propre. Cet écran détermine l'aspect de ce portail — c'est ce qu'ils voient de vous : autant qu'il porte votre nom et vos couleurs.
 
 ## Ouvrir l'écran
 
-En bas à gauche, cliquez sur **Administration**, puis sur la tuile **Portail client**, dans le groupe *Données*.
+En bas à gauche, cliquez sur **Administration**, puis sur la tuile **Apparence des portails**, dans le groupe *Données*.
 
 ![L'écran Portail client : à gauche le formulaire avec le nom, la couleur principale, le style du bandeau, le logo, le titre et le texte d'accueil en néerlandais et en français, et les coordonnées ; à droite un aperçu du portail qui suit aussitôt vos choix.](../images/klantportaal-vormgeving-fr.png "À gauche vous réglez, à droite vous voyez le résultat"){ .volle-breedte }
 

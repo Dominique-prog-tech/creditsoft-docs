@@ -153,6 +153,7 @@ plugins:
             Mijn dossiers: Mes dossiers
             Mijn commissies: Mes commissions
             Afrekeningen: Décomptes
+            Documenten: Documents
             Een andere fiche kiezen: Choisir une autre fiche
             Afrekeningen aan mijn makelaars: Décomptes à mes courtiers
             # "Beheer" stond hier ook, met vertaling "Gestion", én verderop met
@@ -182,6 +183,7 @@ plugins:
             Vooruitzicht: Perspective
             Restanten commissie: Reliquats de commission
             Dashboard-fases: Phases du tableau de bord
+            Mededelingen: Communications
             Uw publieke pagina's: Vos pages publiques
             Verlof & sluitingsdagen: Congés & jours de fermeture
             Instellingen: Paramètres
@@ -210,7 +212,7 @@ plugins:
             # zelf wél Frans zijn: je klikte op "Klantenportaal" en belandde op
             # "Portail client". Gezien 21/08/2026 op de live site.
             Filteren en zoeken in lijsten: Filtrer et rechercher dans les listes
-            Klantenportaal: Portail client
+            Portaalvormgeving: Apparence des portails
             Rapporten: Rapports
             Kredietinstellingen: Institutions de crédit
             Verzekeraars: Assureurs
@@ -300,6 +302,7 @@ nav:
     - Mijn dossiers: portaal/dossiers.md
     - Mijn commissies: portaal/commissies.md
     - Afrekeningen: portaal/afrekeningen.md
+    - Documenten: portaal/documenten.md
     - Een andere fiche kiezen: portaal/fiche-kiezen.md
 
   - Beheer:
@@ -314,9 +317,10 @@ nav:
     - Commissie-instellingen: beheer/commissie-instellingen.md
     - Restanten commissie: beheer/commissie-restanten.md
     - Dashboard-fases: beheer/dashboard-fases.md
+    - Mededelingen: beheer/mededelingen.md
     - Uw publieke pagina's: beheer/kantoorprofiel.md
     - Verlof & sluitingsdagen: beheer/afwezigheden.md
     - Instellingen: beheer/instellingen.md
     - Keuzelijsten: beheer/keuzelijsten.md
     - Documenttypes: beheer/documenttypes.md
-    - Klantenportaal: beheer/klantportaal.md
+    - Portaalvormgeving: beheer/klantportaal.md

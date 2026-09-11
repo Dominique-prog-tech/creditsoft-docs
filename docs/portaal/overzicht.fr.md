@@ -8,6 +8,19 @@ Dans le portail, cliquez en haut sur **Aperçu**.
 
 ![L'Aperçu du portail des apporteurs avec quatre tuiles — crédits conclus, en cours, commission et nombre de bureaux — puis la phrase indiquant sur combien de bureaux portent les chiffres, un graphique mensuel en barres et la liste des derniers dossiers conclus.](../images/portaal-overzicht-fr.png "L'écran d'aperçu du portail des apporteurs")
 
+## Les communications de votre bureau
+
+Si une information vous attend, elle apparaît **en haut**, au-dessus des chiffres. Un changement de tarif,
+un jour de fermeture, un message à propos du décompte : ce que vous devez savoir figure là avant que vous ne
+vous mettiez au travail.
+
+Votre bureau détermine lui-même à partir de quand et jusqu'à quand un message est visible. S'il n'y a rien,
+ce bloc reste absent — il n'y a donc pas d'espace vide auquel vous habituer.
+
+!!! info "Vous n'avez rien à faire"
+    Une communication n'est pas une tâche. Vous ne pouvez pas la masquer et il n'est pas enregistré si vous
+    l'avez lue. Elle disparaît d'elle-même à son échéance.
+
 ## Les quatre chiffres
 
 Quatre tuiles figurent en haut.

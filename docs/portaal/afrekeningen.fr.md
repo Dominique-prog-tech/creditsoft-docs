@@ -10,10 +10,10 @@ décomptez vous-même.
 ## Reverser une commission
 
 Le reversement se fait **sur un dossier**, pas sur cet écran. Sous **Mes dossiers**, ouvrez un dossier sur
-lequel vous percevez vous-même une commission. En bas se trouve le bloc **Reverser une commission**.
+lequel vous percevez vous-même une commission. À droite se trouve l'onglet **Reverser une commission**.
 
-Si ce bloc n'apparaît pas, c'est que vous ne percevez aucune commission sur ce dossier — il n'y a donc rien
-à reverser.
+Si cet onglet n'apparaît pas, c'est que vous ne percevez aucune commission sur ce dossier — il n'y a donc
+rien à reverser.
 
 Vous complétez :
 
@@ -34,25 +34,6 @@ vous y avez déjà reversé. C'est une aide, pas une limite : la décision vous 
 
 Ce que vous reversez apparaît immédiatement chez le courtier sous *Mes commissions*.
 
-## Demander des documents à votre client
-
-En bas d'un dossier figure **Demander des documents au client**. Vous choisissez le demandeur dans la liste
-et cliquez sur **Envoyer la demande**. Votre client reçoit un lien pour déposer ses pièces.
-
-Le lien s'affiche également à votre écran — vous l'avez donc sous la main si vous préférez le communiquer
-par téléphone.
-
-!!! info "La demande vient de vous, pas du bureau"
-    Votre client voit votre propre adresse e-mail comme expéditeur ; sa réponse vous parvient donc
-    directement.
-
-!!! warning "Pourquoi le bouton n'apparaît pas toujours"
-    Un e-mail ne peut partir que d'un domaine enregistré à cet effet. Il ne s'agit pas d'un réglage de
-    CreditSoft mais d'une sécurité d'internet même : elle empêche d'envoyer du courrier au nom d'autrui.
-
-    Si votre adresse est sur le domaine de votre bureau, cela fonctionne immédiatement. Si elle est sur un
-    domaine personnel ou sur une adresse générale comme Gmail, vous lirez brièvement pourquoi ce n'est pas
-    possible, au lieu du bouton. Votre bureau peut faire enregistrer ce domaine.
 
 ## Décompter
 
@@ -61,12 +42,19 @@ quelque chose.
 
 En haut figure **Encore à décompter** : le total et le nombre de lignes concernées.
 
-En dessous, vous choisissez une **période**. Seules les périodes contenant réellement un montant vous sont
-proposées — vous ne devez donc pas chercher dans quel mois une somme se situe. Le montant est indiqué à côté
-de chaque période.
+En dessous, vous choisissez une **période** dans la liste. Seules les périodes contenant réellement un
+montant vous sont proposées — vous ne devez donc pas chercher dans quel mois une somme se situe. Le montant
+et le nombre de lignes sont indiqués pour chaque période. L'écran s'ouvre sur la période ouverte la **plus
+ancienne** : un arriéré se résorbe en commençant par le début.
 
 Dès que vous choisissez une période, un **aperçu** s'affiche : par courtier, le nombre de lignes et le
 montant, avec le total en dessous. Si cela correspond, cliquez sur **Décompter**.
+
+!!! info "Les mois à venir n'y figurent pas"
+    La commission est comptabilisée à l'avance : un barème de 24 mois inscrit d'emblée 24 lignes. Vous ne
+    pouvez pas décompter des mois qui doivent encore venir — vous paieriez votre courtier pour une
+    commission que votre bureau n'a lui-même pas encore perçue. Si un tel montant est en attente, vous le
+    lisez sous le total.
 
 !!! info "Votre décompte est distinct de celui du bureau"
     Votre clôture ne concerne que la commission que **vous** avez reversée. Ce que le bureau vous doit est
@@ -75,4 +63,8 @@ montant, avec le total en dessous. Si cela correspond, cliquez sur **Décompter*
 ## Mes clôtures
 
 En bas figure ce que vous avez déjà décompté : la période, la date du document, le nombre de bordereaux et
-le montant.
+le montant. Vous pouvez rechercher, trier et exporter la liste.
+
+**Cliquez sur une clôture** et son contenu apparaît en dessous : par courtier, son bordereau, avec le
+numéro et le montant. **Consulter** ouvre ce bordereau à l'écran — pas en téléchargement. Pour le conserver
+ou le transmettre, utilisez le bouton d'enregistrement de votre navigateur.

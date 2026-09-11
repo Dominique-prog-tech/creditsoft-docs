@@ -118,6 +118,7 @@ const SCHOTEN = [
   ['dashboard-fases',              '/beheer/dashboard-fases'],
   ['commissie-instellingen',       '/beheer/commissie-instellingen'],
   ['klantportaal-vormgeving',      '/beheer/klantportaal'],
+  ['mededelingen',                 '/beheer/mededelingen'],
   ['mailsjablonen',                '/administration/mail-templates'],
   ['verzendadressen',              '/administration/sender-addresses'],
   ['mailmonitoring',               '/administration/mail-monitoring'],
@@ -154,6 +155,7 @@ const SCHOTEN = [
   ['portaal-overzicht',            '/portal-intermediary/overzicht'],
   ['portaal-dossiers',             '/portal-intermediary/dossiers'],
   ['portaal-commissies',           '/portal-intermediary/commissies'],
+  ['portaal-documenten',           '/portal-intermediary/documenten'],
   // ── fiches ──
   ['aanbrengers-fiche',            `/contributors/${ID.aanbrenger}`],
   ['relaties-fiche',               `/crm/relaties/${ID.relatie}`],

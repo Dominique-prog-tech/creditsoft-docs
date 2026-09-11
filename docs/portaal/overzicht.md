@@ -8,6 +8,18 @@ Klik in het portaal bovenaan op **Overzicht**.
 
 ![Het Overzicht van het aanbrengersportaal met vier tegels — afgesloten kredieten, in behandeling, commissie en het aantal kantoren — daaronder de zin over hoeveel kantoren de cijfers beslaan, een staafgrafiek per maand en de lijst met de laatst afgesloten dossiers.](../images/portaal-overzicht.png "Het overzichtsscherm van het aanbrengersportaal")
 
+## Mededelingen van uw kantoor
+
+Staat er nieuws voor u klaar, dan verschijnt dat **bovenaan**, boven de cijfers. Een tariefwijziging, een
+sluitingsdag, een bericht over de afrekening: wat u moet weten, staat er vóór u aan het werk gaat.
+
+Uw kantoor bepaalt zelf vanaf en tot wanneer een bericht zichtbaar is. Is er niets, dan blijft dit blok
+weg — er is dus geen lege plek waar u aan moet wennen.
+
+!!! info "U hoeft niets te doen"
+    Een mededeling is geen taak. U kunt ze niet wegklikken en er wordt niet bijgehouden of u ze gelezen
+    hebt. Ze verdwijnt vanzelf wanneer ze afloopt.
+
 ## De vier cijfers
 
 Bovenaan staan vier tegels.

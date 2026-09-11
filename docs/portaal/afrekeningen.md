@@ -9,10 +9,10 @@ Werkt u met eigen makelaars onder uw kantoor, dan kent u hun commissie zelf toe 
 ## Commissie doorgeven
 
 Doorgeven gebeurt **op een dossier**, niet op dit scherm. Open bij **Mijn dossiers** een dossier waarop u
-zelf commissie ontvangt. Onderaan staat het blok **Commissie doorgeven**.
+zelf commissie ontvangt. Rechts staat het tabblad **Commissie doorgeven**.
 
-Staat dat blok er niet, dan ontvangt u op dat dossier zelf geen commissie — en dan valt er ook niets van
-door te geven.
+Staat dat tabblad er niet, dan ontvangt u op dat dossier zelf geen commissie — en dan valt er ook niets
+van door te geven.
 
 U vult in:
 
@@ -33,36 +33,24 @@ doorgegeven. Dat is een hulpmiddel, geen grens: u beslist zelf.
 
 Wat u doorgeeft, verschijnt meteen bij de makelaar onder *Mijn commissies*.
 
-## Documenten opvragen bij uw klant
-
-Op een dossier staat onderaan **Documenten opvragen bij de klant**. U kiest de aanvrager uit de lijst en
-klikt op **Aanvraag versturen**. Uw klant krijgt een link waarmee hij zijn stukken oplaadt.
-
-De link verschijnt ook op uw scherm — wie hem liever telefonisch doorgeeft, heeft hem bij de hand.
-
-!!! info "De aanvraag komt van u, niet van het kantoor"
-    Uw klant ziet uw eigen e-mailadres als afzender, en zijn antwoord komt dus bij u terecht.
-
-!!! warning "Waarom u soms geen knop ziet"
-    Een e-mail kan alleen vertrekken van een domein dat daarvoor geregistreerd is. Dat is geen instelling
-    van CreditSoft maar een beveiliging van het internet zelf: ze verhindert dat iemand post verstuurt in
-    andermans naam.
-
-    Staat uw adres op het domein van uw kantoor, dan werkt het meteen. Staat het op een eigen domein of op
-    een algemeen adres zoals Gmail, dan leest u in plaats van de knop kort waarom het niet kan. Uw kantoor
-    kan dat domein laten registreren.
-
 ## Afrekenen
 
 Klik in het portaal bovenaan op **Afrekeningen**. Dat onderdeel verschijnt zodra u iets hebt doorgegeven.
 
 Bovenaan staat **Nog af te rekenen**: het totaal en over hoeveel lijnen dat gaat.
 
-Daaronder kiest u een **periode**. U krijgt alleen periodes te zien waarin werkelijk iets openstaat — u
-hoeft dus niet te zoeken in welke maand een bedrag valt. Bij elke periode staat meteen het bedrag.
+Daaronder kiest u een **periode** uit de lijst. U krijgt alleen periodes te zien waarin werkelijk iets
+openstaat — u hoeft dus niet te zoeken in welke maand een bedrag valt. Bij elke periode staat meteen het
+bedrag en het aantal lijnen. Het scherm opent op de **oudste** periode die openstaat: een achterstand werkt
+u van voren af aan weg.
 
 Zodra u een periode kiest, verschijnt een **voorbeeld**: per makelaar het aantal lijnen en het bedrag, met
 het totaal eronder. Klopt dat, dan klikt u op **Afrekenen**.
+
+!!! info "Toekomstige maanden staan er niet bij"
+    Commissie wordt vooruit geboekt: een schema van 24 maanden zet meteen 24 lijnen klaar. Maanden die nog
+    moeten komen kunt u niet afrekenen — u zou uw makelaar dan betalen voor commissie die uw kantoor zelf
+    nog niet ontvangen heeft. Staat er zulk bedrag klaar, dan leest u dat onder het totaal.
 
 !!! info "Uw afrekening staat los van die van het kantoor"
     Uw ronde raakt alleen de commissie die **u** hebt doorgegeven. Wat het kantoor u verschuldigd is, wordt
@@ -71,4 +59,8 @@ het totaal eronder. Klopt dat, dan klikt u op **Afrekenen**.
 ## Mijn afrekenrondes
 
 Onderaan staat wat u al afgerekend hebt: de periode, de documentdatum, het aantal borderellen en het
-bedrag.
+bedrag. U kunt zoeken en sorteren, en de lijst exporteren.
+
+**Klik op een ronde** en eronder verschijnt wat erin zat: per makelaar zijn borderel, met het nummer en
+het bedrag. Met **Bekijken** opent u dat borderel in beeld — niet als download. Wilt u het bewaren of
+doorsturen, dan gebruikt u de bewaarknop van uw browser.

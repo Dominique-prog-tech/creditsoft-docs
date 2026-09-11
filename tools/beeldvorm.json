@@ -391,5 +391,21 @@
   "wachtwoord": {
     "breedte": 1280,
     "hoogte": 860
+  },
+  "mededelingen": {
+    "breedte": 1280,
+    "hoogte": 860
+  },
+  "portaal-documenten": {
+    "breedte": 1280,
+    "hoogte": 860
+  },
+  "mededelingen-fr": {
+    "breedte": 1280,
+    "hoogte": 860
+  },
+  "portaal-documenten-fr": {
+    "breedte": 1280,
+    "hoogte": 860
   }
 }

@@ -1,10 +1,10 @@
-# Klantenportaal
+# Portaalvormgeving
 
 Uw klanten leveren hun documenten aan via een eigen portaal. Dit scherm bepaalt hoe dat portaal er voor hen uitziet — het is wat zij van u te zien krijgen, dus het draagt best uw naam en uw kleuren.
 
 ## Het scherm openen
 
-Klik links onderaan op **Platformbeheer** en dan op de tegel **Klantenportaal**, in de groep *Gegevens*.
+Klik links onderaan op **Platformbeheer** en dan op de tegel **Portaalvormgeving**, in de groep *Gegevens*.
 
 ![Het scherm Klantenportaal: links het formulier met de naam, de hoofdkleur, de kopbalkstijl, het logo, de welkomsttitel en -tekst in het Nederlands en het Frans, en de contactgegevens; rechts een voorbeeld van het portaal dat meteen meebeweegt met wat u kiest.](../images/klantportaal-vormgeving.png "Links stelt u in, rechts ziet u het resultaat"){ .volle-breedte }
 

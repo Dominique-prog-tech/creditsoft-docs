@@ -17,14 +17,26 @@ L'année se choisit en haut. Seules les années où des écritures existent figu
 
 ![L'écran Mes commissions du portail des apporteurs : en haut le choix de l'année avec le total annuel, puis un tableau avec le montant par mois et le détail par dossier.](../images/portaal-commissies-fr.png "Mes commissions dans le portail des apporteurs")
 
-## Par mois
+## La liste par mois
 
-Un tableau reprenant, par mois, le nombre d'écritures et le total. Vous voyez ainsi d'un coup d'œil quel
-mois se détache.
+Une seule liste, **groupée par mois**. La ligne de mois indique le nombre de lignes et le total de ce
+mois ; cliquez sur la flèche à gauche pour la déplier. En dessous figure chaque écriture séparément : la
+**date**, le **dossier**, une **description** et le **montant**.
 
-## Détail
+Le total annuel figure en bas. En haut à droite, vous pouvez rechercher, trier et exporter la liste.
 
-En dessous, chaque écriture séparément : la **date**, le **dossier**, une **description** et le **montant**.
+!!! tip "Tout est replié à l'ouverture"
+    C'est voulu : avec plusieurs milliers d'écritures, une liste dépliée est illisible. Les lignes de mois
+    vous donnent la vue d'ensemble, et vous dépliez ce que vous souhaitez vérifier.
+
+## Le bordereau d'un mois
+
+Si un mois est décompté, le bouton **Bordereau** figure sur la ligne du mois. Il ouvre le document de
+décompte de ce mois — à l'écran, pas en téléchargement. Pour le conserver, utilisez le bouton
+d'enregistrement de votre navigateur.
+
+S'il n'y a pas de bouton, c'est que ce mois n'est pas encore décompté. Si, exceptionnellement, plusieurs
+bordereaux concernent le même mois, ils figurent tous, chacun avec son numéro.
 
 !!! info "De qui voyez-vous la commission ?"
     La vôtre uniquement, par défaut. Si vous êtes apporteur principal et que votre bureau vous a accordé le
