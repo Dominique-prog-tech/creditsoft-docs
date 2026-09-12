@@ -244,7 +244,22 @@
     "film": "creditsoft-overzicht",
     "taal": "nl-BE",
     "pagina": null,
-    "lengte": 48,
+    "lengte": 48.16,
+    "uitvoering": "website",
+    "routes": [
+      "/credit-files",
+      "/crm/relaties",
+      "/krediet/documenten-valideren",
+      "/beheer/klantportaal",
+      "/commissie/schemas",
+      "/commissie/borderel",
+      "/commissie/vooruitzicht",
+      "/credit/financial-institutions"
+    ],
+    "app": {
+      "sha": "60e8c3eec5442f071b1a29c5a817293e0f10fd5e",
+      "vuil": false
+    },
     "titel": "CreditSoft in het kort — een overzicht van de modules",
     "omschrijving": "Een kort overzicht van CreditSoft voor kredietmakelaars: kredietdossiers, klanten, documenten, de portalen voor klant en aanbrenger, de commissieberekening, borderellen en fiche 281.50, het vooruitzicht en het beheer van uw kredietverstrekkers.",
     "hash": "2ba034757547cf75",
@@ -252,23 +267,23 @@
     "hoofdstukken": [
       {
         "titel": "Kredietdossiers",
-        "start": 2.21,
-        "eind": 5.35
+        "start": 2.15,
+        "eind": 5.29
       },
       {
         "titel": "Klanten en relaties",
-        "start": 7.74,
-        "eind": 11.52
+        "start": 7.67,
+        "eind": 11.46
       },
       {
         "titel": "Documenten",
-        "start": 13.88,
-        "eind": 17.09
+        "start": 13.78,
+        "eind": 16.99
       },
       {
         "titel": "De portalen",
-        "start": 19.42,
-        "eind": 22.49
+        "start": 19.32,
+        "eind": 22.39
       },
       {
         "titel": "Commissie",
@@ -277,29 +292,27 @@
       },
       {
         "titel": "Borderellen",
-        "start": 29.92,
-        "eind": 34.63
+        "start": 30,
+        "eind": 34.71
       },
       {
         "titel": "Vooruitzicht",
-        "start": 37.03,
-        "eind": 39.89
+        "start": 37.16,
+        "eind": 40.02
       },
       {
         "titel": "Instellingen",
-        "start": 42.23,
-        "eind": 45.59
+        "start": 42.4,
+        "eind": 45.76
       }
-    ],
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/6e004248-5d64-4771-b276-b94782b663bc/thumbnail_adc8f32f.jpg",
-    "gepubliceerdOp": "2026-09-01T05:38:54.097",
-    "gepubliceerdeHash": "2ba034757547cf75",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/6e004248-5d64-4771-b276-b94782b663bc",
-    "app": {
-      "sha": "2ff5ae5b66d7e564047347fd96923019fe5f1c32",
-      "vuil": false,
-      "herkomst": "aangevuld 01/09/2026 — opgenomen in die sessie, niet door de generator gemerkt"
-    },
+    ]
+  },
+  "creditsoft-overzicht-website-fr": {
+    "film": "creditsoft-overzicht",
+    "taal": "fr-BE",
+    "pagina": null,
+    "lengte": 49.4,
+    "uitvoering": "website",
     "routes": [
       "/credit-files",
       "/crm/relaties",
@@ -310,13 +323,10 @@
       "/commissie/vooruitzicht",
       "/credit/financial-institutions"
     ],
-    "uitvoering": "website"
-  },
-  "creditsoft-overzicht-website-fr": {
-    "film": "creditsoft-overzicht",
-    "taal": "fr-BE",
-    "pagina": null,
-    "lengte": 49.8,
+    "app": {
+      "sha": "60e8c3eec5442f071b1a29c5a817293e0f10fd5e",
+      "vuil": false
+    },
     "titel": "CreditSoft en bref — les modules en un coup d’œil",
     "omschrijving": "Un bref aperçu de CreditSoft pour les courtiers en crédit : dossiers de crédit, clients, documents, les portails client et apporteur, le calcul des commissions, les bordereaux et la fiche 281.50, la perspective et la gestion de vos prêteurs.",
     "hash": "0896bc79eefd88bc",
@@ -324,54 +334,52 @@
     "hoofdstukken": [
       {
         "titel": "Dossiers de crédit",
-        "start": 2.21,
-        "eind": 5.64
+        "start": 2.09,
+        "eind": 5.52
       },
       {
         "titel": "Clients et relations",
-        "start": 8.04,
-        "eind": 11.97
+        "start": 7.87,
+        "eind": 11.8
       },
       {
         "titel": "Documents",
-        "start": 14.37,
-        "eind": 17.51
+        "start": 14.14,
+        "eind": 17.29
       },
       {
         "titel": "Les portails",
-        "start": 19.8,
-        "eind": 23.02
+        "start": 19.6,
+        "eind": 22.81
       },
       {
         "titel": "Commissions",
-        "start": 25.39,
-        "eind": 28.96
+        "start": 25.12,
+        "eind": 28.69
       },
       {
         "titel": "Bordereaux",
-        "start": 31.31,
-        "eind": 36.59
+        "start": 31,
+        "eind": 36.29
       },
       {
         "titel": "Prévisions",
-        "start": 39.26,
-        "eind": 42.33
+        "start": 38.71,
+        "eind": 41.78
       },
       {
         "titel": "Paramètres",
-        "start": 44.64,
-        "eind": 47.57
+        "start": 44.08,
+        "eind": 47.01
       }
-    ],
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/efcc1f39-03fa-497f-bb06-12dc5ede37ba/thumbnail_88839361.jpg",
-    "gepubliceerdOp": "2026-09-01T05:39:10.014",
-    "gepubliceerdeHash": "0896bc79eefd88bc",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/efcc1f39-03fa-497f-bb06-12dc5ede37ba",
-    "app": {
-      "sha": "2ff5ae5b66d7e564047347fd96923019fe5f1c32",
-      "vuil": false,
-      "herkomst": "aangevuld 01/09/2026 — opgenomen in die sessie, niet door de generator gemerkt"
-    },
+    ]
+  },
+  "creditsoft-overzicht-website-en": {
+    "film": "creditsoft-overzicht",
+    "taal": "nl-BE",
+    "pagina": null,
+    "lengte": 51.08,
+    "uitvoering": "website",
     "routes": [
       "/credit-files",
       "/crm/relaties",
@@ -382,13 +390,10 @@
       "/commissie/vooruitzicht",
       "/credit/financial-institutions"
     ],
-    "uitvoering": "website"
-  },
-  "creditsoft-overzicht-website-en": {
-    "film": "creditsoft-overzicht",
-    "taal": "nl-BE",
-    "pagina": null,
-    "lengte": 51.12,
+    "app": {
+      "sha": "60e8c3eec5442f071b1a29c5a817293e0f10fd5e",
+      "vuil": false
+    },
     "titel": "CreditSoft at a glance — the modules in brief",
     "omschrijving": "A short overview of CreditSoft for credit brokers: credit files, clients, documents, the client and intermediary portals, commission calculation, statements and the 281.50 form, the forecast, and managing your lenders.",
     "hash": "682a154e1ab2d163",
@@ -396,23 +401,23 @@
     "hoofdstukken": [
       {
         "titel": "Credit files",
-        "start": 2.17,
-        "eind": 6.24
+        "start": 2.1,
+        "eind": 6.17
       },
       {
         "titel": "Clients and relations",
-        "start": 8.71,
-        "eind": 12.71
+        "start": 8.82,
+        "eind": 12.82
       },
       {
         "titel": "Documents",
-        "start": 15.11,
-        "eind": 17.83
+        "start": 15.27,
+        "eind": 17.98
       },
       {
         "titel": "The portals",
-        "start": 20.49,
-        "eind": 23.77
+        "start": 20.28,
+        "eind": 23.56
       },
       {
         "titel": "Commissions",
@@ -421,40 +426,20 @@
       },
       {
         "titel": "Statements",
-        "start": 31.82,
-        "eind": 36.97
+        "start": 31.88,
+        "eind": 37.02
       },
       {
         "titel": "Forecast",
-        "start": 39.55,
-        "eind": 42.55
+        "start": 39.53,
+        "eind": 42.53
       },
       {
         "titel": "Settings",
-        "start": 44.91,
-        "eind": 48.7
+        "start": 44.88,
+        "eind": 48.67
       }
-    ],
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/bc9092c4-ae00-49ed-84b7-3475506cef5b/thumbnail_f86c86bc.jpg",
-    "gepubliceerdOp": "2026-09-01T05:39:26.183",
-    "gepubliceerdeHash": "682a154e1ab2d163",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/bc9092c4-ae00-49ed-84b7-3475506cef5b",
-    "app": {
-      "sha": "2ff5ae5b66d7e564047347fd96923019fe5f1c32",
-      "vuil": false,
-      "herkomst": "aangevuld 01/09/2026 — opgenomen in die sessie, niet door de generator gemerkt"
-    },
-    "routes": [
-      "/credit-files",
-      "/crm/relaties",
-      "/krediet/documenten-valideren",
-      "/beheer/klantportaal",
-      "/commissie/schemas",
-      "/commissie/borderel",
-      "/commissie/vooruitzicht",
-      "/credit/financial-institutions"
-    ],
-    "uitvoering": "website"
+    ]
   },
   "kredietdossiers-basis-website-en": {
     "film": "kredietdossiers-basis",

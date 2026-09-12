@@ -198,8 +198,8 @@
   "platformbeheer-hub": {
     "route": "/administration",
     "app": {
-      "sha": "b4c74f0e3f2a6b4c1567fe2c8fe431923a2fc733",
-      "vuil": true
+      "sha": "60e8c3eec5442f071b1a29c5a817293e0f10fd5e",
+      "vuil": false
     }
   },
   "bedrijfsfiche": {
@@ -814,8 +814,8 @@
   "platformbeheer-hub-fr": {
     "route": "/administration",
     "app": {
-      "sha": "b4c74f0e3f2a6b4c1567fe2c8fe431923a2fc733",
-      "vuil": true
+      "sha": "60e8c3eec5442f071b1a29c5a817293e0f10fd5e",
+      "vuil": false
     }
   },
   "bedrijfsfiche-fr": {
