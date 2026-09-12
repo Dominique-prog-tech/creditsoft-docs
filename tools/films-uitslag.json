@@ -198,7 +198,10 @@
       "sha": "2ff5ae5b66d7e564047347fd96923019fe5f1c32",
       "vuil": false,
       "herkomst": "aangevuld 01/09/2026 — opgenomen in die sessie, niet door de generator gemerkt"
-    }
+    },
+    "routes": [
+      "/credit-files"
+    ]
   },
   "kredietdossiers-basis-website-fr": {
     "film": "kredietdossiers-basis",
@@ -244,7 +247,10 @@
       "sha": "2ff5ae5b66d7e564047347fd96923019fe5f1c32",
       "vuil": false,
       "herkomst": "aangevuld 01/09/2026 — opgenomen in die sessie, niet door de generator gemerkt"
-    }
+    },
+    "routes": [
+      "/credit-files"
+    ]
   },
   "creditsoft-overzicht-website-nl": {
     "film": "creditsoft-overzicht",
@@ -305,7 +311,17 @@
       "sha": "2ff5ae5b66d7e564047347fd96923019fe5f1c32",
       "vuil": false,
       "herkomst": "aangevuld 01/09/2026 — opgenomen in die sessie, niet door de generator gemerkt"
-    }
+    },
+    "routes": [
+      "/credit-files",
+      "/crm/relaties",
+      "/krediet/documenten-valideren",
+      "/beheer/klantportaal",
+      "/commissie/schemas",
+      "/commissie/borderel",
+      "/commissie/vooruitzicht",
+      "/credit/financial-institutions"
+    ]
   },
   "creditsoft-overzicht-website-fr": {
     "film": "creditsoft-overzicht",
@@ -366,7 +382,17 @@
       "sha": "2ff5ae5b66d7e564047347fd96923019fe5f1c32",
       "vuil": false,
       "herkomst": "aangevuld 01/09/2026 — opgenomen in die sessie, niet door de generator gemerkt"
-    }
+    },
+    "routes": [
+      "/credit-files",
+      "/crm/relaties",
+      "/krediet/documenten-valideren",
+      "/beheer/klantportaal",
+      "/commissie/schemas",
+      "/commissie/borderel",
+      "/commissie/vooruitzicht",
+      "/credit/financial-institutions"
+    ]
   },
   "creditsoft-overzicht-website-en": {
     "film": "creditsoft-overzicht",
@@ -427,7 +453,17 @@
       "sha": "2ff5ae5b66d7e564047347fd96923019fe5f1c32",
       "vuil": false,
       "herkomst": "aangevuld 01/09/2026 — opgenomen in die sessie, niet door de generator gemerkt"
-    }
+    },
+    "routes": [
+      "/credit-files",
+      "/crm/relaties",
+      "/krediet/documenten-valideren",
+      "/beheer/klantportaal",
+      "/commissie/schemas",
+      "/commissie/borderel",
+      "/commissie/vooruitzicht",
+      "/credit/financial-institutions"
+    ]
   },
   "kredietdossiers-basis-website-en": {
     "film": "kredietdossiers-basis",
@@ -473,7 +509,10 @@
       "sha": "2ff5ae5b66d7e564047347fd96923019fe5f1c32",
       "vuil": false,
       "herkomst": "aangevuld 01/09/2026 — opgenomen in die sessie, niet door de generator gemerkt"
-    }
+    },
+    "routes": [
+      "/credit-files"
+    ]
   },
   "aan-de-slag-nl": {
     "film": "aan-de-slag",
