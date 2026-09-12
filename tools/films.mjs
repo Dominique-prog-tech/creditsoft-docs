@@ -544,7 +544,11 @@ for (const [naam, filmVol] of FILMS) {
         return sc;
       })
     : filmVol.scenes;
-  const film = { ...filmVol, scenes: gekozen };
+  // ⚠️ `filmBasis` en niet `film`, met opzet. De teksten worden PER TAAL opgelost (zie de talenlus
+  // hieronder), dus er bestaat geen enkele `film` die buiten die lus geldig is. Was dit `film` gebleven, dan
+  // had een leesplek die de per-taal-versie mist er stil de handleidingtekst uit gehaald. Nu geeft zo'n plek
+  // een ReferenceError, en dat is precies het verschil tussen een fout die je vindt en een die je uitrolt.
+  const filmBasis = { ...filmVol, scenes: gekozen };
   const metStem = uitv.stem !== false;
   // De handleiding houdt haar bestaande naam (de uitslagtabel en de hook verwijzen ernaar).
   const stam = UITVOERING === 'handleiding' ? naam : `${naam}-${UITVOERING}`;
@@ -576,6 +580,67 @@ for (const [naam, filmVol] of FILMS) {
       verslag.overgeslagen.push(`${taal}: geen stem in user-secrets`);
       continue;
     }
+    // ⚠️⚠️ EEN UITVOERING DRAAGT HAAR EIGEN TEKSTEN, en het ontbreken ervan is een BEVINDING.
+    //
+    // Tot 12/09/2026 kende een uitvoering enkel een scène-SELECTIE, geen eigen woorden. De websiteversie van
+    // `kredietdossiers-basis` was daardoor de handleidingfilm met vier scènes eruit — mét de
+    // handleidingzinnen erin. Dominique zag dat meteen: *"die was de handleidingfilm met zes scènes eruit,
+    // en hij was nog steeds aan het uitleggen."* De diagnose was dus niet "te veel scènes" maar "teksten van
+    // het verkeerde soort", en dat is met scène-selectie alleen niet te repareren.
+    //
+    // Gemeten op de twee die er toen waren: `creditsoft-overzicht` (website-eigen scenario) 38-66 tekens per
+    // scène, `kredietdossiers-basis` (handleiding) 31-127. Een handleiding LEERT en het beeld wacht op de
+    // zin; een websitefilm POSITIONEERT en moet geluidloos te begrijpen zijn, want elke browser start
+    // gedempt.
+    //
+    // Nu: een scène mag per uitvoering een eigen tekstset dragen — `sc.website = { nl, fr, en }`. Voor
+    // `handleiding` blijft `sc.nl` gelden, zodat er niets hoeft te verhuizen.
+    //
+    // ⚠️ GEEN STILLE TERUGVAL. Ontbreekt de tekst voor een niet-handleiding-uitvoering, dan STOPT de ronde
+    // met de naam van de scène erin. Terugvallen op de handleidingtekst is exact de fout die deze wijziging
+    // moest wegnemen — en een terugval die niet faalt, liegt: je krijgt een film die af lijkt en het
+    // verkeerde gesprek voert.
+    const scenesMetTekst = filmBasis.scenes.map(sc => {
+      if (UITVOERING === 'handleiding') return sc;
+      const eigen = sc[UITVOERING];
+      if (!eigen || !eigen[kort]) {
+        throw new Error(
+          `${naam}: scène "${sc.naam}" heeft geen tekst voor uitvoering "${UITVOERING}" in taal "${kort}". `
+          + `Zet ze als \`${sc.naam}.${UITVOERING} = { ${kort}: "…" }\` in draaiboek.mjs. `
+          + `Er wordt NIET teruggevallen op de handleidingtekst: die legt uit waar deze uitvoering moet positioneren.`);
+      }
+      return { ...sc, [kort]: eigen[kort], uitspraak: eigen.uitspraak ?? sc.uitspraak };
+    });
+    // ⚠️⚠️ DE EERSTE SCÈNE VAN EEN SELECTIE MOET ZELF NAVIGEREN — grendel van 12/09/2026.
+    //
+    // Een scène ERFT de toestand van haar voorganger: de pagina waarop ze staat, en waar er gescrold is.
+    // Een uitvoering die een SUBSET kiest, breekt die keten stil. Dat kostte op 12/09 negen films in één
+    // ronde, en de faalreden wees telkens naar de verkeerde plek:
+    //
+    //   commissie-uitbetalen/lijnen   doet enkel beweegNaar(Commissielijnen) → 'borderel' opende er een
+    //   dashboard/tegels              doet enkel beweegNaar(In te dienen)    → 'jaar' laadt /dashboard
+    //   leads/gewonnen                doet Escape + dblclick in de LIJST     → 'statussen' gaat erheen
+    //
+    // Alle drie meldden een Timeout op een locator, en dat leest als een trage pagina of een gewijzigd
+    // label. Het was geen van beide: er was simpelweg nooit genavigeerd.
+    //
+    // Deze grendel dekt het GOEDKOOPSTE geval — de eerste scène — en dat is er twee van de drie. Hij dekt
+    // NIET de derde: een scène die halverwege terugkeert naar een lijst. Dat is bewust; een controle die
+    // belooft de hele keten te kennen zou moeten weten wat elke `doe` met de pagina doet, en dan bewaakt ze
+    // een model in plaats van de werkelijkheid. Liever een grendel die één ding zeker weet.
+    if (UITVOERING !== 'handleiding' && uitv.scenes) {
+      const eerste = scenesMetTekst[0];
+      if (!/p\.goto\(/.test(String(eerste.doe))) {
+        throw new Error(
+          `${naam}: de uitvoering "${UITVOERING}" begint op scène "${eerste.naam}", en die navigeert niet zelf `
+          + `(geen p.goto in haar doe). Ze erft dus een pagina die er niet is, en valt met een Timeout op een `
+          + `locator — een faalreden die naar het verkeerde wijst. Zet een scène vooraan die WEL navigeert, `
+          + `of geef deze scène een eigen p.goto.`);
+      }
+    }
+
+      const film = { ...filmBasis, scenes: scenesMetTekst };
+
     const werk = `${UIT}${stam}-${kort}/`;
     rmSync(werk, { recursive: true, force: true }); mkdirSync(werk, { recursive: true });
 

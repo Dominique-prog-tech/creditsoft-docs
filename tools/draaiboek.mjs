@@ -364,7 +364,8 @@ export const FILMS = [
     pagina: 'crm/leads',
     titel: {
       nl: 'Leads in CreditSoft — van aanvraag tot klant',
-      fr: 'Les leads dans CreditSoft — de la demande au client',
+      fr: 'Les leads dans CreditSoft — de la demande au client',      en: 'Leads in CreditSoft — from enquiry to client',
+
     },
     omschrijving: {
       nl: 'De werklijst van uw instroom: wie er wacht en hoe lang, uit welk kanaal hij kwam, en wie hem '
@@ -372,21 +373,33 @@ export const FILMS = [
         + 'statussen, en tot slot een lead die klant geworden is, met de doorverwijzing naar zijn relatiefiche.',
       fr: 'La liste de travail de vos demandes entrantes : qui attend et depuis combien de temps, de quel '
         + 'canal il provient, et qui le suit. Ensuite la fiche d’un lead — qui il est, ce qu’il demande et où '
-        + 'il en est — les cinq statuts, et pour finir un lead devenu client, avec le renvoi vers sa fiche.',
+        + 'il en est — les cinq statuts, et pour finir un lead devenu client, avec le renvoi vers sa fiche.',      en: 'Everyone who gets in touch on one worklist, with how long they have waited and where they came from.',
+
     },
-    uitvoeringen: { handleiding: { stem: true } },
+    uitvoeringen: {
+      handleiding: { stem: true },
+      // ⚠️ Een ANDER soort film, geen kortere. 30-45 s, geluidloos te begrijpen, en met EIGEN
+      //    teksten (`scene.website`) — niet de handleidingzinnen met scènes eruit. Zie films.mjs.
+      website: {
+        stem: false,
+        scenes: ['lijst', 'bron', 'openen', 'statussen', 'gewonnen'],
+        talen: [{ ui: 'nl-BE', tekst: 'nl' }, { ui: 'fr-BE', tekst: 'fr' }, { ui: 'nl-BE', tekst: 'en' }],
+      },
+    },
     scenes: [
-      { naam: 'lijst', kop: { nl: 'De werklijst', fr: 'La liste de travail' },
+      { naam: 'lijst', kop: { nl: 'De werklijst', fr: 'La liste de travail' , en: 'The worklist' },
         doe: async (p) => { await p.goto(`${BASIS}/crm/leads`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(1800); },
         merk: /Nieuwe lead|Nouveau lead/i,
         nl: 'Een lead is iemand die zich meldt maar nog geen klant is. Dit scherm is geen archief maar een werklijst: het toont wat er ligt te wachten.',
-        fr: "Un lead, c’est quelqu’un qui se manifeste sans être encore client. Cet écran n’est pas une archive mais une liste de travail : il montre ce qui attend." },
+        fr: "Un lead, c’est quelqu’un qui se manifeste sans être encore client. Cet écran n’est pas une archive mais une liste de travail : il montre ce qui attend." ,
+        website: { nl: 'Iedereen die zich meldt, op één werklijst.', fr: 'Toute demande entrante, sur une seule liste.', en: 'Everyone who gets in touch, on one worklist.' } },
 
-      { naam: 'wachttijd', kop: { nl: 'Hoe lang iemand wacht', fr: 'Depuis combien de temps on attend' },
+      { naam: 'wachttijd', kop: { nl: 'Hoe lang iemand wacht', fr: 'Depuis combien de temps on attend' , en: 'How long they wait' },
         doe: async (p) => { await beweegNaar(p, p.getByText(/Wacht al|En attente depuis/i).first()); await p.waitForTimeout(1400); },
         merk: /Wacht al|En attente depuis/i,
         nl: 'Twee kolommen doen het werk. Wacht al zegt hoe lang er nog niemand gereageerd heeft, en die klok stopt pas bij het eerste contact.',
-        fr: "Deux colonnes font le travail. En attente depuis indique depuis combien de temps personne n’a réagi, et cette horloge ne s’arrête qu’au premier contact." },
+        fr: "Deux colonnes font le travail. En attente depuis indique depuis combien de temps personne n’a réagi, et cette horloge ne s’arrête qu’au premier contact." ,
+        website: { nl: 'Met hoe lang iemand al wacht.', fr: 'Avec le temps d’attente de chacun.', en: 'With how long each one has been waiting.' } },
 
       { naam: 'opvolger', kop: { nl: 'Wie volgt hem op', fr: 'Qui assure le suivi' },
         doe: async (p) => { await beweegNaar(p, p.getByText('niemand', { exact: true }).or(p.getByText('personne', { exact: true })).first()); await p.waitForTimeout(1400); },
@@ -394,13 +407,14 @@ export const FILMS = [
         nl: 'De tweede is Opvolging. Staat daar niemand, dan is deze aanvraag van niemand — en dat is precies de lead die wegglipt.',
         fr: "La seconde est Suivi. S’il n’y a personne, cette demande n’appartient à personne — et c’est précisément le lead qui s’échappe." },
 
-      { naam: 'bron', kop: { nl: 'Waar hij vandaan komt', fr: 'D’où il provient' },
+      { naam: 'bron', kop: { nl: 'Waar hij vandaan komt', fr: 'D’où il provient' , en: 'Where they came from' },
         doe: async (p) => { await beweegNaar(p, p.getByText('doorverwijzing', { exact: true }).first()); await p.waitForTimeout(1400); },
         merk: /doorverwijzing/i,
         nl: 'De kolom Bron zegt via welk kanaal iemand binnenkwam: uw contactformulier, een telefoon, of een doorverwijzing. Zo ziet u welk kanaal u klanten oplevert.',
-        fr: "La colonne Source indique par quel canal la personne est arrivée : votre formulaire de contact, un appel, ou une recommandation. Vous voyez ainsi quel canal vous apporte des clients." },
+        fr: "La colonne Source indique par quel canal la personne est arrivée : votre formulaire de contact, un appel, ou une recommandation. Vous voyez ainsi quel canal vous apporte des clients." ,
+        website: { nl: 'En via welk kanaal hij binnenkwam.', fr: 'Et par quel canal il est arrivé.', en: 'And which channel they came in through.' } },
 
-      { naam: 'openen', kop: { nl: 'De fiche van een lead', fr: 'La fiche d’un lead' },
+      { naam: 'openen', kop: { nl: 'De fiche van een lead', fr: 'La fiche d’un lead' , en: 'The lead’s record' },
         doe: async (p) => {
           await klik(p, p.getByText('Tom Claes').first());
           await p.getByText('Tom Claes').first().dblclick();
@@ -408,7 +422,8 @@ export const FILMS = [
         },
         merk: /Vul minstens een van deze velden|Complétez au moins un de ces champs/i,
         nl: 'De fiche valt in drie blokken uiteen. Wie hij is: naam, bedrijf en hoe u hem bereikt. Eén van die velden volstaat — zonder herkenning is een lead niet op te volgen.',
-        fr: "La fiche se divise en trois blocs. Qui il est : nom, société et comment le joindre. Un seul de ces champs suffit — sans identification, un lead ne peut pas être suivi." },
+        fr: "La fiche se divise en trois blocs. Qui il est : nom, société et comment le joindre. Un seul de ces champs suffit — sans identification, un lead ne peut pas être suivi." ,
+        website: { nl: 'Wie hij is, wat hij vraagt, wie hem opvolgt.', fr: 'Qui il est, ce qu’il demande, qui le suit.', en: 'Who they are, what they want, who follows up.' } },
 
       { naam: 'vraag', kop: { nl: 'Wat hij vraagt', fr: 'Ce qu’il demande' },
         doe: async (p) => { await beweegNaar(p, p.getByText(/Herkomst|Provenance/i).first()); await p.waitForTimeout(1600); },
@@ -422,16 +437,17 @@ export const FILMS = [
         nl: 'Het derde blok is de opvolging: zijn status, wie hem opvolgt, en wanneer er voor het eerst contact geweest is.',
         fr: "Le troisième bloc est le suivi : son statut, qui s’en occupe, et quand le premier contact a eu lieu." },
 
-      { naam: 'statussen', kop: { nl: 'De vijf statussen', fr: 'Les cinq statuts' },
+      { naam: 'statussen', kop: { nl: 'De vijf statussen', fr: 'Les cinq statuts' , en: 'The five statuses' },
         doe: async (p) => {
           await p.goto(`${BASIS}/crm/leads`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(1600);
           await klik(p, p.getByText(/Alle statussen|Tous les statuts/i).first()); await p.waitForTimeout(1800);
         },
         merk: /Gekwalificeerd|Qualifié/i,
         nl: 'Er zijn er vijf, en bewust niet meer: nieuw, gecontacteerd, gekwalificeerd, gewonnen en verloren. Een kantoor van vijf mensen heeft geen trechter van acht fasen nodig.',
-        fr: "Il y en a cinq, et volontairement pas plus : nouveau, contacté, qualifié, gagné et perdu. Un bureau de cinq personnes n’a pas besoin d’un entonnoir à huit phases." },
+        fr: "Il y en a cinq, et volontairement pas plus : nouveau, contacté, qualifié, gagné et perdu. Un bureau de cinq personnes n’a pas besoin d’un entonnoir à huit phases." ,
+        website: { nl: 'Vijf statussen. U ziet meteen waar elke lead staat.', fr: 'Cinq statuts. Vous voyez d’un coup où en est chaque demande.', en: 'Five statuses. You see at a glance where each lead stands.' } },
 
-      { naam: 'gewonnen', kop: { nl: 'Van lead naar klant', fr: 'Du lead au client' },
+      { naam: 'gewonnen', kop: { nl: 'Van lead naar klant', fr: 'Du lead au client' , en: 'From lead to client' },
         doe: async (p) => {
           await p.keyboard.press('Escape'); await p.waitForTimeout(700);
           await p.getByText('Brigitte De Rycke').first().dblclick();
@@ -439,13 +455,15 @@ export const FILMS = [
         },
         merk: /bekijk de klant|voir le client/i,
         nl: 'Wordt hij klant, dan zet u hem om. De lead blijft staan als geschiedenis van hoe die klant binnenkwam, en draagt voortaan een link naar zijn relatiefiche.',
-        fr: "S’il devient client, vous le convertissez. Le lead subsiste comme historique de la façon dont ce client est arrivé, et porte désormais un lien vers sa fiche de relation." },
+        fr: "S’il devient client, vous le convertissez. Le lead subsiste comme historique de la façon dont ce client est arrivé, et porte désormais un lien vers sa fiche de relation." ,
+        website: { nl: 'Van een vraag op uw website tot een klant.', fr: 'D’une demande sur votre site à un client.', en: 'From a question on your site to a client.' } },
 
-      { naam: 'slot', kop: { nl: 'Tot slot', fr: 'Pour conclure' },
+      { naam: 'slot', kop: { nl: 'Tot slot', fr: 'Pour conclure' , en: 'In closing' },
         doe: async (p) => { await p.waitForTimeout(1200); },
         merk: /bekijk de klant|voir le client/i,
         nl: 'Zo sluit de cirkel: van een vraag op uw website tot een klant met een dossier. In de volgende film gaan we naar de documenten.',
-        fr: "La boucle est ainsi bouclée : d’une question sur votre site à un client avec un dossier. Dans le film suivant, nous passons aux documents." },
+        fr: "La boucle est ainsi bouclée : d’une question sur votre site à un client avec un dossier. Dans le film suivant, nous passons aux documents." ,
+        website: { nl: 'Van een vraag op uw website tot een klant.', fr: 'D’une demande sur votre site à un client.', en: 'From a question on your site to a client.' } },
     ],
   }],
 
@@ -864,7 +882,8 @@ export const FILMS = [
     pagina: 'credit-management/commission-statements',
     titel: {
       nl: 'Commissie uitbetalen — borderel, vooruitzicht en restanten',
-      fr: 'Payer la commission — bordereau, prévisions et reliquats',
+      fr: 'Payer la commission — bordereau, prévisions et reliquats',      en: 'Paying commission — statements, forecast and remainders',
+
     },
     omschrijving: {
       nl: 'Wat er uit uw commissieschema’s komt: het borderel per aanbrenger met zijn lijnen, het '
@@ -872,15 +891,26 @@ export const FILMS = [
         + 'nooit op een borderel belandden en waarom, en de fiche 281.50 voor de fiscus.',
       fr: 'Ce qui découle de vos schémas de commission : le bordereau par apporteur avec ses lignes, les '
         + 'prévisions de ce qu’il reste à payer les mois à venir, les reliquats qui ne sont jamais arrivés '
-        + 'sur un bordereau et pourquoi, et la fiche 281.50 pour le fisc.',
+        + 'sur un bordereau et pourquoi, et la fiche 281.50 pour le fisc.',      en: 'From the commission scheme to the 281.50 tax form, without retyping a single amount.',
+
     },
-    uitvoeringen: { handleiding: { stem: true } },
+    uitvoeringen: {
+      handleiding: { stem: true },
+      // ⚠️ Een ANDER soort film, geen kortere. 30-45 s, geluidloos te begrijpen, en met EIGEN
+      //    teksten (`scene.website`) — niet de handleidingzinnen met scènes eruit. Zie films.mjs.
+      website: {
+        stem: false,
+        scenes: ['lijst', 'borderel', 'lijnen', 'fiche', 'slot'],
+        talen: [{ ui: 'nl-BE', tekst: 'nl' }, { ui: 'fr-BE', tekst: 'fr' }, { ui: 'nl-BE', tekst: 'en' }],
+      },
+    },
     scenes: [
-      { naam: 'lijst', kop: { nl: 'De borderellen', fr: 'Les bordereaux' },
+      { naam: 'lijst', kop: { nl: 'De borderellen', fr: 'Les bordereaux' , en: 'The statements' },
         doe: async (p) => { await p.goto(`${BASIS}/commissie/borderel`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(2400); },
         merk: /Boekingen|Écritures/i,
         nl: 'Een borderel is de afrekening van één aanbrenger over één periode. Deze lijst toont ze allemaal, met het aantal boekingen en het totaal.',
-        fr: "Un bordereau est le décompte d’un apporteur pour une période. Cette liste les montre tous, avec le nombre d’écritures et le total." },
+        fr: "Un bordereau est le décompte d’un apporteur pour une période. Cette liste les montre tous, avec le nombre d’écritures et le total." ,
+        website: { nl: 'De afrekening van elke aanbrenger, per periode.', fr: 'Le décompte de chaque apporteur, par période.', en: 'Each broker’s statement, period by period.' } },
 
       { naam: 'toestand', kop: { nl: 'Openstaand of betaald', fr: 'En attente ou payé' },
         doe: async (p) => { await beweegNaar(p, p.getByText(/^Openstaand$|^En attente$/).first()); await p.waitForTimeout(1600); },
@@ -888,23 +918,26 @@ export const FILMS = [
         nl: 'De toestand zegt waar een borderel staat: openstaand zolang het niet betaald is, en betaald zodra u dat vastlegt. Zo ziet u in één blik wat er nog moet.',
         fr: "Le statut indique où en est un bordereau : en attente tant qu’il n’est pas payé, et payé dès que vous l’enregistrez. Vous voyez ainsi d’un coup d’œil ce qui reste à faire." },
 
-      { naam: 'borderel', kop: { nl: 'Eén borderel', fr: 'Un bordereau' },
+      { naam: 'borderel', kop: { nl: 'Eén borderel', fr: 'Un bordereau' , en: 'One statement' },
         doe: async (p) => { await p.goto(`${BASIS}/commissie/borderel/${ID.borderel}`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(2600); },
         merk: /Documentdatum|Date du document/i,
         nl: 'U opent er één en ziet het nummer, de aanbrenger, het bedrag, en of het al verstuurd en afgedrukt is.',
-        fr: "Vous en ouvrez un et voyez le numéro, l’apporteur, le montant, et s’il a déjà été envoyé et imprimé." },
+        fr: "Vous en ouvrez un et voyez le numéro, l’apporteur, le montant, et s’il a déjà été envoyé et imprimé." ,
+        website: { nl: 'Eén afrekening, met alles wat erin zit.', fr: 'Un décompte, avec tout ce qu’il contient.', en: 'One statement, with everything in it.' } },
 
-      { naam: 'lijnen', kop: { nl: 'De commissielijnen', fr: 'Les lignes de commission' },
+      { naam: 'lijnen', kop: { nl: 'De commissielijnen', fr: 'Les lignes de commission' , en: 'The commission lines' },
         doe: async (p) => { await beweegNaar(p, p.getByText(/Commissielijnen|Lignes de commission/i).first()); await p.waitForTimeout(1800); },
         merk: /Commissielijnen|Lignes de commission/i,
         nl: 'Daaronder staat waar het bedrag vandaan komt: per lijn het dossier, de klant, het pand en de kredietverstrekker. Uw aanbrenger kan het dus narekenen.',
-        fr: "En dessous figure l’origine du montant : par ligne le dossier, le client, le bien et le prêteur. Votre apporteur peut donc le vérifier." },
+        fr: "En dessous figure l’origine du montant : par ligne le dossier, le client, le bien et le prêteur. Votre apporteur peut donc le vérifier." ,
+        website: { nl: 'Tot op de lijn: waar elk bedrag vandaan komt.', fr: 'Jusqu’à la ligne : d’où vient chaque montant.', en: 'Down to the line: where every amount comes from.' } },
 
-      { naam: 'vooruitzicht', kop: { nl: 'Het vooruitzicht', fr: 'Les prévisions' },
+      { naam: 'vooruitzicht', kop: { nl: 'Het vooruitzicht', fr: 'Les prévisions' , en: 'The forecast' },
         doe: async (p) => { await p.goto(`${BASIS}/commissie/vooruitzicht`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(2600); },
         merk: /Volgende 12 maanden|12 prochains mois/i,
         nl: 'Het vooruitzicht kijkt vooruit in plaats van terug: wat er nog uitbetaald moet worden, per maand en per aanbrenger. Zo weet u wat eraan komt.',
-        fr: "Les prévisions regardent en avant plutôt qu’en arrière : ce qu’il reste à payer, par mois et par apporteur. Vous savez ainsi ce qui vient." },
+        fr: "Les prévisions regardent en avant plutôt qu’en arrière : ce qu’il reste à payer, par mois et par apporteur. Vous savez ainsi ce qui vient." ,
+        website: { nl: 'En wat er nog binnenkomt, vóór het er is.', fr: 'Et ce qui va rentrer, avant qu’il n’arrive.', en: 'And what is still coming, before it arrives.' } },
 
       // ⚠️ Een EIGEN scène en geen langere zin bij 'vooruitzicht'. De exportbalk staat onder de grafieken;
       // alleen opnieuw opnemen zou hem stilzwijgend in beeld schuiven zonder dat de verteller hem noemt, en
@@ -936,7 +969,7 @@ export const FILMS = [
         nl: 'De restanten zijn lijnen uit afgelopen perioden die nooit op een borderel belandden. Ze komen niet meer vanzelf, en de kolom Waarom zegt wat eraan scheelt.',
         fr: "Les reliquats sont des lignes de périodes écoulées qui ne sont jamais arrivées sur un bordereau. Elles ne viendront plus d’elles-mêmes, et la colonne Motif indique ce qui cloche." },
 
-      { naam: 'fiche', kop: { nl: 'De fiche 281.50', fr: 'La fiche 281.50' },
+      { naam: 'fiche', kop: { nl: 'De fiche 281.50', fr: 'La fiche 281.50' , en: 'The 281.50 form' },
         doe: async (p) => { await p.goto(`${BASIS}/commissie/fiche-28150`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(2600); },
         merk: /Boekjaar|Exercice/i,
         // ⚠️ De STEM krijgt het getal voluit, de ONDERTITEL houdt "281.50". Dominique hoorde het in de
@@ -945,7 +978,8 @@ export const FILMS = [
         // bewust geen uitspraak.
         uitspraak: { nl: 'Eén keer per jaar maakt u de fiches tweehonderdeenentachtig vijftig op: per begunstigde wat er dat boekjaar werkelijk uitbetaald is. U drukt ze in één keer af.' },
         nl: 'Eén keer per jaar maakt u de fiches 281.50 op: per begunstigde wat er dat boekjaar werkelijk uitbetaald is. U drukt ze in één keer af.',
-        fr: "Une fois par an, vous établissez les fiches 281.50 : par bénéficiaire ce qui a réellement été payé cet exercice. Vous les imprimez en une fois." },
+        fr: "Une fois par an, vous établissez les fiches 281.50 : par bénéficiaire ce qui a réellement été payé cet exercice. Vous les imprimez en une fois." ,
+        website: { nl: 'De fiche 281.50 rolt eruit.', fr: 'La fiche 281.50 en sort directement.', en: 'The 281.50 tax form comes straight out.' } },
 
       { naam: 'ontbreekt', kop: { nl: 'Wat er nog moet gebeuren', fr: 'Ce qui doit encore être fait' },
         doe: async (p) => { await beweegNaar(p, p.getByText(/btw-nummer|numéro de TVA/i).first()); await p.waitForTimeout(1800); },
@@ -953,11 +987,12 @@ export const FILMS = [
         nl: 'Bovenaan waarschuwt het scherm wanneer begunstigden een btw-nummer of een volledig adres missen. Vul die aan vóór u de documenten opmaakt — achteraf is elk blad opnieuw.',
         fr: "En haut, l’écran avertit lorsque des bénéficiaires n’ont pas de numéro de TVA ou d’adresse complète. Complétez-les avant d’établir les documents — après coup, chaque feuille est à refaire." },
 
-      { naam: 'slot', kop: { nl: 'Tot slot', fr: 'Pour conclure' },
+      { naam: 'slot', kop: { nl: 'Tot slot', fr: 'Pour conclure' , en: 'In closing' },
         doe: async (p) => { await p.goto(`${BASIS}/commissie/borderel`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(2200); },
         merk: /Boekingen|Écritures/i,
         nl: 'Van het schema tot de fiche loopt alles door: u spreekt één keer af, en de rest volgt eruit. Wat blijft liggen, blijft zichtbaar.',
-        fr: "Du schéma à la fiche, tout s’enchaîne : vous convenez une fois, et le reste en découle. Ce qui reste en souffrance reste visible." },
+        fr: "Du schéma à la fiche, tout s’enchaîne : vous convenez une fois, et le reste en découle. Ce qui reste en souffrance reste visible." ,
+        website: { nl: 'Van schema tot fiche, zonder overtypen.', fr: 'Du schéma à la fiche, sans rien recopier.', en: 'From scheme to tax form, without retyping.' } },
     ],
   }],
 
@@ -1071,7 +1106,8 @@ export const FILMS = [
     pagina: 'getting-started/dashboard',
     titel: {
       nl: 'Het dashboard — uw kantoor in één scherm',
-      fr: 'Le tableau de bord — votre bureau en un écran',
+      fr: 'Le tableau de bord — votre bureau en un écran',      en: 'The dashboard — your working screen',
+
     },
     omschrijving: {
       nl: 'Het startscherm gelezen zoals het bedoeld is: het jaar bovenaan dat alles stuurt, de vier tegels '
@@ -1081,33 +1117,47 @@ export const FILMS = [
       fr: 'L’écran d’accueil lu comme il se doit : l’année en haut qui pilote tout, les quatre tuiles avec '
         + 'les nombres et les montants, les délais qui demandent une action aujourd’hui, les trois graphiques '
         + 'du volume réalisé, le pipeline de vos dossiers par phase, et l’écran où vous composez ces phases. '
-        + 'Ainsi que la raison pour laquelle votre tableau de bord diffère de celui d’un collègue.',
+        + 'Ainsi que la raison pour laquelle votre tableau de bord diffère de celui d’un collègue.',      en: 'Your files by group, what needs action today, and every file in the phase it is in.',
+
     },
-    uitvoeringen: { handleiding: { stem: true } },
+    uitvoeringen: {
+      handleiding: { stem: true },
+      // ⚠️ Een ANDER soort film, geen kortere. 30-45 s, geluidloos te begrijpen, en met EIGEN
+      //    teksten (`scene.website`) — niet de handleidingzinnen met scènes eruit. Zie films.mjs.
+      website: {
+        stem: false,
+        scenes: ['jaar', 'tegels', 'volume', 'pijplijn', 'slot'],
+        talen: [{ ui: 'nl-BE', tekst: 'nl' }, { ui: 'fr-BE', tekst: 'fr' }, { ui: 'nl-BE', tekst: 'en' }],
+      },
+    },
     scenes: [
-      { naam: 'jaar', kop: { nl: 'Het jaar stuurt alles', fr: 'L’année pilote tout' },
+      { naam: 'jaar', kop: { nl: 'Het jaar stuurt alles', fr: 'L’année pilote tout' , en: 'Your home screen' },
         doe: async (p) => { await p.goto(`${BASIS}/dashboard`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(3200); },
         merk: /Aktes|Actes/i,
         nl: 'Dit is uw startscherm. Bovenaan staat een jaartal met twee pijltjes, en dat is de belangrijkste knop van dit scherm: de tegels en de grafieken eronder gaan allemaal over dát jaar.',
-        fr: "Voici votre écran d’accueil. En haut figure une année avec deux flèches, et c’est le bouton le plus important de cet écran : les tuiles et les graphiques en dessous portent tous sur cette année-là." },
+        fr: "Voici votre écran d’accueil. En haut figure une année avec deux flèches, et c’est le bouton le plus important de cet écran : les tuiles et les graphiques en dessous portent tous sur cette année-là." ,
+        website: { nl: 'Alles van uw kantoor op één scherm.', fr: 'Tout votre bureau sur un seul écran.', en: 'Your whole office on one screen.' } },
 
-      { naam: 'tegels', kop: { nl: 'De vier tegels', fr: 'Les quatre tuiles' },
+      { naam: 'tegels', kop: { nl: 'De vier tegels', fr: 'Les quatre tuiles' , en: 'The four tiles' },
         doe: async (p) => { await beweegNaar(p, p.getByText(/In te dienen|À introduire/i).first()); await p.waitForTimeout(1700); },
         merk: /In te dienen|À introduire/i,
         nl: 'De vier tegels tellen uw dossiers per groep, met het bedrag erbij: wat er nog in te dienen is, wat ingediend is, wat er getekend werd, en de aktes.',
-        fr: "Les quatre tuiles comptent vos dossiers par groupe, montant compris : ce qui reste à introduire, ce qui est introduit, ce qui a été signé, et les actes." },
+        fr: "Les quatre tuiles comptent vos dossiers par groupe, montant compris : ce qui reste à introduire, ce qui est introduit, ce qui a été signé, et les actes." ,
+        website: { nl: 'Uw dossiers per groep, met het bedrag erbij.', fr: 'Vos dossiers par groupe, montant compris.', en: 'Your files by group, with the amount.' } },
 
-      { naam: 'termijnen', kop: { nl: 'Wat vandaag actie vraagt', fr: 'Ce qui demande une action' },
+      { naam: 'termijnen', kop: { nl: 'Wat vandaag actie vraagt', fr: 'Ce qui demande une action' , en: 'What needs action' },
         doe: async (p) => { await beweegNaar(p, p.getByText(/Termijn nadert|Délai proche/i).first()); await p.waitForTimeout(1800); },
         merk: /Termijn nadert|Délai proche/i,
         nl: 'Daaronder staan twee blokken die zeggen wat er nu ligt: termijn verstreken en termijn nadert. Ze kijken naar vier datums — de offerte tekenen, de akte verlijden, de opschortende voorwaarden, en het EPC-attest.',
-        fr: "En dessous, deux blocs disent ce qui est en jeu : délai dépassé et délai proche. Ils regardent quatre dates — signer l’offre, passer l’acte, les conditions suspensives, et le certificat PEB." },
+        fr: "En dessous, deux blocs disent ce qui est en jeu : délai dépassé et délai proche. Ils regardent quatre dates — signer l’offre, passer l’acte, les conditions suspensives, et le certificat PEB." ,
+        website: { nl: 'Wat vandaag actie vraagt, staat bovenaan.', fr: 'Ce qui demande une action aujourd’hui, en haut.', en: 'What needs action today sits at the top.' } },
 
-      { naam: 'volume', kop: { nl: 'Gerealiseerd volume', fr: 'Volume réalisé' },
+      { naam: 'volume', kop: { nl: 'Gerealiseerd volume', fr: 'Volume réalisé' , en: 'Realised volume' },
         doe: async (p) => { await beweegNaar(p, p.getByText(/Gerealiseerd volume per maand|Volume réalisé par mois/i).first()); await p.waitForTimeout(1800); },
         merk: /Gerealiseerd volume per maand|Volume réalisé par mois/i,
         nl: 'De eerste grafiek toont uw gerealiseerde volume per maand — dus kredieten die effectief doorgingen. Zo ziet u welke maanden dragen en welke achterblijven.',
-        fr: "Le premier graphique montre votre volume réalisé par mois — donc les crédits qui ont effectivement abouti. Vous voyez ainsi quels mois portent et lesquels sont à la traîne." },
+        fr: "Le premier graphique montre votre volume réalisé par mois — donc les crédits qui ont effectivement abouti. Vous voyez ainsi quels mois portent et lesquels sont à la traîne." ,
+        website: { nl: 'Uw gerealiseerd volume, maand per maand.', fr: 'Votre volume réalisé, mois par mois.', en: 'Your realised volume, month by month.' } },
 
       { naam: 'verdeling', kop: { nl: 'Per instelling en per collega', fr: 'Par institution et par collègue' },
         doe: async (p) => { await beweegNaar(p, p.getByText(/Volume per instelling|Volume par institution/i).first()); await p.waitForTimeout(1800); },
@@ -1121,11 +1171,12 @@ export const FILMS = [
         nl: 'Ziet u een groot stuk Geen eigenaar staan, dan is dat geen storing maar werk: er is bij die dossiers nog niemand aangeduid. Hetzelfde geldt voor Onbekend bij de instellingen.',
         fr: "Si vous voyez une grande part Sans responsable, ce n’est pas un dysfonctionnement mais du travail : personne n’a encore été désigné sur ces dossiers. Il en va de même pour Inconnu chez les organismes." },
 
-      { naam: 'pijplijn', kop: { nl: 'De pijplijn', fr: 'Le pipeline' },
+      { naam: 'pijplijn', kop: { nl: 'De pijplijn', fr: 'Le pipeline' , en: 'The pipeline' },
         doe: async (p) => { await beweegNaar(p, p.getByText(/Dossiers per fase|Dossiers par phase/i).first()); await p.waitForTimeout(1800); },
         merk: /Dossiers per fase|Dossiers par phase/i,
         nl: 'Onderaan staan uw dossiers gegroepeerd per fase, met per fase het aantal, het bedrag, en de statussen die eronder vallen. Klik op een fase en u ziet de dossiers erachter.',
-        fr: "En bas, vos dossiers sont regroupés par phase, avec par phase le nombre, le montant, et les statuts qui en relèvent. Cliquez sur une phase et vous voyez les dossiers derrière." },
+        fr: "En bas, vos dossiers sont regroupés par phase, avec par phase le nombre, le montant, et les statuts qui en relèvent. Cliquez sur une phase et vous voyez les dossiers derrière." ,
+        website: { nl: 'En elk dossier in de fase waar het staat.', fr: 'Et chaque dossier dans la phase où il se trouve.', en: 'And every file in the phase it is in.' } },
 
       { naam: 'fases', kop: { nl: 'De fases zijn van u', fr: 'Les phases sont les vôtres' },
         doe: async (p) => { await p.goto(`${BASIS}/beheer/dashboard-fases`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(2600); },
@@ -1139,11 +1190,12 @@ export const FILMS = [
         nl: 'Nog dit: uw dashboard toont wat u mag zien. Heeft een collega geen toegang tot bepaalde dossiers, dan tellen die ook niet mee in zijn cijfers. Twee mensen kunnen dus verschillende aantallen zien, en dat klopt.',
         fr: "Votre tableau de bord montre ce que vous avez le droit de voir. Si un collègue n’a pas accès à certains dossiers, ceux-ci ne comptent pas dans ses chiffres. Deux personnes peuvent donc voir des nombres différents, et c’est normal." },
 
-      { naam: 'slot', kop: { nl: 'Tot slot', fr: 'Pour conclure' },
+      { naam: 'slot', kop: { nl: 'Tot slot', fr: 'Pour conclure' , en: 'In closing' },
         doe: async (p) => { await p.waitForTimeout(1200); },
         merk: /Aktes|Actes/i,
         nl: 'Het dashboard is geen rapport maar een werkscherm: het zegt wat er vandaag ligt, en waar u het vindt.',
-        fr: "Le tableau de bord n’est pas un rapport mais un écran de travail : il dit ce qui est en jeu aujourd’hui, et où le trouver." },
+        fr: "Le tableau de bord n’est pas un rapport mais un écran de travail : il dit ce qui est en jeu aujourd’hui, et où le trouver." ,
+        website: { nl: 'Geen rapport. Een werkscherm.', fr: 'Pas un rapport. Un écran de travail.', en: 'Not a report. A working screen.' } },
     ],
   }],
 
@@ -1333,7 +1385,8 @@ export const FILMS = [
     pagina: 'beheer/klantportaal',
     titel: {
       nl: 'Het klantenportaal — hoe uw klant u ziet',
-      fr: 'Le portail client — comment votre client vous voit',
+      fr: 'Le portail client — comment votre client vous voit',      en: 'The client portal — how your client sees you',
+
     },
     omschrijving: {
       nl: 'Uw klant krijgt een link en belandt op een portaal. Dit is waar u bepaalt wat hij daar ziet: uw '
@@ -1343,11 +1396,21 @@ export const FILMS = [
       fr: 'Votre client reçoit un lien et arrive sur un portail. C’est ici que vous déterminez ce qu’il y '
         + 'voit : votre nom, votre couleur, votre logo et un texte d’accueil dans les deux langues. Chaque '
         + 'champ laissé vide reprend votre fiche d’entreprise — vous n’avez donc rien à remplir pour '
-        + 'démarrer. Et pour finir le résultat, tel que votre client le reçoit.',
+        + 'démarrer. Et pour finir le résultat, tel que votre client le reçoit.',      en: 'Your clients and brokers follow their own file, in your name and your colours.',
+
     },
-    uitvoeringen: { handleiding: { stem: true } },
+    uitvoeringen: {
+      handleiding: { stem: true },
+      // ⚠️ Een ANDER soort film, geen kortere. 30-45 s, geluidloos te begrijpen, en met EIGEN
+      //    teksten (`scene.website`) — niet de handleidingzinnen met scènes eruit. Zie films.mjs.
+      website: {
+        stem: false,
+        scenes: ['scherm', 'gezicht', 'welkomst', 'resultaat', 'slot'],
+        talen: [{ ui: 'nl-BE', tekst: 'nl' }, { ui: 'fr-BE', tekst: 'fr' }, { ui: 'nl-BE', tekst: 'en' }],
+      },
+    },
     scenes: [
-      { naam: 'scherm', kop: { nl: 'Uw portaal instellen', fr: 'Configurer votre portail' },
+      { naam: 'scherm', kop: { nl: 'Uw portaal instellen', fr: 'Configurer votre portail' , en: 'Your portal' },
         doe: async (p) => { await p.goto(`${BASIS}/beheer/klantportaal`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(2600); },
         // ⚠️ HERNOMEN 12/09/2026. Stond hier: /Naam zoals de klant hem ziet|…le client le voit/i. Dat label
         //    werd "Naam zoals BEZOEKERS hem zien" — het scherm dekt sinds die wijziging twee portalen (klant
@@ -1355,7 +1418,8 @@ export const FILMS = [
         //    is precies zoals het hoort: geen halve film met een verkeerd scherm erin.
         merk: /Naam zoals bezoekers hem zien|Nom tel que les visiteurs le voient/i,
         nl: 'Wanneer u een klant uitnodigt, krijgt hij een link naar zijn portaal. Op dit scherm bepaalt u wat hij daar te zien krijgt.',
-        fr: "Lorsque vous invitez un client, il reçoit un lien vers son portail. Sur cet écran, vous déterminez ce qu’il y verra." },
+        fr: "Lorsque vous invitez un client, il reçoit un lien vers son portail. Sur cet écran, vous déterminez ce qu’il y verra." ,
+        website: { nl: 'Uw klanten en aanbrengers volgen hun dossier zelf.', fr: 'Vos clients et apporteurs suivent leur dossier eux-mêmes.', en: 'Your clients and brokers follow their file themselves.' } },
 
       { naam: 'niets', kop: { nl: 'U hoeft niets in te vullen', fr: 'Rien à remplir' },
         doe: async (p) => { await beweegNaar(p, p.getByText(/bedrijfsfiche over|fiche d.entreprise/i).first()); await p.waitForTimeout(1800); },
@@ -1363,28 +1427,31 @@ export const FILMS = [
         nl: 'Om te beginnen hoeft u hier niets te doen. Elk veld dat u leeg laat, neemt de gegevens van uw bedrijfsfiche over — naam, logo, contactgegevens.',
         fr: "Pour démarrer, vous n’avez rien à faire ici. Chaque champ laissé vide reprend les données de votre fiche d’entreprise — nom, logo, coordonnées." },
 
-      { naam: 'gezicht', kop: { nl: 'Uw naam en uw kleur', fr: 'Votre nom et votre couleur' },
+      { naam: 'gezicht', kop: { nl: 'Uw naam en uw kleur', fr: 'Votre nom et votre couleur' , en: 'Your name, your colour' },
         doe: async (p) => { await beweegNaar(p, p.getByText(/Hoofdkleur|Couleur principale/i).first()); await p.waitForTimeout(1800); },
         merk: /Hoofdkleur|Couleur principale/i,
         nl: 'Wilt u het wél naar uw hand zetten: de naam zoals uw klant hem ziet, uw hoofdkleur, de kopbalk en uw logo. Uw klant herkent zo zijn makelaar, en niet een softwarepakket.',
-        fr: "Si vous souhaitez l’adapter : le nom tel que votre client le voit, votre couleur principale, le bandeau et votre logo. Votre client reconnaît ainsi son courtier, et non un logiciel." },
+        fr: "Si vous souhaitez l’adapter : le nom tel que votre client le voit, votre couleur principale, le bandeau et votre logo. Votre client reconnaît ainsi son courtier, et non un logiciel." ,
+        website: { nl: 'In uw naam en uw kleuren, niet in de onze.', fr: 'À votre nom et à vos couleurs, pas aux nôtres.', en: 'In your name and your colours, not ours.' } },
 
-      { naam: 'welkomst', kop: { nl: 'De welkomsttekst', fr: 'Le texte d’accueil' },
+      { naam: 'welkomst', kop: { nl: 'De welkomsttekst', fr: 'Le texte d’accueil' , en: 'The welcome text' },
         doe: async (p) => { await beweegNaar(p, p.getByText(/Welkomsttitel \(FR\)|Titre d.accueil \(FR\)/i).first()); await p.waitForTimeout(1800); },
         merk: /Welkomsttitel|Titre d.accueil/i,
         nl: 'De welkomsttitel en -tekst geeft u in beide talen op. Welke uw klant te zien krijgt, hangt af van zijn documenttaal — die staat op zijn relatiefiche.',
-        fr: "Le titre et le texte d’accueil se saisissent dans les deux langues. Celui que verra votre client dépend de sa langue de documents — indiquée sur sa fiche de relation." },
+        fr: "Le titre et le texte d’accueil se saisissent dans les deux langues. Celui que verra votre client dépend de sa langue de documents — indiquée sur sa fiche de relation." ,
+        website: { nl: 'Met uw eigen welkomsttekst, in beide talen.', fr: 'Avec votre propre texte d’accueil, dans les deux langues.', en: 'With your own welcome text, in both languages.' } },
 
-      { naam: 'resultaat', kop: { nl: 'Wat uw klant krijgt', fr: 'Ce que reçoit votre client' },
+      { naam: 'resultaat', kop: { nl: 'Wat uw klant krijgt', fr: 'Ce que reçoit votre client' , en: 'What your client gets' },
         doe: async (p) => {
           await p.goto(`${BASIS}/klantportaal/voorbeeld/${ID.dossierMetSchema}`);
           await p.waitForLoadState('networkidle'); await p.waitForTimeout(2600);
         },
         merk: /Welkom bij uw dossier|Bienvenue dans votre dossier/i,
         nl: 'En dit is het resultaat: uw naam bovenaan, uw kleuren, uw welkomsttekst — en daaronder de stukken die u van hem nodig heeft.',
-        fr: "Et voici le résultat : votre nom en haut, vos couleurs, votre texte d’accueil — et en dessous les pièces dont vous avez besoin de lui." },
+        fr: "Et voici le résultat : votre nom en haut, vos couleurs, votre texte d’accueil — et en dessous les pièces dont vous avez besoin de lui." ,
+        website: { nl: 'Dit is wat uw klant te zien krijgt.', fr: 'Voilà ce que votre client reçoit.', en: 'This is what your client sees.' } },
 
-      { naam: 'slot', kop: { nl: 'Tot slot', fr: 'Pour conclure' },
+      { naam: 'slot', kop: { nl: 'Tot slot', fr: 'Pour conclure' , en: 'In closing' },
         doe: async (p) => { await p.goto(`${BASIS}/beheer/klantportaal`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(2400); },
         // ⚠️ HERNOMEN 12/09/2026. Stond hier: /Naam zoals de klant hem ziet|…le client le voit/i. Dat label
         //    werd "Naam zoals BEZOEKERS hem zien" — het scherm dekt sinds die wijziging twee portalen (klant
@@ -1392,7 +1459,8 @@ export const FILMS = [
         //    is precies zoals het hoort: geen halve film met een verkeerd scherm erin.
         merk: /Naam zoals bezoekers hem zien|Nom tel que les visiteurs le voient/i,
         nl: 'Eén keer instellen, en elke klant die u daarna uitnodigt komt op úw portaal terecht.',
-        fr: "Une seule configuration, et chaque client que vous invitez ensuite arrive sur VOTRE portail." },
+        fr: "Une seule configuration, et chaque client que vous invitez ensuite arrive sur VOTRE portail." ,
+        website: { nl: 'Eén keer instellen. Daarna elke klant.', fr: 'Une seule configuration. Ensuite chaque client.', en: 'Set it up once. Then every client.' } },
     ],
   }],
 
@@ -1452,7 +1520,8 @@ export const FILMS = [
         merk: /Kenmerk aanbrenger|Référence apporteur/i,
         nl: 'Het kredietdossier is het hart van CreditSoft. Alles wat bij één aanvraag hoort, staat op één pagina bij elkaar.',
         en: 'The credit file is the heart of CreditSoft. Everything about one application sits together on a single page.',
-        fr: "Le dossier de crédit est le cœur de CreditSoft. Tout ce qui concerne une demande est rassemblé sur une seule page." },
+        fr: "Le dossier de crédit est le cœur de CreditSoft. Tout ce qui concerne une demande est rassemblé sur une seule page." ,
+        website: { nl: 'Al uw kredietdossiers op één lijst.', fr: 'Tous vos dossiers de crédit sur une seule liste.', en: 'All your credit files on one list.' } },
 
       { naam: 'kolommen', kop: { nl: 'De kolommen', fr: "Les colonnes", en: "The columns" },
         doe: async (p) => { await beweegNaar(p, p.locator('th').nth(3)); },
@@ -1476,14 +1545,16 @@ export const FILMS = [
         merk: /Kredietbedrag|Montant du crédit/i,
         nl: 'We openen een bestaand dossier.',
         en: 'Let us open an existing file.',
-        fr: "Ouvrons un dossier existant." },
+        fr: "Ouvrons un dossier existant." ,
+        website: { nl: 'Eén aanvraag, één pagina.', fr: 'Une demande, une page.', en: 'One application, one page.' } },
 
       { naam: 'gegevens', kop: { nl: 'De dossiergegevens', fr: "Les données du dossier", en: "The file details" },
         doe: async (p) => { await p.waitForTimeout(400); },
         merk: /Datum indiening|Date de dépôt/i,
         nl: 'Bovenaan staan de dossiergegevens: de status, het kredietbedrag, de instelling en de datums van indiening en ingang.',
         en: 'At the top are the file details: the status, the credit amount, the institution and the submission and start dates.',
-        fr: "En haut se trouvent les données du dossier : le statut, le montant du crédit, l'institution et les dates de dépôt et d'effet." },
+        fr: "En haut se trouvent les données du dossier : le statut, le montant du crédit, l'institution et les dates de dépôt et d'effet." ,
+        website: { nl: 'De aanvraag, de aanvragers, het pand.', fr: 'La demande, les demandeurs, le bien.', en: 'The application, the applicants, the property.' } },
 
       { naam: 'aanvragers', kop: { nl: 'De kredietaanvragers', fr: "Les demandeurs de crédit", en: "The credit applicants" },
         doe: async (p) => {
@@ -1513,7 +1584,8 @@ export const FILMS = [
         merk: /Ontvangen|Reçu/i,
         nl: 'Bij Gevraagd volgt u per stuk of het aangeleverd is en of het al beoordeeld werd.',
         en: 'Under Requested you track, item by item, what has been supplied and what has already been reviewed.',
-        fr: "Dans Demandés, vous suivez pièce par pièce ce qui a été fourni et ce qui a déjà été évalué." },
+        fr: "Dans Demandés, vous suivez pièce par pièce ce qui a été fourni et ce qui a déjà été évalué." ,
+        website: { nl: 'Met de documenten die erbij horen.', fr: 'Avec les documents qui s’y rattachent.', en: 'With the documents that belong to it.' } },
 
       // ⚠️ TWEE SCÈNES, en dat was eerst één. Drie klikken na elkaar met één zin erover gaf 8,1 seconden
       // stilte vóór die zin — de kijker zat naar drie handelingen te kijken waar niemand iets bij zei.
@@ -1558,7 +1630,8 @@ export const FILMS = [
         merk: /Kredietbedrag|Montant du crédit/i,
         nl: 'Eén dossier, één pagina. Wat uitbetaald is, blijft.',
         en: 'One file, one page. What has been paid out, stays.',
-        fr: "Un dossier, une page. Ce qui a été payé, reste." },
+        fr: "Un dossier, une page. Ce qui a été payé, reste." ,
+        website: { nl: 'Alles van één aanvraag, bij elkaar.', fr: 'Tout d’une demande, rassemblé.', en: 'Everything about one application, together.' } },
     ],
   }],
 ];

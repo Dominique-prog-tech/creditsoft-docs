@@ -162,9 +162,30 @@ if (opdracht === 'publiceer') {
   // Een publicatie duurt minuten (Bunny hercodeert), en in die tijd neemt iemand de volgende film op. Wie
   // dan als laatste schrijft, wist het werk van de ander. Op 01/09/2026 verdwenen zo twee verse regels.
   const geraakt = new Set();
-  const bewaar = () => {
+  // ⚠️⚠️ ENKEL DE SLEUTEL VAN NU, niet alles wat deze ronde ooit aanraakte — gerepareerd 12/09/2026.
+  //
+  // Hier stond `for (const k of geraakt)`, en `geraakt` is CUMULATIEF: bij de dertiende film schreef deze
+  // functie de rijen van film 1 tot 13 opnieuw, uit de kopie van bij het OPSTARTEN. Alles wat een ander
+  // proces intussen in zo'n rij zette, werd daarmee gewist — bij elke volgende save opnieuw.
+  //
+  // Gebeurd op 12/09/2026, terwijl deze publicatie liep. De drie films `kredietdossiers-basis-website-*`
+  // waren om 11:59 hernomen met nieuwe teksten (28-29 s), en de tabel bleef `lengte: 42.8` en `scenes: []`
+  // melden — de rij van 01/09, met een guid die naar de OUDE film wees. De mp4's op schijf waren nieuw; de
+  // tabel ontkende dat.
+  //
+  // ⚠️ Het opnieuw LEZEN alleen was niet genoeg, en dat is de subtiliteit. Die herlezing beschermt de
+  // sleutels die dit proces NOOIT aanraakt. Ze beschermt niet tegen het terugschrijven van je eigen
+  // verouderde kopie van een sleutel die je eerder wél aanraakte — en precies dat is wat een ronde van 34
+  // films 34 keer doet. Een merge die alleen naar de ANDER kijkt, mist zichzelf.
+  const bewaar = (sleutel) => {
     const opSchijf = existsSync(UITSLAG) ? JSON.parse(readFileSync(UITSLAG, 'utf8')) : {};
-    for (const k of geraakt) opSchijf[k] = uitslag[k];
+    // De verse rij van schijf is de waarheid over alles behalve wat WIJ net toevoegden: de guid en wat
+    // eraan hangt. Dus samenvoegen op veldniveau i.p.v. de rij vervangen.
+    const vers = opSchijf[sleutel] ?? {};
+    const onze = uitslag[sleutel] ?? {};
+    opSchijf[sleutel] = { ...vers, guid: onze.guid, vorigeGuid: onze.vorigeGuid,
+                          gepubliceerdOp: onze.gepubliceerdOp, gepubliceerdeHash: vers.hash ?? onze.gepubliceerdeHash,
+                          miniatuur: onze.miniatuur ?? vers.miniatuur };
     writeFileSync(UITSLAG, JSON.stringify(opSchijf, null, 2) + '\n');
   };
 
@@ -346,7 +367,7 @@ if (opdracht === 'publiceer') {
     f.gepubliceerdeHash = f.hash;
     f.embed = `https://iframe.mediadelivery.net/embed/${LIB}/${guid}`;
     geraakt.add(sleutel);
-    bewaar();
+    bewaar(sleutel);
     gedaan++;
 
     // ⚠️ ÉÉN GENERATIE RESPIJT, en dat is geen netheid maar een crawl-kwestie. Dominique wees erop op
@@ -379,7 +400,7 @@ if (opdracht === 'publiceer') {
       console.log(`   vorige versie ${oudeGuid} blijft nog één ronde staan (crawl-respijt)`);
     }
     geraakt.add(sleutel);
-    bewaar();
+    bewaar(sleutel);
   }
 
   console.log(`\n${'─'.repeat(74)}`);
