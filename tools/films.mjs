@@ -209,7 +209,16 @@ const CURSOR = `
 // wordt dat GETELD — de ronde meldt het op het eind, zodat het niet opnieuw jaren onopgemerkt blijft.
 // De richtduur uit §1: korter dan een minuut zegt te weinig, boven de drie minuten kijkt niemand hem uit.
 // Een RICHTlijn en geen grens — de ronde meldt het en weigert niets.
-const DUUR_MIN = 60, DUUR_MAX = 180;
+// ⚠️⚠️ DE NORM HANGT AF VAN DE UITVOERING. Hier stond één paar (60–180) voor alles, en dat is de
+//    HANDLEIDINGnorm uit §1. Een websitefilm hoort volgens §12.2 juist 30–45 s te duren — een andere kijker,
+//    een ander doel. Gevolg op 12/09/2026: de drie websitecuts van kredietdossiers-basis kwamen op 43–44 s
+//    uit, precies op hun eigen norm, en werden alle drie gemeld als "buiten de richtduur".
+//
+//    Dat is het soort melding dat je leert negeren, en dan mis je de keer dat ze klopt. De tabel in §12.2
+//    stond er al; de controle kende ze niet.
+//    ⚠️ De afleiding staat verderop, ná de declaratie van UITVOERING — die komt uit argv en bestaat hier
+//    nog niet. Eerst stond ze hier en dan is het "Cannot access before initialization".
+const DUUR_NORM = { handleiding: [60, 180], website: [30, 45] };
 const buitenDuur = [];
 const GAT_DREMPEL = 10;   // seconden stilte vóór een zin waarboven de ronde het meldt
 const langeGaten = [];
@@ -237,6 +246,7 @@ function kop(scene, taal) {
 // `kredietdossiers-basis-nl`, want de uitslagtabel én de MkDocs-hook verwijzen daarnaar. Een andere
 // uitvoering krijgt haar naam er wél in: `kredietdossiers-basis-website-nl`.
 const UITVOERING = (process.argv.find(a => a.startsWith('--uitvoering=')) ?? '').split('=')[1] ?? 'handleiding';
+const [DUUR_MIN, DUUR_MAX] = DUUR_NORM[UITVOERING] ?? DUUR_NORM.handleiding;
 // Beperk de ronde tot één taal: `--taal=fr` of `--taal=nl`. Leeg = alle talen van de uitvoering.
 const TAAL = (process.argv.find(a => a.startsWith('--taal=')) ?? '').split('=')[1];
 
@@ -807,6 +817,8 @@ for (const [naam, filmVol] of FILMS) {
     // op 183 s uit terwijl de Nederlandse op 153 stond: het Frans is stelselmatig langer, en dat is precies
     // de kant waar het overschot ontstaat. Melden, niet weigeren.
     if (lengte < DUUR_MIN || lengte > DUUR_MAX) buitenDuur.push(`${stam}-${kort}: ${lengte.toFixed(1)}s`);
+    // ⚠️ De melding verderop noemt de norm die ze GEBRUIKT heeft, niet een vaste tekst. Anders leest een
+    //    websitefilm van 44 s als "buiten 60–180" terwijl ze tegen 30–45 gemeten is.
     // ⚠️ Eén decimaal, geen afronding. Met `toFixed(0)` meldde hij "180s buiten de grens van 60–180" —
     // een zin die zichzelf tegenspreekt, want de echte lengte was 180,4. Wie zoiets leest, gelooft de
     // grendel niet meer.
@@ -844,7 +856,7 @@ if (buitenBeeld.length) {
 }
 
 if (buitenDuur.length) {
-  console.log(`\n◐ ${buitenDuur.length} film(s) buiten de richtduur van ${DUUR_MIN}–${DUUR_MAX} s (§1):`);
+  console.log(`\n◐ ${buitenDuur.length} film(s) buiten de richtduur van ${DUUR_MIN}–${DUUR_MAX} s voor uitvoering ${UITVOERING} (§1 / §12.2):`);
   buitenDuur.forEach(r => console.log(`   ${r}`));
   console.log('   Een richtlijn, geen grens — maar wél iets om bewust te beslissen in plaats van te laten gebeuren.');
 }
