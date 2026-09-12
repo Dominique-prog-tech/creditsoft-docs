@@ -918,10 +918,12 @@ export const FILMS = [
         doe: async (p) => {
           await klik(p, tabblad(p, /Per aanbrenger|Par apporteur/i));
           await p.waitForTimeout(1400);
-          await beweegNaar(p, p.getByText(/Openstaande transacties van|Transactions en attente de/i).first());
+          await beweegNaar(p, p.getByText(/Openstaande transacties in|Transactions en attente pour/i).first());
           await p.waitForTimeout(1600);
         },
-        merk: /Openstaande transacties van|Transactions en attente de/i,
+        // ⚠️ HERNOMEN 12/09/2026. Eén woord gewijzigd in de app: "transacties VAN" werd "transacties IN"
+        //    (en "en attente DE" → "en attente POUR"). Genoeg om de hele film te laten vallen.
+        merk: /Openstaande transacties in|Transactions en attente pour/i,
         nl: 'Op het tabblad Per aanbrenger ziet u wat er in een maand nog niet afgerekend is, en haalt u die lijnen op als Excel of CSV. Dat is de lijst waarmee u fouten terugvindt vóór u uitbetaalt.',
         fr: "Sous l’onglet Par apporteur, vous voyez ce qui n’est pas encore réglé pour un mois et vous récupérez ces lignes en Excel ou en CSV. C’est la liste qui vous permet de repérer les erreurs avant de payer." },
 
@@ -1347,7 +1349,11 @@ export const FILMS = [
     scenes: [
       { naam: 'scherm', kop: { nl: 'Uw portaal instellen', fr: 'Configurer votre portail' },
         doe: async (p) => { await p.goto(`${BASIS}/beheer/klantportaal`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(2600); },
-        merk: /Naam zoals de klant hem ziet|Nom tel que le client le voit/i,
+        // ⚠️ HERNOMEN 12/09/2026. Stond hier: /Naam zoals de klant hem ziet|…le client le voit/i. Dat label
+        //    werd "Naam zoals BEZOEKERS hem zien" — het scherm dekt sinds die wijziging twee portalen (klant
+        //    én makelaar) en heet nu Portaalvormgeving. De film viel daardoor op zijn EERSTE scène, en dat
+        //    is precies zoals het hoort: geen halve film met een verkeerd scherm erin.
+        merk: /Naam zoals bezoekers hem zien|Nom tel que les visiteurs le voient/i,
         nl: 'Wanneer u een klant uitnodigt, krijgt hij een link naar zijn portaal. Op dit scherm bepaalt u wat hij daar te zien krijgt.',
         fr: "Lorsque vous invitez un client, il reçoit un lien vers son portail. Sur cet écran, vous déterminez ce qu’il y verra." },
 
@@ -1380,7 +1386,11 @@ export const FILMS = [
 
       { naam: 'slot', kop: { nl: 'Tot slot', fr: 'Pour conclure' },
         doe: async (p) => { await p.goto(`${BASIS}/beheer/klantportaal`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(2400); },
-        merk: /Naam zoals de klant hem ziet|Nom tel que le client le voit/i,
+        // ⚠️ HERNOMEN 12/09/2026. Stond hier: /Naam zoals de klant hem ziet|…le client le voit/i. Dat label
+        //    werd "Naam zoals BEZOEKERS hem zien" — het scherm dekt sinds die wijziging twee portalen (klant
+        //    én makelaar) en heet nu Portaalvormgeving. De film viel daardoor op zijn EERSTE scène, en dat
+        //    is precies zoals het hoort: geen halve film met een verkeerd scherm erin.
+        merk: /Naam zoals bezoekers hem zien|Nom tel que les visiteurs le voient/i,
         nl: 'Eén keer instellen, en elke klant die u daarna uitnodigt komt op úw portaal terecht.',
         fr: "Une seule configuration, et chaque client que vous invitez ensuite arrive sur VOTRE portail." },
     ],
