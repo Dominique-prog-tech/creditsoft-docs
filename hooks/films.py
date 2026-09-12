@@ -287,21 +287,37 @@ def on_page_markdown(markdown: str, page, config, files):  # noqa: ARG001
     # volgorde is de publicatievolgorde: één herpublicatie van een teaser en de handleidingpagina draagt
     # stil een filmpje van 43 seconden. Het stond op 08/09 toevallig goed.
     #
-    # Het merkteken is `routes` (de website-routes waar de film hoort). GEMETEN, niet aangenomen: 28 films
-    # dragen het en dat zijn precies de 14 handleidingfilms x 2 talen; de 6 zonder zijn de website-films.
-    # ⚠️ Mijn eerste kandidaat was `embed` — die zit óók op 20 handleidingfilms en deugde dus niet.
+    # Het merkteken is `uitvoering`, en dat veld ZEGT wat het betekent.
+    #
+    # ⚠️⚠️ HIER STOND `routes`, EN DAT BRAK OP 12/09/2026. De nota erbij luidde: "GEMETEN, niet aangenomen:
+    # 28 films dragen het en dat zijn precies de 14 handleidingfilms x 2 talen; de 6 zonder zijn de
+    # website-films." Dat wás gemeten en het was wáár — maar `routes` betekent niet "dit is de
+    # handleidingfilm", het betekende "deze rij is door de generator geschreven". De zes website-rijen
+    # waren met de hand aangevuld en misten het daardoor.
+    #
+    # Toen die zes hun routes kregen — nodig, want zonder routes telde `verouderd.mjs` ze stil als actueel,
+    # inclusief de twee films die LIVE op de commerciële site staan — viel het toeval weg en claimden er
+    # drie dezelfde pagina. De build brak, luid en met de juiste reden. Dat is deze grendel die zijn werk
+    # deed; het merkteken eronder deugde niet.
+    #
+    # 🔨 De les staat al in dit bestand, één alinea hoger: "Mijn eerste kandidaat was `embed` — die zit óók
+    # op 20 handleidingfilms en deugde dus niet." Dezelfde toets — waar matcht dit óók? — hoorde op
+    # `routes` gelegd te worden. Een merkteken dat op een TOEVALLIGE eigenschap steunt, houdt precies
+    # zolang als dat toeval.
     kandidaten = [f for f in _films().values()
                   if f.get("pagina") == kaal and f.get("taal", "").split("-")[0] == taal]
     if len(kandidaten) > 1:
-        met_routes = [f for f in kandidaten if f.get("routes")]
-        if len(met_routes) != 1:
+        handleiding = [f for f in kandidaten if f.get("uitvoering") == "handleiding"]
+        if len(handleiding) != 1:
             # Geen stille keuze: liever een luide bouwfout dan de verkeerde film op een pagina.
-            namen = ", ".join(sorted(f"{f.get('film')} ({f.get('lengte')}s)" for f in kandidaten))
+            namen = ", ".join(sorted(
+                f"{f.get('film')} ({f.get('lengte')}s, uitvoering={f.get('uitvoering') or 'ONBEKEND'})"
+                for f in kandidaten))
             raise RuntimeError(
-                f"{pad}: {len(kandidaten)} films claimen deze pagina in het {taal} en `routes` wijst er "
-                f"geen aan als DE handleidingfilm — {namen}. Los dit op in films-uitslag.json in plaats "
-                f"van de keuze aan de bestandsvolgorde over te laten.")
-        kandidaten = met_routes
+                f"{pad}: {len(kandidaten)} films claimen deze pagina in het {taal} en er is er niet precies "
+                f"één met `uitvoering: handleiding` — {namen}. Los dit op in films-uitslag.json; de "
+                f"generator schrijft dit veld sinds 12/09/2026 zelf.")
+        kandidaten = handleiding
 
     for film in kandidaten:
         guid = film.get("guid")

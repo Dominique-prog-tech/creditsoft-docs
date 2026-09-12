@@ -738,6 +738,14 @@ for (const [naam, filmVol] of FILMS) {
     const sleutel = `${stam}-${kort}`;
     uitslag[sleutel] = {
       film: naam, taal, pagina: film.pagina, lengte: Number(lengte.toFixed(2)),
+      // ⚠️⚠️ WELKE UITVOERING DIT IS, met zoveel woorden. Dit veld kwam er op 12/09/2026 omdat
+      //    `hooks/films.py` het uit `routes` afleidde: de websiterijen droegen er toevallig geen, dus
+      //    "heeft routes" las als "is de handleidingfilm". Toen die zes rijen hun routes kregen — nodig,
+      //    want zonder routes telde verouderd.mjs ze als actueel — claimden er drie dezelfde pagina en
+      //    brak de docs-build. Een merkteken dat op een TOEVALLIGE eigenschap steunt, houdt precies zolang
+      //    als dat toeval. Hun eigen nota verwierp `embed` om dezelfde reden; `routes` had er naast moeten
+      //    staan.
+      uitvoering: UITVOERING,
       // ⚠️ De ROUTES die deze film toont, uit de scènes zelf. Eerst leidde verouderd.mjs ze af uit de
       // paginanaam, en dat was een gok die toevallig goed uitviel — een overzichtsfilm die acht schermen
       // toont, heeft géén pagina en zou dan nul routes hebben gehad.

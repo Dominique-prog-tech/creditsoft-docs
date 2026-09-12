@@ -73,7 +73,8 @@
       }
     ],
     "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/d6954167-a695-4638-ac6c-7042ee6542f5/thumbnail.jpg",
-    "gepubliceerdOp": "2026-09-01T04:07:22.444"
+    "gepubliceerdOp": "2026-09-01T04:07:22.444",
+    "uitvoering": "handleiding"
   },
   "kredietdossiers-basis-fr": {
     "film": "kredietdossiers-basis",
@@ -152,7 +153,8 @@
     "gepubliceerdOp": "2026-09-02T07:46:17.702",
     "gepubliceerdeHash": "1c86602fd2332484",
     "embed": "https://iframe.mediadelivery.net/embed/741183/1c2dc4a3-489d-4223-9e06-38d58b0aaa28",
-    "vorigeGuid": "f74d9cd0-877f-4175-bfbe-6fd5733dc1c2"
+    "vorigeGuid": "f74d9cd0-877f-4175-bfbe-6fd5733dc1c2",
+    "uitvoering": "handleiding"
   },
   "kredietdossiers-basis-website-nl": {
     "film": "kredietdossiers-basis",
@@ -201,7 +203,8 @@
     },
     "routes": [
       "/credit-files"
-    ]
+    ],
+    "uitvoering": "website"
   },
   "kredietdossiers-basis-website-fr": {
     "film": "kredietdossiers-basis",
@@ -250,7 +253,8 @@
     },
     "routes": [
       "/credit-files"
-    ]
+    ],
+    "uitvoering": "website"
   },
   "creditsoft-overzicht-website-nl": {
     "film": "creditsoft-overzicht",
@@ -321,7 +325,8 @@
       "/commissie/borderel",
       "/commissie/vooruitzicht",
       "/credit/financial-institutions"
-    ]
+    ],
+    "uitvoering": "website"
   },
   "creditsoft-overzicht-website-fr": {
     "film": "creditsoft-overzicht",
@@ -392,7 +397,8 @@
       "/commissie/borderel",
       "/commissie/vooruitzicht",
       "/credit/financial-institutions"
-    ]
+    ],
+    "uitvoering": "website"
   },
   "creditsoft-overzicht-website-en": {
     "film": "creditsoft-overzicht",
@@ -463,7 +469,8 @@
       "/commissie/borderel",
       "/commissie/vooruitzicht",
       "/credit/financial-institutions"
-    ]
+    ],
+    "uitvoering": "website"
   },
   "kredietdossiers-basis-website-en": {
     "film": "kredietdossiers-basis",
@@ -512,7 +519,8 @@
     },
     "routes": [
       "/credit-files"
-    ]
+    ],
+    "uitvoering": "website"
   },
   "aan-de-slag-nl": {
     "film": "aan-de-slag",
@@ -592,7 +600,8 @@
     "gepubliceerdOp": "2026-09-02T08:40:52.943",
     "gepubliceerdeHash": "f10ed6c6889cccbb",
     "embed": "https://iframe.mediadelivery.net/embed/741183/271481a3-2a01-4b62-b156-2a8ab749fdd1",
-    "vorigeGuid": "47764b3b-31b8-4d3f-b766-695c44a88810"
+    "vorigeGuid": "47764b3b-31b8-4d3f-b766-695c44a88810",
+    "uitvoering": "handleiding"
   },
   "aan-de-slag-fr": {
     "film": "aan-de-slag",
@@ -672,7 +681,8 @@
     "gepubliceerdOp": "2026-09-02T08:47:48.635",
     "gepubliceerdeHash": "55d9f58c9aa805b0",
     "embed": "https://iframe.mediadelivery.net/embed/741183/ff585f8d-62be-49ef-a23a-b78d10a7252e",
-    "vorigeGuid": "17eca87c-aaea-4421-9440-445ca0a000dc"
+    "vorigeGuid": "17eca87c-aaea-4421-9440-445ca0a000dc",
+    "uitvoering": "handleiding"
   },
   "relaties-nl": {
     "film": "relaties",
@@ -748,7 +758,8 @@
       }
     ],
     "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/47b4f410-8a9f-4205-8f6f-a954b74cb947/thumbnail.jpg",
-    "gepubliceerdOp": "2026-09-01T08:40:25.939"
+    "gepubliceerdOp": "2026-09-01T08:40:25.939",
+    "uitvoering": "handleiding"
   },
   "relaties-fr": {
     "film": "relaties",
@@ -827,7 +838,8 @@
     "gepubliceerdOp": "2026-09-02T07:49:16.603",
     "gepubliceerdeHash": "7cdbc00d43b77633",
     "embed": "https://iframe.mediadelivery.net/embed/741183/8bbb9015-92e5-4e09-bc8d-6d201f13f25c",
-    "vorigeGuid": "649ebedd-1202-4aa2-ba6c-fe000b478288"
+    "vorigeGuid": "649ebedd-1202-4aa2-ba6c-fe000b478288",
+    "uitvoering": "handleiding"
   },
   "leads-nl": {
     "film": "leads",
@@ -898,7 +910,8 @@
       }
     ],
     "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/542ee907-6e38-418b-b9c1-538c5e3088a6/thumbnail.jpg",
-    "gepubliceerdOp": "2026-09-01T09:28:04.277"
+    "gepubliceerdOp": "2026-09-01T09:28:04.277",
+    "uitvoering": "handleiding"
   },
   "leads-fr": {
     "film": "leads",
@@ -972,7 +985,8 @@
     "gepubliceerdOp": "2026-09-02T07:50:28.527",
     "gepubliceerdeHash": "f1ee7e577747fe4d",
     "embed": "https://iframe.mediadelivery.net/embed/741183/4e686132-bf30-4b40-84c2-9a9ecb2790cb",
-    "vorigeGuid": "06ca3fdb-5316-4493-96b1-7e2b9606b70a"
+    "vorigeGuid": "06ca3fdb-5316-4493-96b1-7e2b9606b70a",
+    "uitvoering": "handleiding"
   },
   "documentketen-nl": {
     "film": "documentketen",
@@ -1046,7 +1060,8 @@
       }
     ],
     "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/a2c2d8c4-c5a9-4c2e-8ecb-168a2e8b5a1f/thumbnail.jpg",
-    "gepubliceerdOp": "2026-09-01T11:11:53.233"
+    "gepubliceerdOp": "2026-09-01T11:11:53.233",
+    "uitvoering": "handleiding"
   },
   "documentketen-fr": {
     "film": "documentketen",
@@ -1123,7 +1138,8 @@
     "gepubliceerdOp": "2026-09-02T07:51:20.198",
     "gepubliceerdeHash": "28578f8e3ed8da88",
     "embed": "https://iframe.mediadelivery.net/embed/741183/81596510-689a-4389-b7db-22fb095c2b7c",
-    "vorigeGuid": "b4507d2e-b208-43a5-895f-9a62ea23a16b"
+    "vorigeGuid": "b4507d2e-b208-43a5-895f-9a62ea23a16b",
+    "uitvoering": "handleiding"
   },
   "journaal-nl": {
     "film": "journaal",
@@ -1196,7 +1212,8 @@
       }
     ],
     "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/c486cb13-0f21-4cb1-b997-7dcbb1401de7/thumbnail.jpg",
-    "gepubliceerdOp": "2026-09-01T12:18:35.433"
+    "gepubliceerdOp": "2026-09-01T12:18:35.433",
+    "uitvoering": "handleiding"
   },
   "journaal-fr": {
     "film": "journaal",
@@ -1272,7 +1289,8 @@
     "gepubliceerdOp": "2026-09-02T07:51:56.588",
     "gepubliceerdeHash": "61e6ae2bac10e591",
     "embed": "https://iframe.mediadelivery.net/embed/741183/e241272e-8d70-4996-944d-172393fecfcd",
-    "vorigeGuid": "ebb30908-ee1f-4b36-b0b1-7f1c3dddc88e"
+    "vorigeGuid": "ebb30908-ee1f-4b36-b0b1-7f1c3dddc88e",
+    "uitvoering": "handleiding"
   },
   "afspraken-nl": {
     "film": "afspraken",
@@ -1344,7 +1362,8 @@
       }
     ],
     "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/80c7a480-7f38-4a50-86b1-39b4706684c3/thumbnail.jpg",
-    "gepubliceerdOp": "2026-09-01T13:09:41.289"
+    "gepubliceerdOp": "2026-09-01T13:09:41.289",
+    "uitvoering": "handleiding"
   },
   "afspraken-fr": {
     "film": "afspraken",
@@ -1419,7 +1438,8 @@
     "gepubliceerdOp": "2026-09-02T07:52:23.296",
     "gepubliceerdeHash": "66c10fd7171d2a29",
     "embed": "https://iframe.mediadelivery.net/embed/741183/378b73be-6e6b-4e70-8409-01ffc3569451",
-    "vorigeGuid": "39315493-ca50-4186-a4a9-9ad296c81550"
+    "vorigeGuid": "39315493-ca50-4186-a4a9-9ad296c81550",
+    "uitvoering": "handleiding"
   },
   "commissie-instellen-nl": {
     "film": "commissie-instellen",
@@ -1487,7 +1507,8 @@
       }
     ],
     "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/c82bf1e0-f726-4c69-b351-dd1ebca3a164/thumbnail.jpg",
-    "gepubliceerdOp": "2026-09-01T14:15:45.43"
+    "gepubliceerdOp": "2026-09-01T14:15:45.43",
+    "uitvoering": "handleiding"
   },
   "commissie-instellen-fr": {
     "film": "commissie-instellen",
@@ -1558,7 +1579,8 @@
     "gepubliceerdOp": "2026-09-02T07:52:49.421",
     "gepubliceerdeHash": "15ba0bf469428dbe",
     "embed": "https://iframe.mediadelivery.net/embed/741183/cff58284-d157-46c3-b7b3-e661bfc25dca",
-    "vorigeGuid": "8f8a4d7c-76aa-4e04-b428-355b4fc13b8d"
+    "vorigeGuid": "8f8a4d7c-76aa-4e04-b428-355b4fc13b8d",
+    "uitvoering": "handleiding"
   },
   "commissie-uitbetalen-nl": {
     "film": "commissie-uitbetalen",
@@ -1635,7 +1657,8 @@
     "gepubliceerdOp": "2026-09-02T07:56:30.557",
     "gepubliceerdeHash": "d3d8a86bb6596c99",
     "embed": "https://iframe.mediadelivery.net/embed/741183/cb3c4e2d-7aae-434d-85bc-749c0b8b5ddf",
-    "vorigeGuid": "8f842a27-918d-4036-954b-7ed65082363b"
+    "vorigeGuid": "8f842a27-918d-4036-954b-7ed65082363b",
+    "uitvoering": "handleiding"
   },
   "commissie-uitbetalen-fr": {
     "film": "commissie-uitbetalen",
@@ -1712,7 +1735,8 @@
     "gepubliceerdOp": "2026-09-02T07:53:15.775",
     "gepubliceerdeHash": "886ec4ce8c2173a3",
     "embed": "https://iframe.mediadelivery.net/embed/741183/d7cdfc43-ce34-4de2-8528-db8b0611e6ee",
-    "vorigeGuid": "b7b96cba-ce0d-43f2-bb3c-2b54351588db"
+    "vorigeGuid": "b7b96cba-ce0d-43f2-bb3c-2b54351588db",
+    "uitvoering": "handleiding"
   },
   "verzekeringen-nl": {
     "film": "verzekeringen",
@@ -1779,7 +1803,8 @@
       }
     ],
     "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/b6514c73-c1f3-4a24-9c26-9a36c7919d65/thumbnail.jpg",
-    "gepubliceerdOp": "2026-09-01T15:13:12.43"
+    "gepubliceerdOp": "2026-09-01T15:13:12.43",
+    "uitvoering": "handleiding"
   },
   "verzekeringen-fr": {
     "film": "verzekeringen",
@@ -1849,7 +1874,8 @@
     "gepubliceerdOp": "2026-09-02T07:53:36.886",
     "gepubliceerdeHash": "b262375c68b85143",
     "embed": "https://iframe.mediadelivery.net/embed/741183/b5f68b71-cb92-45eb-bb87-f8bffa814e15",
-    "vorigeGuid": "c3d86486-b7d9-47c5-bd2a-51c3620729d7"
+    "vorigeGuid": "c3d86486-b7d9-47c5-bd2a-51c3620729d7",
+    "uitvoering": "handleiding"
   },
   "dashboard-nl": {
     "film": "dashboard",
@@ -1924,7 +1950,8 @@
     "gepubliceerdOp": "2026-09-02T08:53:58.342",
     "gepubliceerdeHash": "8e8f537dfb0114cb",
     "embed": "https://iframe.mediadelivery.net/embed/741183/de098985-9d79-46e5-836d-910f7067195a",
-    "vorigeGuid": "f3e1d5be-49e7-4d1c-a405-f3c940067728"
+    "vorigeGuid": "f3e1d5be-49e7-4d1c-a405-f3c940067728",
+    "uitvoering": "handleiding"
   },
   "dashboard-fr": {
     "film": "dashboard",
@@ -1999,7 +2026,8 @@
     "gepubliceerdOp": "2026-09-02T08:58:16.923",
     "gepubliceerdeHash": "8806c575759f29aa",
     "embed": "https://iframe.mediadelivery.net/embed/741183/34b3e48a-4b30-4f96-97c9-256c8b4b8d71",
-    "vorigeGuid": "e44175cb-32a1-49bf-8a29-8f9c2e1b5c39"
+    "vorigeGuid": "e44175cb-32a1-49bf-8a29-8f9c2e1b5c39",
+    "uitvoering": "handleiding"
   },
   "lijsten-en-rapporten-nl": {
     "film": "lijsten-en-rapporten",
@@ -2069,7 +2097,8 @@
     "gepubliceerdOp": "2026-09-02T09:01:40.642",
     "gepubliceerdeHash": "1bbe19b1f6cd139c",
     "embed": "https://iframe.mediadelivery.net/embed/741183/88fa37b5-999e-4b00-9930-46678c1c3be7",
-    "vorigeGuid": "70af70fd-d877-4875-8449-29b7ac58b2f8"
+    "vorigeGuid": "70af70fd-d877-4875-8449-29b7ac58b2f8",
+    "uitvoering": "handleiding"
   },
   "lijsten-en-rapporten-fr": {
     "film": "lijsten-en-rapporten",
@@ -2139,7 +2168,8 @@
     "gepubliceerdOp": "2026-09-02T07:54:29.433",
     "gepubliceerdeHash": "169070b87bb9e5a0",
     "embed": "https://iframe.mediadelivery.net/embed/741183/90c8fa31-26b7-4e3c-a00d-fae4344286d6",
-    "vorigeGuid": "0a49a424-3958-4be7-bcfd-151021ad3ac0"
+    "vorigeGuid": "0a49a424-3958-4be7-bcfd-151021ad3ac0",
+    "uitvoering": "handleiding"
   },
   "mailketen-nl": {
     "film": "mailketen",
@@ -2206,7 +2236,8 @@
     "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/183846f8-953c-44a2-a87f-936b102a75a9/thumbnail.jpg",
     "gepubliceerdOp": "2026-09-01T18:57:13.9",
     "gepubliceerdeHash": "5131f763f2a7647c",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/183846f8-953c-44a2-a87f-936b102a75a9"
+    "embed": "https://iframe.mediadelivery.net/embed/741183/183846f8-953c-44a2-a87f-936b102a75a9",
+    "uitvoering": "handleiding"
   },
   "mailketen-fr": {
     "film": "mailketen",
@@ -2274,7 +2305,8 @@
     "gepubliceerdOp": "2026-09-02T07:54:55.777",
     "gepubliceerdeHash": "d4b02a35b2541d51",
     "embed": "https://iframe.mediadelivery.net/embed/741183/cdf419e5-e26d-4df7-a4e4-67e5f045756d",
-    "vorigeGuid": "58a8de38-3eba-4998-a12e-106f6fd27b57"
+    "vorigeGuid": "58a8de38-3eba-4998-a12e-106f6fd27b57",
+    "uitvoering": "handleiding"
   },
   "klantportaal-nl": {
     "film": "klantportaal",
@@ -2328,7 +2360,8 @@
     "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/e1d54673-f008-4546-98db-852f009a7bcc/thumbnail.jpg",
     "gepubliceerdOp": "2026-09-01T19:07:25.38",
     "gepubliceerdeHash": "7befb05fd43224a4",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/e1d54673-f008-4546-98db-852f009a7bcc"
+    "embed": "https://iframe.mediadelivery.net/embed/741183/e1d54673-f008-4546-98db-852f009a7bcc",
+    "uitvoering": "handleiding"
   },
   "klantportaal-fr": {
     "film": "klantportaal",
@@ -2383,6 +2416,7 @@
     "gepubliceerdOp": "2026-09-02T07:55:31.935",
     "gepubliceerdeHash": "ed1360d46f46c79b",
     "embed": "https://iframe.mediadelivery.net/embed/741183/bae9323d-2017-43e2-b31c-d3d233ec6f77",
-    "vorigeGuid": "792e730f-36b1-4f3e-ae4c-2cc13b75c981"
+    "vorigeGuid": "792e730f-36b1-4f3e-ae4c-2cc13b75c981",
+    "uitvoering": "handleiding"
   }
 }
