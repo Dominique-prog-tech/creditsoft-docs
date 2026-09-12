@@ -1521,7 +1521,7 @@ export const FILMS = [
         nl: 'Het kredietdossier is het hart van CreditSoft. Alles wat bij één aanvraag hoort, staat op één pagina bij elkaar.',
         en: 'The credit file is the heart of CreditSoft. Everything about one application sits together on a single page.',
         fr: "Le dossier de crédit est le cœur de CreditSoft. Tout ce qui concerne une demande est rassemblé sur une seule page." ,
-        website: { nl: 'Al uw kredietdossiers op één lijst.', fr: 'Tous vos dossiers de crédit sur une seule liste.', en: 'All your credit files on one list.' } },
+        website: { nl: 'Al uw kredietdossiers op één lijst, met status en bedrag.', fr: 'Tous vos dossiers de crédit sur une liste, statut et montant compris.', en: 'All your credit files on one list, with status and amount.' } },
 
       { naam: 'kolommen', kop: { nl: 'De kolommen', fr: "Les colonnes", en: "The columns" },
         doe: async (p) => { await beweegNaar(p, p.locator('th').nth(3)); },
@@ -1546,7 +1546,7 @@ export const FILMS = [
         nl: 'We openen een bestaand dossier.',
         en: 'Let us open an existing file.',
         fr: "Ouvrons un dossier existant." ,
-        website: { nl: 'Eén aanvraag, één pagina.', fr: 'Une demande, une page.', en: 'One application, one page.' } },
+        website: { nl: 'Eén aanvraag, één pagina. Niets meer in mappen of mailboxen.', fr: 'Une demande, une page. Plus rien dans des dossiers ou des mails.', en: 'One application, one page. Nothing left in folders or mailboxes.' } },
 
       { naam: 'gegevens', kop: { nl: 'De dossiergegevens', fr: "Les données du dossier", en: "The file details" },
         doe: async (p) => { await p.waitForTimeout(400); },
@@ -1554,7 +1554,7 @@ export const FILMS = [
         nl: 'Bovenaan staan de dossiergegevens: de status, het kredietbedrag, de instelling en de datums van indiening en ingang.',
         en: 'At the top are the file details: the status, the credit amount, the institution and the submission and start dates.',
         fr: "En haut se trouvent les données du dossier : le statut, le montant du crédit, l'institution et les dates de dépôt et d'effet." ,
-        website: { nl: 'De aanvraag, de aanvragers, het pand.', fr: 'La demande, les demandeurs, le bien.', en: 'The application, the applicants, the property.' } },
+        website: { nl: 'De aanvraag, de aanvragers en het pand bij elkaar.', fr: 'La demande, les demandeurs et le bien, rassemblés.', en: 'The application, the applicants and the property, together.' } },
 
       { naam: 'aanvragers', kop: { nl: 'De kredietaanvragers', fr: "Les demandeurs de crédit", en: "The credit applicants" },
         doe: async (p) => {
@@ -1585,7 +1585,7 @@ export const FILMS = [
         nl: 'Bij Gevraagd volgt u per stuk of het aangeleverd is en of het al beoordeeld werd.',
         en: 'Under Requested you track, item by item, what has been supplied and what has already been reviewed.',
         fr: "Dans Demandés, vous suivez pièce par pièce ce qui a été fourni et ce qui a déjà été évalué." ,
-        website: { nl: 'Met de documenten die erbij horen.', fr: 'Avec les documents qui s’y rattachent.', en: 'With the documents that belong to it.' } },
+        website: { nl: 'Met de gevraagde documenten en hun toestand erbij.', fr: 'Avec les documents demandés et leur statut.', en: 'With the requested documents and their status.' } },
 
       // ⚠️ TWEE SCÈNES, en dat was eerst één. Drie klikken na elkaar met één zin erover gaf 8,1 seconden
       // stilte vóór die zin — de kijker zat naar drie handelingen te kijken waar niemand iets bij zei.
@@ -1631,7 +1631,7 @@ export const FILMS = [
         nl: 'Eén dossier, één pagina. Wat uitbetaald is, blijft.',
         en: 'One file, one page. What has been paid out, stays.',
         fr: "Un dossier, une page. Ce qui a été payé, reste." ,
-        website: { nl: 'Alles van één aanvraag, bij elkaar.', fr: 'Tout d’une demande, rassemblé.', en: 'Everything about one application, together.' } },
+        website: { nl: 'Alles wat bij één aanvraag hoort, op één plaats.', fr: 'Tout ce qui concerne une demande, au même endroit.', en: 'Everything about one application, in one place.' } },
     ],
   }],
 ];
