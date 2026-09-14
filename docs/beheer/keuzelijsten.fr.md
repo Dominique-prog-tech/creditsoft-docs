@@ -1,6 +1,6 @@
 # Listes de choix
 
-Les listes de choix sont les valeurs qui apparaissent partout dans les fiches, dans les champs à choisir : civilité, type d'entreprise, nationalité, statut de dossier, et des dizaines d'autres.
+Les listes de choix sont les valeurs qui apparaissent partout dans les fiches, dans les champs à choisir : civilité, type d'entreprise, nationalité, profession, état civil et toute une série d'autres.
 
 ![L'écran Listes de choix dans CreditSoft : en haut le sélecteur qui permet de choisir une liste — ici Nationalité — et en dessous un tableau avec les colonnes Ordre, Néerlandais et Français, avec en haut à droite les boutons Nouvel élément, Choisir les colonnes, Exporter et un champ de recherche.](../images/keuzelijsten-fr.png "La gestion des listes de choix, avec la liste des nationalités ouverte")
 
@@ -23,9 +23,9 @@ Renseignez toujours **les deux langues**. Si vous laissez le français vide, un 
     Si vous laissez **Ordre** à zéro, la liste est triée par ordre alphabétique — et ce **dans la langue de
     celui qui regarde**. Un collègue francophone voit donc la même liste rangée selon son propre alphabet.
 
-    Ne renseignez l'ordre que pour les listes qui décrivent un **parcours** plutôt qu'un ensemble : un statut de
-    contrat va de *Offre* à *Introduit* puis *Réalisé*, et l'afficher alphabétiquement le rend illisible. Pour
-    des listes comme la nationalité ou la profession, laissez simplement l'ordre à zéro.
+    Ne renseignez l'ordre que pour les listes qui décrivent un **parcours** plutôt qu'un ensemble — là où
+    *d'abord ceci, ensuite cela* a du sens. Pour des listes comme la nationalité, la profession ou le type
+    d'entreprise, laissez simplement l'ordre à zéro : l'ordre alphabétique est exactement ce que vous voulez.
 
 ## Supprimer un élément
 
@@ -39,4 +39,13 @@ Les éléments supprimés continuent d'exister en arrière-plan. C'est nécessai
 
 ## Quelles listes ne pouvez-vous pas modifier ?
 
-Certaines listes proviennent de manière centralisée d'ADM One — les pays et les codes postaux, par exemple. Elles ne figurent pas ici : elles sont identiques pour tous les clients et sont entretenues de façon centrale.
+Le sélecteur en haut reprend les listes qui sont **les vôtres** : les libellés avec lesquels vous décrivez vos
+relations et vos contacts. Deux groupes n'y figurent volontairement pas.
+
+**Les listes sur lesquelles le programme s'appuie.** Les statuts de dossier et de contrat, les types de dossier
+de crédit, le but de l'achat, la formule de taux : une logique y est attachée. CreditSoft en déduit des calculs
+et des écrans, et modifier le nom d'un statut ferait plus que changer un mot. Si vous souhaitez y apporter une
+modification, demandez-le à ADM-Concept — nous examinerons ensemble ce que cela touche.
+
+**Les listes identiques pour tout le monde.** Les pays et les codes postaux proviennent de manière centralisée
+d'ADM One et y sont entretenus, afin d'être les mêmes dans chaque logiciel.

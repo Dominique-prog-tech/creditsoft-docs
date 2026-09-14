@@ -1,6 +1,6 @@
 # Keuzelijsten
 
-De keuzelijsten zijn de waarden die overal in de fiches in de keuzevelden verschijnen: aanspreking, bedrijfstype, nationaliteit, dossierstatus, en tientallen andere.
+De keuzelijsten zijn de waarden die overal in de fiches in de keuzevelden verschijnen: aanspreking, bedrijfstype, nationaliteit, beroep, burgerlijke staat en nog een reeks andere.
 
 ![Het scherm Keuzelijsten in CreditSoft: bovenaan de kiezer waarmee u een lijst selecteert — hier Nationaliteit — en daaronder een tabel met de kolommen Volgorde, Nederlands en Frans, met rechtsboven de knoppen Nieuw item, Kolommen kiezen, Exporteren en een zoekveld.](../images/keuzelijsten.png "Het beheer van de keuzelijsten, met de nationaliteitenlijst geopend")
 
@@ -23,9 +23,9 @@ Vul altijd **beide talen** in. Laat u het Frans leeg, dan ziet een Franstalige c
     Laat u **Volgorde** op nul staan, dan sorteert de lijst alfabetisch — en wel **in de taal van wie kijkt**.
     Een Franstalige collega ziet dezelfde lijst dus op zijn eigen alfabet gerangschikt.
 
-    Zet de volgorde alleen bij lijsten die een **weg** beschrijven in plaats van een verzameling: een
-    contractstatus loopt van *Offerte* over *Ingediend* naar *Gerealiseerd*, en dat alfabetisch tonen maakt ze
-    onleesbaar. Voor lijsten als nationaliteit of beroep laat u de volgorde gewoon op nul.
+    Zet de volgorde alleen bij lijsten die een **weg** beschrijven in plaats van een verzameling — waar
+    *eerst dit, dan dat* betekenis heeft. Voor lijsten als nationaliteit, beroep of bedrijfstype laat u de
+    volgorde gewoon op nul; alfabetisch is daar precies wat u wil.
 
 ## Een item verwijderen
 
@@ -39,4 +39,13 @@ Verwijderde items blijven bestaan achter de schermen. Dat moet ook: dossiers die
 
 ## Welke lijsten kunt u niet aanpassen?
 
-Sommige lijsten komen centraal uit ADM One — landen en postcodes bijvoorbeeld. Die staan hier niet tussen: ze zijn voor alle klanten gelijk en worden centraal onderhouden.
+In de kiezer bovenaan staan de lijsten die **van u** zijn: de labels waarmee u uw relaties en contacten
+beschrijft. Twee groepen staan er bewust niet tussen.
+
+**De lijsten waar het programma op rekent.** De dossier- en contractstatussen, de soorten kredietdossier, het
+doel van de aankoop, de rentevormule: daar hangt logica aan. CreditSoft leidt er berekeningen en schermen uit
+af, en een statusnaam wijzigen zou meer doen dan een woord veranderen. Wilt u daar iets aan wijzigen, vraag
+het dan aan ADM-Concept — dan kijken we samen wat het raakt.
+
+**De lijsten die voor iedereen gelijk zijn.** Landen en postcodes komen centraal uit ADM One en worden daar
+onderhouden, zodat ze in elk pakket dezelfde zijn.
