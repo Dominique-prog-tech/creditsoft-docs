@@ -6,7 +6,7 @@ Alle commissieafspraken van uw kantoor op één scherm: wie krijgt hoeveel op we
 
 Klik in het menu links op **Commissieschema's**, onder *Lijsten*.
 
-![Het scherm Commissieschema's: bovenaan de filters Lopend en Alle vormen met het aantal gevonden schema's, daaronder de lijst met per regel de aanbrenger, de klant, het kenmerk van de aanbrenger, de ingangsdatum, de vorm als label — Gespreid, Gepland of Vast bedrag — de toestand Lopend en het commissiebedrag.](../images/commissieschemas.png "Alle commissieafspraken over de dossiers heen"){ .volle-breedte }
+![Het scherm Commissieschema's: bovenaan de filters Lopend en Alle vormen met het aantal gevonden schema's, daaronder de lijst met per regel de aanbrenger, de klant, het dossiernummer, de ingangsdatum, de vorm als label — Gespreid, Gepland of Vast bedrag — de toestand Lopend en het commissiebedrag.](../images/commissieschemas.png "Alle commissieafspraken over de dossiers heen"){ .volle-breedte }
 
 Elke regel is één afspraak tussen een **dossier** en een **aanbrenger**. Hangen er twee aanbrengers aan één dossier, dan staan er twee regels.
 
@@ -16,7 +16,7 @@ Elke regel is één afspraak tussen een **dossier** en een **aanbrenger**. Hange
 |---|---|
 | **Aanbrenger** | De aanbrenger die de commissie krijgt |
 | **Klant** | De aanvrager(s) van het dossier — daaraan herkent u het dossier het snelst |
-| **Kenmerk aanbrenger** | De eigen referentie van de aanbrenger, als hij daarmee werkt |
+| **Dossiernummer** | Het nummer van het dossier waar deze afspraak bij hoort |
 | **Ingangsdatum** | Vanaf wanneer de afspraak loopt |
 | **Vorm** | Hoe er uitbetaald wordt — zie hieronder |
 | **Toestand** | Lopend, stopgezet (met de datum) of nog niet geactiveerd |

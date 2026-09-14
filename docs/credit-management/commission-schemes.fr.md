@@ -6,7 +6,7 @@ Tous les accords de commission de votre bureau sur un seul écran : qui reçoit 
 
 Dans le menu de gauche, cliquez sur **Schémas de commission**, sous *Listes*.
 
-![L'écran Schémas de commission : en haut les filtres En cours et Toutes les formes avec le nombre de schémas trouvés, en dessous la liste indiquant par ligne l'apporteur, le client, la référence de l'apporteur, la date d'effet, la forme sous forme d'étiquette — Étalé, Planifié ou Montant fixe — le statut En cours et le montant de la commission.](../images/commissieschemas-fr.png "Tous les accords de commission, tous dossiers confondus"){ .volle-breedte }
+![L'écran Schémas de commission : en haut les filtres En cours et Toutes les formes avec le nombre de schémas trouvés, en dessous la liste indiquant par ligne l'apporteur, le client, la numéro de dossier, la date d'effet, la forme sous forme d'étiquette — Étalé, Planifié ou Montant fixe — le statut En cours et le montant de la commission.](../images/commissieschemas-fr.png "Tous les accords de commission, tous dossiers confondus"){ .volle-breedte }
 
 Chaque ligne correspond à un accord entre un **dossier** et un **apporteur**. Si deux apporteurs sont liés à un même dossier, deux lignes apparaissent.
 
@@ -16,7 +16,7 @@ Chaque ligne correspond à un accord entre un **dossier** et un **apporteur**. S
 |---|---|
 | **Apporteur** | L'apporteur qui perçoit la commission |
 | **Client** | Le ou les demandeurs du dossier — c'est ce qui permet de le reconnaître le plus vite |
-| **Référence apporteur** | La référence propre de l'apporteur, s'il en utilise une |
+| **Numéro de dossier** | Le numéro du dossier auquel cet accord se rapporte |
 | **Date d'effet** | À partir de quand l'accord court |
 | **Forme** | Le mode de paiement — voir ci-dessous |
 | **Statut** | En cours, arrêté (avec la date) ou pas encore activé |

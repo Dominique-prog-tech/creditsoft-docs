@@ -27,7 +27,7 @@ Daarnaast filtert u op **status**, **instelling**, **verantwoordelijke** en **sa
 
 | Kolom | Wat het toont |
 |---|---|
-| **Intern nr.** | Het dossiernummer |
+| **Dossiernr.** | Het nummer van het dossier |
 | **Aanvragers** | Alle aanvragers van het dossier, na elkaar |
 | **Status** | De dossierstatus, in de kleur die u aan die status gaf |
 | **Fase** | De fase waar die status onder valt |

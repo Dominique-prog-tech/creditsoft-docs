@@ -8,7 +8,7 @@ Klik in de zijbalk op **Krediet** en dan op **Kredietdossiers**.
 
 ## De lijst
 
-![De lijst met kredietdossiers: bovenaan de filters op status en aanbrenger met het aantal gevonden dossiers, daaronder de tabel met per dossier het kenmerk van de aanbrenger, de status, het kredietbedrag, de aanvrager, de aanbrenger, de instelling, de datum van indiening en de ingangsdatum.](../images/kredietdossiers-lijst.png "Alle kredietdossiers van het kantoor"){ .volle-breedte }
+![De lijst met kredietdossiers: bovenaan de filters op status en aanbrenger met het aantal gevonden dossiers, daaronder de tabel met per dossier het dossiernummer, de status, het kredietbedrag, de aanvrager, de aanbrenger, de instelling, de datum van indiening en de ingangsdatum.](../images/kredietdossiers-lijst.png "Alle kredietdossiers van het kantoor"){ .volle-breedte }
 
 Per dossier ziet u wie het aanvraagt, via wie het loopt en waar het staat:
 

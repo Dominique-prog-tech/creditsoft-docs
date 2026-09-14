@@ -27,7 +27,7 @@ Vous filtrez ensuite par **statut**, **institution**, **responsable** et **sales
 
 | Colonne | Ce qu'elle affiche |
 |---|---|
-| **N° interne** | Le numéro de dossier |
+| **N° de dossier** | Le numéro du dossier |
 | **Demandeurs** | Tous les demandeurs du dossier, à la suite |
 | **Statut** | Le statut du dossier, dans la couleur que vous lui avez donnée |
 | **Phase** | La phase dont relève ce statut |
