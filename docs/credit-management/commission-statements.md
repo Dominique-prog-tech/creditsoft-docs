@@ -60,11 +60,13 @@ Een periode kan maar één keer afgerekend worden. Probeert u het een tweede kee
 
 Dubbelklik een regel in de lijst.
 
-![De fiche van één borderel: bovenaan de algemene gegevens met nummer, documentdatum, aanbrenger en bedrag, daaronder de commissielijnen met periode, dossier, omschrijving en bedrag, en onderaan de knoppen Afdrukken, Mailen, Betaald markeren en Intrekken.](../images/borderel-fiche.png "Eén borderel, met zijn lijnen en de vier acties"){ .volle-breedte }
+![De fiche van één borderel: bovenaan de algemene gegevens met nummer, documentdatum, aanbrenger en bedrag, daaronder de commissielijnen met periode, dossier, omschrijving en bedrag, en onderaan de knoppen Afdrukken, Mailen, Betaald markeren en Terug naar de borderellen, met Intrekken apart aan de rechterkant.](../images/borderel-fiche.png "Eén borderel, met zijn lijnen en zijn acties"){ .volle-breedte }
 
 Bovenaan staan de **algemene gegevens**: nummer, documentdatum, aanbrenger en bedrag, en of het al **verstuurd** en **afgedrukt** werd. Daaronder staan de **commissielijnen**, met dezelfde gegevens als op de afdruk: aktedatum, uw kenmerk, klant, pand, kredietverstrekker, kredietbedrag en commissie, gesorteerd op aktedatum. Hangt een lijn niet aan een dossier, dan staat er **vrij**: dat is een vrije commissie, bijvoorbeeld een maandelijkse vergoeding of een correctie, en de omschrijving ervan leest u in de kolom Klant.
 
-Onderaan staan vier knoppen.
+Onderaan staat de knoppenbalk: **Afdrukken**, **Mailen**, **Betaald markeren** en **Terug naar de
+borderellen**. **Intrekken** staat apart, met ruimte ertussen en in het rood — het maakt een borderel
+ongedaan, en die knop hoort niet naast een knop die u elke dag gebruikt.
 
 ### Afdrukken
 

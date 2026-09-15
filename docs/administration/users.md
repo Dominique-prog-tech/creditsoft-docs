@@ -30,7 +30,7 @@ Klik bij een gebruiker op **Fiche**. Hier vult u de CreditSoft-gegevens in:
 !!! note "Naam, e-mail en functie"
     Die worden door ADM One beheerd en kunt u hier niet wijzigen.
 
-Klik op **Opslaan**.
+Klik op **Bewaren**.
 
 ## Wachtwoord resetten
 

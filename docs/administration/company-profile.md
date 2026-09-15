@@ -1,6 +1,6 @@
 # Bedrijfsfiche
 
-De bedrijfsfiche bevat de gegevens van uw eigen kantoor — die gebruikt worden op documenten en bij het versturen van mail. U bewerkt ze rechtstreeks en klikt onderaan op **Opslaan**.
+De bedrijfsfiche bevat de gegevens van uw eigen kantoor — die gebruikt worden op documenten en bij het versturen van mail. U bewerkt ze rechtstreeks en klikt onderaan op **Bewaren**.
 
 !!! note "De naam"
     De **naam** van uw kantoor wordt door ADM One beheerd en kan hier niet gewijzigd worden.
@@ -36,8 +36,8 @@ Vul uw **BTW / ondernemingsnummer** in en klik op **Ophalen**. De adresgegevens 
     zoeken. Kiest u een postcode, dan wordt de **gemeente mee ingevuld**. Maakt u de gemeente leeg — met het
     kruisje of met **Backspace** — dan wordt de postcode mee leeggemaakt.
 
-## Opslaan
+## Bewaren
 
-Klik onderaan op **Opslaan** — die knop blijft in beeld terwijl u door het scherm scrolt. Vult u een e-mailadres in, dan moet dat een geldige vorm hebben. Het
+Klik onderaan op **Bewaren** — die knop blijft in beeld terwijl u door het scherm scrolt. Vult u een e-mailadres in, dan moet dat een geldige vorm hebben. Het
 **telefoonnummer wordt opgemaakt** in de officiële notatie: typt u `09/3724829`, dan staat er na het bewaren
 `09 372 48 29`.

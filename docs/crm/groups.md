@@ -19,7 +19,7 @@ De tabel toont per groep de **naam**. Meer is er niet: een groep is een etiket, 
 
 ## Een groep toevoegen of bewerken
 
-Een groep heeft enkel een **naam**. Vul die in en klik op **Opslaan**. Verwijderen doet u in hetzelfde venster.
+Een groep heeft enkel een **naam**. Vul die in en klik op **Bewaren**. Verwijderen doet u in hetzelfde venster.
 
 ## Een aanbrenger in een groep zetten
 

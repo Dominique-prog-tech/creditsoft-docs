@@ -30,12 +30,12 @@ De tabel toont per verzendadres de **verzendnaam**, het **e-mailadres** en of he
 
 Een verzendadres heeft twee velden, allebei **verplicht** (aangeduid met een rood sterretje):
 
-![Het venster Verzendadres bewerken met de twee verplichte velden E-mailadres en Verzendnaam, elk met een rood sterretje, en daaronder een oranje melding dat het domein nog niet geregistreerd is bij ADM — het adres mag bewaard worden, maar de aflevering kan later stilvallen. Onderaan de knoppen Opslaan, Annuleren en Verwijderen.](../images/verzendadressen-bewerken.png "Een verzendadres bewerken, met de domeincontrole onder de velden")
+![Het venster Verzendadres bewerken met de twee verplichte velden E-mailadres en Verzendnaam, elk met een rood sterretje, en daaronder een oranje melding dat het domein nog niet geregistreerd is bij ADM — het adres mag bewaard worden, maar de aflevering kan later stilvallen. Onderaan de knoppen Bewaren, Annuleren en Verwijderen.](../images/verzendadressen-bewerken.png "Een verzendadres bewerken, met de domeincontrole onder de velden")
 
 - **E-mailadres** — het adres dat als afzender verschijnt, bijvoorbeeld `info@uwkantoor.be`.
 - **Verzendnaam** — de naam die de ontvanger als afzender te zien krijgt, bijvoorbeeld *Makelaarskantoor Voorbeeld*.
 
-Vul de velden in en klik op **Opslaan**. Verwijderen doet u in hetzelfde bewerkscherm.
+Vul de velden in en klik op **Bewaren**. Verwijderen doet u in hetzelfde bewerkscherm.
 
 ## Uw eigen domein gebruiken
 

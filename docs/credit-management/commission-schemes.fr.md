@@ -28,7 +28,8 @@ Chaque ligne correspond à un accord entre un **dossier** et un **apporteur**. S
 
 - **Étalé** — la commission est répartie sur un nombre de mois, éventuellement avec un pourcentage versé dès le départ.
 - **Planifié** — vous fixez vous-même les échéances : quel pourcentage à quel mois.
-- **Montant fixe** — un seul montant, une seule fois.
+- **Montant fixe** — le montant total est payé en une seule fois à la date de début. Le montant lui-même
+  est la **commission totale** que vous saisissez en haut ; il n'y a pas de champ distinct.
 
 ## Les statuts
 

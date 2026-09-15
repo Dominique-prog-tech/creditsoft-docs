@@ -72,7 +72,7 @@ Een relatie is ofwel een **particulier** ofwel een **bedrijf**. Dat kiest u bove
 **Nieuw** en een dubbelklik openen allebei de **fiche als een volledige pagina**. Bovenaan staat een
 terugkeerknop naar de lijst, met daarnaast de soort en de naam.
 
-![De fiche van particulier Alain Adriaenssens over de volle pagina: het tabblad Algemeen met type, naam, voornaam, telefoon, gsm, documenttaal en het hoofdadres links, en rechts het interne nummer, de aanspreking, e-mail en website, daaronder het brede blok Opmerkingen en een balk met de knoppen Opslaan, Annuleren en Verwijderen.](../images/relaties-fiche.png "De volledige fiche van een relatie, met de algemene gegevens en de opmerkingen"){ .volle-breedte }
+![De fiche van particulier Alain Adriaenssens over de volle pagina: het tabblad Algemeen met type, naam, voornaam, telefoon, gsm, documenttaal en het hoofdadres links, en rechts het interne nummer, de aanspreking, e-mail en website, daaronder het brede blok Opmerkingen en een balk met de knoppen Bewaren, Annuleren en Verwijderen.](../images/relaties-fiche.png "De volledige fiche van een relatie, met de algemene gegevens en de opmerkingen"){ .volle-breedte }
 
 De gegevens van de relatie staan op **twee tabbladen**, met daarnaast de tabbladen van het
 [journaal](../journaal/overzicht.md). Elk van de twee sluit af met een blok **Opmerkingen** — het is telkens
@@ -148,10 +148,10 @@ net als [op een kredietdossier](../credit-management/credit-files.md#gevraagde-d
 toch niet, dan haalt **Verwijderen** het van de lijst — het verhuist naar de
 [prullenbak](../administration/recycle-bin.md) en is niet definitief weg.
 
-## Opslaan
+## Bewaren
 
 De knoppenbalk onderaan blijft in beeld terwijl u door de fiche scrolt. De knoppen staan rechts:
-**Opslaan**, **Annuleren** en **Nieuw kredietdossier**, met **Verwijderen** op afstand aan het einde —
+**Bewaren**, **Nieuw kredietdossier** en **Annuleren**, met **Verwijderen** op afstand aan het einde —
 die staat er los van, want u klikt hem zelden en per ongeluk nooit graag.
 
 Bij het opslaan worden **ontbrekende verplichte velden** en een **ongeldig e-mailadres** gemeld. Het

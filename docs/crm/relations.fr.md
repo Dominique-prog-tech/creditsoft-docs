@@ -153,7 +153,7 @@ vous ne demandez pas une pièce, **Supprimer** la retire de la liste — elle pa
 ## Enregistrer
 
 La barre de boutons du bas reste visible pendant que vous faites défiler la fiche. Les boutons se trouvent à
-droite : **Enregistrer**, **Annuler** et **Nouveau dossier de crédit**, avec **Supprimer** à distance, tout
+droite : **Enregistrer**, **Nouveau dossier de crédit** et **Annuler**, avec **Supprimer** à distance, tout
 au bout — il est mis à l'écart, car vous l'utilisez rarement et jamais volontiers par erreur.
 
 À l'enregistrement, les **champs obligatoires manquants** et une **adresse e-mail invalide** sont signalés.

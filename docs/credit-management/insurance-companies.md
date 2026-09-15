@@ -33,7 +33,7 @@ naar de lijst om ze te raadplegen. Lade en tabbladen tonen hetzelfde en werken o
 **Nieuw** en een dubbelklik openen allebei de **fiche als een volledige pagina**. Bovenaan staat een
 terugkeerknop naar de lijst, met daarnaast de naam van de maatschappij.
 
-![De fiche van verzekeraar AXA over de volle pagina: het blok Algemene informatie met naam, adres Zuidlaan 47 in 2800 Mechelen, land België, telefoon, e-mail en website, het instellingsnummer VZ8278 en de documenttaal op Nederlands, daaronder het brede blok Opmerkingen en een balk met de knoppen Opslaan, Annuleren en Verwijderen.](../images/verzekeraars-fiche.png "De volledige fiche van een verzekeraar, met de algemene gegevens en de opmerkingen"){ .volle-breedte }
+![De fiche van verzekeraar AXA over de volle pagina: het blok Algemene informatie met naam, adres Zuidlaan 47 in 2800 Mechelen, land België, telefoon, e-mail en website, het instellingsnummer VZ8278 en de documenttaal op Nederlands, daaronder het brede blok Opmerkingen en een balk met de knoppen Bewaren, Annuleren en Verwijderen.](../images/verzekeraars-fiche.png "De volledige fiche van een verzekeraar, met de algemene gegevens en de opmerkingen"){ .volle-breedte }
 
 De fiche bestaat uit twee blokken, met onderaan een knoppenbalk die in beeld blijft.
 
@@ -58,11 +58,11 @@ De fiche bestaat uit twee blokken, met onderaan een knoppenbalk die in beeld bli
 Onderaan staat een breed veld **Opmerkingen** over de volle breedte van de fiche, voor vrije notities over
 deze maatschappij.
 
-## Opslaan
+## Bewaren
 
 De knoppenbalk onderaan blijft in beeld terwijl u door de fiche scrolt:
 
-- **Opslaan** — bewaart de verzekeraar.
+- **Bewaren** — bewaart de verzekeraar.
 - **Annuleren** — keert terug naar de lijst zonder te bewaren.
 - **Verwijderen** — archiveert de verzekeraar (rechts in de balk).
 

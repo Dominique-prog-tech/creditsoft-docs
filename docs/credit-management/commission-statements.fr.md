@@ -60,11 +60,13 @@ Une période ne peut être décomptée qu'une seule fois. Si vous essayez une de
 
 Double-cliquez une ligne dans la liste.
 
-![La fiche d'un bordereau : en haut les données générales avec le numéro, la date du document, l'apporteur et le montant, en dessous les lignes de commission avec la période, le dossier, la description et le montant, et en bas les boutons Imprimer, Envoyer, Marquer payé et Retirer.](../images/borderel-fiche-fr.png "Un bordereau, avec ses lignes et les quatre actions"){ .volle-breedte }
+![La fiche d'un bordereau : en haut les données générales avec le numéro, la date du document, l'apporteur et le montant, en dessous les lignes de commission avec la période, le dossier, la description et le montant, et en bas les boutons Imprimer, Envoyer, Marquer payé et Retour aux bordereaux, avec Retirer à l'écart sur la droite.](../images/borderel-fiche-fr.png "Un bordereau, avec ses lignes et ses actions"){ .volle-breedte }
 
 En haut figurent les **données générales** : numéro, date du document, apporteur et montant, ainsi que la date d'**envoi** et d'**impression**. En dessous se trouvent les **lignes de commission**, avec les mêmes données que sur l'impression : date d'acte, votre référence, client, bien, prêteur, montant du crédit et commission, triées par date d'acte. Si une ligne n'est rattachée à aucun dossier, la mention **libre** apparaît : il s'agit d'une commission libre, par exemple une indemnité mensuelle ou une correction, et sa description figure dans la colonne Client.
 
-Quatre boutons figurent en bas.
+En bas se trouve la barre de boutons : **Imprimer**, **Envoyer**, **Marquer payé** et **Retour aux
+bordereaux**. **Retirer** est à l'écart, avec un espace et en rouge — ce bouton annule un bordereau, et
+il n'a pas sa place à côté d'un bouton que vous utilisez tous les jours.
 
 ### Imprimer
 

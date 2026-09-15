@@ -34,7 +34,7 @@ naar de lijst om ze te raadplegen. Lade en tabbladen tonen hetzelfde en werken o
 **Nieuw** en een dubbelklik openen allebei de **fiche als een volledige pagina**. Bovenaan staat een
 terugkeerknop naar de lijst, met daarnaast het type en de naam.
 
-![De fiche van makelaarskantoor Baken Immo Aalst over de volle pagina: het blok Algemeen met type, naam, adres Beukenlaan 50 in 1000 Brussel, telefoon en e-mail, het btw-nummer met de knop Ophalen en de documenttaal op Frans, daaronder het blok Facturatie en het brede blok Opmerkingen, met onderaan de knoppen Opslaan, Annuleren en Verwijderen.](../images/professionals-fiche.png "De volledige fiche van een professional, met de algemene gegevens, de facturatiecontactgegevens en de opmerkingen"){ .volle-breedte }
+![De fiche van makelaarskantoor Baken Immo Aalst over de volle pagina: het blok Algemeen met type, naam, adres Beukenlaan 50 in 1000 Brussel, telefoon en e-mail, het btw-nummer met de knop Ophalen en de documenttaal op Frans, daaronder het blok Facturatie en het brede blok Opmerkingen, met onderaan de knoppen Bewaren, Annuleren en Verwijderen.](../images/professionals-fiche.png "De volledige fiche van een professional, met de algemene gegevens, de facturatiecontactgegevens en de opmerkingen"){ .volle-breedte }
 
 De fiche bestaat uit drie blokken, met onderaan een knoppenbalk die in beeld blijft.
 
@@ -68,11 +68,11 @@ Een apart **facturatiecontact** en **facturatie-e-mailadres**, bij het adres uit
 Onderaan staat een breed veld **Opmerkingen** over de volle breedte van de fiche, voor vrije notities over
 deze partij.
 
-## Opslaan
+## Bewaren
 
 De knoppenbalk onderaan blijft in beeld terwijl u door de fiche scrolt:
 
-- **Opslaan** — bewaart de professional.
+- **Bewaren** — bewaart de professional.
 - **Annuleren** — keert terug naar de lijst zonder te bewaren.
 - **Verwijderen** — archiveert de professional (rechts in de balk).
 

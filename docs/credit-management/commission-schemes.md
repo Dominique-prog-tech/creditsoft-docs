@@ -28,7 +28,8 @@ Elke regel is één afspraak tussen een **dossier** en een **aanbrenger**. Hange
 
 - **Gespreid** — de commissie wordt over een aantal maanden verdeeld, eventueel met een percentage dat meteen bij de start wordt uitbetaald.
 - **Gepland** — u bepaalt zelf de termijnen: in welke maand welk percentage.
-- **Vast bedrag** — één bedrag, één keer.
+- **Vast bedrag** — het volledige bedrag wordt in één keer uitbetaald op de startdatum. Het bedrag zelf
+  is de **totale commissie** die u bovenaan invult; er is geen apart veld voor.
 
 ## De toestanden
 

@@ -49,6 +49,14 @@ Onderaan het scherm staan twee knoppen die u naar uw accountinstellingen brengen
 Dat blok blijft staan, ook wanneer er nog geen medewerkersfiche aan uw account hangt — uw wachtwoord en uw
 tweestapsverificatie horen immers bij uw account en niet bij uw fiche.
 
+## Bewaren
+
+Onderaan rechts staan **Bewaren** en **Annuleren**. Annuleren brengt u terug naar het dashboard zonder uw
+wijzigingen te bewaren.
+
+Hangt er nog geen medewerkersfiche aan uw account, dan staat daar alleen **Annuleren**: er valt dan niets te
+bewaren, maar u kan het scherm wel verlaten.
+
 ## Verwant
 
 - [Uw voorkeuren](voorkeuren.md) — taal, kleuren en grootte van de weergave

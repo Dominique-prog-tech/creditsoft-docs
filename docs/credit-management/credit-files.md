@@ -49,7 +49,7 @@ Met **Nieuw dossier** bovenaan de lijst maakt u een leeg dossier aan. Welke stat
 
 ## Het dossier
 
-![Een geopend kredietdossier: bovenaan de kopkaart met status, intern nummer, eigenaar en sales als keuzelijst, de financiële instelling, de aanbrenger, het kredietbedrag met het vinkje inhouden ernaast en de datum akte, met rechts de knoppen Opslaan, Annuleren, Afdruk overzicht en Verwijderen. Daaronder links de datums, het type dossier, de schattingswaarde en de quotiteit met de vinkjes Weergeven in dashboard en Getekend aanbod verzonden en het veld Interne opmerkingen; rechts de contracten en onderaan de tabbladen Partijen, Opmerkingen en Gevraagd met de teller 4/4.](../images/kredietdossier-fiche.png "Het kredietdossier: alles op één pagina"){ .volle-breedte }
+![Een geopend kredietdossier: bovenaan de kopkaart met status, intern nummer, eigenaar en sales als keuzelijst, de financiële instelling, de aanbrenger, het kredietbedrag met het vinkje inhouden ernaast en de datum akte, met rechts de knoppen Bewaren, Annuleren, Afdruk overzicht en Verwijderen. Daaronder links de datums, het type dossier, de schattingswaarde en de quotiteit met de vinkjes Weergeven in dashboard en Getekend aanbod verzonden en het veld Interne opmerkingen; rechts de contracten en onderaan de tabbladen Partijen, Opmerkingen en Gevraagd met de teller 4/4.](../images/kredietdossier-fiche.png "Het kredietdossier: alles op één pagina"){ .volle-breedte }
 
 Het dossier is één pagina. Bovenaan staat het kernblok met de gegevens die u het vaakst nodig hebt; daaronder staan links de datums en het pand, rechts de contracten. Onderaan rechts staan **Partijen**, **Opmerkingen** en **Gevraagd** naast elkaar als tabbladen — drie lijsten die dezelfde plaats delen, zodat u niet hoeft te scrollen om ze alle drie te bereiken.
 
@@ -126,6 +126,10 @@ Boven de lijst staat de knop **Toevoegen**. Daarmee maakt u een nieuw schema voo
 Een nieuw schema staat eerst op *nog niet actief*: er is nog niets geboekt. Pas wanneer u het activeert, zet CreditSoft de maandbedragen klaar.
 
 ![De fiche van een commissieschema: bovenaan de sectie Algemene gegevens met de aanbrenger, de totale commissie en de startdatum, daaronder de keuze van de uitbetaling tussen gespreid, geplande betalingen en een vast bedrag, en een veld voor een opmerking; onderaan de sectie Geplande betalingen met per betaling de maand en het percentage, een knop om een termijn toe te voegen en de regel Samen met het totaal van de percentages.](../images/commissieschema-fiche.png "Een commissieschema met geplande betalingen"){ .volle-breedte }
+
+Bovenaan de fiche staat naast de naam van het dossier of de aanbrenger in welke toestand het schema is:
+**Actief**, **Stopgezet** (met de datum) of **Nog niet geactiveerd**. Zo weet u meteen of dit schema
+vandaag nog geld oplevert.
 
 Naast **Toevoegen** staat een zoekveld — handig op een dossier met veel schema's — en een menu om de lijst te **exporteren** naar Excel of CSV.
 

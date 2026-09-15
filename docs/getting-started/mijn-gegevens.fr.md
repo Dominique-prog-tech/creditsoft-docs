@@ -53,6 +53,14 @@ En bas de l'écran figurent deux boutons qui mènent aux réglages de votre comp
 Ce bloc reste présent même lorsqu'aucune fiche de collaborateur n'est encore liée à votre compte — votre mot
 de passe et votre vérification en deux étapes relèvent en effet de votre compte, et non de votre fiche.
 
+## Enregistrer
+
+En bas à droite figurent **Enregistrer** et **Annuler**. Annuler vous ramène au tableau de bord sans conserver
+vos modifications.
+
+Si aucune fiche de collaborateur n'est encore liée à votre compte, seul **Annuler** y figure : il n'y a alors
+rien à enregistrer, mais vous pouvez quitter l'écran.
+
 ## Voir aussi
 
 - [Vos préférences](voorkeuren.md) — langue, couleurs et taille de l'affichage

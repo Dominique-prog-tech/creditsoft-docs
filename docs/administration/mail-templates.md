@@ -22,4 +22,4 @@ Een sjabloon kan **variabelen** bevatten die bij het versturen automatisch ingev
 - **Onderwerp** en **Body** — per taal (tabbladen **Nederlands** / **Frans**). De body is een opgemaakte HTML-tekst.
 - **Bijlagen** — voeg per taal één of meer bestanden toe die met de mail meegaan. *(Bijlagen kunt u pas toevoegen nadat u het sjabloon een eerste keer hebt opgeslagen.)*
 
-Klik op **Opslaan**.
+Klik op **Bewaren**.

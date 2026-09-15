@@ -39,6 +39,12 @@ Daarnaast filtert u op **verantwoordelijke** en op **soort** — enkel de taken 
 | **Status** en **Prioriteit** | Openstaand, bezig, afgewerkt of geannuleerd |
 | **Verantwoordelijke** | Wie ze moet doen |
 
+## Een taak openen of verwijderen
+
+Dubbelklik een regel om de taak te openen en te wijzigen. Rechts van elke taak staat een menuknop met
+**Bewerken** en **Verwijderen**. Verwijderen vraagt eerst een bevestiging, en de taak verdwijnt naar de
+[Prullenbak](../administration/recycle-bin.md).
+
 ## Uw achterstand: het belletje
 
 Het **belletje** rechtsboven telt de taken die **aan u** zijn toegewezen en waarvan de vervaldatum voorbij is.

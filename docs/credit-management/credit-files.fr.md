@@ -127,6 +127,10 @@ Un nouveau schéma est d'abord *pas encore actif* : rien n'est encore comptabili
 
 ![La fiche d'un schéma de commission : en haut la section Données générales avec l'apporteur, la commission totale et la date de début, en dessous le choix du paiement entre étalé, paiements planifiés et montant fixe, ainsi qu'un champ pour une remarque ; en bas la section Échéances avec, par échéance, le mois et le pourcentage, un bouton pour ajouter une échéance et la ligne Total reprenant la somme des pourcentages.](../images/commissieschema-fiche-fr.png "Un schéma de commission avec des paiements planifiés"){ .volle-breedte }
 
+En haut de la fiche, à côté du nom du dossier ou de l'apporteur, figure l'état du schéma : **Actif**,
+**Arrêté** (avec la date) ou **Pas encore activé**. Vous voyez ainsi immédiatement si ce schéma rapporte
+encore aujourd'hui.
+
 À côté d'**Ajouter** se trouvent un champ de recherche — pratique sur un dossier qui porte de nombreux schémas — et un menu pour **exporter** la liste vers Excel ou CSV.
 
 Ce que vous pouvez faire ensuite dépend de l'état du schéma :

@@ -49,7 +49,7 @@ naar de lijst om ze te raadplegen. Lade en tabbladen tonen hetzelfde en werken o
 
 **Nieuw** en een dubbelklik openen allebei de **fiche als een volledige pagina**, met vijf blokken — Identiteit, Erkenning en status, Contact en adres, Commissie en Opmerkingen — en onderaan een knoppenbalk die in beeld blijft.
 
-![De fiche van een aanbrenger over de volle pagina, met de vijf blokken Identiteit (inclusief de groepering), Erkenning en status, Contact en adres, Commissie en Opmerkingen, en onderaan de knoppen Opslaan, Annuleren, Portaal en Verwijderen.](../images/aanbrengers-fiche.png "De volledige fiche van een aanbrenger, met identiteit, erkenning, contact en commissie"){ .volle-breedte }
+![De fiche van een aanbrenger over de volle pagina, met de vijf blokken Identiteit (inclusief de groepering), Erkenning en status, Contact en adres, Commissie en Opmerkingen, en onderaan de knoppen Bewaren, Annuleren, Portaal en Verwijderen.](../images/aanbrengers-fiche.png "De volledige fiche van een aanbrenger, met identiteit, erkenning, contact en commissie"){ .volle-breedte }
 
 ### Identiteit
 
@@ -125,10 +125,12 @@ Per aanbrenger bepaalt u of hij het commissie-tabblad en het documenten-tabblad 
 !!! warning "Een aanbrenger ziet enkel zijn eigen gegevens"
     Het portaal is afgeschermd per aanbrenger. Een kantoor ziet de dossiers van zijn eigen medewerkers, maar nooit die van een ander kantoor.
 
-## Opslaan
+## Bewaren
 
-De knoppenbalk onderaan blijft in beeld. De knoppen staan rechts: **Opslaan**, **Annuleren**, **Portaal** en **Verwijderen**.
+De knoppenbalk onderaan blijft in beeld. De knoppen staan rechts: **Bewaren**, **Portaal** en
+**Annuleren**, met **Verwijderen** op afstand aan het einde — die staat er los van, want u klikt hem
+zelden en per ongeluk nooit graag.
 
-**Opslaan** blijft uitgeschakeld zolang de naam of de documenttaal ontbreekt — u krijgt dus geen melding achteraf, de knop komt gewoon niet vrij. Een **ongeldig e-mailadres** wordt live onder het veld gemeld terwijl u typt. **Telefoonnummers worden opgemaakt** in de officiële notatie: typt u `09/3724829`, dan staat er na het bewaren `09 372 48 29`.
+**Bewaren** blijft uitgeschakeld zolang de naam of de documenttaal ontbreekt — u krijgt dus geen melding achteraf, de knop komt gewoon niet vrij. Een **ongeldig e-mailadres** wordt live onder het veld gemeld terwijl u typt. **Telefoonnummers worden opgemaakt** in de officiële notatie: typt u `09/3724829`, dan staat er na het bewaren `09 372 48 29`.
 
 **Verwijderen** vraagt eerst bevestiging, met de naam van de aanbrenger erbij. De fiche verhuist dan naar de prullenbak, waar u ze desnoods terughaalt.

@@ -39,6 +39,12 @@ Vous filtrez en outre par **responsable** et par **type** — uniquement les tâ
 | **Statut** et **Priorité** | En cours, ouverte, terminée ou annulée |
 | **Responsable** | Qui doit s'en charger |
 
+## Ouvrir ou supprimer une tâche
+
+Double-cliquez sur une ligne pour ouvrir la tâche et la modifier. À droite de chaque tâche se trouve un bouton
+de menu avec **Modifier** et **Supprimer**. La suppression demande d'abord une confirmation, et la tâche part
+vers la [Corbeille](../administration/recycle-bin.md).
+
 ## Votre retard : la cloche
 
 La **cloche** en haut à droite compte les tâches qui **vous** sont attribuées et dont la date d'échéance est

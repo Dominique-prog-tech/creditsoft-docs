@@ -33,7 +33,7 @@ naar de lijst om ze te raadplegen. Lade en tabbladen tonen hetzelfde en werken o
 **Nieuw** en een dubbelklik openen allebei de **fiche als een volledige pagina**. Bovenaan staat een
 terugkeerknop naar de lijst, met daarnaast de naam van de instelling.
 
-![De fiche van kredietinstelling Demetris over de volle pagina: bovenaan het blok Algemene informatie met naam, adres, contactgegevens en documenttaal, daaronder het blok Standaard commissionering met een percentage direct van 50 % en vijf geplande betalingen die samen 100 % vormen, onderaan het brede blok Opmerkingen en een balk met de knoppen Opslaan, Annuleren en Verwijderen.](../images/kredietinstellingen-fiche.png "De volledige fiche van een kredietinstelling, met algemene gegevens, commissionering en opmerkingen"){ .volle-breedte }
+![De fiche van kredietinstelling Demetris over de volle pagina: bovenaan het blok Algemene informatie met naam, adres, contactgegevens en documenttaal, daaronder het blok Standaard commissionering met een percentage direct van 50 % en vijf geplande betalingen die samen 100 % vormen, onderaan het brede blok Opmerkingen en een balk met de knoppen Bewaren, Annuleren en Verwijderen.](../images/kredietinstellingen-fiche.png "De volledige fiche van een kredietinstelling, met algemene gegevens, commissionering en opmerkingen"){ .volle-breedte }
 
 De fiche bestaat uit drie blokken, met onderaan een knoppenbalk die in beeld blijft.
 
@@ -74,11 +74,11 @@ Onder de lijst met geplande betalingen ziet u een **lopend totaal**: *Totaal: 75
 Onderaan staat een breed veld **Opmerkingen** over de volle breedte van de fiche, voor vrije notities over deze
 instelling.
 
-## Opslaan
+## Bewaren
 
 De knoppenbalk onderaan blijft in beeld terwijl u door de fiche scrolt:
 
-- **Opslaan** — bewaart de instelling.
+- **Bewaren** — bewaart de instelling.
 - **Annuleren** — keert terug naar de lijst zonder te bewaren.
 - **Verwijderen** — archiveert de instelling (rechts in de balk).
 
