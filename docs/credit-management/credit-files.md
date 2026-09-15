@@ -125,7 +125,7 @@ Boven de lijst staat de knop **Toevoegen**. Daarmee maakt u een nieuw schema voo
 
 Een nieuw schema staat eerst op *nog niet actief*: er is nog niets geboekt. Pas wanneer u het activeert, zet CreditSoft de maandbedragen klaar.
 
-![De fiche van een commissieschema: bovenaan de sectie Algemene gegevens met de aanbrenger, de totale commissie en de startdatum, daaronder de keuze van de uitbetaling tussen gespreid, geplande betalingen en een vast bedrag, en een veld voor een opmerking; onderaan de sectie Geplande betalingen met per betaling de maand en het percentage, een knop om een termijn toe te voegen en de regel Samen met het totaal van de percentages.](../images/commissieschema-fiche.png "Een commissieschema met geplande betalingen"){ .volle-breedte }
+![De fiche van een commissieschema: bovenaan het dossiernummer met daarnaast de toestand Actief, daaronder de sectie Algemene gegevens met de aanbrenger, de totale commissie en de startdatum, en de keuze van de uitbetaling tussen gespreid, geplande betalingen en een vast bedrag. Gespreid is gekozen, dus eronder staan Direct (%) en Aantal maanden met de uitleg dat het deel dat niet direct wordt uitbetaald gelijk verdeeld wordt over dat aantal maanden, en een veld voor een opmerking.](../images/commissieschema-fiche.png "Een commissieschema met een gespreide uitbetaling"){ .volle-breedte }
 
 Bovenaan de fiche staat naast de naam van het dossier of de aanbrenger in welke toestand het schema is:
 **Actief**, **Stopgezet** (met de datum) of **Nog niet geactiveerd**. Zo weet u meteen of dit schema

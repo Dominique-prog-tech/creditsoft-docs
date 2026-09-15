@@ -286,7 +286,13 @@ const SCHOTEN = [
       // inhoud. Zelfde aanpak als `agenda-afwezigheid`: bladeren tot een vaste dag in beeld staat.
       let gevonden = false;
       for (let i = 0; i < 40 && !gevonden; i++) {
-        if (/2 (september|septembre) 2026/.test(await p.locator('body').innerText())) { gevonden = true; break; }
+        // ⚠️⚠️ \b VÓÓR HET DAGNUMMER, en dat is geen netheid maar de reparatie van 15/09/2026.
+        // Zonder die grens matcht `2 september` ÓÓK binnenin "1**2 september**" en "2**2 september**".
+        // Dit recept bladert terug vanaf de dag van de BROWSER: op 06/09 kwam het nooit langs 12 september
+        // en werkte het; op 15/09 stopte de lus meteen op 12 september, telde de 2 afspraken van díé dag en
+        // meldde "een lege agenda toont niet wie". Een merkteken moet het VERKEERDE geval uitsluiten — dit
+        // bevestigde enkel het juiste. Getoetst: \b2 matcht "2 september" wel en "12/22 september" niet.
+        if (/\b2 (september|septembre) 2026/.test(await p.locator('body').innerText())) { gevonden = true; break; }
         await p.locator('.dxbl-sc-nav-prev, button[title*="vorige" i], button[title*="précédent" i]')
                .first().click().catch(() => {});
         await p.waitForTimeout(400);
@@ -318,7 +324,7 @@ const SCHOTEN = [
       // hoeveel keer je moet klikken werkt niet, want de weergave (dag/week) onthoudt zichzelf per gebruiker.
       let gevonden = false;
       for (let i = 0; i < 40 && !gevonden; i++) {
-        if (/22 (augustus|août) 2026/.test(await p.locator('body').innerText())) { gevonden = true; break; }
+        if (/\b22 (augustus|août) 2026/.test(await p.locator('body').innerText())) { gevonden = true; break; }
         await p.locator('.dxbl-sc-nav-prev, button[title*="vorige" i], button[title*="précédent" i]')
                .first().click().catch(() => {});
         await p.waitForTimeout(400);
@@ -379,7 +385,7 @@ const SCHOTEN = [
       //    het terugbladeren af te drukken.
       let opDeDag = false;
       for (let i = 0; i < 40 && !opDeDag; i++) {
-        if (/31 (augustus|août) 2026/.test(await p.locator('body').innerText())) { opDeDag = true; break; }
+        if (/\b31 (augustus|août) 2026/.test(await p.locator('body').innerText())) { opDeDag = true; break; }
         await p.locator('.dxbl-sc-nav-prev, button[title*="vorige" i], button[title*="précédent" i]')
                .first().click().catch(() => {});
         await p.waitForTimeout(400);
