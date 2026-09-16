@@ -198,14 +198,14 @@
   "platformbeheer-hub": {
     "route": "/administration",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
+      "sha": "f52f335f6750379a244af1098052abd9457308b7",
       "vuil": true
     }
   },
   "bedrijfsfiche": {
     "route": "/administration/company-profile",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
+      "sha": "f52f335f6750379a244af1098052abd9457308b7",
       "vuil": true
     }
   },
@@ -534,7 +534,7 @@
   "bedrijfsfiche-logo": {
     "route": "/administration/company-profile",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
+      "sha": "f52f335f6750379a244af1098052abd9457308b7",
       "vuil": true
     }
   },
@@ -814,14 +814,14 @@
   "platformbeheer-hub-fr": {
     "route": "/administration",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
+      "sha": "f52f335f6750379a244af1098052abd9457308b7",
       "vuil": true
     }
   },
   "bedrijfsfiche-fr": {
     "route": "/administration/company-profile",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
+      "sha": "f52f335f6750379a244af1098052abd9457308b7",
       "vuil": true
     }
   },
@@ -1150,7 +1150,7 @@
   "bedrijfsfiche-logo-fr": {
     "route": "/administration/company-profile",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
+      "sha": "f52f335f6750379a244af1098052abd9457308b7",
       "vuil": true
     }
   },
