@@ -65,23 +65,29 @@ export const FILMS = [
       { naam: 'dossiers', kop: { nl: 'Kredietdossiers', fr: "Dossiers de crédit", en: "Credit files" },
         doe: async (p) => { await p.goto(`${BASIS}/credit-files`); await p.waitForLoadState('networkidle'); },
         merk: /DEMO-\d+/,
-        nl: 'Alles van \u00e9\u00e9n kredietaanvraag op \u00e9\u00e9n pagina.',
-        en: 'Everything about one credit application on a single page.',
-        fr: "Tout d'une demande de cr\u00e9dit sur une seule page." },
+        website: {
+          nl: 'Alles van \u00e9\u00e9n kredietaanvraag op \u00e9\u00e9n pagina.',
+          en: 'Everything about one credit application on a single page.',
+          fr: "Tout d'une demande de cr\u00e9dit sur une seule page.",
+        } },
 
       { naam: 'klanten', kop: { nl: 'Klanten en relaties', fr: "Clients et relations", en: "Clients and relations" },
         doe: async (p) => { await p.goto(`${BASIS}/crm/relaties`); await p.waitForLoadState('networkidle'); },
         merk: /Adriaenssens|Aerts|Peeters/,
-        nl: 'Uw klant, zijn gezin en zijn geschiedenis: \u00e9\u00e9n fiche.',
-        en: 'Your client, their family and their history: one record.',
-        fr: "Votre client, sa famille et son historique : une fiche." },
+        website: {
+          nl: 'Uw klant, zijn gezin en zijn geschiedenis: \u00e9\u00e9n fiche.',
+          en: 'Your client, their family and their history: one record.',
+          fr: "Votre client, sa famille et son historique : une fiche.",
+        } },
 
       { naam: 'documenten', kop: { nl: 'Documenten', fr: "Documents", en: "Documents" },
         doe: async (p) => { await p.goto(`${BASIS}/krediet/documenten-valideren`); await p.waitForLoadState('networkidle'); },
         merk: /DEMO-\d+/,
-        nl: 'Documenten opvragen, ontvangen en beoordelen.',
-        en: 'Request, receive and review documents.',
-        fr: "Demander, recevoir et \u00e9valuer les documents." },
+        website: {
+          nl: 'Documenten opvragen, ontvangen en beoordelen.',
+          en: 'Request, receive and review documents.',
+          fr: "Demander, recevoir et \u00e9valuer les documents.",
+        } },
 
       { naam: 'portalen', kop: { nl: 'De portalen', fr: "Les portails", en: "The portals" },
         // ⚠️ Het OPMAAKSCHERM en niet het echte portaal. Dat laatste vraagt een aparte aanmelding, en in een
@@ -89,37 +95,47 @@ export const FILMS = [
         // portaal in de huisstijl, mét de voortgang en de documentstatussen — dat is wat de zin belooft.
         doe: async (p) => { await p.goto(`${BASIS}/beheer/klantportaal`); await p.waitForLoadState('networkidle'); },
         merk: /Welkom bij uw dossier|Bienvenue dans votre dossier/,
-        nl: 'Uw klanten en aanbrengers leveren zelf aan.',
-        en: 'Your clients and brokers upload it themselves.',
-        fr: "Vos clients et apporteurs d\u00e9posent eux-m\u00eames." },
+        website: {
+          nl: 'Uw klanten en aanbrengers leveren zelf aan.',
+          en: 'Your clients and brokers upload it themselves.',
+          fr: "Vos clients et apporteurs d\u00e9posent eux-m\u00eames.",
+        } },
 
       { naam: 'commissies', kop: { nl: 'Commissie', fr: "Commissions", en: "Commissions" },
         doe: async (p) => { await p.goto(`${BASIS}/commissie/schemas`); await p.waitForLoadState('networkidle'); },
         merk: /Sandbox|Baken|Meridiaan|Horizon/,
-        nl: 'Commissie berekend zoals u ze afsprak.',
-        en: 'Commission calculated exactly as you agreed it.',
-        fr: "La commission calcul\u00e9e comme vous l'avez convenue." },
+        website: {
+          nl: 'Commissie berekend zoals u ze afsprak.',
+          en: 'Commission calculated exactly as you agreed it.',
+          fr: "La commission calcul\u00e9e comme vous l'avez convenue.",
+        } },
 
       { naam: 'borderellen', kop: { nl: 'Borderellen', fr: "Bordereaux", en: "Statements" },
         doe: async (p) => { await p.goto(`${BASIS}/commissie/borderel`); await p.waitForLoadState('networkidle'); },
         merk: /Voorbeeld|Demo Krediet|Hypotheek/,
-        nl: 'Van berekening tot borderel en fiche 281.50, zonder \u00e9\u00e9n cel Excel.',
-        en: 'From calculation to statement and tax form, without a single Excel cell.',
-        fr: "Du calcul au bordereau et \u00e0 la fiche 281.50, sans une seule cellule Excel." },
+        website: {
+          nl: 'Van berekening tot borderel en fiche 281.50, zonder \u00e9\u00e9n cel Excel.',
+          en: 'From calculation to statement and tax form, without a single Excel cell.',
+          fr: "Du calcul au bordereau et \u00e0 la fiche 281.50, sans une seule cellule Excel.",
+        } },
 
       { naam: 'vooruitzicht', kop: { nl: 'Vooruitzicht', fr: "Prévisions", en: "Forecast" },
         doe: async (p) => { await p.goto(`${BASIS}/commissie/vooruitzicht`); await p.waitForLoadState('networkidle'); },
         merk: /Baken|Meridiaan|Horizon|Proefmakelaars/,
-        nl: 'En u ziet vooruit wat er nog binnenkomt.',
-        en: 'And you see ahead what is still coming in.',
-        fr: "Et vous voyez \u00e0 l'avance ce qui va rentrer." },
+        website: {
+          nl: 'En u ziet vooruit wat er nog binnenkomt.',
+          en: 'And you see ahead what is still coming in.',
+          fr: "Et vous voyez \u00e0 l'avance ce qui va rentrer.",
+        } },
 
       { naam: 'instellingen', kop: { nl: 'Instellingen', fr: "Paramètres", en: "Settings" },
         doe: async (p) => { await p.goto(`${BASIS}/credit/financial-institutions`); await p.waitForLoadState('networkidle'); },
         merk: /AG Insurance|Allianz|Axa/,
-        nl: "Uw kredietverstrekkers, met hun eigen schema's.",
-        en: 'Your lenders, each with their own commission schemes.',
-        fr: "Vos pr\u00eateurs, avec leurs propres sch\u00e9mas." },
+        website: {
+          nl: "Uw kredietverstrekkers, met hun eigen schema's.",
+          en: 'Your lenders, each with their own commission schemes.',
+          fr: "Vos pr\u00eateurs, avec leurs propres sch\u00e9mas.",
+        } },
     ],
   }],
 
@@ -802,7 +818,7 @@ export const FILMS = [
     scenes: [
       { naam: 'overzicht', kop: { nl: 'Alle schema’s samen', fr: 'Tous les schémas ensemble' },
         doe: async (p) => { await p.goto(`${BASIS}/commissie/schemas`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(2400); },
-        merk: /Kenmerk aanbrenger|Référence apporteur/i,
+        merk: /Dossiernummer|Numéro de dossier/i,
         nl: 'Commissie begint bij een schema: wat u met een aanbrenger afspreekt voor één dossier. Dit overzicht toont ze allemaal, met de aanbrenger, de klant en het bedrag.',
         fr: "La commission commence par un schéma : ce que vous convenez avec un apporteur pour un dossier. Cet aperçu les montre tous, avec l’apporteur, le client et le montant." },
 
@@ -861,7 +877,7 @@ export const FILMS = [
 
       { naam: 'slot', kop: { nl: 'Tot slot', fr: 'Pour conclure' },
         doe: async (p) => { await p.goto(`${BASIS}/commissie/schemas`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(2200); },
-        merk: /Kenmerk aanbrenger|Référence apporteur/i,
+        merk: /Dossiernummer|Numéro de dossier/i,
         nl: 'Staat het schema goed, dan hoeft u er niet meer naar om te kijken. In de volgende film zien we wat er dan uit komt: het borderel, het vooruitzicht en wat blijft liggen.',
         fr: "Si le schéma est correct, vous n’avez plus à vous en occuper. Dans le film suivant, nous verrons ce qui en découle : le bordereau, les prévisions et ce qui reste en souffrance." },
     ],
@@ -1517,7 +1533,7 @@ export const FILMS = [
     scenes: [
       { naam: 'lijst', kop: { nl: 'De dossierlijst', fr: "La liste des dossiers", en: "The file list" },
         doe: async (p) => { await p.goto(`${BASIS}/credit-files`); await p.waitForLoadState('networkidle'); },
-        merk: /Kenmerk aanbrenger|Référence apporteur/i,
+        merk: /Dossiernummer|Numéro de dossier/i,
         nl: 'Het kredietdossier is het hart van CreditSoft. Alles wat bij één aanvraag hoort, staat op één pagina bij elkaar.',
         en: 'The credit file is the heart of CreditSoft. Everything about one application sits together on a single page.',
         fr: "Le dossier de crédit est le cœur de CreditSoft. Tout ce qui concerne une demande est rassemblé sur une seule page." ,
@@ -1526,8 +1542,8 @@ export const FILMS = [
       { naam: 'kolommen', kop: { nl: 'De kolommen', fr: "Les colonnes", en: "The columns" },
         doe: async (p) => { await beweegNaar(p, p.locator('th').nth(3)); },
         merk: /Kredietbedrag|Montant du crédit/i,
-        nl: 'In de lijst ziet u per dossier het kenmerk van de aanbrenger, de status, het kredietbedrag en de aanvrager.',
-        fr: "Dans la liste, vous voyez par dossier la référence apporteur, le statut, le montant du crédit et le demandeur." },
+        nl: 'In de lijst ziet u per dossier het dossiernummer, de status, het kredietbedrag en de aanvrager.',
+        fr: "Dans la liste, vous voyez par dossier le numéro de dossier, le statut, le montant du crédit et le demandeur." },
 
       { naam: 'zoeken', kop: { nl: 'Zoeken in de lijst', fr: "Rechercher dans la liste", en: "Searching the list" },
         doe: async (p) => {

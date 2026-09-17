@@ -746,6 +746,9 @@ for (const [naam, filmVol] of FILMS) {
     if (MEET) {
       await ctx.close(); await browser.close();
       console.log(`  🔎 ${stam}-${kort} gemeten${gevallen ? ` (gevallen op ${gevallen})` : ''}`);
+      // ⚠️ Ook in meetstand telt een gevallen scène mee in het verslag — anders stond ze enkel in een
+      // tussenregel en eindigde de ronde met exitcode 0, alsof alles doorliep.
+      if (gevallen) verslag.gevallen.push(`${stam}-${kort}: ${gevallen}`);
       continue;
     }
     const videoPad = await page.video().path();
@@ -948,3 +951,9 @@ if (DROOG) console.log('🅓 Droge proef — enkel geluid gemaakt, niets opgenom
 else if (MEET) console.log(`🔎 Meetstand — ${zichtbaarheid.length} aangewezen onderwerpen nagegaan, niets opgenomen.`);
 else if (!verslag.gemaakt.length && !verslag.gevallen.length)
   console.log("⚠️  Geen enkele film geraakt door de filter — bedoelde je een andere naam?");
+
+// ⚠️ EEN GEVALLEN FILM IS EEN MISLUKTE RONDE, ook voor wie enkel naar de exitcode kijkt. Tot 17/09/2026
+// eindigde een ronde met gevallen films op 0: de proefopname van kredietdossiers-basis viel op zijn eerste
+// scène (een hernoemde kolom) en het proces meldde "gelukt". Het verslag hierboven zei het wél — maar een
+// lus of een achtergrondtaak leest de code, niet het verslag.
+if (verslag.gevallen.length) process.exitCode = 1;
