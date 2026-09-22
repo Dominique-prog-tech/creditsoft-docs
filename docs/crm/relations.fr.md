@@ -156,6 +156,10 @@ La barre de boutons du bas reste visible pendant que vous faites défiler la fic
 droite : **Enregistrer**, **Nouveau dossier de crédit** et **Annuler**, avec **Supprimer** à distance, tout
 au bout — il est mis à l'écart, car vous l'utilisez rarement et jamais volontiers par erreur.
 
+Si ce client est arrivé comme lead d'un apporteur, l'onglet **Général** indique **Apporté par**, et
+**Nouveau dossier de crédit** remplit cet apporteur à l'avance sur le dossier — voir
+[Leads d'un apporteur](leads.md#leads-dun-apporteur).
+
 À l'enregistrement, les **champs obligatoires manquants** et une **adresse e-mail invalide** sont signalés.
 L'adresse e-mail est contrôlée dès qu'il y a quelque chose dans le champ, même si vous ne l'avez pas modifiée
 vous-même. Les **numéros de téléphone sont mis en forme** dans la notation officielle : si vous tapez

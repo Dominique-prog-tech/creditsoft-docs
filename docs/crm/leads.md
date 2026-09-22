@@ -10,9 +10,11 @@ Klik in de zijbalk op **CRM** en dan op **Leads**.
 
 ![Het scherm Leads in CreditSoft: een lijst met kolommen voor naam, status, wacht al, bron, e-mail, telefoon, bedrag en opvolging, met bovenaan een filter op status en de knop Nieuwe lead.](../images/leads-lijst.png "De werklijst van uw instroom, met wie het langst wacht bovenaan")
 
-De lijst opent op **wie het langst wacht**, niet op wie het laatst binnenkwam. Per lead ziet u: **naam**, **status**, **wacht al**, **bron**, **e-mail**, **telefoon**, **bedrag** en **opvolging**.
+De lijst opent op **wie het langst wacht**, niet op wie het laatst binnenkwam. Per lead ziet u: **naam**, **status**, **wacht al**, **bron**, **aanbrenger**, **e-mail**, **telefoon**, **bedrag** en **opvolging**.
 
 - **Wacht al** — de tijd sinds de vraag binnenkwam, zolang er nog geen contact was. Vanaf twee dagen kleurt ze rood. Is er contact geweest, dan staat er een streepje: de klok is gestopt.
+- **Aanbrenger** — de aanbrenger die deze lead doorgaf vanuit de mobiele app. Leeg voor een lead die via uw website of met de hand binnenkwam.
+- **Mogelijk dubbel** — dit label naast de naam betekent dat er al een open lead van dezelfde persoon stond toen deze binnenkwam. Zie [Leads van een aanbrenger](#leads-van-een-aanbrenger).
 - **Opvolging** — de medewerker die deze lead opvolgt. Staat er **niemand** in het rood, dan is dit van niemand en blijft het liggen.
 - **Filter op status** — bovenaan kiest u alle statussen, of één ervan.
 - **Zoeken** — het zoekveld zoekt in alle kolommen tegelijk.
@@ -52,7 +54,9 @@ De fiche heeft drie blokken.
 - **Bron** — waar deze lead vandaan komt: *website*, *telefoon*, *doorverwijzing*, *Facebook*, wat u ook gebruikt. Het veld stelt voor wat u eerder al invulde, zodat de schrijfwijze gelijk blijft, maar u kunt vrij typen. Zo blijft de bronlijst van úw kantoor, en niet van een lijst die wij bedacht hebben.
 - **Bedrag** — het bedrag waar het over gaat, voor zover u het al weet.
 - **Herkomst** — verscheen deze lead via een koppeling, dan staat hier welke. Dit veld is niet bewerkbaar; het is een vaststelling, geen invoer.
-- **Vraag** — de vraag zoals ze binnenkwam, in vrije tekst.
+- **Aangebracht door** — enkel bij een lead van een aanbrenger: wie hem doorgaf, met een link naar diens fiche. Niet bewerkbaar.
+- **Toestemming klant bevestigd** — wanneer de aanbrenger bevestigde dat de klant akkoord gaat om door u gecontacteerd te worden. Zonder die bevestiging kan hij geen klant doorgeven.
+- **Vraag** — de vraag zoals ze binnenkwam, in vrije tekst. Bij een lead van een aanbrenger staat de soort vraag bovenaan (bijvoorbeeld *Woonkrediet*), met zijn opmerking eronder.
 
 ### Opvolging
 
@@ -80,19 +84,30 @@ Naam, e-mailadres en telefoonnummer komen uit de lead. De rest vult u aan op de 
 
 **De lead verdwijnt niet.** Hij blijft in de lijst staan als *Gewonnen*, met bovenaan zijn fiche een link naar zijn klant. Zo blijft na een jaar zichtbaar welk kanaal klanten opleverde en welk kanaal enkel ruis — en dat is de hele reden om leads apart bij te houden.
 
-Een kredietdossier maakt u daarna op de gewone manier: **Krediet → Kredietdossiers → Nieuw**, met die klant erbij.
+Een kredietdossier start u daarna vanaf de fiche van die klant, met de knop **Nieuw kredietdossier**: de klant staat er dan meteen als aanvrager in. Kwam de lead van een aanbrenger, dan staat ook die al ingevuld — zie hieronder.
 
 ## Een lead toevoegen
 
 Klik op **Nieuwe lead**, vul in wat u weet, en klik op **Bewaren**.
 
 !!! info "Dezelfde persoon meldt zich twee keer aan"
-    Vult iemand twee keer uw formulier in, of belt hij nadat hij al gemaild had, dan wordt dat **één lead**. CreditSoft herkent hem aan zijn e-mailadres of zijn telefoonnummer en hangt de nieuwe vraag onder de bestaande, met de datum erbij. U krijgt dan de melding dat de persoon er al stond.
+    Vult iemand twee keer uw formulier in, of belt hij nadat hij al gemaild had, dan wordt dat **één lead**. Dat geldt niet voor een lead van een aanbrenger: zie [Leads van een aanbrenger](#leads-van-een-aanbrenger). CreditSoft herkent hem aan zijn e-mailadres of zijn telefoonnummer en hangt de nieuwe vraag onder de bestaande, met de datum erbij. U krijgt dan de melding dat de persoon er al stond.
 
     Een **gewonnen of verloren** lead telt daar niet in mee. Wie een jaar later terugkomt, is een nieuwe vraag en geen heropening van een afgesloten dossier.
 
 !!! tip "Waarom de wachttijd en niet de datum"
     Een datum moet u omrekenen; een wachttijd niet. En bij leads is dat het enige getal dat telt: wie twee dagen wacht, heeft intussen het volgende kantoor gebeld.
+
+## Leads van een aanbrenger
+
+Aanbrengers kunnen vanuit de mobiele CreditSoft-app een klant doorgeven. Die komt hier binnen als lead met bron **Mobiele app**, met de aanbrenger in de kolom **Aanbrenger** en op de fiche bij **Aangebracht door**. De aanbrenger volgt in zijn app mee hoe het ermee staat: *nieuw*, *in behandeling*, *klant geworden* of *niet doorgegaan*. Wie de lead opvolgt en waarom iets niet doorging, ziet hij niet.
+
+!!! warning "Twee aanbrengers, dezelfde persoon"
+    Een lead van een aanbrenger wordt **nooit samengevoegd** met een lead die er al stond. Geven twee aanbrengers dezelfde persoon door — of kwam die persoon eerder al via uw website binnen — dan staan er twee leads. De tweede draagt het label **mogelijk dubbel**, en bovenaan zijn fiche staat een link naar de eerste. **U beslist wie de klant opvolgt**, en dus ook bij welke aanbrenger hij hoort. CreditSoft kiest dat niet voor u, omdat daar een commissie aan hangt.
+
+    De aanbrenger krijgt daar niets van te zien. Zijn app zegt niet dat de persoon al bekend was: anders zou hij door te proberen kunnen uitzoeken wie er al klant is bij u.
+
+Maakt u van zo'n lead een klant, dan staat op de fiche van die klant, op het tabblad **Algemeen**, **Aangebracht door** met de naam van de aanbrenger. Klikt u daar op **Nieuw kredietdossier**, dan staat de aanbrenger al ingevuld op het dossier. Kwam de klant binnen via verschillende aanbrengers, dan vult CreditSoft niets in en kiest u hem zelf op het dossier.
 
 ## Het dagelijkse bericht
 

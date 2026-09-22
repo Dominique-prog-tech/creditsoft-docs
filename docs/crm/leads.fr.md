@@ -10,9 +10,11 @@ Dans la barre latérale, cliquez sur **CRM**, puis sur **Leads**.
 
 ![L'écran Leads dans CreditSoft : une liste avec les colonnes nom, statut, attend depuis, source, e-mail, téléphone, montant et suivi, avec en haut un filtre par statut et le bouton Nouveau lead.](../images/leads-lijst-fr.png "La liste de travail de vos entrées, celui qui attend le plus longtemps en tête")
 
-La liste s'ouvre sur **celui qui attend le plus longtemps**, et non sur la dernière arrivée. Pour chaque lead, vous voyez : **nom**, **statut**, **attend depuis**, **source**, **e-mail**, **téléphone**, **montant** et **suivi**.
+La liste s'ouvre sur **celui qui attend le plus longtemps**, et non sur la dernière arrivée. Pour chaque lead, vous voyez : **nom**, **statut**, **attend depuis**, **source**, **apporteur**, **e-mail**, **téléphone**, **montant** et **suivi**.
 
 - **Attend depuis** — le temps écoulé depuis l'arrivée de la demande, tant qu'il n'y a pas eu de contact. À partir de deux jours, la valeur passe au rouge. S'il y a eu contact, un tiret s'affiche : le chronomètre est arrêté.
+- **Apporteur** — l'apporteur qui a transmis ce lead depuis l'application mobile. Vide pour un lead arrivé via votre site web ou saisi à la main.
+- **Doublon possible** — cette étiquette à côté du nom signifie qu'un lead ouvert existait déjà pour la même personne à son arrivée. Voir [Leads d'un apporteur](#leads-dun-apporteur).
 - **Suivi** — le collaborateur qui assure le suivi. Si **personne** apparaît en rouge, ce lead n'appartient à personne et il va rester en plan.
 - **Filtre par statut** — en haut, vous choisissez tous les statuts ou un seul.
 - **Rechercher** — le champ de recherche parcourt toutes les colonnes à la fois.
@@ -52,7 +54,9 @@ La fiche comporte trois blocs.
 - **Source** — d'où vient ce lead : *site web*, *téléphone*, *recommandation*, *Facebook*, ce que vous utilisez. Le champ propose ce que vous avez déjà saisi auparavant, afin que l'orthographe reste constante, mais vous pouvez saisir librement. Ainsi, la liste des sources reste celle de **votre** bureau, et non celle que nous aurions imaginée.
 - **Montant** — le montant dont il est question, pour autant que vous le sachiez déjà.
 - **Provenance** — si ce lead est arrivé via une connexion, celle-ci est indiquée ici. Ce champ n'est pas modifiable : c'est un constat, pas une saisie.
-- **Demande** — la demande telle qu'elle est arrivée, en texte libre.
+- **Apporté par** — uniquement pour un lead d'un apporteur : qui l'a transmis, avec un lien vers sa fiche. Non modifiable.
+- **Consentement du client confirmé** — le moment où l'apporteur a confirmé que le client accepte d'être contacté par vous. Sans cette confirmation, il ne peut pas transmettre de client.
+- **Demande** — la demande telle qu'elle est arrivée, en texte libre. Pour un lead d'un apporteur, le type de demande figure en premier (par exemple *Crédit logement*), avec sa remarque en dessous.
 
 ### Suivi
 
@@ -80,19 +84,30 @@ Le nom, l'e-mail et le téléphone proviennent du lead. Vous complétez le reste
 
 **Le lead ne disparaît pas.** Il reste dans la liste en *Gagné*, avec en haut de sa fiche un lien vers son client. Un an plus tard, vous voyez ainsi toujours quel canal a apporté des clients et lequel n'a apporté que du bruit — c'est toute la raison de tenir les leads à part.
 
-Vous créez ensuite un dossier de crédit de la manière habituelle : **Crédit → Dossiers de crédit → Nouveau**, en y associant ce client.
+Vous démarrez ensuite un dossier de crédit depuis la fiche de ce client, avec le bouton **Nouveau dossier de crédit** : le client y figure immédiatement comme demandeur. Si le lead venait d'un apporteur, celui-ci est aussi déjà rempli — voir ci-dessous.
 
 ## Ajouter un lead
 
 Cliquez sur **Nouveau lead**, complétez ce que vous savez, puis cliquez sur **Enregistrer**.
 
 !!! info "La même personne se manifeste deux fois"
-    Si quelqu'un remplit deux fois votre formulaire, ou téléphone après avoir écrit, cela devient **un seul lead**. CreditSoft le reconnaît à son adresse e-mail ou à son numéro de téléphone et rattache la nouvelle demande à celle qui existe, avec sa date. Vous recevez alors le message indiquant que la personne figurait déjà.
+    Si quelqu'un remplit deux fois votre formulaire, ou téléphone après avoir écrit, cela devient **un seul lead**. Cela ne vaut pas pour un lead d'un apporteur : voir [Leads d'un apporteur](#leads-dun-apporteur). CreditSoft le reconnaît à son adresse e-mail ou à son numéro de téléphone et rattache la nouvelle demande à celle qui existe, avec sa date. Vous recevez alors le message indiquant que la personne figurait déjà.
 
     Un lead **gagné ou perdu** n'entre pas dans ce calcul. Celui qui revient un an plus tard représente une nouvelle demande, et non la réouverture d'un dossier clôturé.
 
 !!! tip "Pourquoi le temps d'attente et non la date"
     Une date, il faut la convertir ; un temps d'attente, non. Et pour un lead, c'est le seul chiffre qui compte : celui qui attend deux jours a entre-temps appelé le bureau suivant.
+
+## Leads d'un apporteur
+
+Les apporteurs peuvent transmettre un client depuis l'application mobile CreditSoft. Il arrive ici comme lead avec la source **Mobiele app**, avec l'apporteur dans la colonne **Apporteur** et sur la fiche sous **Apporté par**. L'apporteur suit dans son application où en est la demande : *nouveau*, *en cours*, *devenu client* ou *sans suite*. Il ne voit pas qui assure le suivi ni pourquoi une demande n'a pas abouti.
+
+!!! warning "Deux apporteurs, la même personne"
+    Un lead d'un apporteur n'est **jamais fusionné** avec un lead existant. Si deux apporteurs transmettent la même personne — ou si cette personne était déjà arrivée via votre site web — il y a deux leads. Le second porte l'étiquette **doublon possible**, et un lien vers le premier figure en haut de sa fiche. **C'est vous qui décidez qui assure le suivi du client**, et donc à quel apporteur il revient. CreditSoft ne le choisit pas pour vous, car une commission y est liée.
+
+    L'apporteur n'en voit rien. Son application n'indique pas que la personne était déjà connue : sinon, il pourrait découvrir par essais qui est déjà votre client.
+
+Si vous faites d'un tel lead un client, la fiche de ce client indique, dans l'onglet **Général**, **Apporté par** avec le nom de l'apporteur. Cliquez-y sur **Nouveau dossier de crédit** et l'apporteur est déjà rempli sur le dossier. Si le client est arrivé via plusieurs apporteurs, CreditSoft ne remplit rien et vous le choisissez vous-même sur le dossier.
 
 ## L'avis quotidien
 

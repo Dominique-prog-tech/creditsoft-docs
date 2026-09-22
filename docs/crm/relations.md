@@ -154,6 +154,10 @@ De knoppenbalk onderaan blijft in beeld terwijl u door de fiche scrolt. De knopp
 **Bewaren**, **Nieuw kredietdossier** en **Annuleren**, met **Verwijderen** op afstand aan het einde —
 die staat er los van, want u klikt hem zelden en per ongeluk nooit graag.
 
+Kwam deze klant binnen als lead van een aanbrenger, dan staat op het tabblad **Algemeen** **Aangebracht door**, en
+vult **Nieuw kredietdossier** die aanbrenger vooraf in op het dossier — zie
+[Leads van een aanbrenger](leads.md#leads-van-een-aanbrenger).
+
 Bij het opslaan worden **ontbrekende verplichte velden** en een **ongeldig e-mailadres** gemeld. Het
 e-mailadres wordt gecontroleerd zolang er iets in het veld staat, ook als u het niet zelf hebt gewijzigd.
 **Telefoonnummers worden opgemaakt** in de officiële notatie: typt u `09/3724829`, dan staat er na het bewaren
