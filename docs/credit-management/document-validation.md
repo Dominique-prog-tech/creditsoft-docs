@@ -1,6 +1,6 @@
 # Te valideren documenten
 
-Wat uw klanten via het **klantenportaal** aanleveren, komt hier samen: één lijst met alle stukken die nog beoordeeld moeten worden, over al uw dossiers heen. U hoeft dus niet dossier per dossier te gaan kijken of er iets binnengekomen is.
+Wat uw klanten via het **klantenportaal** aanleveren — en wat aanbrengers vanuit de **mobiele CreditSoft-app** fotograferen — komt hier samen: één lijst met alle stukken die nog beoordeeld moeten worden, over al uw dossiers heen. U hoeft dus niet dossier per dossier te gaan kijken of er iets binnengekomen is.
 
 ## Het scherm openen
 
@@ -53,6 +53,18 @@ Keurt u stukken van **meerdere dossiers** tegelijk af, dan kan het verwittigen n
 
 !!! warning "Als de mail niet vertrekt"
     Lukt het versturen niet — een storing bij de mailserver, bijvoorbeeld — dan verschijnt bovenaan een balk: *de stukken zijn afgekeurd, maar de klant is niet verwittigd*. Het afkeuren zelf is dan wél gebeurd. U hoeft dat niet over te doen; enkel het verwittigen moet nog.
+
+## Een stuk van een aanbrenger
+
+Aanbrengers kunnen vanuit de mobiele app een stuk van de checklist fotograferen of een pdf sturen. Meerdere foto's worden samen één pdf. Zo'n stuk komt hier binnen zoals een stuk van de klant; bij het bestand staat wie het aanleverde, bijvoorbeeld *365+ (app)*. De klant ziet het bestand ook in zijn portaal terug.
+
+Weigert u een stuk dat een aanbrenger aanleverde, dan is die weigering **enkel voor de aanbrenger**:
+
+- het vakje **De klant hiervan per e-mail verwittigen** verschijnt niet; in de plaats staat wie het aanleverde;
+- de klant ziet in zijn portaal **geen reden**: voor hem staat het stuk gewoon nog als *gevraagd*;
+- de aanbrenger ziet in zijn app *Geweigerd*, met uw reden, en kan meteen iets nieuws sturen.
+
+Weigert u meerdere stukken tegelijk, waarvan sommige van een aanbrenger kwamen, dan gaan enkel de stukken van de klant zelf mee in de mail.
 
 ## Een stuk zonder bestand
 

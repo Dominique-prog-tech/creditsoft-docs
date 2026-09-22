@@ -1,6 +1,6 @@
 # Documents à valider
 
-Ce que vos clients fournissent via le **portail client** se retrouve ici : une seule liste avec toutes les pièces qui doivent encore être évaluées, tous dossiers confondus. Vous ne devez donc pas ouvrir chaque dossier pour vérifier si quelque chose est arrivé.
+Ce que vos clients fournissent via le **portail client** — et ce que les apporteurs photographient depuis l'**application mobile CreditSoft** — se retrouve ici : une seule liste avec toutes les pièces qui doivent encore être évaluées, tous dossiers confondus. Vous ne devez donc pas ouvrir chaque dossier pour vérifier si quelque chose est arrivé.
 
 ## Ouvrir l'écran
 
@@ -53,6 +53,18 @@ Si vous refusez des pièces de **plusieurs dossiers** en même temps, l'avertiss
 
 !!! warning "Si le courriel ne part pas"
     Si l'envoi échoue — une panne du serveur de messagerie, par exemple — un bandeau apparaît en haut : *les pièces ont été refusées, mais le client n'a pas été averti*. Le refus lui-même a bien eu lieu. Vous ne devez pas le recommencer ; seul l'avertissement reste à faire.
+
+## Une pièce d'un apporteur
+
+Les apporteurs peuvent photographier une pièce de la liste ou envoyer un pdf depuis l'application mobile. Plusieurs photos forment ensemble un seul pdf. Une telle pièce arrive ici comme une pièce du client ; à côté du fichier figure qui l'a transmise, par exemple *365+ (app)*. Le client voit aussi le fichier dans son portail.
+
+Si vous refusez une pièce transmise par un apporteur, ce refus est **réservé à l'apporteur** :
+
+- la case **Avertir le client par e-mail** n'apparaît pas ; à sa place figure qui l'a transmise ;
+- le client ne voit **aucun motif** dans son portail : pour lui, la pièce est simplement encore *demandée* ;
+- l'apporteur voit *Refusé* dans son application, avec votre motif, et peut envoyer immédiatement autre chose.
+
+Si vous refusez plusieurs pièces en même temps, dont certaines viennent d'un apporteur, seules les pièces du client lui-même figurent dans le courriel.
 
 ## Une pièce sans fichier
 
