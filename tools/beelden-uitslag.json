@@ -16,7 +16,7 @@
   "aanbrengers-lijst": {
     "route": "/contributors",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
+      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
       "vuil": true
     }
   },
@@ -37,7 +37,7 @@
   "professionals-lijst": {
     "route": "/crm/professionals",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
+      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
       "vuil": true
     }
   },
@@ -51,14 +51,14 @@
   "kredietinstellingen-lijst": {
     "route": "/credit/financial-institutions",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
+      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
       "vuil": true
     }
   },
   "verzekeraars-lijst": {
     "route": "/credit/insurance-institutions",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
+      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
       "vuil": true
     }
   },
@@ -135,7 +135,7 @@
   "dashboard-fases": {
     "route": "/beheer/dashboard-fases",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
+      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
       "vuil": true
     }
   },
@@ -149,7 +149,7 @@
   "klantportaal-vormgeving": {
     "route": "/beheer/klantportaal",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
+      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
       "vuil": true
     }
   },
@@ -205,14 +205,14 @@
   "bedrijfsfiche": {
     "route": "/administration/company-profile",
     "app": {
-      "sha": "f52f335f6750379a244af1098052abd9457308b7",
+      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
       "vuil": true
     }
   },
   "dashboard-startscherm": {
     "route": "/dashboard",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
+      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
       "vuil": true
     }
   },
@@ -226,7 +226,7 @@
   "commissie-vooruitzicht": {
     "route": "/commissie/vooruitzicht",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
+      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
       "vuil": true
     }
   },
@@ -282,14 +282,14 @@
   "wachtwoord": {
     "route": "/account/wachtwoord-wijzigen",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
+      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
       "vuil": true
     }
   },
   "tweestapsverificatie": {
     "route": "/account/2fa",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
+      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
       "vuil": true
     }
   },
@@ -317,7 +317,7 @@
   "aanbrengers-fiche": {
     "route": "/contributors/0447a42c-66a4-4afd-9939-80050a0b3279",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
+      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
       "vuil": true
     }
   },
@@ -338,21 +338,21 @@
   "professionals-fiche": {
     "route": "/crm/professionals/7ebc3535-636b-4ca2-94b7-97faad46e34c",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
+      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
       "vuil": true
     }
   },
   "kredietinstellingen-fiche": {
     "route": "/credit/financial-institutions/5427b583-7b10-460f-83b3-c4719f4aaad9",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
+      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
       "vuil": true
     }
   },
   "verzekeraars-fiche": {
     "route": "/credit/insurance-institutions/631dcec1-ee1d-4ae7-a5f1-797b57ca73b8",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
+      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
       "vuil": true
     }
   },
@@ -373,7 +373,7 @@
   "navigatie": {
     "route": "/dashboard",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
+      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
       "vuil": true
     }
   },
@@ -478,7 +478,7 @@
   "portaal-toegang": {
     "route": "/contributors/05b820be-792d-4ecb-b41e-c8b00619b872",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
+      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
       "vuil": true
     }
   },
@@ -492,28 +492,28 @@
   "dashboard-pijplijn": {
     "route": "/dashboard",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
+      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
       "vuil": true
     }
   },
   "dashboard-aan-de-slag": {
     "route": "/dashboard",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
+      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
       "vuil": true
     }
   },
   "voorkeuren-paneel": {
     "route": "/dashboard",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
+      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
       "vuil": true
     }
   },
   "voorkeuren": {
     "route": "/dashboard",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
+      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
       "vuil": true
     }
   },
@@ -527,14 +527,14 @@
   "aanbrenger-groepering": {
     "route": "/contributors/0447a42c-66a4-4afd-9939-80050a0b3279",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
+      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
       "vuil": true
     }
   },
   "bedrijfsfiche-logo": {
     "route": "/administration/company-profile",
     "app": {
-      "sha": "f52f335f6750379a244af1098052abd9457308b7",
+      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
       "vuil": true
     }
   },
@@ -562,7 +562,7 @@
   "klantportaal-klant": {
     "route": "/beheer/klantportaal",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
+      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
       "vuil": true
     }
   },
@@ -604,14 +604,14 @@
   "hoofdbalk": {
     "route": "/dashboard",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
+      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
       "vuil": true
     }
   },
   "menu-links": {
     "route": "/dashboard",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
+      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
       "vuil": true
     }
   },
@@ -632,7 +632,7 @@
   "aanbrengers-lijst-fr": {
     "route": "/contributors",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
+      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
       "vuil": true
     }
   },
@@ -653,7 +653,7 @@
   "professionals-lijst-fr": {
     "route": "/crm/professionals",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
+      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
       "vuil": true
     }
   },
@@ -667,14 +667,14 @@
   "kredietinstellingen-lijst-fr": {
     "route": "/credit/financial-institutions",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
+      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
       "vuil": true
     }
   },
   "verzekeraars-lijst-fr": {
     "route": "/credit/insurance-institutions",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
+      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
       "vuil": true
     }
   },
@@ -751,7 +751,7 @@
   "dashboard-fases-fr": {
     "route": "/beheer/dashboard-fases",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
+      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
       "vuil": true
     }
   },
@@ -765,7 +765,7 @@
   "klantportaal-vormgeving-fr": {
     "route": "/beheer/klantportaal",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
+      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
       "vuil": true
     }
   },
@@ -821,14 +821,14 @@
   "bedrijfsfiche-fr": {
     "route": "/administration/company-profile",
     "app": {
-      "sha": "f52f335f6750379a244af1098052abd9457308b7",
+      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
       "vuil": true
     }
   },
   "dashboard-startscherm-fr": {
     "route": "/dashboard",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
+      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
       "vuil": true
     }
   },
@@ -842,7 +842,7 @@
   "commissie-vooruitzicht-fr": {
     "route": "/commissie/vooruitzicht",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
+      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
       "vuil": true
     }
   },
@@ -898,14 +898,14 @@
   "wachtwoord-fr": {
     "route": "/account/wachtwoord-wijzigen",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
+      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
       "vuil": true
     }
   },
   "tweestapsverificatie-fr": {
     "route": "/account/2fa",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
+      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
       "vuil": true
     }
   },
@@ -933,7 +933,7 @@
   "aanbrengers-fiche-fr": {
     "route": "/contributors/0447a42c-66a4-4afd-9939-80050a0b3279",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
+      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
       "vuil": true
     }
   },
@@ -954,21 +954,21 @@
   "professionals-fiche-fr": {
     "route": "/crm/professionals/7ebc3535-636b-4ca2-94b7-97faad46e34c",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
+      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
       "vuil": true
     }
   },
   "kredietinstellingen-fiche-fr": {
     "route": "/credit/financial-institutions/5427b583-7b10-460f-83b3-c4719f4aaad9",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
+      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
       "vuil": true
     }
   },
   "verzekeraars-fiche-fr": {
     "route": "/credit/insurance-institutions/631dcec1-ee1d-4ae7-a5f1-797b57ca73b8",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
+      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
       "vuil": true
     }
   },
@@ -989,7 +989,7 @@
   "navigatie-fr": {
     "route": "/dashboard",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
+      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
       "vuil": true
     }
   },
@@ -1094,7 +1094,7 @@
   "portaal-toegang-fr": {
     "route": "/contributors/05b820be-792d-4ecb-b41e-c8b00619b872",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
+      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
       "vuil": true
     }
   },
@@ -1108,28 +1108,28 @@
   "dashboard-pijplijn-fr": {
     "route": "/dashboard",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
+      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
       "vuil": true
     }
   },
   "dashboard-aan-de-slag-fr": {
     "route": "/dashboard",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
+      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
       "vuil": true
     }
   },
   "voorkeuren-paneel-fr": {
     "route": "/dashboard",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
+      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
       "vuil": true
     }
   },
   "voorkeuren-fr": {
     "route": "/dashboard",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
+      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
       "vuil": true
     }
   },
@@ -1143,14 +1143,14 @@
   "aanbrenger-groepering-fr": {
     "route": "/contributors/0447a42c-66a4-4afd-9939-80050a0b3279",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
+      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
       "vuil": true
     }
   },
   "bedrijfsfiche-logo-fr": {
     "route": "/administration/company-profile",
     "app": {
-      "sha": "f52f335f6750379a244af1098052abd9457308b7",
+      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
       "vuil": true
     }
   },
@@ -1178,7 +1178,7 @@
   "klantportaal-klant-fr": {
     "route": "/beheer/klantportaal",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
+      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
       "vuil": true
     }
   },
@@ -1220,14 +1220,14 @@
   "hoofdbalk-fr": {
     "route": "/dashboard",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
+      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
       "vuil": true
     }
   },
   "menu-links-fr": {
     "route": "/dashboard",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
+      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
       "vuil": true
     }
   },
@@ -1248,14 +1248,14 @@
   "commissie-vooruitzicht-aanbrengers": {
     "route": "/commissie/vooruitzicht",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
+      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
       "vuil": true
     }
   },
   "commissie-vooruitzicht-aanbrengers-fr": {
     "route": "/commissie/vooruitzicht",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
+      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
       "vuil": true
     }
   },
