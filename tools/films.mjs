@@ -19,6 +19,8 @@
 //   node tools/films.mjs                 alle films, NL en FR
 //   node tools/films.mjs kredietdossier  enkel de films waarvan de naam dat bevat
 //   node tools/films.mjs --droog         geen opname: enkel de audio maken en de duren tonen
+//   node tools/films.mjs --uit-cache     enkel stemfragmenten uit de cache; een ontbrekend fragment STOPT de
+//                                        ronde vóór de betaalde oproep (combineer met --droog om het na te gaan)
 //
 // Uitvoer: tools/.films-uit/ — NIET in git (§7: geen mp4 in git).
 
@@ -86,6 +88,11 @@ const AANLOOP_START = 1.2;    // vóór de allereerste zin — anders val je mid
 const NASLEEP = 1.6;          // laten uitademen op het slotbeeld — mét de slot-adem samen ± 2 s
 const filter = process.argv.slice(2).find(a => !a.startsWith('--'));
 const DROOG = process.argv.includes('--droog');
+// ⚠️ --uit-cache (23/09/2026). Een heropname "om het beeld" hoort niets te kosten: de tekst wijzigde niet, dus
+// elk fragment staat in de cache. Maar dat was een AANNAME — een onzichtbaar gewijzigd leesteken, een ander
+// model, en de ronde betaalt stil opnieuw. Met deze vlag weigert spreek() de betaalde oproep en stopt de ronde
+// met de naam van de zin. Die nacht bewees ze dat twaalf films kosteloos te hernemen waren.
+const UIT_CACHE = process.argv.includes('--uit-cache');
 
 // ── De cursor (§3.2) ─────────────────────────────────────────────────────────────────────────────────────
 // Playwright tekent de muisaanwijzer niet in de video. Zonder dit drukken knoppen zichzelf in, en dat leest
@@ -338,6 +345,8 @@ async function spreek(tekst, taal, pad) {
   const uitCache = cacheNaam(tekst, stem, model);
 
   if (!existsSync(uitCache)) {
+    if (UIT_CACHE) throw new Error(`⛔ --uit-cache: dit fragment staat niet in de cache en zou BETAALD worden `
+      + `(${taal}): "${tekst.slice(0, 70)}…" — ronde gestopt vóór de oproep.`);
     const r = await fetch(`https://api.elevenlabs.io/v1/text-to-speech/${stem}`, {
       method: 'POST',
       headers: { 'xi-api-key': SLEUTEL, 'content-type': 'application/json', accept: 'audio/mpeg' },
