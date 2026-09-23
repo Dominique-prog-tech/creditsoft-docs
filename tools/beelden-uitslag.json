@@ -149,7 +149,7 @@
   "klantportaal-vormgeving": {
     "route": "/beheer/klantportaal",
     "app": {
-      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
+      "sha": "c4d4b9be8be513a5b3e76116621550d8e6809b45",
       "vuil": true
     }
   },
@@ -296,7 +296,7 @@
   "portaal-overzicht": {
     "route": "/portal-intermediary/overzicht",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
+      "sha": "c4d4b9be8be513a5b3e76116621550d8e6809b45",
       "vuil": true
     }
   },
@@ -478,8 +478,8 @@
   "portaal-toegang": {
     "route": "/contributors/05b820be-792d-4ecb-b41e-c8b00619b872",
     "app": {
-      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
-      "vuil": true
+      "sha": "2a4293101f11826c955ab0aa7b2728d18cc611fc",
+      "vuil": false
     }
   },
   "commissieschemas-journaal": {
@@ -562,7 +562,7 @@
   "klantportaal-klant": {
     "route": "/beheer/klantportaal",
     "app": {
-      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
+      "sha": "c4d4b9be8be513a5b3e76116621550d8e6809b45",
       "vuil": true
     }
   },
@@ -765,7 +765,7 @@
   "klantportaal-vormgeving-fr": {
     "route": "/beheer/klantportaal",
     "app": {
-      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
+      "sha": "c4d4b9be8be513a5b3e76116621550d8e6809b45",
       "vuil": true
     }
   },
@@ -912,7 +912,7 @@
   "portaal-overzicht-fr": {
     "route": "/portal-intermediary/overzicht",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
+      "sha": "c4d4b9be8be513a5b3e76116621550d8e6809b45",
       "vuil": true
     }
   },
@@ -1094,8 +1094,8 @@
   "portaal-toegang-fr": {
     "route": "/contributors/05b820be-792d-4ecb-b41e-c8b00619b872",
     "app": {
-      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
-      "vuil": true
+      "sha": "2a4293101f11826c955ab0aa7b2728d18cc611fc",
+      "vuil": false
     }
   },
   "commissieschemas-journaal-fr": {
@@ -1178,7 +1178,7 @@
   "klantportaal-klant-fr": {
     "route": "/beheer/klantportaal",
     "app": {
-      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
+      "sha": "c4d4b9be8be513a5b3e76116621550d8e6809b45",
       "vuil": true
     }
   },
