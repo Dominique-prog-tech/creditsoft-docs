@@ -817,6 +817,7 @@ let ok = 0; const mislukt = []; const ongecontroleerd = []; const overgeslagenPo
 const misluktMet = (regel) => { mislukt.push(regel); verantwoord.mislukt.push(regel.split(' — ')[0]); };
 const verantwoord = { geschreven: [], zwak: [], ongecontroleerd: [], portaal: [], handwerk: [], mislukt: [] };
 let alsAanbrenger = false;
+let portaalAanmeldingMislukt = false;
 for (const taal of ['nl-BE', 'fr-BE']) {
   await page.goto(`${BASIS}/culture/set?c=${taal}`); await page.waitForLoadState('networkidle');
   const achtervoegsel = taal.startsWith('fr') ? '-fr' : '';
@@ -830,9 +831,28 @@ for (const taal of ['nl-BE', 'fr-BE']) {
       verantwoord.portaal.push(`${naam}${achtervoegsel}`);
       continue;
     }
+    // ⚠️ Is de portaalaanmelding al eens mislukt in deze ronde? Dan NIET opnieuw proberen.
+    //    Op 23/09/2026 vergrendelde Identity het account `aanbrenger2` na herhaalde pogingen met een
+    //    verkeerd wachtwoord — elke filterronde probeerde het opnieuw, en de generator merkte niets.
+    if (portaal && portaalAanmeldingMislukt) {
+      misluktMet(`${naam}${achtervoegsel} — overgeslagen: de aanmelding als aanbrenger mislukte eerder in deze ronde`);
+      continue;
+    }
     if (portaal !== alsAanbrenger) {
       await meldAan(page, portaal ? PORTAAL_GEBRUIKER : gebruiker,
                           portaal ? PORTAAL_WW : wachtwoord, !portaal);
+      // ⚠️⚠️ meldAan CONTROLEERT DE PORTAALAANMELDING NIET. Met kiesTenant=false keert hij terug meteen
+      //    na de klik (adm-appkit/tools/schermmachinerie/aansturing.mjs, bevroren). Mislukt de aanmelding,
+      //    dan blijft de BEHEERDERSSESSIE actief, weigert het portaal die, en meldde deze generator
+      //    "GEEN TOEGANG" — de verkeerde oorzaak. Op 23/09 stuurde dat twee sessies de verkeerde kant op.
+      //    Een mislukte aanmelding herken je aan de pagina: die staat dan nog op /login.
+      if (portaal && new URL(page.url()).pathname.toLowerCase().startsWith('/login')) {
+        portaalAanmeldingMislukt = true;
+        misluktMet(`${naam}${achtervoegsel} — AANMELDING ALS AANBRENGER MISLUKT (${PORTAAL_GEBRUIKER}). `
+          + `Klopt Dev:PortaalPassword met het wachtwoord van dat LOKALE account? De overige portaalbeelden `
+          + `worden niet meer geprobeerd, anders vergrendelt het account.`);
+        continue;
+      }
       await page.goto(`${BASIS}/culture/set?c=${taal}`); await page.waitForLoadState('networkidle');
       alsAanbrenger = portaal;
     }
