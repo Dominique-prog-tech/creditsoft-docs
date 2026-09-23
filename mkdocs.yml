@@ -137,6 +137,7 @@ plugins:
             Aan de slag: Premiers pas
             Navigeren in CreditSoft: Naviguer dans CreditSoft
             Tweestapsverificatie (2FA): Vérification en deux étapes (2FA)
+            De mobiele app: L'application mobile
             Kredieten: Crédits
             Lijsten: Listes
             Relatiebeheer: Gestion des relations
@@ -246,6 +247,9 @@ nav:
     - Mijn gegevens: getting-started/mijn-gegevens.md
     - Wachtwoord wijzigen: getting-started/wachtwoord.md
     - Tweestapsverificatie (2FA): getting-started/tweestapsverificatie.md
+    # De mobiele app (23/09/2026, live in de App Store). Onder Aan de slag en niet bij het aanbrengersportaal:
+    # de app is er voor medewerkers én aanbrengers.
+    - De mobiele app: getting-started/mobiele-app.md
 
   # Het journaal hangt aan zes schermen en werkt overal hetzelfde. Daarom één keer beschreven, en
   # vanuit die zes pagina's aangehaald — niet zes keer herhaald en zes keer bij te werken.
