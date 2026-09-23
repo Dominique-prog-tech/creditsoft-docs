@@ -133,7 +133,12 @@ const MASKEER_BOEKINGSLINK = () => {
   if (document.body) start(); else document.addEventListener('DOMContentLoaded', start);
 };
 
-const VERBERG_VERSIE = '.nav-version { visibility: hidden !important; }';
+// ⚠️ EN DE KLOK-PIL (23/09/2026). Die verschijnt in de kopbalk zodra ADM_TIJD_VAST gezet is — en een ronde
+// onder vaste klok is precies wat beelden en films herhaalbaar maakt. De beeldgenerator verborg ze al sinds
+// 02/09; deze filter niet, en twaalf heropnames droegen "Klok vastgezet · 01/09/2026" bovenaan in beeld.
+// Gezien op een stilstaand beeld uit de leadsfilm, niet door een controle — vandaar de grendel per scène.
+// `visibility` en niet `display`: de kopbalk mag niet verschuiven.
+const VERBERG_VERSIE = '.nav-version, .adm-klok-vast { visibility: hidden !important; }';
 
 // ── DE TEKSTBALK VOOR EEN GELUIDLOZE FILM ────────────────────────────────────────────────────────────────
 //
@@ -721,6 +726,18 @@ for (const [naam, filmVol] of FILMS) {
       // ⚠️ De versiefilter opnieuw aanbrengen: Blazor's enhanced navigation vervangt de <head> bij een
       // klik-navigatie en gooit de ingespoten stijl weg. Gemeten bij de beeldgenerator op 31/08/2026.
       await page.addStyleTag({ content: VERBERG_VERSIE }).catch(() => {});
+
+      // De grendel bij de filter hierboven: staat de klok-pil er tóch (hernoemde klasse, een schil die de stijl
+      // wegveegt), dan valt de film — een film met een dev-badge in beeld hoort nergens terecht te komen.
+      const pil = await page.evaluate(() => {
+        const el = document.querySelector('.adm-klok-vast');
+        if (!el) return 'ontbreekt';
+        return getComputedStyle(el).visibility === 'hidden' ? 'verborgen' : 'ZICHTBAAR';
+      });
+      if (pil === 'ZICHTBAAR') {
+        gevallen = `${sc.naam} — KLOK-PIL ZICHTBAAR: de filter op .adm-klok-vast grijpt niet; "Klok vastgezet" staat in beeld`;
+        break;
+      }
 
       // Het scherm staat er (het merkteken is gevonden). Eerst laten LANDEN, dan pas praten — de kijker
       // moet kunnen zien wát er veranderd is vóór iemand het uitlegt.
