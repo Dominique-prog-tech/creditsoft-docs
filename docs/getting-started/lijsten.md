@@ -3,7 +3,7 @@
 Bijna elk scherm in CreditSoft toont een **lijst**: relaties, dossiers, aanbrengers, taken. Ze werken allemaal
 op dezelfde manier. Wat u hier leert, geldt dus overal — u hoeft het niet per scherm opnieuw uit te zoeken.
 
-![Een lijstscherm in CreditSoft met bovenaan de knoppen Nieuw, Kolommen kiezen en Exporteren en een zoekveld, en daaronder de tabel met kolomkoppen om op te sorteren.](../images/relaties-lijst.png "De vaste onderdelen van een lijstscherm")
+![Een lijstscherm in CreditSoft met bovenaan de knoppen Nieuwe relatie, Kolommen kiezen en Exporteren en een zoekveld, en daaronder de tabel met kolomkoppen om op te sorteren.](../images/relaties-lijst.png "De vaste onderdelen van een lijstscherm")
 
 ## Zoeken
 

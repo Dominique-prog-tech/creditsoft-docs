@@ -71,6 +71,16 @@ const AANBRENGER_PORTAAL = ['portaal-overzicht', 'portaal-dossiers', 'portaal-co
 const HANDWERK = { 'rapporten-voorbeeld': 'één blad uit een gerenderd rapport, met de hand uitgesneden',
                    'kantoorprofiel-vragenlijst': 'uitsnede dwars door editor én voorbeeldpaneel — ⚠️ er is nog GEEN Franse uitsnede, en de Franse handleidingpagina toont daardoor het Nederlandse beeld' };
 
+// ⚠️ BEELDEN UIT EEN ANDERE BRON (23/09/2026). De schermen van de mobiele app komen niet uit deze webapp maar
+// uit adm-creditsoft-flutter: store/schermafbeeldingen/ios-{nl,fr}, gemaakt door test/winkel/winkel_test.dart
+// en hier verkleind tot 600 px breed. Deze generator KAN ze niet schieten. Ze in ZONDER_RECEPT zetten zou
+// liegen ("het recept moet nog komen"), en ze nergens zetten maakte ze "stil overgeslagen" — en dát zette
+// op 23/09 de strengere controle hieronder uit, want die draait enkel als er niets vergeten is.
+// Wijzigt de app, dan komen de nieuwe schermen uit de Flutter-repo — niet uit een beeldronde hier.
+const ANDERE_BRON = Object.fromEntries(
+  ['app-home', 'app-stukken', 'app-fiche', 'app-fotograferen', 'app-aanbrengen']
+    .map(n => [n, 'mobiele app — uit adm-creditsoft-flutter/store/schermafbeeldingen/ios-{nl,fr}']));
+
 // ⚠️ BEELDEN DIE ALTIJD WISSELEN, en waarom dat geen fout is om te repareren.
 // Deze worden WEL geschreven — ze zijn geldig — maar twee identieke rondes leveren er nooit hetzelfde
 // beeld voor. Zonder deze lijst gaat een volgende ronde er opnieuw uren op jagen, precies zoals op
@@ -1203,7 +1213,12 @@ if (!filter) {
   const geschoten = new Set(SCHOTEN.map(x => x[0]));
   const opSchijf = readdirSync(UIT).filter(f => f.endsWith('.png') && !f.endsWith('-fr.png'))
                                    .map(f => f.replace('.png', ''));
-  const vergeten = opSchijf.filter(n => !geschoten.has(n) && !ZONDER_RECEPT.includes(n));
+  const vergeten = opSchijf.filter(n => !geschoten.has(n) && !ZONDER_RECEPT.includes(n) && !ANDERE_BRON[n]);
+  const uitAndereBron = Object.keys(ANDERE_BRON).filter(n => opSchijf.includes(n));
+  if (uitAndereBron.length) {
+    console.log(`\n📱 ${uitAndereBron.length} beelden komen uit een ANDERE BRON en zijn dus NIET hernomen:`);
+    for (const n of uitAndereBron) console.log(`   ${n} — ${ANDERE_BRON[n]}`);
+  }
   if (vergeten.length) {
     console.log(`\n⚠️ ${vergeten.length} beelden staan op schijf maar in GEEN ENKELE lijst — stil overgeslagen:`);
     console.log('   ' + vergeten.join(', '));
@@ -1220,7 +1235,10 @@ if (!filter) {
     // deze controle stonden 66 beelden dus in twee lijsten. De controle zei dat meteen — precies waarvoor
     // ze bestaat, en meteen op zichzelf toegepast.
     const zwakOfOngecontroleerd = new Set([...verantwoord.zwak, ...verantwoord.ongecontroleerd]);
-    const uitsluitend = { ...verantwoord,
+    // Een app-beeld telt als verantwoord ALS HET BESTAND ER STAAT, in elke taal apart — de Franse versie
+    // hangt niet mee aan de Nederlandse.
+    const andereBron = opSchijfVolledig.filter(n => ANDERE_BRON[n.replace(/-fr$/, '')]);
+    const uitsluitend = { ...verantwoord, andereBron,
       geschreven: verantwoord.geschreven.filter(n => !zwakOfOngecontroleerd.has(n)) };
     const { nergens, meermaals } = verantwoording(opSchijfVolledig, uitsluitend);
     if (nergens.length || meermaals.length) {

@@ -8,7 +8,7 @@ Klik in de zijbalk op **CRM** en dan op **Leads**.
 
 ## De lijst
 
-![Het scherm Leads in CreditSoft: een lijst met kolommen voor naam, status, wacht al, bron, e-mail, telefoon, bedrag en opvolging, met bovenaan een filter op status en de knop Nieuwe lead.](../images/leads-lijst.png "De werklijst van uw instroom, met wie het langst wacht bovenaan")
+![Het scherm Leads in CreditSoft: een lijst met kolommen voor naam, status, wacht al, bron, aanbrenger, e-mail, telefoon, bedrag en opvolging — één lead kwam binnen via de mobiele app en draagt de naam van zijn aanbrenger — met bovenaan een filter op status en de knop Nieuwe lead.](../images/leads-lijst.png "De werklijst van uw instroom, met wie het langst wacht bovenaan")
 
 De lijst opent op **wie het langst wacht**, niet op wie het laatst binnenkwam. Per lead ziet u: **naam**, **status**, **wacht al**, **bron**, **aanbrenger**, **e-mail**, **telefoon**, **bedrag** en **opvolging**.
 

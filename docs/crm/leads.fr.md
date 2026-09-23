@@ -8,7 +8,7 @@ Dans la barre latérale, cliquez sur **CRM**, puis sur **Leads**.
 
 ## La liste
 
-![L'écran Leads dans CreditSoft : une liste avec les colonnes nom, statut, attend depuis, source, e-mail, téléphone, montant et suivi, avec en haut un filtre par statut et le bouton Nouveau lead.](../images/leads-lijst-fr.png "La liste de travail de vos entrées, celui qui attend le plus longtemps en tête")
+![L'écran Leads dans CreditSoft : une liste avec les colonnes nom, statut, attend depuis, source, apporteur, e-mail, téléphone, montant et suivi — un lead est arrivé via l'application mobile et porte le nom de son apporteur — avec en haut un filtre par statut et le bouton Nouveau lead.](../images/leads-lijst-fr.png "La liste de travail de vos entrées, celui qui attend le plus longtemps en tête")
 
 La liste s'ouvre sur **celui qui attend le plus longtemps**, et non sur la dernière arrivée. Pour chaque lead, vous voyez : **nom**, **statut**, **attend depuis**, **source**, **apporteur**, **e-mail**, **téléphone**, **montant** et **suivi**.
 

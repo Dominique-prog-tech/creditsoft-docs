@@ -2,1289 +2,1289 @@
   "kredietdossiers-lijst": {
     "route": "/credit-files",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "kredietdossiers-lijst-fr": {
     "route": "/credit-files",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "aanbrengers-lijst": {
     "route": "/contributors",
     "app": {
-      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "relaties-lijst": {
     "route": "/crm/relaties",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "leads-lijst": {
     "route": "/crm/leads",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "professionals-lijst": {
     "route": "/crm/professionals",
     "app": {
-      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "groepen-lijst": {
     "route": "/crm/groepen",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "kredietinstellingen-lijst": {
     "route": "/credit/financial-institutions",
     "app": {
-      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "verzekeraars-lijst": {
     "route": "/credit/insurance-institutions",
     "app": {
-      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "verzekeringen-lijst": {
     "route": "/insurance-contracts",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "contractenoverzicht-lijst": {
     "route": "/contracts",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "globaal-overzicht-lijst": {
     "route": "/credit-files/overview",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "schattingen-lijst": {
     "route": "/credit-files/appraisals",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "documenten-valideren": {
     "route": "/krediet/documenten-valideren",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "documentbibliotheek": {
     "route": "/document-library",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "taken-overzicht": {
     "route": "/taken",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "afwezigheden": {
     "route": "/beheer/afwezigheden",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "keuzelijsten": {
     "route": "/beheer/keuzelijsten",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "documenttypes": {
     "route": "/beheer/documenttypes",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "dashboard-fases": {
     "route": "/beheer/dashboard-fases",
     "app": {
-      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "commissie-instellingen": {
     "route": "/beheer/commissie-instellingen",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "klantportaal-vormgeving": {
     "route": "/beheer/klantportaal",
     "app": {
-      "sha": "c4d4b9be8be513a5b3e76116621550d8e6809b45",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "mailsjablonen": {
     "route": "/administration/mail-templates",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "verzendadressen": {
     "route": "/administration/sender-addresses",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "mailmonitoring": {
     "route": "/administration/mail-monitoring",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "rollen": {
     "route": "/administration/roles",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "actielogboek": {
     "route": "/beheer/audit",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "prullenbak": {
     "route": "/prullenbak",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "platformbeheer-hub": {
     "route": "/administration",
     "app": {
-      "sha": "f52f335f6750379a244af1098052abd9457308b7",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "bedrijfsfiche": {
     "route": "/administration/company-profile",
     "app": {
-      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "dashboard-startscherm": {
     "route": "/dashboard",
     "app": {
-      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "rapporten-bibliotheek": {
     "route": "/rapporten",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "commissie-vooruitzicht": {
     "route": "/commissie/vooruitzicht",
     "app": {
-      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "commissie-restanten": {
     "route": "/commissie/restanten",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "commissieschemas": {
     "route": "/commissie/schemas",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "fiche-281-50": {
     "route": "/commissie/fiche-28150",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "borderel-overzicht": {
     "route": "/commissie/borderel",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "online-afspraken-agenda": {
     "route": "/crm/online-afspraken",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "afspraken-week": {
     "route": "/crm/afspraken",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "mijn-gegevens": {
     "route": "/account/mijn-gegevens",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "wachtwoord": {
     "route": "/account/wachtwoord-wijzigen",
     "app": {
-      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "tweestapsverificatie": {
     "route": "/account/2fa",
     "app": {
-      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "portaal-overzicht": {
     "route": "/portal-intermediary/overzicht",
     "app": {
-      "sha": "c4d4b9be8be513a5b3e76116621550d8e6809b45",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "portaal-dossiers": {
     "route": "/portal-intermediary/dossiers",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "portaal-commissies": {
     "route": "/portal-intermediary/commissies",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "aanbrengers-fiche": {
     "route": "/contributors/0447a42c-66a4-4afd-9939-80050a0b3279",
     "app": {
-      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "relaties-fiche": {
     "route": "/crm/relaties/09ee4eb1-5c32-4e3d-ade5-a0fe4fd9ded2",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "lead-fiche": {
     "route": "/crm/leads/d87a24fd-a6aa-4d42-a412-25dbd99b45ba",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "professionals-fiche": {
     "route": "/crm/professionals/7ebc3535-636b-4ca2-94b7-97faad46e34c",
     "app": {
-      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "kredietinstellingen-fiche": {
     "route": "/credit/financial-institutions/5427b583-7b10-460f-83b3-c4719f4aaad9",
     "app": {
-      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "verzekeraars-fiche": {
     "route": "/credit/insurance-institutions/631dcec1-ee1d-4ae7-a5f1-797b57ca73b8",
     "app": {
-      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "kredietdossier-fiche": {
     "route": "/credit-files/00038c40-df6b-4992-83e4-13847c7a0a59",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "borderel-fiche": {
     "route": "/commissie/borderel/000245d0-80b0-4ba8-8354-cdcb377fc5bd",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "navigatie": {
     "route": "/dashboard",
     "app": {
-      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "journaal-taken": {
     "route": "/crm/relaties/09ee4eb1-5c32-4e3d-ade5-a0fe4fd9ded2",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "journaal-notities": {
     "route": "/crm/relaties/09ee4eb1-5c32-4e3d-ade5-a0fe4fd9ded2",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "journaal-gesprekken": {
     "route": "/crm/relaties/09ee4eb1-5c32-4e3d-ade5-a0fe4fd9ded2",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "journaal-bijlagen": {
     "route": "/crm/relaties/09ee4eb1-5c32-4e3d-ade5-a0fe4fd9ded2",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "journaal-mailverkeer": {
     "route": "/crm/relaties/09ee4eb1-5c32-4e3d-ade5-a0fe4fd9ded2",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "journaal-logboek": {
     "route": "/crm/relaties/09ee4eb1-5c32-4e3d-ade5-a0fe4fd9ded2",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "journaal-kredietdossiers": {
     "route": "/crm/relaties/09ee4eb1-5c32-4e3d-ade5-a0fe4fd9ded2",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "relaties-fiche-journaal": {
     "route": "/crm/relaties/09ee4eb1-5c32-4e3d-ade5-a0fe4fd9ded2",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "relaties-gevraagde-documenten": {
     "route": "/crm/relaties/09ee4eb1-5c32-4e3d-ade5-a0fe4fd9ded2",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "borderel-borderellen": {
     "route": "/commissie/borderel",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "borderel-nieuwe-ronde": {
     "route": "/commissie/borderel",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "online-afspraken-instellingen": {
     "route": "/crm/online-afspraken",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "documenttypes-categorieen": {
     "route": "/beheer/documenttypes",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "lead-klant-maken": {
     "route": "/crm/leads/d87a24fd-a6aa-4d42-a412-25dbd99b45ba",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "portaal-toegang": {
     "route": "/contributors/05b820be-792d-4ecb-b41e-c8b00619b872",
     "app": {
-      "sha": "2a4293101f11826c955ab0aa7b2728d18cc611fc",
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
       "vuil": false
     }
   },
   "commissieschemas-journaal": {
     "route": "/credit-files/903a2553-1e1d-4a9d-baab-f456bd96145c",
     "app": {
-      "sha": "ba79e6f76fa1330aea3d4f286be8168b6f817881",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "dashboard-pijplijn": {
     "route": "/dashboard",
     "app": {
-      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "dashboard-aan-de-slag": {
     "route": "/dashboard",
     "app": {
-      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "voorkeuren-paneel": {
     "route": "/dashboard",
     "app": {
-      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "voorkeuren": {
     "route": "/dashboard",
     "app": {
-      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "filteren-zoekveld": {
     "route": "/crm/relaties",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "aanbrenger-groepering": {
     "route": "/contributors/0447a42c-66a4-4afd-9939-80050a0b3279",
     "app": {
-      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "bedrijfsfiche-logo": {
     "route": "/administration/company-profile",
     "app": {
-      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "afspraken-per-medewerker": {
     "route": "/crm/afspraken",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "agenda-afwezigheid": {
     "route": "/crm/afspraken",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "portaal-dossier-detail": {
     "route": "/portal-intermediary/dossiers",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "klantportaal-klant": {
     "route": "/beheer/klantportaal",
     "app": {
-      "sha": "c4d4b9be8be513a5b3e76116621550d8e6809b45",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "rapporten-periode": {
     "route": "/rapporten",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "gebruikers-fiche": {
     "route": "/administration/users",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "commissieschema-fiche": {
     "route": "/credit-files/903a2553-1e1d-4a9d-baab-f456bd96145c/commissieschema/a9b48983-8066-4209-a315-8f950e6983dd",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "afspraak-venster": {
     "route": "/crm/afspraken",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "globaal-overzicht-voorinstelling": {
     "route": "/credit-files/overview",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "hoofdbalk": {
     "route": "/dashboard",
     "app": {
-      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "menu-links": {
     "route": "/dashboard",
     "app": {
-      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "verzendadressen-bewerken": {
     "route": "/administration/sender-addresses",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "journaal-lade": {
     "route": "/crm/relaties",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "aanbrengers-lijst-fr": {
     "route": "/contributors",
     "app": {
-      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "relaties-lijst-fr": {
     "route": "/crm/relaties",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "leads-lijst-fr": {
     "route": "/crm/leads",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "professionals-lijst-fr": {
     "route": "/crm/professionals",
     "app": {
-      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "groepen-lijst-fr": {
     "route": "/crm/groepen",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "kredietinstellingen-lijst-fr": {
     "route": "/credit/financial-institutions",
     "app": {
-      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "verzekeraars-lijst-fr": {
     "route": "/credit/insurance-institutions",
     "app": {
-      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "verzekeringen-lijst-fr": {
     "route": "/insurance-contracts",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "contractenoverzicht-lijst-fr": {
     "route": "/contracts",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "globaal-overzicht-lijst-fr": {
     "route": "/credit-files/overview",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "schattingen-lijst-fr": {
     "route": "/credit-files/appraisals",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "documenten-valideren-fr": {
     "route": "/krediet/documenten-valideren",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "documentbibliotheek-fr": {
     "route": "/document-library",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "taken-overzicht-fr": {
     "route": "/taken",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "afwezigheden-fr": {
     "route": "/beheer/afwezigheden",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "keuzelijsten-fr": {
     "route": "/beheer/keuzelijsten",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "documenttypes-fr": {
     "route": "/beheer/documenttypes",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "dashboard-fases-fr": {
     "route": "/beheer/dashboard-fases",
     "app": {
-      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "commissie-instellingen-fr": {
     "route": "/beheer/commissie-instellingen",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "klantportaal-vormgeving-fr": {
     "route": "/beheer/klantportaal",
     "app": {
-      "sha": "c4d4b9be8be513a5b3e76116621550d8e6809b45",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "mailsjablonen-fr": {
     "route": "/administration/mail-templates",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "verzendadressen-fr": {
     "route": "/administration/sender-addresses",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "mailmonitoring-fr": {
     "route": "/administration/mail-monitoring",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "rollen-fr": {
     "route": "/administration/roles",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "actielogboek-fr": {
     "route": "/beheer/audit",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "prullenbak-fr": {
     "route": "/prullenbak",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "platformbeheer-hub-fr": {
     "route": "/administration",
     "app": {
-      "sha": "f52f335f6750379a244af1098052abd9457308b7",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "bedrijfsfiche-fr": {
     "route": "/administration/company-profile",
     "app": {
-      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "dashboard-startscherm-fr": {
     "route": "/dashboard",
     "app": {
-      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "rapporten-bibliotheek-fr": {
     "route": "/rapporten",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "commissie-vooruitzicht-fr": {
     "route": "/commissie/vooruitzicht",
     "app": {
-      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "commissie-restanten-fr": {
     "route": "/commissie/restanten",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "commissieschemas-fr": {
     "route": "/commissie/schemas",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "fiche-281-50-fr": {
     "route": "/commissie/fiche-28150",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "borderel-overzicht-fr": {
     "route": "/commissie/borderel",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "online-afspraken-agenda-fr": {
     "route": "/crm/online-afspraken",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "afspraken-week-fr": {
     "route": "/crm/afspraken",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "mijn-gegevens-fr": {
     "route": "/account/mijn-gegevens",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "wachtwoord-fr": {
     "route": "/account/wachtwoord-wijzigen",
     "app": {
-      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "tweestapsverificatie-fr": {
     "route": "/account/2fa",
     "app": {
-      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "portaal-overzicht-fr": {
     "route": "/portal-intermediary/overzicht",
     "app": {
-      "sha": "c4d4b9be8be513a5b3e76116621550d8e6809b45",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "portaal-dossiers-fr": {
     "route": "/portal-intermediary/dossiers",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "portaal-commissies-fr": {
     "route": "/portal-intermediary/commissies",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "aanbrengers-fiche-fr": {
     "route": "/contributors/0447a42c-66a4-4afd-9939-80050a0b3279",
     "app": {
-      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "relaties-fiche-fr": {
     "route": "/crm/relaties/09ee4eb1-5c32-4e3d-ade5-a0fe4fd9ded2",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "lead-fiche-fr": {
     "route": "/crm/leads/d87a24fd-a6aa-4d42-a412-25dbd99b45ba",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "professionals-fiche-fr": {
     "route": "/crm/professionals/7ebc3535-636b-4ca2-94b7-97faad46e34c",
     "app": {
-      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "kredietinstellingen-fiche-fr": {
     "route": "/credit/financial-institutions/5427b583-7b10-460f-83b3-c4719f4aaad9",
     "app": {
-      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "verzekeraars-fiche-fr": {
     "route": "/credit/insurance-institutions/631dcec1-ee1d-4ae7-a5f1-797b57ca73b8",
     "app": {
-      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "kredietdossier-fiche-fr": {
     "route": "/credit-files/00038c40-df6b-4992-83e4-13847c7a0a59",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "borderel-fiche-fr": {
     "route": "/commissie/borderel/000245d0-80b0-4ba8-8354-cdcb377fc5bd",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "navigatie-fr": {
     "route": "/dashboard",
     "app": {
-      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "journaal-taken-fr": {
     "route": "/crm/relaties/09ee4eb1-5c32-4e3d-ade5-a0fe4fd9ded2",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "journaal-notities-fr": {
     "route": "/crm/relaties/09ee4eb1-5c32-4e3d-ade5-a0fe4fd9ded2",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "journaal-gesprekken-fr": {
     "route": "/crm/relaties/09ee4eb1-5c32-4e3d-ade5-a0fe4fd9ded2",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "journaal-bijlagen-fr": {
     "route": "/crm/relaties/09ee4eb1-5c32-4e3d-ade5-a0fe4fd9ded2",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "journaal-mailverkeer-fr": {
     "route": "/crm/relaties/09ee4eb1-5c32-4e3d-ade5-a0fe4fd9ded2",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "journaal-logboek-fr": {
     "route": "/crm/relaties/09ee4eb1-5c32-4e3d-ade5-a0fe4fd9ded2",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "journaal-kredietdossiers-fr": {
     "route": "/crm/relaties/09ee4eb1-5c32-4e3d-ade5-a0fe4fd9ded2",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "relaties-fiche-journaal-fr": {
     "route": "/crm/relaties/09ee4eb1-5c32-4e3d-ade5-a0fe4fd9ded2",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "relaties-gevraagde-documenten-fr": {
     "route": "/crm/relaties/09ee4eb1-5c32-4e3d-ade5-a0fe4fd9ded2",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "borderel-borderellen-fr": {
     "route": "/commissie/borderel",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "borderel-nieuwe-ronde-fr": {
     "route": "/commissie/borderel",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "online-afspraken-instellingen-fr": {
     "route": "/crm/online-afspraken",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "documenttypes-categorieen-fr": {
     "route": "/beheer/documenttypes",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "lead-klant-maken-fr": {
     "route": "/crm/leads/d87a24fd-a6aa-4d42-a412-25dbd99b45ba",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "portaal-toegang-fr": {
     "route": "/contributors/05b820be-792d-4ecb-b41e-c8b00619b872",
     "app": {
-      "sha": "2a4293101f11826c955ab0aa7b2728d18cc611fc",
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
       "vuil": false
     }
   },
   "commissieschemas-journaal-fr": {
     "route": "/credit-files/903a2553-1e1d-4a9d-baab-f456bd96145c",
     "app": {
-      "sha": "ba79e6f76fa1330aea3d4f286be8168b6f817881",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "dashboard-pijplijn-fr": {
     "route": "/dashboard",
     "app": {
-      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "dashboard-aan-de-slag-fr": {
     "route": "/dashboard",
     "app": {
-      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "voorkeuren-paneel-fr": {
     "route": "/dashboard",
     "app": {
-      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "voorkeuren-fr": {
     "route": "/dashboard",
     "app": {
-      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "filteren-zoekveld-fr": {
     "route": "/crm/relaties",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "aanbrenger-groepering-fr": {
     "route": "/contributors/0447a42c-66a4-4afd-9939-80050a0b3279",
     "app": {
-      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "bedrijfsfiche-logo-fr": {
     "route": "/administration/company-profile",
     "app": {
-      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "afspraken-per-medewerker-fr": {
     "route": "/crm/afspraken",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "agenda-afwezigheid-fr": {
     "route": "/crm/afspraken",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "portaal-dossier-detail-fr": {
     "route": "/portal-intermediary/dossiers",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "klantportaal-klant-fr": {
     "route": "/beheer/klantportaal",
     "app": {
-      "sha": "c4d4b9be8be513a5b3e76116621550d8e6809b45",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "rapporten-periode-fr": {
     "route": "/rapporten",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "gebruikers-fiche-fr": {
     "route": "/administration/users",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "commissieschema-fiche-fr": {
     "route": "/credit-files/903a2553-1e1d-4a9d-baab-f456bd96145c/commissieschema/a9b48983-8066-4209-a315-8f950e6983dd",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "afspraak-venster-fr": {
     "route": "/crm/afspraken",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "globaal-overzicht-voorinstelling-fr": {
     "route": "/credit-files/overview",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "hoofdbalk-fr": {
     "route": "/dashboard",
     "app": {
-      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "menu-links-fr": {
     "route": "/dashboard",
     "app": {
-      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "verzendadressen-bewerken-fr": {
     "route": "/administration/sender-addresses",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "journaal-lade-fr": {
     "route": "/crm/relaties",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "commissie-vooruitzicht-aanbrengers": {
     "route": "/commissie/vooruitzicht",
     "app": {
-      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "commissie-vooruitzicht-aanbrengers-fr": {
     "route": "/commissie/vooruitzicht",
     "app": {
-      "sha": "d6737faf109ca0ec4eccd17d6360cce10a9dbd05",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "mededelingen-fr": {
     "route": "/beheer/mededelingen",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "mededelingen": {
     "route": "/beheer/mededelingen",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "portaal-documenten": {
     "route": "/portal-intermediary/documenten",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   },
   "portaal-documenten-fr": {
     "route": "/portal-intermediary/documenten",
     "app": {
-      "sha": "23bdaeac25799401a318b62a5959085712dff143",
-      "vuil": true
+      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "vuil": false
     }
   }
 }

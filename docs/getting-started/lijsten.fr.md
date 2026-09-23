@@ -4,7 +4,7 @@ Presque chaque écran de CreditSoft affiche une **liste** : relations, dossiers,
 fonctionnent toutes de la même manière. Ce que vous apprenez ici vaut donc partout — vous ne devez pas le
 redécouvrir écran par écran.
 
-![Un écran de liste dans CreditSoft avec en haut les boutons Nouveau, Choisir les colonnes et Exporter ainsi qu'un champ de recherche, et en dessous le tableau avec les en-têtes de colonne sur lesquels trier.](../images/relaties-lijst-fr.png "Les éléments fixes d'un écran de liste")
+![Un écran de liste dans CreditSoft avec en haut les boutons Nouvelle relation, Choisir les colonnes et Exporter ainsi qu'un champ de recherche, et en dessous le tableau avec les en-têtes de colonne sur lesquels trier.](../images/relaties-lijst-fr.png "Les éléments fixes d'un écran de liste")
 
 ## Rechercher
 
