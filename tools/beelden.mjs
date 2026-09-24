@@ -69,7 +69,11 @@ const AANBRENGER_PORTAAL = ['portaal-overzicht', 'portaal-dossiers', 'portaal-co
 // dwars door de editor en het voorbeeldpaneel heen. Er ís geen recept. De generator laat ze staan en
 // ZEGT dat — een beeld dat niemand kan hernemen, hoort geen stille faler te zijn.
 const HANDWERK = { 'rapporten-voorbeeld': 'één blad uit een gerenderd rapport, met de hand uitgesneden',
-                   'kantoorprofiel-vragenlijst': 'uitsnede dwars door editor én voorbeeldpaneel — ⚠️ er is nog GEEN Franse uitsnede, en de Franse handleidingpagina toont daardoor het Nederlandse beeld' };
+                 };
+// ⚠️ kantoorprofiel-vragenlijst stond hier tot 24/09/2026 als handwerk, en daardoor kon niemand het hernemen:
+// het beeld bleef op 22/08 staan terwijl het scherm een veld bijkreeg, en een Franse versie kwam er nooit. Het
+// heeft nu een recept (zie SCHOTEN). Wat het in de weg zat, was niet de uitsnede maar het scherm zelf: dat was
+// een maand lang statisch en liet geen vraag toevoegen (adm-creditsoft, Kantoorprofiel.razor, 24/09).
 
 // ⚠️ BEELDEN UIT EEN ANDERE BRON (23/09/2026). De schermen van de mobiele app komen niet uit deze webapp maar
 // uit adm-creditsoft-flutter: store/schermafbeeldingen/ios-{nl,fr}, gemaakt door test/winkel/winkel_test.dart
@@ -137,7 +141,57 @@ const SCHOTEN = [
   ['prullenbak',                   '/prullenbak'],
   ['platformbeheer-hub',           '/administration'],
   ['bedrijfsfiche',                '/administration/company-profile'],
-  ['kantoorprofiel-vragenlijst',   '/beheer/kantoorprofiel'],
+  ['kantoorprofiel-vragenlijst',   '/beheer/kantoorprofiel', async p => {
+      // ⛔ NOOIT OP BEWAREN KLIKKEN. Het kantoorprofiel wordt bewaard in ADM One, en de lokale app praat met de
+      //    ECHTE hub (AdmOne:BaseUrl in appsettings.json). Alles hieronder leeft enkel in het scherm en verdwijnt
+      //    bij het verlaten. Nagelezen in AdmKantoorProfiel 0.420.5: enkel BewarenAsync schrijft naar de hub;
+      //    Zet(...) en de vragenlijst-editor wijzigen alleen het model in het geheugen.
+      const sectie = p.locator('section.adm-profiel-sectie')
+        .filter({ hasText: /Vragenlijst ter voorbereiding|Questionnaire préparatoire/ });
+      await sectie.scrollIntoViewIfNeeded();
+      const vul = async (loc, tekst) => { await loc.fill(tekst); await loc.press('Tab'); };
+      // Volgorde van de velden in de sectie: kop NL, kop FR, dan per vraag een blok, dan de zin in de mail NL/FR.
+      await vul(sectie.locator('input').nth(0), 'Ter voorbereiding van uw afspraak');
+      await vul(sectie.locator('input').nth(1), 'En préparation de votre rendez-vous');
+      const vragen = [
+        // De soort als PLAATS in de lijst (Vragenlijst.Soorten, AppKit 0.420.5): 0 Kort antwoord, 1 Lange tekst,
+        // 2 Getal, 3 Datum, 4 E-mailadres, 5 Telefoonnummer, 6 Ja / nee. Het naamgedeelte dient als controle.
+        ['Wat is uw netto maandinkomen?', 'Quel est votre revenu net mensuel ?', 2, /Getal|Nombre/],
+        ['Bent u eigenaar van uw woning?', 'Êtes-vous propriétaire de votre logement ?', 6, /Ja \/ nee|Oui \/ non/],
+        ['Waarvoor wilt u lenen?', 'Pour quoi souhaitez-vous emprunter ?', 1, /Lange tekst|Texte long/],
+      ];
+      for (const [i, [nl, fr, plaats, soort]] of vragen.entries()) {
+        await sectie.locator('button.adm-vragen-toevoegen').click();
+        const blok = sectie.locator('.adm-vragen-velden').nth(i);
+        await blok.waitFor();
+        const velden = blok.locator('input');
+        await vul(velden.nth(0), nl);
+        await vul(velden.nth(1), fr);
+        // ⚠️ KIEZEN MET HET TOETSENBORD, niet met de muis — drie pogingen op 24/09 liepen vast. DevExpress
+        //    parkeert een gesloten lijst ~9000 px boven het scherm (ze telt dan als "zichtbaar"), en de lijst van
+        //    een vraag onderaan valt buiten het venster; Playwright meldde telkens "element is outside of the
+        //    viewport". Pijl-omlaag + Enter kiest ongeacht waar de lijst getekend wordt.
+        await blok.locator('.adm-vragen-soort button').first().click();
+        await p.waitForTimeout(300);
+        for (let k = 0; k < plaats; k++) await p.keyboard.press('ArrowDown');
+        await p.keyboard.press('Enter');
+        await p.waitForTimeout(300);
+        // De controle: staat de gekozen soort nu in het veld? Anders zou een verschoven lijst stil de
+        // verkeerde soort op het beeld zetten.
+        const gekozen = await velden.nth(2).inputValue();
+        if (!soort.test(gekozen)) throw new Error(`vraag ${i + 1}: soort "${gekozen}" gekozen, verwacht ${soort}`);
+        await p.waitForTimeout(300);
+      }
+      const alle = sectie.locator('input');
+      const n = await alle.count();
+      await vul(alle.nth(n - 2), 'Wilt u alvast enkele vragen beantwoorden?');
+      await vul(alle.nth(n - 1), 'Souhaitez-vous déjà répondre à quelques questions ?');
+      // Terug naar boven: het venster voor dit beeld is 3000 px hoog (beeldvorm.json), zodat de hele sectie past
+      // zonder te scrollen. Stond de pagina nog verschoven, dan schoof de vaste kopbalk over het beeld heen
+      // (gemeten 24/09: "Voorbeeldgegevens" bovenaan, de titelvelden eronder weg, de onderkant afgeknipt).
+      await p.evaluate(() => window.scrollTo(0, 0));
+      await p.waitForTimeout(800);
+  }],
   ['dashboard-startscherm',        '/dashboard'],
   ['rapporten-bibliotheek',        '/rapporten'],
   ['commissie-vooruitzicht',       '/commissie/vooruitzicht'],
@@ -521,6 +575,9 @@ const avatar = async (p) => {
 // Werkwijze: het merkteken komt uit VERWACHT als het er staat, anders wordt het uit de alt-tekst afgeleid.
 // Staat het niet op het scherm, dan wordt het beeld NIET geschreven en volgt de naam in het verslag.
 const VERWACHT = {
+  // Staat de vraag in het live voorbeeld, dan werkte de editor écht (tekst, geen veldwaarde). Op een statisch
+  // scherm blijft het voorbeeld leeg — precies wat van 22/08 tot 24/09 onopgemerkt bleef.
+  'kantoorprofiel-vragenlijst': /Wat is uw netto maandinkomen|Quel est votre revenu net mensuel/,
   // Vensters: de titel alléén volstaat niet — die staat vaak ook op de knop eronder. Neem iets dat ENKEL
   // in het geopende venster voorkomt.
   'borderel-nieuwe-ronde':      /Voorbeeld tonen|Afficher l'aperçu/i,

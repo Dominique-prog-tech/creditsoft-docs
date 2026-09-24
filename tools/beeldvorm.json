@@ -407,5 +407,13 @@
   "portaal-documenten-fr": {
     "breedte": 1280,
     "hoogte": 860
+  },
+  "kantoorprofiel-vragenlijst": {
+    "breedte": 1280,
+    "hoogte": 3000,
+    "element": {
+      "kies": "section.adm-profiel-sectie",
+      "bevat": "Vragenlijst ter voorbereiding|Questionnaire préparatoire"
+    }
   }
 }

@@ -19,7 +19,7 @@ opent, en dan is het te laat om het nog rustig bij te stellen.
 | **Teksten** | De begroeting en de uitleg die de bezoeker leest. |
 | **Telefoon, website, afzendernaam** | Wat er in de bevestigingsmail en op de pagina staat. |
 | **Privacyverklaring** | Zie hieronder. |
-| **Vragenlijst** | Wordt herwerkt — zie hieronder. |
+| **Vragenlijst** | De vragen die de bezoeker vooraf beantwoordt — zie hieronder. |
 | **Inbeddomeinen** | Zie hieronder. |
 
 ## De vragenlijst
@@ -28,7 +28,7 @@ Hier stelt u de vragen samen die een bezoeker beantwoordt **vóór** zijn afspra
 krijgt hij er een link naar in zijn bevestigingsmail. Laat u het leeg, dan komt er geen link — en ook geen zin
 die naar niets verwijst.
 
-![De vragenlijst-editor: bovenaan de titel in het Nederlands en het Frans, daaronder twee genummerde vragen met elk hun tekst in beide talen en een keuzelijst voor het soort antwoord, met pijltjes en een prullenbak ernaast; rechts een voorbeeld van wat de bezoeker te zien krijgt.](../images/kantoorprofiel-vragenlijst.png "De vragenlijst samenstellen, met het voorbeeld ernaast"){ .volle-breedte }
+![De vragenlijst samenstellen: bovenaan de titel in het Nederlands en het Frans, daaronder drie genummerde vragen met hun tekst in beide talen en het soort antwoord — Getal, Ja / nee en Lange tekst — met pijltjes en een prullenbak ernaast, en de knop Vraag toevoegen. Daaronder het voorbeeld Zo ziet uw bezoeker het, met een invulveld, de knoppen Ja en Nee en een groot tekstvak, en onderaan de zin die naar de vragenlijst verwijst, in beide talen.](../images/kantoorprofiel-vragenlijst.png "De vragenlijst samenstellen, met het voorbeeld erbij"){ .eigen-breedte style="width:560px" }
 
 Per vraag vult u de tekst in het **Nederlands en het Frans** in, en kiest u wat voor antwoord u verwacht:
 
@@ -39,8 +39,17 @@ Per vraag vult u de tekst in het **Nederlands en het Frans** in, en kiest u wat 
 | **Getal** · **Datum** · **E-mailadres** · **Telefoonnummer** | De bezoeker krijgt het juiste invoerveld |
 | **Ja / nee** | Twee knoppen in plaats van een tekstvak |
 
-Met de **pijltjes** verzet u de volgorde, met de **prullenbak** haalt u een vraag weg. Rechts ziet u meteen wat
-de bezoeker krijgt — u hoeft niet te wachten tot iemand de pagina echt opent.
+Met de **pijltjes** verzet u de volgorde, met de **prullenbak** haalt u een vraag weg. In het voorbeeld *Zo ziet
+uw bezoeker het* ziet u meteen wat de bezoeker krijgt — u hoeft niet te wachten tot iemand de pagina echt opent.
+
+### De zin in de bevestigingsmail
+
+Onder de vragen vult u de **zin in die naar de vragenlijst verwijst**, in het Nederlands en het Frans. Die zin
+staat in de bevestigingsmail, vlak boven de link — bijvoorbeeld *"Wilt u alvast enkele vragen beantwoorden?"*.
+
+Zodra er vragen staan, is die zin **verplicht**. Laat u hem leeg, dan bewaart CreditSoft niets en staat de
+melding bij het veld: zonder zin komt er geen link in de mail, en dan zou uw vragenlijst door niemand gezien
+worden.
 
 !!! tip "Een vraag herschrijven breekt niets"
     Antwoorden die al binnenkwamen blijven aan hun vraag hangen, ook als u de tekst nadien aanpast. U mag dus
