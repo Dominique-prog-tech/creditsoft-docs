@@ -521,161 +521,167 @@
     "film": "aan-de-slag",
     "taal": "nl-BE",
     "pagina": "getting-started/navigatie",
-    "lengte": 145.2,
+    "lengte": 145.48,
     "uitvoering": "handleiding",
     "routes": [
       "/dashboard",
       "/crm/relaties"
     ],
     "app": {
-      "sha": "b07ba5b39e16d590cacfa61e189c7a54ff1a29b7",
+      "sha": "66cfa6618ee6330ae5206ef8d78f5bd81e906b69",
       "vuil": false
     },
     "titel": "Uw weg vinden in CreditSoft — het scherm, het zoeken en uw voorkeuren",
     "omschrijving": "De eerste rondleiding: het startscherm met het blok Aan de slag, het menu links, zoeken over uw hele omgeving met ⌘K, de hulp bij elk scherm en de twee assistenten, werken in een lijst (sorteren, filteren, exporteren) en uw eigen voorkeuren — grootte, thema en taal.",
     "hash": "f10ed6c6889cccbb",
-    "guid": "1750e2f2-b344-4836-9062-01668f1ae7ab",
-    "vorigeGuid": "2e5e4202-1ea8-4622-bf39-005dd8cbaa6c",
+    "guid": "d156b1c4-0198-4981-b0d2-0c9eb85618b1",
+    "vorigeGuid": "1750e2f2-b344-4836-9062-01668f1ae7ab",
     "hoofdstukken": [
       {
         "titel": "Het startscherm",
-        "start": 3.3,
-        "eind": 12.91
+        "start": 3.34,
+        "eind": 12.95
       },
       {
         "titel": "Het menu links",
-        "start": 16.09,
-        "eind": 24.82
+        "start": 16.14,
+        "eind": 24.87
       },
       {
         "titel": "Zoeken vanaf elk scherm",
-        "start": 31.27,
-        "eind": 43.95
+        "start": 31.34,
+        "eind": 44.02
       },
       {
         "titel": "Hulp bij dit scherm",
-        "start": 48.53,
-        "eind": 56.48
+        "start": 48.61,
+        "eind": 56.56
       },
       {
         "titel": "De twee assistenten",
-        "start": 61.77,
-        "eind": 71.47
+        "start": 61.87,
+        "eind": 71.58
       },
       {
         "titel": "Werken met lijsten",
-        "start": 76.64,
-        "eind": 84.03
+        "start": 76.81,
+        "eind": 84.19
       },
       {
         "titel": "Sorteren",
-        "start": 88.1,
-        "eind": 93.67
+        "start": 88.29,
+        "eind": 93.86
       },
       {
         "titel": "Filteren",
-        "start": 98.99,
-        "eind": 106.23
+        "start": 99.19,
+        "eind": 106.44
       },
       {
         "titel": "Exporteren",
-        "start": 109.68,
-        "eind": 117.9
+        "start": 109.91,
+        "eind": 118.13
       },
       {
         "titel": "Uw voorkeuren",
-        "start": 122.17,
-        "eind": 132.57
+        "start": 122.42,
+        "eind": 132.82
       },
       {
         "titel": "Tot slot",
-        "start": 137.72,
-        "eind": 142.78
+        "start": 137.99,
+        "eind": 143.05
       }
     ],
-    "gepubliceerdOp": "2026-09-17T08:47:34.313",
+    "gepubliceerdOp": "2026-09-24T03:51:17.182",
     "gepubliceerdeHash": "f10ed6c6889cccbb",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/1750e2f2-b344-4836-9062-01668f1ae7ab/thumbnail.jpg"
+    "opTeRuimen": [
+      "2e5e4202-1ea8-4622-bf39-005dd8cbaa6c"
+    ],
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/d156b1c4-0198-4981-b0d2-0c9eb85618b1/thumbnail.jpg"
   },
   "aan-de-slag-fr": {
     "film": "aan-de-slag",
     "taal": "fr-BE",
     "pagina": "getting-started/navigatie",
-    "lengte": 138,
+    "lengte": 138.16,
     "uitvoering": "handleiding",
     "routes": [
       "/dashboard",
       "/crm/relaties"
     ],
     "app": {
-      "sha": "b07ba5b39e16d590cacfa61e189c7a54ff1a29b7",
+      "sha": "66cfa6618ee6330ae5206ef8d78f5bd81e906b69",
       "vuil": false
     },
     "titel": "Se repérer dans CreditSoft — l’écran, la recherche et vos préférences",
     "omschrijving": "La première visite guidée : l’écran d’accueil avec le bloc Pour commencer, le menu de gauche, la recherche dans tout votre environnement avec ⌘K, l’aide sur chaque écran et les deux assistants, le travail dans une liste (trier, filtrer, exporter) et vos préférences — taille, thème et langue.",
     "hash": "55d9f58c9aa805b0",
-    "guid": "45fb7c71-e5df-4759-98ee-0a253403786a",
-    "vorigeGuid": "3e0427ca-bb6e-4fe8-8301-c8c1d6e7094e",
+    "guid": "d0e4979f-5673-4ae4-aeda-a07ce4ddf686",
+    "vorigeGuid": "45fb7c71-e5df-4759-98ee-0a253403786a",
     "hoofdstukken": [
       {
         "titel": "L'écran d'accueil",
-        "start": 3.29,
-        "eind": 12.76
+        "start": 3.31,
+        "eind": 12.78
       },
       {
         "titel": "Le menu de gauche",
-        "start": 15.94,
-        "eind": 24.44
+        "start": 15.99,
+        "eind": 24.49
       },
       {
         "titel": "Rechercher depuis tout écran",
-        "start": 30.89,
-        "eind": 41.43
+        "start": 30.95,
+        "eind": 41.49
       },
       {
         "titel": "Aide sur cet écran",
-        "start": 46.01,
-        "eind": 52.65
+        "start": 46.09,
+        "eind": 52.73
       },
       {
         "titel": "Les deux assistants",
-        "start": 57.93,
-        "eind": 65.22
+        "start": 58.02,
+        "eind": 65.31
       },
       {
         "titel": "Travailler avec les listes",
-        "start": 70.42,
-        "eind": 79.47
+        "start": 70.51,
+        "eind": 79.56
       },
       {
         "titel": "Trier",
-        "start": 83.54,
-        "eind": 87.82
+        "start": 83.68,
+        "eind": 87.95
       },
       {
         "titel": "Filtrer",
-        "start": 93.14,
-        "eind": 100.61
+        "start": 93.28,
+        "eind": 100.76
       },
       {
         "titel": "Exporter",
-        "start": 104.09,
-        "eind": 112.31
+        "start": 104.25,
+        "eind": 112.46
       },
       {
         "titel": "Vos préférences",
-        "start": 116.58,
-        "eind": 125.54
+        "start": 116.74,
+        "eind": 125.7
       },
       {
         "titel": "Pour conclure",
-        "start": 130.66,
-        "eind": 135.59
+        "start": 130.81,
+        "eind": 135.73
       }
     ],
-    "gepubliceerdOp": "2026-09-17T08:47:50.918",
+    "gepubliceerdOp": "2026-09-24T03:51:33.718",
     "gepubliceerdeHash": "55d9f58c9aa805b0",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/45fb7c71-e5df-4759-98ee-0a253403786a/thumbnail.jpg"
+    "opTeRuimen": [
+      "3e0427ca-bb6e-4fe8-8301-c8c1d6e7094e"
+    ],
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/d0e4979f-5673-4ae4-aeda-a07ce4ddf686/thumbnail.jpg"
   },
   "relaties-nl": {
     "film": "relaties",
@@ -839,149 +845,155 @@
     "film": "leads",
     "taal": "nl-BE",
     "pagina": "crm/leads",
-    "lengte": 135.61,
+    "lengte": 136,
     "uitvoering": "handleiding",
     "routes": [
       "/crm/leads"
     ],
     "app": {
-      "sha": "b07ba5b39e16d590cacfa61e189c7a54ff1a29b7",
+      "sha": "66cfa6618ee6330ae5206ef8d78f5bd81e906b69",
       "vuil": false
     },
     "titel": "Leads in CreditSoft — van aanvraag tot klant",
     "omschrijving": "De werklijst van uw instroom: wie er wacht en hoe lang, uit welk kanaal hij kwam, en wie hem opvolgt. Daarna de fiche van een lead — wie hij is, wat hij vraagt, en waar hij staat — de vijf statussen, en tot slot een lead die klant geworden is, met de doorverwijzing naar zijn relatiefiche.",
     "hash": "a0f68c76e18f1b68",
-    "guid": "477cdb52-6790-4fa9-a23d-78b7c9183705",
-    "vorigeGuid": "cab6da09-d546-4533-8ad9-88a876c132dc",
+    "guid": "334da821-0176-4a76-87c5-8a93965f531e",
+    "vorigeGuid": "477cdb52-6790-4fa9-a23d-78b7c9183705",
     "hoofdstukken": [
       {
         "titel": "De werklijst",
-        "start": 3.76,
-        "eind": 12.58
+        "start": 3.8,
+        "eind": 12.63
       },
       {
         "titel": "Hoe lang iemand wacht",
-        "start": 16.27,
-        "eind": 24.49
+        "start": 16.32,
+        "eind": 24.54
       },
       {
         "titel": "Wie volgt hem op",
-        "start": 28.16,
-        "eind": 35.35
+        "start": 28.22,
+        "eind": 35.42
       },
       {
         "titel": "Waar hij vandaan komt",
-        "start": 39.02,
-        "eind": 49.37
+        "start": 39.11,
+        "eind": 49.47
       },
       {
         "titel": "De fiche van een lead",
-        "start": 53.88,
-        "eind": 64.56
+        "start": 53.98,
+        "eind": 64.66
       },
       {
         "titel": "Wat hij vraagt",
-        "start": 68.42,
-        "eind": 77.11
+        "start": 68.52,
+        "eind": 77.21
       },
       {
         "titel": "De opvolging",
-        "start": 80.97,
-        "eind": 88.07
+        "start": 81.06,
+        "eind": 88.17
       },
       {
         "titel": "De vijf statussen",
-        "start": 94.5,
-        "eind": 107.5
+        "start": 94.89,
+        "eind": 107.89
       },
       {
         "titel": "Van lead naar klant",
-        "start": 112.14,
-        "eind": 122.4
+        "start": 112.53,
+        "eind": 122.79
       },
       {
         "titel": "Tot slot",
-        "start": 125.11,
-        "eind": 133.1
+        "start": 125.51,
+        "eind": 133.5
       }
     ],
-    "gepubliceerdOp": "2026-09-17T08:48:46.013",
+    "gepubliceerdOp": "2026-09-24T03:51:50.021",
     "gepubliceerdeHash": "a0f68c76e18f1b68",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/477cdb52-6790-4fa9-a23d-78b7c9183705/thumbnail.jpg"
+    "opTeRuimen": [
+      "cab6da09-d546-4533-8ad9-88a876c132dc"
+    ],
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/334da821-0176-4a76-87c5-8a93965f531e/thumbnail.jpg"
   },
   "leads-fr": {
     "film": "leads",
     "taal": "fr-BE",
     "pagina": "crm/leads",
-    "lengte": 137.27,
+    "lengte": 135.56,
     "uitvoering": "handleiding",
     "routes": [
       "/crm/leads"
     ],
     "app": {
-      "sha": "b07ba5b39e16d590cacfa61e189c7a54ff1a29b7",
+      "sha": "66cfa6618ee6330ae5206ef8d78f5bd81e906b69",
       "vuil": false
     },
     "titel": "Les leads dans CreditSoft — de la demande au client",
     "omschrijving": "La liste de travail de vos demandes entrantes : qui attend et depuis combien de temps, de quel canal il provient, et qui le suit. Ensuite la fiche d’un lead — qui il est, ce qu’il demande et où il en est — les cinq statuts, et pour finir un lead devenu client, avec le renvoi vers sa fiche.",
     "hash": "f1ee7e577747fe4d",
-    "guid": "8cb998c3-9509-4de3-a7d7-888cc25db057",
-    "vorigeGuid": "c3be5065-6c8a-47a4-9d13-34483bd9c721",
+    "guid": "9e7e3ca9-edd5-4b1a-861d-a8bbd74e8b9e",
+    "vorigeGuid": "8cb998c3-9509-4de3-a7d7-888cc25db057",
     "hoofdstukken": [
       {
         "titel": "La liste de travail",
-        "start": 3.77,
-        "eind": 12.6
+        "start": 3.79,
+        "eind": 12.61
       },
       {
         "titel": "Depuis combien de temps on attend",
-        "start": 16.28,
-        "eind": 24.64
+        "start": 16.31,
+        "eind": 24.67
       },
       {
         "titel": "Qui assure le suivi",
-        "start": 28.29,
-        "eind": 35.35
+        "start": 28.35,
+        "eind": 35.4
       },
       {
         "titel": "D’où il provient",
-        "start": 39.01,
-        "eind": 51.32
+        "start": 39.08,
+        "eind": 51.38
       },
       {
         "titel": "La fiche d’un lead",
-        "start": 57.63,
-        "eind": 68.77
+        "start": 55.88,
+        "eind": 67.02
       },
       {
         "titel": "Ce qu’il demande",
-        "start": 72.64,
-        "eind": 82.07
+        "start": 70.88,
+        "eind": 80.3
       },
       {
         "titel": "Le suivi",
-        "start": 85.93,
-        "eind": 92.2
+        "start": 84.17,
+        "eind": 90.44
       },
       {
         "titel": "Les cinq statuts",
-        "start": 98.68,
-        "eind": 110.33
+        "start": 96.95,
+        "eind": 108.61
       },
       {
         "titel": "Du lead au client",
-        "start": 114.97,
-        "eind": 124.3
+        "start": 113.25,
+        "eind": 122.59
       },
       {
         "titel": "Pour conclure",
-        "start": 127.01,
-        "eind": 134.77
+        "start": 125.31,
+        "eind": 133.06
       }
     ],
-    "gepubliceerdOp": "2026-09-17T08:49:02.494",
+    "gepubliceerdOp": "2026-09-24T03:52:06.168",
     "gepubliceerdeHash": "f1ee7e577747fe4d",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/8cb998c3-9509-4de3-a7d7-888cc25db057/thumbnail.jpg"
+    "opTeRuimen": [
+      "c3be5065-6c8a-47a4-9d13-34483bd9c721"
+    ],
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/9e7e3ca9-edd5-4b1a-861d-a8bbd74e8b9e/thumbnail.jpg"
   },
   "documentketen-nl": {
     "film": "documentketen",
@@ -1879,151 +1891,157 @@
     "film": "dashboard",
     "taal": "nl-BE",
     "pagina": "getting-started/dashboard",
-    "lengte": 155.16,
+    "lengte": 155.48,
     "uitvoering": "handleiding",
     "routes": [
       "/dashboard",
       "/beheer/dashboard-fases"
     ],
     "app": {
-      "sha": "b07ba5b39e16d590cacfa61e189c7a54ff1a29b7",
+      "sha": "66cfa6618ee6330ae5206ef8d78f5bd81e906b69",
       "vuil": false
     },
     "titel": "Het dashboard — uw kantoor in één scherm",
     "omschrijving": "Het startscherm gelezen zoals het bedoeld is: het jaar bovenaan dat alles stuurt, de vier tegels met aantallen en bedragen, de termijnen die vandaag actie vragen, de drie grafieken over het gerealiseerde volume, de pijplijn met uw dossiers per fase, en het scherm waar u die fases zelf samenstelt. Plus waarom uw dashboard er anders uitziet dan dat van een collega.",
     "hash": "8e8f537dfb0114cb",
-    "guid": "3ab07841-07dc-475e-be9c-21c287c6d1db",
-    "vorigeGuid": "13e7b04e-42b4-4a6b-8fe3-5fc275c68996",
+    "guid": "35c69238-2b43-4096-9d31-50a084c5f002",
+    "vorigeGuid": "3ab07841-07dc-475e-be9c-21c287c6d1db",
     "hoofdstukken": [
       {
         "titel": "Het jaar stuurt alles",
-        "start": 5.29,
-        "eind": 17.5
+        "start": 5.31,
+        "eind": 17.53
       },
       {
         "titel": "De vier tegels",
-        "start": 21.47,
-        "eind": 31.27
+        "start": 21.52,
+        "eind": 31.32
       },
       {
         "titel": "Wat vandaag actie vraagt",
-        "start": 35.32,
-        "eind": 49.02
+        "start": 35.38,
+        "eind": 49.08
       },
       {
         "titel": "Gerealiseerd volume",
-        "start": 53.09,
-        "eind": 62.75
+        "start": 53.15,
+        "eind": 62.81
       },
       {
         "titel": "Per instelling en per collega",
-        "start": 66.81,
-        "eind": 75.54
+        "start": 66.87,
+        "eind": 75.6
       },
       {
         "titel": "Geen eigenaar is werk",
-        "start": 79.59,
-        "eind": 90.69
+        "start": 79.67,
+        "eind": 90.77
       },
       {
         "titel": "De pijplijn",
-        "start": 94.74,
-        "eind": 106.54
+        "start": 94.84,
+        "eind": 106.64
       },
       {
         "titel": "De fases zijn van u",
-        "start": 111.56,
-        "eind": 125.17
+        "start": 111.7,
+        "eind": 125.3
       },
       {
         "titel": "Waarom uw scherm anders is",
-        "start": 130.47,
-        "eind": 143.38
+        "start": 130.82,
+        "eind": 143.73
       },
       {
         "titel": "Tot slot",
-        "start": 146.09,
-        "eind": 152.74
+        "start": 146.45,
+        "eind": 153.09
       }
     ],
-    "gepubliceerdOp": "2026-09-17T08:53:26.307",
+    "gepubliceerdOp": "2026-09-24T03:52:27.464",
     "gepubliceerdeHash": "8e8f537dfb0114cb",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/3ab07841-07dc-475e-be9c-21c287c6d1db/thumbnail.jpg"
+    "opTeRuimen": [
+      "13e7b04e-42b4-4a6b-8fe3-5fc275c68996"
+    ],
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/35c69238-2b43-4096-9d31-50a084c5f002/thumbnail.jpg"
   },
   "dashboard-fr": {
     "film": "dashboard",
     "taal": "fr-BE",
     "pagina": "getting-started/dashboard",
-    "lengte": 146.56,
+    "lengte": 146.44,
     "uitvoering": "handleiding",
     "routes": [
       "/dashboard",
       "/beheer/dashboard-fases"
     ],
     "app": {
-      "sha": "b07ba5b39e16d590cacfa61e189c7a54ff1a29b7",
+      "sha": "66cfa6618ee6330ae5206ef8d78f5bd81e906b69",
       "vuil": false
     },
     "titel": "Le tableau de bord — votre bureau en un écran",
     "omschrijving": "L’écran d’accueil lu comme il se doit : l’année en haut qui pilote tout, les quatre tuiles avec les nombres et les montants, les délais qui demandent une action aujourd’hui, les trois graphiques du volume réalisé, le pipeline de vos dossiers par phase, et l’écran où vous composez ces phases. Ainsi que la raison pour laquelle votre tableau de bord diffère de celui d’un collègue.",
     "hash": "8806c575759f29aa",
-    "guid": "8aa0edec-81ff-4c49-9223-f2ec5493c6fe",
-    "vorigeGuid": "d150b6b6-79be-48c7-814b-35809cdaf4b5",
+    "guid": "43b38475-86bc-4896-a464-548d997690dc",
+    "vorigeGuid": "8aa0edec-81ff-4c49-9223-f2ec5493c6fe",
     "hoofdstukken": [
       {
         "titel": "L’année pilote tout",
-        "start": 5.28,
-        "eind": 16.29
+        "start": 5.31,
+        "eind": 16.31
       },
       {
         "titel": "Les quatre tuiles",
-        "start": 20.26,
-        "eind": 30.01
+        "start": 20.3,
+        "eind": 30.05
       },
       {
         "titel": "Ce qui demande une action",
-        "start": 34.07,
-        "eind": 46.24
+        "start": 34.12,
+        "eind": 46.29
       },
       {
         "titel": "Volume réalisé",
-        "start": 50.3,
-        "eind": 59.5
+        "start": 50.37,
+        "eind": 59.56
       },
       {
         "titel": "Par institution et par collègue",
-        "start": 63.56,
-        "eind": 71.74
+        "start": 63.63,
+        "eind": 71.8
       },
       {
         "titel": "Sans responsable, c’est du travail",
-        "start": 75.79,
-        "eind": 87.08
+        "start": 75.87,
+        "eind": 87.16
       },
       {
         "titel": "Le pipeline",
-        "start": 91.14,
-        "eind": 100.7
+        "start": 91.23,
+        "eind": 100.8
       },
       {
         "titel": "Les phases sont les vôtres",
-        "start": 105.71,
-        "eind": 116.9
+        "start": 105.8,
+        "eind": 116.99
       },
       {
         "titel": "Pourquoi votre écran diffère",
-        "start": 122.47,
-        "eind": 134.63
+        "start": 122.31,
+        "eind": 134.48
       },
       {
         "titel": "Pour conclure",
-        "start": 137.35,
-        "eind": 144.17
+        "start": 137.2,
+        "eind": 144.03
       }
     ],
-    "gepubliceerdOp": "2026-09-17T08:53:47.697",
+    "gepubliceerdOp": "2026-09-24T03:52:43.987",
     "gepubliceerdeHash": "8806c575759f29aa",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/8aa0edec-81ff-4c49-9223-f2ec5493c6fe/thumbnail.jpg"
+    "opTeRuimen": [
+      "d150b6b6-79be-48c7-814b-35809cdaf4b5"
+    ],
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/43b38475-86bc-4896-a464-548d997690dc/thumbnail.jpg"
   },
   "lijsten-en-rapporten-nl": {
     "film": "lijsten-en-rapporten",
@@ -2715,78 +2733,82 @@
     "film": "dashboard",
     "taal": "nl-BE",
     "pagina": "getting-started/dashboard",
-    "lengte": 37.08,
-    "uitvoering": "website",
-    "routes": [
-      "/dashboard"
-    ],
-    "app": {
-      "sha": "b07ba5b39e16d590cacfa61e189c7a54ff1a29b7",
-      "vuil": false
-    },
-    "titel": "Het dashboard — uw kantoor in één scherm",
-    "omschrijving": "Het startscherm gelezen zoals het bedoeld is: het jaar bovenaan dat alles stuurt, de vier tegels met aantallen en bedragen, de termijnen die vandaag actie vragen, de drie grafieken over het gerealiseerde volume, de pijplijn met uw dossiers per fase, en het scherm waar u die fases zelf samenstelt. Plus waarom uw dashboard er anders uitziet dan dat van een collega.",
-    "hash": "6ac31c0867f2a248",
-    "guid": "422b9a3c-5762-439b-a496-95ba984fa66d",
-    "hoofdstukken": [
-      {
-        "titel": "Het jaar stuurt alles",
-        "start": 5.66,
-        "eind": 8.26
-      },
-      {
-        "titel": "De vier tegels",
-        "start": 12.26,
-        "eind": 15.4
-      },
-      {
-        "titel": "Gerealiseerd volume",
-        "start": 19.49,
-        "eind": 22.35
-      },
-      {
-        "titel": "De pijplijn",
-        "start": 26.41,
-        "eind": 29.34
-      },
-      {
-        "titel": "Tot slot",
-        "start": 32.05,
-        "eind": 34.65
-      }
-    ],
-    "gepubliceerdOp": "2026-09-17T08:57:47.35",
-    "gepubliceerdeHash": "6ac31c0867f2a248",
-    "vorigeGuid": "e192491f-d25c-4e05-b367-064e6f1fad00",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/422b9a3c-5762-439b-a496-95ba984fa66d/thumbnail.jpg"
-  },
-  "dashboard-website-fr": {
-    "film": "dashboard",
-    "taal": "fr-BE",
-    "pagina": "getting-started/dashboard",
     "lengte": 36.76,
     "uitvoering": "website",
     "routes": [
       "/dashboard"
     ],
     "app": {
-      "sha": "b07ba5b39e16d590cacfa61e189c7a54ff1a29b7",
+      "sha": "66cfa6618ee6330ae5206ef8d78f5bd81e906b69",
+      "vuil": false
+    },
+    "titel": "Het dashboard — uw kantoor in één scherm",
+    "omschrijving": "Het startscherm gelezen zoals het bedoeld is: het jaar bovenaan dat alles stuurt, de vier tegels met aantallen en bedragen, de termijnen die vandaag actie vragen, de drie grafieken over het gerealiseerde volume, de pijplijn met uw dossiers per fase, en het scherm waar u die fases zelf samenstelt. Plus waarom uw dashboard er anders uitziet dan dat van een collega.",
+    "hash": "6ac31c0867f2a248",
+    "guid": "d1fce8d4-46e0-4f6e-81bb-595c0699fea3",
+    "vorigeGuid": "422b9a3c-5762-439b-a496-95ba984fa66d",
+    "hoofdstukken": [
+      {
+        "titel": "Het jaar stuurt alles",
+        "start": 5.3,
+        "eind": 7.9
+      },
+      {
+        "titel": "De vier tegels",
+        "start": 11.92,
+        "eind": 15.06
+      },
+      {
+        "titel": "Gerealiseerd volume",
+        "start": 19.15,
+        "eind": 22
+      },
+      {
+        "titel": "De pijplijn",
+        "start": 26.09,
+        "eind": 29.02
+      },
+      {
+        "titel": "Tot slot",
+        "start": 31.75,
+        "eind": 34.35
+      }
+    ],
+    "gepubliceerdOp": "2026-09-24T03:53:05.376",
+    "gepubliceerdeHash": "6ac31c0867f2a248",
+    "opTeRuimen": [
+      "e192491f-d25c-4e05-b367-064e6f1fad00"
+    ],
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/d1fce8d4-46e0-4f6e-81bb-595c0699fea3/thumbnail.jpg"
+  },
+  "dashboard-website-fr": {
+    "film": "dashboard",
+    "taal": "fr-BE",
+    "pagina": "getting-started/dashboard",
+    "lengte": 36.8,
+    "uitvoering": "website",
+    "routes": [
+      "/dashboard"
+    ],
+    "app": {
+      "sha": "66cfa6618ee6330ae5206ef8d78f5bd81e906b69",
       "vuil": false
     },
     "titel": "Le tableau de bord — votre bureau en un écran",
     "omschrijving": "L’écran d’accueil lu comme il se doit : l’année en haut qui pilote tout, les quatre tuiles avec les nombres et les montants, les délais qui demandent une action aujourd’hui, les trois graphiques du volume réalisé, le pipeline de vos dossiers par phase, et l’écran où vous composez ces phases. Ainsi que la raison pour laquelle votre tableau de bord diffère de celui d’un collègue.",
     "hash": "9e10dee89865ff1f",
-    "guid": "8c2a5492-d84d-449c-b925-9da812c26de4",
+    "guid": "39be8492-cded-454a-b4df-ed63a90651e4",
+    "vorigeGuid": "8c2a5492-d84d-449c-b925-9da812c26de4",
     "hoofdstukken": [
       {
         "titel": "L’année pilote tout",
-        "start": 5.36,
-        "eind": 7.96
+        "start": 5.29,
+        "eind": 7.89
       },
       {
         "titel": "Les quatre tuiles",
-        "start": 11.94,
-        "eind": 14.87
+        "start": 11.92,
+        "eind": 14.85
       },
       {
         "titel": "Volume réalisé",
@@ -2795,19 +2817,21 @@
       },
       {
         "titel": "Le pipeline",
-        "start": 25.6,
-        "eind": 29.03
+        "start": 25.61,
+        "eind": 29.04
       },
       {
         "titel": "Pour conclure",
-        "start": 31.74,
-        "eind": 34.34
+        "start": 31.77,
+        "eind": 34.37
       }
     ],
-    "gepubliceerdOp": "2026-09-17T08:58:03.248",
+    "gepubliceerdOp": "2026-09-24T03:53:31.352",
     "gepubliceerdeHash": "9e10dee89865ff1f",
-    "vorigeGuid": "38bd4373-f328-4fd5-bd33-b8af92a0c5e0",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/8c2a5492-d84d-449c-b925-9da812c26de4/thumbnail.jpg"
+    "opTeRuimen": [
+      "38bd4373-f328-4fd5-bd33-b8af92a0c5e0"
+    ],
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/39be8492-cded-454a-b4df-ed63a90651e4/thumbnail.jpg"
   },
   "dashboard-website-en": {
     "film": "dashboard",
@@ -2819,190 +2843,202 @@
       "/dashboard"
     ],
     "app": {
-      "sha": "b07ba5b39e16d590cacfa61e189c7a54ff1a29b7",
+      "sha": "66cfa6618ee6330ae5206ef8d78f5bd81e906b69",
       "vuil": false
     },
     "titel": "The dashboard — your working screen",
     "omschrijving": "Your files by group, what needs action today, and every file in the phase it is in.",
     "hash": "812f9b4b61a8f185",
-    "guid": "fa670b9e-9421-47fe-acf5-d7d9e289b520",
+    "guid": "fe87b050-424d-4485-bb5e-d27c4e1d60c1",
+    "vorigeGuid": "fa670b9e-9421-47fe-acf5-d7d9e289b520",
     "hoofdstukken": [
       {
         "titel": "Your home screen",
-        "start": 5.37,
-        "eind": 7.97
+        "start": 5.3,
+        "eind": 7.9
       },
       {
         "titel": "The four tiles",
-        "start": 11.96,
-        "eind": 14.6
+        "start": 11.93,
+        "eind": 14.57
       },
       {
         "titel": "Realised volume",
-        "start": 18.68,
-        "eind": 21.32
+        "start": 18.65,
+        "eind": 21.29
       },
       {
         "titel": "The pipeline",
-        "start": 25.39,
-        "eind": 28.03
+        "start": 25.38,
+        "eind": 28.02
       },
       {
         "titel": "In closing",
-        "start": 30.75,
+        "start": 30.74,
         "eind": 33.34
       }
     ],
-    "gepubliceerdOp": "2026-09-17T08:58:18.974",
+    "gepubliceerdOp": "2026-09-24T03:53:42.638",
     "gepubliceerdeHash": "812f9b4b61a8f185",
-    "vorigeGuid": "98487078-4246-4995-903e-5ff8baab71bf",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/fa670b9e-9421-47fe-acf5-d7d9e289b520/thumbnail.jpg"
+    "opTeRuimen": [
+      "98487078-4246-4995-903e-5ff8baab71bf"
+    ],
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/fe87b050-424d-4485-bb5e-d27c4e1d60c1/thumbnail.jpg"
   },
   "leads-website-nl": {
     "film": "leads",
     "taal": "nl-BE",
     "pagina": "crm/leads",
-    "lengte": 41.48,
+    "lengte": 41.64,
     "uitvoering": "website",
     "routes": [
       "/crm/leads"
     ],
     "app": {
-      "sha": "b07ba5b39e16d590cacfa61e189c7a54ff1a29b7",
+      "sha": "66cfa6618ee6330ae5206ef8d78f5bd81e906b69",
       "vuil": false
     },
     "titel": "Leads in CreditSoft — van aanvraag tot klant",
     "omschrijving": "De werklijst van uw instroom: wie er wacht en hoe lang, uit welk kanaal hij kwam, en wie hem opvolgt. Daarna de fiche van een lead — wie hij is, wat hij vraagt, en waar hij staat — de vijf statussen, en tot slot een lead die klant geworden is, met de doorverwijzing naar zijn relatiefiche.",
     "hash": "1346184757aed050",
-    "guid": "b035d33a-a023-4c91-a505-d737a521f8de",
+    "guid": "5d6e4c5c-d1c5-4161-bb23-153ff30f78f7",
+    "vorigeGuid": "b035d33a-a023-4c91-a505-d737a521f8de",
     "hoofdstukken": [
       {
         "titel": "De werklijst",
-        "start": 3.78,
-        "eind": 6.78
+        "start": 3.8,
+        "eind": 6.8
       },
       {
         "titel": "Waar hij vandaan komt",
-        "start": 10.46,
-        "eind": 13.06
+        "start": 10.52,
+        "eind": 13.12
       },
       {
         "titel": "De fiche van een lead",
-        "start": 17.57,
-        "eind": 20.71
+        "start": 17.66,
+        "eind": 20.8
       },
       {
         "titel": "De vijf statussen",
-        "start": 27.14,
-        "eind": 30.78
+        "start": 27.26,
+        "eind": 30.9
       },
       {
         "titel": "Van lead naar klant",
-        "start": 35.43,
-        "eind": 38.43
+        "start": 35.57,
+        "eind": 38.57
       }
     ],
-    "gepubliceerdOp": "2026-09-17T08:58:34.79",
+    "gepubliceerdOp": "2026-09-24T03:54:03.543",
     "gepubliceerdeHash": "1346184757aed050",
-    "vorigeGuid": "e3026f94-2b18-41f1-9b89-bd8170ef1097",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/b035d33a-a023-4c91-a505-d737a521f8de/thumbnail.jpg"
+    "opTeRuimen": [
+      "e3026f94-2b18-41f1-9b89-bd8170ef1097"
+    ],
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/5d6e4c5c-d1c5-4161-bb23-153ff30f78f7/thumbnail.jpg"
   },
   "leads-website-fr": {
     "film": "leads",
     "taal": "fr-BE",
     "pagina": "crm/leads",
-    "lengte": 42.24,
+    "lengte": 42.16,
     "uitvoering": "website",
     "routes": [
       "/crm/leads"
     ],
     "app": {
-      "sha": "b07ba5b39e16d590cacfa61e189c7a54ff1a29b7",
+      "sha": "66cfa6618ee6330ae5206ef8d78f5bd81e906b69",
       "vuil": false
     },
     "titel": "Les leads dans CreditSoft — de la demande au client",
     "omschrijving": "La liste de travail de vos demandes entrantes : qui attend et depuis combien de temps, de quel canal il provient, et qui le suit. Ensuite la fiche d’un lead — qui il est, ce qu’il demande et où il en est — les cinq statuts, et pour finir un lead devenu client, avec le renvoi vers sa fiche.",
     "hash": "0351665e1d8ddb27",
-    "guid": "aa9b6337-39f9-4cc4-885b-eebb4ab8305b",
+    "guid": "c195357a-24ff-4357-a64f-4590a89df40e",
+    "vorigeGuid": "aa9b6337-39f9-4cc4-885b-eebb4ab8305b",
     "hoofdstukken": [
       {
         "titel": "La liste de travail",
-        "start": 3.79,
+        "start": 3.78,
         "eind": 6.93
       },
       {
         "titel": "D’où il provient",
-        "start": 10.63,
-        "eind": 13.23
+        "start": 10.64,
+        "eind": 13.24
       },
       {
         "titel": "La fiche d’un lead",
-        "start": 17.73,
-        "eind": 20.73
+        "start": 17.76,
+        "eind": 20.76
       },
       {
         "titel": "Les cinq statuts",
-        "start": 27.17,
-        "eind": 31.46
+        "start": 27.2,
+        "eind": 31.49
       },
       {
         "titel": "Du lead au client",
-        "start": 36.11,
-        "eind": 39.04
+        "start": 36.15,
+        "eind": 39.08
       }
     ],
-    "gepubliceerdOp": "2026-09-17T08:58:50.774",
+    "gepubliceerdOp": "2026-09-24T03:54:19.457",
     "gepubliceerdeHash": "0351665e1d8ddb27",
-    "vorigeGuid": "61a665a8-3505-488b-84f8-830804625249",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/aa9b6337-39f9-4cc4-885b-eebb4ab8305b/thumbnail.jpg"
+    "opTeRuimen": [
+      "61a665a8-3505-488b-84f8-830804625249"
+    ],
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/c195357a-24ff-4357-a64f-4590a89df40e/thumbnail.jpg"
   },
   "leads-website-en": {
     "film": "leads",
     "taal": "nl-BE",
     "pagina": "crm/leads",
-    "lengte": 42.44,
+    "lengte": 42.52,
     "uitvoering": "website",
     "routes": [
       "/crm/leads"
     ],
     "app": {
-      "sha": "b07ba5b39e16d590cacfa61e189c7a54ff1a29b7",
+      "sha": "66cfa6618ee6330ae5206ef8d78f5bd81e906b69",
       "vuil": false
     },
     "titel": "Leads in CreditSoft — from enquiry to client",
     "omschrijving": "Everyone who gets in touch on one worklist, with how long they have waited and where they came from.",
     "hash": "eddcbf7e0bdd7cb8",
-    "guid": "972f1660-ba10-4034-8045-4c7693cfdfd8",
+    "guid": "a9f6a1b8-59ae-46d9-9aa5-32bc9be6f5fd",
+    "vorigeGuid": "972f1660-ba10-4034-8045-4c7693cfdfd8",
     "hoofdstukken": [
       {
         "titel": "The worklist",
-        "start": 3.77,
+        "start": 3.78,
         "eind": 6.92
       },
       {
         "titel": "Where they came from",
-        "start": 10.62,
-        "eind": 13.4
+        "start": 10.63,
+        "eind": 13.42
       },
       {
         "titel": "The lead’s record",
-        "start": 17.92,
-        "eind": 21.14
+        "start": 17.96,
+        "eind": 21.17
       },
       {
         "titel": "The five statuses",
-        "start": 27.59,
-        "eind": 31.73
+        "start": 27.63,
+        "eind": 31.77
       },
       {
         "titel": "From lead to client",
-        "start": 36.38,
-        "eind": 39.31
+        "start": 36.43,
+        "eind": 39.36
       }
     ],
-    "gepubliceerdOp": "2026-09-17T08:59:11.716",
+    "gepubliceerdOp": "2026-09-24T03:54:35.436",
     "gepubliceerdeHash": "eddcbf7e0bdd7cb8",
-    "vorigeGuid": "3e4b2a91-200b-4f5b-8d2d-4c13eeb41fcd",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/972f1660-ba10-4034-8045-4c7693cfdfd8/thumbnail.jpg"
+    "opTeRuimen": [
+      "3e4b2a91-200b-4f5b-8d2d-4c13eeb41fcd"
+    ],
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/a9f6a1b8-59ae-46d9-9aa5-32bc9be6f5fd/thumbnail.jpg"
   }
 }

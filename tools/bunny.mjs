@@ -3,6 +3,8 @@
 //     node tools/bunny.mjs check       — leest de library uit; bewijst enkel dat de gegevens kloppen
 //     node tools/bunny.mjs vervangproef — de proef uit §7.4 van FILMS-SPEC.md
 //     node tools/bunny.mjs publiceer [filter] — uploadt wat gewijzigd is, mét ondertitels en hoofdstukken
+//        --zonder-opruimen: wist de vóórvorige versie NIET, maar zet ze op de lijst `opTeRuimen` van die film.
+//        Een gewone publiceerronde ruimt die lijst daarna mee op.
 //     node tools/bunny.mjs hoofdstukken [filter] [--wacht] — werkt ENKEL de hoofdstukken bij van wat al
 //        online staat. Met --wacht blijft hij tot een uur wachten tot Bunny klaar is met hercoderen.
 //
@@ -79,10 +81,20 @@ async function stuur(guid, bestand) {
 const opdracht = process.argv[2] ?? 'check';
 
 if (opdracht === 'check') {
-  const r = await api('/videos?page=1&itemsPerPage=100');
-  console.log(`GET /videos → HTTP ${r.status}`);
-  if (!r.ok) { console.log(r.tekst.slice(0, 300)); process.exit(1); }
-  const items = r.json?.items ?? [];
+  // ⚠️ ALLE PAGINA'S (24/09/2026). Hier stond één opvraging van 100, en de bibliotheek telde er 104. Vier
+  //    video's leken VERDWENEN na een publiceerronde die niets wiste — de lijst was gewoon afgekapt, en de
+  //    weesdetectie hieronder zag alles voorbij de 100 niet. Een lijst die stil stopt, leest als volledig.
+  const items = [];
+  for (let pagina = 1; ; pagina++) {
+    const r = await api(`/videos?page=${pagina}&itemsPerPage=100`);
+    if (pagina === 1) console.log(`GET /videos → HTTP ${r.status}`);
+    if (!r.ok) { console.log(r.tekst.slice(0, 300)); process.exit(1); }
+    const deel = r.json?.items ?? [];
+    items.push(...deel);
+    const totaal = r.json?.totalItems;
+    if (!deel.length || (totaal != null && items.length >= totaal)) break;
+    if (totaal == null && deel.length < 100) break;
+  }
   console.log(`✅ verbonden met library ${LIB} — ${items.length} video('s)`);
   for (const v of items) console.log(`   ${v.guid}  ${String(v.length ?? '?').padStart(4)}s  ${v.title}`);
 
@@ -92,7 +104,10 @@ if (opdracht === 'check') {
   // en dat is precies één keer te vaak.
   const tabel = JSON.parse(readFileSync(new URL('./films-uitslag.json', import.meta.url).pathname, 'utf8'));
   const bekend = new Set();
-  for (const f of Object.values(tabel)) { if (f.guid) bekend.add(f.guid); if (f.vorigeGuid) bekend.add(f.vorigeGuid); }
+  for (const f of Object.values(tabel)) {
+    if (f.guid) bekend.add(f.guid); if (f.vorigeGuid) bekend.add(f.vorigeGuid);
+    for (const g of f.opTeRuimen ?? []) bekend.add(g);   // bewust bewaard, niet verweesd
+  }
   const wezen = items.filter(v => !bekend.has(v.guid));
   const ontbreekt = [...Object.entries(tabel)].filter(([, f]) => f.guid && !items.some(v => v.guid === f.guid));
 
@@ -183,13 +198,20 @@ if (opdracht === 'publiceer') {
     // eraan hangt. Dus samenvoegen op veldniveau i.p.v. de rij vervangen.
     const vers = opSchijf[sleutel] ?? {};
     const onze = uitslag[sleutel] ?? {};
-    opSchijf[sleutel] = { ...vers, guid: onze.guid, vorigeGuid: onze.vorigeGuid,
+    opSchijf[sleutel] = { ...vers, guid: onze.guid, vorigeGuid: onze.vorigeGuid, opTeRuimen: onze.opTeRuimen,
                           gepubliceerdOp: onze.gepubliceerdOp, gepubliceerdeHash: vers.hash ?? onze.gepubliceerdeHash,
                           miniatuur: onze.miniatuur ?? vers.miniatuur };
     writeFileSync(UITSLAG, JSON.stringify(opSchijf, null, 2) + '\n');
   };
 
-  const filter = process.argv[3];
+  // ⚠️ De filter is het eerste argument dat GEEN vlag is. Hier stond `process.argv[3]`, en dan werd
+  //    `publiceer --zonder-opruimen` gelezen als filter "--zonder-opruimen" — die matcht niets, en de ronde
+  //    meldde keurig "niets te publiceren".
+  const filter = process.argv.slice(3).find(a => !a.startsWith('--'));
+  // ⚠️ --zonder-opruimen (24/09/2026). Een publiceerronde WIST de vóórvorige versie op Bunny — definitief.
+  //    Dat is het ontwerp (één generatie respijt), maar een verwijdering hoort een eigen beslissing te zijn
+  //    en niet mee te liften op "upload de films". Met deze vlag blijft ze staan, op de lijst opTeRuimen.
+  const ZONDER_OPRUIMEN = process.argv.includes('--zonder-opruimen');
   let gedaan = 0, mislukt = [];
   const collecties = {};
 
@@ -383,6 +405,20 @@ if (opdracht === 'publiceer') {
     // de administratie verdwenen — onvindbaar behalve door de bibliotheek met de hand tegen deze tabel te
     // leggen. Nu blijft hij staan tot hij écht weg is, en de volgende ronde probeert het opnieuw.
     let nogOpTeRuimen = null;
+    if (ZONDER_OPRUIMEN && f.vorigeGuid && f.vorigeGuid !== oudeGuid) {
+      f.opTeRuimen = [...new Set([...(f.opTeRuimen ?? []), f.vorigeGuid])];
+      console.log(`   voorvorige versie ${f.vorigeGuid} NIET gewist (--zonder-opruimen) — op de lijst opTeRuimen`);
+      f.vorigeGuid = null;   // zo slaat de gewone tak hieronder haar over; oudeGuid wordt zo meteen de vorige
+    } else if (!ZONDER_OPRUIMEN && f.opTeRuimen?.length) {
+      // Wat eerder bewust bleef staan, gaat nu mee weg — dezelfde regel als de vóórvorige.
+      const blijft = [];
+      for (const g of f.opTeRuimen) {
+        const d = await api(`/videos/${g}`, { method: 'DELETE' });
+        if (d.ok || d.status === 404) console.log(`   uitgestelde opruiming ${g} → HTTP ${d.status}`);
+        else { blijft.push(g); console.log(`   \u26a0\ufe0f uitgestelde opruiming ${g} mislukt (HTTP ${d.status}) — blijft op de lijst`); }
+      }
+      f.opTeRuimen = blijft.length ? blijft : undefined;
+    }
     if (f.vorigeGuid && f.vorigeGuid !== oudeGuid) {
       const d = await api(`/videos/${f.vorigeGuid}`, { method: 'DELETE' });
       if (d.ok || d.status === 404) {
