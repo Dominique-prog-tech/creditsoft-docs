@@ -1,3 +1,7 @@
+---
+title: Tâches dans le journal
+---
+
 # Tâches
 
 Une **tâche** est quelque chose qui doit encore être fait, avec un nom dessus et une date pour quand. Dans le

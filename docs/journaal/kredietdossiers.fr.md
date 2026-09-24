@@ -1,3 +1,7 @@
+---
+title: Dossiers de crédit dans le journal
+---
+
 # Dossiers de crédit
 
 La rubrique **Dossiers de crédit** affiche les dossiers dans lesquels cette relation figure comme

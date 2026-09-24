@@ -1,3 +1,7 @@
+---
+title: Kredietdossiers in het journaal
+---
+
 # Kredietdossiers
 
 Het onderdeel **Kredietdossiers** toont de dossiers waarin deze relatie als **aanvrager** staat, het recentste

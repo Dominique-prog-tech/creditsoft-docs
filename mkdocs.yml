@@ -5,7 +5,7 @@ site_url: https://docs.creditsoft.be/
 copyright: >
   CreditSoft &copy; 2026 — eigendom van
   <a href="https://www.adm-concept.be" target="_blank" rel="noopener">ADM-Concept</a>.
-  Alle rechten voorbehouden.
+  Alle rechten voorbehouden. · <a href="https://www.creditsoft.be/">creditsoft.be</a>
 
 theme:
   name: material
@@ -108,7 +108,7 @@ plugins:
           site_description: Manuel officiel de CreditSoft
           copyright: >
             CreditSoft &copy; 2026 — propriété d'<a href="https://www.adm-concept.be" target="_blank" rel="noopener">ADM-Concept</a>.
-            Tous droits réservés.
+            Tous droits réservés. · <a href="https://www.creditsoft.be/fr/">creditsoft.be</a>
           theme:
             language: fr
             palette:
@@ -226,6 +226,8 @@ extra:
 
 hooks:
   - hooks/films.py
+  # Eigen omschrijving per pagina voor zoekmachines — zie het bestand zelf (24/09/2026).
+  - hooks/beschrijving.py
 
 nav:
   - Home: index.md

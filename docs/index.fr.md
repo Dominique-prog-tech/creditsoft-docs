@@ -1,4 +1,5 @@
 ---
+title: Manuel pour courtiers en crédit
 hide:
   - navigation
   - toc

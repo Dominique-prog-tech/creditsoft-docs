@@ -1,4 +1,5 @@
 ---
+title: Handleiding voor kredietmakelaars
 hide:
   - navigation
   - toc

@@ -1,3 +1,7 @@
+---
+title: Taken in het journaal
+---
+
 # Taken
 
 Een **taak** is iets dat nog moet gebeuren, met een naam erop en een datum tegen wanneer. In het
