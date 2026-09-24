@@ -28,7 +28,7 @@ Hier stelt u de vragen samen die een bezoeker beantwoordt **vóór** zijn afspra
 krijgt hij er een link naar in zijn bevestigingsmail. Laat u het leeg, dan komt er geen link — en ook geen zin
 die naar niets verwijst.
 
-![De vragenlijst samenstellen: bovenaan de titel in het Nederlands en het Frans, daaronder drie genummerde vragen met hun tekst in beide talen en het soort antwoord — Getal, Ja / nee en Lange tekst — met pijltjes en een prullenbak ernaast, en de knop Vraag toevoegen. Daaronder het voorbeeld Zo ziet uw bezoeker het, met een invulveld, de knoppen Ja en Nee en een groot tekstvak, en onderaan de zin die naar de vragenlijst verwijst, in beide talen.](../images/kantoorprofiel-vragenlijst.png "De vragenlijst samenstellen, met het voorbeeld erbij"){ .eigen-breedte style="width:560px" }
+![De vragenlijst samenstellen: bovenaan de titel in het Nederlands en het Frans, daaronder drie genummerde vragen met hun tekst in beide talen en het soort antwoord — Getal, Ja / nee en Lange tekst — met pijltjes en een prullenbak ernaast, en de knop Vraag toevoegen. Daaronder het voorbeeld Zo ziet uw bezoeker het, met de knoppen NL en FR, een invulveld, de knoppen Ja en Nee en een groot tekstvak, en onderaan de zin die naar de vragenlijst verwijst, in beide talen.](../images/kantoorprofiel-vragenlijst.png "De vragenlijst samenstellen, met het voorbeeld erbij"){ .eigen-breedte style="width:560px" }
 
 Per vraag vult u de tekst in het **Nederlands en het Frans** in, en kiest u wat voor antwoord u verwacht:
 
@@ -41,6 +41,8 @@ Per vraag vult u de tekst in het **Nederlands en het Frans** in, en kiest u wat 
 
 Met de **pijltjes** verzet u de volgorde, met de **prullenbak** haalt u een vraag weg. In het voorbeeld *Zo ziet
 uw bezoeker het* ziet u meteen wat de bezoeker krijgt — u hoeft niet te wachten tot iemand de pagina echt opent.
+Met **NL** en **FR** bovenaan het voorbeeld wisselt u tussen de Nederlandse en de Franse versie; het voorbeeld
+opent in de taal waarin u CreditSoft gebruikt.
 
 ### De zin in de bevestigingsmail
 

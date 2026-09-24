@@ -1290,14 +1290,14 @@
   "kantoorprofiel-vragenlijst": {
     "route": "/beheer/kantoorprofiel",
     "app": {
-      "sha": "678e86b84fedd05125390d49376312138a19a43f",
+      "sha": "2319025d3c265cf999bc1480b244f8886d022412",
       "vuil": false
     }
   },
   "kantoorprofiel-vragenlijst-fr": {
     "route": "/beheer/kantoorprofiel",
     "app": {
-      "sha": "678e86b84fedd05125390d49376312138a19a43f",
+      "sha": "2319025d3c265cf999bc1480b244f8886d022412",
       "vuil": false
     }
   }

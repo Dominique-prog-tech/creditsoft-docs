@@ -28,7 +28,7 @@ Vous composez ici les questions auxquelles un visiteur répond **avant** son ren
 questionnaire, il en reçoit le lien dans son e-mail de confirmation. Si vous laissez vide, il n'y a pas de lien —
 ni de phrase qui renvoie vers rien.
 
-![Composer le questionnaire : en haut le titre en néerlandais et en français, en dessous trois questions numérotées avec leur texte dans les deux langues et le type de réponse, avec des flèches et une corbeille à côté, et le bouton Ajouter une question. En dessous l'aperçu Ce que verra votre visiteur, avec un champ de saisie, les boutons Oui et Non et une grande zone de texte, et en bas la phrase qui renvoie au questionnaire, dans les deux langues.](../images/kantoorprofiel-vragenlijst-fr.png "Composer le questionnaire, avec l'aperçu"){ .eigen-breedte style="width:560px" }
+![Composer le questionnaire : en haut le titre en néerlandais et en français, en dessous trois questions numérotées avec leur texte dans les deux langues et le type de réponse, avec des flèches et une corbeille à côté, et le bouton Ajouter une question. En dessous l'aperçu Ce que verra votre visiteur, avec les boutons NL et FR, un champ de saisie, les boutons Oui et Non et une grande zone de texte, et en bas la phrase qui renvoie au questionnaire, dans les deux langues.](../images/kantoorprofiel-vragenlijst-fr.png "Composer le questionnaire, avec l'aperçu"){ .eigen-breedte style="width:560px" }
 
 Pour chaque question, vous saisissez le texte en **néerlandais et en français**, et choisissez le type de réponse
 attendu :
@@ -42,7 +42,8 @@ attendu :
 
 Les **flèches** modifient l'ordre, la **corbeille** supprime une question. Dans l'aperçu *Ce que verra votre
 visiteur*, vous voyez immédiatement ce que reçoit le visiteur — inutile d'attendre que quelqu'un ouvre réellement
-la page.
+la page. Avec **NL** et **FR** en haut de l'aperçu, vous passez de la version néerlandaise à la version
+française ; l'aperçu s'ouvre dans la langue dans laquelle vous utilisez CreditSoft.
 
 ### La phrase dans l'e-mail de confirmation
 
