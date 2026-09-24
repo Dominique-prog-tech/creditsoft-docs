@@ -26,9 +26,16 @@ vous le signale et rien ne change. Ressaisissez-les alors — vous ne perdez rie
 
 ## Mot de passe oublié
 
-Si vous avez perdu votre mot de passe, utilisez le lien **Mot de passe oublié** sur l'écran de connexion. Vous
-recevrez un message à votre adresse e-mail pour définir un nouveau mot de passe. Cet écran-ci ne vous sera
-d'aucune utilité : il demande votre mot de passe actuel, précisément ce dont vous ne disposez plus.
+Si vous avez perdu votre mot de passe, cliquez sur **Mot de passe oublié ?** sur l'écran de connexion. Saisissez
+l'adresse e-mail de votre compte et cliquez sur **Envoyer le lien**. Vous recevrez un e-mail avec un lien pour
+définir un nouveau mot de passe. Cet écran-ci ne vous sera d'aucune utilité : il demande votre mot de passe actuel,
+précisément ce dont vous ne disposez plus.
+
+- Le lien est valable **une heure** et ne fonctionne **qu'une seule fois**. S'il a expiré, demandez-en simplement un
+  nouveau.
+- La réponse est **toujours la même**, même si l'adresse ne correspond à aucun compte. Ainsi, personne ne peut
+  tester qui possède un compte.
+- Pas reçu d'e-mail ? Vérifiez vos courriers indésirables, ou adressez-vous à votre administrateur.
 
 ## Un verrou de plus
 

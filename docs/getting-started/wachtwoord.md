@@ -23,9 +23,15 @@ en verandert er niets. Vul daarna opnieuw in — u verliest niets.
 
 ## Uw wachtwoord vergeten
 
-Bent u uw wachtwoord kwijt, dan gebruikt u de link **Wachtwoord vergeten** op het aanmeldscherm. U krijgt dan
-een bericht op uw e-mailadres om een nieuw wachtwoord in te stellen. Dit scherm hebt u daar niet voor nodig —
-het vraagt immers uw huidige wachtwoord, en dat is net wat u niet meer hebt.
+Bent u uw wachtwoord kwijt, dan klikt u op het aanmeldscherm op **Wachtwoord vergeten?**. Vul het e-mailadres
+van uw account in en klik op **Link versturen**. U krijgt dan een mail met een link om een nieuw wachtwoord in te
+stellen. Dit scherm hebt u daar niet voor nodig — het vraagt immers uw huidige wachtwoord, en dat is net wat u
+niet meer hebt.
+
+- De link is **één uur** geldig en werkt **één keer**. Is hij verlopen, vraag dan gewoon een nieuwe aan.
+- U krijgt **altijd hetzelfde antwoord**, ook als het adres niet bij een account hoort. Zo kan niemand uitproberen
+  wie een account heeft.
+- Geen mail ontvangen? Kijk in uw spam, of vraag het aan uw beheerder.
 
 ## Nog een slot erbij
 
