@@ -478,7 +478,7 @@
   "portaal-toegang": {
     "route": "/contributors/05b820be-792d-4ecb-b41e-c8b00619b872",
     "app": {
-      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "sha": "448fd5ec308b7a0841c1896d6cbd208108c82687",
       "vuil": false
     }
   },
@@ -527,7 +527,7 @@
   "aanbrenger-groepering": {
     "route": "/contributors/0447a42c-66a4-4afd-9939-80050a0b3279",
     "app": {
-      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "sha": "448fd5ec308b7a0841c1896d6cbd208108c82687",
       "vuil": false
     }
   },
@@ -1094,7 +1094,7 @@
   "portaal-toegang-fr": {
     "route": "/contributors/05b820be-792d-4ecb-b41e-c8b00619b872",
     "app": {
-      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "sha": "448fd5ec308b7a0841c1896d6cbd208108c82687",
       "vuil": false
     }
   },
@@ -1143,7 +1143,7 @@
   "aanbrenger-groepering-fr": {
     "route": "/contributors/0447a42c-66a4-4afd-9939-80050a0b3279",
     "app": {
-      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "sha": "448fd5ec308b7a0841c1896d6cbd208108c82687",
       "vuil": false
     }
   },
