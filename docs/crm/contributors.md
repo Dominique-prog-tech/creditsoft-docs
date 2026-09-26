@@ -81,6 +81,59 @@ De betaalwijze bepaalt welke velden er daarna bijkomen:
 - **Vast bedrag** — het bedrag zelf.
 - **Geplande betaling** — een tabel van 24 regels waarin u per regel de maand en het percentage zet.
 
+## De productie van een aanbrenger
+
+Op het tabblad **Productie** van de fiche ziet u wat deze aanbrenger voor uw kantoor betekent: hoeveel dossiers hij aanbrengt, hoeveel er tot een akte komen, en hoe dat zich verhoudt tot uw kantoor als geheel. Het tabblad verschijnt zodra de aanbrenger bewaard is.
+
+![Het tabblad Productie op de fiche van een aanbrenger: bovenaan de keuze van de periode en de schakelaar voor de onderliggende aanbrengers, daaronder tegels met dossiers, akten, omzetting, afgevallen, gemiddeld krediet, doorlooptijd, lopende dossiers en commissie, elk met het cijfer van het kantoor ernaast, en daaronder grafieken per maand en per jaar van invoer.](../images/aanbrengers-productie.png "Het tabblad Productie van een aanbrenger"){ .volle-breedte }
+
+### Kiezen wat u ziet
+
+- **Periode** — *Alles*, *Dit jaar*, *Vorig jaar* of *Laatste 12 maanden*.
+- **Soort** — bijvoorbeeld enkel hypothecair krediet. Deze keuze verschijnt alleen als uw kantoor meer dan één productsoort gebruikt.
+- **Met onderliggende aanbrengers** — telt ook de aanbrengers mee die onder deze aanbrenger hangen, over de hele boom. De schakelaar staat er alleen als er aanbrengers onder hangen.
+
+Een andere keuze toont de cijfers meteen; er wordt niets opnieuw geladen.
+
+### De kerncijfers
+
+Elke tegel toont het cijfer van deze aanbrenger. De kleine vermelding ernaast zet het naast uw kantoor.
+
+- **Dossiers** — ingevoerd in de periode, met het aandeel in het kantoor.
+- **Akten** — verleden in de periode, met het kredietvolume en het aandeel in het kantoor.
+- **Omzetting** — van de dossiers die in de periode ingevoerd werden en intussen afgesloten zijn: hoeveel procent werd een akte.
+- **Afgevallen** — hoeveel procent van diezelfde dossiers eindigde zonder akte.
+- **Gemiddeld krediet** — het gemiddelde bedrag van de akten.
+- **Indiening tot akte** — hoeveel dagen er doorgaans verlopen tussen de indiening en de akte. CreditSoft neemt de mediaan, zodat één dossier dat lang bleef liggen het beeld niet scheeftrekt.
+- **Lopend nu** — de dossiers die vandaag nog lopen, en hoeveel akten er gepland staan.
+- **Commissie** — wat uw kantoor deze aanbrenger in de periode toekende. Deze tegel ziet u alleen als u commissies mag bekijken, en alleen als uw kantoor commissie boekt.
+
+!!! note "Wanneer telt een dossier als akte, en wanneer als afgevallen?"
+    - Een **aktedatum** tot en met vandaag telt als akte. Een aktedatum in de toekomst telt als *gepland*.
+    - Een dossier dat gerealiseerd is maar geen aktedatum draagt, telt mee in de omzetting, maar in geen enkele
+      periode of maand — het *wanneer* ontbreekt. Het tabblad vermeldt hoeveel zulke dossiers er zijn.
+    - Een dossier zonder aktedatum waarvan de status in een **afsluitende fase** staat, telt als afgevallen. De
+      naam van die fase is de reden. Uitzondering: een fase die u op [Dashboard-fases](../beheer/dashboard-fases.md)
+      als **geslaagd** aanvinkte — een dossier daarin is nooit afgevallen.
+
+### De grafieken en de tabel
+
+- **Dossiers en akten per maand** — altijd de laatste 24 maanden, los van de gekozen periode.
+- **Omzetting per jaar van invoer** — van de dossiers die dat jaar binnenkwamen: hoeveel werden een akte, voor deze aanbrenger en voor het kantoor. Een jaar met een **\*** heeft nog lopende dossiers; dat cijfer kan nog stijgen.
+- **Akten per kredietverstrekker** — de acht grootste; de rest staat samen onder *Overige*.
+- **Waarom afgevallen** — de afgevallen dossiers per reden.
+
+Onderaan staat een tabel per jaar met de dossiers, de akten, het kredietvolume en, als u die mag zien, de commissie.
+
+!!! tip "Een aanbrenger die stilvalt"
+    Heeft deze aanbrenger drie volle maanden of langer geen nieuw dossier ingevoerd, dan toont het tabblad
+    bovenaan een melding met de datum van zijn laatste dossier.
+
+!!! warning "Streepjes bij omzetting, afgevallen en lopend"
+    Dan heeft uw kantoor nog geen dossierstatus aan een **afsluitende fase** gekoppeld, en weet CreditSoft niet
+    welke dossiers afgevallen zijn. Stel dat in bij **Platformbeheer → Dashboard-fases** — zie [Dashboard-fases](../beheer/dashboard-fases.md). Tot dan toont het
+    tabblad een streepje in plaats van een cijfer dat niet klopt.
+
 ## Twee fiches samenvoegen
 
 Staat dezelfde aanbrenger twee keer in de lijst, dan voegt u de fiches samen met de knop **Samenvoegen**

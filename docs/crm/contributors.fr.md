@@ -80,6 +80,59 @@ Le mode de paiement détermine les champs qui apparaissent ensuite :
 - **Montant fixe** — le montant lui-même.
 - **Paiement planifié** — un tableau de 24 lignes où vous indiquez, par ligne, le mois et le pourcentage.
 
+## La production d'un apporteur
+
+L'onglet **Production** de la fiche montre ce que cet apporteur représente pour votre bureau : combien de dossiers il apporte, combien aboutissent à un acte, et comment cela se compare à votre bureau dans son ensemble. L'onglet apparaît dès que l'apporteur est enregistré.
+
+![L'onglet Production sur la fiche d'un apporteur : en haut, le choix de la période et l'interrupteur pour les apporteurs sous-jacents ; en dessous, des tuiles avec les dossiers, les actes, le taux de conversion, les abandons, le crédit moyen, le délai, les dossiers en cours et la commission, chacune avec le chiffre du bureau à côté ; puis des graphiques par mois et par année d'introduction.](../images/aanbrengers-productie-fr.png "L'onglet Production d'un apporteur"){ .volle-breedte }
+
+### Choisir ce que vous voyez
+
+- **Période** — *Tout*, *Cette année*, *L'an dernier* ou *12 derniers mois*.
+- **Type** — par exemple uniquement le crédit hypothécaire. Ce choix n'apparaît que si votre bureau utilise plus d'un type de produit.
+- **Avec les apporteurs sous-jacents** — inclut aussi les apporteurs rattachés à cet apporteur, sur toute l'arborescence. L'interrupteur n'apparaît que s'il existe des apporteurs sous-jacents.
+
+Un autre choix affiche immédiatement les chiffres ; rien n'est rechargé.
+
+### Les chiffres clés
+
+Chaque tuile affiche le chiffre de cet apporteur. La petite mention à côté le compare à votre bureau.
+
+- **Dossiers** — introduits dans la période, avec la part dans le bureau.
+- **Actes** — passés dans la période, avec le volume de crédit et la part dans le bureau.
+- **Taux de conversion** — parmi les dossiers introduits dans la période et déjà clôturés : quel pourcentage est devenu un acte.
+- **Abandonnés** — quel pourcentage de ces mêmes dossiers s'est terminé sans acte.
+- **Crédit moyen** — le montant moyen des actes.
+- **Introduction à l'acte** — combien de jours s'écoulent en général entre l'introduction et l'acte. CreditSoft prend la médiane, pour qu'un seul dossier resté longtemps en attente ne fausse pas l'image.
+- **En cours** — les dossiers encore en cours aujourd'hui, et le nombre d'actes prévus.
+- **Commission** — ce que votre bureau a attribué à cet apporteur dans la période. Vous ne voyez cette tuile que si vous pouvez consulter les commissions, et seulement si votre bureau comptabilise des commissions.
+
+!!! note "Quand un dossier compte-t-il comme acte, et quand comme abandonné ?"
+    - Une **date d'acte** jusqu'à aujourd'hui compte comme acte. Une date d'acte dans le futur compte comme *prévue*.
+    - Un dossier réalisé mais sans date d'acte compte dans le taux de conversion, mais dans aucune période ni
+      aucun mois — le *quand* manque. L'onglet indique combien de dossiers sont dans ce cas.
+    - Un dossier sans date d'acte dont le statut se trouve dans une **phase de clôture** compte comme abandonné.
+      Le nom de cette phase en est le motif. Exception : une phase cochée comme **réussie** sous
+      [Phases du tableau de bord](../beheer/dashboard-fases.md) — un dossier qui s'y trouve n'est jamais abandonné.
+
+### Les graphiques et le tableau
+
+- **Dossiers et actes par mois** — toujours les 24 derniers mois, indépendamment de la période choisie.
+- **Conversion par année d'introduction** — parmi les dossiers introduits cette année-là : combien sont devenus un acte, pour cet apporteur et pour le bureau. Une année marquée d'un **\*** a encore des dossiers en cours ; ce chiffre peut encore augmenter.
+- **Actes par prêteur** — les huit plus importants ; le reste figure ensemble sous *Autres*.
+- **Motifs d'abandon** — les dossiers abandonnés par motif.
+
+En bas, un tableau par année reprend les dossiers, les actes, le volume de crédit et, si vous pouvez la voir, la commission.
+
+!!! tip "Un apporteur qui s'arrête"
+    Si cet apporteur n'a introduit aucun nouveau dossier depuis trois mois complets ou plus, l'onglet affiche en
+    haut un message avec la date de son dernier dossier.
+
+!!! warning "Des tirets pour la conversion, les abandons et les dossiers en cours"
+    Votre bureau n'a alors encore lié aucun statut de dossier à une **phase de clôture**, et CreditSoft ne sait
+    pas quels dossiers sont abandonnés. Configurez-le dans **Administration → Phases du tableau de bord** — voir [Phases du tableau de bord](../beheer/dashboard-fases.md).
+    En attendant, l'onglet affiche un tiret plutôt qu'un chiffre inexact.
+
 ## Fusionner deux fiches
 
 Si le même apporteur figure deux fois dans la liste, fusionnez les fiches avec le bouton **Fusionner** en

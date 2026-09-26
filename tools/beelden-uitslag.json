@@ -16,8 +16,8 @@
   "aanbrengers-lijst": {
     "route": "/contributors",
     "app": {
-      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
-      "vuil": false
+      "sha": "ce7fcef498593926b7ef367478a0d604bb51ac81",
+      "vuil": true
     }
   },
   "relaties-lijst": {
@@ -135,8 +135,8 @@
   "dashboard-fases": {
     "route": "/beheer/dashboard-fases",
     "app": {
-      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
-      "vuil": false
+      "sha": "ce7fcef498593926b7ef367478a0d604bb51ac81",
+      "vuil": true
     }
   },
   "commissie-instellingen": {
@@ -317,8 +317,8 @@
   "aanbrengers-fiche": {
     "route": "/contributors/0447a42c-66a4-4afd-9939-80050a0b3279",
     "app": {
-      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
-      "vuil": false
+      "sha": "ce7fcef498593926b7ef367478a0d604bb51ac81",
+      "vuil": true
     }
   },
   "relaties-fiche": {
@@ -632,8 +632,8 @@
   "aanbrengers-lijst-fr": {
     "route": "/contributors",
     "app": {
-      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
-      "vuil": false
+      "sha": "ce7fcef498593926b7ef367478a0d604bb51ac81",
+      "vuil": true
     }
   },
   "relaties-lijst-fr": {
@@ -751,8 +751,8 @@
   "dashboard-fases-fr": {
     "route": "/beheer/dashboard-fases",
     "app": {
-      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
-      "vuil": false
+      "sha": "ce7fcef498593926b7ef367478a0d604bb51ac81",
+      "vuil": true
     }
   },
   "commissie-instellingen-fr": {
@@ -933,8 +933,8 @@
   "aanbrengers-fiche-fr": {
     "route": "/contributors/0447a42c-66a4-4afd-9939-80050a0b3279",
     "app": {
-      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
-      "vuil": false
+      "sha": "ce7fcef498593926b7ef367478a0d604bb51ac81",
+      "vuil": true
     }
   },
   "relaties-fiche-fr": {
@@ -1248,15 +1248,15 @@
   "commissie-vooruitzicht-aanbrengers": {
     "route": "/commissie/vooruitzicht",
     "app": {
-      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
-      "vuil": false
+      "sha": "ce7fcef498593926b7ef367478a0d604bb51ac81",
+      "vuil": true
     }
   },
   "commissie-vooruitzicht-aanbrengers-fr": {
     "route": "/commissie/vooruitzicht",
     "app": {
-      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
-      "vuil": false
+      "sha": "ce7fcef498593926b7ef367478a0d604bb51ac81",
+      "vuil": true
     }
   },
   "mededelingen-fr": {
@@ -1299,6 +1299,20 @@
     "app": {
       "sha": "2319025d3c265cf999bc1480b244f8886d022412",
       "vuil": false
+    }
+  },
+  "aanbrengers-productie": {
+    "route": "/contributors/05b820be-792d-4ecb-b41e-c8b00619b872",
+    "app": {
+      "sha": "ce7fcef498593926b7ef367478a0d604bb51ac81",
+      "vuil": true
+    }
+  },
+  "aanbrengers-productie-fr": {
+    "route": "/contributors/05b820be-792d-4ecb-b41e-c8b00619b872",
+    "app": {
+      "sha": "ce7fcef498593926b7ef367478a0d604bb51ac81",
+      "vuil": true
     }
   }
 }

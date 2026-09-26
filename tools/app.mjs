@@ -61,6 +61,10 @@ export const ID = {
   //   order by document_date desc limit 1;
   borderel: 'c61fccbc-4d3d-45c7-a039-60a068ab9e1a',   // 2026-1554 · Horizon Makelaars Leuven 212 · € 249,62
   aanbrenger:'0447a42c-66a4-4afd-9939-80050a0b3279',
+  // Tabblad Productie (26/09/2026): Horizon Makelaars Oostende, met TIEN onderliggende aanbrengers en dossiers
+  // in elke fase — zo staan de schakelaar, de commissietegel en alle vier de grafieken op het beeld. Dezelfde
+  // fiche als aanbrengerMetPortaal, maar om een andere reden gekozen; krijgt die ooit een andere, dan niet deze.
+  aanbrengerProductie: '05b820be-792d-4ecb-b41e-c8b00619b872',
   lead:     'd87a24fd-a6aa-4d42-a412-25dbd99b45ba',
   // ⚠️ Baken Immo Aalst — de fiche die de handleiding letterlijk beschrijft (Beukenlaan 50, 1000 Brussel,
   // documenttaal Frans; nagemeten in tenant_demo). Hier stond een notariskantoor, en het beeld toonde dus

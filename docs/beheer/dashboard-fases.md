@@ -2,7 +2,7 @@
 
 Op dit scherm bepaalt u zelf hoe uw dossiers op het dashboard **gegroepeerd en geteld** worden, en wat er met een dossier gebeurt zodra het rond is. Het bevat een reeks losse instellingen die weinig met elkaar te maken hebben.
 
-![Het scherm Dashboard-fases in CreditSoft: bovenaan de fases met hun naam in beide talen, hun volgorde en de vinkjes eindfase en opvolging, met rechts de koppeling van elke dossierstatus aan een fase; daaronder de koppeling van elke contractstatus aan een van de vier KPI-tegels.](../images/dashboard-fases.png "Instellen hoe dossiers gegroepeerd en geteld worden op het dashboard"){ .volle-breedte }
+![Het scherm Dashboard-fases in CreditSoft: bovenaan de fases met hun naam in beide talen, hun volgorde en de vinkjes eindfase, opvolging en geslaagd, met rechts de koppeling van elke dossierstatus aan een fase; daaronder de koppeling van elke contractstatus aan een van de vier KPI-tegels.](../images/dashboard-fases.png "Instellen hoe dossiers gegroepeerd en geteld worden op het dashboard"){ .volle-breedte }
 
 !!! info "Let op waar wél en niet een bewaarknop staat"
     De **fases**, de **koppelingen** en de **vinkjes** onderaan worden meteen bewaard: past u iets aan, dan staat het er. Wilt u een koppeling ongedaan maken, klik dan op het kruisje in de keuzelijst.
@@ -33,10 +33,13 @@ Een **fase** is een kolom in de pijplijn op het dashboard: een groep dossierstat
 | **Volgorde** | Bepaalt van links naar rechts waar de fase in de pijplijn staat |
 | **Eindfase** | De doorlooptijd van een dossier stopt hier met tellen |
 | **Opvolging** | Het dossier komt in de lijst met openstaande punten ná de akte |
+| **Geslaagd** | Enkel voor een eindfase: een dossier in deze fase telt als geslaagd, ook zonder aktedatum |
 
 **Eindfase** is belangrijker dan het lijkt. Een dossier dat zonder gevolg is afgesloten, blijft anders eindeloos "lopen" in uw statistieken. Zet u de fase waarin dat dossier terechtkomt op eindfase, dan stopt de klok.
 
 **Opvolging** gebruikt u voor fases waar het krediet rond is maar er nog stukken ontbreken — de akte is gepasseerd en er wacht nog een attest. Die dossiers verschijnen dan in het overzicht [Globaal overzicht](../credit-management/global-overview.md) onder *Opvolging na akte*.
+
+**Geslaagd** zet u op de eindfase van de dossiers die rond zijn — bij de meeste kantoren *Afgewerkt*. Het tabblad [Productie](../crm/contributors.md#de-productie-van-een-aanbrenger) van een aanbrenger telt een dossier in een eindfase **zonder** dit vinkje als afgevallen, met de naam van de fase als reden. Zonder het vinkje op *Afgewerkt* zou een afgewerkt dossier zonder aktedatum daar dus als afgevallen staan. De standaardfase *Afgewerkt* draagt het vinkje al; hebt u zelf een eindfase anders genoemd, vink ze dan hier aan.
 
 Onderaan de tabel staat een lege regel: vul daar een naam in om een fase toe te voegen.
 

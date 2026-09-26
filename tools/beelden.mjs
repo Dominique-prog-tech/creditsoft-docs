@@ -222,6 +222,19 @@ const SCHOTEN = [
   ['portaal-documenten',           '/portal-intermediary/documenten'],
   // ── fiches ──
   ['aanbrengers-fiche',            `/contributors/${ID.aanbrenger}`],
+  ['aanbrengers-productie',        `/contributors/${ID.aanbrengerProductie}`, async p => {
+      // Het tabblad Productie, MET de onderliggende aanbrengers: dat is wat de handleiding belooft.
+      await p.getByText(/^(Productie|Production)$/).first().click();
+      await p.waitForSelector('.adm-metric', { timeout: 15000 });
+      await p.getByText(/^(Met onderliggende aanbrengers|Avec les apporteurs sous-jacents)$/).first().click();
+      // ⚠️ DevExpress tekent de grafieken pas na de eerste paint (±3 s in de preview, 25/09/2026). Wachten op
+      //    de vier SVG's en niet op een vaste tijd: een beeld met lege kaders ziet er af uit en is fout.
+      await p.waitForFunction(() => document.querySelectorAll('.productie-raster svg').length >= 4,
+                              null, { timeout: 20000 });
+      // En controleren dat de schakelaar AAN staat: zonder zou het beeld enkel de aanbrenger zelf tonen.
+      await p.getByText(/onder deze aanbrenger mee|rattaché\(s\) à cet apporteur/).first().waitFor({ timeout: 5000 });
+      await p.waitForTimeout(1500);
+  }],
   ['relaties-fiche',               `/crm/relaties/${ID.relatie}`],
   ['lead-fiche',                   `/crm/leads/${ID.lead}`],
   ['professionals-fiche',          `/crm/professionals/${ID.prof}`],
@@ -628,6 +641,8 @@ const VERWACHT = {
   'portaal-dossier-detail':     /Aanvragers|Demandeurs/i,   // staat op het DETAIL, niet op de lijst
   'bedrijfsfiche-logo':         /Logo/i,
   'commissieschema-fiche':      /Algemene gegevens|Données générales/i,
+  // "Omzetting" staat enkel op het tabblad Productie — niet op de fiche, niet op het dashboard.
+  'aanbrengers-productie':      /Omzetting|Taux de conversion/,
 };
 
 // Merktekens uit de alt-tekst: hoofdletterwoord + eventuele vervolgwoorden, zonder verbindingswoord op het

@@ -2,7 +2,7 @@
 
 Sur cet écran, vous déterminez vous-même comment vos dossiers sont **regroupés et comptés** sur le tableau de bord, et ce qu'il advient d'un dossier dès qu'il est bouclé. Il contient une série de réglages distincts, avec peu de lien entre eux.
 
-![L'écran Phases du tableau de bord dans CreditSoft : en haut les phases avec leur nom dans les deux langues, leur ordre et les cases phase finale et suivi, avec à droite le lien entre chaque statut de dossier et une phase ; en dessous le lien entre chaque statut de contrat et l'une des quatre tuiles KPI.](../images/dashboard-fases-fr.png "Configurer comment les dossiers sont groupés et comptés sur le tableau de bord"){ .volle-breedte }
+![L'écran Phases du tableau de bord dans CreditSoft : en haut les phases avec leur nom dans les deux langues, leur ordre et les cases phase finale, suivi et réussi, avec à droite le lien entre chaque statut de dossier et une phase ; en dessous le lien entre chaque statut de contrat et l'une des quatre tuiles KPI.](../images/dashboard-fases-fr.png "Configurer comment les dossiers sont groupés et comptés sur le tableau de bord"){ .volle-breedte }
 
 !!! info "Attention à l'endroit où il y a — ou non — un bouton d'enregistrement"
     Les **phases**, les **rattachements** et les **cases** du bas sont enregistrés immédiatement : si vous modifiez quelque chose, c'est aussitôt pris en compte. Pour défaire un rattachement, cliquez sur la croix dans la liste de choix.
@@ -33,10 +33,13 @@ Une **phase** est une colonne du pipeline sur le tableau de bord : un groupe de 
 | **Ordre** | Détermine la position de la phase dans le pipeline, de gauche à droite |
 | **Phase finale** | Le délai de traitement d'un dossier cesse d'y courir |
 | **Suivi** | Le dossier apparaît dans la liste des points ouverts après l'acte |
+| **Réussi** | Uniquement pour une phase finale : un dossier dans cette phase compte comme réussi, même sans date d'acte |
 
 **Phase finale** est plus important qu'il n'y paraît. Un dossier clôturé sans suite continuerait sinon à « courir » indéfiniment dans vos statistiques. Si vous marquez comme finale la phase où ce dossier aboutit, le compteur s'arrête.
 
 **Suivi** s'utilise pour les phases où le crédit est bouclé mais où des pièces manquent encore — l'acte est passé et il reste une attestation à recevoir. Ces dossiers apparaissent alors dans l'aperçu [Aperçu global](../credit-management/global-overview.md) sous *Suivi après acte*.
+
+**Réussi** se coche sur la phase finale des dossiers aboutis — dans la plupart des bureaux, *Finalisé*. L'onglet [Production](../crm/contributors.md#la-production-dun-apporteur) d'un apporteur compte un dossier dans une phase finale **sans** cette case comme abandonné, avec le nom de la phase comme motif. Sans la case sur *Finalisé*, un dossier finalisé sans date d'acte y figurerait donc comme abandonné. La phase standard *Finalisé* porte déjà la case ; si vous avez nommé autrement une phase finale, cochez-la ici.
 
 En bas du tableau figure une ligne vide : saisissez-y un nom pour ajouter une phase.
 
