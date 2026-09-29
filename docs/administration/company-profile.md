@@ -3,7 +3,8 @@
 De bedrijfsfiche bevat de gegevens van uw eigen kantoor — die gebruikt worden op documenten en bij het versturen van mail. U bewerkt ze rechtstreeks en klikt onderaan op **Bewaren**.
 
 !!! note "De naam"
-    De **naam** van uw kantoor wordt door ADM One beheerd en kan hier niet gewijzigd worden.
+    De **naam** van uw kantoor past u hier zelf aan. Hij staat enkel in CreditSoft en wordt niet overgenomen
+    door andere toepassingen.
 
 ## Het scherm openen
 
@@ -11,11 +12,11 @@ Klik in de zijbalk op **Platformbeheer** en daarna op de tegel **Bedrijfsfiche**
 
 ## De gegevens
 
-![De bedrijfsfiche van CreditSoft: het blok Identiteit met de alleen-lezen naam, het btw-nummer met de knop Ophalen en het FSMA-nr., daarnaast Contact met telefoon, e-mail en website, daaronder Adres en Bank met IBAN, BIC en rekeningnummer, en onderaan Documenten en huisstijl met het sleepvak voor het logo.](../images/bedrijfsfiche.png "De gegevens van het eigen kantoor, zoals ze op documenten en in mails verschijnen"){ .volle-breedte }
+![De bedrijfsfiche van CreditSoft: het blok Identiteit met de naam, het btw-nummer met de knop Ophalen en het FSMA-nr., daarnaast Contact met telefoon, e-mail en website, daaronder Adres en Bank met IBAN, BIC en rekeningnummer, en onderaan Documenten en huisstijl met het sleepvak voor het logo.](../images/bedrijfsfiche.png "De gegevens van het eigen kantoor, zoals ze op documenten en in mails verschijnen"){ .volle-breedte }
 
 De velden staan gegroepeerd in blokken:
 
-- **Identiteit** — naam (alleen-lezen), BTW / ondernemingsnr., FSMA-nr..
+- **Identiteit** — naam, BTW / ondernemingsnr., FSMA-nr..
 - **Adres** — straat, nummer, bus, postcode, gemeente, land.
 - **Contact** — telefoon, e-mail, website.
 - **Bank** — IBAN, BIC en rekeningnummer (met een tweede rekening indien nodig).
@@ -23,7 +24,7 @@ De velden staan gegroepeerd in blokken:
 
 ## Gegevens ophalen uit de KBO
 
-Vul uw **BTW / ondernemingsnummer** in en klik op **Ophalen**. De adresgegevens worden dan automatisch ingevuld vanuit de Kruispuntbank van Ondernemingen. De naam blijft ongewijzigd (die komt van ADM One).
+Vul uw **BTW / ondernemingsnummer** in en klik op **Ophalen**. De adresgegevens worden dan automatisch ingevuld vanuit de Kruispuntbank van Ondernemingen. De naam wordt enkel ingevuld als dat veld nog leeg is — zo blijft een handelsnaam die u zelf koos staan.
 
 ## Logo
 

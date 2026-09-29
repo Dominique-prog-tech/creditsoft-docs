@@ -3,7 +3,8 @@
 La fiche d'entreprise contient les données de votre propre bureau — utilisées sur les documents et lors de l'envoi d'e-mails. Vous les modifiez directement et cliquez sur **Enregistrer** en bas de l'écran.
 
 !!! note "Le nom"
-    Le **nom** de votre bureau est géré par ADM One et ne peut pas être modifié ici.
+    Vous modifiez vous-même le **nom** de votre bureau ici. Il n'existe que dans CreditSoft et n'est pas repris
+    par d'autres applications.
 
 ## Ouvrir l'écran
 
@@ -11,11 +12,11 @@ Dans la barre latérale, cliquez sur **Administration**, puis sur la tuile **Fic
 
 ## Les données
 
-![La fiche d'entreprise de CreditSoft : le bloc Identité avec le nom en lecture seule, le numéro de TVA et le bouton Récupérer ainsi que le numéro FSMA, à côté Contact avec le téléphone, l'e-mail et le site web, en dessous Adresse et Banque avec l'IBAN, le BIC et le numéro de compte, et en bas Documents et charte graphique avec la zone de dépôt du logo.](../images/bedrijfsfiche-fr.png "Les données du bureau, telles qu'elles apparaissent sur les documents et dans les e-mails"){ .volle-breedte }
+![La fiche d'entreprise de CreditSoft : le bloc Identité avec le nom, le numéro de TVA et le bouton Récupérer ainsi que le numéro FSMA, à côté Contact avec le téléphone, l'e-mail et le site web, en dessous Adresse et Banque avec l'IBAN, le BIC et le numéro de compte, et en bas Documents et charte graphique avec la zone de dépôt du logo.](../images/bedrijfsfiche-fr.png "Les données du bureau, telles qu'elles apparaissent sur les documents et dans les e-mails"){ .volle-breedte }
 
 Les champs sont regroupés en blocs :
 
-- **Identité** — nom (en lecture seule), TVA / n° d'entreprise, numéro FSMA.
+- **Identité** — nom, TVA / n° d'entreprise, numéro FSMA.
 - **Adresse** — rue, numéro, boîte, code postal, commune, pays.
 - **Contact** — téléphone, e-mail, site web.
 - **Banque** — IBAN, BIC et numéro de compte (avec un second compte si nécessaire).
@@ -23,7 +24,7 @@ Les champs sont regroupés en blocs :
 
 ## Récupérer les données depuis la BCE
 
-Saisissez votre **numéro de TVA / d'entreprise** et cliquez sur **Récupérer**. Les données d'adresse sont alors complétées automatiquement depuis la Banque-Carrefour des Entreprises. Le nom reste inchangé (il provient d'ADM One).
+Saisissez votre **numéro de TVA / d'entreprise** et cliquez sur **Récupérer**. Les données d'adresse sont alors complétées automatiquement depuis la Banque-Carrefour des Entreprises. Le nom n'est complété que si ce champ est encore vide — un nom commercial que vous avez choisi reste ainsi inchangé.
 
 ## Logo
 
