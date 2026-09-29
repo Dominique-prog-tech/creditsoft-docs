@@ -3,7 +3,7 @@
 Uw wachtwoord verandert u op één scherm, met drie velden: uw **huidige** wachtwoord, het **nieuwe**, en dat
 nieuwe **nog een keer** ter bevestiging.
 
-![Het scherm Wachtwoord wijzigen met drie lege velden onder elkaar: Huidig wachtwoord, Nieuw wachtwoord en Bevestig nieuw wachtwoord, met daaronder de knop Bewaren.](../images/wachtwoord.png "Het scherm Wachtwoord wijzigen")
+![Het scherm Wachtwoord wijzigen met drie lege velden onder elkaar: Huidig wachtwoord, Nieuw wachtwoord en Bevestig het nieuwe wachtwoord, met daaronder de knop Wachtwoord wijzigen en de link Annuleren.](../images/wachtwoord.png "Het scherm Wachtwoord wijzigen")
 
 ## Wanneer u het te zien krijgt
 
@@ -16,6 +16,13 @@ nieuwe **nog een keer** ter bevestiging.
 
 Het nieuwe wachtwoord en de bevestiging moeten **exact gelijk** zijn; verschillen ze, dan zegt CreditSoft dat
 en verandert er niets. Vul daarna opnieuw in — u verliest niets.
+
+Klik op **Wachtwoord wijzigen**. Wijzigde u het zelf, dan meldt CreditSoft dat het gelukt is en brengt
+**Verder** u terug naar het scherm waar u vandaan kwam. Bij uw eerste aanmelding gaat u meteen verder. Wilt u
+toch niets wijzigen, klik dan op **Annuleren** — die link staat er niet bij de verplichte wijziging.
+
+Na de wijziging worden **andere toestellen** waarop u aangemeld bent, afgemeld. Daar meldt u zich opnieuw aan
+met het nieuwe wachtwoord.
 
 !!! tip "Kies iets lang boven iets ingewikkeld"
     Een zin die u onthoudt is veiliger dan een kort woord met vreemde tekens erin. En gebruik voor CreditSoft

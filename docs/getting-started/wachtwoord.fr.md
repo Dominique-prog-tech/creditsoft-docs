@@ -3,7 +3,7 @@
 Vous changez votre mot de passe sur un seul écran, comportant trois champs : votre mot de passe **actuel**, le
 **nouveau**, et ce nouveau mot de passe **une seconde fois** en confirmation.
 
-![L'écran Changer le mot de passe avec trois champs vides les uns sous les autres : Mot de passe actuel, Nouveau mot de passe et Confirmez le nouveau mot de passe, suivis du bouton Enregistrer.](../images/wachtwoord-fr.png "L'écran Changer le mot de passe")
+![L'écran Changer le mot de passe avec trois champs vides les uns sous les autres : Mot de passe actuel, Nouveau mot de passe et Confirmez le nouveau mot de passe, suivis du bouton Changer le mot de passe et du lien Annuler.](../images/wachtwoord-fr.png "L'écran Changer le mot de passe")
 
 ## Quand vous le rencontrez
 
@@ -19,6 +19,14 @@ Vous changez votre mot de passe sur un seul écran, comportant trois champs : vo
 
 Le nouveau mot de passe et sa confirmation doivent être **exactement identiques** ; s'ils diffèrent, CreditSoft
 vous le signale et rien ne change. Ressaisissez-les alors — vous ne perdez rien.
+
+Cliquez sur **Changer le mot de passe**. Si vous l'avez changé de vous-même, CreditSoft confirme que c'est fait
+et **Continuer** vous ramène à l'écran d'où vous veniez. À votre première connexion, vous poursuivez
+directement. Vous ne voulez finalement rien changer ? Cliquez sur **Annuler** — ce lien n'apparaît pas lors du
+changement obligatoire.
+
+Après la modification, les **autres appareils** sur lesquels vous êtes connecté sont déconnectés. Vous vous y
+reconnectez avec le nouveau mot de passe.
 
 !!! tip "Préférez la longueur à la complexité"
     Une phrase dont vous vous souvenez est plus sûre qu'un mot court truffé de caractères étranges. Et pour
