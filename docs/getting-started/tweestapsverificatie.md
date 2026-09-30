@@ -25,6 +25,28 @@ Staat tweestapsverificatie aan, dan vraagt CreditSoft na uw gebruikersnaam en wa
 
 Hebt u uw app niet bij de hand? Klik dan op **App niet beschikbaar? Gebruik een herstelcode** en voer een van uw bewaarde herstelcodes in.
 
+## Aanmelden met een passkey
+
+Met een **passkey** meldt u zich aan met de vingerafdruk, het gezicht of de pincode van uw toestel — zonder
+wachtwoord en zonder code. Dat kan enkel als tweestapsverificatie **aan** staat: de passkey vervangt dan beide
+stappen tegelijk.
+
+**Een passkey toevoegen**
+
+1. Ga naar **avatar → Tweestapsverificatie**. Onder **Passkeys** staat welke passkeys u al hebt.
+2. Geef bij **Naam van dit toestel** een herkenbare naam in, bijvoorbeeld *Laptop kantoor*.
+3. Klik op **Passkey toevoegen** en volg de vraag van uw toestel (vingerafdruk, gezicht of pincode).
+
+**Aanmelden**
+
+Klik op het aanmeldscherm op **Aanmelden met een passkey** en bevestig op uw toestel. Uw wachtwoord en de code
+blijven gewoon werken, bijvoorbeeld op een ander toestel waar u geen passkey hebt.
+
+Met **Hernoemen** en **Verwijderen** beheert u uw passkeys. Een passkey hoort bij het adres van CreditSoft en bij
+het toestel waarop u hem maakte.
+
 ## Uitschakelen
 
-Wilt u tweestapsverificatie weer uitzetten, ga dan opnieuw naar **avatar → Tweestapsverificatie** en klik op **Uitschakelen**.
+Wilt u tweestapsverificatie weer uitzetten, ga dan opnieuw naar **avatar → Tweestapsverificatie**, klik op
+**Uitschakelen** en bevestig met uw wachtwoord. Uw **passkeys worden daarbij verwijderd** — zonder
+tweestapsverificatie kan u er niet meer mee aanmelden.
