@@ -282,7 +282,7 @@
   "wachtwoord": {
     "route": "/account/wachtwoord-wijzigen",
     "app": {
-      "sha": "078c4db57d5dc6329fbee2e85bc0f0bf9cabfecd",
+      "sha": "cc05de260b581d14c46147114fc78ee2ca88738c",
       "vuil": false
     }
   },
@@ -898,7 +898,7 @@
   "wachtwoord-fr": {
     "route": "/account/wachtwoord-wijzigen",
     "app": {
-      "sha": "078c4db57d5dc6329fbee2e85bc0f0bf9cabfecd",
+      "sha": "cc05de260b581d14c46147114fc78ee2ca88738c",
       "vuil": false
     }
   },

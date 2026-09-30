@@ -3,7 +3,7 @@
 Uw wachtwoord verandert u op één scherm, met drie velden: uw **huidige** wachtwoord, het **nieuwe**, en dat
 nieuwe **nog een keer** ter bevestiging.
 
-![Het scherm Wachtwoord wijzigen met drie lege velden onder elkaar: Huidig wachtwoord, Nieuw wachtwoord en Bevestig het nieuwe wachtwoord, met daaronder de knop Wachtwoord wijzigen en de link Annuleren.](../images/wachtwoord.png "Het scherm Wachtwoord wijzigen")
+![Het scherm Wachtwoord wijzigen met drie lege velden onder elkaar: Huidig wachtwoord, Nieuw wachtwoord met daaronder de regel waaraan het moet voldoen, en Bevestig het nieuwe wachtwoord, met daaronder de knop Wachtwoord wijzigen en de link Annuleren.](../images/wachtwoord.png "Het scherm Wachtwoord wijzigen")
 
 ## Wanneer u het te zien krijgt
 
@@ -13,6 +13,9 @@ nieuwe **nog een keer** ter bevestiging.
 - **Wanneer u het zelf wil veranderen.** Dat kan altijd: open uw avatar rechtsboven → **Alle voorkeuren…** en klik onderaan bij *Beveiliging* op **Wachtwoord wijzigen**.
 
 ## Het invullen
+
+Onder **Nieuw wachtwoord** staat aan welke regels het moet voldoen: minstens **8 tekens**, waaronder een
+**cijfer**, een **hoofdletter** en een **kleine letter**. Voldoet het toch niet, dan zegt CreditSoft waarom.
 
 Het nieuwe wachtwoord en de bevestiging moeten **exact gelijk** zijn; verschillen ze, dan zegt CreditSoft dat
 en verandert er niets. Vul daarna opnieuw in — u verliest niets.
