@@ -43,20 +43,20 @@ effacer n'est pas un historique.
 
 ## Qui peut le voir
 
-L'Historique demande le même droit que le [Journal d'activité](../administration/activity-log.md). Si vous ne
+L'Historique demande le même droit que le [Journal des actions](../administration/activity-log.md). Si vous ne
 l'avez pas, la partie n'apparaît pas — ni dans le tiroir, ni comme onglet sur la fiche. Cela se règle sous [Rôles](../administration/roles.md).
 
-## Différence avec le Journal d'activité
+## Différence avec le Journal des actions
 
 Ils se ressemblent et répondent à deux questions différentes :
 
 - L'**Historique** présent ici porte sur **une seule fiche** et montre **champ par champ** ce qui a changé.
-- Le [Journal d'activité](../administration/activity-log.md) dans l'Administration porte sur **toute
+- Le [Journal des actions](../administration/activity-log.md) dans l'Administration porte sur **toute
   l'application** et montre des **actions** : qui s'est connecté quand, qui a exporté quelque chose, qui a
   désactivé un utilisateur.
 
 Vous cherchez ce qui est arrivé à un dossier ? Regardez ici. Vous cherchez ce qu'un utilisateur a fait ce
-jour-là ? Regardez dans le Journal d'activité.
+jour-là ? Regardez dans le Journal des actions.
 
 ## Sur quelles fiches
 

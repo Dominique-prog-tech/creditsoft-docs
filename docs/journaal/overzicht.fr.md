@@ -77,7 +77,7 @@ l'historique correspondent chacun à un droit distinct : si vous ne l'avez pas, 
 n'est donc pas vide ni grisée, elle n'est pas là. Qui possède quels droits se règle sous
 [Rôles](../administration/roles.md).
 
-L'[Historique](logboek.md) demande le même droit que le [Journal d'activité](../administration/activity-log.md) :
+L'[Historique](logboek.md) demande le même droit que le [Journal des actions](../administration/activity-log.md) :
 qui peut voir au niveau de l'application qui a fait quoi, peut le voir aussi par fiche.
 
 ## Rechercher et exporter

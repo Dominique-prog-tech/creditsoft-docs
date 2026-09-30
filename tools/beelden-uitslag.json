@@ -177,7 +177,7 @@
   "rollen": {
     "route": "/administration/roles",
     "app": {
-      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "sha": "20bd7fa2a779faf9cd40e47846354a461cdc61e1",
       "vuil": false
     }
   },
@@ -198,7 +198,7 @@
   "platformbeheer-hub": {
     "route": "/administration",
     "app": {
-      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "sha": "20bd7fa2a779faf9cd40e47846354a461cdc61e1",
       "vuil": false
     }
   },
@@ -793,7 +793,7 @@
   "rollen-fr": {
     "route": "/administration/roles",
     "app": {
-      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "sha": "20bd7fa2a779faf9cd40e47846354a461cdc61e1",
       "vuil": false
     }
   },
@@ -814,7 +814,7 @@
   "platformbeheer-hub-fr": {
     "route": "/administration",
     "app": {
-      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
+      "sha": "20bd7fa2a779faf9cd40e47846354a461cdc61e1",
       "vuil": false
     }
   },
@@ -1290,14 +1290,14 @@
   "kantoorprofiel-vragenlijst": {
     "route": "/beheer/kantoorprofiel",
     "app": {
-      "sha": "2319025d3c265cf999bc1480b244f8886d022412",
+      "sha": "20bd7fa2a779faf9cd40e47846354a461cdc61e1",
       "vuil": false
     }
   },
   "kantoorprofiel-vragenlijst-fr": {
     "route": "/beheer/kantoorprofiel",
     "app": {
-      "sha": "2319025d3c265cf999bc1480b244f8886d022412",
+      "sha": "20bd7fa2a779faf9cd40e47846354a461cdc61e1",
       "vuil": false
     }
   },

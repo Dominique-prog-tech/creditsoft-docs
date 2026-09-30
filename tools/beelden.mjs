@@ -136,7 +136,17 @@ const SCHOTEN = [
   ['mailsjablonen',                '/administration/mail-templates'],
   ['verzendadressen',              '/administration/sender-addresses'],
   ['mailmonitoring',               '/administration/mail-monitoring'],
-  ['rollen',                       '/administration/roles'],
+  ['rollen',                       '/administration/roles', async p => {
+      // ⚠️ KLANT KIEZEN EN DE SYSTEEMROL OPENEN (30/09/2026). Zonder dat toont het scherm enkel de uitleg en een lege
+      //    keuzelijst — en DAT stond sinds cae71575 in de handleiding, onder een beschrijving van drie kolommen. De
+      //    controle bleef groen omdat "Tenant-beheerder" als VASTE tekst in de uitleg stond; AppKit 0.427.2 haalde die
+      //    weg (de uitleg noemt de rol nu pas als er rollen geladen zijn) en zette het gat bloot.
+      const sel = p.locator('select').first();
+      await sel.selectOption(await sel.evaluate(s => [...s.options].find(o => o.text.includes('(demo)'))?.value));
+      await p.waitForTimeout(1500);
+      await p.locator('*:visible', { hasText: /^\s*Tenant-beheerder/ }).last().click();
+      await p.waitForTimeout(1500);
+    }],
   ['actielogboek',                 '/beheer/audit'],
   ['prullenbak',                   '/prullenbak'],
   ['platformbeheer-hub',           '/administration'],
@@ -622,7 +632,9 @@ const VERWACHT = {
   'taken-overzicht':            /Vervaldatum|Échéance|Prioriteit|Priorité/i,
   'wachtwoord':                 /Huidig wachtwoord|Mot de passe actuel/i,
   'keuzelijsten':               /Nationaliteit|Nationalité|Volgorde|Ordre/i,
-  'rollen':                     /Tenant-beheerder|Administrateur de tenant/i,
+  // De kop van de MIDDELSTE kolom: staat er enkel als een klant gekozen én precies de systeemrol open is. Het oude
+  // merkteken (/Tenant-beheerder/) stond ook in de uitleg bovenaan en keurde zo het lege scherm goed.
+  'rollen':                     /(Rechten|Droits) — Tenant-beheerder/,
   'aanbrenger-groepering':      /Groepering|Groupement/i,
   'afspraken-per-medewerker':   /Samengevoegd|Fusionné/,   // de echte controle telt de kolommen, in het recept
   'afspraak-venster':           /Terugkerend|Récurrent|Hele dag|Journée entière/i,
@@ -1139,6 +1151,11 @@ for (const taal of ['nl-BE', 'fr-BE']) {
       //
       // Twee opeenvolgende schoten moeten byte-identiek zijn, en het BEWEZEN beeld wordt bewaard — niet een
       // nieuw schot erna. Dat laatste stond er eerst, en dan bewijs je iets dat je vervolgens weggooit.
+      // ⚠️ DE MUIS WEG VAN HET SCHERM (30/09/2026). Playwright laat de muis staan waar de laatste klik viel — bij
+      //    het aanmelden is dat de knop om de klant te kiezen. In de Franse opmaak van Platformbeheer lag daar net de
+      //    tegel "Suivi des e-mails", en die stond met een blauwe hoverrand op het handleidingbeeld; in het
+      //    Nederlands lag er niets. Een beeld mag niet afhangen van waar een vorige klik toevallig viel.
+      await page.mouse.move(0, 0);
       let nieuw = null, vorige = null;
       for (let poging = 0; poging < 6 && nieuw === null; poging++) {
         const a = vorm.element ? await elementSchot(page, vorm.element) : await page.screenshot();

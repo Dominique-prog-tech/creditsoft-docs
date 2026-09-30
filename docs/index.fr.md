@@ -95,7 +95,7 @@ CreditSoft prépare les montants mensuels pour le bordereau et la fiche 281.50.
     ---
 
     Fiche d'entreprise, utilisateurs et rôles, modèles d'e-mail, listes de choix,
-    corbeille et journal d'activité.
+    corbeille et journal des actions.
 
     [:octicons-arrow-right-24: Fiche d'entreprise](administration/company-profile.md)
 
