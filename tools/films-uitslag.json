@@ -1900,56 +1900,56 @@
     "film": "dashboard",
     "taal": "nl-BE",
     "pagina": "getting-started/dashboard",
-    "lengte": 155.24,
+    "lengte": 156.32,
     "uitvoering": "handleiding",
     "routes": [
       "/dashboard",
       "/beheer/dashboard-fases"
     ],
     "app": {
-      "sha": "39e3472c008bae5a08befafc6e75a52415567096",
+      "sha": "7b5c852293e5103a2ba95fbe21ba82883789a04f",
       "vuil": true
     },
     "titel": "Het dashboard — uw kantoor in één scherm",
     "omschrijving": "Het startscherm gelezen zoals het bedoeld is: het jaar bovenaan dat alles stuurt, de vier tegels met aantallen en bedragen, de termijnen die vandaag actie vragen, de drie grafieken over het gerealiseerde volume, de pijplijn met uw dossiers per fase, en het scherm waar u die fases zelf samenstelt. Plus waarom uw dashboard er anders uitziet dan dat van een collega.",
-    "hash": "8e8f537dfb0114cb",
+    "hash": "51c2956d2845f3d7",
     "guid": "199cd811-c0b9-42fa-96b8-b19846d58c0e",
     "vorigeGuid": "35c69238-2b43-4096-9d31-50a084c5f002",
     "hoofdstukken": [
       {
         "titel": "Het jaar stuurt alles",
-        "start": 5.25,
-        "eind": 17.46
+        "start": 5.27,
+        "eind": 17.49
       },
       {
         "titel": "De vier tegels",
-        "start": 21.45,
-        "eind": 31.24
+        "start": 21.49,
+        "eind": 31.29
       },
       {
         "titel": "Wat vandaag actie vraagt",
-        "start": 35.32,
-        "eind": 49.02
+        "start": 35.37,
+        "eind": 49.07
       },
       {
         "titel": "Gerealiseerd volume",
-        "start": 53.09,
-        "eind": 62.75
+        "start": 53.14,
+        "eind": 62.8
       },
       {
         "titel": "Per instelling en per collega",
-        "start": 66.81,
-        "eind": 75.55
+        "start": 66.87,
+        "eind": 75.6
       },
       {
         "titel": "Geen eigenaar is werk",
-        "start": 79.64,
-        "eind": 90.74
+        "start": 79.68,
+        "eind": 90.78
       },
       {
         "titel": "De pijplijn",
-        "start": 94.8,
-        "eind": 106.6
+        "start": 94.85,
+        "eind": 106.64
       },
       {
         "titel": "De fases zijn van u",
@@ -1957,14 +1957,14 @@
         "eind": 125.28
       },
       {
-        "titel": "Waarom uw scherm anders is",
-        "start": 130.57,
-        "eind": 143.48
+        "titel": "Eén kantoor, één beeld",
+        "start": 130.5,
+        "eind": 144.53
       },
       {
         "titel": "Tot slot",
-        "start": 146.21,
-        "eind": 152.85
+        "start": 147.25,
+        "eind": 153.89
       }
     ],
     "gepubliceerdOp": "2026-10-01T19:15:43.416",
@@ -1972,33 +1972,32 @@
       "13e7b04e-42b4-4a6b-8fe3-5fc275c68996",
       "3ab07841-07dc-475e-be9c-21c287c6d1db"
     ],
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/199cd811-c0b9-42fa-96b8-b19846d58c0e/thumbnail.jpg",
-    "gepubliceerdeHash": "8e8f537dfb0114cb"
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/199cd811-c0b9-42fa-96b8-b19846d58c0e/thumbnail.jpg"
   },
   "dashboard-fr": {
     "film": "dashboard",
     "taal": "fr-BE",
     "pagina": "getting-started/dashboard",
-    "lengte": 146.08,
+    "lengte": 147.52,
     "uitvoering": "handleiding",
     "routes": [
       "/dashboard",
       "/beheer/dashboard-fases"
     ],
     "app": {
-      "sha": "39e3472c008bae5a08befafc6e75a52415567096",
+      "sha": "7b5c852293e5103a2ba95fbe21ba82883789a04f",
       "vuil": true
     },
     "titel": "Le tableau de bord — votre bureau en un écran",
     "omschrijving": "L’écran d’accueil lu comme il se doit : l’année en haut qui pilote tout, les quatre tuiles avec les nombres et les montants, les délais qui demandent une action aujourd’hui, les trois graphiques du volume réalisé, le pipeline de vos dossiers par phase, et l’écran où vous composez ces phases. Ainsi que la raison pour laquelle votre tableau de bord diffère de celui d’un collègue.",
-    "hash": "8806c575759f29aa",
+    "hash": "c1ae874a3883c631",
     "guid": "df1e1528-e459-4ee2-8e22-85aba9ce2692",
     "vorigeGuid": "43b38475-86bc-4896-a464-548d997690dc",
     "hoofdstukken": [
       {
         "titel": "L’année pilote tout",
         "start": 5.26,
-        "eind": 16.26
+        "eind": 16.27
       },
       {
         "titel": "Les quatre tuiles",
@@ -2007,43 +2006,43 @@
       },
       {
         "titel": "Ce qui demande une action",
-        "start": 34.06,
+        "start": 34.07,
         "eind": 46.23
       },
       {
         "titel": "Volume réalisé",
-        "start": 50.28,
-        "eind": 59.47
+        "start": 50.29,
+        "eind": 59.49
       },
       {
         "titel": "Par institution et par collègue",
-        "start": 63.53,
-        "eind": 71.7
+        "start": 63.57,
+        "eind": 71.74
       },
       {
         "titel": "Sans responsable, c’est du travail",
-        "start": 75.76,
-        "eind": 87.05
+        "start": 75.81,
+        "eind": 87.09
       },
       {
         "titel": "Le pipeline",
-        "start": 91.1,
-        "eind": 100.67
+        "start": 91.17,
+        "eind": 100.73
       },
       {
         "titel": "Les phases sont les vôtres",
-        "start": 105.58,
-        "eind": 116.77
+        "start": 105.67,
+        "eind": 116.86
       },
       {
-        "titel": "Pourquoi votre écran diffère",
-        "start": 121.97,
-        "eind": 134.14
+        "titel": "Un bureau, une vue",
+        "start": 122.09,
+        "eind": 135.55
       },
       {
         "titel": "Pour conclure",
-        "start": 136.85,
-        "eind": 143.68
+        "start": 138.27,
+        "eind": 145.1
       }
     ],
     "gepubliceerdOp": "2026-10-01T19:17:35.901",
@@ -2051,8 +2050,7 @@
       "d150b6b6-79be-48c7-814b-35809cdaf4b5",
       "8aa0edec-81ff-4c49-9223-f2ec5493c6fe"
     ],
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/df1e1528-e459-4ee2-8e22-85aba9ce2692/thumbnail.jpg",
-    "gepubliceerdeHash": "8806c575759f29aa"
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/df1e1528-e459-4ee2-8e22-85aba9ce2692/thumbnail.jpg"
   },
   "lijsten-en-rapporten-nl": {
     "film": "lijsten-en-rapporten",
