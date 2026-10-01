@@ -17,3 +17,29 @@ export function hernomen(oud, vers) {
   const { gepubliceerdeHash, ...blijft } = oud ?? {};
   return { ...blijft, ...vers };
 }
+
+// De rij die `bunny.mjs publiceer` wegschrijft: wat er op schijf staat, plus ENKEL de velden die deze
+// publicatieronde zelf wijzigde.
+//
+// ⚠️⚠️ GEEN LIJST VAN VELDEN (01/10/2026). Hier stond een samenvoeging met de hand: guid, vorigeGuid,
+//    opTeRuimen, gepubliceerdOp, gepubliceerdeHash en `miniatuur` — een veld dat nergens anders bestaat. Het
+//    echte veld heet `thumbnail`, en dat stond er niet bij. Een publicatie schreef de nieuwe miniatuur dus
+//    nooit weg: tot vandaag viel ze leeg (films.mjs wiste haar bij elke heropname, `metadata` vulde aan),
+//    sinds hernomen() bleef de OUDE staan — en de handleiding gaf de zoekmachine de miniatuur van een video
+//    die over één ronde gewist wordt. Ook `embed` ontbrak. Derde keer dezelfde fout na vorigeGuid (02/09) en
+//    opTeRuimen (01/10): de lijst vergeet telkens het volgende veld.
+//    Nu: wat deze ronde veranderde t.o.v. de rij bij aanvang, gaat mee — welk veld het ook is. Wat ze niet
+//    aanraakte, blijft zoals het op schijf staat (een ander proces kan het intussen gewijzigd hebben).
+//
+// ⚠️ gepubliceerdeHash = de hash die NU op schijf staat, zoals voorheen: neemt films.mjs de film tijdens de
+//    publicatie opnieuw op, dan is dat de opname die de rij beschrijft.
+export function naPublicatie(opSchijf, bijAanvang, onze) {
+  const rij = { ...(opSchijf ?? {}) };
+  const begin = bijAanvang ?? {};
+  for (const veld of new Set([...Object.keys(begin), ...Object.keys(onze ?? {})])) {
+    if (JSON.stringify(onze?.[veld]) === JSON.stringify(begin[veld])) continue;   // niet door deze ronde gewijzigd
+    if (onze?.[veld] === undefined) delete rij[veld]; else rij[veld] = onze[veld];
+  }
+  rij.gepubliceerdeHash = opSchijf?.hash ?? onze?.gepubliceerdeHash;
+  return rij;
+}

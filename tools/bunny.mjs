@@ -18,6 +18,7 @@
 // PUT stilzwijgend niets doet, is de GUID óók gelijk. Daarom twee films met een verschillende LENGTE — 97 s
 // en 104 s — en achteraf de vraag of de lengte mee veranderd is.
 import { bunnyGeheim } from './aansturing.mjs';
+import { naPublicatie } from './uitslagrij.mjs';
 import { statSync, readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
 
@@ -192,15 +193,14 @@ if (opdracht === 'publiceer') {
   // sleutels die dit proces NOOIT aanraakt. Ze beschermt niet tegen het terugschrijven van je eigen
   // verouderde kopie van een sleutel die je eerder wél aanraakte — en precies dat is wat een ronde van 34
   // films 34 keer doet. Een merge die alleen naar de ANDER kijkt, mist zichzelf.
+  // De rij zoals deze ronde haar oppakte — bewaar() schrijft enkel wat sindsdien door ONS veranderde.
+  const bijAanvang = {};
   const bewaar = (sleutel) => {
     const opSchijf = existsSync(UITSLAG) ? JSON.parse(readFileSync(UITSLAG, 'utf8')) : {};
-    // De verse rij van schijf is de waarheid over alles behalve wat WIJ net toevoegden: de guid en wat
-    // eraan hangt. Dus samenvoegen op veldniveau i.p.v. de rij vervangen.
-    const vers = opSchijf[sleutel] ?? {};
-    const onze = uitslag[sleutel] ?? {};
-    opSchijf[sleutel] = { ...vers, guid: onze.guid, vorigeGuid: onze.vorigeGuid, opTeRuimen: onze.opTeRuimen,
-                          gepubliceerdOp: onze.gepubliceerdOp, gepubliceerdeHash: vers.hash ?? onze.gepubliceerdeHash,
-                          miniatuur: onze.miniatuur ?? vers.miniatuur };
+    // De verse rij van schijf is de waarheid over alles behalve wat WIJ net wijzigden: de guid en wat
+    // eraan hangt. Dus samenvoegen op veldniveau i.p.v. de rij vervangen — zonder veldenlijst, zie
+    // naPublicatie() in uitslagrij.mjs (01/10/2026: de lijst noemde `miniatuur`, het veld heet `thumbnail`).
+    opSchijf[sleutel] = naPublicatie(opSchijf[sleutel], bijAanvang[sleutel], uitslag[sleutel]);
     writeFileSync(UITSLAG, JSON.stringify(opSchijf, null, 2) + '\n');
   };
 
@@ -227,6 +227,7 @@ if (opdracht === 'publiceer') {
       console.log(`⏭  ${sleutel} — ongewijzigd, blijft op guid ${f.guid}`);
       continue;
     }
+    bijAanvang[sleutel] = structuredClone(f);
 
     console.log(`\n▸ ${sleutel}`);
     const oudeGuid = f.guid;
