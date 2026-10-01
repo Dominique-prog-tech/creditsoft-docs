@@ -114,6 +114,19 @@ dossiers — enkel de indeling.
 !!! tip "Staat er iets in de verkeerde kolom?"
     Dan ligt dat aan de indeling en niet aan het dossier. Een dossier volgt de fase van zijn status; verhuist u een status naar een andere fase, dan verhuizen alle dossiers met die status mee. U past dat aan onder **Platformbeheer → Dashboard-fases**.
 
+## Het tabblad Productie
+
+Bovenaan het dashboard staan twee tabbladen. **Vandaag** is wat hierboven beschreven staat: wat er ligt en wat er afloopt. **Productie** toont hoe uw kantoor draait — dezelfde cijfers als het tabblad *Productie* op de fiche van een [aanbrenger](../crm/contributors.md), maar voor alle dossiers samen.
+
+- **Periode en soort.** Kies *Alles*, *Dit jaar*, *Vorig jaar* of *Laatste 12 maanden*, en eventueel één productsoort. De jaarpijltjes van *Vandaag* gelden hier niet; ze verdwijnen zodra u op *Productie* staat.
+- **De tegels**: de dossiers ingevoerd in de periode, de akten met hun volume, de omzetting en het deel dat afviel, het gemiddelde krediet, de doorlooptijd van indiening tot akte, en hoeveel dossiers er nu lopen — met de akten die al gepland zijn.
+- **De grafieken**: dossiers en akten per maand, de omzetting per jaar van invoer, de akten per kredietverstrekker en waarom dossiers afvielen. Onderaan staat een tabel per jaar.
+- **Aanbrengers**: wie in de gekozen periode het meest aanbracht — eerst op akten, dan op volume. Klik een naam om de fiche te openen.
+- **Stilgevallen aanbrengers**: wie het afgelopen jaar nog aanbracht, maar al drie maanden of langer niets nieuws. U ziet de datum van het laatste dossier en hoeveel dossiers er de laatste twaalf maanden waren, zodat u weet wie u best eerst belt. Deze lijst volgt de gekozen periode niet.
+
+!!! tip "Een streepje bij Omzetting en Afgevallen?"
+    Dan is er nog geen dossierstatus aan een afsluitende fase gekoppeld, en valt er niet te zeggen welk dossier afgelopen is. Het tabblad zegt dat zelf; u stelt het in bij **Platformbeheer → Dashboard-fases**.
+
 ## Iedereen ziet hetzelfde kantoor
 
-Het dashboard toont de cijfers van het hele kantoor. Iedereen die het mag openen, ziet dezelfde aantallen. Hoe het volume over uw medewerkers verdeeld is, ziet u in de grafiek per verantwoordelijke.
+Het dashboard toont de cijfers van het hele kantoor. Iedereen die het mag openen, ziet dezelfde aantallen. Hoe het volume over uw medewerkers verdeeld is, ziet u in de grafiek per verantwoordelijke. De twee lijsten met aanbrengers op het tabblad *Productie* ziet u enkel als u ook aanbrengers mag bekijken.

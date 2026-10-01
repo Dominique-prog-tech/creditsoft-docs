@@ -117,6 +117,19 @@ tableau de bord le signale en une phrase, avec un bouton **Configurer les phases
 !!! tip "Quelque chose figure dans la mauvaise colonne ?"
     Cela tient alors à la répartition et non au dossier. Un dossier suit la phase de son statut ; si vous déplacez un statut vers une autre phase, tous les dossiers portant ce statut suivent. Vous ajustez cela sous **Administration → Phases du tableau de bord**.
 
+## L'onglet Production
+
+En haut du tableau de bord figurent deux onglets. **Aujourd'hui** est ce qui est décrit ci-dessus : ce qui est en cours et ce qui arrive à échéance. **Production** montre comment tourne votre bureau — les mêmes chiffres que l'onglet *Production* de la fiche d'un [apporteur](../crm/contributors.md), mais pour tous les dossiers ensemble.
+
+- **Période et catégorie.** Choisissez *Tout*, *Cette année*, *L'an dernier* ou *12 derniers mois*, et éventuellement une seule catégorie de produit. Les flèches d'année d'*Aujourd'hui* ne s'appliquent pas ici ; elles disparaissent dès que vous êtes sur *Production*.
+- **Les tuiles** : les dossiers introduits sur la période, les actes avec leur volume, le taux de conversion et la part abandonnée, le crédit moyen, le délai de l'introduction à l'acte, et combien de dossiers sont en cours — avec les actes déjà prévus.
+- **Les graphiques** : dossiers et actes par mois, la conversion par année d'introduction, les actes par prêteur et les motifs d'abandon. En bas figure un tableau par année.
+- **Apporteurs** : qui a le plus apporté sur la période choisie — d'abord par actes, puis par volume. Cliquez un nom pour ouvrir la fiche.
+- **Apporteurs à l'arrêt** : ceux qui ont encore apporté au cours de l'année écoulée, mais plus rien de nouveau depuis trois mois ou plus. Vous voyez la date du dernier dossier et le nombre de dossiers sur les douze derniers mois, pour savoir qui appeler en premier. Cette liste ne suit pas la période choisie.
+
+!!! tip "Un tiret pour Taux de conversion et Abandonnés ?"
+    Aucun statut de dossier n'est alors encore lié à une phase de clôture, et il est impossible de dire quel dossier est terminé. L'onglet le signale lui-même ; vous le configurez sous **Administration → Phases du tableau de bord**.
+
 ## Tout le monde voit le même bureau
 
-Le tableau de bord affiche les chiffres de l'ensemble du bureau. Toute personne autorisée à l'ouvrir voit les mêmes nombres. La répartition du volume entre vos collaborateurs, vous la voyez dans le graphique par responsable.
+Le tableau de bord affiche les chiffres de l'ensemble du bureau. Toute personne autorisée à l'ouvrir voit les mêmes nombres. La répartition du volume entre vos collaborateurs, vous la voyez dans le graphique par responsable. Les deux listes d'apporteurs de l'onglet *Production* ne sont visibles que si vous pouvez aussi consulter les apporteurs.
