@@ -1913,8 +1913,8 @@
     "titel": "Het dashboard — uw kantoor in één scherm",
     "omschrijving": "Het startscherm gelezen zoals het bedoeld is: het jaar bovenaan dat alles stuurt, de vier tegels met aantallen en bedragen, de termijnen die vandaag actie vragen, de drie grafieken over het gerealiseerde volume, de pijplijn met uw dossiers per fase, en het scherm waar u die fases zelf samenstelt. Plus waarom uw dashboard er anders uitziet dan dat van een collega.",
     "hash": "8e8f537dfb0114cb",
-    "guid": "35c69238-2b43-4096-9d31-50a084c5f002",
-    "vorigeGuid": "3ab07841-07dc-475e-be9c-21c287c6d1db",
+    "guid": "199cd811-c0b9-42fa-96b8-b19846d58c0e",
+    "vorigeGuid": "35c69238-2b43-4096-9d31-50a084c5f002",
     "hoofdstukken": [
       {
         "titel": "Het jaar stuurt alles",
@@ -1967,11 +1967,13 @@
         "eind": 152.85
       }
     ],
-    "gepubliceerdOp": "2026-09-24T03:52:27.464",
+    "gepubliceerdOp": "2026-10-01T19:15:43.416",
     "opTeRuimen": [
-      "13e7b04e-42b4-4a6b-8fe3-5fc275c68996"
+      "13e7b04e-42b4-4a6b-8fe3-5fc275c68996",
+      "3ab07841-07dc-475e-be9c-21c287c6d1db"
     ],
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/35c69238-2b43-4096-9d31-50a084c5f002/thumbnail.jpg"
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/35c69238-2b43-4096-9d31-50a084c5f002/thumbnail.jpg",
+    "gepubliceerdeHash": "8e8f537dfb0114cb"
   },
   "dashboard-fr": {
     "film": "dashboard",
@@ -1990,8 +1992,8 @@
     "titel": "Le tableau de bord — votre bureau en un écran",
     "omschrijving": "L’écran d’accueil lu comme il se doit : l’année en haut qui pilote tout, les quatre tuiles avec les nombres et les montants, les délais qui demandent une action aujourd’hui, les trois graphiques du volume réalisé, le pipeline de vos dossiers par phase, et l’écran où vous composez ces phases. Ainsi que la raison pour laquelle votre tableau de bord diffère de celui d’un collègue.",
     "hash": "8806c575759f29aa",
-    "guid": "43b38475-86bc-4896-a464-548d997690dc",
-    "vorigeGuid": "8aa0edec-81ff-4c49-9223-f2ec5493c6fe",
+    "guid": "df1e1528-e459-4ee2-8e22-85aba9ce2692",
+    "vorigeGuid": "43b38475-86bc-4896-a464-548d997690dc",
     "hoofdstukken": [
       {
         "titel": "L’année pilote tout",
@@ -2044,11 +2046,13 @@
         "eind": 143.68
       }
     ],
-    "gepubliceerdOp": "2026-09-24T03:52:43.987",
+    "gepubliceerdOp": "2026-10-01T19:17:35.901",
     "opTeRuimen": [
-      "d150b6b6-79be-48c7-814b-35809cdaf4b5"
+      "d150b6b6-79be-48c7-814b-35809cdaf4b5",
+      "8aa0edec-81ff-4c49-9223-f2ec5493c6fe"
     ],
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/43b38475-86bc-4896-a464-548d997690dc/thumbnail.jpg"
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/43b38475-86bc-4896-a464-548d997690dc/thumbnail.jpg",
+    "gepubliceerdeHash": "8806c575759f29aa"
   },
   "lijsten-en-rapporten-nl": {
     "film": "lijsten-en-rapporten",
@@ -2210,8 +2214,8 @@
     "titel": "De mailketen — van uw gegevens tot een verzonden bericht",
     "omschrijving": "Wat er allemaal klopt moet zijn vóór er één mail vertrekt, in de volgorde waarin het samenhangt: uw bedrijfsfiche die de variabelen vult, het verzendadres waar alles vanuit vertrekt, de tweetalige sjablonen met hun variabelenpalet en voorbeeld, en tot slot waar u ziet of een bericht werkelijk afgeleverd is — inclusief de reden wanneer dat niet lukte.",
     "hash": "5131f763f2a7647c",
-    "guid": "d42bf210-99e3-42d7-ab5c-579a2b9b48a0",
-    "vorigeGuid": "7901c472-3d01-45ee-84b3-11bd36df602d",
+    "guid": "e911be68-5620-482d-89dc-5053f999b362",
+    "vorigeGuid": "d42bf210-99e3-42d7-ab5c-579a2b9b48a0",
     "hoofdstukken": [
       {
         "titel": "Uw eigen gegevens",
@@ -2254,8 +2258,12 @@
         "eind": 130.1
       }
     ],
-    "gepubliceerdOp": "2026-09-17T08:54:47.014",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/d42bf210-99e3-42d7-ab5c-579a2b9b48a0/thumbnail.jpg"
+    "gepubliceerdOp": "2026-10-01T19:19:43.529",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/d42bf210-99e3-42d7-ab5c-579a2b9b48a0/thumbnail.jpg",
+    "gepubliceerdeHash": "5131f763f2a7647c",
+    "opTeRuimen": [
+      "7901c472-3d01-45ee-84b3-11bd36df602d"
+    ]
   },
   "mailketen-fr": {
     "film": "mailketen",
@@ -2277,8 +2285,8 @@
     "titel": "La chaîne d’e-mails — de vos données au message envoyé",
     "omschrijving": "Tout ce qui doit être en ordre avant qu’un seul e-mail parte, dans l’ordre où cela s’enchaîne : votre fiche d’entreprise qui alimente les variables, l’adresse d’expédition d’où tout part, les modèles bilingues avec leur panneau de variables et leur aperçu, et enfin l’endroit où vous voyez si un message a réellement été distribué — motif compris lorsque cela échoue.",
     "hash": "d4b02a35b2541d51",
-    "guid": "ad249cbb-4b2d-4346-b3ad-52c10a75c3f6",
-    "vorigeGuid": "d7507ffb-00e8-4dfb-b171-5063e240a07d",
+    "guid": "5ae8b54d-e4f7-4bbf-8958-da0c3cf7d8c9",
+    "vorigeGuid": "ad249cbb-4b2d-4346-b3ad-52c10a75c3f6",
     "hoofdstukken": [
       {
         "titel": "Vos propres données",
@@ -2321,8 +2329,12 @@
         "eind": 126.52
       }
     ],
-    "gepubliceerdOp": "2026-09-17T08:55:08.766",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/ad249cbb-4b2d-4346-b3ad-52c10a75c3f6/thumbnail.jpg"
+    "gepubliceerdOp": "2026-10-01T19:22:19.953",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/ad249cbb-4b2d-4346-b3ad-52c10a75c3f6/thumbnail.jpg",
+    "gepubliceerdeHash": "d4b02a35b2541d51",
+    "opTeRuimen": [
+      "d7507ffb-00e8-4dfb-b171-5063e240a07d"
+    ]
   },
   "klantportaal-nl": {
     "film": "klantportaal",
