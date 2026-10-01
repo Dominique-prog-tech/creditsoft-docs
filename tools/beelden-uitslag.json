@@ -359,8 +359,8 @@
   "kredietdossier-fiche": {
     "route": "/credit-files/00038c40-df6b-4992-83e4-13847c7a0a59",
     "app": {
-      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
-      "vuil": false
+      "sha": "640b20c8cd9c6fbc73c039a6240c943f4e70bdcb",
+      "vuil": true
     }
   },
   "borderel-fiche": {
@@ -555,8 +555,8 @@
   "portaal-dossier-detail": {
     "route": "/portal-intermediary/dossiers",
     "app": {
-      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
-      "vuil": false
+      "sha": "640b20c8cd9c6fbc73c039a6240c943f4e70bdcb",
+      "vuil": true
     }
   },
   "klantportaal-klant": {
@@ -975,8 +975,8 @@
   "kredietdossier-fiche-fr": {
     "route": "/credit-files/00038c40-df6b-4992-83e4-13847c7a0a59",
     "app": {
-      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
-      "vuil": false
+      "sha": "640b20c8cd9c6fbc73c039a6240c943f4e70bdcb",
+      "vuil": true
     }
   },
   "borderel-fiche-fr": {
@@ -1171,8 +1171,8 @@
   "portaal-dossier-detail-fr": {
     "route": "/portal-intermediary/dossiers",
     "app": {
-      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
-      "vuil": false
+      "sha": "640b20c8cd9c6fbc73c039a6240c943f4e70bdcb",
+      "vuil": true
     }
   },
   "klantportaal-klant-fr": {
