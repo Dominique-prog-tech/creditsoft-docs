@@ -57,17 +57,16 @@ Le dossier tient sur une seule page. En haut, le bloc principal reprend les donn
 
 Le bloc d'en-tête porte ce dont vous avez le plus souvent besoin : numéro interne, **propriétaire**, **sales**, **statut**, institution financière, apporteur, le montant du crédit avec la case *Retenir*, et la date de l'acte.
 
-Dans la carte en dessous à gauche figurent le but, le type de dossier, la quotité et les dates clés : introduction, approbation, signature de l'offre et date limite des conditions suspensives.
+Dans la carte en dessous à gauche figurent le but, le type de dossier, la quotité et les dates clés : introduction, approbation et signature de l'offre, et en dessous les dates limites de l'offre, de l'acte et des conditions suspensives. Ces trois dates limites apparaissent sur le [tableau de bord](../getting-started/dashboard.md) parmi les délais.
 
 !!! tip "Un montant vide reste vide"
     Si vous laissez un montant non renseigné, il reste vide — il ne devient pas 0 €. La distinction compte : pour un dossier sans montant de crédit, vous voyez qu'il n'est pas encore connu, et non qu'il serait nul.
 
 **Propriétaire** et **Sales** sont des listes déroulantes de vos collaborateurs. Vous pouvez y taper pour rechercher, et la croix vide à nouveau le champ.
 
-Trois cases méritent votre attention :
+Deux cases méritent votre attention :
 
 - **Retenir** — à côté du montant de commission : détermine si la commission de ce dossier est retenue.
-- **Afficher dans le tableau de bord** — fait entrer ce dossier dans le comptage des phases du tableau de bord.
 - **Offre signée envoyée** — vous avez transmis l'offre signée.
 
 En bas du bloc figure **Remarques internes** : un champ de texte libre pour vos propres notes sur ce dossier. C'est autre chose que l'onglet *Remarques*, où chaque ligne porte l'auteur et la date.

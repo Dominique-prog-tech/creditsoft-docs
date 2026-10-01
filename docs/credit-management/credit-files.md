@@ -57,17 +57,16 @@ Het dossier is één pagina. Bovenaan staat het kernblok met de gegevens die u h
 
 Het kopblok bovenaan draagt wat u het vaakst nodig hebt: intern nummer, **eigenaar**, **sales**, **status**, financiële instelling, aanbrenger, het kredietbedrag met het vinkje *Inhouden*, en de datum van de akte.
 
-In de kaart eronder links staan het doel, het type dossier, de quotiteit en de sleuteldatums: indiening, goedkeuring, ondertekening van het aanbod en de uiterste datum voor de opschortende voorwaarden.
+In de kaart eronder links staan het doel, het type dossier, de quotiteit en de sleuteldatums: indiening, goedkeuring en ondertekening van het aanbod, en daaronder de uiterste datums voor het aanbod, de akte en de opschortende voorwaarden. Die drie uiterste datums verschijnen op het [dashboard](../getting-started/dashboard.md) bij de termijnen.
 
 !!! tip "Een leeg bedrag blijft leeg"
     Laat u een bedrag oningevuld, dan blijft het leeg — het wordt geen € 0. Dat onderscheid telt: bij een dossier zonder kredietbedrag ziet u dat het nog niet bekend is, niet dat het nul zou zijn.
 
 **Eigenaar** en **Sales** zijn keuzelijsten van uw medewerkers. U kan erin typen om te zoeken, en met het kruisje maakt u het veld weer leeg.
 
-Drie vinkjes verdienen aandacht:
+Twee vinkjes verdienen aandacht:
 
 - **Inhouden** — naast het commissiebedrag: bepaalt of de commissie van dit dossier ingehouden wordt.
-- **Weergeven in dashboard** — laat dit dossier meetellen in de fasetellingen op het dashboard.
 - **Getekend aanbod verzonden** — u hebt het ondertekende aanbod doorgestuurd.
 
 Onderaan het blok staat **Interne opmerkingen**: één vrij tekstveld voor uw eigen notities bij dit dossier. Dat is iets anders dan het tabblad *Opmerkingen*, waar elke regel de gebruiker en de datum draagt.

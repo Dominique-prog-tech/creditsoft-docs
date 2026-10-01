@@ -53,7 +53,7 @@ Les tuiles colorées comptent des **contrats**, pas des dossiers. Chaque tuile c
 Vous indiquez uniquement **ce que signifie un statut de contrat** : *réalisé*, *à introduire* ou *introduit*. Cela se fait sous [Administration → Phases du tableau de bord](../beheer/dashboard-fases.md), en bas, sous *Statuts de contrat*. Les statuts sans signification ne comptent nulle part.
 
 !!! info "Pourquoi une seule tuile suit-elle l'année ?"
-    Des flèches au-dessus des tuiles permettent de changer d'année. Seule la tuile **Actes** suit cette année : elle compte sur la date de l'acte, et cette date est connue. Les trois autres comptent tout ce qui a jamais été encodé, car les dates de ces contrats ne sont pas toutes renseignées. Le libellé sous chaque tuile indique lui-même la période concernée — *2026* ou *toutes les années* — pour que vous ne lisiez pas quatre chiffres comme quatre chiffres annuels. Survolez les flèches et l'information s'y trouve aussi : l'année s'applique à *Actes* et aux trois graphiques.
+    Des flèches au-dessus des tuiles permettent de changer d'année. Seule la tuile **Actes** suit cette année : elle compte sur la date de l'acte, et cette date est connue. Un acte daté plus tard dans l'année ne compte qu'une fois cette date passée — jusque-là, il est prévu et non réalisé. Il en va de même pour les trois graphiques, et c'est aussi ainsi que compte l'onglet *Production* d'un apporteur. Les trois autres comptent tout ce qui a jamais été encodé, car les dates de ces contrats ne sont pas toutes renseignées. Le libellé sous chaque tuile indique lui-même la période concernée — *2026* ou *toutes les années* — pour que vous ne lisiez pas quatre chiffres comme quatre chiffres annuels. Survolez les flèches et l'information s'y trouve aussi : l'année s'applique à *Actes* et aux trois graphiques.
 
 !!! tip "Des tirets au lieu de chiffres ?"
     C'est qu'aucun statut de contrat ne porte encore de signification. Vous voyez un tiret et non un zéro, car zéro signifierait qu'il n'y a réellement rien à compter. Sous les tuiles, une phrase vous mène au réglage.
@@ -63,7 +63,8 @@ Vous indiquez uniquement **ce que signifie un statut de contrat** : *réalisé*,
 Sous les quatre tuiles figurent deux blocs qui indiquent ce qui **demande une action aujourd'hui** : *Délai
 dépassé* et *Délai proche*. Ils examinent quatre dates d'un dossier de crédit — la date limite pour signer
 l'**offre**, pour passer l'**acte**, l'échéance des **conditions suspensives**, et la validité du **certificat
-PEB**.
+PEB**. Vous les encodez dans le dossier de crédit : les trois premières dans la carte des dates, le
+certificat PEB avec le bien.
 
 Chaque ligne indique le client, le type de délai et sa date. Un clic vous mène au dossier.
 
@@ -116,6 +117,6 @@ tableau de bord le signale en une phrase, avec un bouton **Configurer les phases
 !!! tip "Quelque chose figure dans la mauvaise colonne ?"
     Cela tient alors à la répartition et non au dossier. Un dossier suit la phase de son statut ; si vous déplacez un statut vers une autre phase, tous les dossiers portant ce statut suivent. Vous ajustez cela sous **Administration → Phases du tableau de bord**.
 
-## Pourquoi votre tableau de bord diffère de celui d'un collègue
+## Tout le monde voit le même bureau
 
-Le tableau de bord affiche ce que vous êtes autorisé à voir. Si vous n'avez pas accès à certains dossiers, ceux-ci ne sont pas comptés dans vos chiffres non plus. Deux collègues peuvent donc voir des nombres différents, et c'est normal.
+Le tableau de bord affiche les chiffres de l'ensemble du bureau. Toute personne autorisée à l'ouvrir voit les mêmes nombres. La répartition du volume entre vos collaborateurs, vous la voyez dans le graphique par responsable.

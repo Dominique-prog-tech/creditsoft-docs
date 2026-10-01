@@ -1200,11 +1200,13 @@ export const FILMS = [
         nl: 'Die fases stelt u zelf samen. Hier bepaalt u welke statussen bij welke fase horen, en met welke status een nieuw dossier begint — CreditSoft kiest dat niet voor u, want het verschilt per kantoor.',
         fr: "Ces phases, vous les composez vous-même : quels statuts relèvent de quelle phase, et avec quel statut commence un nouveau dossier. CreditSoft ne le choisit pas pour vous, car cela varie d’un bureau à l’autre." },
 
-      { naam: 'verschil', kop: { nl: 'Waarom uw scherm anders is', fr: 'Pourquoi votre écran diffère' },
+      // ⚠️ Tot 01/10/2026 zei deze scène dat wie geen toegang heeft tot bepaalde dossiers, ze ook niet meetelt. Die
+      // toegang per dossier bestaat in de backoffice NIET: iedereen met het dashboard ziet het hele kantoor.
+      { naam: 'verschil', kop: { nl: 'Eén kantoor, één beeld', fr: 'Un bureau, une vue' },
         doe: async (p) => { await p.goto(`${BASIS}/dashboard`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(2800); },
         merk: /Aktes|Actes/i,
-        nl: 'Nog dit: uw dashboard toont wat u mag zien. Heeft een collega geen toegang tot bepaalde dossiers, dan tellen die ook niet mee in zijn cijfers. Twee mensen kunnen dus verschillende aantallen zien, en dat klopt.',
-        fr: "Votre tableau de bord montre ce que vous avez le droit de voir. Si un collègue n’a pas accès à certains dossiers, ceux-ci ne comptent pas dans ses chiffres. Deux personnes peuvent donc voir des nombres différents, et c’est normal." },
+        nl: 'Nog dit: het dashboard toont de cijfers van het hele kantoor. Iedereen die het mag openen, ziet dezelfde aantallen. Hoe het volume over uw medewerkers verdeeld is, ziet u in de grafiek per verantwoordelijke.',
+        fr: "Encore ceci : le tableau de bord affiche les chiffres de l’ensemble du bureau. Toute personne autorisée à l’ouvrir voit les mêmes nombres. La répartition du volume entre vos collaborateurs, vous la voyez dans le graphique par responsable." },
 
       { naam: 'slot', kop: { nl: 'Tot slot', fr: 'Pour conclure' , en: 'In closing' },
         doe: async (p) => { await p.waitForTimeout(1200); },

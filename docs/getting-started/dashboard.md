@@ -50,7 +50,7 @@ De gekleurde tegels tellen **contracten**, niet dossiers. Elke tegel is een comb
 U geeft alleen aan **wat een contractstatus betekent**: *gerealiseerd*, *in te dienen* of *ingediend*. Dat doet u onder [Platformbeheer → Dashboard-fases](../beheer/dashboard-fases.md), onderaan bij *Contractstatussen*. Statussen zonder betekenis tellen nergens mee.
 
 !!! info "Waarom telt maar één tegel per jaar?"
-    Boven de tegels staan pijltjes om van jaar te wisselen. Alleen **Aktes** volgt dat jaar: die telt op de datum van de akte, en die datum is bekend. De drie andere tegels tellen alles wat er ooit is ingegeven, omdat de datums van die contracten nog niet allemaal ingevuld zijn. Het label onder elke tegel zegt zelf over welke periode ze gaat — *2026* of *alle jaren* — zodat u vier cijfers niet per ongeluk als vier jaarcijfers leest. Wijst u de pijltjes aan, dan staat het er ook: het jaar geldt voor *Aktes* en voor de drie grafieken.
+    Boven de tegels staan pijltjes om van jaar te wisselen. Alleen **Aktes** volgt dat jaar: die telt op de datum van de akte, en die datum is bekend. Een akte met een datum later dit jaar telt pas mee zodra die datum voorbij is — tot dan is ze gepland, niet gerealiseerd. Dat geldt ook voor de drie grafieken, en zo telt ook het tabblad *Productie* van een aanbrenger. De drie andere tegels tellen alles wat er ooit is ingegeven, omdat de datums van die contracten nog niet allemaal ingevuld zijn. Het label onder elke tegel zegt zelf over welke periode ze gaat — *2026* of *alle jaren* — zodat u vier cijfers niet per ongeluk als vier jaarcijfers leest. Wijst u de pijltjes aan, dan staat het er ook: het jaar geldt voor *Aktes* en voor de drie grafieken.
 
 !!! tip "Staan er streepjes in plaats van cijfers?"
     Dan draagt nog geen enkele contractstatus een betekenis. U ziet een streepje en geen nul, want nul zou betekenen dat er echt niets te tellen valt. Onder de tegels staat een zin die u naar de instelling brengt.
@@ -60,7 +60,8 @@ U geeft alleen aan **wat een contractstatus betekent**: *gerealiseerd*, *in te d
 Onder de vier tegels staan twee blokken die zeggen wat er **vandaag actie vraagt**: *Termijn verstreken* en
 *Termijn nadert*. Ze kijken naar vier datums op een kredietdossier — de uiterste datum om de **offerte** te
 tekenen, om de **akte** te verlijden, de vervaldag van de **opschortende voorwaarden**, en tot wanneer het
-**EPC-attest** geldig is.
+**EPC-attest** geldig is. U vult ze in op het kredietdossier: de eerste drie in de kaart met de datums, het
+EPC-attest bij het pand.
 
 Per regel ziet u de klant, over welke termijn het gaat en wanneer die valt. Klik erop en u staat op het dossier.
 
@@ -113,6 +114,6 @@ dossiers — enkel de indeling.
 !!! tip "Staat er iets in de verkeerde kolom?"
     Dan ligt dat aan de indeling en niet aan het dossier. Een dossier volgt de fase van zijn status; verhuist u een status naar een andere fase, dan verhuizen alle dossiers met die status mee. U past dat aan onder **Platformbeheer → Dashboard-fases**.
 
-## Waarom uw dashboard er anders uitziet dan dat van een collega
+## Iedereen ziet hetzelfde kantoor
 
-Het dashboard toont wat u mag zien. Hebt u geen toegang tot bepaalde dossiers, dan tellen die ook niet mee in uw cijfers. Twee collega's kunnen dus verschillende aantallen zien, en dat is correct.
+Het dashboard toont de cijfers van het hele kantoor. Iedereen die het mag openen, ziet dezelfde aantallen. Hoe het volume over uw medewerkers verdeeld is, ziet u in de grafiek per verantwoordelijke.
