@@ -853,9 +853,17 @@ for (const [naam, filmVol] of FILMS) {
       // ⚠️ De ROUTES die deze film toont, uit de scènes zelf. Eerst leidde verouderd.mjs ze af uit de
       // paginanaam, en dat was een gok die toevallig goed uitviel — een overzichtsfilm die acht schermen
       // toont, heeft géén pagina en zou dan nul routes hebben gehad.
+      // ⚠️⚠️ EEN `${…}` IN HET ADRES IS EEN SEGMENT, GEEN EINDE (01/10/2026). Hier stond een patroon dat stopte
+      //    bij de eerste `$`, dus `${BASIS}/crm/relaties/${ID.x}` werd `/crm/relaties` — de route van de LIJST.
+      //    Gevolg in twee richtingen: een fiche-film werd "verouderd" als enkel de lijst wijzigde, en bleef
+      //    "actueel" als de fiche zelf een knop kreeg. En `/klantportaal/voorbeeld` raakte geen enkele @page,
+      //    zodat verouderd.mjs vijf films als "route bestaat niet" meldde. Nu wordt `${…}` een plaatshouder
+      //    `{id}` — routepatroon.mjs (AppKit) leest dat als één segment, zoals `{Id:guid}`. Gemeten over het
+      //    hele draaiboek: 8 van 15 films kregen een juistere lijst; de hash verandert NIET (die leest de
+      //    scènes, niet de routes), dus er volgt geen ongewilde herpublicatie.
       routes: [...new Set(film.scenes.flatMap(sc =>
-        [...String(sc.doe).matchAll(/\$\{BASIS\}(\/[a-z0-9\/_-]*)/g)]
-          .map(m => '/' + m[1].replace(/^\/+/, '').replace(/\/+$/, ''))))],
+        [...String(sc.doe).matchAll(/\$\{BASIS\}((?:\/(?:[a-z0-9_-]+|\$\{[^}]*\}))+)/g)]
+          .map(m => '/' + m[1].replace(/\$\{[^}]*\}/g, '{id}').replace(/^\/+/, '').replace(/\/+$/, ''))))],
       // ⚠️ De toestand van de APP waartegen dit opgenomen is. Daarmee kan verouderd.mjs later vragen: welke
       // schermen zijn sindsdien gewijzigd, en toont deze film er één van?
       app: appToestand(),
