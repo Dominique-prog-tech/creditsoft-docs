@@ -419,5 +419,21 @@
       "kies": "section.adm-profiel-sectie",
       "bevat": "Vragenlijst ter voorbereiding|Questionnaire préparatoire"
     }
+  },
+  "dashboard-productie": {
+    "breedte": 1280,
+    "hoogte": 1240
+  },
+  "dashboard-productie-fr": {
+    "breedte": 1280,
+    "hoogte": 1240
+  },
+  "dashboard-aanbrengers": {
+    "breedte": 1280,
+    "hoogte": 700
+  },
+  "dashboard-aanbrengers-fr": {
+    "breedte": 1280,
+    "hoogte": 700
   }
 }

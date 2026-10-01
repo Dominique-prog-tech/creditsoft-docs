@@ -2,7 +2,7 @@
 
 Le tableau de bord est votre écran d'accueil. D'un coup d'œil, vous voyez combien de dossiers se trouvent dans quelle phase et ce que font les indicateurs.
 
-![Le tableau de bord : en haut les quatre indicateurs — Actes avec l'année, À introduire, Introduit et LOA avec la mention « toutes les années » — en dessous les deux blocs Délai dépassé et Délai proche avec par ligne le client, le type de délai et la date, et au bas de chaque bloc le bouton pour afficher les autres ; plus bas le graphique en barres du volume réalisé par mois et deux graphiques en anneau répartissant le volume par institution et par responsable.](../images/dashboard-startscherm-fr.png "Le tableau de bord : indicateurs, délais qui arrivent à échéance et graphiques"){ .volle-breedte }
+![Le tableau de bord sur l'onglet Aujourd'hui, à côté de l'onglet Production : en haut les quatre indicateurs — Actes avec l'année, À introduire, Introduit et LOA avec la mention « toutes les années » — en dessous les deux blocs Délai dépassé et Délai proche avec par ligne le client, le type de délai et la date, et au bas de chaque bloc le bouton pour afficher les autres ; plus bas le graphique en barres du volume réalisé par mois et deux graphiques en anneau répartissant le volume par institution et par responsable.](../images/dashboard-startscherm-fr.png "Le tableau de bord : indicateurs, délais qui arrivent à échéance et graphiques"){ .volle-breedte }
 
 ## Pour commencer
 
@@ -121,11 +121,15 @@ tableau de bord le signale en une phrase, avec un bouton **Configurer les phases
 
 En haut du tableau de bord figurent deux onglets. **Aujourd'hui** est ce qui est décrit ci-dessus : ce qui est en cours et ce qui arrive à échéance. **Production** montre comment tourne votre bureau — les mêmes chiffres que l'onglet *Production* de la fiche d'un [apporteur](../crm/contributors.md), mais pour tous les dossiers ensemble.
 
+![L'onglet Production du tableau de bord : en haut les boutons Tout, Cette année, L'an dernier et 12 derniers mois avec le choix Tous les types, en dessous les tuiles Dossiers, Actes avec le volume, Taux de conversion, Abandonnés, Crédit moyen, Introduction à l'acte et En cours, et les graphiques Dossiers et actes par mois et Conversion par année d'introduction.](../images/dashboard-productie-fr.png "L'onglet Production : les chiffres de l'ensemble du bureau"){ .volle-breedte }
+
 - **Période et catégorie.** Choisissez *Tout*, *Cette année*, *L'an dernier* ou *12 derniers mois*, et éventuellement une seule catégorie de produit. Les flèches d'année d'*Aujourd'hui* ne s'appliquent pas ici ; elles disparaissent dès que vous êtes sur *Production*.
 - **Les tuiles** : les dossiers introduits sur la période, les actes avec leur volume, le taux de conversion et la part abandonnée, le crédit moyen, le délai de l'introduction à l'acte, et combien de dossiers sont en cours — avec les actes déjà prévus.
 - **Les graphiques** : dossiers et actes par mois, la conversion par année d'introduction, les actes par prêteur et les motifs d'abandon. En bas figure un tableau par année.
 - **Apporteurs** : qui a le plus apporté sur la période choisie — d'abord par actes, puis par volume. Cliquez un nom pour ouvrir la fiche.
 - **Apporteurs à l'arrêt** : ceux qui ont encore apporté au cours de l'année écoulée, mais plus rien de nouveau depuis trois mois ou plus. Vous voyez la date du dernier dossier et le nombre de dossiers sur les douze derniers mois, pour savoir qui appeler en premier. Cette liste ne suit pas la période choisie.
+
+![Les deux listes en bas de l'onglet Production : à gauche Apporteurs avec par apporteur les dossiers, les actes et le volume de crédit, à droite Apporteurs à l'arrêt avec le dernier dossier, depuis combien de temps et le nombre de dossiers sur les douze derniers mois.](../images/dashboard-aanbrengers-fr.png "Qui a le plus apporté, et qui est à l'arrêt"){ .volle-breedte }
 
 !!! tip "Un tiret pour Taux de conversion et Abandonnés ?"
     Aucun statut de dossier n'est alors encore lié à une phase de clôture, et il est impossible de dire quel dossier est terminé. L'onglet le signale lui-même ; vous le configurez sous **Administration → Phases du tableau de bord**.

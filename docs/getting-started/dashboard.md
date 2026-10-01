@@ -2,7 +2,7 @@
 
 Het dashboard is uw startscherm. In één oogopslag ziet u hoeveel dossiers er in welke fase zitten en wat de kerncijfers doen.
 
-![Het dashboard: bovenaan de vier kerncijfers — Aktes met het jaartal erbij, In te dienen, Ingediend en LOA met de vermelding "alle jaren" — daaronder de twee blokken Termijn verstreken en Termijn nadert met per regel de klant, de soort termijn en de datum, en onderaan elk blok de knop om de overige te tonen; nog lager de staafgrafiek van het gerealiseerde volume per maand en twee ringgrafieken met de verdeling per instelling en per verantwoordelijke.](../images/dashboard-startscherm.png "Het dashboard: kerncijfers, aflopende termijnen en de grafieken"){ .volle-breedte }
+![Het dashboard op het tabblad Vandaag, naast het tabblad Productie: bovenaan de vier kerncijfers — Aktes met het jaartal erbij, In te dienen, Ingediend en LOA met de vermelding "alle jaren" — daaronder de twee blokken Termijn verstreken en Termijn nadert met per regel de klant, de soort termijn en de datum, en onderaan elk blok de knop om de overige te tonen; nog lager de staafgrafiek van het gerealiseerde volume per maand en twee ringgrafieken met de verdeling per instelling en per verantwoordelijke.](../images/dashboard-startscherm.png "Het dashboard: kerncijfers, aflopende termijnen en de grafieken"){ .volle-breedte }
 
 ## Aan de slag
 
@@ -118,11 +118,15 @@ dossiers — enkel de indeling.
 
 Bovenaan het dashboard staan twee tabbladen. **Vandaag** is wat hierboven beschreven staat: wat er ligt en wat er afloopt. **Productie** toont hoe uw kantoor draait — dezelfde cijfers als het tabblad *Productie* op de fiche van een [aanbrenger](../crm/contributors.md), maar voor alle dossiers samen.
 
+![Het tabblad Productie van het dashboard: bovenaan de knoppen Alles, Dit jaar, Vorig jaar en Laatste 12 maanden met de keuze Alle soorten, daaronder de tegels Dossiers, Akten met het volume, Omzetting, Afgevallen, Gemiddeld krediet, Indiening tot akte en Lopend nu, en de grafieken Dossiers en akten per maand en Omzetting per jaar van invoer.](../images/dashboard-productie.png "Het tabblad Productie: de cijfers van het hele kantoor"){ .volle-breedte }
+
 - **Periode en soort.** Kies *Alles*, *Dit jaar*, *Vorig jaar* of *Laatste 12 maanden*, en eventueel één productsoort. De jaarpijltjes van *Vandaag* gelden hier niet; ze verdwijnen zodra u op *Productie* staat.
 - **De tegels**: de dossiers ingevoerd in de periode, de akten met hun volume, de omzetting en het deel dat afviel, het gemiddelde krediet, de doorlooptijd van indiening tot akte, en hoeveel dossiers er nu lopen — met de akten die al gepland zijn.
 - **De grafieken**: dossiers en akten per maand, de omzetting per jaar van invoer, de akten per kredietverstrekker en waarom dossiers afvielen. Onderaan staat een tabel per jaar.
 - **Aanbrengers**: wie in de gekozen periode het meest aanbracht — eerst op akten, dan op volume. Klik een naam om de fiche te openen.
 - **Stilgevallen aanbrengers**: wie het afgelopen jaar nog aanbracht, maar al drie maanden of langer niets nieuws. U ziet de datum van het laatste dossier en hoeveel dossiers er de laatste twaalf maanden waren, zodat u weet wie u best eerst belt. Deze lijst volgt de gekozen periode niet.
+
+![De twee lijsten onderaan het tabblad Productie: links Aanbrengers met per aanbrenger de dossiers, de akten en het kredietvolume, rechts Stilgevallen aanbrengers met het laatste dossier, hoe lang stil en het aantal dossiers in de laatste twaalf maanden.](../images/dashboard-aanbrengers.png "Wie het meest aanbracht, en wie stilviel"){ .volle-breedte }
 
 !!! tip "Een streepje bij Omzetting en Afgevallen?"
     Dan is er nog geen dossierstatus aan een afsluitende fase gekoppeld, en valt er niet te zeggen welk dossier afgelopen is. Het tabblad zegt dat zelf; u stelt het in bij **Platformbeheer → Dashboard-fases**.

@@ -328,6 +328,21 @@ const SCHOTEN = [
       });
       await p.waitForTimeout(1500);
   }],
+  // ⚠️ HET TABBLAD PRODUCTIE VAN HET DASHBOARD (01/10/2026, kans kv6). Twee schoten: de bovenkant (tegels en de
+  // eerste grafieken) en de twee aanbrengerlijsten onderaan. Hun EERSTE vorm staat met de hand in
+  // beeldvorm.json — een nieuw beeld heeft nog geen PNG om ze uit af te leiden; vanaf de volgende ronde leest
+  // de tabel ze zoals alle andere. Merktekens die het VERKEERDE geval uitsluiten: "Omzetting" staat niet op
+  // Vandaag (een klik die niet aankwam faalt dus), en "Stilgevallen aanbrengers" staat er enkel als de kaarten
+  // gerenderd zijn (zonder aanbrengerrecht niet).
+  ['dashboard-productie',       '/dashboard', async p => { await dashboardProductie(p); }],
+  ['dashboard-aanbrengers',     '/dashboard', async p => {
+      await dashboardProductie(p);
+      await p.evaluate(() => {
+        const h = [...document.querySelectorAll('h6')].find(e => /^(Aanbrengers|Apporteurs)$/.test((e.textContent || '').trim()));
+        h?.closest('.adm-card')?.scrollIntoView({ block: 'start' });
+      });
+      await p.waitForTimeout(1200);
+  }],
   // ⚠️ Het blok "Aan de slag" staat BOVENAAN het dashboard en verschijnt ALLEEN in een omgeving met
   // voorbeeldgegevens. Twee dingen kunnen het stil wegnemen, en dan levert dit schot een beeld van iets
   // anders zonder te melden dat het misging:
@@ -572,6 +587,15 @@ const rechterTab = async (p, naam) => {
   }, naam);
   await p.waitForTimeout(3000);
 };
+// Het tabblad Productie op het dashboard openen en wachten tot de vier grafieken getekend zijn — zelfde reden
+// als bij aanbrengers-productie: DevExpress tekent ze pas na de eerste paint, en lege kaders zijn een fout beeld.
+async function dashboardProductie(p) {
+  await p.locator('.dxbl-tabs').getByText(/^(Productie|Production)$/).first().click();
+  await p.waitForSelector('.adm-metric', { timeout: 15000 });
+  await p.waitForFunction(() => document.querySelectorAll('.productie-raster svg').length >= 4, null, { timeout: 20000 });
+  await p.waitForTimeout(1500);
+}
+
 const avatar = async (p) => {
   await p.evaluate(() => {
     const el = [...document.querySelectorAll('button, div, span')].find(e => {
@@ -627,6 +651,8 @@ const VERWACHT = {
   'documenten-valideren':       /Te valideren|À valider|Wachttijd|attente/i,
   // Op een FASENAAM en niet op de kop: die staat er ook wanneer alles onder "Niet ingedeeld" valt.
   'dashboard-pijplijn':         /In behandeling|En traitement|Zonder gevolg|Sans suite/i,
+  'dashboard-productie':        /Omzetting|Taux de conversion/,
+  'dashboard-aanbrengers':      /Stilgevallen aanbrengers|Apporteurs à l'arrêt/,
   // Niet op het TABBLAD zoeken maar op de INHOUD: het tablabel staat er ook bij een lege lijst.
   'relaties-gevraagde-documenten': /Laatste 3 loonfiches|3 derniers|Ontvangen|Reçu/i,
   'taken-overzicht':            /Vervaldatum|Échéance|Prioriteit|Priorité/i,

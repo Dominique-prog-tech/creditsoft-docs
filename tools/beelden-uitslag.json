@@ -135,7 +135,7 @@
   "dashboard-fases": {
     "route": "/beheer/dashboard-fases",
     "app": {
-      "sha": "ce7fcef498593926b7ef367478a0d604bb51ac81",
+      "sha": "ee4999cfef312f051c04804f04c1fb212bd27083",
       "vuil": true
     }
   },
@@ -212,8 +212,8 @@
   "dashboard-startscherm": {
     "route": "/dashboard",
     "app": {
-      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
-      "vuil": false
+      "sha": "ee4999cfef312f051c04804f04c1fb212bd27083",
+      "vuil": true
     }
   },
   "rapporten-bibliotheek": {
@@ -492,15 +492,15 @@
   "dashboard-pijplijn": {
     "route": "/dashboard",
     "app": {
-      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
-      "vuil": false
+      "sha": "ee4999cfef312f051c04804f04c1fb212bd27083",
+      "vuil": true
     }
   },
   "dashboard-aan-de-slag": {
     "route": "/dashboard",
     "app": {
-      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
-      "vuil": false
+      "sha": "ee4999cfef312f051c04804f04c1fb212bd27083",
+      "vuil": true
     }
   },
   "voorkeuren-paneel": {
@@ -751,7 +751,7 @@
   "dashboard-fases-fr": {
     "route": "/beheer/dashboard-fases",
     "app": {
-      "sha": "ce7fcef498593926b7ef367478a0d604bb51ac81",
+      "sha": "ee4999cfef312f051c04804f04c1fb212bd27083",
       "vuil": true
     }
   },
@@ -828,8 +828,8 @@
   "dashboard-startscherm-fr": {
     "route": "/dashboard",
     "app": {
-      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
-      "vuil": false
+      "sha": "ee4999cfef312f051c04804f04c1fb212bd27083",
+      "vuil": true
     }
   },
   "rapporten-bibliotheek-fr": {
@@ -1108,15 +1108,15 @@
   "dashboard-pijplijn-fr": {
     "route": "/dashboard",
     "app": {
-      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
-      "vuil": false
+      "sha": "ee4999cfef312f051c04804f04c1fb212bd27083",
+      "vuil": true
     }
   },
   "dashboard-aan-de-slag-fr": {
     "route": "/dashboard",
     "app": {
-      "sha": "cae71575576c353aa10053160bcfb8d88b22f51c",
-      "vuil": false
+      "sha": "ee4999cfef312f051c04804f04c1fb212bd27083",
+      "vuil": true
     }
   },
   "voorkeuren-paneel-fr": {
@@ -1312,6 +1312,34 @@
     "route": "/contributors/05b820be-792d-4ecb-b41e-c8b00619b872",
     "app": {
       "sha": "ce7fcef498593926b7ef367478a0d604bb51ac81",
+      "vuil": true
+    }
+  },
+  "dashboard-productie": {
+    "route": "/dashboard",
+    "app": {
+      "sha": "ee4999cfef312f051c04804f04c1fb212bd27083",
+      "vuil": true
+    }
+  },
+  "dashboard-aanbrengers": {
+    "route": "/dashboard",
+    "app": {
+      "sha": "ee4999cfef312f051c04804f04c1fb212bd27083",
+      "vuil": true
+    }
+  },
+  "dashboard-productie-fr": {
+    "route": "/dashboard",
+    "app": {
+      "sha": "ee4999cfef312f051c04804f04c1fb212bd27083",
+      "vuil": true
+    }
+  },
+  "dashboard-aanbrengers-fr": {
+    "route": "/dashboard",
+    "app": {
+      "sha": "ee4999cfef312f051c04804f04c1fb212bd27083",
       "vuil": true
     }
   }
