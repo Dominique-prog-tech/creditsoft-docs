@@ -1900,15 +1900,15 @@
     "film": "dashboard",
     "taal": "nl-BE",
     "pagina": "getting-started/dashboard",
-    "lengte": 155.48,
+    "lengte": 155.24,
     "uitvoering": "handleiding",
     "routes": [
       "/dashboard",
       "/beheer/dashboard-fases"
     ],
     "app": {
-      "sha": "66cfa6618ee6330ae5206ef8d78f5bd81e906b69",
-      "vuil": false
+      "sha": "39e3472c008bae5a08befafc6e75a52415567096",
+      "vuil": true
     },
     "titel": "Het dashboard — uw kantoor in één scherm",
     "omschrijving": "Het startscherm gelezen zoals het bedoeld is: het jaar bovenaan dat alles stuurt, de vier tegels met aantallen en bedragen, de termijnen die vandaag actie vragen, de drie grafieken over het gerealiseerde volume, de pijplijn met uw dossiers per fase, en het scherm waar u die fases zelf samenstelt. Plus waarom uw dashboard er anders uitziet dan dat van een collega.",
@@ -1918,57 +1918,56 @@
     "hoofdstukken": [
       {
         "titel": "Het jaar stuurt alles",
-        "start": 5.31,
-        "eind": 17.53
+        "start": 5.25,
+        "eind": 17.46
       },
       {
         "titel": "De vier tegels",
-        "start": 21.52,
-        "eind": 31.32
+        "start": 21.45,
+        "eind": 31.24
       },
       {
         "titel": "Wat vandaag actie vraagt",
-        "start": 35.38,
-        "eind": 49.08
+        "start": 35.32,
+        "eind": 49.02
       },
       {
         "titel": "Gerealiseerd volume",
-        "start": 53.15,
-        "eind": 62.81
+        "start": 53.09,
+        "eind": 62.75
       },
       {
         "titel": "Per instelling en per collega",
-        "start": 66.87,
-        "eind": 75.6
+        "start": 66.81,
+        "eind": 75.55
       },
       {
         "titel": "Geen eigenaar is werk",
-        "start": 79.67,
-        "eind": 90.77
+        "start": 79.64,
+        "eind": 90.74
       },
       {
         "titel": "De pijplijn",
-        "start": 94.84,
-        "eind": 106.64
+        "start": 94.8,
+        "eind": 106.6
       },
       {
         "titel": "De fases zijn van u",
-        "start": 111.7,
-        "eind": 125.3
+        "start": 111.67,
+        "eind": 125.28
       },
       {
         "titel": "Waarom uw scherm anders is",
-        "start": 130.82,
-        "eind": 143.73
+        "start": 130.57,
+        "eind": 143.48
       },
       {
         "titel": "Tot slot",
-        "start": 146.45,
-        "eind": 153.09
+        "start": 146.21,
+        "eind": 152.85
       }
     ],
     "gepubliceerdOp": "2026-09-24T03:52:27.464",
-    "gepubliceerdeHash": "8e8f537dfb0114cb",
     "opTeRuimen": [
       "13e7b04e-42b4-4a6b-8fe3-5fc275c68996"
     ],
@@ -1978,15 +1977,15 @@
     "film": "dashboard",
     "taal": "fr-BE",
     "pagina": "getting-started/dashboard",
-    "lengte": 146.44,
+    "lengte": 146.08,
     "uitvoering": "handleiding",
     "routes": [
       "/dashboard",
       "/beheer/dashboard-fases"
     ],
     "app": {
-      "sha": "66cfa6618ee6330ae5206ef8d78f5bd81e906b69",
-      "vuil": false
+      "sha": "39e3472c008bae5a08befafc6e75a52415567096",
+      "vuil": true
     },
     "titel": "Le tableau de bord — votre bureau en un écran",
     "omschrijving": "L’écran d’accueil lu comme il se doit : l’année en haut qui pilote tout, les quatre tuiles avec les nombres et les montants, les délais qui demandent une action aujourd’hui, les trois graphiques du volume réalisé, le pipeline de vos dossiers par phase, et l’écran où vous composez ces phases. Ainsi que la raison pour laquelle votre tableau de bord diffère de celui d’un collègue.",
@@ -1996,57 +1995,56 @@
     "hoofdstukken": [
       {
         "titel": "L’année pilote tout",
-        "start": 5.31,
-        "eind": 16.31
+        "start": 5.26,
+        "eind": 16.26
       },
       {
         "titel": "Les quatre tuiles",
-        "start": 20.3,
-        "eind": 30.05
+        "start": 20.25,
+        "eind": 30
       },
       {
         "titel": "Ce qui demande une action",
-        "start": 34.12,
-        "eind": 46.29
+        "start": 34.06,
+        "eind": 46.23
       },
       {
         "titel": "Volume réalisé",
-        "start": 50.37,
-        "eind": 59.56
+        "start": 50.28,
+        "eind": 59.47
       },
       {
         "titel": "Par institution et par collègue",
-        "start": 63.63,
-        "eind": 71.8
+        "start": 63.53,
+        "eind": 71.7
       },
       {
         "titel": "Sans responsable, c’est du travail",
-        "start": 75.87,
-        "eind": 87.16
+        "start": 75.76,
+        "eind": 87.05
       },
       {
         "titel": "Le pipeline",
-        "start": 91.23,
-        "eind": 100.8
+        "start": 91.1,
+        "eind": 100.67
       },
       {
         "titel": "Les phases sont les vôtres",
-        "start": 105.8,
-        "eind": 116.99
+        "start": 105.58,
+        "eind": 116.77
       },
       {
         "titel": "Pourquoi votre écran diffère",
-        "start": 122.31,
-        "eind": 134.48
+        "start": 121.97,
+        "eind": 134.14
       },
       {
         "titel": "Pour conclure",
-        "start": 137.2,
-        "eind": 144.03
+        "start": 136.85,
+        "eind": 143.68
       }
     ],
     "gepubliceerdOp": "2026-09-24T03:52:43.987",
-    "gepubliceerdeHash": "8806c575759f29aa",
     "opTeRuimen": [
       "d150b6b6-79be-48c7-814b-35809cdaf4b5"
     ],
@@ -2196,7 +2194,7 @@
     "film": "mailketen",
     "taal": "nl-BE",
     "pagina": "administration/sender-addresses",
-    "lengte": 132.76,
+    "lengte": 132.32,
     "uitvoering": "handleiding",
     "routes": [
       "/administration/company-profile",
@@ -2206,8 +2204,8 @@
       "/administration/mail-monitoring"
     ],
     "app": {
-      "sha": "b07ba5b39e16d590cacfa61e189c7a54ff1a29b7",
-      "vuil": false
+      "sha": "39e3472c008bae5a08befafc6e75a52415567096",
+      "vuil": true
     },
     "titel": "De mailketen — van uw gegevens tot een verzonden bericht",
     "omschrijving": "Wat er allemaal klopt moet zijn vóór er één mail vertrekt, in de volgorde waarin het samenhangt: uw bedrijfsfiche die de variabelen vult, het verzendadres waar alles vanuit vertrekt, de tweetalige sjablonen met hun variabelenpalet en voorbeeld, en tot slot waar u ziet of een bericht werkelijk afgeleverd is — inclusief de reden wanneer dat niet lukte.",
@@ -2217,54 +2215,53 @@
     "hoofdstukken": [
       {
         "titel": "Uw eigen gegevens",
-        "start": 4.57,
-        "eind": 17.2
+        "start": 4.61,
+        "eind": 17.24
       },
       {
         "titel": "Waar uw mail vandaan komt",
-        "start": 21.95,
-        "eind": 35.37
+        "start": 21.99,
+        "eind": 35.41
       },
       {
         "titel": "Uw eigen domein",
-        "start": 39.36,
-        "eind": 48.18
+        "start": 39.39,
+        "eind": 48.21
       },
       {
         "titel": "De sjablonen",
-        "start": 53.41,
-        "eind": 64.7
+        "start": 53.39,
+        "eind": 64.67
       },
       {
         "titel": "De variabelen",
-        "start": 68.75,
-        "eind": 81.9
+        "start": 68.73,
+        "eind": 81.87
       },
       {
         "titel": "Wat de klant kreeg",
-        "start": 89.63,
-        "eind": 100.12
+        "start": 89.56,
+        "eind": 100.06
       },
       {
         "titel": "Is het aangekomen",
-        "start": 105.09,
-        "eind": 114.61
+        "start": 104.91,
+        "eind": 114.43
       },
       {
         "titel": "Tot slot",
-        "start": 119.13,
-        "eind": 130.37
+        "start": 118.86,
+        "eind": 130.1
       }
     ],
     "gepubliceerdOp": "2026-09-17T08:54:47.014",
-    "gepubliceerdeHash": "5131f763f2a7647c",
     "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/d42bf210-99e3-42d7-ab5c-579a2b9b48a0/thumbnail.jpg"
   },
   "mailketen-fr": {
     "film": "mailketen",
     "taal": "fr-BE",
     "pagina": "administration/sender-addresses",
-    "lengte": 129.36,
+    "lengte": 128.88,
     "uitvoering": "handleiding",
     "routes": [
       "/administration/company-profile",
@@ -2274,8 +2271,8 @@
       "/administration/mail-monitoring"
     ],
     "app": {
-      "sha": "b07ba5b39e16d590cacfa61e189c7a54ff1a29b7",
-      "vuil": false
+      "sha": "39e3472c008bae5a08befafc6e75a52415567096",
+      "vuil": true
     },
     "titel": "La chaîne d’e-mails — de vos données au message envoyé",
     "omschrijving": "Tout ce qui doit être en ordre avant qu’un seul e-mail parte, dans l’ordre où cela s’enchaîne : votre fiche d’entreprise qui alimente les variables, l’adresse d’expédition d’où tout part, les modèles bilingues avec leur panneau de variables et leur aperçu, et enfin l’endroit où vous voyez si un message a réellement été distribué — motif compris lorsque cela échoue.",
@@ -2285,47 +2282,46 @@
     "hoofdstukken": [
       {
         "titel": "Vos propres données",
-        "start": 4.58,
-        "eind": 17.25
+        "start": 4.46,
+        "eind": 17.14
       },
       {
         "titel": "D’où part votre courrier",
-        "start": 21.96,
-        "eind": 34.96
+        "start": 21.79,
+        "eind": 34.8
       },
       {
         "titel": "Votre propre domaine",
-        "start": 38.93,
-        "eind": 47.62
+        "start": 38.79,
+        "eind": 47.47
       },
       {
         "titel": "Les modèles",
-        "start": 52.89,
-        "eind": 63.61
+        "start": 52.56,
+        "eind": 63.29
       },
       {
         "titel": "Les variables",
-        "start": 67.69,
-        "eind": 80.51
+        "start": 67.35,
+        "eind": 80.17
       },
       {
         "titel": "Ce que le client a reçu",
-        "start": 88.18,
-        "eind": 97
+        "start": 87.91,
+        "eind": 96.73
       },
       {
         "titel": "Est-ce bien arrivé",
-        "start": 101.96,
-        "eind": 112.27
+        "start": 101.55,
+        "eind": 111.86
       },
       {
         "titel": "Pour conclure",
-        "start": 116.81,
-        "eind": 127.03
+        "start": 116.3,
+        "eind": 126.52
       }
     ],
     "gepubliceerdOp": "2026-09-17T08:55:08.766",
-    "gepubliceerdeHash": "d4b02a35b2541d51",
     "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/ad249cbb-4b2d-4346-b3ad-52c10a75c3f6/thumbnail.jpg"
   },
   "klantportaal-nl": {
