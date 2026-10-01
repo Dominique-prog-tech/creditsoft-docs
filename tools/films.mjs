@@ -30,6 +30,7 @@ import { execFileSync, spawnSync } from 'node:child_process';
 import { chromium } from '/Users/dominique/projects/adm-creditsoft/src/Host/CreditSoft.Host.Web/bin/Debug/net10.0/.playwright/package/index.mjs';
 import { BASIS, ID, gebruiker, wachtwoord, meldAan, stemGeheim, appToestand } from './aansturing.mjs';
 import { FILMS } from './draaiboek.mjs';
+import { hernomen } from './uitslagrij.mjs';
 import { MEET, zichtbaarheid, zetScene, beweegNaar, klik } from '/Users/dominique/projects/adm-appkit/tools/schermmachinerie/browser.mjs';
 
 const UIT = new URL('./.films-uit/', import.meta.url).pathname;
@@ -840,7 +841,8 @@ for (const [naam, filmVol] of FILMS) {
     // 7 ─ De uitslag: scènetijden voor de hoofdstukken, en een hash om veroudering te kunnen zien.
     //     De guid komt er later bij, bij het uploaden — die kent de generator hier nog niet.
     const sleutel = `${stam}-${kort}`;
-    uitslag[sleutel] = {
+    // ⚠️ hernomen(): wat bunny.mjs in de vorige rij zette, blijft staan — zie uitslagrij.mjs (01/10/2026).
+    uitslag[sleutel] = hernomen(uitslag[sleutel], {
       film: naam, taal, pagina: film.pagina, lengte: Number(lengte.toFixed(2)),
       // ⚠️⚠️ WELKE UITVOERING DIT IS, met zoveel woorden. Dit veld kwam er op 12/09/2026 omdat
       //    `hooks/films.py` het uit `routes` afleidde: de websiterijen droegen er toevallig geen, dus
@@ -884,6 +886,8 @@ for (const [naam, filmVol] of FILMS) {
       // eeuwig bij Bunny staan zonder dat iets nog zei waar hij bij hoorde. Zo ontstonden drie weesvideo's
       // (dashboard-fr, aan-de-slag-fr, kredietdossiers-basis-fr), pas gevonden door de bibliotheek met de
       // hand tegen deze tabel te leggen. Dezelfde valkuil als met gepubliceerdeHash, één laag dieper.
+      // ⚠️ En op 01/10/2026 nog eens, met opTeRuimen: deze lijst met de hand bijhouden faalt telkens bij
+      // het volgende veld. Daarom draagt hernomen() nu de héle vorige rij mee; deze regel is dubbel.
       vorigeGuid: uitslag[sleutel]?.vorigeGuid ?? undefined,
       // ⚠️ HOE LANG STAAT ER NIETS TE GEBEUREN? Een scène die op een element wacht dat nooit komt, levert
       // dode lucht op — en de ronde meldt gewoon "✅ film gemaakt". Op 01/09/2026 stond er 33,7 s stilte in
@@ -911,7 +915,7 @@ for (const [naam, filmVol] of FILMS) {
         start: Number(m.spraak.toFixed(2)),
         eind: Number((m.spraak + duren[i]).toFixed(2)),
       })),
-    };
+    });
     if (!MEET) { geraakt.add(sleutel); bewaarUitslag(); }
 
     // ⚠️ §1 geeft een RICHTDUUR van 60–180 s: korter zegt te weinig, langer kijkt niemand uit. De ronde drukte
