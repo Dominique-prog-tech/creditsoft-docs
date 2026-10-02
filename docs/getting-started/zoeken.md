@@ -3,13 +3,16 @@
 Rechtsboven staat een **vergrootglas**. Daarmee zoekt u vanaf elk scherm, zonder eerst naar de juiste lijst
 te navigeren. Sneltoets: **Ctrl + K** (op een Mac **⌘ + K**).
 
-Typ een naam of een nummer. De resultaten verschijnen terwijl u typt, gegroepeerd per soort:
+Typ een naam, een nummer of een woord. De resultaten verschijnen terwijl u typt, gegroepeerd per soort:
 
 - **Relaties** — op naam
 - **Kredietdossiers** — op dossiernummer én op de naam van de aanvrager
 - **Aanbrengers** — op naam
 - **Professionals** — op naam
 - **Leads** — op naam
+- **Notities** — op titel en inhoud, op welke fiche ze ook staan
+- **Taken** — op titel en omschrijving
+- **Opmerkingen** — op de inhoud van de opmerkingen op een kredietdossier
 
 Klik op een resultaat om er meteen naartoe te gaan.
 
@@ -21,6 +24,10 @@ Typt u een naam, dan krijgt u die persoon **twee keer**: één keer onder *Relat
 Dat is bewust. U kent de klant meestal wel en het dossiernummer niet, dus u hoeft niet eerst de relatiefiche
 te openen om bij zijn dossiers te geraken. De twee soorten treffers brengen u ook ergens anders naartoe: de
 ene naar de fiche van de persoon, de andere naar het dossier zelf.
+
+## Notities, taken en opmerkingen
+
+Bij een notitie, taak of opmerking ziet u het **stukje tekst rond uw zoekwoord**, de datum, en waar ze bij hoort: de naam van de klant of het dossiernummer. Klik erop en u komt op die fiche. Een notitie of taak die aan niets hangt, opent het [overzicht Notities](../credit-management/notes.md) of de lijst [Taken](../credit-management/tasks.md).
 
 ## U ziet enkel wat u mag zien
 

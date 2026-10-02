@@ -3,7 +3,7 @@
 En haut à droite se trouve une **loupe**. Elle vous permet de rechercher depuis n'importe quel écran, sans
 devoir d'abord ouvrir la bonne liste. Raccourci : **Ctrl + K** (sur Mac **⌘ + K**).
 
-Saisissez un nom ou un numéro. Les résultats apparaissent au fur et à mesure de la frappe, regroupés par
+Saisissez un nom, un numéro ou un mot. Les résultats apparaissent au fur et à mesure de la frappe, regroupés par
 type :
 
 - **Relations** — par nom
@@ -11,8 +11,16 @@ type :
 - **Apporteurs** — par nom
 - **Professionnels** — par nom
 - **Prospects** — par nom
+- **Notes** — par titre et contenu, sur quelque fiche qu'elles figurent
+- **Tâches** — par titre et description
+- **Remarques** — par le contenu des remarques d'un dossier de crédit
 
 Cliquez sur un résultat pour vous y rendre directement.
+
+
+## Notes, tâches et remarques
+
+Pour une note, une tâche ou une remarque, vous voyez **le bout de texte autour de votre mot**, la date, et ce à quoi elle se rattache : le nom du client ou le numéro de dossier. Cliquez dessus pour arriver sur cette fiche. Une note ou une tâche qui ne se rattache à rien ouvre l'[aperçu des notes](../credit-management/notes.md) ou la liste des [tâches](../credit-management/tasks.md).
 
 ## Les dossiers se retrouvent aussi par le nom du client
 

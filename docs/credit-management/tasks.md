@@ -2,7 +2,7 @@
 
 Op dit scherm staan al uw taken samen, **over alle modules heen**: taken op een kredietdossier, op een relatiefiche, bij een aanbrenger of bij een instelling — én de losse taken die aan niets hangen.
 
-![Het takenscherm met bovenaan de filters op status, verantwoordelijke en soort, en daaronder de lijst met vóór elke taak een cirkel om ze af te vinken, en per taak waar ze aan hangt, de start- en vervaldatum, de status, de prioriteit en de verantwoordelijke.](../images/taken-overzicht.png "Al uw taken op één scherm")
+![Het takenscherm met bovenaan de filters op status, verantwoordelijke en soort, en daaronder de lijst met vóór elke taak een cirkel om ze af te vinken, en per taak de omschrijving, waar ze aan hangt, de start- en vervaldatum, de status, de prioriteit en de verantwoordelijke.](../images/taken-overzicht.png "Al uw taken op één scherm")
 
 ## Het scherm openen
 
@@ -33,7 +33,8 @@ Daarnaast filtert u op **verantwoordelijke** en op **soort** — enkel de taken 
 | Kolom | Wat het toont |
 |---|---|
 | **Taak** | De titel. Staat er *(zonder titel)*, dan draagt de taak geen naam |
-| **Hangt aan** | Het dossier, de relatie of de aanbrenger waar de taak bij hoort |
+| **Omschrijving** | De omschrijving, ingekort tot één regel — wijs ze aan voor de volledige tekst. De zoekbalk zoekt er ook in |
+| **Hangt aan** | Het dossier, de relatie of de aanbrenger waar de taak bij hoort. In het venster van de taak opent die naam de fiche |
 | **Soort** | Welk type dat is — of *Losse taak* wanneer er geen master is |
 | **Start** en **Tegen** | Wanneer de taak begint en wanneer ze klaar moet zijn |
 | **Status** en **Prioriteit** | Openstaand, bezig, afgewerkt of geannuleerd |

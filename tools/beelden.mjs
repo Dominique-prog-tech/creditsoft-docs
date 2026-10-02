@@ -117,6 +117,7 @@ const SCHOTEN = [
   ['documenten-valideren',         '/krediet/documenten-valideren'],
   ['documentbibliotheek',          '/document-library'],
   ['taken-overzicht',              '/taken'],
+  ['notities-lijst',               '/notities'],   // mak12
   ['afwezigheden',                 '/beheer/afwezigheden'],
   ['keuzelijsten',                 '/beheer/keuzelijsten', async p => {
       // ⚠️ Zonder gekozen lijsttype toont dit scherm "Kies bovenaan een lijsttype" en een tabel met NUL
@@ -814,6 +815,8 @@ const VERWACHT = {
   // Niet op het TABBLAD zoeken maar op de INHOUD: het tablabel staat er ook bij een lege lijst.
   'relaties-gevraagde-documenten': /Laatste 3 loonfiches|3 derniers|Ontvangen|Reçu/i,
   'taken-overzicht':            /Vervaldatum|Échéance|Prioriteit|Priorité/i,
+  // mak12: de kolomkop Hangt aan staat op Taken én op Notities; 'Inhoud' enkel op Notities.
+  'notities-lijst':             /Inhoud|Contenu/,
   'wachtwoord':                 /Huidig wachtwoord|Mot de passe actuel/i,
   'keuzelijsten':               /Nationaliteit|Nationalité|Volgorde|Ordre/i,
   // De kop van de MIDDELSTE kolom: staat er enkel als een klant gekozen én precies de systeemrol open is. Het oude

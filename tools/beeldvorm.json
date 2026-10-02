@@ -354,7 +354,7 @@
     "hoogte": 860
   },
   "taken-overzicht": {
-    "breedte": 1280,
+    "breedte": 1600,
     "hoogte": 860
   },
   "tweestapsverificatie": {
@@ -517,5 +517,17 @@
   "dashboard-stilgevallen-fr": {
     "breedte": 1600,
     "hoogte": 700
+  },
+  "notities-lijst": {
+    "breedte": 1280,
+    "hoogte": 860
+  },
+  "notities-lijst-fr": {
+    "breedte": 1280,
+    "hoogte": 860
+  },
+  "taken-overzicht-fr": {
+    "breedte": 1600,
+    "hoogte": 860
   }
 }
