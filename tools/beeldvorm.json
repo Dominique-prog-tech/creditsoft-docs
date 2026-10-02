@@ -472,5 +472,18 @@
   "dashboard-grafieken": {
     "breedte": 1280,
     "hoogte": 1100
+  },
+  "kredietdossier-patrimonium": {
+    "breedte": 1920,
+    "hoogte": 1080
+  },
+  "kredietdossier-pand-venster": {
+    "breedte": 1700,
+    "hoogte": 900,
+    "element": {
+      "kies": ".dxbl-popup",
+      "bevat": "Pand wijzigen|Modifier le bien",
+      "minBreed": 500
+    }
   }
 }

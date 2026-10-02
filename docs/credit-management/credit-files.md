@@ -49,7 +49,7 @@ Met **Nieuw dossier** bovenaan de lijst maakt u een leeg dossier aan. Welke stat
 
 ## Het dossier
 
-![Een geopend kredietdossier: bovenaan de kopkaart met status, intern nummer, eigenaar en sales als keuzelijst, de financiële instelling, de aanbrenger, het kredietbedrag, het commissiebedrag met het vinkje inhouden ernaast en de datum akte, met rechts de knoppen Bewaren, Annuleren, Afdruk overzicht en Verwijderen. Daaronder links de datums van indiening en goedkeuring met het type dossier, de ondertekening van het aanbod naast de uiterste datum voor het aanbod, de uiterste datums voor de akte en de opschortende voorwaarden, Herbekijken op met de reden ernaast, het doel, de schattingswaarde en de quotiteit met het vinkje Getekend aanbod verzonden en het veld Interne opmerkingen, en onder die kaart de kredietaanvragers met per aanvrager het aantal inkomsten en lasten; rechts de contracten en onderaan de tabbladen Partijen, Opmerkingen, Gevraagd en Leningen en lasten, elk met een teller.](../images/kredietdossier-fiche.png "Het kredietdossier: alles op één pagina"){ .volle-breedte }
+![Een geopend kredietdossier: bovenaan de kopkaart met status, intern nummer, eigenaar en sales als keuzelijst, de financiële instelling, de aanbrenger, het kredietbedrag, het commissiebedrag met het vinkje inhouden ernaast en de datum akte, met rechts de knoppen Bewaren, Annuleren, Afdruk overzicht en Verwijderen. Daaronder links de datums van indiening en goedkeuring met het type dossier, de ondertekening van het aanbod naast de uiterste datum voor het aanbod, de uiterste datums voor de akte en de opschortende voorwaarden, Herbekijken op met de reden ernaast, het doel, de schattingswaarde en de quotiteit met het vinkje Getekend aanbod verzonden en het veld Interne opmerkingen, en onder die kaart de kredietaanvragers met per aanvrager het aantal inkomsten en lasten; rechts de contracten en onderaan de tabbladen Partijen, Opmerkingen, Gevraagd, Leningen en lasten en Patrimonium, elk met een teller.](../images/kredietdossier-fiche.png "Het kredietdossier: alles op één pagina"){ .volle-breedte }
 
 Het dossier is één pagina. Bovenaan staat het kernblok met de gegevens die u het vaakst nodig hebt; daaronder staan links de datums en het pand, rechts de contracten. Onderaan rechts staan **Partijen**, **Opmerkingen**, **Gevraagd** en **Leningen en lasten** naast elkaar als tabbladen — vier lijsten die dezelfde plaats delen, zodat u niet hoeft te scrollen om ze alle vier te bereiken.
 
@@ -116,6 +116,37 @@ Op het dossier zelf staat het tabblad **Leningen en lasten**, naast *Partijen*, 
 
 !!! tip "In de investeringsfiche"
     Onder **Saldo overname kredieten** toont de investeringsfiche de som van de saldo's van de leningen die u op *Overnemen* zette. Het is een hulp bij het invullen: het bedrag in het veld zelf bepaalt u.
+
+### Patrimonium
+
+Het tabblad **Patrimonium** toont de panden die uw klant al bezit — naast het pand dat dit krediet financiert,
+dat onder *Investeringsfiche & pand* blijft staan. Per pand ziet u het adres, het type, de eigenaar, de waarde,
+het openstaand saldo en de huur per maand. Onderaan staat een **somregel** met de totale waarde, het totaal
+openstaand saldo en de totale huur per maand. Een kolom waarin geen enkel pand een bedrag draagt, toont een
+streepje en geen € 0,00.
+
+![Een kredietdossier met onderaan rechts het tabblad Patrimonium geopend, naast Partijen, Opmerkingen, Gevraagd en Leningen en lasten: drie panden met per regel het adres, het type, de eigenaar, de waarde, het openstaand saldo en de huur per maand; eronder de somregel Totaal met de waarde, het openstaand saldo en de huur per maand van alle panden samen.](../images/kredietdossier-patrimonium.png "Wat uw klant al bezit, met de som eronder"){ .volle-breedte }
+
+Klik op **+ Pand toevoegen**, of dubbelklik een pand om het te wijzigen:
+
+| Veld | Waarvoor |
+|---|---|
+| **Type** | De bestemming van het pand — gezinswoning, verhuurd appartement, verhuurde handelszaak, … |
+| **Eigenaar** | Een van de aanvragers, of **Samen** |
+| **Adres** | Straat, nummer en bus, met de postcode- en gemeentekiezer zoals bij relaties |
+| **Waarde**, **Openstaand saldo**, **Huur per maand** | De bedragen die de somregel optelt |
+| **Opmerking** | Wat er niet in een veld past, bijvoorbeeld een geplande verkoop |
+
+![Het venster Pand wijzigen: bovenaan het type en de eigenaar, daaronder het adres met straat, nummer, bus, postcode, gemeente en land, dan de waarde, het openstaand saldo en de huur per maand met de hint dat de maandlast van een lening bij Leningen en lasten hoort, en onderaan een opmerking.](../images/kredietdossier-pand-venster.png "Een pand van het patrimonium bewerken"){ .volle-breedte }
+
+Een pand heeft minstens een type of een adres nodig. Elk pand bewaart u apart; het dossier hoeft u daarvoor
+niet te bewaren.
+
+!!! tip "Een lening op een pand"
+    Het openstaand saldo staat op het pand. Loopt er een lening op, dan hoort haar maandlast bij **Leningen en
+    lasten** — zo telt u de maandlast niet twee keer.
+
+Het patrimonium staat ook op de afdruk van het dossier, met dezelfde somregel.
 
 ### Contracten
 

@@ -55,6 +55,10 @@ export const ID = {
   // niet doorging toont het verkeerde geval. Gekozen met een query op tenant_demo, ná de knop "Opvolging kredieten
   // aanvullen"; valt om na een her-seed (de variabiliteit hangt aan het contractnummer).
   dossierOpvolging: 'bc566763-9860-48e3-b8a3-f464904a9810',
+  // DEMO-1768 (kv5, 02/10/2026) — drie panden: twee met een eigenaar (elk een andere aanvrager) en één Samen, huur
+  // bij twee, een saldo bij één. Zo toont de lijst elk geval en draagt de somregel drie bedragen. Gekozen met een
+  // query na "Opvolging en patrimonium aanvullen"; valt om na een her-seed (het patrimonium hangt aan het nummer).
+  dossierPatrimonium: '65fcb9bd-0a60-404a-a6dd-d9275361241e',
   schema:   'a9b48983-8066-4209-a315-8f950e6983dd',   // het actieve schema van DEMO-1089
   // ⚠️ Een aanbrenger die AL portaaltoegang heeft. Met een aanbrenger zónder toegang toont het venster
   // "Deze aanbrenger heeft nog geen portaaltoegang" — en dan mist het beeld precies de knoppen waar de

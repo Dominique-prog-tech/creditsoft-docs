@@ -49,7 +49,7 @@ Avec **Nouveau dossier** en haut de la liste, vous créez un dossier vide. Le st
 
 ## Le dossier
 
-![Un dossier de crédit ouvert : en haut le bloc principal avec le statut, le numéro interne, le propriétaire et le responsable commercial sous forme de listes déroulantes, l'institution financière, l'apporteur, le montant du crédit, le montant de commission avec la case Retenir à côté et la date d'acte, et à droite les boutons Enregistrer, Annuler, Imprimer l'aperçu et Supprimer. En dessous, à gauche les dates de dépôt et d'approbation avec le type de dossier, la signature de l'offre à côté de la date limite de l'offre, les dates limites de l'acte et des conditions suspensives, À revoir le avec le motif à côté, le but, la valeur estimée et la quotité avec la case Offre signée envoyée ainsi que le champ Remarques internes, et sous cette carte les demandeurs de crédit avec, pour chacun, le nombre de revenus et de charges ; à droite les contrats et en bas les onglets Parties, Remarques, Demandés et Prêts et charges, chacun avec un compteur.](../images/kredietdossier-fiche-fr.png "Le dossier de crédit : tout sur une seule page"){ .volle-breedte }
+![Un dossier de crédit ouvert : en haut le bloc principal avec le statut, le numéro interne, le propriétaire et le responsable commercial sous forme de listes déroulantes, l'institution financière, l'apporteur, le montant du crédit, le montant de commission avec la case Retenir à côté et la date d'acte, et à droite les boutons Enregistrer, Annuler, Imprimer l'aperçu et Supprimer. En dessous, à gauche les dates de dépôt et d'approbation avec le type de dossier, la signature de l'offre à côté de la date limite de l'offre, les dates limites de l'acte et des conditions suspensives, À revoir le avec le motif à côté, le but, la valeur estimée et la quotité avec la case Offre signée envoyée ainsi que le champ Remarques internes, et sous cette carte les demandeurs de crédit avec, pour chacun, le nombre de revenus et de charges ; à droite les contrats et en bas les onglets Parties, Remarques, Demandés, Prêts et charges et Patrimoine, chacun avec un compteur.](../images/kredietdossier-fiche-fr.png "Le dossier de crédit : tout sur une seule page"){ .volle-breedte }
 
 Le dossier tient sur une seule page. En haut, le bloc principal reprend les données dont vous avez le plus souvent besoin ; en dessous, les dates et le bien à gauche, les contrats à droite. En bas à droite, **Parties**, **Remarques**, **Demandés** et **Prêts et charges** figurent côte à côte sous forme d'onglets — quatre listes qui partagent le même emplacement, pour que vous puissiez les atteindre toutes les quatre sans faire défiler la page.
 
@@ -116,6 +116,37 @@ Sur le dossier lui-même figure l'onglet **Prêts et charges**, à côté de *Pa
 
 !!! tip "Dans la fiche d'investissement"
     Sous **Solde reprise de crédits**, la fiche d'investissement affiche la somme des soldes des prêts que vous avez cochés *Reprendre*. C'est une aide à la saisie : le montant du champ lui-même, c'est vous qui le fixez.
+
+### Patrimoine
+
+L'onglet **Patrimoine** affiche les biens que votre client possède déjà — à côté du bien que ce crédit finance,
+qui reste sous *Fiche d'investissement & bien*. Pour chaque bien, vous voyez l'adresse, le type, le propriétaire,
+la valeur, le solde restant dû et le loyer mensuel. En bas figure une **ligne de total** avec la valeur totale,
+le solde restant dû total et le loyer mensuel total. Une colonne dans laquelle aucun bien ne porte de montant
+affiche un tiret et non 0,00 €.
+
+![Un dossier de crédit avec, en bas à droite, l'onglet Patrimoine ouvert, à côté de Parties, Remarques, Demandés et Prêts et charges : trois biens avec pour chaque ligne l'adresse, le type, le propriétaire, la valeur, le solde restant dû et le loyer mensuel ; en dessous la ligne Total avec la valeur, le solde restant dû et le loyer mensuel de l'ensemble des biens.](../images/kredietdossier-patrimonium-fr.png "Ce que votre client possède déjà, avec le total en dessous"){ .volle-breedte }
+
+Cliquez sur **+ Ajouter un bien**, ou double-cliquez un bien pour le modifier :
+
+| Champ | À quoi il sert |
+|---|---|
+| **Type** | La destination du bien — habitation familiale, appartement mis en location, commerce mis en location, … |
+| **Propriétaire** | L'un des demandeurs, ou **Ensemble** |
+| **Adresse** | Rue, numéro et boîte, avec le sélecteur de code postal et de commune comme pour les relations |
+| **Valeur**, **Solde restant dû**, **Loyer mensuel** | Les montants que la ligne de total additionne |
+| **Remarque** | Ce qui ne trouve pas sa place dans un champ, par exemple une vente prévue |
+
+![La fenêtre Modifier le bien : en haut le type et le propriétaire, en dessous l'adresse avec la rue, le numéro, la boîte, le code postal, la commune et le pays, puis la valeur, le solde restant dû et le loyer mensuel avec l'indication que la mensualité d'un prêt figure sous Prêts et charges, et en bas une remarque.](../images/kredietdossier-pand-venster-fr.png "Modifier un bien du patrimoine"){ .volle-breedte }
+
+Un bien a besoin au moins d'un type ou d'une adresse. Chaque bien s'enregistre séparément ; il n'est pas
+nécessaire d'enregistrer le dossier pour cela.
+
+!!! tip "Un prêt sur un bien"
+    Le solde restant dû figure sur le bien. Si un prêt court sur ce bien, sa mensualité figure sous **Prêts et
+    charges** — vous ne comptez ainsi pas la mensualité deux fois.
+
+Le patrimoine figure aussi sur l'impression du dossier, avec la même ligne de total.
 
 ### Contrats
 

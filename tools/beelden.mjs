@@ -271,6 +271,22 @@ const SCHOTEN = [
       await venster.getByRole('tab', { name: /^(Inkomsten|Revenus)\s*\(/i }).first().click();
       await p.waitForTimeout(2500);
   }],
+  // ── kv5 (02/10/2026): het patrimonium ──
+  // ⚠️ Het tablabel draagt een teller — zie de nota bij relaties-gevraagde-documenten: geen tab(), wel de role met regex.
+  ['kredietdossier-patrimonium', `/credit-files/${ID.dossierPatrimonium}`, async p => {
+      await p.getByRole('tab', { name: /^(Patrimonium|Patrimoine)\s*\(/i }).first().click();
+      await p.waitForTimeout(2500);
+  }],
+  ['kredietdossier-pand-venster', `/credit-files/${ID.dossierPatrimonium}`, async p => {
+      await p.getByRole('tab', { name: /^(Patrimonium|Patrimoine)\s*\(/i }).first().click();
+      await p.waitForTimeout(2000);
+      // ⚠️ Een dubbelklik vlak na het laden valt soms in het niets (het circuit is er nog niet) — dan opnieuw.
+      const venster = p.locator('.dxbl-popup').filter({ hasText: /Pand wijzigen|Modifier le bien/ });
+      for (let i = 0; i < 3 && !(await venster.count()); i++) {
+        await p.getByRole('gridcell', { name: /Kapelstraat/ }).first().dblclick();
+        await p.waitForTimeout(2500);
+      }
+  }],
   // ── kv4 (02/10/2026): de opvolging van lopende kredieten ──
   // ⚠️ Vraagt de knop "Opvolging kredieten aanvullen" ONDER DE VASTE KLOK: de demodatums Herbekijken op liggen
   // rond de verjaardag van de akte, gerekend vanaf de dag waarop de knop gedrukt werd. Gedrukt op 1 september
@@ -768,6 +784,10 @@ const VERWACHT = {
   'dashboard-opvolging':        /· Variabel \d|· Variable \d/,
   // \s en geen spatie: het Frans draagt een VASTE spatie vóór de dubbele punt (\u00a0, 02/10/2026).
   'kredietdossier-contract-herziening': /Voorstel:\s\d|Proposition\s:\s\d/,
+  // kv5: de somregel draagt het woord VOOR het bedrag ("Waarde € 1.320.000,00"); de cellen van de lijst niet. Het venster:
+  // de hint over de maandlast staat enkel daar.
+  'kredietdossier-patrimonium': /(Waarde|Valeur) € \d/,
+  'kredietdossier-pand-venster': /Loopt er een lening|Si un prêt court/,
   'keuzelijsten-variabiliteit': /Eerste herziening na|Première révision après/,
 };
 

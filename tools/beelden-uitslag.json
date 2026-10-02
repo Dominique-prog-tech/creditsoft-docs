@@ -2,14 +2,14 @@
   "kredietdossiers-lijst": {
     "route": "/credit-files",
     "app": {
-      "sha": "2f279e8e59cec1073f6a728468e77ad366f04a15",
+      "sha": "973aad180a7e6f872104657be515e71cd3967a4f",
       "vuil": true
     }
   },
   "kredietdossiers-lijst-fr": {
     "route": "/credit-files",
     "app": {
-      "sha": "2f279e8e59cec1073f6a728468e77ad366f04a15",
+      "sha": "973aad180a7e6f872104657be515e71cd3967a4f",
       "vuil": true
     }
   },
@@ -261,14 +261,14 @@
   "online-afspraken-agenda": {
     "route": "/crm/online-afspraken",
     "app": {
-      "sha": "2f279e8e59cec1073f6a728468e77ad366f04a15",
+      "sha": "973aad180a7e6f872104657be515e71cd3967a4f",
       "vuil": true
     }
   },
   "afspraken-week": {
     "route": "/crm/afspraken",
     "app": {
-      "sha": "2f279e8e59cec1073f6a728468e77ad366f04a15",
+      "sha": "973aad180a7e6f872104657be515e71cd3967a4f",
       "vuil": true
     }
   },
@@ -359,7 +359,7 @@
   "kredietdossier-fiche": {
     "route": "/credit-files/00038c40-df6b-4992-83e4-13847c7a0a59",
     "app": {
-      "sha": "2f279e8e59cec1073f6a728468e77ad366f04a15",
+      "sha": "973aad180a7e6f872104657be515e71cd3967a4f",
       "vuil": true
     }
   },
@@ -422,7 +422,7 @@
   "journaal-kredietdossiers": {
     "route": "/crm/relaties/09ee4eb1-5c32-4e3d-ade5-a0fe4fd9ded2",
     "app": {
-      "sha": "2f279e8e59cec1073f6a728468e77ad366f04a15",
+      "sha": "973aad180a7e6f872104657be515e71cd3967a4f",
       "vuil": true
     }
   },
@@ -457,7 +457,7 @@
   "online-afspraken-instellingen": {
     "route": "/crm/online-afspraken",
     "app": {
-      "sha": "2f279e8e59cec1073f6a728468e77ad366f04a15",
+      "sha": "973aad180a7e6f872104657be515e71cd3967a4f",
       "vuil": true
     }
   },
@@ -541,14 +541,14 @@
   "afspraken-per-medewerker": {
     "route": "/crm/afspraken",
     "app": {
-      "sha": "2f279e8e59cec1073f6a728468e77ad366f04a15",
+      "sha": "973aad180a7e6f872104657be515e71cd3967a4f",
       "vuil": true
     }
   },
   "agenda-afwezigheid": {
     "route": "/crm/afspraken",
     "app": {
-      "sha": "2f279e8e59cec1073f6a728468e77ad366f04a15",
+      "sha": "973aad180a7e6f872104657be515e71cd3967a4f",
       "vuil": true
     }
   },
@@ -590,7 +590,7 @@
   "afspraak-venster": {
     "route": "/crm/afspraken",
     "app": {
-      "sha": "2f279e8e59cec1073f6a728468e77ad366f04a15",
+      "sha": "973aad180a7e6f872104657be515e71cd3967a4f",
       "vuil": true
     }
   },
@@ -877,14 +877,14 @@
   "online-afspraken-agenda-fr": {
     "route": "/crm/online-afspraken",
     "app": {
-      "sha": "2f279e8e59cec1073f6a728468e77ad366f04a15",
+      "sha": "973aad180a7e6f872104657be515e71cd3967a4f",
       "vuil": true
     }
   },
   "afspraken-week-fr": {
     "route": "/crm/afspraken",
     "app": {
-      "sha": "2f279e8e59cec1073f6a728468e77ad366f04a15",
+      "sha": "973aad180a7e6f872104657be515e71cd3967a4f",
       "vuil": true
     }
   },
@@ -975,7 +975,7 @@
   "kredietdossier-fiche-fr": {
     "route": "/credit-files/00038c40-df6b-4992-83e4-13847c7a0a59",
     "app": {
-      "sha": "2f279e8e59cec1073f6a728468e77ad366f04a15",
+      "sha": "973aad180a7e6f872104657be515e71cd3967a4f",
       "vuil": true
     }
   },
@@ -1038,7 +1038,7 @@
   "journaal-kredietdossiers-fr": {
     "route": "/crm/relaties/09ee4eb1-5c32-4e3d-ade5-a0fe4fd9ded2",
     "app": {
-      "sha": "2f279e8e59cec1073f6a728468e77ad366f04a15",
+      "sha": "973aad180a7e6f872104657be515e71cd3967a4f",
       "vuil": true
     }
   },
@@ -1073,7 +1073,7 @@
   "online-afspraken-instellingen-fr": {
     "route": "/crm/online-afspraken",
     "app": {
-      "sha": "2f279e8e59cec1073f6a728468e77ad366f04a15",
+      "sha": "973aad180a7e6f872104657be515e71cd3967a4f",
       "vuil": true
     }
   },
@@ -1157,14 +1157,14 @@
   "afspraken-per-medewerker-fr": {
     "route": "/crm/afspraken",
     "app": {
-      "sha": "2f279e8e59cec1073f6a728468e77ad366f04a15",
+      "sha": "973aad180a7e6f872104657be515e71cd3967a4f",
       "vuil": true
     }
   },
   "agenda-afwezigheid-fr": {
     "route": "/crm/afspraken",
     "app": {
-      "sha": "2f279e8e59cec1073f6a728468e77ad366f04a15",
+      "sha": "973aad180a7e6f872104657be515e71cd3967a4f",
       "vuil": true
     }
   },
@@ -1206,7 +1206,7 @@
   "afspraak-venster-fr": {
     "route": "/crm/afspraken",
     "app": {
-      "sha": "2f279e8e59cec1073f6a728468e77ad366f04a15",
+      "sha": "973aad180a7e6f872104657be515e71cd3967a4f",
       "vuil": true
     }
   },
@@ -1346,28 +1346,28 @@
   "kredietdossier-leningen-lasten": {
     "route": "/credit-files/f2bfe95b-9020-4a33-9a17-fc1418c4a2cb",
     "app": {
-      "sha": "2f279e8e59cec1073f6a728468e77ad366f04a15",
+      "sha": "973aad180a7e6f872104657be515e71cd3967a4f",
       "vuil": true
     }
   },
   "kredietdossier-aanvrager-inkomsten": {
     "route": "/credit-files/f2bfe95b-9020-4a33-9a17-fc1418c4a2cb",
     "app": {
-      "sha": "2f279e8e59cec1073f6a728468e77ad366f04a15",
+      "sha": "973aad180a7e6f872104657be515e71cd3967a4f",
       "vuil": true
     }
   },
   "kredietdossier-leningen-lasten-fr": {
     "route": "/credit-files/f2bfe95b-9020-4a33-9a17-fc1418c4a2cb",
     "app": {
-      "sha": "2f279e8e59cec1073f6a728468e77ad366f04a15",
+      "sha": "973aad180a7e6f872104657be515e71cd3967a4f",
       "vuil": true
     }
   },
   "kredietdossier-aanvrager-inkomsten-fr": {
     "route": "/credit-files/f2bfe95b-9020-4a33-9a17-fc1418c4a2cb",
     "app": {
-      "sha": "2f279e8e59cec1073f6a728468e77ad366f04a15",
+      "sha": "973aad180a7e6f872104657be515e71cd3967a4f",
       "vuil": true
     }
   },
@@ -1388,14 +1388,14 @@
   "kredietdossier-contract-herziening": {
     "route": "/credit-files/bc566763-9860-48e3-b8a3-f464904a9810",
     "app": {
-      "sha": "2f279e8e59cec1073f6a728468e77ad366f04a15",
+      "sha": "973aad180a7e6f872104657be515e71cd3967a4f",
       "vuil": true
     }
   },
   "kredietdossier-contract-herziening-fr": {
     "route": "/credit-files/bc566763-9860-48e3-b8a3-f464904a9810",
     "app": {
-      "sha": "2f279e8e59cec1073f6a728468e77ad366f04a15",
+      "sha": "973aad180a7e6f872104657be515e71cd3967a4f",
       "vuil": true
     }
   },
@@ -1424,6 +1424,34 @@
     "route": "/dashboard",
     "app": {
       "sha": "2f279e8e59cec1073f6a728468e77ad366f04a15",
+      "vuil": true
+    }
+  },
+  "kredietdossier-patrimonium": {
+    "route": "/credit-files/65fcb9bd-0a60-404a-a6dd-d9275361241e",
+    "app": {
+      "sha": "973aad180a7e6f872104657be515e71cd3967a4f",
+      "vuil": true
+    }
+  },
+  "kredietdossier-pand-venster": {
+    "route": "/credit-files/65fcb9bd-0a60-404a-a6dd-d9275361241e",
+    "app": {
+      "sha": "973aad180a7e6f872104657be515e71cd3967a4f",
+      "vuil": true
+    }
+  },
+  "kredietdossier-patrimonium-fr": {
+    "route": "/credit-files/65fcb9bd-0a60-404a-a6dd-d9275361241e",
+    "app": {
+      "sha": "973aad180a7e6f872104657be515e71cd3967a4f",
+      "vuil": true
+    }
+  },
+  "kredietdossier-pand-venster-fr": {
+    "route": "/credit-files/65fcb9bd-0a60-404a-a6dd-d9275361241e",
+    "app": {
+      "sha": "973aad180a7e6f872104657be515e71cd3967a4f",
       "vuil": true
     }
   }
