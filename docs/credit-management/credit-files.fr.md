@@ -49,15 +49,15 @@ Avec **Nouveau dossier** en haut de la liste, vous créez un dossier vide. Le st
 
 ## Le dossier
 
-![Un dossier de crédit ouvert : en haut le bloc principal avec le statut, le numéro interne, le propriétaire et le responsable commercial sous forme de listes déroulantes, l'institution financière, l'apporteur, le montant du crédit, le montant de commission avec la case Retenir à côté et la date d'acte, et à droite les boutons Enregistrer, Annuler, Aperçu d'impression et Supprimer. En dessous, à gauche les dates, suivies des dates limites de l'offre, de l'acte et des conditions suspensives, le type de dossier, la valeur estimée et la quotité avec la case Offre signée envoyée ainsi que le champ Remarques internes ; à droite les contrats et en bas les onglets Parties, Remarques et Demandés, chacun avec un compteur.](../images/kredietdossier-fiche-fr.png "Le dossier de crédit : tout sur une seule page"){ .volle-breedte }
+![Un dossier de crédit ouvert : en haut le bloc principal avec le statut, le numéro interne, le propriétaire et le responsable commercial sous forme de listes déroulantes, l'institution financière, l'apporteur, le montant du crédit, le montant de commission avec la case Retenir à côté et la date d'acte, et à droite les boutons Enregistrer, Annuler, Aperçu d'impression et Supprimer. En dessous, à gauche les dates de dépôt et d'approbation avec le type de dossier, la signature de l'offre à côté de la date limite de l'offre, les dates limites de l'acte et des conditions suspensives, le but, la valeur estimée et la quotité avec la case Offre signée envoyée ainsi que le champ Remarques internes, et sous cette carte les demandeurs de crédit avec, pour chacun, le nombre de revenus et de charges ; à droite les contrats et en bas les onglets Parties, Remarques, Demandés et Prêts et charges, chacun avec un compteur.](../images/kredietdossier-fiche-fr.png "Le dossier de crédit : tout sur une seule page"){ .volle-breedte }
 
-Le dossier tient sur une seule page. En haut, le bloc principal reprend les données dont vous avez le plus souvent besoin ; en dessous, les dates et le bien à gauche, les contrats à droite. En bas à droite, **Parties**, **Remarques** et **Demandés** figurent côte à côte sous forme d'onglets — trois listes qui partagent le même emplacement, pour que vous puissiez les atteindre toutes les trois sans faire défiler la page.
+Le dossier tient sur une seule page. En haut, le bloc principal reprend les données dont vous avez le plus souvent besoin ; en dessous, les dates et le bien à gauche, les contrats à droite. En bas à droite, **Parties**, **Remarques**, **Demandés** et **Prêts et charges** figurent côte à côte sous forme d'onglets — quatre listes qui partagent le même emplacement, pour que vous puissiez les atteindre toutes les quatre sans faire défiler la page.
 
 ### Données du dossier
 
 Le bloc d'en-tête porte ce dont vous avez le plus souvent besoin : numéro interne, **propriétaire**, **sales**, **statut**, institution financière, apporteur, le montant du crédit avec la case *Retenir*, et la date de l'acte.
 
-Dans la carte en dessous à gauche figurent le but, le type de dossier, la quotité et les dates clés : introduction, approbation et signature de l'offre, et en dessous les dates limites de l'offre, de l'acte et des conditions suspensives. Ces trois dates limites apparaissent sur le [tableau de bord](../getting-started/dashboard.md) parmi les délais.
+Dans la carte en dessous à gauche figurent en haut les dates de dépôt et d'approbation, avec le type de dossier. En dessous, la signature de l'offre se trouve à côté de la date limite de l'offre, suivie des dates limites de l'acte et des conditions suspensives. Ces trois dates limites apparaissent sur le [tableau de bord](../getting-started/dashboard.md) parmi les délais. Le bas de la carte reprend le but, la valeur estimée et la quotité.
 
 !!! tip "Un montant vide reste vide"
     Si vous laissez un montant non renseigné, il reste vide — il ne devient pas 0 €. La distinction compte : pour un dossier sans montant de crédit, vous voyez qu'il n'est pas encore connu, et non qu'il serait nul.
@@ -79,7 +79,43 @@ Le reste du bien se trouve derrière le bouton **Fiche d'investissement & bien�
 
 ### Demandeurs de crédit
 
-Qui demande le crédit. Rattachez une relation existante avec **+ Rattacher un demandeur**, puis complétez pour chacun l'employeur et le revenu mensuel net.
+Qui demande le crédit. Liez une relation existante avec **+ Lier un demandeur**. La liste indique, pour chaque demandeur, combien de **revenus** et combien de **charges** ont été saisis.
+
+Double-cliquez un demandeur pour ouvrir sa fenêtre. Elle compte trois onglets :
+
+- **Général** — la relation. Le bouton **Enregistrer** en bas porte sur cet onglet.
+- **Revenus** — chaque revenu est une ligne : le type, le montant et si ce montant vaut **par mois** ou **par an**, avec l'employeur, la fonction, le type de contrat et la période pendant laquelle il court.
+- **Prêts et charges** — les crédits que le demandeur rembourse aujourd'hui, et ses charges fixes. Voir [Prêts et charges](#prets-et-charges) ci-dessous.
+
+![La fenêtre d'un demandeur de crédit sur l'onglet Revenus : en haut les onglets Général, Revenus et Prêts et charges, chacun avec un compteur, en dessous le bouton Ajouter un revenu et une liste indiquant pour chaque revenu le type, le montant, la période par mois ou par an, l'employeur et les dates de début et de fin ; en bas les boutons Enregistrer, Annuler et Supprimer.](../images/kredietdossier-aanvrager-inkomsten-fr.png "La fenêtre d'un demandeur, avec ses revenus")
+
+Une ligne s'enregistre dans sa propre fenêtre : elle figure immédiatement sur le dossier, indépendamment du bouton **Enregistrer** du demandeur. Un demandeur que vous venez de rattacher, vous l'enregistrez donc d'abord ; ensuite vous ajoutez ses revenus et ses charges.
+
+!!! tip "Le type propose la période"
+    Si vous choisissez *Pécule de vacances* ou *Prime de fin d'année*, la période passe à **Par an** ; pour les autres types, à **Par mois**. Vous pouvez toujours la modifier.
+
+Vous gérez vous-même les types de revenu sous **Administration → [Listes de choix](../beheer/keuzelijsten.md)**, dans la liste *Type de revenu*. Chaque bureau démarre avec les mêmes onze : revenu mensuel net, revenu étranger, pécule de vacances, prime de fin d'année, chèques-repas, allocations familiales, quatre types de revenus locatifs (privés ou professionnels, actuels ou futurs) et autre revenu.
+
+!!! note "Pas de totaux"
+    CreditSoft n'additionne pas les revenus et ne calcule pas de taux d'endettement. Un salaire mensuel et une prime annuelle ne s'additionnent pas simplement, et une somme inexacte se lit malgré tout comme une réponse.
+
+### Prêts et charges
+
+Pour une nouvelle ligne, vous choisissez d'abord le **type**. Ce que la fenêtre demande ensuite en dépend.
+
+Un **prêt** — crédit hypothécaire, prêt à tempérament, vente à tempérament, ouverture de crédit ou leasing — demande l'organisme de crédit, le numéro de contrat, la durée, le montant initial, le solde, le remboursement mensuel, le taux d'intérêt, les dates de début et de fin, la régularité du remboursement (régulier, régularisé ou fiché) et une éventuelle indemnité de remploi.
+
+- **Organisme de crédit** propose vos institutions de crédit, mais vous pouvez aussi y taper un autre nom : un prêt en cours se trouve souvent auprès d'une banque avec laquelle vous ne travaillez pas.
+- Cochez **Reprendre** lorsque le nouveau crédit reprend ce prêt.
+
+Pour un **loyer**, une **pension alimentaire** ou une **autre charge**, la fenêtre ne demande que le montant par mois et la période, avec la case **Disparaît après le nouveau crédit** — par exemple le loyer qui s'arrête lorsque votre client emménage dans son nouveau logement.
+
+Sur le dossier lui-même figure l'onglet **Prêts et charges**, à côté de *Parties*, *Remarques* et *Demandés* : les lignes de tous les demandeurs réunies, avec une colonne **Demandeur**. Vous voyez ainsi, à côté des contrats du nouveau crédit, ce que vos clients remboursent déjà aujourd'hui. La colonne **Après le crédit** indique quels prêts sont repris et quelles charges disparaissent. Vous pouvez aussi y ajouter directement une ligne ; vous choisissez alors d'abord le demandeur.
+
+![Un dossier de crédit avec, en bas à droite, l'onglet Prêts et charges ouvert, à côté de Parties, Remarques et Demandés : pour chaque ligne le demandeur, le type, l'organisme de crédit, le solde, le montant par mois, la date de fin et, dans la colonne Après le crédit, si le prêt est repris ou si la charge disparaît. Au-dessus, les contrats du nouveau crédit.](../images/kredietdossier-leningen-lasten-fr.png "Ce que vos clients remboursent déjà aujourd'hui, à côté du nouveau crédit"){ .volle-breedte }
+
+!!! tip "Dans la fiche d'investissement"
+    Sous **Solde reprise de crédits**, la fiche d'investissement affiche la somme des soldes des prêts que vous avez cochés *Reprendre*. C'est une aide à la saisie : le montant du champ lui-même, c'est vous qui le fixez.
 
 ### Contrats
 

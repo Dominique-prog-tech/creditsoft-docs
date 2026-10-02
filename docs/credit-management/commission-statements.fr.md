@@ -107,4 +107,4 @@ C'est possible **tant que le bordereau n'est pas payé**. S'il l'est, le bouton 
 
 ## Par mois ou par trimestre
 
-Par défaut, une série reprend un mois. Si votre bureau décompte par trimestre, une série reprend trois mois à la fois et vous choisissez un trimestre plutôt qu'un mois lors de la création. Ce choix vaut pour tout votre bureau et se règle sous [Paramètres de commission](../beheer/commissie-instellingen.md), dans la Gestion de la plateforme.
+Par défaut, une série reprend un mois. Si votre bureau décompte par trimestre, une série reprend trois mois à la fois et vous choisissez un trimestre plutôt qu'un mois lors de la création. Ce choix vaut pour tout votre bureau et se règle sous [Paramètres de commission](../beheer/commissie-instellingen.md), dans l'**Administration**.

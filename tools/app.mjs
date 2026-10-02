@@ -44,6 +44,11 @@ export const ID = {
   // ⚠️ En de oude opmerking hier — "het enige met een ACTIEF schema" — was gewoon onwaar: 1832 dossiers
   // dragen er een, honderden daarvan een actief. Gemeten, niet aangenomen.
   dossierMetSchema: '903a2553-1e1d-4a9d-baab-f456bd96145c',
+  // DEMO-4885 — twee aanvragers met vijf SOORTEN leningen en lasten: huur die wegvalt, alimentatie, een
+  // kredietopening, een lening op afbetaling en een overgenomen hypothecair krediet bij een niet-partnerbank;
+  // Sam Cools draagt een eindejaarspremie PER JAAR. Gekozen met een query op tenant_demo (02/10/2026), ná de
+  // knop "Aanvragersregels aanvullen". Valt om na een her-seed: de regels hangen aan het aanvragersnummer.
+  dossierLasten: 'f2bfe95b-9020-4a33-9a17-fc1418c4a2cb',
   schema:   'a9b48983-8066-4209-a315-8f950e6983dd',   // het actieve schema van DEMO-1089
   // ⚠️ Een aanbrenger die AL portaaltoegang heeft. Met een aanbrenger zónder toegang toont het venster
   // "Deze aanbrenger heeft nog geen portaaltoegang" — en dan mist het beeld precies de knoppen waar de

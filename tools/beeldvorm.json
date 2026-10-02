@@ -212,7 +212,7 @@
   },
   "kredietdossier-fiche": {
     "breedte": 1920,
-    "hoogte": 860
+    "hoogte": 1080
   },
   "kredietdossiers-lijst": {
     "breedte": 1700,
@@ -435,5 +435,18 @@
   "dashboard-aanbrengers-fr": {
     "breedte": 1280,
     "hoogte": 700
+  },
+  "kredietdossier-leningen-lasten": {
+    "breedte": 1920,
+    "hoogte": 1080
+  },
+  "kredietdossier-aanvrager-inkomsten": {
+    "breedte": 1700,
+    "hoogte": 900,
+    "element": {
+      "kies": ".dxbl-popup",
+      "bevat": "Aanvrager bewerken|Modifier le demandeur",
+      "minBreed": 700
+    }
   }
 }

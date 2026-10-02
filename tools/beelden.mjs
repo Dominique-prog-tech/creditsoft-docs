@@ -250,7 +250,27 @@ const SCHOTEN = [
   ['professionals-fiche',          `/crm/professionals/${ID.prof}`],
   ['kredietinstellingen-fiche',    `/credit/financial-institutions/${ID.fin}`],
   ['verzekeraars-fiche',           `/credit/insurance-institutions/${ID.verz}`],
+  // ⚠️ 1920×1080 en niet ×860 sinds 02/10/2026 (beeldvorm.json). Bij 860 schuift de dossierpagina, en vielen de
+  //    rijen van de aanvragerslijst en van het tabblad Leningen en lasten ONDER de rand — terwijl hun tekst wél in
+  //    de pagina stond, dus de belofte "Valt weg" haalde de controle. Aanwezig is niet zichtbaar. Gemeten: de
+  //    laatste rij eindigt op 983 px.
   ['kredietdossier-fiche',         `/credit-files/${ID.dossier}`],
+  // kv2 (02/10/2026). ⚠️ Het tablabel draagt een teller — zie de nota bij relaties-gevraagde-documenten: geen tab().
+  ['kredietdossier-leningen-lasten', `/credit-files/${ID.dossierLasten}`, async p => {
+      await p.getByRole('tab', { name: /^(Leningen en lasten|Prêts et charges)\s*\(/i }).first().click();
+      await p.waitForTimeout(2500);
+  }],
+  ['kredietdossier-aanvrager-inkomsten', `/credit-files/${ID.dossierLasten}`, async p => {
+      // Sam Cools: zijn inkomsten dragen een jaarbedrag, en dát is wat de periodekolom moet tonen.
+      // ⚠️ Een dubbelklik vlak na het laden valt soms in het niets (het circuit is er nog niet) — dan opnieuw.
+      const venster = p.locator('.dxbl-popup').filter({ hasText: /Aanvrager bewerken|Modifier le demandeur/ });
+      for (let i = 0; i < 3 && !(await venster.count()); i++) {
+        await p.getByRole('gridcell', { name: /Cools/ }).first().dblclick();
+        await p.waitForTimeout(2000);
+      }
+      await venster.getByRole('tab', { name: /^(Inkomsten|Revenus)\s*\(/i }).first().click();
+      await p.waitForTimeout(2500);
+  }],
   ['borderel-fiche',               `/commissie/borderel/${ID.borderel}`],
   ['navigatie',                    '/dashboard'],
 
@@ -681,6 +701,10 @@ const VERWACHT = {
   'commissieschema-fiche':      /Algemene gegevens|Données générales/i,
   // "Omzetting" staat enkel op het tabblad Productie — niet op de fiche, niet op het dashboard.
   'aanbrengers-productie':      /Omzetting|Taux de conversion/,
+  // kv2: op de INHOUD van een regel, niet op het tablabel of de kolomkop — die staan er ook bij een lege lijst
+  // (de kop "Na het krediet" niet, maar een lijst zonder overgenomen of wegvallende regel bewijst de kolom niet).
+  'kredietdossier-leningen-lasten': /\bValt weg\b|\bDisparaît\b/,
+  'kredietdossier-aanvrager-inkomsten': /Per jaar|\bPar an\b/,
 };
 
 // Merktekens uit de alt-tekst: hoofdletterwoord + eventuele vervolgwoorden, zonder verbindingswoord op het

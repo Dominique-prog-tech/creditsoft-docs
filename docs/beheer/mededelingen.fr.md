@@ -6,7 +6,7 @@ Les communications vous permettent de préparer des messages que vos courtiers v
 
 ## Ouvrir l'écran
 
-Cliquez en bas à gauche sur **Gestion de la plateforme**, puis sur la tuile **Communications**, dans le groupe *Communication*.
+Cliquez en bas à gauche sur **Administration**, puis sur la tuile **Communications**, dans le groupe *Communication*.
 
 La liste affiche tous vos messages. La colonne **En cours** indique si un message est visible pour vos courtiers à ce moment.
 

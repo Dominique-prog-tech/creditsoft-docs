@@ -359,7 +359,7 @@
   "kredietdossier-fiche": {
     "route": "/credit-files/00038c40-df6b-4992-83e4-13847c7a0a59",
     "app": {
-      "sha": "640b20c8cd9c6fbc73c039a6240c943f4e70bdcb",
+      "sha": "3f7811d0a63a5b949a15243a62626356662a57f5",
       "vuil": true
     }
   },
@@ -555,7 +555,7 @@
   "portaal-dossier-detail": {
     "route": "/portal-intermediary/dossiers",
     "app": {
-      "sha": "640b20c8cd9c6fbc73c039a6240c943f4e70bdcb",
+      "sha": "3f7811d0a63a5b949a15243a62626356662a57f5",
       "vuil": true
     }
   },
@@ -975,7 +975,7 @@
   "kredietdossier-fiche-fr": {
     "route": "/credit-files/00038c40-df6b-4992-83e4-13847c7a0a59",
     "app": {
-      "sha": "640b20c8cd9c6fbc73c039a6240c943f4e70bdcb",
+      "sha": "3f7811d0a63a5b949a15243a62626356662a57f5",
       "vuil": true
     }
   },
@@ -1171,7 +1171,7 @@
   "portaal-dossier-detail-fr": {
     "route": "/portal-intermediary/dossiers",
     "app": {
-      "sha": "640b20c8cd9c6fbc73c039a6240c943f4e70bdcb",
+      "sha": "3f7811d0a63a5b949a15243a62626356662a57f5",
       "vuil": true
     }
   },
@@ -1340,6 +1340,34 @@
     "route": "/dashboard",
     "app": {
       "sha": "ee4999cfef312f051c04804f04c1fb212bd27083",
+      "vuil": true
+    }
+  },
+  "kredietdossier-leningen-lasten": {
+    "route": "/credit-files/f2bfe95b-9020-4a33-9a17-fc1418c4a2cb",
+    "app": {
+      "sha": "3f7811d0a63a5b949a15243a62626356662a57f5",
+      "vuil": true
+    }
+  },
+  "kredietdossier-aanvrager-inkomsten": {
+    "route": "/credit-files/f2bfe95b-9020-4a33-9a17-fc1418c4a2cb",
+    "app": {
+      "sha": "3f7811d0a63a5b949a15243a62626356662a57f5",
+      "vuil": true
+    }
+  },
+  "kredietdossier-leningen-lasten-fr": {
+    "route": "/credit-files/f2bfe95b-9020-4a33-9a17-fc1418c4a2cb",
+    "app": {
+      "sha": "3f7811d0a63a5b949a15243a62626356662a57f5",
+      "vuil": true
+    }
+  },
+  "kredietdossier-aanvrager-inkomsten-fr": {
+    "route": "/credit-files/f2bfe95b-9020-4a33-9a17-fc1418c4a2cb",
+    "app": {
+      "sha": "3f7811d0a63a5b949a15243a62626356662a57f5",
       "vuil": true
     }
   }

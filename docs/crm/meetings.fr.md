@@ -44,7 +44,7 @@ Le courriel ne part **pas tout seul**. Vous le relisez, ajoutez éventuellement 
 !!! tip "Où retrouver la confirmation envoyée"
     Sur la fiche du contact ou de l'apporteur, sous **Journal → Courrier**. Vous y voyez ce qui a été envoyé exactement, avec la date et le destinataire.
 
-Le texte lui-même se modifie dans **Gestion de la plateforme → Modèles d'e-mail**, modèle *Confirmation de rendez-vous*. Les espaces réservés `{{meeting.subject}}`, `{{meeting.date}}`, `{{meeting.from}}`, `{{meeting.to}}` et `{{meeting.location}}` sont remplis par CreditSoft avec les données du rendez-vous. Si vous préférez ne pas composer vous-même, utilisez `{{meeting.details}}` : c'est un bloc prêt à l'emploi indiquant quand et où.
+Le texte lui-même se modifie dans **Administration → Modèles d'e-mail**, modèle *Confirmation de rendez-vous*. Les espaces réservés `{{meeting.subject}}`, `{{meeting.date}}`, `{{meeting.from}}`, `{{meeting.to}}` et `{{meeting.location}}` sont remplis par CreditSoft avec les données du rendez-vous. Si vous préférez ne pas composer vous-même, utilisez `{{meeting.details}}` : c'est un bloc prêt à l'emploi indiquant quand et où.
 
 ## Modifier un rendez-vous
 

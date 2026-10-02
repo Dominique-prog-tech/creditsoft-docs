@@ -49,15 +49,15 @@ Met **Nieuw dossier** bovenaan de lijst maakt u een leeg dossier aan. Welke stat
 
 ## Het dossier
 
-![Een geopend kredietdossier: bovenaan de kopkaart met status, intern nummer, eigenaar en sales als keuzelijst, de financiële instelling, de aanbrenger, het kredietbedrag, het commissiebedrag met het vinkje inhouden ernaast en de datum akte, met rechts de knoppen Bewaren, Annuleren, Afdruk overzicht en Verwijderen. Daaronder links de datums met daaronder de uiterste datums voor het aanbod, de akte en de opschortende voorwaarden, het type dossier, de schattingswaarde en de quotiteit met het vinkje Getekend aanbod verzonden en het veld Interne opmerkingen; rechts de contracten en onderaan de tabbladen Partijen, Opmerkingen en Gevraagd, elk met een teller.](../images/kredietdossier-fiche.png "Het kredietdossier: alles op één pagina"){ .volle-breedte }
+![Een geopend kredietdossier: bovenaan de kopkaart met status, intern nummer, eigenaar en sales als keuzelijst, de financiële instelling, de aanbrenger, het kredietbedrag, het commissiebedrag met het vinkje inhouden ernaast en de datum akte, met rechts de knoppen Bewaren, Annuleren, Afdruk overzicht en Verwijderen. Daaronder links de datums van indiening en goedkeuring met het type dossier, de ondertekening van het aanbod naast de uiterste datum voor het aanbod, de uiterste datums voor de akte en de opschortende voorwaarden, het doel, de schattingswaarde en de quotiteit met het vinkje Getekend aanbod verzonden en het veld Interne opmerkingen, en onder die kaart de kredietaanvragers met per aanvrager het aantal inkomsten en lasten; rechts de contracten en onderaan de tabbladen Partijen, Opmerkingen, Gevraagd en Leningen en lasten, elk met een teller.](../images/kredietdossier-fiche.png "Het kredietdossier: alles op één pagina"){ .volle-breedte }
 
-Het dossier is één pagina. Bovenaan staat het kernblok met de gegevens die u het vaakst nodig hebt; daaronder staan links de datums en het pand, rechts de contracten. Onderaan rechts staan **Partijen**, **Opmerkingen** en **Gevraagd** naast elkaar als tabbladen — drie lijsten die dezelfde plaats delen, zodat u niet hoeft te scrollen om ze alle drie te bereiken.
+Het dossier is één pagina. Bovenaan staat het kernblok met de gegevens die u het vaakst nodig hebt; daaronder staan links de datums en het pand, rechts de contracten. Onderaan rechts staan **Partijen**, **Opmerkingen**, **Gevraagd** en **Leningen en lasten** naast elkaar als tabbladen — vier lijsten die dezelfde plaats delen, zodat u niet hoeft te scrollen om ze alle vier te bereiken.
 
 ### Dossiergegevens
 
 Het kopblok bovenaan draagt wat u het vaakst nodig hebt: intern nummer, **eigenaar**, **sales**, **status**, financiële instelling, aanbrenger, het kredietbedrag met het vinkje *Inhouden*, en de datum van de akte.
 
-In de kaart eronder links staan het doel, het type dossier, de quotiteit en de sleuteldatums: indiening, goedkeuring en ondertekening van het aanbod, en daaronder de uiterste datums voor het aanbod, de akte en de opschortende voorwaarden. Die drie uiterste datums verschijnen op het [dashboard](../getting-started/dashboard.md) bij de termijnen.
+In de kaart eronder links staan bovenaan de datums van indiening en goedkeuring, met het type dossier. Daaronder staat de ondertekening van het aanbod naast de uiterste datum voor het aanbod, en dan de uiterste datums voor de akte en de opschortende voorwaarden. Die drie uiterste datums verschijnen op het [dashboard](../getting-started/dashboard.md) bij de termijnen. Onderaan de kaart volgen het doel, de schattingswaarde en de quotiteit.
 
 !!! tip "Een leeg bedrag blijft leeg"
     Laat u een bedrag oningevuld, dan blijft het leeg — het wordt geen € 0. Dat onderscheid telt: bij een dossier zonder kredietbedrag ziet u dat het nog niet bekend is, niet dat het nul zou zijn.
@@ -79,7 +79,43 @@ De rest van het pand zit achter de knop **Investeringsfiche & pand…**: het pan
 
 ### Kredietaanvragers
 
-Wie het krediet aanvraagt. Koppel een bestaande relatie met **+ Aanvrager koppelen** en vul per aanvrager de werkgever en het netto maandinkomen in.
+Wie het krediet aanvraagt. Koppel een bestaande relatie met **+ Aanvrager koppelen**. De lijst toont per aanvrager hoeveel **inkomsten** en hoeveel **lasten** er ingevuld zijn.
+
+Dubbelklik een aanvrager om zijn venster te openen. Het heeft drie tabbladen:
+
+- **Algemeen** — de relatie. De knop **Bewaren** onderaan gaat over dit tabblad.
+- **Inkomsten** — elk inkomen is een regel: het type, het bedrag en of dat bedrag **per maand** of **per jaar** geldt, met de werkgever, de functie, het soort contract en de periode waarin het loopt.
+- **Leningen en lasten** — de kredieten die de aanvrager vandaag afbetaalt, en zijn vaste lasten. Zie [Leningen en lasten](#leningen-en-lasten) hieronder.
+
+![Het venster van een kredietaanvrager op het tabblad Inkomsten: bovenaan de tabbladen Algemeen, Inkomsten en Leningen en lasten, elk met een teller, daaronder de knop Inkomen toevoegen en een lijst met per inkomen het type, het bedrag, de periode per maand of per jaar, de werkgever en de begin- en einddatum; onderaan de knoppen Bewaren, Annuleren en Verwijderen.](../images/kredietdossier-aanvrager-inkomsten.png "Het venster van een aanvrager, met zijn inkomsten")
+
+Een regel bewaart u in haar eigen venster: ze staat meteen op het dossier, los van de knop **Bewaren** van de aanvrager. Een aanvrager die u net koppelt, bewaart u daarom eerst; daarna voegt u zijn inkomsten en lasten toe.
+
+!!! tip "Het type stelt de periode voor"
+    Kiest u *Vakantiegeld* of *Eindejaarspremie*, dan springt de periode op **Per jaar**; bij de andere types op **Per maand**. U kan ze altijd aanpassen.
+
+De inkomenstypes beheert u zelf onder **Platformbeheer → [Keuzelijsten](../beheer/keuzelijsten.md)**, in de lijst *Inkomenstype*. Elk kantoor begint met dezelfde elf: netto maandinkomen, buitenlands inkomen, vakantiegeld, eindejaarspremie, maaltijdcheques, kindergeld, vier soorten huurinkomsten (privé of beroeps, huidig of toekomstig) en ander inkomen.
+
+!!! note "Geen totalen"
+    CreditSoft telt de inkomsten niet op en berekent geen schuldgraad. Een maandloon en een jaarlijkse premie zijn niet zomaar op te tellen, en een som die niet klopt, leest toch als een antwoord.
+
+### Leningen en lasten
+
+Bij een nieuwe regel kiest u eerst de **soort**. Wat het venster daarna vraagt, hangt daarvan af.
+
+Een **lening** — hypothecair krediet, lening op afbetaling, verkoop op afbetaling, kredietopening of leasing — vraagt de kredietmaatschappij, het contractnummer, de looptijd, het oorspronkelijke bedrag, het saldo, de aflossing per maand, de rentevoet, de begin- en einddatum, de regelmatigheid van de terugbetaling (regelmatig, geregulariseerd of geficheerd) en een eventuele wederbeleggingsvergoeding.
+
+- **Kredietmaatschappij** stelt uw kredietinstellingen voor, maar u mag er ook een andere naam in typen: een lopende lening zit vaak bij een bank waarmee u niet samenwerkt.
+- **Overnemen** vinkt u aan wanneer het nieuwe krediet deze lening overneemt.
+
+Bij **huur**, **alimentatie** of een **andere last** vraagt het venster enkel het bedrag per maand en de periode, met het vinkje **Valt weg na het nieuwe krediet** — bijvoorbeeld de huur die stopt wanneer uw klant naar zijn nieuwe woning verhuist.
+
+Op het dossier zelf staat het tabblad **Leningen en lasten**, naast *Partijen*, *Opmerkingen* en *Gevraagd*: de regels van alle aanvragers samen, met een kolom **Aanvrager**. Zo ziet u naast de contracten van het nieuwe krediet wat uw klanten vandaag al afbetalen. De kolom **Na het krediet** zegt welke leningen overgenomen worden en welke lasten wegvallen. U kan er ook rechtstreeks een regel toevoegen; dan kiest u eerst de aanvrager.
+
+![Een kredietdossier met onderaan rechts het tabblad Leningen en lasten geopend, naast Partijen, Opmerkingen en Gevraagd: per regel de aanvrager, de soort, de kredietmaatschappij, het saldo, het bedrag per maand, de einddatum en in de kolom Na het krediet of de lening overgenomen wordt of de last wegvalt. Daarboven de contracten van het nieuwe krediet.](../images/kredietdossier-leningen-lasten.png "Wat uw klanten vandaag al afbetalen, naast het nieuwe krediet"){ .volle-breedte }
+
+!!! tip "In de investeringsfiche"
+    Onder **Saldo overname kredieten** toont de investeringsfiche de som van de saldo's van de leningen die u op *Overnemen* zette. Het is een hulp bij het invullen: het bedrag in het veld zelf bepaalt u.
 
 ### Contracten
 

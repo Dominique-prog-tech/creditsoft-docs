@@ -4,7 +4,7 @@ Des lignes de commission de périodes **écoulées** qui n'ont jamais figuré su
 
 ## Ouvrir l'écran
 
-Rendez-vous dans **Gestion de la plateforme** en bas du menu, puis cliquez sous *Crédit* sur la tuile **Reliquats de commission**.
+Rendez-vous dans **Administration** en bas du menu, puis cliquez sous *Crédit* sur la tuile **Reliquats de commission**.
 
 ![L'écran Reliquats de commission : en haut le montant total, le nombre de lignes et le nombre de dossiers, en dessous la liste indiquant par ligne l'apporteur, le dossier, la raison sous forme d'étiquette — Jamais décompté ou Schéma arrêté — la période de et à, le nombre de lignes et le montant.](../images/commissie-restanten-fr.png "Ce qui est resté, avec la raison"){ .volle-breedte }
 
