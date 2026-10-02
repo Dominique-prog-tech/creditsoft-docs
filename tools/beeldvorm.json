@@ -509,5 +509,13 @@
   "dashboard-verstrekkers-fr": {
     "breedte": 1600,
     "hoogte": 1040
+  },
+  "dashboard-stilgevallen": {
+    "breedte": 1600,
+    "hoogte": 700
+  },
+  "dashboard-stilgevallen-fr": {
+    "breedte": 1600,
+    "hoogte": 700
   }
 }

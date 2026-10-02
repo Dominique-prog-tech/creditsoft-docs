@@ -113,6 +113,17 @@ cliquez sur **Afficher les … autres**, comme pour les délais.
     Pour les délais, un dossier disparaît dès que son statut relève d'une phase finale. Pas ici : un crédit
     dont l'acte est passé *est* dans une phase finale, et c'est précisément là que ce suivi commence.
 
+## Dossiers à l'arrêt
+
+Sous le suivi figure **Dossiers à l'arrêt** : les dossiers en cours sur lesquels rien ne s'est passé depuis **60 jours ou plus**. Le dossier arrêté le plus récemment figure en haut — il est encore à sauver.
+
+![Le bloc Dossiers à l'arrêt du tableau de bord : le titre avec le nombre, la mention en cours et rien depuis 60 jours ou plus, et par ligne le client, le statut et le propriétaire, avec à droite à l'arrêt depuis une date et la dernière trace.](../images/dashboard-stilgevallen-fr.png "Ce qui est à l'arrêt depuis deux mois, avec la dernière trace"){ .volle-breedte }
+
+- **Ce qui compte comme activité :** enregistrer le dossier, une remarque, une tâche, un e-mail, un appel, une note ou une pièce jointe dans le journal, un contrat modifié, un document demandé reçu ou évalué, et les dates d'introduction, de dépôt, d'approbation et de signature de l'offre. **Ouvrir** un dossier ne compte pas. Après *dernier :*, vous voyez quelle a été la dernière trace.
+- **En cours** signifie : pas d'acte, et un statut qui ne se trouve pas dans une phase de clôture — la même règle que l'onglet *Production*. Sans [Phases du tableau de bord](../beheer/dashboard-fases.md) réglées, le bloc indique comment les régler, sans chiffre.
+- **À l'arrêt depuis plus d'un an** figure à part en bas, avec un lien vers ces dossiers. Ce sont souvent des dossiers à clôturer.
+- **Afficher les …** ouvre la liste des [dossiers de crédit](../credit-management/credit-files.md) avec exactement les dossiers à l'arrêt.
+
 ## Les trois graphiques
 
 Sous les tuiles figurent trois graphiques. Ils portent tous les trois sur **la même année** — celle que vous

@@ -111,6 +111,17 @@ Beide kaarten tonen de eerste acht, de vroegste datum bovenaan. Zitten er meer a
     Bij de termijnen verdwijnt een dossier zodra zijn status in een eindfase staat. Hier niet: een geakteerd
     krediet stáát in een eindfase, en precies dan begint deze opvolging.
 
+## Stilgevallen dossiers
+
+Onder de opvolging staat **Stilgevallen dossiers**: de lopende dossiers waarop al **60 dagen of langer** niets gebeurde. Het recentst stilgevallen dossier staat bovenaan — dat is nog te redden.
+
+![Het blok Stilgevallen dossiers op het dashboard: de titel met het aantal, de vermelding lopend en 60 dagen of langer niets gebeurd, en per regel de klant, de status en de eigenaar, met rechts stil sinds een datum en wat het laatste spoor was.](../images/dashboard-stilgevallen.png "Wat al twee maanden stilligt, met het laatste spoor erbij"){ .volle-breedte }
+
+- **Wat telt als activiteit:** het dossier bewaren, een opmerking, een taak, een mail, een gesprek, een notitie of bijlage in het journaal, een gewijzigd contract, een gevraagd document dat binnenkwam of beoordeeld werd, en de datums van invoer, indiening, goedkeuring en ondertekening van het aanbod. Een dossier **openen** telt niet. Achter *laatste:* ziet u wat het laatste spoor was.
+- **Lopend** betekent: geen akte, en een status die niet in een afsluitende fase staat — dezelfde regel als het tabblad *Productie*. Zonder ingestelde [Dashboard-fases](../beheer/dashboard-fases.md) toont het blok hoe u ze instelt, en geen getal.
+- **Meer dan een jaar stil** staat apart onderaan, met een link naar die dossiers. Vaak zijn het dossiers die afgesloten moeten worden.
+- **Toon alle** opent de lijst [Kredietdossiers](../credit-management/credit-files.md) met precies de stilgevallen dossiers.
+
 ## De drie grafieken
 
 Onder de tegels staan drie grafieken. Ze gaan alle drie over **hetzelfde jaar** — dat u met de pijltjes

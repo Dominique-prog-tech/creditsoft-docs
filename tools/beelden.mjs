@@ -321,6 +321,17 @@ const SCHOTEN = [
       });
       if (!inBeeld) throw new Error('de teller onder Waarom afgevallen staat niet in beeld');
   }],
+  // ── mak2 (02/10/2026): stilgevallen dossiers ──
+  // Het blok heeft een eigen anker (data-blok). Merkteken "stil sinds" staat enkel in een GEVULDE regel; het recept eist
+  // bovendien dat het blok in beeld staat — de teller staat ook in innerText als hij buiten beeld valt.
+  ['dashboard-stilgevallen',    '/dashboard', async p => {
+      const blok = p.locator('[data-blok="stilgevallen"]');
+      await blok.waitFor({ timeout: 15000 });
+      await blok.evaluate(e => e.scrollIntoView({ block: 'start' }));
+      await p.waitForTimeout(1200);
+      const inBeeld = await blok.evaluate(e => { const r = e.getBoundingClientRect(); return r.top >= 0 && r.bottom <= window.innerHeight; });
+      if (!inBeeld) throw new Error('het blok Stilgevallen dossiers staat niet volledig in beeld');
+  }],
   // ── k2 (02/10/2026): per kredietverstrekker ──
   // De tabel telt in de demo een kleine dertig rijen: hoog venster, en het recept eist dat de onderste regel (Kantoor) in
   // beeld staat — een beeld zonder die regel mist net het ijkpunt waar de tekst over gaat.
@@ -845,6 +856,8 @@ const VERWACHT = {
   // k1b: het label staat er enkel bij een afsluitende status (een lopend dossier faalt hier); de gekozen reden meet het
   // recept zelf, want een invoerwaarde staat niet in innerText.
   'kredietdossier-reden-afvallen': /Reden van afvallen|Motif d'abandon/,
+  // mak2: enkel in een gevulde regel van het blok.
+  'dashboard-stilgevallen':     /stil sinds \d{2}\/\d{2}\/\d{4}|à l'arrêt depuis le \d{2}\/\d{2}\/\d{4}/,
   // k2: de kolomkop bestaat enkel sinds 1.151.0.
   'dashboard-verstrekkers':     /Geweigerd door de bank|Refusé par la banque/,
   // De teller bestaat enkel sinds k1b — een beeld van vóór 1.150.0 haalt hem niet.
