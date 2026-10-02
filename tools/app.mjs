@@ -59,6 +59,10 @@ export const ID = {
   // bij twee, een saldo bij één. Zo toont de lijst elk geval en draagt de somregel drie bedragen. Gekozen met een
   // query na "Opvolging en patrimonium aanvullen"; valt om na een her-seed (het patrimonium hangt aan het nummer).
   dossierPatrimonium: '65fcb9bd-0a60-404a-a6dd-d9275361241e',
+  // DEMO-1045 (k1b, 02/10/2026) — status Krediet geweigerd met de reden "Bank: quotiteit te hoog". Een dossier zónder
+  // afsluitende status toont het veld niet, dus een lopend dossier bewijst niets. Gekozen met een query na "Opvolging,
+  // patrimonium en redenen van afvallen aanvullen"; valt om na een her-seed (de reden hangt aan het nummer).
+  dossierAfgevallen: '141a60e1-654d-413a-bfae-c70eae530b2f',
   schema:   'a9b48983-8066-4209-a315-8f950e6983dd',   // het actieve schema van DEMO-1089
   // ⚠️ Een aanbrenger die AL portaaltoegang heeft. Met een aanbrenger zónder toegang toont het venster
   // "Deze aanbrenger heeft nog geen portaaltoegang" — en dan mist het beeld precies de knoppen waar de

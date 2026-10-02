@@ -71,6 +71,18 @@ Deux cases méritent votre attention :
 
 En bas du bloc figure **Remarques internes** : un champ de texte libre pour vos propres notes sur ce dossier. C'est autre chose que l'onglet *Remarques*, où chaque ligne porte l'auteur et la date.
 
+### Motif d'abandon
+
+Si le **statut** clôture le dossier sans acte — par exemple *Crédit refusé* ou *Sans suite* —, deux champs figurent sous le statut : **Motif d'abandon** et **Précision**. Indiquez si la banque a refusé ou si le client a renoncé, et pourquoi. Dans la précision, vous écrivez ce que le choix ne dit pas.
+
+![Le bloc principal d'un dossier de crédit avec le statut Crédit refusé : sous le statut, le numéro de dossier et le propriétaire figurent le champ Motif d'abandon avec le choix Banque : quotité trop élevée et le champ Précision.](../images/kredietdossier-reden-afvallen-fr.png "Pourquoi ce dossier a été abandonné"){ .volle-breedte }
+
+- Le champ apparaît dès que vous choisissez un tel statut. Les statuts qui clôturent un dossier se règlent dans les **Phases du tableau de bord** : un statut dans une phase finale qui ne compte pas comme *réussie*. Si votre bureau n'a pas encore réglé de phases, le champ figure sur chaque dossier.
+- Un motif n'est pas obligatoire. L'onglet *Production* du [tableau de bord](../getting-started/dashboard.md#longlet-production) montre pourquoi vos dossiers sont abandonnés, et aussi pour combien un motif est rempli.
+- Si vous rouvrez le dossier plus tard, le champ disparaît. Le motif reste enregistré, mais ne compte plus.
+- Vous adaptez les motifs sous [Listes de choix](../beheer/keuzelijsten.md#le-motif-dabandon).
+- Vos apporteurs voient le motif dans leur portail, mais ne peuvent pas le modifier.
+
 ### Bien
 
 Sur la fiche elle-même figure la **valeur estimée**, avec la quotité à côté.

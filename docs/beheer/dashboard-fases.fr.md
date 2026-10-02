@@ -39,7 +39,7 @@ Une **phase** est une colonne du pipeline sur le tableau de bord : un groupe de 
 
 **Suivi** s'utilise pour les phases où le crédit est bouclé mais où des pièces manquent encore — l'acte est passé et il reste une attestation à recevoir. Ces dossiers apparaissent alors dans l'aperçu [Aperçu global](../credit-management/global-overview.md) sous *Suivi après acte*.
 
-**Réussi** se coche sur la phase finale des dossiers aboutis — dans la plupart des bureaux, *Finalisé*. L'onglet [Production](../crm/contributors.md#la-production-dun-apporteur) d'un apporteur compte un dossier dans une phase finale **sans** cette case comme abandonné, avec le nom de la phase comme motif. Sans la case sur *Finalisé*, un dossier finalisé sans date d'acte y figurerait donc comme abandonné. La phase standard *Finalisé* porte déjà la case ; si vous avez nommé autrement une phase finale, cochez-la ici.
+**Réussi** se coche sur la phase finale des dossiers aboutis — dans la plupart des bureaux, *Finalisé*. L'onglet [Production](../crm/contributors.md#la-production-dun-apporteur) d'un apporteur compte un dossier dans une phase finale **sans** cette case comme abandonné — avec le [motif d'abandon](../credit-management/credit-files.md#motif-dabandon) du dossier, ou le nom de la phase s'il n'y en a pas. Sur un tel dossier apparaît aussi le champ *Motif d'abandon*. Sans la case sur *Finalisé*, un dossier finalisé sans date d'acte y figurerait donc comme abandonné. La phase standard *Finalisé* porte déjà la case ; si vous avez nommé autrement une phase finale, cochez-la ici.
 
 En bas du tableau figure une ligne vide : saisissez-y un nom pour ajouter une phase.
 

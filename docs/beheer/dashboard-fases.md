@@ -39,7 +39,7 @@ Een **fase** is een kolom in de pijplijn op het dashboard: een groep dossierstat
 
 **Opvolging** gebruikt u voor fases waar het krediet rond is maar er nog stukken ontbreken — de akte is gepasseerd en er wacht nog een attest. Die dossiers verschijnen dan in het overzicht [Globaal overzicht](../credit-management/global-overview.md) onder *Opvolging na akte*.
 
-**Geslaagd** zet u op de eindfase van de dossiers die rond zijn — bij de meeste kantoren *Afgewerkt*. Het tabblad [Productie](../crm/contributors.md#de-productie-van-een-aanbrenger) van een aanbrenger telt een dossier in een eindfase **zonder** dit vinkje als afgevallen, met de naam van de fase als reden. Zonder het vinkje op *Afgewerkt* zou een afgewerkt dossier zonder aktedatum daar dus als afgevallen staan. De standaardfase *Afgewerkt* draagt het vinkje al; hebt u zelf een eindfase anders genoemd, vink ze dan hier aan.
+**Geslaagd** zet u op de eindfase van de dossiers die rond zijn — bij de meeste kantoren *Afgewerkt*. Het tabblad [Productie](../crm/contributors.md#de-productie-van-een-aanbrenger) van een aanbrenger telt een dossier in een eindfase **zonder** dit vinkje als afgevallen — met de [reden van afvallen](../credit-management/credit-files.md#reden-van-afvallen) van het dossier, of de naam van de fase als er geen reden is. Op zo'n dossier verschijnt ook het veld *Reden van afvallen*. Zonder het vinkje op *Afgewerkt* zou een afgewerkt dossier zonder aktedatum daar dus als afgevallen staan. De standaardfase *Afgewerkt* draagt het vinkje al; hebt u zelf een eindfase anders genoemd, vink ze dan hier aan.
 
 Onderaan de tabel staat een lege regel: vul daar een naam in om een fase toe te voegen.
 

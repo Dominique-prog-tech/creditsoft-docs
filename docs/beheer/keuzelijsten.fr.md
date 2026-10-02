@@ -59,6 +59,12 @@ Avec ces chiffres, un contrat propose sa **première révision du taux**, et le
 [tableau de bord](../getting-started/dashboard.md#le-suivi-des-credits-en-cours) affiche les révisions à venir.
 Si vous laissez *Ensuite tous les* vide, seule la première révision apparaît.
 
+## Le motif d'abandon
+
+Sous **Motif d'abandon** figurent les motifs que vous choisissez sur un [dossier de crédit](../credit-management/credit-files.md#motif-dabandon) abandonné. Chaque bureau commence avec onze : six pour lesquels la banque a refusé, quatre pour lesquels le client a renoncé, et *Autre*. Le nom commence par *Banque :* ou *Client :* — ainsi, le graphique de l'onglet *Production* du [tableau de bord](../getting-started/dashboard.md#longlet-production) distingue les deux sortes.
+
+Renommez, ajoutez ou supprimez librement. Un motif que vous supprimez reste sur les dossiers qui le portent déjà et ne revient pas de lui-même.
+
 ## Quelles listes ne pouvez-vous pas modifier ?
 
 Le sélecteur en haut reprend les listes qui sont **les vôtres** : les libellés avec lesquels vous décrivez vos

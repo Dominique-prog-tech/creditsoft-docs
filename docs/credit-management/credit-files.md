@@ -71,6 +71,18 @@ Twee vinkjes verdienen aandacht:
 
 Onderaan het blok staat **Interne opmerkingen**: één vrij tekstveld voor uw eigen notities bij dit dossier. Dat is iets anders dan het tabblad *Opmerkingen*, waar elke regel de gebruiker en de datum draagt.
 
+### Reden van afvallen
+
+Sluit de **status** het dossier af zonder akte — bijvoorbeeld *Krediet geweigerd* of *Zonder gevolg* — dan staan er onder de status twee velden: **Reden van afvallen** en **Toelichting**. Kies of de bank weigerde of de klant afzag, en waarom. In de toelichting schrijft u wat de keuze niet zegt.
+
+![Het kopblok van een kredietdossier met de status Krediet geweigerd: onder de status, het dossiernummer en de eigenaar staan het veld Reden van afvallen met de keuze Bank: quotiteit te hoog en het veld Toelichting.](../images/kredietdossier-reden-afvallen.png "Waarom dit dossier afviel"){ .volle-breedte }
+
+- Het veld verschijnt zodra u zo'n status kiest. Welke statussen een dossier afsluiten, stelt u in bij de **Dashboard-fases**: een status in een afsluitende fase die niet als *geslaagd* telt. Heeft uw kantoor nog geen fases ingesteld, dan staat het veld op elk dossier.
+- Een reden is niet verplicht. Het tabblad *Productie* op het [dashboard](../getting-started/dashboard.md#het-tabblad-productie) toont waarom uw dossiers afvallen, en ook bij hoeveel er een reden is ingevuld.
+- Zet u het dossier later weer open, dan verdwijnt het veld. De reden blijft bewaard, maar telt niet meer mee.
+- De redenen past u aan onder [Keuzelijsten](../beheer/keuzelijsten.md#de-reden-van-afvallen).
+- Uw aanbrengers zien de reden in hun portaal, maar kunnen ze niet wijzigen.
+
 ### Pand
 
 Op de fiche zelf staat de **schattingswaarde**, met de quotiteit ernaast.

@@ -113,7 +113,8 @@ Elke tegel toont het cijfer van deze aanbrenger. De kleine vermelding ernaast ze
     - Een dossier dat gerealiseerd is maar geen aktedatum draagt, telt mee in de omzetting, maar in geen enkele
       periode of maand — het *wanneer* ontbreekt. Het tabblad vermeldt hoeveel zulke dossiers er zijn.
     - Een dossier zonder aktedatum waarvan de status in een **afsluitende fase** staat, telt als afgevallen. De
-      naam van die fase is de reden. Uitzondering: een fase die u op [Dashboard-fases](../beheer/dashboard-fases.md)
+      reden is de [reden van afvallen](../credit-management/credit-files.md#reden-van-afvallen) op het dossier;
+      staat er geen, dan de naam van die fase. Uitzondering: een fase die u op [Dashboard-fases](../beheer/dashboard-fases.md)
       als **geslaagd** aanvinkte — een dossier daarin is nooit afgevallen.
 
 ### De grafieken en de tabel
@@ -121,7 +122,7 @@ Elke tegel toont het cijfer van deze aanbrenger. De kleine vermelding ernaast ze
 - **Dossiers en akten per maand** — altijd de laatste 24 maanden, los van de gekozen periode.
 - **Omzetting per jaar van invoer** — van de dossiers die dat jaar binnenkwamen: hoeveel werden een akte, voor deze aanbrenger en voor het kantoor. Een jaar met een **\*** heeft nog lopende dossiers; dat cijfer kan nog stijgen.
 - **Akten per kredietverstrekker** — de acht grootste; de rest staat samen onder *Overige*.
-- **Waarom afgevallen** — de afgevallen dossiers per reden.
+- **Waarom afgevallen** — de afgevallen dossiers per reden. Een dossier zonder reden staat er onder zijn fase, met *geen reden opgegeven*; zijn er meer dan acht soorten, dan komen de kleinste samen onder *Andere redenen*. Eronder leest u bij hoeveel afgevallen dossiers er een reden is ingevuld.
 
 Onderaan staat een tabel per jaar met de dossiers, de akten, het kredietvolume en, als u die mag zien, de commissie.
 

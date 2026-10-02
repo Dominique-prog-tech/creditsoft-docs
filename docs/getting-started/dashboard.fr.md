@@ -163,6 +163,10 @@ En haut du tableau de bord figurent deux onglets. **Aujourd'hui** est ce qui est
 
 ![Les deux listes en bas de l'onglet Production : à gauche Apporteurs avec par apporteur les dossiers, les actes et le volume de crédit, à droite Apporteurs à l'arrêt avec le dernier dossier, depuis combien de temps et le nombre de dossiers sur les douze derniers mois.](../images/dashboard-aanbrengers-fr.png "Qui a le plus apporté, et qui est à l'arrêt"){ .volle-breedte }
 
+**Motifs d'abandon** affiche le [motif d'abandon](../credit-management/credit-files.md#motif-dabandon) indiqué sur les dossiers. Un dossier sans motif y figure sous le nom de sa phase, avec *aucun motif indiqué*. Sous le graphique, vous lisez pour combien de dossiers abandonnés un motif est rempli — vous voyez ainsi si le graphique raconte toute l'histoire. S'il y a plus de huit sortes, les plus petites sont regroupées sous *Autres motifs* : le graphique compte toujours tous les dossiers abandonnés.
+
+![Le graphique Motifs d'abandon de l'onglet Production : un anneau avec une légende des motifs — en haut Sans suite, aucun motif indiqué, en dessous des motifs commençant par Banque : et Client :, et en bas Autres motifs — et sous la carte la ligne Motif indiqué pour le nombre des dossiers abandonnés.](../images/dashboard-redenen-fr.png "Pourquoi des dossiers sont abandonnés, et pour combien le motif est connu"){ .volle-breedte }
+
 !!! tip "Un tiret pour Taux de conversion et Abandonnés ?"
     Aucun statut de dossier n'est alors encore lié à une phase de clôture, et il est impossible de dire quel dossier est terminé. L'onglet le signale lui-même ; vous le configurez sous **Administration → Phases du tableau de bord**.
 

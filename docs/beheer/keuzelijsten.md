@@ -58,6 +58,12 @@ Met die getallen stelt een contract zijn **eerste renteherziening** voor, en too
 [dashboard](../getting-started/dashboard.md#opvolging-van-lopende-kredieten) de herzieningen die eraan komen.
 Laat u *Daarna om de* leeg, dan verschijnt enkel de eerste herziening.
 
+## De reden van afvallen
+
+Bij **Reden van afvallen** staan de redenen die u op een afgevallen [kredietdossier](../credit-management/credit-files.md#reden-van-afvallen) kiest. Elk kantoor start met elf: zes waarom de bank weigerde, vier waarom de klant afzag, en *Overige*. De naam begint met *Bank:* of *Klant:* — zo houdt de grafiek op het tabblad *Productie* van het [dashboard](../getting-started/dashboard.md#het-tabblad-productie) beide soorten uit elkaar.
+
+Hernoem, voeg toe of verwijder gerust. Een reden die u verwijdert, blijft staan op de dossiers die ze al dragen en komt niet vanzelf terug.
+
 ## Welke lijsten kunt u niet aanpassen?
 
 In de kiezer bovenaan staan de lijsten die **van u** zijn: de labels waarmee u uw relaties en contacten

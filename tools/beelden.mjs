@@ -287,6 +287,40 @@ const SCHOTEN = [
         await p.waitForTimeout(2500);
       }
   }],
+  // ── k1b (02/10/2026): de reden van afvallen ──
+  // Het veld staat er ENKEL bij een status in een afsluitende, niet-geslaagde fase: het merkteken eist het label én een
+  // gekozen reden, zodat een lopend dossier (geen veld) of een leeg veld het schot laat falen.
+  ['kredietdossier-reden-afvallen', `/credit-files/${ID.dossierAfgevallen}`, async p => {
+      await p.waitForTimeout(2500);
+      // ⚠️ De gekozen reden staat in een INVOERVELD, en de waarde daarvan zit niet in innerText — het merkteken kan ze
+      //    dus niet zien. Daarom hier, in de DOM: een leeg veld bewijst niets over "welke reden".
+      const waarde = await p.locator('.dxbl-fl-item')
+        .filter({ has: p.locator('.dxbl-fl-cpt', { hasText: /^(Reden van afvallen|Motif d'abandon)$/ }) })
+        .locator('input').first().inputValue({ timeout: 10000 });
+      if (!/^(Bank: |Banque\s: )/.test(waarde))
+        throw new Error(`het veld Reden van afvallen hoort een bankreden te dragen, gezien: "${waarde}"`);
+  }],
+  ['dashboard-redenen',         '/dashboard', async p => {
+      await dashboardProductie(p);
+      // ⚠️ AdmChartCard heet `.kaart`, niet `.adm-card`: met die tweede vond closest() niets en scrolde er STIL niets —
+      //    het eerste beeld toonde de bovenkant van Productie, en het merkteken liet het door, want de teller staat wél
+      //    in innerText, alleen niet in beeld (02/10/2026). Vandaar: de omhullende div (kaart + teller) en daarna meten.
+      const gevonden = await p.evaluate(() => {
+        const t = [...document.querySelectorAll('.kaart .kop')].find(e =>
+          /^(Waarom afgevallen|Motifs d'abandon)$/.test((e.textContent || '').trim()));
+        const blok = t?.closest('.kaart')?.parentElement;
+        blok?.scrollIntoView({ block: 'start' });
+        return !!blok;
+      });
+      if (!gevonden) throw new Error('de kaart Waarom afgevallen staat niet op het tabblad Productie');
+      await p.waitForTimeout(1200);
+      const inBeeld = await p.evaluate(() => {
+        const r = [...document.querySelectorAll('.text-muted')].find(e =>
+          /Reden opgegeven bij|Motif indiqué pour/.test(e.textContent || ''))?.getBoundingClientRect();
+        return !!r && r.top >= 0 && r.bottom <= window.innerHeight;
+      });
+      if (!inBeeld) throw new Error('de teller onder Waarom afgevallen staat niet in beeld');
+  }],
   // ── kv4 (02/10/2026): de opvolging van lopende kredieten ──
   // ⚠️ Vraagt de knop "Opvolging kredieten aanvullen" ONDER DE VASTE KLOK: de demodatums Herbekijken op liggen
   // rond de verjaardag van de akte, gerekend vanaf de dag waarop de knop gedrukt werd. Gedrukt op 1 september
@@ -788,6 +822,11 @@ const VERWACHT = {
   // de hint over de maandlast staat enkel daar.
   'kredietdossier-patrimonium': /(Waarde|Valeur) € \d/,
   'kredietdossier-pand-venster': /Loopt er een lening|Si un prêt court/,
+  // k1b: het label staat er enkel bij een afsluitende status (een lopend dossier faalt hier); de gekozen reden meet het
+  // recept zelf, want een invoerwaarde staat niet in innerText.
+  'kredietdossier-reden-afvallen': /Reden van afvallen|Motif d'abandon/,
+  // De teller bestaat enkel sinds k1b — een beeld van vóór 1.150.0 haalt hem niet.
+  'dashboard-redenen':          /Reden opgegeven bij \d+ van \d+|Motif indiqué pour \d+ des \d+/,
   'keuzelijsten-variabiliteit': /Eerste herziening na|Première révision après/,
 };
 

@@ -485,5 +485,21 @@
       "bevat": "Pand wijzigen|Modifier le bien",
       "minBreed": 500
     }
+  },
+  "kredietdossier-reden-afvallen": {
+    "breedte": 1920,
+    "hoogte": 720
+  },
+  "kredietdossier-reden-afvallen-fr": {
+    "breedte": 1920,
+    "hoogte": 720
+  },
+  "dashboard-redenen": {
+    "breedte": 1280,
+    "hoogte": 640
+  },
+  "dashboard-redenen-fr": {
+    "breedte": 1280,
+    "hoogte": 640
   }
 }

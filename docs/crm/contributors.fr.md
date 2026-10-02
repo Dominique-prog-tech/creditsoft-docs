@@ -112,7 +112,7 @@ Chaque tuile affiche le chiffre de cet apporteur. La petite mention à côté le
     - Un dossier réalisé mais sans date d'acte compte dans le taux de conversion, mais dans aucune période ni
       aucun mois — le *quand* manque. L'onglet indique combien de dossiers sont dans ce cas.
     - Un dossier sans date d'acte dont le statut se trouve dans une **phase de clôture** compte comme abandonné.
-      Le nom de cette phase en est le motif. Exception : une phase cochée comme **réussie** sous
+      Le motif est le [motif d'abandon](../credit-management/credit-files.md#motif-dabandon) du dossier ; à défaut, le nom de cette phase. Exception : une phase cochée comme **réussie** sous
       [Phases du tableau de bord](../beheer/dashboard-fases.md) — un dossier qui s'y trouve n'est jamais abandonné.
 
 ### Les graphiques et le tableau
@@ -120,7 +120,7 @@ Chaque tuile affiche le chiffre de cet apporteur. La petite mention à côté le
 - **Dossiers et actes par mois** — toujours les 24 derniers mois, indépendamment de la période choisie.
 - **Conversion par année d'introduction** — parmi les dossiers introduits cette année-là : combien sont devenus un acte, pour cet apporteur et pour le bureau. Une année marquée d'un **\*** a encore des dossiers en cours ; ce chiffre peut encore augmenter.
 - **Actes par prêteur** — les huit plus importants ; le reste figure ensemble sous *Autres*.
-- **Motifs d'abandon** — les dossiers abandonnés par motif.
+- **Motifs d'abandon** — les dossiers abandonnés par motif. Un dossier sans motif y figure sous sa phase, avec *aucun motif indiqué* ; s'il y a plus de huit sortes, les plus petites sont regroupées sous *Autres motifs*. En dessous, vous lisez pour combien de dossiers abandonnés un motif est rempli.
 
 En bas, un tableau par année reprend les dossiers, les actes, le volume de crédit et, si vous pouvez la voir, la commission.
 

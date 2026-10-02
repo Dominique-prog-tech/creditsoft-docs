@@ -1454,5 +1454,33 @@
       "sha": "973aad180a7e6f872104657be515e71cd3967a4f",
       "vuil": true
     }
+  },
+  "kredietdossier-reden-afvallen": {
+    "route": "/credit-files/141a60e1-654d-413a-bfae-c70eae530b2f",
+    "app": {
+      "sha": "198c53bcfe8a7d924c4395a0f15931e28502c4bb",
+      "vuil": true
+    }
+  },
+  "kredietdossier-reden-afvallen-fr": {
+    "route": "/credit-files/141a60e1-654d-413a-bfae-c70eae530b2f",
+    "app": {
+      "sha": "198c53bcfe8a7d924c4395a0f15931e28502c4bb",
+      "vuil": true
+    }
+  },
+  "dashboard-redenen": {
+    "route": "/dashboard",
+    "app": {
+      "sha": "198c53bcfe8a7d924c4395a0f15931e28502c4bb",
+      "vuil": true
+    }
+  },
+  "dashboard-redenen-fr": {
+    "route": "/dashboard",
+    "app": {
+      "sha": "198c53bcfe8a7d924c4395a0f15931e28502c4bb",
+      "vuil": true
+    }
   }
 }

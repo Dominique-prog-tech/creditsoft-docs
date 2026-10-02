@@ -161,6 +161,10 @@ Bovenaan het dashboard staan twee tabbladen. **Vandaag** is wat hierboven beschr
 
 ![De twee lijsten onderaan het tabblad Productie: links Aanbrengers met per aanbrenger de dossiers, de akten en het kredietvolume, rechts Stilgevallen aanbrengers met het laatste dossier, hoe lang stil en het aantal dossiers in de laatste twaalf maanden.](../images/dashboard-aanbrengers.png "Wie het meest aanbracht, en wie stilviel"){ .volle-breedte }
 
+**Waarom afgevallen** toont de [reden van afvallen](../credit-management/credit-files.md#reden-van-afvallen) die op de dossiers staat. Een dossier zonder reden staat er onder de naam van zijn fase, met *geen reden opgegeven*. Onder de grafiek leest u bij hoeveel afgevallen dossiers er een reden is ingevuld — zo ziet u of de grafiek het hele verhaal vertelt. Zijn er meer dan acht soorten, dan komen de kleinste samen onder *Andere redenen*: de grafiek telt altijd alle afgevallen dossiers.
+
+![De grafiek Waarom afgevallen op het tabblad Productie: een ring met een legende van de redenen — bovenaan Zonder gevolg, geen reden opgegeven, daaronder redenen die met Bank: en Klant: beginnen, en onderaan Andere redenen — en onder de kaart de regel Reden opgegeven bij het aantal van de afgevallen dossiers.](../images/dashboard-redenen.png "Waarom dossiers afvallen, en bij hoeveel de reden gekend is"){ .volle-breedte }
+
 !!! tip "Een streepje bij Omzetting en Afgevallen?"
     Dan is er nog geen dossierstatus aan een afsluitende fase gekoppeld, en valt er niet te zeggen welk dossier afgelopen is. Het tabblad zegt dat zelf; u stelt het in bij **Platformbeheer → Dashboard-fases**.
 
