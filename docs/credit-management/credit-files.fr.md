@@ -202,7 +202,7 @@ Au-dessus de la liste se trouve le bouton **Ajouter**. Il crée un nouveau sché
 
 Un nouveau schéma est d'abord *pas encore actif* : rien n'est encore comptabilisé. Ce n'est qu'à l'activation que CreditSoft prépare les montants mensuels.
 
-![La fiche d'un schéma de commission : en haut le numéro de dossier avec, à côté, l'état Actif ; en dessous la section Données générales avec l'apporteur, la commission totale et la date de début, et le choix du paiement entre étalé, paiements planifiés et montant fixe. Étalé est sélectionné, de sorte que figurent en dessous Direct (%) et Nombre de mois avec l'explication que la part qui n'est pas payée directement est répartie également sur ce nombre de mois, ainsi qu'un champ pour une remarque.](../images/commissieschema-fiche-fr.png "Un schéma de commission avec un paiement étalé"){ .volle-breedte }
+![La fiche d'un schéma de commission : en haut le numéro de dossier avec, à côté, l'état Actif ; en dessous la section Données générales avec l'apporteur, la commission totale et la date de début, et le choix du paiement entre étalé, paiements planifiés et montant fixe. Étalé est sélectionné, de sorte que figurent en dessous Immédiat (%) et Nombre de mois avec l'explication que la part qui n'est pas payée immédiatement est répartie également sur ce nombre de mois, ainsi qu'un champ pour une remarque.](../images/commissieschema-fiche-fr.png "Un schéma de commission avec un paiement étalé"){ .volle-breedte }
 
 En haut de la fiche, à côté du nom du dossier ou de l'apporteur, figure l'état du schéma : **Actif**,
 **Arrêté** (avec la date) ou **Pas encore activé**. Vous voyez ainsi immédiatement si ce schéma rapporte

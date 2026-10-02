@@ -142,7 +142,7 @@
   "commissie-instellingen": {
     "route": "/beheer/commissie-instellingen",
     "app": {
-      "sha": "2f279e8e59cec1073f6a728468e77ad366f04a15",
+      "sha": "a70ab1d581d6ef2a0f8fcc2e68b868b1ecb46770",
       "vuil": true
     }
   },
@@ -583,7 +583,7 @@
   "commissieschema-fiche": {
     "route": "/credit-files/903a2553-1e1d-4a9d-baab-f456bd96145c/commissieschema/a9b48983-8066-4209-a315-8f950e6983dd",
     "app": {
-      "sha": "2f279e8e59cec1073f6a728468e77ad366f04a15",
+      "sha": "a70ab1d581d6ef2a0f8fcc2e68b868b1ecb46770",
       "vuil": true
     }
   },
@@ -758,7 +758,7 @@
   "commissie-instellingen-fr": {
     "route": "/beheer/commissie-instellingen",
     "app": {
-      "sha": "2f279e8e59cec1073f6a728468e77ad366f04a15",
+      "sha": "a70ab1d581d6ef2a0f8fcc2e68b868b1ecb46770",
       "vuil": true
     }
   },
@@ -1199,7 +1199,7 @@
   "commissieschema-fiche-fr": {
     "route": "/credit-files/903a2553-1e1d-4a9d-baab-f456bd96145c/commissieschema/a9b48983-8066-4209-a315-8f950e6983dd",
     "app": {
-      "sha": "2f279e8e59cec1073f6a728468e77ad366f04a15",
+      "sha": "a70ab1d581d6ef2a0f8fcc2e68b868b1ecb46770",
       "vuil": true
     }
   },
