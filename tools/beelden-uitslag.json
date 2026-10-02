@@ -1370,5 +1370,47 @@
       "sha": "3f7811d0a63a5b949a15243a62626356662a57f5",
       "vuil": true
     }
+  },
+  "dashboard-opvolging": {
+    "route": "/dashboard",
+    "app": {
+      "sha": "e449fe7d9c1340d468274860826e963102f4a8db",
+      "vuil": true
+    }
+  },
+  "dashboard-opvolging-fr": {
+    "route": "/dashboard",
+    "app": {
+      "sha": "e449fe7d9c1340d468274860826e963102f4a8db",
+      "vuil": true
+    }
+  },
+  "kredietdossier-contract-herziening": {
+    "route": "/credit-files/bc566763-9860-48e3-b8a3-f464904a9810",
+    "app": {
+      "sha": "e449fe7d9c1340d468274860826e963102f4a8db",
+      "vuil": true
+    }
+  },
+  "kredietdossier-contract-herziening-fr": {
+    "route": "/credit-files/bc566763-9860-48e3-b8a3-f464904a9810",
+    "app": {
+      "sha": "e449fe7d9c1340d468274860826e963102f4a8db",
+      "vuil": true
+    }
+  },
+  "keuzelijsten-variabiliteit": {
+    "route": "/beheer/keuzelijsten",
+    "app": {
+      "sha": "e449fe7d9c1340d468274860826e963102f4a8db",
+      "vuil": true
+    }
+  },
+  "keuzelijsten-variabiliteit-fr": {
+    "route": "/beheer/keuzelijsten",
+    "app": {
+      "sha": "e449fe7d9c1340d468274860826e963102f4a8db",
+      "vuil": true
+    }
   }
 }

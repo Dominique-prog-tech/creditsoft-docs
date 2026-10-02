@@ -49,6 +49,12 @@ export const ID = {
   // Sam Cools draagt een eindejaarspremie PER JAAR. Gekozen met een query op tenant_demo (02/10/2026), ná de
   // knop "Aanvragersregels aanvullen". Valt om na een her-seed: de regels hangen aan het aanvragersnummer.
   dossierLasten: 'f2bfe95b-9020-4a33-9a17-fc1418c4a2cb',
+  // DEMO-1020 (kv4, 02/10/2026) — één GEREALISEERD hypothecair contract met "Variabel 5/5/5" en een eerste
+  // herziening (23/04/2031), akte 23/04/2026: vóór de vaste klok van 1 september, dus het voorstel staat er.
+  // Niet DEMO-1118: daar staat het variabele contract op "Zonder gevolg", en een herziening op een krediet dat
+  // niet doorging toont het verkeerde geval. Gekozen met een query op tenant_demo, ná de knop "Opvolging kredieten
+  // aanvullen"; valt om na een her-seed (de variabiliteit hangt aan het contractnummer).
+  dossierOpvolging: 'bc566763-9860-48e3-b8a3-f464904a9810',
   schema:   'a9b48983-8066-4209-a315-8f950e6983dd',   // het actieve schema van DEMO-1089
   // ⚠️ Een aanbrenger die AL portaaltoegang heeft. Met een aanbrenger zónder toegang toont het venster
   // "Deze aanbrenger heeft nog geen portaaltoegang" — en dan mist het beeld precies de knoppen waar de

@@ -271,6 +271,33 @@ const SCHOTEN = [
       await venster.getByRole('tab', { name: /^(Inkomsten|Revenus)\s*\(/i }).first().click();
       await p.waitForTimeout(2500);
   }],
+  // ── kv4 (02/10/2026): de opvolging van lopende kredieten ──
+  // ⚠️ Vraagt de knop "Opvolging kredieten aanvullen" ONDER DE VASTE KLOK: de demodatums Herbekijken op liggen
+  // rond de verjaardag van de akte, gerekend vanaf de dag waarop de knop gedrukt werd. Gedrukt op 1 september
+  // (vaste klok) staan er zes binnen het venster, waarvan twee voorbij — het rood dat de handleiding beschrijft.
+  // Het blok heeft een eigen anker (data-blok): een ".row met deze tekst" koos ook elke omvattende rij.
+  ['dashboard-opvolging',       '/dashboard', async p => {
+      // Twee lege kaarten halen het merkteken niet, maar één lege kaart wél — dus beide hier nagekeken.
+      const blok = p.locator('[data-blok="opvolging"]');
+      await blok.waitFor({ timeout: 15000 });
+      const regels = await blok.locator('.adm-card').evaluateAll(ks => ks.map(k => k.querySelectorAll('li').length));
+      if (regels.length !== 2 || regels.some(n => n === 0))
+        throw new Error(`het opvolgingsblok hoort twee gevulde kaarten te tonen, gezien: ${JSON.stringify(regels)}`);
+  }],
+  ['kredietdossier-contract-herziening', `/credit-files/${ID.dossierOpvolging}`, async p => {
+      // ⚠️ Een dubbelklik vlak na het laden valt soms in het niets (het circuit is er nog niet) — dan opnieuw.
+      const venster = p.locator('.dxbl-popup').filter({ hasText: /Contract bewerken|Modifier le contrat/ });
+      for (let i = 0; i < 3 && !(await venster.count()); i++) {
+        await p.getByRole('gridcell', { name: /C-021-1/ }).first().dblclick();
+        await p.waitForTimeout(2500);
+      }
+  }],
+  ['keuzelijsten-variabiliteit', '/beheer/keuzelijsten', async p => {
+      await p.getByText(/Kies een lijsttype|Choisissez un type de liste/).first().click();
+      await p.waitForTimeout(1200);
+      await p.getByText(/^(Variabiliteit \(rentevoetformule\)|Variabilité \(formule de taux\))$/).first().click();
+      await p.waitForTimeout(2500);
+  }],
   ['borderel-fiche',               `/commissie/borderel/${ID.borderel}`],
   ['navigatie',                    '/dashboard'],
 
@@ -705,6 +732,12 @@ const VERWACHT = {
   // (de kop "Na het krediet" niet, maar een lijst zonder overgenomen of wegvallende regel bewijst de kolom niet).
   'kredietdossier-leningen-lasten': /\bValt weg\b|\bDisparaît\b/,
   'kredietdossier-aanvrager-inkomsten': /Per jaar|\bPar an\b/,
+  // kv4: op wat er ENKEL staat als het geval getoond wordt. De variabiliteit achter een naam staat er enkel bij een
+  // herzieningsregel; "Voorstel: <datum>" enkel bij een variabiliteit met jaren én een datum om van te vertrekken;
+  // de jarenkolom enkel bij de variabiliteitslijst (niet bij Nationaliteit).
+  'dashboard-opvolging':        /· Variabel \d|· Variable \d/,
+  'kredietdossier-contract-herziening': /Voorstel: \d|Proposition : \d/,
+  'keuzelijsten-variabiliteit': /Eerste herziening na|Première révision après/,
 };
 
 // Merktekens uit de alt-tekst: hoofdletterwoord + eventuele vervolgwoorden, zonder verbindingswoord op het
@@ -1155,12 +1188,17 @@ for (const taal of ['nl-BE', 'fr-BE']) {
       // als je niet weet dat je moet kijken. Dominique zag het op 01/09/2026 zelf, in de pandfiche.
       //
       // Het MELDT en blokkeert niet: een botsing maakt het beeld niet fout, ze maakt het scherm lelijk.
+      // ⚠️ ENKEL BINNEN DEZELFDE LAAG (02/10/2026). Een label in een open venster lag "over" een label van de pagina
+      // erachter: "Reden" (dossierrij, achtergrond) <> "Maandlast" (contractvenster) — vals alarm, en een controle
+      // die vals alarm slaat, leert men negeren. Een venster bedekt de pagina; botsen kan enkel naast elkaar.
       const botsingen = await page.evaluate(() => {
         const labels = [...document.querySelectorAll('.dxbl-fl-cpt')]
           .filter(e => e.getBoundingClientRect().width > 0);
+        const laag = e => e.closest('.dxbl-popup');
         const uit = [];
         for (let i = 0; i < labels.length; i++)
           for (let j = i + 1; j < labels.length; j++) {
+            if (laag(labels[i]) !== laag(labels[j])) continue;
             const a = labels[i].getBoundingClientRect(), b = labels[j].getBoundingClientRect();
             if (Math.min(a.right, b.right) - Math.max(a.left, b.left) > 1
              && Math.min(a.bottom, b.bottom) - Math.max(a.top, b.top) > 1)

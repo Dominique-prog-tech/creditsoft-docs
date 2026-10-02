@@ -448,5 +448,25 @@
       "bevat": "Aanvrager bewerken|Modifier le demandeur",
       "minBreed": 700
     }
+  },
+  "dashboard-opvolging": {
+    "breedte": 1280,
+    "hoogte": 1240,
+    "element": {
+      "kies": "[data-blok=\"opvolging\"]"
+    }
+  },
+  "kredietdossier-contract-herziening": {
+    "breedte": 1700,
+    "hoogte": 900,
+    "element": {
+      "kies": ".dxbl-popup",
+      "bevat": "Contract bewerken|Modifier le contrat",
+      "minBreed": 500
+    }
+  },
+  "keuzelijsten-variabiliteit": {
+    "breedte": 1280,
+    "hoogte": 860
   }
 }
