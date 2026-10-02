@@ -218,6 +218,24 @@
     "breedte": 1700,
     "hoogte": 860
   },
+  "kredietdossiers-overdragen": {
+    "breedte": 1600,
+    "element": {
+      "bevat": "Komen van|Proviennent de",
+      "kies": ".dxbl-popup",
+      "minBreed": 400
+    },
+    "hoogte": 1000
+  },
+  "kredietdossiers-overdragen-fr": {
+    "breedte": 1600,
+    "element": {
+      "bevat": "Komen van|Proviennent de",
+      "kies": ".dxbl-popup",
+      "minBreed": 400
+    },
+    "hoogte": 1000
+  },
   "kredietinstellingen-fiche": {
     "breedte": 1280,
     "hoogte": 860

@@ -118,6 +118,25 @@ const SCHOTEN = [
   ['documentbibliotheek',          '/document-library'],
   ['taken-overzicht',              '/taken'],
   ['notities-lijst',               '/notities'],   // mak12
+  // ── mak13 (02/10/2026): dossiers in bulk overdragen ──
+  // Filter op een eigenaar, de pagina aanvinken, Overdragen… en een collega kiezen: pas dán staat er een samenvatting.
+  // ⚠️ Het menu-item en niet getByText: "Lotte Cools" staat ook in de kolom Eigenaar, en een klik op die CEL filtert
+  // niets — zo ging het bij de eerste meting.
+  ['kredietdossiers-overdragen',   '/credit-files', async p => {
+      await p.locator('button', { hasText: /Alle eigenaars|Tous les propriétaires/ }).first().click();
+      await p.waitForTimeout(600);
+      await p.locator('button.adm-menu-item', { hasText: 'Lotte Cools' }).click();
+      await p.waitForTimeout(1500);
+      await p.locator('.dxbl-grid thead .dxbl-checkbox').first().click();
+      await p.waitForTimeout(800);
+      await p.locator('.cf-selbar button').click();
+      await p.waitForTimeout(1500);
+      await p.locator('.adm-overdracht-naar input').click();
+      await p.keyboard.type('Eva');
+      await p.waitForTimeout(1200);
+      await p.locator('.dxbl-listbox-item, [role=option]', { hasText: 'Eva Coppens' }).first().click();
+      await p.waitForTimeout(1000);
+  }],
   ['afwezigheden',                 '/beheer/afwezigheden'],
   ['keuzelijsten',                 '/beheer/keuzelijsten', async p => {
       // ⚠️ Zonder gekozen lijsttype toont dit scherm "Kies bovenaan een lijsttype" en een tabel met NUL
@@ -817,6 +836,7 @@ const VERWACHT = {
   'taken-overzicht':            /Vervaldatum|Échéance|Prioriteit|Priorité/i,
   // mak12: de kolomkop Hangt aan staat op Taken én op Notities; 'Inhoud' enkel op Notities.
   'notities-lijst':             /Inhoud|Contenu/,
+  'kredietdossiers-overdragen': /Komen van|Proviennent de/,   // staat enkel in het venster, en pas met een selectie
   'wachtwoord':                 /Huidig wachtwoord|Mot de passe actuel/i,
   'keuzelijsten':               /Nationaliteit|Nationalité|Volgorde|Ordre/i,
   // De kop van de MIDDELSTE kolom: staat er enkel als een klant gekozen én precies de systeemrol open is. Het oude

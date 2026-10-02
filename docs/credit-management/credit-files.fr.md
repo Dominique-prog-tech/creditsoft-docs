@@ -8,7 +8,7 @@ Dans la barre latérale, cliquez sur **Crédit**, puis sur **Dossiers de crédit
 
 ## La liste
 
-![La liste des dossiers de crédit : en haut les filtres par statut et par apporteur avec le nombre de dossiers trouvés, en dessous le tableau indiquant par dossier la numéro de dossier, le statut, le montant du crédit, le demandeur, l'apporteur, l'institution, la date de dépôt et la date d'effet.](../images/kredietdossiers-lijst-fr.png "Tous les dossiers de crédit du bureau"){ .volle-breedte }
+![La liste des dossiers de crédit : en haut les filtres par statut, par apporteur et par propriétaire avec le nombre de dossiers trouvés, en dessous le tableau indiquant par dossier une case à cocher, le numéro de dossier, le statut, le montant du crédit, le demandeur, l'apporteur, l'institution, le propriétaire, la date de dépôt et la date d'effet.](../images/kredietdossiers-lijst-fr.png "Tous les dossiers de crédit du bureau"){ .volle-breedte }
 
 Par dossier, vous voyez qui en fait la demande, par qui il passe et où il en est :
 
@@ -20,10 +20,11 @@ Par dossier, vous voyez qui en fait la demande, par qui il passe et où il en es
 | **Demandeur** | Tous les demandeurs du dossier, à la suite |
 | **Apporteur** | L'apporteur par lequel le dossier est arrivé |
 | **Institution** | L'institution de crédit |
+| **Propriétaire** | Le collaborateur qui suit le dossier |
 | **Date de dépôt** | Quand le dossier a été introduit |
 | **Date d'effet** | Quand le crédit prend effet |
 
-Via le **sélecteur de colonnes**, vous en ajoutez cinq autres : *Crédit demandé*, *Investissement total*, *Fonds propres*, *Quotité* et *Bien*. Elles sont masquées par défaut, car tous les bureaux ne les remplissent pas. Votre choix est mémorisé pour la fois suivante.
+Via le **sélecteur de colonnes**, vous en ajoutez six autres : *Sales*, *Crédit demandé*, *Investissement total*, *Fonds propres*, *Quotité* et *Bien*. Elles sont masquées par défaut, car tous les bureaux ne les remplissent pas, et parce que la liste ne tiendrait plus à côté du journal. Votre choix est mémorisé pour la fois suivante.
 
 ### Créer un dossier
 
@@ -38,7 +39,7 @@ Avec **Nouveau dossier** en haut de la liste, vous créez un dossier vide. Le st
 ### Rechercher et filtrer
 
 - **Rechercher** — le champ de recherche porte sur toutes les colonnes **visibles**. Si vous activez une colonne via le sélecteur, la recherche s'y applique aussitôt.
-- **Statut** et **Apporteur** — les deux listes de choix du haut. Elles n'affichent que ce qui figure dans vos dossiers, donc aucun statut sans dossier.
+- **Statut**, **Apporteur** et **Propriétaire** — les trois listes de choix du haut. Elles n'affichent que ce qui figure dans vos dossiers, donc aucun statut sans dossier. Sous *Propriétaire* figure aussi **Sans propriétaire**, s'il y a de tels dossiers.
 - **Par date** — les colonnes **Date de dépôt** et **Date d'effet** se filtrent via l'entonnoir sur l'en-tête de colonne, ou via le constructeur de filtres pour une plage telle que « entre le 1er janvier et le 30 juin ». Voir [Filtrer et rechercher dans les listes](filteren-in-lijsten.md).
 - **Depuis le tableau de bord** — si vous arrivez depuis une phase ou depuis les [Dossiers à l'arrêt](../getting-started/dashboard.md#dossiers-a-larret) du tableau de bord, la liste est déjà filtrée. Le filtre actif s'affiche en haut, avec un bouton **Effacer le filtre** à côté.
 - **Exporter** — vers Excel ou CSV, avec les filtres actifs à ce moment-là. L'export suit la langue de votre écran.
@@ -46,6 +47,24 @@ Avec **Nouveau dossier** en haut de la liste, vous créez un dossier vide. Le st
 **[Journal](../journaal/overzicht.md)** — cliquez à droite sur le rail **Journal** pour consulter les [tâches](../journaal/taken.md), [notes](../journaal/notities.md), les appels, [pièces jointes](../journaal/bijlagen.md), le [courrier](../journaal/mailverkeer.md), les schémas de commission et l'[historique](../journaal/logboek.md) du dossier sélectionné sans l'ouvrir.
 
 **Double-cliquez** une ligne pour ouvrir le dossier.
+
+### Transférer des dossiers
+
+Un collègue s'en va, ou quelqu'un d'autre reprend ses clients : vous transférez ses dossiers en une fois.
+
+1. Sous **Propriétaire** en haut, choisissez le collègue dont viennent les dossiers.
+2. Cochez les dossiers. La case de l'en-tête coche tous les dossiers de la **page** ; votre sélection reste quand vous passez à la page suivante. Réglez **Lignes par page** en bas sur 100, cela va plus vite.
+3. Cliquez sur **Transférer…** dans la bande au-dessus de la liste.
+4. Choisissez **ce que** vous transférez — le *propriétaire* ou le *sales* — et **à qui**. Vous voyez aussitôt de qui viennent les dossiers ; ceux qui appartiennent déjà à ce collègue restent inchangés.
+5. Laissez **Aussi les tâches ouvertes …** coché si les tâches ouvertes de ces dossiers doivent suivre. Seules les tâches attribuées à la personne précédente suivent.
+6. Cliquez sur **Transférer**.
+
+![La fenêtre Transférer des dossiers : en haut le choix de ce que vous transférez (propriétaire ou sales) et le collègue à qui, en dessous la case pour les tâches ouvertes et un aperçu de qui détient aujourd'hui les dossiers sélectionnés.](../images/kredietdossiers-overdragen-fr.png "Transférer des dossiers à un collègue")
+
+!!! note "Un collègue sans compte"
+    Une tâche est liée à un compte. Si le collègue à qui vous transférez n'a pas de compte, les dossiers sont bien transférés mais les tâches restent où elles sont. CreditSoft l'indique dans la fenêtre.
+
+Un transfert ne change rien à la date de la dernière activité : un [dossier à l'arrêt](../getting-started/dashboard.md#dossiers-a-larret) reste à l'arrêt jusqu'à ce que quelqu'un s'en occupe. Qui a transféré quoi, de qui à qui, figure dans l'[historique](../journaal/logboek.md) de chaque dossier et dans le journal des actions.
 
 ## Le dossier
 

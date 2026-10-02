@@ -8,7 +8,7 @@ Klik in de zijbalk op **Krediet** en dan op **Kredietdossiers**.
 
 ## De lijst
 
-![De lijst met kredietdossiers: bovenaan de filters op status en aanbrenger met het aantal gevonden dossiers, daaronder de tabel met per dossier het dossiernummer, de status, het kredietbedrag, de aanvrager, de aanbrenger, de instelling, de datum van indiening en de ingangsdatum.](../images/kredietdossiers-lijst.png "Alle kredietdossiers van het kantoor"){ .volle-breedte }
+![De lijst met kredietdossiers: bovenaan de filters op status, aanbrenger en eigenaar met het aantal gevonden dossiers, daaronder de tabel met per dossier een aankruisvakje, het dossiernummer, de status, het kredietbedrag, de aanvrager, de aanbrenger, de instelling, de eigenaar, de datum van indiening en de ingangsdatum.](../images/kredietdossiers-lijst.png "Alle kredietdossiers van het kantoor"){ .volle-breedte }
 
 Per dossier ziet u wie het aanvraagt, via wie het loopt en waar het staat:
 
@@ -20,10 +20,11 @@ Per dossier ziet u wie het aanvraagt, via wie het loopt en waar het staat:
 | **Aanvrager** | Alle aanvragers van het dossier, na elkaar |
 | **Aanbrenger** | De aanbrenger via wie het dossier binnenkwam |
 | **Instelling** | De kredietinstelling |
+| **Eigenaar** | De medewerker die het dossier opvolgt |
 | **Datum indiening** | Wanneer het dossier is ingediend |
 | **Ingangsdatum** | Wanneer het krediet ingaat |
 
-Via **Kolommen kiezen** zet u er nog vijf bij: *Gevraagd krediet*, *Totale investering*, *Eigen middelen*, *Quotiteit* en *Pand*. Ze staan standaard uit omdat lang niet elk kantoor ze invult. Uw keuze wordt onthouden voor de volgende keer.
+Via **Kolommen kiezen** zet u er nog zes bij: *Sales*, *Gevraagd krediet*, *Totale investering*, *Eigen middelen*, *Quotiteit* en *Pand*. Ze staan standaard uit omdat lang niet elk kantoor ze invult, en omdat de lijst anders niet meer naast het journaal past. Uw keuze wordt onthouden voor de volgende keer.
 
 ### Een dossier aanmaken
 
@@ -38,7 +39,7 @@ Met **Nieuw dossier** bovenaan de lijst maakt u een leeg dossier aan. Welke stat
 ### Zoeken en filteren
 
 - **Zoeken** — het zoekveld zoekt over alle **zichtbare** kolommen. Zet u een kolom aan via **Kolommen kiezen**, dan zoekt u er meteen ook in.
-- **Status** en **Aanbrenger** — de twee keuzelijsten bovenaan. Ze tonen alleen wat in uw dossiers voorkomt, dus geen statussen zonder dossier.
+- **Status**, **Aanbrenger** en **Eigenaar** — de drie keuzelijsten bovenaan. Ze tonen alleen wat in uw dossiers voorkomt, dus geen statussen zonder dossier. Bij *Eigenaar* staat onderaan ook **Zonder eigenaar**, als er zulke dossiers zijn.
 - **Op datum** — de kolommen **Datum indiening** en **Ingangsdatum** filtert u via het trechtertje op de kolomkop, of via de filterbouwer voor een bereik zoals "tussen 1 januari en 30 juni". Zie [Filteren en zoeken in lijsten](filteren-in-lijsten.md).
 - **Vanaf het dashboard** — klikt u door vanaf een fase of vanaf [Stilgevallen dossiers](../getting-started/dashboard.md#stilgevallen-dossiers) op het dashboard, dan staat de lijst al gefilterd. Bovenaan ziet u welke filter actief is, met een knop **Filter wissen** ernaast.
 - **Exporteren** — naar Excel of CSV, met de filters die op dat moment aan staan. De export volgt de taal van uw scherm.
@@ -46,6 +47,24 @@ Met **Nieuw dossier** bovenaan de lijst maakt u een leeg dossier aan. Welke stat
 **[Journaal](../journaal/overzicht.md)** — klik rechts op de rail **Journaal** om de [taken](../journaal/taken.md), [notities](../journaal/notities.md), gesprekken, [bijlagen](../journaal/bijlagen.md), het [mailverkeer](../journaal/mailverkeer.md), de commissieschema's en het [logboek](../journaal/logboek.md) van het geselecteerde dossier te zien zonder het te openen.
 
 **Dubbelklik** een rij om het dossier te openen.
+
+### Dossiers overdragen
+
+Vertrekt een collega, of neemt iemand anders zijn klanten over, dan draagt u zijn dossiers in één keer over.
+
+1. Kies bij **Eigenaar** bovenaan de collega van wie de dossiers komen.
+2. Vink de dossiers aan. Het vakje in de kolomkop vinkt alle dossiers van de **pagina** aan; uw selectie blijft staan als u naar de volgende pagina gaat. Zet **Regels per pagina** onderaan op 100, dan gaat het sneller.
+3. Klik op **Overdragen…** in de band boven de lijst.
+4. Kies **wat** u overdraagt — de *eigenaar* of de *sales* — en **naar wie**. U ziet meteen van wie de dossiers komen; dossiers die al bij die collega horen, blijven ongewijzigd.
+5. Laat **Ook de open taken …** aangevinkt als de open taken op die dossiers mee moeten. Enkel de taken die aan de vorige persoon hingen, gaan mee.
+6. Klik op **Overdragen**.
+
+![Het venster Dossiers overdragen: bovenaan de keuze wat u overdraagt (eigenaar of sales) en de collega naar wie, daaronder het vinkje voor de open taken en een overzicht van wie de geselecteerde dossiers vandaag hebben.](../images/kredietdossiers-overdragen.png "Dossiers overdragen aan een collega")
+
+!!! note "Een collega zonder account"
+    Een taak hangt aan een account. Heeft de collega naar wie u overdraagt geen account, dan gaan de dossiers wel over maar blijven de taken waar ze zijn. CreditSoft zegt dat in het venster.
+
+Een overdracht verandert niets aan de datum van de laatste activiteit: een [stilgevallen dossier](../getting-started/dashboard.md#stilgevallen-dossiers) blijft stilgevallen tot iemand er iets mee doet. Wie wat van wie naar wie overdroeg, staat in het [logboek](../journaal/logboek.md) van elk dossier en in het actielogboek.
 
 ## Het dossier
 
