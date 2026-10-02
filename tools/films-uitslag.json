@@ -1913,8 +1913,8 @@
     "titel": "Het dashboard — uw kantoor in één scherm",
     "omschrijving": "Het startscherm gelezen zoals het bedoeld is: het jaar bovenaan dat alles stuurt, de vier tegels met aantallen en bedragen, de termijnen die vandaag actie vragen, de drie grafieken over het gerealiseerde volume, de pijplijn met uw dossiers per fase, en het scherm waar u die fases zelf samenstelt. Plus waarom uw dashboard er anders uitziet dan dat van een collega.",
     "hash": "51c2956d2845f3d7",
-    "guid": "199cd811-c0b9-42fa-96b8-b19846d58c0e",
-    "vorigeGuid": "35c69238-2b43-4096-9d31-50a084c5f002",
+    "guid": "e21be71b-5ef7-4b8e-9a96-af68c403f58b",
+    "vorigeGuid": "199cd811-c0b9-42fa-96b8-b19846d58c0e",
     "hoofdstukken": [
       {
         "titel": "Het jaar stuurt alles",
@@ -1967,12 +1967,15 @@
         "eind": 153.89
       }
     ],
-    "gepubliceerdOp": "2026-10-01T19:15:43.416",
+    "gepubliceerdOp": "2026-10-02T02:01:44.254",
     "opTeRuimen": [
       "13e7b04e-42b4-4a6b-8fe3-5fc275c68996",
-      "3ab07841-07dc-475e-be9c-21c287c6d1db"
+      "3ab07841-07dc-475e-be9c-21c287c6d1db",
+      "35c69238-2b43-4096-9d31-50a084c5f002"
     ],
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/199cd811-c0b9-42fa-96b8-b19846d58c0e/thumbnail.jpg"
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/e21be71b-5ef7-4b8e-9a96-af68c403f58b/thumbnail.jpg",
+    "gepubliceerdeHash": "51c2956d2845f3d7",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/e21be71b-5ef7-4b8e-9a96-af68c403f58b"
   },
   "dashboard-fr": {
     "film": "dashboard",
@@ -1991,8 +1994,8 @@
     "titel": "Le tableau de bord — votre bureau en un écran",
     "omschrijving": "L’écran d’accueil lu comme il se doit : l’année en haut qui pilote tout, les quatre tuiles avec les nombres et les montants, les délais qui demandent une action aujourd’hui, les trois graphiques du volume réalisé, le pipeline de vos dossiers par phase, et l’écran où vous composez ces phases. Ainsi que la raison pour laquelle votre tableau de bord diffère de celui d’un collègue.",
     "hash": "c1ae874a3883c631",
-    "guid": "df1e1528-e459-4ee2-8e22-85aba9ce2692",
-    "vorigeGuid": "43b38475-86bc-4896-a464-548d997690dc",
+    "guid": "a6faf5a5-0a15-4b30-8107-17e5016c841b",
+    "vorigeGuid": "df1e1528-e459-4ee2-8e22-85aba9ce2692",
     "hoofdstukken": [
       {
         "titel": "L’année pilote tout",
@@ -2045,12 +2048,15 @@
         "eind": 145.1
       }
     ],
-    "gepubliceerdOp": "2026-10-01T19:17:35.901",
+    "gepubliceerdOp": "2026-10-02T02:02:05.917",
     "opTeRuimen": [
       "d150b6b6-79be-48c7-814b-35809cdaf4b5",
-      "8aa0edec-81ff-4c49-9223-f2ec5493c6fe"
+      "8aa0edec-81ff-4c49-9223-f2ec5493c6fe",
+      "43b38475-86bc-4896-a464-548d997690dc"
     ],
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/df1e1528-e459-4ee2-8e22-85aba9ce2692/thumbnail.jpg"
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/a6faf5a5-0a15-4b30-8107-17e5016c841b/thumbnail.jpg",
+    "gepubliceerdeHash": "c1ae874a3883c631",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/a6faf5a5-0a15-4b30-8107-17e5016c841b"
   },
   "lijsten-en-rapporten-nl": {
     "film": "lijsten-en-rapporten",
