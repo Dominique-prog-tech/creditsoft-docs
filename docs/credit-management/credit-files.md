@@ -126,7 +126,8 @@ Het contractvenster past zich aan de **productsoort** aan: bij een gewoon kredie
 Bij een hypothecair krediet staat naast de variabiliteit de **Eerste herziening**: de datum waarop de rente voor
 het eerst herzien wordt. Kiest u een variabiliteit waarvan uw kantoor de jaren kent, en is het veld nog leeg,
 dan stelt CreditSoft een datum voor: de startdatum van het contract — of anders de datum van de akte — plus het
-aantal jaren. U mag die datum aanpassen. Vanaf de eerste herziening telt het
+aantal jaren. U mag die datum aanpassen. Wijkt ze af van het voorstel — bijvoorbeeld omdat u nadien een
+andere variabiliteit koos — dan staat het voorstel eronder, met **Voorstel gebruiken** ernaast. Vanaf de eerste herziening telt het
 [dashboard](../getting-started/dashboard.md#opvolging-van-lopende-kredieten) de volgende herzieningen zelf
 verder. Bij uw bestaande contracten is de eerste herziening al ingevuld waar de variabiliteit haar jaren kent en
 de start- of aktedatum bekend is.

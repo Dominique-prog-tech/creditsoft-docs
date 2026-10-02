@@ -126,7 +126,8 @@ La fenêtre du contrat s'adapte au **type de produit** : pour un crédit ordinai
 Pour un crédit hypothécaire, la **Première révision** figure à côté de la variabilité : la date à laquelle le
 taux est révisé pour la première fois. Si vous choisissez une variabilité dont votre bureau connaît les années,
 et que le champ est encore vide, CreditSoft propose une date : la date de début du contrat — ou à défaut la date
-de l'acte — plus le nombre d'années. Vous pouvez adapter cette date. À partir de la première révision, le
+de l'acte — plus le nombre d'années. Vous pouvez adapter cette date. Si elle diffère de la proposition — par exemple parce que vous
+avez ensuite choisi une autre variabilité — la proposition s'affiche en dessous, avec **Utiliser la proposition** à côté. À partir de la première révision, le
 [tableau de bord](../getting-started/dashboard.md#le-suivi-des-credits-en-cours) calcule lui-même les révisions
 suivantes. Pour vos contrats existants, la première révision est déjà remplie lorsque la variabilité connaît ses
 années et que la date de début ou d'acte est connue.
