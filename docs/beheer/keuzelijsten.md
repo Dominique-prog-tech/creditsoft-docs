@@ -62,6 +62,8 @@ Laat u *Daarna om de* leeg, dan verschijnt enkel de eerste herziening.
 
 Bij **Reden van afvallen** staan de redenen die u op een afgevallen [kredietdossier](../credit-management/credit-files.md#reden-van-afvallen) kiest. Elk kantoor start met elf: zes waarom de bank weigerde, vier waarom de klant afzag, en *Overige*. De naam begint met *Bank:* of *Klant:* — zo houdt de grafiek op het tabblad *Productie* van het [dashboard](../getting-started/dashboard.md#het-tabblad-productie) beide soorten uit elkaar.
 
+Bij elke reden zet u in de kolom **Wie gaf de reden** of ze van de *Bank* of van de *Klant* komt. Daarop telt de kolom *Geweigerd door de bank* in de tabel [per kredietverstrekker](../getting-started/dashboard.md#per-kredietverstrekker). De standaardredenen dragen die keuze al; bij *Overige* blijft ze leeg.
+
 Hernoem, voeg toe of verwijder gerust. Een reden die u verwijdert, blijft staan op de dossiers die ze al dragen en komt niet vanzelf terug.
 
 ## Welke lijsten kunt u niet aanpassen?

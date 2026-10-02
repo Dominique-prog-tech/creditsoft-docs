@@ -321,6 +321,26 @@ const SCHOTEN = [
       });
       if (!inBeeld) throw new Error('de teller onder Waarom afgevallen staat niet in beeld');
   }],
+  // ── k2 (02/10/2026): per kredietverstrekker ──
+  // De tabel telt in de demo een kleine dertig rijen: hoog venster, en het recept eist dat de onderste regel (Kantoor) in
+  // beeld staat — een beeld zonder die regel mist net het ijkpunt waar de tekst over gaat.
+  ['dashboard-verstrekkers',    '/dashboard', async p => {
+      await dashboardProductie(p);
+      const gevonden = await p.evaluate(() => {
+        const h = [...document.querySelectorAll('h6')].find(e => /^(Per kredietverstrekker|Par prêteur)$/.test((e.textContent || '').trim()));
+        const kaart = h?.closest('.adm-card');
+        kaart?.scrollIntoView({ block: 'start' });
+        return !!kaart;
+      });
+      if (!gevonden) throw new Error('de tabel Per kredietverstrekker staat niet op het tabblad Productie');
+      await p.waitForTimeout(1200);
+      const inBeeld = await p.evaluate(() => {
+        const h = [...document.querySelectorAll('h6')].find(e => /^(Per kredietverstrekker|Par prêteur)$/.test((e.textContent || '').trim()));
+        const r = h?.closest('.adm-card')?.querySelector('tfoot')?.getBoundingClientRect();
+        return !!r && r.top >= 0 && r.bottom <= window.innerHeight;
+      });
+      if (!inBeeld) throw new Error('de regel Kantoor onder de tabel per kredietverstrekker staat niet in beeld');
+  }],
   // ── kv4 (02/10/2026): de opvolging van lopende kredieten ──
   // ⚠️ Vraagt de knop "Opvolging kredieten aanvullen" ONDER DE VASTE KLOK: de demodatums Herbekijken op liggen
   // rond de verjaardag van de akte, gerekend vanaf de dag waarop de knop gedrukt werd. Gedrukt op 1 september
@@ -825,6 +845,8 @@ const VERWACHT = {
   // k1b: het label staat er enkel bij een afsluitende status (een lopend dossier faalt hier); de gekozen reden meet het
   // recept zelf, want een invoerwaarde staat niet in innerText.
   'kredietdossier-reden-afvallen': /Reden van afvallen|Motif d'abandon/,
+  // k2: de kolomkop bestaat enkel sinds 1.151.0.
+  'dashboard-verstrekkers':     /Geweigerd door de bank|Refusé par la banque/,
   // De teller bestaat enkel sinds k1b — een beeld van vóór 1.150.0 haalt hem niet.
   'dashboard-redenen':          /Reden opgegeven bij \d+ van \d+|Motif indiqué pour \d+ des \d+/,
   'keuzelijsten-variabiliteit': /Eerste herziening na|Première révision après/,

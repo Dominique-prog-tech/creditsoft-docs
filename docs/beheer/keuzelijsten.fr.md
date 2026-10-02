@@ -63,6 +63,8 @@ Si vous laissez *Ensuite tous les* vide, seule la première révision apparaît.
 
 Sous **Motif d'abandon** figurent les motifs que vous choisissez sur un [dossier de crédit](../credit-management/credit-files.md#motif-dabandon) abandonné. Chaque bureau commence avec onze : six pour lesquels la banque a refusé, quatre pour lesquels le client a renoncé, et *Autre*. Le nom commence par *Banque :* ou *Client :* — ainsi, le graphique de l'onglet *Production* du [tableau de bord](../getting-started/dashboard.md#longlet-production) distingue les deux sortes.
 
+Pour chaque motif, vous indiquez dans la colonne **Qui a donné le motif** s'il vient de la *Banque* ou du *Client*. La colonne *Refusé par la banque* du tableau [par prêteur](../getting-started/dashboard.md#par-preteur) compte sur ce choix. Les motifs standard le portent déjà ; pour *Autre*, il reste vide.
+
 Renommez, ajoutez ou supprimez librement. Un motif que vous supprimez reste sur les dossiers qui le portent déjà et ne revient pas de lui-même.
 
 ## Quelles listes ne pouvez-vous pas modifier ?

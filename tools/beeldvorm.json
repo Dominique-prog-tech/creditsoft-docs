@@ -501,5 +501,13 @@
   "dashboard-redenen-fr": {
     "breedte": 1280,
     "hoogte": 640
+  },
+  "dashboard-verstrekkers": {
+    "breedte": 1600,
+    "hoogte": 1040
+  },
+  "dashboard-verstrekkers-fr": {
+    "breedte": 1600,
+    "hoogte": 1040
   }
 }

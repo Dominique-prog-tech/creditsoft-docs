@@ -1482,5 +1482,19 @@
       "sha": "198c53bcfe8a7d924c4395a0f15931e28502c4bb",
       "vuil": true
     }
+  },
+  "dashboard-verstrekkers": {
+    "route": "/dashboard",
+    "app": {
+      "sha": "75fcb91242c11977cd179c52a54746dcf699dbdb",
+      "vuil": true
+    }
+  },
+  "dashboard-verstrekkers-fr": {
+    "route": "/dashboard",
+    "app": {
+      "sha": "75fcb91242c11977cd179c52a54746dcf699dbdb",
+      "vuil": true
+    }
   }
 }

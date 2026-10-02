@@ -122,7 +122,7 @@ Chaque tuile affiche le chiffre de cet apporteur. La petite mention à côté le
 - **Actes par prêteur** — les huit plus importants ; le reste figure ensemble sous *Autres*.
 - **Motifs d'abandon** — les dossiers abandonnés par motif. Un dossier sans motif y figure sous sa phase, avec *aucun motif indiqué* ; s'il y a plus de huit sortes, les plus petites sont regroupées sous *Autres motifs*. En dessous, vous lisez pour combien de dossiers abandonnés un motif est rempli.
 
-En bas, un tableau par année reprend les dossiers, les actes, le volume de crédit et, si vous pouvez la voir, la commission.
+En dessous figurent les mêmes chiffres **par prêteur** — pour cet apporteur, comme sur le [tableau de bord](../getting-started/dashboard.md#par-preteur) pour tout le bureau. En bas, un tableau par année reprend les dossiers, les actes, le volume de crédit et, si vous pouvez la voir, la commission.
 
 !!! tip "Un apporteur qui s'arrête"
     Si cet apporteur n'a introduit aucun nouveau dossier depuis trois mois complets ou plus, l'onglet affiche en

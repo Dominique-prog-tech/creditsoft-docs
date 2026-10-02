@@ -167,6 +167,16 @@ En haut du tableau de bord figurent deux onglets. **Aujourd'hui** est ce qui est
 
 ![Le graphique Motifs d'abandon de l'onglet Production : un anneau avec une légende des motifs — en haut Sans suite, aucun motif indiqué, en dessous des motifs commençant par Banque : et Client :, et en bas Autres motifs — et sous la carte la ligne Motif indiqué pour le nombre des dossiers abandonnés.](../images/dashboard-redenen-fr.png "Pourquoi des dossiers sont abandonnés, et pour combien le motif est connu"){ .volle-breedte }
 
+### Par prêteur
+
+Le tableau **Par prêteur** place les mêmes chiffres côte à côte par banque — le prêteur du dossier. Par ligne : les dossiers, les actes avec leur volume, le taux de conversion, la part abandonnée, la part que **la banque a refusée**, et le délai de l'introduction à l'acte, avec entre parenthèses le nombre d'actes sur lequel il repose. La dernière ligne est le bureau, avec les mêmes chiffres que les tuiles en haut.
+
+![Le tableau Par prêteur de l'onglet Production : par prêteur les dossiers, les actes, le volume de crédit, le taux de conversion, la part abandonnée, la part refusée par la banque et le délai de l'introduction à l'acte avec le nombre d'actes entre parenthèses, et en bas la ligne Bureau.](../images/dashboard-verstrekkers-fr.png "Les mêmes chiffres, par prêteur"){ .volle-breedte }
+
+- Un pourcentage n'apparaît qu'à partir de cinq dossiers clôturés ; en dessous figure un tiret. Un taux de conversion de 100 % sur deux dossiers ne dit rien.
+- *Refusé par la banque* compte les dossiers abandonnés avec un [motif d'abandon](../credit-management/credit-files.md#motif-dabandon) qui vient de la banque. Vous réglez quels motifs dans les [Listes de choix](../beheer/keuzelijsten.md#le-motif-dabandon). Si aucun dossier abandonné ne porte encore de motif, un tiret figure — pas 0 %.
+- Un **⚠️** au délai signifie que chez cette banque, la date d'introduction tombe souvent le jour de l'acte ou après. Elle a alors probablement été remplie après coup, et le délai dit peu de chose. Une introduction après l'acte ne compte jamais ; sous les tuiles, vous lisez combien d'actes sont ainsi écartés.
+
 !!! tip "Un tiret pour Taux de conversion et Abandonnés ?"
     Aucun statut de dossier n'est alors encore lié à une phase de clôture, et il est impossible de dire quel dossier est terminé. L'onglet le signale lui-même ; vous le configurez sous **Administration → Phases du tableau de bord**.
 

@@ -124,7 +124,7 @@ Elke tegel toont het cijfer van deze aanbrenger. De kleine vermelding ernaast ze
 - **Akten per kredietverstrekker** — de acht grootste; de rest staat samen onder *Overige*.
 - **Waarom afgevallen** — de afgevallen dossiers per reden. Een dossier zonder reden staat er onder zijn fase, met *geen reden opgegeven*; zijn er meer dan acht soorten, dan komen de kleinste samen onder *Andere redenen*. Eronder leest u bij hoeveel afgevallen dossiers er een reden is ingevuld.
 
-Onderaan staat een tabel per jaar met de dossiers, de akten, het kredietvolume en, als u die mag zien, de commissie.
+Daaronder staan dezelfde cijfers **per kredietverstrekker** — voor deze aanbrenger, zoals op het [dashboard](../getting-started/dashboard.md#per-kredietverstrekker) voor het hele kantoor. Onderaan staat een tabel per jaar met de dossiers, de akten, het kredietvolume en, als u die mag zien, de commissie.
 
 !!! tip "Een aanbrenger die stilvalt"
     Heeft deze aanbrenger drie volle maanden of langer geen nieuw dossier ingevoerd, dan toont het tabblad

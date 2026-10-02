@@ -165,6 +165,16 @@ Bovenaan het dashboard staan twee tabbladen. **Vandaag** is wat hierboven beschr
 
 ![De grafiek Waarom afgevallen op het tabblad Productie: een ring met een legende van de redenen — bovenaan Zonder gevolg, geen reden opgegeven, daaronder redenen die met Bank: en Klant: beginnen, en onderaan Andere redenen — en onder de kaart de regel Reden opgegeven bij het aantal van de afgevallen dossiers.](../images/dashboard-redenen.png "Waarom dossiers afvallen, en bij hoeveel de reden gekend is"){ .volle-breedte }
 
+### Per kredietverstrekker
+
+De tabel **Per kredietverstrekker** zet dezelfde cijfers naast elkaar per bank — de kredietverstrekker van het dossier. Per rij: de dossiers, de akten met hun volume, de omzetting, het deel dat afviel, het deel dat **de bank weigerde**, en de doorlooptijd van indiening tot akte, met tussen haakjes op hoeveel akten die rust. De onderste regel is het kantoor, met dezelfde cijfers als de tegels bovenaan.
+
+![De tabel Per kredietverstrekker op het tabblad Productie: per kredietverstrekker de dossiers, de akten, het kredietvolume, de omzetting, het deel afgevallen, het deel geweigerd door de bank en de doorlooptijd van indiening tot akte met het aantal akten tussen haakjes, en onderaan de regel Kantoor.](../images/dashboard-verstrekkers.png "Dezelfde cijfers, per kredietverstrekker"){ .volle-breedte }
+
+- Een percentage verschijnt pas vanaf vijf afgesloten dossiers; daaronder staat een streepje. Een omzetting van 100 % op twee dossiers zegt niets.
+- *Geweigerd door de bank* telt de afgevallen dossiers met een [reden van afvallen](../credit-management/credit-files.md#reden-van-afvallen) die van de bank komt. Welke redenen dat zijn, stelt u in bij [Keuzelijsten](../beheer/keuzelijsten.md#de-reden-van-afvallen). Draagt nog geen enkel afgevallen dossier een reden, dan staat er een streepje — niet 0 %.
+- Een **⚠️** bij de doorlooptijd betekent dat bij die bank de indieningsdatum vaak op of na de akte ligt. Dan is die datum waarschijnlijk achteraf ingevuld, en zegt de doorlooptijd weinig. Een indiening na de akte telt nooit mee; onder de tegels leest u hoeveel akten daardoor wegvallen.
+
 !!! tip "Een streepje bij Omzetting en Afgevallen?"
     Dan is er nog geen dossierstatus aan een afsluitende fase gekoppeld, en valt er niet te zeggen welk dossier afgelopen is. Het tabblad zegt dat zelf; u stelt het in bij **Platformbeheer → Dashboard-fases**.
 
