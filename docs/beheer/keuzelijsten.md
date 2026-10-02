@@ -47,6 +47,8 @@ wij — u kiest ze op een contract — maar per variabiliteit vult u zelf **twee
 | **Eerste herziening na (jaar)** | Na hoeveel jaar de rente voor het eerst herzien wordt |
 | **Daarna om de (jaar)** | Om de hoeveel jaar daarna opnieuw |
 
+![Het scherm Keuzelijsten met bovenaan de lijst Variabiliteit (rentevoetformule) gekozen. De tabel toont per variabiliteit de naam in de kolommen Nederlands en Frans, en de twee getallen Eerste herziening na (jaar) en Daarna om de (jaar): bij Variabel 10/5/5 bijvoorbeeld 10 en 5. Bij Vast staan beide leeg.](../images/keuzelijsten-variabiliteit.png "De variabiliteiten met hun herzieningsjaren")
+
 Klik op een variabiliteit om de getallen te wijzigen; naam en volgorde staan grijs. Bij *Variabel 10/5/5* is
 dat 10 en 5. Staan de getallen in de naam, dan zijn ze al ingevuld. Bij een productnaam zoals *Record Light
 Home* vult u ze zelf in: uit zo'n naam valt niets af te leiden, en een gok zou een herinnering op de verkeerde

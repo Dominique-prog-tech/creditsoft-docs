@@ -49,7 +49,7 @@ Met **Nieuw dossier** bovenaan de lijst maakt u een leeg dossier aan. Welke stat
 
 ## Het dossier
 
-![Een geopend kredietdossier: bovenaan de kopkaart met status, intern nummer, eigenaar en sales als keuzelijst, de financiële instelling, de aanbrenger, het kredietbedrag, het commissiebedrag met het vinkje inhouden ernaast en de datum akte, met rechts de knoppen Bewaren, Annuleren, Afdruk overzicht en Verwijderen. Daaronder links de datums van indiening en goedkeuring met het type dossier, de ondertekening van het aanbod naast de uiterste datum voor het aanbod, de uiterste datums voor de akte en de opschortende voorwaarden, het doel, de schattingswaarde en de quotiteit met het vinkje Getekend aanbod verzonden en het veld Interne opmerkingen, en onder die kaart de kredietaanvragers met per aanvrager het aantal inkomsten en lasten; rechts de contracten en onderaan de tabbladen Partijen, Opmerkingen, Gevraagd en Leningen en lasten, elk met een teller.](../images/kredietdossier-fiche.png "Het kredietdossier: alles op één pagina"){ .volle-breedte }
+![Een geopend kredietdossier: bovenaan de kopkaart met status, intern nummer, eigenaar en sales als keuzelijst, de financiële instelling, de aanbrenger, het kredietbedrag, het commissiebedrag met het vinkje inhouden ernaast en de datum akte, met rechts de knoppen Bewaren, Annuleren, Afdruk overzicht en Verwijderen. Daaronder links de datums van indiening en goedkeuring met het type dossier, de ondertekening van het aanbod naast de uiterste datum voor het aanbod, de uiterste datums voor de akte en de opschortende voorwaarden, Herbekijken op met de reden ernaast, het doel, de schattingswaarde en de quotiteit met het vinkje Getekend aanbod verzonden en het veld Interne opmerkingen, en onder die kaart de kredietaanvragers met per aanvrager het aantal inkomsten en lasten; rechts de contracten en onderaan de tabbladen Partijen, Opmerkingen, Gevraagd en Leningen en lasten, elk met een teller.](../images/kredietdossier-fiche.png "Het kredietdossier: alles op één pagina"){ .volle-breedte }
 
 Het dossier is één pagina. Bovenaan staat het kernblok met de gegevens die u het vaakst nodig hebt; daaronder staan links de datums en het pand, rechts de contracten. Onderaan rechts staan **Partijen**, **Opmerkingen**, **Gevraagd** en **Leningen en lasten** naast elkaar als tabbladen — vier lijsten die dezelfde plaats delen, zodat u niet hoeft te scrollen om ze alle vier te bereiken.
 
@@ -131,6 +131,8 @@ andere variabiliteit koos — dan staat het voorstel eronder, met **Voorstel geb
 [dashboard](../getting-started/dashboard.md#opvolging-van-lopende-kredieten) de volgende herzieningen zelf
 verder. Bij uw bestaande contracten is de eerste herziening al ingevuld waar de variabiliteit haar jaren kent en
 de start- of aktedatum bekend is.
+
+![Het venster Contract bewerken van een gerealiseerd hypothecair contract: bovenaan de melding dat het contract afgerond is, daaronder onder meer Bedrag, Looptijd en Rentevoet, en de Variabiliteit Variabel 5/5/5 met ernaast de Eerste herziening op 23/04/2031. Onder dat veld staat het voorstel: 23/04/2031 — start of akte + 5 jaar.](../images/kredietdossier-contract-herziening.png "De eerste renteherziening naast de variabiliteit, met het voorstel eronder")
 
 ### Partijen
 

@@ -49,7 +49,7 @@ Avec **Nouveau dossier** en haut de la liste, vous créez un dossier vide. Le st
 
 ## Le dossier
 
-![Un dossier de crédit ouvert : en haut le bloc principal avec le statut, le numéro interne, le propriétaire et le responsable commercial sous forme de listes déroulantes, l'institution financière, l'apporteur, le montant du crédit, le montant de commission avec la case Retenir à côté et la date d'acte, et à droite les boutons Enregistrer, Annuler, Imprimer l'aperçu et Supprimer. En dessous, à gauche les dates de dépôt et d'approbation avec le type de dossier, la signature de l'offre à côté de la date limite de l'offre, les dates limites de l'acte et des conditions suspensives, le but, la valeur estimée et la quotité avec la case Offre signée envoyée ainsi que le champ Remarques internes, et sous cette carte les demandeurs de crédit avec, pour chacun, le nombre de revenus et de charges ; à droite les contrats et en bas les onglets Parties, Remarques, Demandés et Prêts et charges, chacun avec un compteur.](../images/kredietdossier-fiche-fr.png "Le dossier de crédit : tout sur une seule page"){ .volle-breedte }
+![Un dossier de crédit ouvert : en haut le bloc principal avec le statut, le numéro interne, le propriétaire et le responsable commercial sous forme de listes déroulantes, l'institution financière, l'apporteur, le montant du crédit, le montant de commission avec la case Retenir à côté et la date d'acte, et à droite les boutons Enregistrer, Annuler, Imprimer l'aperçu et Supprimer. En dessous, à gauche les dates de dépôt et d'approbation avec le type de dossier, la signature de l'offre à côté de la date limite de l'offre, les dates limites de l'acte et des conditions suspensives, À revoir le avec le motif à côté, le but, la valeur estimée et la quotité avec la case Offre signée envoyée ainsi que le champ Remarques internes, et sous cette carte les demandeurs de crédit avec, pour chacun, le nombre de revenus et de charges ; à droite les contrats et en bas les onglets Parties, Remarques, Demandés et Prêts et charges, chacun avec un compteur.](../images/kredietdossier-fiche-fr.png "Le dossier de crédit : tout sur une seule page"){ .volle-breedte }
 
 Le dossier tient sur une seule page. En haut, le bloc principal reprend les données dont vous avez le plus souvent besoin ; en dessous, les dates et le bien à gauche, les contrats à droite. En bas à droite, **Parties**, **Remarques**, **Demandés** et **Prêts et charges** figurent côte à côte sous forme d'onglets — quatre listes qui partagent le même emplacement, pour que vous puissiez les atteindre toutes les quatre sans faire défiler la page.
 
@@ -131,6 +131,8 @@ avez ensuite choisi une autre variabilité — la proposition s'affiche en desso
 [tableau de bord](../getting-started/dashboard.md#le-suivi-des-credits-en-cours) calcule lui-même les révisions
 suivantes. Pour vos contrats existants, la première révision est déjà remplie lorsque la variabilité connaît ses
 années et que la date de début ou d'acte est connue.
+
+![La fenêtre Modifier le contrat d'un contrat hypothécaire réalisé : en haut l'avis que le contrat est finalisé, en dessous notamment Montant, Durée et Taux d'intérêt, et la Variabilité Variable 5/5/5 avec à côté la Première révision au 23/04/2031. Sous ce champ figure la proposition : 23/04/2031 — début ou acte + 5 ans.](../images/kredietdossier-contract-herziening-fr.png "La première révision du taux à côté de la variabilité, avec la proposition en dessous")
 
 ### Parties
 

@@ -2,7 +2,7 @@
 
 Het dashboard is uw startscherm. In één oogopslag ziet u hoeveel dossiers er in welke fase zitten en wat de kerncijfers doen.
 
-![Het dashboard op het tabblad Vandaag, naast het tabblad Productie: bovenaan de vier kerncijfers — Aktes met het jaartal erbij, In te dienen, Ingediend en LOA met de vermelding "alle jaren" — daaronder de twee blokken Termijn verstreken en Termijn nadert met per regel de klant, de soort termijn en de datum, en onderaan elk blok de knop om de overige te tonen; nog lager de staafgrafiek van het gerealiseerde volume per maand en twee ringgrafieken met de verdeling per instelling en per verantwoordelijke.](../images/dashboard-startscherm.png "Het dashboard: kerncijfers, aflopende termijnen en de grafieken"){ .volle-breedte }
+![Het dashboard op het tabblad Vandaag, naast het tabblad Productie: bovenaan de vier kerncijfers — Aktes met het jaartal erbij, In te dienen, Ingediend en LOA met de vermelding "alle jaren" — daaronder de twee blokken Termijn verstreken en Termijn nadert met per regel de klant, de soort termijn en de datum, en onderaan elk blok de knop om de overige te tonen; nog lager het begin van de twee kaarten Herbekijken en Renteherziening.](../images/dashboard-startscherm.png "Het dashboard: kerncijfers, aflopende termijnen en de opvolging van lopende kredieten"){ .volle-breedte }
 
 ## Aan de slag
 
@@ -85,6 +85,8 @@ Staat er niets? Dan zegt het blok dat, in plaats van leeg te blijven.
 Een krediet dat geakteerd is, vraagt later nog aandacht. Daarvoor staan onder de termijnen twee kaarten:
 *Herbekijken* en *Renteherziening*. Ze verschijnen zodra er iets op te volgen is.
 
+![De twee kaarten Herbekijken en Renteherziening onder de termijnen op het dashboard. Links Herbekijken met de teller 6 en "binnen 14 dagen": per regel de klant, de reden en de datum, de twee datums die al voorbij zijn in het rood. Rechts Renteherziening met de teller 74 en "binnen 6 maanden": per regel de klant, de variabiliteit Variabel 1/1/1 en de datum van de herziening, met onderaan de link om de overige te tonen.](../images/dashboard-opvolging.png "Opvolging van lopende kredieten: te herbekijken dossiers en komende renteherzieningen"){ .volle-breedte }
+
 **Herbekijken** toont de dossiers waarop iemand een datum **Herbekijken op** zette — bijvoorbeeld een jaar na
 de akte, bij een dossier dat u wil nalopen. U zet die datum op het
 [kredietdossier](../credit-management/credit-files.md#dossiergegevens), met een korte reden die hier achter de
@@ -113,6 +115,8 @@ Beide kaarten tonen de eerste acht, de vroegste datum bovenaan. Zitten er meer a
 
 Onder de tegels staan drie grafieken. Ze gaan alle drie over **hetzelfde jaar** — dat u met de pijltjes
 bovenaan kiest — en over het **gerealiseerde volume**, dus over kredieten die effectief doorgingen.
+
+![De drie grafieken van het dashboard voor 2026: bovenaan de staafgrafiek Gerealiseerd volume per maand met een staaf per maand van januari tot december, daaronder links de ringgrafiek Volume per instelling en rechts de ringgrafiek Volume per verantwoordelijke, elk met een legende van de kleuren.](../images/dashboard-grafieken.png "De grafieken: gerealiseerd volume per maand, per instelling en per verantwoordelijke"){ .volle-breedte }
 
 - **Gerealiseerd volume per maand** — één staaf per maand. Zo ziet u meteen welke maanden dragen en welke
   achterblijven.

@@ -375,6 +375,27 @@ const SCHOTEN = [
       });
       await p.waitForTimeout(1500);
   }],
+  // ⚠️ DE GRAFIEKEN KREGEN EEN EIGEN SCHOT (02/10/2026). Tot kv4 stonden ze onderaan dashboard-startscherm; het blok
+  // Herbekijken/Renteherziening duwde ze uit dat kader, terwijl de alt ze bleef beloven. Zelfde vorm als de
+  // pijplijn: naar de eerste grafiektitel scrollen. ⚠️ En NAMETEN dat ze in beeld staat — de titel staat ook buiten
+  // het venster in de DOM, dus het merkteken alleen bewijst niets over wat het beeld toont.
+  ['dashboard-grafieken',       '/dashboard', async p => {
+      const top = await p.evaluate(() => {
+        const h = [...document.querySelectorAll('body *')].find(e => e.children.length === 0
+          && /^(Gerealiseerd volume per maand|Volume réalisé par mois)/.test((e.textContent || '').trim()));
+        h?.scrollIntoView({ block: 'start' });
+        return h ? h.getBoundingClientRect().top : null;
+      });
+      await p.waitForTimeout(2500);
+      const zichtbaar = await p.evaluate(() => {
+        const h = [...document.querySelectorAll('body *')].find(e => e.children.length === 0
+          && /^(Volume per verantwoordelijke|Volume par responsable)/.test((e.textContent || '').trim()));
+        const r = h?.getBoundingClientRect();
+        return !!r && r.top >= 0 && r.bottom <= window.innerHeight;
+      });
+      if (top === null || !zichtbaar)
+        throw new Error('de grafieken staan niet in beeld — de derde grafiektitel valt buiten het venster');
+  }],
   // ⚠️ HET TABBLAD PRODUCTIE VAN HET DASHBOARD (01/10/2026, kans kv6). Twee schoten: de bovenkant (tegels en de
   // eerste grafieken) en de twee aanbrengerlijsten onderaan. Hun EERSTE vorm staat met de hand in
   // beeldvorm.json — een nieuw beeld heeft nog geen PNG om ze uit af te leiden; vanaf de volgende ronde leest
@@ -434,7 +455,11 @@ const SCHOTEN = [
       // De kolomtelling hieronder ving dat niet: kolommen zijn er ook zonder afspraken. Structuur is geen
       // inhoud. Zelfde aanpak als `agenda-afwezigheid`: bladeren tot een vaste dag in beeld staat.
       let gevonden = false;
-      for (let i = 0; i < 40 && !gevonden; i++) {
+      // ⚠️ 200 en niet 40 (02/10/2026): in de DAGweergave is één klik één dag, en het vertrekpunt is de ECHTE dag —
+      //    Meetings.razor start op DateTime.Today, niet op de vaste klok (AdmTijd). Op 02/10 lag 22/08 41 dagen terug
+      //    en faalde dit in beide talen. 200 houdt tot ver in 2027; de echte oplossing is de agenda op AdmTijd laten
+      //    starten (dan ligt 02/09 VÓÓRUIT en moeten deze recepten in twee richtingen zoeken).
+      for (let i = 0; i < 200 && !gevonden; i++) {
         // ⚠️⚠️ \b VÓÓR HET DAGNUMMER, en dat is geen netheid maar de reparatie van 15/09/2026.
         // Zonder die grens matcht `2 september` ÓÓK binnenin "1**2 september**" en "2**2 september**".
         // Dit recept bladert terug vanaf de dag van de BROWSER: op 06/09 kwam het nooit langs 12 september
@@ -472,7 +497,11 @@ const SCHOTEN = [
       // 18–24/08 verlof, Jana Michiels 22/08 opleiding). Terugbladeren tot die dag in beeld staat — tellen
       // hoeveel keer je moet klikken werkt niet, want de weergave (dag/week) onthoudt zichzelf per gebruiker.
       let gevonden = false;
-      for (let i = 0; i < 40 && !gevonden; i++) {
+      // ⚠️ 200 en niet 40 (02/10/2026): in de DAGweergave is één klik één dag, en het vertrekpunt is de ECHTE dag —
+      //    Meetings.razor start op DateTime.Today, niet op de vaste klok (AdmTijd). Op 02/10 lag 22/08 41 dagen terug
+      //    en faalde dit in beide talen. 200 houdt tot ver in 2027; de echte oplossing is de agenda op AdmTijd laten
+      //    starten (dan ligt 02/09 VÓÓRUIT en moeten deze recepten in twee richtingen zoeken).
+      for (let i = 0; i < 200 && !gevonden; i++) {
         if (/\b22 (augustus|août) 2026/.test(await p.locator('body').innerText())) { gevonden = true; break; }
         await p.locator('.dxbl-sc-nav-prev, button[title*="vorige" i], button[title*="précédent" i]')
                .first().click().catch(() => {});
@@ -699,6 +728,7 @@ const VERWACHT = {
   // Op een FASENAAM en niet op de kop: die staat er ook wanneer alles onder "Niet ingedeeld" valt.
   'dashboard-pijplijn':         /In behandeling|En traitement|Zonder gevolg|Sans suite/i,
   'dashboard-productie':        /Omzetting|Taux de conversion/,
+  'dashboard-grafieken':        /Volume per instelling|Volume par institution/,   // zichtbaarheid meet het recept zelf
   'dashboard-aanbrengers':      /Stilgevallen aanbrengers|Apporteurs à l'arrêt/,
   // Niet op het TABBLAD zoeken maar op de INHOUD: het tablabel staat er ook bij een lege lijst.
   'relaties-gevraagde-documenten': /Laatste 3 loonfiches|3 derniers|Ontvangen|Reçu/i,
@@ -736,7 +766,8 @@ const VERWACHT = {
   // herzieningsregel; "Voorstel: <datum>" enkel bij een variabiliteit met jaren én een datum om van te vertrekken;
   // de jarenkolom enkel bij de variabiliteitslijst (niet bij Nationaliteit).
   'dashboard-opvolging':        /· Variabel \d|· Variable \d/,
-  'kredietdossier-contract-herziening': /Voorstel: \d|Proposition : \d/,
+  // \s en geen spatie: het Frans draagt een VASTE spatie vóór de dubbele punt (\u00a0, 02/10/2026).
+  'kredietdossier-contract-herziening': /Voorstel:\s\d|Proposition\s:\s\d/,
   'keuzelijsten-variabiliteit': /Eerste herziening na|Première révision après/,
 };
 

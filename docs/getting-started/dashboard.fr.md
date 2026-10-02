@@ -2,7 +2,7 @@
 
 Le tableau de bord est votre écran d'accueil. D'un coup d'œil, vous voyez combien de dossiers se trouvent dans quelle phase et ce que font les indicateurs.
 
-![Le tableau de bord sur l'onglet Aujourd'hui, à côté de l'onglet Production : en haut les quatre indicateurs — Actes avec l'année, À introduire, Introduit et LOA avec la mention « toutes les années » — en dessous les deux blocs Délai dépassé et Délai proche avec par ligne le client, le type de délai et la date, et au bas de chaque bloc le bouton pour afficher les autres ; plus bas le graphique en barres du volume réalisé par mois et deux graphiques en anneau répartissant le volume par institution et par responsable.](../images/dashboard-startscherm-fr.png "Le tableau de bord : indicateurs, délais qui arrivent à échéance et graphiques"){ .volle-breedte }
+![Le tableau de bord sur l'onglet Aujourd'hui, à côté de l'onglet Production : en haut les quatre indicateurs — Actes avec l'année, À introduire, Introduit et LOA avec la mention « toutes les années » — en dessous les deux blocs Délai dépassé et Délai proche avec par ligne le client, le type de délai et la date, et au bas de chaque bloc le bouton pour afficher les autres ; plus bas le début des deux cartes À revoir et Révision du taux.](../images/dashboard-startscherm-fr.png "Le tableau de bord : indicateurs, délais qui arrivent à échéance et suivi des crédits en cours"){ .volle-breedte }
 
 ## Pour commencer
 
@@ -88,6 +88,8 @@ Rien à signaler ? Le bloc le dit, au lieu de rester vide.
 Un crédit dont l'acte est passé demande encore de l'attention par la suite. Pour cela, deux cartes figurent sous
 les délais : *À revoir* et *Révision du taux*. Elles apparaissent dès qu'il y a quelque chose à suivre.
 
+![Les deux cartes À revoir et Révision du taux sous les délais du tableau de bord. À gauche, À revoir avec le compteur 6 et « dans les 14 jours » : par ligne le client, le motif et la date, les deux dates déjà dépassées en rouge. À droite, Révision du taux avec le compteur 74 et « dans les 6 mois » : par ligne le client, la variabilité Variable 1/1/1 et la date de la révision, avec en bas le lien pour afficher les autres.](../images/dashboard-opvolging-fr.png "Le suivi des crédits en cours : dossiers à revoir et prochaines révisions du taux"){ .volle-breedte }
+
 **À revoir** affiche les dossiers sur lesquels quelqu'un a placé une date **À revoir le** — par exemple un an
 après l'acte, pour un dossier que vous voulez réexaminer. Vous placez cette date sur le
 [dossier de crédit](../credit-management/credit-files.md#donnees-du-dossier), avec un court motif qui apparaît
@@ -116,6 +118,8 @@ cliquez sur **Afficher les … autres**, comme pour les délais.
 Sous les tuiles figurent trois graphiques. Ils portent tous les trois sur **la même année** — celle que vous
 choisissez avec les flèches en haut — et sur le **volume réalisé**, donc sur les crédits effectivement
 aboutis.
+
+![Les trois graphiques du tableau de bord pour 2026 : en haut le graphique en barres Volume réalisé par mois avec une barre par mois de janvier à décembre, en dessous à gauche le graphique en anneau Volume par institution et à droite le graphique en anneau Volume par responsable, chacun avec une légende des couleurs.](../images/dashboard-grafieken-fr.png "Les graphiques : volume réalisé par mois, par institution et par responsable"){ .volle-breedte }
 
 - **Volume réalisé par mois** — une barre par mois. Vous voyez ainsi d'emblée quels mois portent le
   résultat et lesquels décrochent.
