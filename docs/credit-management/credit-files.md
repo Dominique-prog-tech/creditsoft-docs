@@ -57,7 +57,7 @@ Het dossier is één pagina. Bovenaan staat het kernblok met de gegevens die u h
 
 Het kopblok bovenaan draagt wat u het vaakst nodig hebt: intern nummer, **eigenaar**, **sales**, **status**, financiële instelling, aanbrenger, het kredietbedrag met het vinkje *Inhouden*, en de datum van de akte.
 
-In de kaart eronder links staan bovenaan de datums van indiening en goedkeuring, met het type dossier. Daaronder staat de ondertekening van het aanbod naast de uiterste datum voor het aanbod, en dan de uiterste datums voor de akte en de opschortende voorwaarden. Die drie uiterste datums verschijnen op het [dashboard](../getting-started/dashboard.md) bij de termijnen. Onderaan de kaart volgen het doel, de schattingswaarde en de quotiteit.
+In de kaart eronder links staan bovenaan de datums van indiening en goedkeuring, met het type dossier. Daaronder staat de ondertekening van het aanbod naast de uiterste datum voor het aanbod, en dan de uiterste datums voor de akte en de opschortende voorwaarden. Die drie uiterste datums verschijnen op het [dashboard](../getting-started/dashboard.md) bij de termijnen. Daaronder staat **Herbekijken op** met een **reden**: de datum waarop u het dossier wil nalopen, ook lang nadat het krediet geakteerd is. Is de datum van de akte ingevuld, dan vult de link **Eén jaar na de akte** de datum voor u in. Het dossier verschijnt dan op het [dashboard](../getting-started/dashboard.md#opvolging-van-lopende-kredieten) bij *Herbekijken*, met de reden erbij. Onderaan de kaart volgen het doel, de schattingswaarde en de quotiteit.
 
 !!! tip "Een leeg bedrag blijft leeg"
     Laat u een bedrag oningevuld, dan blijft het leeg — het wordt geen € 0. Dat onderscheid telt: bij een dossier zonder kredietbedrag ziet u dat het nog niet bekend is, niet dat het nul zou zijn.
@@ -122,6 +122,14 @@ Op het dossier zelf staat het tabblad **Leningen en lasten**, naast *Partijen*, 
 De kredietcontracten onder dit dossier. De lijst toont nummer, product, status, bedrag, looptijd, rentevoet en instelling; maandlast en startdatum vindt u op het contract zelf.
 
 Het contractvenster past zich aan de **productsoort** aan: bij een gewoon krediet vraagt het producttype, rentevoet, variabiliteit en maandlast, bij een schuldsaldoverzekering komen daar premie, type en periodiciteit bij, plus het aanvinken van wie verzekerd is.
+
+Bij een hypothecair krediet staat naast de variabiliteit de **Eerste herziening**: de datum waarop de rente voor
+het eerst herzien wordt. Kiest u een variabiliteit waarvan uw kantoor de jaren kent, en is het veld nog leeg,
+dan stelt CreditSoft een datum voor: de startdatum van het contract — of anders de datum van de akte — plus het
+aantal jaren. U mag die datum aanpassen. Vanaf de eerste herziening telt het
+[dashboard](../getting-started/dashboard.md#opvolging-van-lopende-kredieten) de volgende herzieningen zelf
+verder. Bij uw bestaande contracten is de eerste herziening al ingevuld waar de variabiliteit haar jaren kent en
+de start- of aktedatum bekend is.
 
 ### Partijen
 

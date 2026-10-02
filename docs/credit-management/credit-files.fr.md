@@ -57,7 +57,7 @@ Le dossier tient sur une seule page. En haut, le bloc principal reprend les donn
 
 Le bloc d'en-tête porte ce dont vous avez le plus souvent besoin : numéro interne, **propriétaire**, **sales**, **statut**, institution financière, apporteur, le montant du crédit avec la case *Retenir*, et la date de l'acte.
 
-Dans la carte en dessous à gauche figurent en haut les dates de dépôt et d'approbation, avec le type de dossier. En dessous, la signature de l'offre se trouve à côté de la date limite de l'offre, suivie des dates limites de l'acte et des conditions suspensives. Ces trois dates limites apparaissent sur le [tableau de bord](../getting-started/dashboard.md) parmi les délais. Le bas de la carte reprend le but, la valeur estimée et la quotité.
+Dans la carte en dessous à gauche figurent en haut les dates de dépôt et d'approbation, avec le type de dossier. En dessous, la signature de l'offre se trouve à côté de la date limite de l'offre, suivie des dates limites de l'acte et des conditions suspensives. Ces trois dates limites apparaissent sur le [tableau de bord](../getting-started/dashboard.md) parmi les délais. En dessous figure **À revoir le** avec un **motif** : la date à laquelle vous voulez réexaminer le dossier, même longtemps après l'acte. Si la date de l'acte est remplie, le lien **Un an après l'acte** complète la date pour vous. Le dossier apparaît alors sur le [tableau de bord](../getting-started/dashboard.md#le-suivi-des-credits-en-cours) sous *À revoir*, avec le motif. Le bas de la carte reprend le but, la valeur estimée et la quotité.
 
 !!! tip "Un montant vide reste vide"
     Si vous laissez un montant non renseigné, il reste vide — il ne devient pas 0 €. La distinction compte : pour un dossier sans montant de crédit, vous voyez qu'il n'est pas encore connu, et non qu'il serait nul.
@@ -122,6 +122,14 @@ Sur le dossier lui-même figure l'onglet **Prêts et charges**, à côté de *Pa
 Les contrats de crédit rattachés à ce dossier. La liste affiche le numéro, le produit, le statut, le montant, la durée, le taux d'intérêt et l'institution ; la charge mensuelle et la date de début se trouvent sur le contrat lui-même.
 
 La fenêtre du contrat s'adapte au **type de produit** : pour un crédit ordinaire elle demande le type de produit, le taux, la variabilité et la charge mensuelle ; pour une assurance solde restant dû s'y ajoutent la prime, le type et la périodicité, ainsi que la désignation des personnes assurées.
+
+Pour un crédit hypothécaire, la **Première révision** figure à côté de la variabilité : la date à laquelle le
+taux est révisé pour la première fois. Si vous choisissez une variabilité dont votre bureau connaît les années,
+et que le champ est encore vide, CreditSoft propose une date : la date de début du contrat — ou à défaut la date
+de l'acte — plus le nombre d'années. Vous pouvez adapter cette date. À partir de la première révision, le
+[tableau de bord](../getting-started/dashboard.md#le-suivi-des-credits-en-cours) calcule lui-même les révisions
+suivantes. Pour vos contrats existants, la première révision est déjà remplie lorsque la variabilité connaît ses
+années et que la date de début ou d'acte est connue.
 
 ### Parties
 

@@ -37,13 +37,33 @@ Les éléments supprimés continuent d'exister en arrière-plan. C'est nécessai
 !!! warning "Pourquoi certains éléments apparaissent-ils en double ?"
     Dans les données reprises, deux éléments portent parfois le même nom — par exemple deux fois *Sans suite*. Ce sont deux valeurs distinctes issues de l'ancien programme, chacune avec ses propres dossiers, et l'une des deux a généralement été supprimée. CreditSoft ajoute alors *(supprimé)* pour vous permettre de les distinguer. Ne les supprimez pas à la légère : c'est souvent à l'élément supprimé qu'est rattachée la majeure partie de votre historique.
 
+## La variabilité : quand le taux est révisé
+
+Une liste du programme figure bel et bien dans le sélecteur : **Variabilité (formule de taux)**. Les noms sont
+gérés par nous — vous les choisissez sur un contrat — mais pour chaque variabilité, vous encodez vous-même
+**deux chiffres** :
+
+| Champ | À quoi il sert |
+|---|---|
+| **Première révision après (ans)** | Après combien d'années le taux est révisé pour la première fois |
+| **Ensuite tous les (ans)** | Tous les combien d'années ensuite |
+
+Cliquez sur une variabilité pour modifier les chiffres ; le nom et l'ordre sont grisés. Pour *Variable 10/5/5*,
+c'est 10 et 5. Si les chiffres figurent dans le nom, ils sont déjà remplis. Pour un nom de produit comme
+*Record Light Home*, vous les encodez vous-même : un tel nom ne permet de rien déduire, et une supposition
+placerait un rappel au mauvais jour. Pour un taux fixe, laissez-les vides.
+
+Avec ces chiffres, un contrat propose sa **première révision du taux**, et le
+[tableau de bord](../getting-started/dashboard.md#le-suivi-des-credits-en-cours) affiche les révisions à venir.
+Si vous laissez *Ensuite tous les* vide, seule la première révision apparaît.
+
 ## Quelles listes ne pouvez-vous pas modifier ?
 
 Le sélecteur en haut reprend les listes qui sont **les vôtres** : les libellés avec lesquels vous décrivez vos
 relations et vos contacts. Deux groupes n'y figurent volontairement pas.
 
 **Les listes sur lesquelles le programme s'appuie.** Les statuts de dossier et de contrat, les types de dossier
-de crédit, le but de l'achat, la formule de taux : une logique y est attachée. CreditSoft en déduit des calculs
+de crédit, le but de l'achat : une logique y est attachée. CreditSoft en déduit des calculs
 et des écrans, et modifier le nom d'un statut ferait plus que changer un mot. Si vous souhaitez y apporter une
 modification, demandez-le à ADM-Concept — nous examinerons ensemble ce que cela touche.
 

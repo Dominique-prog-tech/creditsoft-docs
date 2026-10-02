@@ -37,13 +37,32 @@ Verwijderde items blijven bestaan achter de schermen. Dat moet ook: dossiers die
 !!! warning "Waarom staan sommige items dubbel?"
     In de overgezette gegevens dragen soms twee items dezelfde naam — bijvoorbeeld tweemaal *Zonder gevolg*. Dat zijn twee verschillende waarden uit het vorige programma, elk met hun eigen dossiers, en meestal is er één van geschrapt. CreditSoft zet er dan *(verwijderd)* achter zodat u ze uit elkaar houdt. Verwijder ze niet zomaar: aan de geschrapte hangt vaak het grootste deel van uw historiek.
 
+## De variabiliteit: wanneer de rente herzien wordt
+
+Eén lijst van het programma staat wél in de kiezer: **Variabiliteit (rentevoetformule)**. De namen beheren
+wij — u kiest ze op een contract — maar per variabiliteit vult u zelf **twee getallen** in:
+
+| Veld | Waarvoor |
+|---|---|
+| **Eerste herziening na (jaar)** | Na hoeveel jaar de rente voor het eerst herzien wordt |
+| **Daarna om de (jaar)** | Om de hoeveel jaar daarna opnieuw |
+
+Klik op een variabiliteit om de getallen te wijzigen; naam en volgorde staan grijs. Bij *Variabel 10/5/5* is
+dat 10 en 5. Staan de getallen in de naam, dan zijn ze al ingevuld. Bij een productnaam zoals *Record Light
+Home* vult u ze zelf in: uit zo'n naam valt niets af te leiden, en een gok zou een herinnering op de verkeerde
+dag zetten. Bij een vaste rente laat u ze leeg.
+
+Met die getallen stelt een contract zijn **eerste renteherziening** voor, en toont het
+[dashboard](../getting-started/dashboard.md#opvolging-van-lopende-kredieten) de herzieningen die eraan komen.
+Laat u *Daarna om de* leeg, dan verschijnt enkel de eerste herziening.
+
 ## Welke lijsten kunt u niet aanpassen?
 
 In de kiezer bovenaan staan de lijsten die **van u** zijn: de labels waarmee u uw relaties en contacten
 beschrijft. Twee groepen staan er bewust niet tussen.
 
 **De lijsten waar het programma op rekent.** De dossier- en contractstatussen, de soorten kredietdossier, het
-doel van de aankoop, de rentevormule: daar hangt logica aan. CreditSoft leidt er berekeningen en schermen uit
+doel van de aankoop: daar hangt logica aan. CreditSoft leidt er berekeningen en schermen uit
 af, en een statusnaam wijzigen zou meer doen dan een woord veranderen. Wilt u daar iets aan wijzigen, vraag
 het dan aan ADM-Concept — dan kijken we samen wat het raakt.
 

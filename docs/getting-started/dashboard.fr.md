@@ -83,6 +83,34 @@ défilement, pour que le reste du tableau de bord ne bouge pas. **En afficher mo
 
 Rien à signaler ? Le bloc le dit, au lieu de rester vide.
 
+## Le suivi des crédits en cours
+
+Un crédit dont l'acte est passé demande encore de l'attention par la suite. Pour cela, deux cartes figurent sous
+les délais : *À revoir* et *Révision du taux*. Elles apparaissent dès qu'il y a quelque chose à suivre.
+
+**À revoir** affiche les dossiers sur lesquels quelqu'un a placé une date **À revoir le** — par exemple un an
+après l'acte, pour un dossier que vous voulez réexaminer. Vous placez cette date sur le
+[dossier de crédit](../credit-management/credit-files.md#donnees-du-dossier), avec un court motif qui apparaît
+ici après le nom. La carte regarde aussi loin que les délais. Une date dépassée s'affiche en rouge et reste
+visible jusqu'à ce que vous la vidiez ou la déplaciez sur le dossier.
+
+**Révision du taux** affiche les dossiers dont un contrat voit son taux révisé dans les **six mois**, avec la
+variabilité après le nom. Elle part de la **première révision** du contrat et continue ensuite avec les années
+de la variabilité : avec *Variable 10/5/5*, un contrat apparaît après dix ans, puis à nouveau tous les cinq
+ans, sans que vous deviez faire quoi que ce soit. Une révision qui tombe après la fin de la durée n'apparaît
+pas : le crédit est alors remboursé. Seuls les dossiers dont l'acte est passé sont pris en compte.
+
+Les années par variabilité sont encodées par votre bureau sous
+[Administration → Listes de choix](../beheer/keuzelijsten.md#la-variabilite-quand-le-taux-est-revise).
+Si elles manquent, CreditSoft ne connaît pas de prochaine révision et la carte reste vide pour ces contrats.
+
+Les deux cartes affichent les huit premières lignes, la date la plus proche en haut. S'il y en a davantage,
+cliquez sur **Afficher les … autres**, comme pour les délais.
+
+!!! info "Pourquoi le statut ne compte pas ici"
+    Pour les délais, un dossier disparaît dès que son statut relève d'une phase finale. Pas ici : un crédit
+    dont l'acte est passé *est* dans une phase finale, et c'est précisément là que ce suivi commence.
+
 ## Les trois graphiques
 
 Sous les tuiles figurent trois graphiques. Ils portent tous les trois sur **la même année** — celle que vous

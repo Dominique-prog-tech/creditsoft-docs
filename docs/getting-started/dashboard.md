@@ -80,6 +80,35 @@ rest van het dashboard op zijn plaats blijft. **Toon er minder** klapt ze weer d
 
 Staat er niets? Dan zegt het blok dat, in plaats van leeg te blijven.
 
+## Opvolging van lopende kredieten
+
+Een krediet dat geakteerd is, vraagt later nog aandacht. Daarvoor staan onder de termijnen twee kaarten:
+*Herbekijken* en *Renteherziening*. Ze verschijnen zodra er iets op te volgen is.
+
+**Herbekijken** toont de dossiers waarop iemand een datum **Herbekijken op** zette — bijvoorbeeld een jaar na
+de akte, bij een dossier dat u wil nalopen. U zet die datum op het
+[kredietdossier](../credit-management/credit-files.md#dossiergegevens), met een korte reden die hier achter de
+naam verschijnt. De kaart kijkt even ver vooruit als de termijnen. Een datum die voorbij is, staat in het rood
+en blijft staan tot u ze op het dossier leegmaakt of verzet.
+
+**Renteherziening** toont de dossiers met een contract waarvan de rente binnen **zes maanden** herzien wordt,
+met de variabiliteit achter de naam. Ze vertrekt van de **eerste renteherziening** op het contract en telt
+daarna verder met de jaren van de variabiliteit: bij *Variabel 10/5/5* staat een contract na tien jaar op de
+lijst, en daarna om de vijf jaar opnieuw, zonder dat u iets hoeft te doen. Een herziening die na het einde van
+de looptijd valt, verschijnt niet: dan is het krediet afbetaald. Alleen dossiers waarvan de akte verleden is,
+tellen mee.
+
+De jaren per variabiliteit vult uw kantoor in onder
+[Platformbeheer → Keuzelijsten](../beheer/keuzelijsten.md#de-variabiliteit-wanneer-de-rente-herzien-wordt).
+Staan ze er niet, dan kent CreditSoft geen volgende herziening en blijft de kaart voor die contracten leeg.
+
+Beide kaarten tonen de eerste acht, de vroegste datum bovenaan. Zitten er meer achter, dan klikt u op
+**Toon de … andere**, zoals bij de termijnen.
+
+!!! info "Waarom de status hier niet meetelt"
+    Bij de termijnen verdwijnt een dossier zodra zijn status in een eindfase staat. Hier niet: een geakteerd
+    krediet stáát in een eindfase, en precies dan begint deze opvolging.
+
 ## De drie grafieken
 
 Onder de tegels staan drie grafieken. Ze gaan alle drie over **hetzelfde jaar** — dat u met de pijltjes
