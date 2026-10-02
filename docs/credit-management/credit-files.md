@@ -132,7 +132,7 @@ andere variabiliteit koos — dan staat het voorstel eronder, met **Voorstel geb
 verder. Bij uw bestaande contracten is de eerste herziening al ingevuld waar de variabiliteit haar jaren kent en
 de start- of aktedatum bekend is.
 
-![Het venster Contract bewerken van een gerealiseerd hypothecair contract: bovenaan de melding dat het contract afgerond is, daaronder onder meer Bedrag, Looptijd en Rentevoet, en de Variabiliteit Variabel 5/5/5 met ernaast de Eerste herziening op 23/04/2031. Onder dat veld staat het voorstel: 23/04/2031 — start of akte + 5 jaar.](../images/kredietdossier-contract-herziening.png "De eerste renteherziening naast de variabiliteit, met het voorstel eronder")
+![Het venster Contract bewerken van een gerealiseerd hypothecair contract: bovenaan de melding dat het contract afgerond is, daaronder onder meer Bedrag, Looptijd en Rentevoet, en de Variabiliteit Variabel 5/5/5 met ernaast de Eerste herziening op 23/04/2031. Onder dat veld staat het voorstel: 23/04/2031 — start of akte + 5 jaar.](../images/kredietdossier-contract-herziening.png "De eerste renteherziening naast de variabiliteit, met het voorstel eronder"){ .volle-breedte }
 
 ### Partijen
 

@@ -132,7 +132,7 @@ avez ensuite choisi une autre variabilité — la proposition s'affiche en desso
 suivantes. Pour vos contrats existants, la première révision est déjà remplie lorsque la variabilité connaît ses
 années et que la date de début ou d'acte est connue.
 
-![La fenêtre Modifier le contrat d'un contrat hypothécaire réalisé : en haut l'avis que le contrat est finalisé, en dessous notamment Montant, Durée et Taux d'intérêt, et la Variabilité Variable 5/5/5 avec à côté la Première révision au 23/04/2031. Sous ce champ figure la proposition : 23/04/2031 — début ou acte + 5 ans.](../images/kredietdossier-contract-herziening-fr.png "La première révision du taux à côté de la variabilité, avec la proposition en dessous")
+![La fenêtre Modifier le contrat d'un contrat hypothécaire réalisé : en haut l'avis que le contrat est finalisé, en dessous notamment Montant, Durée et Taux d'intérêt, et la Variabilité Variable 5/5/5 avec à côté la Première révision au 23/04/2031. Sous ce champ figure la proposition : 23/04/2031 — début ou acte + 5 ans.](../images/kredietdossier-contract-herziening-fr.png "La première révision du taux à côté de la variabilité, avec la proposition en dessous"){ .volle-breedte }
 
 ### Parties
 
