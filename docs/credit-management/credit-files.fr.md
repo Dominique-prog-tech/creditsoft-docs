@@ -49,7 +49,7 @@ Avec **Nouveau dossier** en haut de la liste, vous créez un dossier vide. Le st
 
 ## Le dossier
 
-![Un dossier de crédit ouvert : en haut le bloc principal avec le statut, le numéro interne, le propriétaire et le responsable commercial sous forme de listes déroulantes, l'institution financière, l'apporteur, le montant du crédit, le montant de commission avec la case Retenir à côté et la date d'acte, et à droite les boutons Enregistrer, Annuler, Aperçu d'impression et Supprimer. En dessous, à gauche les dates de dépôt et d'approbation avec le type de dossier, la signature de l'offre à côté de la date limite de l'offre, les dates limites de l'acte et des conditions suspensives, le but, la valeur estimée et la quotité avec la case Offre signée envoyée ainsi que le champ Remarques internes, et sous cette carte les demandeurs de crédit avec, pour chacun, le nombre de revenus et de charges ; à droite les contrats et en bas les onglets Parties, Remarques, Demandés et Prêts et charges, chacun avec un compteur.](../images/kredietdossier-fiche-fr.png "Le dossier de crédit : tout sur une seule page"){ .volle-breedte }
+![Un dossier de crédit ouvert : en haut le bloc principal avec le statut, le numéro interne, le propriétaire et le responsable commercial sous forme de listes déroulantes, l'institution financière, l'apporteur, le montant du crédit, le montant de commission avec la case Retenir à côté et la date d'acte, et à droite les boutons Enregistrer, Annuler, Imprimer l'aperçu et Supprimer. En dessous, à gauche les dates de dépôt et d'approbation avec le type de dossier, la signature de l'offre à côté de la date limite de l'offre, les dates limites de l'acte et des conditions suspensives, le but, la valeur estimée et la quotité avec la case Offre signée envoyée ainsi que le champ Remarques internes, et sous cette carte les demandeurs de crédit avec, pour chacun, le nombre de revenus et de charges ; à droite les contrats et en bas les onglets Parties, Remarques, Demandés et Prêts et charges, chacun avec un compteur.](../images/kredietdossier-fiche-fr.png "Le dossier de crédit : tout sur une seule page"){ .volle-breedte }
 
 Le dossier tient sur une seule page. En haut, le bloc principal reprend les données dont vous avez le plus souvent besoin ; en dessous, les dates et le bien à gauche, les contrats à droite. En bas à droite, **Parties**, **Remarques**, **Demandés** et **Prêts et charges** figurent côte à côte sous forme d'onglets — quatre listes qui partagent le même emplacement, pour que vous puissiez les atteindre toutes les quatre sans faire défiler la page.
 
@@ -216,6 +216,12 @@ L'onglet à côté de *Parties*. Vous y notez tout ce qui a été dit ou convenu
 
 ## Impression
 
-Le bouton **Aperçu d'impression** génère un pdf de ce dossier : les données, les demandeurs, les contrats et les remarques, surmontés de votre propre en-tête. Vous pouvez télécharger ce pdf ou l'envoyer directement par courriel.
+Le bouton **Imprimer l'aperçu** génère un pdf de ce dossier, surmonté de votre propre en-tête. Il reprend, dans cet ordre : les données du dossier, les demandeurs de crédit, leurs revenus, leurs prêts et charges, le bien, la fiche d'investissement, les contrats, les parties et les remarques. Vous pouvez télécharger ce pdf ou l'envoyer directement par courriel.
+
+- L'impression montre ce qui est **enregistré**. Si vous venez de modifier quelque chose, enregistrez-le d'abord.
+- Pour le bien et la fiche d'investissement, seul ce qui est complété apparaît. La fiche d'investissement se termine par l'investissement total, l'apport propre et le crédit demandé.
+- Les revenus et les charges ne sont pas additionnés, comme à l'écran.
+- Un bloc sans contenu reste présent, avec une courte phrase. Vous voyez ainsi qu'il n'y a rien, et non qu'il manque quelque chose.
+- Si un bloc s'étend sur plus d'une page, ses en-têtes de colonnes figurent aussi en haut de la page suivante.
 
 Vous cherchez des chiffres portant sur **plusieurs** dossiers — par statut, par prêteur, par apporteur ou par responsable commercial ? Vous les trouverez sous [Rapports](reports.md).

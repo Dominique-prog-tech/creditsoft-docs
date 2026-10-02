@@ -216,6 +216,12 @@ Het tabblad naast *Partijen*. Hier noteert u alles wat bij dit dossier gezegd of
 
 ## Afdrukken
 
-De knop **Afdruk overzicht** maakt een pdf van dit dossier: de gegevens, de aanvragers, de contracten en de opmerkingen, met uw eigen briefhoofd erboven. U kan die pdf downloaden of meteen doorsturen per e-mail.
+De knop **Afdruk overzicht** maakt een pdf van dit dossier, met uw eigen briefhoofd erboven. Erop staan, in deze volgorde: de dossiergegevens, de kredietaanvragers, hun inkomsten, hun leningen en lasten, het pand, de investeringsfiche, de contracten, de partijen en de opmerkingen. U kan die pdf downloaden of meteen doorsturen per e-mail.
+
+- De afdruk toont wat **bewaard** is. Hebt u net iets gewijzigd, bewaar het dan eerst.
+- Bij het pand en de investeringsfiche staat enkel wat ingevuld is. De investeringsfiche eindigt met de totale investering, de eigen inbreng en het gevraagde krediet.
+- Inkomsten en lasten worden niet opgeteld, net zoals op het scherm.
+- Een blok zonder inhoud blijft staan, met een korte zin. Zo ziet u dat er niets is, en niet dat er iets ontbreekt.
+- Loopt een blok over meer dan één pagina, dan staan zijn kolomkoppen ook bovenaan de volgende pagina.
 
 Zoekt u cijfers over **meerdere** dossiers — per status, per kredietverstrekker, per aanbrenger of per sales verantwoordelijke — dan vindt u die onder [Rapporten](reports.md).
