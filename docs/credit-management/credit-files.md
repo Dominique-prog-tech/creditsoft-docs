@@ -219,6 +219,20 @@ De kolom **Status** zegt in één woord waar elk stuk staat: *Gevraagd* (nog nie
 
 Vraagt u een stuk toch niet, dan haalt **Verwijderen** in datzelfde venster het van de lijst. Het verhuist naar de [prullenbak](../administration/recycle-bin.md) en is dus niet definitief weg; de teller bovenaan telt er meteen één minder.
 
+#### Stukken die de klant al aanleverde
+
+Leverde een aanvrager een stuk al aan bij zijn [relatiefiche](../crm/relations.md) — bijvoorbeeld vóór er een dossier was — dan hoeft hij het niet opnieuw te sturen. Staat in dit dossier een stuk van dezelfde soort nog open, dan ziet u op die regel **Reeds aangeleverd door Jan Peeters op 12/06/2026** met een knop **Koppelen**. Boven de lijst staat **Alle reeds aangeleverde stukken koppelen** als het er meer zijn.
+
+![Het tabblad Gevraagd van een dossier: boven de lijst de melding dat een stuk dat de aanvrager al aanleverde bij een open regel past, met de knop om alles te koppelen; op die regel de naam van de aanvrager, de datum van aanlevering en de knop Koppelen.](../images/kredietdossier-reeds-aangeleverd.png "Een stuk dat de klant al aanleverde, koppelen")
+
+Na het koppelen staat de regel op *Ontvangen*, met *via Jan Peeters, aangeleverd op 12/06/2026* eronder. Een paar dingen om te weten:
+
+- **Het bestand blijft één bestand, bij de klant.** Er wordt niets verplaatst of gekopieerd: vraagt een volgend dossier hetzelfde stuk, dan koppelt u het daar opnieuw.
+- **U beoordeelt het opnieuw, voor dit dossier.** Ook een stuk dat bij de relatie al goedgekeurd was, begint hier onbeoordeeld — een loonfiche van acht maanden geleden kan voor dit dossier te oud zijn. Kijk dus naar de datum.
+- **Ontkoppelen** kan in het beoordeelvenster zolang u het niet goedgekeurd hebt; de regel staat dan weer open.
+- Stuurt de klant via zijn portaal toch een nieuw bestand, dan geldt dat nieuwe bestand.
+- In het klantenportaal leest uw klant bij die regel dat hij het stuk al aanleverde.
+
 ### Het journaal van dit dossier
 
 De knop **Journaal** rechtsboven, op de regel met het dossiernummer, opent een paneel met zeven tabbladen: **Taken**, **Notities**, **Gesprekken**, **Bijlagen**, **Commissieschema's**, **Mailverkeer** en het **Logboek** — alles van dít dossier. Het paneel opent op **Taken**: wat er nog te doen is bij dit dossier.

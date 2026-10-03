@@ -46,6 +46,10 @@ Le menu à droite de chaque pièce jointe propose **Modifier la description** �
 lui-même non — et **Supprimer**, avec confirmation. Les pièces jointes supprimées arrivent dans la
 [Corbeille](../administration/recycle-bin.md).
 
+## Sur un dossier : les pièces jointes des demandeurs
+
+Sur un **dossier de crédit**, sous ses propres pièces jointes, figurent aussi les **Pièces jointes des demandeurs** : les fichiers de la fiche relation de chaque demandeur, par demandeur. Vous les voyez et les ouvrez depuis le dossier, mais vous les gérez sur la fiche relation — ici, vous ne pouvez rien téléverser, renommer ni supprimer. Ainsi, un même fichier reste chez le client, même s'il est demandeur dans plusieurs dossiers.
+
 ## Rechercher et exporter
 
 Le **champ de recherche** filtre la liste au fur et à mesure de la frappe. Le bouton à côté exporte la liste vers

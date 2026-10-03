@@ -293,6 +293,12 @@ const SCHOTEN = [
   }],
   // ── kv5 (02/10/2026): het patrimonium ──
   // ⚠️ Het tablabel draagt een teller — zie de nota bij relaties-gevraagde-documenten: geen tab(), wel de role met regex.
+  // ── mak16 (03/10/2026): een stuk dat de aanvrager al aanleverde ──
+  // ⚠️ Het tablabel draagt een teller ("Gevraagd (2/6)") — de role met regex, zoals bij de andere tabbladen.
+  ['kredietdossier-reeds-aangeleverd', `/credit-files/${ID.dossierAangeleverd}`, async p => {
+      await p.getByRole('tab', { name: /^(Gevraagd|Demandés) \(/i }).first().click();
+      await p.waitForTimeout(2500);
+  }],
   ['kredietdossier-patrimonium', `/credit-files/${ID.dossierPatrimonium}`, async p => {
       await p.getByRole('tab', { name: /^(Patrimonium|Patrimoine)\s*\(/i }).first().click();
       await p.waitForTimeout(2500);
@@ -875,6 +881,8 @@ const VERWACHT = {
   // kv5: de somregel draagt het woord VOOR het bedrag ("Waarde € 1.320.000,00"); de cellen van de lijst niet. Het venster:
   // de hint over de maandlast staat enkel daar.
   'kredietdossier-patrimonium': /(Waarde|Valeur) € \d/,
+  // Staat enkel in beeld als een voorstel er is — zonder het geval in de demo (td5) faalt het schot, niet stil.
+  'kredietdossier-reeds-aangeleverd': /Reeds aangeleverd door|Déjà fourni par/,
   'kredietdossier-pand-venster': /Loopt er een lening|Si un prêt court/,
   // k1b: het label staat er enkel bij een afsluitende status (een lopend dossier faalt hier); de gekozen reden meet het
   // recept zelf, want een invoerwaarde staat niet in innerText.

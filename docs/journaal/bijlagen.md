@@ -43,6 +43,10 @@ In het menu rechts van elke bijlage staat **Omschrijving aanpassen** — de omsc
 zelf niet — en **Verwijderen**, met een bevestiging. Verwijderde bijlagen komen in de
 [Prullenbak](../administration/recycle-bin.md).
 
+## Op een dossier: de bijlagen van de aanvragers
+
+Op een **kredietdossier** staan onder de eigen bijlagen ook de **Bijlagen van de aanvragers**: de bestanden op de relatiefiche van elke aanvrager, per aanvrager. U ziet ze en opent ze vanaf het dossier, maar u beheert ze op de relatiefiche — hier kunt u er niets opladen, hernoemen of verwijderen. Zo blijft één bestand bij de klant, ook als hij in meerdere dossiers aanvrager is.
+
 ## Zoeken en exporteren
 
 Het **zoekveld** filtert de lijst terwijl u typt. De knop ernaast exporteert de lijst naar **Excel** of **CSV**.

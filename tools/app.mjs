@@ -59,6 +59,8 @@ export const ID = {
   // bij twee, een saldo bij één. Zo toont de lijst elk geval en draagt de somregel drie bedragen. Gekozen met een
   // query na "Opvolging en patrimonium aanvullen"; valt om na een her-seed (het patrimonium hangt aan het nummer).
   dossierPatrimonium: '65fcb9bd-0a60-404a-a6dd-d9275361241e',
+  // mak16: DEMO-1000 — Guy Buelens leverde het offertestuk al aan bij zijn relatiefiche (td5 'Journaal vullen').
+  dossierAangeleverd: '1b174033-5caa-4f1f-981d-b336a78009f4',
   // DEMO-1045 (k1b, 02/10/2026) — status Krediet geweigerd met de reden "Bank: quotiteit te hoog". Een dossier zónder
   // afsluitende status toont het veld niet, dus een lopend dossier bewijst niets. Gekozen met een query na "Opvolging,
   // patrimonium en redenen van afvallen aanvullen"; valt om na een her-seed (de reden hangt aan het nummer).

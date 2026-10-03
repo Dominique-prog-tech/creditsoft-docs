@@ -219,6 +219,20 @@ La colonne **Statut** indique en un mot où en est chaque pièce : *Demandé* (r
 
 Si finalement vous ne demandez pas une pièce, **Supprimer** dans cette même fenêtre la retire de la liste. Elle part à la [corbeille](../administration/recycle-bin.md) et n'est donc pas définitivement effacée ; le compteur en haut en décompte une aussitôt.
 
+#### Pièces déjà fournies par le client
+
+Si un demandeur a déjà fourni une pièce sur sa [fiche relation](../crm/relations.md) — par exemple avant qu'il y ait un dossier —, il ne doit pas la renvoyer. Si une pièce du même type est encore ouverte dans ce dossier, la ligne affiche **Déjà fourni par Jan Peeters le 12/06/2026** avec un bouton **Lier**. Au-dessus de la liste figure **Lier toutes les pièces déjà fournies** s'il y en a plusieurs.
+
+![L'onglet Demandés d'un dossier : au-dessus de la liste, le message qu'une pièce déjà fournie par le demandeur correspond à une ligne ouverte, avec le bouton pour tout lier ; sur cette ligne, le nom du demandeur, la date de fourniture et le bouton Lier.](../images/kredietdossier-reeds-aangeleverd-fr.png "Lier une pièce déjà fournie par le client")
+
+Après la liaison, la ligne passe à *Reçu*, avec *via Jan Peeters, fourni le 12/06/2026* en dessous. Quelques points à savoir :
+
+- **Le fichier reste un seul fichier, chez le client.** Rien n'est déplacé ni copié : si un dossier suivant demande la même pièce, vous la liez à nouveau.
+- **Vous l'évaluez à nouveau, pour ce dossier.** Même une pièce déjà approuvée sur la relation commence ici sans évaluation — une fiche de paie d'il y a huit mois peut être trop ancienne pour ce dossier. Regardez donc la date.
+- **Délier** est possible dans la fenêtre d'évaluation tant que vous ne l'avez pas approuvée ; la ligne est alors de nouveau ouverte.
+- Si le client envoie malgré tout un nouveau fichier via son portail, c'est ce nouveau fichier qui compte.
+- Dans le portail client, votre client lit sur cette ligne qu'il a déjà fourni la pièce.
+
 ### Le journal de ce dossier
 
 Le bouton **Journal** en haut à droite, sur la ligne du numéro de dossier, ouvre un panneau à sept onglets : **Tâches**, **Notes**, **Appels**, **Pièces jointes**, **Schémas de commission**, **Courrier** et l'**Historique** — le tout pour ce dossier. Le panneau s'ouvre sur **Tâches** : ce qu'il reste à faire sur ce dossier.
