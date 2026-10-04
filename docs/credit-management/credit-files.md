@@ -289,6 +289,22 @@ Met **Bekijk als klant** ernaast opent u het portaal in een nieuw tabblad, preci
 !!! warning "De link is elke keer nieuw"
     Een uitnodiging wordt niet bewaard en kan niet teruggehaald worden — enkel een afdruk ervan. Verstuurt u er een tweede, dan krijgt uw klant een nieuwe link; de oude blijft werken tot ze vervalt.
 
+### Herinneringen aan uw klant
+
+Ontbreken er nog stukken, dan krijgt uw klant vanzelf een **herinnering per mail**: de lijst van wat nog ontbreekt — bij een afgekeurd stuk met de reden erbij — en een nieuwe link naar zijn portaal. Dat gebeurt als u de herinneringen aanzette bij [Platformbeheer → Documenttypes](../beheer/documenttypes.md#herinnering-aan-de-klant), en enkel voor een klant die voor dit dossier een **uitnodiging per mail** kreeg. Met *Enkel de link maken* vertrekken er geen herinneringen.
+
+Boven de lijst ziet u waar het dossier staat: wanneer de volgende herinnering vertrekt, en hoeveel er al verstuurd zijn. Een dossier krijgt er hoogstens drie. Ze stoppen vanzelf zodra er niets meer ontbreekt of het dossier afgesloten is.
+
+![Het tabblad Gevraagd van een kredietdossier, met bovenaan de regel Herinneringen: de volgende (2 van 3) op 02/09, 1 van 3 verstuurd, met de knoppen Nu herinneren en Geen herinneringen meer, en daaronder de lijst van gevraagde stukken.](../images/kredietdossier-herinnering.png "De stand van de herinneringen voor dit dossier")
+
+- **Nu herinneren** stuurt er meteen een. De volgende automatische herinnering telt dan vanaf vandaag.
+- **Geen herinneringen meer** stopt ze voor dit dossier. Met **Hervatten** zet u ze weer aan; wat al verstuurd is, blijft meetellen.
+
+!!! note "Wat telt als ontbrekend"
+    Een stuk met de status *Gevraagd* of *Opnieuw sturen*. Een stuk dat uw klant al aanleverde en dat op uw beoordeling wacht (*Ontvangen*), telt niet mee: dan wacht hij op u.
+
+De herinneringen vertrekken elke ochtend om 6 uur. De tekst komt uit het mailsjabloon *Herinnering ontbrekende stukken (klantenportaal)*, en de mail staat daarna bij het mailverkeer van het dossier.
+
 Met **Bestanden** beheert u de bijlagen zelf — handig wanneer een stuk per post of per mail binnenkomt in plaats van via het portaal. Met **Document toevoegen** zet u een extra gevraagd stuk op de lijst. Die keuzelijst is gegroepeerd per **categorie**: eenzelfde stuk bestaat vaak voor meerdere soorten dossiers — *Gegevens notaris* apart voor Aankoop, Erfenis, Herfinanciering en nog vijf andere — en de kop erboven zegt telkens over welke het gaat.
 
 !!! tip "Alles op één lijst"

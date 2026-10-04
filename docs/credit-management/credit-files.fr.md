@@ -289,6 +289,22 @@ Avec **Voir comme le client** à côté, vous ouvrez le portail dans un nouvel o
 !!! warning "Le lien est nouveau à chaque fois"
     Une invitation n'est pas conservée et ne peut pas être récupérée — seule une empreinte l'est. Si vous en envoyez une deuxième, votre client reçoit un nouveau lien ; l'ancien continue de fonctionner jusqu'à son expiration.
 
+### Rappels à votre client
+
+S'il manque encore des pièces, votre client reçoit automatiquement un **rappel par e-mail** : la liste de ce qui manque — avec le motif pour une pièce refusée — et un nouveau lien vers son portail. Cela se fait si vous avez activé les rappels sous [Administration → Types de documents](../beheer/documenttypes.md#rappel-au-client), et uniquement pour un client qui a reçu une **invitation par e-mail** pour ce dossier. Avec *Créer uniquement le lien*, aucun rappel ne part.
+
+Au-dessus de la liste, vous voyez où en est le dossier : quand part le prochain rappel, et combien ont déjà été envoyés. Un dossier en reçoit au maximum trois. Ils s'arrêtent d'eux-mêmes dès qu'il ne manque plus rien ou que le dossier est clôturé.
+
+![L'onglet Demandés d'un dossier de crédit, avec en haut la ligne Rappels : le prochain (2 sur 3) le 02/09, 1 sur 3 envoyé, avec les boutons Rappeler maintenant et Plus de rappels, et en dessous la liste des pièces demandées.](../images/kredietdossier-herinnering-fr.png "L'état des rappels pour ce dossier")
+
+- **Rappeler maintenant** en envoie un tout de suite. Le prochain rappel automatique compte alors à partir d'aujourd'hui.
+- **Plus de rappels** les arrête pour ce dossier. Avec **Reprendre**, vous les réactivez ; ce qui a déjà été envoyé continue de compter.
+
+!!! note "Ce qui compte comme manquant"
+    Une pièce au statut *Demandé* ou *À renvoyer*. Une pièce que votre client a déjà fournie et qui attend votre évaluation (*Reçu*) ne compte pas : c'est alors lui qui vous attend.
+
+Les rappels partent chaque matin à 6 h. Le texte provient du modèle d'e-mail *Rappel pièces manquantes (portail client)*, et l'e-mail figure ensuite dans le courrier du dossier.
+
 Le bouton **Fichiers** vous permet de gérer les pièces jointes vous-même — pratique lorsqu'un document arrive par courrier ou par e-mail plutôt que via le portail. Le bouton **Ajouter un document** ajoute une pièce demandée à la liste. Cette liste de choix est groupée par **catégorie** : une même pièce existe souvent pour plusieurs types de dossiers — *Données du notaire* séparément pour Achat, Succession, Refinancement et cinq autres — et l'en-tête indique chaque fois de laquelle il s'agit.
 
 !!! tip "Tout sur une seule liste"

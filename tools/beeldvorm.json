@@ -563,5 +563,21 @@
   "taken-overzicht-fr": {
     "breedte": 1600,
     "hoogte": 860
+  },
+  "kredietdossier-herinnering": {
+    "breedte": 1920,
+    "hoogte": 1080
+  },
+  "kredietdossier-herinnering-fr": {
+    "breedte": 1920,
+    "hoogte": 1080
+  },
+  "documenttypes-herinnering": {
+    "breedte": 1280,
+    "hoogte": 860
+  },
+  "documenttypes-herinnering-fr": {
+    "breedte": 1280,
+    "hoogte": 860
   }
 }

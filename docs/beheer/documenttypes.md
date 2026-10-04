@@ -40,6 +40,16 @@ Achter de knop **Categorieën beheren** staat de lijst van categorieën. Ook een
 
 De kolom **Types** zegt hoeveel documenttypes er onder elke categorie hangen. Dat cijfer is er met een reden: een categorie verwijderen die nog types draagt, kan niet. U krijgt dan te zien hoeveel er in de weg staan, zodat u ze eerst kunt verplaatsen.
 
+## Herinnering aan de klant
+
+Met de knop **Herinneringen** in de werkbalk bepaalt u of uw klanten vanzelf een herinnering krijgen voor stukken die nog ontbreken. De knop toont meteen hoe het staat: *Herinneringen: uit*, of *Herinneringen: na 7 dagen*.
+
+![Het venster Herinnering aan de klant: een korte uitleg, het veld Herinneren na (dagen) met de waarde 7, en de toelichting dat er hoogstens 3 herinneringen per dossier vertrekken.](../images/documenttypes-herinnering.png "Na hoeveel dagen uw klant een herinnering krijgt")
+
+U vult in na hoeveel dagen een herinnering vertrekt, gerekend vanaf de uitnodiging of de vorige herinnering. Laat u het veld leeg, dan vertrekken er geen herinneringen. Een dossier krijgt er hoogstens drie, en enkel als uw klant voor dat dossier een uitnodiging per mail kreeg. Op het dossier zelf ziet u wanneer de volgende vertrekt — zie [Herinneringen aan uw klant](../credit-management/credit-files.md#herinneringen-aan-uw-klant).
+
+De tekst van de mail past u aan bij **Mailsjablonen → Herinnering ontbrekende stukken (klantenportaal)**.
+
 ## Hoe dit doorwerkt op een dossier
 
 Op het kredietdossier kiest u uit deze lijst welke stukken u verwacht. Per stuk houdt u dan bij of het ontvangen, gecontroleerd of geweigerd is.

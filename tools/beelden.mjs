@@ -300,6 +300,10 @@ const SCHOTEN = [
       await p.getByRole('tab', { name: /^(Gevraagd|Demandés) \(/i }).first().click();
       await p.waitForTimeout(2500);
   }],
+  ['kredietdossier-herinnering', `/credit-files/${ID.dossierHerinnering}`, async p => {
+      await p.getByRole('tab', { name: /^(Gevraagd|Demandés) \(/i }).first().click();
+      await p.waitForTimeout(2500);
+  }],
   ['kredietdossier-patrimonium', `/credit-files/${ID.dossierPatrimonium}`, async p => {
       await p.getByRole('tab', { name: /^(Patrimonium|Patrimoine)\s*\(/i }).first().click();
       await p.waitForTimeout(2500);
@@ -443,6 +447,7 @@ const SCHOTEN = [
   ['borderel-nieuwe-ronde',     '/commissie/borderel',            async p => { await tab(p, 'Borderellen', 'Bordereaux'); await knop(p, 'Nieuwe ronde aanmaken', 'Créer une nouvelle série'); }],
   ['online-afspraken-instellingen', '/crm/online-afspraken',      p => rechterTab(p, ['Instellingen', 'Paramètres'])],
   ['documenttypes-categorieen', '/beheer/documenttypes',          p => knop(p, 'Categorieën beheren', 'Gérer les catégories')],
+  ['documenttypes-herinnering', '/beheer/documenttypes',          p => knop(p, 'Herinneringen: na 7 dagen', 'Rappels : après 7 jours')],
   ['lead-klant-maken',          `/crm/leads/${ID.lead}`,          p => knop(p, 'Klant van maken', 'En faire un client')],
   ['portaal-toegang',           `/contributors/${ID.aanbrengerMetPortaal}`, p => knop(p, 'Portaal', 'Portail')],
   ['commissieschemas-journaal', `/credit-files/${ID.dossierMetSchema}`, async p => {
@@ -815,6 +820,7 @@ const VERWACHT = {
   'portaal-toegang':            /Nieuw tijdelijk wachtwoord|Nouveau mot de passe/i,
   'lead-klant-maken':           /Documenttaal|Langue des documents/i,
   'documenttypes-categorieen':  /Categorie|Catégorie/i,
+  'documenttypes-herinnering':  /Herinneren na|Rappeler après/,
   'voorkeuren-paneel':          /Kies foto|Choisir une photo|Omgevingsgrootte|Taille/i,
   'voorkeuren':                 /Kies foto|Choisir une photo|Omgevingsgrootte|Taille/i,
   'journaal-lade':              /Kredietdossiers|Dossiers de crédit/i,
@@ -886,6 +892,7 @@ const VERWACHT = {
   'kredietdossier-patrimonium': /(Waarde|Valeur) € \d/,
   // Staat enkel in beeld als een voorstel er is — zonder het geval in de demo (td5) faalt het schot, niet stil.
   'kredietdossier-reeds-aangeleverd': /Reeds aangeleverd door|Déjà fourni par/,
+  'kredietdossier-herinnering': /Herinneringen:|Rappels :/,
   'kredietdossier-pand-venster': /Loopt er een lening|Si un prêt court/,
   // k1b: het label staat er enkel bij een afsluitende status (een lopend dossier faalt hier); de gekozen reden meet het
   // recept zelf, want een invoerwaarde staat niet in innerText.

@@ -40,6 +40,16 @@ Le bouton **Gérer les catégories** ouvre la liste des catégories. Une catégo
 
 La colonne **Types** indique combien de types de documents relèvent de chaque catégorie. Ce chiffre a sa raison d'être : supprimer une catégorie qui porte encore des types est impossible. L'écran vous dit alors combien font obstacle, afin que vous puissiez d'abord les déplacer.
 
+## Rappel au client
+
+Avec le bouton **Rappels** de la barre d'outils, vous décidez si vos clients reçoivent automatiquement un rappel pour les pièces qui manquent encore. Le bouton indique tout de suite où vous en êtes : *Rappels : désactivés*, ou *Rappels : après 7 jours*.
+
+![La fenêtre Rappel au client : une courte explication, le champ Rappeler après (jours) avec la valeur 7, et la précision qu'au maximum 3 rappels partent par dossier.](../images/documenttypes-herinnering-fr.png "Après combien de jours votre client reçoit un rappel")
+
+Vous indiquez après combien de jours un rappel part, à compter de l'invitation ou du rappel précédent. Si vous laissez le champ vide, aucun rappel ne part. Un dossier en reçoit au maximum trois, et uniquement si votre client a reçu une invitation par e-mail pour ce dossier. Sur le dossier lui-même, vous voyez quand part le prochain — voir [Rappels à votre client](../credit-management/credit-files.md#rappels-a-votre-client).
+
+Vous adaptez le texte de l'e-mail sous **Modèles d'e-mail → Rappel pièces manquantes (portail client)**.
+
 ## Comment cela se répercute sur un dossier
 
 Sur le dossier de crédit, vous choisissez dans cette liste les pièces que vous attendez. Pour chacune, vous suivez ensuite si elle a été reçue, vérifiée ou refusée.
