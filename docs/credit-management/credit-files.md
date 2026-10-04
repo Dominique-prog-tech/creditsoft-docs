@@ -196,6 +196,15 @@ de start- of aktedatum bekend is.
 
 ![Het venster Contract bewerken van een gerealiseerd hypothecair contract: bovenaan de melding dat het contract afgerond is, daaronder onder meer Bedrag, Looptijd en Rentevoet, en de Variabiliteit Variabel 5/5/5 met ernaast de Eerste herziening op 23/04/2031. Onder dat veld staat het voorstel: 23/04/2031 — start of akte + 5 jaar.](../images/kredietdossier-contract-herziening.png "De eerste renteherziening naast de variabiliteit, met het voorstel eronder"){ .volle-breedte }
 
+#### Een mail bij een nieuwe status
+
+Heeft uw kantoor [mails per moment](../beheer/mail-momenten.md) ingesteld, dan kan het bewaren van een contract of van het dossier een mail aan de klant meebrengen — bijvoorbeeld wanneer een contract de status *Ingediend* krijgt.
+
+- Staat het moment op **Voorstellen**, dan opent na *Bewaren* een mail die al ingevuld is, met alle aanvragers als ontvanger. U leest ze na, past ze aan als u wil, en verstuurt ze — of u sluit het venster.
+- Staat het op **Automatisch**, dan vertrekt de mail meteen; een melding zegt het u.
+
+Een moment vertrekt hoogstens één keer per contract of dossier. U vindt de mail terug bij het **mailverkeer** van het dossier.
+
 ### Partijen
 
 De betrokken professionals — immokantoor, notaris, schatter of accountant. Per partij houdt u bij of ze **aangesteld** is en of het **verslag ontvangen** is, met de bijhorende datums en contactgegevens.

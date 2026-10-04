@@ -1,6 +1,8 @@
 # Mailsjablonen
 
-Op het scherm **Mailsjablonen** past u de tekst van uw uitgaande e-mails aan. De sjablonen zijn **vast** — u kiest er één uit de lijst en past hem aan; u maakt zelf geen nieuwe aan en verwijdert er geen (zo blijft elk sjabloon gekoppeld aan zijn rol). Elk sjabloon is **tweetalig** (NL/FR).
+Op het scherm **Mailsjablonen** past u de tekst van uw uitgaande e-mails aan. De sjablonen zijn **vast** — u kiest er één uit de lijst en past hem aan; u maakt hier zelf geen nieuwe aan en verwijdert er geen (zo blijft elk sjabloon gekoppeld aan zijn rol). Elk sjabloon is **tweetalig** (NL/FR).
+
+De teksten van uw [mails per moment](../beheer/mail-momenten.md) staan ook in de lijst, als *Bij een moment (status): titel*. Een nieuwe zulke tekst maakt u bij *Mails per moment*.
 
 ![Het scherm Mailsjablonen in CreditSoft: bovenaan de keuze van het sjabloon en de afzender, daaronder links de tabbladen Nederlands en Frans met het onderwerp en een tekstverwerker voor de inhoud, en rechts een voorbeeld van de mail.](../images/mailsjablonen.png "Een mailsjabloon bewerken, met het voorbeeld ernaast"){ .volle-breedte }
 

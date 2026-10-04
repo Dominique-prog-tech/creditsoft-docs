@@ -196,6 +196,15 @@ années et que la date de début ou d'acte est connue.
 
 ![La fenêtre Modifier le contrat d'un contrat hypothécaire réalisé : en haut l'avis que le contrat est finalisé, en dessous notamment Montant, Durée et Taux d'intérêt, et la Variabilité Variable 5/5/5 avec à côté la Première révision au 23/04/2031. Sous ce champ figure la proposition : 23/04/2031 — début ou acte + 5 ans.](../images/kredietdossier-contract-herziening-fr.png "La première révision du taux à côté de la variabilité, avec la proposition en dessous"){ .volle-breedte }
 
+#### Un e-mail lors d'un nouveau statut
+
+Si votre bureau a configuré des [e-mails par moment](../beheer/mail-momenten.md), l'enregistrement d'un contrat ou du dossier peut entraîner un e-mail au client — par exemple lorsqu'un contrat reçoit le statut *Introduit*.
+
+- Si le moment est en mode **Proposer**, un e-mail déjà complété s'ouvre après *Enregistrer*, avec tous les demandeurs comme destinataires. Vous le relisez, l'adaptez si vous le souhaitez, et l'envoyez — ou vous fermez la fenêtre.
+- S'il est en mode **Automatique**, l'e-mail part tout de suite ; un message vous le signale.
+
+Un moment part au maximum une fois par contrat ou dossier. Vous retrouvez l'e-mail dans le **courrier** du dossier.
+
 ### Parties
 
 Les professionnels concernés — agence immobilière, notaire, expert ou comptable. Pour chaque partie, vous suivez si elle est **désignée** et si le **rapport a été reçu**, avec les dates et coordonnées correspondantes.

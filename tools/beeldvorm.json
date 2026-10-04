@@ -579,5 +579,21 @@
   "documenttypes-herinnering-fr": {
     "breedte": 1280,
     "hoogte": 860
+  },
+  "mail-momenten": {
+    "breedte": 1280,
+    "hoogte": 860
+  },
+  "mail-momenten-fr": {
+    "breedte": 1280,
+    "hoogte": 860
+  },
+  "mail-momenten-venster": {
+    "breedte": 1280,
+    "hoogte": 860
+  },
+  "mail-momenten-venster-fr": {
+    "breedte": 1280,
+    "hoogte": 860
   }
 }

@@ -447,6 +447,11 @@ const SCHOTEN = [
   ['borderel-nieuwe-ronde',     '/commissie/borderel',            async p => { await tab(p, 'Borderellen', 'Bordereaux'); await knop(p, 'Nieuwe ronde aanmaken', 'Créer une nouvelle série'); }],
   ['online-afspraken-instellingen', '/crm/online-afspraken',      p => rechterTab(p, ['Instellingen', 'Paramètres'])],
   ['documenttypes-categorieen', '/beheer/documenttypes',          p => knop(p, 'Categorieën beheren', 'Gérer les catégories')],
+  ['mail-momenten',             '/beheer/mail-momenten'],
+  ['mail-momenten-venster',     '/beheer/mail-momenten',          async p => {
+      await p.locator('.dxbl-grid-table tbody tr').first().dblclick();
+      await p.waitForTimeout(2000);
+  }],
   ['documenttypes-herinnering', '/beheer/documenttypes',          p => knop(p, 'Herinneringen: na 7 dagen', 'Rappels : après 7 jours')],
   ['lead-klant-maken',          `/crm/leads/${ID.lead}`,          p => knop(p, 'Klant van maken', 'En faire un client')],
   ['portaal-toegang',           `/contributors/${ID.aanbrengerMetPortaal}`, p => knop(p, 'Portaal', 'Portail')],
@@ -821,6 +826,8 @@ const VERWACHT = {
   'lead-klant-maken':           /Documenttaal|Langue des documents/i,
   'documenttypes-categorieen':  /Categorie|Catégorie/i,
   'documenttypes-herinnering':  /Herinneren na|Rappeler après/,
+  'mail-momenten':              /krijgt de status|reçoit le statut/,
+  'mail-momenten-venster':      /Voorstellen —|Proposer —/,
   'voorkeuren-paneel':          /Kies foto|Choisir une photo|Omgevingsgrootte|Taille/i,
   'voorkeuren':                 /Kies foto|Choisir une photo|Omgevingsgrootte|Taille/i,
   'journaal-lade':              /Kredietdossiers|Dossiers de crédit/i,
