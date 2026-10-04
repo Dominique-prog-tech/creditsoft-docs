@@ -12,16 +12,15 @@ Klik in de zijbalk op **Lijsten** en dan op **Globaal overzicht**.
 
 Bovenaan staan vijf keuzelijsten. De eerste bepaalt welk deel van uw dossiers u ziet:
 
-![Het globaal overzicht met de eerste keuzelijst opengeklapt: Alle dossiers, Lopend — blauw gemarkeerd als de huidige keuze — en Opvolging na akte. Ernaast de vier andere keuzelijsten, de teller "2246 van 4000" en de knop Afdruk lijst; eronder de tabel met dossiers.](../images/globaal-overzicht-voorinstelling.png "De eerste keuzelijst: welk deel van uw dossiers u ziet"){ .volle-breedte }
+![Het globaal overzicht met de eerste keuzelijst opengeklapt: Alle dossiers en Lopend — blauw gemarkeerd als de huidige keuze. Ernaast de vier andere keuzelijsten, de teller "2246 van 4000" en de knop Afdruk lijst; eronder de tabel met dossiers.](../images/globaal-overzicht-voorinstelling.png "De eerste keuzelijst: welk deel van uw dossiers u ziet"){ .volle-breedte }
 
 - **Lopend** — alles wat nog niet is afgerond. Dit is de standaardweergave als u het scherm opent.
-- **Opvolging na akte** — dossiers die volgens uw fase-indeling opvolging vragen én waarbij nog opmerkingen openstaan. Dit is uw lijst van "hier moet nog iets gebeuren".
 - **Alle dossiers** — geen beperking.
 
 Daarnaast filtert u op **status**, **instelling**, **verantwoordelijke** en **sales**. Die laatste twee zijn niet hetzelfde: de verantwoordelijke volgt het dossier op, de sales bracht het binnen — en dat is vaak iemand anders. Rechts van de keuzelijsten staat hoeveel dossiers u nu ziet van het totaal, bijvoorbeeld `128 / 3988`, en daarnaast het **totaal van het kredietbedrag** over die dossiers. Dat totaal volgt uw filters: kiest u één verantwoordelijke, dan leest u meteen af hoeveel krediet die persoon onder zich heeft.
 
 !!! tip "Welke dossiers onder welke keuze vallen, bepaalt u zelf"
-    De keuzes **Lopend** en **Opvolging na akte** volgen de fase-indeling van uw kantoor. Die stelt u in onder **Platformbeheer → Dashboard-fases**: daar koppelt u elke dossierstatus aan een fase en geeft u aan welke fase een eindfase is en welke opvolging vraagt. Zolang statussen niet zijn ingedeeld, vallen ze onder "Lopend".
+    De keuze **Lopend** volgt de fase-indeling van uw kantoor. Die stelt u in onder **Platformbeheer → Dashboard-fases**: daar koppelt u elke dossierstatus aan een fase en geeft u aan welke fase een eindfase is. Zolang statussen niet zijn ingedeeld, vallen ze onder "Lopend".
 
 ## De kolommen
 
@@ -62,8 +61,8 @@ Zodra de afdruk klaar is, verschijnt ze in een voorbeeldvenster met twee mogelij
 - **Doorsturen per mail** — er opent een mailvenster met de pdf al als bijlage, opgesteld op uw algemene sjabloon. U vult zelf de ontvangers aan en past de tekst aan waar nodig.
 - **Downloaden** — u bewaart de pdf op uw computer.
 
-!!! tip "Bij *Opvolging na akte* krijgt u een ander overzicht"
-    Staat de eerste keuzelijst op **Opvolging na akte**, dan geeft **Afdruk lijst** het overzicht dat bij die lijst hoort. Dat document is op de opvolging gericht en toont per dossier het interne nummer, de aanvrager, de totale investering, de eigen middelen, het gevraagde krediet, het kredietbedrag, de indiening, de ingangsdatum, de aanbrenger, de verantwoordelijke, de opmerkingen en de instelling.
+!!! tip "Opvolging na de akte heeft een eigen lijst"
+    Wat hier vroeger de keuze *Opvolging na akte* was, is nu een eigen scherm: [Opvolging na de akte](after-deed.md), met zijn eigen afdruk.
 
 ## Statussen die twee keer voorkomen
 

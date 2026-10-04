@@ -2,7 +2,7 @@
 
 Sur cet écran, vous déterminez vous-même comment vos dossiers sont **regroupés et comptés** sur le tableau de bord, et ce qu'il advient d'un dossier dès qu'il est bouclé. Il contient une série de réglages distincts, avec peu de lien entre eux.
 
-![L'écran Phases du tableau de bord dans CreditSoft : en haut les phases avec leur nom dans les deux langues, leur ordre et les cases phase finale, suivi et réussi, avec à droite le lien entre chaque statut de dossier et une phase ; en dessous le lien entre chaque statut de contrat et l'une des quatre tuiles KPI.](../images/dashboard-fases-fr.png "Configurer comment les dossiers sont groupés et comptés sur le tableau de bord"){ .volle-breedte }
+![L'écran Phases du tableau de bord dans CreditSoft : en haut les phases avec leur nom dans les deux langues, leur ordre et les cases phase finale et réussi, avec à droite le lien entre chaque statut de dossier et une phase ; en dessous le lien entre chaque statut de contrat et l'une des quatre tuiles KPI.](../images/dashboard-fases-fr.png "Configurer comment les dossiers sont groupés et comptés sur le tableau de bord"){ .volle-breedte }
 
 !!! info "Attention à l'endroit où il y a — ou non — un bouton d'enregistrement"
     Les **phases**, les **rattachements** et les **cases** du bas sont enregistrés immédiatement : si vous modifiez quelque chose, c'est aussitôt pris en compte. Pour défaire un rattachement, cliquez sur la croix dans la liste de choix.
@@ -16,6 +16,10 @@ Avec quel statut démarre un dossier que vous créez dans CreditSoft ? Cela vari
 Tant que vous ne réglez rien ici, **CreditSoft demande le statut à chaque nouveau dossier**. C'est voulu : une valeur par défaut erronée place immédiatement un nouveau dossier dans la mauvaise phase, et vous ne le remarquez que sur le tableau de bord.
 
 Si vous en définissez un, cette question disparaît et chaque dossier démarre dans ce statut. Vous pouvez toujours effacer ce choix ; la question réapparaît alors.
+
+## Suivi après l'acte
+
+Dans quel statut se trouve un dossier à suivre après l'acte — l'assurance solde restant dû, des pièces manquantes ? Choisissez ce statut ici ; vous pouvez en choisir plusieurs. Les dossiers dans ces statuts apparaissent dans la liste [Suivi après l'acte](../credit-management/after-deed.md). Si vous ne choisissez rien, cette liste reste vide.
 
 ## Le bloc de signaux — jusqu'où le tableau de bord regarde-t-il en avant ?
 
@@ -32,12 +36,11 @@ Une **phase** est une colonne du pipeline sur le tableau de bord : un groupe de 
 | **Nom (NL)** et **Nom (FR)** | Le nom tel que vos collaborateurs le voient, dans les deux langues |
 | **Ordre** | Détermine la position de la phase dans le pipeline, de gauche à droite |
 | **Phase finale** | Le délai de traitement d'un dossier cesse d'y courir |
-| **Suivi** | Le dossier apparaît dans la liste des points ouverts après l'acte |
 | **Réussi** | Uniquement pour une phase finale : un dossier dans cette phase compte comme réussi, même sans date d'acte |
 
 **Phase finale** est plus important qu'il n'y paraît. Un dossier clôturé sans suite continuerait sinon à « courir » indéfiniment dans vos statistiques. Si vous marquez comme finale la phase où ce dossier aboutit, le compteur s'arrête.
 
-**Suivi** s'utilise pour les phases où le crédit est bouclé mais où des pièces manquent encore — l'acte est passé et il reste une attestation à recevoir. Ces dossiers apparaissent alors dans l'aperçu [Aperçu global](../credit-management/global-overview.md) sous *Suivi après acte*.
+Les dossiers à suivre après l'acte ne se choisissent plus par phase mais par **statut** : voir [Suivi après l'acte](#suivi-apres-lacte) plus haut.
 
 **Réussi** se coche sur la phase finale des dossiers aboutis — dans la plupart des bureaux, *Finalisé*. L'onglet [Production](../crm/contributors.md#la-production-dun-apporteur) d'un apporteur compte un dossier dans une phase finale **sans** cette case comme abandonné — avec le [motif d'abandon](../credit-management/credit-files.md#motif-dabandon) du dossier, ou le nom de la phase s'il n'y en a pas. Sur un tel dossier apparaît aussi le champ *Motif d'abandon*. Sans la case sur *Finalisé*, un dossier finalisé sans date d'acte y figurerait donc comme abandonné. La phase standard *Finalisé* porte déjà la case ; si vous avez nommé autrement une phase finale, cochez-la ici.
 

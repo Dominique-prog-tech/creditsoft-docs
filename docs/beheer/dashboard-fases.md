@@ -2,7 +2,7 @@
 
 Op dit scherm bepaalt u zelf hoe uw dossiers op het dashboard **gegroepeerd en geteld** worden, en wat er met een dossier gebeurt zodra het rond is. Het bevat een reeks losse instellingen die weinig met elkaar te maken hebben.
 
-![Het scherm Dashboard-fases in CreditSoft: bovenaan de fases met hun naam in beide talen, hun volgorde en de vinkjes eindfase, opvolging en geslaagd, met rechts de koppeling van elke dossierstatus aan een fase; daaronder de koppeling van elke contractstatus aan een van de vier KPI-tegels.](../images/dashboard-fases.png "Instellen hoe dossiers gegroepeerd en geteld worden op het dashboard"){ .volle-breedte }
+![Het scherm Dashboard-fases in CreditSoft: bovenaan de fases met hun naam in beide talen, hun volgorde en de vinkjes eindfase en geslaagd, met rechts de koppeling van elke dossierstatus aan een fase; daaronder de koppeling van elke contractstatus aan een van de vier KPI-tegels.](../images/dashboard-fases.png "Instellen hoe dossiers gegroepeerd en geteld worden op het dashboard"){ .volle-breedte }
 
 !!! info "Let op waar wél en niet een bewaarknop staat"
     De **fases**, de **koppelingen** en de **vinkjes** onderaan worden meteen bewaard: past u iets aan, dan staat het er. Wilt u een koppeling ongedaan maken, klik dan op het kruisje in de keuzelijst.
@@ -16,6 +16,10 @@ Met welke status begint een dossier dat u in CreditSoft aanmaakt? Dat verschilt 
 Zolang u hier niets instelt, **vraagt CreditSoft de status bij elk nieuw dossier**. Dat is bewust: een verkeerde standaard zet een nieuw dossier meteen in de verkeerde fase, en dat merkt u pas op het dashboard.
 
 Stelt u er wel een in, dan verdwijnt die vraag en start elk dossier in die status. U kan de keuze altijd weer wissen; dan komt de vraag terug.
+
+## Opvolging na de akte
+
+In welke status staat een dossier dat na de akte nog opgevolgd moet worden — de schuldsaldoverzekering, ontbrekende stukken? Kies die status hier; u mag er meer dan één kiezen. De dossiers in die statussen verschijnen in de lijst [Opvolging na de akte](../credit-management/after-deed.md). Kiest u niets, dan blijft die lijst leeg.
 
 ## Het signaalblok — hoever kijkt het dashboard vooruit?
 
@@ -32,12 +36,11 @@ Een **fase** is een kolom in de pijplijn op het dashboard: een groep dossierstat
 | **Naam (NL)** en **Naam (FR)** | De naam zoals uw medewerkers hem zien, in beide talen |
 | **Volgorde** | Bepaalt van links naar rechts waar de fase in de pijplijn staat |
 | **Eindfase** | De doorlooptijd van een dossier stopt hier met tellen |
-| **Opvolging** | Het dossier komt in de lijst met openstaande punten ná de akte |
 | **Geslaagd** | Enkel voor een eindfase: een dossier in deze fase telt als geslaagd, ook zonder aktedatum |
 
 **Eindfase** is belangrijker dan het lijkt. Een dossier dat zonder gevolg is afgesloten, blijft anders eindeloos "lopen" in uw statistieken. Zet u de fase waarin dat dossier terechtkomt op eindfase, dan stopt de klok.
 
-**Opvolging** gebruikt u voor fases waar het krediet rond is maar er nog stukken ontbreken — de akte is gepasseerd en er wacht nog een attest. Die dossiers verschijnen dan in het overzicht [Globaal overzicht](../credit-management/global-overview.md) onder *Opvolging na akte*.
+Welke dossiers na de akte nog opgevolgd moeten worden, kiest u niet meer op een fase maar op **status**: zie [Opvolging na de akte](#opvolging-na-de-akte) hierboven.
 
 **Geslaagd** zet u op de eindfase van de dossiers die rond zijn — bij de meeste kantoren *Afgewerkt*. Het tabblad [Productie](../crm/contributors.md#de-productie-van-een-aanbrenger) van een aanbrenger telt een dossier in een eindfase **zonder** dit vinkje als afgevallen — met de [reden van afvallen](../credit-management/credit-files.md#reden-van-afvallen) van het dossier, of de naam van de fase als er geen reden is. Op zo'n dossier verschijnt ook het veld *Reden van afvallen*. Zonder het vinkje op *Afgewerkt* zou een afgewerkt dossier zonder aktedatum daar dus als afgevallen staan. De standaardfase *Afgewerkt* draagt het vinkje al; hebt u zelf een eindfase anders genoemd, vink ze dan hier aan.
 

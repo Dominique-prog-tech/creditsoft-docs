@@ -118,6 +118,7 @@ const SCHOTEN = [
   ['documentbibliotheek',          '/document-library'],
   ['taken-overzicht',              '/taken'],
   ['notities-lijst',               '/notities'],   // mak12
+  ['opvolging-na-akte',            '/krediet/opvolging-na-akte'],   // mak6 — vraagt td12 in de demo (status + instelling)
   // ── mak13 (02/10/2026): dossiers in bulk overdragen ──
   // Filter op een eigenaar, de pagina aanvinken, Overdragen… en een collega kiezen: pas dán staat er een samenvatting.
   // ⚠️ Het menu-item en niet getByText: "Lotte Cools" staat ook in de kolom Eigenaar, en een klik op die CEL filtert
@@ -842,6 +843,8 @@ const VERWACHT = {
   'taken-overzicht':            /Vervaldatum|Échéance|Prioriteit|Priorité/i,
   // mak12: de kolomkop Hangt aan staat op Taken én op Notities; 'Inhoud' enkel op Notities.
   'notities-lijst':             /Inhoud|Contenu/,
+  // Een kolomkop: staat er enkel als de lijst getoond wordt, NIET bij de melding "nog geen opvolgstatus ingesteld".
+  'opvolging-na-akte':          /Laatste opmerking|Dernière remarque/,
   'kredietdossiers-overdragen': /Komen van|Proviennent de/,   // staat enkel in het venster, en pas met een selectie
   'wachtwoord':                 /Huidig wachtwoord|Mot de passe actuel/i,
   'keuzelijsten':               /Nationaliteit|Nationalité|Volgorde|Ordre/i,

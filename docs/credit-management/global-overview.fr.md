@@ -12,16 +12,15 @@ Dans la barre latérale, cliquez sur **Listes**, puis sur **Aperçu global**.
 
 Cinq listes de choix figurent en haut. La première détermine quelle partie de vos dossiers s'affiche :
 
-![L'aperçu global avec la première liste de choix dépliée : Tous les dossiers, En cours — surligné en bleu comme choix actuel — et Suivi après acte. À côté, les quatre autres listes, le compteur « 2246 sur 4000 » et le bouton Imprimer la liste ; en dessous, le tableau des dossiers.](../images/globaal-overzicht-voorinstelling-fr.png "La première liste de choix : quelle partie de vos dossiers s'affiche"){ .volle-breedte }
+![L'aperçu global avec la première liste de choix dépliée : Tous les dossiers, En cours — surligné en bleu comme choix actuel. À côté, les quatre autres listes, le compteur « 2246 sur 4000 » et le bouton Imprimer la liste ; en dessous, le tableau des dossiers.](../images/globaal-overzicht-voorinstelling-fr.png "La première liste de choix : quelle partie de vos dossiers s'affiche"){ .volle-breedte }
 
 - **En cours** — tout ce qui n'est pas encore clôturé. C'est l'affichage par défaut à l'ouverture de l'écran.
-- **Suivi après acte** — les dossiers qui, selon votre répartition en phases, demandent un suivi *et* pour lesquels des remarques restent ouvertes. C'est votre liste des « il reste quelque chose à faire ici ».
 - **Tous les dossiers** — sans restriction.
 
 Vous filtrez ensuite par **statut**, **institution**, **responsable** et **sales**. Ces deux derniers ne sont pas identiques : le responsable assure le suivi du dossier, le sales l'a apporté — et il s'agit souvent d'une autre personne. À droite des listes de choix figure le nombre de dossiers affichés sur le total, par exemple `128 / 3988`, et à côté le **total du montant du crédit** pour ces dossiers. Ce total suit vos filtres : si vous sélectionnez un seul responsable, vous lisez immédiatement le volume de crédit dont cette personne a la charge.
 
 !!! tip "C'est vous qui déterminez quels dossiers relèvent de quel choix"
-    Les choix **En cours** et **Suivi après acte** suivent la répartition en phases de votre bureau. Vous la configurez sous **Administration → Phases du tableau de bord** : vous y rattachez chaque statut de dossier à une phase et indiquez quelle phase est une phase finale et laquelle demande un suivi. Tant qu'un statut n'est pas réparti, il relève de « En cours ».
+    Le choix **En cours** suit la répartition en phases de votre bureau. Vous la configurez sous **Administration → Phases du tableau de bord** : vous y rattachez chaque statut de dossier à une phase et indiquez quelle phase est une phase finale. Tant que des statuts ne sont pas répartis, ils relèvent de « En cours ».
 
 ## Les colonnes
 
@@ -62,8 +61,8 @@ Dès que l'impression est prête, elle s'affiche dans une fenêtre d'aperçu off
 - **Envoyer par courriel** — une fenêtre de rédaction s'ouvre avec le pdf déjà en pièce jointe, sur la base de votre modèle général. Vous complétez vous-même les destinataires et adaptez le texte si nécessaire.
 - **Télécharger** — vous conservez le pdf sur votre ordinateur.
 
-!!! tip "Avec *Suivi après acte*, vous obtenez un autre aperçu"
-    Lorsque la première liste de choix est sur **Suivi après acte**, le bouton **Imprimer la liste** génère l'aperçu propre à cette liste. Ce document est axé sur le suivi et reprend, par dossier, le numéro interne, le demandeur, l'investissement total, les fonds propres, le crédit demandé, le montant du crédit, l'introduction, la date d'effet, l'apporteur, le responsable, les remarques et l'institution.
+!!! tip "Le suivi après l'acte a sa propre liste"
+    Ce qui était ici le choix *Suivi après acte* est désormais un écran à part : [Suivi après l'acte](after-deed.md), avec sa propre impression.
 
 ## Des statuts qui apparaissent deux fois
 
