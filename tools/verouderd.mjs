@@ -16,7 +16,12 @@ import { PAKKET } from './app.mjs';
 const HIER = new URL('.', import.meta.url).pathname;
 const GEDEELD = '/Users/dominique/projects/adm-appkit/tools/schermmachinerie/verouderd.mjs';
 
+// ⚠️ Een eigen --app (bv. een worktree) WINT. Tot 05/10/2026 zette deze wrapper de zijne vooraan, en het gedeelde script
+//    neemt de EERSTE --app: `--app=<worktree>` werd stil genegeerd en de controle mat de hoofdmap — "actueel" boven 24
+//    beelden van een scherm dat in de worktree gewijzigd was. Gevonden bij de gelinkte contacten (CreditSoft 1.164.0).
+const eigen = process.argv.slice(2);
+const app = eigen.some(a => a.startsWith('--app=')) ? [] : [`--app=${PAKKET.repo}`];
 const r = spawnSync(process.execPath,
-  [GEDEELD, `--app=${PAKKET.repo}`, `--tabellen=${HIER}`, ...process.argv.slice(2)],
+  [GEDEELD, ...app, `--tabellen=${HIER}`, ...eigen],
   { stdio: 'inherit' });
 process.exit(r.status ?? 1);
