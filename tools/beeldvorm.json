@@ -595,5 +595,13 @@
   "mail-momenten-venster-fr": {
     "breedte": 1280,
     "hoogte": 860
+  },
+  "mail-momenten-termijn": {
+    "breedte": 1280,
+    "hoogte": 860
+  },
+  "mail-momenten-termijn-fr": {
+    "breedte": 1280,
+    "hoogte": 860
   }
 }

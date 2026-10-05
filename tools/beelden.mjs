@@ -452,6 +452,10 @@ const SCHOTEN = [
       await p.locator('.dxbl-grid-table tbody tr').first().dblclick();
       await p.waitForTimeout(2000);
   }],
+  ['mail-momenten-termijn',     '/beheer/mail-momenten',          async p => {
+      await p.locator('.dxbl-grid-table tbody tr', { hasText: /nadert|approche/ }).first().dblclick();
+      await p.waitForTimeout(2000);
+  }],
   ['documenttypes-herinnering', '/beheer/documenttypes',          p => knop(p, 'Herinneringen: na 7 dagen', 'Rappels : après 7 jours')],
   ['lead-klant-maken',          `/crm/leads/${ID.lead}`,          p => knop(p, 'Klant van maken', 'En faire un client')],
   ['portaal-toegang',           `/contributors/${ID.aanbrengerMetPortaal}`, p => knop(p, 'Portaal', 'Portail')],
@@ -828,6 +832,7 @@ const VERWACHT = {
   'documenttypes-herinnering':  /Herinneren na|Rappeler après/,
   'mail-momenten':              /krijgt de status|reçoit le statut/,
   'mail-momenten-venster':      /Voorstellen —|Proposer —/,
+  'mail-momenten-termijn':      /Dagen vooraf|Jours avant/,
   'voorkeuren-paneel':          /Kies foto|Choisir une photo|Omgevingsgrootte|Taille/i,
   'voorkeuren':                 /Kies foto|Choisir une photo|Omgevingsgrootte|Taille/i,
   'journaal-lade':              /Kredietdossiers|Dossiers de crédit/i,
