@@ -61,7 +61,7 @@ Wie deze aanbrenger is en welke rol hij speelt: **type aanbrenger** (hoofd, kant
 
 ### Erkenning en status
 
-Mag deze aanbrenger bemiddelen, en loopt de samenwerking nog? Het **FSMA-nr.** met een vinkje of de inschrijving in orde is, en of hij **actief** is — met de datum vanaf wanneer, of **gestopt** met de datum sinds wanneer.
+Mag deze aanbrenger bemiddelen, en loopt de samenwerking nog? Het **FSMA-nr.** met een vinkje of de inschrijving in orde is, en of hij **actief** is — met de datum vanaf wanneer, of **gestopt** met de datum sinds wanneer. Met **Geen groepsmail** krijgt deze aanbrenger geen [groepsmails](../journaal/mailverkeer.md#een-groepsmail); het vinkje staat ook aan wanneer hij zelf op de afmeldlink onderaan een groepsmail klikte, met de datum erbij.
 
 ### Contact en adres
 
@@ -134,6 +134,14 @@ Daaronder staan dezelfde cijfers **per kredietverstrekker** — voor deze aanbre
     Dan heeft uw kantoor nog geen dossierstatus aan een **afsluitende fase** gekoppeld, en weet CreditSoft niet
     welke dossiers afgevallen zijn. Stel dat in bij **Platformbeheer → Dashboard-fases** — zie [Dashboard-fases](../beheer/dashboard-fases.md). Tot dan toont het
     tabblad een streepje in plaats van een cijfer dat niet klopt.
+
+## Een groepsmail sturen
+
+Vink in de boom de aanbrengers aan en klik op **Groepsmail…** in de band boven de lijst — bijvoorbeeld om een nieuwe
+werkwijze of een nieuw borderel aan te kondigen. Het vakje in de kolomkop vinkt alle aanbrengers aan, ook die in een
+dichtgeklapte tak; een kantoor aanvinken vinkt zijn subaanbrengers niet mee aan. Elke aanbrenger krijgt zijn eigen mail,
+en die staat daarna in zijn mailverkeer. Het venster toont eerst wie de mail krijgt en wie niet, en waarom; zie
+[Mailverkeer](../journaal/mailverkeer.md#een-groepsmail). De knop vraagt het recht **Groepsmail versturen**.
 
 ## Twee fiches samenvoegen
 

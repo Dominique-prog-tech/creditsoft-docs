@@ -26,7 +26,7 @@ komt niet terug.
 
 Met een groepsmail schrijft u in één keer een groep klanten aan — het kantoor sluit, er komt een nieuwe werkwijze,
 de voorwaarden wijzigen. U vertrekt van een lijst: vink in [Kredietdossiers](../credit-management/credit-files.md#een-groepsmail-sturen)
-of [Relaties](../crm/relations.md#een-groepsmail-sturen) de rijen aan en klik **Groepsmail…** in de band boven de lijst.
+[Relaties](../crm/relations.md#een-groepsmail-sturen) of [Aanbrengers](../crm/contributors.md#een-groepsmail-sturen) de rijen aan en klik **Groepsmail…** in de band boven de lijst.
 Daarvoor hebt u het recht **Groepsmail versturen** nodig.
 
 ![Het venster Groepsmail vanaf Relaties met drie aangevinkte relaties: bovenaan 2 ontvangers en 1 overgeslagen met de reden geen groepsmail, daaronder de opengeklapte lijst met per relatie de naam, het mailadres en de reden, dan Tekst op Vrije tekst, de Afzender, het Onderwerp en het Bericht met de variabele voor de aanhef, en onderaan het voorbeeld voor de eerste ontvanger met de aanhef ingevuld en de afmeldlink.](../images/groepsmail-venster.png "Een groepsmail: eerst wie ze krijgt, dan de tekst en het voorbeeld"){ .volle-breedte }
@@ -52,13 +52,8 @@ Daarna kiest u de **tekst**:
 aantal mails. Onderaan elke groepsmail staat een **afmeldlink**: wie erop klikt en bevestigt, krijgt geen
 groepsmails meer. Gewone mails over het eigen dossier blijven wel komen.
 
-Elke mail staat daarna in het mailverkeer van haar dossier of relatie. Het venster toont hoeveel er vertrokken,
-hoeveel er overgeslagen werden en, als het misliep, waarom.
-
-!!! note "Status Onzeker"
-    Groepsmails vertrekken in reeksen. Weigert de mailserver een deel van een reeks zonder te zeggen welke mails,
-    dan krijgen de mails van die reeks de status *Onzeker*. Bekijk ze dan in
-    [Mailmonitoring](../administration/mail-monitoring.md).
+Elke mail staat daarna in het mailverkeer van haar dossier, relatie of aanbrenger. Het venster toont hoeveel er vertrokken,
+hoeveel er overgeslagen werden en, als de mailserver er een weigerde, welke en waarom.
 
 ## Wat u in de lijst ziet
 

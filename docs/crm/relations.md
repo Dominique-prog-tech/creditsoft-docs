@@ -38,7 +38,7 @@ naar de lijst om ze te raadplegen. Lade en tabbladen tonen hetzelfde en werken o
 
 ## Een groepsmail sturen
 
-Vink in de lijst de relaties aan en klik op **Groepsmail…** in de band boven de lijst. Elke relatie krijgt haar
+Vink in de lijst de relaties aan — het vakje in de kolomkop vinkt alles aan wat aan uw zoekterm en filters voldoet, zoek dus bijvoorbeeld op een gemeente — en klik op **Groepsmail…** in de band boven de lijst. Elke relatie krijgt haar
 eigen mail, en die staat daarna in haar mailverkeer. Het venster toont eerst wie de mail krijgt en wie niet, en
 waarom; zie [Mailverkeer](../journaal/mailverkeer.md#een-groepsmail). De knop vraagt het recht
 **Groepsmail versturen**.

@@ -53,7 +53,7 @@ Avec **Nouveau dossier** en haut de la liste, vous créez un dossier vide. Le st
 Un collègue s'en va, ou quelqu'un d'autre reprend ses clients : vous transférez ses dossiers en une fois.
 
 1. Sous **Propriétaire** en haut, choisissez le collègue dont viennent les dossiers.
-2. Cochez les dossiers. La case de l'en-tête coche tous les dossiers de la **page** ; votre sélection reste quand vous passez à la page suivante. Réglez **Lignes par page** en bas sur 100, cela va plus vite.
+2. Cochez les dossiers. La case de l'en-tête coche **tous** les dossiers qui répondent à votre recherche et à vos filtres, sur toutes les pages ; en haut, vous voyez combien sont sélectionnés.
 3. Cliquez sur **Transférer…** dans la bande au-dessus de la liste.
 4. Choisissez **ce que** vous transférez — le *propriétaire* ou le *sales* — et **à qui**. Vous voyez aussitôt de qui viennent les dossiers ; ceux qui appartiennent déjà à ce collègue restent inchangés.
 5. Laissez **Aussi les tâches ouvertes …** coché si les tâches ouvertes de ces dossiers doivent suivre. Seules les tâches attribuées à la personne précédente suivent.
@@ -70,7 +70,7 @@ Un transfert ne change rien à la date de la dernière activité : un [dossier �
 
 Pour écrire en une fois aux demandeurs d'une série de dossiers — le bureau ferme, une nouvelle façon de travailler :
 
-1. Cochez les dossiers. La case de l'en-tête coche la **page** ; votre sélection reste quand vous passez à la page suivante.
+1. Cochez les dossiers. La case de l'en-tête coche tout ce qui répond à votre recherche et à vos filtres, sur toutes les pages.
 2. Cliquez sur **E-mail groupé…** dans la bande au-dessus de la liste.
 3. Vérifiez qui reçoit l'e-mail, choisissez un modèle ou tapez un texte libre, puis cliquez sur **Aperçu**.
 4. Cliquez sur **Envoyer** et confirmez.

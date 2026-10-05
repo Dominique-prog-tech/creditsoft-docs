@@ -60,7 +60,7 @@ Qui est cet apporteur et quel rôle il joue : **type d'apporteur** (principal, b
 
 ### Agrément et statut
 
-Cet apporteur peut-il exercer, et la collaboration est-elle toujours en cours ? Le **numéro FSMA** avec une case indiquant si l'inscription est en ordre, et s'il est **actif** — avec la date depuis laquelle — ou **arrêté**, avec la date correspondante.
+Cet apporteur peut-il exercer, et la collaboration est-elle toujours en cours ? Le **numéro FSMA** avec une case indiquant si l'inscription est en ordre, et s'il est **actif** — avec la date depuis laquelle — ou **arrêté**, avec la date correspondante. Avec **Pas d'e-mail groupé**, cet apporteur ne reçoit pas d'[e-mails groupés](../journaal/mailverkeer.md#un-e-mail-groupe) ; la case est aussi cochée lorsqu'il a cliqué lui-même sur le lien de désinscription en bas d'un e-mail groupé, avec la date.
 
 ### Contact et adresse
 
@@ -132,6 +132,15 @@ En dessous figurent les mêmes chiffres **par prêteur** — pour cet apporteur,
     Votre bureau n'a alors encore lié aucun statut de dossier à une **phase de clôture**, et CreditSoft ne sait
     pas quels dossiers sont abandonnés. Configurez-le dans **Administration → Phases du tableau de bord** — voir [Phases du tableau de bord](../beheer/dashboard-fases.md).
     En attendant, l'onglet affiche un tiret plutôt qu'un chiffre inexact.
+
+## Envoyer un e-mail groupé
+
+Cochez les apporteurs dans l'arborescence et cliquez sur **E-mail groupé…** dans la bande au-dessus de la liste — par
+exemple pour annoncer une nouvelle façon de travailler ou un nouveau bordereau. La case de l'en-tête coche tous les
+apporteurs, y compris ceux d'une branche repliée ; cocher un bureau ne coche pas ses sous-apporteurs. Chaque apporteur
+reçoit son propre e-mail, qui figure ensuite dans son courrier. La fenêtre montre d'abord qui reçoit l'e-mail et qui ne
+le reçoit pas, et pourquoi ; voir [Courrier](../journaal/mailverkeer.md#un-e-mail-groupe). Le bouton requiert le droit
+**Envoyer un e-mail groupé**.
 
 ## Fusionner deux fiches
 

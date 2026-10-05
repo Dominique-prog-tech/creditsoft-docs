@@ -53,7 +53,7 @@ Met **Nieuw dossier** bovenaan de lijst maakt u een leeg dossier aan. Welke stat
 Vertrekt een collega, of neemt iemand anders zijn klanten over, dan draagt u zijn dossiers in één keer over.
 
 1. Kies bij **Eigenaar** bovenaan de collega van wie de dossiers komen.
-2. Vink de dossiers aan. Het vakje in de kolomkop vinkt alle dossiers van de **pagina** aan; uw selectie blijft staan als u naar de volgende pagina gaat. Zet **Regels per pagina** onderaan op 100, dan gaat het sneller.
+2. Vink de dossiers aan. Het vakje in de kolomkop vinkt **alle** dossiers aan die aan uw zoekterm en filters voldoen, over alle pagina's heen; bovenaan ziet u hoeveel er geselecteerd zijn.
 3. Klik op **Overdragen…** in de band boven de lijst.
 4. Kies **wat** u overdraagt — de *eigenaar* of de *sales* — en **naar wie**. U ziet meteen van wie de dossiers komen; dossiers die al bij die collega horen, blijven ongewijzigd.
 5. Laat **Ook de open taken …** aangevinkt als de open taken op die dossiers mee moeten. Enkel de taken die aan de vorige persoon hingen, gaan mee.
@@ -70,7 +70,7 @@ Een overdracht verandert niets aan de datum van de laatste activiteit: een [stil
 
 Om de aanvragers van een reeks dossiers in één keer te schrijven — het kantoor sluit, een nieuwe werkwijze:
 
-1. Vink de dossiers aan. Het vakje in de kolomkop vinkt de **pagina** aan; uw selectie blijft staan als u naar de volgende pagina gaat.
+1. Vink de dossiers aan. Het vakje in de kolomkop vinkt alles aan wat aan uw zoekterm en filters voldoet, over alle pagina's heen.
 2. Klik op **Groepsmail…** in de band boven de lijst.
 3. Kijk na wie de mail krijgt, kies een sjabloon of typ een vrije tekst, en klik op **Voorbeeld**.
 4. Klik op **Versturen** en bevestig.

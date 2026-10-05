@@ -108,6 +108,20 @@ question en langage courant et recevez un tableau. Six questions sont préparée
     Ces six questions utilisent exactement le même calcul que les rapports sous **Listes**. Elles donnent donc
     toujours le même chiffre — sinon, vous ne sauriez auquel des deux vous fier.
 
+## Quitter sans enregistrer
+
+Si vous avez modifié quelque chose sur une fiche sans l'enregistrer et que vous cliquez vers un autre écran — dans le
+menu de gauche, sur le bouton retour de la fiche ou du navigateur, sur une notification, ou dans la recherche ou l'aide —
+CreditSoft demande d'abord : **Vos modifications ne sont pas enregistrées. Quitter quand même ?** **Rester** vous ramène
+à la fiche, avec tout ce que vous avez saisi ; **Quitter** abandonne les modifications. Si vous rechargez ou fermez
+l'onglet, c'est le navigateur lui-même qui pose la question.
+
+Sans modification, CreditSoft ne demande rien, et après **Enregistrer** ou **Annuler** non plus.
+
+!!! warning "Sur un dossier de crédit"
+    Sur la fiche d'un **dossier de crédit**, cette question n'apparaît que lorsque vous rechargez ou fermez l'onglet, pas
+    lorsque vous cliquez vers un autre écran. Enregistrez donc avant de continuer.
+
 ## Vos préférences
 
 Cliquez sur votre **avatar** en haut à droite pour ouvrir le panneau des préférences : votre photo de profil,

@@ -106,6 +106,19 @@ gewone taal en krijgt een tabel terug. Zes vragen zijn voorbereid:
     Deze zes vragen lopen over precies dezelfde berekening als de rapporten onder **Lijsten**. Ze geven dus
     altijd hetzelfde getal — anders zou u niet weten welk van de twee u moet geloven.
 
+## Weggaan zonder te bewaren
+
+Hebt u op een fiche iets gewijzigd en nog niet bewaard, en klikt u op een ander scherm — in het menu links, op de
+terugknop van de fiche of van de browser, op een melding, of in zoeken of de hulp — dan vraagt CreditSoft eerst:
+**Uw wijzigingen zijn niet bewaard. Toch weggaan?** **Blijven** brengt u terug naar de fiche, met alles wat u
+intikte; **Weggaan** laat de wijzigingen vallen. Herlaadt of sluit u het tabblad, dan stelt de browser zelf die vraag.
+
+Zonder wijziging vraagt CreditSoft niets, en na **Bewaren** of **Annuleren** ook niet.
+
+!!! warning "Op een kredietdossier"
+    Op de fiche van een **kredietdossier** komt die vraag enkel bij het herladen of sluiten van het tabblad, niet bij een
+    klik op een ander scherm. Bewaar daar dus vóór u verder klikt.
+
 ## Uw voorkeuren
 
 Klik op uw **avatar** rechtsboven om het voorkeuren-paneel te openen: uw profielfoto, de accentkleur, de

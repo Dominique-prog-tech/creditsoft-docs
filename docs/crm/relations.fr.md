@@ -40,7 +40,7 @@ fonctionnent de manière identique sur chaque écran ; [Le journal](../journaal/
 
 ## Envoyer un e-mail groupé
 
-Cochez les relations dans la liste et cliquez sur **E-mail groupé…** dans la bande au-dessus de la liste. Chaque
+Cochez les relations dans la liste — la case de l'en-tête coche tout ce qui répond à votre recherche et à vos filtres, cherchez donc par exemple une commune — et cliquez sur **E-mail groupé…** dans la bande au-dessus de la liste. Chaque
 relation reçoit son propre e-mail, qui figure ensuite dans son courrier. La fenêtre montre d'abord qui reçoit
 l'e-mail et qui ne le reçoit pas, et pourquoi ; voir [Courrier](../journaal/mailverkeer.md#un-e-mail-groupe). Le
 bouton requiert le droit **Envoyer un e-mail groupé**.
