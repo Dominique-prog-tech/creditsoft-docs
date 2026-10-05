@@ -464,6 +464,14 @@ const SCHOTEN = [
        await p.waitForTimeout(2500);
      }],
 
+  // Gelinkte contacten (05/10/2026): dezelfde relatie — de testdata (Journaal vullen) geeft haar twee links. Ook dit
+  // tablabel draagt een teller, dus de role met regex en geen tab().
+  ['relaties-gelinkt', `/crm/relaties/${ID.relatie}`,
+     async p => {
+       await p.getByRole('tab', { name: /^(Gelinkt|Liés)\s*\(/i }).first().click();
+       await p.waitForTimeout(2000);
+     }],
+
   // vensters en lades
   ['borderel-borderellen',      '/commissie/borderel',            p => tab(p, 'Borderellen', 'Bordereaux')],
   ['borderel-nieuwe-ronde',     '/commissie/borderel',            async p => { await tab(p, 'Borderellen', 'Bordereaux'); await knop(p, 'Nieuwe ronde aanmaken', 'Créer une nouvelle série'); }],
@@ -880,6 +888,8 @@ const VERWACHT = {
   'dashboard-aanbrengers':      /Stilgevallen aanbrengers|Apporteurs à l'arrêt/,
   // Niet op het TABBLAD zoeken maar op de INHOUD: het tablabel staat er ook bij een lege lijst.
   'relaties-gevraagde-documenten': /Laatste 3 loonfiches|3 derniers|Ontvangen|Reçu/i,
+  // Enkel als er een link GETOOND wordt: "Ex-partner" staat in de kolom Soort, niet op een leeg tabblad (dat zegt "Nog geen …").
+  'relaties-gelinkt': /Ex-partner|Ex-partenaire/,
   'taken-overzicht':            /Vervaldatum|Échéance|Prioriteit|Priorité/i,
   // mak12: de kolomkop Hangt aan staat op Taken én op Notities; 'Inhoud' enkel op Notities.
   'notities-lijst':             /Inhoud|Contenu/,

@@ -1650,5 +1650,19 @@
       "sha": "78782163f1df6a72d1651328ecdc3100e2e69a84",
       "vuil": true
     }
+  },
+  "relaties-gelinkt": {
+    "route": "/crm/relaties/09ee4eb1-5c32-4e3d-ade5-a0fe4fd9ded2",
+    "app": {
+      "sha": "5d765b6b011258a82039c1a4262b46138e55c90f",
+      "vuil": true
+    }
+  },
+  "relaties-gelinkt-fr": {
+    "route": "/crm/relaties/09ee4eb1-5c32-4e3d-ade5-a0fe4fd9ded2",
+    "app": {
+      "sha": "5d765b6b011258a82039c1a4262b46138e55c90f",
+      "vuil": true
+    }
   }
 }

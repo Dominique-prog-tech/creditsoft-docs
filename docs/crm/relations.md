@@ -156,6 +156,25 @@ net als [op een kredietdossier](../credit-management/credit-files.md#gevraagde-d
 toch niet, dan haalt **Verwijderen** het van de lijst — het verhuist naar de
 [prullenbak](../administration/recycle-bin.md) en is niet definitief weg.
 
+## Gelinkte contacten
+
+Op de fiche van een **persoon** staat het tabblad **Gelinkt**: andere personen waaraan deze persoon gelinkt is —
+een partner, een ex-partner, een familielid. Het getal in de titel is het aantal links.
+
+![Het tabblad Gelinkt op de fiche van een particulier: bovenaan de knop Contact linken, daaronder een tabel met de kolommen Naam, Soort en Omschrijving, met de naam als link en per regel de knop Verwijderen.](../images/relaties-gelinkt.png "De personen waaraan deze relatie gelinkt is"){ .volle-breedte }
+
+- **Contact linken** — kies een persoon, een **soort** (*Is gelinkt aan* of *Ex-partner*) en eventueel een korte
+  **omschrijving**. U ziet enkel personen die nog niet gelinkt zijn.
+- Klik op een **naam** om de fiche van die persoon te openen.
+- **Verwijderen** haalt de link weg, na een bevestiging.
+
+Een link geldt **in beide richtingen**: linkt u An aan Bert, dan staat Bert op de fiche van An én An op de fiche
+van Bert. Verwijdert u ze aan één kant, dan verdwijnt ze aan beide. Een verwijderde link komt niet in de
+[prullenbak](../administration/recycle-bin.md) — wilt u ze terug, dan legt u ze opnieuw.
+
+Bij een **bedrijf** staat dit tabblad niet; voor de contactpersoon van een bedrijf is er de koppeling tussen persoon
+en bedrijf.
+
 ## Bewaren
 
 De knoppenbalk onderaan blijft in beeld terwijl u door de fiche scrolt. De knoppen staan rechts:

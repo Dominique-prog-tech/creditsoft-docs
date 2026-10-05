@@ -158,6 +158,25 @@ comme [sur un dossier de crédit](../credit-management/credit-files.md). Si fina
 vous ne demandez pas une pièce, **Supprimer** la retire de la liste — elle part à la
 [corbeille](../administration/recycle-bin.md) et n'est pas définitivement effacée.
 
+## Contacts liés
+
+La fiche d'une **personne** comporte l'onglet **Liés** : les autres personnes auxquelles elle est liée — un
+partenaire, un ex-partenaire, un membre de la famille. Le nombre dans le titre est le nombre de liens.
+
+![L'onglet Liés sur la fiche d'un particulier : en haut le bouton Lier un contact, en dessous un tableau avec les colonnes Nom, Type et Description, avec le nom sous forme de lien et, sur chaque ligne, le bouton Supprimer.](../images/relaties-gelinkt-fr.png "Les personnes auxquelles cette relation est liée"){ .volle-breedte }
+
+- **Lier un contact** — choisissez une personne, un **type** (*Est lié à* ou *Ex-partenaire*) et éventuellement une
+  courte **description**. Seules les personnes qui ne sont pas encore liées sont proposées.
+- Cliquez sur un **nom** pour ouvrir la fiche de cette personne.
+- **Supprimer** retire le lien, après confirmation.
+
+Un lien vaut **dans les deux sens** : si vous liez An à Bert, Bert figure sur la fiche d'An et An sur celle de Bert.
+Si vous le supprimez d'un côté, il disparaît des deux. Un lien supprimé ne va pas dans la
+[corbeille](../administration/recycle-bin.md) — pour le retrouver, recréez-le.
+
+Sur une **entreprise**, cet onglet n'apparaît pas ; pour la personne de contact d'une entreprise, il y a le lien
+entre la personne et l'entreprise.
+
 ## Enregistrer
 
 La barre de boutons du bas reste visible pendant que vous faites défiler la fiche. Les boutons se trouvent à
