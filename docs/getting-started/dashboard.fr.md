@@ -58,6 +58,14 @@ Vous indiquez uniquement **ce que signifie un statut de contrat** : *réalisé*,
 !!! tip "Des tirets au lieu de chiffres ?"
     C'est qu'aucun statut de contrat ne porte encore de signification. Vous voyez un tiret et non un zéro, car zéro signifierait qu'il n'y a réellement rien à compter. Sous les tuiles, une phrase vous mène au réglage.
 
+!!! info "Un bureau sans contrats"
+    Certains bureaux viennent d'une version de CreditSoft qui ne connaissait pas les contrats. Les tuiles comptent alors
+    des **dossiers** : *Actes* sont les dossiers dont la date d'acte de cette année est passée, *À introduire* et
+    *Introduit* les dossiers en cours sans et avec date d'introduction. Le *LOA* affiche alors **indisponible sans
+    contrats** : pour reconnaître un prêt à tempérament, il faut le type de produit d'un contrat. Il n'y a rien à
+    configurer — une phrase sous les tuiles le dit. Liez toutefois vos statuts à des [phases](../beheer/dashboard-fases.md) :
+    sans phases, le tableau de bord ne reconnaît aucun dossier clôturé et le compte comme *À introduire*.
+
 ## Ce qui arrive à échéance
 
 Sous les quatre tuiles figurent deux blocs qui indiquent ce qui **demande une action aujourd'hui** : *Délai

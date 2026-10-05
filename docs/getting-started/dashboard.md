@@ -55,6 +55,14 @@ U geeft alleen aan **wat een contractstatus betekent**: *gerealiseerd*, *in te d
 !!! tip "Staan er streepjes in plaats van cijfers?"
     Dan draagt nog geen enkele contractstatus een betekenis. U ziet een streepje en geen nul, want nul zou betekenen dat er echt niets te tellen valt. Onder de tegels staat een zin die u naar de instelling brengt.
 
+!!! info "Een kantoor zonder contracten"
+    Sommige kantoren kwamen over uit een versie van CreditSoft die geen contracten kende. Dan tellen de tegels
+    **dossiers**: *Aktes* zijn de dossiers met een aktedatum dit jaar die voorbij is, *In te dienen* en *Ingediend*
+    de lopende dossiers zonder en mét een indieningsdatum. *LOA* staat dan op **niet beschikbaar zonder contracten**:
+    om een lening op afbetaling te herkennen is de productsoort van een contract nodig. Er is niets in te stellen —
+    een zin onder de tegels zegt het. Koppel wel uw statussen aan [fases](../beheer/dashboard-fases.md): zonder fases
+    herkent het dashboard geen afgesloten dossier, en telt het dat als *In te dienen*.
+
 ## Wat er afloopt
 
 Onder de vier tegels staan twee blokken die zeggen wat er **vandaag actie vraagt**: *Termijn verstreken* en

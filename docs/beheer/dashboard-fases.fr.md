@@ -68,6 +68,10 @@ Les statuts sans signification ne comptent nulle part. Si une tuile reste à zé
 !!! warning "Pourquoi certains statuts apparaissent-ils en double ?"
     Dans les données reprises, il arrive que deux statuts portent le même nom — par exemple deux fois *Sans suite*. Ce n'est pas une erreur : ce sont deux statuts distincts de l'ancien programme, chacun avec ses propres dossiers. Donnez-leur la même signification et vos collaborateurs n'y verront que du feu.
 
+!!! info "Pas de contrats ?"
+    Si votre bureau vient d'une version sans contrats, cette liste est vide et les tuiles comptent des **dossiers**.
+    Il n'y a alors rien à configurer ici ; les phases ci-dessus, oui.
+
 ## Que ne peut-on plus modifier sur un contrat bouclé ?
 
 En bas, vous cochez les champs qui se verrouillent dès qu'un contrat porte la signification **Réalisé** : numéro de contrat, produit, type de crédit, montant, durée, taux, date de début et établissement de crédit.

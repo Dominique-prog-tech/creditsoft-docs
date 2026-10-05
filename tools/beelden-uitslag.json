@@ -135,7 +135,7 @@
   "dashboard-fases": {
     "route": "/beheer/dashboard-fases",
     "app": {
-      "sha": "78782163f1df6a72d1651328ecdc3100e2e69a84",
+      "sha": "388296423bc9fa5c693e99a943c8896723eeca2e",
       "vuil": true
     }
   },
@@ -212,7 +212,7 @@
   "dashboard-startscherm": {
     "route": "/dashboard",
     "app": {
-      "sha": "78782163f1df6a72d1651328ecdc3100e2e69a84",
+      "sha": "388296423bc9fa5c693e99a943c8896723eeca2e",
       "vuil": true
     }
   },
@@ -373,7 +373,7 @@
   "navigatie": {
     "route": "/dashboard",
     "app": {
-      "sha": "78782163f1df6a72d1651328ecdc3100e2e69a84",
+      "sha": "388296423bc9fa5c693e99a943c8896723eeca2e",
       "vuil": true
     }
   },
@@ -492,28 +492,28 @@
   "dashboard-pijplijn": {
     "route": "/dashboard",
     "app": {
-      "sha": "78782163f1df6a72d1651328ecdc3100e2e69a84",
+      "sha": "388296423bc9fa5c693e99a943c8896723eeca2e",
       "vuil": true
     }
   },
   "dashboard-aan-de-slag": {
     "route": "/dashboard",
     "app": {
-      "sha": "78782163f1df6a72d1651328ecdc3100e2e69a84",
+      "sha": "388296423bc9fa5c693e99a943c8896723eeca2e",
       "vuil": true
     }
   },
   "voorkeuren-paneel": {
     "route": "/dashboard",
     "app": {
-      "sha": "78782163f1df6a72d1651328ecdc3100e2e69a84",
+      "sha": "388296423bc9fa5c693e99a943c8896723eeca2e",
       "vuil": true
     }
   },
   "voorkeuren": {
     "route": "/dashboard",
     "app": {
-      "sha": "78782163f1df6a72d1651328ecdc3100e2e69a84",
+      "sha": "388296423bc9fa5c693e99a943c8896723eeca2e",
       "vuil": true
     }
   },
@@ -604,14 +604,14 @@
   "hoofdbalk": {
     "route": "/dashboard",
     "app": {
-      "sha": "78782163f1df6a72d1651328ecdc3100e2e69a84",
+      "sha": "388296423bc9fa5c693e99a943c8896723eeca2e",
       "vuil": true
     }
   },
   "menu-links": {
     "route": "/dashboard",
     "app": {
-      "sha": "78782163f1df6a72d1651328ecdc3100e2e69a84",
+      "sha": "388296423bc9fa5c693e99a943c8896723eeca2e",
       "vuil": true
     }
   },
@@ -751,7 +751,7 @@
   "dashboard-fases-fr": {
     "route": "/beheer/dashboard-fases",
     "app": {
-      "sha": "78782163f1df6a72d1651328ecdc3100e2e69a84",
+      "sha": "388296423bc9fa5c693e99a943c8896723eeca2e",
       "vuil": true
     }
   },
@@ -828,7 +828,7 @@
   "dashboard-startscherm-fr": {
     "route": "/dashboard",
     "app": {
-      "sha": "78782163f1df6a72d1651328ecdc3100e2e69a84",
+      "sha": "388296423bc9fa5c693e99a943c8896723eeca2e",
       "vuil": true
     }
   },
@@ -989,7 +989,7 @@
   "navigatie-fr": {
     "route": "/dashboard",
     "app": {
-      "sha": "78782163f1df6a72d1651328ecdc3100e2e69a84",
+      "sha": "388296423bc9fa5c693e99a943c8896723eeca2e",
       "vuil": true
     }
   },
@@ -1108,28 +1108,28 @@
   "dashboard-pijplijn-fr": {
     "route": "/dashboard",
     "app": {
-      "sha": "78782163f1df6a72d1651328ecdc3100e2e69a84",
+      "sha": "388296423bc9fa5c693e99a943c8896723eeca2e",
       "vuil": true
     }
   },
   "dashboard-aan-de-slag-fr": {
     "route": "/dashboard",
     "app": {
-      "sha": "78782163f1df6a72d1651328ecdc3100e2e69a84",
+      "sha": "388296423bc9fa5c693e99a943c8896723eeca2e",
       "vuil": true
     }
   },
   "voorkeuren-paneel-fr": {
     "route": "/dashboard",
     "app": {
-      "sha": "78782163f1df6a72d1651328ecdc3100e2e69a84",
+      "sha": "388296423bc9fa5c693e99a943c8896723eeca2e",
       "vuil": true
     }
   },
   "voorkeuren-fr": {
     "route": "/dashboard",
     "app": {
-      "sha": "78782163f1df6a72d1651328ecdc3100e2e69a84",
+      "sha": "388296423bc9fa5c693e99a943c8896723eeca2e",
       "vuil": true
     }
   },
@@ -1220,14 +1220,14 @@
   "hoofdbalk-fr": {
     "route": "/dashboard",
     "app": {
-      "sha": "78782163f1df6a72d1651328ecdc3100e2e69a84",
+      "sha": "388296423bc9fa5c693e99a943c8896723eeca2e",
       "vuil": true
     }
   },
   "menu-links-fr": {
     "route": "/dashboard",
     "app": {
-      "sha": "78782163f1df6a72d1651328ecdc3100e2e69a84",
+      "sha": "388296423bc9fa5c693e99a943c8896723eeca2e",
       "vuil": true
     }
   },
@@ -1318,28 +1318,28 @@
   "dashboard-productie": {
     "route": "/dashboard",
     "app": {
-      "sha": "78782163f1df6a72d1651328ecdc3100e2e69a84",
+      "sha": "388296423bc9fa5c693e99a943c8896723eeca2e",
       "vuil": true
     }
   },
   "dashboard-aanbrengers": {
     "route": "/dashboard",
     "app": {
-      "sha": "78782163f1df6a72d1651328ecdc3100e2e69a84",
+      "sha": "388296423bc9fa5c693e99a943c8896723eeca2e",
       "vuil": true
     }
   },
   "dashboard-productie-fr": {
     "route": "/dashboard",
     "app": {
-      "sha": "78782163f1df6a72d1651328ecdc3100e2e69a84",
+      "sha": "388296423bc9fa5c693e99a943c8896723eeca2e",
       "vuil": true
     }
   },
   "dashboard-aanbrengers-fr": {
     "route": "/dashboard",
     "app": {
-      "sha": "78782163f1df6a72d1651328ecdc3100e2e69a84",
+      "sha": "388296423bc9fa5c693e99a943c8896723eeca2e",
       "vuil": true
     }
   },
@@ -1374,14 +1374,14 @@
   "dashboard-opvolging": {
     "route": "/dashboard",
     "app": {
-      "sha": "78782163f1df6a72d1651328ecdc3100e2e69a84",
+      "sha": "388296423bc9fa5c693e99a943c8896723eeca2e",
       "vuil": true
     }
   },
   "dashboard-opvolging-fr": {
     "route": "/dashboard",
     "app": {
-      "sha": "78782163f1df6a72d1651328ecdc3100e2e69a84",
+      "sha": "388296423bc9fa5c693e99a943c8896723eeca2e",
       "vuil": true
     }
   },
@@ -1416,14 +1416,14 @@
   "dashboard-grafieken": {
     "route": "/dashboard",
     "app": {
-      "sha": "78782163f1df6a72d1651328ecdc3100e2e69a84",
+      "sha": "388296423bc9fa5c693e99a943c8896723eeca2e",
       "vuil": true
     }
   },
   "dashboard-grafieken-fr": {
     "route": "/dashboard",
     "app": {
-      "sha": "78782163f1df6a72d1651328ecdc3100e2e69a84",
+      "sha": "388296423bc9fa5c693e99a943c8896723eeca2e",
       "vuil": true
     }
   },
@@ -1472,42 +1472,42 @@
   "dashboard-redenen": {
     "route": "/dashboard",
     "app": {
-      "sha": "78782163f1df6a72d1651328ecdc3100e2e69a84",
+      "sha": "388296423bc9fa5c693e99a943c8896723eeca2e",
       "vuil": true
     }
   },
   "dashboard-redenen-fr": {
     "route": "/dashboard",
     "app": {
-      "sha": "78782163f1df6a72d1651328ecdc3100e2e69a84",
+      "sha": "388296423bc9fa5c693e99a943c8896723eeca2e",
       "vuil": true
     }
   },
   "dashboard-verstrekkers": {
     "route": "/dashboard",
     "app": {
-      "sha": "78782163f1df6a72d1651328ecdc3100e2e69a84",
+      "sha": "388296423bc9fa5c693e99a943c8896723eeca2e",
       "vuil": true
     }
   },
   "dashboard-verstrekkers-fr": {
     "route": "/dashboard",
     "app": {
-      "sha": "78782163f1df6a72d1651328ecdc3100e2e69a84",
+      "sha": "388296423bc9fa5c693e99a943c8896723eeca2e",
       "vuil": true
     }
   },
   "dashboard-stilgevallen": {
     "route": "/dashboard",
     "app": {
-      "sha": "78782163f1df6a72d1651328ecdc3100e2e69a84",
+      "sha": "388296423bc9fa5c693e99a943c8896723eeca2e",
       "vuil": true
     }
   },
   "dashboard-stilgevallen-fr": {
     "route": "/dashboard",
     "app": {
-      "sha": "78782163f1df6a72d1651328ecdc3100e2e69a84",
+      "sha": "388296423bc9fa5c693e99a943c8896723eeca2e",
       "vuil": true
     }
   },

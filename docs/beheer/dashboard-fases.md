@@ -68,6 +68,10 @@ Statussen zonder betekenis tellen nergens mee. Staat een tegel op nul terwijl u 
 !!! warning "Waarom staan sommige statussen er dubbel?"
     In de overgezette gegevens komt het voor dat twee statussen dezelfde naam dragen — bijvoorbeeld tweemaal *Zonder gevolg*. Dat is geen fout: het zijn twee verschillende statussen uit het vorige programma, elk met hun eigen dossiers. Geef ze allebei dezelfde betekenis, dan zien uw medewerkers er niets van.
 
+!!! info "Geen contracten?"
+    Kwam uw kantoor over uit een versie zonder contracten, dan staat deze lijst leeg en tellen de tegels **dossiers**.
+    Hier valt dan niets in te stellen; de fases hierboven wél.
+
 ## Wat mag er niet meer wijzigen aan een afgerond contract?
 
 Onderaan vinkt u aan welke velden op slot gaan zodra een contract de betekenis **Gerealiseerd** draagt: contractnummer, product, kredietsoort, bedrag, looptijd, rentevoet, begindatum en kredietinstelling.
