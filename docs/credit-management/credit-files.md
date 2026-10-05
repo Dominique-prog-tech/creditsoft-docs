@@ -125,6 +125,11 @@ De rest van het pand zit achter de knop **Investeringsfiche & pand…**: het pan
 
 Wie het krediet aanvraagt. Koppel een bestaande relatie met **+ Aanvrager koppelen**. De lijst toont per aanvrager hoeveel **inkomsten** en hoeveel **lasten** er ingevuld zijn.
 
+Draagt de persoon die u koppelt nog een **type contact**, zoals *Prospect*, dan vraagt CreditSoft na het bewaren
+of dat type gewist mag worden. Zo verdwijnt die persoon uit uw lijst van prospecten: het is nu een klant. **Laten staan**
+houdt het type; de vraag komt niet terug wanneer u dezelfde aanvrager later opnieuw bewaart. Bij een bedrijf als
+aanvrager stelt CreditSoft de vraag niet.
+
 Dubbelklik een aanvrager om zijn venster te openen. Het heeft drie tabbladen:
 
 - **Algemeen** — de relatie. De knop **Bewaren** onderaan gaat over dit tabblad.

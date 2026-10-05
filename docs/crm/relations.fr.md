@@ -8,9 +8,9 @@ Dans la barre latérale, cliquez sur **CRM**, puis sur **Relations**.
 
 ## La liste
 
-![L'écran Relations dans CreditSoft : une liste de particuliers et d'entreprises avec les colonnes nom, type, e-mail, téléphone, commune, GSM et numéro interne, avec en haut un filtre par type, les boutons Fusionner, Nouvelle relation et Exporter ainsi qu'un champ de recherche.](../images/relaties-lijst-fr.png "Aperçu de toutes les relations du bureau")
+![L'écran Relations dans CreditSoft : une liste de particuliers et d'entreprises avec les colonnes nom, type, date de naissance, e-mail, téléphone et commune — les autres colonnes se trouvent à droite, hors de l'écran —, la barre pour grouper, avec en haut un filtre par type, les boutons Fusionner, Nouvelle relation et Exporter ainsi qu'un champ de recherche.](../images/relaties-lijst-fr.png "Aperçu de toutes les relations du bureau")
 
-Le tableau affiche par relation : **nom**, **type**, **e-mail**, **téléphone**, **commune**, **GSM** et **numéro interne**.
+Le tableau affiche par relation : **nom**, **type**, **date de naissance**, **e-mail**, **téléphone**, **commune**, **GSM**, **numéro interne**, **type de contact** et **responsable**. Si votre écran est plus étroit que la liste, elle défile sur le côté ; le nom et l'adresse e-mail restent toujours lisibles.
 
 - **Filtrer par type** — en haut, choisissez tout, uniquement les particuliers ou uniquement les entreprises.
 - **Rechercher** — le champ de recherche cherche dans toutes les colonnes à la fois.
@@ -20,7 +20,10 @@ Le tableau affiche par relation : **nom**, **type**, **e-mail**, **téléphone**
 - **Nouveau / modifier** — cliquez sur **Nouveau**, ou **double-cliquez** une ligne pour ouvrir la fiche.
 - **Fusionner** — fusionner deux fiches de la même partie ; voir ci-dessous.
 - **Supprimer** — une relation est **archivée** (suppression douce), pas définitivement effacée.
-- **Grouper** — avec les [groupes](groups.md), vous classez les relations comme il vous convient : par région, par bureau, par campagne.
+- **Grouper par colonne** — faites glisser un en-tête de colonne dans la barre au-dessus de la liste. Vous voyez
+  ainsi, par exemple, les prospects suivis par chaque collègue : filtrez sur le type de contact de vos prospects
+  et groupez par **Responsable**. Faites glisser l'en-tête en retour pour annuler le groupement.
+- **Groupes** — avec les [groupes](groups.md), vous classez les relations comme il vous convient : par région, par bureau, par campagne.
 
 ### Journal
 
@@ -103,12 +106,16 @@ fois du même champ — et la barre de boutons reste visible en bas.
 Tout ce dont vous avez besoin pour un dossier de crédit — mais pas tout à l'écran en même temps.
 
 **Par défaut, vous voyez** la **date** et le **lieu de naissance**, le **numéro de registre national**, la
-**nationalité**, l'**état civil**, la **profession**, le **type de contact**, la **source de contact** et la
-date du premier contact. S'y ajoute **Source (lead)** : d'où vient ce prospect.
+**nationalité**, l'**état civil**, la **profession**, le **type de contact**, le **responsable**, la **source de
+contact** et la date du premier contact. S'y ajoute **Source (lead)** : d'où vient ce prospect.
 
 Le bouton **Plus de champs** déploie le reste : pays de naissance, sexe, langue, **carte d'identité** avec ses
 dates de validité, régime et date de mariage, **partenaire**, enfants et personnes à charge, employeur, en
 service depuis, type de contrat et fonction. **Moins de champs** les replie.
+
+Le **responsable** est le collègue qui suit cette relation. Vous choisissez parmi les collaborateurs auxquels
+vous pouvez attribuer du travail. Si la relation vient de l'ancien CreditSoft, la conversion reprend le collègue
+auquel elle y était attribuée. Pour une **entreprise**, le responsable figure sur l'onglet **Général**.
 
 !!! tip "Pourquoi pas tout d'un coup"
     La plupart des fiches n'ont pas besoin de cette seconde série. Elle est bien là, mais hors écran, pour que

@@ -19,7 +19,17 @@ const GEDEELD = '/Users/dominique/projects/adm-appkit/tools/schermmachinerie/ver
 // ⚠️ Een eigen --app (bv. een worktree) WINT. Tot 05/10/2026 zette deze wrapper de zijne vooraan, en het gedeelde script
 //    neemt de EERSTE --app: `--app=<worktree>` werd stil genegeerd en de controle mat de hoofdmap — "actueel" boven 24
 //    beelden van een scherm dat in de worktree gewijzigd was. Gevonden bij de gelinkte contacten (CreditSoft 1.164.0).
-const eigen = process.argv.slice(2);
+// ⚠️⚠️ En `--app <pad>` MET EEN SPATIE (05/10/2026, tweede gedaante): het gedeelde script kent enkel `--app=`, dus de
+//    spatievorm viel stil weg — wrapper zette de hoofdmap erbij en de controle meldde 237 actueel · 37 verouderd, terwijl
+//    de worktree 215 · 69 gaf (28 relatiebeelden "actueel" boven een gewijzigde fiche). Hier omgezet naar de =-vorm.
+const ruw = process.argv.slice(2);
+const eigen = [];
+for (let i = 0; i < ruw.length; i++) {
+  if (ruw[i] === '--app') {
+    if (!ruw[i + 1] || ruw[i + 1].startsWith('--')) { console.error('⛔ --app zonder pad'); process.exit(2); }
+    eigen.push(`--app=${ruw[++i]}`);
+  } else eigen.push(ruw[i]);
+}
 const app = eigen.some(a => a.startsWith('--app=')) ? [] : [`--app=${PAKKET.repo}`];
 const r = spawnSync(process.execPath,
   [GEDEELD, ...app, `--tabellen=${HIER}`, ...eigen],

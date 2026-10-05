@@ -8,9 +8,9 @@ Klik in de zijbalk op **CRM** en dan op **Relaties**.
 
 ## De lijst
 
-![Het scherm Relaties in CreditSoft: een lijst van particulieren en bedrijven met kolommen voor naam, type, e-mail, telefoon, gemeente, gsm en intern nummer, met bovenaan een filter op soort, de knoppen Samenvoegen, Nieuwe relatie en Exporteren en een zoekveld.](../images/relaties-lijst.png "Overzicht van alle relaties van het kantoor")
+![Het scherm Relaties in CreditSoft: een lijst van particulieren en bedrijven met de kolommen naam, type, geboortedatum, e-mail, telefoon en gemeente — de overige kolommen staan rechts, buiten beeld —, de balk om te groeperen, met bovenaan een filter op soort, de knoppen Samenvoegen, Nieuwe relatie en Exporteren en een zoekveld.](../images/relaties-lijst.png "Overzicht van alle relaties van het kantoor")
 
-De tabel toont per relatie: **naam**, **type**, **e-mail**, **telefoon**, **gemeente**, **gsm** en **intern nummer**.
+De tabel toont per relatie: **naam**, **type**, **geboortedatum**, **e-mail**, **telefoon**, **gemeente**, **gsm**, **intern nummer**, **type contact** en **verantwoordelijke**. Is uw scherm smaller dan de lijst, dan schuift ze opzij; de naam en het e-mailadres blijven altijd leesbaar.
 
 - **Filter op soort** — bovenaan kiest u alles, enkel de particulieren of enkel de bedrijven.
 - **Zoeken** — het zoekveld zoekt in alle kolommen tegelijk.
@@ -20,7 +20,10 @@ De tabel toont per relatie: **naam**, **type**, **e-mail**, **telefoon**, **geme
 - **Nieuw / bewerken** — klik op **Nieuw**, of **dubbelklik** een rij om de fiche te openen.
 - **Samenvoegen** — twee fiches voor dezelfde partij samenvoegen; zie hieronder.
 - **Verwijderen** — een relatie wordt **gearchiveerd** (soft-delete), niet definitief gewist.
-- **Groeperen** — met [groepen](groups.md) deelt u relaties in zoals het u past: per regio, per kantoor, per campagne.
+- **Groeperen op een kolom** — sleep een kolomkop naar de balk boven de lijst. Zo ziet u bijvoorbeeld per
+  collega welke prospecten er opgevolgd worden: filter op het type contact van uw prospecten en groepeer op
+  **Verantwoordelijke**. Sleep de kop terug om het groeperen op te heffen.
+- **Groepen** — met [groepen](groups.md) deelt u relaties in zoals het u past: per regio, per kantoor, per campagne.
 
 ### Journaal
 
@@ -100,12 +103,16 @@ hetzelfde veld — en onderaan blijft de knoppenbalk in beeld.
 Alles wat u voor een kredietdossier nodig hebt — maar niet alles tegelijk in beeld.
 
 **Standaard ziet u** de **geboortedatum** en **-plaats**, het **rijksregisternummer**, de **nationaliteit**,
-de **burgerlijke staat**, het **beroep**, het **contacttype**, de **contactbron** en de datum van het eerste
-contact. Daar staat ook **Bron (lead)** bij: waar deze prospect vandaan kwam.
+de **burgerlijke staat**, het **beroep**, het **type contact**, de **verantwoordelijke**, de **contactbron** en de
+datum van het eerste contact. Daar staat ook **Bron (lead)** bij: waar deze prospect vandaan kwam.
 
 Met de knop **Meer velden** klapt de rest open: geboorteland, geslacht, taal, **identiteitskaart** met
 geldigheidsdata, huwelijksstelsel en -datum, **partner**, kinderen en personen ten laste, werkgever, in dienst
 sinds, contracttype en functie. **Minder velden** klapt ze weer dicht.
+
+De **verantwoordelijke** is de collega die deze relatie opvolgt. U kiest uit de medewerkers aan wie u werk
+mag toewijzen. Komt de relatie uit de vorige CreditSoft, dan neemt de conversie de collega mee aan wie ze daar
+toegewezen was. Bij een **bedrijf** staat de verantwoordelijke op het tabblad **Algemeen**.
 
 !!! tip "Waarom niet alles ineens"
     De meeste fiches hebben die tweede reeks niet nodig. Ze staan er wel, maar buiten beeld, zodat u niet door
