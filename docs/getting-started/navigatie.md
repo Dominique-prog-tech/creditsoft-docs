@@ -113,11 +113,7 @@ terugknop van de fiche of van de browser, op een melding, of in zoeken of de hul
 **Uw wijzigingen zijn niet bewaard. Toch weggaan?** **Blijven** brengt u terug naar de fiche, met alles wat u
 intikte; **Weggaan** laat de wijzigingen vallen. Herlaadt of sluit u het tabblad, dan stelt de browser zelf die vraag.
 
-Zonder wijziging vraagt CreditSoft niets, en na **Bewaren** of **Annuleren** ook niet.
-
-!!! warning "Op een kredietdossier"
-    Op de fiche van een **kredietdossier** komt die vraag enkel bij het herladen of sluiten van het tabblad, niet bij een
-    klik op een ander scherm. Bewaar daar dus vóór u verder klikt.
+Zonder wijziging vraagt CreditSoft niets, en na **Bewaren** of **Annuleren** ook niet. Een knop die iets nieuws aanmaakt en u er meteen naartoe brengt — **Nieuw kredietdossier** op een relatie, **Klant van maken** op een lead — stelt dezelfde vraag vóór hij iets aanmaakt.
 
 ## Uw voorkeuren
 
