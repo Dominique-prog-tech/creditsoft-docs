@@ -268,7 +268,7 @@
   "afspraken-week": {
     "route": "/crm/afspraken",
     "app": {
-      "sha": "78782163f1df6a72d1651328ecdc3100e2e69a84",
+      "sha": "bcbd0cf8dc3125435cd8cccfbf00e09f5f581f4a",
       "vuil": true
     }
   },
@@ -541,14 +541,14 @@
   "afspraken-per-medewerker": {
     "route": "/crm/afspraken",
     "app": {
-      "sha": "78782163f1df6a72d1651328ecdc3100e2e69a84",
+      "sha": "bcbd0cf8dc3125435cd8cccfbf00e09f5f581f4a",
       "vuil": true
     }
   },
   "agenda-afwezigheid": {
     "route": "/crm/afspraken",
     "app": {
-      "sha": "78782163f1df6a72d1651328ecdc3100e2e69a84",
+      "sha": "bcbd0cf8dc3125435cd8cccfbf00e09f5f581f4a",
       "vuil": true
     }
   },
@@ -590,7 +590,7 @@
   "afspraak-venster": {
     "route": "/crm/afspraken",
     "app": {
-      "sha": "78782163f1df6a72d1651328ecdc3100e2e69a84",
+      "sha": "bcbd0cf8dc3125435cd8cccfbf00e09f5f581f4a",
       "vuil": true
     }
   },
@@ -884,7 +884,7 @@
   "afspraken-week-fr": {
     "route": "/crm/afspraken",
     "app": {
-      "sha": "78782163f1df6a72d1651328ecdc3100e2e69a84",
+      "sha": "bcbd0cf8dc3125435cd8cccfbf00e09f5f581f4a",
       "vuil": true
     }
   },
@@ -1157,14 +1157,14 @@
   "afspraken-per-medewerker-fr": {
     "route": "/crm/afspraken",
     "app": {
-      "sha": "78782163f1df6a72d1651328ecdc3100e2e69a84",
+      "sha": "bcbd0cf8dc3125435cd8cccfbf00e09f5f581f4a",
       "vuil": true
     }
   },
   "agenda-afwezigheid-fr": {
     "route": "/crm/afspraken",
     "app": {
-      "sha": "78782163f1df6a72d1651328ecdc3100e2e69a84",
+      "sha": "bcbd0cf8dc3125435cd8cccfbf00e09f5f581f4a",
       "vuil": true
     }
   },
@@ -1206,7 +1206,7 @@
   "afspraak-venster-fr": {
     "route": "/crm/afspraken",
     "app": {
-      "sha": "78782163f1df6a72d1651328ecdc3100e2e69a84",
+      "sha": "bcbd0cf8dc3125435cd8cccfbf00e09f5f581f4a",
       "vuil": true
     }
   },
