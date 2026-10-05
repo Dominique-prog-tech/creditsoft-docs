@@ -30,7 +30,7 @@ de travailler, des conditions qui changent. Vous partez d'une liste : cochez les
 [Relations](../crm/relations.md#envoyer-un-e-mail-groupe) et cliquez sur **E-mail groupé…** dans la bande au-dessus de la liste.
 Il vous faut le droit **Envoyer un e-mail groupé**.
 
-![La fenêtre E-mail groupé depuis Relations avec trois relations cochées : en haut 2 destinataires et 1 ignoré pour la raison pas d'e-mail groupé, en dessous la liste dépliée avec pour chaque relation le nom, l'adresse e-mail et la raison, puis Texte sur Texte libre, l'Expéditeur, l'Objet et le Message avec la variable de la formule d'appel, et en bas l'aperçu pour le premier destinataire avec la formule d'appel complétée et le lien de désinscription.](../images/groepsmail-venster-fr.png "Un e-mail groupé : d'abord qui le reçoit, puis le texte et l'aperçu")
+![La fenêtre E-mail groupé depuis Relations avec trois relations cochées : en haut 2 destinataires et 1 ignoré pour la raison pas d'e-mail groupé, en dessous la liste dépliée avec pour chaque relation le nom, l'adresse e-mail et la raison, puis Texte sur Texte libre, l'Expéditeur, l'Objet et le Message avec la variable de la formule d'appel, et en bas l'aperçu pour le premier destinataire avec la formule d'appel complétée et le lien de désinscription.](../images/groepsmail-venster-fr.png "Un e-mail groupé : d'abord qui le reçoit, puis le texte et l'aperçu"){ .volle-breedte }
 
 **Chaque destinataire reçoit son propre e-mail.** Personne ne voit l'adresse d'un autre, et les variables comme
 `{{recipient.greeting}}` ou `{{file.number}}` sont complétées par destinataire. Pour un dossier de crédit, chaque
