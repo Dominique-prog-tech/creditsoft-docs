@@ -66,6 +66,19 @@ Vertrekt een collega, of neemt iemand anders zijn klanten over, dan draagt u zij
 
 Een overdracht verandert niets aan de datum van de laatste activiteit: een [stilgevallen dossier](../getting-started/dashboard.md#stilgevallen-dossiers) blijft stilgevallen tot iemand er iets mee doet. Wie wat van wie naar wie overdroeg, staat in het [logboek](../journaal/logboek.md) van elk dossier en in het actielogboek.
 
+### Een groepsmail sturen
+
+Om de aanvragers van een reeks dossiers in één keer te schrijven — het kantoor sluit, een nieuwe werkwijze:
+
+1. Vink de dossiers aan. Het vakje in de kolomkop vinkt de **pagina** aan; uw selectie blijft staan als u naar de volgende pagina gaat.
+2. Klik op **Groepsmail…** in de band boven de lijst.
+3. Kijk na wie de mail krijgt, kies een sjabloon of typ een vrije tekst, en klik op **Voorbeeld**.
+4. Klik op **Versturen** en bevestig.
+
+Elke aanvrager met een mailadres krijgt zijn eigen mail, en die staat daarna in het mailverkeer van het dossier.
+Wie wordt overgeslagen en waarom, en hoe de afmeldlink werkt, leest u bij
+[Mailverkeer](../journaal/mailverkeer.md#een-groepsmail). De knop vraagt het recht **Groepsmail versturen**.
+
 ## Het dossier
 
 ![Een geopend kredietdossier: bovenaan de kopkaart met status, intern nummer, eigenaar en sales als keuzelijst — bij deze afgesloten status ook de reden van afvallen met de toelichting —, de financiële instelling, de aanbrenger, het kredietbedrag, het commissiebedrag met het vinkje inhouden ernaast en de datum akte, met rechts de knoppen Bewaren, Annuleren, Afdruk overzicht en Verwijderen. Daaronder links de datums van indiening en goedkeuring met het type dossier, de ondertekening van het aanbod naast de uiterste datum voor het aanbod, de uiterste datums voor de akte en de opschortende voorwaarden, Herbekijken op met de reden ernaast, het doel, de schattingswaarde en de quotiteit met het vinkje Getekend aanbod verzonden en het veld Interne opmerkingen, en onder die kaart de kredietaanvragers met per aanvrager het aantal inkomsten en lasten; rechts de contracten en onderaan de tabbladen Partijen, Opmerkingen, Gevraagd, Leningen en lasten en Patrimonium, elk met een teller.](../images/kredietdossier-fiche.png "Het kredietdossier: alles op één pagina"){ .volle-breedte }

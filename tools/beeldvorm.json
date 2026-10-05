@@ -603,5 +603,23 @@
   "mail-momenten-termijn-fr": {
     "breedte": 1280,
     "hoogte": 860
+  },
+  "groepsmail-venster": {
+    "breedte": 1600,
+    "element": {
+      "bevat": "ontvanger\\(s\\)|destinataire\\(s\\)",
+      "kies": ".dxbl-popup",
+      "minBreed": 400
+    },
+    "hoogte": 1000
+  },
+  "groepsmail-venster-fr": {
+    "breedte": 1600,
+    "element": {
+      "bevat": "ontvanger\\(s\\)|destinataire\\(s\\)",
+      "kies": ".dxbl-popup",
+      "minBreed": 400
+    },
+    "hoogte": 1000
   }
 }

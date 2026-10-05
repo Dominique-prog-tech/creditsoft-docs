@@ -38,6 +38,13 @@ Lorsque vous ouvrez la fiche, les mêmes parties figurent en haut sous forme d'*
 donc pas revenir à la liste pour les consulter. Le tiroir et les onglets affichent la même chose et
 fonctionnent de manière identique sur chaque écran ; [Le journal](../journaal/overzicht.md) explique comment.
 
+## Envoyer un e-mail groupé
+
+Cochez les relations dans la liste et cliquez sur **E-mail groupé…** dans la bande au-dessus de la liste. Chaque
+relation reçoit son propre e-mail, qui figure ensuite dans son courrier. La fenêtre montre d'abord qui reçoit
+l'e-mail et qui ne le reçoit pas, et pourquoi ; voir [Courrier](../journaal/mailverkeer.md#un-e-mail-groupe). Le
+bouton requiert le droit **Envoyer un e-mail groupé**.
+
 ## Fusionner deux fiches
 
 Si la même personne ou la même entreprise figure deux fois dans la liste, fusionnez les fiches avec le bouton
@@ -86,7 +93,8 @@ fois du même champ — et la barre de boutons reste visible en bas.
 - **Nom** (obligatoire) et **prénom**
 - **Langue des documents** (obligatoire) — voir ci-dessous
 - **Contact** — téléphone, GSM, e-mail, site web
-- **E-mail invalide** — une case à cocher pour signaler qu'une adresse ne fonctionne plus, sans la supprimer
+- **E-mail invalide** — une case à cocher pour signaler qu'une adresse ne fonctionne plus, sans la supprimer. Un e-mail groupé ignore cette adresse.
+- **Pas d'e-mail groupé** — cette relation ne reçoit pas d'[e-mails groupés](../journaal/mailverkeer.md#un-e-mail-groupe), mais bien les e-mails ordinaires concernant son dossier. La case est aussi cochée lorsqu'elle a cliqué elle-même sur le lien de désinscription en bas d'un e-mail groupé ; la date de désinscription figure en dessous.
 - **Formule d'appel** et **N° interne**
 - **Adresse principale** — rue, numéro, boîte, code postal, commune, pays
 

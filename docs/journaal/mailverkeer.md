@@ -22,6 +22,44 @@ Klik **Nieuw**. In het venster dat opent:
 CreditSoft vraagt een bevestiging vóór het bericht vertrekt, met het adres erbij. Daarna is het weg — een mail
 komt niet terug.
 
+## Een groepsmail
+
+Met een groepsmail schrijft u in één keer een groep klanten aan — het kantoor sluit, er komt een nieuwe werkwijze,
+de voorwaarden wijzigen. U vertrekt van een lijst: vink in [Kredietdossiers](../credit-management/credit-files.md#een-groepsmail-sturen)
+of [Relaties](../crm/relations.md#een-groepsmail-sturen) de rijen aan en klik **Groepsmail…** in de band boven de lijst.
+Daarvoor hebt u het recht **Groepsmail versturen** nodig.
+
+![Het venster Groepsmail vanaf Relaties met drie aangevinkte relaties: bovenaan 2 ontvangers en 1 overgeslagen met de reden geen groepsmail, daaronder de opengeklapte lijst met per relatie de naam, het mailadres en de reden, dan Tekst op Vrije tekst, de Afzender, het Onderwerp en het Bericht met de variabele voor de aanhef, en onderaan het voorbeeld voor de eerste ontvanger met de aanhef ingevuld en de afmeldlink.](../images/groepsmail-venster.png "Een groepsmail: eerst wie ze krijgt, dan de tekst en het voorbeeld")
+
+**Elke ontvanger krijgt zijn eigen mail.** Niemand ziet het adres van een ander, en variabelen zoals
+`{{recipient.greeting}}` of `{{file.number}}` worden per ontvanger ingevuld. Bij een kredietdossier krijgt elke
+aanvrager met een mailadres een mail; staan twee aanvragers op hetzelfde adres, dan gaat er één.
+
+Het venster toont eerst **wie de mail krijgt en wie niet**, met de reden:
+
+- **geen mailadres** of een **ongeldig adres** — ook als op de fiche *E-mail ongeldig* aangevinkt staat;
+- **geen groepsmail** — de relatie meldde zich af, of iemand vinkte *Geen groepsmail* aan op haar fiche;
+- **dubbel adres** — dat adres krijgt de mail al via een andere rij;
+- **verwijderd** — de fiche staat intussen in de prullenbak.
+
+Daarna kiest u de **tekst**:
+
+- een **sjabloon** — het algemene bericht of een eigen tekst uit [Mailsjablonen](../administration/mail-templates.md).
+  Elke ontvanger krijgt het in zijn eigen documenttaal, Nederlands of Frans.
+- een **vrije tekst** — u typt onderwerp en bericht zelf. Die gaat in uw eigen taal naar iedereen, ook de aanhef.
+
+**Voorbeeld** toont de mail zoals de eerste ontvanger haar krijgt. **Versturen** vraagt een bevestiging met het
+aantal mails. Onderaan elke groepsmail staat een **afmeldlink**: wie erop klikt en bevestigt, krijgt geen
+groepsmails meer. Gewone mails over het eigen dossier blijven wel komen.
+
+Elke mail staat daarna in het mailverkeer van haar dossier of relatie. Het venster toont hoeveel er vertrokken,
+hoeveel er overgeslagen werden en, als het misliep, waarom.
+
+!!! note "Status Onzeker"
+    Groepsmails vertrekken in reeksen. Weigert de mailserver een deel van een reeks zonder te zeggen welke mails,
+    dan krijgen de mails van die reeks de status *Onzeker*. Bekijk ze dan in
+    [Mailmonitoring](../administration/mail-monitoring.md).
+
 ## Wat u in de lijst ziet
 
 Elk bericht toont een label **Uitgaand** of **Inkomend**, het onderwerp, en daaronder de **afzender** en de

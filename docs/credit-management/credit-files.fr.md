@@ -66,6 +66,19 @@ Un collègue s'en va, ou quelqu'un d'autre reprend ses clients : vous transfére
 
 Un transfert ne change rien à la date de la dernière activité : un [dossier à l'arrêt](../getting-started/dashboard.md#dossiers-a-larret) reste à l'arrêt jusqu'à ce que quelqu'un s'en occupe. Qui a transféré quoi, de qui à qui, figure dans l'[historique](../journaal/logboek.md) de chaque dossier et dans le journal des actions.
 
+### Envoyer un e-mail groupé
+
+Pour écrire en une fois aux demandeurs d'une série de dossiers — le bureau ferme, une nouvelle façon de travailler :
+
+1. Cochez les dossiers. La case de l'en-tête coche la **page** ; votre sélection reste quand vous passez à la page suivante.
+2. Cliquez sur **E-mail groupé…** dans la bande au-dessus de la liste.
+3. Vérifiez qui reçoit l'e-mail, choisissez un modèle ou tapez un texte libre, puis cliquez sur **Aperçu**.
+4. Cliquez sur **Envoyer** et confirmez.
+
+Chaque demandeur ayant une adresse e-mail reçoit son propre e-mail, qui figure ensuite dans le courrier du dossier.
+Qui est ignoré et pourquoi, et comment fonctionne le lien de désinscription : voir
+[Courrier](../journaal/mailverkeer.md#un-e-mail-groupe). Le bouton requiert le droit **Envoyer un e-mail groupé**.
+
 ## Le dossier
 
 ![Un dossier de crédit ouvert : en haut le bloc principal avec le statut, le numéro interne, le propriétaire et le responsable commercial sous forme de listes déroulantes — pour ce statut de clôture, aussi le motif d'abandon avec la précision —, l'institution financière, l'apporteur, le montant du crédit, le montant de commission avec la case Retenir à côté et la date d'acte, et à droite les boutons Enregistrer, Annuler, Imprimer l'aperçu et Supprimer. En dessous, à gauche les dates de dépôt et d'approbation avec le type de dossier, la signature de l'offre à côté de la date limite de l'offre, les dates limites de l'acte et des conditions suspensives, À revoir le avec le motif à côté, le but, la valeur estimée et la quotité avec la case Offre signée envoyée ainsi que le champ Remarques internes, et sous cette carte les demandeurs de crédit avec, pour chacun, le nombre de revenus et de charges ; à droite les contrats et en bas les onglets Parties, Remarques, Demandés, Prêts et charges et Patrimoine, chacun avec un compteur.](../images/kredietdossier-fiche-fr.png "Le dossier de crédit : tout sur une seule page"){ .volle-breedte }

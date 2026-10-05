@@ -36,6 +36,13 @@ Opent u de fiche, dan staan dezelfde onderdelen bovenaan als **tabbladen** — u
 naar de lijst om ze te raadplegen. Lade en tabbladen tonen hetzelfde en werken op elk scherm gelijk;
 [Het journaal](../journaal/overzicht.md) legt uit hoe.
 
+## Een groepsmail sturen
+
+Vink in de lijst de relaties aan en klik op **Groepsmail…** in de band boven de lijst. Elke relatie krijgt haar
+eigen mail, en die staat daarna in haar mailverkeer. Het venster toont eerst wie de mail krijgt en wie niet, en
+waarom; zie [Mailverkeer](../journaal/mailverkeer.md#een-groepsmail). De knop vraagt het recht
+**Groepsmail versturen**.
+
 ## Twee fiches samenvoegen
 
 Staat dezelfde persoon of hetzelfde bedrijf twee keer in de lijst, dan voegt u de fiches samen met de knop
@@ -83,7 +90,8 @@ hetzelfde veld — en onderaan blijft de knoppenbalk in beeld.
 - **Naam** (verplicht) en **voornaam**
 - **Documenttaal** (verplicht) — zie hieronder
 - **Contact** — telefoon, gsm, e-mail, website
-- **E-mail ongeldig** — een vinkje om te markeren dat een adres niet meer werkt, zonder het weg te gooien
+- **E-mail ongeldig** — een vinkje om te markeren dat een adres niet meer werkt, zonder het weg te gooien. Een groepsmail slaat dit adres over.
+- **Geen groepsmail** — deze relatie krijgt geen [groepsmails](../journaal/mailverkeer.md#een-groepsmail), wel gewone mails over haar dossier. Het vinkje staat ook aan wanneer zij zelf op de afmeldlink onderaan een groepsmail klikte; de datum van afmelden staat eronder.
 - **Aanspreking** en **Intern nr.**
 - **Hoofdadres** — straat, huisnummer, bus, postcode, gemeente, land
 

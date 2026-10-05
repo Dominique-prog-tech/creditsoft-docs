@@ -130,13 +130,35 @@ const SCHOTEN = [
       await p.waitForTimeout(1500);
       await p.locator('.dxbl-grid thead .dxbl-checkbox').first().click();
       await p.waitForTimeout(800);
-      await p.locator('.cf-selbar button').click();
+      // ⚠️ Op naam: sinds mak4 staat ook Groepsmail… in de band, en '.cf-selbar button' was dan dubbelzinnig.
+      await p.locator('.cf-selbar button', { hasText: /Overdragen|Transférer/ }).click();
       await p.waitForTimeout(1500);
       await p.locator('.adm-overdracht-naar input').click();
       await p.keyboard.type('Eva');
       await p.waitForTimeout(1200);
       await p.locator('.dxbl-listbox-item, [role=option]', { hasText: 'Eva Coppens' }).first().click();
       await p.waitForTimeout(1000);
+  }],
+  // ── mak4 (05/10/2026): de groepsmail ──
+  // Relaties en niet Kredietdossiers: de demo zet de TWEEDE relatie op naam op "geen groepsmail" (JournaalTestData,
+  // VulGroepsmailAfmeldingAsync), dus de eerste drie rijen tonen één overgeslagen ontvanger. De taal leest het recept
+  // af aan de knop: een Franse vrije tekst in het Franse beeld.
+  ['groepsmail-venster',           '/crm/relaties', async p => {
+      const vakjes = p.locator('.dxbl-grid-table tbody tr td.dxbl-grid-selection-cell input[type=checkbox]');
+      for (let i = 0; i < 3; i++) { await vakjes.nth(i).click({ force: true }); await p.waitForTimeout(300); }
+      const fr = await p.getByRole('button', { name: /E-mail groupé/ }).count() > 0;
+      await p.getByRole('button', { name: /Groepsmail…|E-mail groupé…/ }).click();
+      await p.waitForTimeout(2500);
+      const v = p.locator('.dxbl-popup').filter({ hasText: /ontvanger\(s\)|destinataire\(s\)/ }).last();
+      await v.locator('details summary').click();
+      await v.locator('.dxbl-fl-item', { hasText: /^(Onderwerp|Objet)/ }).locator('input').first()
+             .fill(fr ? 'Notre bureau sera fermé le 11 novembre' : 'Ons kantoor is gesloten op 11 november');
+      await v.locator('.dxbl-fl-item', { hasText: /^(Bericht|Message)/ }).locator('[contenteditable=true]').first().click();
+      await p.keyboard.type(fr ? '{{recipient.greeting}}, notre bureau sera fermé le mardi 11 novembre. Nous serons à nouveau joignables le 12 novembre.'
+                               : '{{recipient.greeting}}, ons kantoor is gesloten op dinsdag 11 november. Vanaf 12 november staan we weer voor u klaar.');
+      await p.waitForTimeout(900);
+      await v.getByRole('button', { name: /^(Voorbeeld|Aperçu)$/ }).click();
+      await p.waitForTimeout(2000);
   }],
   ['afwezigheden',                 '/beheer/afwezigheden'],
   ['keuzelijsten',                 '/beheer/keuzelijsten', async p => {
@@ -864,6 +886,8 @@ const VERWACHT = {
   // Een kolomkop: staat er enkel als de lijst getoond wordt, NIET bij de melding "nog geen opvolgstatus ingesteld".
   'opvolging-na-akte':          /Laatste opmerking|Dernière remarque/,
   'kredietdossiers-overdragen': /Komen van|Proviennent de/,   // staat enkel in het venster, en pas met een selectie
+  // mak4: het VOORBEELD én een overgeslagen ontvanger — een venster zonder selectie of zonder de demo-afmelding haalt dit niet.
+  'groepsmail-venster':         /^(?=[\s\S]*(Voorbeeld voor|Aperçu pour))(?=[\s\S]*(geen groepsmail: 1|pas d'e-mail groupé : 1))/,
   'wachtwoord':                 /Huidig wachtwoord|Mot de passe actuel/i,
   'keuzelijsten':               /Nationaliteit|Nationalité|Volgorde|Ordre/i,
   // De kop van de MIDDELSTE kolom: staat er enkel als een klant gekozen én precies de systeemrol open is. Het oude
