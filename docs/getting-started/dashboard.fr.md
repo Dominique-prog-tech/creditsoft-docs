@@ -2,7 +2,7 @@
 
 Le tableau de bord est votre écran d'accueil. D'un coup d'œil, vous voyez combien de dossiers se trouvent dans quelle phase et ce que font les indicateurs.
 
-![Le tableau de bord sur l'onglet Aujourd'hui, à côté de l'onglet Production : en haut les quatre indicateurs — Actes avec l'année, À introduire, Introduit et LOA avec la mention « toutes les années » — en dessous les deux blocs Délai dépassé et Délai proche avec par ligne le client, le type de délai et la date, et au bas de chaque bloc le bouton pour afficher les autres ; plus bas le début des deux cartes À revoir et Révision du taux.](../images/dashboard-startscherm-fr.png "Le tableau de bord : indicateurs, délais qui arrivent à échéance et suivi des crédits en cours"){ .volle-breedte }
+![Le tableau de bord sur l'onglet Aujourd'hui, à côté de l'onglet Production : en haut le bloc Pour commencer avec les trois premiers réglages, en dessous les quatre indicateurs — Actes avec l'année, À introduire, Introduit et LOA avec la mention « toutes les années » —, puis côte à côte les trois graphiques de 2026 : le volume réalisé par mois, le volume par institution et le volume par responsable ; en bas le début des blocs Délai dépassé et Délai proche.](../images/dashboard-startscherm-fr.png "Le tableau de bord : indicateurs, graphiques de l'année et délais qui arrivent à échéance"){ .volle-breedte }
 
 ## Pour commencer
 
@@ -65,6 +65,26 @@ Vous indiquez uniquement **ce que signifie un statut de contrat** : *réalisé*,
     contrats** : pour reconnaître un prêt à tempérament, il faut le type de produit d'un contrat. Il n'y a rien à
     configurer — une phrase sous les tuiles le dit. Liez toutefois vos statuts à des [phases](../beheer/dashboard-fases.md) :
     sans phases, le tableau de bord ne reconnaît aucun dossier clôturé et le compte comme *À introduire*.
+
+## Les trois graphiques
+
+Juste sous les tuiles figurent trois graphiques, côte à côte. Ils portent tous les trois sur **la même année** — celle que vous
+choisissez avec les flèches en haut — et sur le **volume réalisé**, donc sur les crédits effectivement
+aboutis.
+
+![Les trois graphiques du tableau de bord pour 2026, côte à côte : à gauche le graphique en barres Volume réalisé par mois avec une barre par mois de janvier à décembre, au milieu le graphique en anneau Volume par institution et à droite le graphique en anneau Volume par responsable, chacun avec une légende des couleurs.](../images/dashboard-grafieken-fr.png "Les graphiques : volume réalisé par mois, par institution et par responsable"){ .volle-breedte }
+
+- **Volume réalisé par mois** — une barre par mois. Vous voyez ainsi d'emblée quels mois portent le
+  résultat et lesquels décrochent.
+- **Volume par institution** — un graphique en anneau répartissant le volume entre les institutions de
+  crédit. Les dossiers sans institution sont regroupés sous *Inconnu*.
+- **Volume par responsable** — la même répartition, mais par collaborateur. Les dossiers sans personne
+  attribuée sont regroupés sous *Sans responsable*. Si c'est la plus grande part, ce n'est pas un problème
+  technique mais du travail : personne n'a encore été désigné.
+
+S'il n'y a rien à afficher pour l'année choisie, la mention *« Aucune donnée. »* remplace l'anneau vide. Un
+graphique qui reste vide alors que les tuiles affichent des chiffres signifie presque toujours que l'année
+en haut n'est pas celle que vous croyez.
 
 ## Ce qui arrive à échéance
 
@@ -132,31 +152,11 @@ Sous le suivi figure **Dossiers à l'arrêt** : les dossiers en cours sur lesque
 - **À l'arrêt depuis plus d'un an** figure à part en bas, avec un lien vers ces dossiers. Ce sont souvent des dossiers à clôturer.
 - **Afficher les …** ouvre la liste des [dossiers de crédit](../credit-management/credit-files.md) avec exactement les dossiers à l'arrêt.
 
-## Les trois graphiques
-
-Sous les tuiles figurent trois graphiques. Ils portent tous les trois sur **la même année** — celle que vous
-choisissez avec les flèches en haut — et sur le **volume réalisé**, donc sur les crédits effectivement
-aboutis.
-
-![Les trois graphiques du tableau de bord pour 2026 : en haut le graphique en barres Volume réalisé par mois avec une barre par mois de janvier à décembre, en dessous à gauche le graphique en anneau Volume par institution et à droite le graphique en anneau Volume par responsable, chacun avec une légende des couleurs.](../images/dashboard-grafieken-fr.png "Les graphiques : volume réalisé par mois, par institution et par responsable"){ .volle-breedte }
-
-- **Volume réalisé par mois** — une barre par mois. Vous voyez ainsi d'emblée quels mois portent le
-  résultat et lesquels décrochent.
-- **Volume par institution** — un graphique en anneau répartissant le volume entre les institutions de
-  crédit. Les dossiers sans institution sont regroupés sous *Inconnu*.
-- **Volume par responsable** — la même répartition, mais par collaborateur. Les dossiers sans personne
-  attribuée sont regroupés sous *Sans responsable*. Si c'est la plus grande part, ce n'est pas un problème
-  technique mais du travail : personne n'a encore été désigné.
-
-S'il n'y a rien à afficher pour l'année choisie, la mention *« Aucune donnée. »* remplace l'anneau vide. Un
-graphique qui reste vide alors que les tuiles affichent des chiffres signifie presque toujours que l'année
-en haut n'est pas celle que vous croyez.
-
 ## Le pipeline : les dossiers par phase
 
 Sous les tuiles, vos dossiers sont regroupés par **phase**. Une phase est un groupe de statuts que vous composez vous-même — par exemple *En traitement*, *Introduit*, *Finalisé*.
 
-![Le pipeline Dossiers par phase avec quatre cartes : En traitement avec 442 dossiers, Introduit avec 1800, Finalisé avec 430 et Sans suite avec 1328, ces deux dernières portant la mention phase finale. Chaque carte affiche le montant total et, en dessous, les statuts qui en relèvent, avec par statut le nombre de dossiers et le montant.](../images/dashboard-pijplijn-fr.png "Vos dossiers regroupés par phase, avec les statuts en dessous"){ .volle-breedte }
+![Le pipeline Dossiers par phase avec quatre cartes : En traitement avec 365 dossiers, Introduit avec 1464, Finalisé avec 430 et Sans suite avec 1741, ces deux dernières portant la mention phase finale. Chaque carte affiche le montant total et, en dessous, les statuts qui en relèvent, avec par statut le nombre de dossiers et le montant. Au-dessus, la fin de la liste Dossiers à l'arrêt.](../images/dashboard-pijplijn-fr.png "Vos dossiers regroupés par phase, avec les statuts en dessous"){ .volle-breedte }
 
 - Cliquez sur une phase pour voir les dossiers concernés.
 - Les dossiers dont le statut n'a pas été classé sont regroupés sous **non classés**.

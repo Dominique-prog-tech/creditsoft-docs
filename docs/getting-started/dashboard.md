@@ -2,7 +2,7 @@
 
 Het dashboard is uw startscherm. In één oogopslag ziet u hoeveel dossiers er in welke fase zitten en wat de kerncijfers doen.
 
-![Het dashboard op het tabblad Vandaag, naast het tabblad Productie: bovenaan de vier kerncijfers — Aktes met het jaartal erbij, In te dienen, Ingediend en LOA met de vermelding "alle jaren" — daaronder de twee blokken Termijn verstreken en Termijn nadert met per regel de klant, de soort termijn en de datum, en onderaan elk blok de knop om de overige te tonen; nog lager het begin van de twee kaarten Herbekijken en Renteherziening.](../images/dashboard-startscherm.png "Het dashboard: kerncijfers, aflopende termijnen en de opvolging van lopende kredieten"){ .volle-breedte }
+![Het dashboard op het tabblad Vandaag, naast het tabblad Productie: bovenaan het blok Aan de slag met de drie eerste instellingen, daaronder de vier kerncijfers — Aktes met het jaartal erbij, In te dienen, Ingediend en LOA met de vermelding "alle jaren" —, dan naast elkaar de drie grafieken van 2026: het gerealiseerde volume per maand, het volume per instelling en het volume per verantwoordelijke; onderaan het begin van de blokken Termijn verstreken en Termijn nadert.](../images/dashboard-startscherm.png "Het dashboard: kerncijfers, de grafieken van het jaar en de aflopende termijnen"){ .volle-breedte }
 
 ## Aan de slag
 
@@ -62,6 +62,26 @@ U geeft alleen aan **wat een contractstatus betekent**: *gerealiseerd*, *in te d
     om een lening op afbetaling te herkennen is de productsoort van een contract nodig. Er is niets in te stellen —
     een zin onder de tegels zegt het. Koppel wel uw statussen aan [fases](../beheer/dashboard-fases.md): zonder fases
     herkent het dashboard geen afgesloten dossier, en telt het dat als *In te dienen*.
+
+## De drie grafieken
+
+Meteen onder de tegels staan drie grafieken, naast elkaar. Ze gaan alle drie over **hetzelfde jaar** — dat u met de pijltjes
+bovenaan kiest — en over het **gerealiseerde volume**, dus over kredieten die effectief doorgingen.
+
+![De drie grafieken van het dashboard voor 2026, naast elkaar: links de staafgrafiek Gerealiseerd volume per maand met een staaf per maand van januari tot december, in het midden de ringgrafiek Volume per instelling en rechts de ringgrafiek Volume per verantwoordelijke, elk met een legende van de kleuren.](../images/dashboard-grafieken.png "De grafieken: gerealiseerd volume per maand, per instelling en per verantwoordelijke"){ .volle-breedte }
+
+- **Gerealiseerd volume per maand** — één staaf per maand. Zo ziet u meteen welke maanden dragen en welke
+  achterblijven.
+- **Volume per instelling** — een ringgrafiek met de verdeling over de kredietinstellingen. Dossiers waar
+  geen instelling op staat, komen samen onder *Onbekend*.
+- **Volume per verantwoordelijke** — dezelfde verdeling, maar per medewerker. Dossiers waar niemand op
+  staat, komen samen onder *Geen eigenaar*. Is dat het grootste stuk, dan is dat geen storing maar werk: er
+  is nog niemand aangeduid.
+
+Is er in het gekozen jaar niets te tonen, dan staat er *"Geen gegevens."* in plaats van een lege ring. Een
+grafiek die leegblijft terwijl de tegels wél cijfers tonen, betekent bijna altijd dat het jaartal
+hierboven niet staat waar u denkt.
+
 
 ## Wat er afloopt
 
@@ -130,31 +150,11 @@ Onder de opvolging staat **Stilgevallen dossiers**: de lopende dossiers waarop a
 - **Meer dan een jaar stil** staat apart onderaan, met een link naar die dossiers. Vaak zijn het dossiers die afgesloten moeten worden.
 - **Toon alle** opent de lijst [Kredietdossiers](../credit-management/credit-files.md) met precies de stilgevallen dossiers.
 
-## De drie grafieken
-
-Onder de tegels staan drie grafieken. Ze gaan alle drie over **hetzelfde jaar** — dat u met de pijltjes
-bovenaan kiest — en over het **gerealiseerde volume**, dus over kredieten die effectief doorgingen.
-
-![De drie grafieken van het dashboard voor 2026: bovenaan de staafgrafiek Gerealiseerd volume per maand met een staaf per maand van januari tot december, daaronder links de ringgrafiek Volume per instelling en rechts de ringgrafiek Volume per verantwoordelijke, elk met een legende van de kleuren.](../images/dashboard-grafieken.png "De grafieken: gerealiseerd volume per maand, per instelling en per verantwoordelijke"){ .volle-breedte }
-
-- **Gerealiseerd volume per maand** — één staaf per maand. Zo ziet u meteen welke maanden dragen en welke
-  achterblijven.
-- **Volume per instelling** — een ringgrafiek met de verdeling over de kredietinstellingen. Dossiers waar
-  geen instelling op staat, komen samen onder *Onbekend*.
-- **Volume per verantwoordelijke** — dezelfde verdeling, maar per medewerker. Dossiers waar niemand op
-  staat, komen samen onder *Geen eigenaar*. Is dat het grootste stuk, dan is dat geen storing maar werk: er
-  is nog niemand aangeduid.
-
-Is er in het gekozen jaar niets te tonen, dan staat er *"Geen gegevens."* in plaats van een lege ring. Een
-grafiek die leegblijft terwijl de tegels wél cijfers tonen, betekent bijna altijd dat het jaartal
-hierboven niet staat waar u denkt.
-
-
 ## De pijplijn: dossiers per fase
 
 Onder de tegels staan uw dossiers gegroepeerd per **fase**. Een fase is een groep statussen die u zelf samenstelt — bijvoorbeeld *In behandeling*, *Ingediend*, *Afgewerkt*.
 
-![De pijplijn Dossiers per fase met vier kaarten: In behandeling met 442 dossiers, Ingediend met 1800, Afgewerkt met 430 en Zonder gevolg met 1328, de laatste twee met het merkteken eindfase. Elke kaart toont het totaalbedrag en daaronder de statussen die eronder vallen, met per status het aantal dossiers en het bedrag.](../images/dashboard-pijplijn.png "Uw dossiers gegroepeerd per fase, met de statussen eronder"){ .volle-breedte }
+![De pijplijn Dossiers per fase met vier kaarten: In behandeling met 365 dossiers, Ingediend met 1464, Afgewerkt met 430 en Zonder gevolg met 1741, de laatste twee met het merkteken eindfase. Elke kaart toont het totaalbedrag en daaronder de statussen die eronder vallen, met per status het aantal dossiers en het bedrag. Erboven het einde van de lijst Stilgevallen dossiers.](../images/dashboard-pijplijn.png "Uw dossiers gegroepeerd per fase, met de statussen eronder"){ .volle-breedte }
 
 - Klik op een fase om de dossiers erachter te zien.
 - Dossiers met een status die u niet hebt ingedeeld, komen samen onder **niet ingedeeld**.

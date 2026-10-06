@@ -489,7 +489,10 @@
   },
   "dashboard-grafieken": {
     "breedte": 1280,
-    "hoogte": 1100
+    "hoogte": 1240,
+    "element": {
+      "kies": "[data-blok=\"grafieken\"]"
+    }
   },
   "kredietdossier-patrimonium": {
     "breedte": 1920,

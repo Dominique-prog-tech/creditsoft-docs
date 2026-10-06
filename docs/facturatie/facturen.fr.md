@@ -23,9 +23,9 @@ Un utilisateur ordinaire peut consulter et préparer des factures. Qui peut les 
 
 ## La liste
 
-![La liste Factures avec en haut l'année 2026, les boutons Nouvelle facture et Exporter, et par ligne le numéro, la date, le client, le dossier, le type Facture ou Note de crédit, le total TVA comprise et le montant ouvert ; en haut, un brouillon sans numéro avec l'étiquette Brouillon.](../images/facturen-lijst-fr.png "Vos factures et notes de crédit de l'année"){ .volle-breedte }
+![La liste Factures avec en haut l'année 2026, les boutons Nouvelle facture et Exporter, et par ligne le numéro, la date, le client, le dossier, le type Facture ou Note de crédit, le total TVA comprise, le montant ouvert et la colonne Envoyée ; en haut, un brouillon sans numéro avec l'étiquette Brouillon.](../images/facturen-lijst-fr.png "Vos factures et notes de crédit de l'année"){ .volle-breedte }
 
-Pour chaque facture, vous voyez le **numéro**, la **date**, le **client**, le **dossier**, le **type** — facture ou note de crédit —, le **total TVA comprise** et ce qui reste **ouvert**. Un brouillon n'a pas encore de numéro : il porte l'étiquette *Brouillon*.
+Pour chaque facture, vous voyez le **numéro**, la **date**, le **client**, le **dossier**, le **type** — facture ou note de crédit —, le **total TVA comprise**, ce qui reste **ouvert**, et si elle a été **envoyée** : *Envoyée par e-mail*. Un brouillon n'a pas encore de numéro : il porte l'étiquette *Brouillon*.
 
 - En haut, vous choisissez l'**année**, ou *Toutes les années*.
 - **Nouvelle facture** ouvre une facture vide.
@@ -144,6 +144,16 @@ Relisez, adaptez ce que vous voulez, et cliquez sur **Envoyer**. Le courriel app
 
 Le texte du courriel s'adapte dans les [Modèles d'e-mail](../administration/mail-templates.md).
 
+## La facture électronique (UBL)
+
+Pour une facture à une **entreprise belge** — un client avec un numéro de TVA belge — le bouton **Facture électronique (UBL)** est présent. Il télécharge la facture en **facture électronique** : le fichier que lisent un logiciel comptable et le réseau Peppol, selon la norme européenne (Peppol BIS Billing 3.0). Le PDF y est inclus, de sorte que qui ouvre le fichier dispose aussi de l'image de la facture.
+
+- La facture électronique est créée **une seule fois**, la première fois que vous cliquez sur le bouton. Ensuite, vous recevez toujours le même fichier, même si votre fiche d'entreprise change entre-temps — comme le PDF.
+- Le fichier porte le nom du PDF, avec *.xml* au lieu de *.pdf*.
+- Si la facture électronique ne peut pas être créée, un message en donne la raison, et rien n'est enregistré. Par exemple : l'IBAN manque sur votre [Fiche d'entreprise](../administration/company-profile.md), ou la facture n'a pas de *Votre référence* (uniquement pour les factures rendues définitives avant que celle-ci ne soit obligatoire).
+
+Le bouton n'est **pas** présent pour une facture à un particulier — un particulier ne reçoit pas de factures électroniques —, ni pour un client étranger, un brouillon ou une facture du programme précédent.
+
 ## Corriger une facture : la note de crédit
 
 Si une facture définitive n'est pas correcte, vous créez une **note de crédit**. Une facture ne se supprime pas.
@@ -167,6 +177,7 @@ Les factures qui portent cette étiquette sont en lecture seule. Elles n'ont pas
     - **Supprimer une facture erronée.** Ce n'est pas possible, et c'est voulu : une facture définitive a un numéro qui ne disparaît jamais. Créez une note de crédit.
     - **Rendre définitive une facture pour un client sans adresse complète.** Complétez d'abord l'adresse principale sur sa fiche de relation — pays compris.
     - **Envoyer une facture en français à un client néerlandophone.** La langue de la facture vient de la langue des documents du client. Si elle est erronée, corrigez-la avant de rendre la facture définitive.
+    - **Chercher le bouton Facture électronique pour une entreprise sans numéro de TVA.** Ce bouton n'apparaît que si le client a un numéro de TVA belge. Complétez-le sur sa fiche de relation avant de rendre la facture définitive : la facture fige les données du client telles qu'elles sont à ce moment.
 
 ## Voir aussi
 

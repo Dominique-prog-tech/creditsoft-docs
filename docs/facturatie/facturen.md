@@ -23,9 +23,9 @@ Een gewone gebruiker kan facturen bekijken en opmaken. Wie ze definitief mag mak
 
 ## De lijst
 
-![De lijst Facturen met bovenaan het jaar 2026, de knoppen Nieuwe factuur en Exporteren, en per rij het nummer, de datum, de klant, het dossier, de soort Factuur of Creditnota, het totaal incl. btw en het openstaande bedrag; bovenaan een klad zonder nummer met het label Klad.](../images/facturen-lijst.png "Uw facturen en creditnota's van dit jaar"){ .volle-breedte }
+![De lijst Facturen met bovenaan het jaar 2026, de knoppen Nieuwe factuur en Exporteren, en per rij het nummer, de datum, de klant, het dossier, de soort Factuur of Creditnota, het totaal incl. btw, het openstaande bedrag en de kolom Verzonden; bovenaan een klad zonder nummer met het label Klad.](../images/facturen-lijst.png "Uw facturen en creditnota's van dit jaar"){ .volle-breedte }
 
-Per factuur ziet u het **nummer**, de **datum**, de **klant**, het **dossier**, de **soort** — factuur of creditnota —, het **totaal incl. btw** en wat er nog **open** staat. Een klad heeft nog geen nummer: daar staat het label *Klad*.
+Per factuur ziet u het **nummer**, de **datum**, de **klant**, het **dossier**, de **soort** — factuur of creditnota —, het **totaal incl. btw**, wat er nog **open** staat, en of ze **verzonden** werd: *Gemaild*. Een klad heeft nog geen nummer: daar staat het label *Klad*.
 
 - Bovenaan kiest u het **jaar**, of *Alle jaren*.
 - **Nieuwe factuur** opent een lege factuur.
@@ -144,6 +144,16 @@ Lees na, pas aan wat u wil, en klik op **Versturen**. De mail komt in het mailve
 
 De tekst van de mail past u aan bij de [Mailsjablonen](../administration/mail-templates.md).
 
+## De e-factuur (UBL)
+
+Bij een factuur aan een **Belgisch bedrijf** — een klant met een Belgisch btw-nummer — staat de knop **E-factuur (UBL)**. Die downloadt de factuur als **e-factuur**: het bestand dat een boekhoudpakket en het Peppol-netwerk lezen, volgens de Europese norm (Peppol BIS Billing 3.0). De pdf zit erin, zodat wie het bestand opent ook het beeld van de factuur heeft.
+
+- De e-factuur wordt **één keer** gemaakt, de eerste keer dat u op de knop klikt. Daarna krijgt u altijd hetzelfde bestand, ook als uw bedrijfsfiche intussen verandert — net zoals de pdf.
+- Het bestand draagt de naam van de pdf, met *.xml* in plaats van *.pdf*.
+- Kan de e-factuur niet gemaakt worden, dan zegt een melding waarom, en wordt er niets bewaard. Bijvoorbeeld: de IBAN op uw [Bedrijfsfiche](../administration/company-profile.md) ontbreekt, of de factuur heeft geen *Uw referentie* (enkel bij facturen die definitief werden vóór die verplicht was).
+
+De knop staat **niet** bij een factuur aan een particulier — een particulier ontvangt geen e-facturen —, en ook niet bij een buitenlandse klant, een klad of een factuur uit het vorige programma.
+
 ## Een factuur rechtzetten: de creditnota
 
 Klopt een definitieve factuur niet, dan maakt u een **creditnota**. Een factuur verwijdert u niet.
@@ -167,6 +177,7 @@ Facturen met dit label kunt u enkel lezen. Ze krijgen geen pdf: het origineel be
     - **Een factuur met een fout verwijderen.** Dat kan niet, en dat is de bedoeling: een definitieve factuur heeft een nummer dat nooit meer weggaat. Maak een creditnota.
     - **Definitief maken voor een klant zonder volledig adres.** Vul eerst het hoofdadres aan op zijn relatiefiche — met het land erbij.
     - **Een Franstalige klant een Nederlandse factuur sturen.** De taal van de factuur komt uit de documenttaal van de klant. Staat die verkeerd, verbeter ze dan vóór u de factuur definitief maakt.
+    - **De knop E-factuur zoeken bij een bedrijf zonder btw-nummer.** Die knop verschijnt enkel als de klant een Belgisch btw-nummer heeft. Vul het aan op zijn relatiefiche vóór u de factuur definitief maakt: de factuur legt de gegevens van de klant vast zoals ze op dat moment zijn.
 
 ## Zie ook
 

@@ -444,7 +444,18 @@ const SCHOTEN = [
   ['te-factureren',                '/facturen/te-factureren'],
   ['creditnotas-koppelen',         '/facturen/koppels'],
   ['btw-codes-en-artikelen',       '/beheer/facturatie'],
-  ['factuurinstellingen',          '/beheer/facturatie/instellingen'],
+  // ⚠️ DE PEPPOL-KAART IS ENKEL VOOR EEN OPERATOR (fase 5, P2) — en de ronde meldt zich aan als operator. Een
+  // kantoorbeheerder, voor wie deze pagina geschreven is, ziet ze nooit. Weghalen (display: none mag hier: ze staat
+  // onderaan, er schuift niets op) en NAMETEN dat er geen Peppol-tekst meer in beeld staat — anders faalt een
+  // gewijzigde kaarttitel stil en belandt de operatorkaart alsnog in de handleiding.
+  ['factuurinstellingen',          '/beheer/facturatie/instellingen', async p => {
+      const nog = await p.evaluate(() => {
+        for (const k of document.querySelectorAll('.adm-card'))
+          if (/^Peppol \((e-facturen versturen|envoi de factures)/.test((k.innerText || '').trim())) k.style.display = 'none';
+        return [...document.querySelectorAll('.adm-card')].some(k => k.offsetParent && /Peppol/.test(k.innerText || ''));
+      });
+      if (nog) throw new Error('de Peppol-kaart (enkel operator) staat nog in beeld');
+  }],
   // HANDWERK (zie bovenaan): staat hier zodat de ronde het VERANTWOORDT. Buiten deze lijst werd het in de eerste volle
   // ronde (06/10/2026) als "stil overgeslagen" gemeld — een handwerkbeeld zonder schot bestaat voor de generator niet.
   ['factuur-pdf',                  '/facturen'],
@@ -550,26 +561,22 @@ const SCHOTEN = [
       });
       await p.waitForTimeout(1500);
   }],
-  // ⚠️ DE GRAFIEKEN KREGEN EEN EIGEN SCHOT (02/10/2026). Tot kv4 stonden ze onderaan dashboard-startscherm; het blok
-  // Herbekijken/Renteherziening duwde ze uit dat kader, terwijl de alt ze bleef beloven. Zelfde vorm als de
-  // pijplijn: naar de eerste grafiektitel scrollen. ⚠️ En NAMETEN dat ze in beeld staat — de titel staat ook buiten
-  // het venster in de DOM, dus het merkteken alleen bewijst niets over wat het beeld toont.
+  // ⚠️ DE GRAFIEKEN KREGEN EEN EIGEN SCHOT (02/10/2026), en sinds 06/10/2026 een ELEMENTschot. Tot 06/10 stonden ze
+  // onderaan het dashboard en scrolde dit recept naar de eerste grafiektitel. Sindsdien staan ze in ÉÉN rij meteen onder de
+  // tegels (CreditSoft 1.169.0, beslist door Dominique): scrollen sneed de bovenkant van de kaarten af en vulde twee derde
+  // van het beeld met termijnen. Nu het eigen anker (data-blok="grafieken") — en NAMETEN dat er drie kaarten in staan, met
+  // elk hun titel: een lege of half getekende rij haalt anders het merkteken alleen al.
   ['dashboard-grafieken',       '/dashboard', async p => {
-      const top = await p.evaluate(() => {
-        const h = [...document.querySelectorAll('body *')].find(e => e.children.length === 0
-          && /^(Gerealiseerd volume per maand|Volume réalisé par mois)/.test((e.textContent || '').trim()));
-        h?.scrollIntoView({ block: 'start' });
-        return h ? h.getBoundingClientRect().top : null;
-      });
+      const blok = p.locator('[data-blok="grafieken"]');
+      await blok.waitFor({ timeout: 15000 });
       await p.waitForTimeout(2500);
-      const zichtbaar = await p.evaluate(() => {
-        const h = [...document.querySelectorAll('body *')].find(e => e.children.length === 0
-          && /^(Volume per verantwoordelijke|Volume par responsable)/.test((e.textContent || '').trim()));
-        const r = h?.getBoundingClientRect();
-        return !!r && r.top >= 0 && r.bottom <= window.innerHeight;
-      });
-      if (top === null || !zichtbaar)
-        throw new Error('de grafieken staan niet in beeld — de derde grafiektitel valt buiten het venster');
+      const titels = await blok.evaluate(b => [...b.querySelectorAll('*')].filter(e => e.children.length === 0
+        && /^(Gerealiseerd volume per maand|Volume réalisé par mois|Volume per instelling|Volume par institution|Volume per verantwoordelijke|Volume par responsable)/
+             .test((e.textContent || '').trim())).length);
+      // > 40 px: een echte grafiek, niet de kleurblokjes van de legende (16 px). Niet > 80: op 240 px hoog was een ring maar 67 px.
+      const svgs = await blok.locator('svg').evaluateAll(s => s.filter(x => x.getBoundingClientRect().height > 40).length);
+      if (titels !== 3 || svgs < 3)
+        throw new Error(`het grafiekblok hoort drie grafieken met titel te tonen, gezien: ${titels} titels, ${svgs} grafieken`);
   }],
   // ⚠️ HET TABBLAD PRODUCTIE VAN HET DASHBOARD (01/10/2026, kans kv6). Twee schoten: de bovenkant (tegels en de
   // eerste grafieken) en de twee aanbrengerlijsten onderaan. Hun EERSTE vorm staat met de hand in
