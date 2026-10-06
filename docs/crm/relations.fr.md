@@ -156,7 +156,8 @@ Le titre affiche deux nombres. *Demandés (2/5)* signifie deux validés sur les 
   propre catégorie, de sorte que vous voyez laquelle il vous faut.
 - **Inviter le client** — envoie un e-mail avec un lien vers le **portail client**,
   où cette personne dépose ses pièces. Si elle n'a pas d'adresse e-mail, vous créez uniquement le lien et le
-  transmettez vous-même.
+  transmettez vous-même. Sous **Liens délivrés**, dans cette fenêtre, vous voyez pour chaque invitation quand
+  elle a ouvert le lien pour la dernière fois, ou *pas encore ouvert*.
 - **Voir comme le client** — ouvre dans un nouvel onglet ce que votre client voit. Votre fiche reste
   ouverte, ce qui vous permet de comparer les deux côte à côte.
 
