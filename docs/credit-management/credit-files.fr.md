@@ -197,6 +197,16 @@ nécessaire d'enregistrer le dossier pour cela.
 
 Le patrimoine figure aussi sur l'impression du dossier, avec la même ligne de total.
 
+### Factures
+
+L'onglet **Factures** montre la **charte** de ce dossier et les **factures** qui s'y rattachent. Vous le voyez avec le droit *Voir les factures*.
+
+![Un dossier de crédit avec en bas l'onglet Factures ouvert : en haut la carte Charte avec la case Ce dossier a une charte, le montant de la charte et le bouton Enregistrer, puis les factures de ce dossier avec une facture et une note de crédit, et le bouton Créer une facture.](../images/kredietdossier-facturen-fr.png "La charte et les factures de ce dossier"){ .volle-breedte }
+
+- **Charte** — cochez *Ce dossier a une charte* et indiquez le **montant de la charte**. Cliquez sur **Enregistrer** dans cette carte : la charte s'enregistre à part, pas avec le dossier. Un dossier avec charte apparaît dans [À facturer](../facturatie/te-factureren.md) jusqu'à ce que sa facture soit définitive.
+- **Factures** — les factures et notes de crédit de ce dossier. Double-cliquez-en une pour l'ouvrir.
+- **Créer une facture** ouvre une nouvelle [facture](../facturatie/facturen.md) avec le premier demandeur comme client et ce dossier rempli ; avec une charte, le montant de la charte y figure déjà comme ligne.
+
 ### Contrats
 
 Les contrats de crédit rattachés à ce dossier. La liste affiche le numéro, le produit, le statut, le montant, la durée, le taux d'intérêt et l'institution ; la charge mensuelle et la date de début se trouvent sur le contrat lui-même.

@@ -104,4 +104,15 @@ export const ID = {
   // alt-controle het.
   verz:     '631dcec1-ee1d-4ae7-a5f1-797b57ca73b8',
   borderel: '000245d0-80b0-4ba8-8354-cdcb377fc5bd',
+  // ── Facturatie (06/10/2026) — gemaakt door de knop "Facturatie aanvullen" (adm-creditsoft, FacturatieDemoData).
+  // Valt om na een her-seed of een nieuwe beurt van die knop: kies opnieuw met
+  //   select number, id from invoicing.invoices order by number;
+  // F-2026-0002 en niet 0001: zij draagt de creditnota CN-2026-0001, zodat het blok Betaling en rechtzetting een
+  // gecrediteerd bedrag én een link toont. Een factuur zonder creditnota toont daar enkel nullen.
+  factuur:        '6dca90ba-4bbf-4f66-a9a5-bfffb6db6b97',   // F-2026-0002 · Bernard Antoine · DEMO-1001
+  factuurMail:    'bd33e79f-13e2-4173-adea-faf433a74938',   // F-2026-0001 · Guy Buelens · DEMO-1000
+  // Het klad op DEMO-1003: "Uw referentie" leeg, dus de hint toont het dossiernummer — precies wat het bijschrift zegt.
+  factuurKlad:    'f3417517-947d-407f-9a7f-f99e3ccf4238',
+  // DEMO-1001: charter én een factuur én een creditnota, zodat het tabblad Facturen alles toont.
+  dossierFacturen:'756b26d7-053b-4f7a-bcc8-4beeb2555d8d',
 };

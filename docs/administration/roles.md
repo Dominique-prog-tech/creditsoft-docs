@@ -34,6 +34,10 @@ Op het kredietdossier gaat het iets verder: **Kredietdossiers verwijderen** is e
 bijwerken, hoeft ze daarom nog niet te kunnen laten verdwijnen. De kruisjes *binnen* een dossier — een partij,
 een contract, een opmerking — vallen wél onder *bewerken*.
 
+Bij [facturen](../facturatie/facturen.md) zijn het er drie: **Facturen bekijken**, **Facturen opmaken** en **Facturen
+definitief maken en versturen**. Een gewone gebruiker kan facturen bekijken en opmaken. Het derde recht geeft u via een
+rol aan wie het mag: een definitieve factuur krijgt een nummer dat nooit meer weggaat, en vertrekt naar uw klant.
+
 ## Gebruikers aan een rol toewijzen
 
 Bij een geopende rol ziet u de lijst **Gebruikers met deze rol**. Vink de gebruikers aan die de rol moeten krijgen (of uit om ze weer weg te halen).

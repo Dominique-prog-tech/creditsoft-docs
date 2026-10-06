@@ -102,9 +102,10 @@ fois du même champ — et la barre de boutons reste visible en bas.
 - **Adresses e-mail supplémentaires** — en plus de l'adresse principale, une relation peut avoir d'autres
   adresses, chacune avec un type : *Privé*, *Professionnel*, *Facturation* ou *Autre*. Cliquez sur
   **+ Ajouter une adresse e-mail** ; *Modifier* et *Supprimer* figurent à côté de chaque adresse, et ce que vous y
-  faites est enregistré aussitôt. Les e-mails, le portail client et les e-mails groupés partent toujours vers
-  l'**adresse principale** du champ *E-mail*. *Facturation* désigne l'adresse pour les factures ; il ne peut y en
-  avoir qu'une. Pour une nouvelle relation, enregistrez d'abord la fiche.
+  faites est enregistré aussitôt. Les e-mails, le portail client et les e-mails groupés partent vers l'**adresse
+  principale** du champ *E-mail*. Une [facture](../facturatie/facturen.md#envoyer-par-e-mail) que vous envoyez par
+  e-mail part vers l'adresse du type *Facturation*, s'il y en a une ; il ne peut y en avoir qu'une. Pour une nouvelle
+  relation, enregistrez d'abord la fiche.
 - **Formule d'appel** et **N° interne**
 - **Adresse principale** — rue, numéro, boîte, code postal, commune, pays
 

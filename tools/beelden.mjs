@@ -69,6 +69,9 @@ const AANBRENGER_PORTAAL = ['portaal-overzicht', 'portaal-dossiers', 'portaal-co
 // dwars door de editor en het voorbeeldpaneel heen. Er ís geen recept. De generator laat ze staan en
 // ZEGT dat — een beeld dat niemand kan hernemen, hoort geen stille faler te zijn.
 const HANDWERK = { 'rapporten-voorbeeld': 'één blad uit een gerenderd rapport, met de hand uitgesneden',
+                   // Een pdf, geen scherm: de browser toont ze in zijn eigen viewer, en die schiet deze generator niet.
+                   // Gemaakt met `sips` uit de bewaarde pdf van F-2026-0001 (NL) en F-2026-0003 (FR) in tenant_demo.
+                   'factuur-pdf': 'de pdf van een demofactuur, met sips omgezet naar png (NL: F-2026-0001, FR: F-2026-0003)',
                  };
 // ⚠️ kantoorprofiel-vragenlijst stond hier tot 24/09/2026 als handwerk, en daardoor kon niemand het hernemen:
 // het beeld bleef op 22/08 staan terwijl het scherm een veld bijkreeg, en een Franse versie kwam er nooit. Het
@@ -434,6 +437,26 @@ const SCHOTEN = [
   }],
   ['borderel-fiche',               `/commissie/borderel/${ID.borderel}`],
   ['navigatie',                    '/dashboard'],
+  // ── Facturatie (vrijgegeven 06/10/2026). Vraagt de demostap "Facturatie aanvullen" (td13) in tenant_demo. ──
+  ['facturen-lijst',               '/facturen'],
+  ['factuur-fiche-klad',           `/facturen/${ID.factuurKlad}`],
+  ['factuur-fiche',                `/facturen/${ID.factuur}`],
+  ['te-factureren',                '/facturen/te-factureren'],
+  ['creditnotas-koppelen',         '/facturen/koppels'],
+  ['btw-codes-en-artikelen',       '/beheer/facturatie'],
+  ['factuurinstellingen',          '/beheer/facturatie/instellingen'],
+  // HANDWERK (zie bovenaan): staat hier zodat de ronde het VERANTWOORDT. Buiten deze lijst werd het in de eerste volle
+  // ronde (06/10/2026) als "stil overgeslagen" gemeld — een handwerkbeeld zonder schot bestaat voor de generator niet.
+  ['factuur-pdf',                  '/facturen'],
+  // Het mailvenster: een ELEMENTschot (beeldvorm.json). De knop heet in het Frans anders dan in het Nederlands.
+  ['factuur-mailen',               `/facturen/${ID.factuurMail}`, async p => {
+      await knop(p, 'Mailen', 'Envoyer par e-mail');
+      await p.waitForTimeout(1500);
+  }],
+  ['kredietdossier-facturen',      `/credit-files/${ID.dossierFacturen}`, async p => {
+      await p.getByRole('tab', { name: /^(Facturen|Factures)$/ }).first().click();
+      await p.waitForTimeout(2500);
+  }],
 
   // ── recepten: een handeling ná het laden ──────────────────────────────────────────────────────────────
   // journaal-onderdelen: op de FICHE zijn het tabbladen. ⚠️ In de LADE (vanuit een lijst) is het een
@@ -936,6 +959,20 @@ const VERWACHT = {
   // kv5: de somregel draagt het woord VOOR het bedrag ("Waarde € 1.320.000,00"); de cellen van de lijst niet. Het venster:
   // de hint over de maandlast staat enkel daar.
   'kredietdossier-patrimonium': /(Waarde|Valeur) € \d/,
+  // Facturatie (06/10/2026). Merktekens die het VERKEERDE scherm uitsluiten: een nummer of een label dat enkel op dít
+  // scherm staat wanneer het recept aankwam.
+  'facturen-lijst':             /F-2026-0004/,
+  // ⚠️ NIET de hint "Leeg: het dossiernummer": dat is een PLAATSHOUDER in het veld, en die staat niet in innerText —
+  // de eerste ronde (06/10/2026) faalde daarop. "Klad verwijderen" staat enkel op een klad, niet op een definitieve fiche.
+  'factuur-fiche-klad':         /Klad verwijderen|Supprimer le brouillon/,
+  'factuur-fiche':              /CN-2026-0001/,
+  'te-factureren':              /Klad bestaat|Brouillon existant/,
+  'creditnotas-koppelen':       /2025\/431/,
+  'btw-codes-en-artikelen':     /Nultarief|Taux zéro/,
+  'factuurinstellingen':        /Voettekst factuur|Pied de page de la facture/,
+  // De bijlage staat ENKEL in het geopende venster; de titel "Nieuwe mail" kan ook elders staan.
+  'factuur-mailen':             /factuur-f-2026-0001|facture-f-2026-0001/,
+  'kredietdossier-facturen':    /Dit dossier heeft een charter|Ce dossier a une charte/,
   // Staat enkel in beeld als een voorstel er is — zonder het geval in de demo (td5) faalt het schot, niet stil.
   'kredietdossier-reeds-aangeleverd': /Reeds aangeleverd door|Déjà fourni par/,
   'kredietdossier-herinnering': /Herinneringen:|Rappels :/,

@@ -12,7 +12,21 @@ Dans la barre latérale, cliquez sur **Administration**, puis sur la tuile **Mod
 
 ## Choisir un modèle
 
-En haut, sous **Modèle**, choisissez le modèle à modifier. *(Pour l'instant il y en a un : **Général** — l'e-mail libre utilisé pour écrire en dehors d'une action précise. D'autres suivront.)*
+En haut, sous **Modèle**, choisissez le modèle à modifier. Chaque modèle correspond à un type d'e-mail :
+
+| Modèle | Quand CreditSoft l'utilise |
+|---|---|
+| **Général** | Un e-mail que vous rédigez vous-même, en dehors d'une action précise |
+| **Documents non valides (portail client)** | Vous refusez une pièce fournie par votre client |
+| **Invitation portail client** | Vous invitez un client à fournir ses pièces |
+| **Rappel pièces manquantes (portail client)** | Des pièces manquent encore, et le rappel part |
+| **Confirmation de rendez-vous** | Vous confirmez un rendez-vous |
+| **Bordereau de commission** | Vous envoyez un [bordereau](../credit-management/commission-statements.md) à l'apporteur |
+| **Nouveau lead via le site web** | Un lead arrive par votre site web — cet e-mail part vers votre bureau |
+| **Aperçu quotidien des leads** | L'aperçu des leads qui demandent votre attention — également vers votre bureau |
+| **Facture ou note de crédit** | Vous envoyez une [facture ou une note de crédit](../facturatie/facturen.md#envoyer-par-e-mail) à votre client |
+
+Le modèle *Facture ou note de crédit* a ses propres variables, comme `{{invoice.number}}`, `{{invoice.amount}}` et `{{invoice.payment}}` — la phrase de paiement avec l'échéance, votre numéro de compte et la communication. Pour une note de crédit, cette phrase reste vide, si bien qu'un seul texte convient aux deux.
 
 ## Variables
 

@@ -45,6 +45,7 @@ forme d'onglets.
 | Partie | À quoi elle sert |
 |---|---|
 | [Dossiers de crédit](kredietdossiers.md) | Les dossiers de ce client — **uniquement sur une relation** |
+| [Factures](../facturatie/facturen.md) | Les factures et notes de crédit de ce client — **uniquement sur une relation** |
 | [Tâches](taken.md) | Ce qui doit encore être fait, par qui, et pour quand |
 | [Notes](notities.md) | Ce que vous voulez consigner sans que ce soit une tâche |
 | [Appels](gesprekken.md) | Les appels téléphoniques concernant cette fiche |

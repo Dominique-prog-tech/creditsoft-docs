@@ -99,8 +99,9 @@ hetzelfde veld — en onderaan blijft de knoppenbalk in beeld.
 - **Extra e-mailadressen** — naast het hoofdadres kan een relatie meer adressen hebben, elk met een soort:
   *Privé*, *Professioneel*, *Facturatie* of *Andere*. Klik op **+ E-mailadres toevoegen**; *Wijzigen* en
   *Verwijderen* staan naast elk adres, en wat u daar doet, is meteen bewaard. Mails, het klantenportaal en
-  groepsmails gaan altijd naar het **hoofdadres** in het veld *E-mail*. *Facturatie* duidt het adres voor facturen
-  aan; er kan er één zijn. Bij een nieuwe relatie bewaart u eerst de fiche.
+  groepsmails gaan naar het **hoofdadres** in het veld *E-mail*. Een [factuur](../facturatie/facturen.md#mailen) die
+  u mailt, gaat naar het adres van de soort *Facturatie*, als er een is; er kan er één zijn. Bij een nieuwe relatie
+  bewaart u eerst de fiche.
 - **Aanspreking** en **Intern nr.**
 - **Hoofdadres** — straat, huisnummer, bus, postcode, gemeente, land
 

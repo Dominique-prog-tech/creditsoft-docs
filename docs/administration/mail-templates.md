@@ -12,7 +12,21 @@ Klik in de zijbalk op **Platformbeheer** en daarna op de tegel **Mailsjablonen**
 
 ## Een sjabloon kiezen
 
-Kies bovenaan bij **Sjabloon** welk sjabloon u wilt aanpassen. *(Voorlopig is er één: **Algemeen** — de vrije mail die u gebruikt om te mailen los van een specifieke actie. Later komen er meer.)*
+Kies bovenaan bij **Sjabloon** welk sjabloon u wilt aanpassen. Elk sjabloon hoort bij één soort mail:
+
+| Sjabloon | Wanneer CreditSoft het gebruikt |
+|---|---|
+| **Algemeen** | Een mail die u zelf opstelt, los van een specifieke handeling |
+| **Ongeldige documenten (klantenportaal)** | U keurt een stuk af dat uw klant aanleverde |
+| **Uitnodiging klantenportaal** | U nodigt een klant uit om zijn stukken aan te leveren |
+| **Herinnering ontbrekende stukken (klantenportaal)** | Er ontbreken nog stukken, en de herinnering vertrekt |
+| **Bevestiging afspraak** | U bevestigt een afspraak |
+| **Commissieborderel** | U mailt een [borderel](../credit-management/commission-statements.md) naar de aanbrenger |
+| **Nieuwe lead via de website** | Er komt een lead binnen via uw website — deze mail gaat naar uw kantoor |
+| **Dagelijks leadoverzicht** | Het overzicht van de leads die aandacht vragen — ook naar uw kantoor |
+| **Factuur of creditnota** | U mailt een [factuur of creditnota](../facturatie/facturen.md#mailen) naar uw klant |
+
+Het sjabloon *Factuur of creditnota* heeft eigen variabelen, zoals `{{invoice.number}}`, `{{invoice.amount}}` en `{{invoice.payment}}` — de betaalzin met de vervaldag, uw rekeningnummer en de mededeling. Bij een creditnota blijft die betaalzin leeg, zodat één tekst voor beide werkt.
 
 ## Variabelen
 

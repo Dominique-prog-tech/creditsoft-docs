@@ -197,6 +197,16 @@ niet te bewaren.
 
 Het patrimonium staat ook op de afdruk van het dossier, met dezelfde somregel.
 
+### Facturen
+
+Het tabblad **Facturen** toont het **charter** van dit dossier en de **facturen** die eraan hangen. U ziet het met het recht *Facturen bekijken*.
+
+![Een kredietdossier met onderaan het tabblad Facturen geopend: bovenaan de kaart Charter met het vinkje Dit dossier heeft een charter, het charterbedrag en de knop Bewaren, daaronder de facturen van dit dossier met een factuur en een creditnota, en de knop Factuur maken.](../images/kredietdossier-facturen.png "Het charter en de facturen van dit dossier"){ .volle-breedte }
+
+- **Charter** — vink *Dit dossier heeft een charter* aan en vul het **charterbedrag** in. Klik op **Bewaren** in deze kaart: het charter bewaart u apart, niet met het dossier. Een dossier met een charter verschijnt op [Te factureren](../facturatie/te-factureren.md) tot zijn factuur definitief is.
+- **Facturen** — de facturen en creditnota's van dit dossier. Dubbelklik er een om ze te openen.
+- **Factuur maken** opent een nieuwe [factuur](../facturatie/facturen.md) met de eerste aanvrager als klant en dit dossier ingevuld; met een charter staat het charterbedrag er al als lijn.
+
 ### Contracten
 
 De kredietcontracten onder dit dossier. De lijst toont nummer, product, status, bedrag, looptijd, rentevoet en instelling; maandlast en startdatum vindt u op het contract zelf.

@@ -621,5 +621,46 @@
       "minBreed": 400
     },
     "hoogte": 1000
+  },
+  "facturen-lijst": {
+    "breedte": 1700,
+    "hoogte": 860
+  },
+  "factuur-fiche-klad": {
+    "breedte": 1700,
+    "hoogte": 1250
+  },
+  "factuur-fiche": {
+    "breedte": 1700,
+    "hoogte": 1250
+  },
+  "te-factureren": {
+    "breedte": 1700,
+    "hoogte": 860
+  },
+  "creditnotas-koppelen": {
+    "breedte": 1700,
+    "hoogte": 860
+  },
+  "btw-codes-en-artikelen": {
+    "breedte": 1700,
+    "hoogte": 860
+  },
+  "factuurinstellingen": {
+    "breedte": 1280,
+    "hoogte": 860
+  },
+  "factuur-mailen": {
+    "breedte": 1600,
+    "hoogte": 1000,
+    "element": {
+      "kies": ".dxbl-popup",
+      "bevat": "Nieuwe mail|Nouveau courrier",
+      "minBreed": 400
+    }
+  },
+  "kredietdossier-facturen": {
+    "breedte": 1920,
+    "hoogte": 1350
   }
 }

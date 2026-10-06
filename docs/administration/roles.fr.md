@@ -34,6 +34,11 @@ Pour le dossier de crédit, cela va un peu plus loin : **Supprimer les dossiers 
 Celui qui peut mettre les dossiers à jour ne doit pas pour autant pouvoir les faire disparaître. Les croix
 *à l'intérieur* d'un dossier — une partie, un contrat, une remarque — relèvent bien de *modifier*.
 
+Pour les [factures](../facturatie/facturen.md), il y en a trois : **Voir les factures**, **Préparer des factures** et
+**Rendre définitives et envoyer les factures**. Un utilisateur ordinaire peut consulter et préparer des factures. Le
+troisième droit s'attribue par un rôle à qui peut l'exercer : une facture définitive reçoit un numéro qui ne disparaît
+jamais, et part vers votre client.
+
 ## Attribuer un rôle à des utilisateurs
 
 Lorsqu'un rôle est ouvert, vous voyez la liste **Utilisateurs ayant ce rôle**. Cochez les utilisateurs qui doivent recevoir le rôle (ou décochez pour le retirer).
