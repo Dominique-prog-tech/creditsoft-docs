@@ -59,7 +59,8 @@ GSM, numéro de TVA, et la présence éventuelle de remarques sur la fiche. Vous
 trouve quelque chose que vous préférez reprendre au préalable.
 
 **Après** la fusion, vous obtenez un aperçu de **ce qui a été déplacé**, par type : dossiers de crédit,
-adresses, rendez-vous, tâches, notes, pièces jointes et courriers.
+adresses, adresses e-mail supplémentaires, contacts liés, rendez-vous, tâches, notes, pièces jointes et courriers.
+Une adresse e-mail supplémentaire que la fiche conservée possède déjà n'est pas reprise en double.
 
 !!! warning "La fiche conservée garde ses propres champs"
     Nom, adresse, e-mail, date de naissance : ils restent tels quels sur la fiche **conservée**. Si vous voulez
@@ -98,6 +99,12 @@ fois du même champ — et la barre de boutons reste visible en bas.
 - **Contact** — téléphone, GSM, e-mail, site web
 - **E-mail invalide** — une case à cocher pour signaler qu'une adresse ne fonctionne plus, sans la supprimer. Un e-mail groupé ignore cette adresse.
 - **Pas d'e-mail groupé** — cette relation ne reçoit pas d'[e-mails groupés](../journaal/mailverkeer.md#un-e-mail-groupe), mais bien les e-mails ordinaires concernant son dossier. La case est aussi cochée lorsqu'elle a cliqué elle-même sur le lien de désinscription en bas d'un e-mail groupé ; la date de désinscription figure en dessous.
+- **Adresses e-mail supplémentaires** — en plus de l'adresse principale, une relation peut avoir d'autres
+  adresses, chacune avec un type : *Privé*, *Professionnel*, *Facturation* ou *Autre*. Cliquez sur
+  **+ Ajouter une adresse e-mail** ; *Modifier* et *Supprimer* figurent à côté de chaque adresse, et ce que vous y
+  faites est enregistré aussitôt. Les e-mails, le portail client et les e-mails groupés partent toujours vers
+  l'**adresse principale** du champ *E-mail*. *Facturation* désigne l'adresse pour les factures ; il ne peut y en
+  avoir qu'une. Pour une nouvelle relation, enregistrez d'abord la fiche.
 - **Formule d'appel** et **N° interne**
 - **Adresse principale** — rue, numéro, boîte, code postal, commune, pays
 

@@ -56,7 +56,8 @@ Voor u bevestigt, toont het venster de **gegevens die verloren gaan**: e-mailadr
 en of er opmerkingen op de fiche staan. Zo ziet u meteen of daar iets bij is dat u liever eerst overneemt.
 
 Ná het samenvoegen krijgt u een overzicht van **wat er verhuisd is**, per soort: kredietdossiers, adressen,
-afspraken, taken, notities, bijlagen en mailverkeer.
+extra e-mailadressen, gelinkte contacten, afspraken, taken, notities, bijlagen en mailverkeer. Een extra e-mailadres
+dat de behouden fiche al heeft, wordt niet dubbel overgenomen.
 
 !!! warning "De behouden fiche houdt haar eigen velden"
     Naam, adres, e-mail, geboortedatum: die blijven zoals ze op de **behouden** fiche staan. Wil u iets van de
@@ -95,6 +96,11 @@ hetzelfde veld — en onderaan blijft de knoppenbalk in beeld.
 - **Contact** — telefoon, gsm, e-mail, website
 - **E-mail ongeldig** — een vinkje om te markeren dat een adres niet meer werkt, zonder het weg te gooien. Een groepsmail slaat dit adres over.
 - **Geen groepsmail** — deze relatie krijgt geen [groepsmails](../journaal/mailverkeer.md#een-groepsmail), wel gewone mails over haar dossier. Het vinkje staat ook aan wanneer zij zelf op de afmeldlink onderaan een groepsmail klikte; de datum van afmelden staat eronder.
+- **Extra e-mailadressen** — naast het hoofdadres kan een relatie meer adressen hebben, elk met een soort:
+  *Privé*, *Professioneel*, *Facturatie* of *Andere*. Klik op **+ E-mailadres toevoegen**; *Wijzigen* en
+  *Verwijderen* staan naast elk adres, en wat u daar doet, is meteen bewaard. Mails, het klantenportaal en
+  groepsmails gaan altijd naar het **hoofdadres** in het veld *E-mail*. *Facturatie* duidt het adres voor facturen
+  aan; er kan er één zijn. Bij een nieuwe relatie bewaart u eerst de fiche.
 - **Aanspreking** en **Intern nr.**
 - **Hoofdadres** — straat, huisnummer, bus, postcode, gemeente, land
 
