@@ -213,6 +213,8 @@ Les contrats de crédit rattachés à ce dossier. La liste affiche le numéro, l
 
 La fenêtre du contrat s'adapte au **type de produit** : pour un crédit ordinaire elle demande le type de produit, le taux, la variabilité et la charge mensuelle ; pour une assurance solde restant dû s'y ajoutent la prime, le type et la périodicité, ainsi que la désignation des personnes assurées.
 
+À côté du numéro de contrat figure le **n° de dossier provisoire** : le numéro attribué par l'institution tant qu'il n'y a pas encore de numéro de contrat définitif. Pour un crédit, vous complétez aussi la **date d'introduction** et la **date prêt pour l'acte**, sous la date de début.
+
 Pour un crédit hypothécaire, la **Première révision** figure à côté de la variabilité : la date à laquelle le
 taux est révisé pour la première fois. Si vous choisissez une variabilité dont votre bureau connaît les années,
 et que le champ est encore vide, CreditSoft propose une date : la date de début du contrat — ou à défaut la date

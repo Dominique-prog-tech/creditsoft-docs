@@ -1,6 +1,6 @@
 # Te valideren documenten
 
-Wat uw klanten via het **klantenportaal** aanleveren — en wat aanbrengers vanuit de **mobiele CreditSoft-app** fotograferen — komt hier samen: één lijst met alle stukken die nog beoordeeld moeten worden, over al uw dossiers heen. U hoeft dus niet dossier per dossier te gaan kijken of er iets binnengekomen is.
+Wat uw klanten via het **klantenportaal** aanleveren — en wat aanbrengers vanuit de **mobiele CreditSoft-app** fotograferen — komt hier samen: één lijst met alle stukken die nog beoordeeld moeten worden, over al uw dossiers en relaties heen. U hoeft dus niet dossier per dossier te gaan kijken of er iets binnengekomen is.
 
 ## Het scherm openen
 
@@ -14,8 +14,8 @@ De lijst is gesorteerd op wachttijd. Achter de datum ziet u hoeveel dagen een st
 
 | Kolom | Wat het betekent |
 |---|---|
-| **Dossier** | Het dossiernummer. Klik erop om het dossier in een nieuw tabblad te openen |
-| **Aanvrager** | De klant(en) van dat dossier |
+| **Dossier** | Het dossiernummer. Klik erop om het dossier in een nieuw tabblad te openen. Vroeg u het stuk op de relatie, dan staat hier *op de relatie* en opent de link de relatiefiche |
+| **Aanvrager** | De klant(en) van dat dossier, of de relatie zelf |
 | **Document** | Welk stuk u gevraagd had. Staat er *Herkansing* naast, dan werd het eerder al afgekeurd — beweeg over het label voor de vorige reden |
 | **Aangeleverd** | Wanneer de klant het opstuurde |
 | **Bestanden** | Hoeveel bestanden hij onder dat ene stuk plaatste |
@@ -29,7 +29,7 @@ Klik een rij aan. Rechts klapt een paneel open — vanzelf, u hoeft het niet ope
 
 Met het **speldje** bovenaan het paneel zet u het vast, zodat het openblijft terwijl u door de lijst gaat. Op een smaller scherm laat u het beter zweven: dan dekt het enkel af wat u op dat moment toch niet leest.
 
-De knop **Dossier openen** brengt u vanuit het paneel naar het volledige dossier.
+De knop **Dossier openen** brengt u vanuit het paneel naar het volledige dossier. Bij een stuk op een relatie heet hij **Relatie openen**.
 
 Daarna kiest u:
 
@@ -49,7 +49,9 @@ Die link is bewust nieuw: de oorspronkelijke sleutel wordt nergens bewaard, dus 
 
 De tekst van die mail komt uit het mailsjabloon **Ongeldige documenten**. U kan die zelf aanpassen bij de mailsjablonen — de plaatsen waar uw klant zijn naam, het dossiernummer, de afgekeurde stukken en de portaallink leest, zijn samenvoegvelden die automatisch ingevuld worden.
 
-Keurt u stukken van **meerdere dossiers** tegelijk af, dan kan het verwittigen niet aangezet worden — het vakje staat uit en blijft uit. Die stukken horen bij verschillende klanten, en één mail voor verschillende klanten bestaat niet. Verwittig hen elk apart vanuit hun eigen dossier.
+Keurt u stukken van **meerdere dossiers of relaties** tegelijk af, dan kan het verwittigen niet aangezet worden — het vakje staat uit en blijft uit. Die stukken horen bij verschillende klanten, en één mail voor verschillende klanten bestaat niet. Verwittig hen elk apart vanuit hun eigen dossier of relatie.
+
+Bij een stuk op een **relatie** gaat de mail naar het adres van die relatie, met een nieuwe link naar haar portaal.
 
 !!! warning "Als de mail niet vertrekt"
     Lukt het versturen niet — een storing bij de mailserver, bijvoorbeeld — dan verschijnt bovenaan een balk: *de stukken zijn afgekeurd, maar de klant is niet verwittigd*. Het afkeuren zelf is dan wél gebeurd. U hoeft dat niet over te doen; enkel het verwittigen moet nog.

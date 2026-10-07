@@ -213,6 +213,8 @@ De kredietcontracten onder dit dossier. De lijst toont nummer, product, status, 
 
 Het contractvenster past zich aan de **productsoort** aan: bij een gewoon krediet vraagt het producttype, rentevoet, variabiliteit en maandlast, bij een schuldsaldoverzekering komen daar premie, type en periodiciteit bij, plus het aanvinken van wie verzekerd is.
 
+Naast het contractnummer staat het **voorlopig dossiernummer**: het nummer dat de instelling geeft zolang er nog geen definitief contractnummer is. Bij een krediet vult u ook de **datum ingediend** en de **datum klaar voor akte** in, onder de startdatum.
+
 Bij een hypothecair krediet staat naast de variabiliteit de **Eerste herziening**: de datum waarop de rente voor
 het eerst herzien wordt. Kiest u een variabiliteit waarvan uw kantoor de jaren kent, en is het veld nog leeg,
 dan stelt CreditSoft een datum voor: de startdatum van het contract — of anders de datum van de akte — plus het

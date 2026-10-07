@@ -135,8 +135,8 @@
   "dashboard-fases": {
     "route": "/beheer/dashboard-fases",
     "app": {
-      "sha": "40034a3259e7a7c70d4418dc3c16f1b2a6a2adb7",
-      "vuil": false
+      "sha": "8784f3b306fe5121799df81c1a81ee5ac8aa9ebd",
+      "vuil": true
     }
   },
   "commissie-instellingen": {
@@ -751,8 +751,8 @@
   "dashboard-fases-fr": {
     "route": "/beheer/dashboard-fases",
     "app": {
-      "sha": "40034a3259e7a7c70d4418dc3c16f1b2a6a2adb7",
-      "vuil": false
+      "sha": "8784f3b306fe5121799df81c1a81ee5ac8aa9ebd",
+      "vuil": true
     }
   },
   "commissie-instellingen-fr": {
@@ -1388,14 +1388,14 @@
   "kredietdossier-contract-herziening": {
     "route": "/credit-files/bc566763-9860-48e3-b8a3-f464904a9810",
     "app": {
-      "sha": "2a561364e3939fa8198cd3d1436b4d8c9acdc19f",
+      "sha": "8784f3b306fe5121799df81c1a81ee5ac8aa9ebd",
       "vuil": true
     }
   },
   "kredietdossier-contract-herziening-fr": {
     "route": "/credit-files/bc566763-9860-48e3-b8a3-f464904a9810",
     "app": {
-      "sha": "2a561364e3939fa8198cd3d1436b4d8c9acdc19f",
+      "sha": "8784f3b306fe5121799df81c1a81ee5ac8aa9ebd",
       "vuil": true
     }
   },

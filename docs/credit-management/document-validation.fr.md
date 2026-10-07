@@ -1,6 +1,6 @@
 # Documents à valider
 
-Ce que vos clients fournissent via le **portail client** — et ce que les apporteurs photographient depuis l'**application mobile CreditSoft** — se retrouve ici : une seule liste avec toutes les pièces qui doivent encore être évaluées, tous dossiers confondus. Vous ne devez donc pas ouvrir chaque dossier pour vérifier si quelque chose est arrivé.
+Ce que vos clients fournissent via le **portail client** — et ce que les apporteurs photographient depuis l'**application mobile CreditSoft** — se retrouve ici : une seule liste avec toutes les pièces qui doivent encore être évaluées, tous dossiers et relations confondus. Vous ne devez donc pas ouvrir chaque dossier pour vérifier si quelque chose est arrivé.
 
 ## Ouvrir l'écran
 
@@ -14,8 +14,8 @@ La liste est triée sur le temps d'attente. Après la date, vous voyez depuis co
 
 | Colonne | Signification |
 |---|---|
-| **Dossier** | Le numéro de dossier. Cliquez dessus pour ouvrir le dossier dans un nouvel onglet |
-| **Demandeur** | Le ou les clients de ce dossier |
+| **Dossier** | Le numéro de dossier. Cliquez dessus pour ouvrir le dossier dans un nouvel onglet. Si vous avez demandé la pièce sur la relation, la colonne indique *sur la relation* et le lien ouvre la fiche de la relation |
+| **Demandeur** | Le ou les clients de ce dossier, ou la relation elle-même |
 | **Document** | La pièce que vous aviez demandée. La mention *Nouvelle tentative* signifie qu'elle a déjà été refusée — survolez l'étiquette pour lire le motif précédent |
 | **Fourni le** | Quand le client l'a envoyée |
 | **Fichiers** | Combien de fichiers il a joints à cette seule pièce |
@@ -29,7 +29,7 @@ Cliquez une ligne. Un panneau s'ouvre à droite — de lui-même, vous n'avez ri
 
 L'**épingle** en haut du panneau le fixe, afin qu'il reste ouvert pendant que vous parcourez la liste. Sur un écran plus étroit, mieux vaut le laisser flotter : il ne masque alors que ce que vous ne lisez pas à ce moment-là.
 
-Le bouton **Ouvrir le dossier** vous mène du panneau au dossier complet.
+Le bouton **Ouvrir le dossier** vous mène du panneau au dossier complet. Pour une pièce sur une relation, il s'appelle **Ouvrir la relation**.
 
 Ensuite, vous choisissez :
 
@@ -49,7 +49,9 @@ Ce lien est volontairement nouveau : la clé d'origine n'est conservée nulle pa
 
 Le texte de ce courriel provient du modèle d'e-mail **Documents non valides**. Vous pouvez l'adapter vous-même dans les modèles d'e-mail — les endroits où votre client lit son nom, le numéro de dossier, les pièces refusées et le lien vers le portail sont des champs de fusion remplis automatiquement.
 
-Si vous refusez des pièces de **plusieurs dossiers** en même temps, l'avertissement ne peut pas être activé — la case est décochée et le reste. Ces pièces appartiennent à des clients différents, et un seul courriel pour plusieurs clients n'existe pas. Avertissez-les séparément depuis leur propre dossier.
+Si vous refusez des pièces de **plusieurs dossiers ou relations** en même temps, l'avertissement ne peut pas être activé — la case est décochée et le reste. Ces pièces appartiennent à des clients différents, et un seul courriel pour plusieurs clients n'existe pas. Avertissez-les séparément depuis leur propre dossier ou relation.
+
+Pour une pièce sur une **relation**, le courriel part à l'adresse de cette relation, avec un nouveau lien vers son portail.
 
 !!! warning "Si le courriel ne part pas"
     Si l'envoi échoue — une panne du serveur de messagerie, par exemple — un bandeau apparaît en haut : *les pièces ont été refusées, mais le client n'a pas été averti*. Le refus lui-même a bien eu lieu. Vous ne devez pas le recommencer ; seul l'avertissement reste à faire.
