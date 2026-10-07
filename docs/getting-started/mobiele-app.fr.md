@@ -1,13 +1,11 @@
 # L'application mobile
 
-Avec l'application CreditSoft sur votre iPhone, vos dossiers vous accompagnent aussi hors du bureau : chez le
+Avec l'application CreditSoft sur votre iPhone ou votre téléphone Android, vos dossiers vous accompagnent aussi hors du bureau : chez le
 client, chez le notaire ou entre deux rendez-vous. L'application travaille sur les mêmes données que CreditSoft
 au bureau — ce que vous faites dans l'application s'y retrouve immédiatement.
 
 [Télécharger l'application sur l'App Store](https://apps.apple.com/be/app/creditsoft/id6748912369){ .md-button .md-button--primary target="_blank" rel="noopener" }
-
-!!! info "Android"
-    La version Android a été soumise à Google Play et y apparaîtra dès que Google l'aura approuvée.
+[Télécharger l'application sur Google Play](https://play.google.com/store/apps/details?id=com.admconcept.creditsoft){ .md-button .md-button--primary target="_blank" rel="noopener" }
 
 ## Pour qui
 

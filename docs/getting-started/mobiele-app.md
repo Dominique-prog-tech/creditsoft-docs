@@ -1,13 +1,11 @@
 # De mobiele app
 
-Met de CreditSoft-app op uw iPhone heeft u uw dossiers ook bij de hand als u niet op kantoor bent: bij de
+Met de CreditSoft-app op uw iPhone of Android-telefoon heeft u uw dossiers ook bij de hand als u niet op kantoor bent: bij de
 klant, bij de notaris of tussen twee afspraken. De app werkt op dezelfde gegevens als CreditSoft op kantoor —
 wat u in de app doet, staat meteen ook daar.
 
 [Download de app in de App Store](https://apps.apple.com/be/app/creditsoft/id6748912369){ .md-button .md-button--primary target="_blank" rel="noopener" }
-
-!!! info "Android"
-    De Android-versie is ingediend bij Google Play en verschijnt daar zodra Google ze goedkeurt.
+[Download de app op Google Play](https://play.google.com/store/apps/details?id=com.admconcept.creditsoft){ .md-button .md-button--primary target="_blank" rel="noopener" }
 
 ## Voor wie
 
