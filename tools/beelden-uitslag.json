@@ -135,8 +135,8 @@
   "dashboard-fases": {
     "route": "/beheer/dashboard-fases",
     "app": {
-      "sha": "2a561364e3939fa8198cd3d1436b4d8c9acdc19f",
-      "vuil": true
+      "sha": "40034a3259e7a7c70d4418dc3c16f1b2a6a2adb7",
+      "vuil": false
     }
   },
   "commissie-instellingen": {
@@ -751,8 +751,8 @@
   "dashboard-fases-fr": {
     "route": "/beheer/dashboard-fases",
     "app": {
-      "sha": "2a561364e3939fa8198cd3d1436b4d8c9acdc19f",
-      "vuil": true
+      "sha": "40034a3259e7a7c70d4418dc3c16f1b2a6a2adb7",
+      "vuil": false
     }
   },
   "commissie-instellingen-fr": {

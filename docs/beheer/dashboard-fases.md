@@ -2,7 +2,7 @@
 
 Op dit scherm bepaalt u zelf hoe uw dossiers op het dashboard **gegroepeerd en geteld** worden, en wat er met een dossier gebeurt zodra het rond is. Het bevat een reeks losse instellingen die weinig met elkaar te maken hebben.
 
-![Het scherm Dashboard-fases in CreditSoft: bovenaan de fases met hun naam in beide talen, hun volgorde en de vinkjes eindfase en geslaagd, met rechts de koppeling van elke dossierstatus aan een fase; daaronder de koppeling van elke contractstatus aan een van de vier KPI-tegels.](../images/dashboard-fases.png "Instellen hoe dossiers gegroepeerd en geteld worden op het dashboard"){ .volle-breedte }
+![Het scherm Dashboard-fases in CreditSoft: bovenaan de beginstatus van een nieuw dossier, de status voor opvolging na de akte en het aantal dagen dat het signaalblok vooruitkijkt, elk met een eigen knop Bewaren; daaronder de fases met hun naam in beide talen, hun volgorde en de vinkjes eindfase en geslaagd, met rechts de koppeling van elke dossierstatus aan een fase.](../images/dashboard-fases.png "Instellen hoe dossiers gegroepeerd en geteld worden op het dashboard"){ .volle-breedte }
 
 !!! info "Let op waar wél en niet een bewaarknop staat"
     De **fases**, de **koppelingen** en de **vinkjes** onderaan worden meteen bewaard: past u iets aan, dan staat het er. Wilt u een koppeling ongedaan maken, klik dan op het kruisje in de keuzelijst.
@@ -53,6 +53,25 @@ Rechts staan al uw dossierstatussen. Kies per status in welke fase hij thuishoor
 - Een status hoort bij **hoogstens één** fase.
 - Koppelt u een status niet, dan komen die dossiers op het dashboard onder **niet ingedeeld**.
 - Statussen die u niet meer gebruikt maar die nog aan oude dossiers hangen, blijven in deze lijst staan. Dat is bewust: die dossiers moeten ergens terechtkunnen.
+
+## Gerealiseerd zonder akte
+
+Een lening op afbetaling — een persoonlijke lening, een autolening — krijgt geen akte. Zonder akte telt CreditSoft zo'n dossier nergens als gerealiseerd: niet in de grafieken van het dashboard, niet op het tabblad Productie. Bemiddelt uw kantoor zulke kredieten, zet dan de schakelaar **Gerealiseerd zonder akte telt op de datum van ondertekening van het aanbod** aan.
+
+Een dossier telt dan als gerealiseerd op de datum waarop het aanbod getekend werd, als het:
+
+- **geen aktedatum** heeft, en
+- in een eindfase staat met het vinkje **Geslaagd** (zie [De fases](#de-fases)), en
+- een **datum ondertekening aanbod** draagt die al voorbij is.
+
+Dat geldt voor de drie grafieken van het dashboard, voor het tabblad Productie en — als uw kantoor geen contracten gebruikt — voor de tegel **LOA**. Een dossier mét aktedatum telt altijd op die akte, of de schakelaar nu aan of uit staat.
+
+De schakelaar werkt meteen; er is geen knop *Bewaren*. Standaard staat hij uit.
+
+!!! warning
+    Zet een dossier pas in een geslaagde fase wanneer het krediet rond is. Een hypothecair dossier dat u op *Gerealiseerd* zet zonder de aktedatum in te vullen, telt anders op de datum van het aanbod — dat ligt vóór de akte — en bij een kantoor zonder contracten zelfs in de tegel LOA.
+
+Hangt er geen enkele status aan een fase met het vinkje *Geslaagd*, dan meldt het scherm dat de schakelaar niets telt. Koppel dan eerst de status van een gerealiseerd dossier aan zo'n fase.
 
 ## Wat betekent elke contractstatus?
 

@@ -59,8 +59,10 @@ U geeft alleen aan **wat een contractstatus betekent**: *gerealiseerd*, *in te d
     Sommige kantoren kwamen over uit een versie van CreditSoft die geen contracten kende. Dan tellen de tegels
     **dossiers**: *Aktes* zijn de dossiers met een aktedatum dit jaar die voorbij is, *In te dienen* en *Ingediend*
     de lopende dossiers zonder en mét een indieningsdatum. *LOA* staat dan op **niet beschikbaar zonder contracten**:
-    om een lening op afbetaling te herkennen is de productsoort van een contract nodig. Er is niets in te stellen —
-    een zin onder de tegels zegt het. Koppel wel uw statussen aan [fases](../beheer/dashboard-fases.md): zonder fases
+    om een lening op afbetaling te herkennen is de productsoort van een contract nodig — een zin onder de tegels zegt
+    het. Bemiddelt uw kantoor zulke leningen, zet dan bij Dashboard-fases
+    [*Gerealiseerd zonder akte*](../beheer/dashboard-fases.md#gerealiseerd-zonder-akte) aan: *LOA* telt dan de
+    gerealiseerde dossiers zonder akte, op de datum waarop het aanbod getekend werd. Koppel wel uw statussen aan [fases](../beheer/dashboard-fases.md): zonder fases
     herkent het dashboard geen afgesloten dossier, en telt het dat als *In te dienen*.
 
 ## De drie grafieken
@@ -70,6 +72,10 @@ bovenaan kiest — en over het **gerealiseerde volume**, dus over kredieten die 
 
 ![De drie grafieken van het dashboard voor 2026, naast elkaar: links de staafgrafiek Gerealiseerd volume per maand met een staaf per maand van januari tot december, in het midden de ringgrafiek Volume per instelling en rechts de ringgrafiek Volume per verantwoordelijke, elk met een legende van de kleuren.](../images/dashboard-grafieken.png "De grafieken: gerealiseerd volume per maand, per instelling en per verantwoordelijke"){ .volle-breedte }
 
+Een krediet telt er op zijn **aktedatum**. Een lening op afbetaling krijgt geen akte: staat bij Dashboard-fases
+[*Gerealiseerd zonder akte*](../beheer/dashboard-fases.md#gerealiseerd-zonder-akte) aan, dan telt een gerealiseerd
+dossier zonder akte op de datum waarop het aanbod getekend werd, en zegt een regel onder de grafieken dat.
+
 - **Gerealiseerd volume per maand** — één staaf per maand. Zo ziet u meteen welke maanden dragen en welke
   achterblijven.
 - **Volume per instelling** — een ringgrafiek met de verdeling over de kredietinstellingen. Dossiers waar
@@ -78,9 +84,10 @@ bovenaan kiest — en over het **gerealiseerde volume**, dus over kredieten die 
   staat, komen samen onder *Geen eigenaar*. Is dat het grootste stuk, dan is dat geen storing maar werk: er
   is nog niemand aangeduid.
 
-Is er in het gekozen jaar niets te tonen, dan staat er *"Geen gegevens."* in plaats van een lege ring. Een
+Is er in het gekozen jaar niets te tonen, dan staat er *"Geen gegevens voor dit jaar."* in plaats van een lege ring. Een
 grafiek die leegblijft terwijl de tegels wél cijfers tonen, betekent bijna altijd dat het jaartal
-hierboven niet staat waar u denkt.
+hierboven niet staat waar u denkt. Bemiddelt uw kantoor vooral leningen op afbetaling, kijk dan ook of
+*Gerealiseerd zonder akte* aan staat.
 
 
 ## Wat er afloopt
@@ -173,7 +180,7 @@ Bovenaan het dashboard staan twee tabbladen. **Vandaag** is wat hierboven beschr
 ![Het tabblad Productie van het dashboard: bovenaan de knoppen Alles, Dit jaar, Vorig jaar en Laatste 12 maanden met de keuze Alle soorten, daaronder de tegels Dossiers, Akten met het volume, Omzetting, Afgevallen, Gemiddeld krediet, Indiening tot akte en Lopend nu, en de grafieken Dossiers en akten per maand en Omzetting per jaar van invoer.](../images/dashboard-productie.png "Het tabblad Productie: de cijfers van het hele kantoor"){ .volle-breedte }
 
 - **Periode en soort.** Kies *Alles*, *Dit jaar*, *Vorig jaar* of *Laatste 12 maanden*, en eventueel één productsoort. De jaarpijltjes van *Vandaag* gelden hier niet; ze verdwijnen zodra u op *Productie* staat.
-- **De tegels**: de dossiers ingevoerd in de periode, de akten met hun volume, de omzetting en het deel dat afviel, het gemiddelde krediet, de doorlooptijd van indiening tot akte, en hoeveel dossiers er nu lopen — met de akten die al gepland zijn.
+- **De tegels**: de dossiers ingevoerd in de periode, de akten met hun volume, de omzetting en het deel dat afviel, het gemiddelde krediet, de doorlooptijd van indiening tot akte, en hoeveel dossiers er nu lopen — met de akten die al gepland zijn. Staat [*Gerealiseerd zonder akte*](../beheer/dashboard-fases.md#gerealiseerd-zonder-akte) aan, dan telt een gerealiseerd dossier zonder akte hier als akte op de datum van het getekende aanbod; *Indiening tot akte* rekent enkel met echte akten.
 - **De grafieken**: dossiers en akten per maand, de omzetting per jaar van invoer, de akten per kredietverstrekker en waarom dossiers afvielen. Onderaan staat een tabel per jaar.
 - **Aanbrengers**: wie in de gekozen periode het meest aanbracht — eerst op akten, dan op volume. Klik een naam om de fiche te openen.
 - **Stilgevallen aanbrengers**: wie het afgelopen jaar nog aanbracht, maar al drie maanden of langer niets nieuws. U ziet de datum van het laatste dossier en hoeveel dossiers er de laatste twaalf maanden waren, zodat u weet wie u best eerst belt. Deze lijst volgt de gekozen periode niet.

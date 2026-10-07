@@ -2,7 +2,7 @@
 
 Sur cet écran, vous déterminez vous-même comment vos dossiers sont **regroupés et comptés** sur le tableau de bord, et ce qu'il advient d'un dossier dès qu'il est bouclé. Il contient une série de réglages distincts, avec peu de lien entre eux.
 
-![L'écran Phases du tableau de bord dans CreditSoft : en haut les phases avec leur nom dans les deux langues, leur ordre et les cases phase finale et réussi, avec à droite le lien entre chaque statut de dossier et une phase ; en dessous le lien entre chaque statut de contrat et l'une des quatre tuiles KPI.](../images/dashboard-fases-fr.png "Configurer comment les dossiers sont groupés et comptés sur le tableau de bord"){ .volle-breedte }
+![L'écran Phases du tableau de bord dans CreditSoft : en haut le statut initial d'un nouveau dossier, le statut de suivi après l'acte et le nombre de jours que le bloc de signaux regarde en avant, chacun avec son propre bouton Enregistrer ; en dessous les phases avec leur nom dans les deux langues, leur ordre et les cases phase finale et réussi, avec à droite le lien entre chaque statut de dossier et une phase.](../images/dashboard-fases-fr.png "Configurer comment les dossiers sont groupés et comptés sur le tableau de bord"){ .volle-breedte }
 
 !!! info "Attention à l'endroit où il y a — ou non — un bouton d'enregistrement"
     Les **phases**, les **rattachements** et les **cases** du bas sont enregistrés immédiatement : si vous modifiez quelque chose, c'est aussitôt pris en compte. Pour défaire un rattachement, cliquez sur la croix dans la liste de choix.
@@ -53,6 +53,25 @@ En bas du tableau figure une ligne vide : saisissez-y un nom pour ajouter une ph
 - Un statut relève d'**une phase au maximum**.
 - Si vous ne rattachez pas un statut, ces dossiers apparaissent sur le tableau de bord sous **non classés**.
 - Les statuts que vous n'utilisez plus mais qui restent liés à d'anciens dossiers demeurent dans cette liste. C'est voulu : ces dossiers doivent pouvoir aboutir quelque part.
+
+## Réalisé sans acte
+
+Un prêt à tempérament — un prêt personnel, un prêt auto — n'a pas d'acte. Sans acte, CreditSoft ne compte un tel dossier nulle part comme réalisé : ni dans les graphiques du tableau de bord, ni dans l'onglet Production. Si votre bureau propose ce type de crédit, activez l'interrupteur **Un dossier réalisé sans acte compte à la date de signature de l'offre**.
+
+Un dossier compte alors comme réalisé à la date de signature de l'offre s'il :
+
+- n'a **pas de date d'acte**, et
+- se trouve dans une phase finale cochée **Réussi** (voir [Les phases](#les-phases)), et
+- porte une **date de signature de l'offre** déjà passée.
+
+Cela vaut pour les trois graphiques du tableau de bord, pour l'onglet Production et — si votre bureau n'utilise pas de contrats — pour la tuile **LOA**. Un dossier avec une date d'acte compte toujours à cet acte, que l'interrupteur soit activé ou non.
+
+L'interrupteur agit immédiatement ; il n'y a pas de bouton *Enregistrer*. Il est désactivé par défaut.
+
+!!! warning
+    Ne placez un dossier dans une phase réussie que lorsque le crédit est bouclé. Un dossier hypothécaire que vous mettez sur *Réalisé* sans remplir la date d'acte compterait sinon à la date de l'offre — antérieure à l'acte — et, pour un bureau sans contrats, même dans la tuile LOA.
+
+Si aucun statut n'est lié à une phase cochée *Réussi*, l'écran signale que l'interrupteur ne compte rien. Liez alors d'abord le statut d'un dossier réalisé à une telle phase.
 
 ## Que signifie chaque statut de contrat ?
 

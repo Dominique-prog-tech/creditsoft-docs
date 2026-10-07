@@ -62,8 +62,10 @@ Vous indiquez uniquement **ce que signifie un statut de contrat** : *réalisé*,
     Certains bureaux viennent d'une version de CreditSoft qui ne connaissait pas les contrats. Les tuiles comptent alors
     des **dossiers** : *Actes* sont les dossiers dont la date d'acte de cette année est passée, *À introduire* et
     *Introduit* les dossiers en cours sans et avec date d'introduction. Le *LOA* affiche alors **indisponible sans
-    contrats** : pour reconnaître un prêt à tempérament, il faut le type de produit d'un contrat. Il n'y a rien à
-    configurer — une phrase sous les tuiles le dit. Liez toutefois vos statuts à des [phases](../beheer/dashboard-fases.md) :
+    contrats** : pour reconnaître un prêt à tempérament, il faut le type de produit d'un contrat — une phrase sous les
+    tuiles le dit. Si votre bureau propose ce type de prêt, activez dans Phases du tableau de bord
+    [*Réalisé sans acte*](../beheer/dashboard-fases.md#realise-sans-acte) : le *LOA* compte alors les dossiers réalisés
+    sans acte, à la date de signature de l'offre. Liez toutefois vos statuts à des [phases](../beheer/dashboard-fases.md) :
     sans phases, le tableau de bord ne reconnaît aucun dossier clôturé et le compte comme *À introduire*.
 
 ## Les trois graphiques
@@ -71,6 +73,10 @@ Vous indiquez uniquement **ce que signifie un statut de contrat** : *réalisé*,
 Juste sous les tuiles figurent trois graphiques, côte à côte. Ils portent tous les trois sur **la même année** — celle que vous
 choisissez avec les flèches en haut — et sur le **volume réalisé**, donc sur les crédits effectivement
 aboutis.
+
+Un crédit y compte à sa **date d'acte**. Un prêt à tempérament n'a pas d'acte : si
+[*Réalisé sans acte*](../beheer/dashboard-fases.md#realise-sans-acte) est activé dans Phases du tableau de bord, un
+dossier réalisé sans acte compte à la date de signature de l'offre, et une ligne sous les graphiques le précise.
 
 ![Les trois graphiques du tableau de bord pour 2026, côte à côte : à gauche le graphique en barres Volume réalisé par mois avec une barre par mois de janvier à décembre, au milieu le graphique en anneau Volume par institution et à droite le graphique en anneau Volume par responsable, chacun avec une légende des couleurs.](../images/dashboard-grafieken-fr.png "Les graphiques : volume réalisé par mois, par institution et par responsable"){ .volle-breedte }
 
@@ -82,9 +88,10 @@ aboutis.
   attribuée sont regroupés sous *Sans responsable*. Si c'est la plus grande part, ce n'est pas un problème
   technique mais du travail : personne n'a encore été désigné.
 
-S'il n'y a rien à afficher pour l'année choisie, la mention *« Aucune donnée. »* remplace l'anneau vide. Un
+S'il n'y a rien à afficher pour l'année choisie, la mention *« Aucune donnée pour cette année. »* remplace l'anneau vide. Un
 graphique qui reste vide alors que les tuiles affichent des chiffres signifie presque toujours que l'année
-en haut n'est pas celle que vous croyez.
+en haut n'est pas celle que vous croyez. Si votre bureau propose surtout des prêts à tempérament, vérifiez aussi
+si *Réalisé sans acte* est activé.
 
 ## Ce qui arrive à échéance
 
@@ -175,7 +182,7 @@ En haut du tableau de bord figurent deux onglets. **Aujourd'hui** est ce qui est
 ![L'onglet Production du tableau de bord : en haut les boutons Tout, Cette année, L'an dernier et 12 derniers mois avec le choix Tous les types, en dessous les tuiles Dossiers, Actes avec le volume, Taux de conversion, Abandonnés, Crédit moyen, Introduction à l'acte et En cours, et les graphiques Dossiers et actes par mois et Conversion par année d'introduction.](../images/dashboard-productie-fr.png "L'onglet Production : les chiffres de l'ensemble du bureau"){ .volle-breedte }
 
 - **Période et catégorie.** Choisissez *Tout*, *Cette année*, *L'an dernier* ou *12 derniers mois*, et éventuellement une seule catégorie de produit. Les flèches d'année d'*Aujourd'hui* ne s'appliquent pas ici ; elles disparaissent dès que vous êtes sur *Production*.
-- **Les tuiles** : les dossiers introduits sur la période, les actes avec leur volume, le taux de conversion et la part abandonnée, le crédit moyen, le délai de l'introduction à l'acte, et combien de dossiers sont en cours — avec les actes déjà prévus.
+- **Les tuiles** : les dossiers introduits sur la période, les actes avec leur volume, le taux de conversion et la part abandonnée, le crédit moyen, le délai de l'introduction à l'acte, et combien de dossiers sont en cours — avec les actes déjà prévus. Si [*Réalisé sans acte*](../beheer/dashboard-fases.md#realise-sans-acte) est activé, un dossier réalisé sans acte compte ici comme acte à la date de signature de l'offre ; *Introduction à l'acte* ne tient compte que des vrais actes.
 - **Les graphiques** : dossiers et actes par mois, la conversion par année d'introduction, les actes par prêteur et les motifs d'abandon. En bas figure un tableau par année.
 - **Apporteurs** : qui a le plus apporté sur la période choisie — d'abord par actes, puis par volume. Cliquez un nom pour ouvrir la fiche.
 - **Apporteurs à l'arrêt** : ceux qui ont encore apporté au cours de l'année écoulée, mais plus rien de nouveau depuis trois mois ou plus. Vous voyez la date du dernier dossier et le nombre de dossiers sur les douze derniers mois, pour savoir qui appeler en premier. Cette liste ne suit pas la période choisie.
