@@ -6,7 +6,7 @@ Wat uw klanten via het **klantenportaal** aanleveren — en wat aanbrengers vanu
 
 Klik in het menu links op **Te valideren documenten**, onder *Krediet*. Het getal ernaast zegt hoeveel stukken er wachten; staat er geen getal, dan is er niets te doen.
 
-![Het scherm Te valideren documenten met achttien wachtende stukken: per rij het dossiernummer, de aanvrager, welk document gevraagd was, wanneer het aangeleverd werd met de wachttijd in dagen, het aantal bestanden en de eigenaar van het dossier.](../images/documenten-valideren.png "Alles wat op beoordeling wacht, over alle dossiers heen"){ .volle-breedte }
+![Het scherm Te valideren documenten met 286 wachtende stukken over twaalf bladzijden, met bovenaan de filters op eigenaar en wachttijd: per rij het dossiernummer, de aanvrager en welk document gevraagd was; rechts het paneel van het gekozen stuk 3 Laatste aanslagbiljetten bij DEMO-3671, met twee aangeleverde pdf-bestanden en de knoppen Goedkeuren, Afkeuren en Dossier openen.](../images/documenten-valideren.png "Alles wat op beoordeling wacht, over alle dossiers heen"){ .volle-breedte }
 
 ## Wie het langst wacht, staat bovenaan
 

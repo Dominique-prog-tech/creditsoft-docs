@@ -23,11 +23,12 @@ Un utilisateur ordinaire peut consulter et préparer des factures. Qui peut les 
 
 ## La liste
 
-![La liste Factures avec en haut l'année 2026, les boutons Nouvelle facture et Exporter, et par ligne le numéro, la date, le client, le dossier, le type Facture ou Note de crédit, le total TVA comprise, le montant ouvert et la colonne Envoyée ; en haut, un brouillon sans numéro avec l'étiquette Brouillon.](../images/facturen-lijst-fr.png "Vos factures et notes de crédit de l'année"){ .volle-breedte }
+![La liste Factures avec en haut l'année 2026, le filtre Tous les documents avec le nombre, les boutons Nouvelle facture et Exporter, et par ligne le numéro, la date, l'échéance, le client, le dossier, le type Facture ou Note de crédit, le total TVA comprise, le montant payé et le montant ouvert et la colonne Envoyée ; sur F-2026-0002, 400,00 est payé ; en haut, un brouillon sans numéro avec l'étiquette Brouillon.](../images/facturen-lijst-fr.png "Vos factures et notes de crédit de l'année"){ .volle-breedte }
 
-Pour chaque facture, vous voyez le **numéro**, la **date**, le **client**, le **dossier**, le **type** — facture ou note de crédit —, le **total TVA comprise**, ce qui reste **ouvert**, et si elle a été **envoyée** : *Envoyée par e-mail*. Un brouillon n'a pas encore de numéro : il porte l'étiquette *Brouillon*.
+Pour chaque facture, vous voyez le **numéro**, la **date**, l'**échéance**, le **client**, le **dossier**, le **type** — facture ou note de crédit —, le **total TVA comprise**, ce qui est déjà **payé**, ce qui reste **ouvert**, et si elle a été **envoyée** : *Envoyée par e-mail*. Si l'échéance est dépassée et qu'un montant reste ouvert, ce montant apparaît en **rouge**. Un brouillon n'a pas encore de numéro : il porte l'étiquette *Brouillon*.
 
 - En haut, vous choisissez l'**année**, ou *Toutes les années*.
+- À côté, vous n'affichez que ce qui est **Ouvert**, ou ce qui est **Échu** : ouvert, et l'échéance est dépassée. Une note de crédit non liée que vous devez encore rembourser compte aussi.
 - **Nouvelle facture** ouvre une facture vide.
 - **Exporter** place la liste dans Excel ou en CSV — voir [Travailler avec les listes](../getting-started/lijsten.md).
 - Si des notes de crédit attendent d'être liées à leur facture, le bouton **Lier les notes de crédit** apparaît, avec leur nombre — voir [Lier les notes de crédit](creditnotas-koppelen.md).
@@ -86,7 +87,7 @@ Quand le brouillon est en ordre, cliquez sur **Rendre définitive** et confirmez
 
 La facture ne peut ensuite plus être modifiée ni supprimée. Une erreur se corrige par une [note de crédit](#corriger-une-facture-la-note-de-credit).
 
-![Une facture définitive F-2026-0002 avec l'étiquette Définitive : le client, le dossier et les lignes sont en lecture seule ; en bas, le bloc Paiement et correction avec la communication structurée, le montant payé, le montant crédité avec le lien vers la note de crédit CN-2026-0001 et le montant ouvert, et les boutons PDF, Envoyer par e-mail et Créer une note de crédit.](../images/factuur-fiche-fr.png "Une facture définitive, partiellement corrigée"){ .volle-breedte }
+![Une facture définitive F-2026-0002 avec l'étiquette Définitive : le client, le dossier et les lignes sont en lecture seule ; en dessous, le bloc Paiement et correction avec la communication structurée, 400,00 payé, 90,75 crédité avec le lien vers la note de crédit CN-2026-0001 et 295,75 ouvert ; puis le bloc Paiements avec l'étiquette Partiellement payée, les boutons Payée intégralement et Saisir un paiement… et un paiement de 400,00 par virement avec les boutons Modifier et Supprimer ; en bas, les boutons PDF, Envoyer par e-mail et Créer une note de crédit.](../images/factuur-fiche-fr.png "Une facture définitive, partiellement payée et partiellement corrigée"){ .volle-breedte }
 
 !!! warning "Ce qui empêche de rendre une facture définitive"
     CreditSoft refuse, et dit pourquoi, quand :
@@ -106,6 +107,21 @@ En bas d'une facture définitive figurent :
 - **Payé** — ce qui a déjà été payé ;
 - **Crédité** — ce que les notes de crédit de cette facture corrigent, avec un lien vers chaque note de crédit ;
 - **Ouvert** — ce qui reste à payer.
+
+### Paiements
+
+En dessous figure le bloc **Paiements**, avec le statut de paiement : *Ouverte*, *Partiellement payée*, *Payée* ou *Compensée*.
+
+- **Payée intégralement** enregistre en un clic ce qui reste ouvert, à la date du jour, par virement.
+- **Saisir un paiement…** ouvre une fenêtre avec la **date** (par défaut aujourd'hui), le **montant** (par défaut ce qui reste ouvert), le **mode de paiement** et éventuellement une **référence** et une **remarque**.
+- **Modifier** et **Supprimer** adaptent un paiement. Un paiement supprimé reste conservé : dans l'historique de la facture et dans le journal des actions.
+
+Sur une **note de crédit** liée à aucune facture, le bloc s'appelle **Remboursements**, avec les boutons **Remboursée intégralement** et **Saisir un remboursement…** : vous y enregistrez ce que vous avez remboursé au client. Une note de crédit liée à sa facture y est compensée ; il n'y a rien à payer.
+
+!!! info "Ce qui n'est pas possible"
+    - **Saisir plus que le montant ouvert.** La fenêtre indique combien il reste ouvert.
+    - **Une date dans le futur.** Un paiement est un fait accompli. Une date antérieure à la date de facture est permise, pour un acompte.
+    - **Payer un brouillon.** Un brouillon n'a pas encore de numéro ni de communication.
 
 ## Le PDF
 
@@ -170,6 +186,8 @@ Sur la fiche d'une note de crédit figure le bloc **Correction** : la facture qu
 ## Factures avec l'étiquette « Du programme précédent »
 
 Les factures qui portent cette étiquette sont en lecture seule. Elles n'ont pas de PDF : l'original existe déjà. **Créer une note de crédit** reste possible — c'est ainsi que vous annulez une facture encore ouverte.
+
+Vous pouvez aussi y saisir des **paiements**. Un paiement repris de l'ancien programme porte l'étiquette *Repris* : il se modifie ou se supprime là-bas, pas ici. Une prochaine reprise annulerait sinon votre modification.
 
 ## Erreurs fréquentes
 

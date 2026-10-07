@@ -23,11 +23,12 @@ Een gewone gebruiker kan facturen bekijken en opmaken. Wie ze definitief mag mak
 
 ## De lijst
 
-![De lijst Facturen met bovenaan het jaar 2026, de knoppen Nieuwe factuur en Exporteren, en per rij het nummer, de datum, de klant, het dossier, de soort Factuur of Creditnota, het totaal incl. btw, het openstaande bedrag en de kolom Verzonden; bovenaan een klad zonder nummer met het label Klad.](../images/facturen-lijst.png "Uw facturen en creditnota's van dit jaar"){ .volle-breedte }
+![De lijst Facturen met bovenaan het jaar 2026, de filter Alle documenten met het aantal, de knoppen Nieuwe factuur en Exporteren, en per rij het nummer, de datum, de vervaldatum, de klant, het dossier, de soort Factuur of Creditnota, het totaal incl. btw, het betaalde en het openstaande bedrag en de kolom Verzonden; op F-2026-0002 is 400,00 betaald; bovenaan een klad zonder nummer met het label Klad.](../images/facturen-lijst.png "Uw facturen en creditnota's van dit jaar"){ .volle-breedte }
 
-Per factuur ziet u het **nummer**, de **datum**, de **klant**, het **dossier**, de **soort** — factuur of creditnota —, het **totaal incl. btw**, wat er nog **open** staat, en of ze **verzonden** werd: *Gemaild*. Een klad heeft nog geen nummer: daar staat het label *Klad*.
+Per factuur ziet u het **nummer**, de **datum**, de **vervaldatum**, de **klant**, het **dossier**, de **soort** — factuur of creditnota —, het **totaal incl. btw**, wat er al **betaald** is, wat er nog **open** staat, en of ze **verzonden** werd: *Gemaild*. Is de vervaldatum voorbij en staat er nog iets open, dan staat dat bedrag in het **rood**. Een klad heeft nog geen nummer: daar staat het label *Klad*.
 
 - Bovenaan kiest u het **jaar**, of *Alle jaren*.
+- Daarnaast toont u enkel wat **Openstaand** is, of wat **Vervallen** is: open, en de vervaldatum is voorbij. Ook een losse creditnota die u nog moet terugbetalen, telt mee.
 - **Nieuwe factuur** opent een lege factuur.
 - **Exporteren** zet de lijst in Excel of CSV — zie [Werken met lijsten](../getting-started/lijsten.md).
 - Staan er creditnota's klaar om aan hun factuur gekoppeld te worden, dan verschijnt de knop **Creditnota's koppelen** met het aantal erbij — zie [Creditnota's koppelen](creditnotas-koppelen.md).
@@ -86,7 +87,7 @@ Is het klad in orde, klik dan op **Definitief maken** en bevestig. Op dat moment
 
 Daarna kan de factuur niet meer gewijzigd of verwijderd worden. Een fout zet u recht met een [creditnota](#een-factuur-rechtzetten-de-creditnota).
 
-![Een definitieve factuur F-2026-0002 met het label Definitief: de klant, het dossier en de lijnen zijn alleen te lezen; onderaan het blok Betaling en rechtzetting met de gestructureerde mededeling, het betaalde bedrag, het gecrediteerde bedrag met de link naar creditnota CN-2026-0001 en het openstaande bedrag, en de knoppen Pdf, Mailen en Creditnota maken.](../images/factuur-fiche.png "Een definitieve factuur, deels rechtgezet"){ .volle-breedte }
+![Een definitieve factuur F-2026-0002 met het label Definitief: de klant, het dossier en de lijnen zijn alleen te lezen; daaronder het blok Betaling en rechtzetting met de gestructureerde mededeling, 400,00 betaald, 90,75 gecrediteerd met de link naar creditnota CN-2026-0001 en 295,75 open; dan het blok Betalingen met het label Deels betaald, de knoppen Volledig betaald en Betaling ingeven… en één betaling van 400,00 per overschrijving met de knoppen Wijzigen en Verwijderen; onderaan de knoppen Pdf, Mailen en Creditnota maken.](../images/factuur-fiche.png "Een definitieve factuur, deels betaald en deels rechtgezet"){ .volle-breedte }
 
 !!! warning "Wat Definitief maken tegenhoudt"
     CreditSoft weigert, en zegt waarom, wanneer:
@@ -106,6 +107,21 @@ Onderaan een definitieve factuur staat:
 - **Betaald** — wat er al betaald is;
 - **Gecrediteerd** — wat creditnota's van deze factuur rechtzetten, met een link naar elke creditnota;
 - **Open** — wat er nog te betalen is.
+
+### Betalingen
+
+Daaronder staat het blok **Betalingen**, met de betaalstatus: *Open*, *Deels betaald*, *Betaald* of *Verrekend*.
+
+- **Volledig betaald** boekt in één klik wat er nog openstaat, op vandaag, per overschrijving.
+- **Betaling ingeven…** opent een venster met de **datum** (standaard vandaag), het **bedrag** (standaard wat er openstaat), de **betaalwijze** en eventueel een **referentie** en een **opmerking**.
+- Met **Wijzigen** en **Verwijderen** past u een betaling aan. Een verwijderde betaling blijft bewaard: in de historiek van de factuur en in het actielogboek.
+
+Op een **creditnota** die aan geen factuur hangt, heet het blok **Terugbetalingen**, met de knoppen **Volledig terugbetaald** en **Terugbetaling ingeven…**: daar boekt u wat u de klant terugbetaalde. Een creditnota die aan haar factuur gekoppeld is, is daarin verrekend; daar valt niets te betalen.
+
+!!! info "Wat niet kan"
+    - **Meer ingeven dan er openstaat.** Het venster zegt hoeveel er nog openstaat.
+    - **Een datum in de toekomst.** Een betaling is iets wat al gebeurd is. Een datum vóór de factuurdatum mag wel, voor een voorschot.
+    - **Betalen op een klad.** Een klad heeft nog geen nummer en geen mededeling.
 
 ## De pdf
 
@@ -170,6 +186,8 @@ Op de fiche van een creditnota staat het blok **Rechtzetting**: welke factuur ze
 ## Facturen met het label "Uit het vorige programma"
 
 Facturen met dit label kunt u enkel lezen. Ze krijgen geen pdf: het origineel bestaat al. **Creditnota maken** kan wel — zo annuleert u een factuur die nog openstaat.
+
+U kunt er ook **betalingen** op ingeven. Een betaling die uit het vorige programma overgenomen is, draagt het label *Overgenomen*: die wijzigt of verwijdert u daar, niet hier. Een volgende overname zou uw wijziging anders terugdraaien.
 
 ## Veelgemaakte fouten
 
