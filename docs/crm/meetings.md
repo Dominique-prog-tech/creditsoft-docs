@@ -2,7 +2,7 @@
 
 De agenda is **gedeeld**: iedereen ziet de afspraken van alle medewerkers, elk in zijn eigen kleur.
 
-![De agenda van CreditSoft in werkweekweergave: bovenaan de kleurlegende met zes medewerkers, daaronder het rooster van maandag tot vrijdag dat om 8 uur begint, met de afspraken als gekleurde blokken op hun uur.](../images/afspraken-week.png "De gedeelde agenda, elke medewerker in zijn eigen kleur"){ .volle-breedte }
+![De agenda van CreditSoft in werkweekweergave: bovenaan de kleurlegende met zeven medewerkers, daaronder het rooster van maandag tot vrijdag dat om 8 uur begint, met de afspraken als gekleurde blokken op hun uur.](../images/afspraken-week.png "De gedeelde agenda, elke medewerker in zijn eigen kleur"){ .volle-breedte }
 
 ## Het scherm openen
 

@@ -641,6 +641,16 @@ const SCHOTEN = [
       //    Meetings.razor start op DateTime.Today, niet op de vaste klok (AdmTijd). Op 02/10 lag 22/08 41 dagen terug
       //    en faalde dit in beide talen. 200 houdt tot ver in 2027; de echte oplossing is de agenda op AdmTijd laten
       //    starten (dan ligt 02/09 VÓÓRUIT en moeten deze recepten in twee richtingen zoeken).
+      // 🔁 08/10/2026: Meetings.razor start nu op AdmTijd.Vandaag (de vaste klok, 01/09) — precies "de echte oplossing"
+      //    van hierboven. 02/09 ligt dan VÓÓRUIT: eerst vooruit zoeken (een paar klikken), pas daarna achteruit. Zonder
+      //    die eerste lus bladerde dit recept weg van 2 september en faalde het in beide talen.
+      const merk = /\b2 (september|septembre) 2026/;
+      for (let i = 0; i < 10 && !gevonden; i++) {
+        if (merk.test(await p.locator('body').innerText())) { gevonden = true; break; }
+        await p.locator('.dxbl-sc-nav-next, button[title*="volgende" i], button[title*="suivant" i]')
+               .first().click().catch(() => {});
+        await p.waitForTimeout(400);
+      }
       for (let i = 0; i < 200 && !gevonden; i++) {
         // ⚠️⚠️ \b VÓÓR HET DAGNUMMER, en dat is geen netheid maar de reparatie van 15/09/2026.
         // Zonder die grens matcht `2 september` ÓÓK binnenin "1**2 september**" en "2**2 september**".

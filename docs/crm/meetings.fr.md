@@ -2,7 +2,7 @@
 
 L'agenda est **partagé** : chacun voit les rendez-vous de tous les collaborateurs, chacun dans sa propre couleur.
 
-![L'agenda de CreditSoft en affichage semaine de travail : en haut la légende des couleurs avec six collaborateurs, en dessous la grille du lundi au vendredi qui commence à 8 heures, avec les rendez-vous sous forme de blocs colorés à leur heure.](../images/afspraken-week-fr.png "L'agenda partagé, chaque collaborateur dans sa propre couleur"){ .volle-breedte }
+![L'agenda de CreditSoft en affichage semaine de travail : en haut la légende des couleurs avec sept collaborateurs, en dessous la grille du lundi au vendredi qui commence à 8 heures, avec les rendez-vous sous forme de blocs colorés à leur heure.](../images/afspraken-week-fr.png "L'agenda partagé, chaque collaborateur dans sa propre couleur"){ .volle-breedte }
 
 ## Ouvrir l'écran
 
