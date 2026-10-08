@@ -692,161 +692,169 @@
     "film": "relaties",
     "taal": "nl-BE",
     "pagina": "crm/relations",
-    "lengte": 156.68,
+    "lengte": 161.15,
     "uitvoering": "handleiding",
     "routes": [
       "/crm/relaties",
       "/crm/relaties/{id}"
     ],
     "app": {
-      "sha": "b07ba5b39e16d590cacfa61e189c7a54ff1a29b7",
-      "vuil": false
+      "sha": "50319011440360cd87c49b65221c649908d1682a",
+      "vuil": true
     },
     "titel": "Relaties in CreditSoft — de fiche waar alles aan hangt",
     "omschrijving": "De relatiefiche van dichtbij: de lijst doorzoeken, een fiche openen, de algemene en bijkomende gegevens, de documenttaal die bepaalt in welke taal uw klant post krijgt, de gevraagde documenten met hun drie toestanden, de kredietdossiers van die klant, en het journaal met notities en gesprekken. Plus het samenvoegen van twee fiches die dezelfde persoon blijken te zijn.",
-    "hash": "bad2bf5aaa59fc04",
-    "guid": "e85f040a-23fb-4803-9ade-3825e0acf6d6",
-    "vorigeGuid": "bcccb803-a4fd-4a11-b3ab-f1c0e41b7b4e",
+    "hash": "998cd6ca42ee4c0c",
+    "guid": "2f915b7b-3848-481d-b15e-d252159dfc6f",
+    "vorigeGuid": "e85f040a-23fb-4803-9ade-3825e0acf6d6",
     "hoofdstukken": [
       {
         "titel": "De relatielijst",
-        "start": 3.55,
-        "eind": 12.42
+        "start": 3.69,
+        "eind": 12.56
       },
       {
         "titel": "Zoeken in de lijst",
-        "start": 17.77,
-        "eind": 27.01
+        "start": 17.94,
+        "eind": 27.18
       },
       {
         "titel": "Een fiche openen",
-        "start": 31.5,
-        "eind": 40.79
+        "start": 31.86,
+        "eind": 41.15
       },
       {
         "titel": "De algemene gegevens",
-        "start": 44.25,
-        "eind": 56.6
+        "start": 44.63,
+        "eind": 56.98
       },
       {
         "titel": "De documenttaal",
-        "start": 60.26,
-        "eind": 70.43
+        "start": 60.65,
+        "eind": 70.82
       },
       {
         "titel": "Bijkomende gegevens",
-        "start": 74.48,
-        "eind": 82.8
+        "start": 74.89,
+        "eind": 83.2
       },
       {
         "titel": "De gevraagde documenten",
-        "start": 87.27,
-        "eind": 100.36
+        "start": 87.67,
+        "eind": 100.77
       },
       {
         "titel": "De kredietdossiers",
-        "start": 104.63,
-        "eind": 114.48
+        "start": 105.05,
+        "eind": 114.9
       },
       {
         "titel": "Het journaal",
-        "start": 118.8,
-        "eind": 130.78
+        "start": 121.59,
+        "eind": 135.11
       },
       {
         "titel": "Twee fiches samenvoegen",
-        "start": 136.76,
-        "eind": 146.23
+        "start": 141.12,
+        "eind": 150.6
       },
       {
         "titel": "Tot slot",
-        "start": 148.95,
-        "eind": 154.29
+        "start": 153.31,
+        "eind": 158.65
       }
     ],
-    "gepubliceerdOp": "2026-09-17T08:48:13.288",
-    "gepubliceerdeHash": "bad2bf5aaa59fc04",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/e85f040a-23fb-4803-9ade-3825e0acf6d6/thumbnail.jpg"
+    "gepubliceerdOp": "2026-10-08T09:45:06.933",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/2f915b7b-3848-481d-b15e-d252159dfc6f/thumbnail.jpg",
+    "gepubliceerdeHash": "998cd6ca42ee4c0c",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/2f915b7b-3848-481d-b15e-d252159dfc6f",
+    "opTeRuimen": [
+      "bcccb803-a4fd-4a11-b3ab-f1c0e41b7b4e"
+    ]
   },
   "relaties-fr": {
     "film": "relaties",
     "taal": "fr-BE",
     "pagina": "crm/relations",
-    "lengte": 146.6,
+    "lengte": 150.53,
     "uitvoering": "handleiding",
     "routes": [
       "/crm/relaties",
       "/crm/relaties/{id}"
     ],
     "app": {
-      "sha": "b07ba5b39e16d590cacfa61e189c7a54ff1a29b7",
-      "vuil": false
+      "sha": "50319011440360cd87c49b65221c649908d1682a",
+      "vuil": true
     },
     "titel": "Les relations dans CreditSoft — la fiche à laquelle tout se rattache",
     "omschrijving": "La fiche de relation de près : parcourir la liste, ouvrir une fiche, les données générales et complémentaires, la langue des documents qui détermine dans quelle langue votre client reçoit son courrier, les documents demandés avec leurs trois statuts, les dossiers de crédit de ce client, et le journal avec les notes et les appels. Ainsi que la fusion de deux fiches.",
-    "hash": "7cdbc00d43b77633",
-    "guid": "0f839cd9-62fc-4a28-8ca4-04e78e691b0d",
-    "vorigeGuid": "4275d93e-c504-4f9e-9018-35ec98fcdcbb",
+    "hash": "2c00fc53cdb421f6",
+    "guid": "b0e2109e-697a-4952-ab31-030e5d58a0e6",
+    "vorigeGuid": "0f839cd9-62fc-4a28-8ca4-04e78e691b0d",
     "hoofdstukken": [
       {
         "titel": "La liste des relations",
-        "start": 3.54,
-        "eind": 11.48
+        "start": 3.47,
+        "eind": 11.41
       },
       {
         "titel": "Rechercher dans la liste",
-        "start": 16.81,
-        "eind": 26.01
+        "start": 16.79,
+        "eind": 25.98
       },
       {
         "titel": "Ouvrir une fiche",
-        "start": 30.48,
-        "eind": 39.03
+        "start": 30.43,
+        "eind": 38.97
       },
       {
         "titel": "Les données générales",
-        "start": 42.48,
-        "eind": 52.55
+        "start": 42.43,
+        "eind": 52.51
       },
       {
         "titel": "La langue des documents",
-        "start": 56.2,
-        "eind": 66.6
+        "start": 56.18,
+        "eind": 66.59
       },
       {
         "titel": "Données complémentaires",
-        "start": 70.67,
-        "eind": 78.94
+        "start": 70.68,
+        "eind": 78.95
       },
       {
         "titel": "Les documents demandés",
-        "start": 83.41,
-        "eind": 94.84
+        "start": 83.43,
+        "eind": 94.86
       },
       {
         "titel": "Les dossiers de crédit",
-        "start": 99.1,
-        "eind": 107.65
+        "start": 99.17,
+        "eind": 107.72
       },
       {
         "titel": "Le journal",
-        "start": 111.91,
-        "eind": 122.17
+        "start": 114.4,
+        "eind": 126.01
       },
       {
         "titel": "Fusionner deux fiches",
-        "start": 128.1,
-        "eind": 136
+        "start": 131.95,
+        "eind": 139.84
       },
       {
         "titel": "Pour conclure",
-        "start": 138.71,
-        "eind": 144.19
+        "start": 142.55,
+        "eind": 148.03
       }
     ],
-    "gepubliceerdOp": "2026-09-17T08:48:29.529",
-    "gepubliceerdeHash": "7cdbc00d43b77633",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/0f839cd9-62fc-4a28-8ca4-04e78e691b0d/thumbnail.jpg"
+    "gepubliceerdOp": "2026-10-08T09:47:25.414",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/b0e2109e-697a-4952-ab31-030e5d58a0e6/thumbnail.jpg",
+    "gepubliceerdeHash": "2c00fc53cdb421f6",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/b0e2109e-697a-4952-ab31-030e5d58a0e6",
+    "opTeRuimen": [
+      "4275d93e-c504-4f9e-9018-35ec98fcdcbb"
+    ]
   },
   "leads-nl": {
     "film": "leads",
@@ -1160,7 +1168,7 @@
     "film": "journaal",
     "taal": "nl-BE",
     "pagina": "journaal/overzicht",
-    "lengte": 145.28,
+    "lengte": 147.92,
     "uitvoering": "handleiding",
     "routes": [
       "/crm/relaties/{id}",
@@ -1168,75 +1176,79 @@
       "/taken"
     ],
     "app": {
-      "sha": "b07ba5b39e16d590cacfa61e189c7a54ff1a29b7",
-      "vuil": false
+      "sha": "50319011440360cd87c49b65221c649908d1682a",
+      "vuil": true
     },
     "titel": "Het journaal — alles wat er met een klant gebeurde, op één plaats",
     "omschrijving": "Het journaal hangt aan elke fiche en werkt overal hetzelfde: taken met hun vervaldag en wie ze opvolgt, notities, gesprekken, bijlagen, het mailverkeer met de status van elke verzending, en het logboek dat elke veldwijziging bewaart. Plus de takenlijst die over alle fiches heen kijkt.",
-    "hash": "347ba8c6bb6da511",
-    "guid": "a78fca86-197c-41d5-b09a-203f6683e4b3",
-    "vorigeGuid": "fa5a0c9a-1948-49d7-b370-f5e835c71109",
+    "hash": "85c870ff3cc0585d",
+    "guid": "d929ca35-e7cc-4b84-bf91-404a80a06251",
+    "vorigeGuid": "a78fca86-197c-41d5-b09a-203f6683e4b3",
     "hoofdstukken": [
       {
         "titel": "Waar het journaal staat",
-        "start": 4.42,
-        "eind": 17.1
+        "start": 6.83,
+        "eind": 19.83
       },
       {
         "titel": "Taken",
-        "start": 21.4,
-        "eind": 31.48
+        "start": 24.11,
+        "eind": 34.18
       },
       {
         "titel": "Notities",
-        "start": 35.77,
-        "eind": 45.01
+        "start": 38.47,
+        "eind": 47.72
       },
       {
         "titel": "Gesprekken",
-        "start": 49.3,
-        "eind": 58.96
+        "start": 52,
+        "eind": 61.66
       },
       {
         "titel": "Bijlagen",
-        "start": 63.24,
-        "eind": 74.34
+        "start": 66.01,
+        "eind": 77.11
       },
       {
         "titel": "Mailverkeer",
-        "start": 78.84,
-        "eind": 86.13
+        "start": 81.59,
+        "eind": 88.88
       },
       {
         "titel": "Het logboek",
-        "start": 90.62,
-        "eind": 100.65
+        "start": 93.36,
+        "eind": 103.4
       },
       {
         "titel": "Hetzelfde op een dossier",
-        "start": 105.57,
-        "eind": 115.88
+        "start": 108.42,
+        "eind": 118.73
       },
       {
         "titel": "Al uw taken samen",
-        "start": 120.59,
-        "eind": 131.41
+        "start": 123.41,
+        "eind": 134.23
       },
       {
         "titel": "Tot slot",
-        "start": 134.12,
-        "eind": 142.85
+        "start": 136.95,
+        "eind": 145.68
       }
     ],
-    "gepubliceerdOp": "2026-09-17T08:50:11.148",
-    "gepubliceerdeHash": "347ba8c6bb6da511",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/a78fca86-197c-41d5-b09a-203f6683e4b3/thumbnail.jpg"
+    "gepubliceerdOp": "2026-10-08T09:49:18.78",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/d929ca35-e7cc-4b84-bf91-404a80a06251/thumbnail.jpg",
+    "gepubliceerdeHash": "85c870ff3cc0585d",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/d929ca35-e7cc-4b84-bf91-404a80a06251",
+    "opTeRuimen": [
+      "fa5a0c9a-1948-49d7-b370-f5e835c71109"
+    ]
   },
   "journaal-fr": {
     "film": "journaal",
     "taal": "fr-BE",
     "pagina": "journaal/overzicht",
-    "lengte": 136.72,
+    "lengte": 140.6,
     "uitvoering": "handleiding",
     "routes": [
       "/crm/relaties/{id}",
@@ -1244,69 +1256,73 @@
       "/taken"
     ],
     "app": {
-      "sha": "b07ba5b39e16d590cacfa61e189c7a54ff1a29b7",
-      "vuil": false
+      "sha": "bf01aa6f26246bd1f7df73884a9583ed9509e545",
+      "vuil": true
     },
     "titel": "Le journal — tout ce qui s’est passé avec un client, au même endroit",
     "omschrijving": "Le journal est rattaché à chaque fiche et fonctionne partout de la même manière : tâches avec leur échéance et leur responsable, notes, appels, pièces jointes, le courrier avec le statut de chaque envoi, et l’historique qui conserve chaque modification. Ainsi que la liste des tâches qui regarde par-dessus toutes les fiches.",
-    "hash": "61e6ae2bac10e591",
-    "guid": "aaf8f28e-d051-44e9-9191-2945d6079cea",
-    "vorigeGuid": "11ef0bcb-8025-408b-8ee6-694360b5aaea",
+    "hash": "ca2bb2b956e41256",
+    "guid": "3baa8067-90d1-449f-8c91-6b76536b3733",
+    "vorigeGuid": "aaf8f28e-d051-44e9-9191-2945d6079cea",
     "hoofdstukken": [
       {
         "titel": "Où se trouve le journal",
-        "start": 4.44,
-        "eind": 15.63
+        "start": 6.73,
+        "eind": 19.64
       },
       {
         "titel": "Tâches",
-        "start": 19.94,
-        "eind": 29.04
+        "start": 23.94,
+        "eind": 33.04
       },
       {
         "titel": "Notes",
-        "start": 33.32,
-        "eind": 43.25
+        "start": 37.33,
+        "eind": 47.27
       },
       {
         "titel": "Appels",
-        "start": 47.54,
-        "eind": 55.58
+        "start": 51.56,
+        "eind": 59.59
       },
       {
         "titel": "Pièces jointes",
-        "start": 59.85,
-        "eind": 69.65
+        "start": 63.85,
+        "eind": 73.65
       },
       {
         "titel": "Courrier",
-        "start": 74.15,
-        "eind": 81.16
+        "start": 78.12,
+        "eind": 85.13
       },
       {
         "titel": "L’historique",
-        "start": 85.64,
-        "eind": 95.72
+        "start": 89.64,
+        "eind": 99.72
       },
       {
         "titel": "Identique sur un dossier",
-        "start": 100.74,
-        "eind": 110.63
+        "start": 104.67,
+        "eind": 114.56
       },
       {
         "titel": "Toutes vos tâches ensemble",
-        "start": 115.33,
-        "eind": 124.81
+        "start": 119.2,
+        "eind": 128.67
       },
       {
         "titel": "Pour conclure",
-        "start": 127.52,
-        "eind": 134.3
+        "start": 131.39,
+        "eind": 138.17
       }
     ],
-    "gepubliceerdOp": "2026-09-17T08:50:27.782",
-    "gepubliceerdeHash": "61e6ae2bac10e591",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/aaf8f28e-d051-44e9-9191-2945d6079cea/thumbnail.jpg"
+    "gepubliceerdOp": "2026-10-08T09:50:41.771",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/3baa8067-90d1-449f-8c91-6b76536b3733/thumbnail.jpg",
+    "gepubliceerdeHash": "ca2bb2b956e41256",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/3baa8067-90d1-449f-8c91-6b76536b3733",
+    "opTeRuimen": [
+      "11ef0bcb-8025-408b-8ee6-694360b5aaea"
+    ]
   },
   "afspraken-nl": {
     "film": "afspraken",
@@ -2202,7 +2218,7 @@
     "film": "mailketen",
     "taal": "nl-BE",
     "pagina": "administration/sender-addresses",
-    "lengte": 132.32,
+    "lengte": 134.84,
     "uitvoering": "handleiding",
     "routes": [
       "/administration/company-profile",
@@ -2212,68 +2228,70 @@
       "/administration/mail-monitoring"
     ],
     "app": {
-      "sha": "39e3472c008bae5a08befafc6e75a52415567096",
+      "sha": "bf01aa6f26246bd1f7df73884a9583ed9509e545",
       "vuil": true
     },
     "titel": "De mailketen — van uw gegevens tot een verzonden bericht",
     "omschrijving": "Wat er allemaal klopt moet zijn vóór er één mail vertrekt, in de volgorde waarin het samenhangt: uw bedrijfsfiche die de variabelen vult, het verzendadres waar alles vanuit vertrekt, de tweetalige sjablonen met hun variabelenpalet en voorbeeld, en tot slot waar u ziet of een bericht werkelijk afgeleverd is — inclusief de reden wanneer dat niet lukte.",
-    "hash": "5131f763f2a7647c",
-    "guid": "e911be68-5620-482d-89dc-5053f999b362",
-    "vorigeGuid": "d42bf210-99e3-42d7-ab5c-579a2b9b48a0",
+    "hash": "658a7851e50d2e1b",
+    "guid": "c244ccd2-e245-442e-a279-4cfc03e827a0",
+    "vorigeGuid": "e911be68-5620-482d-89dc-5053f999b362",
     "hoofdstukken": [
       {
         "titel": "Uw eigen gegevens",
-        "start": 4.61,
-        "eind": 17.24
+        "start": 4.48,
+        "eind": 17.11
       },
       {
         "titel": "Waar uw mail vandaan komt",
-        "start": 21.99,
-        "eind": 35.41
+        "start": 21.76,
+        "eind": 35.18
       },
       {
         "titel": "Uw eigen domein",
-        "start": 39.39,
-        "eind": 48.21
+        "start": 39.17,
+        "eind": 48
       },
       {
         "titel": "De sjablonen",
-        "start": 53.39,
-        "eind": 64.67
+        "start": 53.21,
+        "eind": 64.5
       },
       {
         "titel": "De variabelen",
-        "start": 68.73,
-        "eind": 81.87
+        "start": 68.58,
+        "eind": 81.72
       },
       {
         "titel": "Wat de klant kreeg",
-        "start": 89.56,
-        "eind": 100.06
+        "start": 91.76,
+        "eind": 102.26
       },
       {
         "titel": "Is het aangekomen",
-        "start": 104.91,
-        "eind": 114.43
+        "start": 107.18,
+        "eind": 116.7
       },
       {
         "titel": "Tot slot",
-        "start": 118.86,
-        "eind": 130.1
+        "start": 121.24,
+        "eind": 132.48
       }
     ],
-    "gepubliceerdOp": "2026-10-01T19:19:43.529",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/e911be68-5620-482d-89dc-5053f999b362/thumbnail.jpg",
-    "gepubliceerdeHash": "5131f763f2a7647c",
+    "gepubliceerdOp": "2026-10-08T09:51:29.167",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/c244ccd2-e245-442e-a279-4cfc03e827a0/thumbnail.jpg",
     "opTeRuimen": [
-      "7901c472-3d01-45ee-84b3-11bd36df602d"
-    ]
+      "7901c472-3d01-45ee-84b3-11bd36df602d",
+      "d42bf210-99e3-42d7-ab5c-579a2b9b48a0"
+    ],
+    "gepubliceerdeHash": "658a7851e50d2e1b",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/c244ccd2-e245-442e-a279-4cfc03e827a0"
   },
   "mailketen-fr": {
     "film": "mailketen",
     "taal": "fr-BE",
     "pagina": "administration/sender-addresses",
-    "lengte": 128.88,
+    "lengte": 131.36,
     "uitvoering": "handleiding",
     "routes": [
       "/administration/company-profile",
@@ -2283,62 +2301,64 @@
       "/administration/mail-monitoring"
     ],
     "app": {
-      "sha": "39e3472c008bae5a08befafc6e75a52415567096",
+      "sha": "bf01aa6f26246bd1f7df73884a9583ed9509e545",
       "vuil": true
     },
     "titel": "La chaîne d’e-mails — de vos données au message envoyé",
     "omschrijving": "Tout ce qui doit être en ordre avant qu’un seul e-mail parte, dans l’ordre où cela s’enchaîne : votre fiche d’entreprise qui alimente les variables, l’adresse d’expédition d’où tout part, les modèles bilingues avec leur panneau de variables et leur aperçu, et enfin l’endroit où vous voyez si un message a réellement été distribué — motif compris lorsque cela échoue.",
-    "hash": "d4b02a35b2541d51",
-    "guid": "5ae8b54d-e4f7-4bbf-8958-da0c3cf7d8c9",
-    "vorigeGuid": "ad249cbb-4b2d-4346-b3ad-52c10a75c3f6",
+    "hash": "b32af4f15d4d05c8",
+    "guid": "8508715a-580c-4575-8f77-45370036d05a",
+    "vorigeGuid": "5ae8b54d-e4f7-4bbf-8958-da0c3cf7d8c9",
     "hoofdstukken": [
       {
         "titel": "Vos propres données",
-        "start": 4.46,
-        "eind": 17.14
+        "start": 4.49,
+        "eind": 17.17
       },
       {
         "titel": "D’où part votre courrier",
-        "start": 21.79,
-        "eind": 34.8
+        "start": 21.81,
+        "eind": 34.81
       },
       {
         "titel": "Votre propre domaine",
-        "start": 38.79,
-        "eind": 47.47
+        "start": 38.82,
+        "eind": 47.5
       },
       {
         "titel": "Les modèles",
-        "start": 52.56,
-        "eind": 63.29
+        "start": 52.65,
+        "eind": 63.38
       },
       {
         "titel": "Les variables",
-        "start": 67.35,
-        "eind": 80.17
+        "start": 67.44,
+        "eind": 80.26
       },
       {
         "titel": "Ce que le client a reçu",
-        "start": 87.91,
-        "eind": 96.73
+        "start": 90.34,
+        "eind": 99.16
       },
       {
         "titel": "Est-ce bien arrivé",
-        "start": 101.55,
-        "eind": 111.86
+        "start": 103.98,
+        "eind": 114.29
       },
       {
         "titel": "Pour conclure",
-        "start": 116.3,
-        "eind": 126.52
+        "start": 118.77,
+        "eind": 128.98
       }
     ],
-    "gepubliceerdOp": "2026-10-01T19:22:19.953",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/5ae8b54d-e4f7-4bbf-8958-da0c3cf7d8c9/thumbnail.jpg",
-    "gepubliceerdeHash": "d4b02a35b2541d51",
+    "gepubliceerdOp": "2026-10-08T09:52:42.233",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/8508715a-580c-4575-8f77-45370036d05a/thumbnail.jpg",
     "opTeRuimen": [
-      "d7507ffb-00e8-4dfb-b171-5063e240a07d"
-    ]
+      "d7507ffb-00e8-4dfb-b171-5063e240a07d",
+      "ad249cbb-4b2d-4346-b3ad-52c10a75c3f6"
+    ],
+    "gepubliceerdeHash": "b32af4f15d4d05c8",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/8508715a-580c-4575-8f77-45370036d05a"
   },
   "klantportaal-nl": {
     "film": "klantportaal",
