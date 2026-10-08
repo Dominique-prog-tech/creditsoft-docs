@@ -53,7 +53,7 @@ La fiche comporte trois blocs.
 
 - **Source** — d'où vient ce lead : *site web*, *téléphone*, *recommandation*, *Facebook*, ce que vous utilisez. Le champ propose ce que vous avez déjà saisi auparavant, afin que l'orthographe reste constante, mais vous pouvez saisir librement. Ainsi, la liste des sources reste celle de **votre** bureau, et non celle que nous aurions imaginée.
 - **Montant** — le montant dont il est question, pour autant que vous le sachiez déjà.
-- **Provenance** — si ce lead est arrivé via une connexion, celle-ci est indiquée ici. Ce champ n'est pas modifiable : c'est un constat, pas une saisie.
+- **Provenance** — par quelle voie ce lead est arrivé : *Application mobile*, *Saisi manuellement*, ou pour une connexion la page ou la référence d'où il provient. Ce champ n'est pas modifiable : c'est un constat, pas une saisie.
 - **Apporté par** — uniquement pour un lead d'un apporteur : qui l'a transmis, avec un lien vers sa fiche. Non modifiable.
 - **Consentement du client confirmé** — le moment où l'apporteur a confirmé que le client accepte d'être contacté par vous. Sans cette confirmation, il ne peut pas transmettre de client.
 - **Demande** — la demande telle qu'elle est arrivée, en texte libre. Pour un lead d'un apporteur, le type de demande figure en premier (par exemple *Crédit logement*), avec sa remarque en dessous.
@@ -100,7 +100,7 @@ Cliquez sur **Nouveau lead**, complétez ce que vous savez, puis cliquez sur **E
 
 ## Leads d'un apporteur
 
-Les apporteurs peuvent transmettre un client depuis l'application mobile CreditSoft. Il arrive ici comme lead avec la source **Mobiele app**, avec l'apporteur dans la colonne **Apporteur** et sur la fiche sous **Apporté par**. L'apporteur suit dans son application où en est la demande : *nouveau*, *en cours*, *devenu client* ou *sans suite*. Il ne voit pas qui assure le suivi ni pourquoi une demande n'a pas abouti.
+Les apporteurs peuvent transmettre un client depuis l'application mobile CreditSoft. Il arrive ici comme lead avec la source **Application mobile** — ou **Mobiele app** si votre bureau travaille en néerlandais —, avec l'apporteur dans la colonne **Apporteur** et sur la fiche sous **Apporté par**. L'apporteur suit dans son application où en est la demande : *nouveau*, *en cours*, *devenu client* ou *sans suite*. Il ne voit pas qui assure le suivi ni pourquoi une demande n'a pas abouti.
 
 !!! warning "Deux apporteurs, la même personne"
     Un lead d'un apporteur n'est **jamais fusionné** avec un lead existant. Si deux apporteurs transmettent la même personne — ou si cette personne était déjà arrivée via votre site web — il y a deux leads. Le second porte l'étiquette **doublon possible**, et un lien vers le premier figure en haut de sa fiche. **C'est vous qui décidez qui assure le suivi du client**, et donc à quel apporteur il revient. CreditSoft ne le choisit pas pour vous, car une commission y est liée.
