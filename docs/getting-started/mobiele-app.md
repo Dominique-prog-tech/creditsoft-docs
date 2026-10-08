@@ -32,6 +32,21 @@ en hoeveel aktes er gepland zijn. Daaronder:
 Met de balk onderaan gaat u naar **Dossiers**, naar de klanten die u **Aangebracht** heeft, en naar uw
 **Afspraken** per dag.
 
+## Afspraken
+
+Onder **Afspraken** staan de afspraken van deze maand, per dag. Elke afspraak toont het uur, de plaats en met wie ze is:
+
+- **Klant** — de klant, of de prospect, of wie de afspraak online boekte;
+- **Aanbrenger** — de aanbrenger die bij de afspraak hoort;
+- **Medewerker** — de collega('s) van het kantoor die op de afspraak staan.
+
+Werkt u op kantoor, dan ziet u de afspraken van het hele kantoor. Staan er afspraken van meerdere collega's, dan kiest
+u bovenaan **Iedereen**, **Mijn afspraken** of één collega. Ook bij **Volgende afspraak** op de startpagina staat de
+klant erbij.
+
+!!! note "Vanaf versie 1.2.0 van de app"
+    Ziet u de klant en de medewerker nog niet bij uw afspraken, werk de app dan bij in de App Store of op Google Play.
+
 ## Een dossier opzoeken en openen
 
 Onder **Dossiers** zoekt u op de naam van de klant, het dossiernummer of het contractnummer. Tik een dossier

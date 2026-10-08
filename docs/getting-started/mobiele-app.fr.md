@@ -35,6 +35,23 @@ ajoutés cette année et combien d'actes sont planifiés. En dessous :
 
 La barre du bas mène à **Dossiers**, aux clients que vous avez **Apportés**, et à vos **Rendez-vous** par jour.
 
+## Rendez-vous
+
+Sous **Rendez-vous** figurent les rendez-vous de ce mois, par jour. Chaque rendez-vous indique l'heure, le lieu et avec
+qui il a lieu :
+
+- **Client** — le client, ou le prospect, ou la personne qui a réservé le rendez-vous en ligne ;
+- **Apporteur** — l'apporteur lié au rendez-vous ;
+- **Collaborateur** — le ou les collègues du bureau qui figurent sur le rendez-vous.
+
+Si vous travaillez au bureau, vous voyez les rendez-vous de tout le bureau. S'il y a des rendez-vous de plusieurs
+collègues, vous choisissez en haut **Tous**, **Mes rendez-vous** ou un seul collègue. Le **Prochain rendez-vous** de la
+page d'accueil mentionne aussi le client.
+
+!!! note "À partir de la version 1.2.0 de l'app"
+    Vous ne voyez pas encore le client et le collaborateur à vos rendez-vous ? Mettez l'app à jour dans l'App Store ou
+    sur Google Play.
+
 ## Rechercher et ouvrir un dossier
 
 Sous **Dossiers**, vous recherchez par nom du client, numéro de dossier ou numéro de contrat. Touchez un dossier
