@@ -63,7 +63,7 @@ deze maatschappij.
 De knoppenbalk onderaan blijft in beeld terwijl u door de fiche scrolt:
 
 - **Bewaren** — bewaart de verzekeraar.
-- **Annuleren** — keert terug naar de lijst zonder te bewaren.
+- **Annuleren** — keert terug naar de lijst zonder te bewaren. Hebt u iets gewijzigd, dan vraagt CreditSoft eerst of u wilt blijven.
 - **Verwijderen** — archiveert de verzekeraar (rechts in de balk).
 
 Bij het opslaan worden **ontbrekende verplichte velden** (naam, documenttaal) en een **ongeldig

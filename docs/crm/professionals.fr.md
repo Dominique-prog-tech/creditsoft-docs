@@ -75,7 +75,7 @@ cette partie.
 La barre de boutons du bas reste visible pendant que vous faites défiler la fiche :
 
 - **Enregistrer** — sauvegarde le professionnel.
-- **Annuler** — retourne à la liste sans sauvegarder.
+- **Annuler** — retourne à la liste sans sauvegarder. Si vous avez modifié quelque chose, CreditSoft vous demande d'abord si vous voulez rester.
 - **Supprimer** — archive le professionnel (à droite dans la barre).
 
 À l'enregistrement, les **champs obligatoires manquants** (type, nom, langue des documents) et une **adresse

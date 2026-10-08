@@ -64,7 +64,7 @@ cette compagnie.
 La barre de boutons du bas reste visible pendant que vous faites défiler la fiche :
 
 - **Enregistrer** — sauvegarde l'assureur.
-- **Annuler** — retourne à la liste sans sauvegarder.
+- **Annuler** — retourne à la liste sans sauvegarder. Si vous avez modifié quelque chose, CreditSoft vous demande d'abord si vous voulez rester.
 - **Supprimer** — archive l'assureur (à droite dans la barre).
 
 À l'enregistrement, les **champs obligatoires manquants** (nom, langue des documents) et une **adresse

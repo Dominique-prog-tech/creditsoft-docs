@@ -116,7 +116,7 @@ CreditSoft demande d'abord : **Vos modifications ne sont pas enregistrées. Quit
 à la fiche, avec tout ce que vous avez saisi ; **Quitter** abandonne les modifications. Si vous rechargez ou fermez
 l'onglet, c'est le navigateur lui-même qui pose la question.
 
-Sans modification, CreditSoft ne demande rien, et après **Enregistrer** ou **Annuler** non plus. Un bouton qui crée quelque chose de nouveau et vous y emmène aussitôt — **Nouveau dossier de crédit** sur une relation, **En faire un client** sur un lead — pose la même question avant de créer quoi que ce soit.
+Sans modification, CreditSoft ne demande rien, et après **Enregistrer** non plus. **Annuler** sur une fiche pose aussi la même question lorsque quelque chose n'est pas enregistré ; sans modification, il revient immédiatement. Un bouton qui crée quelque chose de nouveau et vous y emmène aussitôt — **Nouveau dossier de crédit** sur une relation, **En faire un client** sur un lead — pose la même question avant de créer quoi que ce soit.
 
 ## Vos préférences
 
