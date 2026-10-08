@@ -470,16 +470,17 @@ const SCHOTEN = [
   }],
 
   // ── recepten: een handeling ná het laden ──────────────────────────────────────────────────────────────
-  // journaal-onderdelen: op de FICHE zijn het tabbladen. ⚠️ In de LADE (vanuit een lijst) is het een
-  // keuzelijst; dat is een ander beeld — zie 'journaal-lade'.
-  ['journaal-taken',            `/crm/relaties/${ID.relatie}`, p => tab(p, 'Taken', 'Tâches')],
-  ['journaal-notities',         `/crm/relaties/${ID.relatie}`, p => tab(p, 'Notities', 'Notes')],
-  ['journaal-gesprekken',       `/crm/relaties/${ID.relatie}`, p => tab(p, 'Gesprekken', 'Appels')],
-  ['journaal-bijlagen',         `/crm/relaties/${ID.relatie}`, p => tab(p, 'Bijlagen', 'Pièces jointes')],
-  ['journaal-mailverkeer',      `/crm/relaties/${ID.relatie}`, p => tab(p, 'Mailverkeer', 'Courrier')],
-  ['journaal-logboek',          `/crm/relaties/${ID.relatie}`, p => tab(p, 'Logboek', 'Historique')],
+  // journaal-onderdelen: op de FICHE zijn het tabjes onder het tabblad Journaal (AppKit 0.449.0, CreditSoft
+  // 1.174.0) — vandaar journaalTab(). ⚠️ In de LADE (vanuit een lijst) is het een keuzelijst; dat is een ander
+  // beeld — zie 'journaal-lade'. Kredietdossiers staat NIET onder Journaal: dat blijft een eigen tabblad.
+  ['journaal-taken',            `/crm/relaties/${ID.relatie}`, p => journaalTab(p, 'Taken', 'Tâches')],
+  ['journaal-notities',         `/crm/relaties/${ID.relatie}`, p => journaalTab(p, 'Notities', 'Notes')],
+  ['journaal-gesprekken',       `/crm/relaties/${ID.relatie}`, p => journaalTab(p, 'Gesprekken', 'Appels')],
+  ['journaal-bijlagen',         `/crm/relaties/${ID.relatie}`, p => journaalTab(p, 'Bijlagen', 'Pièces jointes')],
+  ['journaal-mailverkeer',      `/crm/relaties/${ID.relatie}`, p => journaalTab(p, 'Mailverkeer', 'Courrier')],
+  ['journaal-logboek',          `/crm/relaties/${ID.relatie}`, p => journaalTab(p, 'Logboek', 'Historique')],
   ['journaal-kredietdossiers',  `/crm/relaties/${ID.relatie}`, p => tab(p, 'Kredietdossiers', 'Dossiers de crédit')],
-  ['relaties-fiche-journaal',   `/crm/relaties/${ID.relatie}`, p => tab(p, 'Taken', 'Tâches')],
+  ['relaties-fiche-journaal',   `/crm/relaties/${ID.relatie}`, p => journaalTab(p, 'Taken', 'Tâches')],
   // ⚠️ Deze relatie is BEWUST Alain Adriaenssens: hij draagt één gevraagd stuk in de toestand
   // "Ontvangen" (aangeleverd, nog niet beoordeeld). Een relatie zonder stukken toont een lege lijst en
   // bewijst niets over de statuskolom die het bijschrift beschrijft. De VERWACHT-regel hieronder valt
@@ -840,6 +841,13 @@ const alt = (nl, fr) => new RegExp(`^(${nl}|${fr})$`, 'i');
 const tab = async (p, nl, fr) => {
   await p.locator('span:visible', { hasText: alt(nl, fr) }).last().click();
   await p.waitForTimeout(2500);
+};
+// Een tabje onder het tabblad Journaal van een fiche (AppKit 0.449.0, AdmFicheGroep): eerst de groep openen. Het
+// tabje bestaat pas in de pagina zodra Journaal open staat, dus tab() alleen loopt in een time-out van 30 s.
+const journaalTab = async (p, nl, fr) => {
+  await p.getByRole('tab', { name: /^(Journaal|Journal)$/ }).first().click();
+  await p.waitForTimeout(2000);
+  await tab(p, nl, fr);
 };
 const knop = async (p, nl, fr) => {
   await p.getByText(alt(nl, fr)).first().click(); await p.waitForTimeout(2500);

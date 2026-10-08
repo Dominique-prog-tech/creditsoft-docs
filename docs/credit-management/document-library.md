@@ -10,7 +10,7 @@ Klik in het menu links op **Documenten**, onder *Lijsten*.
 
 ## Het verschil met Bijlagen
 
-Op een dossier of een fiche vindt u het tabblad **Bijlagen**. Dat zijn de stukken van dát ene record.
+Op een dossier of een fiche vindt u ze onder **Journaal › Bijlagen**. Dat zijn de stukken van dát ene record.
 
 De bibliotheek is iets anders: ze hangt aan **niets**. Ze is van uw kantoor, en u vult ze met wat u algemeen wilt bijhouden of delen.
 

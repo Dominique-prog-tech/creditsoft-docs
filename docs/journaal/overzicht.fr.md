@@ -28,10 +28,17 @@ Si rien n'est encore sélectionné, le tiroir vous invite d'abord à choisir une
 
 ### Dans la fiche
 
-Lorsque vous ouvrez une fiche, les mêmes parties figurent en haut sous forme d'**onglets**, à droite des onglets
-de la fiche elle-même. Tout reste ainsi à portée de main pendant que vous travaillez sur le dossier.
+Lorsque vous ouvrez une fiche, le journal figure en haut sous la forme d'un seul onglet **Journal**, à droite des
+onglets de la fiche elle-même. Cliquez dessus et les parties apparaissent en dessous sous forme de sous-onglets. La
+rangée du haut reste ainsi sobre pendant que vous travaillez sur l'enregistrement, et tout reste à un clic.
 
-![La fiche d'une relation avec, en haut à gauche, les onglets de la fiche et, à droite, les onglets Tâches, Notes, Pièces jointes, Courrier et Historique ; l'onglet Tâches est ouvert et la liste des tâches figure en dessous.](../images/relaties-fiche-journaal-fr.png "Le journal sous forme d'onglets sur la fiche")
+- Survolez l'onglet **Journal** pour voir les sous-onglets qu'il contient.
+- Si vous passez à un autre onglet et revenez, le sous-onglet choisi en dernier est à nouveau ouvert.
+
+Dans ce manuel, nous l'écrivons en bref **Journal › Notes** : l'onglet Journal, et dans celui-ci le sous-onglet
+Notes.
+
+![La fiche d'une relation avec, en haut, les onglets de la fiche, Dossiers de crédit, Factures et Journal ; Journal est ouvert, avec en dessous les sous-onglets Tâches, Notes, Appels, Pièces jointes, Courrier et Historique, et Tâches affiche la liste des tâches.](../images/relaties-fiche-journaal-fr.png "Le journal sous forme d'onglet sur la fiche")
 
 Il s'agit du même contenu que dans le tiroir. Une tâche que vous ajoutez ici, votre collègue la voit également
 lorsqu'il sélectionne la ligne dans la liste.
@@ -39,8 +46,9 @@ lorsqu'il sélectionne la ligne dans la liste.
 ## Les parties
 
 Dans le tiroir, les parties figurent côte à côte en haut ; dans un tiroir étroit, seules les icônes des parties
-inactives sont visibles — survolez-les pour en voir le nom. Sur une fiche, elles figurent en toutes lettres sous
-forme d'onglets.
+inactives sont visibles — survolez-les pour en voir le nom. Sur une fiche, *Dossiers de crédit* et *Factures* ont leur
+propre onglet à côté de **Journal** — c'est souvent la raison pour laquelle vous ouvrez la fiche — et les autres
+parties figurent en sous-onglets sous **Journal**.
 
 | Partie | À quoi elle sert |
 |---|---|
@@ -54,14 +62,16 @@ forme d'onglets.
 | [Historique](logboek.md) | Qui a modifié quel champ, et de quelle valeur vers quelle autre |
 
 Le tiroir s'ouvre sur la **première** partie de cette liste. Pour une relation, il s'agit des *Dossiers de crédit*.
+Sur une fiche, l'onglet **Journal** s'ouvre sur *Tâches*.
 
 ## Sur quels écrans
 
-Le journal figure sur les six fiches principales de CreditSoft :
+Le journal figure sur ces écrans de CreditSoft :
 
-| Écran | À côté de la liste | En onglets dans la fiche |
+| Écran | À côté de la liste | Dans la fiche |
 |---|---|---|
 | [Relations](../crm/relations.md) | ✔ | ✔ |
+| [Leads](../crm/leads.md) | ✔ | ✔ |
 | [Professionnels](../crm/professionals.md) | ✔ | ✔ |
 | [Apporteurs](../crm/contributors.md) | ✔ | ✔ |
 | [Institutions de crédit](../credit-management/financial-institutions.md) | ✔ | ✔ |

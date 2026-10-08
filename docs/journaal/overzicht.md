@@ -26,10 +26,17 @@ Staat er nog niets geselecteerd, dan vraagt de lade u eerst een rij te kiezen.
 
 ### In de fiche
 
-Opent u een fiche, dan staan dezelfde onderdelen bovenaan als **tabbladen**, rechts van de tabbladen van de
-fiche zelf. Zo blijft alles bij de hand terwijl u aan het record werkt.
+Opent u een fiche, dan staat het journaal bovenaan als één tabblad **Journaal**, rechts van de tabbladen van de
+fiche zelf. Klik erop en de onderdelen verschijnen eronder als tabjes. Zo blijft de bovenste rij rustig terwijl u
+aan het record werkt, en staat alles toch één klik verder.
 
-![De fiche van een relatie met bovenaan links de tabbladen van de fiche en rechts de tabbladen Taken, Notities, Bijlagen, Mailverkeer en Logboek; het tabblad Taken staat open met de takenlijst eronder.](../images/relaties-fiche-journaal.png "Het journaal als tabbladen op de fiche")
+- Wijs het tabblad **Journaal** aan om te zien welke tabjes erin zitten.
+- Gaat u naar een ander tabblad en komt u terug, dan staat het tabje open dat u laatst koos.
+
+In deze handleiding schrijven we dat kort als **Journaal › Notities**: het tabblad Journaal, en daarin het tabje
+Notities.
+
+![De fiche van een relatie met bovenaan de tabbladen van de fiche, Kredietdossiers, Facturen en Journaal; Journaal staat open, met eronder de tabjes Taken, Notities, Gesprekken, Bijlagen, Mailverkeer en Logboek, en Taken toont de takenlijst.](../images/relaties-fiche-journaal.png "Het journaal als tabblad op de fiche")
 
 Het is dezelfde inhoud als in de lade. Een taak die u hier toevoegt, ziet uw collega ook wanneer hij de rij in
 de lijst aanklikt.
@@ -37,7 +44,9 @@ de lijst aanklikt.
 ## De onderdelen
 
 In de lade staan de onderdelen bovenaan naast elkaar; in een smalle lade ziet u van de niet-actieve onderdelen
-enkel het icoon — wijs het aan om de naam te zien. Op een fiche staan ze voluit als tabbladen.
+enkel het icoon — wijs het aan om de naam te zien. Op een fiche staan *Kredietdossiers* en *Facturen* als eigen
+tabblad naast **Journaal** — dat is vaak de reden waarom u de fiche opent — en de andere onderdelen als tabjes
+onder **Journaal**.
 
 | Onderdeel | Waarvoor |
 |---|---|
@@ -50,15 +59,17 @@ enkel het icoon — wijs het aan om de naam te zien. Op een fiche staan ze volui
 | [Mailverkeer](mailverkeer.md) | De mails die vanuit CreditSoft over deze fiche vertrokken |
 | [Logboek](logboek.md) | Wie welk veld wijzigde, en van welke waarde naar welke |
 
-De lade opent op het **eerste** onderdeel uit deze lijst. Bij een relatie is dat *Kredietdossiers*.
+De lade opent op het **eerste** onderdeel uit deze lijst. Bij een relatie is dat *Kredietdossiers*. Het tabblad
+**Journaal** op een fiche opent op *Taken*.
 
 ## Op welke schermen
 
-Het journaal staat op de zes hoofdfiches van CreditSoft:
+Het journaal staat op deze schermen van CreditSoft:
 
-| Scherm | Naast de lijst | Als tabbladen in de fiche |
+| Scherm | Naast de lijst | In de fiche |
 |---|---|---|
 | [Relaties](../crm/relations.md) | ✔ | ✔ |
+| [Leads](../crm/leads.md) | ✔ | ✔ |
 | [Professionals](../crm/professionals.md) | ✔ | ✔ |
 | [Aanbrengers](../crm/contributors.md) | ✔ | ✔ |
 | [Kredietinstellingen](../credit-management/financial-institutions.md) | ✔ | ✔ |

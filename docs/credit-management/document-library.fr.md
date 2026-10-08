@@ -10,7 +10,7 @@ Dans le menu de gauche, cliquez sur **Documents**, sous *Listes*.
 
 ## La différence avec les Pièces jointes
 
-Sur un dossier de crédit ou une fiche, vous trouvez l'onglet **Pièces jointes**. Ce sont les documents de cet enregistrement précis.
+Sur un dossier de crédit ou une fiche, vous les trouvez sous **Journal › Pièces jointes**. Ce sont les documents de cet enregistrement précis.
 
 La bibliothèque est autre chose : elle n'est rattachée à **rien**. Elle appartient à votre bureau, et vous la remplissez de ce que vous souhaitez conserver ou partager de manière générale.
 

@@ -41,8 +41,9 @@ fiche staat.
     Een commissie die u terugneemt — bijvoorbeeld omdat de aanbrenger ze zelf al ontvangen heeft — voert u in als
     een **negatief** bedrag. Dat geldt zowel hier als bij de schema's op een dossier.
 
-Opent u de fiche, dan staan dezelfde onderdelen bovenaan als **tabbladen** — u hoeft dus niet terug
-naar de lijst om ze te raadplegen. Lade en tabbladen tonen hetzelfde en werken op elk scherm gelijk;
+Opent u de fiche, dan staan de vrije commissieschema's en het vooruitzicht er als eigen **tabblad**, en
+de rest onder het tabblad **Journaal** — u hoeft dus niet terug naar de lijst om ze te raadplegen. Lade en
+fiche tonen hetzelfde en werken op elk scherm gelijk;
 [Het journaal](../journaal/overzicht.md) legt uit hoe.
 
 ## De fiche van een aanbrenger

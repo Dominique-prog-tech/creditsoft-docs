@@ -40,9 +40,10 @@ saisissez vous-même une description au lieu de choisir un dossier, et l'apporte
     Une commission que vous reprenez — parce que l'apporteur l'a déjà perçue lui-même, par exemple — s'encode comme un
     montant **négatif**. Cela vaut ici comme pour les schémas liés à un dossier.
 
-Lorsque vous ouvrez la fiche, les mêmes parties figurent en haut sous forme d'**onglets** — vous ne devez
-donc pas revenir à la liste pour les consulter. Le tiroir et les onglets affichent la même chose et
-fonctionnent de manière identique sur chaque écran ; [Le journal](../journaal/overzicht.md) explique comment.
+Lorsque vous ouvrez la fiche, les schémas de commission libres et la perspective y ont leur propre
+**onglet**, et le reste figure sous l'onglet **Journal** — vous ne devez donc pas revenir à la liste pour les
+consulter. Le tiroir et la fiche affichent la même chose et fonctionnent de manière identique sur chaque
+écran ; [Le journal](../journaal/overzicht.md) explique comment.
 
 ## La fiche d'un apporteur
 

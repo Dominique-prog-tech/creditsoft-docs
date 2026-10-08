@@ -9,7 +9,7 @@ Klik in het menu links op **Facturen**, onder *Facturatie*.
 De facturen van één klant of één dossier vindt u ook op hun fiche:
 
 - op een **kredietdossier**, op het tabblad *Facturen* — zie [Kredietdossiers](../credit-management/credit-files.md#facturen);
-- op een **relatie**, op het tabblad *Facturen* van het [journaal](../journaal/overzicht.md).
+- op een **relatie**, op het tabblad *Facturen* van de fiche, en in de [journaal-lade](../journaal/overzicht.md) naast de lijst.
 
 Drie rechten bepalen wat u hier kan:
 

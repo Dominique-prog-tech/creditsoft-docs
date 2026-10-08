@@ -35,8 +35,9 @@ die fiche gebeurt — de [kredietdossiers](../journaal/kredietdossiers.md) van d
 Het onderdeel **Kredietdossiers** staat alleen bij een relatie: het toont de dossiers waarin die persoon als
 aanvrager staat, recentste bovenaan. Belt een klant, dan gaat u van zijn fiche rechtstreeks naar zijn dossier.
 
-Opent u de fiche, dan staan dezelfde onderdelen bovenaan als **tabbladen** — u hoeft dus niet terug
-naar de lijst om ze te raadplegen. Lade en tabbladen tonen hetzelfde en werken op elk scherm gelijk;
+Opent u de fiche, dan staan de kredietdossiers en de facturen er als eigen **tabblad**, en de rest onder
+het tabblad **Journaal** — u hoeft dus niet terug naar de lijst om ze te raadplegen. Lade en fiche tonen
+hetzelfde en werken op elk scherm gelijk;
 [Het journaal](../journaal/overzicht.md) legt uit hoe.
 
 ## Een groepsmail sturen
@@ -85,8 +86,8 @@ terugkeerknop naar de lijst, met daarnaast de soort en de naam.
 
 ![De fiche van particulier Alain Adriaenssens over de volle pagina: het tabblad Algemeen met type, naam, voornaam, telefoon, gsm, documenttaal en het hoofdadres links, en rechts het interne nummer, de aanspreking, e-mail en website, daaronder het brede blok Opmerkingen en een balk met de knoppen Bewaren, Annuleren en Verwijderen.](../images/relaties-fiche.png "De volledige fiche van een relatie, met de algemene gegevens en de opmerkingen"){ .volle-breedte }
 
-De gegevens van de relatie staan op **twee tabbladen**, met daarnaast de tabbladen van het
-[journaal](../journaal/overzicht.md). Elk van de twee sluit af met een blok **Opmerkingen** — het is telkens
+De gegevens van de relatie staan op **twee tabbladen**, met daarnaast *Kredietdossiers*, *Facturen* en het
+tabblad [Journaal](../journaal/overzicht.md). Elk van de twee sluit af met een blok **Opmerkingen** — het is telkens
 hetzelfde veld — en onderaan blijft de knoppenbalk in beeld.
 
 ### Tabblad "Algemeen" (particulier)

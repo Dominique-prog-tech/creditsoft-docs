@@ -9,7 +9,7 @@ Dans le menu de gauche, cliquez sur **Factures**, sous *Facturation*.
 Les factures d'un client ou d'un dossier se trouvent aussi sur leur fiche :
 
 - sur un **dossier de crédit**, dans l'onglet *Factures* — voir [Dossiers de crédit](../credit-management/credit-files.md#factures) ;
-- sur une **relation**, dans l'onglet *Factures* du [journal](../journaal/overzicht.md).
+- sur une **relation**, dans l'onglet *Factures* de la fiche, et dans le [tiroir du journal](../journaal/overzicht.md) à côté de la liste.
 
 Trois droits déterminent ce que vous pouvez faire ici :
 

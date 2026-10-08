@@ -37,9 +37,9 @@ La rubrique **Dossiers de crédit** ne figure que sur une relation : elle affich
 cette personne est demandeur, le plus récent en haut. Quand un client appelle, vous passez de sa fiche
 directement à son dossier.
 
-Lorsque vous ouvrez la fiche, les mêmes parties figurent en haut sous forme d'**onglets** — vous ne devez
-donc pas revenir à la liste pour les consulter. Le tiroir et les onglets affichent la même chose et
-fonctionnent de manière identique sur chaque écran ; [Le journal](../journaal/overzicht.md) explique comment.
+Lorsque vous ouvrez la fiche, les dossiers de crédit et les factures y ont leur propre **onglet**, et le
+reste figure sous l'onglet **Journal** — vous ne devez donc pas revenir à la liste pour les consulter. Le
+tiroir et la fiche affichent la même chose et fonctionnent de manière identique sur chaque écran ; [Le journal](../journaal/overzicht.md) explique comment.
 
 ## Envoyer un e-mail groupé
 
@@ -88,8 +88,8 @@ retour vers la liste, suivi du type et du nom.
 
 ![La fiche du particulier Alain Adriaenssens sur toute la page : l'onglet Général avec le type, le nom, le prénom, le téléphone, le GSM, la langue des documents et l'adresse principale à gauche, et à droite le numéro interne, la formule d'appel, l'e-mail et le site web, en dessous le large bloc Remarques et une barre avec les boutons Enregistrer, Annuler et Supprimer.](../images/relaties-fiche-fr.png "La fiche complète d'une relation, avec les données générales et les remarques"){ .volle-breedte }
 
-Les données de la relation figurent sur **deux onglets**, à côté desquels se trouvent les onglets du
-[journal](../journaal/overzicht.md). Chacun des deux se termine par un bloc **Remarques** — il s'agit chaque
+Les données de la relation figurent sur **deux onglets**, à côté desquels se trouvent *Dossiers de crédit*,
+*Factures* et l'onglet [Journal](../journaal/overzicht.md). Chacun des deux se termine par un bloc **Remarques** — il s'agit chaque
 fois du même champ — et la barre de boutons reste visible en bas.
 
 ### Onglet « Général » (particulier)

@@ -340,10 +340,11 @@ export const FILMS = [
         fr: "L’onglet Dossiers de crédit affiche chaque demande de ce client, avec le montant et la phase où elle se trouve. De là, vous ouvrez le dossier lui-même." },
 
       { naam: 'journaal', kop: { nl: 'Het journaal', fr: 'Le journal' },
-        doe: async (p) => { await klik(p, tabblad(p, /^Gesprekken|^Appels/i)); await p.waitForTimeout(2000); },
+        // Sinds CreditSoft 1.174.0 (AppKit 0.449.0) staan de journaaltabjes onder één tabblad Journaal: eerst dat openen.
+        doe: async (p) => { await klik(p, tabblad(p, /^(Journaal|Journal)$/i)); await p.waitForTimeout(1600); await klik(p, tabblad(p, /^Gesprekken|^Appels/i)); await p.waitForTimeout(2000); },
         merk: /Loonbriefje opgevraagd/i,
-        nl: 'De laatste tabbladen zijn het journaal: taken, notities, gesprekken, bijlagen en mailverkeer. Wat u met deze klant afsprak, staat hier — en niet in uw hoofd.',
-        fr: "Les derniers onglets forment le journal : tâches, notes, appels, pièces jointes et courrier. Ce que vous avez convenu avec ce client est ici, et pas dans votre tête." },
+        nl: 'Het laatste tabblad is het journaal: taken, notities, gesprekken, bijlagen en mailverkeer, elk onder een eigen tabje. Wat u met deze klant afsprak, staat hier — en niet in uw hoofd.',
+        fr: "Le dernier onglet est le journal : tâches, notes, appels, pièces jointes et courrier, chacun sous son propre sous-onglet. Ce que vous avez convenu avec ce client est ici, et pas dans votre tête." },
 
       { naam: 'samenvoegen', kop: { nl: 'Twee fiches samenvoegen', fr: 'Fusionner deux fiches' },
         doe: async (p) => {
@@ -622,10 +623,12 @@ export const FILMS = [
     uitvoeringen: { handleiding: { stem: true } },
     scenes: [
       { naam: 'waar', kop: { nl: 'Waar het journaal staat', fr: 'Où se trouve le journal' },
-        doe: async (p) => { await p.goto(`${BASIS}/crm/relaties/${ID.relatie}`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(2400); },
+        // Sinds CreditSoft 1.174.0: één tabblad Journaal met de tabjes eronder. De tabjes bestaan pas in de pagina zodra
+        // Journaal open staat — zonder die klik vindt het merkteken Mailverkeer niets.
+        doe: async (p) => { await p.goto(`${BASIS}/crm/relaties/${ID.relatie}`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(2400); await klik(p, tabblad(p, /^(Journaal|Journal)$/i)); await p.waitForTimeout(1600); },
         merk: /Mailverkeer|Courrier/i,
-        nl: 'Onderaan elke fiche staat het journaal: taken, notities, gesprekken, bijlagen, mailverkeer en het logboek. Het hangt aan zes schermen en werkt overal precies hetzelfde.',
-        fr: "Au bas de chaque fiche se trouve le journal : tâches, notes, appels, pièces jointes, courrier et historique. Il est rattaché à six écrans et fonctionne partout exactement de la même manière." },
+        nl: 'Op elke fiche staat het tabblad Journaal: taken, notities, gesprekken, bijlagen, mailverkeer en het logboek, elk onder een eigen tabje. Het werkt overal precies hetzelfde.',
+        fr: "Sur chaque fiche se trouve l’onglet Journal : tâches, notes, appels, pièces jointes, courrier et historique, chacun sous son propre sous-onglet. Il fonctionne partout exactement de la même manière." },
 
       { naam: 'taken', kop: { nl: 'Taken', fr: 'Tâches' },
         doe: async (p) => { await klik(p, tabblad(p, /^Taken|^Tâches/i)); await p.waitForTimeout(2000); },
@@ -1367,6 +1370,7 @@ export const FILMS = [
       { naam: 'verzonden', kop: { nl: 'Wat de klant kreeg', fr: 'Ce que le client a reçu' },
         doe: async (p) => {
           await p.goto(`${BASIS}/crm/relaties/${ID.relatie}`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(2400);
+          await klik(p, tabblad(p, /^(Journaal|Journal)$/i)); await p.waitForTimeout(1600); // Mailverkeer staat onder Journaal (1.174.0)
           await klik(p, tabblad(p, /^Mailverkeer|^Courrier/i)); await p.waitForTimeout(2200);
         },
         merk: /ontvangstbevestiging/i,
