@@ -39,6 +39,8 @@ Cliquez sur une plage libre. Dans la fenêtre qui s'ouvre, vous renseignez :
 
 Sous **Contact** et **Apporteur** figurent deux cases : **Confirmation au contact** et **Confirmation à l'apporteur**. Cochez-en une et enregistrez : la fenêtre de courriel s'ouvre avec la confirmation déjà remplie — le destinataire, l'objet avec la date, et un bloc indiquant quand et où le rendez-vous a lieu.
 
+Si vous choisissez un apporteur qui a coché **E-mails par moment** sur sa fiche (voir [Apporteurs](contributors.fr.md#agrement-et-statut)), **Confirmation à l'apporteur** est déjà cochée. Si vous ne voulez rien lui envoyer cette fois, décochez-la.
+
 Le courriel ne part **pas tout seul**. Vous le relisez, ajoutez éventuellement une phrase, et l'envoyez vous-même. Si vous cochez les deux, le contact vient d'abord et l'apporteur ensuite.
 
 !!! tip "Où retrouver la confirmation envoyée"
