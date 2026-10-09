@@ -4,6 +4,15 @@ Le tableau de bord est votre écran d'accueil. D'un coup d'œil, vous voyez comb
 
 ![Le tableau de bord sur l'onglet Aujourd'hui, à côté de l'onglet Production : en haut le bloc Pour commencer avec les trois premiers réglages, en dessous les quatre indicateurs — Actes avec l'année, À introduire, Introduit et LOA avec la mention « toutes les années » —, puis côte à côte les trois graphiques de 2026 : le volume réalisé par mois, le volume par institution et le volume par responsable ; en bas le début des blocs Délai dépassé et Délai proche.](../images/dashboard-startscherm-fr.png "Le tableau de bord : indicateurs, graphiques de l'année et délais qui arrivent à échéance"){ .volle-breedte }
 
+## Communications du bureau
+
+Si une communication est prévue pour les collaborateurs, elle figure tout en haut, au-dessus des onglets :
+sur *Aujourd'hui* et sur *Production*. Un avertissement se remarque à sa couleur. S'il n'y a rien, il n'y a
+pas de bloc non plus.
+
+Celui qui rédige une communication choisit pour **Pour** les *Collaborateurs* ou *Les deux*. Comment faire et
+combien de temps un message reste affiché, vous le lisez dans [Communications](../beheer/mededelingen.fr.md).
+
 ## Pour commencer
 
 Si votre environnement contient encore des **données d'exemple**, le bloc *Pour commencer* s'affiche en haut

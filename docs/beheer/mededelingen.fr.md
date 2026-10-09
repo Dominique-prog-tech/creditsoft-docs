@@ -1,14 +1,14 @@
 # Communications
 
-Les communications vous permettent de préparer des messages que vos courtiers voient dès qu'ils ouvrent le portail. Ils figurent en haut de leur aperçu, au-dessus des chiffres : ce qu'il faut savoir doit se voir avant de se mettre au travail.
+Les communications vous permettent de préparer des messages pour vos apporteurs, pour vos propres collaborateurs, ou pour les deux. Vos apporteurs les voient en haut de l'aperçu de leur portail, vos collaborateurs en haut du tableau de bord. Chaque fois au-dessus des chiffres : ce qu'il faut savoir doit se voir avant de se mettre au travail.
 
-![L'écran Communications dans CreditSoft : une liste avec les colonnes Titre, Type, Période et En cours, et en haut à droite le bouton Nouvelle communication.](../images/mededelingen-fr.png "La gestion des communications pour le portail des courtiers")
+![L'écran Communications dans CreditSoft : une liste avec les colonnes Titre, Type, Pour, Période et En cours, et en haut à droite le bouton Nouvelle communication.](../images/mededelingen-fr.png "La gestion des communications pour les apporteurs et les collaborateurs")
 
 ## Ouvrir l'écran
 
 Cliquez en bas à gauche sur **Administration**, puis sur la tuile **Communications**, dans le groupe *Communication*.
 
-La liste affiche tous vos messages. La colonne **En cours** indique si un message est visible pour vos courtiers à ce moment.
+La liste affiche tous vos messages. La colonne **Pour** indique à qui s'adresse un message, la colonne **En cours** s'il est visible à ce moment.
 
 ## Rédiger une communication
 
@@ -21,9 +21,20 @@ Cliquez sur **Nouvelle communication**.
 | **À partir du** | Le jour où le message apparaît |
 | **Jusqu'au** | Le dernier jour où il est visible — laissez vide pour le maintenir |
 | **Type** | *Actualité* ou *Avertissement* |
+| **Pour** | Qui voit le message — voir ci-dessous |
 | **Épingler en haut** | Maintient le message au-dessus des autres, quelle que soit la date |
 
-**Le néerlandais est obligatoire, le français non.** Si vous ne remplissez pas le français, le portail revient au néerlandais. Un courtier a donc toujours quelque chose à lire, mais pas toujours dans sa langue. Pour un message qui compte vraiment, remplissez les deux.
+**Le néerlandais est obligatoire, le français non.** Si vous ne remplissez pas le français, l'écran affiche le néerlandais. Le lecteur a donc toujours quelque chose à lire, mais pas toujours dans sa langue. Pour un message qui compte vraiment, remplissez les deux.
+
+### Pour qui
+
+| Choix pour **Pour** | Où le message apparaît |
+|---|---|
+| *Apporteurs* | En haut de l'aperçu de leur portail |
+| *Collaborateurs* | En haut du [tableau de bord](../getting-started/dashboard.fr.md), au-dessus des onglets |
+| *Les deux* | Aux deux endroits |
+
+Pour un nouveau message, rien n'est rempli dans **Pour** : vous le choisissez chaque fois vous-même. Un message interne n'arrive ainsi jamais par erreur chez vos apporteurs.
 
 ### Travailler à l'avance
 
@@ -42,9 +53,10 @@ La différence est une **couleur**, rien de plus. *Actualité* est neutre, *Aver
     **Épingler en haut** ne fonctionne que tant que cela reste l'exception. Si trois messages sont épinglés, plus rien ne l'est.
 
 !!! info "Il n'y a pas d'accusé de lecture"
-    Vous ne voyez pas qui a lu le message, et le courtier ne peut pas le masquer. Ce qui doit disparaître, vous le supprimez ici ou vous le laissez expirer — c'est le seul bouton.
+    Vous ne voyez pas qui a lu le message, et le lecteur ne peut pas le masquer. Ce qui doit disparaître, vous le supprimez ici ou vous le laissez expirer — c'est le seul bouton.
 
 ## Voir aussi
 
 - [Mise en page du portail](../beheer/klantportaal.fr.md)
 - [Le portail de vos courtiers](../portaal/overzicht.fr.md)
+- [Le tableau de bord](../getting-started/dashboard.fr.md)

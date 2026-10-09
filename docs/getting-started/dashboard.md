@@ -4,6 +4,14 @@ Het dashboard is uw startscherm. In één oogopslag ziet u hoeveel dossiers er i
 
 ![Het dashboard op het tabblad Vandaag, naast het tabblad Productie: bovenaan het blok Aan de slag met de drie eerste instellingen, daaronder de vier kerncijfers — Aktes met het jaartal erbij, In te dienen, Ingediend en LOA met de vermelding "alle jaren" —, dan naast elkaar de drie grafieken van 2026: het gerealiseerde volume per maand, het volume per instelling en het volume per verantwoordelijke; onderaan het begin van de blokken Termijn verstreken en Termijn nadert.](../images/dashboard-startscherm.png "Het dashboard: kerncijfers, de grafieken van het jaar en de aflopende termijnen"){ .volle-breedte }
 
+## Mededelingen van het kantoor
+
+Staat er een mededeling voor de medewerkers klaar, dan staat ze helemaal bovenaan, boven de tabbladen: op
+*Vandaag* en op *Productie*. Een waarschuwing valt op door haar kleur. Is er niets, dan is er ook geen blok.
+
+Wie een mededeling schrijft, kiest bij **Voor** de *Medewerkers* of *Allebei*. Hoe dat gaat en hoe lang een
+bericht blijft staan, leest u bij [Mededelingen](../beheer/mededelingen.md).
+
 ## Aan de slag
 
 Draagt uw omgeving nog **voorbeeldgegevens**, dan staat bovenaan het dashboard het blok *Aan de slag*. Het
