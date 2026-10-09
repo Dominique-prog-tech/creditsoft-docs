@@ -64,6 +64,7 @@ De fiche heeft drie blokken.
 - **Opvolging door** — de medewerker die belt. Laat u dit leeg, dan toont de lijst **niemand** in het rood.
 - **Eerste contact** — zodra er contact geweest is, staat hier het tijdstip. Was er nog geen contact, dan staat er een knop **Contact gehad**: één klik zet het tijdstip én de status op *Gecontacteerd*, zonder dat u eerst in een keuzelijst hoeft.
 - **Reden van verlies** — verschijnt zodra u de status op *Verloren* zet.
+- **Maandelijkse opvolgmail** — met het vinkje **Maandelijks opvolgen** krijgt de lead elke maand een korte mail: zie [Maandelijks opvolgen](#maandelijks-opvolgen).
 
 ## Van lead naar klant
 
@@ -134,3 +135,25 @@ Staan er meer dan tien leads in één groep, dan noemt de mail de tien die het l
     Is er niets te melden, dan komt er ook geen mail. Een dagelijks bericht dat elke ochtend *alles in orde* zegt, wordt binnen de week een filterregel — en dan mist u ook de mail die er wél toe doet.
 
 Wat er in die mail staat, past u aan bij de [mailsjablonen](../administration/mail-templates.md), onder het sjabloon *Dagelijks leadoverzicht*.
+
+## Maandelijks opvolgen
+
+Niet elke lead is meteen klaar. Wie zegt *"misschien volgend jaar"*, vergeet u na een paar weken — en hij u ook. Met
+**Maandelijks opvolgen** krijgt zo'n lead elke maand een korte mail met de vraag of hij nog geholpen wil worden.
+
+- Het vinkje staat op de fiche, in het blok **Opvolging**. Het werkt **meteen**, zonder *Bewaren*.
+- Het kan enkel bij een **open** lead (niet gewonnen of verloren) met een **mailadres**.
+- De **eerste mail** vertrekt een maand na het aanvinken, daarna elke maand, telkens om 6 uur 's ochtends. Onder het vinkje
+  staat wanneer de volgende vertrekt.
+- Het **stopt vanzelf** zodra de lead gewonnen of verloren is.
+- Elke mail draagt onderaan een **afmeldlink**. Klikt de lead erop, dan staat op de fiche *Afgemeld op …* en kan het vinkje
+  niet meer aan: een afmelding draait u niet terug.
+- De mail staat daarna bij het **mailverkeer** van de lead.
+
+Het kantoor zet de opvolgmails eerst aan bij **Platformbeheer → Communicatie → Leadmeldingen**, blok *Maandelijkse
+opvolgmail aan leads*. Staat dat uit, dan blijft het vinkje op de fiche bewaard, maar vertrekt er niets — de fiche zegt
+dat er dan bij.
+
+De tekst past u aan bij de [mailsjablonen](../administration/mail-templates.md), onder het sjabloon *Maandelijkse
+opvolgmail aan een lead*. Haalt u de afmeldlink uit de tekst, dan zet CreditSoft ze er zelf weer onder: een opvolgmail
+vertrekt nooit zonder.

@@ -64,6 +64,7 @@ La fiche comporte trois blocs.
 - **Suivi par** — le collaborateur qui appelle. Si vous laissez ce champ vide, la liste affiche **personne** en rouge.
 - **Premier contact** — dès qu'il y a eu contact, l'heure s'affiche ici. S'il n'y a pas encore eu de contact, un bouton **Contact établi** apparaît : un clic fixe l'heure *et* met le statut sur *Contacté*, sans devoir passer par une liste de choix.
 - **Motif de la perte** — apparaît dès que vous mettez le statut sur *Perdu*.
+- **E-mail de suivi mensuel** — avec la case **Suivre chaque mois**, le lead reçoit chaque mois un court e-mail : voir [Suivre chaque mois](#suivre-chaque-mois).
 
 ## Du lead au client
 
@@ -134,3 +135,26 @@ Si un groupe compte plus de dix leads, l'e-mail cite les dix qui attendent le pl
     S'il n'y a rien à signaler, aucun e-mail ne part. Un avis quotidien qui répète chaque matin que *tout va bien* devient une règle de filtrage en une semaine — et vous manquez alors aussi le message qui compte vraiment.
 
 Le contenu de cet e-mail se modifie dans les [modèles d'e-mail](../administration/mail-templates.md), sous le modèle *Aperçu quotidien des leads*.
+
+## Suivre chaque mois
+
+Tous les leads ne sont pas prêts tout de suite. Celui qui dit *« peut-être l'an prochain »*, vous l'oubliez après quelques
+semaines — et lui vous oublie aussi. Avec **Suivre chaque mois**, un tel lead reçoit chaque mois un court e-mail lui
+demandant s'il souhaite encore être aidé.
+
+- La case se trouve sur la fiche, dans le bloc **Suivi**. Elle agit **immédiatement**, sans *Enregistrer*.
+- Elle n'est possible que pour un lead **ouvert** (ni gagné ni perdu) avec une **adresse e-mail**.
+- Le **premier e-mail** part un mois après avoir coché, ensuite chaque mois, toujours à 6 h du matin. Sous la case figure
+  la date du prochain.
+- Cela **s'arrête de lui-même** dès que le lead est gagné ou perdu.
+- Chaque e-mail porte en bas un **lien de désinscription**. Si le lead clique dessus, la fiche indique *Désinscrit le …* et
+  la case ne peut plus être cochée : une désinscription ne se reprend pas.
+- L'e-mail figure ensuite dans le **courrier** du lead.
+
+Le bureau active d'abord les e-mails de suivi sous **Administration → Communication → Notifications de leads**, bloc
+*E-mail de suivi mensuel aux leads*. Si c'est désactivé, la case sur la fiche reste enregistrée, mais rien ne part — la
+fiche le signale alors.
+
+Le texte se modifie dans les [modèles d'e-mail](../administration/mail-templates.md), sous le modèle *E-mail de suivi
+mensuel à un lead*. Si vous retirez le lien de désinscription du texte, CreditSoft le remet lui-même en dessous : un
+e-mail de suivi ne part jamais sans lui.
