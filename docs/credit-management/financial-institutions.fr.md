@@ -53,6 +53,9 @@ La fiche se compose de trois blocs, avec en bas une barre de boutons qui reste v
     commune — avec la croix ou avec **Retour arrière** sur le texte sélectionné — le code postal est vidé
     lui aussi. Les deux champs restent ainsi toujours cohérents.
 
+    Pour une **adresse à l'étranger**, avec un autre pays que la Belgique, le code postal est un simple champ de
+    texte : saisissez-le tel quel (par exemple *8121 DM*).
+
 ### Commissionnement par défaut
 
 Vous y définissez le **régime de commission par défaut** applicable à ce prêteur. Vous choisissez **au maximum un** des deux types (ils sont mutuellement exclusifs) :

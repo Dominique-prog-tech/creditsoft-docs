@@ -147,6 +147,9 @@ Ce champ est **obligatoire**. Si vous le laissez vide, le programme ne sait pas 
     postal, la **commune est toujours complétée**. Si vous videz la commune — avec la croix ou avec **Retour
     arrière** sur le texte sélectionné — le code postal est vidé lui aussi.
 
+    Pour une **adresse à l'étranger**, avec un autre pays que la Belgique, le code postal est un simple champ de
+    texte : saisissez-le tel quel (par exemple *8121 DM*).
+
 ## Documents demandés
 
 La fiche comporte l'onglet **Demandés** : les pièces que vous attendez de cette personne. Vous

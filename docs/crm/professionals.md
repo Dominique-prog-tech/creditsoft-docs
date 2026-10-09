@@ -59,6 +59,9 @@ De fiche bestaat uit drie blokken, met onderaan een knoppenbalk die in beeld bli
     ingevuld**, ook als er al iets stond. Maakt u de gemeente leeg — met het kruisje, of met **Backspace**
     op de geselecteerde tekst — dan wordt de postcode mee leeggemaakt.
 
+    Bij een **buitenlands adres**, met een ander land dan België, is de postcode een gewoon tekstvak: u typt ze
+    zoals ze is (bijvoorbeeld *8121 DM*).
+
 ### Facturatie
 
 Een apart **facturatiecontact** en **facturatie-e-mailadres**, bij het adres uit het blok *Algemeen*.

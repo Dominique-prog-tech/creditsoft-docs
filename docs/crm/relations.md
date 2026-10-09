@@ -144,6 +144,9 @@ Dit veld is **verplicht**. Laat u het leeg, dan weet het programma niet welke sj
     ingevuld**. Maakt u de gemeente leeg — met het kruisje, of met **Backspace** op de geselecteerde tekst —
     dan wordt de postcode mee leeggemaakt.
 
+    Bij een **buitenlands adres**, met een ander land dan België, is de postcode een gewoon tekstvak: u typt ze
+    zoals ze is (bijvoorbeeld *8121 DM*).
+
 ## Gevraagde documenten
 
 Op de fiche staat het tabblad **Gevraagd**: de stukken die u van deze persoon verwacht. U hebt

@@ -37,6 +37,9 @@ Saisissez votre **numéro de TVA / d'entreprise** et cliquez sur **Récupérer**
     donc chercher sur les deux. Lorsque vous choisissez un code postal, la **commune est complétée**. Si vous
     videz la commune — avec la croix ou avec **Retour arrière** — le code postal est vidé lui aussi.
 
+    Pour une **adresse à l'étranger**, avec un autre pays que la Belgique, le code postal est un simple champ de
+    texte : saisissez-le tel quel (par exemple *8121 DM*).
+
 ## Enregistrer
 
 Cliquez sur **Enregistrer** en bas — ce bouton reste visible pendant que vous faites défiler l'écran. Si vous saisissez une adresse e-mail, elle doit avoir une forme

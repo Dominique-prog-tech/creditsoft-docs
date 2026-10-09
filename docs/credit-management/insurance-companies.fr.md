@@ -54,6 +54,9 @@ La fiche se compose de deux blocs, avec en bas une barre de boutons qui reste vi
     commune — avec la croix ou avec **Retour arrière** sur le texte sélectionné — le code postal est vidé
     lui aussi. Les deux champs restent ainsi toujours cohérents.
 
+    Pour une **adresse à l'étranger**, avec un autre pays que la Belgique, le code postal est un simple champ de
+    texte : saisissez-le tel quel (par exemple *8121 DM*).
+
 ### Remarques
 
 En bas se trouve un large champ **Remarques**, sur toute la largeur de la fiche, pour vos notes libres sur

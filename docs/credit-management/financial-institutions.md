@@ -52,6 +52,9 @@ De fiche bestaat uit drie blokken, met onderaan een knoppenbalk die in beeld bli
     op de geselecteerde tekst — dan wordt de postcode mee leeggemaakt. Zo blijven de twee velden altijd
     bij elkaar horen.
 
+    Bij een **buitenlands adres**, met een ander land dan België, is de postcode een gewoon tekstvak: u typt ze
+    zoals ze is (bijvoorbeeld *8121 DM*).
+
 ### Standaard commissionering
 
 Hier legt u de **standaard commissieregeling** vast die voor deze kredietverstrekker geldt. U kiest **maximaal één** van beide types (ze sluiten elkaar uit):

@@ -60,6 +60,9 @@ La fiche se compose de trois blocs, avec en bas une barre de boutons qui reste v
     postal, la **commune est toujours complétée**, même si un nom s'y trouvait déjà. Si vous videz la commune —
     avec la croix ou avec **Retour arrière** sur le texte sélectionné — le code postal est vidé lui aussi.
 
+    Pour une **adresse à l'étranger**, avec un autre pays que la Belgique, le code postal est un simple champ de
+    texte : saisissez-le tel quel (par exemple *8121 DM*).
+
 ### Facturation
 
 Un **contact de facturation** et une **adresse e-mail de facturation** distincts, liés à l'adresse du bloc

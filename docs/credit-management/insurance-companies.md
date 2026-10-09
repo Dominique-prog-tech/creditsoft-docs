@@ -53,6 +53,9 @@ De fiche bestaat uit twee blokken, met onderaan een knoppenbalk die in beeld bli
     op de geselecteerde tekst — dan wordt de postcode mee leeggemaakt. Zo blijven de twee velden altijd
     bij elkaar horen.
 
+    Bij een **buitenlands adres**, met een ander land dan België, is de postcode een gewoon tekstvak: u typt ze
+    zoals ze is (bijvoorbeeld *8121 DM*).
+
 ### Opmerkingen
 
 Onderaan staat een breed veld **Opmerkingen** over de volle breedte van de fiche, voor vrije notities over

@@ -37,6 +37,9 @@ Vul uw **BTW / ondernemingsnummer** in en klik op **Ophalen**. De adresgegevens 
     zoeken. Kiest u een postcode, dan wordt de **gemeente mee ingevuld**. Maakt u de gemeente leeg — met het
     kruisje of met **Backspace** — dan wordt de postcode mee leeggemaakt.
 
+    Bij een **buitenlands adres**, met een ander land dan België, is de postcode een gewoon tekstvak: u typt ze
+    zoals ze is (bijvoorbeeld *8121 DM*).
+
 ## Bewaren
 
 Klik onderaan op **Bewaren** — die knop blijft in beeld terwijl u door het scherm scrolt. Vult u een e-mailadres in, dan moet dat een geldige vorm hebben. Het
