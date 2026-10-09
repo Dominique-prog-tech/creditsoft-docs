@@ -62,7 +62,7 @@ Wie deze aanbrenger is en welke rol hij speelt: **type aanbrenger** (hoofd, kant
 
 ### Erkenning en status
 
-Mag deze aanbrenger bemiddelen, en loopt de samenwerking nog? Het **FSMA-nr.** met een vinkje of de inschrijving in orde is, en of hij **actief** is — met de datum vanaf wanneer, of **gestopt** met de datum sinds wanneer. Met **Geen groepsmail** krijgt deze aanbrenger geen [groepsmails](../journaal/mailverkeer.md#een-groepsmail); het vinkje staat ook aan wanneer hij zelf op de afmeldlink onderaan een groepsmail klikte, met de datum erbij.
+Mag deze aanbrenger bemiddelen, en loopt de samenwerking nog? Het **FSMA-nr.** met een vinkje of de inschrijving in orde is, en of hij **actief** is — met de datum vanaf wanneer, of **gestopt** met de datum sinds wanneer. Met **Geen groepsmail** krijgt deze aanbrenger geen [groepsmails](../journaal/mailverkeer.md#een-groepsmail); het vinkje staat ook aan wanneer hij zelf op de afmeldlink onderaan een groepsmail klikte, met de datum erbij. Met **Mails bij momenten** krijgt hij de [mails per moment](../beheer/mail-momenten.md#naar-de-aanbrenger) die naar de aanbrenger gaan — bijvoorbeeld wanneer zijn dossier ingediend is of de datum akte gekend is. Dat vinkje staat standaard uit.
 
 ### Contact en adres
 

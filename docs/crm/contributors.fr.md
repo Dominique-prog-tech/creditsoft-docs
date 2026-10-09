@@ -61,7 +61,7 @@ Qui est cet apporteur et quel rôle il joue : **type d'apporteur** (principal, b
 
 ### Agrément et statut
 
-Cet apporteur peut-il exercer, et la collaboration est-elle toujours en cours ? Le **numéro FSMA** avec une case indiquant si l'inscription est en ordre, et s'il est **actif** — avec la date depuis laquelle — ou **arrêté**, avec la date correspondante. Avec **Pas d'e-mail groupé**, cet apporteur ne reçoit pas d'[e-mails groupés](../journaal/mailverkeer.md#un-e-mail-groupe) ; la case est aussi cochée lorsqu'il a cliqué lui-même sur le lien de désinscription en bas d'un e-mail groupé, avec la date.
+Cet apporteur peut-il exercer, et la collaboration est-elle toujours en cours ? Le **numéro FSMA** avec une case indiquant si l'inscription est en ordre, et s'il est **actif** — avec la date depuis laquelle — ou **arrêté**, avec la date correspondante. Avec **Pas d'e-mail groupé**, cet apporteur ne reçoit pas d'[e-mails groupés](../journaal/mailverkeer.md#un-e-mail-groupe) ; la case est aussi cochée lorsqu'il a cliqué lui-même sur le lien de désinscription en bas d'un e-mail groupé, avec la date. Avec **E-mails par moment**, il reçoit les [e-mails par moment](../beheer/mail-momenten.fr.md#a-lapporteur) destinés à l'apporteur — par exemple lorsque son dossier est introduit ou que la date de l'acte est connue. Cette case est décochée par défaut.
 
 ### Contact et adresse
 
