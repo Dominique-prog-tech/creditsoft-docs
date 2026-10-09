@@ -119,7 +119,8 @@ contact** et la date du premier contact. S'y ajoute **Source (lead)** : d'où vi
 
 Le bouton **Plus de champs** déploie le reste : pays de naissance, sexe, langue, **carte d'identité** avec ses
 dates de validité, régime et date de mariage, **partenaire**, enfants et personnes à charge, employeur, en
-service depuis, type de contrat et fonction. **Moins de champs** les replie.
+service depuis, type de contrat, fonction et, pour un indépendant, l'**activité**, la date de début et le
+**numéro d'entreprise**. **Moins de champs** les replie.
 
 Le **responsable** est le collègue qui suit cette relation. Vous choisissez parmi les collaborateurs auxquels
 vous pouvez attribuer du travail. Si la relation vient de l'ancien CreditSoft, la conversion reprend le collègue

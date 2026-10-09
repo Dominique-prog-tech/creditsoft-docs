@@ -116,7 +116,8 @@ datum van het eerste contact. Daar staat ook **Bron (lead)** bij: waar deze pros
 
 Met de knop **Meer velden** klapt de rest open: geboorteland, geslacht, taal, **identiteitskaart** met
 geldigheidsdata, huwelijksstelsel en -datum, **partner**, kinderen en personen ten laste, werkgever, in dienst
-sinds, contracttype en functie. **Minder velden** klapt ze weer dicht.
+sinds, contracttype, functie, en voor een zelfstandige de **activiteit**, de startdatum en het
+**ondernemingsnummer**. **Minder velden** klapt ze weer dicht.
 
 De **verantwoordelijke** is de collega die deze relatie opvolgt. U kiest uit de medewerkers aan wie u werk
 mag toewijzen. Komt de relatie uit de vorige CreditSoft, dan neemt de conversie de collega mee aan wie ze daar
