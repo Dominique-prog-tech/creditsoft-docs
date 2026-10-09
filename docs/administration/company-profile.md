@@ -12,7 +12,7 @@ Klik in de zijbalk op **Platformbeheer** en daarna op de tegel **Bedrijfsfiche**
 
 ## De gegevens
 
-![De bedrijfsfiche van CreditSoft: het blok Identiteit met de naam, het btw-nummer met de knop Ophalen en het FSMA-nr., daarnaast Contact met telefoon, e-mail en website, daaronder Adres en Bank met IBAN, BIC en rekeningnummer, en onderaan Documenten en huisstijl met het sleepvak voor het logo.](../images/bedrijfsfiche.png "De gegevens van het eigen kantoor, zoals ze op documenten en in mails verschijnen"){ .volle-breedte }
+![De bedrijfsfiche van CreditSoft: het blok Identiteit met de naam, het btw-nummer met de knop Ophalen en het FSMA-nr., daarnaast Contact met telefoon, e-mail en website, daaronder Adres en Bank met IBAN, BIC en rekeningnummer, en onderaan Documenten en huisstijl met de sleepvakken voor het logo en de foto van het aanmeldscherm.](../images/bedrijfsfiche.png "De gegevens van het eigen kantoor, zoals ze op documenten en in mails verschijnen"){ .volle-breedte }
 
 De velden staan gegroepeerd in blokken:
 
@@ -30,7 +30,7 @@ Vul uw **BTW / ondernemingsnummer** in en klik op **Ophalen**. De adresgegevens 
 
 **Sleep** een afbeelding naar het logovak of **klik** erop om een bestand te kiezen (PNG of JPG, max 4 MB). Met **Verwijderen** haalt u het logo weer weg.
 
-![Het blok Documenten en huisstijl met eronder het label Logo en een gestippeld sleepvak met een pijl omhoog, de tekst "Sleep een afbeelding hierheen" en daaronder "of klik om te selecteren · PNG of JPG, max 4 MB".](../images/bedrijfsfiche-logo.png "Het logovak: slepen of klikken om een bestand te kiezen")
+![Het blok Documenten en huisstijl: het label Logo met het huidige logo en Verwijderen, een gestippeld sleepvak met een pijl omhoog, de tekst "Sleep een afbeelding hierheen" en daaronder "of klik om te selecteren · PNG of JPG, max 4 MB"; daaronder Foto aanmeldscherm met een tweede sleepvak voor "een liggende foto, PNG of JPG, max 8 MB" en de uitleg dat de foto links op het aanmeldscherm verschijnt.](../images/bedrijfsfiche-logo.png "Het logo en de foto van het aanmeldscherm: slepen of klikken om een bestand te kiezen"){ .eigen-breedte style="width:492px" }
 
 ## Foto op het aanmeldscherm
 

@@ -12,7 +12,7 @@ Dans la barre latérale, cliquez sur **Administration**, puis sur la tuile **Fic
 
 ## Les données
 
-![La fiche d'entreprise de CreditSoft : le bloc Identité avec le nom, le numéro de TVA et le bouton Récupérer ainsi que le numéro FSMA, à côté Contact avec le téléphone, l'e-mail et le site web, en dessous Adresse et Banque avec l'IBAN, le BIC et le numéro de compte, et en bas Documents et charte graphique avec la zone de dépôt du logo.](../images/bedrijfsfiche-fr.png "Les données du bureau, telles qu'elles apparaissent sur les documents et dans les e-mails"){ .volle-breedte }
+![La fiche d'entreprise de CreditSoft : le bloc Identité avec le nom, le numéro de TVA et le bouton Récupérer ainsi que le numéro FSMA, à côté Contact avec le téléphone, l'e-mail et le site web, en dessous Adresse et Banque avec l'IBAN, le BIC et le numéro de compte, et en bas Documents et charte graphique avec les zones de dépôt du logo et de la photo de l'écran de connexion.](../images/bedrijfsfiche-fr.png "Les données du bureau, telles qu'elles apparaissent sur les documents et dans les e-mails"){ .volle-breedte }
 
 Les champs sont regroupés en blocs :
 
@@ -30,7 +30,7 @@ Saisissez votre **numéro de TVA / d'entreprise** et cliquez sur **Récupérer**
 
 **Glissez** une image dans la zone du logo ou **cliquez** dessus pour choisir un fichier (PNG ou JPG, max. 4 Mo). Le bouton **Supprimer** retire le logo.
 
-![Le bloc Documents et identité visuelle avec, en dessous, l'intitulé Logo et une zone en pointillés portant une flèche vers le haut, le texte « Glissez une image ici » et, en dessous, « ou cliquez pour sélectionner · PNG ou JPG, max. 4 Mo ».](../images/bedrijfsfiche-logo-fr.png "La zone du logo : glisser ou cliquer pour choisir un fichier")
+![Le bloc Documents et charte graphique : l'intitulé Logo avec le logo actuel et Supprimer, une zone en pointillés portant une flèche vers le haut, le texte « Glissez une image ici » et, en dessous, « ou cliquez pour sélectionner · PNG ou JPG, max. 4 Mo » ; en dessous, Photo de l'écran de connexion avec une deuxième zone pour « une photo en paysage, PNG ou JPG, max 8 Mo » et l'explication que la photo apparaît à gauche de l'écran de connexion.](../images/bedrijfsfiche-logo-fr.png "Le logo et la photo de l'écran de connexion : glisser ou cliquer pour choisir un fichier"){ .eigen-breedte style="width:492px" }
 
 ## Photo de l'écran de connexion
 
