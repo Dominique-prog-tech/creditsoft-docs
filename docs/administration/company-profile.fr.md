@@ -20,7 +20,7 @@ Les champs sont regroupés en blocs :
 - **Adresse** — rue, numéro, boîte, code postal, commune, pays.
 - **Contact** — téléphone, e-mail, site web.
 - **Banque** — IBAN, BIC et numéro de compte (avec un second compte si nécessaire).
-- **Documents et charte graphique** — votre logo.
+- **Documents et charte graphique** — votre logo et la photo de l'écran de connexion.
 
 ## Récupérer les données depuis la BCE
 
@@ -31,6 +31,22 @@ Saisissez votre **numéro de TVA / d'entreprise** et cliquez sur **Récupérer**
 **Glissez** une image dans la zone du logo ou **cliquez** dessus pour choisir un fichier (PNG ou JPG, max. 4 Mo). Le bouton **Supprimer** retire le logo.
 
 ![Le bloc Documents et identité visuelle avec, en dessous, l'intitulé Logo et une zone en pointillés portant une flèche vers le haut, le texte « Glissez une image ici » et, en dessous, « ou cliquez pour sélectionner · PNG ou JPG, max. 4 Mo ».](../images/bedrijfsfiche-logo-fr.png "La zone du logo : glisser ou cliquer pour choisir un fichier")
+
+## Photo de l'écran de connexion
+
+Sous le logo figure une deuxième zone : **Photo de l'écran de connexion**. La photo apparaît à gauche de l'écran de
+connexion, sous le nom CreditSoft, avec un voile sombre pour que le texte reste lisible. Choisissez de préférence une photo
+en paysage (PNG ou JPG, max 8 Mo). Avec **Supprimer**, l'écran de connexion redevient bleu.
+
+L'écran de connexion est le même pour tous les bureaux : il ne sait qui arrive qu'après une première connexion. C'est
+pourquoi :
+
+- Sur un appareil où quelqu'un de votre bureau **s'est déjà connecté**, l'écran de connexion affiche la photo de lui-même.
+- Sur un **nouvel appareil**, ou pour un **favori**, utilisez **votre propre adresse de connexion**. Elle figure sous la photo,
+  dès qu'il y a une photo. Qui l'ouvre voit immédiatement votre photo.
+
+L'adresse de connexion contient une longue clé illisible et non le nom de votre bureau. Elle n'ouvre que la bonne photo :
+chacun se connecte comme toujours avec son propre nom d'utilisateur et son mot de passe.
 
 !!! tip "Code postal et commune"
     Tapez dans le champ **Code postal** : la liste affiche à la fois le code postal et la commune, vous pouvez

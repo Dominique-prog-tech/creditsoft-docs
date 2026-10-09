@@ -20,7 +20,7 @@ De velden staan gegroepeerd in blokken:
 - **Adres** — straat, nummer, bus, postcode, gemeente, land.
 - **Contact** — telefoon, e-mail, website.
 - **Bank** — IBAN, BIC en rekeningnummer (met een tweede rekening indien nodig).
-- **Documenten & huisstijl** — uw logo.
+- **Documenten & huisstijl** — uw logo en de foto van het aanmeldscherm.
 
 ## Gegevens ophalen uit de KBO
 
@@ -31,6 +31,21 @@ Vul uw **BTW / ondernemingsnummer** in en klik op **Ophalen**. De adresgegevens 
 **Sleep** een afbeelding naar het logovak of **klik** erop om een bestand te kiezen (PNG of JPG, max 4 MB). Met **Verwijderen** haalt u het logo weer weg.
 
 ![Het blok Documenten en huisstijl met eronder het label Logo en een gestippeld sleepvak met een pijl omhoog, de tekst "Sleep een afbeelding hierheen" en daaronder "of klik om te selecteren · PNG of JPG, max 4 MB".](../images/bedrijfsfiche-logo.png "Het logovak: slepen of klikken om een bestand te kiezen")
+
+## Foto op het aanmeldscherm
+
+Onder het logo staat een tweede vak: **Foto aanmeldscherm**. De foto verschijnt links op het aanmeldscherm, onder de naam
+CreditSoft, met een donkere laag erover zodat de tekst leesbaar blijft. Kies bij voorkeur een liggende foto (PNG of JPG,
+max 8 MB). Met **Verwijderen** wordt het aanmeldscherm weer blauw.
+
+Het aanmeldscherm is één scherm voor alle kantoren: het weet pas wie er komt na een eerste aanmelding. Daarom:
+
+- Op een toestel waar iemand van uw kantoor **zich al eens aanmeldde**, toont het aanmeldscherm de foto vanzelf.
+- Op een **nieuw toestel**, of voor een **bladwijzer**, gebruikt u **uw eigen aanmeldadres**. Het staat onder de foto, zodra
+  er een foto is. Wie het opent, ziet meteen uw foto.
+
+Het aanmeldadres bevat een lange, onleesbare sleutel en niet de naam van uw kantoor. Het opent enkel de juiste foto: wie zich
+aanmeldt, doet dat zoals altijd met zijn eigen gebruikersnaam en wachtwoord.
 
 !!! tip "Postcode en gemeente"
     Typ in het veld **Postcode**: de keuzelijst toont zowel de postcode als de gemeente, dus u kunt op beide
