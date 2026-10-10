@@ -145,6 +145,8 @@ Niet elke lead is meteen klaar. Wie zegt *"misschien volgend jaar"*, vergeet u n
 - Het kan enkel bij een **open** lead (niet gewonnen of verloren) met een **mailadres**.
 - De **eerste mail** vertrekt een maand na het aanvinken, daarna elke maand, telkens om 6 uur 's ochtends. Onder het vinkje
   staat wanneer de volgende vertrekt.
+- Een reeks loopt **hoogstens twaalf maanden**. Na de laatste mail gaat het vinkje vanzelf uit, en onder het vinkje staat
+  wanneer die laatste vertrok. Wilt u de lead daarna verder opvolgen, vink dan opnieuw aan: zo begint een nieuwe reeks.
 - Het **stopt vanzelf** zodra de lead gewonnen of verloren is, en ook wanneer een opvolgmail **terugkwam** omdat het adres
   niet bestaat: dan gaat het vinkje uit.
 - Elke mail draagt onderaan een **afmeldlink**. Klikt de lead erop, dan staat op de fiche *Afgemeld op …* en kan het vinkje

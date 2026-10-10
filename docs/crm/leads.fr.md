@@ -146,6 +146,8 @@ demandant s'il souhaite encore être aidé.
 - Elle n'est possible que pour un lead **ouvert** (ni gagné ni perdu) avec une **adresse e-mail**.
 - Le **premier e-mail** part un mois après avoir coché, ensuite chaque mois, toujours à 6 h du matin. Sous la case figure
   la date du prochain.
+- Une série dure **douze mois au maximum**. Après le dernier e-mail, la case se décoche d'elle-même, et la date de ce
+  dernier figure sous la case. Si vous souhaitez continuer à suivre le lead, recochez la case : une nouvelle série commence.
 - Cela **s'arrête de lui-même** dès que le lead est gagné ou perdu, et aussi lorsqu'un e-mail de suivi **est revenu** parce
   que l'adresse n'existe pas : la case se décoche alors.
 - Chaque e-mail porte en bas un **lien de désinscription**. Si le lead clique dessus, la fiche indique *Désinscrit le …* et
