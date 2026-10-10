@@ -75,6 +75,21 @@ Sous **Paramètres** à droite, vous réglez ce que voit le visiteur :
 !!! tip "Une boîte partagée comme adresse de notification"
     `info@bureau.be` continue de fonctionner quand quelqu'un est en congé. Un seul nom signifie que personne ne regarde pendant deux semaines.
 
+### Questionnaire préalable
+
+Sous les champs de la page de réservation, un bureau peut composer son **propre questionnaire**, que le visiteur remplit
+après sa réservation. Il fonctionne comme [le questionnaire de *Vos pages publiques*](../beheer/kantoorprofiel.md#le-questionnaire) :
+les mêmes questions, les mêmes types de réponse, le même aperçu. Si vous laissez ce bloc vide, les questions que vous y
+avez définies s'appliquent — et s'il n'y en a pas non plus, rien n'est demandé.
+
+L'e-mail de confirmation renvoie au questionnaire par une **phrase et un bouton**. Sous les questions, vous lisez lesquels :
+*L'e-mail de confirmation ajoute : …*. CreditSoft reprend pour cela la phrase que vous avez écrite dans **Vos pages publiques**. S'il
+n'y en a pas, une phrase standard est utilisée : *« Vous souhaitez préparer votre rendez-vous ? Remplissez ce court questionnaire au
+préalable. »*, avec le bouton **Remplir le questionnaire**. Si ce bureau avait déjà sa propre phrase, elle est conservée.
+
+Si la page de réservation ne peut pas être enregistrée parce que le questionnaire pose problème, l'écran indique ce qui ne
+va pas.
+
 ## Désactiver à nouveau
 
 En bas des **Paramètres** figure **Désactiver**. Le lien cesse alors de fonctionner.

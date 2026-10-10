@@ -75,6 +75,20 @@ Onder **Instellingen** rechts stelt u in wat de bezoeker te zien krijgt:
 !!! tip "Een gedeelde bus als meldingsadres"
     `info@kantoor.be` blijft werken wanneer iemand met verlof is. Eén naam betekent dat er twee weken lang niemand kijkt.
 
+### Vragenlijst vooraf
+
+Onder de velden van de boekingspagina kan een kantoor een **eigen vragenlijst** samenstellen, die de bezoeker na zijn
+boeking invult. Dat werkt zoals [de vragenlijst bij *Uw publieke pagina's*](../beheer/kantoorprofiel.md#de-vragenlijst): dezelfde
+vragen, dezelfde soorten antwoorden, hetzelfde voorbeeld. Laat u dit leeg, dan gelden de vragen die u daar instelde —
+en staan die er ook niet, dan wordt er niets gevraagd.
+
+De bevestigingsmail verwijst naar de vragenlijst met een **zin en een knop**. Onder de vragen leest u welke: *In de
+bevestigingsmail staat erbij: …*. CreditSoft neemt daarvoor de zin die u bij **Uw publieke pagina's** schreef. Staat daar geen zin,
+dan komt er een standaardzin: *"Wilt u uw afspraak voorbereiden? Vul vooraf deze korte vragenlijst in."*, met de knop
+**Vragenlijst invullen**. Had dit kantoor al een eigen zin, dan blijft die staan.
+
+Kan de boekingspagina niet bewaard worden omdat er iets schort aan de vragenlijst, dan zegt het scherm wat er scheelt.
+
 ## Weer uitzetten
 
 Onderaan **Instellingen** staat **Uitzetten**. De link werkt daarna niet meer.
