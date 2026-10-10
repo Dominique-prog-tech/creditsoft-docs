@@ -106,6 +106,15 @@ gewone taal en krijgt een tabel terug. Zes vragen zijn voorbereid:
     Deze zes vragen lopen over precies dezelfde berekening als de rapporten onder **Lijsten**. Ze geven dus
     altijd hetzelfde getal — anders zou u niet weten welk van de twee u moet geloven.
 
+## Meerdere fiches naast elkaar
+
+Wilt u twee dossiers of fiches tegelijk open houden, open CreditSoft dan in een tweede **tabblad van uw browser**
+(rechtsklik op het tabblad en dupliceer het) en ga daar naar de andere fiche. Elk tabblad houdt zijn eigen scherm en
+zijn eigen niet-bewaarde invoer.
+
+In het tabblad staat eerst de **naam of het nummer** van de fiche en dan pas de soort — *Jan Peeters — Particulier*,
+*2026-0153 — Dossier* — zodat u ook met veel tabbladen open ziet welke fiche waar staat.
+
 ## Weggaan zonder te bewaren
 
 Hebt u op een fiche iets gewijzigd en nog niet bewaard, en klikt u op een ander scherm — in het menu links, op de

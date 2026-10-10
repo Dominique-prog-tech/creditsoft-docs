@@ -108,6 +108,15 @@ question en langage courant et recevez un tableau. Six questions sont préparée
     Ces six questions utilisent exactement le même calcul que les rapports sous **Listes**. Elles donnent donc
     toujours le même chiffre — sinon, vous ne sauriez auquel des deux vous fier.
 
+## Plusieurs fiches côte à côte
+
+Pour garder deux dossiers ou deux fiches ouverts en même temps, ouvrez CreditSoft dans un deuxième **onglet de votre
+navigateur** (clic droit sur l'onglet, puis dupliquez-le) et rendez-vous-y sur l'autre fiche. Chaque onglet garde son
+propre écran et ses propres données non enregistrées.
+
+L'onglet affiche d'abord le **nom ou le numéro** de la fiche, puis son type — *Jan Peeters — Particulier*,
+*2026-0153 — Dossier* — de sorte que vous voyez quelle fiche se trouve où, même avec beaucoup d'onglets ouverts.
+
 ## Quitter sans enregistrer
 
 Si vous avez modifié quelque chose sur une fiche sans l'enregistrer et que vous cliquez vers un autre écran — dans le
