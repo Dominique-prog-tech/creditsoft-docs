@@ -270,7 +270,22 @@ const SCHOTEN = [
   ['commissieschemas',             '/commissie/schemas'],
   ['fiche-281-50',                 '/commissie/fiche-28150'],
   ['borderel-overzicht',           '/commissie/borderel'],
-  ['online-afspraken-agenda',      '/crm/online-afspraken'],
+  // ⚠️ ÉÉN WEEK TERUG, EN TELLEN WAT ER STAAT. De klok van de ronde staat op 01/09/2026; de boekingen van het
+  // demokantoor staan op dinsdag 25/08, in de week ervóór. Van 31/08 tot 10/10/2026 toonde dit beeld een LEGE
+  // agenda — twaalf rondes lang "geschreven mét zijn belofte", want de belofte was afgeleid uit het bijschrift
+  // en ingekort tot de schermtitel. Het bijschrift belooft een geboekt én een vrij moment: dát tellen we hier,
+  // op de blokken zelf en niet op het woord "Vrij" (dat staat ook in de legende onder de agenda).
+  // De pijl zoeken we op haar icoon: haar titel is per taal anders ("Vorige Work Week").
+  ['online-afspraken-agenda',      '/crm/online-afspraken', async p => {
+      await p.locator('.dxbl-toolbar button:has(use[href$="#dx-chevron-left"]):visible').first().click();
+      await p.waitForTimeout(3000);
+      const blokken = await p.evaluate(() => [...document.querySelectorAll('.dxbl-sc-apt')]
+        .filter(a => a.getBoundingClientRect().width > 0).map(a => a.innerText.trim()));
+      const vrij = blokken.filter(t => /^(Vrij|Libre)\b/.test(t)).length;
+      if (vrij === 0 || vrij === blokken.length)
+        throw new Error(`de agenda toont ${blokken.length} blok(ken), waarvan ${vrij} vrij — het bijschrift `
+          + 'belooft een geboekt én een vrij moment. Haalt het scherm de blokken nog op met de klok van de ronde?');
+  }],
   ['afspraken-week',               '/crm/afspraken'],
   ['mijn-gegevens',                '/account/mijn-gegevens'],
   ['wachtwoord',                   '/account/wachtwoord-wijzigen'],
@@ -943,6 +958,8 @@ const VERWACHT = {
   // ⚠️ Niet op "schema" — dat staat al in de paginatitel en bewijst enkel dat je op het juiste TABBLAD zit.
   // Herberekenen verschijnt alleen bij een ACTIEF schema, en dát is wat het bijschrift belooft.
   'commissieschemas-journaal':  /Herberekenen|Recalculer/i,
+  // Een VRIJ BLOK met zijn uur. "Vrij" alleen staat ook in de legende, en die staat er ook bij een lege agenda.
+  'online-afspraken-agenda':    /(Vrij|Libre)\s+\d\d:\d\d\s*-\s*\d\d:\d\d/,
   'online-afspraken-instellingen': /Vragenlijst|Questionnaire|Locaties|Lieux/i,
   'filteren-zoekveld':          /Cuypers/i,
   'gebruikers-fiche':           /Mailhandtekening|Signature|Toon in keuzelijsten|listes de choix/i,
@@ -1338,6 +1355,14 @@ for (const taal of ['nl-BE', 'fr-BE']) {
       // en dat is precies waarom die beelden elk hun eigen breedte hebben.
       const v = VORM[naam + achtervoegsel] || VORM[naam] || {};
       await page.setViewportSize({ width: v.breedte || BREED, height: v.hoogte || 860 });
+      // ⚠️ ELK BEELD BEGINT MET EEN LEGE BROWSEROPSLAG. Een lade (`adm-drawer-…-open`) en een lijst
+      // (`adm-grid-…`) onthouden hun stand in localStorage, en de hele ronde draait in één browsercontext.
+      // Gemeten op 10/10/2026: `online-afspraken-agenda-fr` toonde sinds 23/09 in ELKE volledige ronde de lade
+      // Instellingen OPEN — het Nederlandse recept `online-afspraken-instellingen` had ze geopend en de Franse
+      // doorgang erfde dat — terwijl het bijschrift zegt dat de agenda het scherm krijgt. Een gerichte
+      // herneming gaf het ándere beeld: wat er op stond hing af van de VOLGORDE van de ronde, niet van het
+      // scherm. Bewust zonder vangnet: lukt het wissen niet, dan is dit beeld mislukt en niet "geschreven".
+      await page.evaluate(() => localStorage.clear());
       await page.goto(`${BASIS}${url}`, { waitUntil: 'domcontentloaded' });
       await page.waitForTimeout(3500);
       if (na) await na(page);

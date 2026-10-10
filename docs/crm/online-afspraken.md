@@ -19,7 +19,7 @@ Kies bovenaan het kantoor en klik op **Boekingspagina aanzetten**. Dat kantoor k
 
 Bovenaan verschijnt de **boekingslink**. Die zet u op uw website, in uw mailhandtekening, of stuurt u door in een mail. Met **Bekijken** ziet u wat de bezoeker ziet.
 
-![Het scherm Online afspraken in CreditSoft: bovenaan de keuzelijst Kantoor en de boekingslink met de knoppen Kopiëren en Bekijken, daaronder een werkweek-agenda waarin dinsdag een grijs geboekt moment op naam van de bezoeker staat en daaronder een groen vrij moment.](../images/online-afspraken-agenda.png "De agenda krijgt het scherm: groen is vrij, grijs is geboekt")
+![Het scherm Online afspraken in CreditSoft: bovenaan de keuzelijst Kantoor en de boekingslink met de knoppen Kopiëren en Bekijken, daaronder een werkweek-agenda waarin woensdag twee geboekte momenten in het grijs staan, op naam van de bezoeker, met daartussen twee vrije momenten in het groen.](../images/online-afspraken-agenda.png "De agenda krijgt het scherm: groen is vrij, grijs is geboekt")
 
 ## Uren openzetten
 

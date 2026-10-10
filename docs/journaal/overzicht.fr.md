@@ -20,7 +20,7 @@ rattache.
 
 Si rien n'est encore sélectionné, le tiroir vous invite d'abord à choisir une ligne.
 
-![La liste Relations avec, à droite, le tiroir du journal ouvert sur la partie Dossiers de crédit, montrant trois dossiers du client choisi ; la ligne sélectionnée à gauche et le contenu du tiroir à droite vont de pair.](../images/journaal-lade-fr.png "Le tiroir du journal à côté de la liste")
+![La liste Relations avec, à droite, le tiroir du journal ouvert sur la partie Dossiers de crédit, montrant le dossier du client choisi ; la ligne sélectionnée à gauche et le contenu du tiroir à droite vont de pair.](../images/journaal-lade-fr.png "Le tiroir du journal à côté de la liste")
 
 !!! tip "La hauteur est réglable"
     Vous pouvez agrandir ou réduire le tiroir en tirant sur son bord. Ce choix reste enregistré pour la fois

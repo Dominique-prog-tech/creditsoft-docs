@@ -19,7 +19,7 @@ Choisissez le bureau en haut et cliquez sur **Activer la page de réservation**.
 
 En haut apparaît le **lien de réservation**. Placez-le sur votre site, dans votre signature d'e-mail, ou envoyez-le par courriel. Avec **Aperçu**, vous voyez ce que voit le visiteur.
 
-![L'écran Rendez-vous en ligne dans CreditSoft : en haut la liste Bureau et le lien de réservation avec les boutons Copier et Aperçu, en dessous un agenda de semaine de travail où figurent mardi un moment réservé en gris au nom du visiteur et, en dessous, un moment libre en vert.](../images/online-afspraken-agenda-fr.png "L'agenda occupe l'écran : vert pour libre, gris pour réservé")
+![L'écran Rendez-vous en ligne dans CreditSoft : en haut la liste Bureau et le lien de réservation avec les boutons Copier et Aperçu, en dessous un agenda de semaine de travail où figurent mercredi deux moments réservés en gris, au nom du visiteur, et entre eux deux moments libres en vert.](../images/online-afspraken-agenda-fr.png "L'agenda occupe l'écran : vert pour libre, gris pour réservé")
 
 ## Ouvrir des heures
 
