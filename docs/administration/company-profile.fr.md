@@ -30,13 +30,16 @@ Saisissez votre **numéro de TVA / d'entreprise** et cliquez sur **Récupérer**
 
 **Glissez** une image dans la zone du logo ou **cliquez** dessus pour choisir un fichier (PNG ou JPG, max. 4 Mo). Le bouton **Supprimer** retire le logo.
 
-![Le bloc Documents et charte graphique : l'intitulé Logo avec le logo actuel et Supprimer, une zone en pointillés portant une flèche vers le haut, le texte « Glissez une image ici » et, en dessous, « ou cliquez pour sélectionner · PNG ou JPG, max. 4 Mo » ; en dessous, Photo de l'écran de connexion avec une deuxième zone pour « une photo en paysage, PNG ou JPG, max 8 Mo » et l'explication que la photo apparaît à gauche de l'écran de connexion.](../images/bedrijfsfiche-logo-fr.png "Le logo et la photo de l'écran de connexion : glisser ou cliquer pour choisir un fichier"){ .eigen-breedte style="width:492px" }
+![Le bloc Documents et charte graphique : l'intitulé Logo avec le logo actuel et Supprimer, une zone en pointillés portant une flèche vers le haut, le texte « Glissez une image ici » et, en dessous, « ou cliquez pour sélectionner · PNG ou JPG, max. 4 Mo » ; en dessous, Photo de l'écran de connexion avec une deuxième zone pour « une photo avec le sujet au centre, PNG ou JPG, max 8 Mo » et l'explication que la photo apparaît à gauche de l'écran de connexion.](../images/bedrijfsfiche-logo-fr.png "Le logo et la photo de l'écran de connexion : glisser ou cliquer pour choisir un fichier"){ .eigen-breedte style="width:492px" }
 
 ## Photo de l'écran de connexion
 
 Sous le logo figure une deuxième zone : **Photo de l'écran de connexion**. La photo apparaît à gauche de l'écran de
-connexion, sous le nom CreditSoft, avec un voile sombre pour que le texte reste lisible. Choisissez de préférence une photo
-en paysage (PNG ou JPG, max 8 Mo). Avec **Supprimer**, l'écran de connexion redevient bleu.
+connexion, sous le nom CreditSoft, avec un voile sombre pour que le texte reste lisible. Avec **Supprimer**, l'écran de connexion redevient bleu.
+
+Choisissez une photo avec **le sujet au centre** (PNG ou JPG, max 8 Mo). L'écran de connexion recadre la photo autour du
+centre : sur un ordinateur, la zone est verticale et vous voyez la bande centrale ; sur un téléphone, c'est un bandeau
+horizontal en haut et vous voyez la plus grande partie.
 
 L'écran de connexion est le même pour tous les bureaux : il ne sait qui arrive qu'après une première connexion. C'est
 pourquoi :

@@ -196,6 +196,9 @@ const SCHOTEN = [
   ['actielogboek',                 '/beheer/audit'],
   ['prullenbak',                   '/prullenbak'],
   ['platformbeheer-hub',           '/administration'],
+  // ⚠️ 1280×1310 en niet ×1127 sinds 10/10/2026 (beeldvorm.json). Het blok Documenten & huisstijl kreeg er de foto van
+  //    het aanmeldscherm bij en werd 289 px hoger: op 1127 viel het tweede sleepvak half achter de knoppenbalk, terwijl
+  //    het bijschrift "de sleepvakken voor het logo en de foto" belooft. De vorm bewaart een keuze, geen waarheid.
   ['bedrijfsfiche',                '/administration/company-profile'],
   ['kantoorprofiel-vragenlijst',   '/beheer/kantoorprofiel', async p => {
       // ⛔ NOOIT OP BEWAREN KLIKKEN. Het kantoorprofiel wordt bewaard in ADM One, en de lokale app praat met de
@@ -622,8 +625,25 @@ const SCHOTEN = [
   }],
   ['aanbrenger-groepering',     `/contributors/${ID.aanbrenger}`],
   ['bedrijfsfiche-logo',        '/administration/company-profile', async p => {
-      await p.evaluate(() => { const h = [...document.querySelectorAll('h3,h4')].find(e => /huisstijl|documenten/i.test(e.textContent||'')); h?.scrollIntoView(); });
+      // ⚠️ Zocht tot 10/10/2026 een kop op "huisstijl|documenten" — enkel Nederlands. In het Frans heet het blok "Documents
+      //    et charte graphique": er scrolde STIL niets (h?.scrollIntoView()), en de knoppenbalk onderaan (Enregistrer ·
+      //    Retour) lag over de uitleg van de foto. Het merkteken liet het door, want de tekst staat wél in innerText, alleen
+      //    niet in beeld. Vandaar: het blok zelf bovenaan zetten (zelfde keuze als de vormtabel) en daarna METEN dat zijn
+      //    boven- en onderkant vrij liggen.
+      const gevonden = await p.evaluate(() => {
+        const kaart = [...document.querySelectorAll('.adm-card')].find(k => /huisstijl|graphique/i.test(k.textContent || ''));
+        kaart?.scrollIntoView({ block: 'start' });
+        return !!kaart;
+      });
+      if (!gevonden) throw new Error('blok Documenten & huisstijl niet gevonden');
       await p.waitForTimeout(1200);
+      const vrij = await p.evaluate(() => {
+        const kaart = [...document.querySelectorAll('.adm-card')].find(k => /huisstijl|graphique/i.test(k.textContent || ''));
+        const r = kaart.getBoundingClientRect(), x = r.left + r.width / 2;
+        return [r.top + 6, r.bottom - 6].map(y => { const e = document.elementFromPoint(x, y); return !!e && kaart.contains(e); });
+      });
+      if (!vrij[0]) throw new Error('bovenkant van het blok ligt niet vrij');
+      if (!vrij[1]) throw new Error('onderkant van het blok ligt niet vrij (knoppenbalk)');
   }],
   ['afspraken-per-medewerker',  '/crm/afspraken', async p => {
       // ⚠️ Stond hier als kaal paginabezoek. Dat de kolomweergave in beeld kwam, was TOEVAL: de agenda

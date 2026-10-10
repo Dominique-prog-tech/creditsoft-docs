@@ -205,7 +205,7 @@
   "bedrijfsfiche": {
     "route": "/administration/company-profile",
     "app": {
-      "sha": "adb1b614041944165a4ebdb21a39d0cb3fdb5058",
+      "sha": "8003e1323f83c2a3a5e34914b26c28de91ebf520",
       "vuil": true
     }
   },
@@ -331,7 +331,7 @@
   "lead-fiche": {
     "route": "/crm/leads/d87a24fd-a6aa-4d42-a412-25dbd99b45ba",
     "app": {
-      "sha": "adb1b614041944165a4ebdb21a39d0cb3fdb5058",
+      "sha": "8003e1323f83c2a3a5e34914b26c28de91ebf520",
       "vuil": true
     }
   },
@@ -471,7 +471,7 @@
   "lead-klant-maken": {
     "route": "/crm/leads/d87a24fd-a6aa-4d42-a412-25dbd99b45ba",
     "app": {
-      "sha": "df0f6e24d751d73efb7eef0953f75290eca59433",
+      "sha": "8003e1323f83c2a3a5e34914b26c28de91ebf520",
       "vuil": true
     }
   },
@@ -534,7 +534,7 @@
   "bedrijfsfiche-logo": {
     "route": "/administration/company-profile",
     "app": {
-      "sha": "df0f6e24d751d73efb7eef0953f75290eca59433",
+      "sha": "8003e1323f83c2a3a5e34914b26c28de91ebf520",
       "vuil": true
     }
   },
@@ -821,7 +821,7 @@
   "bedrijfsfiche-fr": {
     "route": "/administration/company-profile",
     "app": {
-      "sha": "df0f6e24d751d73efb7eef0953f75290eca59433",
+      "sha": "8003e1323f83c2a3a5e34914b26c28de91ebf520",
       "vuil": true
     }
   },
@@ -947,7 +947,7 @@
   "lead-fiche-fr": {
     "route": "/crm/leads/d87a24fd-a6aa-4d42-a412-25dbd99b45ba",
     "app": {
-      "sha": "df0f6e24d751d73efb7eef0953f75290eca59433",
+      "sha": "8003e1323f83c2a3a5e34914b26c28de91ebf520",
       "vuil": true
     }
   },
@@ -1087,7 +1087,7 @@
   "lead-klant-maken-fr": {
     "route": "/crm/leads/d87a24fd-a6aa-4d42-a412-25dbd99b45ba",
     "app": {
-      "sha": "df0f6e24d751d73efb7eef0953f75290eca59433",
+      "sha": "8003e1323f83c2a3a5e34914b26c28de91ebf520",
       "vuil": true
     }
   },
@@ -1150,7 +1150,7 @@
   "bedrijfsfiche-logo-fr": {
     "route": "/administration/company-profile",
     "app": {
-      "sha": "df0f6e24d751d73efb7eef0953f75290eca59433",
+      "sha": "8003e1323f83c2a3a5e34914b26c28de91ebf520",
       "vuil": true
     }
   },

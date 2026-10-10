@@ -30,13 +30,16 @@ Vul uw **BTW / ondernemingsnummer** in en klik op **Ophalen**. De adresgegevens 
 
 **Sleep** een afbeelding naar het logovak of **klik** erop om een bestand te kiezen (PNG of JPG, max 4 MB). Met **Verwijderen** haalt u het logo weer weg.
 
-![Het blok Documenten en huisstijl: het label Logo met het huidige logo en Verwijderen, een gestippeld sleepvak met een pijl omhoog, de tekst "Sleep een afbeelding hierheen" en daaronder "of klik om te selecteren · PNG of JPG, max 4 MB"; daaronder Foto aanmeldscherm met een tweede sleepvak voor "een liggende foto, PNG of JPG, max 8 MB" en de uitleg dat de foto links op het aanmeldscherm verschijnt.](../images/bedrijfsfiche-logo.png "Het logo en de foto van het aanmeldscherm: slepen of klikken om een bestand te kiezen"){ .eigen-breedte style="width:492px" }
+![Het blok Documenten en huisstijl: het label Logo met het huidige logo en Verwijderen, een gestippeld sleepvak met een pijl omhoog, de tekst "Sleep een afbeelding hierheen" en daaronder "of klik om te selecteren · PNG of JPG, max 4 MB"; daaronder Foto aanmeldscherm met een tweede sleepvak voor "een foto met het onderwerp in het midden, PNG of JPG, max 8 MB" en de uitleg dat de foto links op het aanmeldscherm verschijnt.](../images/bedrijfsfiche-logo.png "Het logo en de foto van het aanmeldscherm: slepen of klikken om een bestand te kiezen"){ .eigen-breedte style="width:492px" }
 
 ## Foto op het aanmeldscherm
 
 Onder het logo staat een tweede vak: **Foto aanmeldscherm**. De foto verschijnt links op het aanmeldscherm, onder de naam
-CreditSoft, met een donkere laag erover zodat de tekst leesbaar blijft. Kies bij voorkeur een liggende foto (PNG of JPG,
-max 8 MB). Met **Verwijderen** wordt het aanmeldscherm weer blauw.
+CreditSoft, met een donkere laag erover zodat de tekst leesbaar blijft. Met **Verwijderen** wordt het aanmeldscherm weer blauw.
+
+Kies een foto met **het onderwerp in het midden** (PNG of JPG, max 8 MB). Het aanmeldscherm snijdt de foto bij rond het
+midden: op een computer is het vak staand en ziet u de middelste strook, op een telefoon is het een liggende band bovenaan
+en ziet u het grootste deel.
 
 Het aanmeldscherm is één scherm voor alle kantoren: het weet pas wie er komt na een eerste aanmelding. Daarom:
 
