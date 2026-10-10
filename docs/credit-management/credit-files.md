@@ -8,7 +8,7 @@ Klik in de zijbalk op **Krediet** en dan op **Kredietdossiers**.
 
 ## De lijst
 
-![De lijst met kredietdossiers: bovenaan de filters op status, aanbrenger en eigenaar met het aantal gevonden dossiers, daaronder de tabel met per dossier een aankruisvakje, het dossiernummer, de status, het kredietbedrag, de aanvrager, de aanbrenger, de instelling, de eigenaar, de datum van indiening en de ingangsdatum.](../images/kredietdossiers-lijst.png "Alle kredietdossiers van het kantoor"){ .volle-breedte }
+![De lijst met kredietdossiers: bovenaan de filters op status, aanbrenger en eigenaar met het aantal gevonden dossiers, daaronder de tabel met per dossier een aankruisvakje, een pijltje dat het dossier in een nieuw tabblad opent, het dossiernummer, de status, het kredietbedrag, de aanvrager, de aanbrenger, de instelling, de eigenaar, de datum van indiening en de ingangsdatum.](../images/kredietdossiers-lijst.png "Alle kredietdossiers van het kantoor"){ .volle-breedte }
 
 Per dossier ziet u wie het aanvraagt, via wie het loopt en waar het staat:
 
@@ -47,6 +47,8 @@ Met **Nieuw dossier** bovenaan de lijst maakt u een leeg dossier aan. Welke stat
 **[Journaal](../journaal/overzicht.md)** — klik rechts op de rail **Journaal** om de [taken](../journaal/taken.md), [notities](../journaal/notities.md), gesprekken, [bijlagen](../journaal/bijlagen.md), het [mailverkeer](../journaal/mailverkeer.md), de commissieschema's en het [logboek](../journaal/logboek.md) van het geselecteerde dossier te zien zonder het te openen.
 
 **Dubbelklik** een rij om het dossier te openen.
+
+Wilt u het dossier in een **nieuw tabblad** van uw browser, houd dan **Ctrl** ingedrukt (**Cmd** op een Mac) terwijl u op de rij klikt, klik met het muiswiel, of klik op het **pijltje** vooraan de rij. De lijst blijft staan, zodat u meerdere dossiers naast elkaar open houdt. Met de rechtermuisknop op het pijltje opent u het dossier in een nieuw venster of kopieert u de koppeling. Zie [Meerdere fiches naast elkaar](../getting-started/navigatie.md#meerdere-fiches-naast-elkaar).
 
 ### Dossiers overdragen
 

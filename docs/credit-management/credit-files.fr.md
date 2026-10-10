@@ -8,7 +8,7 @@ Dans la barre latérale, cliquez sur **Crédit**, puis sur **Dossiers de crédit
 
 ## La liste
 
-![La liste des dossiers de crédit : en haut les filtres par statut, par apporteur et par propriétaire avec le nombre de dossiers trouvés, en dessous le tableau indiquant par dossier une case à cocher, le numéro de dossier, le statut, le montant du crédit, le demandeur, l'apporteur, l'institution, le propriétaire, la date de dépôt et la date d'effet.](../images/kredietdossiers-lijst-fr.png "Tous les dossiers de crédit du bureau"){ .volle-breedte }
+![La liste des dossiers de crédit : en haut les filtres par statut, par apporteur et par propriétaire avec le nombre de dossiers trouvés, en dessous le tableau indiquant par dossier une case à cocher, une flèche qui ouvre le dossier dans un nouvel onglet, le numéro de dossier, le statut, le montant du crédit, le demandeur, l'apporteur, l'institution, le propriétaire, la date de dépôt et la date d'effet.](../images/kredietdossiers-lijst-fr.png "Tous les dossiers de crédit du bureau"){ .volle-breedte }
 
 Par dossier, vous voyez qui en fait la demande, par qui il passe et où il en est :
 
@@ -47,6 +47,8 @@ Avec **Nouveau dossier** en haut de la liste, vous créez un dossier vide. Le st
 **[Journal](../journaal/overzicht.md)** — cliquez à droite sur le rail **Journal** pour consulter les [tâches](../journaal/taken.md), [notes](../journaal/notities.md), les appels, [pièces jointes](../journaal/bijlagen.md), le [courrier](../journaal/mailverkeer.md), les schémas de commission et l'[historique](../journaal/logboek.md) du dossier sélectionné sans l'ouvrir.
 
 **Double-cliquez** une ligne pour ouvrir le dossier.
+
+Pour ouvrir le dossier dans un **nouvel onglet** de votre navigateur, maintenez **Ctrl** enfoncé (**Cmd** sur un Mac) en cliquant sur la ligne, cliquez avec la molette, ou cliquez sur la **flèche** en début de ligne. La liste reste affichée, ce qui vous permet de garder plusieurs dossiers ouverts côte à côte. Un clic droit sur la flèche ouvre le dossier dans une nouvelle fenêtre ou copie le lien. Voir [Plusieurs fiches côte à côte](../getting-started/navigatie.md#plusieurs-fiches-cote-a-cote).
 
 ### Transférer des dossiers
 

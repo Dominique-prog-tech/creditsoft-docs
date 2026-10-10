@@ -110,9 +110,16 @@ question en langage courant et recevez un tableau. Six questions sont préparée
 
 ## Plusieurs fiches côte à côte
 
-Pour garder deux dossiers ou deux fiches ouverts en même temps, ouvrez CreditSoft dans un deuxième **onglet de votre
-navigateur** (clic droit sur l'onglet, puis dupliquez-le) et rendez-vous-y sur l'autre fiche. Chaque onglet garde son
-propre écran et ses propres données non enregistrées.
+Pour garder deux dossiers ou deux fiches ouverts en même temps, ouvrez-les chacun dans son propre **onglet de votre
+navigateur**. Chaque onglet garde son propre écran et ses propres données non enregistrées.
+
+Dans la liste **Dossiers de crédit**, cela se fait directement : maintenez **Ctrl** enfoncé (**Cmd** sur un Mac) et
+cliquez sur la ligne, cliquez avec la molette, ou cliquez sur la **flèche** en début de ligne. Le dossier s'ouvre dans
+un nouvel onglet et la liste reste affichée. Un clic droit sur la flèche l'ouvre dans une nouvelle fenêtre ou copie le
+lien.
+
+Depuis une autre liste, ouvrez CreditSoft dans un deuxième onglet (clic droit sur l'onglet, puis dupliquez-le) et
+rendez-vous-y sur l'autre fiche.
 
 L'onglet affiche d'abord le **nom ou le numéro** de la fiche, puis son type — *Jan Peeters — Particulier*,
 *2026-0153 — Dossier* — de sorte que vous voyez quelle fiche se trouve où, même avec beaucoup d'onglets ouverts.
