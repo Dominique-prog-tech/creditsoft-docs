@@ -1357,11 +1357,14 @@ for (const taal of ['nl-BE', 'fr-BE']) {
       await page.setViewportSize({ width: v.breedte || BREED, height: v.hoogte || 860 });
       // ⚠️ ELK BEELD BEGINT MET EEN LEGE BROWSEROPSLAG. Een lade (`adm-drawer-…-open`) en een lijst
       // (`adm-grid-…`) onthouden hun stand in localStorage, en de hele ronde draait in één browsercontext.
-      // Gemeten op 10/10/2026: `online-afspraken-agenda-fr` toonde sinds 23/09 in ELKE volledige ronde de lade
+      // Gemeten op 10/10/2026: `online-afspraken-agenda-fr` toonde sinds 29/08 in ELKE volledige ronde de lade
       // Instellingen OPEN — het Nederlandse recept `online-afspraken-instellingen` had ze geopend en de Franse
       // doorgang erfde dat — terwijl het bijschrift zegt dat de agenda het scherm krijgt. Een gerichte
       // herneming gaf het ándere beeld: wat er op stond hing af van de VOLGORDE van de ronde, niet van het
-      // scherm. Bewust zonder vangnet: lukt het wissen niet, dan is dit beeld mislukt en niet "geschreven".
+      // scherm. Ook fout daardoor: `filteren-zoekveld-fr` (sinds 30/08 de zoekterm in het veld van de LADE, de
+      // lijst ongefilterd), `relaties-lijst-fr` en `journaal-lade-fr` (sinds begin oktober). ⚠️ Het teken was er
+      // al die tijd: een `-fr`-beeld dat tientallen procenten groter of kleiner is dan zijn Nederlandse tweeling.
+      // Bewust zonder vangnet: lukt het wissen niet, dan is dit beeld mislukt en niet "geschreven".
       await page.evaluate(() => localStorage.clear());
       await page.goto(`${BASIS}${url}`, { waitUntil: 'domcontentloaded' });
       await page.waitForTimeout(3500);
