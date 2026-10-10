@@ -513,6 +513,9 @@ const SCHOTEN = [
   // vensters en lades
   ['borderel-borderellen',      '/commissie/borderel',            p => tab(p, 'Borderellen', 'Bordereaux')],
   ['borderel-nieuwe-ronde',     '/commissie/borderel',            async p => { await tab(p, 'Borderellen', 'Bordereaux'); await knop(p, 'Nieuwe ronde aanmaken', 'Créer une nouvelle série'); }],
+  // ⚠️ 1700×2450 (FR 2526) en niet ×2378 (FR 2430) sinds 10/10/2026 (beeldvorm.json). Onder de vragenlijst staat er een
+  //    regel bij ("In de bevestigingsmail staat erbij: …"); op de oude hoogte brak het beeld midden in die zin af en viel
+  //    de knop Bewaren eronder weg, waar het vroeger net onder die knop eindigde.
   ['online-afspraken-instellingen', '/crm/online-afspraken',      p => rechterTab(p, ['Instellingen', 'Paramètres'])],
   ['documenttypes-categorieen', '/beheer/documenttypes',          p => knop(p, 'Categorieën beheren', 'Gérer les catégories')],
   ['mail-momenten',             '/beheer/mail-momenten'],
