@@ -31,7 +31,15 @@ for (let i = 0; i < ruw.length; i++) {
   } else eigen.push(ruw[i]);
 }
 const app = eigen.some(a => a.startsWith('--app=')) ? [] : [`--app=${PAKKET.repo}`];
+
+// ⚠️ DE FUNDERING (AppKit 0.460.0, 11/10/2026). Het gedeelde script telde enkel gewijzigde .razor-bestanden van de APP.
+//    Na de bump 0.452.1 → 0.458.1 zei het "256 actueel" terwijl elke lijst met het pijltje 8 px per rij verschoof: er was
+//    geen enkel scherm aangeraakt. Met --pin legt het de AppKit-versie op de commit van het beeld naast die van HEAD, en
+//    meldt het een verschil als "de fundering wijzigde — NIET actueel". Het pad is relatief tegenover --app.
+//    Een eigen --pin wint, zoals bij --app. (De deploy-poort van de app doet dezelfde vergelijking: BeeldVersheid.)
+const pin = eigen.some(a => a.startsWith('--pin=')) ? [] : ['--pin=src/Host/CreditSoft.Host.Web/CreditSoft.Host.Web.csproj'];
+
 const r = spawnSync(process.execPath,
-  [GEDEELD, ...app, `--tabellen=${HIER}`, ...eigen],
+  [GEDEELD, ...app, ...pin, `--tabellen=${HIER}`, ...eigen],
   { stdio: 'inherit' });
 process.exit(r.status ?? 1);
