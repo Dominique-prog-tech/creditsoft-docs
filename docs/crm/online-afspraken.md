@@ -91,7 +91,11 @@ Kan de boekingspagina niet bewaard worden omdat er iets schort aan de vragenlijs
 
 ## Weer uitzetten
 
-Onderaan **Instellingen** staat **Uitzetten**. De link werkt daarna niet meer.
+Onderaan **Instellingen** staat **Uitzetten**. De link werkt daarna niet meer: wie hem opent, leest dat hij niet meer
+geldig is en kan geen moment boeken.
+
+Antwoordt de boekingsdienst niet, dan zegt het scherm dat en blijft de pagina staan zoals ze stond. Probeer het dan even
+later opnieuw.
 
 Uw open uren blijven bewaard: zet u de pagina later weer aan, dan staat alles er nog en blijft het **hetzelfde webadres**. Een link die u ooit ergens gezet heeft, blijft dus werken.
 

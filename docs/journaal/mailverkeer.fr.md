@@ -80,6 +80,15 @@ texte tel qu'il a été envoyé. Cette fenêtre comporte trois boutons :
 Un e-mail n'est pas arrivé du seul fait qu'il est parti. À côté d'un message figure donc un **statut**, et un
 petit bouton pour l'**actualiser** lorsque vous voulez savoir où en sont les choses à l'instant.
 
+Trois statuts indiquent qu'un message n'est **pas parti**, même s'il figure dans la liste :
+
+- **Version d'essai — non envoyé** — vous travaillez dans un environnement d'essai ; aucun e-mail n'en sort.
+- **Pas encore libéré — non envoyé** — l'envoi d'e-mails de votre bureau n'est pas encore libéré. Le message est prêt,
+  mais le destinataire ne l'a pas reçu.
+- **Retenu — non envoyé** — la plateforme d'envoi a retenu le message.
+
+L'écran le dit aussi au moment de l'envoi : il indique alors *est prêt* au lieu de *envoyé*.
+
 Si vous préférez la vue d'ensemble sur tous les messages plutôt que par fiche, utilisez le
 [Suivi des e-mails](../administration/mail-monitoring.md) dans l'Administration.
 

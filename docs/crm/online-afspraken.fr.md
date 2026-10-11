@@ -92,7 +92,11 @@ va pas.
 
 ## Désactiver à nouveau
 
-En bas des **Paramètres** figure **Désactiver**. Le lien cesse alors de fonctionner.
+En bas des **Paramètres** figure **Désactiver**. Le lien cesse alors de fonctionner : la personne qui l'ouvre lit qu'il
+n'est plus valide et ne peut pas réserver.
+
+Si le service de réservation ne répond pas, l'écran le dit et la page reste telle qu'elle était. Réessayez un peu plus
+tard.
 
 Vos heures ouvertes restent conservées : si vous réactivez la page plus tard, tout est encore là et l'**adresse web reste la même**. Un lien que vous avez placé quelque part continue donc de fonctionner.
 

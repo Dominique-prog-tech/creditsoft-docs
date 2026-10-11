@@ -79,6 +79,15 @@ tekst zoals ze verstuurd is. In dat venster staan drie knoppen:
 Een mail is niet aangekomen omdat hij verstuurd is. Naast een bericht staat daarom een **status**, en een
 knopje om die te **vernieuwen** wanneer u wil weten hoe het er nú voor staat.
 
+Drie statussen zeggen dat een bericht **niet vertrokken** is, al staat het wel in de lijst:
+
+- **Proefversie — niet verstuurd** — u werkt in een proefomgeving; daar gaat geen e-mail naar buiten.
+- **Nog niet vrijgegeven — niet verstuurd** — de e-mail van uw kantoor is nog niet vrijgegeven. Het bericht staat klaar,
+  maar de bestemmeling ontving het niet.
+- **Tegengehouden — niet verstuurd** — het verzendplatform hield het bericht tegen.
+
+Het scherm zegt het ook meteen bij het versturen: er staat dan *staat klaar* in plaats van *verstuurd*.
+
 Wilt u het overzicht over alle berichten heen in plaats van per fiche, dan gebruikt u
 [Mailmonitoring](../administration/mail-monitoring.md) in het Platformbeheer.
 
