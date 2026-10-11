@@ -749,7 +749,11 @@ const SCHOTEN = [
       // ⚠️ HET BEELD TOONDE DE LIJST. In dit portaal opent een dossier via de LINK op het kenmerk, niet met een
       // dubbelklik op de rij — die doet niets. En het merkteken stond op "Kredietbedrag", wat óók een kolomkop
       // van de lijst is: de controle bevestigde dus keurig het verkeerde scherm.
-      await p.locator('table a, tbody a').first().click();
+      // ⚠️ NIET "de eerste link in de rij": sinds 1.180.0 (11/10/2026) is dat het PIJLTJE vooraan (AdmGrid.RijLink), en
+      // dat opent het dossier in een ANDER tabblad — dit tabblad bleef op de lijst staan en de belofte hieronder
+      // ("Aanvragers") hield het beeld terecht tegen. De link op het dossiernummer draagt geen target.
+      await p.locator('tbody a:not([target="_blank"])').first().click();
+      await p.waitForURL(/\/portal-intermediary\/dossiers\/[0-9a-f-]{36}/, { timeout: 15000 });
       await p.waitForTimeout(3500);
   }],
   ['klantportaal-klant',        '/beheer/klantportaal'],
