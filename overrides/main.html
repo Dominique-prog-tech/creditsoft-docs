@@ -1,0 +1,36 @@
+{#-
+  Wat een pagina over zichzelf zegt wanneer iemand haar DEELT (Teams, WhatsApp, LinkedIn, een mail) — Open Graph.
+  Zoekmachines lezen <title>, de omschrijving en de canonical al uit het thema; die staan hier niet opnieuw.
+
+  ⚠️ Enkel wat de pagina ZELF al draagt: haar titel en haar omschrijving. Die omschrijving komt bij CreditSoft uit
+  hooks/beschrijving.py (de eerste alinea van de pagina, of `description:` in haar kop als die er staat), met de
+  omschrijving van de site als terugval. Geen beeld: daarvoor is een PNG van 1200 × 630 nodig, en die is er nog niet
+  (een SVG wordt door geen enkel platform getoond). Geen `keywords`: zoekmachines negeren die tag.
+
+  Vlootafspraak: adm-appkit/docs/docs-site-vormgeving.md, "Vindbaar, deelbaar en strikt gebouwd" (10/10/2026).
+-#}
+{% extends "base.html" %}
+
+{% block extrahead %}
+  {%- if page and page.meta and page.meta.title -%}
+    {%- set cs_titel = page.meta.title ~ " - " ~ config.site_name -%}
+  {%- elif page and page.title and not page.is_homepage -%}
+    {%- set cs_titel = (page.title | striptags) ~ " - " ~ config.site_name -%}
+  {%- else -%}
+    {%- set cs_titel = config.site_name -%}
+  {%- endif -%}
+  {%- if page and page.meta and page.meta.description -%}
+    {%- set cs_omschrijving = page.meta.description -%}
+  {%- else -%}
+    {%- set cs_omschrijving = config.site_description -%}
+  {%- endif %}
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{{ config.site_name }}">
+  <meta property="og:title" content="{{ cs_titel }}">
+  <meta property="og:description" content="{{ cs_omschrijving }}">
+  {%- if page and page.canonical_url %}
+  <meta property="og:url" content="{{ page.canonical_url }}">
+  {%- endif %}
+  <meta property="og:locale" content="{{ 'fr_BE' if config.theme.language == 'fr' else 'nl_BE' }}">
+  <meta name="twitter:card" content="summary">
+{% endblock %}

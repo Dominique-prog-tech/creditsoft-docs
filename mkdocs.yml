@@ -9,6 +9,8 @@ copyright: >
 
 theme:
   name: material
+  # Eigen sjabloonstukken: de deelkoppen (Open Graph) in overrides/main.html.
+  custom_dir: overrides
   language: nl
   logo: images/logo.svg
   favicon: images/logo.svg
@@ -232,6 +234,19 @@ plugins:
 
 extra:
   generator: false
+
+# Een dode link of een dood anker laat de bouw FALEN in plaats van online te komen: de uitrol bouwt met --strict
+# (.github/workflows/deploy.yml), en dan telt elke waarschuwing hieronder als een fout.
+# Vlootafspraak: adm-appkit/docs/docs-site-vormgeving.md, "Vindbaar, deelbaar en strikt gebouwd" (10/10/2026).
+validation:
+  nav:
+    omitted_files: warn
+    not_found: warn
+    absolute_links: warn
+  links:
+    not_found: warn
+    anchors: warn
+    absolute_links: warn
 
 hooks:
   - hooks/films.py
