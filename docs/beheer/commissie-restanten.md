@@ -20,7 +20,7 @@ Bij elke regel staat de reden. Er zijn er drie.
 | **Naast betaalde lijnen** | Op hetzelfde dossier is wél uitbetaald. Meestal betekent dit dat er twee schema's op dat dossier stonden en er één is blijven liggen |
 | **Nooit afgerekend** | Op dit dossier is nooit één commissielijn uitbetaald. Meestal een schema dat na de eerste ronde uit beeld verdween |
 
-**Dubbelklik** een regel om het dossier te openen. Daar ziet u de schema's staan en kan u nagaan wat er gebeurd is.
+**Dubbelklik** een regel om het dossier te openen. Daar ziet u de schema's staan en kan u nagaan wat er gebeurd is. Wilt u de lijst laten staan, open de rij dan in een [nieuw tabblad](../getting-started/lijsten.md#in-een-nieuw-tabblad): met **Ctrl-klik** (Cmd op een Mac), het muiswiel of het **pijltje** vooraan de rij.
 
 ## Waarom er geen knop staat om ze uit te betalen
 

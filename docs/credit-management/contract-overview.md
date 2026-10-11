@@ -43,6 +43,7 @@ Via **Kolommen kiezen** zet u er zes bij: het tijdelijke contractnummer, het pro
 ## Werken met de lijst
 
 - **Het dossier openen** — dubbelklik op de rij. U komt op het kredietdossier; een contract heeft geen eigen fiche.
+- **In een nieuw tabblad** — met **Ctrl-klik** (Cmd op een Mac), het muiswiel of het **pijltje** vooraan de rij; de lijst blijft staan. Zie [Werken met lijsten](../getting-started/lijsten.md#in-een-nieuw-tabblad).
 - **Zoeken** — het zoekveld rechtsboven zoekt in alles wat u ziet.
 - **Sorteren en filteren** — klik op een kolomkop om te sorteren; het trechtertje op de kop filtert op die kolom. Voor bereiken en combinaties, zie [Filteren en zoeken in lijsten](filteren-in-lijsten.md).
 - **Exporteren** — naar Excel of CSV, met de filters die op dat moment aan staan.

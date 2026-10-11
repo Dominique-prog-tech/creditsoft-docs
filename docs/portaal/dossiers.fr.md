@@ -20,7 +20,7 @@ exporter la liste.
 Si vous êtes apporteur principal et que votre bureau l'a configuré ainsi, les dossiers des bureaux et
 collaborateurs qui dépendent de vous apparaissent également ici. Sinon, vous ne voyez que les vôtres.
 
-Cliquez sur un numéro de dossier pour l'ouvrir.
+Cliquez sur un numéro de dossier pour l'ouvrir. Avec **Ctrl-clic** (Cmd sur un Mac), la molette ou la **flèche** en début de ligne, il s'ouvre dans un **nouvel onglet** de votre navigateur ; la liste reste affichée.
 
 ## Ouvrir un dossier
 

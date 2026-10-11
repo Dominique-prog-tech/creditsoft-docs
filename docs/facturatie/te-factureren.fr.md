@@ -16,6 +16,8 @@ Double-cliquez une ligne. Une nouvelle [facture](facturen.md) s'ouvre avec le **
 
 Si la colonne **Facture** indique *Brouillon existant*, un brouillon existe déjà pour ce dossier. Un double-clic ouvre alors ce brouillon, pour que personne n'en commence un deuxième.
 
+Pour garder la liste affichée, ouvrez la ligne dans un [nouvel onglet](../getting-started/lijsten.md#dans-un-nouvel-onglet) : avec **Ctrl-clic** (Cmd sur un Mac), la molette ou la **flèche** en début de ligne.
+
 Dès que la facture d'un dossier est définitive, le dossier disparaît de cette liste. Un dossier déjà facturé avant que vous ne factureriez avec CreditSoft n'y figure pas non plus.
 
 ## Définir une charte

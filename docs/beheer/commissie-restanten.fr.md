@@ -20,7 +20,7 @@ Chaque ligne porte sa raison. Il y en a trois.
 | **À côté de lignes payées** | Sur le même dossier, des paiements ont bien eu lieu. Cela signifie le plus souvent que deux schémas y figuraient et que l'un est resté en rade |
 | **Jamais décompté** | Sur ce dossier, aucune ligne de commission n'a jamais été payée. Généralement un schéma sorti des radars après la première série |
 
-**Double-cliquez** une ligne pour ouvrir le dossier. Vous y voyez les schémas et pouvez retracer ce qui s'est passé.
+**Double-cliquez** une ligne pour ouvrir le dossier. Vous y voyez les schémas et pouvez retracer ce qui s'est passé. Pour garder la liste affichée, ouvrez la ligne dans un [nouvel onglet](../getting-started/lijsten.md#dans-un-nouvel-onglet) : avec **Ctrl-clic** (Cmd sur un Mac), la molette ou la **flèche** en début de ligne.
 
 ## Pourquoi il n'y a pas de bouton de paiement
 

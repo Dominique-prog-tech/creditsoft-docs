@@ -36,6 +36,7 @@ La liste est triée par expert, de sorte que vous voyez par bureau ce qui reste 
 ## Travailler avec la liste
 
 - **Ouvrir le dossier** — double-cliquez sur la ligne ; vous arrivez sur le dossier de crédit auquel l'expertise se rattache.
+- **Dans un nouvel onglet** — avec **Ctrl-clic** (Cmd sur un Mac), la molette ou la **flèche** en début de ligne ; la liste reste affichée. Voir [Travailler avec les listes](../getting-started/lijsten.md#dans-un-nouvel-onglet).
 - **Rechercher** — le champ de recherche en haut à droite porte sur tout ce que vous voyez, y compris les noms des demandeurs.
 - **Trier et filtrer** — cliquez sur un en-tête pour trier ; l'entonnoir sur l'en-tête filtre sur cette colonne. Pour les fourchettes et les combinaisons, voir [Filtrer et rechercher dans les listes](filteren-in-lijsten.md).
 - **Exporter** — vers Excel ou CSV.

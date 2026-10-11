@@ -36,6 +36,7 @@ De lijst staat gesorteerd op schatter, zodat u per kantoor ziet wat er openstaat
 ## Werken met de lijst
 
 - **Het dossier openen** — dubbelklik op de rij; u komt op het kredietdossier waar de schatting bij hoort.
+- **In een nieuw tabblad** — met **Ctrl-klik** (Cmd op een Mac), het muiswiel of het **pijltje** vooraan de rij; de lijst blijft staan. Zie [Werken met lijsten](../getting-started/lijsten.md#in-een-nieuw-tabblad).
 - **Zoeken** — het zoekveld rechtsboven zoekt in alles wat u ziet, ook in de namen van de aanvragers.
 - **Sorteren en filteren** — klik op een kolomkop om te sorteren; het trechtertje op de kop filtert op die kolom. Voor bereiken en combinaties, zie [Filteren en zoeken in lijsten](filteren-in-lijsten.md).
 - **Exporteren** — naar Excel of CSV.

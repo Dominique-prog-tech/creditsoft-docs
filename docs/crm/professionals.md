@@ -17,6 +17,7 @@ De tabel toont per professional: **naam**, **type**, **gemeente**, **telefoon** 
 - **Kolommen kiezen** — toon of verberg kolommen; uw keuze wordt onthouden.
 - **Exporteren** — exporteer de lijst naar Excel of CSV.
 - **Nieuw / bewerken** — klik op **Nieuw**, of **dubbelklik** een rij om de fiche te openen.
+- **In een nieuw tabblad** — met **Ctrl-klik** (Cmd op een Mac), het muiswiel of het **pijltje** vooraan de rij; de lijst blijft staan. Zie [Werken met lijsten](../getting-started/lijsten.md#in-een-nieuw-tabblad).
 - **Verwijderen** — een professional wordt **gearchiveerd** (soft-delete), niet definitief gewist; hij verdwijnt uit de lijst maar blijft bewaard.
 
 ### Journaal

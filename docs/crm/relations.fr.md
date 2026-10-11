@@ -18,6 +18,7 @@ Le tableau affiche par relation : **nom**, **type**, **date de naissance**, **e-
 - **Choisir les colonnes** — affichez ou masquez des colonnes ; votre choix est mémorisé.
 - **Exporter** — vers Excel ou CSV, avec les filtres actifs à ce moment-là.
 - **Nouveau / modifier** — cliquez sur **Nouveau**, ou **double-cliquez** une ligne pour ouvrir la fiche.
+- **Dans un nouvel onglet** — avec **Ctrl-clic** (Cmd sur un Mac), la molette ou la **flèche** en début de ligne ; la liste reste affichée. Voir [Travailler avec les listes](../getting-started/lijsten.md#dans-un-nouvel-onglet).
 - **Fusionner** — fusionner deux fiches de la même partie ; voir ci-dessous.
 - **Supprimer** — une relation est **archivée** (suppression douce), pas définitivement effacée.
 - **Grouper par colonne** — faites glisser un en-tête de colonne dans la barre au-dessus de la liste. Vous voyez

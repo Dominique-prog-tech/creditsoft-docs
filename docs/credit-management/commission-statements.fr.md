@@ -58,7 +58,7 @@ Une période ne peut être décomptée qu'une seule fois. Si vous essayez une de
 
 ## Ouvrir un bordereau
 
-Double-cliquez une ligne dans la liste.
+Double-cliquez une ligne dans la liste. Pour garder la liste affichée, ouvrez la ligne dans un [nouvel onglet](../getting-started/lijsten.md#dans-un-nouvel-onglet) : avec **Ctrl-clic** (Cmd sur un Mac), la molette ou la **flèche** en début de ligne.
 
 ![La fiche d'un bordereau : en haut les données générales avec le numéro, la date du document, l'apporteur et le montant, en dessous les lignes de commission avec la période, le dossier, la description et le montant, et en bas les boutons Imprimer, Envoyer, Marquer payé et Retour aux bordereaux, avec Retirer à l'écart sur la droite.](../images/borderel-fiche-fr.png "Un bordereau, avec ses lignes et ses actions"){ .volle-breedte }
 

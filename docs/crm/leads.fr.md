@@ -21,6 +21,7 @@ La liste s'ouvre sur **celui qui attend le plus longtemps**, et non sur la derni
 - **Choisir les colonnes** — affichez ou masquez des colonnes ; votre choix est mémorisé.
 - **Exporter** — vers Excel ou CSV, avec les filtres actifs à ce moment-là.
 - **Nouveau / modifier** — cliquez sur **Nouveau lead**, ou **double-cliquez** une ligne pour ouvrir la fiche.
+- **Dans un nouvel onglet** — avec **Ctrl-clic** (Cmd sur un Mac), la molette ou la **flèche** en début de ligne ; la liste reste affichée. Voir [Travailler avec les listes](../getting-started/lijsten.md#dans-un-nouvel-onglet).
 - **Supprimer** — un lead est **archivé**, jamais effacé définitivement.
 
 À côté de *Leads* dans le menu figure un compteur : le nombre de leads qui attendent encore un premier contact.

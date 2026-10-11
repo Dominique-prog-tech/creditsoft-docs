@@ -18,6 +18,7 @@ De tabel toont per relatie: **naam**, **type**, **geboortedatum**, **e-mail**, *
 - **Kolommen kiezen** — toon of verberg kolommen; uw keuze wordt onthouden.
 - **Exporteren** — naar Excel of CSV, met de filters die op dat moment aan staan.
 - **Nieuw / bewerken** — klik op **Nieuw**, of **dubbelklik** een rij om de fiche te openen.
+- **In een nieuw tabblad** — met **Ctrl-klik** (Cmd op een Mac), het muiswiel of het **pijltje** vooraan de rij; de lijst blijft staan. Zie [Werken met lijsten](../getting-started/lijsten.md#in-een-nieuw-tabblad).
 - **Samenvoegen** — twee fiches voor dezelfde partij samenvoegen; zie hieronder.
 - **Verwijderen** — een relatie wordt **gearchiveerd** (soft-delete), niet definitief gewist.
 - **Groeperen op een kolom** — sleep een kolomkop naar de balk boven de lijst. Zo ziet u bijvoorbeeld per

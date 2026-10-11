@@ -25,4 +25,4 @@ Zoekt u snel vanaf een ander scherm, gebruik dan het [vergrootglas bovenaan](../
 
 ## Een notitie openen
 
-Dubbelklik een regel om de fiche te openen waar de notitie op staat. Daar, onder **Journaal › [Notities](../journaal/notities.md)**, maakt, wijzigt en verwijdert u ze. Dit overzicht toont ze enkel.
+Dubbelklik een regel om de fiche te openen waar de notitie op staat. Daar, onder **Journaal › [Notities](../journaal/notities.md)**, maakt, wijzigt en verwijdert u ze. Dit overzicht toont ze enkel. Wilt u de lijst laten staan, open de rij dan in een [nieuw tabblad](../getting-started/lijsten.md#in-een-nieuw-tabblad): met **Ctrl-klik** (Cmd op een Mac), het muiswiel of het **pijltje** vooraan de rij.

@@ -113,13 +113,13 @@ question en langage courant et recevez un tableau. Six questions sont préparée
 Pour garder deux dossiers ou deux fiches ouverts en même temps, ouvrez-les chacun dans son propre **onglet de votre
 navigateur**. Chaque onglet garde son propre écran et ses propres données non enregistrées.
 
-Dans la liste **Dossiers de crédit**, cela se fait directement : maintenez **Ctrl** enfoncé (**Cmd** sur un Mac) et
-cliquez sur la ligne, cliquez avec la molette, ou cliquez sur la **flèche** en début de ligne. Le dossier s'ouvre dans
-un nouvel onglet et la liste reste affichée. Un clic droit sur la flèche l'ouvre dans une nouvelle fenêtre ou copie le
-lien.
+Depuis une liste, cela se fait directement : maintenez **Ctrl** enfoncé (**Cmd** sur un Mac) et cliquez sur la ligne,
+cliquez avec la molette, ou cliquez sur la **flèche** en début de ligne. La fiche ou le dossier s'ouvre dans un nouvel
+onglet et la liste reste affichée. Un clic droit sur la flèche ouvre la ligne dans une nouvelle fenêtre ou copie le
+lien. Voir [Travailler avec les listes](lijsten.md#dans-un-nouvel-onglet).
 
-Depuis une autre liste, ouvrez CreditSoft dans un deuxième onglet (clic droit sur l'onglet, puis dupliquez-le) et
-rendez-vous-y sur l'autre fiche.
+S'il n'y a pas de flèche en début de ligne, comme dans l'arborescence des apporteurs, ouvrez CreditSoft dans un
+deuxième onglet (clic droit sur l'onglet, puis dupliquez-le) et rendez-vous-y sur l'autre fiche.
 
 L'onglet affiche d'abord le **nom ou le numéro** de la fiche, puis son type — *Jan Peeters — Particulier*,
 *2026-0153 — Dossier* — de sorte que vous voyez quelle fiche se trouve où, même avec beaucoup d'onglets ouverts.

@@ -22,7 +22,7 @@ Chaque ligne correspond à un accord entre un **dossier** et un **apporteur**. S
 | **Statut** | En cours, arrêté (avec la date) ou pas encore activé |
 | **Commission** | Le montant total de l'accord |
 
-**Double-cliquez** une ligne pour ouvrir le schéma. C'est là que vous le modifiez, le recalculez ou l'arrêtez.
+**Double-cliquez** une ligne pour ouvrir le schéma. C'est là que vous le modifiez, le recalculez ou l'arrêtez. Pour garder la liste affichée, ouvrez la ligne dans un [nouvel onglet](../getting-started/lijsten.md#dans-un-nouvel-onglet) : avec **Ctrl-clic** (Cmd sur un Mac), la molette ou la **flèche** en début de ligne.
 
 ## Les trois formes
 

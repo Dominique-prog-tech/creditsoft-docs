@@ -16,6 +16,8 @@ Dubbelklik een rij. Er opent een nieuwe [factuur](facturen.md) met de **eerste a
 
 Staat er in de kolom **Factuur** *Klad bestaat*, dan is er voor dat dossier al een klad. Een dubbelklik opent dan dat klad, zodat niemand een tweede begint.
 
+Wilt u de lijst laten staan, open de rij dan in een [nieuw tabblad](../getting-started/lijsten.md#in-een-nieuw-tabblad): met **Ctrl-klik** (Cmd op een Mac), het muiswiel of het **pijltje** vooraan de rij.
+
 Zodra de factuur van een dossier definitief is, verdwijnt het dossier uit deze lijst. Ook een dossier dat al gefactureerd werd vóór u met CreditSoft factureerde, staat hier niet.
 
 ## Een charter instellen

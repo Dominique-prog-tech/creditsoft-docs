@@ -43,6 +43,7 @@ Via **Kolommen kiezen** zet u er twee bij: de **rente** van het contract en de *
 ## Werken met de lijst
 
 - **Het dossier openen** — dubbelklik op de rij; u komt op het kredietdossier waar de polis bij hoort.
+- **In een nieuw tabblad** — met **Ctrl-klik** (Cmd op een Mac), het muiswiel of het **pijltje** vooraan de rij; de lijst blijft staan. Zie [Werken met lijsten](../getting-started/lijsten.md#in-een-nieuw-tabblad).
 - **Zoeken** — het zoekveld rechtsboven zoekt in alles wat u ziet, ook in de namen.
 - **Sorteren en filteren** — klik op een kolomkop om te sorteren. Beweeg over een kolomkop voor het trechtertje: daarmee filtert u op die kolom. Voor bereiken en combinaties, zie [Filteren en zoeken in lijsten](filteren-in-lijsten.md).
 - **Kolommen kiezen** — met de knop naast Exporteren zet u kolommen aan of uit. Uw keuze blijft bewaard.

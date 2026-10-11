@@ -43,6 +43,7 @@ Via le **sélecteur de colonnes**, vous en ajoutez deux : le **taux** du contrat
 ## Travailler avec la liste
 
 - **Ouvrir le dossier** — double-cliquez sur la ligne ; vous arrivez sur le dossier de crédit auquel la police se rattache.
+- **Dans un nouvel onglet** — avec **Ctrl-clic** (Cmd sur un Mac), la molette ou la **flèche** en début de ligne ; la liste reste affichée. Voir [Travailler avec les listes](../getting-started/lijsten.md#dans-un-nouvel-onglet).
 - **Rechercher** — le champ de recherche en haut à droite porte sur tout ce que vous voyez, y compris les noms.
 - **Trier et filtrer** — cliquez sur un en-tête de colonne pour trier. Survolez un en-tête pour faire apparaître l'entonnoir : il filtre sur cette colonne. Pour les fourchettes et les combinaisons, voir [Filtrer et rechercher dans les listes](filteren-in-lijsten.md).
 - **Choisir les colonnes** — le bouton à côté d'Exporter permet d'activer ou de désactiver des colonnes. Votre choix est conservé.

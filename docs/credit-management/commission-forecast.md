@@ -35,7 +35,7 @@ Het ringdiagram ernaast toont hoe dat verdeeld is over uw aanbrengers: de acht g
 
 ## De lijst op Per aanbrenger
 
-Op dit tabblad staat per aanbrenger het bedrag en het aantal lijnen **van de maand die u bovenaan kiest** — de hoogste bedragen eerst. **Dubbelklik** een regel om zijn fiche te openen.
+Op dit tabblad staat per aanbrenger het bedrag en het aantal lijnen **van de maand die u bovenaan kiest** — de hoogste bedragen eerst. **Dubbelklik** een regel om zijn fiche te openen. Wilt u de lijst laten staan, open de rij dan in een [nieuw tabblad](../getting-started/lijsten.md#in-een-nieuw-tabblad): met **Ctrl-klik** (Cmd op een Mac), het muiswiel of het **pijltje** vooraan de rij.
 
 Kiest u een andere maand, dan verandert de lijst mee. De cijfers erboven, de lijst en de exportknoppen tonen alle drie dezelfde maand.
 

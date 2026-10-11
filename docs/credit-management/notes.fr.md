@@ -25,4 +25,4 @@ Pour une recherche rapide depuis un autre écran, utilisez la [loupe en haut](..
 
 ## Ouvrir une note
 
-Double-cliquez une ligne pour ouvrir la fiche qui porte la note. C'est là, sous **Journal › [Notes](../journaal/notities.md)**, que vous les créez, modifiez et supprimez. Cet aperçu les affiche uniquement.
+Double-cliquez une ligne pour ouvrir la fiche qui porte la note. C'est là, sous **Journal › [Notes](../journaal/notities.md)**, que vous les créez, modifiez et supprimez. Cet aperçu les affiche uniquement. Pour garder la liste affichée, ouvrez la ligne dans un [nouvel onglet](../getting-started/lijsten.md#dans-un-nouvel-onglet) : avec **Ctrl-clic** (Cmd sur un Mac), la molette ou la **flèche** en début de ligne.

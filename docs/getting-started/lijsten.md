@@ -48,6 +48,23 @@ kolommen die u verborgen hebt, staan er niet in. Wilt u alles, zet dan eerst uw 
 **Dubbelklik** een rij om ze te openen. Op de meeste schermen kan dat ook met de knop **Nieuw** voor een lege
 fiche.
 
+### In een nieuw tabblad
+
+Op een lijst waar een rij naar een fiche of een dossier gaat, staat vooraan elke rij een **pijltje**. Daarmee opent u
+de rij in een **nieuw tabblad** van uw browser; de lijst blijft staan. Drie manieren doen hetzelfde:
+
+- klik op het **pijltje** vooraan de rij;
+- houd **Ctrl** ingedrukt (**Cmd** op een Mac) en klik op de rij;
+- klik op de rij met het **muiswiel**.
+
+Met de rechtermuisknop op het pijltje opent u de rij in een nieuw venster of kopieert u de koppeling.
+
+Elk tabblad houdt zijn eigen scherm en zijn eigen niet-bewaarde invoer: zie
+[Meerdere fiches naast elkaar](navigatie.md#meerdere-fiches-naast-elkaar).
+
+Niet elke lijst heeft het pijltje: waar een rij een venster opent in plaats van een pagina, en in de boom met
+aanbrengers, staat het er niet.
+
 ## Verwijderen
 
 Verwijderen betekent in CreditSoft **archiveren**, niet wissen. De rij verdwijnt uit de lijst, maar blijft

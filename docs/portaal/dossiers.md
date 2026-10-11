@@ -19,7 +19,7 @@ lijst beperkt zich meteen. U kunt ook per kolom sorteren en filteren, en de lijs
 Bent u hoofdaanbrenger en heeft uw kantoor dat zo ingesteld, dan staan hier ook de dossiers van de
 kantoren en medewerkers onder u. Anders ziet u enkel uw eigen dossiers.
 
-Klik op een dossiernummer om het dossier te openen.
+Klik op een dossiernummer om het dossier te openen. Met **Ctrl-klik** (Cmd op een Mac), het muiswiel of het **pijltje** vooraan de rij opent het in een **nieuw tabblad** van uw browser; de lijst blijft staan.
 
 ## Een dossier openen
 

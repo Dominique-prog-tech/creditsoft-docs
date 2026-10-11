@@ -111,12 +111,13 @@ gewone taal en krijgt een tabel terug. Zes vragen zijn voorbereid:
 Wilt u twee dossiers of fiches tegelijk open houden, open ze dan elk in een eigen **tabblad van uw browser**. Elk
 tabblad houdt zijn eigen scherm en zijn eigen niet-bewaarde invoer.
 
-In de lijst **Kredietdossiers** gaat dat rechtstreeks: houd **Ctrl** ingedrukt (**Cmd** op een Mac) en klik op de rij,
-klik met het muiswiel, of klik op het **pijltje** vooraan de rij. Het dossier opent in een nieuw tabblad en de lijst
-blijft staan. Met de rechtermuisknop op het pijltje opent u het in een nieuw venster of kopieert u de koppeling.
+Vanuit een lijst gaat dat rechtstreeks: houd **Ctrl** ingedrukt (**Cmd** op een Mac) en klik op de rij, klik met het
+muiswiel, of klik op het **pijltje** vooraan de rij. De fiche of het dossier opent in een nieuw tabblad en de lijst
+blijft staan. Met de rechtermuisknop op het pijltje opent u de rij in een nieuw venster of kopieert u de koppeling. Zie
+[Werken met lijsten](lijsten.md#in-een-nieuw-tabblad).
 
-Vanuit een andere lijst opent u CreditSoft in een tweede tabblad (rechtsklik op het tabblad en dupliceer het) en gaat u
-daar naar de andere fiche.
+Staat er vooraan de rij geen pijltje, zoals in de boom met aanbrengers, open CreditSoft dan in een tweede tabblad
+(rechtsklik op het tabblad en dupliceer het) en ga daar naar de andere fiche.
 
 In het tabblad staat eerst de **naam of het nummer** van de fiche en dan pas de soort — *Jan Peeters — Particulier*,
 *2026-0153 — Dossier* — zodat u ook met veel tabbladen open ziet welke fiche waar staat.

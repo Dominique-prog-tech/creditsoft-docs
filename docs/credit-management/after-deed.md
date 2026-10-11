@@ -27,7 +27,7 @@ Een dossier verdwijnt uit de lijst zodra u zijn **status** verandert, bijvoorbee
 
 Bovenaan kiest u **Nog iets open** om enkel de dossiers over te houden waar nog werk is — geen SSV, een stuk dat niet in orde is, of een open taak. Dat zijn ook de dossiers die het getal naast het menu-item telt. Filter daarnaast op **eigenaar** om uw eigen dossiers te zien.
 
-**Dubbelklik** een rij om het dossier te openen.
+**Dubbelklik** een rij om het dossier te openen. Wilt u de lijst laten staan, open de rij dan in een [nieuw tabblad](../getting-started/lijsten.md#in-een-nieuw-tabblad): met **Ctrl-klik** (Cmd op een Mac), het muiswiel of het **pijltje** vooraan de rij.
 
 !!! note "Een opmerking telt niet als open"
     Een opmerking is tekst, zonder vinkje *afgehandeld*. Ze staat in de lijst zodat u ziet wat er laatst gezegd werd, maar ze houdt een dossier niet op *nog iets open*.

@@ -58,7 +58,7 @@ Een periode kan maar één keer afgerekend worden. Probeert u het een tweede kee
 
 ## Eén borderel openen
 
-Dubbelklik een regel in de lijst.
+Dubbelklik een regel in de lijst. Wilt u de lijst laten staan, open de rij dan in een [nieuw tabblad](../getting-started/lijsten.md#in-een-nieuw-tabblad): met **Ctrl-klik** (Cmd op een Mac), het muiswiel of het **pijltje** vooraan de rij.
 
 ![De fiche van één borderel: bovenaan de algemene gegevens met nummer, documentdatum, aanbrenger en bedrag, daaronder de commissielijnen met periode, dossier, omschrijving en bedrag, en onderaan de knoppen Afdrukken, Mailen, Betaald markeren en Terug naar de borderellen, met Intrekken apart aan de rechterkant.](../images/borderel-fiche.png "Eén borderel, met zijn lijnen en zijn acties"){ .volle-breedte }
 

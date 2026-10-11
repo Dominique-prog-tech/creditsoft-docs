@@ -16,6 +16,7 @@ Le tableau affiche par assureur : **nom**, **commune**, **téléphone**, **e-mai
 - **Choisir les colonnes** — affichez ou masquez des colonnes ; votre choix est mémorisé.
 - **Exporter** — exportez la liste via Excel ou CSV.
 - **Nouveau / modifier** — cliquez sur **Nouveau**, ou **double-cliquez** une ligne pour ouvrir la fiche.
+- **Dans un nouvel onglet** — avec **Ctrl-clic** (Cmd sur un Mac), la molette ou la **flèche** en début de ligne ; la liste reste affichée. Voir [Travailler avec les listes](../getting-started/lijsten.md#dans-un-nouvel-onglet).
 - **Supprimer** — un assureur est **archivé** (suppression douce), pas définitivement effacé ; il disparaît de la liste mais reste conservé.
 
 ### Journal

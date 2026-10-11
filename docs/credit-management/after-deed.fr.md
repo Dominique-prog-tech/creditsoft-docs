@@ -27,7 +27,7 @@ Un dossier quitte la liste dès que vous changez son **statut**, par exemple ver
 
 En haut, choisissez **Encore quelque chose d'ouvert** pour ne garder que les dossiers où il reste du travail — pas d'ASRD, une pièce pas en ordre, ou une tâche ouverte. Ce sont aussi les dossiers que compte le chiffre à côté du menu. Filtrez en plus par **propriétaire** pour voir vos propres dossiers.
 
-**Double-cliquez** une ligne pour ouvrir le dossier.
+**Double-cliquez** une ligne pour ouvrir le dossier. Pour garder la liste affichée, ouvrez la ligne dans un [nouvel onglet](../getting-started/lijsten.md#dans-un-nouvel-onglet) : avec **Ctrl-clic** (Cmd sur un Mac), la molette ou la **flèche** en début de ligne.
 
 !!! note "Une remarque ne compte pas comme ouvert"
     Une remarque est du texte, sans case *traitée*. Elle figure dans la liste pour que vous voyiez ce qui a été dit en dernier, mais elle ne maintient pas un dossier sur *encore quelque chose d'ouvert*.

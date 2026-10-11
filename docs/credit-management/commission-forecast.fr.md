@@ -35,7 +35,7 @@ La répartition à côté montre comment cela se répartit entre vos apporteurs 
 
 ## La liste sous Par apporteur
 
-En bas figurent, par apporteur, le montant et le nombre de lignes **du mois que vous choisissez en haut** — les montants les plus élevés en premier. **Double-cliquez** une ligne pour ouvrir sa fiche.
+En bas figurent, par apporteur, le montant et le nombre de lignes **du mois que vous choisissez en haut** — les montants les plus élevés en premier. **Double-cliquez** une ligne pour ouvrir sa fiche. Pour garder la liste affichée, ouvrez la ligne dans un [nouvel onglet](../getting-started/lijsten.md#dans-un-nouvel-onglet) : avec **Ctrl-clic** (Cmd sur un Mac), la molette ou la **flèche** en début de ligne.
 
 Si vous choisissez un autre mois, la liste suit. Les chiffres au-dessus, la liste et les boutons d'export portent tous les trois sur le même mois.
 

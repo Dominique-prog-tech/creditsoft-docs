@@ -51,6 +51,24 @@ vos filtres.
 **Double-cliquez** une ligne pour l'ouvrir. Sur la plupart des écrans, le bouton **Nouveau** ouvre une fiche
 vierge.
 
+### Dans un nouvel onglet
+
+Dans une liste où une ligne mène à une fiche ou à un dossier, une **flèche** figure en début de chaque ligne. Elle
+ouvre la ligne dans un **nouvel onglet** de votre navigateur ; la liste reste affichée. Trois gestes font la même
+chose :
+
+- cliquez sur la **flèche** en début de ligne ;
+- maintenez **Ctrl** enfoncé (**Cmd** sur un Mac) et cliquez sur la ligne ;
+- cliquez sur la ligne avec la **molette**.
+
+Un clic droit sur la flèche ouvre la ligne dans une nouvelle fenêtre ou copie le lien.
+
+Chaque onglet garde son propre écran et ses propres données non enregistrées : voir
+[Plusieurs fiches côte à côte](navigatie.md#plusieurs-fiches-cote-a-cote).
+
+Toutes les listes n'ont pas la flèche : là où une ligne ouvre une fenêtre au lieu d'une page, et dans
+l'arborescence des apporteurs, elle ne figure pas.
+
 ## Supprimer
 
 Supprimer signifie dans CreditSoft **archiver**, et non effacer. La ligne disparaît de la liste mais continue

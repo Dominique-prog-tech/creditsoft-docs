@@ -22,7 +22,7 @@ Elke regel is één afspraak tussen een **dossier** en een **aanbrenger**. Hange
 | **Toestand** | Lopend, stopgezet (met de datum) of nog niet geactiveerd |
 | **Commissie** | Het totale bedrag van de afspraak |
 
-**Dubbelklik** een regel om het schema te openen. Daar wijzigt, herberekent of stopt u het.
+**Dubbelklik** een regel om het schema te openen. Daar wijzigt, herberekent of stopt u het. Wilt u de lijst laten staan, open de rij dan in een [nieuw tabblad](../getting-started/lijsten.md#in-een-nieuw-tabblad): met **Ctrl-klik** (Cmd op een Mac), het muiswiel of het **pijltje** vooraan de rij.
 
 ## De drie vormen
 

@@ -21,6 +21,7 @@ De lijst opent op **wie het langst wacht**, niet op wie het laatst binnenkwam. P
 - **Kolommen kiezen** — toon of verberg kolommen; uw keuze wordt onthouden.
 - **Exporteren** — naar Excel of CSV, met de filters die op dat moment aan staan.
 - **Nieuw / bewerken** — klik op **Nieuwe lead**, of **dubbelklik** een rij om de fiche te openen.
+- **In een nieuw tabblad** — met **Ctrl-klik** (Cmd op een Mac), het muiswiel of het **pijltje** vooraan de rij; de lijst blijft staan. Zie [Werken met lijsten](../getting-started/lijsten.md#in-een-nieuw-tabblad).
 - **Verwijderen** — een lead wordt **gearchiveerd**, niet definitief gewist.
 
 Naast *Leads* in het menu staat een teller: het aantal leads dat nog op een eerste contact wacht.
