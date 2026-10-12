@@ -8,9 +8,10 @@ Vous changez votre mot de passe sur un seul écran, comportant trois champs : vo
 ## Quand vous le rencontrez
 
 - **À votre première connexion.** Lorsque votre administrateur crée un compte pour vous, vous recevez un mot de
-  passe **temporaire**. CreditSoft vous amène ensuite directement à cet écran : le mot de passe temporaire doit
+  passe **temporaire** ; si vous avez demandé une **version d'essai**, votre premier mot de passe figure dans
+  l'e-mail de bienvenue. CreditSoft vous amène ensuite directement à cet écran : ce premier mot de passe doit
   disparaître avant que vous ne poursuiviez. C'est volontaire — un mot de passe qu'une autre personne a choisi
-  pour vous n'est pas votre mot de passe.
+  pour vous, ou qui a voyagé dans un e-mail, n'est pas votre mot de passe.
 - **Quand vous souhaitez le changer vous-même.** C'est possible à tout moment : ouvrez votre avatar en
   haut à droite → **Toutes les préférences…** et cliquez en bas, sous *Sécurité*, sur
   **Changer le mot de passe**.

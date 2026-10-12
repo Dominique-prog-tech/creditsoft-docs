@@ -8,8 +8,9 @@ nieuwe **nog een keer** ter bevestiging.
 ## Wanneer u het te zien krijgt
 
 - **Bij uw eerste aanmelding.** Maakt uw beheerder een account voor u aan, dan krijgt u een **tijdelijk**
-  wachtwoord. CreditSoft brengt u daarna meteen naar dit scherm: het tijdelijke wachtwoord moet weg vóór u
-  verder werkt. Dat is met opzet — een wachtwoord dat iemand anders voor u koos, is geen wachtwoord van u.
+  wachtwoord; vroeg u een **proefversie** aan, dan staat uw eerste wachtwoord in de welkomstmail. CreditSoft
+  brengt u daarna meteen naar dit scherm: dat eerste wachtwoord moet weg vóór u verder werkt. Dat is met
+  opzet — een wachtwoord dat iemand anders voor u koos, of dat door een mail reisde, is geen wachtwoord van u.
 - **Wanneer u het zelf wil veranderen.** Dat kan altijd: open uw avatar rechtsboven → **Alle voorkeuren…** en klik onderaan bij *Beveiliging* op **Wachtwoord wijzigen**.
 
 ## Het invullen
