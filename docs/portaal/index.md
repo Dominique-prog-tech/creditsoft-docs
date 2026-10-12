@@ -49,4 +49,5 @@ eigen lijst verschijnen.
 
 - [Overzicht](overzicht.md) — de cijfers van het jaar, een grafiek per maand en de laatst afgesloten kredieten
 - [Mijn dossiers](dossiers.md) — de lijst, en wat er op een dossier staat
+- [Aangebracht](aangebracht.md) — de klanten die de aanbrenger doorgaf, met hun status, en een nieuwe klant doorgeven
 - [Mijn commissies](commissies.md) — per jaar, per maand en per boeking

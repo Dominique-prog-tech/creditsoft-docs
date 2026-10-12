@@ -13,7 +13,7 @@ Klik in de zijbalk op **CRM** en dan op **Leads**.
 De lijst opent op **wie het langst wacht**, niet op wie het laatst binnenkwam. Per lead ziet u: **naam**, **status**, **wacht al**, **bron**, **aanbrenger**, **e-mail**, **telefoon**, **bedrag** en **opvolging**.
 
 - **Wacht al** — de tijd sinds de vraag binnenkwam, zolang er nog geen contact was. Vanaf twee dagen kleurt ze rood. Is er contact geweest, dan staat er een streepje: de klok is gestopt.
-- **Aanbrenger** — de aanbrenger die deze lead doorgaf vanuit de mobiele app. Leeg voor een lead die via uw website of met de hand binnenkwam.
+- **Aanbrenger** — de aanbrenger die deze lead doorgaf vanuit de mobiele app of het aanbrengersportaal. Leeg voor een lead die via uw website of met de hand binnenkwam.
 - **Mogelijk dubbel** — dit label naast de naam betekent dat er al een open lead van dezelfde persoon stond toen deze binnenkwam. Zie [Leads van een aanbrenger](#leads-van-een-aanbrenger).
 - **Opvolging** — de medewerker die deze lead opvolgt. Staat er **niemand** in het rood, dan is dit van niemand en blijft het liggen.
 - **Filter op status** — bovenaan kiest u alle statussen, of één ervan.
@@ -54,7 +54,7 @@ De fiche heeft drie blokken.
 
 - **Bron** — waar deze lead vandaan komt: *website*, *telefoon*, *doorverwijzing*, *Facebook*, wat u ook gebruikt. Het veld stelt voor wat u eerder al invulde, zodat de schrijfwijze gelijk blijft, maar u kunt vrij typen. Zo blijft de bronlijst van úw kantoor, en niet van een lijst die wij bedacht hebben.
 - **Bedrag** — het bedrag waar het over gaat, voor zover u het al weet.
-- **Herkomst** — langs welke weg deze lead binnenkwam: *Mobiele app*, *Handmatig ingevoerd*, of bij een koppeling de pagina of de referentie waar hij vandaan komt. Dit veld is niet bewerkbaar; het is een vaststelling, geen invoer.
+- **Herkomst** — langs welke weg deze lead binnenkwam: *Mobiele app*, *Aanbrengersportaal*, *Handmatig ingevoerd*, of bij een koppeling de pagina of de referentie waar hij vandaan komt. Dit veld is niet bewerkbaar; het is een vaststelling, geen invoer.
 - **Aangebracht door** — enkel bij een lead van een aanbrenger: wie hem doorgaf, met een link naar diens fiche. Niet bewerkbaar.
 - **Toestemming klant bevestigd** — wanneer de aanbrenger bevestigde dat de klant akkoord gaat om door u gecontacteerd te worden. Zonder die bevestiging kan hij geen klant doorgeven.
 - **Vraag** — de vraag zoals ze binnenkwam, in vrije tekst. Bij een lead van een aanbrenger staat de soort vraag bovenaan (bijvoorbeeld *Woonkrediet*), met zijn opmerking eronder.
@@ -102,12 +102,12 @@ Klik op **Nieuwe lead**, vul in wat u weet, en klik op **Bewaren**.
 
 ## Leads van een aanbrenger
 
-Aanbrengers kunnen vanuit de mobiele CreditSoft-app een klant doorgeven. Die komt hier binnen als lead met bron **Mobiele app** — of **Application mobile** als uw kantoor Franstalig is —, met de aanbrenger in de kolom **Aanbrenger** en op de fiche bij **Aangebracht door**. De aanbrenger volgt in zijn app mee hoe het ermee staat: *nieuw*, *in behandeling*, *klant geworden* of *niet doorgegaan*. Wie de lead opvolgt en waarom iets niet doorging, ziet hij niet.
+Aanbrengers kunnen een klant doorgeven vanuit de mobiele CreditSoft-app of vanuit hun [aanbrengersportaal](../portaal/aangebracht.md). Die komt hier binnen als lead met bron **Mobiele app** of **Aanbrengersportaal** — **Application mobile** of **Portail apporteurs** als uw kantoor Franstalig is —, met de aanbrenger in de kolom **Aanbrenger** en op de fiche bij **Aangebracht door**. De aanbrenger volgt in zijn app en in zijn portaal mee hoe het ermee staat: *nieuw*, *in behandeling*, *klant geworden* of *niet doorgegaan*. Wie de lead opvolgt en waarom iets niet doorging, ziet hij niet.
 
 !!! warning "Twee aanbrengers, dezelfde persoon"
     Een lead van een aanbrenger wordt **nooit samengevoegd** met een lead die er al stond. Geven twee aanbrengers dezelfde persoon door — of kwam die persoon eerder al via uw website binnen — dan staan er twee leads. De tweede draagt het label **mogelijk dubbel**, en bovenaan zijn fiche staat een link naar de eerste. **U beslist wie de klant opvolgt**, en dus ook bij welke aanbrenger hij hoort. CreditSoft kiest dat niet voor u, omdat daar een commissie aan hangt.
 
-    De aanbrenger krijgt daar niets van te zien. Zijn app zegt niet dat de persoon al bekend was: anders zou hij door te proberen kunnen uitzoeken wie er al klant is bij u.
+    De aanbrenger krijgt daar niets van te zien. Zijn app en zijn portaal zeggen niet dat de persoon al bekend was: anders zou hij door te proberen kunnen uitzoeken wie er al klant is bij u.
 
 Maakt u van zo'n lead een klant, dan staat op de fiche van die klant, op het tabblad **Algemeen**, **Aangebracht door** met de naam van de aanbrenger. Klikt u daar op **Nieuw kredietdossier**, dan staat de aanbrenger al ingevuld op het dossier. Kwam de klant binnen via verschillende aanbrengers, dan vult CreditSoft niets in en kiest u hem zelf op het dossier.
 

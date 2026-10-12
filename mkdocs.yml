@@ -154,6 +154,7 @@ plugins:
             Het aanbrengersportaal: Le portail apporteurs
             Overzicht: Aperçu
             Mijn dossiers: Mes dossiers
+            Aangebracht: Apportés
             Mijn commissies: Mes commissions
             Afrekeningen: Décomptes
             Documenten: Documents
@@ -339,6 +340,7 @@ nav:
     - Het aanbrengersportaal: portaal/index.md
     - Overzicht: portaal/overzicht.md
     - Mijn dossiers: portaal/dossiers.md
+    - Aangebracht: portaal/aangebracht.md
     - Mijn commissies: portaal/commissies.md
     - Afrekeningen: portaal/afrekeningen.md
     - Documenten: portaal/documenten.md

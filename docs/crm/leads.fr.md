@@ -13,7 +13,7 @@ Dans la barre latérale, cliquez sur **CRM**, puis sur **Leads**.
 La liste s'ouvre sur **celui qui attend le plus longtemps**, et non sur la dernière arrivée. Pour chaque lead, vous voyez : **nom**, **statut**, **attend depuis**, **source**, **apporteur**, **e-mail**, **téléphone**, **montant** et **suivi**.
 
 - **Attend depuis** — le temps écoulé depuis l'arrivée de la demande, tant qu'il n'y a pas eu de contact. À partir de deux jours, la valeur passe au rouge. S'il y a eu contact, un tiret s'affiche : le chronomètre est arrêté.
-- **Apporteur** — l'apporteur qui a transmis ce lead depuis l'application mobile. Vide pour un lead arrivé via votre site web ou saisi à la main.
+- **Apporteur** — l'apporteur qui a transmis ce lead depuis l'application mobile ou le portail apporteurs. Vide pour un lead arrivé via votre site web ou saisi à la main.
 - **Doublon possible** — cette étiquette à côté du nom signifie qu'un lead ouvert existait déjà pour la même personne à son arrivée. Voir [Leads d'un apporteur](#leads-dun-apporteur).
 - **Suivi** — le collaborateur qui assure le suivi. Si **personne** apparaît en rouge, ce lead n'appartient à personne et il va rester en plan.
 - **Filtre par statut** — en haut, vous choisissez tous les statuts ou un seul.
@@ -54,7 +54,7 @@ La fiche comporte trois blocs.
 
 - **Source** — d'où vient ce lead : *site web*, *téléphone*, *recommandation*, *Facebook*, ce que vous utilisez. Le champ propose ce que vous avez déjà saisi auparavant, afin que l'orthographe reste constante, mais vous pouvez saisir librement. Ainsi, la liste des sources reste celle de **votre** bureau, et non celle que nous aurions imaginée.
 - **Montant** — le montant dont il est question, pour autant que vous le sachiez déjà.
-- **Provenance** — par quelle voie ce lead est arrivé : *Application mobile*, *Saisi manuellement*, ou pour une connexion la page ou la référence d'où il provient. Ce champ n'est pas modifiable : c'est un constat, pas une saisie.
+- **Provenance** — par quelle voie ce lead est arrivé : *Application mobile*, *Portail apporteurs*, *Saisi manuellement*, ou pour une connexion la page ou la référence d'où il provient. Ce champ n'est pas modifiable : c'est un constat, pas une saisie.
 - **Apporté par** — uniquement pour un lead d'un apporteur : qui l'a transmis, avec un lien vers sa fiche. Non modifiable.
 - **Consentement du client confirmé** — le moment où l'apporteur a confirmé que le client accepte d'être contacté par vous. Sans cette confirmation, il ne peut pas transmettre de client.
 - **Demande** — la demande telle qu'elle est arrivée, en texte libre. Pour un lead d'un apporteur, le type de demande figure en premier (par exemple *Crédit logement*), avec sa remarque en dessous.
@@ -102,12 +102,12 @@ Cliquez sur **Nouveau lead**, complétez ce que vous savez, puis cliquez sur **E
 
 ## Leads d'un apporteur
 
-Les apporteurs peuvent transmettre un client depuis l'application mobile CreditSoft. Il arrive ici comme lead avec la source **Application mobile** — ou **Mobiele app** si votre bureau travaille en néerlandais —, avec l'apporteur dans la colonne **Apporteur** et sur la fiche sous **Apporté par**. L'apporteur suit dans son application où en est la demande : *nouveau*, *en cours*, *devenu client* ou *sans suite*. Il ne voit pas qui assure le suivi ni pourquoi une demande n'a pas abouti.
+Les apporteurs peuvent transmettre un client depuis l'application mobile CreditSoft ou depuis leur [portail apporteurs](../portaal/aangebracht.md). Il arrive ici comme lead avec la source **Application mobile** ou **Portail apporteurs** — **Mobiele app** ou **Aanbrengersportaal** si votre bureau travaille en néerlandais —, avec l'apporteur dans la colonne **Apporteur** et sur la fiche sous **Apporté par**. L'apporteur suit dans son application et dans son portail où en est la demande : *nouveau*, *en cours*, *devenu client* ou *sans suite*. Il ne voit pas qui assure le suivi ni pourquoi une demande n'a pas abouti.
 
 !!! warning "Deux apporteurs, la même personne"
     Un lead d'un apporteur n'est **jamais fusionné** avec un lead existant. Si deux apporteurs transmettent la même personne — ou si cette personne était déjà arrivée via votre site web — il y a deux leads. Le second porte l'étiquette **doublon possible**, et un lien vers le premier figure en haut de sa fiche. **C'est vous qui décidez qui assure le suivi du client**, et donc à quel apporteur il revient. CreditSoft ne le choisit pas pour vous, car une commission y est liée.
 
-    L'apporteur n'en voit rien. Son application n'indique pas que la personne était déjà connue : sinon, il pourrait découvrir par essais qui est déjà votre client.
+    L'apporteur n'en voit rien. Ni son application ni son portail n'indiquent que la personne était déjà connue : sinon, il pourrait découvrir par essais qui est déjà votre client.
 
 Si vous faites d'un tel lead un client, la fiche de ce client indique, dans l'onglet **Général**, **Apporté par** avec le nom de l'apporteur. Cliquez-y sur **Nouveau dossier de crédit** et l'apporteur est déjà rempli sur le dossier. Si le client est arrivé via plusieurs apporteurs, CreditSoft ne remplit rien et vous le choisissez vous-même sur le dossier.
 

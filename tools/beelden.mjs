@@ -62,7 +62,8 @@ const VORM = JSON.parse(readFileSync(new URL('./beeldvorm.json', import.meta.url
 // afgedrukt en over het echte beeld gezet. Een schot verklaart nu welk account het nodig heeft; wie er geen
 // opgeeft, krijgt de beheerder.
 const AANBRENGER_PORTAAL = ['portaal-overzicht', 'portaal-dossiers', 'portaal-commissies',
-                            'portaal-documenten', 'portaal-dossier-detail'];
+                            'portaal-documenten', 'portaal-dossier-detail',
+                            'portaal-aangebracht', 'portaal-klant-aanbrengen'];
 
 // ⚠️ MET DE HAND UITGESNEDEN. Deze twee beelden tonen een stuk scherm dat geen enkel element is:
 // rapporten-voorbeeld is één blad uit een gerenderd rapport, kantoorprofiel-vragenlijst een uitsnede
@@ -292,6 +293,7 @@ const SCHOTEN = [
   ['tweestapsverificatie',         '/account/2fa'],
   ['portaal-overzicht',            '/portal-intermediary/overzicht'],
   ['portaal-dossiers',             '/portal-intermediary/dossiers'],
+  ['portaal-aangebracht',          '/portal-intermediary/aangebracht'],
   ['portaal-commissies',           '/portal-intermediary/commissies'],
   ['portaal-documenten',           '/portal-intermediary/documenten'],
   // ── fiches ──
@@ -545,6 +547,7 @@ const SCHOTEN = [
   ['documenttypes-herinnering', '/beheer/documenttypes',          p => knop(p, 'Herinneringen: na 7 dagen', 'Rappels : après 7 jours')],
   ['lead-klant-maken',          `/crm/leads/${ID.lead}`,          p => knop(p, 'Klant van maken', 'En faire un client')],
   ['portaal-toegang',           `/contributors/${ID.aanbrengerMetPortaal}`, p => knop(p, 'Portaal', 'Portail')],
+  ['portaal-klant-aanbrengen',  '/portal-intermediary/aangebracht', p => knop(p, 'Klant aanbrengen', 'Apporter un client')],
   ['commissieschemas-journaal', `/credit-files/${ID.dossierMetSchema}`, async p => {
       // eerst het journaal openen — de knop staat RECHTSBOVEN, niet in het linkermenu
       await p.evaluate(() => {
@@ -1011,6 +1014,11 @@ const VERWACHT = {
   'rapporten-periode':          /Periode|Période/i,
   'klantportaal-klant':         /Voorbeeld|Aperçu/i,
   'portaal-dossier-detail':     /Aanvragers|Demandeurs/i,   // staat op het DETAIL, niet op de lijst
+  // De aangebrachte klant van de proefaanbrenger (de demolead uit de mobiele app): DATA, geen schermtitel — de titel
+  // "Aangebracht" staat er ook boven een lege lijst.
+  'portaal-aangebracht':        /Ellen Maes/,
+  // Enkel in het geopende venster: de knop die doorgeeft. "Klant aanbrengen" staat ook op de knop eronder.
+  'portaal-klant-aanbrengen':   /Doorgeven aan kantoor|Transmettre au bureau/i,
   'bedrijfsfiche-logo':         /Logo/i,
   'commissieschema-fiche':      /Algemene gegevens|Données générales/i,
   // "Omzetting" staat enkel op het tabblad Productie — niet op de fiche, niet op het dashboard.

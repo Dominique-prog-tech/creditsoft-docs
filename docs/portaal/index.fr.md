@@ -49,4 +49,5 @@ simplement le dossier apparaître dans votre propre liste.
 
 - [Aperçu](overzicht.fr.md) — les chiffres de l'année, un graphique par mois et les derniers crédits conclus
 - [Mes dossiers](dossiers.fr.md) — la liste, et ce que contient un dossier
+- [Apportés](aangebracht.fr.md) — les clients que l'apporteur a transmis, avec leur statut, et la transmission d'un nouveau client
 - [Mes commissions](commissies.fr.md) — par année, par mois et par écriture
