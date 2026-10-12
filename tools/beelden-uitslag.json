@@ -149,7 +149,7 @@
   "klantportaal-vormgeving": {
     "route": "/beheer/klantportaal",
     "app": {
-      "sha": "ae9f4bc60a685ded65cec3d75e9fbbd4396d4b6f",
+      "sha": "1c018f23d6bf4d426c3e292554ba7ba678218047",
       "vuil": true
     }
   },
@@ -296,21 +296,21 @@
   "portaal-overzicht": {
     "route": "/portal-intermediary/overzicht",
     "app": {
-      "sha": "ae9f4bc60a685ded65cec3d75e9fbbd4396d4b6f",
+      "sha": "1c018f23d6bf4d426c3e292554ba7ba678218047",
       "vuil": true
     }
   },
   "portaal-dossiers": {
     "route": "/portal-intermediary/dossiers",
     "app": {
-      "sha": "ae9f4bc60a685ded65cec3d75e9fbbd4396d4b6f",
+      "sha": "1c018f23d6bf4d426c3e292554ba7ba678218047",
       "vuil": true
     }
   },
   "portaal-commissies": {
     "route": "/portal-intermediary/commissies",
     "app": {
-      "sha": "ae9f4bc60a685ded65cec3d75e9fbbd4396d4b6f",
+      "sha": "1c018f23d6bf4d426c3e292554ba7ba678218047",
       "vuil": true
     }
   },
@@ -478,7 +478,7 @@
   "portaal-toegang": {
     "route": "/contributors/05b820be-792d-4ecb-b41e-c8b00619b872",
     "app": {
-      "sha": "ae9f4bc60a685ded65cec3d75e9fbbd4396d4b6f",
+      "sha": "1c018f23d6bf4d426c3e292554ba7ba678218047",
       "vuil": true
     }
   },
@@ -555,14 +555,14 @@
   "portaal-dossier-detail": {
     "route": "/portal-intermediary/dossiers",
     "app": {
-      "sha": "ae9f4bc60a685ded65cec3d75e9fbbd4396d4b6f",
+      "sha": "1c018f23d6bf4d426c3e292554ba7ba678218047",
       "vuil": true
     }
   },
   "klantportaal-klant": {
     "route": "/beheer/klantportaal",
     "app": {
-      "sha": "ae9f4bc60a685ded65cec3d75e9fbbd4396d4b6f",
+      "sha": "1c018f23d6bf4d426c3e292554ba7ba678218047",
       "vuil": true
     }
   },
@@ -765,7 +765,7 @@
   "klantportaal-vormgeving-fr": {
     "route": "/beheer/klantportaal",
     "app": {
-      "sha": "ae9f4bc60a685ded65cec3d75e9fbbd4396d4b6f",
+      "sha": "1c018f23d6bf4d426c3e292554ba7ba678218047",
       "vuil": true
     }
   },
@@ -912,21 +912,21 @@
   "portaal-overzicht-fr": {
     "route": "/portal-intermediary/overzicht",
     "app": {
-      "sha": "ae9f4bc60a685ded65cec3d75e9fbbd4396d4b6f",
+      "sha": "1c018f23d6bf4d426c3e292554ba7ba678218047",
       "vuil": true
     }
   },
   "portaal-dossiers-fr": {
     "route": "/portal-intermediary/dossiers",
     "app": {
-      "sha": "ae9f4bc60a685ded65cec3d75e9fbbd4396d4b6f",
+      "sha": "1c018f23d6bf4d426c3e292554ba7ba678218047",
       "vuil": true
     }
   },
   "portaal-commissies-fr": {
     "route": "/portal-intermediary/commissies",
     "app": {
-      "sha": "ae9f4bc60a685ded65cec3d75e9fbbd4396d4b6f",
+      "sha": "1c018f23d6bf4d426c3e292554ba7ba678218047",
       "vuil": true
     }
   },
@@ -1094,7 +1094,7 @@
   "portaal-toegang-fr": {
     "route": "/contributors/05b820be-792d-4ecb-b41e-c8b00619b872",
     "app": {
-      "sha": "ae9f4bc60a685ded65cec3d75e9fbbd4396d4b6f",
+      "sha": "1c018f23d6bf4d426c3e292554ba7ba678218047",
       "vuil": true
     }
   },
@@ -1171,14 +1171,14 @@
   "portaal-dossier-detail-fr": {
     "route": "/portal-intermediary/dossiers",
     "app": {
-      "sha": "ae9f4bc60a685ded65cec3d75e9fbbd4396d4b6f",
+      "sha": "1c018f23d6bf4d426c3e292554ba7ba678218047",
       "vuil": true
     }
   },
   "klantportaal-klant-fr": {
     "route": "/beheer/klantportaal",
     "app": {
-      "sha": "ae9f4bc60a685ded65cec3d75e9fbbd4396d4b6f",
+      "sha": "1c018f23d6bf4d426c3e292554ba7ba678218047",
       "vuil": true
     }
   },
@@ -1276,14 +1276,14 @@
   "portaal-documenten": {
     "route": "/portal-intermediary/documenten",
     "app": {
-      "sha": "ae9f4bc60a685ded65cec3d75e9fbbd4396d4b6f",
+      "sha": "1c018f23d6bf4d426c3e292554ba7ba678218047",
       "vuil": true
     }
   },
   "portaal-documenten-fr": {
     "route": "/portal-intermediary/documenten",
     "app": {
-      "sha": "ae9f4bc60a685ded65cec3d75e9fbbd4396d4b6f",
+      "sha": "1c018f23d6bf4d426c3e292554ba7ba678218047",
       "vuil": true
     }
   },
@@ -1794,28 +1794,28 @@
   "portaal-aangebracht": {
     "route": "/portal-intermediary/aangebracht",
     "app": {
-      "sha": "ae9f4bc60a685ded65cec3d75e9fbbd4396d4b6f",
+      "sha": "1c018f23d6bf4d426c3e292554ba7ba678218047",
       "vuil": true
     }
   },
   "portaal-klant-aanbrengen": {
-    "route": "/portal-intermediary/aangebracht",
+    "route": "/portal-intermediary/aangebracht/nieuw",
     "app": {
-      "sha": "ae9f4bc60a685ded65cec3d75e9fbbd4396d4b6f",
+      "sha": "1c018f23d6bf4d426c3e292554ba7ba678218047",
       "vuil": true
     }
   },
   "portaal-aangebracht-fr": {
     "route": "/portal-intermediary/aangebracht",
     "app": {
-      "sha": "ae9f4bc60a685ded65cec3d75e9fbbd4396d4b6f",
+      "sha": "1c018f23d6bf4d426c3e292554ba7ba678218047",
       "vuil": true
     }
   },
   "portaal-klant-aanbrengen-fr": {
-    "route": "/portal-intermediary/aangebracht",
+    "route": "/portal-intermediary/aangebracht/nieuw",
     "app": {
-      "sha": "ae9f4bc60a685ded65cec3d75e9fbbd4396d4b6f",
+      "sha": "1c018f23d6bf4d426c3e292554ba7ba678218047",
       "vuil": true
     }
   }

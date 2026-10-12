@@ -294,6 +294,7 @@ const SCHOTEN = [
   ['portaal-overzicht',            '/portal-intermediary/overzicht'],
   ['portaal-dossiers',             '/portal-intermediary/dossiers'],
   ['portaal-aangebracht',          '/portal-intermediary/aangebracht'],
+  ['portaal-klant-aanbrengen',     '/portal-intermediary/aangebracht/nieuw'],
   ['portaal-commissies',           '/portal-intermediary/commissies'],
   ['portaal-documenten',           '/portal-intermediary/documenten'],
   // ── fiches ──
@@ -547,7 +548,6 @@ const SCHOTEN = [
   ['documenttypes-herinnering', '/beheer/documenttypes',          p => knop(p, 'Herinneringen: na 7 dagen', 'Rappels : après 7 jours')],
   ['lead-klant-maken',          `/crm/leads/${ID.lead}`,          p => knop(p, 'Klant van maken', 'En faire un client')],
   ['portaal-toegang',           `/contributors/${ID.aanbrengerMetPortaal}`, p => knop(p, 'Portaal', 'Portail')],
-  ['portaal-klant-aanbrengen',  '/portal-intermediary/aangebracht', p => knop(p, 'Klant aanbrengen', 'Apporter un client')],
   ['commissieschemas-journaal', `/credit-files/${ID.dossierMetSchema}`, async p => {
       // eerst het journaal openen — de knop staat RECHTSBOVEN, niet in het linkermenu
       await p.evaluate(() => {
@@ -1017,7 +1017,7 @@ const VERWACHT = {
   // De aangebrachte klant van de proefaanbrenger (de demolead uit de mobiele app): DATA, geen schermtitel — de titel
   // "Aangebracht" staat er ook boven een lege lijst.
   'portaal-aangebracht':        /Ellen Maes/,
-  // Enkel in het geopende venster: de knop die doorgeeft. "Klant aanbrengen" staat ook op de knop eronder.
+  // Enkel op de pagina met het formulier: de knop die doorgeeft. "Klant aanbrengen" staat ook op de knop van de lijst.
   'portaal-klant-aanbrengen':   /Doorgeven aan kantoor|Transmettre au bureau/i,
   'bedrijfsfiche-logo':         /Logo/i,
   'commissieschema-fiche':      /Algemene gegevens|Données générales/i,

@@ -29,9 +29,9 @@ bureaux et collaborateurs — la même portée que dans [Mes dossiers](dossiers.
 
 ## Apporter un client
 
-Cliquez en haut à droite sur **Apporter un client**.
+Cliquez en haut à droite sur **Apporter un client**. Le formulaire s'ouvre sur sa propre page ; avec **Annuler** ou le lien en haut, vous revenez à la liste sans rien transmettre.
 
-![La fenêtre Apporter un client du portail apporteurs : les champs prénom, nom, téléphone, e-mail, type de demande, montant indicatif et remarque, la case indiquant que le client accepte d'être contacté, et le bouton Transmettre au bureau.](../images/portaal-klant-aanbrengen-fr.png "Transmettre un client au bureau")
+![La page Apporter un client du portail apporteurs : les champs prénom, nom, téléphone, e-mail, type de demande, montant indicatif et remarque, la case indiquant que le client accepte d'être contacté, et les boutons Transmettre au bureau et Annuler.](../images/portaal-klant-aanbrengen-fr.png "Transmettre un client au bureau")
 
 Complétez ce que vous savez :
 
@@ -43,8 +43,9 @@ Complétez ce que vous savez :
 Cochez ensuite que **le client accepte d'être contacté par le bureau**. Sans cet accord, vous ne pouvez pas transmettre :
 vous communiquez les données de quelqu'un d'autre, et cela n'est permis qu'avec son consentement.
 
-Cliquez sur **Transmettre au bureau**. Le client figure aussitôt dans votre liste avec le statut *Nouveau*, et le bureau
-prend contact avec lui.
+Cliquez sur **Transmettre au bureau**. S'il manque quelque chose, ou si une adresse e-mail ou un numéro de téléphone
+n'est pas valide, l'écran vous le signale. Sinon, le client figure aussitôt dans votre liste avec le statut *Nouveau*,
+et le bureau prend contact avec lui.
 
 !!! info "Aussi dans l'application mobile"
     Dans l'[application mobile](../getting-started/mobiele-app.md), vous faites de même sous **Apportés**. Ce que vous

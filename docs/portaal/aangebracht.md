@@ -29,9 +29,9 @@ medewerkers aanbrachten — dezelfde reikwijdte als in [Mijn dossiers](dossiers.
 
 ## Een klant aanbrengen
 
-Klik rechtsboven op **Klant aanbrengen**.
+Klik rechtsboven op **Klant aanbrengen**. Het formulier opent op een eigen pagina; met **Annuleren** of de link bovenaan keert u terug naar de lijst zonder iets door te geven.
 
-![Het venster Klant aanbrengen in het aanbrengersportaal: velden voor voornaam, naam, telefoon, e-mail, soort vraag, indicatief bedrag en opmerking, het vinkje dat de klant akkoord gaat om gecontacteerd te worden, en de knop Doorgeven aan kantoor.](../images/portaal-klant-aanbrengen.png "Een klant doorgeven aan het kantoor")
+![De pagina Klant aanbrengen in het aanbrengersportaal: velden voor voornaam, naam, telefoon, e-mail, soort vraag, indicatief bedrag en opmerking, het vinkje dat de klant akkoord gaat om gecontacteerd te worden, en de knoppen Doorgeven aan kantoor en Annuleren.](../images/portaal-klant-aanbrengen.png "Een klant doorgeven aan het kantoor")
 
 Vul in wat u weet:
 
@@ -43,8 +43,8 @@ Vul in wat u weet:
 Vink daarna aan dat **de klant akkoord gaat om door het kantoor gecontacteerd te worden**. Zonder dat akkoord kunt u
 niet doorgeven: u geeft de gegevens van iemand anders door, en dat mag enkel met zijn toestemming.
 
-Klik op **Doorgeven aan kantoor**. De klant staat meteen in uw lijst met de status *Nieuw*, en het kantoor neemt
-contact met hem op.
+Klik op **Doorgeven aan kantoor**. Ontbreekt er iets, of klopt een e-mailadres of telefoonnummer niet, dan zegt het
+scherm wat. Anders staat de klant meteen in uw lijst met de status *Nieuw*, en neemt het kantoor contact met hem op.
 
 !!! info "Ook in de mobiele app"
     In de [mobiele app](../getting-started/mobiele-app.md) doet u hetzelfde onder **Aangebracht**. Wat u in de app
