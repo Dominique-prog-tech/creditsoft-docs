@@ -1100,6 +1100,30 @@ for (const map of ['', 'getting-started/', 'crm/', 'credit-management/', 'beheer
 const browser = await chromium.launch();
 const ctx = await browser.newContext({ viewport: { width: BREED, height: HOOG }, deviceScaleFactor: 2 });
 
+// ⚠️ DE STATUSSTROOK VAN DE SCHIL HOORT NIET OP EEN HANDLEIDINGBEELD (12/10/2026, beslist door Dominique).
+// Sinds CreditSoft 1.183.0 tekent de schil onder de bovenbalk een strook voor een proef- of opstartomgeving
+// (`.account-banner`, "Opstartomgeving") — en onze demo IS een opstartomgeving. De eerste ronde zette ze op 234
+// beelden, terwijl een gewoon kantoor ze nooit ziet. Ze is bovendien 36 px hoog en schuift elk scherm omlaag: op
+// `dashboard-aan-de-slag` viel de link "Verbergen" zo buiten de uitsnede, terwijl de beschrijving ze noemt.
+//
+// ⚠️ `display: none` en NIET `visibility: hidden` zoals in VERBERG_VERSIE. Daar moet een element zijn plaats houden
+// (de versiebadge: anders schuift de zijbalk in); hier is het juist de PLAATS die weg moet, anders staat er op elk
+// beeld een lege band van 36 px.
+// ⚠️ VANAF HET LADEN, niet pas vlak vóór het schot. Een recept schuift en klikt; verdwijnt de strook daarna pas,
+// dan verspringt alles 36 px ná het schuiven. Daarom een stijlblad op het DOCUMENT (adoptedStyleSheets) via een
+// init-script: het geldt vóór de eerste opmaak, en het is geen knoop in de <head>, dus Blazor's enhanced
+// navigation gooit het niet weg (gemeten: na een klik naar een ander scherm staat de strook nog op `none`).
+// ⚠️ ÉÉN beeld toont ze wél, omdat het erover gaat: zie MET_STROOK. De grendel verderop roodt in BEIDE richtingen.
+const VERBERG_STROOK = '.account-banner { display: none !important; }';
+const MET_STROOK = new Set(['dashboard-aan-de-slag']);
+await ctx.addInitScript(css => {
+  try {
+    const blad = new CSSStyleSheet(); blad.replaceSync(css);
+    document.adoptedStyleSheets = [...document.adoptedStyleSheets, blad];
+    window.__strookBlad = blad;
+  } catch { /* de grendel vóór het schot meldt een strook die er toch staat */ }
+}, VERBERG_STROOK);
+
 // ⛔ RAAK DE BROWSERKLOK NIET AAN. Hier stond `page.clock.setFixedTime(...)`, om het "nu"-streepje van
 // DxScheduler stil te zetten — dat streepje komt uit `new Date()` in de PAGINA, en ADM_TIJD_VAST bevriest
 // enkel de server. Het leek de juiste plek. Het brak de DEVEXPRESS-GRAFIEKEN.
@@ -1191,6 +1215,7 @@ const VERBERG_VERSIE = '.nav-version, .adm-klok-vast, .dxbl-sc-time-indicator, .
   + '::-webkit-scrollbar, ::-webkit-scrollbar-track, ::-webkit-scrollbar-thumb, ::-webkit-scrollbar-corner'
   + ' { background: transparent !important; box-shadow: none !important; border-color: transparent !important; }';
 let badgeGezien = 0;
+let strookGezien = 0;
 const HERHAALPROEF = process.env.CS_HERHAALPROEF || 'documenttypes';
 let herhaalProef = null;
 const labelBotsingen = [];
@@ -1371,6 +1396,12 @@ for (const taal of ['nl-BE', 'fr-BE']) {
       // Bewust zonder vangnet: lukt het wissen niet, dan is dit beeld mislukt en niet "geschreven".
       await page.evaluate(() => localStorage.clear());
       await page.goto(`${BASIS}${url}`, { waitUntil: 'domcontentloaded' });
+      // Het ene beeld dat over de strook GAAT, krijgt ze terug — meteen na het laden, zodat het recept op de
+      // echte opmaak werkt. Zie VERBERG_STROOK.
+      if (MET_STROOK.has(naam))
+        await page.evaluate(() => {
+          document.adoptedStyleSheets = document.adoptedStyleSheets.filter(b => b !== window.__strookBlad);
+        });
       await page.waitForTimeout(3500);
       if (na) await na(page);
       // ⚠️ BIJ EEN ELEMENTSCHOT TOETSEN WE HET ELEMENT. De belofte van `hoofdbalk` is "CreditSoft-logo en
@@ -1507,6 +1538,26 @@ for (const taal of ['nl-BE', 'fr-BE']) {
       if (pil === 'ZICHTBAAR') {
         misluktMet(`${naam}${achtervoegsel} — KLOK-PIL ZICHTBAAR: de filter op .adm-klok-vast grijpt hier `
           + `niet. "Klok vastgezet" zou op dit beeld komen te staan.`);
+        continue;
+      }
+
+      // En de STATUSSTROOK van de schil (zie VERBERG_STROOK), in beide richtingen. Hernoemt de AppKit
+      // `.account-banner`, dan grijpt de regel niet meer en staat de strook weer op elk beeld; een recept dat een
+      // nieuwe pagina laadt, kan ze op het ene beeld dat ze moet tonen juist weer wegnemen.
+      // ⚠️ ONTBREKEN is geen fout: het aanmeldscherm en het klantenportaal dragen de schil niet. Het hernoemen
+      // vangen we op RONDE-niveau, zoals bij de versiebadge.
+      const strook = await page.evaluate(() => {
+        const el = document.querySelector('.account-banner');
+        if (!el) return 'ontbreekt';
+        return getComputedStyle(el).display === 'none' ? 'verborgen' : 'ZICHTBAAR';
+      });
+      if (strook === 'verborgen') strookGezien++;
+      if (MET_STROOK.has(naam) ? strook !== 'ZICHTBAAR' : strook === 'ZICHTBAAR') {
+        misluktMet(MET_STROOK.has(naam)
+          ? `${naam}${achtervoegsel} — DE STATUSSTROOK ONTBREEKT (${strook}): dit beeld hoort ze te tonen, de `
+            + `beschrijving noemt ze. Is de demo geen opstartomgeving meer, of laadde het recept een nieuwe pagina?`
+          : `${naam}${achtervoegsel} — STATUSSTROOK ZICHTBAAR: de regel op .account-banner grijpt hier niet. `
+            + `"Opstartomgeving" zou op dit beeld komen te staan, en het scherm staat 36 px lager.`);
         continue;
       }
 
@@ -1780,5 +1831,15 @@ if (!filter) {
     process.exitCode = 1;
   } else {
     console.log(`\n✅ versiebadge verborgen op ${badgeGezien} beelden — een versiebump veroudert de ronde niet.`);
+  }
+  // Zelfde redenering voor de statusstrook: op geen enkel beeld gevonden = de klasse bestaat niet meer, of de demo
+  // is geen proef- of opstartomgeving meer. In beide gevallen heeft de regel niets gedaan en zegt "verborgen" niets.
+  if (strookGezien === 0) {
+    console.log('\n⛔ DE STROOKREGEL HEEFT NIETS GEDAAN: `.account-banner` is op geen enkel beeld gevonden.');
+    console.log('   Hernoemd in de AppKit-schil, of de demo draagt geen proefvlag meer. Kijk het na — staat de');
+    console.log('   strook er wél onder een andere naam, dan staat ze nu op elk beeld.');
+    process.exitCode = 1;
+  } else {
+    console.log(`✅ statusstrook van de schil verborgen op ${strookGezien} beelden — ze staat enkel op: ${[...MET_STROOK].join(', ')}.`);
   }
 }

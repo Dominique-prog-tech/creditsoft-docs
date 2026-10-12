@@ -17,7 +17,7 @@ bericht blijft staan, leest u bij [Mededelingen](../beheer/mededelingen.md).
 Draagt uw omgeving nog **voorbeeldgegevens**, dan staat bovenaan het dashboard het blok *Aan de slag*. Het
 wijst u de drie instellingen aan die de rest bepalen, met een teller die zegt hoeveel u er af hebt.
 
-![Het blok Aan de slag bovenaan het dashboard: links de titel met de uitleg dat de gegevens voorbeelden zijn, rechts een ring met de teller 0 van 3, daaronder drie kaarten naast elkaar — Vul uw Bedrijfsfiche in, Stel uw Verzendadressen in en Voeg uw Gebruikers toe — elk met een korte uitleg en een knop Openen, en rechtsonder de link Verbergen. Onder de bovenbalk staat de strook Opstartomgeving.](../images/dashboard-aan-de-slag.png "De drie instellingen die u het best als eerste doet, met de teller die meeloopt met uw werk"){ .volle-breedte }
+![Het blok Aan de slag bovenaan het dashboard: links de titel met de uitleg dat de gegevens voorbeelden zijn, rechts een ring met de teller 1 van 3, daaronder drie kaarten naast elkaar — Vul uw Bedrijfsfiche in, die al afgevinkt is, en Stel uw Verzendadressen in en Voeg uw Gebruikers toe, elk met een korte uitleg en een knop Openen — en rechtsonder de link Verbergen. Onder de bovenbalk staat de strook Opstartomgeving.](../images/dashboard-aan-de-slag.png "De drie instellingen die u het best als eerste doet, met de teller die meeloopt met uw werk"){ .volle-breedte }
 
 | Stap | Waarom die eerst |
 |---|---|

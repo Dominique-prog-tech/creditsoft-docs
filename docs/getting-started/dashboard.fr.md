@@ -19,7 +19,7 @@ Si votre environnement contient encore des **données d'exemple**, le bloc *Pour
 du tableau de bord. Il vous indique les trois réglages qui déterminent le reste, avec un compteur indiquant
 combien vous en avez faits.
 
-![Le bloc Pour commencer en haut du tableau de bord : à gauche le titre avec l'explication que les données sont des exemples, à droite un anneau affichant le compteur 0 sur 3, en dessous trois cartes côte à côte — Complétez votre Fiche d'entreprise, Configurez vos Adresses d'envoi et Ajoutez vos Utilisateurs — chacune avec une courte explication et un bouton Ouvrir, et en bas à droite le lien Masquer. Sous la barre supérieure figure le bandeau Environnement de démarrage.](../images/dashboard-aan-de-slag-fr.png "Les trois réglages à faire en priorité, avec le compteur qui suit votre travail"){ .volle-breedte }
+![Le bloc Pour commencer en haut du tableau de bord : à gauche le titre avec l'explication que les données sont des exemples, à droite un anneau affichant le compteur 1 sur 3, en dessous trois cartes côte à côte — Complétez votre Fiche d'entreprise, déjà cochée, puis Configurez vos Adresses d'envoi et Ajoutez vos Utilisateurs, chacune avec une courte explication et un bouton Ouvrir — et en bas à droite le lien Masquer. Sous la barre supérieure figure le bandeau Environnement de démarrage.](../images/dashboard-aan-de-slag-fr.png "Les trois réglages à faire en priorité, avec le compteur qui suit votre travail"){ .volle-breedte }
 
 | Étape | Pourquoi celle-ci d'abord |
 |---|---|
