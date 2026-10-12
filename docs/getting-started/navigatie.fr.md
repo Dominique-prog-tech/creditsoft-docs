@@ -45,20 +45,21 @@ En haut à droite figurent les boutons que vous emportez partout, de gauche à d
 - **Votre avatar** (le bouton rond portant vos initiales ou votre photo) — ouvre vos
   [préférences](voorkeuren.md).
 
-### Le marqueur à gauche des boutons
+### Le bandeau sous la barre supérieure
 
-Si votre environnement contient encore des données d'exemple, un marqueur jaune figure à gauche des boutons.
-Ce n'est pas un message d'erreur mais un état, et il indique lequel :
+Si votre environnement contient encore des données d'exemple, un bandeau coloré s'affiche sous la barre
+supérieure, sur toute la largeur et sur chaque écran. Ce n'est pas un message d'erreur mais un état, et il
+indique lequel :
 
 | Ce qui s'affiche | Ce que cela signifie |
 |---|---|
-| **Données d'exemple** | Votre environnement est le vôtre et reste en place ; il contient encore des exemples pour vous familiariser |
-| **Version d'essai** · **Essai : encore … jours** · **Essai : dernier jour** | Un environnement d'essai, avec le temps restant |
-| **Essai expiré** | La période d'essai est terminée |
+| **Environnement de démarrage** | Votre environnement est le vôtre et reste en place ; il contient encore des exemples pour vous familiariser |
+| **Environnement d'essai · jusqu'au … inclus** | Un environnement d'essai, avec le dernier jour de la période d'essai |
+| **Environnement d'essai · terminé le …** | La période d'essai est terminée |
 
-Survolez le marqueur pour lire ce qui s'applique. Dans tous les cas : **aucun e-mail ne part de cet
-environnement vers l'extérieur** tant que les données d'exemple sont présentes. Dès leur suppression, l'envoi
-est activé et tout ce que vous avez encodé vous-même reste en place.
+Dans tous les cas : **aucun e-mail ne part de cet environnement vers l'extérieur** tant que les données
+d'exemple sont présentes. Dès leur suppression, l'envoi est activé et tout ce que vous avez encodé vous-même
+reste en place.
 
 Dans cette même situation, le [tableau de bord](dashboard.md#pour-commencer) affiche le bloc *Pour
 commencer*, avec les trois réglages à faire en priorité.
