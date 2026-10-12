@@ -6,16 +6,19 @@ Les dossiers dans lesquels vous figurez comme apporteur.
 
 Dans le portail, cliquez en haut sur **Mes dossiers**.
 
-![La liste Mes dossiers dans le portail apporteurs, avec par ligne le numéro de dossier, le statut, l'organisme et le montant du crédit, et en haut un champ de recherche avec le nombre de dossiers trouvés.](../images/portaal-dossiers-fr.png "Mes dossiers dans le portail apporteurs")
+![La liste Mes dossiers dans le portail apporteurs, avec par ligne le numéro de dossier, le demandeur, le statut, l'organisme et le montant du crédit, et en haut un champ de recherche avec le nombre de dossiers trouvés.](../images/portaal-dossiers-fr.png "Mes dossiers dans le portail apporteurs")
 
 ## La liste
 
-Au-dessus de la liste figure le nombre de dossiers. Par dossier, vous voyez le **numéro**, le **statut**,
-l'**organisme** et le **montant du crédit**.
+Au-dessus de la liste figure le nombre de dossiers. Par dossier, vous voyez le **numéro**, le **demandeur**,
+le **statut**, l'**organisme** et le **montant du crédit**.
 
-En haut à droite se trouve un **champ de recherche**. Tapez une partie d'un numéro de dossier, d'un nom ou
-d'un organisme et la liste se réduit immédiatement. Vous pouvez également trier et filtrer par colonne, et
+En haut à droite se trouve un **champ de recherche**. Tapez une partie d'un numéro de dossier, du nom d'un
+demandeur ou d'un organisme et la liste se réduit immédiatement. Vous pouvez également trier et filtrer par colonne, et
 exporter la liste.
+
+Si votre bureau vous autorise à introduire vous-même des dossiers, le bouton **Nouveau dossier** figure en haut à
+droite : le dossier est créé immédiatement à votre nom et s'ouvre comme fiche.
 
 Si vous êtes apporteur principal et que votre bureau l'a configuré ainsi, les dossiers des bureaux et
 collaborateurs qui dépendent de vous apparaissent également ici. Sinon, vous ne voyez que les vôtres.

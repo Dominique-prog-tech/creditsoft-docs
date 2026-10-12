@@ -40,8 +40,10 @@ Les droits se trouvent dans la même fenêtre. Ensemble, ils déterminent ce qui
     portail porte une phrase indiquant sur combien de bureaux portent les chiffres affichés — le lecteur sait
     ainsi toujours ce qu'il a sous les yeux.
 
-L'interrupteur **Peut introduire lui-même un dossier de crédit** existe déjà, mais aucun écran n'y est
-encore rattaché. L'activer ne change rien pour l'instant.
+Avec l'interrupteur **Peut introduire lui-même un dossier de crédit**, l'apporteur obtient dans *Mes dossiers*
+le bouton **Nouveau dossier**. Le dossier est créé immédiatement, avec lui comme apporteur et avec le statut de
+départ de votre bureau, et s'ouvre comme fiche. Il n'y a pas d'étape où vous l'acceptez d'abord : vous voyez
+simplement le dossier apparaître dans votre propre liste.
 
 ## Les écrans
 

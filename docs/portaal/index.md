@@ -40,8 +40,10 @@ In hetzelfde venster staan de rechten. Ze bepalen samen wat er in het portaal ve
     portaal staat een zin die zegt over hoeveel kantoren de getoonde cijfers gaan — zo weet de lezer altijd
     waar hij naar kijkt.
 
-De schakelaar **Kan zelf een kredietdossier inleiden** staat er al, maar er hangt vandaag nog geen scherm
-aan. Zet u hem aan, dan verandert er voorlopig niets.
+Met de schakelaar **Mag zelf een kredietdossier inleiden** krijgt de aanbrenger in *Mijn dossiers* de knop
+**Nieuw dossier**. Het dossier wordt meteen aangemaakt, met hem als aanbrenger en met de beginstatus van uw
+kantoor, en opent als fiche. Er is geen stap waarin u het eerst aanvaardt: u ziet het dossier gewoon in uw
+eigen lijst verschijnen.
 
 ## De schermen
 

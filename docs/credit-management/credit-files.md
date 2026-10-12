@@ -36,6 +36,9 @@ Met **Nieuw dossier** bovenaan de lijst maakt u een leeg dossier aan. Welke stat
 !!! note "Eerst uw statussen instellen"
     Hebt u nog geen dossierstatussen ingesteld, dan meldt CreditSoft dat en maakt hij geen dossier aan. Stel ze eerst in bij **Keuzelijsten**.
 
+!!! info "Het dossiernummer"
+    CreditSoft kan het dossiernummer zelf uitdelen: een nieuw dossier krijgt dan vanzelf het volgende nummer in de reeks, en twee dossiers krijgen nooit hetzelfde. Dat wordt per kantoor aangezet; vraag het aan bij ADM-Concept, samen met het nummer waarop de reeks moet beginnen. Tikt u bij zo'n kantoor toch zelf een nummer in, dan moet het vrij zijn: een nummer dat al op een ander dossier staat, weigert CreditSoft bij het bewaren. Staat de nummering niet aan, dan typt u het nummer zelf en kijkt CreditSoft het niet na.
+
 ### Zoeken en filteren
 
 - **Zoeken** — het zoekveld zoekt over alle **zichtbare** kolommen. Zet u een kolom aan via **Kolommen kiezen**, dan zoekt u er meteen ook in.

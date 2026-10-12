@@ -36,6 +36,9 @@ Avec **Nouveau dossier** en haut de la liste, vous créez un dossier vide. Le st
 !!! note "Configurez d'abord vos statuts"
     Si vous n'avez pas encore configuré de statuts de dossier, CreditSoft le signale et ne crée pas de dossier. Configurez-les d'abord dans **Listes de choix**.
 
+!!! info "Le numéro de dossier"
+    CreditSoft peut attribuer lui-même le numéro de dossier : un nouveau dossier reçoit alors automatiquement le numéro suivant de la série, et deux dossiers ne reçoivent jamais le même. Cette numérotation s'active par bureau ; demandez-la à ADM-Concept, avec le numéro auquel la série doit commencer. Si vous encodez malgré tout un numéro vous-même, il doit être libre : CreditSoft refuse, à l'enregistrement, un numéro qui figure déjà sur un autre dossier. Si la numérotation n'est pas activée, vous encodez le numéro vous-même et CreditSoft ne le vérifie pas.
+
 ### Rechercher et filtrer
 
 - **Rechercher** — le champ de recherche porte sur toutes les colonnes **visibles**. Si vous activez une colonne via le sélecteur, la recherche s'y applique aussitôt.
