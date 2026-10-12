@@ -8,14 +8,15 @@ Dans la barre latérale, cliquez sur **CRM**, puis sur **Apporteurs**.
 
 ## La liste
 
-![L'écran Apporteurs dans CreditSoft : une arborescence avec les apporteurs principaux et les bureaux en dessous, avec les colonnes nom, type, qualité, e-mail, numéro d'agent, commune, GSM et actif, et en haut les boutons Fusionner, Nouveau et Exporter.](../images/aanbrengers-lijst-fr.png "Aperçu des apporteurs, organisés en arborescence")
+![L'écran Apporteurs dans CreditSoft : une arborescence avec les apporteurs principaux et les bureaux en dessous, avec les colonnes nom, type, qualité, groupement, e-mail, numéro d'agent, commune, GSM et actif, et en haut le filtre Groupement et les boutons Fusionner, Nouveau et Exporter.](../images/aanbrengers-lijst-fr.png "Aperçu des apporteurs, organisés en arborescence")
 
-Le tableau affiche par apporteur : **nom**, **type**, **qualité**, **e-mail**, **numéro d'agent**, **commune**, **GSM** et **actif**.
+Le tableau affiche par apporteur : **nom**, **type**, **qualité**, **groupement**, **e-mail**, **numéro d'agent**, **commune**, **GSM** et **actif**.
 
 - **Déplier et replier** — cliquez sur le triangle devant une ligne pour afficher ou masquer un niveau.
-- **Rechercher** — le champ de recherche cherche dans toutes les colonnes à la fois.
+- **Rechercher** — le champ de recherche cherche dans toutes les colonnes à la fois, y compris sur le nom d'un groupe.
+- **Filtrer par groupement** — si vous avez des [groupes](groups.md), le filtre **Groupement** figure au-dessus de la liste. Choisissez un groupe et vous ne voyez que les apporteurs qui le portent ; avec **Sans groupement**, vous voyez ceux qui ne sont encore classés nulle part. Un apporteur principal ou un bureau n'y figure que s'il porte lui-même le groupement : celui-ci ne s'étend pas automatiquement à ceux qui en dépendent.
 - **Choisir les colonnes** — affichez ou masquez des colonnes ; les largeurs que vous réglez sont également conservées pour la prochaine fois.
-- **Exporter** — vers Excel ou CSV.
+- **Exporter** — vers Excel ou CSV, avec toutes les colonnes.
 - **Fusionner** — si deux fiches existent pour le même apporteur, vous les fusionnez ; voir ci-dessous.
 - **Nouveau / modifier** — cliquez sur **Nouveau**, ou **double-cliquez** une ligne pour ouvrir la fiche.
 
@@ -142,6 +143,10 @@ apporteurs, y compris ceux d'une branche repliée ; cocher un bureau ne coche pa
 reçoit son propre e-mail, qui figure ensuite dans son courrier. La fenêtre montre d'abord qui reçoit l'e-mail et qui ne
 le reçoit pas, et pourquoi ; voir [Courrier](../journaal/mailverkeer.md#un-e-mail-groupe). Le bouton requiert le droit
 **Envoyer un e-mail groupé**.
+
+Pour un e-mail groupé à **un seul groupe**, choisissez d'abord ce groupe dans le filtre **Groupement**, puis cochez toutes
+les lignes avec la case de l'en-tête. Si vous choisissez un autre filtre, ce qui était coché est décoché : l'e-mail ne
+part qu'à ceux que vous voyez cochés à ce moment-là.
 
 ## Fusionner deux fiches
 

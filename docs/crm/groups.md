@@ -27,6 +27,16 @@ Dat doet u niet hier, maar op de fiche van de aanbrenger zelf: **CRM → Aanbren
 
 ![De fiche van een aanbrenger op het tabblad Algemeen: in het blok Identiteit staat onder de bedrijfsgegevens het veld Groepering, met de groep Regio Zuid gekozen.](../images/aanbrenger-groepering.png "Toekennen doet u op de aanbrengersfiche"){ .volle-breedte }
 
+## De aanbrengers van een groep terugvinden
+
+In **CRM → Aanbrengers** staat de groepering als kolom. Boven die lijst staat de filter **Groepering**: kies een groep en u ziet enkel de aanbrengers die ze dragen; met **Zonder groepering** ziet u wie nog nergens is ingedeeld. Het zoekveld vindt een groep ook op haar naam, en de export neemt de kolom mee.
+
+Een hoofdaanbrenger of een kantoor staat enkel in de uitkomst als hij de groepering zelf draagt: ze gaat niet vanzelf over op wie eronder hangt.
+
+## Een groepsmail naar één groep
+
+Kies in de lijst Aanbrengers de groep in de filter **Groepering**, vink met het vakje in de kolomkop alle rijen aan en klik op **Groepsmail…**. Zie [Een groepsmail sturen](contributors.md#een-groepsmail-sturen).
+
 !!! info "Eén groep per aanbrenger"
     Een aanbrenger hoort bij hoogstens één groep. Wilt u iemand op meerdere manieren indelen, dan is dat een keuze tussen die indelingen — of u geeft de groepen een naam die de combinatie uitdrukt.
 

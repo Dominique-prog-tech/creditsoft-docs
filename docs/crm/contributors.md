@@ -8,14 +8,15 @@ Klik in de zijbalk op **CRM** en dan op **Aanbrengers**.
 
 ## De lijst
 
-![Het scherm Aanbrengers in CreditSoft: een boomlijst met hoofdaanbrengers en de kantoren eronder, met kolommen voor naam, type, hoedanigheid, e-mail, agentnummer, gemeente, gsm en actief, en bovenaan de knoppen Samenvoegen, Nieuw en Exporteren.](../images/aanbrengers-lijst.png "Overzicht van de aanbrengers, geordend als een boom")
+![Het scherm Aanbrengers in CreditSoft: een boomlijst met hoofdaanbrengers en de kantoren eronder, met kolommen voor naam, type, hoedanigheid, groepering, e-mail, agentnummer, gemeente, gsm en actief, en bovenaan de filter Groepering en de knoppen Samenvoegen, Nieuw en Exporteren.](../images/aanbrengers-lijst.png "Overzicht van de aanbrengers, geordend als een boom")
 
-De tabel toont per aanbrenger: **naam**, **type**, **hoedanigheid**, **e-mail**, **agentnummer**, **gemeente**, **gsm** en **actief**.
+De tabel toont per aanbrenger: **naam**, **type**, **hoedanigheid**, **groepering**, **e-mail**, **agentnummer**, **gemeente**, **gsm** en **actief**.
 
 - **Open- en dichtklappen** — klik op het driehoekje voor een rij om een niveau te tonen of te verbergen.
-- **Zoeken** — het zoekveld zoekt in alle kolommen tegelijk.
+- **Zoeken** — het zoekveld zoekt in alle kolommen tegelijk, ook op de naam van een groep.
+- **Filteren op groepering** — hebt u [groepen](groups.md), dan staat boven de lijst de filter **Groepering**. Kies een groep en u ziet enkel de aanbrengers die ze dragen; met **Zonder groepering** ziet u wie nog nergens is ingedeeld. Een hoofdaanbrenger of een kantoor staat er enkel bij als hij de groepering zelf draagt: ze gaat niet vanzelf over op wie eronder hangt.
 - **Kolommen kiezen** — toon of verberg kolommen; ook de breedtes die u instelt, blijven bewaard voor de volgende keer.
-- **Exporteren** — naar Excel of CSV.
+- **Exporteren** — naar Excel of CSV, met alle kolommen.
 - **Samenvoegen** — staan er twee fiches voor dezelfde aanbrenger, dan voegt u ze samen: de gekozen rij blijft, de andere gaat erin op.
 - **Nieuw / bewerken** — klik op **Nieuw**, of **dubbelklik** een rij om de fiche te openen.
 
@@ -143,6 +144,10 @@ werkwijze of een nieuw borderel aan te kondigen. Het vakje in de kolomkop vinkt 
 dichtgeklapte tak; een kantoor aanvinken vinkt zijn subaanbrengers niet mee aan. Elke aanbrenger krijgt zijn eigen mail,
 en die staat daarna in zijn mailverkeer. Het venster toont eerst wie de mail krijgt en wie niet, en waarom; zie
 [Mailverkeer](../journaal/mailverkeer.md#een-groepsmail). De knop vraagt het recht **Groepsmail versturen**.
+
+Voor een groepsmail naar **één groep** kiest u eerst die groep in de filter **Groepering** en vinkt u daarna alle rijen
+aan met het vakje in de kolomkop. Kiest u een andere filter, dan vervalt wat aangevinkt stond: de mail gaat enkel naar
+wie u op dat ogenblik aangevinkt ziet.
 
 ## Twee fiches samenvoegen
 

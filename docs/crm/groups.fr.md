@@ -27,6 +27,16 @@ Cela ne se fait pas ici, mais sur la fiche de l'apporteur : **CRM → Apporteurs
 
 ![La fiche d'un apporteur sous l'onglet Général : dans le bloc Identité, sous les données de l'entreprise, figure le champ Groupement, avec le groupe Regio Zuid sélectionné.](../images/aanbrenger-groepering-fr.png "L'attribution se fait sur la fiche de l'apporteur"){ .volle-breedte }
 
+## Retrouver les apporteurs d'un groupe
+
+Sous **CRM → Apporteurs**, le groupement figure en colonne. Au-dessus de cette liste se trouve le filtre **Groupement** : choisissez un groupe et vous ne voyez que les apporteurs qui le portent ; avec **Sans groupement**, vous voyez ceux qui ne sont encore classés nulle part. Le champ de recherche trouve aussi un groupe par son nom, et l'export reprend la colonne.
+
+Un apporteur principal ou un bureau ne figure dans le résultat que s'il porte lui-même le groupement : celui-ci ne s'étend pas automatiquement à ceux qui en dépendent.
+
+## Un e-mail groupé à un seul groupe
+
+Dans la liste Apporteurs, choisissez le groupe dans le filtre **Groupement**, cochez toutes les lignes avec la case de l'en-tête et cliquez sur **E-mail groupé…**. Voir [Envoyer un e-mail groupé](contributors.md#envoyer-un-e-mail-groupe).
+
 !!! info "Un seul groupe par apporteur"
     Un apporteur appartient à un seul groupe au maximum. Si vous souhaitez classer quelqu'un de plusieurs manières, il faut choisir entre ces classements — ou donner aux groupes un nom qui exprime la combinaison.
 
