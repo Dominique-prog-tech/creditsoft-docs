@@ -162,9 +162,9 @@ De tekst van de mail past u aan bij de [Mailsjablonen](../administration/mail-te
 
 ## De e-factuur (UBL)
 
-Bij een factuur aan een **Belgisch bedrijf** — een klant met een Belgisch btw-nummer — staat de knop **E-factuur (UBL)**. Die downloadt de factuur als **e-factuur**: het bestand dat een boekhoudpakket en het Peppol-netwerk lezen, volgens de Europese norm (Peppol BIS Billing 3.0). De pdf zit erin, zodat wie het bestand opent ook het beeld van de factuur heeft.
+Bij een factuur aan een **Belgisch bedrijf** — een klant met een Belgisch btw-nummer — vindt u onder de knop **Meer…** de handeling **E-factuur (UBL)**. Die downloadt de factuur als **e-factuur**: het bestand dat een boekhoudpakket en het Peppol-netwerk lezen, volgens de Europese norm (Peppol BIS Billing 3.0). De pdf zit erin, zodat wie het bestand opent ook het beeld van de factuur heeft.
 
-- De e-factuur wordt **één keer** gemaakt, de eerste keer dat u op de knop klikt. Daarna krijgt u altijd hetzelfde bestand, ook als uw bedrijfsfiche intussen verandert — net zoals de pdf.
+- De e-factuur wordt **één keer** gemaakt, de eerste keer dat u erop klikt. Daarna krijgt u altijd hetzelfde bestand, ook als uw bedrijfsfiche intussen verandert — net zoals de pdf.
 - Het bestand draagt de naam van de pdf, met *.xml* in plaats van *.pdf*.
 - Kan de e-factuur niet gemaakt worden, dan zegt een melding waarom, en wordt er niets bewaard. Bijvoorbeeld: de IBAN op uw [Bedrijfsfiche](../administration/company-profile.md) ontbreekt, of de factuur heeft geen *Uw referentie* (enkel bij facturen die definitief werden vóór die verplicht was).
 

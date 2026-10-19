@@ -162,9 +162,9 @@ Le texte du courriel s'adapte dans les [Modèles d'e-mail](../administration/mai
 
 ## La facture électronique (UBL)
 
-Pour une facture à une **entreprise belge** — un client avec un numéro de TVA belge — le bouton **Facture électronique (UBL)** est présent. Il télécharge la facture en **facture électronique** : le fichier que lisent un logiciel comptable et le réseau Peppol, selon la norme européenne (Peppol BIS Billing 3.0). Le PDF y est inclus, de sorte que qui ouvre le fichier dispose aussi de l'image de la facture.
+Pour une facture à une **entreprise belge** — un client avec un numéro de TVA belge — vous trouvez sous le bouton **Plus…** l'action **Facture électronique (UBL)**. Elle télécharge la facture en **facture électronique** : le fichier que lisent un logiciel comptable et le réseau Peppol, selon la norme européenne (Peppol BIS Billing 3.0). Le PDF y est inclus, de sorte que qui ouvre le fichier dispose aussi de l'image de la facture.
 
-- La facture électronique est créée **une seule fois**, la première fois que vous cliquez sur le bouton. Ensuite, vous recevez toujours le même fichier, même si votre fiche d'entreprise change entre-temps — comme le PDF.
+- La facture électronique est créée **une seule fois**, la première fois que vous cliquez dessus. Ensuite, vous recevez toujours le même fichier, même si votre fiche d'entreprise change entre-temps — comme le PDF.
 - Le fichier porte le nom du PDF, avec *.xml* au lieu de *.pdf*.
 - Si la facture électronique ne peut pas être créée, un message en donne la raison, et rien n'est enregistré. Par exemple : l'IBAN manque sur votre [Fiche d'entreprise](../administration/company-profile.md), ou la facture n'a pas de *Votre référence* (uniquement pour les factures rendues définitives avant que celle-ci ne soit obligatoire).
 
