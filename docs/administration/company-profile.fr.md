@@ -18,7 +18,7 @@ Les champs sont regroupés en blocs :
 
 - **Identité** — nom, TVA / n° d'entreprise, numéro FSMA et la **base de notre conseil**.
 - **Adresse** — rue, numéro, boîte, code postal, commune, pays.
-- **Contact** — téléphone, e-mail, site web.
+- **Contact** — téléphone, e-mail, site web. L'**adresse e-mail** est aussi celle à laquelle vos clients répondent aux e-mails que CreditSoft leur envoie — l'invitation au portail client, un rappel, la demande de fournir à nouveau un document. Ces e-mails portent le nom de votre bureau comme expéditeur.
 - **Banque** — IBAN, BIC et numéro de compte (avec un second compte si nécessaire).
 - **Documents et charte graphique** — votre logo et la photo de l'écran de connexion.
 

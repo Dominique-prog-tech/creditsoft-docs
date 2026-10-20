@@ -18,7 +18,7 @@ De velden staan gegroepeerd in blokken:
 
 - **Identiteit** — naam, BTW / ondernemingsnr., FSMA-nr. en de **basis van ons advies**.
 - **Adres** — straat, nummer, bus, postcode, gemeente, land.
-- **Contact** — telefoon, e-mail, website.
+- **Contact** — telefoon, e-mail, website. Het **e-mailadres** is ook het adres waarop uw klanten antwoorden op de mails die CreditSoft hun stuurt — de uitnodiging voor het klantenportaal, een herinnering, de vraag om een document opnieuw aan te leveren. Die mails dragen de naam van uw kantoor als afzender.
 - **Bank** — IBAN, BIC en rekeningnummer (met een tweede rekening indien nodig).
 - **Documenten & huisstijl** — uw logo en de foto van het aanmeldscherm.
 
