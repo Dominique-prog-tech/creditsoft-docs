@@ -202,6 +202,10 @@ nécessaire d'enregistrer le dossier pour cela.
 
 Le patrimoine figure aussi sur l'impression du dossier, avec la même ligne de total.
 
+### Conseil
+
+L'onglet **Conseil** résume le conseil donné au client : conseil ou pas de conseil, sur quelle base, combien d'offres vous avez comparées et quelles copies le client a reçues. **Enregistrer un conseil** ou **Ouvrir le conseil** mène à la [page de conseil](advice.md) du dossier. Un apporteur ne voit pas cet onglet.
+
 ### Factures
 
 L'onglet **Factures** montre la **charte** de ce dossier et les **factures** qui s'y rattachent. Vous le voyez avec le droit *Voir les factures*.

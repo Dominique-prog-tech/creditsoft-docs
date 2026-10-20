@@ -67,6 +67,8 @@ export const ID = {
   // afsluitende status toont het veld niet, dus een lopend dossier bewijst niets. Gekozen met een query na "Opvolging,
   // patrimonium en redenen van afvallen aanvullen"; valt om na een her-seed (de reden hangt aan het nummer).
   dossierAfgevallen: '141a60e1-654d-413a-bfae-c70eae530b2f',
+  // w2 (20/10/2026) — een demo-dossier met een advies. NOG TE KIEZEN na de knop "…advies… aanvullen" op tenant_demo.
+  dossierAdvies: 'NOG-TE-KIEZEN',
   schema:   'a9b48983-8066-4209-a315-8f950e6983dd',   // het actieve schema van DEMO-1089
   // ⚠️ Een aanbrenger die AL portaaltoegang heeft. Met een aanbrenger zónder toegang toont het venster
   // "Deze aanbrenger heeft nog geen portaaltoegang" — en dan mist het beeld precies de knoppen waar de

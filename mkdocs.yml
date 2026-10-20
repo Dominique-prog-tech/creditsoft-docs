@@ -217,6 +217,7 @@ plugins:
             Logboek: Historique
             Kredietdossiers: Dossiers de crédit
             Te valideren documenten: Documents à valider
+            Advies: Conseil
             Opvolging na de akte: Suivi après l'acte
             # Het nav-item heet Contractenoverzicht (één woord); zonder deze regel bleef het onvertaald
             # in de Franse navigatie staan. Gezien 18/08/2026.
@@ -295,6 +296,7 @@ nav:
   # Groeit mee per gevalideerd scherm — voeg hier telkens één regel toe.
   - Kredieten:
     - Kredietdossiers: credit-management/credit-files.md
+    - Advies: credit-management/advice.md
     - Te valideren documenten: credit-management/document-validation.md
     - Opvolging na de akte: credit-management/after-deed.md
     - Kredietinstellingen: credit-management/financial-institutions.md

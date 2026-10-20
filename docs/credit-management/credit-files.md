@@ -202,6 +202,10 @@ niet te bewaren.
 
 Het patrimonium staat ook op de afdruk van het dossier, met dezelfde somregel.
 
+### Advies
+
+Het tabblad **Advies** vat samen welk advies u de klant gaf: advies of geen advies, op welke basis, hoeveel aanbiedingen u vergeleek en welke afschriften de klant kreeg. Met **Advies vastleggen** of **Advies openen** gaat u naar de [adviespagina](advice.md) van het dossier. Een aanbrenger ziet dit tabblad niet.
+
 ### Facturen
 
 Het tabblad **Facturen** toont het **charter** van dit dossier en de **facturen** die eraan hangen. U ziet het met het recht *Facturen bekijken*.

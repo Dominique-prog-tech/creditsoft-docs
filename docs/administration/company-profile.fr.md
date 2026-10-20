@@ -12,15 +12,17 @@ Dans la barre latérale, cliquez sur **Administration**, puis sur la tuile **Fic
 
 ## Les données
 
-![La fiche d'entreprise de CreditSoft : le bloc Identité avec le nom, le numéro de TVA et le bouton Récupérer ainsi que le numéro FSMA, à côté Contact avec le téléphone, l'e-mail et le site web, en dessous Adresse et Banque avec l'IBAN, le BIC et le numéro de compte, et en bas Documents et charte graphique avec les zones de dépôt du logo et de la photo de l'écran de connexion.](../images/bedrijfsfiche-fr.png "Les données du bureau, telles qu'elles apparaissent sur les documents et dans les e-mails"){ .volle-breedte }
+![La fiche d'entreprise de CreditSoft : le bloc Identité avec le nom, le numéro de TVA et le bouton Récupérer, le numéro FSMA et la liste Base de notre conseil, à côté Contact avec le téléphone, l'e-mail et le site web, en dessous Adresse et Banque avec l'IBAN, le BIC et le numéro de compte, et en bas Documents et charte graphique avec les zones de dépôt du logo et de la photo de l'écran de connexion.](../images/bedrijfsfiche-fr.png "Les données du bureau, telles qu'elles apparaissent sur les documents et dans les e-mails"){ .volle-breedte }
 
 Les champs sont regroupés en blocs :
 
-- **Identité** — nom, TVA / n° d'entreprise, numéro FSMA.
+- **Identité** — nom, TVA / n° d'entreprise, numéro FSMA et la **base de notre conseil**.
 - **Adresse** — rue, numéro, boîte, code postal, commune, pays.
 - **Contact** — téléphone, e-mail, site web.
 - **Banque** — IBAN, BIC et numéro de compte (avec un second compte si nécessaire).
 - **Documents et charte graphique** — votre logo et la photo de l'écran de connexion.
+
+**Base de notre conseil** est la valeur par défaut de chaque nouveau [conseil](../credit-management/advice.md) sur un dossier : *Large gamme du marché (courtier en crédit)* ou *Propre gamme (agent lié)*, si vous travaillez avec la gamme de votre ou vos prêteurs. Vous adaptez la base par dossier sur la page de conseil ; un conseil qui porte déjà une base ne change pas.
 
 ## Récupérer les données depuis la BCE
 

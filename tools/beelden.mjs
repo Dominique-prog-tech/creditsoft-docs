@@ -364,6 +364,33 @@ const SCHOTEN = [
         await p.waitForTimeout(2500);
       }
   }],
+  // ── w2 (20/10/2026): het adviesdossier ──
+  // Een demo-dossier MET advies (knop "Opvolging, patrimonium, advies en redenen van afvallen aanvullen"): zonder advies
+  // toont het tabblad enkel "Advies vastleggen" en de pagina lege kaarten — het merkteken eist dus wat er pas MET staat.
+  ['kredietdossier-advies',     `/credit-files/${ID.dossierAdvies}`, async p => {
+      await p.getByRole('tab', { name: /^(Advies|Conseil)$/i }).first().click();
+      await p.waitForTimeout(2500);
+  }],
+  ['advies-pagina',             `/credit-files/${ID.dossierAdvies}/advies`, async p => {
+      await p.waitForTimeout(2500);
+  }],
+  // Een NIEUWE aanbieding: enkel daar staat "Overnemen uit een contract". Het recept kiest een contract zodat de cijfers er
+  // staan, en bewaart NIETS — het venster blijft open voor het beeld. Elke contracttekst draagt een bedrag, vandaar "€".
+  ['advies-aanbieding-venster', `/credit-files/${ID.dossierAdvies}/advies`, async p => {
+      await p.waitForTimeout(2000);
+      await p.getByRole('button', { name: /^\+ (Aanbieding toevoegen|Ajouter une offre)$/ }).click();
+      await p.waitForTimeout(1500);
+      const venster = p.locator('.dxbl-popup').filter({ hasText: /Aanbieding toevoegen|Ajouter une offre/ });
+      await venster.locator('.dxbl-fl-item', { hasText: /Overnemen uit een contract|Reprendre d'un contrat/ }).locator('input').click();
+      await p.keyboard.type('€');
+      await p.waitForTimeout(1200);
+      await p.locator('.dxbl-listbox-item, [role=option]', { hasText: '€' }).first().click();
+      await p.waitForTimeout(1500);
+      // Een ingevuld venster, of het beeld belooft iets wat het niet toont: het bedrag staat in een INVOERVELD, buiten innerText.
+      const bedrag = await venster.locator('.dxbl-fl-item').filter({ has: p.locator('.dxbl-fl-cpt', { hasText: /^(Bedrag|Montant)$/ }) })
+        .locator('input').first().inputValue({ timeout: 10000 });
+      if (!/\d/.test(bedrag)) throw new Error(`het venster hoort een bedrag uit het contract te dragen, gezien: "${bedrag}"`);
+  }],
   // ── k1b (02/10/2026): de reden van afvallen ──
   // Het veld staat er ENKEL bij een status in een afsluitende, niet-geslaagde fase: het merkteken eist het label én een
   // gekozen reden, zodat een lopend dossier (geen veld) of een leeg veld het schot laat falen.
@@ -1054,6 +1081,12 @@ const VERWACHT = {
   'kredietdossier-reeds-aangeleverd': /Reeds aangeleverd door|Déjà fourni par/,
   'kredietdossier-herinnering': /Herinneringen:|Rappels :/,
   'kredietdossier-pand-venster': /Loopt er een lening|Si un prêt court/,
+  // w2: "Advies openen" staat enkel op het tabblad van een dossier MET advies. De pagina: "Aanbevolen" TWEE keer — de
+  // kolomkop en de badge in een rij. NIET "… maanden": dat toont ook "Maximale looptijd" bij De klant, ook zonder één
+  // aanbieding. "Overnemen uit een contract" staat enkel in het venster van een NIEUWE aanbieding.
+  'kredietdossier-advies':      /Advies openen|Ouvrir le conseil/,
+  'advies-pagina':              /Aanbevolen[\s\S]*Aanbevolen|Recommandé[\s\S]*Recommandé/,
+  'advies-aanbieding-venster':  /Overnemen uit een contract|Reprendre d'un contrat/,
   // k1b: het label staat er enkel bij een afsluitende status (een lopend dossier faalt hier); de gekozen reden meet het
   // recept zelf, want een invoerwaarde staat niet in innerText.
   'kredietdossier-reden-afvallen': /Reden van afvallen|Motif d'abandon/,

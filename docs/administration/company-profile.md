@@ -12,15 +12,17 @@ Klik in de zijbalk op **Platformbeheer** en daarna op de tegel **Bedrijfsfiche**
 
 ## De gegevens
 
-![De bedrijfsfiche van CreditSoft: het blok Identiteit met de naam, het btw-nummer met de knop Ophalen en het FSMA-nr., daarnaast Contact met telefoon, e-mail en website, daaronder Adres en Bank met IBAN, BIC en rekeningnummer, en onderaan Documenten en huisstijl met de sleepvakken voor het logo en de foto van het aanmeldscherm.](../images/bedrijfsfiche.png "De gegevens van het eigen kantoor, zoals ze op documenten en in mails verschijnen"){ .volle-breedte }
+![De bedrijfsfiche van CreditSoft: het blok Identiteit met de naam, het btw-nummer met de knop Ophalen, het FSMA-nr. en de keuzelijst Basis van ons advies, daarnaast Contact met telefoon, e-mail en website, daaronder Adres en Bank met IBAN, BIC en rekeningnummer, en onderaan Documenten en huisstijl met de sleepvakken voor het logo en de foto van het aanmeldscherm.](../images/bedrijfsfiche.png "De gegevens van het eigen kantoor, zoals ze op documenten en in mails verschijnen"){ .volle-breedte }
 
 De velden staan gegroepeerd in blokken:
 
-- **Identiteit** — naam, BTW / ondernemingsnr., FSMA-nr..
+- **Identiteit** — naam, BTW / ondernemingsnr., FSMA-nr. en de **basis van ons advies**.
 - **Adres** — straat, nummer, bus, postcode, gemeente, land.
 - **Contact** — telefoon, e-mail, website.
 - **Bank** — IBAN, BIC en rekeningnummer (met een tweede rekening indien nodig).
 - **Documenten & huisstijl** — uw logo en de foto van het aanmeldscherm.
+
+**Basis van ons advies** is de standaard voor elk nieuw [advies](../credit-management/advice.md) op een dossier: *Breed marktaanbod (kredietmakelaar)* of *Eigen assortiment (verbonden agent)*, als u met het assortiment van uw kredietgever(s) werkt. Per dossier past u de basis aan op de adviespagina; een advies waarop al een basis staat, verandert niet mee.
 
 ## Gegevens ophalen uit de KBO
 
