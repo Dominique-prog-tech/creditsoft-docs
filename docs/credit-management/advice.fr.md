@@ -6,11 +6,11 @@ Sur la page de conseil d'un dossier, vous enregistrez **quel conseil** vous avez
 
 Ouvrez le dossier de crédit et cliquez en bas sur l'onglet **Conseil**. L'onglet résume ce qui est déjà enregistré. **Enregistrer un conseil** (rien n'existe encore) ou **Ouvrir le conseil** mène à la page de conseil. **← Retour au dossier** vous ramène.
 
-![Un dossier de crédit avec en bas l'onglet Conseil ouvert, à côté des autres onglets : nous donnons un conseil, la base large gamme du marché, le nombre d'offres comparées dont combien sont recommandées, les copies remises avec la date de la dernière, et le bouton Ouvrir le conseil.](../images/kredietdossier-advies-fr.png "Le conseil de ce dossier en bref"){ .volle-breedte }
+![Un dossier de crédit avec en bas l'onglet Conseil ouvert, à côté des autres onglets : nous donnons un conseil, la base large gamme du marché, le nombre d'offres comparées dont combien sont recommandées, les copies remises (ici aucune), et le bouton Ouvrir le conseil.](../images/kredietdossier-advies-fr.png "Le conseil de ce dossier en bref"){ .volle-breedte }
 
 Qui peut consulter les dossiers voit le conseil ; qui peut modifier les dossiers peut aussi l'adapter. Un apporteur ne voit pas l'onglet.
 
-![La page de conseil d'un dossier : en haut conseil ou pas de conseil et la base du conseil, chacun avec la date à laquelle le client en a été informé ; ensuite les données du client reprises du dossier, les besoins et objectifs, les offres comparées avec l'offre recommandée cochée, la motivation avec les avertissements donnés et si le client suit le conseil, et en bas les copies pour le client.](../images/advies-pagina-fr.png "La page de conseil d'un dossier"){ .volle-breedte }
+![Le haut de la page de conseil : Conseil avec Nous donnons un conseil et la base Large gamme du marché, chacun avec la date à laquelle le client en a été informé ; ensuite Le client avec le crédit demandé, la charge mensuelle et la durée maximales, la quotité et l'évaluation du risque, et Besoins et objectifs avec les besoins, objectifs et préférences du client.](../images/advies-pagina-fr.png "La page de conseil d'un dossier"){ .volle-breedte }
 
 ## Champs et fonctions
 
@@ -36,6 +36,8 @@ Trois champs de texte libre : les **besoins et la situation personnelle** du cli
 ### Offres comparées
 
 Les crédits que vous avez comparés pour ce client, y compris ceux que vous n'avez jamais introduits. Cliquez sur **+ Ajouter une offre**, ou double-cliquez une offre pour la modifier.
+
+![Plus bas sur la page de conseil : Offres comparées avec trois crédits pour le même montant — le crédit recommandé avec le badge Recommandé, un auprès d'une autre banque à un taux plus élevé et un d'une durée plus courte avec une mensualité plus haute —, ensuite Motivation et avertissements avec si le client suit le conseil, et en bas Copies pour le client avec le bouton Établir une copie.](../images/advies-aanbiedingen-fr.png "Trois offres côte à côte, une recommandée"){ .volle-breedte }
 
 ![La fenêtre Ajouter une offre, complétée à partir d'un contrat : en haut la liste Reprendre d'un contrat de ce dossier avec le contrat choisi, ensuite l'institution de crédit, le produit, le montant, la durée en mois, le taux, le TAEG, la mensualité, la case Nous recommandons ceci et le champ Pourquoi oui ou non.](../images/advies-aanbieding-venster-fr.png "Une offre comparée"){ .volle-breedte }
 

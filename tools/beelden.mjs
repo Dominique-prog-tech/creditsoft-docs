@@ -104,6 +104,17 @@ const WISSELT_ALTIJD = {
 // ⚠️ Vaste proefgegevens uit tenant_demo — zie tools/aansturing.mjs (ID).
 
 // naam → route. Alles wat een `na` draagt, vraagt een handeling ná het laden.
+// w2 (20/10/2026): het advies staat in de taal van de KLANT (DemoAdvies.cs) — een Nederlandstalige klant heeft een Nederlands
+// advies. Het Franse beeld opent daarom een ANDER dossier, van een Franstalige klant. Eerst probeerde het recept de teksten
+// in het Frans in te typen: dan zag de pagina onbewaarde wijzigingen en stond de afschriftknop grijs — een andere toestand
+// dan in het Nederlandse beeld.
+async function adviesInDeTaalVanHetBeeld(p) {
+  if (!(await p.getByText(/^(Bewaren|Enregistrer)$/).first().innerText()).startsWith('Enregistrer')) return;
+  await p.goto(p.url().replace(ID.dossierAdvies, ID.dossierAdviesFr), { waitUntil: 'networkidle' });
+  if (!p.url().includes(ID.dossierAdviesFr)) throw new Error(`het Franse beeld hoort op ${ID.dossierAdviesFr} te staan, niet op ${p.url()}`);
+  await p.waitForTimeout(2500);
+}
+
 const SCHOTEN = [
   // ── lijstschermen ──
   ['aanbrengers-lijst',            '/contributors'],
@@ -368,16 +379,37 @@ const SCHOTEN = [
   // Een demo-dossier MET advies (knop "Opvolging, patrimonium, advies en redenen van afvallen aanvullen"): zonder advies
   // toont het tabblad enkel "Advies vastleggen" en de pagina lege kaarten — het merkteken eist dus wat er pas MET staat.
   ['kredietdossier-advies',     `/credit-files/${ID.dossierAdvies}`, async p => {
+      await adviesInDeTaalVanHetBeeld(p);
       await p.getByRole('tab', { name: /^(Advies|Conseil)$/i }).first().click();
       await p.waitForTimeout(2500);
+      // ⚠️ De knop staat ONDER de rand van het beeld en toch in innerText: het merkteken liet de eerste proef door
+      //    zonder knop in beeld (20/10/2026). Dus in beeld scrollen — en dat het lukte, ziet enkel wie kijkt.
+      await p.getByText(/^(Advies openen|Ouvrir le conseil)$/).first().scrollIntoViewIfNeeded();
+      await p.waitForTimeout(800);
   }],
+  // Het bovenste deel: advies, basis en de klant. De rest van de pagina past niet in één beeld — vandaar een tweede.
   ['advies-pagina',             `/credit-files/${ID.dossierAdvies}/advies`, async p => {
       await p.waitForTimeout(2500);
+      await adviesInDeTaalVanHetBeeld(p);
+  }],
+  ['advies-aanbiedingen',       `/credit-files/${ID.dossierAdvies}/advies`, async p => {
+      await p.waitForTimeout(2500);
+      await adviesInDeTaalVanHetBeeld(p);
+      const gevonden = await p.evaluate(() => {
+        const kop = [...document.querySelectorAll('.adm-card *')].find(e => e.children.length === 0
+          && /^(Vergeleken aanbiedingen|Offres comparées)$/.test((e.textContent || '').trim()));
+        const kaart = kop?.closest('.adm-card');
+        kaart?.scrollIntoView({ block: 'start' });
+        return !!kaart;
+      });
+      if (!gevonden) throw new Error('de kaart Vergeleken aanbiedingen staat niet op de adviespagina');
+      await p.waitForTimeout(1000);
   }],
   // Een NIEUWE aanbieding: enkel daar staat "Overnemen uit een contract". Het recept kiest een contract zodat de cijfers er
   // staan, en bewaart NIETS — het venster blijft open voor het beeld. Elke contracttekst draagt een bedrag, vandaar "€".
   ['advies-aanbieding-venster', `/credit-files/${ID.dossierAdvies}/advies`, async p => {
       await p.waitForTimeout(2000);
+      await adviesInDeTaalVanHetBeeld(p);
       await p.getByRole('button', { name: /^\+ (Aanbieding toevoegen|Ajouter une offre)$/ }).click();
       await p.waitForTimeout(1500);
       const venster = p.locator('.dxbl-popup').filter({ hasText: /Aanbieding toevoegen|Ajouter une offre/ });
@@ -1086,6 +1118,7 @@ const VERWACHT = {
   // aanbieding. "Overnemen uit een contract" staat enkel in het venster van een NIEUWE aanbieding.
   'kredietdossier-advies':      /Advies openen|Ouvrir le conseil/,
   'advies-pagina':              /Aanbevolen[\s\S]*Aanbevolen|Recommandé[\s\S]*Recommandé/,
+  'advies-aanbiedingen':        /Aanbevolen[\s\S]*Aanbevolen|Recommandé[\s\S]*Recommandé/,
   'advies-aanbieding-venster':  /Overnemen uit een contract|Reprendre d'un contrat/,
   // k1b: het label staat er enkel bij een afsluitende status (een lopend dossier faalt hier); de gekozen reden meet het
   // recept zelf, want een invoerwaarde staat niet in innerText.

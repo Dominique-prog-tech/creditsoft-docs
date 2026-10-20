@@ -6,11 +6,11 @@ Op de adviespagina van een dossier legt u vast **welk advies** u de klant gaf, w
 
 Open het kredietdossier en klik onderaan op het tabblad **Advies**. Het tabblad vat samen wat er al vastligt. Met **Advies vastleggen** (er is nog niets) of **Advies openen** gaat u naar de adviespagina. **← Terug naar het dossier** brengt u terug.
 
-![Een kredietdossier met onderaan het tabblad Advies geopend, naast de andere tabbladen: wij geven advies, de basis breed marktaanbod, het aantal vergeleken aanbiedingen met hoeveel daarvan aanbevolen, de afschriften met de datum van het laatste, en de knop Advies openen.](../images/kredietdossier-advies.png "Het advies van dit dossier in het kort"){ .volle-breedte }
+![Een kredietdossier met onderaan het tabblad Advies geopend, naast de andere tabbladen: wij geven advies, de basis breed marktaanbod, het aantal vergeleken aanbiedingen met hoeveel daarvan aanbevolen, de afschriften (hier nog geen), en de knop Advies openen.](../images/kredietdossier-advies.png "Het advies van dit dossier in het kort"){ .volle-breedte }
 
 Wie dossiers mag bekijken, ziet het advies; wie dossiers mag wijzigen, kan het ook aanpassen. Een aanbrenger ziet het tabblad niet.
 
-![De adviespagina van een dossier: bovenaan advies of geen advies en de basis van het advies, elk met de datum waarop de klant geïnformeerd werd; daaronder de gegevens van de klant uit het dossier, de behoeften en doelstellingen, de vergeleken aanbiedingen met de aanbevolen aanbieding aangevinkt, de motivering met de gegeven waarschuwingen en of de klant het advies volgt, en onderaan de afschriften voor de klant.](../images/advies-pagina.png "De adviespagina van een dossier"){ .volle-breedte }
+![Het bovenste deel van de adviespagina: Advies met Wij geven advies en de basis Breed marktaanbod, elk met de datum waarop de klant geïnformeerd werd; daaronder De klant met het gevraagd krediet, de maximale maandlast en looptijd, de quotiteit en de risico-inschatting, en Behoeften en doelstellingen met de behoeften, doelstellingen en voorkeuren van de klant.](../images/advies-pagina.png "De adviespagina van een dossier"){ .volle-breedte }
 
 ## Velden en functies
 
@@ -36,6 +36,8 @@ Drie vrije tekstvelden: de **behoeften en persoonlijke situatie** van de klant, 
 ### Vergeleken aanbiedingen
 
 De kredieten die u voor deze klant naast elkaar legde, ook wat u nooit indiende. Klik op **+ Aanbieding toevoegen**, of dubbelklik een aanbieding om ze te wijzigen.
+
+![Verderop op de adviespagina: Vergeleken aanbiedingen met drie kredieten voor hetzelfde bedrag — het aanbevolen krediet met de badge Aanbevolen, een bij een andere bank met een hogere rente en een met een kortere looptijd en een hogere maandlast —, daaronder Motivering en waarschuwingen met of de klant het advies volgt, en onderaan Afschriften voor de klant met de knop Afschrift maken.](../images/advies-aanbiedingen.png "Drie aanbiedingen naast elkaar, één aanbevolen"){ .volle-breedte }
 
 ![Het venster Aanbieding toevoegen, ingevuld uit een contract: bovenaan de keuzelijst Overnemen uit een contract van dit dossier met het gekozen contract, daaronder de kredietinstelling, het product, het bedrag, de looptijd in maanden, de rente, het JKP, de maandlast, het vinkje Dit raden wij aan en het veld Waarom wel of niet.](../images/advies-aanbieding-venster.png "Een vergeleken aanbieding"){ .volle-breedte }
 

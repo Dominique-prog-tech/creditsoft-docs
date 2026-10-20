@@ -67,8 +67,15 @@ export const ID = {
   // afsluitende status toont het veld niet, dus een lopend dossier bewijst niets. Gekozen met een query na "Opvolging,
   // patrimonium en redenen van afvallen aanvullen"; valt om na een her-seed (de reden hangt aan het nummer).
   dossierAfgevallen: '141a60e1-654d-413a-bfae-c70eae530b2f',
-  // w2 (20/10/2026) — een demo-dossier met een advies. NOG TE KIEZEN na de knop "…advies… aanvullen" op tenant_demo.
-  dossierAdvies: 'NOG-TE-KIEZEN',
+  // DEMO-1004 (w2, 20/10/2026) — advies met drie aanbiedingen: het aanbevolen contract (226.000, 240 maanden, 3,58 %), een
+  // alternatief bij een andere bank met een hogere rente en een met een kortere looptijd; de klant volgt het advies. Gekozen
+  // met een query na de knop "Opvolging, patrimonium, advies en redenen van afvallen aanvullen"; valt om na een her-seed.
+  dossierAdvies: '02b9011d-19dc-4b40-9d9d-08314975c8d6',
+  // DEMO-4995 — hetzelfde geval bij een FRANSTALIGE klant: het advies staat in zijn taal, dus het Franse beeld toont dit
+  // dossier en niet DEMO-1004 (zie adviesInDeTaalVanHetBeeld in beelden.mjs). Zelfde query, a.needs like 'Famille%', én
+  // dezelfde status als DEMO-1004 — DEMO-1148 stond op "Crédit sans suite" en toonde een reden van afvallen die het
+  // Nederlandse beeld niet heeft.
+  dossierAdviesFr: 'dd594988-6490-4498-92d0-1e755a042d1e',
   schema:   'a9b48983-8066-4209-a315-8f950e6983dd',   // het actieve schema van DEMO-1089
   // ⚠️ Een aanbrenger die AL portaaltoegang heeft. Met een aanbrenger zónder toegang toont het venster
   // "Deze aanbrenger heeft nog geen portaaltoegang" — en dan mist het beeld precies de knoppen waar de
