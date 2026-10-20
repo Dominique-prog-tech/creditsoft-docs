@@ -43,7 +43,7 @@ Les crédits que vous avez comparés pour ce client, y compris ceux que vous n'a
 
 | Champ | À quoi il sert |
 |---|---|
-| **Reprendre d'un contrat de ce dossier** | Complète l'institution de crédit, le produit, le montant, la durée, le taux et la mensualité à partir d'un contrat de crédit du dossier. Une assurance solde restant dû n'y figure pas |
+| **Reprendre d'un contrat de ce dossier** | Complète l'institution de crédit, le produit, le montant, la durée, le taux et la mensualité à partir d'un contrat de crédit du dossier. Le produit reçoit le type et votre abréviation, par exemple *Crédit hypothécaire (HL)* : c'est ainsi que votre client le lit sur la copie. Une assurance solde restant dû n'y figure pas |
 | **Institution de crédit**, **Produit** | Au moins l'un des deux est nécessaire |
 | **Montant**, **Durée (mois)**, **Taux**, **TAEG**, **Mensualité** | Les chiffres que vous avez comparés |
 | **Nous recommandons ceci** | Cochez ce que vous recommandez au client |

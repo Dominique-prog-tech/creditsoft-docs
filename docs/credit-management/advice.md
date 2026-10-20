@@ -43,7 +43,7 @@ De kredieten die u voor deze klant naast elkaar legde, ook wat u nooit indiende.
 
 | Veld | Waarvoor |
 |---|---|
-| **Overnemen uit een contract van dit dossier** | Vult kredietinstelling, product, bedrag, looptijd, rente en maandlast in uit een kredietcontract van het dossier. Een schuldsaldoverzekering staat er niet bij |
+| **Overnemen uit een contract van dit dossier** | Vult kredietinstelling, product, bedrag, looptijd, rente en maandlast in uit een kredietcontract van het dossier. Het product krijgt de soort en uw afkorting, bijvoorbeeld *Hypothecair krediet (HL)*: zo leest uw klant het op het afschrift. Een schuldsaldoverzekering staat er niet bij |
 | **Kredietinstelling**, **Product** | Minstens een van beide is nodig |
 | **Bedrag**, **Looptijd (maanden)**, **Rente**, **JKP**, **Maandlast** | De cijfers die u vergeleek |
 | **Dit raden wij aan** | Vink aan wat u de klant aanbeveelt |
