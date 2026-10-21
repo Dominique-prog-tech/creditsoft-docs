@@ -63,7 +63,7 @@ Cliquez sur **Enregistrer** en haut pour sauvegarder le conseil. Si vous quittez
 
 ### Copies pour le client
 
-**+ Établir une copie** fige le conseil enregistré en pdf, dans la langue du client, avec l'en-tête de votre bureau. L'offre recommandée y figure en premier. Une copie ne change plus : si vous adaptez le conseil plus tard, une copie remise reste telle quelle. Établissez alors une nouvelle copie.
+**+ Établir une copie** fige le conseil enregistré en pdf, dans la langue du client, avec l'en-tête de votre bureau. La copie s'intitule **Comparaison de crédits** ; l'offre que vous recommandez y figure en premier, comme **Notre proposition**. Les mots *conseil* et *recommander* n'apparaissent volontairement pas dans ce que lit votre client. Une copie ne change plus : si vous adaptez le conseil plus tard, une copie remise reste telle quelle. Établissez alors une nouvelle copie.
 
 Pour chaque copie, vous voyez quand et par qui elle a été établie, dans quelle langue, et si elle a été **remise** :
 

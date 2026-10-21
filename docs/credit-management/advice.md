@@ -63,7 +63,7 @@ Klik op **Bewaren** bovenaan om het advies op te slaan. Verlaat u de pagina met 
 
 ### Afschriften voor de klant
 
-**+ Afschrift maken** legt het bewaarde advies vast als pdf, in de taal van de klant, met het briefhoofd van uw kantoor. De aanbevolen aanbieding staat erop bovenaan. Een afschrift wijzigt niet meer: past u het advies later aan, dan blijft een gegeven afschrift zoals het was. Maak dan een nieuw afschrift.
+**+ Afschrift maken** legt het bewaarde advies vast als pdf, in de taal van de klant, met het briefhoofd van uw kantoor. Het afschrift heet **Kredietvergelijking**; uw aanbevolen aanbieding staat er bovenaan als **Ons voorstel**. De woorden *advies* en *aanbevelen* komen bewust niet op wat uw klant leest. Een afschrift wijzigt niet meer: past u het advies later aan, dan blijft een gegeven afschrift zoals het was. Maak dan een nieuw afschrift.
 
 Per afschrift ziet u wanneer en door wie het gemaakt werd, in welke taal, en of het **bezorgd** is:
 
