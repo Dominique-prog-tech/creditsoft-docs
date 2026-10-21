@@ -3033,5 +3033,293 @@
     "gepubliceerdOp": "2026-09-24T03:54:35.436",
     "gepubliceerdeHash": "eddcbf7e0bdd7cb8",
     "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/a9f6a1b8-59ae-46d9-9aa5-32bc9be6f5fd/thumbnail.jpg"
+  },
+  "adviesdossier-nl": {
+    "film": "adviesdossier",
+    "taal": "nl-BE",
+    "pagina": "credit-management/advice",
+    "lengte": 161.8,
+    "uitvoering": "handleiding",
+    "routes": [
+      "/credit-files/{id}"
+    ],
+    "app": {
+      "sha": "138d05d07af8a6bfde46db9d59b2a97d4bf0fd20",
+      "vuil": true
+    },
+    "titel": "Het adviesdossier in CreditSoft — vastleggen wat u voorstelde",
+    "omschrijving": "Per kredietdossier legt u vast of u advies geeft en op welke basis, wat de klant u vertelde, welke kredieten u naast elkaar legde en waarom u er één voorstelt. Uw klant krijgt een afschrift in zijn taal, als kredietvergelijking, en CreditSoft houdt bij hoe en wanneer hij het kreeg.",
+    "hash": "4e26cd3972632c62",
+    "guid": null,
+    "hoofdstukken": [
+      {
+        "titel": "Het tabblad Advies",
+        "start": 8.6,
+        "eind": 21.56
+      },
+      {
+        "titel": "De adviespagina",
+        "start": 26.81,
+        "eind": 40.46
+      },
+      {
+        "titel": "De basis",
+        "start": 44.23,
+        "eind": 53.94
+      },
+      {
+        "titel": "De klant",
+        "start": 57.71,
+        "eind": 66.81
+      },
+      {
+        "titel": "Behoeften",
+        "start": 70.58,
+        "eind": 77.03
+      },
+      {
+        "titel": "Vergeleken aanbiedingen",
+        "start": 81.11,
+        "eind": 92.68
+      },
+      {
+        "titel": "Uit een contract",
+        "start": 99.73,
+        "eind": 109.67
+      },
+      {
+        "titel": "Motivering",
+        "start": 115.22,
+        "eind": 121.81
+      },
+      {
+        "titel": "Het afschrift",
+        "start": 125.59,
+        "eind": 138.41
+      },
+      {
+        "titel": "Bezorgen",
+        "start": 142.48,
+        "eind": 150.65
+      },
+      {
+        "titel": "Tot slot",
+        "start": 154.42,
+        "eind": 159.48
+      }
+    ]
+  },
+  "adviesdossier-fr": {
+    "film": "adviesdossier",
+    "taal": "fr-BE",
+    "pagina": "credit-management/advice",
+    "lengte": 150,
+    "uitvoering": "handleiding",
+    "routes": [
+      "/credit-files/{id}"
+    ],
+    "app": {
+      "sha": "138d05d07af8a6bfde46db9d59b2a97d4bf0fd20",
+      "vuil": true
+    },
+    "titel": "Le dossier de conseil dans CreditSoft — garder ce que vous avez proposé",
+    "omschrijving": "Pour chaque dossier de crédit, vous indiquez si vous donnez un conseil et sur quelle base, ce que le client vous a dit, quels crédits vous avez comparés et pourquoi vous en proposez un. Votre client reçoit une copie dans sa langue, sous forme de comparaison de crédits, et CreditSoft garde comment et quand il l’a reçue.",
+    "hash": "5ba1ad807ef7c285",
+    "guid": null,
+    "hoofdstukken": [
+      {
+        "titel": "L’onglet Conseil",
+        "start": 8.56,
+        "eind": 20.59
+      },
+      {
+        "titel": "La page de conseil",
+        "start": 25.88,
+        "eind": 37.35
+      },
+      {
+        "titel": "La base",
+        "start": 41.11,
+        "eind": 50.02
+      },
+      {
+        "titel": "Le client",
+        "start": 53.78,
+        "eind": 61.82
+      },
+      {
+        "titel": "Besoins",
+        "start": 65.58,
+        "eind": 71.48
+      },
+      {
+        "titel": "Offres comparées",
+        "start": 75.55,
+        "eind": 83.91
+      },
+      {
+        "titel": "À partir d’un contrat",
+        "start": 90.94,
+        "eind": 99.63
+      },
+      {
+        "titel": "Motivation",
+        "start": 105.17,
+        "eind": 111.86
+      },
+      {
+        "titel": "La copie",
+        "start": 115.63,
+        "eind": 126.36
+      },
+      {
+        "titel": "Remettre",
+        "start": 130.43,
+        "eind": 138.37
+      },
+      {
+        "titel": "Pour conclure",
+        "start": 142.15,
+        "eind": 147.72
+      }
+    ]
+  },
+  "adviesdossier-website-nl": {
+    "film": "adviesdossier",
+    "taal": "nl-BE",
+    "pagina": "credit-management/advice",
+    "lengte": 46.48,
+    "uitvoering": "website",
+    "routes": [
+      "/credit-files/{id}",
+      "/credit-files/{id}/advies"
+    ],
+    "app": {
+      "sha": "138d05d07af8a6bfde46db9d59b2a97d4bf0fd20",
+      "vuil": true
+    },
+    "titel": "Het adviesdossier in CreditSoft — vastleggen wat u voorstelde",
+    "omschrijving": "Per kredietdossier legt u vast of u advies geeft en op welke basis, wat de klant u vertelde, welke kredieten u naast elkaar legde en waarom u er één voorstelt. Uw klant krijgt een afschrift in zijn taal, als kredietvergelijking, en CreditSoft houdt bij hoe en wanneer hij het kreeg.",
+    "hash": "57075b6d7f3977f7",
+    "guid": null,
+    "hoofdstukken": [
+      {
+        "titel": "Het tabblad Advies",
+        "start": 8.59,
+        "eind": 11.38
+      },
+      {
+        "titel": "Vergeleken aanbiedingen",
+        "start": 15.47,
+        "eind": 18.47
+      },
+      {
+        "titel": "Uit een contract",
+        "start": 25.51,
+        "eind": 29.08
+      },
+      {
+        "titel": "Het afschrift",
+        "start": 34.22,
+        "eind": 37.22
+      },
+      {
+        "titel": "Tot slot",
+        "start": 41.01,
+        "eind": 44.08
+      }
+    ]
+  },
+  "adviesdossier-website-fr": {
+    "film": "adviesdossier",
+    "taal": "fr-BE",
+    "pagina": "credit-management/advice",
+    "lengte": 46.12,
+    "uitvoering": "website",
+    "routes": [
+      "/credit-files/{id}",
+      "/credit-files/{id}/advies"
+    ],
+    "app": {
+      "sha": "138d05d07af8a6bfde46db9d59b2a97d4bf0fd20",
+      "vuil": true
+    },
+    "titel": "Le dossier de conseil dans CreditSoft — garder ce que vous avez proposé",
+    "omschrijving": "Pour chaque dossier de crédit, vous indiquez si vous donnez un conseil et sur quelle base, ce que le client vous a dit, quels crédits vous avez comparés et pourquoi vous en proposez un. Votre client reçoit une copie dans sa langue, sous forme de comparaison de crédits, et CreditSoft garde comment et quand il l’a reçue.",
+    "hash": "db21d980fb4c5bba",
+    "guid": null,
+    "hoofdstukken": [
+      {
+        "titel": "L’onglet Conseil",
+        "start": 8.52,
+        "eind": 11.87
+      },
+      {
+        "titel": "Offres comparées",
+        "start": 16.05,
+        "eind": 18.65
+      },
+      {
+        "titel": "À partir d’un contrat",
+        "start": 25.7,
+        "eind": 28.34
+      },
+      {
+        "titel": "La copie",
+        "start": 33.5,
+        "eind": 36.65
+      },
+      {
+        "titel": "Pour conclure",
+        "start": 40.42,
+        "eind": 43.78
+      }
+    ]
+  },
+  "adviesdossier-website-en": {
+    "film": "adviesdossier",
+    "taal": "nl-BE",
+    "pagina": "credit-management/advice",
+    "lengte": 46.08,
+    "uitvoering": "website",
+    "routes": [
+      "/credit-files/{id}",
+      "/credit-files/{id}/advies"
+    ],
+    "app": {
+      "sha": "138d05d07af8a6bfde46db9d59b2a97d4bf0fd20",
+      "vuil": true
+    },
+    "titel": "The advice file in CreditSoft — recording what you proposed",
+    "omschrijving": "For each credit file you record whether you give advice and on what basis, what the client told you, which credits you compared and why you propose one. Your client receives a copy in their language, as a credit comparison, and CreditSoft keeps track of how and when they received it.",
+    "hash": "ee4e48796a920cce",
+    "guid": null,
+    "hoofdstukken": [
+      {
+        "titel": "The Advice tab",
+        "start": 8.57,
+        "eind": 11.22
+      },
+      {
+        "titel": "Compared offers",
+        "start": 15.31,
+        "eind": 18.17
+      },
+      {
+        "titel": "From a contract",
+        "start": 25.21,
+        "eind": 28.64
+      },
+      {
+        "titel": "The copy",
+        "start": 33.77,
+        "eind": 36.77
+      },
+      {
+        "titel": "In closing",
+        "start": 40.55,
+        "eind": 43.76
+      }
+    ]
   }
 }

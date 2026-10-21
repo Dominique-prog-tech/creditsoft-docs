@@ -12,6 +12,13 @@
 import { BASIS, ID } from './aansturing.mjs';
 import { beweegNaar, klik, kopbalkKnop, tabblad, sluitLade, zichtbareAfspraak } from '/Users/dominique/projects/adm-appkit/tools/schermmachinerie/browser.mjs';
 
+// Het adviesdossier in de taal van de film: het advies staat in de taal van de KLANT (zie de film adviesdossier).
+// De taal leest de film uit het cultuurkoekje dat /culture/set zet; zonder koekje: Nederlands.
+async function adviesDossier(p) {
+  const k = (await p.context().cookies()).find(c => c.name === '.AspNetCore.Culture');
+  return /fr-BE/.test(decodeURIComponent(k?.value ?? '')) ? ID.dossierAdviesFr : ID.dossierAdvies;
+}
+
 export const FILMS = [
   // ── DE OVERZICHTSFILM VOOR DE HOMEPAGE ───────────────────────────────────────────────────────────────
   //
@@ -1656,6 +1663,167 @@ export const FILMS = [
         en: 'One file, one page. What has been paid out, stays.',
         fr: "Un dossier, une page. Ce qui a été payé, reste." ,
         website: { nl: 'Alles wat bij één aanvraag hoort, op één plaats.', fr: 'Tout ce qui concerne une demande, au même endroit.', en: 'Everything about one application, in one place.' } },
+    ],
+  }],
+  // ── HET ADVIESDOSSIER (w2, 21/10/2026) ───────────────────────────────────────────────────────────────
+  // Scenario voorgelegd en goedgekeurd door Dominique (21/10: "Akkoord met dit scenario zoals het er staat"), met
+  // keuze 1 voor het afschrift: TONEN zonder te maken. Een afschrift aanmaken laat een rij achter in de demo, en de
+  // datum ervan (de echte klok) botst met de vaste klok van de opname. Daarom geen klik op "+ Afschrift maken" en geen
+  // mailvenster.
+  //
+  // ⚠️ HET DOSSIER VOLGT DE TAAL. Het advies staat in de taal van de KLANT (DemoAdvies.cs): DEMO-1004 is een
+  // Nederlandstalige klant, DEMO-4995 een Franstalige. Een Franse film op DEMO-1004 toont Nederlandse vrije tekst.
+  ['adviesdossier', {
+    pagina: 'credit-management/advice',
+    titel: {
+      nl: 'Het adviesdossier in CreditSoft — vastleggen wat u voorstelde',
+      fr: 'Le dossier de conseil dans CreditSoft — garder ce que vous avez proposé',
+      en: 'The advice file in CreditSoft — recording what you proposed',
+    },
+    omschrijving: {
+      nl: 'Per kredietdossier legt u vast of u advies geeft en op welke basis, wat de klant u vertelde, welke kredieten '
+        + 'u naast elkaar legde en waarom u er één voorstelt. Uw klant krijgt een afschrift in zijn taal, als '
+        + 'kredietvergelijking, en CreditSoft houdt bij hoe en wanneer hij het kreeg.',
+      fr: 'Pour chaque dossier de crédit, vous indiquez si vous donnez un conseil et sur quelle base, ce que le client '
+        + 'vous a dit, quels crédits vous avez comparés et pourquoi vous en proposez un. Votre client reçoit une copie '
+        + 'dans sa langue, sous forme de comparaison de crédits, et CreditSoft garde comment et quand il l’a reçue.',
+      en: 'For each credit file you record whether you give advice and on what basis, what the client told you, which '
+        + 'credits you compared and why you propose one. Your client receives a copy in their language, as a credit '
+        + 'comparison, and CreditSoft keeps track of how and when they received it.',
+    },
+    dossier: ID.dossierAdvies,
+    uitvoeringen: {
+      handleiding: { stem: true },
+      website: {
+        stem: false,
+        scenes: ['tabblad', 'aanbiedingen', 'overnemen', 'afschrift', 'slot'],
+        talen: [{ ui: 'nl-BE', tekst: 'nl' }, { ui: 'fr-BE', tekst: 'fr' }, { ui: 'nl-BE', tekst: 'en' }],
+      },
+    },
+    scenes: [
+      { naam: 'tabblad', kop: { nl: 'Het tabblad Advies', fr: 'L’onglet Conseil', en: 'The Advice tab' },
+        doe: async (p) => {
+          await p.goto(`${BASIS}/credit-files/${await adviesDossier(p)}`); await p.waitForLoadState('networkidle');
+          await p.waitForTimeout(2200);
+          // ⚠️ ZONDER ankers: met /^…$/ vond de zoeker 0 tabbladen (21/10/2026, gemeten) — de tabtekst draagt witruimte.
+          //    Geen ander tabblad bevat "Advies" of "Conseil".
+          await klik(p, tabblad(p, /Advies|Conseil/));
+          await p.waitForTimeout(1500);
+          await beweegNaar(p, p.getByText(/^(Advies openen|Ouvrir le conseil)$/).first());
+          await p.waitForTimeout(1200);
+        },
+        merk: /Advies openen|Ouvrir le conseil/,
+        nl: 'Op elk kredietdossier staat een tabblad Advies. Het vat samen wat u met deze klant afsprak: of u advies geeft, op welke basis, wat u vergeleek en welke afschriften hij kreeg.',
+        fr: 'Chaque dossier de crédit a un onglet Conseil. Il résume ce que vous avez convenu avec ce client : si vous donnez un conseil, sur quelle base, ce que vous avez comparé et quelles copies il a reçues.',
+        website: { nl: 'Leg per dossier vast welk advies u gaf.', fr: 'Consignez dans chaque dossier le conseil donné.', en: 'Record the advice you gave, per file.' } },
+
+      { naam: 'openen', kop: { nl: 'De adviespagina', fr: 'La page de conseil', en: 'The advice page' },
+        doe: async (p) => {
+          await klik(p, p.getByText(/^(Advies openen|Ouvrir le conseil)$/).first());
+          await p.waitForURL(/\/advies$/); await p.waitForLoadState('networkidle'); await p.waitForTimeout(2200);
+          await beweegNaar(p, p.getByText(/^(Advies of geen advies|Conseil ou pas de conseil)$/).first());
+        },
+        merk: /Advies of geen advies|Conseil ou pas de conseil/,
+        nl: 'Met Advies openen komt u op de adviespagina. Bovenaan legt u vast of u advies geeft, en op welke basis: een breed aanbod van de markt, of het assortiment van de kredietgevers waarvoor u werkt.',
+        fr: 'Ouvrir le conseil mène à la page de conseil. En haut, vous indiquez si vous donnez un conseil, et sur quelle base : une large gamme du marché, ou la gamme des prêteurs pour lesquels vous travaillez.' },
+
+      { naam: 'basis', kop: { nl: 'De basis', fr: 'La base', en: 'The basis' },
+        doe: async (p) => { await beweegNaar(p, p.getByText(/^(Basis van het advies|Base du conseil)$/).first()); await p.waitForTimeout(1500); },
+        // ⚠️ NIET de hint "De standaard van uw kantoor": die staat er enkel als het kantoor een standaard koos, en de
+        //    demo staat op "Niet ingesteld" (gemeten 21/10/2026: de scène viel erop).
+        merk: /Klant geïnformeerd over de basis op|Client informé de la base le/,
+        nl: 'De basis staat al ingevuld met de standaard van uw kantoor; die kiest u één keer op de bedrijfsfiche. Noteer ook wanneer u de klant daarover informeerde.',
+        fr: 'La base reprend déjà la valeur par défaut de votre bureau ; vous la choisissez une fois sur la fiche d’entreprise. Notez aussi quand vous en avez informé le client.' },
+
+      { naam: 'klant', kop: { nl: 'De klant', fr: 'Le client', en: 'The client' },
+        doe: async (p) => { await beweegNaar(p, p.getByText(/^(Gevraagd krediet|Crédit demandé)$/).first()); await p.waitForTimeout(1500); },
+        merk: /Quotiteit|Quotité/,
+        nl: 'Daaronder staat wat al in het dossier zit: het gevraagde krediet, de quotiteit en de risico-inschatting. U typt niets opnieuw.',
+        fr: 'En dessous figure ce que contient déjà le dossier : le crédit demandé, la quotité et l’évaluation du risque. Vous ne retapez rien.' },
+
+      { naam: 'behoeften', kop: { nl: 'Behoeften', fr: 'Besoins', en: 'Needs' },
+        doe: async (p) => { await beweegNaar(p, p.getByText(/^(Behoeften en persoonlijke situatie|Besoins et situation personnelle)$/).first()); await p.waitForTimeout(1500); },
+        merk: /Doelstellingen|Objectifs/,
+        nl: 'Hier schrijft u wat de klant u vertelde: zijn situatie, wat hij wil bereiken en wat hij verkiest.',
+        fr: 'Ici, vous notez ce que le client vous a dit : sa situation, ce qu’il veut atteindre et ce qu’il préfère.' },
+
+      { naam: 'aanbiedingen', kop: { nl: 'Vergeleken aanbiedingen', fr: 'Offres comparées', en: 'Compared offers' },
+        // De BADGE in de rij, niet de kolomkop: het merkteken eist "Aanbevolen" twee keer (kop + badge).
+        // ⚠️ De websiteteaser slaat "openen" over en staat dan nog op de dossierfiche: dan zelf naar de adviespagina.
+        doe: async (p) => {
+          let teaser = false;
+          if (!/\/advies$/.test(p.url())) {
+            teaser = true;
+            await p.goto(`${BASIS}/credit-files/${await adviesDossier(p)}/advies`); await p.waitForLoadState('networkidle');
+            await p.waitForTimeout(500);
+          }
+          // Kortere pauze in de teaser (30–45 s): de eerste opname duurde 48 s.
+          await beweegNaar(p, p.locator('.dxbl-grid').getByText(/^(Aanbevolen|Recommandé)$/).last()); await p.waitForTimeout(teaser ? 600 : 1800);
+        },
+        merk: /Aanbevolen[\s\S]*Aanbevolen|Recommandé[\s\S]*Recommandé/,
+        nl: 'Onder Vergeleken aanbiedingen staat elk krediet dat u naast elkaar legde, ook het voorstel dat u nooit indiende. Wat u voorstelt, krijgt de badge Aanbevolen.',
+        fr: 'Sous Offres comparées figure chaque crédit que vous avez comparé, même la proposition jamais introduite. Ce que vous proposez reçoit le badge Recommandé.',
+        website: { nl: 'Elk krediet dat u vergeleek, naast elkaar.', fr: 'Chaque crédit comparé, côte à côte.', en: 'Every credit you compared, side by side.' } },
+
+      { naam: 'overnemen', kop: { nl: 'Uit een contract', fr: 'À partir d’un contrat', en: 'From a contract' },
+        // Een NIEUWE aanbieding, gevuld uit een contract — en NIETS bewaard: de volgende scène sluit het venster.
+        doe: async (p) => {
+          // ⚠️ Korte wachttijden: de eerste opname (21/10/2026) had 10 s stilte vóór de zin — de handeling komt vóór de stem.
+          await klik(p, p.getByRole('button', { name: /^\+ (Aanbieding toevoegen|Ajouter une offre)$/ }));
+          await p.waitForTimeout(800);
+          const venster = p.locator('.dxbl-popup').filter({ hasText: /Aanbieding toevoegen|Ajouter une offre/ });
+          await klik(p, venster.locator('.dxbl-fl-item', { hasText: /Overnemen uit een contract|Reprendre d.un contrat/ }).locator('input'));
+          await p.keyboard.type('€', { delay: 60 });
+          await p.waitForTimeout(700);
+          await klik(p, p.locator('.dxbl-listbox-item, [role=option]', { hasText: '€' }).first());
+          await p.waitForTimeout(900);
+          await beweegNaar(p, venster.locator('.dxbl-fl-item', { hasText: /^(Bedrag|Montant)/ }).first());
+        },
+        merk: /Overnemen uit een contract|Reprendre d.un contrat/,
+        nl: 'Een aanbieding typt u niet over. Kies een contract van het dossier, en bank, product, bedrag, looptijd, rente en maandlast staan er al.',
+        fr: 'Une offre ne se retape pas. Choisissez un contrat du dossier : banque, produit, montant, durée, taux et mensualité sont déjà remplis.',
+        website: { nl: 'Bank en cijfers uit het contract, niet overgetypt.', fr: 'Banque et chiffres repris du contrat.', en: 'Bank and figures from the contract, not retyped.' } },
+
+      { naam: 'motivering', kop: { nl: 'Motivering', fr: 'Motivation', en: 'Reasoning' },
+        doe: async (p) => {
+          const venster = p.locator('.dxbl-popup').filter({ hasText: /Aanbieding toevoegen|Ajouter une offre/ });
+          await klik(p, venster.getByRole('button', { name: /^(Annuleren|Annuler)$/ }));
+          await p.waitForTimeout(1000);
+          await beweegNaar(p, p.getByText(/^(Waarom dit voorstel het best past|Pourquoi cette proposition convient le mieux)$/).first());
+          await p.waitForTimeout(1500);
+        },
+        merk: /Volgt de klant het advies|Le client suit-il le conseil/,
+        nl: 'Daarna zegt u waarom dit voorstel het best past, welke waarschuwingen u gaf, en of de klant het volgt.',
+        fr: 'Ensuite, vous expliquez pourquoi cette proposition convient le mieux, quels avertissements vous avez donnés, et si le client la suit.' },
+
+      { naam: 'afschrift', kop: { nl: 'Het afschrift', fr: 'La copie', en: 'The copy' },
+        // ⚠️ De teaser slaat "motivering" over — en die sluit het venster van de nieuwe aanbieding. Zonder dit stonden
+        //    afschrift en slot boven een open venster (gezien op de beelden per scène, 21/10/2026).
+        doe: async (p) => {
+          const venster = p.locator('.dxbl-popup').filter({ hasText: /Aanbieding toevoegen|Ajouter une offre/ });
+          if (await venster.isVisible().catch(() => false)) {
+            await klik(p, venster.getByRole('button', { name: /^(Annuleren|Annuler)$/ })); await p.waitForTimeout(600);
+          }
+          await beweegNaar(p, p.getByText(/^(Afschriften voor de klant|Copies pour le client)$/).first()); await p.waitForTimeout(1500);
+        },
+        merk: /Afschrift maken|Établir une copie/,
+        nl: 'Met Afschrift maken zet CreditSoft het bewaarde advies in een pdf, in de taal van de klant en met uw briefhoofd. Uw klant leest het als een kredietvergelijking, en het verandert daarna niet meer.',
+        fr: 'Établir une copie fige le conseil enregistré en pdf, dans la langue du client et à votre en-tête. Votre client le lit comme une comparaison de crédits, et il ne change plus ensuite.',
+        website: { nl: 'Een afschrift voor uw klant, in zijn taal.', fr: 'Une copie pour votre client, dans sa langue.', en: 'A copy for your client, in their language.' } },
+
+      { naam: 'bezorgen', kop: { nl: 'Bezorgen', fr: 'Remettre', en: 'Delivering' },
+        // Keuze 1: niets aanmaken — de cursor wijst de knop aan, er wordt niet geklikt.
+        doe: async (p) => { await beweegNaar(p, p.getByText(/^\+ (Afschrift maken|Établir une copie)$/).first()); await p.waitForTimeout(1800); },
+        merk: /in de taal van de klant|dans la langue du client/,
+        nl: 'U mailt het vanuit het dossier, of noteert dat u het op papier gaf. CreditSoft houdt bij hoe en wanneer de klant het kreeg.',
+        fr: 'Vous l’envoyez depuis le dossier, ou notez que vous l’avez remis sur papier. CreditSoft garde comment et quand le client l’a reçu.' },
+
+      { naam: 'slot', kop: { nl: 'Tot slot', fr: 'Pour conclure', en: 'In closing' },
+        doe: async (p) => { await beweegNaar(p, p.getByText(/Terug naar het dossier|Retour au dossier/).first()); await p.waitForTimeout(1500); },
+        merk: /DEMO-\d+/,
+        nl: 'Zo staat bij elk dossier wat u voorstelde, waarom, en wanneer uw klant het kreeg.',
+        fr: 'Ainsi, chaque dossier garde ce que vous avez proposé, pourquoi, et quand votre client l’a reçu.',
+        website: { nl: 'Wat u voorstelde, en wanneer hij het kreeg.', fr: 'Ce que vous avez proposé, et quand il l’a reçu.', en: 'What you proposed, and when they received it.' } },
     ],
   }],
 ];

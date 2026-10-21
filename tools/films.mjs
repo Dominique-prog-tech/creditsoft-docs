@@ -141,6 +141,14 @@ const MASKEER_BOEKINGSLINK = () => {
 // `visibility` en niet `display`: de kopbalk mag niet verschuiven.
 const VERBERG_VERSIE = '.nav-version, .adm-klok-vast { visibility: hidden !important; }';
 
+// ⚠️ EN DE STATUSSTROOK VAN DE SCHIL (21/10/2026). Zelfde beslissing als bij de beelden (Dominique, 12/10/2026: ze hoort
+// niet op wat de handleiding toont), maar die regel stond enkel in beelden.mjs — de eerste film na 1.183.0, het
+// adviesdossier, droeg "Opstartomgeving" bovenaan elk beeld. Gezien op de stilstaande beelden per scène, door geen controle.
+// `display` en niet `visibility`, zoals bij de beelden: een lege paarse band is erger dan een kopbalk die opschuift.
+// Enkel de film over het aan-de-slag-paneel mag ze tonen, zoals het beeld daarvan (MET_STROOK in beelden.mjs).
+const VERBERG_STROOK = '.account-banner { display: none !important; }';
+const FILMS_MET_STROOK = new Set(['aan-de-slag']);
+
 // ── DE TEKSTBALK VOOR EEN GELUIDLOZE FILM ────────────────────────────────────────────────────────────────
 //
 // ⚠️ IN DE PAGINA EN NIET MET FFMPEG. Dezelfde weg als de cursor: een element dat de opname gewoon meeneemt.
@@ -689,11 +697,12 @@ for (const [naam, filmVol] of FILMS) {
     });
     await ctx.addInitScript(CURSOR);
     if (!metStem) await ctx.addInitScript(TEKSTBALK);
+    const verberg = VERBERG_VERSIE + (FILMS_MET_STROOK.has(naam) ? '' : VERBERG_STROOK);
     await ctx.addInitScript((css) => {
       const stijl = document.createElement('style');
       stijl.textContent = css;
       document.addEventListener('DOMContentLoaded', () => document.head.appendChild(stijl));
-    }, VERBERG_VERSIE);
+    }, verberg);
     await ctx.addInitScript(MASKEER_BOEKINGSLINK);
     const page = await ctx.newPage();
     const t0 = Date.now();
@@ -726,7 +735,7 @@ for (const [naam, filmVol] of FILMS) {
       }
       // ⚠️ De versiefilter opnieuw aanbrengen: Blazor's enhanced navigation vervangt de <head> bij een
       // klik-navigatie en gooit de ingespoten stijl weg. Gemeten bij de beeldgenerator op 31/08/2026.
-      await page.addStyleTag({ content: VERBERG_VERSIE }).catch(() => {});
+      await page.addStyleTag({ content: verberg }).catch(() => {});
 
       // De grendel bij de filter hierboven: staat de klok-pil er tóch (hernoemde klasse, een schil die de stijl
       // wegveegt), dan valt de film — een film met een dev-badge in beeld hoort nergens terecht te komen.
