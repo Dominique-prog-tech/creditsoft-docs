@@ -73,6 +73,10 @@ const HANDWERK = { 'rapporten-voorbeeld': 'één blad uit een gerenderd rapport,
                    // Een pdf, geen scherm: de browser toont ze in zijn eigen viewer, en die schiet deze generator niet.
                    // Gemaakt met `sips` uit de bewaarde pdf van F-2026-0001 (NL) en F-2026-0003 (FR) in tenant_demo.
                    'factuur-pdf': 'de pdf van een demofactuur, met sips omgezet naar png (NL: F-2026-0001, FR: F-2026-0003)',
+                   // Het afschrift van het advies (1.196.0: "Kredietvergelijking"). Gemaakt met "+ Afschrift maken" op
+                   // DEMO-1025 (NL) en DEMO-1086 (FR) in tenant_demo — NIET op de dossiers van de adviesbeelden, want die
+                   // tonen "nog geen afschrift". Eerste blad met pdftoppm -r 150, onderaan uitgesneden tot de inhoud + 40 px.
+                   'advies-afschrift': 'de pdf van een demo-kredietvergelijking, pdftoppm -r 150 + uitsnede (NL: DEMO-1025, FR: DEMO-1086)',
                  };
 // ⚠️ kantoorprofiel-vragenlijst stond hier tot 24/09/2026 als handwerk, en daardoor kon niemand het hernemen:
 // het beeld bleef op 22/08 staan terwijl het scherm een veld bijkreeg, en een Franse versie kwam er nooit. Het
@@ -539,6 +543,7 @@ const SCHOTEN = [
   // HANDWERK (zie bovenaan): staat hier zodat de ronde het VERANTWOORDT. Buiten deze lijst werd het in de eerste volle
   // ronde (06/10/2026) als "stil overgeslagen" gemeld — een handwerkbeeld zonder schot bestaat voor de generator niet.
   ['factuur-pdf',                  '/facturen'],
+  ['advies-afschrift',             `/credit-files/${ID.dossierAdvies}/advies`],
   // Het mailvenster: een ELEMENTschot (beeldvorm.json). De knop heet in het Frans anders dan in het Nederlands.
   ['factuur-mailen',               `/facturen/${ID.factuurMail}`, async p => {
       await knop(p, 'Mailen', 'Envoyer par e-mail');
