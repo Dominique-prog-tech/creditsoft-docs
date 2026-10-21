@@ -76,6 +76,11 @@ export const ID = {
   // dezelfde status als DEMO-1004 — DEMO-1148 stond op "Crédit sans suite" en toonde een reden van afvallen die het
   // Nederlandse beeld niet heeft.
   dossierAdviesFr: 'dd594988-6490-4498-92d0-1e755a042d1e',
+  // 1.199.0 — het advies in het AANBRENGERSPORTAAL, als aanbrenger2 (Horizon Makelaars Oostende, mag inleiden): DEMO-3418
+  // (een kantoor onder hem, Nederlandstalige klant) en DEMO-4043 (zijn eigen kantoor, Franstalige klant). Gekozen met een query
+  // op credit_file.advice binnen zijn tak; valt om na een her-seed.
+  dossierAdviesPortaal: '168d73ec-1423-4765-9da2-a9e23f8dd4fd',
+  dossierAdviesPortaalFr: '6b7f5acd-00ba-4a96-8c1c-d70ea3f1c23f',
   schema:   'a9b48983-8066-4209-a315-8f950e6983dd',   // het actieve schema van DEMO-1089
   // ⚠️ Een aanbrenger die AL portaaltoegang heeft. Met een aanbrenger zónder toegang toont het venster
   // "Deze aanbrenger heeft nog geen portaaltoegang" — en dan mist het beeld precies de knoppen waar de

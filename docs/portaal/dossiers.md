@@ -77,6 +77,24 @@ of **nog te bezorgen** is.
 **Commissie doorgeven** — alleen wanneer u zelf commissie op dit dossier ontvangt en met eigen makelaars
 werkt. Zie [Afrekeningen aan mijn makelaars](afrekeningen.md).
 
+## Het advies
+
+Mag uw kantoor zelf dossiers inleiden, dan legt u op een dossier ook het **advies** vast: of u advies geeft, op welke
+basis, wat de klant nodig heeft, welke kredieten u vergeleek en wat u voorstelt. Het werkt zoals voor uw kantoor, zie
+[Advies](../credit-management/advice.md). U opent het onderaan het dossier, op het tabblad **Advies**. Een aanbrenger die
+enkel klanten aanbrengt, ziet dit tabblad niet.
+
+![De adviespagina van een dossier in het aanbrengersportaal: bovenaan de menubalk van het portaal, daaronder Advies met Wij geven advies en de basis, de klant, en de behoeften en doelstellingen.](../images/portaal-advies.png "Het advies van een dossier in het aanbrengersportaal"){ .volle-breedte }
+
+**Het afschrift voor de klant.** Met **+ Afschrift maken** maakt u de kredietvergelijking als pdf. Bovenaan staat het
+briefhoofd van uw groep, met daaronder **uw kantoor als contactpersoon**: naam, adres, telefoon, e-mail en uw
+FSMA-nummer zoals ze op uw fiche staan. Klopt daar iets niet, vraag uw kantoor dan om uw fiche aan te passen.
+
+**Mailen** verstuurt het afschrift vanaf uw **eigen e-mailadres**, zodat het antwoord van de klant bij u aankomt. Net zoals
+bij [documenten opvragen](#documenten-opvragen-bij-uw-klant) kan dat enkel vanaf een adres op een geregistreerd domein van
+uw kantoor. Kan het niet, dan staat onder de afschriften waarom, en geeft u het afschrift **op papier** of laat u het uw
+kantoor mailen.
+
 ## Documenten opvragen bij uw klant
 
 Op het tabblad **Documenten opvragen** kiest u de aanvrager uit de lijst en klikt u op **Aanvraag

@@ -8,7 +8,7 @@ Ouvrez le dossier de crédit et cliquez en bas sur l'onglet **Conseil**. L'ongle
 
 ![Un dossier de crédit avec en bas l'onglet Conseil ouvert, à côté des autres onglets : nous donnons un conseil, la base large gamme du marché, le nombre d'offres comparées dont combien sont recommandées, les copies remises (ici aucune), et le bouton Ouvrir le conseil.](../images/kredietdossier-advies-fr.png "Le conseil de ce dossier en bref"){ .volle-breedte }
 
-Qui peut consulter les dossiers voit le conseil ; qui peut modifier les dossiers peut aussi l'adapter. Un apporteur ne voit pas l'onglet.
+Qui peut consulter les dossiers voit le conseil ; qui peut modifier les dossiers peut aussi l'adapter. Dans le portail apporteurs, seuls les bureaux autorisés à introduire eux-mêmes des dossiers voient le conseil, pour les dossiers de leurs bureaux : voir [Mes dossiers](../portaal/dossiers.md#le-conseil). Un apporteur qui ne fait qu'apporter des clients ne le voit pas.
 
 ![Le haut de la page de conseil : Conseil avec Nous donnons un conseil et la base Large gamme du marché, chacun avec la date à laquelle le client en a été informé ; ensuite Le client avec le crédit demandé, la charge mensuelle et la durée maximales, la quotité et l'évaluation du risque, et Besoins et objectifs avec les besoins, objectifs et préférences du client.](../images/advies-pagina-fr.png "La page de conseil d'un dossier"){ .volle-breedte }
 

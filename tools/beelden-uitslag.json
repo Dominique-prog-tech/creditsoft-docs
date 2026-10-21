@@ -1696,8 +1696,8 @@
   "factuur-mailen": {
     "route": "/facturen/bd33e79f-13e2-4173-adea-faf433a74938",
     "app": {
-      "sha": "138d05d07af8a6bfde46db9d59b2a97d4bf0fd20",
-      "vuil": true
+      "sha": "55e70edb06d9c25bfe718defe298afb621ae7f96",
+      "vuil": false
     }
   },
   "kredietdossier-facturen": {
@@ -1738,8 +1738,8 @@
   "factuur-mailen-fr": {
     "route": "/facturen/bd33e79f-13e2-4173-adea-faf433a74938",
     "app": {
-      "sha": "138d05d07af8a6bfde46db9d59b2a97d4bf0fd20",
-      "vuil": true
+      "sha": "55e70edb06d9c25bfe718defe298afb621ae7f96",
+      "vuil": false
     }
   },
   "kredietdossier-facturen-fr": {
@@ -1822,57 +1822,57 @@
   "kredietdossier-advies": {
     "route": "/credit-files/02b9011d-19dc-4b40-9d9d-08314975c8d6",
     "app": {
-      "sha": "138d05d07af8a6bfde46db9d59b2a97d4bf0fd20",
-      "vuil": true
+      "sha": "55e70edb06d9c25bfe718defe298afb621ae7f96",
+      "vuil": false
     }
   },
   "advies-pagina": {
     "route": "/credit-files/02b9011d-19dc-4b40-9d9d-08314975c8d6/advies",
     "app": {
-      "sha": "138d05d07af8a6bfde46db9d59b2a97d4bf0fd20",
-      "vuil": true
+      "sha": "55e70edb06d9c25bfe718defe298afb621ae7f96",
+      "vuil": false
     }
   },
   "advies-aanbieding-venster": {
     "route": "/credit-files/02b9011d-19dc-4b40-9d9d-08314975c8d6/advies",
     "app": {
-      "sha": "138d05d07af8a6bfde46db9d59b2a97d4bf0fd20",
-      "vuil": true
+      "sha": "55e70edb06d9c25bfe718defe298afb621ae7f96",
+      "vuil": false
     }
   },
   "kredietdossier-advies-fr": {
     "route": "/credit-files/02b9011d-19dc-4b40-9d9d-08314975c8d6",
     "app": {
-      "sha": "138d05d07af8a6bfde46db9d59b2a97d4bf0fd20",
-      "vuil": true
+      "sha": "55e70edb06d9c25bfe718defe298afb621ae7f96",
+      "vuil": false
     }
   },
   "advies-pagina-fr": {
     "route": "/credit-files/02b9011d-19dc-4b40-9d9d-08314975c8d6/advies",
     "app": {
-      "sha": "138d05d07af8a6bfde46db9d59b2a97d4bf0fd20",
-      "vuil": true
+      "sha": "55e70edb06d9c25bfe718defe298afb621ae7f96",
+      "vuil": false
     }
   },
   "advies-aanbieding-venster-fr": {
     "route": "/credit-files/02b9011d-19dc-4b40-9d9d-08314975c8d6/advies",
     "app": {
-      "sha": "138d05d07af8a6bfde46db9d59b2a97d4bf0fd20",
-      "vuil": true
+      "sha": "55e70edb06d9c25bfe718defe298afb621ae7f96",
+      "vuil": false
     }
   },
   "advies-aanbiedingen": {
     "route": "/credit-files/02b9011d-19dc-4b40-9d9d-08314975c8d6/advies",
     "app": {
-      "sha": "138d05d07af8a6bfde46db9d59b2a97d4bf0fd20",
-      "vuil": true
+      "sha": "55e70edb06d9c25bfe718defe298afb621ae7f96",
+      "vuil": false
     }
   },
   "advies-aanbiedingen-fr": {
     "route": "/credit-files/02b9011d-19dc-4b40-9d9d-08314975c8d6/advies",
     "app": {
-      "sha": "138d05d07af8a6bfde46db9d59b2a97d4bf0fd20",
-      "vuil": true
+      "sha": "55e70edb06d9c25bfe718defe298afb621ae7f96",
+      "vuil": false
     }
   },
   "portaal-nieuwe-klant": {
@@ -1886,6 +1886,20 @@
     "route": "/portal-intermediary/dossiers",
     "app": {
       "sha": "8bc3a6973d8bab695eb4cb47ad13dac8df337bb3",
+      "vuil": false
+    }
+  },
+  "portaal-advies": {
+    "route": "/portal-intermediary/dossiers/168d73ec-1423-4765-9da2-a9e23f8dd4fd/advies",
+    "app": {
+      "sha": "55e70edb06d9c25bfe718defe298afb621ae7f96",
+      "vuil": false
+    }
+  },
+  "portaal-advies-fr": {
+    "route": "/portal-intermediary/dossiers/168d73ec-1423-4765-9da2-a9e23f8dd4fd/advies",
+    "app": {
+      "sha": "55e70edb06d9c25bfe718defe298afb621ae7f96",
       "vuil": false
     }
   }

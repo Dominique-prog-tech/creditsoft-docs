@@ -63,7 +63,7 @@ const VORM = JSON.parse(readFileSync(new URL('./beeldvorm.json', import.meta.url
 // opgeeft, krijgt de beheerder.
 const AANBRENGER_PORTAAL = ['portaal-overzicht', 'portaal-dossiers', 'portaal-commissies',
                             'portaal-documenten', 'portaal-dossier-detail',
-                            'portaal-aangebracht', 'portaal-klant-aanbrengen', 'portaal-nieuwe-klant'];
+                            'portaal-aangebracht', 'portaal-klant-aanbrengen', 'portaal-nieuwe-klant', 'portaal-advies'];
 
 // ⚠️ MET DE HAND UITGESNEDEN. Deze twee beelden tonen een stuk scherm dat geen enkel element is:
 // rapporten-voorbeeld is één blad uit een gerenderd rapport, kantoorprofiel-vragenlijst een uitsnede
@@ -835,6 +835,15 @@ const SCHOTEN = [
       await knop(p, '\\+ Nieuwe klant', '\\+ Nouveau client');
       await p.waitForTimeout(1500);
   }],
+  // 1.199.0: het advies in het portaal — dezelfde pagina als in de backoffice, in de schil van het portaal. Het Franse beeld op
+  // een dossier met een Franstalige klant (zoals adviesInDeTaalVanHetBeeld voor de backoffice).
+  ['portaal-advies',            `/portal-intermediary/dossiers/${ID.dossierAdviesPortaal}/advies`, async p => {
+      await p.waitForTimeout(2500);
+      if ((await p.getByText(/^(Bewaren|Enregistrer)$/).first().innerText()).startsWith('Enregistrer')) {
+        await p.goto(p.url().replace(ID.dossierAdviesPortaal, ID.dossierAdviesPortaalFr), { waitUntil: 'networkidle' });
+        await p.waitForTimeout(2500);
+      }
+  }],
   ['klantportaal-klant',        '/beheer/klantportaal'],
   ['rapporten-periode',         '/rapporten', async p => {
       // ⚠️ Een kaal paginabezoek gaf de rapportenBIBLIOTHEEK, niet het venster met Van/Tot en met en de
@@ -1029,6 +1038,8 @@ const VERWACHT = {
   'lead-klant-maken':           /Documenttaal|Langue des documents/i,
   // Het venster Aanvrager koppelen draagt de knop "+ Nieuwe klant" ook — de taal staat ENKEL in het nieuwe venster.
   'portaal-nieuwe-klant':       /Taal van de documenten|Langue des documents/,
+  // De portaalschil ÉN de adviespagina: zonder het eerste is het het backofficebeeld, zonder het tweede een weigering.
+  'portaal-advies':             /Mijn dossiers[\s\S]*Advies of geen advies|Mes dossiers[\s\S]*Conseil ou pas de conseil/,
   'documenttypes-categorieen':  /Categorie|Catégorie/i,
   'documenttypes-herinnering':  /Herinneren na|Rappeler après/,
   'mail-momenten':              /krijgt de status|reçoit le statut/,

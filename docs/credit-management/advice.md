@@ -8,7 +8,7 @@ Open het kredietdossier en klik onderaan op het tabblad **Advies**. Het tabblad 
 
 ![Een kredietdossier met onderaan het tabblad Advies geopend, naast de andere tabbladen: wij geven advies, de basis breed marktaanbod, het aantal vergeleken aanbiedingen met hoeveel daarvan aanbevolen, de afschriften (hier nog geen), en de knop Advies openen.](../images/kredietdossier-advies.png "Het advies van dit dossier in het kort"){ .volle-breedte }
 
-Wie dossiers mag bekijken, ziet het advies; wie dossiers mag wijzigen, kan het ook aanpassen. Een aanbrenger ziet het tabblad niet.
+Wie dossiers mag bekijken, ziet het advies; wie dossiers mag wijzigen, kan het ook aanpassen. In het aanbrengersportaal zien enkel de kantoren die zelf dossiers mogen inleiden het advies, voor de dossiers van hun kantoren: zie [Mijn dossiers](../portaal/dossiers.md#het-advies). Een aanbrenger die enkel klanten aanbrengt, ziet het niet.
 
 ![Het bovenste deel van de adviespagina: Advies met Wij geven advies en de basis Breed marktaanbod, elk met de datum waarop de klant geïnformeerd werd; daaronder De klant met het gevraagd krediet, de maximale maandlast en looptijd, de quotiteit en de risico-inschatting, en Behoeften en doelstellingen met de behoeften, doelstellingen en voorkeuren van de klant.](../images/advies-pagina.png "De adviespagina van een dossier"){ .volle-breedte }
 

@@ -79,6 +79,24 @@ Cliquez sur **Créer**. Le client est aussitôt sélectionné ; **Enregistrer** 
 **Reverser une commission** — uniquement si vous percevez vous-même une commission sur ce dossier et que
 vous travaillez avec vos propres courtiers. Voir [Décomptes à mes courtiers](afrekeningen.fr.md).
 
+## Le conseil
+
+Si votre bureau est autorisé à introduire lui-même des dossiers, vous enregistrez aussi le **conseil** sur un dossier : si
+vous donnez un conseil, sur quelle base, ce dont le client a besoin, quels crédits vous avez comparés et ce que vous
+proposez. Cela fonctionne comme pour votre bureau, voir [Conseil](../credit-management/advice.md). Vous l'ouvrez en bas du
+dossier, dans l'onglet **Conseil**. Un apporteur qui ne fait qu'apporter des clients ne voit pas cet onglet.
+
+![La page de conseil d'un dossier dans le portail apporteurs : en haut la barre de menu du portail, en dessous Conseil avec Nous donnons un conseil et la base, le client, et les besoins et objectifs.](../images/portaal-advies-fr.png "Le conseil d'un dossier dans le portail apporteurs"){ .volle-breedte }
+
+**La copie pour le client.** **+ Établir une copie** produit la comparaison de crédits en pdf. En haut figure l'en-tête de
+votre groupe, avec en dessous **votre bureau comme interlocuteur** : nom, adresse, téléphone, e-mail et votre numéro FSMA,
+tels qu'ils figurent sur votre fiche. Si quelque chose ne va pas, demandez à votre bureau d'adapter votre fiche.
+
+**Envoyer** expédie la copie depuis votre **propre adresse e-mail**, pour que la réponse du client vous parvienne. Comme pour
+la [demande de documents](#demander-des-documents-a-votre-client), cela n'est possible que depuis une adresse sur un domaine
+enregistré de votre bureau. Sinon, la raison s'affiche sous les copies, et vous remettez la copie **sur papier** ou la
+faites envoyer par votre bureau.
+
 ## Demander des documents à votre client
 
 Dans l'onglet **Demander des documents**, vous choisissez le demandeur dans la liste et cliquez sur
