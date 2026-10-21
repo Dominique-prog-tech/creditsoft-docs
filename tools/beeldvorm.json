@@ -669,5 +669,14 @@
   "kredietdossier-facturen": {
     "breedte": 1920,
     "hoogte": 1350
+  },
+  "portaal-nieuwe-klant": {
+    "breedte": 1440,
+    "hoogte": 1000,
+    "element": {
+      "kies": ".dxbl-popup",
+      "bevat": "Taal van de documenten|Langue des documents",
+      "minBreed": 400
+    }
   }
 }

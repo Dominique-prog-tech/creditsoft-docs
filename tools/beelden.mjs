@@ -63,7 +63,7 @@ const VORM = JSON.parse(readFileSync(new URL('./beeldvorm.json', import.meta.url
 // opgeeft, krijgt de beheerder.
 const AANBRENGER_PORTAAL = ['portaal-overzicht', 'portaal-dossiers', 'portaal-commissies',
                             'portaal-documenten', 'portaal-dossier-detail',
-                            'portaal-aangebracht', 'portaal-klant-aanbrengen'];
+                            'portaal-aangebracht', 'portaal-klant-aanbrengen', 'portaal-nieuwe-klant'];
 
 // ⚠️ MET DE HAND UITGESNEDEN. Deze twee beelden tonen een stuk scherm dat geen enkel element is:
 // rapporten-voorbeeld is één blad uit een gerenderd rapport, kantoorprofiel-vragenlijst een uitsnede
@@ -823,6 +823,18 @@ const SCHOTEN = [
       await p.waitForURL(/\/portal-intermediary\/dossiers\/[0-9a-f-]{36}/, { timeout: 15000 });
       await p.waitForTimeout(3500);
   }],
+  // 1.198.0: "+ Nieuwe klant" in het venster Aanvrager koppelen — enkel in het portaal (de backoffice heeft het
+  // relatiescherm). Zelfde weg naar het dossier als hierboven; het venster blijft LEEG: wat het beeld moet tonen, zijn
+  // de zes velden, niet een verzonnen klant.
+  ['portaal-nieuwe-klant',      '/portal-intermediary/dossiers',  async p => {
+      await p.locator('tbody a:not([target="_blank"])').first().click();
+      await p.waitForURL(/\/portal-intermediary\/dossiers\/[0-9a-f-]{36}/, { timeout: 15000 });
+      await p.waitForTimeout(3000);
+      await knop(p, '\\+ Aanvrager koppelen', '\\+ Lier un demandeur');   // knop() maakt er een regex van
+      await p.waitForTimeout(1500);
+      await knop(p, '\\+ Nieuwe klant', '\\+ Nouveau client');
+      await p.waitForTimeout(1500);
+  }],
   ['klantportaal-klant',        '/beheer/klantportaal'],
   ['rapporten-periode',         '/rapporten', async p => {
       // ⚠️ Een kaal paginabezoek gaf de rapportenBIBLIOTHEEK, niet het venster met Van/Tot en met en de
@@ -1015,6 +1027,8 @@ const VERWACHT = {
   'borderel-nieuwe-ronde':      /Voorbeeld tonen|Afficher l'aperçu/i,
   'portaal-toegang':            /Nieuw tijdelijk wachtwoord|Nouveau mot de passe/i,
   'lead-klant-maken':           /Documenttaal|Langue des documents/i,
+  // Het venster Aanvrager koppelen draagt de knop "+ Nieuwe klant" ook — de taal staat ENKEL in het nieuwe venster.
+  'portaal-nieuwe-klant':       /Taal van de documenten|Langue des documents/,
   'documenttypes-categorieen':  /Categorie|Catégorie/i,
   'documenttypes-herinnering':  /Herinneren na|Rappeler après/,
   'mail-momenten':              /krijgt de status|reçoit le statut/,

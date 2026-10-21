@@ -18,7 +18,8 @@ demandeur ou d'un organisme et la liste se réduit immédiatement. Vous pouvez �
 exporter la liste.
 
 Si votre bureau vous autorise à introduire vous-même des dossiers, le bouton **Nouveau dossier** figure en haut à
-droite : le dossier est créé immédiatement à votre nom et s'ouvre comme fiche.
+droite, même tant que vous n'avez encore aucun dossier : le dossier est créé immédiatement à votre nom et s'ouvre
+comme fiche.
 
 Si vous êtes apporteur principal et que votre bureau l'a configuré ainsi, les dossiers des bureaux et
 collaborateurs qui dépendent de vous apparaissent également ici. Sinon, vous ne voyez que les vôtres.
@@ -32,14 +33,34 @@ Cliquez sur un numéro de dossier pour l'ouvrir. Avec **Ctrl-clic** (Cmd sur un 
 Le dossier s'ouvre sur une page distincte, avec le même contenu que celui que voit votre bureau : les
 données du crédit, le bien, les demandeurs, les contrats, les parties concernées et le journal.
 
-**La possibilité de modifier dépend de ce que votre bureau vous autorise.** Si vous n'y êtes pas autorisé,
-tout est présenté en consultation et il n'y a pas de bouton d'enregistrement. Si vous l'êtes, l'écran
-fonctionne comme dans le back-office : vous adaptez et cliquez sur **Enregistrer**.
+Vous pouvez aussi **mettre à jour** les dossiers de votre liste : l'écran fonctionne comme dans le back-office,
+vous adaptez et cliquez sur **Enregistrer**. Cela vaut aussi pour les dossiers des bureaux qui dépendent de vous.
+Les remarques internes et la commission de votre bureau ne vous sont pas affichées.
 
-!!! info "Deux droits, indépendants l'un de l'autre"
-    Votre bureau détermine séparément si vous pouvez **voir** les dossiers et si vous pouvez les **mettre à
-    jour**. Voir les dossiers de vos collaborateurs ne signifie donc pas automatiquement que vous pouvez
-    aussi les modifier.
+Le champ **Apporteur** ne propose que votre propre bureau et les bureaux qui dépendent de vous. Si aucun bureau ne
+dépend de vous, il reste fixé à votre nom.
+
+## Lier un client à un dossier
+
+Sous **Demandeurs de crédit**, cliquez sur **+ Lier un demandeur** et choisissez le client dans la liste. La liste
+affiche les clients des dossiers de votre bureau et des bureaux qui dépendent de vous, pas ceux d'autres bureaux.
+
+Votre client n'y figure pas encore ? Cliquez alors sur **+ Nouveau client** sous la liste.
+
+![La fenêtre Nouveau client dans le portail apporteurs, avec les champs prénom, nom, date de naissance, langue des documents, e-mail et GSM, et en bas les boutons Créer et Annuler.](../images/portaal-nieuwe-klant-fr.png "Créer un nouveau client depuis un dossier"){ .volle-breedte }
+
+| Champ | À quoi il sert |
+|---|---|
+| **Prénom**, **Nom** | Obligatoires |
+| **Date de naissance** | Aide votre bureau à distinguer deux clients portant le même nom |
+| **Langue des documents** | La langue dans laquelle le client reçoit courriers et e-mails |
+| **E-mail**, **GSM** | Facultatifs, mais vérifiés : une adresse ou un numéro incomplet est refusé |
+
+Cliquez sur **Créer**. Le client est aussitôt sélectionné ; **Enregistrer** le lie au dossier.
+
+!!! info "Un client déjà connu de votre bureau"
+    Si votre client est déjà connu d'un autre bureau, vous ne le voyez pas dans la liste, et CreditSoft ne vous
+    dit pas non plus qu'il existe. Créez-le sans crainte : votre bureau fusionne les clients en double.
 
 ## Les onglets à droite
 

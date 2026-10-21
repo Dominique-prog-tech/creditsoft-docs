@@ -16,8 +16,8 @@ de **status**, de **instelling** en het **kredietbedrag**.
 Rechtsboven staat een **zoekveld**. Typ een stuk van een dossiernummer, van de naam van een aanvrager of van een
 instelling en de lijst beperkt zich meteen. U kunt ook per kolom sorteren en filteren, en de lijst exporteren.
 
-Mag u van uw kantoor zelf dossiers inleiden, dan staat rechtsboven de knop **Nieuw dossier**: het dossier
-wordt meteen aangemaakt op uw naam en opent als fiche.
+Mag u van uw kantoor zelf dossiers inleiden, dan staat rechtsboven de knop **Nieuw dossier**, ook zolang u nog
+geen enkel dossier hebt: het dossier wordt meteen aangemaakt op uw naam en opent als fiche.
 
 Bent u hoofdaanbrenger en heeft uw kantoor dat zo ingesteld, dan staan hier ook de dossiers van de
 kantoren en medewerkers onder u. Anders ziet u enkel uw eigen dossiers.
@@ -31,13 +31,34 @@ Klik op een dossiernummer om het dossier te openen. Met **Ctrl-klik** (Cmd op ee
 Het dossier opent op een eigen pagina, met dezelfde inhoud als uw kantoor ziet: kredietgegevens, het pand,
 de aanvragers, de contracten, de betrokken partijen en het journaal.
 
-**Of u iets mag wijzigen, hangt af van wat uw kantoor u toestaat.** Mag u het niet, dan staat alles er ter
-inzage en is er geen bewaarknop. Mag u het wel, dan werkt het scherm zoals in de backoffice: u past aan en
-klikt op **Bewaren**.
+U kunt de dossiers in uw lijst ook **bijwerken**: het scherm werkt zoals in de backoffice, u past aan en klikt op
+**Bewaren**. Dat geldt ook voor de dossiers van de kantoren onder u. De interne opmerkingen en de commissie van uw
+kantoor ziet u niet.
 
-!!! info "Twee rechten, los van elkaar"
-    Uw kantoor bepaalt apart of u dossiers mag **zien** en of u ze mag **bijwerken**. Ziet u de dossiers
-    van uw medewerkers, dan betekent dat dus niet automatisch dat u ze ook mag aanpassen.
+Het veld **Aanbrenger** toont enkel uw eigen kantoor en de kantoren onder u. Hebt u geen kantoren onder u, dan
+staat het vast op uw naam.
+
+## Een klant aan een dossier koppelen
+
+Klik bij **Kredietaanvragers** op **+ Aanvrager koppelen** en kies de klant in de lijst. De lijst toont de klanten
+uit de dossiers van uw kantoor en van de kantoren onder u, niet die van andere kantoren.
+
+Staat uw klant er nog niet in, klik dan op **+ Nieuwe klant** onder de lijst.
+
+![Het venster Nieuwe klant in het aanbrengersportaal, met de velden voornaam, naam, geboortedatum, taal van de documenten, e-mail en gsm, en onderaan de knoppen Aanmaken en Annuleren.](../images/portaal-nieuwe-klant.png "Een nieuwe klant aanmaken vanuit een dossier"){ .volle-breedte }
+
+| Veld | Waarvoor |
+|---|---|
+| **Voornaam**, **Naam** | Verplicht |
+| **Geboortedatum** | Helpt uw kantoor om twee klanten met dezelfde naam uit elkaar te houden |
+| **Taal van de documenten** | De taal waarin de klant brieven en mails krijgt |
+| **E-mail**, **Gsm** | Niet verplicht, maar wel nagekeken: een onvolledig adres of nummer wordt geweigerd |
+
+Klik op **Aanmaken**. De klant staat meteen gekozen; met **Bewaren** hangt u hem aan het dossier.
+
+!!! info "Een klant die al bij uw kantoor bekend is"
+    Is uw klant al bekend bij een ander kantoor, dan ziet u hem niet in de lijst, en CreditSoft zegt
+    ook niet dat hij bestaat. Maak hem gerust aan: uw kantoor voegt dubbele klanten samen.
 
 ## De tabbladen rechts
 

@@ -303,8 +303,8 @@
   "portaal-dossiers": {
     "route": "/portal-intermediary/dossiers",
     "app": {
-      "sha": "138d05d07af8a6bfde46db9d59b2a97d4bf0fd20",
-      "vuil": true
+      "sha": "8bc3a6973d8bab695eb4cb47ad13dac8df337bb3",
+      "vuil": false
     }
   },
   "portaal-commissies": {
@@ -555,8 +555,8 @@
   "portaal-dossier-detail": {
     "route": "/portal-intermediary/dossiers",
     "app": {
-      "sha": "138d05d07af8a6bfde46db9d59b2a97d4bf0fd20",
-      "vuil": true
+      "sha": "8bc3a6973d8bab695eb4cb47ad13dac8df337bb3",
+      "vuil": false
     }
   },
   "klantportaal-klant": {
@@ -919,8 +919,8 @@
   "portaal-dossiers-fr": {
     "route": "/portal-intermediary/dossiers",
     "app": {
-      "sha": "138d05d07af8a6bfde46db9d59b2a97d4bf0fd20",
-      "vuil": true
+      "sha": "8bc3a6973d8bab695eb4cb47ad13dac8df337bb3",
+      "vuil": false
     }
   },
   "portaal-commissies-fr": {
@@ -1171,8 +1171,8 @@
   "portaal-dossier-detail-fr": {
     "route": "/portal-intermediary/dossiers",
     "app": {
-      "sha": "138d05d07af8a6bfde46db9d59b2a97d4bf0fd20",
-      "vuil": true
+      "sha": "8bc3a6973d8bab695eb4cb47ad13dac8df337bb3",
+      "vuil": false
     }
   },
   "klantportaal-klant-fr": {
@@ -1873,6 +1873,20 @@
     "app": {
       "sha": "138d05d07af8a6bfde46db9d59b2a97d4bf0fd20",
       "vuil": true
+    }
+  },
+  "portaal-nieuwe-klant": {
+    "route": "/portal-intermediary/dossiers",
+    "app": {
+      "sha": "8bc3a6973d8bab695eb4cb47ad13dac8df337bb3",
+      "vuil": false
+    }
+  },
+  "portaal-nieuwe-klant-fr": {
+    "route": "/portal-intermediary/dossiers",
+    "app": {
+      "sha": "8bc3a6973d8bab695eb4cb47ad13dac8df337bb3",
+      "vuil": false
     }
   }
 }
