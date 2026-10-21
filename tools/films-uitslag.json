@@ -3050,7 +3050,7 @@
     "titel": "Het adviesdossier in CreditSoft — vastleggen wat u voorstelde",
     "omschrijving": "Per kredietdossier legt u vast of u advies geeft en op welke basis, wat de klant u vertelde, welke kredieten u naast elkaar legde en waarom u er één voorstelt. Uw klant krijgt een afschrift in zijn taal, als kredietvergelijking, en CreditSoft houdt bij hoe en wanneer hij het kreeg.",
     "hash": "4e26cd3972632c62",
-    "guid": null,
+    "guid": "b53b2eae-8cda-4ddb-906d-efd0b42710b2",
     "hoofdstukken": [
       {
         "titel": "Het tabblad Advies",
@@ -3107,7 +3107,11 @@
         "start": 154.42,
         "eind": 159.48
       }
-    ]
+    ],
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/b53b2eae-8cda-4ddb-906d-efd0b42710b2/thumbnail.jpg",
+    "gepubliceerdOp": "2026-10-21T05:14:54.353",
+    "gepubliceerdeHash": "4e26cd3972632c62",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/b53b2eae-8cda-4ddb-906d-efd0b42710b2"
   },
   "adviesdossier-fr": {
     "film": "adviesdossier",
@@ -3125,7 +3129,7 @@
     "titel": "Le dossier de conseil dans CreditSoft — garder ce que vous avez proposé",
     "omschrijving": "Pour chaque dossier de crédit, vous indiquez si vous donnez un conseil et sur quelle base, ce que le client vous a dit, quels crédits vous avez comparés et pourquoi vous en proposez un. Votre client reçoit une copie dans sa langue, sous forme de comparaison de crédits, et CreditSoft garde comment et quand il l’a reçue.",
     "hash": "5ba1ad807ef7c285",
-    "guid": null,
+    "guid": "15d20cd0-9c60-44ed-8e0e-276ccae0908d",
     "hoofdstukken": [
       {
         "titel": "L’onglet Conseil",
@@ -3182,7 +3186,11 @@
         "start": 142.15,
         "eind": 147.72
       }
-    ]
+    ],
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/15d20cd0-9c60-44ed-8e0e-276ccae0908d/thumbnail.jpg",
+    "gepubliceerdOp": "2026-10-21T05:15:09.465",
+    "gepubliceerdeHash": "5ba1ad807ef7c285",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/15d20cd0-9c60-44ed-8e0e-276ccae0908d"
   },
   "adviesdossier-website-nl": {
     "film": "adviesdossier",
@@ -3201,7 +3209,7 @@
     "titel": "Het adviesdossier in CreditSoft — vastleggen wat u voorstelde",
     "omschrijving": "Per kredietdossier legt u vast of u advies geeft en op welke basis, wat de klant u vertelde, welke kredieten u naast elkaar legde en waarom u er één voorstelt. Uw klant krijgt een afschrift in zijn taal, als kredietvergelijking, en CreditSoft houdt bij hoe en wanneer hij het kreeg.",
     "hash": "57075b6d7f3977f7",
-    "guid": null,
+    "guid": "39d2cc8c-da13-4613-b08b-75a14c6c84e5",
     "hoofdstukken": [
       {
         "titel": "Het tabblad Advies",
@@ -3228,7 +3236,11 @@
         "start": 41.01,
         "eind": 44.08
       }
-    ]
+    ],
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/39d2cc8c-da13-4613-b08b-75a14c6c84e5/thumbnail.jpg",
+    "gepubliceerdOp": "2026-10-21T05:15:22.271",
+    "gepubliceerdeHash": "57075b6d7f3977f7",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/39d2cc8c-da13-4613-b08b-75a14c6c84e5"
   },
   "adviesdossier-website-fr": {
     "film": "adviesdossier",
@@ -3247,7 +3259,7 @@
     "titel": "Le dossier de conseil dans CreditSoft — garder ce que vous avez proposé",
     "omschrijving": "Pour chaque dossier de crédit, vous indiquez si vous donnez un conseil et sur quelle base, ce que le client vous a dit, quels crédits vous avez comparés et pourquoi vous en proposez un. Votre client reçoit une copie dans sa langue, sous forme de comparaison de crédits, et CreditSoft garde comment et quand il l’a reçue.",
     "hash": "db21d980fb4c5bba",
-    "guid": null,
+    "guid": "4a7e13ae-724a-4b4e-8875-6c991ea4c786",
     "hoofdstukken": [
       {
         "titel": "L’onglet Conseil",
@@ -3274,7 +3286,11 @@
         "start": 40.42,
         "eind": 43.78
       }
-    ]
+    ],
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/4a7e13ae-724a-4b4e-8875-6c991ea4c786/thumbnail.jpg",
+    "gepubliceerdOp": "2026-10-21T05:15:33.761",
+    "gepubliceerdeHash": "db21d980fb4c5bba",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/4a7e13ae-724a-4b4e-8875-6c991ea4c786"
   },
   "adviesdossier-website-en": {
     "film": "adviesdossier",
@@ -3293,7 +3309,7 @@
     "titel": "The advice file in CreditSoft — recording what you proposed",
     "omschrijving": "For each credit file you record whether you give advice and on what basis, what the client told you, which credits you compared and why you propose one. Your client receives a copy in their language, as a credit comparison, and CreditSoft keeps track of how and when they received it.",
     "hash": "ee4e48796a920cce",
-    "guid": null,
+    "guid": "48b8af98-61ce-419c-bb08-de1ed0bea060",
     "hoofdstukken": [
       {
         "titel": "The Advice tab",
@@ -3320,6 +3336,10 @@
         "start": 40.55,
         "eind": 43.76
       }
-    ]
+    ],
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/48b8af98-61ce-419c-bb08-de1ed0bea060/thumbnail.jpg",
+    "gepubliceerdOp": "2026-10-21T05:15:45.114",
+    "gepubliceerdeHash": "ee4e48796a920cce",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/48b8af98-61ce-419c-bb08-de1ed0bea060"
   }
 }
