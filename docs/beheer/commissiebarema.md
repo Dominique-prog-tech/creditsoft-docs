@@ -8,7 +8,7 @@ Werkt uw kantoor niet met een barema, dan laat u dit scherm leeg. U ziet dan ner
 
 Ga naar **Platformbeheer** onderaan het menu, en klik onder *Krediet* op de tegel **Commissiebarema**. U hebt daarvoor het recht om de commissie-instellingen te beheren.
 
-![Het scherm Commissiebarema met de lijst van versies: per regel de naam Commissiebarema 2026, de datum Geldig vanaf 01/01/2026, het aantal regels en maatschappijen, en het label Geldt nu; bovenaan de knop Nieuwe versie.](../images/commissiebarema-versies.png "De versies van het barema van uw kantoor"){ .volle-breedte }
+![Het scherm Commissiebarema met de lijst van versies: per regel de naam Commissiebarema 2026, de datum Geldig vanaf 01/01/2026, het aantal regels en maatschappijen, en het label Geldt nu; bovenaan de knop Nieuwe versie en de link Inlezen uit een bestand.](../images/commissiebarema-versies.png "De versies van het barema van uw kantoor"){ .volle-breedte }
 
 ## Versies
 
@@ -19,6 +19,41 @@ Zo rekent een dossier van vorig jaar met het barema van vorig jaar, ook nadat u 
 ### Een nieuwe versie
 
 Klik op **Nieuwe versie**. U geeft een naam en de datum *Geldig vanaf*. Bij **Op basis van** kiest u een vorige versie: alle regels gaan dan mee, ook de trappen van de rentekorting en de terugvordering, en u past enkel aan wat wijzigde. Kiest u **Leeg beginnen**, dan voert u alle regels zelf in.
+
+### Een versie inlezen uit een bestand
+
+Krijgt u het barema als lijst van tientallen regels, dan hoeft u ze niet een voor een in te tikken. Met **Inlezen uit een bestand** bovenaan de lijst leest u een volledige versie in één keer in.
+
+1. Geef de versie een **naam** en een datum **Geldig vanaf**.
+2. Klik op **Bestand kiezen** en kies het csv-bestand. CreditSoft toont hoeveel regels, maatschappijen en producten erin staan. Ontbreekt er een kolom, dan staat die er met haar naam bij.
+3. **Koppel** elke maatschappij uit het bestand aan een kredietinstelling van uw kantoor. Staat er een product bij een regel, kies dan de producten waarvoor ze geldt, of vink **Elk product** aan. CreditSoft koppelt niets zelf, ook niet als de naam gelijk lijkt.
+4. Kijk het **voorbeeld** na: per regel de kredietinstelling, de commissie, de commissieafstand, de terugvordering en wat er niet klopt. Met **Enkel regels met een probleem** ziet u enkel die regels.
+5. Klik op **Inlezen**.
+
+Inlezen gebeurt in één keer: lukt één regel niet, dan wordt er niets bewaard. Ontbreekt er nog iets, dan zegt de melding bovenaan wat. Daarna opent de nieuwe versie, en wijzigt u er een regel zoals elke andere.
+
+![De pagina Barema inlezen uit een bestand: bovenaan de naam en de datum Geldig vanaf van de nieuwe versie, daaronder het gekozen bestand met het aantal regels, maatschappijen en producten, het blok Koppelen aan uw kantoor met per maatschappij een kredietinstelling en per product de producten of het vinkje Elk product, en onderaan het voorbeeld met het label klaar om in te lezen.](../images/commissiebarema-inlezen.png "Een versie inlezen uit een bestand"){ .volle-breedte }
+
+#### Het bestand
+
+Een csv-bestand met een **puntkomma** tussen de kolommen en een kopregel met de namen hieronder. Elke kolom moet er staan, ook als ze leeg blijft; andere kolommen (bijvoorbeeld een kolom met opmerkingen) mogen erbij. Eén regel per maatschappij, of per formule.
+
+| Kolom | Wat | Voorbeeld |
+|---|---|---|
+| `nr` | Volgnummer; bepaalt de volgorde | `12` |
+| `maatschappij`, `formule`, `product` | De naam zoals in het barema; die koppelt u bij het inlezen | `Record` |
+| `percentage` of `vast_bedrag` | De commissie | `2,25` · `1000` |
+| `min_commissie`, `max_commissie`, `plafond_kredietbedrag` | Grenzen | `10000` |
+| `looptijd_vanaf_mnd`, `looptijd_tot_mnd`, `rente_vanaf`, `rente_tot` | Voorwaarden ("vanaf" telt mee, "tot" niet) | `84` |
+| `ingediend_van`, `ingediend_tot`, `akte_van`, `akte_tot` | Datums (beide tellen mee) | `15/09/2026` |
+| `uitbetaling_direct_pct`, `uitbetaling_spreiding_mnd`, `uitbetaling_spreiding_vanaf_mnd` | Deel direct, rest gespreid | `50` · `24` · `2` |
+| `uitbetaling_gepland` | Geplande betalingen: maand en deel | `1:50 | 12:25 | 24:25` |
+| `afstand_trappen` | Rentekorting: afstand / korting, eventueel een voorwaarde | `0,25/0,15; 0,50/0,20` |
+| `terugvordering_trappen` | Per trap, gescheiden door een verticale streep: binnen hoeveel maanden · percentage of prorata · uitbetaald of upfront · deel · pro rata over hoeveel maanden. Trappen scheidt u met een puntkomma | `24|percentage|upfront|50|` |
+| `stop_spreiding` | Vervalt de gespreide commissie? | `ja` of `nee` |
+| `terugvordering`, `info` | Toelichting en ter info, als tekst | |
+
+Getallen schrijft u met een **komma** en **zonder** duizendtalpunt (`1250000`, niet `1.250.000`), datums als dd/mm/jjjj.
 
 Klik in de lijst op een versie om haar regels te zien. Daar wijzigt u de naam, de datum en de opmerkingen, en met **Verwijderen** haalt u een versie weg. De dossiers waarvan de akte in die versie viel, rekenen dan met de vorige.
 
@@ -90,6 +125,9 @@ Wat niet te rekenen valt, zoals een terugvordering bij niet opgenomen kapitaal, 
 
 !!! warning "Een afstand groter dan het percentage"
     Een trap van 2,50 op een regel van 2,25 % wordt geweigerd. Kijk na of u de afstand of het nieuwe percentage invulde.
+
+!!! warning "Een getal met een duizendtalpunt in het bestand"
+    `1.250.000` wordt bij het inlezen geweigerd, met de kolom en de waarde erbij. Schrijf `1250000`. Zo leest CreditSoft nooit stil een ander getal dan u bedoelde.
 
 ## Zie ook
 

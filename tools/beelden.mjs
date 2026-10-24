@@ -319,6 +319,31 @@ const SCHOTEN = [
       if (!/24[\s\S]*upfront[\s\S]*50/i.test(trap))
         throw new Error(`de terugvordering hoort één trap "binnen 24 maanden, 50 % van het upfront-deel" te tonen, gezien: ${trap || 'geen velden'}`);
   }],
+  // Het inleesscherm met een VERZONNEN bestand (tools/beeldbestanden/commissiebarema-voorbeeld.csv — nooit het barema van een
+  // klant), elke naam gekoppeld en het voorbeeld klaar. NIET op Inlezen klikken: dan ontstaat er een versie in de demo.
+  ['commissiebarema-inlezen',      '/beheer/commissiebarema/inlezen', async p => {
+      const kaart = p.locator('main .adm-card').first();
+      await kaart.locator('input').first().fill('Commissiebarema 2027');
+      const datum = kaart.locator('input').nth(1);
+      // Enkel de cijfers: het masker zet de schuine strepen zelf, en een getypte "/" schoof de maand op (01/10 i.p.v. 01/01).
+      await datum.click({ clickCount: 3 }); await p.keyboard.type('01012027', { delay: 60 }); await p.keyboard.press('Tab');
+      await p.locator('input[type=file]').setInputFiles(new URL('./beeldbestanden/commissiebarema-voorbeeld.csv', import.meta.url).pathname);
+      await p.waitForTimeout(2000);
+      for (const naam of ['Allianz', 'Record', 'VSW']) {
+        const inp = p.locator('.barema-koppeling tr').filter({ has: p.locator('td', { hasText: new RegExp(`^${naam}$`) }) }).locator('input').first();
+        await inp.click(); await p.keyboard.type(naam, { delay: 40 }); await p.waitForTimeout(700); await p.keyboard.press('Enter'); await p.waitForTimeout(700);
+      }
+      // Het product op NAAM kiezen in de lijst — een pijltje neemt het eerste het beste (de demo kent geen "Overbrugging").
+      const tag = p.locator('.barema-koppeling tr', { hasText: 'Persoonlijke lening' }).locator('input').first();
+      await tag.click(); await p.keyboard.type('PL', { delay: 40 }); await p.waitForTimeout(800);
+      await p.getByRole('option', { name: 'PL', exact: true }).click(); await p.waitForTimeout(600); await p.keyboard.press('Escape');
+      await p.locator('.barema-koppeling tr', { hasText: '(onroerend)' }).locator('.dxbl-checkbox, label').first().click();
+      await p.waitForTimeout(1200);
+      const t = await p.locator('main').innerText();
+      if (!/klaar om in te lezen|prêt à importer/.test(t)) throw new Error(`het voorbeeld hoort klaar te zijn; de koppeling greep niet — ${(t.match(/\d+ \S+ (om te koppelen|à lier)|\d+ r[eè]gle?s? (met een probleem|avec un problème)/g) || ['?']).join(', ')}`);
+      if (!/01\/01\/2027/.test(await datum.inputValue())) throw new Error(`de datum hoort 01/01/2027 te zijn, gezien: ${await datum.inputValue()}`);
+      await p.evaluate(() => document.querySelector('main')?.scrollTo(0, 0));
+  }],
   ['commissie-te-bevestigen',     '/commissie/te-bevestigen'],
   ['terugvordering-te-bevestigen', '/commissie/te-bevestigen-terugvorderingen'],
   // Het dossier van de werklijst zonder standaardpercentage: het valt onder Record (de keuzelijst Commissieafstand staat er
@@ -1101,7 +1126,9 @@ const VERWACHT = {
   'online-afspraken-instellingen': /Vragenlijst|Questionnaire|Locaties|Lieux/i,
   'filteren-zoekveld':          /Cuypers/i,
   // Commissiebarema: telkens iets dat ENKEL in de beloofde toestand staat, niet de schermtitel.
-  'commissiebarema-versies':    /Geldt nu|En vigueur/,
+  'commissiebarema-versies':    /(?=[\s\S]*(Geldt nu|En vigueur))(?=[\s\S]*(Inlezen uit een bestand|Importer depuis un fichier))/,
+  // Klaar én gekoppeld: het label staat er enkel als elke naam een kredietinstelling heeft.
+  'commissiebarema-inlezen':    /(?=[\s\S]*(klaar om in te lezen|prêt à importer))(?=[\s\S]*commissiebarema-voorbeeld\.csv)/,
   // De drie maatschappijen in de regeltabel; "Commissiebarema 2026" staat ook in de lijst ervóór.
   'commissiebarema-versie':     /(?=[\s\S]*Record)(?=[\s\S]*Formule B)(?=[\s\S]*Allianz)/,
   // De trappen afstand met wat de commissie wordt (tekst in een tabel). De terugvorderingstrap staat in invulvelden en
@@ -1385,6 +1412,11 @@ const labelBotsingen = [];
 const BEELD_UITSLAG = new URL('./beelden-uitslag.json', import.meta.url).pathname;
 const beeldUitslag = existsSync(BEELD_UITSLAG) ? JSON.parse(readFileSync(BEELD_UITSLAG, 'utf8')) : {};
 const page = await ctx.newPage();
+// ⚠️ ENKEL de vraag "pagina verlaten?" van de browser zelf aanvaarden (24/10/2026). Het schot `commissiebarema-inlezen` laat een
+// pagina met onbewaard werk achter (een gekozen bestand, nog niet ingelezen) — dat IS de toestand die het beeld toont. Het volgende
+// schot gaat met page.goto weg; Playwright WEIGERT een dialoog standaard, en dan blijft de navigatie hangen. Elke andere dialoog
+// blijft zoals hij was.
+page.on('dialog', d => d.type() === 'beforeunload' ? d.accept() : d.dismiss());
 
 // ⚠️ HET VERSIENUMMER GAAT UIT DE BEELDEN. Linksonder in de zijbalk staat "v1.70.0 nieuw", en de zijbalk
 // staat op ELK beeld. Bij elke release verspringt dat nummer, en dan is de hele ronde van 162 beelden

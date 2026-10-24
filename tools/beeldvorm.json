@@ -705,5 +705,9 @@
       "kies": ".commissie-voorstel"
     },
     "hoogte": 1000
+  },
+  "commissiebarema-inlezen": {
+    "breedte": 1700,
+    "hoogte": 1220
   }
 }

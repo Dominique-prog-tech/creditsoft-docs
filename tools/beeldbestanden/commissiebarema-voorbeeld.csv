@@ -1,0 +1,6 @@
+﻿nr;maatschappij;formule;product;percentage;vast_bedrag;min_commissie;max_commissie;plafond_kredietbedrag;looptijd_vanaf_mnd;looptijd_tot_mnd;rente_vanaf;rente_tot;ingediend_van;ingediend_tot;akte_van;akte_tot;uitbetaling_direct_pct;uitbetaling_spreiding_mnd;uitbetaling_spreiding_vanaf_mnd;uitbetaling_gepland;terugvordering;info;afstand_trappen;terugvordering_trappen;stop_spreiding
+1;Record;;;2,25;;;;1000000;;;;;;;;;50;24;2;;Binnen 24 maanden: 50 % van het upfront-deel.;;"0,25/0,25; 0,50/0,50; 0,75/0,55";24|percentage|upfront|50|;nee
+2;Record;Persoonlijke lening;Persoonlijke lening;1,00;;;;;;;;;;;;;50;24;2;;;;;;nee
+3;VSW;Formule A;;1,20;;;;;;;;;;;;;50;24;2;;;;;"12|percentage|uitbetaald|75|; 24|percentage|uitbetaald|50|";nee
+4;VSW;Formule B;;1,50;;;;;;;;;;;;;50;24;2;;;;;"12|percentage|uitbetaald|75|; 24|percentage|uitbetaald|50|";nee
+5;Allianz;;(onroerend);2,00;;;;1250000;;;;;;;;;50;24;2;;;;;;ja

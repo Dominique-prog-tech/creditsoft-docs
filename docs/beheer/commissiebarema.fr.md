@@ -8,7 +8,7 @@ Si votre bureau ne travaille pas avec un barème, laissez cet écran vide. Aucun
 
 Allez dans **Administration** en bas du menu, et cliquez sous *Crédit* sur la tuile **Barème des commissions**. Il vous faut le droit de gérer les paramètres de commission.
 
-![L'écran Barème des commissions avec la liste des versions : par ligne le nom Commissiebarema 2026, la date Valable à partir du 01/01/2026, le nombre de règles et de compagnies, et l'étiquette En vigueur ; en haut le bouton Nouvelle version.](../images/commissiebarema-versies-fr.png "Les versions du barème de votre bureau"){ .volle-breedte }
+![L'écran Barème des commissions avec la liste des versions : par ligne le nom Commissiebarema 2026, la date Valable à partir du 01/01/2026, le nombre de règles et de compagnies, et l'étiquette En vigueur ; en haut le bouton Nouvelle version et le lien Importer depuis un fichier.](../images/commissiebarema-versies-fr.png "Les versions du barème de votre bureau"){ .volle-breedte }
 
 ## Versions
 
@@ -19,6 +19,41 @@ Un dossier de l'an dernier calcule donc avec le barème de l'an dernier, même a
 ### Une nouvelle version
 
 Cliquez sur **Nouvelle version**. Vous indiquez un nom et la date *Valable à partir du*. Sous **Sur la base de**, choisissez une version précédente : toutes ses règles suivent, y compris les paliers de réduction de taux et de récupération, et vous n'adaptez que ce qui a changé. Avec **Commencer vide**, vous introduisez toutes les règles vous-même.
+
+### Importer une version depuis un fichier
+
+Vous recevez le barème sous forme de liste de dizaines de règles ? Vous ne devez pas les introduire une à une. Avec **Importer depuis un fichier** en haut de la liste, vous importez une version complète en une fois.
+
+1. Donnez à la version un **nom** et une date **Valable à partir du**.
+2. Cliquez sur **Choisir un fichier** et choisissez le fichier csv. CreditSoft indique combien de règles, de compagnies et de produits il contient. S'il manque une colonne, son nom est indiqué.
+3. **Liez** chaque compagnie du fichier à une institution de crédit de votre bureau. Si une règle mentionne un produit, choisissez les produits concernés, ou cochez **Tout produit**. CreditSoft ne lie rien lui-même, même si le nom semble identique.
+4. Vérifiez l'**aperçu** : par règle l'institution de crédit, la commission, la renonce à la commission, la récupération et ce qui ne va pas. Avec **Seulement les règles avec un problème**, vous ne voyez que ces règles.
+5. Cliquez sur **Importer**.
+
+L'importation se fait en une fois : si une seule règle échoue, rien n'est enregistré. S'il manque encore quelque chose, le message en haut l'indique. La nouvelle version s'ouvre ensuite, et vous y modifiez une règle comme toute autre.
+
+![La page Importer un barème depuis un fichier : en haut le nom et la date Valable à partir du de la nouvelle version, en dessous le fichier choisi avec le nombre de règles, de compagnies et de produits, le bloc Lier à votre bureau avec par compagnie une institution de crédit et par produit les produits ou la case Tout produit, et en bas l'aperçu avec l'étiquette prêt à importer.](../images/commissiebarema-inlezen-fr.png "Importer une version depuis un fichier"){ .volle-breedte }
+
+#### Le fichier
+
+Un fichier csv avec un **point-virgule** entre les colonnes et une ligne d'en-tête avec les noms ci-dessous. Chaque colonne doit être présente, même vide ; d'autres colonnes (par exemple des remarques) peuvent s'y ajouter. Une ligne par compagnie, ou par formule.
+
+| Colonne | Contenu | Exemple |
+|---|---|---|
+| `nr` | Numéro d'ordre ; détermine l'ordre | `12` |
+| `maatschappij`, `formule`, `product` | Le nom comme dans le barème ; vous le liez lors de l'importation | `Record` |
+| `percentage` ou `vast_bedrag` | La commission | `2,25` · `1000` |
+| `min_commissie`, `max_commissie`, `plafond_kredietbedrag` | Limites | `10000` |
+| `looptijd_vanaf_mnd`, `looptijd_tot_mnd`, `rente_vanaf`, `rente_tot` | Conditions (« à partir de » est inclus, « jusqu'à » non) | `84` |
+| `ingediend_van`, `ingediend_tot`, `akte_van`, `akte_tot` | Dates (toutes deux incluses) | `15/09/2026` |
+| `uitbetaling_direct_pct`, `uitbetaling_spreiding_mnd`, `uitbetaling_spreiding_vanaf_mnd` | Partie directe, reste étalé | `50` · `24` · `2` |
+| `uitbetaling_gepland` | Paiements planifiés : mois et part | `1:50 | 12:25 | 24:25` |
+| `afstand_trappen` | Réduction de taux : renonce / réduction, éventuellement une condition | `0,25/0,15; 0,50/0,20` |
+| `terugvordering_trappen` | Par palier, séparé par une barre verticale : dans combien de mois · percentage ou prorata · uitbetaald ou upfront · part · prorata sur combien de mois. Séparez les paliers par un point-virgule | `24|percentage|upfront|50|` |
+| `stop_spreiding` | La commission étalée est-elle annulée ? | `ja` ou `nee` |
+| `terugvordering`, `info` | Explication et pour info, en texte | |
+
+Les noms des colonnes et les mots `ja`, `nee`, `percentage`, `prorata`, `uitbetaald` et `upfront` restent en néerlandais. Écrivez les nombres avec une **virgule** et **sans** point des milliers (`1250000`, pas `1.250.000`), les dates au format jj/mm/aaaa.
 
 Cliquez sur une version dans la liste pour voir ses règles. Vous y modifiez le nom, la date et les remarques, et **Supprimer** retire une version. Les dossiers dont l'acte tombait dans cette version calculent alors avec la précédente.
 
@@ -90,6 +125,9 @@ Ce qui ne se calcule pas, comme une récupération sur du capital non prélevé,
 
 !!! warning "Une renonce supérieure au pourcentage"
     Un palier de 2,50 sur une règle de 2,25 % est refusé. Vérifiez si vous avez introduit la renonce ou le nouveau pourcentage.
+
+!!! warning "Un nombre avec un point des milliers dans le fichier"
+    `1.250.000` est refusé lors de l'importation, avec la colonne et la valeur. Écrivez `1250000`. Ainsi CreditSoft ne lit jamais en silence un autre nombre que celui que vous vouliez.
 
 ## Voir aussi
 
