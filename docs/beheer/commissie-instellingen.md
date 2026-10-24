@@ -1,12 +1,12 @@
 # Commissie-instellingen
 
-Twee keuzes die bepalen hoe CreditSoft met commissie omgaat. Ze gelden voor uw hele kantoor, niet per dossier of per medewerker.
+Drie keuzes die bepalen hoe CreditSoft met commissie omgaat. Ze gelden voor uw hele kantoor, niet per dossier of per medewerker.
 
 ## Het scherm openen
 
 Ga naar **Platformbeheer** onderaan het menu, en klik onder *Krediet* op de tegel **Commissie-instellingen**.
 
-![Het scherm Commissie-instellingen met twee blokken: bovenaan de keuze tussen afrekenen per maand of per kwartaal met een waarschuwing dat bestaande borderellen niet veranderen, daaronder het vinkje om te waarschuwen bij een dossier zonder commissieschema.](../images/commissie-instellingen.png "De twee keuzes die voor uw hele kantoor gelden"){ .volle-breedte }
+![Het scherm Commissie-instellingen met drie blokken: bovenaan de keuze tussen afrekenen per maand of per kwartaal met een waarschuwing dat bestaande borderellen niet veranderen, daaronder het vinkje om te waarschuwen bij een dossier zonder commissieschema, en onderaan het Hoofdkantoor voor de commissieverdeling met een gekozen kantoor.](../images/commissie-instellingen.png "De drie keuzes die voor uw hele kantoor gelden"){ .volle-breedte }
 
 ## Afrekenen per maand of per kwartaal
 
@@ -23,6 +23,12 @@ Dit bepaalt wat er in één borderel valt.
 Staat dit aan, dan krijgt u een herinnering wanneer u een kredietdossier bewaart waarvoor de aanbrenger nog geen commissieschema heeft.
 
 Het is een **herinnering, geen blokkade**: het dossier wordt gewoon bewaard. Zet het uit als uw kantoor niet met commissieschema's werkt — anders verschijnt de melding bij elke bewaaractie van elk dossier.
+
+## Hoofdkantoor voor de commissieverdeling
+
+Werkt uw kantoor met een [commissiebarema](commissiebarema.md), dan verdeelt CreditSoft de commissie van de bank over twee kantoren: het **aanbrengende kantoor** krijgt het standaardpercentage op zijn aanbrengersfiche, en het **hoofdkantoor** dat u hier kiest krijgt de rest. Die verdeling bevestigt u op de lijst [Te bevestigen commissies](../credit-management/commission-to-confirm.md).
+
+Kies het hoofdkantoor uit uw aanbrengers. Laat u het veld leeg (*Geen — geen automatische verdeling*), dan wordt er niets verdeeld en zegt de lijst waarom.
 
 ## Wat hier níét staat
 

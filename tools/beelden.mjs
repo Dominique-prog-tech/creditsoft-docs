@@ -119,6 +119,17 @@ async function adviesInDeTaalVanHetBeeld(p) {
   await p.waitForTimeout(2500);
 }
 
+// Een rij van een AdmGrid openen. De RijLink is een anker met target=_blank: een klik opent een tabblad dat het schot niet
+// ziet. Daarom de href van de rij die het merkteken draagt, en er in DIT tabblad naartoe. Geen rij = luid falen.
+async function naarRij(p, merkteken) {
+  const rij = p.locator('tr').filter({ hasText: merkteken }).first();
+  await rij.waitFor({ timeout: 15000 });
+  const href = await rij.locator('a[href^="/"]').first().getAttribute('href');
+  if (!href) throw new Error(`de rij met ${merkteken} heeft geen link`);
+  await p.goto(BASIS + href, { waitUntil: 'networkidle' });
+  await p.waitForTimeout(3000);
+}
+
 const SCHOTEN = [
   // ── lijstschermen ──
   ['aanbrengers-lijst',            '/contributors'],
@@ -286,6 +297,37 @@ const SCHOTEN = [
   ['commissieschemas',             '/commissie/schemas'],
   ['fiche-281-50',                 '/commissie/fiche-28150'],
   ['borderel-overzicht',           '/commissie/borderel'],
+  // ── Commissiebarema (fase 1 en 2, oktober 2026). Vraagt de demostap "Commissiebarema aanvullen" (td14) in tenant_demo:
+  // één versie met Record (drie trappen commissieafstand, één terugvorderingstrap), VSW met twee formules en Allianz; vier
+  // dossiers op de werklijst en één vervroegde terugbetaling. ⚠️ Een RijLink opent in een NIEUW tabblad (target=_blank), dus
+  // klikken toont hier niets: elk recept leest de href en gaat er zelf naartoe (naarRij). Geen vaste id's — td14 maakt ze bij
+  // elke demo opnieuw aan; de weg via de lijst blijft geldig.
+  ['commissiebarema-versies',      '/beheer/commissiebarema'],
+  ['commissiebarema-versie',       '/beheer/commissiebarema', async p => { await naarRij(p, /Commissiebarema 2026/); }],
+  ['commissiebarema-regel',        '/beheer/commissiebarema', async p => {
+      await naarRij(p, /Commissiebarema 2026/);
+      await naarRij(p, /Record/);
+      // Het bijschrift belooft de ONDERKANT: de uitbetaling, de commissieafstand en de terugvordering.
+      await p.evaluate(() => {
+        const h = [...document.querySelectorAll('h6')].find(e => /^(Uitbetaling door de maatschappij|Paiement par la compagnie)$/.test((e.textContent || '').trim()));
+        h?.closest('.adm-card')?.scrollIntoView({ block: 'start' });
+      });
+      await p.waitForTimeout(1200);
+      // ⚠️ De terugvorderingstrap staat in INVULVELDEN, en een veldwaarde staat niet in innerText: VERWACHT kan haar niet zien.
+      // Dus hier, op de waarden zelf — een blok zonder trap ("Geen trappen en geen vinkje") haalt de schermtekst ook.
+      const trap = await p.locator('.barema-terugvordering input[type=text]').evaluateAll(i => i.map(x => x.value).join(' | '));
+      if (!/24[\s\S]*upfront[\s\S]*50/i.test(trap))
+        throw new Error(`de terugvordering hoort één trap "binnen 24 maanden, 50 % van het upfront-deel" te tonen, gezien: ${trap || 'geen velden'}`);
+  }],
+  ['commissie-te-bevestigen',     '/commissie/te-bevestigen'],
+  ['terugvordering-te-bevestigen', '/commissie/te-bevestigen-terugvorderingen'],
+  // Het dossier van de werklijst zonder standaardpercentage: het valt onder Record (de keuzelijst Commissieafstand staat er
+  // dus) en het heeft nog geen schema. Het blok staat ingeklapt; het bijschrift belooft het OPENGEKLAPT.
+  ['kredietdossier-commissievoorstel', '/commissie/te-bevestigen', async p => {
+      await naarRij(p, /Geen standaardpercentage|Pas de pourcentage standard/);
+      await p.locator('.commissie-voorstel-details').first().click();
+      await p.waitForTimeout(1500);
+  }],
   // ⚠️ ÉÉN WEEK TERUG, EN TELLEN WAT ER STAAT. De klok van de ronde staat op 01/09/2026; de boekingen van het
   // demokantoor staan op dinsdag 25/08, in de week ervóór. Van 31/08 tot 10/10/2026 toonde dit beeld een LEGE
   // agenda — twaalf rondes lang "geschreven mét zijn belofte", want de belofte was afgeleid uit het bijschrift
@@ -1058,6 +1100,18 @@ const VERWACHT = {
   'online-afspraken-agenda':    /(Vrij|Libre)\s+\d\d:\d\d\s*-\s*\d\d:\d\d/,
   'online-afspraken-instellingen': /Vragenlijst|Questionnaire|Locaties|Lieux/i,
   'filteren-zoekveld':          /Cuypers/i,
+  // Commissiebarema: telkens iets dat ENKEL in de beloofde toestand staat, niet de schermtitel.
+  'commissiebarema-versies':    /Geldt nu|En vigueur/,
+  // De drie maatschappijen in de regeltabel; "Commissiebarema 2026" staat ook in de lijst ervóór.
+  'commissiebarema-versie':     /(?=[\s\S]*Record)(?=[\s\S]*Formule B)(?=[\s\S]*Allianz)/,
+  // De trappen afstand met wat de commissie wordt (tekst in een tabel). De terugvorderingstrap staat in invulvelden en
+  // wordt in het recept getoetst.
+  'commissiebarema-regel':      /(?=[\s\S]*(Commissie wordt|Commission devient)[\s\S]*1,50 %)(?=[\s\S]*(Terugvordering bij|Récupération en cas))/,
+  // De knop Verdelen ÉN de melding: beide toestanden die het bijschrift belooft.
+  'commissie-te-bevestigen':    /(?=[\s\S]*(Verdelen|Répartir))(?=[\s\S]*(Geen standaardpercentage|Pas de pourcentage standard))/,
+  'terugvordering-te-bevestigen': /(?=[\s\S]*10\/07\/2026)(?=[\s\S]*(Terugvorderen|Récupérer))/,
+  // Opengeklapt: de link onderaan het blok staat er enkel open.
+  'kredietdossier-commissievoorstel': /Vervroegde terugbetaling of opeising|Remboursement anticipé ou exigibilité/,
   'gebruikers-fiche':           /Mailhandtekening|Signature|Toon in keuzelijsten|listes de choix/i,
   // ⚠️ Niet op de kop "Aan de slag": die zegt enkel dat het blok er staat, niet dat de STAPPEN erin staan —
   // en het blok toont ook een klaar-toestand zonder stappen. Deze zin komt alleen voor als eerste stap.

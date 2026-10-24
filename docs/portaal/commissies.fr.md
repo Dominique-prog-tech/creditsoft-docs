@@ -25,6 +25,8 @@ mois ; cliquez sur la flèche à gauche pour la déplier. En dessous figure chaq
 
 Le total annuel figure en bas. En haut à droite, vous pouvez rechercher, trier et exporter la liste.
 
+Un **montant négatif** avec la description *Récupération remboursement anticipé* est une commission que la compagnie a récupérée parce qu'un crédit s'est terminé plus tôt. Si ce montant dépasse ce qui s'est ajouté ce mois-là, vous voyez aussi *Solde reporté au bordereau suivant* et, un mois plus tard, *Solde reporté du bordereau …* : ainsi, un bordereau ne descend jamais sous zéro.
+
 !!! tip "Tout est replié à l'ouverture"
     C'est voulu : avec plusieurs milliers d'écritures, une liste dépliée est illisible. Les lignes de mois
     vous donnent la vue d'ensemble, et vous dépliez ce que vous souhaitez vérifier.

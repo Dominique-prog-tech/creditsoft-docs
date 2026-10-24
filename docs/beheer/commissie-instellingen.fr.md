@@ -1,12 +1,12 @@
 # Paramètres de commission
 
-Deux choix qui déterminent la manière dont CreditSoft traite les commissions. Ils valent pour tout votre bureau, pas par dossier ni par collaborateur.
+Trois choix qui déterminent la manière dont CreditSoft traite les commissions. Ils valent pour tout votre bureau, pas par dossier ni par collaborateur.
 
 ## Ouvrir l'écran
 
 Rendez-vous dans **Administration** en bas du menu, puis cliquez sous *Crédit* sur la tuile **Paramètres de commission**.
 
-![L'écran Paramètres de commission avec deux blocs : en haut le choix entre un décompte mensuel ou trimestriel, avec un avertissement indiquant que les bordereaux existants ne changent pas, en dessous la case à cocher pour avertir en cas de dossier sans schéma de commission.](../images/commissie-instellingen-fr.png "Les deux choix valables pour tout votre bureau"){ .volle-breedte }
+![L'écran Paramètres de commission avec trois blocs : en haut le choix entre un décompte mensuel ou trimestriel, avec un avertissement indiquant que les bordereaux existants ne changent pas, en dessous la case à cocher pour avertir en cas de dossier sans schéma de commission, et en bas le Bureau principal pour la répartition des commissions avec un bureau choisi.](../images/commissie-instellingen-fr.png "Les trois choix valables pour tout votre bureau"){ .volle-breedte }
 
 ## Décompter par mois ou par trimestre
 
@@ -23,6 +23,12 @@ Ce choix détermine ce qu'un bordereau regroupe.
 Si cette option est active, vous recevez un rappel lorsque vous enregistrez un dossier de crédit dont l'apporteur n'a pas encore de schéma de commission.
 
 C'est un **rappel, pas un blocage** : le dossier est enregistré normalement. Désactivez-le si votre bureau ne travaille pas avec des schémas de commission — sinon le message apparaît à chaque enregistrement de chaque dossier.
+
+## Bureau principal pour la répartition des commissions
+
+Si votre bureau travaille avec un [barème des commissions](commissiebarema.md), CreditSoft répartit la commission de la banque entre deux bureaux : le **bureau apporteur** reçoit le pourcentage standard de sa fiche d'intermédiaire, et le **bureau principal** que vous choisissez ici reçoit le reste. Vous confirmez cette répartition dans la liste [Commissions à confirmer](../credit-management/commission-to-confirm.md).
+
+Choisissez le bureau principal parmi vos intermédiaires. Si vous laissez le champ vide (*Aucun — pas de répartition automatique*), rien n'est réparti et la liste indique pourquoi.
 
 ## Ce qui ne figure pas ici
 

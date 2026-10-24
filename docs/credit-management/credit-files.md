@@ -108,6 +108,26 @@ Twee vinkjes verdienen aandacht:
 
 Onderaan het blok staat **Interne opmerkingen**: één vrij tekstveld voor uw eigen notities bij dit dossier. Dat is iets anders dan het tabblad *Opmerkingen*, waar elke regel de gebruiker en de datum draagt.
 
+### Voorstel volgens het barema
+
+Heeft uw kantoor een [commissiebarema](../beheer/commissiebarema.md) en dekt het dit dossier, dan staat onder de dossiergegevens één regel: **Voorstel volgens het barema**, met het bedrag dat het barema voor dit dossier berekent. Staat de maatschappij niet in het barema, of valt de akte vóór de eerste versie, dan staat die regel er niet — tenzij er een vervroegde terugbetaling op het dossier staat.
+
+- **Overnemen** zet het voorgestelde bedrag in het veld *Commissiebedrag*. Er wordt nog niets bewaard: u kijkt het na en klikt op **Bewaren**, zoals bij elke wijziging. Staat het bedrag er al, dan staat er *staat al in het veld*.
+- **details ▸** klapt de uitleg open: per contract (of voor het dossier, als er geen contracten zijn) de maatschappij, het percentage, het bedrag waarop gerekend werd en de versie van het barema die geldt.
+
+![Het voorstel volgens het barema op een dossier, opengeklapt: het bedrag met de link Overnemen, de uitleg per contract met de maatschappij, het percentage en het bedrag, de versie van het barema, de keuzelijst Commissieafstand en onderaan de link Vervroegde terugbetaling of opeising.](../images/kredietdossier-commissievoorstel.png "Het voorstel volgens het barema, opengeklapt"){ .volle-breedte }
+
+Moet u iets kiezen, dan klapt de regel vanzelf open:
+
+- **Kies de formule** — de maatschappij heeft meer formules en het product beslist niet welke. Kies die van dit krediet. Met **andere formule** kiest u opnieuw.
+- **Commissieafstand** — heeft de regel trappen van rentekorting, dan kiest u hier hoeveel commissie u afstaat. De uitleg toont dan de berekening en de rentekorting voor de klant. Kiest u later een andere formule, dan vervalt de gekozen afstand.
+
+Het voorstel rekent met de **bewaarde** gegevens: het bedrag van de contracten (of het toegekende bedrag, en anders het gevraagde), de looptijd, de rente en de aktedatum. Wijzigt u die, bewaar dan eerst.
+
+#### Vervroegde terugbetaling of opeising
+
+Onderaan het opengeklapte voorstel staat de link **Vervroegde terugbetaling of opeising…**. Daar zet u de datum waarop het hele dossier vervroegd eindigde, en of het een terugbetaling of een opeising was. Een datum in de toekomst wordt geweigerd. Het dossier komt dan op de lijst [Te bevestigen terugvorderingen](commission-clawback.md); tot het daar verwerkt is, kan u de datum nog **wijzigen** of **wissen**. Daarna staat er *terugvordering verwerkt op*.
+
 ### Reden van afvallen
 
 Sluit de **status** het dossier af zonder akte — bijvoorbeeld *Krediet geweigerd* of *Zonder gevolg* — dan staan er onder de status twee velden: **Reden van afvallen** en **Toelichting**. Kies of de bank weigerde of de klant afzag, en waarom. In de toelichting schrijft u wat de keuze niet zegt.

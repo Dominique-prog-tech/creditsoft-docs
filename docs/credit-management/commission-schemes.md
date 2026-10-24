@@ -6,7 +6,7 @@ Alle commissieafspraken van uw kantoor op één scherm: wie krijgt hoeveel op we
 
 Klik in het menu links op **Commissieschema's**, onder *Lijsten*.
 
-![Het scherm Commissieschema's: bovenaan de filters Lopend en Alle vormen met het aantal gevonden schema's, daaronder de lijst met per regel de aanbrenger, de klant, het dossiernummer, de ingangsdatum, de vorm als label — Gespreid, Gepland of Vast bedrag — de toestand Lopend en het commissiebedrag.](../images/commissieschemas.png "Alle commissieafspraken over de dossiers heen"){ .volle-breedte }
+![Het scherm Commissieschema's: bovenaan de filters Lopend en Alle vormen met het aantal gevonden schema's en de links Te bevestigen commissies en Te bevestigen terugvorderingen, daaronder de lijst met per regel de aanbrenger, de klant, het dossiernummer, de ingangsdatum, de vorm als label — Gespreid, Gepland of Vast bedrag — de toestand Lopend en het commissiebedrag.](../images/commissieschemas.png "Alle commissieafspraken over de dossiers heen"){ .volle-breedte }
 
 Elke regel is één afspraak tussen een **dossier** en een **aanbrenger**. Hangen er twee aanbrengers aan één dossier, dan staan er twee regels.
 
@@ -37,6 +37,13 @@ De filter staat standaard op **Lopend**: de afspraken die nu geld opleveren. Zet
 
 !!! info "Niet geactiveerd"
     Staat er **Niet geactiveerd**, dan bestaat het schema wel maar is er nog geen enkele commissie geboekt. Dat gebeurt wanneer iemand een afspraak heeft ingegeven maar de laatste stap niet heeft gezet. Open het schema en activeer het; pas dan komen de termijnen in de boeken.
+
+## Wat nog bevestigd moet worden
+
+Heeft uw kantoor een [commissiebarema](../beheer/commissiebarema.md), dan staan boven de lijst twee links:
+
+- **Te bevestigen commissies** — dossiers waarvan de commissie nog over het kantoor en het hoofdkantoor verdeeld moet worden. Zie [Te bevestigen commissies](commission-to-confirm.md).
+- **Te bevestigen terugvorderingen** — enkel als er een wacht: dossiers die vervroegd eindigden. Zie [Te bevestigen terugvorderingen](commission-clawback.md).
 
 ## Waar dit scherm mee samenhangt
 

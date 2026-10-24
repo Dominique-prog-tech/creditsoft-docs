@@ -187,6 +187,10 @@ plugins:
             Commissieschema's: Schémas de commission
             Vooruitzicht: Perspective
             Restanten commissie: Reliquats de commission
+            # Commissiebarema (fase 1 en 2, oktober 2026) — de Franse termen uit de app zelf.
+            Commissiebarema: Barème des commissions
+            Te bevestigen commissies: Commissions à confirmer
+            Te bevestigen terugvorderingen: Récupérations à confirmer
             # Facturatie (06/10/2026) — de Franse termen uit de app zelf.
             Facturatie: Facturation
             Facturen: Factures
@@ -317,6 +321,8 @@ nav:
     - Rapporten: credit-management/reports.md
     - Documentbibliotheek: credit-management/document-library.md
     - Commissieschema's: credit-management/commission-schemes.md
+    - Te bevestigen commissies: credit-management/commission-to-confirm.md
+    - Te bevestigen terugvorderingen: credit-management/commission-clawback.md
     - Vooruitzicht: credit-management/commission-forecast.md
 
   # Facturatie (06/10/2026) — dezelfde plek als in het menu van de app: na Lijsten. De instellingen staan onder Beheer,
@@ -359,6 +365,7 @@ nav:
     - Prullenbak: administration/recycle-bin.md
     - Actielogboek: administration/activity-log.md
     - Commissie-instellingen: beheer/commissie-instellingen.md
+    - Commissiebarema: beheer/commissiebarema.md
     - Restanten commissie: beheer/commissie-restanten.md
     - Btw-codes en artikelen: beheer/btw-codes-en-artikelen.md
     - Factuurinstellingen: beheer/factuurinstellingen.md

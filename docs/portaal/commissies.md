@@ -25,6 +25,8 @@ klik op het pijltje links om ze open te klappen. Daaronder staat elke boeking ap
 
 Onderaan staat het jaartotaal. Rechtsboven kunt u zoeken, sorteren en de lijst exporteren.
 
+Een **negatief bedrag** met de omschrijving *Terugvordering vervroegde terugbetaling* is commissie die de maatschappij terugvroeg omdat een krediet vroeger eindigde. Is zo'n bedrag groter dan wat er die maand bijkwam, dan ziet u ook *Saldo overgedragen naar het volgende borderel* en, een maand later, *Overgedragen saldo van borderel …*: zo komt een borderel nooit onder nul.
+
 !!! tip "Alles staat dicht bij het openen"
     Dat is bewust: bij enkele duizenden boekingen is een open lijst niet te overzien. De maandregels geven
     u het beeld, en u klapt open wat u wilt nakijken.

@@ -6,7 +6,7 @@ Tous les accords de commission de votre bureau sur un seul écran : qui reçoit 
 
 Dans le menu de gauche, cliquez sur **Schémas de commission**, sous *Listes*.
 
-![L'écran Schémas de commission : en haut les filtres En cours et Toutes les formes avec le nombre de schémas trouvés, en dessous la liste indiquant par ligne l'apporteur, le client, la numéro de dossier, la date d'effet, la forme sous forme d'étiquette — Étalé, Planifié ou Montant fixe — le statut En cours et le montant de la commission.](../images/commissieschemas-fr.png "Tous les accords de commission, tous dossiers confondus"){ .volle-breedte }
+![L'écran Schémas de commission : en haut les filtres En cours et Toutes les formes avec le nombre de schémas trouvés et les liens Commissions à confirmer et Récupérations à confirmer, en dessous la liste indiquant par ligne l'apporteur, le client, la numéro de dossier, la date d'effet, la forme sous forme d'étiquette — Étalé, Planifié ou Montant fixe — le statut En cours et le montant de la commission.](../images/commissieschemas-fr.png "Tous les accords de commission, tous dossiers confondus"){ .volle-breedte }
 
 Chaque ligne correspond à un accord entre un **dossier** et un **apporteur**. Si deux apporteurs sont liés à un même dossier, deux lignes apparaissent.
 
@@ -37,6 +37,13 @@ Le filtre est par défaut sur **En cours** : les accords qui rapportent aujourd'
 
 !!! info "Non activé"
     La mention **Non activé** signifie que le schéma existe mais qu'aucune commission n'est encore comptabilisée. Cela se produit lorsqu'un accord a été encodé sans que la dernière étape soit franchie. Ouvrez le schéma et activez-le ; les échéances entrent alors en compte.
+
+## Ce qui reste à confirmer
+
+Si votre bureau a un [barème des commissions](../beheer/commissiebarema.md), deux liens figurent au-dessus de la liste :
+
+- **Commissions à confirmer** — les dossiers dont la commission doit encore être répartie entre le bureau et le bureau principal. Voir [Commissions à confirmer](commission-to-confirm.md).
+- **Récupérations à confirmer** — uniquement s'il y en a une en attente : les dossiers terminés anticipativement. Voir [Récupérations à confirmer](commission-clawback.md).
 
 ## Les écrans liés
 

@@ -108,6 +108,26 @@ Deux cases méritent votre attention :
 
 En bas du bloc figure **Remarques internes** : un champ de texte libre pour vos propres notes sur ce dossier. C'est autre chose que l'onglet *Remarques*, où chaque ligne porte l'auteur et la date.
 
+### Proposition selon le barème { #proposition-selon-le-bareme }
+
+Si votre bureau a un [barème des commissions](../beheer/commissiebarema.md) qui couvre ce dossier, une ligne figure sous les données du dossier : **Proposition selon le barème**, avec le montant que le barème calcule pour ce dossier. Si la compagnie ne figure pas dans le barème, ou si l'acte précède la première version, cette ligne n'apparaît pas — sauf si un remboursement anticipé est indiqué sur le dossier.
+
+- **Reprendre** place le montant proposé dans le champ *Montant de commission*. Rien n'est encore enregistré : vous vérifiez et cliquez sur **Enregistrer**, comme pour toute modification. Si le montant y figure déjà, la mention *figure déjà dans le champ* apparaît.
+- **détails ▸** déplie l'explication : par contrat (ou pour le dossier s'il n'y a pas de contrats) la compagnie, le pourcentage, le montant de calcul et la version du barème qui s'applique.
+
+![La proposition selon le barème sur un dossier, dépliée : le montant avec le lien Reprendre, l'explication par contrat avec la compagnie, le pourcentage et le montant, la version du barème, la liste Renonce à la commission et en bas le lien Remboursement anticipé ou exigibilité.](../images/kredietdossier-commissievoorstel-fr.png "La proposition selon le barème, dépliée"){ .volle-breedte }
+
+S'il y a quelque chose à choisir, la ligne se déplie d'elle-même :
+
+- **Choisissez la formule** — la compagnie a plusieurs formules et le produit ne décide pas laquelle. Choisissez celle de ce crédit. **autre formule** permet de choisir à nouveau.
+- **Renonce à la commission** — si la règle a des paliers de réduction de taux, vous choisissez ici combien de commission vous cédez. L'explication montre alors le calcul et la réduction de taux pour le client. Si vous choisissez ensuite une autre formule, la renonce choisie tombe.
+
+La proposition calcule avec les données **enregistrées** : le montant des contrats (ou le montant octroyé, sinon le montant demandé), la durée, le taux et la date d'acte. Si vous les modifiez, enregistrez d'abord.
+
+#### Remboursement anticipé ou exigibilité
+
+En bas de la proposition dépliée figure le lien **Remboursement anticipé ou exigibilité…**. Vous y indiquez la date à laquelle tout le dossier s'est terminé plus tôt, et s'il s'agit d'un remboursement ou d'une exigibilité. Une date future est refusée. Le dossier arrive alors sur la liste [Récupérations à confirmer](commission-clawback.md) ; tant qu'il n'y est pas traité, vous pouvez encore **modifier** ou **effacer** la date. Ensuite figure *récupération traitée le*.
+
 ### Motif d'abandon
 
 Si le **statut** clôture le dossier sans acte — par exemple *Crédit refusé* ou *Sans suite* —, deux champs figurent sous le statut : **Motif d'abandon** et **Précision**. Indiquez si la banque a refusé ou si le client a renoncé, et pourquoi. Dans la précision, vous écrivez ce que le choix ne dit pas.

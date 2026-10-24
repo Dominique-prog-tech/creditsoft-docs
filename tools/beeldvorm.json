@@ -678,5 +678,32 @@
       "bevat": "Taal van de documenten|Langue des documents",
       "minBreed": 400
     }
+  },
+  "commissiebarema-versies": {
+    "breedte": 1700,
+    "hoogte": 900
+  },
+  "commissiebarema-versie": {
+    "breedte": 1700,
+    "hoogte": 900
+  },
+  "commissiebarema-regel": {
+    "breedte": 1700,
+    "hoogte": 1100
+  },
+  "commissie-te-bevestigen": {
+    "breedte": 1700,
+    "hoogte": 900
+  },
+  "terugvordering-te-bevestigen": {
+    "breedte": 1700,
+    "hoogte": 900
+  },
+  "kredietdossier-commissievoorstel": {
+    "breedte": 1700,
+    "element": {
+      "kies": ".commissie-voorstel"
+    },
+    "hoogte": 1000
   }
 }

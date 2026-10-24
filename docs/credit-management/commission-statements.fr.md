@@ -54,7 +54,17 @@ Ce n'est qu'en cliquant sur **Créer les bordereaux** que quelque chose se passe
 !!! warning "Ce que « protégées » signifie"
     Une ligne portée sur un bordereau ne change plus. Si vous modifiez ensuite le schéma de commission de ce dossier et le recalculez, cette ligne reste telle qu'elle était. C'est voulu : vous avez décompté ce montant, et un décompte dont le montant change après coup n'est pas un décompte.
 
-Une période ne peut être décomptée qu'une seule fois. Si vous essayez une deuxième fois, CreditSoft indique qu'une série existe déjà pour cette période.
+Vous pouvez décompter une période à nouveau : une deuxième série ne reprend que ce qui s'est ajouté depuis la précédente, par exemple une commission comptabilisée plus tard sur ce mois. S'il n'y a plus rien d'ouvert, CreditSoft indique qu'il n'y a aucune commission non décomptée.
+
+### Un solde négatif
+
+Une [récupération pour remboursement anticipé](commission-clawback.md) figure en ligne négative chez l'intermédiaire. Si elle dépasse ce qui s'ajoute pendant la période, il n'y a **pas de bordereau négatif** :
+
+- l'aperçu montre chez cet intermédiaire le montant négatif avec **reporté**, et le total en bas est ce qui est réellement payé ;
+- son bordereau s'établit à **0,00 €**, avec la ligne *Solde reporté au bordereau suivant* ;
+- le manque figure en ligne *Solde reporté du bordereau …* sur son bordereau suivant, et y est compensé avec ce qui s'ajoute alors.
+
+Si rien ne s'ajoute la période suivante, le solde avance d'une période, sans bordereau.
 
 ## Ouvrir un bordereau
 

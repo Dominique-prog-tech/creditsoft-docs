@@ -54,7 +54,17 @@ Pas wanneer u op **Borderellen aanmaken** klikt, gebeurt er iets: elke aanbrenge
 !!! warning "Wat 'beschermd' betekent"
     Een lijn die op een borderel staat, verandert niet meer. Past u nadien het commissieschema van dat dossier aan en herberekent u het, dan blijft die lijn staan zoals ze was. Dat is de bedoeling: u hebt dat bedrag afgerekend, en een afrekening die achteraf van bedrag verandert is geen afrekening.
 
-Een periode kan maar één keer afgerekend worden. Probeert u het een tweede keer, dan zegt CreditSoft dat er al een ronde bestaat voor die periode.
+Een periode kan u opnieuw afrekenen: een tweede ronde neemt enkel wat er sinds de vorige bijkwam, bijvoorbeeld commissie die later nog op die maand geboekt werd. Staat er niets meer open, dan zegt CreditSoft dat er geen niet-afgerekende commissie is.
+
+### Een negatief saldo
+
+Een [terugvordering bij vervroegde terugbetaling](commission-clawback.md) staat als negatieve lijn bij de aanbrenger. Is ze groter dan wat er in die periode bijkomt, dan komt er **geen negatief borderel**:
+
+- het voorbeeld toont bij die aanbrenger het negatieve bedrag met **wordt overgedragen**, en het totaal onderaan is wat er werkelijk uitbetaald wordt;
+- zijn borderel komt op **€ 0,00**, met de lijn *Saldo overgedragen naar het volgende borderel*;
+- het tekort komt als lijn *Overgedragen saldo van borderel …* op zijn volgende borderel, en wordt daar verrekend met wat er dan bijkomt.
+
+Komt er de volgende periode niets bij, dan schuift het saldo één periode verder, zonder borderel.
 
 ## Eén borderel openen
 
