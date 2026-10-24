@@ -18,6 +18,32 @@ De app is er voor twee soorten gebruikers, en beide melden zich aan met hun **ge
 
 Een account aanmaken kan niet in de app zelf. Heeft u er nog geen, vraag het dan aan uw kantoor.
 
+## Aanmelden
+
+1. Vul uw **gebruikersnaam of e-mail** en uw **wachtwoord** in.
+2. Tik op **Aanmelden**.
+
+U blijft daarna aangemeld op dat toestel. Moet u zich toch opnieuw aanmelden, dan staat uw gebruikersnaam al ingevuld
+en typt u enkel uw wachtwoord.
+
+### Met tweestapsverificatie
+
+Heeft u [tweestapsverificatie](tweestapsverificatie.md) aangezet, dan vraagt de app na uw wachtwoord een **code**:
+
+- Gebruikt u een **authenticator-app**, dan vult u de code uit die app in.
+- Krijgt u de code **per mail**, dan stuurt CreditSoft ze naar uw mailadres. Geen mail ontvangen? Kijk ook in uw
+  ongewenste mail, of tik op **Geen mail ontvangen? Stuur een nieuwe code**. Een nieuwe code kan pas een minuut na de
+  vorige.
+
+Tik daarna op **Verifiëren**.
+
+Heeft u uw authenticator-app of uw mail niet bij de hand, tik dan op **App niet beschikbaar? Gebruik een herstelcode**
+(bij een code per mail: **Geen toegang tot uw mail? Gebruik een herstelcode**) en vul een van uw
+[herstelcodes](tweestapsverificatie.md#herstelcodes) in. Met **Opnieuw aanmelden** gaat u terug naar uw wachtwoord.
+
+!!! note "Een passkey werkt niet in de app"
+    Meldt u zich op de computer aan met een passkey, dan gebruikt u in de app uw wachtwoord en daarna de code.
+
 ## Home
 
 ![De startpagina van de app: bovenaan een blauwe kaart met de begroeting, de naam van het kantoor, 1.284 dossiers, het totale kredietbedrag en de knoppen 97 dit jaar en 41 aktes. Daaronder Snel naar met Klant aanbrengen en Dossier zoeken, de volgende afspraak, en Stukken te bezorgen met 2 geweigerd en 7 te bezorgen in 4 dossiers. Onderaan de balk met Home, Dossiers, Aangebracht en Afspraken.](../images/app-home.png "De startpagina van de app"){ .eigen-breedte style="width:280px" }

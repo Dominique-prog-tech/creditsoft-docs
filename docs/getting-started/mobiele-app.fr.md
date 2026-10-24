@@ -20,6 +20,35 @@ habituel** :
 Il n'est pas possible de créer un compte dans l'application. Vous n'en avez pas encore ? Demandez-le à votre
 bureau.
 
+## Se connecter
+
+1. Saisissez votre **nom d'utilisateur ou e-mail** et votre **mot de passe**.
+2. Touchez **Se connecter**.
+
+Vous restez ensuite connecté sur cet appareil. Si vous devez malgré tout vous reconnecter, votre nom d'utilisateur est
+déjà rempli et vous ne saisissez que votre mot de passe.
+
+### Avec la vérification en deux étapes
+
+Si vous avez activé la [vérification en deux étapes](tweestapsverificatie.md), l'application demande un **code** après
+votre mot de passe :
+
+- Vous utilisez une **application d'authentification** : saisissez le code de cette application.
+- Vous recevez le code **par courriel** : CreditSoft l'envoie à votre adresse e-mail. Pas reçu de courriel ? Vérifiez
+  aussi vos courriels indésirables, ou touchez **Pas reçu de courriel ? Envoyer un nouveau code**. Un nouveau code ne
+  peut être envoyé qu'une minute après le précédent.
+
+Touchez ensuite **Vérifier**.
+
+Vous n'avez pas votre application d'authentification ou vos courriels sous la main ? Touchez **Application
+indisponible ? Utilisez un code de récupération** (pour un code par courriel : **Pas accès à vos courriels ? Utilisez un
+code de récupération**) et saisissez l'un de vos [codes de récupération](tweestapsverificatie.md#codes-de-recuperation). Avec
+**Se reconnecter**, vous revenez à votre mot de passe.
+
+!!! note "Une clé d'accès ne fonctionne pas dans l'application"
+    Si vous vous connectez sur l'ordinateur avec une clé d'accès, utilisez dans l'application votre mot de passe,
+    puis le code.
+
 ## Accueil
 
 ![La page d'accueil de l'application : en haut une carte bleue avec le salut, le nom du bureau, 1 284 dossiers, le montant total des crédits et les boutons 97 cette année et 41 actes. En dessous Accès rapide avec Apporter un client et Chercher un dossier, le prochain rendez-vous, et Pièces à fournir avec 2 refusées et 7 à fournir dans 4 dossiers. En bas la barre avec Accueil, Dossiers, Apportés et Rendez-vous.](../images/app-home-fr.png "La page d'accueil de l'application"){ .eigen-breedte style="width:280px" }
