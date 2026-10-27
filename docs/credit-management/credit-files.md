@@ -313,6 +313,10 @@ Op dit tabblad staat per aanbrenger wat er voor dit dossier afgesproken is: het 
 
 Boven de lijst staat de knop **Toevoegen**. Daarmee maakt u een nieuw schema voor dit dossier: u kiest de aanbrenger, het totale commissiebedrag, de startdatum en de uitbetalingsvorm. Kiest u *Gespreid*, dan vult u aan welk deel direct uitbetaald wordt en over hoeveel maanden de rest verdeeld wordt. Kiest u *Geplande betalingen*, dan zet u zelf de termijnen: per termijn hoeveel maanden na de startdatum, en welk percentage van de totale commissie. Een schema mag tot 24 termijnen dragen, en die hoeven samen geen 100 % te vormen. Vul per termijn wél **allebei** de velden in: een termijn met enkel een percentage of enkel een maand wordt geweigerd, met de melding welke rij het is. Een rij die u toevoegde maar leeg liet, mag blijven staan — die wordt genegeerd.
 
+CreditSoft vult twee velden voor u in. De **aanbrenger** is die van het dossier, of het kantoor erboven als dat
+[zelf afrekent met zijn aanbrengers](../crm/contributors.md#commissie); de aanbrengers onder zo'n kantoor staan dan niet in
+de lijst. De **startdatum** is de datum van de akte, of vandaag als er nog geen akte is.
+
 Een nieuw schema staat eerst op *nog niet actief*: er is nog niets geboekt. Pas wanneer u het activeert, zet CreditSoft de maandbedragen klaar.
 
 ![De fiche van een commissieschema: bovenaan het dossiernummer met daarnaast de toestand Actief, daaronder de sectie Algemene gegevens met de aanbrenger, de totale commissie en de startdatum, en de keuze van de uitbetaling tussen gespreid, geplande betalingen en een vast bedrag. Gespreid is gekozen, dus eronder staan Direct (%) en Aantal maanden met de uitleg dat het deel dat niet direct wordt uitbetaald gelijk verdeeld wordt over dat aantal maanden, en een veld voor een opmerking.](../images/commissieschema-fiche.png "Een commissieschema met een gespreide uitbetaling"){ .volle-breedte }

@@ -28,6 +28,8 @@ Het is een **herinnering, geen blokkade**: het dossier wordt gewoon bewaard. Zet
 
 Werkt uw kantoor met een [commissiebarema](commissiebarema.md), dan verdeelt CreditSoft de commissie van de bank over twee kantoren: het **aanbrengende kantoor** krijgt het standaardpercentage op zijn aanbrengersfiche, en het **hoofdkantoor** dat u hier kiest krijgt de rest. Die verdeling bevestigt u op de lijst [Te bevestigen commissies](../credit-management/commission-to-confirm.md).
 
+Hangt de aanbrenger van het dossier onder een kantoor dat [zelf afrekent met zijn aanbrengers](../crm/contributors.md#commissie), dan is dat kantoor het aanbrengende kantoor: het krijgt zijn standaardpercentage en geeft zelf door.
+
 Kies het hoofdkantoor uit uw aanbrengers. Laat u het veld leeg (*Geen — geen automatische verdeling*), dan wordt er niets verdeeld en zegt de lijst waarom.
 
 ## Wat hier níét staat

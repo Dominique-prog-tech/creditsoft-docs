@@ -82,6 +82,19 @@ Le mode de paiement détermine les champs qui apparaissent ensuite :
 - **Montant fixe** — le montant lui-même.
 - **Paiement planifié** — un tableau de 24 lignes où vous indiquez, par ligne, le mois et le pourcentage.
 
+**Règle lui-même les apporteurs qui dépendent de lui.** Cochez cette case pour un bureau qui paie ses propres apporteurs.
+Sur un dossier d'un apporteur qui dépend de ce bureau, votre bureau paie alors le **bureau**, et le bureau reverse
+lui-même une commission à son apporteur, via [Reverser une commission](../portaal/afrekeningen.md#reverser-une-commission)
+dans le portail. Votre bureau n'a alors pas de vue sur ce que le bureau et ses apporteurs conviennent entre eux, et n'en a
+pas besoin. Concrètement :
+
+- lors d'un nouveau schéma de commission, CreditSoft propose le bureau, et les apporteurs de ce bureau ne figurent pas dans
+  la liste ;
+- dans la [répartition selon le barème](../beheer/commissie-instellingen.md#bureau-principal-pour-la-repartition-des-commissions),
+  le bureau reçoit la part du bureau apporteur.
+
+Laissez la case vide pour un bureau dont vous payez vous-même les apporteurs. Un schéma qui existait déjà reste tel quel.
+
 ## La production d'un apporteur
 
 L'onglet **Production** de la fiche montre ce que cet apporteur représente pour votre bureau : combien de dossiers il apporte, combien aboutissent à un acte, et comment cela se compare à votre bureau dans son ensemble. L'onglet apparaît dès que l'apporteur est enregistré.

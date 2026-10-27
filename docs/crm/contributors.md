@@ -83,6 +83,19 @@ De betaalwijze bepaalt welke velden er daarna bijkomen:
 - **Vast bedrag** — het bedrag zelf.
 - **Geplande betaling** — een tabel van 24 regels waarin u per regel de maand en het percentage zet.
 
+**Rekent zelf af met de aanbrengers onder zich.** Vink dit aan bij een kantoor dat zijn eigen aanbrengers betaalt. Op
+een dossier van een aanbrenger onder dat kantoor betaalt uw kantoor dan het **kantoor**, en geeft het kantoor zelf
+commissie door aan zijn aanbrenger, via [Commissie doorgeven](../portaal/afrekeningen.md#commissie-doorgeven) in het
+portaal. Uw kantoor heeft dan geen zicht op wat het kantoor en zijn aanbrengers onderling afspreken, en hoeft dat ook
+niet. Concreet:
+
+- bij een nieuw commissieschema stelt CreditSoft het kantoor voor, en staan de aanbrengers onder dat kantoor niet in de
+  lijst;
+- in de [verdeling volgens het barema](../beheer/commissie-instellingen.md#hoofdkantoor-voor-de-commissieverdeling)
+  krijgt het kantoor het deel van het aanbrengende kantoor.
+
+Laat het uit bij een kantoor waarvan u de aanbrengers zelf betaalt. Een schema dat al bestond, blijft zoals het is.
+
 ## De productie van een aanbrenger
 
 Op het tabblad **Productie** van de fiche ziet u wat deze aanbrenger voor uw kantoor betekent: hoeveel dossiers hij aanbrengt, hoeveel er tot een akte komen, en hoe dat zich verhoudt tot uw kantoor als geheel. Het tabblad verschijnt zodra de aanbrenger bewaard is.

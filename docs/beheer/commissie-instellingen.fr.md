@@ -28,6 +28,8 @@ C'est un **rappel, pas un blocage** : le dossier est enregistré normalement. D�
 
 Si votre bureau travaille avec un [barème des commissions](commissiebarema.md), CreditSoft répartit la commission de la banque entre deux bureaux : le **bureau apporteur** reçoit le pourcentage standard de sa fiche d'intermédiaire, et le **bureau principal** que vous choisissez ici reçoit le reste. Vous confirmez cette répartition dans la liste [Commissions à confirmer](../credit-management/commission-to-confirm.md).
 
+Si l'apporteur du dossier dépend d'un bureau qui [règle lui-même ses apporteurs](../crm/contributors.md#commission), ce bureau est le bureau apporteur : il reçoit son pourcentage standard et reverse lui-même.
+
 Choisissez le bureau principal parmi vos intermédiaires. Si vous laissez le champ vide (*Aucun — pas de répartition automatique*), rien n'est réparti et la liste indique pourquoi.
 
 ## Ce qui ne figure pas ici

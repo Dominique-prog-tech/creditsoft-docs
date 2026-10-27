@@ -11,7 +11,7 @@ Allez dans le menu vers **Schémas**. Si votre bureau a un barème, le lien **Co
 ## Comment la répartition se fait
 
 - La **commission banque** est le montant de commission du dossier. Reprenez-y d'abord la proposition du barème, si ce n'est pas encore fait.
-- Le **bureau** qui a apporté le dossier reçoit le **pourcentage standard** de sa fiche d'intermédiaire.
+- Le **bureau** qui a apporté le dossier reçoit le **pourcentage standard** de sa fiche d'intermédiaire. Si l'apporteur dépend d'un bureau qui [règle lui-même ses apporteurs](../crm/contributors.md#commission), c'est ce bureau.
 - Le **bureau principal** reçoit le reste. Vous le choisissez dans les [paramètres de commission](../beheer/commissie-instellingen.md).
 - Si le bureau principal apporte lui-même le dossier, il reçoit **100 %**.
 - Les deux sont payés au **rythme de la banque** : celui de la règle du barème, sinon celui de l'institution de crédit. Le premier paiement tombe le mois après l'acte.

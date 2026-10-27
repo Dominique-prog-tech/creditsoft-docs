@@ -21,7 +21,7 @@ Vous complétez :
 |---|---|
 | **Courtier** | La personne que vous voulez payer. La liste reprend les courtiers rattachés à votre bureau. |
 | **Montant** | Ce que ce courtier reçoit. C'est vous qui le déterminez — indépendamment de ce que vous percevez. |
-| **Date de début** | À partir de quand la comptabilisation commence. |
+| **Date de début** | À partir de quand la comptabilisation commence. CreditSoft remplit la date de l'acte ; s'il n'y a pas encore d'acte, vous la choisissez vous-même. |
 | **Payé directement (%)** | La part payée immédiatement. À 100, vous payez la totalité en une fois. |
 | **Étalé sur (mois)** | Sur combien de mois le solde est réparti. |
 

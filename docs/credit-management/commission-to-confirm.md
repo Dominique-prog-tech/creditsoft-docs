@@ -11,7 +11,7 @@ Ga in het menu naar **Commissieschema's**. Heeft uw kantoor een barema, dan staa
 ## Hoe er verdeeld wordt
 
 - De **bankcommissie** is het commissiebedrag op het dossier. Neem daar eerst het voorstel van het barema over, als u dat nog niet deed.
-- Het **kantoor** dat het dossier aanbracht, krijgt het **standaardpercentage** op zijn aanbrengersfiche.
+- Het **kantoor** dat het dossier aanbracht, krijgt het **standaardpercentage** op zijn aanbrengersfiche. Hangt de aanbrenger onder een kantoor dat [zelf afrekent](../crm/contributors.md#commissie), dan is dat het kantoor.
 - Het **hoofdkantoor** krijgt de rest. Welk kantoor dat is, kiest u op [Commissie-instellingen](../beheer/commissie-instellingen.md).
 - Brengt het hoofdkantoor het dossier zelf aan, dan krijgt het **100 %**.
 - Beide worden uitbetaald in het **ritme van de bank**: dat van de regel in het barema, en anders dat op de kredietinstelling. De eerste betaling valt de maand na de akte.

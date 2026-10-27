@@ -20,7 +20,7 @@ U vult in:
 |---|---|
 | **Makelaar** | Wie u wilt betalen. De lijst bevat de makelaars die onder uw kantoor hangen. |
 | **Bedrag** | Wat die makelaar krijgt. U bepaalt dit zelf — het staat los van wat u zelf ontvangt. |
-| **Startdatum** | Vanaf wanneer er geboekt wordt. |
+| **Startdatum** | Vanaf wanneer er geboekt wordt. CreditSoft vult de datum van de akte in; is er nog geen akte, dan kiest u ze zelf. |
 | **Direct uitbetaald (%)** | Welk deel meteen betaald wordt. Op 100 betaalt u het volledige bedrag in één keer. |
 | **Gespreid over (maanden)** | Over hoeveel maanden de rest gespreid wordt. |
 

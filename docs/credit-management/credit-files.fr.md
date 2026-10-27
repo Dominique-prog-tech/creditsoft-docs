@@ -313,6 +313,10 @@ Cet onglet indique, par apporteur, ce qui a été convenu pour ce dossier : le m
 
 Au-dessus de la liste se trouve le bouton **Ajouter**. Il crée un nouveau schéma pour ce dossier : vous choisissez l'apporteur, le montant total de la commission, la date de début et la forme de paiement. Si vous choisissez *Étalé*, vous complétez la part payée immédiatement et le nombre de mois sur lequel le reste est réparti. Si vous choisissez *Paiements planifiés*, vous fixez vous-même les échéances : par échéance, combien de mois après la date de début et quel pourcentage de la commission totale. Un schéma peut porter jusqu'à 24 échéances, et leur somme ne doit pas nécessairement atteindre 100 %. Remplissez toutefois **les deux** champs par échéance : une échéance qui ne porte qu'un pourcentage ou qu'un mois est refusée, avec l'indication de la ligne concernée. Une ligne que vous avez ajoutée mais laissée vide peut rester : elle est ignorée.
 
+CreditSoft remplit deux champs pour vous. L'**apporteur** est celui du dossier, ou le bureau au-dessus de lui si celui-ci
+[règle lui-même ses apporteurs](../crm/contributors.md#commission) ; les apporteurs de ce bureau ne figurent alors pas dans
+la liste. La **date de début** est la date de l'acte, ou aujourd'hui s'il n'y a pas encore d'acte.
+
 Un nouveau schéma est d'abord *pas encore actif* : rien n'est encore comptabilisé. Ce n'est qu'à l'activation que CreditSoft prépare les montants mensuels.
 
 ![La fiche d'un schéma de commission : en haut le numéro de dossier avec, à côté, l'état Actif ; en dessous la section Données générales avec l'apporteur, la commission totale et la date de début, et le choix du paiement entre étalé, paiements planifiés et montant fixe. Étalé est sélectionné, de sorte que figurent en dessous Immédiat (%) et Nombre de mois avec l'explication que la part qui n'est pas payée immédiatement est répartie également sur ce nombre de mois, ainsi qu'un champ pour une remarque.](../images/commissieschema-fiche-fr.png "Un schéma de commission avec un paiement étalé"){ .volle-breedte }
