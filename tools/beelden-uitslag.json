@@ -303,7 +303,7 @@
   "portaal-dossiers": {
     "route": "/portal-intermediary/dossiers",
     "app": {
-      "sha": "2557087994d651110029a1fc58ac7624501ac479",
+      "sha": "f9400da5108f40d7cdd65dc426fe2c715fb8f218",
       "vuil": false
     }
   },
@@ -919,7 +919,7 @@
   "portaal-dossiers-fr": {
     "route": "/portal-intermediary/dossiers",
     "app": {
-      "sha": "2557087994d651110029a1fc58ac7624501ac479",
+      "sha": "f9400da5108f40d7cdd65dc426fe2c715fb8f218",
       "vuil": false
     }
   },

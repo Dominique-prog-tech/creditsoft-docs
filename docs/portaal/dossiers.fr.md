@@ -6,11 +6,11 @@ Les dossiers dans lesquels vous figurez comme apporteur.
 
 Dans le portail, cliquez en haut sur **Mes dossiers**.
 
-![La liste Mes dossiers dans le portail apporteurs, avec par ligne le numéro de dossier, le demandeur, le statut, l'organisme et le montant du crédit, et en haut un champ de recherche avec le nombre de dossiers trouvés.](../images/portaal-dossiers-fr.png "Mes dossiers dans le portail apporteurs")
+![La liste Mes dossiers dans le portail apporteurs, avec par ligne le numéro de dossier, le demandeur, l'apporteur, le statut, l'organisme et le montant du crédit, et en haut le bouton Nouveau dossier et un champ de recherche.](../images/portaal-dossiers-fr.png "Mes dossiers dans le portail apporteurs")
 
 ## La liste
 
-Au-dessus de la liste figure le nombre de dossiers. Par dossier, vous voyez le **numéro**, le **demandeur**,
+Par dossier, vous voyez le **numéro**, le **demandeur**,
 le **statut**, l'**organisme** et le **montant du crédit**.
 
 En haut à droite se trouve un **champ de recherche**. Tapez une partie d'un numéro de dossier, du nom d'un
@@ -23,6 +23,9 @@ comme fiche.
 
 Si vous êtes apporteur principal et que votre bureau l'a configuré ainsi, les dossiers des bureaux et
 collaborateurs qui dépendent de vous apparaissent également ici. Sinon, vous ne voyez que les vôtres.
+
+Dans ce cas, une colonne **Apporteur** indique à qui appartient chaque dossier. Tapez un nom dans le champ de
+recherche, ou filtrez sur cette colonne, et vous ne voyez que les dossiers de cet apporteur.
 
 Cliquez sur un numéro de dossier pour l'ouvrir. Avec **Ctrl-clic** (Cmd sur un Mac), la molette ou la **flèche** en début de ligne, il s'ouvre dans un **nouvel onglet** de votre navigateur ; la liste reste affichée.
 

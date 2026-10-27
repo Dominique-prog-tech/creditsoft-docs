@@ -51,3 +51,10 @@ simplement le dossier apparaître dans votre propre liste.
 - [Mes dossiers](dossiers.fr.md) — la liste, et ce que contient un dossier
 - [Apportés](aangebracht.fr.md) — les clients que l'apporteur a transmis, avec leur statut, et la transmission d'un nouveau client
 - [Mes commissions](commissies.fr.md) — par année, par mois et par écriture
+- [Décomptes à mes courtiers](afrekeningen.fr.md) — pour un bureau avec ses propres courtiers : ce qu'il leur a reversé et décompte
+- [Documents](documenten.fr.md) — les documents que votre bureau partage avec les apporteurs
+
+!!! info "Toutes les rubriques ne figurent pas toujours dans la barre de menu"
+    Une rubrique sans contenu n'apparaît pas. **Décomptes** apparaît dès que le bureau a reversé une commission à un
+    courtier, **Documents** dès que votre bureau partage des documents avec les apporteurs, et **Mes commissions**
+    uniquement avec la case *Afficher les commissions dans le portail*. Les images de ce manuel montrent la barre complète.

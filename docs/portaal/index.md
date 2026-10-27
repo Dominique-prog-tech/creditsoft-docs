@@ -51,3 +51,10 @@ eigen lijst verschijnen.
 - [Mijn dossiers](dossiers.md) — de lijst, en wat er op een dossier staat
 - [Aangebracht](aangebracht.md) — de klanten die de aanbrenger doorgaf, met hun status, en een nieuwe klant doorgeven
 - [Mijn commissies](commissies.md) — per jaar, per maand en per boeking
+- [Afrekeningen aan mijn makelaars](afrekeningen.md) — voor een kantoor met eigen makelaars: wat het hun doorgaf en afrekent
+- [Documenten](documenten.md) — de documenten die uw kantoor met de aanbrengers deelt
+
+!!! info "Niet elk onderdeel staat altijd in de menubalk"
+    Een onderdeel zonder inhoud blijft weg. **Afrekeningen** verschijnt zodra het kantoor commissie aan een makelaar
+    heeft doorgegeven, **Documenten** zodra uw kantoor documenten met de aanbrengers deelt, en **Mijn commissies**
+    enkel met het vinkje *Commissies tonen in het portaal*. De beelden in deze handleiding tonen de volledige balk.

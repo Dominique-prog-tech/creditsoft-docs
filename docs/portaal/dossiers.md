@@ -6,11 +6,11 @@ De dossiers waarin u als aanbrenger staat.
 
 Klik in het portaal bovenaan op **Mijn dossiers**.
 
-![De lijst Mijn dossiers in het aanbrengersportaal, met per rij het dossiernummer, de aanvrager, de status, de instelling en het kredietbedrag, en bovenaan een zoekveld met het aantal gevonden dossiers.](../images/portaal-dossiers.png "Mijn dossiers in het aanbrengersportaal")
+![De lijst Mijn dossiers in het aanbrengersportaal, met per rij het dossiernummer, de aanvrager, de aanbrenger, de status, de instelling en het kredietbedrag, en bovenaan de knop Nieuw dossier en een zoekveld.](../images/portaal-dossiers.png "Mijn dossiers in het aanbrengersportaal")
 
 ## De lijst
 
-Boven de lijst staat hoeveel dossiers er zijn. Per dossier ziet u het **dossiernummer**, de **aanvrager**,
+Per dossier ziet u het **dossiernummer**, de **aanvrager**,
 de **status**, de **instelling** en het **kredietbedrag**.
 
 Rechtsboven staat een **zoekveld**. Typ een stuk van een dossiernummer, van de naam van een aanvrager of van een
@@ -21,6 +21,9 @@ geen enkel dossier hebt: het dossier wordt meteen aangemaakt op uw naam en opent
 
 Bent u hoofdaanbrenger en heeft uw kantoor dat zo ingesteld, dan staan hier ook de dossiers van de
 kantoren en medewerkers onder u. Anders ziet u enkel uw eigen dossiers.
+
+In dat geval staat er ook een kolom **Aanbrenger**: bij wie elk dossier hoort. Typ een naam in het zoekveld, of
+filter op die kolom, en u ziet enkel de dossiers van die aanbrenger.
 
 Klik op een dossiernummer om het dossier te openen. Met **Ctrl-klik** (Cmd op een Mac), het muiswiel of het **pijltje** vooraan de rij opent het in een **nieuw tabblad** van uw browser; de lijst blijft staan.
 
