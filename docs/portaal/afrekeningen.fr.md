@@ -23,7 +23,7 @@ Vous complétez :
 | **Montant** | Ce que ce courtier reçoit. C'est vous qui le déterminez — indépendamment de ce que vous percevez. |
 | **Date de début** | À partir de quand la comptabilisation commence. CreditSoft remplit la date de l'acte ; s'il n'y a pas encore d'acte, vous la choisissez vous-même. |
 | **Payé directement (%)** | La part payée immédiatement. À 100, vous payez la totalité en une fois. |
-| **Étalé sur (mois)** | Sur combien de mois le solde est réparti. |
+| **Étalé sur (mois)** | Sur combien de mois le solde est réparti. Obligatoire dès que vous payez moins de 100 % immédiatement. |
 
 Au-dessus du formulaire figure, à titre indicatif, ce que vous percevez vous-même sur ce dossier et ce que
 vous y avez déjà reversé. C'est une aide, pas une limite : la décision vous appartient.

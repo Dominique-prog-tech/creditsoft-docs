@@ -22,7 +22,7 @@ U vult in:
 | **Bedrag** | Wat die makelaar krijgt. U bepaalt dit zelf — het staat los van wat u zelf ontvangt. |
 | **Startdatum** | Vanaf wanneer er geboekt wordt. CreditSoft vult de datum van de akte in; is er nog geen akte, dan kiest u ze zelf. |
 | **Direct uitbetaald (%)** | Welk deel meteen betaald wordt. Op 100 betaalt u het volledige bedrag in één keer. |
-| **Gespreid over (maanden)** | Over hoeveel maanden de rest gespreid wordt. |
+| **Gespreid over (maanden)** | Over hoeveel maanden de rest gespreid wordt. Verplicht zodra u minder dan 100 % direct uitbetaalt. |
 
 Boven het formulier staat ter informatie wat u op dit dossier zelf ontvangt, en wat u er al hebt
 doorgegeven. Dat is een hulpmiddel, geen grens: u beslist zelf.
