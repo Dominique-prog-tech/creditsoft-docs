@@ -9,7 +9,8 @@ Werkt u met eigen makelaars onder uw kantoor, dan kent u hun commissie zelf toe 
 ## Commissie doorgeven
 
 Doorgeven gebeurt **op een dossier**, niet op dit scherm. Open bij **Mijn dossiers** een dossier waarop u
-zelf commissie ontvangt. Rechts staat het tabblad **Commissie doorgeven**.
+zelf commissie ontvangt. Rechts, in het luik onder **Contracten**, staat het tabblad **Commissie doorgeven**. Het is
+het laatste tabblad van die rij; op een smaller scherm staat het op een tweede regel.
 
 Staat dat tabblad er niet, dan ontvangt u op dat dossier zelf geen commissie — en dan valt er ook niets
 van door te geven.

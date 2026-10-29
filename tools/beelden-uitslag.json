@@ -359,8 +359,8 @@
   "kredietdossier-fiche": {
     "route": "/credit-files/00038c40-df6b-4992-83e4-13847c7a0a59",
     "app": {
-      "sha": "2557087994d651110029a1fc58ac7624501ac479",
-      "vuil": false
+      "sha": "abfeceb216fc7e32a00b98374372cf8aaac5945a",
+      "vuil": true
     }
   },
   "borderel-fiche": {
@@ -555,8 +555,8 @@
   "portaal-dossier-detail": {
     "route": "/portal-intermediary/dossiers",
     "app": {
-      "sha": "4e8f98f31b71f91c6e3085c5326cc6a9cad682c0",
-      "vuil": false
+      "sha": "abfeceb216fc7e32a00b98374372cf8aaac5945a",
+      "vuil": true
     }
   },
   "klantportaal-klant": {
@@ -583,8 +583,8 @@
   "commissieschema-fiche": {
     "route": "/credit-files/903a2553-1e1d-4a9d-baab-f456bd96145c/commissieschema/a9b48983-8066-4209-a315-8f950e6983dd",
     "app": {
-      "sha": "4e8f98f31b71f91c6e3085c5326cc6a9cad682c0",
-      "vuil": false
+      "sha": "abfeceb216fc7e32a00b98374372cf8aaac5945a",
+      "vuil": true
     }
   },
   "afspraak-venster": {
@@ -975,8 +975,8 @@
   "kredietdossier-fiche-fr": {
     "route": "/credit-files/00038c40-df6b-4992-83e4-13847c7a0a59",
     "app": {
-      "sha": "2557087994d651110029a1fc58ac7624501ac479",
-      "vuil": false
+      "sha": "abfeceb216fc7e32a00b98374372cf8aaac5945a",
+      "vuil": true
     }
   },
   "borderel-fiche-fr": {
@@ -1171,8 +1171,8 @@
   "portaal-dossier-detail-fr": {
     "route": "/portal-intermediary/dossiers",
     "app": {
-      "sha": "4e8f98f31b71f91c6e3085c5326cc6a9cad682c0",
-      "vuil": false
+      "sha": "abfeceb216fc7e32a00b98374372cf8aaac5945a",
+      "vuil": true
     }
   },
   "klantportaal-klant-fr": {
@@ -1199,8 +1199,8 @@
   "commissieschema-fiche-fr": {
     "route": "/credit-files/903a2553-1e1d-4a9d-baab-f456bd96145c/commissieschema/a9b48983-8066-4209-a315-8f950e6983dd",
     "app": {
-      "sha": "4e8f98f31b71f91c6e3085c5326cc6a9cad682c0",
-      "vuil": false
+      "sha": "abfeceb216fc7e32a00b98374372cf8aaac5945a",
+      "vuil": true
     }
   },
   "afspraak-venster-fr": {
@@ -1346,29 +1346,29 @@
   "kredietdossier-leningen-lasten": {
     "route": "/credit-files/f2bfe95b-9020-4a33-9a17-fc1418c4a2cb",
     "app": {
-      "sha": "2557087994d651110029a1fc58ac7624501ac479",
-      "vuil": false
+      "sha": "abfeceb216fc7e32a00b98374372cf8aaac5945a",
+      "vuil": true
     }
   },
   "kredietdossier-aanvrager-inkomsten": {
     "route": "/credit-files/f2bfe95b-9020-4a33-9a17-fc1418c4a2cb",
     "app": {
-      "sha": "2557087994d651110029a1fc58ac7624501ac479",
-      "vuil": false
+      "sha": "abfeceb216fc7e32a00b98374372cf8aaac5945a",
+      "vuil": true
     }
   },
   "kredietdossier-leningen-lasten-fr": {
     "route": "/credit-files/f2bfe95b-9020-4a33-9a17-fc1418c4a2cb",
     "app": {
-      "sha": "2557087994d651110029a1fc58ac7624501ac479",
-      "vuil": false
+      "sha": "abfeceb216fc7e32a00b98374372cf8aaac5945a",
+      "vuil": true
     }
   },
   "kredietdossier-aanvrager-inkomsten-fr": {
     "route": "/credit-files/f2bfe95b-9020-4a33-9a17-fc1418c4a2cb",
     "app": {
-      "sha": "2557087994d651110029a1fc58ac7624501ac479",
-      "vuil": false
+      "sha": "abfeceb216fc7e32a00b98374372cf8aaac5945a",
+      "vuil": true
     }
   },
   "dashboard-opvolging": {
@@ -1388,15 +1388,15 @@
   "kredietdossier-contract-herziening": {
     "route": "/credit-files/bc566763-9860-48e3-b8a3-f464904a9810",
     "app": {
-      "sha": "2557087994d651110029a1fc58ac7624501ac479",
-      "vuil": false
+      "sha": "abfeceb216fc7e32a00b98374372cf8aaac5945a",
+      "vuil": true
     }
   },
   "kredietdossier-contract-herziening-fr": {
     "route": "/credit-files/bc566763-9860-48e3-b8a3-f464904a9810",
     "app": {
-      "sha": "2557087994d651110029a1fc58ac7624501ac479",
-      "vuil": false
+      "sha": "abfeceb216fc7e32a00b98374372cf8aaac5945a",
+      "vuil": true
     }
   },
   "keuzelijsten-variabiliteit": {
@@ -1430,43 +1430,43 @@
   "kredietdossier-patrimonium": {
     "route": "/credit-files/65fcb9bd-0a60-404a-a6dd-d9275361241e",
     "app": {
-      "sha": "2557087994d651110029a1fc58ac7624501ac479",
-      "vuil": false
+      "sha": "abfeceb216fc7e32a00b98374372cf8aaac5945a",
+      "vuil": true
     }
   },
   "kredietdossier-pand-venster": {
     "route": "/credit-files/65fcb9bd-0a60-404a-a6dd-d9275361241e",
     "app": {
-      "sha": "2557087994d651110029a1fc58ac7624501ac479",
-      "vuil": false
+      "sha": "abfeceb216fc7e32a00b98374372cf8aaac5945a",
+      "vuil": true
     }
   },
   "kredietdossier-patrimonium-fr": {
     "route": "/credit-files/65fcb9bd-0a60-404a-a6dd-d9275361241e",
     "app": {
-      "sha": "2557087994d651110029a1fc58ac7624501ac479",
-      "vuil": false
+      "sha": "abfeceb216fc7e32a00b98374372cf8aaac5945a",
+      "vuil": true
     }
   },
   "kredietdossier-pand-venster-fr": {
     "route": "/credit-files/65fcb9bd-0a60-404a-a6dd-d9275361241e",
     "app": {
-      "sha": "2557087994d651110029a1fc58ac7624501ac479",
-      "vuil": false
+      "sha": "abfeceb216fc7e32a00b98374372cf8aaac5945a",
+      "vuil": true
     }
   },
   "kredietdossier-reden-afvallen": {
     "route": "/credit-files/141a60e1-654d-413a-bfae-c70eae530b2f",
     "app": {
-      "sha": "2557087994d651110029a1fc58ac7624501ac479",
-      "vuil": false
+      "sha": "abfeceb216fc7e32a00b98374372cf8aaac5945a",
+      "vuil": true
     }
   },
   "kredietdossier-reden-afvallen-fr": {
     "route": "/credit-files/141a60e1-654d-413a-bfae-c70eae530b2f",
     "app": {
-      "sha": "2557087994d651110029a1fc58ac7624501ac479",
-      "vuil": false
+      "sha": "abfeceb216fc7e32a00b98374372cf8aaac5945a",
+      "vuil": true
     }
   },
   "dashboard-redenen": {
@@ -1542,15 +1542,15 @@
   "kredietdossier-reeds-aangeleverd": {
     "route": "/credit-files/1b174033-5caa-4f1f-981d-b336a78009f4",
     "app": {
-      "sha": "2557087994d651110029a1fc58ac7624501ac479",
-      "vuil": false
+      "sha": "abfeceb216fc7e32a00b98374372cf8aaac5945a",
+      "vuil": true
     }
   },
   "kredietdossier-reeds-aangeleverd-fr": {
     "route": "/credit-files/1b174033-5caa-4f1f-981d-b336a78009f4",
     "app": {
-      "sha": "2557087994d651110029a1fc58ac7624501ac479",
-      "vuil": false
+      "sha": "abfeceb216fc7e32a00b98374372cf8aaac5945a",
+      "vuil": true
     }
   },
   "opvolging-na-akte": {
@@ -1570,8 +1570,8 @@
   "kredietdossier-herinnering": {
     "route": "/credit-files/52e3e3a9-b6f4-4f20-9696-a56070b01f64",
     "app": {
-      "sha": "2557087994d651110029a1fc58ac7624501ac479",
-      "vuil": false
+      "sha": "abfeceb216fc7e32a00b98374372cf8aaac5945a",
+      "vuil": true
     }
   },
   "documenttypes-herinnering": {
@@ -1591,8 +1591,8 @@
   "kredietdossier-herinnering-fr": {
     "route": "/credit-files/52e3e3a9-b6f4-4f20-9696-a56070b01f64",
     "app": {
-      "sha": "2557087994d651110029a1fc58ac7624501ac479",
-      "vuil": false
+      "sha": "abfeceb216fc7e32a00b98374372cf8aaac5945a",
+      "vuil": true
     }
   },
   "mail-momenten": {
@@ -1703,8 +1703,8 @@
   "kredietdossier-facturen": {
     "route": "/credit-files/756b26d7-053b-4f7a-bcc8-4beeb2555d8d",
     "app": {
-      "sha": "2557087994d651110029a1fc58ac7624501ac479",
-      "vuil": false
+      "sha": "abfeceb216fc7e32a00b98374372cf8aaac5945a",
+      "vuil": true
     }
   },
   "facturen-lijst-fr": {
@@ -1745,8 +1745,8 @@
   "kredietdossier-facturen-fr": {
     "route": "/credit-files/756b26d7-053b-4f7a-bcc8-4beeb2555d8d",
     "app": {
-      "sha": "2557087994d651110029a1fc58ac7624501ac479",
-      "vuil": false
+      "sha": "abfeceb216fc7e32a00b98374372cf8aaac5945a",
+      "vuil": true
     }
   },
   "factuur-fiche-klad": {
@@ -1822,8 +1822,8 @@
   "kredietdossier-advies": {
     "route": "/credit-files/02b9011d-19dc-4b40-9d9d-08314975c8d6",
     "app": {
-      "sha": "2557087994d651110029a1fc58ac7624501ac479",
-      "vuil": false
+      "sha": "abfeceb216fc7e32a00b98374372cf8aaac5945a",
+      "vuil": true
     }
   },
   "advies-pagina": {
@@ -1843,8 +1843,8 @@
   "kredietdossier-advies-fr": {
     "route": "/credit-files/02b9011d-19dc-4b40-9d9d-08314975c8d6",
     "app": {
-      "sha": "2557087994d651110029a1fc58ac7624501ac479",
-      "vuil": false
+      "sha": "abfeceb216fc7e32a00b98374372cf8aaac5945a",
+      "vuil": true
     }
   },
   "advies-pagina-fr": {
@@ -1878,15 +1878,15 @@
   "portaal-nieuwe-klant": {
     "route": "/portal-intermediary/dossiers",
     "app": {
-      "sha": "4e8f98f31b71f91c6e3085c5326cc6a9cad682c0",
-      "vuil": false
+      "sha": "abfeceb216fc7e32a00b98374372cf8aaac5945a",
+      "vuil": true
     }
   },
   "portaal-nieuwe-klant-fr": {
     "route": "/portal-intermediary/dossiers",
     "app": {
-      "sha": "4e8f98f31b71f91c6e3085c5326cc6a9cad682c0",
-      "vuil": false
+      "sha": "abfeceb216fc7e32a00b98374372cf8aaac5945a",
+      "vuil": true
     }
   },
   "portaal-advies": {
@@ -1934,43 +1934,43 @@
   "commissie-te-bevestigen": {
     "route": "/commissie/te-bevestigen",
     "app": {
-      "sha": "6800d50ea0e4d7a9adfc503d65dadcaa809dc082",
+      "sha": "abfeceb216fc7e32a00b98374372cf8aaac5945a",
       "vuil": true
     }
   },
   "terugvordering-te-bevestigen": {
     "route": "/commissie/te-bevestigen-terugvorderingen",
     "app": {
-      "sha": "2557087994d651110029a1fc58ac7624501ac479",
-      "vuil": false
+      "sha": "abfeceb216fc7e32a00b98374372cf8aaac5945a",
+      "vuil": true
     }
   },
   "commissie-te-bevestigen-fr": {
     "route": "/commissie/te-bevestigen",
     "app": {
-      "sha": "6800d50ea0e4d7a9adfc503d65dadcaa809dc082",
+      "sha": "abfeceb216fc7e32a00b98374372cf8aaac5945a",
       "vuil": true
     }
   },
   "terugvordering-te-bevestigen-fr": {
     "route": "/commissie/te-bevestigen-terugvorderingen",
     "app": {
-      "sha": "2557087994d651110029a1fc58ac7624501ac479",
-      "vuil": false
+      "sha": "abfeceb216fc7e32a00b98374372cf8aaac5945a",
+      "vuil": true
     }
   },
   "kredietdossier-commissievoorstel": {
     "route": "/commissie/te-bevestigen",
     "app": {
-      "sha": "2557087994d651110029a1fc58ac7624501ac479",
-      "vuil": false
+      "sha": "abfeceb216fc7e32a00b98374372cf8aaac5945a",
+      "vuil": true
     }
   },
   "kredietdossier-commissievoorstel-fr": {
     "route": "/commissie/te-bevestigen",
     "app": {
-      "sha": "2557087994d651110029a1fc58ac7624501ac479",
-      "vuil": false
+      "sha": "abfeceb216fc7e32a00b98374372cf8aaac5945a",
+      "vuil": true
     }
   },
   "commissiebarema-regel": {

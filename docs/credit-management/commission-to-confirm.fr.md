@@ -40,6 +40,7 @@ Un dossier qui a déjà un schéma de commission payé par votre bureau ne figur
 
 !!! info "La commission banque diffère de la proposition ?"
     La proposition du barème figure alors en dessous. C'est toujours le montant du dossier qui est réparti.
+    Si aucun contrat de crédit n'est encore *réalisé*, la proposition porte sur tous les contrats de crédit, et c'est alors précisé. Si plusieurs offres coexistent, la proposition est dans ce cas trop élevée.
 
 ## Voir aussi
 

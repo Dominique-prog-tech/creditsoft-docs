@@ -26,7 +26,7 @@ Chaque ligne correspond à un accord entre un **dossier** et un **apporteur**. S
 
 ## Les trois formes
 
-- **Étalé** — la commission est répartie sur un nombre de mois, éventuellement avec un pourcentage versé dès le départ.
+- **Étalé** — la commission est répartie sur un nombre de mois, éventuellement avec un pourcentage versé dès le départ. Les montants mensuels sont arrondis au centime. Les centimes que cela déplace vont sur l'une des lignes mensuelles : le total est toujours le montant de la commission, et un montant rond au départ reste rond.
 - **Planifié** — vous fixez vous-même les échéances : quel pourcentage à quel mois.
 - **Montant fixe** — le montant total est payé en une seule fois à la date de début. Le montant lui-même
   est la **commission totale** que vous saisissez en haut ; il n'y a pas de champ distinct.

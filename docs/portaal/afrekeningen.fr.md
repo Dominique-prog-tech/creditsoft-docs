@@ -10,7 +10,8 @@ décomptez vous-même.
 ## Reverser une commission
 
 Le reversement se fait **sur un dossier**, pas sur cet écran. Sous **Mes dossiers**, ouvrez un dossier sur
-lequel vous percevez vous-même une commission. À droite se trouve l'onglet **Reverser une commission**.
+lequel vous percevez vous-même une commission. À droite, dans le volet sous **Contrats**, se trouve l'onglet
+**Reverser une commission**. C'est le dernier onglet de la rangée ; sur un écran plus étroit, il passe à la ligne.
 
 Si cet onglet n'apparaît pas, c'est que vous ne percevez aucune commission sur ce dossier — il n'y a donc
 rien à reverser.

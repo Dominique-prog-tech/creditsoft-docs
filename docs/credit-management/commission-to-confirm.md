@@ -40,6 +40,7 @@ Een dossier dat al een commissieschema heeft dat uw kantoor betaalt, staat niet 
 
 !!! info "Verschilt de bankcommissie van het voorstel?"
     Dan staat het voorstel van het barema eronder. Verdeeld wordt altijd het bedrag op het dossier.
+    Staat nog geen enkel kredietcontract op *Gerealiseerd*, dan rekent het voorstel met alle kredietcontracten, en dat staat er dan bij. Liggen er offertes naast elkaar, dan is het voorstel in dat geval te hoog.
 
 ## Zie ook
 
