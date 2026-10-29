@@ -1934,8 +1934,8 @@
   "commissie-te-bevestigen": {
     "route": "/commissie/te-bevestigen",
     "app": {
-      "sha": "2557087994d651110029a1fc58ac7624501ac479",
-      "vuil": false
+      "sha": "6800d50ea0e4d7a9adfc503d65dadcaa809dc082",
+      "vuil": true
     }
   },
   "terugvordering-te-bevestigen": {
@@ -1948,8 +1948,8 @@
   "commissie-te-bevestigen-fr": {
     "route": "/commissie/te-bevestigen",
     "app": {
-      "sha": "2557087994d651110029a1fc58ac7624501ac479",
-      "vuil": false
+      "sha": "6800d50ea0e4d7a9adfc503d65dadcaa809dc082",
+      "vuil": true
     }
   },
   "terugvordering-te-bevestigen-fr": {
