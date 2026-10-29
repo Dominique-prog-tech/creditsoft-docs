@@ -15,7 +15,8 @@ het laatste tabblad van die rij; op een smaller scherm staat het op een tweede r
 Staat dat tabblad er niet, dan ontvangt u op dat dossier zelf geen commissie — en dan valt er ook niets
 van door te geven.
 
-U vult in:
+Het tabblad toont wat u op dit dossier zelf ontvangt en wat u er al hebt doorgegeven, met een tabel per makelaar.
+Klik bovenaan op **+ Commissie doorgeven**. In het venster dat opengaat, vult u in:
 
 | Veld | Wat het betekent |
 |---|---|
@@ -25,8 +26,8 @@ U vult in:
 | **Direct uitbetaald (%)** | Welk deel meteen betaald wordt. Op 100 betaalt u het volledige bedrag in één keer. |
 | **Gespreid over (maanden)** | Over hoeveel maanden de rest gespreid wordt. Verplicht zodra u minder dan 100 % direct uitbetaalt. |
 
-Boven het formulier staat ter informatie wat u op dit dossier zelf ontvangt, en wat u er al hebt
-doorgegeven. Dat is een hulpmiddel, geen grens: u beslist zelf.
+Klik op **Doorgeven**. Ontbreekt er nog iets, dan zegt het venster wat. Lukt het, dan sluit het venster en staat de
+makelaar in de tabel. Wat u zelf ontvangt, staat er ter informatie bij. Dat is een hulpmiddel, geen grens: u beslist zelf.
 
 !!! warning "De eerste boeking valt in de maand ná de startdatum"
     Zet u de startdatum op 15 januari, dan staat de eerste commissielijn op **februari**. Dat is dezelfde

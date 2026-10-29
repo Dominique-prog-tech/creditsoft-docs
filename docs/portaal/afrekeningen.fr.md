@@ -16,7 +16,8 @@ lequel vous percevez vous-même une commission. À droite, dans le volet sous **
 Si cet onglet n'apparaît pas, c'est que vous ne percevez aucune commission sur ce dossier — il n'y a donc
 rien à reverser.
 
-Vous complétez :
+L'onglet indique ce que vous percevez vous-même sur ce dossier et ce que vous y avez déjà reversé, avec un tableau par
+courtier. Cliquez en haut sur **+ Reverser une commission**. Dans la fenêtre qui s'ouvre, vous complétez :
 
 | Champ | Signification |
 |---|---|
@@ -26,8 +27,9 @@ Vous complétez :
 | **Payé directement (%)** | La part payée immédiatement. À 100, vous payez la totalité en une fois. |
 | **Étalé sur (mois)** | Sur combien de mois le solde est réparti. Obligatoire dès que vous payez moins de 100 % immédiatement. |
 
-Au-dessus du formulaire figure, à titre indicatif, ce que vous percevez vous-même sur ce dossier et ce que
-vous y avez déjà reversé. C'est une aide, pas une limite : la décision vous appartient.
+Cliquez sur **Reverser**. S'il manque encore quelque chose, la fenêtre l'indique. Si tout est en ordre, la fenêtre se
+ferme et le courtier figure dans le tableau. Ce que vous percevez vous-même est indiqué à titre informatif. C'est une
+aide, pas une limite : la décision vous appartient.
 
 !!! warning "La première comptabilisation tombe le mois suivant la date de début"
     Si vous indiquez le 15 janvier, la première ligne de commission se situe en **février**. C'est la même
