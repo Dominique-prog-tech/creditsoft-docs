@@ -64,5 +64,6 @@ Onderaan staat wat u al afgerekend hebt: de periode, de documentdatum, het aanta
 bedrag. U kunt zoeken en sorteren, en de lijst exporteren.
 
 **Klik op een ronde** en eronder verschijnt wat erin zat: per makelaar zijn borderel, met het nummer en
-het bedrag. Met **Bekijken** opent u dat borderel in beeld — niet als download. Wilt u het bewaren of
+het bedrag. Uw borderellen hebben een eigen nummerreeks per jaar, *2026-0001*, *2026-0002* en zo verder,
+los van die van het kantoor. Met **Bekijken** opent u dat borderel in beeld — niet als download. Wilt u het bewaren of
 doorsturen, dan gebruikt u de bewaarknop van uw browser.

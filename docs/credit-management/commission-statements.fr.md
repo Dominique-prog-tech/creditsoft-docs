@@ -26,6 +26,9 @@ Le filtre **Statut** en tête est sur **En attente** : uniquement ce qui ne figu
 
 Le second filtre vous permet de choisir une **année**.
 
+!!! info "Ce qu'un apporteur verse lui-même n'apparaît pas ici"
+    Si un apporteur reverse des commissions à ses propres courtiers, il les décompte lui-même dans son [portail](../portaal/afrekeningen.md). Ces montants n'apparaissent ni dans cet aperçu ni dans les bordereaux ci-dessous : vous ne les payez pas, et vous ne pouvez pas non plus les décompter ici.
+
 ## Onglet Bordereaux : ce qui est décompté
 
 Vous y trouvez chaque bordereau que vous avez créé : numéro, date du document, apporteur, montant et statut de paiement.
@@ -34,6 +37,8 @@ Vous y trouvez chaque bordereau que vous avez créé : numéro, date du document
 
 !!! info "Le numéro"
     Les bordereaux que vous créez dans CreditSoft reçoivent un numéro par année — *2026-0001*, *2026-0002*, et ainsi de suite. Les bordereaux plus anciens portent un numéro précédé d'un dièse, comme *#6127* : c'est la référence qui permet de les retrouver dans vos données.
+
+    Un apporteur qui décompte ses propres courtiers a sa propre série. Ses bordereaux ne prennent donc aucun numéro dans la vôtre.
 
 ### Créer une série
 

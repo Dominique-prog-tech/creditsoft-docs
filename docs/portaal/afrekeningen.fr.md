@@ -69,5 +69,6 @@ En bas figure ce que vous avez déjà décompté : la période, la date du docum
 le montant. Vous pouvez rechercher, trier et exporter la liste.
 
 **Cliquez sur une clôture** et son contenu apparaît en dessous : par courtier, son bordereau, avec le
-numéro et le montant. **Consulter** ouvre ce bordereau à l'écran — pas en téléchargement. Pour le conserver
+numéro et le montant. Vos bordereaux ont leur propre série de numéros par année, *2026-0001*, *2026-0002*
+et ainsi de suite, distincte de celle du bureau. **Consulter** ouvre ce bordereau à l'écran — pas en téléchargement. Pour le conserver
 ou le transmettre, utilisez le bouton d'enregistrement de votre navigateur.

@@ -247,8 +247,8 @@
   "fiche-281-50": {
     "route": "/commissie/fiche-28150",
     "app": {
-      "sha": "2557087994d651110029a1fc58ac7624501ac479",
-      "vuil": false
+      "sha": "a103c75c3d9cdce0c9f4e6b2ab86ac3d8224ef13",
+      "vuil": true
     }
   },
   "borderel-overzicht": {
@@ -863,8 +863,8 @@
   "fiche-281-50-fr": {
     "route": "/commissie/fiche-28150",
     "app": {
-      "sha": "2557087994d651110029a1fc58ac7624501ac479",
-      "vuil": false
+      "sha": "a103c75c3d9cdce0c9f4e6b2ab86ac3d8224ef13",
+      "vuil": true
     }
   },
   "borderel-overzicht-fr": {

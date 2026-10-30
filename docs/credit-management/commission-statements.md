@@ -26,6 +26,9 @@ De filter **Toestand** vooraan staat op **Openstaand**: enkel wat nog niet op ee
 
 Met de tweede filter kiest u een **jaar**.
 
+!!! info "Wat een aanbrenger zelf uitbetaalt, staat hier niet"
+    Geeft een aanbrenger commissie door aan zijn eigen makelaars, dan rekent hij die zelf af in zijn [portaal](../portaal/afrekeningen.md). Die bedragen staan niet in dit overzicht en niet bij de borderellen hieronder: u betaalt ze niet uit, en u kunt ze hier ook niet afrekenen.
+
 ## Tabblad Borderellen: wat er afgerekend is
 
 Hier staat elk borderel dat u ooit aanmaakte: nummer, documentdatum, aanbrenger, bedrag en of het betaald is.
@@ -34,6 +37,8 @@ Hier staat elk borderel dat u ooit aanmaakte: nummer, documentdatum, aanbrenger,
 
 !!! info "Het nummer"
     Borderellen die u in CreditSoft aanmaakt, krijgen een nummer per jaar — *2026-0001*, *2026-0002*, en zo verder. Bij oudere borderellen staat er een nummer met een hekje ervoor, zoals *#6127*: dat is het kenmerk waarmee dat borderel in uw gegevens terug te vinden is.
+
+    Een aanbrenger die zijn eigen makelaars afrekent, heeft een eigen reeks. Zijn borderellen nemen dus geen nummer uit de uwe.
 
 ### Een ronde aanmaken
 
