@@ -3,161 +3,169 @@
     "film": "kredietdossiers-basis",
     "taal": "nl-BE",
     "pagina": "credit-management/credit-files",
-    "lengte": 98.44,
+    "lengte": 98.8,
     "uitvoering": "handleiding",
     "routes": [
       "/credit-files",
       "/credit-files/{id}"
     ],
     "app": {
-      "sha": "b07ba5b39e16d590cacfa61e189c7a54ff1a29b7",
-      "vuil": false
+      "sha": "424b44913925712136081d528d42e7f30cb3dc56",
+      "vuil": true
     },
     "titel": "Het kredietdossier in CreditSoft — van lijst tot journaal",
     "omschrijving": "Een rondleiding door het kredietdossier: de lijst filteren en doorzoeken, een dossier openen, de dossiergegevens, de kredietaanvragers, het pand, de gevraagde documenten, en het journaal met de taken, notities, gesprekken en commissieschema’s die bij dat ene dossier horen.",
     "hash": "21666a339fc92753",
-    "guid": "d809894a-5937-41ea-bce5-77ef3568ad34",
-    "vorigeGuid": "1408f2cd-0ea4-4161-9f94-6f39ef335a99",
+    "guid": "12b24135-d88f-4ca6-9d73-ad4bc1897f50",
+    "vorigeGuid": "d809894a-5937-41ea-bce5-77ef3568ad34",
     "hoofdstukken": [
       {
         "titel": "De dossierlijst",
-        "start": 2.11,
-        "eind": 9.17
+        "start": 2.09,
+        "eind": 9.15
       },
       {
         "titel": "De kolommen",
-        "start": 11.49,
-        "eind": 17.9
+        "start": 11.41,
+        "eind": 17.82
       },
       {
         "titel": "Zoeken in de lijst",
-        "start": 22.73,
-        "eind": 27.75
+        "start": 22.65,
+        "eind": 27.67
       },
       {
         "titel": "Een dossier openen",
-        "start": 30.91,
-        "eind": 32.81
+        "start": 30.98,
+        "eind": 32.88
       },
       {
         "titel": "De dossiergegevens",
-        "start": 34.72,
-        "eind": 42.94
+        "start": 34.8,
+        "eind": 43.02
       },
       {
         "titel": "De kredietaanvragers",
-        "start": 45.21,
-        "eind": 51.3
+        "start": 45.3,
+        "eind": 51.38
       },
       {
         "titel": "Het pand",
-        "start": 55.66,
-        "eind": 64.21
+        "start": 55.77,
+        "eind": 64.31
       },
       {
         "titel": "De gevraagde documenten",
-        "start": 68.65,
-        "eind": 74.13
+        "start": 68.74,
+        "eind": 74.22
       },
       {
         "titel": "Het journaal",
-        "start": 76.83,
-        "eind": 83.52
+        "start": 76.98,
+        "eind": 83.66
       },
       {
         "titel": "Het commissieschema",
-        "start": 87,
-        "eind": 91.41
+        "start": 87.21,
+        "eind": 91.62
       },
       {
         "titel": "Tot slot",
-        "start": 93.32,
-        "eind": 96.67
+        "start": 93.54,
+        "eind": 96.88
       }
     ],
-    "gepubliceerdOp": "2026-09-17T08:45:16.084",
+    "gepubliceerdOp": "2026-10-31T21:10:59.085",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/12b24135-d88f-4ca6-9d73-ad4bc1897f50/thumbnail.jpg",
     "gepubliceerdeHash": "21666a339fc92753",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/d809894a-5937-41ea-bce5-77ef3568ad34/thumbnail.jpg"
+    "embed": "https://iframe.mediadelivery.net/embed/741183/12b24135-d88f-4ca6-9d73-ad4bc1897f50",
+    "opTeRuimen": [
+      "1408f2cd-0ea4-4161-9f94-6f39ef335a99"
+    ]
   },
   "kredietdossiers-basis-fr": {
     "film": "kredietdossiers-basis",
     "taal": "fr-BE",
     "pagina": "credit-management/credit-files",
-    "lengte": 92.2,
+    "lengte": 92.16,
     "uitvoering": "handleiding",
     "routes": [
       "/credit-files",
       "/credit-files/{id}"
     ],
     "app": {
-      "sha": "b07ba5b39e16d590cacfa61e189c7a54ff1a29b7",
-      "vuil": false
+      "sha": "424b44913925712136081d528d42e7f30cb3dc56",
+      "vuil": true
     },
     "titel": "Le dossier de crédit dans CreditSoft — de la liste au journal",
     "omschrijving": "Une visite guidée du dossier de crédit : filtrer et rechercher dans la liste, ouvrir un dossier, les données du dossier, les demandeurs de crédit, le bien, les documents demandés, et le journal avec les tâches, notes, appels et schémas de commission liés à ce dossier.",
     "hash": "dc66fd53d27ce137",
-    "guid": "055a2e5d-ba04-467c-886e-68c1f5ab90e5",
-    "vorigeGuid": "1cf3d77d-cb66-4a5c-9c9f-44a8dc8458ac",
+    "guid": "e468fd75-acd8-4206-a1d5-d938b2d53ec9",
+    "vorigeGuid": "055a2e5d-ba04-467c-886e-68c1f5ab90e5",
     "hoofdstukken": [
       {
         "titel": "La liste des dossiers",
-        "start": 2.11,
-        "eind": 7.82
+        "start": 2.05,
+        "eind": 7.76
       },
       {
         "titel": "Les colonnes",
-        "start": 10.14,
-        "eind": 15.71
+        "start": 10.03,
+        "eind": 15.6
       },
       {
         "titel": "Rechercher dans la liste",
-        "start": 20.59,
-        "eind": 24.73
+        "start": 20.44,
+        "eind": 24.57
       },
       {
         "titel": "Ouvrir un dossier",
-        "start": 27.88,
-        "eind": 29.56
+        "start": 27.61,
+        "eind": 29.28
       },
       {
         "titel": "Les données du dossier",
-        "start": 31.47,
-        "eind": 38.43
+        "start": 31.2,
+        "eind": 38.17
       },
       {
         "titel": "Les demandeurs de crédit",
-        "start": 40.69,
-        "eind": 46.49
+        "start": 40.45,
+        "eind": 46.26
       },
       {
         "titel": "Le bien",
-        "start": 50.88,
-        "eind": 59.52
+        "start": 50.66,
+        "eind": 59.29
       },
       {
         "titel": "Les documents demandés",
-        "start": 63.9,
-        "eind": 68.87
+        "start": 63.71,
+        "eind": 68.68
       },
       {
         "titel": "Le journal",
-        "start": 71.58,
-        "eind": 77.75
+        "start": 71.38,
+        "eind": 77.55
       },
       {
         "titel": "Le schéma de commission",
-        "start": 81.23,
-        "eind": 85.51
+        "start": 81.05,
+        "eind": 85.33
       },
       {
         "titel": "Pour conclure",
-        "start": 87.4,
-        "eind": 90.42
+        "start": 87.22,
+        "eind": 90.24
       }
     ],
-    "gepubliceerdOp": "2026-09-17T08:45:33.306",
+    "gepubliceerdOp": "2026-10-31T21:11:12.235",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/e468fd75-acd8-4206-a1d5-d938b2d53ec9/thumbnail.jpg",
     "gepubliceerdeHash": "dc66fd53d27ce137",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/055a2e5d-ba04-467c-886e-68c1f5ab90e5/thumbnail.jpg"
+    "embed": "https://iframe.mediadelivery.net/embed/741183/e468fd75-acd8-4206-a1d5-d938b2d53ec9",
+    "opTeRuimen": [
+      "1cf3d77d-cb66-4a5c-9c9f-44a8dc8458ac"
+    ]
   },
   "kredietdossiers-basis-website-nl": {
     "film": "kredietdossiers-basis",
@@ -526,477 +534,499 @@
     "film": "aan-de-slag",
     "taal": "nl-BE",
     "pagina": "getting-started/navigatie",
-    "lengte": 145.48,
+    "lengte": 145.24,
     "uitvoering": "handleiding",
     "routes": [
       "/dashboard",
       "/crm/relaties"
     ],
     "app": {
-      "sha": "66cfa6618ee6330ae5206ef8d78f5bd81e906b69",
-      "vuil": false
+      "sha": "424b44913925712136081d528d42e7f30cb3dc56",
+      "vuil": true
     },
     "titel": "Uw weg vinden in CreditSoft — het scherm, het zoeken en uw voorkeuren",
     "omschrijving": "De eerste rondleiding: het startscherm met het blok Aan de slag, het menu links, zoeken over uw hele omgeving met ⌘K, de hulp bij elk scherm en de twee assistenten, werken in een lijst (sorteren, filteren, exporteren) en uw eigen voorkeuren — grootte, thema en taal.",
     "hash": "f10ed6c6889cccbb",
-    "guid": "d156b1c4-0198-4981-b0d2-0c9eb85618b1",
-    "vorigeGuid": "1750e2f2-b344-4836-9062-01668f1ae7ab",
+    "guid": "db8100cf-820d-4012-8884-bda311cd67f6",
+    "vorigeGuid": "d156b1c4-0198-4981-b0d2-0c9eb85618b1",
     "hoofdstukken": [
       {
         "titel": "Het startscherm",
-        "start": 3.34,
-        "eind": 12.95
+        "start": 3.31,
+        "eind": 12.92
       },
       {
         "titel": "Het menu links",
-        "start": 16.14,
-        "eind": 24.87
+        "start": 16.12,
+        "eind": 24.85
       },
       {
         "titel": "Zoeken vanaf elk scherm",
-        "start": 31.34,
-        "eind": 44.02
+        "start": 31.3,
+        "eind": 43.98
       },
       {
         "titel": "Hulp bij dit scherm",
-        "start": 48.61,
-        "eind": 56.56
+        "start": 48.56,
+        "eind": 56.5
       },
       {
         "titel": "De twee assistenten",
-        "start": 61.87,
-        "eind": 71.58
+        "start": 61.8,
+        "eind": 71.51
       },
       {
         "titel": "Werken met lijsten",
-        "start": 76.81,
-        "eind": 84.19
+        "start": 76.61,
+        "eind": 83.99
       },
       {
         "titel": "Sorteren",
-        "start": 88.29,
-        "eind": 93.86
+        "start": 88.1,
+        "eind": 93.68
       },
       {
         "titel": "Filteren",
-        "start": 99.19,
-        "eind": 106.44
+        "start": 99.06,
+        "eind": 106.3
       },
       {
         "titel": "Exporteren",
-        "start": 109.91,
-        "eind": 118.13
+        "start": 109.78,
+        "eind": 118
       },
       {
         "titel": "Uw voorkeuren",
-        "start": 122.42,
-        "eind": 132.82
+        "start": 122.36,
+        "eind": 132.76
       },
       {
         "titel": "Tot slot",
-        "start": 137.99,
-        "eind": 143.05
+        "start": 137.84,
+        "eind": 142.9
       }
     ],
-    "gepubliceerdOp": "2026-09-24T03:51:17.182",
+    "gepubliceerdOp": "2026-10-31T21:11:25.473",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/db8100cf-820d-4012-8884-bda311cd67f6/thumbnail.jpg",
     "gepubliceerdeHash": "f10ed6c6889cccbb",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/d156b1c4-0198-4981-b0d2-0c9eb85618b1/thumbnail.jpg"
+    "embed": "https://iframe.mediadelivery.net/embed/741183/db8100cf-820d-4012-8884-bda311cd67f6",
+    "opTeRuimen": [
+      "1750e2f2-b344-4836-9062-01668f1ae7ab"
+    ]
   },
   "aan-de-slag-fr": {
     "film": "aan-de-slag",
     "taal": "fr-BE",
     "pagina": "getting-started/navigatie",
-    "lengte": 138.16,
+    "lengte": 137.92,
     "uitvoering": "handleiding",
     "routes": [
       "/dashboard",
       "/crm/relaties"
     ],
     "app": {
-      "sha": "66cfa6618ee6330ae5206ef8d78f5bd81e906b69",
-      "vuil": false
+      "sha": "424b44913925712136081d528d42e7f30cb3dc56",
+      "vuil": true
     },
     "titel": "Se repérer dans CreditSoft — l’écran, la recherche et vos préférences",
     "omschrijving": "La première visite guidée : l’écran d’accueil avec le bloc Pour commencer, le menu de gauche, la recherche dans tout votre environnement avec ⌘K, l’aide sur chaque écran et les deux assistants, le travail dans une liste (trier, filtrer, exporter) et vos préférences — taille, thème et langue.",
     "hash": "55d9f58c9aa805b0",
-    "guid": "d0e4979f-5673-4ae4-aeda-a07ce4ddf686",
-    "vorigeGuid": "45fb7c71-e5df-4759-98ee-0a253403786a",
+    "guid": "15c2d5d3-98df-454f-adad-45d552d34f23",
+    "vorigeGuid": "d0e4979f-5673-4ae4-aeda-a07ce4ddf686",
     "hoofdstukken": [
       {
         "titel": "L'écran d'accueil",
-        "start": 3.31,
+        "start": 3.3,
         "eind": 12.78
       },
       {
         "titel": "Le menu de gauche",
-        "start": 15.99,
-        "eind": 24.49
+        "start": 15.97,
+        "eind": 24.47
       },
       {
         "titel": "Rechercher depuis tout écran",
-        "start": 30.95,
-        "eind": 41.49
+        "start": 30.91,
+        "eind": 41.45
       },
       {
         "titel": "Aide sur cet écran",
-        "start": 46.09,
-        "eind": 52.73
+        "start": 46.02,
+        "eind": 52.66
       },
       {
         "titel": "Les deux assistants",
-        "start": 58.02,
-        "eind": 65.31
+        "start": 57.96,
+        "eind": 65.25
       },
       {
         "titel": "Travailler avec les listes",
-        "start": 70.51,
-        "eind": 79.56
+        "start": 70.3,
+        "eind": 79.36
       },
       {
         "titel": "Trier",
-        "start": 83.68,
-        "eind": 87.95
+        "start": 83.45,
+        "eind": 87.72
       },
       {
         "titel": "Filtrer",
-        "start": 93.28,
-        "eind": 100.76
+        "start": 93.06,
+        "eind": 100.53
       },
       {
         "titel": "Exporter",
-        "start": 104.25,
-        "eind": 112.46
+        "start": 104.04,
+        "eind": 112.26
       },
       {
         "titel": "Vos préférences",
-        "start": 116.74,
-        "eind": 125.7
+        "start": 116.53,
+        "eind": 125.49
       },
       {
         "titel": "Pour conclure",
-        "start": 130.81,
-        "eind": 135.73
+        "start": 130.58,
+        "eind": 135.5
       }
     ],
-    "gepubliceerdOp": "2026-09-24T03:51:33.718",
+    "gepubliceerdOp": "2026-10-31T21:11:39.843",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/15c2d5d3-98df-454f-adad-45d552d34f23/thumbnail.jpg",
     "gepubliceerdeHash": "55d9f58c9aa805b0",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/d0e4979f-5673-4ae4-aeda-a07ce4ddf686/thumbnail.jpg"
+    "embed": "https://iframe.mediadelivery.net/embed/741183/15c2d5d3-98df-454f-adad-45d552d34f23",
+    "opTeRuimen": [
+      "45fb7c71-e5df-4759-98ee-0a253403786a"
+    ]
   },
   "relaties-nl": {
     "film": "relaties",
     "taal": "nl-BE",
     "pagina": "crm/relations",
-    "lengte": 161.15,
+    "lengte": 160.86,
     "uitvoering": "handleiding",
     "routes": [
       "/crm/relaties",
       "/crm/relaties/{id}"
     ],
     "app": {
-      "sha": "50319011440360cd87c49b65221c649908d1682a",
+      "sha": "424b44913925712136081d528d42e7f30cb3dc56",
       "vuil": true
     },
     "titel": "Relaties in CreditSoft — de fiche waar alles aan hangt",
     "omschrijving": "De relatiefiche van dichtbij: de lijst doorzoeken, een fiche openen, de algemene en bijkomende gegevens, de documenttaal die bepaalt in welke taal uw klant post krijgt, de gevraagde documenten met hun drie toestanden, de kredietdossiers van die klant, en het journaal met notities en gesprekken. Plus het samenvoegen van twee fiches die dezelfde persoon blijken te zijn.",
     "hash": "998cd6ca42ee4c0c",
-    "guid": "2f915b7b-3848-481d-b15e-d252159dfc6f",
-    "vorigeGuid": "e85f040a-23fb-4803-9ade-3825e0acf6d6",
+    "guid": "eb405bdf-0df3-49c6-a3e9-586c77329712",
+    "vorigeGuid": "2f915b7b-3848-481d-b15e-d252159dfc6f",
     "hoofdstukken": [
       {
         "titel": "De relatielijst",
-        "start": 3.69,
-        "eind": 12.56
+        "start": 3.49,
+        "eind": 12.36
       },
       {
         "titel": "Zoeken in de lijst",
-        "start": 17.94,
-        "eind": 27.18
+        "start": 17.74,
+        "eind": 26.98
       },
       {
         "titel": "Een fiche openen",
-        "start": 31.86,
-        "eind": 41.15
+        "start": 31.76,
+        "eind": 41.05
       },
       {
         "titel": "De algemene gegevens",
-        "start": 44.63,
-        "eind": 56.98
+        "start": 44.51,
+        "eind": 56.86
       },
       {
         "titel": "De documenttaal",
-        "start": 60.65,
-        "eind": 70.82
+        "start": 60.53,
+        "eind": 70.7
       },
       {
         "titel": "Bijkomende gegevens",
-        "start": 74.89,
-        "eind": 83.2
+        "start": 74.77,
+        "eind": 83.09
       },
       {
         "titel": "De gevraagde documenten",
-        "start": 87.67,
-        "eind": 100.77
+        "start": 87.56,
+        "eind": 100.65
       },
       {
         "titel": "De kredietdossiers",
-        "start": 105.05,
-        "eind": 114.9
+        "start": 104.93,
+        "eind": 114.78
       },
       {
         "titel": "Het journaal",
-        "start": 121.59,
-        "eind": 135.11
+        "start": 121.41,
+        "eind": 134.93
       },
       {
         "titel": "Twee fiches samenvoegen",
-        "start": 141.12,
-        "eind": 150.6
+        "start": 140.84,
+        "eind": 150.31
       },
       {
         "titel": "Tot slot",
-        "start": 153.31,
-        "eind": 158.65
+        "start": 153.02,
+        "eind": 158.36
       }
     ],
-    "gepubliceerdOp": "2026-10-08T09:45:06.933",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/2f915b7b-3848-481d-b15e-d252159dfc6f/thumbnail.jpg",
+    "gepubliceerdOp": "2026-10-31T21:11:53.316",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/eb405bdf-0df3-49c6-a3e9-586c77329712/thumbnail.jpg",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/eb405bdf-0df3-49c6-a3e9-586c77329712",
     "gepubliceerdeHash": "998cd6ca42ee4c0c",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/2f915b7b-3848-481d-b15e-d252159dfc6f"
+    "opTeRuimen": [
+      "e85f040a-23fb-4803-9ade-3825e0acf6d6"
+    ]
   },
   "relaties-fr": {
     "film": "relaties",
     "taal": "fr-BE",
     "pagina": "crm/relations",
-    "lengte": 150.53,
+    "lengte": 150.45,
     "uitvoering": "handleiding",
     "routes": [
       "/crm/relaties",
       "/crm/relaties/{id}"
     ],
     "app": {
-      "sha": "50319011440360cd87c49b65221c649908d1682a",
+      "sha": "424b44913925712136081d528d42e7f30cb3dc56",
       "vuil": true
     },
     "titel": "Les relations dans CreditSoft — la fiche à laquelle tout se rattache",
     "omschrijving": "La fiche de relation de près : parcourir la liste, ouvrir une fiche, les données générales et complémentaires, la langue des documents qui détermine dans quelle langue votre client reçoit son courrier, les documents demandés avec leurs trois statuts, les dossiers de crédit de ce client, et le journal avec les notes et les appels. Ainsi que la fusion de deux fiches.",
     "hash": "2c00fc53cdb421f6",
-    "guid": "b0e2109e-697a-4952-ab31-030e5d58a0e6",
-    "vorigeGuid": "0f839cd9-62fc-4a28-8ca4-04e78e691b0d",
+    "guid": "a368bb0a-8258-40e5-8788-985d099a8352",
+    "vorigeGuid": "b0e2109e-697a-4952-ab31-030e5d58a0e6",
     "hoofdstukken": [
       {
         "titel": "La liste des relations",
-        "start": 3.47,
-        "eind": 11.41
+        "start": 3.63,
+        "eind": 11.57
       },
       {
         "titel": "Rechercher dans la liste",
-        "start": 16.79,
-        "eind": 25.98
+        "start": 16.92,
+        "eind": 26.12
       },
       {
         "titel": "Ouvrir une fiche",
-        "start": 30.43,
-        "eind": 38.97
+        "start": 30.53,
+        "eind": 39.08
       },
       {
         "titel": "Les données générales",
-        "start": 42.43,
-        "eind": 52.51
+        "start": 42.55,
+        "eind": 52.62
       },
       {
         "titel": "La langue des documents",
-        "start": 56.18,
-        "eind": 66.59
+        "start": 56.29,
+        "eind": 66.7
       },
       {
         "titel": "Données complémentaires",
-        "start": 70.68,
-        "eind": 78.95
+        "start": 70.77,
+        "eind": 79.04
       },
       {
         "titel": "Les documents demandés",
-        "start": 83.43,
-        "eind": 94.86
+        "start": 83.52,
+        "eind": 94.94
       },
       {
         "titel": "Les dossiers de crédit",
-        "start": 99.17,
-        "eind": 107.72
+        "start": 99.21,
+        "eind": 107.76
       },
       {
         "titel": "Le journal",
-        "start": 114.4,
-        "eind": 126.01
+        "start": 114.42,
+        "eind": 126.02
       },
       {
         "titel": "Fusionner deux fiches",
-        "start": 131.95,
-        "eind": 139.84
+        "start": 131.86,
+        "eind": 139.76
       },
       {
         "titel": "Pour conclure",
-        "start": 142.55,
-        "eind": 148.03
+        "start": 142.47,
+        "eind": 147.95
       }
     ],
-    "gepubliceerdOp": "2026-10-08T09:47:25.414",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/b0e2109e-697a-4952-ab31-030e5d58a0e6/thumbnail.jpg",
+    "gepubliceerdOp": "2026-10-31T21:12:06.787",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/a368bb0a-8258-40e5-8788-985d099a8352/thumbnail.jpg",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/a368bb0a-8258-40e5-8788-985d099a8352",
     "gepubliceerdeHash": "2c00fc53cdb421f6",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/b0e2109e-697a-4952-ab31-030e5d58a0e6"
+    "opTeRuimen": [
+      "0f839cd9-62fc-4a28-8ca4-04e78e691b0d"
+    ]
   },
   "leads-nl": {
     "film": "leads",
     "taal": "nl-BE",
     "pagina": "crm/leads",
-    "lengte": 136,
+    "lengte": 135.67,
     "uitvoering": "handleiding",
     "routes": [
       "/crm/leads"
     ],
     "app": {
-      "sha": "66cfa6618ee6330ae5206ef8d78f5bd81e906b69",
-      "vuil": false
+      "sha": "424b44913925712136081d528d42e7f30cb3dc56",
+      "vuil": true
     },
     "titel": "Leads in CreditSoft — van aanvraag tot klant",
     "omschrijving": "De werklijst van uw instroom: wie er wacht en hoe lang, uit welk kanaal hij kwam, en wie hem opvolgt. Daarna de fiche van een lead — wie hij is, wat hij vraagt, en waar hij staat — de vijf statussen, en tot slot een lead die klant geworden is, met de doorverwijzing naar zijn relatiefiche.",
     "hash": "a0f68c76e18f1b68",
-    "guid": "334da821-0176-4a76-87c5-8a93965f531e",
-    "vorigeGuid": "477cdb52-6790-4fa9-a23d-78b7c9183705",
+    "guid": "d28ff101-ebfc-4784-be36-f79f82f13175",
+    "vorigeGuid": "334da821-0176-4a76-87c5-8a93965f531e",
     "hoofdstukken": [
       {
         "titel": "De werklijst",
         "start": 3.8,
-        "eind": 12.63
+        "eind": 12.62
       },
       {
         "titel": "Hoe lang iemand wacht",
-        "start": 16.32,
-        "eind": 24.54
+        "start": 16.3,
+        "eind": 24.51
       },
       {
         "titel": "Wie volgt hem op",
-        "start": 28.22,
-        "eind": 35.42
+        "start": 28.18,
+        "eind": 35.38
       },
       {
         "titel": "Waar hij vandaan komt",
-        "start": 39.11,
-        "eind": 49.47
+        "start": 39.05,
+        "eind": 49.41
       },
       {
         "titel": "De fiche van een lead",
-        "start": 53.98,
-        "eind": 64.66
+        "start": 53.92,
+        "eind": 64.6
       },
       {
         "titel": "Wat hij vraagt",
-        "start": 68.52,
-        "eind": 77.21
+        "start": 68.47,
+        "eind": 77.15
       },
       {
         "titel": "De opvolging",
-        "start": 81.06,
-        "eind": 88.17
+        "start": 81.01,
+        "eind": 88.11
       },
       {
         "titel": "De vijf statussen",
-        "start": 94.89,
-        "eind": 107.89
+        "start": 94.55,
+        "eind": 107.56
       },
       {
         "titel": "Van lead naar klant",
-        "start": 112.53,
-        "eind": 122.79
+        "start": 112.2,
+        "eind": 122.46
       },
       {
         "titel": "Tot slot",
-        "start": 125.51,
-        "eind": 133.5
+        "start": 125.18,
+        "eind": 133.17
       }
     ],
-    "gepubliceerdOp": "2026-09-24T03:51:50.021",
+    "gepubliceerdOp": "2026-10-31T21:12:20.314",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/d28ff101-ebfc-4784-be36-f79f82f13175/thumbnail.jpg",
     "gepubliceerdeHash": "a0f68c76e18f1b68",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/334da821-0176-4a76-87c5-8a93965f531e/thumbnail.jpg"
+    "embed": "https://iframe.mediadelivery.net/embed/741183/d28ff101-ebfc-4784-be36-f79f82f13175",
+    "opTeRuimen": [
+      "477cdb52-6790-4fa9-a23d-78b7c9183705"
+    ]
   },
   "leads-fr": {
     "film": "leads",
     "taal": "fr-BE",
     "pagina": "crm/leads",
-    "lengte": 135.56,
+    "lengte": 135.59,
     "uitvoering": "handleiding",
     "routes": [
       "/crm/leads"
     ],
     "app": {
-      "sha": "66cfa6618ee6330ae5206ef8d78f5bd81e906b69",
-      "vuil": false
+      "sha": "424b44913925712136081d528d42e7f30cb3dc56",
+      "vuil": true
     },
     "titel": "Les leads dans CreditSoft — de la demande au client",
     "omschrijving": "La liste de travail de vos demandes entrantes : qui attend et depuis combien de temps, de quel canal il provient, et qui le suit. Ensuite la fiche d’un lead — qui il est, ce qu’il demande et où il en est — les cinq statuts, et pour finir un lead devenu client, avec le renvoi vers sa fiche.",
     "hash": "f1ee7e577747fe4d",
-    "guid": "9e7e3ca9-edd5-4b1a-861d-a8bbd74e8b9e",
-    "vorigeGuid": "8cb998c3-9509-4de3-a7d7-888cc25db057",
+    "guid": "fcac94bb-9d88-4591-9b6d-24373937aa06",
+    "vorigeGuid": "9e7e3ca9-edd5-4b1a-861d-a8bbd74e8b9e",
     "hoofdstukken": [
       {
         "titel": "La liste de travail",
-        "start": 3.79,
+        "start": 3.78,
         "eind": 12.61
       },
       {
         "titel": "Depuis combien de temps on attend",
-        "start": 16.31,
-        "eind": 24.67
+        "start": 16.29,
+        "eind": 24.65
       },
       {
         "titel": "Qui assure le suivi",
-        "start": 28.35,
-        "eind": 35.4
+        "start": 28.32,
+        "eind": 35.38
       },
       {
         "titel": "D’où il provient",
-        "start": 39.08,
-        "eind": 51.38
+        "start": 39.04,
+        "eind": 51.35
       },
       {
         "titel": "La fiche d’un lead",
-        "start": 55.88,
-        "eind": 67.02
+        "start": 55.87,
+        "eind": 67.01
       },
       {
         "titel": "Ce qu’il demande",
-        "start": 70.88,
+        "start": 70.87,
         "eind": 80.3
       },
       {
         "titel": "Le suivi",
-        "start": 84.17,
-        "eind": 90.44
+        "start": 84.15,
+        "eind": 90.42
       },
       {
         "titel": "Les cinq statuts",
-        "start": 96.95,
-        "eind": 108.61
+        "start": 96.99,
+        "eind": 108.64
       },
       {
         "titel": "Du lead au client",
-        "start": 113.25,
-        "eind": 122.59
+        "start": 113.29,
+        "eind": 122.62
       },
       {
         "titel": "Pour conclure",
-        "start": 125.31,
-        "eind": 133.06
+        "start": 125.33,
+        "eind": 133.09
       }
     ],
-    "gepubliceerdOp": "2026-09-24T03:52:06.168",
+    "gepubliceerdOp": "2026-10-31T21:12:28.024",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/fcac94bb-9d88-4591-9b6d-24373937aa06/thumbnail.jpg",
     "gepubliceerdeHash": "f1ee7e577747fe4d",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/9e7e3ca9-edd5-4b1a-861d-a8bbd74e8b9e/thumbnail.jpg"
+    "embed": "https://iframe.mediadelivery.net/embed/741183/fcac94bb-9d88-4591-9b6d-24373937aa06",
+    "opTeRuimen": [
+      "8cb998c3-9509-4de3-a7d7-888cc25db057"
+    ]
   },
   "documentketen-nl": {
     "film": "documentketen",
     "taal": "nl-BE",
     "pagina": "credit-management/document-validation",
-    "lengte": 148.44,
+    "lengte": 148.23,
     "uitvoering": "handleiding",
     "routes": [
       "/credit-files/{id}",
@@ -1005,75 +1035,79 @@
       "/document-library"
     ],
     "app": {
-      "sha": "b07ba5b39e16d590cacfa61e189c7a54ff1a29b7",
-      "vuil": false
+      "sha": "424b44913925712136081d528d42e7f30cb3dc56",
+      "vuil": true
     },
     "titel": "De documentketen — van vragen tot beoordelen",
     "omschrijving": "Hoe u stukken opvraagt bij uw klant en ze weer binnenkrijgt: de gevraagde documenten op een dossier met hun drie toestanden, de uitnodiging naar het klantenportaal, het portaal zoals uw klant het ziet, en het centrale scherm waar alles wat op beoordeling wacht bij elkaar staat — gesorteerd op wie het langst wacht. Plus de andere richting: de documentbibliotheek.",
     "hash": "0cf82166a00c1aa3",
-    "guid": "f4d1ecf2-ba56-43b5-8e2d-a99845c0d712",
-    "vorigeGuid": "721ec6d8-587e-4bcf-93f9-5d93e0166701",
+    "guid": "e2fc8b9e-76ce-43fb-9394-5ef99921391a",
+    "vorigeGuid": "f4d1ecf2-ba56-43b5-8e2d-a99845c0d712",
     "hoofdstukken": [
       {
         "titel": "De gevraagde stukken",
-        "start": 7.16,
-        "eind": 19.93
+        "start": 7.13,
+        "eind": 19.9
       },
       {
         "titel": "De klant uitnodigen",
-        "start": 23.81,
-        "eind": 34.45
+        "start": 23.8,
+        "eind": 34.44
       },
       {
         "titel": "Wat uw klant ziet",
-        "start": 39.03,
-        "eind": 48.55
+        "start": 38.97,
+        "eind": 48.49
       },
       {
         "titel": "De klant levert aan",
-        "start": 51.87,
-        "eind": 61.02
+        "start": 51.81,
+        "eind": 60.96
       },
       {
         "titel": "Alles wat wacht, op één scherm",
-        "start": 65.8,
+        "start": 65.79,
         "eind": 77.45
       },
       {
         "titel": "Wie het langst wacht",
-        "start": 81.42,
-        "eind": 90.24
+        "start": 81.31,
+        "eind": 90.13
       },
       {
         "titel": "Een stuk bekijken",
-        "start": 94.86,
-        "eind": 102.02
+        "start": 94.62,
+        "eind": 101.77
       },
       {
         "titel": "Goedkeuren of afkeuren",
-        "start": 107.6,
-        "eind": 118.14
+        "start": 107.28,
+        "eind": 117.82
       },
       {
         "titel": "De andere richting",
-        "start": 123.14,
-        "eind": 134.89
+        "start": 122.86,
+        "eind": 134.61
       },
       {
         "titel": "Tot slot",
-        "start": 137.61,
-        "eind": 146.01
+        "start": 137.32,
+        "eind": 145.72
       }
     ],
-    "gepubliceerdOp": "2026-09-17T08:49:24.439",
+    "gepubliceerdOp": "2026-10-31T21:12:43.142",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/e2fc8b9e-76ce-43fb-9394-5ef99921391a/thumbnail.jpg",
     "gepubliceerdeHash": "0cf82166a00c1aa3",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/f4d1ecf2-ba56-43b5-8e2d-a99845c0d712/thumbnail.jpg"
+    "embed": "https://iframe.mediadelivery.net/embed/741183/e2fc8b9e-76ce-43fb-9394-5ef99921391a",
+    "opTeRuimen": [
+      "721ec6d8-587e-4bcf-93f9-5d93e0166701"
+    ]
   },
   "documentketen-fr": {
     "film": "documentketen",
     "taal": "fr-BE",
     "pagina": "credit-management/document-validation",
-    "lengte": 143.24,
+    "lengte": 142.81,
     "uitvoering": "handleiding",
     "routes": [
       "/credit-files/{id}",
@@ -1082,75 +1116,79 @@
       "/document-library"
     ],
     "app": {
-      "sha": "b07ba5b39e16d590cacfa61e189c7a54ff1a29b7",
-      "vuil": false
+      "sha": "424b44913925712136081d528d42e7f30cb3dc56",
+      "vuil": true
     },
     "titel": "La chaîne des documents — de la demande à la validation",
     "omschrijving": "Comment vous demandez des pièces à votre client et les recevez : les documents demandés sur un dossier avec leurs trois statuts, l’invitation au portail client, le portail tel que votre client le voit, et l’écran central où tout ce qui attend une validation est rassemblé — trié par ordre d’attente. Ainsi que l’autre sens : la bibliothèque de documents.",
     "hash": "28578f8e3ed8da88",
-    "guid": "5256c3b2-585c-4627-ac96-0b80436b9d17",
-    "vorigeGuid": "5ec4c4eb-72eb-444d-af1e-96d440e5a2fa",
+    "guid": "9d898994-00ce-4053-ac29-22cf48c91779",
+    "vorigeGuid": "5256c3b2-585c-4627-ac96-0b80436b9d17",
     "hoofdstukken": [
       {
         "titel": "Les pièces demandées",
-        "start": 7.18,
-        "eind": 18.1
+        "start": 7.04,
+        "eind": 17.96
       },
       {
         "titel": "Inviter le client",
-        "start": 21.98,
-        "eind": 31.32
+        "start": 21.83,
+        "eind": 31.16
       },
       {
         "titel": "Ce que voit votre client",
-        "start": 35.83,
-        "eind": 45.49
+        "start": 35.63,
+        "eind": 45.29
       },
       {
         "titel": "Le client dépose ses pièces",
-        "start": 48.81,
-        "eind": 57.63
+        "start": 48.61,
+        "eind": 57.43
       },
       {
         "titel": "Tout ce qui attend, sur un écran",
-        "start": 62.41,
-        "eind": 72.4
+        "start": 62.24,
+        "eind": 72.23
       },
       {
         "titel": "Qui attend le plus longtemps",
-        "start": 76.39,
-        "eind": 84.8
+        "start": 76.08,
+        "eind": 84.48
       },
       {
         "titel": "Consulter une pièce",
-        "start": 89.4,
-        "eind": 95.76
+        "start": 88.98,
+        "eind": 95.34
       },
       {
         "titel": "Approuver ou refuser",
-        "start": 101.4,
-        "eind": 111.43
+        "start": 100.86,
+        "eind": 110.89
       },
       {
         "titel": "L’autre sens",
-        "start": 116.42,
-        "eind": 129.88
+        "start": 115.9,
+        "eind": 129.37
       },
       {
         "titel": "Pour conclure",
-        "start": 132.6,
-        "eind": 140.82
+        "start": 132.09,
+        "eind": 140.31
       }
     ],
-    "gepubliceerdOp": "2026-09-17T08:49:48.112",
+    "gepubliceerdOp": "2026-10-31T21:12:57.338",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/9d898994-00ce-4053-ac29-22cf48c91779/thumbnail.jpg",
     "gepubliceerdeHash": "28578f8e3ed8da88",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/5256c3b2-585c-4627-ac96-0b80436b9d17/thumbnail.jpg"
+    "embed": "https://iframe.mediadelivery.net/embed/741183/9d898994-00ce-4053-ac29-22cf48c91779",
+    "opTeRuimen": [
+      "5ec4c4eb-72eb-444d-af1e-96d440e5a2fa"
+    ]
   },
   "journaal-nl": {
     "film": "journaal",
     "taal": "nl-BE",
     "pagina": "journaal/overzicht",
-    "lengte": 147.92,
+    "lengte": 148.01,
     "uitvoering": "handleiding",
     "routes": [
       "/crm/relaties/{id}",
@@ -1158,76 +1196,79 @@
       "/taken"
     ],
     "app": {
-      "sha": "50319011440360cd87c49b65221c649908d1682a",
+      "sha": "424b44913925712136081d528d42e7f30cb3dc56",
       "vuil": true
     },
     "titel": "Het journaal — alles wat er met een klant gebeurde, op één plaats",
     "omschrijving": "Het journaal hangt aan elke fiche en werkt overal hetzelfde: taken met hun vervaldag en wie ze opvolgt, notities, gesprekken, bijlagen, het mailverkeer met de status van elke verzending, en het logboek dat elke veldwijziging bewaart. Plus de takenlijst die over alle fiches heen kijkt.",
     "hash": "85c870ff3cc0585d",
-    "guid": "d929ca35-e7cc-4b84-bf91-404a80a06251",
-    "vorigeGuid": "a78fca86-197c-41d5-b09a-203f6683e4b3",
+    "guid": "d43f7fda-64af-4b14-ba97-7f49e4f0c6f3",
+    "vorigeGuid": "d929ca35-e7cc-4b84-bf91-404a80a06251",
     "hoofdstukken": [
       {
         "titel": "Waar het journaal staat",
-        "start": 6.83,
-        "eind": 19.83
+        "start": 6.75,
+        "eind": 19.75
       },
       {
         "titel": "Taken",
-        "start": 24.11,
-        "eind": 34.18
+        "start": 24.03,
+        "eind": 34.11
       },
       {
         "titel": "Notities",
-        "start": 38.47,
-        "eind": 47.72
+        "start": 38.41,
+        "eind": 47.65
       },
       {
         "titel": "Gesprekken",
-        "start": 52,
-        "eind": 61.66
+        "start": 51.93,
+        "eind": 61.59
       },
       {
         "titel": "Bijlagen",
-        "start": 66.01,
-        "eind": 77.11
+        "start": 65.89,
+        "eind": 76.98
       },
       {
         "titel": "Mailverkeer",
-        "start": 81.59,
-        "eind": 88.88
+        "start": 81.48,
+        "eind": 88.77
       },
       {
         "titel": "Het logboek",
-        "start": 93.36,
-        "eind": 103.4
+        "start": 93.26,
+        "eind": 103.29
       },
       {
         "titel": "Hetzelfde op een dossier",
-        "start": 108.42,
-        "eind": 118.73
+        "start": 108.19,
+        "eind": 118.5
       },
       {
         "titel": "Al uw taken samen",
-        "start": 123.41,
-        "eind": 134.23
+        "start": 123.24,
+        "eind": 134.06
       },
       {
         "titel": "Tot slot",
-        "start": 136.95,
-        "eind": 145.68
+        "start": 136.78,
+        "eind": 145.51
       }
     ],
-    "gepubliceerdOp": "2026-10-08T09:49:18.78",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/d929ca35-e7cc-4b84-bf91-404a80a06251/thumbnail.jpg",
+    "gepubliceerdOp": "2026-10-31T21:13:10.834",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/d43f7fda-64af-4b14-ba97-7f49e4f0c6f3/thumbnail.jpg",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/d43f7fda-64af-4b14-ba97-7f49e4f0c6f3",
     "gepubliceerdeHash": "85c870ff3cc0585d",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/d929ca35-e7cc-4b84-bf91-404a80a06251"
+    "opTeRuimen": [
+      "a78fca86-197c-41d5-b09a-203f6683e4b3"
+    ]
   },
   "journaal-fr": {
     "film": "journaal",
     "taal": "fr-BE",
     "pagina": "journaal/overzicht",
-    "lengte": 140.6,
+    "lengte": 140.81,
     "uitvoering": "handleiding",
     "routes": [
       "/crm/relaties/{id}",
@@ -1235,226 +1276,237 @@
       "/taken"
     ],
     "app": {
-      "sha": "bf01aa6f26246bd1f7df73884a9583ed9509e545",
+      "sha": "424b44913925712136081d528d42e7f30cb3dc56",
       "vuil": true
     },
     "titel": "Le journal — tout ce qui s’est passé avec un client, au même endroit",
     "omschrijving": "Le journal est rattaché à chaque fiche et fonctionne partout de la même manière : tâches avec leur échéance et leur responsable, notes, appels, pièces jointes, le courrier avec le statut de chaque envoi, et l’historique qui conserve chaque modification. Ainsi que la liste des tâches qui regarde par-dessus toutes les fiches.",
     "hash": "ca2bb2b956e41256",
-    "guid": "3baa8067-90d1-449f-8c91-6b76536b3733",
-    "vorigeGuid": "aaf8f28e-d051-44e9-9191-2945d6079cea",
+    "guid": "954666d8-ae08-4c42-92a7-54691c19bb9e",
+    "vorigeGuid": "3baa8067-90d1-449f-8c91-6b76536b3733",
     "hoofdstukken": [
       {
         "titel": "Où se trouve le journal",
-        "start": 6.73,
-        "eind": 19.64
+        "start": 6.78,
+        "eind": 19.69
       },
       {
         "titel": "Tâches",
-        "start": 23.94,
-        "eind": 33.04
+        "start": 23.98,
+        "eind": 33.08
       },
       {
         "titel": "Notes",
-        "start": 37.33,
-        "eind": 47.27
+        "start": 37.37,
+        "eind": 47.3
       },
       {
         "titel": "Appels",
-        "start": 51.56,
-        "eind": 59.59
+        "start": 51.59,
+        "eind": 59.62
       },
       {
         "titel": "Pièces jointes",
-        "start": 63.85,
-        "eind": 73.65
+        "start": 63.91,
+        "eind": 73.7
       },
       {
         "titel": "Courrier",
-        "start": 78.12,
-        "eind": 85.13
+        "start": 78.18,
+        "eind": 85.19
       },
       {
         "titel": "L’historique",
-        "start": 89.64,
-        "eind": 99.72
+        "start": 89.71,
+        "eind": 99.78
       },
       {
         "titel": "Identique sur un dossier",
-        "start": 104.67,
-        "eind": 114.56
+        "start": 104.7,
+        "eind": 114.59
       },
       {
         "titel": "Toutes vos tâches ensemble",
-        "start": 119.2,
-        "eind": 128.67
+        "start": 119.34,
+        "eind": 128.81
       },
       {
         "titel": "Pour conclure",
-        "start": 131.39,
-        "eind": 138.17
+        "start": 131.52,
+        "eind": 138.3
       }
     ],
-    "gepubliceerdOp": "2026-10-08T09:50:41.771",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/3baa8067-90d1-449f-8c91-6b76536b3733/thumbnail.jpg",
+    "gepubliceerdOp": "2026-10-31T21:13:24.805",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/954666d8-ae08-4c42-92a7-54691c19bb9e/thumbnail.jpg",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/954666d8-ae08-4c42-92a7-54691c19bb9e",
     "gepubliceerdeHash": "ca2bb2b956e41256",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/3baa8067-90d1-449f-8c91-6b76536b3733"
+    "opTeRuimen": [
+      "aaf8f28e-d051-44e9-9191-2945d6079cea"
+    ]
   },
   "afspraken-nl": {
     "film": "afspraken",
     "taal": "nl-BE",
     "pagina": "crm/meetings",
-    "lengte": 139.64,
+    "lengte": 139.56,
     "uitvoering": "handleiding",
     "routes": [
       "/crm/afspraken",
       "/crm/online-afspraken"
     ],
     "app": {
-      "sha": "b07ba5b39e16d590cacfa61e189c7a54ff1a29b7",
-      "vuil": false
+      "sha": "424b44913925712136081d528d42e7f30cb3dc56",
+      "vuil": true
     },
     "titel": "De agenda — afspraken maken en laten maken",
     "omschrijving": "De agenda van uw kantoor: de kleuren die zeggen wie afwezig is en wanneer u gesloten bent, de weergave per medewerker of samengevoegd, een afspraak met haar verantwoordelijken en de bevestiging naar uw klant. En de andere kant: uren openzetten zodat mensen zelf een moment kiezen.",
     "hash": "ae4c6ed1d4635650",
-    "guid": "2e4369f0-81fd-4bb6-8cd1-e9c90317ae2a",
-    "vorigeGuid": "ffc1b0f2-d274-448f-b765-c56dc1f08d13",
+    "guid": "13affd2f-240a-462a-9a18-7898cf8f2a23",
+    "vorigeGuid": "2e4369f0-81fd-4bb6-8cd1-e9c90317ae2a",
     "hoofdstukken": [
       {
         "titel": "De agenda",
-        "start": 5.39,
-        "eind": 14.63
+        "start": 5.35,
+        "eind": 14.59
       },
       {
         "titel": "Wat de kleuren zeggen",
-        "start": 18.5,
-        "eind": 30.86
+        "start": 18.51,
+        "eind": 30.87
       },
       {
         "titel": "Samen of per medewerker",
         "start": 34.74,
-        "eind": 45
+        "eind": 45.01
       },
       {
         "titel": "Een afspraak openen",
-        "start": 49.88,
-        "eind": 60.33
+        "start": 49.91,
+        "eind": 60.35
       },
       {
         "titel": "Wie erbij is",
-        "start": 64.42,
-        "eind": 73.29
+        "start": 64.44,
+        "eind": 73.32
       },
       {
         "titel": "De bevestiging",
-        "start": 77.37,
-        "eind": 86.94
+        "start": 77.4,
+        "eind": 86.97
       },
       {
         "titel": "Online afspraken",
-        "start": 92.77,
-        "eind": 102.48
+        "start": 92.99,
+        "eind": 102.7
       },
       {
         "titel": "Uren openzetten",
-        "start": 106.57,
-        "eind": 113.63
+        "start": 106.77,
+        "eind": 113.83
       },
       {
         "titel": "Wat er gebeurt als iemand boekt",
-        "start": 118.94,
-        "eind": 128.18
+        "start": 118.91,
+        "eind": 128.15
       },
       {
         "titel": "Tot slot",
-        "start": 130.9,
-        "eind": 137.21
+        "start": 130.87,
+        "eind": 137.18
       }
     ],
-    "gepubliceerdOp": "2026-09-17T08:50:49.019",
+    "gepubliceerdOp": "2026-10-31T21:13:37.924",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/13affd2f-240a-462a-9a18-7898cf8f2a23/thumbnail.jpg",
     "gepubliceerdeHash": "ae4c6ed1d4635650",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/2e4369f0-81fd-4bb6-8cd1-e9c90317ae2a/thumbnail.jpg"
+    "embed": "https://iframe.mediadelivery.net/embed/741183/13affd2f-240a-462a-9a18-7898cf8f2a23",
+    "opTeRuimen": [
+      "ffc1b0f2-d274-448f-b765-c56dc1f08d13"
+    ]
   },
   "afspraken-fr": {
     "film": "afspraken",
     "taal": "fr-BE",
     "pagina": "crm/meetings",
-    "lengte": 133.32,
+    "lengte": 133,
     "uitvoering": "handleiding",
     "routes": [
       "/crm/afspraken",
       "/crm/online-afspraken"
     ],
     "app": {
-      "sha": "b07ba5b39e16d590cacfa61e189c7a54ff1a29b7",
-      "vuil": false
+      "sha": "424b44913925712136081d528d42e7f30cb3dc56",
+      "vuil": true
     },
     "titel": "L’agenda — prendre et faire prendre des rendez-vous",
     "omschrijving": "L’agenda de votre bureau : les couleurs qui indiquent qui est absent et quand vous êtes fermé, l’affichage par collaborateur ou fusionné, un rendez-vous avec ses responsables et la confirmation au client. Et l’autre côté : ouvrir des plages pour que les gens choisissent eux-mêmes un moment.",
     "hash": "66c10fd7171d2a29",
-    "guid": "35b97fa1-b26a-469d-a29e-fb2a4de1b755",
-    "vorigeGuid": "c1f4e97a-a47d-4eb9-b545-50ff19d77817",
+    "guid": "08da549c-801f-4c17-b165-fb5c05851f43",
+    "vorigeGuid": "35b97fa1-b26a-469d-a29e-fb2a4de1b755",
     "hoofdstukken": [
       {
         "titel": "L’agenda",
-        "start": 5.34,
-        "eind": 13.61
+        "start": 5.14,
+        "eind": 13.41
       },
       {
         "titel": "Ce que disent les couleurs",
-        "start": 17.51,
-        "eind": 28.1
+        "start": 17.31,
+        "eind": 27.9
       },
       {
         "titel": "Ensemble ou par collaborateur",
-        "start": 31.98,
-        "eind": 40.43
+        "start": 31.77,
+        "eind": 40.22
       },
       {
         "titel": "Ouvrir un rendez-vous",
-        "start": 45.33,
-        "eind": 56.24
+        "start": 45.12,
+        "eind": 56.03
       },
       {
         "titel": "Qui y participe",
-        "start": 60.33,
-        "eind": 68.36
+        "start": 60.1,
+        "eind": 68.13
       },
       {
         "titel": "La confirmation",
-        "start": 72.43,
-        "eind": 81.16
+        "start": 72.21,
+        "eind": 80.94
       },
       {
         "titel": "Rendez-vous en ligne",
-        "start": 86.82,
-        "eind": 96.53
+        "start": 86.75,
+        "eind": 96.46
       },
       {
         "titel": "Ouvrir des plages",
-        "start": 100.61,
-        "eind": 107.58
+        "start": 100.52,
+        "eind": 107.49
       },
       {
         "titel": "Ce qui se passe quand on réserve",
-        "start": 112.87,
-        "eind": 121.97
+        "start": 112.58,
+        "eind": 121.68
       },
       {
         "titel": "Pour conclure",
-        "start": 124.69,
-        "eind": 130.92
+        "start": 124.39,
+        "eind": 130.61
       }
     ],
-    "gepubliceerdOp": "2026-09-17T08:51:10.823",
+    "gepubliceerdOp": "2026-10-31T21:13:51.947",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/08da549c-801f-4c17-b165-fb5c05851f43/thumbnail.jpg",
     "gepubliceerdeHash": "66c10fd7171d2a29",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/35b97fa1-b26a-469d-a29e-fb2a4de1b755/thumbnail.jpg"
+    "embed": "https://iframe.mediadelivery.net/embed/741183/08da549c-801f-4c17-b165-fb5c05851f43",
+    "opTeRuimen": [
+      "c1f4e97a-a47d-4eb9-b545-50ff19d77817"
+    ]
   },
   "commissie-instellen-nl": {
     "film": "commissie-instellen",
     "taal": "nl-BE",
     "pagina": "credit-management/commission-schemes",
-    "lengte": 130.2,
+    "lengte": 130.13,
     "uitvoering": "handleiding",
     "routes": [
       "/commissie/schemas",
@@ -1462,70 +1514,74 @@
       "/beheer/commissie-instellingen"
     ],
     "app": {
-      "sha": "b07ba5b39e16d590cacfa61e189c7a54ff1a29b7",
-      "vuil": false
+      "sha": "424b44913925712136081d528d42e7f30cb3dc56",
+      "vuil": true
     },
     "titel": "Commissie instellen — het schema per dossier",
     "omschrijving": "Wat u met een aanbrenger afspreekt en hoe u het vastlegt: het overzicht van alle schema’s met hun vorm en toestand, de schemafiche op een dossier met de totale commissie, het deel dat direct uitbetaald wordt en de spreiding over de maanden, de geplande betalingen die daaruit volgen, en de twee kantoorinstellingen die bepalen hoe er afgerekend wordt.",
     "hash": "ba62771970047916",
-    "guid": "ebb2064f-de7b-4c0d-973f-a621f2a40ed9",
-    "vorigeGuid": "cdca0d10-7f67-48ce-8863-30a716cefb24",
+    "guid": "9e70292b-c602-46bb-b57b-0ac7c9a3c88f",
+    "vorigeGuid": "ebb2064f-de7b-4c0d-973f-a621f2a40ed9",
     "hoofdstukken": [
       {
         "titel": "Alle schema’s samen",
-        "start": 4.44,
-        "eind": 15.26
+        "start": 4.51,
+        "eind": 15.33
       },
       {
         "titel": "De vorm van een schema",
-        "start": 19.28,
-        "eind": 28.8
+        "start": 19.21,
+        "eind": 28.73
       },
       {
         "titel": "Het schema van een dossier",
-        "start": 33.69,
-        "eind": 42.05
+        "start": 33.56,
+        "eind": 41.92
       },
       {
         "titel": "De totale commissie",
-        "start": 46.03,
-        "eind": 54.34
+        "start": 45.89,
+        "eind": 54.2
       },
       {
         "titel": "Direct of gespreid",
-        "start": 58.4,
-        "eind": 69.92
+        "start": 58.25,
+        "eind": 69.77
       },
       {
         "titel": "De geplande betalingen",
-        "start": 73.99,
-        "eind": 83.88
+        "start": 73.83,
+        "eind": 83.72
       },
       {
         "titel": "De twee kantoorkeuzes",
-        "start": 88.63,
-        "eind": 97.83
+        "start": 88.48,
+        "eind": 97.67
       },
       {
         "titel": "Wat er met bestaande gebeurt",
-        "start": 101.15,
-        "eind": 113.08
+        "start": 101,
+        "eind": 112.93
       },
       {
         "titel": "Tot slot",
-        "start": 117.66,
-        "eind": 127.78
+        "start": 117.51,
+        "eind": 127.63
       }
     ],
-    "gepubliceerdOp": "2026-09-17T08:51:27.027",
+    "gepubliceerdOp": "2026-10-31T21:14:05.59",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/9e70292b-c602-46bb-b57b-0ac7c9a3c88f/thumbnail.jpg",
     "gepubliceerdeHash": "ba62771970047916",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/ebb2064f-de7b-4c0d-973f-a621f2a40ed9/thumbnail.jpg"
+    "embed": "https://iframe.mediadelivery.net/embed/741183/9e70292b-c602-46bb-b57b-0ac7c9a3c88f",
+    "opTeRuimen": [
+      "cdca0d10-7f67-48ce-8863-30a716cefb24"
+    ]
   },
   "commissie-instellen-fr": {
     "film": "commissie-instellen",
     "taal": "fr-BE",
     "pagina": "credit-management/commission-schemes",
-    "lengte": 121.92,
+    "lengte": 121.78,
     "uitvoering": "handleiding",
     "routes": [
       "/commissie/schemas",
@@ -1533,70 +1589,74 @@
       "/beheer/commissie-instellingen"
     ],
     "app": {
-      "sha": "b07ba5b39e16d590cacfa61e189c7a54ff1a29b7",
-      "vuil": false
+      "sha": "424b44913925712136081d528d42e7f30cb3dc56",
+      "vuil": true
     },
     "titel": "Configurer la commission — le schéma par dossier",
     "omschrijving": "Ce que vous convenez avec un apporteur et comment vous le fixez : l’aperçu de tous les schémas avec leur forme et leur statut, la fiche du schéma sur un dossier avec la commission totale, la part payée immédiatement et l’étalement sur les mois, les paiements planifiés qui en découlent, et les deux paramètres du bureau qui déterminent le mode de décompte.",
     "hash": "15ba0bf469428dbe",
-    "guid": "a58c4898-b51c-48ab-b27a-5ef03b63131f",
-    "vorigeGuid": "ea67325c-bc43-49d1-a915-ac5ba61b14e6",
+    "guid": "4533d894-cb1e-4bf8-8640-5e152612e5f7",
+    "vorigeGuid": "a58c4898-b51c-48ab-b27a-5ef03b63131f",
     "hoofdstukken": [
       {
         "titel": "Tous les schémas ensemble",
-        "start": 4.56,
-        "eind": 13.71
+        "start": 4.63,
+        "eind": 13.78
       },
       {
         "titel": "La forme d’un schéma",
-        "start": 17.74,
-        "eind": 27.03
+        "start": 17.67,
+        "eind": 26.96
       },
       {
         "titel": "Le schéma d’un dossier",
-        "start": 31.88,
-        "eind": 38.57
+        "start": 31.78,
+        "eind": 38.47
       },
       {
         "titel": "La commission totale",
-        "start": 42.52,
-        "eind": 50.14
+        "start": 42.41,
+        "eind": 50.03
       },
       {
         "titel": "Immédiat ou étalé",
-        "start": 54.2,
-        "eind": 65.72
+        "start": 54.1,
+        "eind": 65.62
       },
       {
         "titel": "Les paiements planifiés",
-        "start": 69.8,
-        "eind": 78.62
+        "start": 69.68,
+        "eind": 78.51
       },
       {
         "titel": "Les deux choix du bureau",
-        "start": 83.4,
-        "eind": 92.41
+        "start": 83.19,
+        "eind": 92.2
       },
       {
         "titel": "Ce qu’il advient des existants",
-        "start": 95.73,
-        "eind": 105.25
+        "start": 95.52,
+        "eind": 105.04
       },
       {
         "titel": "Pour conclure",
-        "start": 109.81,
-        "eind": 119.52
+        "start": 109.57,
+        "eind": 119.28
       }
     ],
-    "gepubliceerdOp": "2026-09-17T08:51:43.478",
+    "gepubliceerdOp": "2026-10-31T21:14:18.717",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/4533d894-cb1e-4bf8-8640-5e152612e5f7/thumbnail.jpg",
     "gepubliceerdeHash": "15ba0bf469428dbe",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/a58c4898-b51c-48ab-b27a-5ef03b63131f/thumbnail.jpg"
+    "embed": "https://iframe.mediadelivery.net/embed/741183/4533d894-cb1e-4bf8-8640-5e152612e5f7",
+    "opTeRuimen": [
+      "ea67325c-bc43-49d1-a915-ac5ba61b14e6"
+    ]
   },
   "commissie-uitbetalen-nl": {
     "film": "commissie-uitbetalen",
     "taal": "nl-BE",
     "pagina": "credit-management/commission-statements",
-    "lengte": 147.84,
+    "lengte": 147.88,
     "uitvoering": "handleiding",
     "routes": [
       "/commissie/borderel",
@@ -1606,75 +1666,79 @@
       "/commissie/fiche-28150"
     ],
     "app": {
-      "sha": "b07ba5b39e16d590cacfa61e189c7a54ff1a29b7",
-      "vuil": false
+      "sha": "424b44913925712136081d528d42e7f30cb3dc56",
+      "vuil": true
     },
     "titel": "Commissie uitbetalen — borderel, vooruitzicht en restanten",
     "omschrijving": "Wat er uit uw commissieschema’s komt: het borderel per aanbrenger met zijn lijnen, het vooruitzicht dat toont wat er de komende maanden nog uitbetaald moet worden, de restanten die nooit op een borderel belandden en waarom, en de fiche 281.50 voor de fiscus.",
     "hash": "2e2508af22aac459",
-    "guid": "3d9cac4f-300b-489b-9b50-55cc136dbaee",
-    "vorigeGuid": "038d7633-bb20-4cad-ab70-d8542a112760",
+    "guid": "5087a0b2-ac0b-44ea-9e9c-1c23678d6b3b",
+    "vorigeGuid": "3d9cac4f-300b-489b-9b50-55cc136dbaee",
     "hoofdstukken": [
       {
         "titel": "De borderellen",
-        "start": 4.44,
-        "eind": 13.4
+        "start": 4.61,
+        "eind": 13.57
       },
       {
         "titel": "Openstaand of betaald",
-        "start": 17.36,
-        "eind": 27.67
+        "start": 17.46,
+        "eind": 27.77
       },
       {
         "titel": "Eén borderel",
-        "start": 32.59,
-        "eind": 39.37
+        "start": 32.66,
+        "eind": 39.44
       },
       {
         "titel": "De commissielijnen",
-        "start": 43.44,
-        "eind": 52.82
+        "start": 43.51,
+        "eind": 52.89
       },
       {
         "titel": "Het vooruitzicht",
-        "start": 57.84,
-        "eind": 66.67
+        "start": 57.87,
+        "eind": 66.7
       },
       {
         "titel": "De transacties van een maand",
-        "start": 72.72,
-        "eind": 85.54
+        "start": 72.74,
+        "eind": 85.56
       },
       {
         "titel": "Wat is blijven liggen",
-        "start": 90.52,
-        "eind": 100.55
+        "start": 90.55,
+        "eind": 100.58
       },
       {
         "titel": "De fiche 281.50",
-        "start": 105.48,
-        "eind": 116.16
+        "start": 105.47,
+        "eind": 116.15
       },
       {
         "titel": "Wat er nog moet gebeuren",
-        "start": 120.28,
-        "eind": 131.98
+        "start": 120.23,
+        "eind": 131.93
       },
       {
         "titel": "Tot slot",
-        "start": 136.55,
-        "eind": 145.42
+        "start": 136.51,
+        "eind": 145.38
       }
     ],
-    "gepubliceerdOp": "2026-09-17T08:52:05.318",
+    "gepubliceerdOp": "2026-10-31T19:55:32.237",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/5087a0b2-ac0b-44ea-9e9c-1c23678d6b3b/thumbnail.jpg",
     "gepubliceerdeHash": "2e2508af22aac459",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/3d9cac4f-300b-489b-9b50-55cc136dbaee/thumbnail.jpg"
+    "embed": "https://iframe.mediadelivery.net/embed/741183/5087a0b2-ac0b-44ea-9e9c-1c23678d6b3b",
+    "opTeRuimen": [
+      "038d7633-bb20-4cad-ab70-d8542a112760"
+    ]
   },
   "commissie-uitbetalen-fr": {
     "film": "commissie-uitbetalen",
     "taal": "fr-BE",
     "pagina": "credit-management/commission-statements",
-    "lengte": 139.16,
+    "lengte": 138.82,
     "uitvoering": "handleiding",
     "routes": [
       "/commissie/borderel",
@@ -1684,507 +1748,533 @@
       "/commissie/fiche-28150"
     ],
     "app": {
-      "sha": "b07ba5b39e16d590cacfa61e189c7a54ff1a29b7",
-      "vuil": false
+      "sha": "424b44913925712136081d528d42e7f30cb3dc56",
+      "vuil": true
     },
     "titel": "Payer la commission — bordereau, prévisions et reliquats",
     "omschrijving": "Ce qui découle de vos schémas de commission : le bordereau par apporteur avec ses lignes, les prévisions de ce qu’il reste à payer les mois à venir, les reliquats qui ne sont jamais arrivés sur un bordereau et pourquoi, et la fiche 281.50 pour le fisc.",
     "hash": "6decbcf5484e1c78",
-    "guid": "d97a237f-449e-4848-a79e-c8a7bafe3ebf",
-    "vorigeGuid": "e9a3f17c-3e60-448e-9499-d4d5d1fb4485",
+    "guid": "974a2742-e3c5-4325-9b49-ecc06ed4a245",
+    "vorigeGuid": "d97a237f-449e-4848-a79e-c8a7bafe3ebf",
     "hoofdstukken": [
       {
         "titel": "Les bordereaux",
-        "start": 4.44,
-        "eind": 11.78
+        "start": 4.43,
+        "eind": 11.77
       },
       {
         "titel": "En attente ou payé",
-        "start": 15.76,
-        "eind": 25.74
+        "start": 15.66,
+        "eind": 25.64
       },
       {
         "titel": "Un bordereau",
-        "start": 30.72,
-        "eind": 36.52
+        "start": 30.47,
+        "eind": 36.27
       },
       {
         "titel": "Les lignes de commission",
-        "start": 40.59,
-        "eind": 49.09
+        "start": 40.34,
+        "eind": 48.84
       },
       {
         "titel": "Les prévisions",
-        "start": 54.18,
-        "eind": 62.12
+        "start": 53.89,
+        "eind": 61.83
       },
       {
         "titel": "Les transactions d'un mois",
-        "start": 68.17,
-        "eind": 80.38
+        "start": 67.89,
+        "eind": 80.11
       },
       {
         "titel": "Ce qui est resté en souffrance",
-        "start": 85.36,
-        "eind": 94.84
+        "start": 85.06,
+        "eind": 94.53
       },
       {
         "titel": "La fiche 281.50",
-        "start": 99.76,
-        "eind": 109.14
+        "start": 99.41,
+        "eind": 108.79
       },
       {
         "titel": "Ce qui doit encore être fait",
-        "start": 113.36,
-        "eind": 124.18
+        "start": 112.88,
+        "eind": 123.7
       },
       {
         "titel": "Pour conclure",
-        "start": 128.73,
-        "eind": 136.77
+        "start": 128.28,
+        "eind": 136.32
       }
     ],
-    "gepubliceerdOp": "2026-09-17T08:52:26.673",
+    "gepubliceerdOp": "2026-10-31T19:55:45.428",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/974a2742-e3c5-4325-9b49-ecc06ed4a245/thumbnail.jpg",
     "gepubliceerdeHash": "6decbcf5484e1c78",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/d97a237f-449e-4848-a79e-c8a7bafe3ebf/thumbnail.jpg"
+    "embed": "https://iframe.mediadelivery.net/embed/741183/974a2742-e3c5-4325-9b49-ecc06ed4a245",
+    "opTeRuimen": [
+      "e9a3f17c-3e60-448e-9499-d4d5d1fb4485"
+    ]
   },
   "verzekeringen-nl": {
     "film": "verzekeringen",
     "taal": "nl-BE",
     "pagina": "credit-management/insurance-contracts",
-    "lengte": 135.4,
+    "lengte": 134.96,
     "uitvoering": "handleiding",
     "routes": [
       "/insurance-contracts",
       "/credit/insurance-institutions"
     ],
     "app": {
-      "sha": "b07ba5b39e16d590cacfa61e189c7a54ff1a29b7",
-      "vuil": false
+      "sha": "424b44913925712136081d528d42e7f30cb3dc56",
+      "vuil": true
     },
     "titel": "Verzekeringen — het overzicht en uw verzekeraars",
     "omschrijving": "Alle schuldsaldoverzekeringen bij uw dossiers op één lijst: kiezen wat u wil zien met de drie filters bovenaan, de kolommen die ertoe doen — wie er verzekerd is, of de polis nog voorlopig is en of de aanvraaglink vertrokken is — het verschil tussen de status van de polis en die van het dossier, de lijst afdrukken of exporteren, en de fiches van uw verzekeraars.",
     "hash": "7231f312fdbba471",
-    "guid": "4ce1d0c5-c72f-4c4e-bcd0-bb32adc13078",
-    "vorigeGuid": "eabd402f-b7f1-45ba-bfb9-3cb2c967bfe2",
+    "guid": "5ca7d27d-75cb-4155-aac0-09d6f56d5d35",
+    "vorigeGuid": "4ce1d0c5-c72f-4c4e-bcd0-bb32adc13078",
     "hoofdstukken": [
       {
         "titel": "Alle polissen samen",
-        "start": 4.64,
-        "eind": 14.95
+        "start": 4.66,
+        "eind": 14.97
       },
       {
         "titel": "Kiezen wat u ziet",
-        "start": 19.02,
-        "eind": 27.24
+        "start": 18.97,
+        "eind": 27.19
       },
       {
         "titel": "Wie er verzekerd is",
-        "start": 31.3,
-        "eind": 42.58
+        "start": 31.15,
+        "eind": 42.43
       },
       {
         "titel": "Voorlopig en de link",
-        "start": 46.65,
-        "eind": 58.54
+        "start": 46.43,
+        "eind": 58.32
       },
       {
         "titel": "Twee statussen, twee dingen",
-        "start": 62.71,
-        "eind": 79.75
+        "start": 62.39,
+        "eind": 79.44
       },
       {
         "titel": "Afdrukken of exporteren",
-        "start": 83.85,
-        "eind": 93.09
+        "start": 83.42,
+        "eind": 92.67
       },
       {
         "titel": "Uw verzekeraars",
-        "start": 97.89,
-        "eind": 104.39
+        "start": 97.48,
+        "eind": 103.98
       },
       {
         "titel": "De fiche van een verzekeraar",
-        "start": 109.07,
-        "eind": 119.75
+        "start": 108.68,
+        "eind": 119.36
       },
       {
         "titel": "Tot slot",
-        "start": 124.34,
-        "eind": 132.98
+        "start": 123.82,
+        "eind": 132.46
       }
     ],
-    "gepubliceerdOp": "2026-09-17T08:52:48.237",
+    "gepubliceerdOp": "2026-10-31T21:14:31.609",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/5ca7d27d-75cb-4155-aac0-09d6f56d5d35/thumbnail.jpg",
     "gepubliceerdeHash": "7231f312fdbba471",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/4ce1d0c5-c72f-4c4e-bcd0-bb32adc13078/thumbnail.jpg"
+    "embed": "https://iframe.mediadelivery.net/embed/741183/5ca7d27d-75cb-4155-aac0-09d6f56d5d35",
+    "opTeRuimen": [
+      "eabd402f-b7f1-45ba-bfb9-3cb2c967bfe2"
+    ]
   },
   "verzekeringen-fr": {
     "film": "verzekeringen",
     "taal": "fr-BE",
     "pagina": "credit-management/insurance-contracts",
-    "lengte": 126.92,
+    "lengte": 126.35,
     "uitvoering": "handleiding",
     "routes": [
       "/insurance-contracts",
       "/credit/insurance-institutions"
     ],
     "app": {
-      "sha": "b07ba5b39e16d590cacfa61e189c7a54ff1a29b7",
-      "vuil": false
+      "sha": "424b44913925712136081d528d42e7f30cb3dc56",
+      "vuil": true
     },
     "titel": "Assurances — l’aperçu et vos assureurs",
     "omschrijving": "Toutes les assurances solde restant dû de vos dossiers sur une seule liste : choisir ce que vous voulez voir avec les trois filtres du haut, les colonnes qui comptent — qui est assuré, si la police est encore provisoire et si le lien de demande est parti — la différence entre le statut de la police et celui du dossier, imprimer ou exporter la liste, et les fiches de vos assureurs.",
     "hash": "b262375c68b85143",
-    "guid": "8e9aee19-7604-494e-ade9-388bd3c6572e",
-    "vorigeGuid": "c222f6a6-4a32-4071-a80c-9ffa4291fd62",
+    "guid": "0072f8d0-1924-4a32-857f-a348bbb1b77a",
+    "vorigeGuid": "8e9aee19-7604-494e-ade9-388bd3c6572e",
     "hoofdstukken": [
       {
         "titel": "Toutes les polices ensemble",
-        "start": 4.63,
+        "start": 4.62,
         "eind": 13.96
       },
       {
         "titel": "Choisir ce que vous voyez",
-        "start": 18.06,
-        "eind": 27.16
+        "start": 17.96,
+        "eind": 27.07
       },
       {
         "titel": "Qui est assuré",
-        "start": 31.26,
-        "eind": 42.08
+        "start": 31.02,
+        "eind": 41.84
       },
       {
         "titel": "Provisoire et le lien",
-        "start": 46.17,
-        "eind": 56.81
+        "start": 45.83,
+        "eind": 56.46
       },
       {
         "titel": "Deux statuts, deux choses",
-        "start": 60.97,
-        "eind": 75.14
+        "start": 60.51,
+        "eind": 74.67
       },
       {
         "titel": "Imprimer ou exporter",
-        "start": 79.18,
-        "eind": 87.58
+        "start": 78.63,
+        "eind": 87.04
       },
       {
         "titel": "Vos assureurs",
-        "start": 92.38,
-        "eind": 98.93
+        "start": 91.82,
+        "eind": 98.37
       },
       {
         "titel": "La fiche d’un assureur",
-        "start": 103.6,
-        "eind": 112.1
+        "start": 103.04,
+        "eind": 111.54
       },
       {
         "titel": "Pour conclure",
-        "start": 116.64,
-        "eind": 124.53
+        "start": 115.96,
+        "eind": 123.85
       }
     ],
-    "gepubliceerdOp": "2026-09-17T08:53:04.864",
+    "gepubliceerdOp": "2026-10-31T21:14:46.137",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/0072f8d0-1924-4a32-857f-a348bbb1b77a/thumbnail.jpg",
     "gepubliceerdeHash": "b262375c68b85143",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/8e9aee19-7604-494e-ade9-388bd3c6572e/thumbnail.jpg"
+    "embed": "https://iframe.mediadelivery.net/embed/741183/0072f8d0-1924-4a32-857f-a348bbb1b77a",
+    "opTeRuimen": [
+      "c222f6a6-4a32-4071-a80c-9ffa4291fd62"
+    ]
   },
   "dashboard-nl": {
     "film": "dashboard",
     "taal": "nl-BE",
     "pagina": "getting-started/dashboard",
-    "lengte": 156.32,
+    "lengte": 156.36,
     "uitvoering": "handleiding",
     "routes": [
       "/dashboard",
       "/beheer/dashboard-fases"
     ],
     "app": {
-      "sha": "7b5c852293e5103a2ba95fbe21ba82883789a04f",
+      "sha": "424b44913925712136081d528d42e7f30cb3dc56",
       "vuil": true
     },
     "titel": "Het dashboard — uw kantoor in één scherm",
     "omschrijving": "Het startscherm gelezen zoals het bedoeld is: het jaar bovenaan dat alles stuurt, de vier tegels met aantallen en bedragen, de termijnen die vandaag actie vragen, de drie grafieken over het gerealiseerde volume, de pijplijn met uw dossiers per fase, en het scherm waar u die fases zelf samenstelt. Plus waarom uw dashboard er anders uitziet dan dat van een collega.",
     "hash": "51c2956d2845f3d7",
-    "guid": "e21be71b-5ef7-4b8e-9a96-af68c403f58b",
-    "vorigeGuid": "199cd811-c0b9-42fa-96b8-b19846d58c0e",
+    "guid": "502073d8-8608-44aa-98f5-1a617ea68fa8",
+    "vorigeGuid": "e21be71b-5ef7-4b8e-9a96-af68c403f58b",
     "hoofdstukken": [
       {
         "titel": "Het jaar stuurt alles",
-        "start": 5.27,
-        "eind": 17.49
+        "start": 5.32,
+        "eind": 17.53
       },
       {
         "titel": "De vier tegels",
-        "start": 21.49,
+        "start": 21.5,
         "eind": 31.29
       },
       {
         "titel": "Wat vandaag actie vraagt",
-        "start": 35.37,
-        "eind": 49.07
+        "start": 35.34,
+        "eind": 49.04
       },
       {
         "titel": "Gerealiseerd volume",
-        "start": 53.14,
-        "eind": 62.8
+        "start": 53.12,
+        "eind": 62.78
       },
       {
         "titel": "Per instelling en per collega",
-        "start": 66.87,
-        "eind": 75.6
+        "start": 66.86,
+        "eind": 75.59
       },
       {
         "titel": "Geen eigenaar is werk",
-        "start": 79.68,
-        "eind": 90.78
+        "start": 79.65,
+        "eind": 90.75
       },
       {
         "titel": "De pijplijn",
-        "start": 94.85,
-        "eind": 106.64
+        "start": 94.82,
+        "eind": 106.61
       },
       {
         "titel": "De fases zijn van u",
-        "start": 111.67,
-        "eind": 125.28
+        "start": 111.66,
+        "eind": 125.27
       },
       {
         "titel": "Eén kantoor, één beeld",
-        "start": 130.5,
-        "eind": 144.53
+        "start": 130.66,
+        "eind": 144.68
       },
       {
         "titel": "Tot slot",
-        "start": 147.25,
-        "eind": 153.89
+        "start": 147.4,
+        "eind": 154.04
       }
     ],
-    "gepubliceerdOp": "2026-10-02T02:01:44.254",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/e21be71b-5ef7-4b8e-9a96-af68c403f58b/thumbnail.jpg",
+    "gepubliceerdOp": "2026-10-31T21:14:59.683",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/502073d8-8608-44aa-98f5-1a617ea68fa8/thumbnail.jpg",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/502073d8-8608-44aa-98f5-1a617ea68fa8",
     "gepubliceerdeHash": "51c2956d2845f3d7",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/e21be71b-5ef7-4b8e-9a96-af68c403f58b"
+    "opTeRuimen": [
+      "199cd811-c0b9-42fa-96b8-b19846d58c0e"
+    ]
   },
   "dashboard-fr": {
     "film": "dashboard",
     "taal": "fr-BE",
     "pagina": "getting-started/dashboard",
-    "lengte": 147.52,
+    "lengte": 147.8,
     "uitvoering": "handleiding",
     "routes": [
       "/dashboard",
       "/beheer/dashboard-fases"
     ],
     "app": {
-      "sha": "7b5c852293e5103a2ba95fbe21ba82883789a04f",
+      "sha": "424b44913925712136081d528d42e7f30cb3dc56",
       "vuil": true
     },
     "titel": "Le tableau de bord — votre bureau en un écran",
     "omschrijving": "L’écran d’accueil lu comme il se doit : l’année en haut qui pilote tout, les quatre tuiles avec les nombres et les montants, les délais qui demandent une action aujourd’hui, les trois graphiques du volume réalisé, le pipeline de vos dossiers par phase, et l’écran où vous composez ces phases. Ainsi que la raison pour laquelle votre tableau de bord diffère de celui d’un collègue.",
     "hash": "c1ae874a3883c631",
-    "guid": "a6faf5a5-0a15-4b30-8107-17e5016c841b",
-    "vorigeGuid": "df1e1528-e459-4ee2-8e22-85aba9ce2692",
+    "guid": "529b87bf-b676-4e18-bdaf-387680ac0e07",
+    "vorigeGuid": "a6faf5a5-0a15-4b30-8107-17e5016c841b",
     "hoofdstukken": [
       {
         "titel": "L’année pilote tout",
-        "start": 5.26,
-        "eind": 16.27
+        "start": 5.31,
+        "eind": 16.31
       },
       {
         "titel": "Les quatre tuiles",
-        "start": 20.25,
-        "eind": 30
+        "start": 20.28,
+        "eind": 30.04
       },
       {
         "titel": "Ce qui demande une action",
-        "start": 34.07,
-        "eind": 46.23
+        "start": 34.1,
+        "eind": 46.27
       },
       {
         "titel": "Volume réalisé",
-        "start": 50.29,
-        "eind": 59.49
+        "start": 50.34,
+        "eind": 59.54
       },
       {
         "titel": "Par institution et par collègue",
-        "start": 63.57,
-        "eind": 71.74
+        "start": 63.61,
+        "eind": 71.78
       },
       {
         "titel": "Sans responsable, c’est du travail",
-        "start": 75.81,
-        "eind": 87.09
+        "start": 75.85,
+        "eind": 87.13
       },
       {
         "titel": "Le pipeline",
-        "start": 91.17,
-        "eind": 100.73
+        "start": 91.21,
+        "eind": 100.77
       },
       {
         "titel": "Les phases sont les vôtres",
-        "start": 105.67,
-        "eind": 116.86
+        "start": 105.8,
+        "eind": 116.99
       },
       {
         "titel": "Un bureau, une vue",
-        "start": 122.09,
-        "eind": 135.55
+        "start": 122.39,
+        "eind": 135.85
       },
       {
         "titel": "Pour conclure",
-        "start": 138.27,
-        "eind": 145.1
+        "start": 138.57,
+        "eind": 145.4
       }
     ],
-    "gepubliceerdOp": "2026-10-02T02:02:05.917",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/a6faf5a5-0a15-4b30-8107-17e5016c841b/thumbnail.jpg",
+    "gepubliceerdOp": "2026-10-31T21:15:12.8",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/529b87bf-b676-4e18-bdaf-387680ac0e07/thumbnail.jpg",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/529b87bf-b676-4e18-bdaf-387680ac0e07",
     "gepubliceerdeHash": "c1ae874a3883c631",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/a6faf5a5-0a15-4b30-8107-17e5016c841b"
+    "opTeRuimen": [
+      "df1e1528-e459-4ee2-8e22-85aba9ce2692"
+    ]
   },
   "lijsten-en-rapporten-nl": {
     "film": "lijsten-en-rapporten",
     "taal": "nl-BE",
     "pagina": "credit-management/filteren-in-lijsten",
-    "lengte": 135.4,
+    "lengte": 136.13,
     "uitvoering": "handleiding",
     "routes": [
       "/credit-files/overview",
       "/rapporten"
     ],
     "app": {
-      "sha": "b07ba5b39e16d590cacfa61e189c7a54ff1a29b7",
-      "vuil": false
+      "sha": "424b44913925712136081d528d42e7f30cb3dc56",
+      "vuil": true
     },
     "titel": "Lijsten en rapporten — zoeken, filteren en meenemen",
     "omschrijving": "Elke lijst in CreditSoft werkt hetzelfde, en dit is hoe u ze naar uw hand zet: de keuzelijsten bovenaan, het trechtertje op een kolomkop, groeperen door een kolom te verslepen, en wat u meeneemt — afdrukken en exporteren volgen altijd uw filters. Plus de negen rapporten, waar u een periode kiest en een voorbeeld krijgt dat u kan downloaden of doorsturen.",
     "hash": "1bbe19b1f6cd139c",
-    "guid": "5b05388d-ba88-4f4f-ab7c-882fd1b464cc",
-    "vorigeGuid": "cfeeeb32-4786-4ff3-a5e1-28576865349d",
+    "guid": "3202e102-3e40-4c15-9c8d-0bb9ed0ce8a6",
+    "vorigeGuid": "5b05388d-ba88-4f4f-ab7c-882fd1b464cc",
     "hoofdstukken": [
       {
         "titel": "Het globaal overzicht",
-        "start": 4.87,
-        "eind": 16.86
+        "start": 4.83,
+        "eind": 16.81
       },
       {
         "titel": "De keuzelijsten bovenaan",
-        "start": 20.85,
-        "eind": 34.74
+        "start": 20.93,
+        "eind": 34.82
       },
       {
         "titel": "Het trechtertje",
-        "start": 39.72,
-        "eind": 49.14
+        "start": 39.94,
+        "eind": 49.36
       },
       {
         "titel": "Toepassen",
-        "start": 52.99,
-        "eind": 61.35
+        "start": 53.33,
+        "eind": 61.68
       },
       {
         "titel": "Groeperen",
-        "start": 66.02,
-        "eind": 75.22
+        "start": 66.52,
+        "eind": 75.71
       },
       {
         "titel": "Afdrukken en exporteren",
-        "start": 79.19,
-        "eind": 89.03
+        "start": 79.86,
+        "eind": 89.71
       },
       {
         "titel": "De rapporten",
-        "start": 93.74,
-        "eind": 101.59
+        "start": 94.36,
+        "eind": 102.21
       },
       {
         "titel": "Kiezen wat u nodig heeft",
-        "start": 105.75,
-        "eind": 118.85
+        "start": 106.38,
+        "eind": 119.47
       },
       {
         "titel": "Tot slot",
-        "start": 123.7,
-        "eind": 133.13
+        "start": 124.2,
+        "eind": 133.63
       }
     ],
-    "gepubliceerdOp": "2026-09-17T08:54:09.246",
+    "gepubliceerdOp": "2026-10-31T21:15:26.045",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/3202e102-3e40-4c15-9c8d-0bb9ed0ce8a6/thumbnail.jpg",
     "gepubliceerdeHash": "1bbe19b1f6cd139c",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/5b05388d-ba88-4f4f-ab7c-882fd1b464cc/thumbnail.jpg"
+    "embed": "https://iframe.mediadelivery.net/embed/741183/3202e102-3e40-4c15-9c8d-0bb9ed0ce8a6",
+    "opTeRuimen": [
+      "cfeeeb32-4786-4ff3-a5e1-28576865349d"
+    ]
   },
   "lijsten-en-rapporten-fr": {
     "film": "lijsten-en-rapporten",
     "taal": "fr-BE",
     "pagina": "credit-management/filteren-in-lijsten",
-    "lengte": 131.32,
+    "lengte": 131.91,
     "uitvoering": "handleiding",
     "routes": [
       "/credit-files/overview",
       "/rapporten"
     ],
     "app": {
-      "sha": "b07ba5b39e16d590cacfa61e189c7a54ff1a29b7",
-      "vuil": false
+      "sha": "424b44913925712136081d528d42e7f30cb3dc56",
+      "vuil": true
     },
     "titel": "Listes et rapports — chercher, filtrer et emporter",
     "omschrijving": "Toutes les listes de CreditSoft fonctionnent de la même manière, et voici comment les adapter : les listes déroulantes du haut, l’entonnoir sur un en-tête de colonne, le regroupement en déplaçant une colonne, et ce que vous emportez — l’impression et l’export suivent toujours vos filtres. Ainsi que les neuf rapports, où vous choisissez une période et obtenez un aperçu.",
     "hash": "169070b87bb9e5a0",
-    "guid": "066637ae-e1ed-4dab-9115-1119b484b9b4",
-    "vorigeGuid": "a171a9d3-1f59-4ee8-ac87-85c2da095664",
+    "guid": "9e6fc280-e5f3-4ed7-80ab-cc6bb01fac49",
+    "vorigeGuid": "066637ae-e1ed-4dab-9115-1119b484b9b4",
     "hoofdstukken": [
       {
         "titel": "L’aperçu global",
-        "start": 4.91,
-        "eind": 15.96
+        "start": 4.84,
+        "eind": 15.89
       },
       {
         "titel": "Les listes déroulantes du haut",
-        "start": 19.94,
-        "eind": 32.11
+        "start": 20.03,
+        "eind": 32.2
       },
       {
         "titel": "L’entonnoir",
-        "start": 37.08,
-        "eind": 45.72
+        "start": 37.27,
+        "eind": 45.9
       },
       {
         "titel": "Appliquer",
-        "start": 49.58,
-        "eind": 58.63
+        "start": 49.91,
+        "eind": 58.96
       },
       {
         "titel": "Regrouper",
-        "start": 63.3,
-        "eind": 72.03
+        "start": 63.8,
+        "eind": 72.53
       },
       {
         "titel": "Imprimer et exporter",
-        "start": 75.99,
-        "eind": 84.45
+        "start": 76.67,
+        "eind": 85.12
       },
       {
         "titel": "Les rapports",
-        "start": 89.14,
-        "eind": 96.76
+        "start": 89.84,
+        "eind": 97.45
       },
       {
         "titel": "Choisir ce dont vous avez besoin",
-        "start": 100.91,
-        "eind": 113.22
+        "start": 101.61,
+        "eind": 113.92
       },
       {
         "titel": "Pour conclure",
-        "start": 118.2,
-        "eind": 128.92
+        "start": 118.67,
+        "eind": 129.4
       }
     ],
-    "gepubliceerdOp": "2026-09-17T08:54:25.62",
+    "gepubliceerdOp": "2026-10-31T21:15:39.16",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/9e6fc280-e5f3-4ed7-80ab-cc6bb01fac49/thumbnail.jpg",
     "gepubliceerdeHash": "169070b87bb9e5a0",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/066637ae-e1ed-4dab-9115-1119b484b9b4/thumbnail.jpg"
+    "embed": "https://iframe.mediadelivery.net/embed/741183/9e6fc280-e5f3-4ed7-80ab-cc6bb01fac49",
+    "opTeRuimen": [
+      "a171a9d3-1f59-4ee8-ac87-85c2da095664"
+    ]
   },
   "mailketen-nl": {
     "film": "mailketen",
     "taal": "nl-BE",
     "pagina": "administration/sender-addresses",
-    "lengte": 134.84,
+    "lengte": 135.23,
     "uitvoering": "handleiding",
     "routes": [
       "/administration/company-profile",
@@ -2194,66 +2284,69 @@
       "/administration/mail-monitoring"
     ],
     "app": {
-      "sha": "bf01aa6f26246bd1f7df73884a9583ed9509e545",
+      "sha": "424b44913925712136081d528d42e7f30cb3dc56",
       "vuil": true
     },
     "titel": "De mailketen — van uw gegevens tot een verzonden bericht",
     "omschrijving": "Wat er allemaal klopt moet zijn vóór er één mail vertrekt, in de volgorde waarin het samenhangt: uw bedrijfsfiche die de variabelen vult, het verzendadres waar alles vanuit vertrekt, de tweetalige sjablonen met hun variabelenpalet en voorbeeld, en tot slot waar u ziet of een bericht werkelijk afgeleverd is — inclusief de reden wanneer dat niet lukte.",
     "hash": "658a7851e50d2e1b",
-    "guid": "c244ccd2-e245-442e-a279-4cfc03e827a0",
-    "vorigeGuid": "e911be68-5620-482d-89dc-5053f999b362",
+    "guid": "e34c4797-0d1e-4b55-aa59-d82c2dab5c30",
+    "vorigeGuid": "c244ccd2-e245-442e-a279-4cfc03e827a0",
     "hoofdstukken": [
       {
         "titel": "Uw eigen gegevens",
-        "start": 4.48,
-        "eind": 17.11
+        "start": 4.54,
+        "eind": 17.17
       },
       {
         "titel": "Waar uw mail vandaan komt",
-        "start": 21.76,
-        "eind": 35.18
+        "start": 21.96,
+        "eind": 35.38
       },
       {
         "titel": "Uw eigen domein",
-        "start": 39.17,
-        "eind": 48
+        "start": 39.38,
+        "eind": 48.21
       },
       {
         "titel": "De sjablonen",
-        "start": 53.21,
-        "eind": 64.5
+        "start": 53.3,
+        "eind": 64.59
       },
       {
         "titel": "De variabelen",
-        "start": 68.58,
-        "eind": 81.72
+        "start": 68.65,
+        "eind": 81.8
       },
       {
         "titel": "Wat de klant kreeg",
-        "start": 91.76,
-        "eind": 102.26
+        "start": 91.92,
+        "eind": 102.41
       },
       {
         "titel": "Is het aangekomen",
-        "start": 107.18,
-        "eind": 116.7
+        "start": 107.4,
+        "eind": 116.92
       },
       {
         "titel": "Tot slot",
-        "start": 121.24,
-        "eind": 132.48
+        "start": 121.49,
+        "eind": 132.72
       }
     ],
-    "gepubliceerdOp": "2026-10-08T09:51:29.167",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/c244ccd2-e245-442e-a279-4cfc03e827a0/thumbnail.jpg",
+    "gepubliceerdOp": "2026-10-31T21:15:59.709",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/e34c4797-0d1e-4b55-aa59-d82c2dab5c30/thumbnail.jpg",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/e34c4797-0d1e-4b55-aa59-d82c2dab5c30",
     "gepubliceerdeHash": "658a7851e50d2e1b",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/c244ccd2-e245-442e-a279-4cfc03e827a0"
+    "opTeRuimen": [
+      "e911be68-5620-482d-89dc-5053f999b362"
+    ]
   },
   "mailketen-fr": {
     "film": "mailketen",
     "taal": "fr-BE",
     "pagina": "administration/sender-addresses",
-    "lengte": 131.36,
+    "lengte": 131.71,
     "uitvoering": "handleiding",
     "routes": [
       "/administration/company-profile",
@@ -2263,39 +2356,39 @@
       "/administration/mail-monitoring"
     ],
     "app": {
-      "sha": "bf01aa6f26246bd1f7df73884a9583ed9509e545",
+      "sha": "424b44913925712136081d528d42e7f30cb3dc56",
       "vuil": true
     },
     "titel": "La chaîne d’e-mails — de vos données au message envoyé",
     "omschrijving": "Tout ce qui doit être en ordre avant qu’un seul e-mail parte, dans l’ordre où cela s’enchaîne : votre fiche d’entreprise qui alimente les variables, l’adresse d’expédition d’où tout part, les modèles bilingues avec leur panneau de variables et leur aperçu, et enfin l’endroit où vous voyez si un message a réellement été distribué — motif compris lorsque cela échoue.",
     "hash": "b32af4f15d4d05c8",
-    "guid": "8508715a-580c-4575-8f77-45370036d05a",
-    "vorigeGuid": "5ae8b54d-e4f7-4bbf-8958-da0c3cf7d8c9",
+    "guid": "d2fefec3-e89a-45f4-8045-2556b5e312d9",
+    "vorigeGuid": "8508715a-580c-4575-8f77-45370036d05a",
     "hoofdstukken": [
       {
         "titel": "Vos propres données",
-        "start": 4.49,
-        "eind": 17.17
+        "start": 4.5,
+        "eind": 17.18
       },
       {
         "titel": "D’où part votre courrier",
-        "start": 21.81,
-        "eind": 34.81
+        "start": 21.84,
+        "eind": 34.84
       },
       {
         "titel": "Votre propre domaine",
-        "start": 38.82,
-        "eind": 47.5
+        "start": 38.84,
+        "eind": 47.53
       },
       {
         "titel": "Les modèles",
-        "start": 52.65,
-        "eind": 63.38
+        "start": 52.55,
+        "eind": 63.28
       },
       {
         "titel": "Les variables",
-        "start": 67.44,
-        "eind": 80.26
+        "start": 67.36,
+        "eind": 80.17
       },
       {
         "titel": "Ce que le client a reçu",
@@ -2304,129 +2397,140 @@
       },
       {
         "titel": "Est-ce bien arrivé",
-        "start": 103.98,
-        "eind": 114.29
+        "start": 104.12,
+        "eind": 114.43
       },
       {
         "titel": "Pour conclure",
-        "start": 118.77,
-        "eind": 128.98
+        "start": 118.99,
+        "eind": 129.2
       }
     ],
-    "gepubliceerdOp": "2026-10-08T09:52:42.233",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/8508715a-580c-4575-8f77-45370036d05a/thumbnail.jpg",
+    "gepubliceerdOp": "2026-10-31T21:16:12.163",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/d2fefec3-e89a-45f4-8045-2556b5e312d9/thumbnail.jpg",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/d2fefec3-e89a-45f4-8045-2556b5e312d9",
     "gepubliceerdeHash": "b32af4f15d4d05c8",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/8508715a-580c-4575-8f77-45370036d05a"
+    "opTeRuimen": [
+      "5ae8b54d-e4f7-4bbf-8958-da0c3cf7d8c9"
+    ]
   },
   "klantportaal-nl": {
     "film": "klantportaal",
     "taal": "nl-BE",
     "pagina": "beheer/klantportaal",
-    "lengte": 80.96,
+    "lengte": 81,
     "uitvoering": "handleiding",
     "routes": [
       "/beheer/klantportaal",
       "/klantportaal/voorbeeld/{id}"
     ],
     "app": {
-      "sha": "b07ba5b39e16d590cacfa61e189c7a54ff1a29b7",
-      "vuil": false
+      "sha": "424b44913925712136081d528d42e7f30cb3dc56",
+      "vuil": true
     },
     "titel": "Het klantenportaal — hoe uw klant u ziet",
     "omschrijving": "Uw klant krijgt een link en belandt op een portaal. Dit is waar u bepaalt wat hij daar ziet: uw naam, uw kleur, uw logo en een welkomsttekst in beide talen. Elk veld dat u leeg laat, valt terug op uw bedrijfsfiche — u hoeft dus niets in te vullen om te beginnen. En tot slot het resultaat, zoals uw klant het krijgt.",
     "hash": "7befb05fd43224a4",
-    "guid": "8f6628c4-2f7e-4e10-974b-07aa0651fc1f",
-    "vorigeGuid": "64eddd2a-c0ad-4bbd-ba69-c3e393ea76d2",
+    "guid": "c16a4c13-e717-4c44-a8c5-84e097c1d86b",
+    "vorigeGuid": "8f6628c4-2f7e-4e10-974b-07aa0651fc1f",
     "hoofdstukken": [
       {
         "titel": "Uw portaal instellen",
-        "start": 4.57,
-        "eind": 11.58
+        "start": 4.51,
+        "eind": 11.53
       },
       {
         "titel": "U hoeft niets in te vullen",
-        "start": 15.66,
-        "eind": 25.88
+        "start": 15.63,
+        "eind": 25.85
       },
       {
         "titel": "Uw naam en uw kleur",
         "start": 29.93,
-        "eind": 41.31
+        "eind": 41.3
       },
       {
         "titel": "De welkomsttekst",
-        "start": 45.36,
-        "eind": 55.25
+        "start": 45.37,
+        "eind": 55.26
       },
       {
         "titel": "Wat uw klant krijgt",
-        "start": 60.03,
-        "eind": 68.57
+        "start": 59.96,
+        "eind": 68.51
       },
       {
         "titel": "Tot slot",
-        "start": 73.23,
-        "eind": 78.62
+        "start": 73.22,
+        "eind": 78.6
       }
     ],
-    "gepubliceerdOp": "2026-09-17T08:55:24.958",
+    "gepubliceerdOp": "2026-10-31T21:16:25.217",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/c16a4c13-e717-4c44-a8c5-84e097c1d86b/thumbnail.jpg",
     "gepubliceerdeHash": "7befb05fd43224a4",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/8f6628c4-2f7e-4e10-974b-07aa0651fc1f/thumbnail.jpg"
+    "embed": "https://iframe.mediadelivery.net/embed/741183/c16a4c13-e717-4c44-a8c5-84e097c1d86b",
+    "opTeRuimen": [
+      "64eddd2a-c0ad-4bbd-ba69-c3e393ea76d2"
+    ]
   },
   "klantportaal-fr": {
     "film": "klantportaal",
     "taal": "fr-BE",
     "pagina": "beheer/klantportaal",
-    "lengte": 76.28,
+    "lengte": 76.16,
     "uitvoering": "handleiding",
     "routes": [
       "/beheer/klantportaal",
       "/klantportaal/voorbeeld/{id}"
     ],
     "app": {
-      "sha": "b07ba5b39e16d590cacfa61e189c7a54ff1a29b7",
-      "vuil": false
+      "sha": "424b44913925712136081d528d42e7f30cb3dc56",
+      "vuil": true
     },
     "titel": "Le portail client — comment votre client vous voit",
     "omschrijving": "Votre client reçoit un lien et arrive sur un portail. C’est ici que vous déterminez ce qu’il y voit : votre nom, votre couleur, votre logo et un texte d’accueil dans les deux langues. Chaque champ laissé vide reprend votre fiche d’entreprise — vous n’avez donc rien à remplir pour démarrer. Et pour finir le résultat, tel que votre client le reçoit.",
     "hash": "ed1360d46f46c79b",
-    "guid": "ab10e425-9616-429a-a74a-7480e8b860a1",
-    "vorigeGuid": "f0312941-bbde-4e71-8023-68f19ae12278",
+    "guid": "499595bf-3c18-4442-8a0c-1d1756d92383",
+    "vorigeGuid": "ab10e425-9616-429a-a74a-7480e8b860a1",
     "hoofdstukken": [
       {
         "titel": "Configurer votre portail",
-        "start": 4.58,
-        "eind": 10.8
+        "start": 4.5,
+        "eind": 10.72
       },
       {
         "titel": "Rien à remplir",
-        "start": 14.89,
-        "eind": 23.77
+        "start": 14.81,
+        "eind": 23.69
       },
       {
         "titel": "Votre nom et votre couleur",
-        "start": 27.83,
-        "eind": 39.11
+        "start": 27.75,
+        "eind": 39.04
       },
       {
         "titel": "Le texte d’accueil",
-        "start": 43.16,
-        "eind": 51.57
+        "start": 43.1,
+        "eind": 51.5
       },
       {
         "titel": "Ce que reçoit votre client",
-        "start": 56.28,
-        "eind": 64.37
+        "start": 56.23,
+        "eind": 64.31
       },
       {
         "titel": "Pour conclure",
-        "start": 69.04,
-        "eind": 73.97
+        "start": 68.89,
+        "eind": 73.81
       }
     ],
-    "gepubliceerdOp": "2026-09-17T08:55:46.299",
+    "gepubliceerdOp": "2026-10-31T21:16:38.298",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/499595bf-3c18-4442-8a0c-1d1756d92383/thumbnail.jpg",
     "gepubliceerdeHash": "ed1360d46f46c79b",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/ab10e425-9616-429a-a74a-7480e8b860a1/thumbnail.jpg"
+    "embed": "https://iframe.mediadelivery.net/embed/741183/499595bf-3c18-4442-8a0c-1d1756d92383",
+    "opTeRuimen": [
+      "f0312941-bbde-4e71-8023-68f19ae12278"
+    ]
   },
   "klantportaal-website-nl": {
     "film": "klantportaal",
@@ -3038,112 +3142,115 @@
     "film": "adviesdossier",
     "taal": "nl-BE",
     "pagina": "credit-management/advice",
-    "lengte": 161.8,
+    "lengte": 161.76,
     "uitvoering": "handleiding",
     "routes": [
-      "/credit-files/{id}"
+      "/credit-files/{id}",
+      "/credit-files/{id}/advies"
     ],
     "app": {
-      "sha": "138d05d07af8a6bfde46db9d59b2a97d4bf0fd20",
+      "sha": "424b44913925712136081d528d42e7f30cb3dc56",
       "vuil": true
     },
     "titel": "Het adviesdossier in CreditSoft — vastleggen wat u voorstelde",
     "omschrijving": "Per kredietdossier legt u vast of u advies geeft en op welke basis, wat de klant u vertelde, welke kredieten u naast elkaar legde en waarom u er één voorstelt. Uw klant krijgt een afschrift in zijn taal, als kredietvergelijking, en CreditSoft houdt bij hoe en wanneer hij het kreeg.",
-    "hash": "4e26cd3972632c62",
-    "guid": "b53b2eae-8cda-4ddb-906d-efd0b42710b2",
+    "hash": "fb1de07c7572bcd9",
+    "guid": "3b0b78c4-b086-4c63-bcad-6646c18b022f",
     "hoofdstukken": [
       {
         "titel": "Het tabblad Advies",
-        "start": 8.6,
-        "eind": 21.56
+        "start": 8.52,
+        "eind": 21.48
       },
       {
         "titel": "De adviespagina",
-        "start": 26.81,
-        "eind": 40.46
+        "start": 26.73,
+        "eind": 40.39
       },
       {
         "titel": "De basis",
-        "start": 44.23,
-        "eind": 53.94
+        "start": 44.15,
+        "eind": 53.86
       },
       {
         "titel": "De klant",
-        "start": 57.71,
-        "eind": 66.81
+        "start": 57.63,
+        "eind": 66.73
       },
       {
         "titel": "Behoeften",
-        "start": 70.58,
-        "eind": 77.03
+        "start": 70.49,
+        "eind": 76.94
       },
       {
         "titel": "Vergeleken aanbiedingen",
-        "start": 81.11,
-        "eind": 92.68
+        "start": 81.02,
+        "eind": 92.58
       },
       {
         "titel": "Uit een contract",
-        "start": 99.73,
-        "eind": 109.67
+        "start": 99.61,
+        "eind": 109.55
       },
       {
         "titel": "Motivering",
-        "start": 115.22,
-        "eind": 121.81
+        "start": 115.11,
+        "eind": 121.7
       },
       {
         "titel": "Het afschrift",
-        "start": 125.59,
-        "eind": 138.41
+        "start": 125.47,
+        "eind": 138.29
       },
       {
         "titel": "Bezorgen",
-        "start": 142.48,
-        "eind": 150.65
+        "start": 142.35,
+        "eind": 150.53
       },
       {
         "titel": "Tot slot",
-        "start": 154.42,
-        "eind": 159.48
+        "start": 154.3,
+        "eind": 159.36
       }
     ],
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/b53b2eae-8cda-4ddb-906d-efd0b42710b2/thumbnail.jpg",
-    "gepubliceerdOp": "2026-10-21T05:14:54.353",
-    "gepubliceerdeHash": "4e26cd3972632c62",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/b53b2eae-8cda-4ddb-906d-efd0b42710b2"
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/3b0b78c4-b086-4c63-bcad-6646c18b022f/thumbnail.jpg",
+    "gepubliceerdOp": "2026-10-31T21:16:50.401",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/3b0b78c4-b086-4c63-bcad-6646c18b022f",
+    "gepubliceerdeHash": "fb1de07c7572bcd9",
+    "vorigeGuid": "b53b2eae-8cda-4ddb-906d-efd0b42710b2"
   },
   "adviesdossier-fr": {
     "film": "adviesdossier",
     "taal": "fr-BE",
     "pagina": "credit-management/advice",
-    "lengte": 150,
+    "lengte": 150.08,
     "uitvoering": "handleiding",
     "routes": [
-      "/credit-files/{id}"
+      "/credit-files/{id}",
+      "/credit-files/{id}/advies"
     ],
     "app": {
-      "sha": "138d05d07af8a6bfde46db9d59b2a97d4bf0fd20",
+      "sha": "424b44913925712136081d528d42e7f30cb3dc56",
       "vuil": true
     },
     "titel": "Le dossier de conseil dans CreditSoft — garder ce que vous avez proposé",
     "omschrijving": "Pour chaque dossier de crédit, vous indiquez si vous donnez un conseil et sur quelle base, ce que le client vous a dit, quels crédits vous avez comparés et pourquoi vous en proposez un. Votre client reçoit une copie dans sa langue, sous forme de comparaison de crédits, et CreditSoft garde comment et quand il l’a reçue.",
-    "hash": "5ba1ad807ef7c285",
-    "guid": "15d20cd0-9c60-44ed-8e0e-276ccae0908d",
+    "hash": "a475261cd649890a",
+    "guid": "24678914-035c-4e48-aff6-0658a1151398",
     "hoofdstukken": [
       {
         "titel": "L’onglet Conseil",
-        "start": 8.56,
-        "eind": 20.59
+        "start": 8.57,
+        "eind": 20.6
       },
       {
         "titel": "La page de conseil",
-        "start": 25.88,
-        "eind": 37.35
+        "start": 25.86,
+        "eind": 37.34
       },
       {
         "titel": "La base",
-        "start": 41.11,
+        "start": 41.1,
         "eind": 50.02
       },
       {
@@ -3153,44 +3260,45 @@
       },
       {
         "titel": "Besoins",
-        "start": 65.58,
-        "eind": 71.48
+        "start": 65.57,
+        "eind": 71.47
       },
       {
         "titel": "Offres comparées",
-        "start": 75.55,
-        "eind": 83.91
+        "start": 75.54,
+        "eind": 83.9
       },
       {
         "titel": "À partir d’un contrat",
         "start": 90.94,
-        "eind": 99.63
+        "eind": 99.62
       },
       {
         "titel": "Motivation",
-        "start": 105.17,
-        "eind": 111.86
+        "start": 105.16,
+        "eind": 111.85
       },
       {
         "titel": "La copie",
-        "start": 115.63,
-        "eind": 126.36
+        "start": 115.61,
+        "eind": 126.33
       },
       {
         "titel": "Remettre",
-        "start": 130.43,
-        "eind": 138.37
+        "start": 130.4,
+        "eind": 138.35
       },
       {
         "titel": "Pour conclure",
-        "start": 142.15,
-        "eind": 147.72
+        "start": 142.11,
+        "eind": 147.69
       }
     ],
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/15d20cd0-9c60-44ed-8e0e-276ccae0908d/thumbnail.jpg",
-    "gepubliceerdOp": "2026-10-21T05:15:09.465",
-    "gepubliceerdeHash": "5ba1ad807ef7c285",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/15d20cd0-9c60-44ed-8e0e-276ccae0908d"
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/24678914-035c-4e48-aff6-0658a1151398/thumbnail.jpg",
+    "gepubliceerdOp": "2026-10-31T21:17:03.858",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/24678914-035c-4e48-aff6-0658a1151398",
+    "gepubliceerdeHash": "a475261cd649890a",
+    "vorigeGuid": "15d20cd0-9c60-44ed-8e0e-276ccae0908d"
   },
   "adviesdossier-website-nl": {
     "film": "adviesdossier",
