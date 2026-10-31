@@ -149,8 +149,8 @@
   "klantportaal-vormgeving": {
     "route": "/beheer/klantportaal",
     "app": {
-      "sha": "2557087994d651110029a1fc58ac7624501ac479",
-      "vuil": false
+      "sha": "2000405307af6cfa2faf3d6200ecbb591b163e54",
+      "vuil": true
     }
   },
   "mailsjablonen": {
@@ -254,8 +254,8 @@
   "borderel-overzicht": {
     "route": "/commissie/borderel",
     "app": {
-      "sha": "2557087994d651110029a1fc58ac7624501ac479",
-      "vuil": false
+      "sha": "2000405307af6cfa2faf3d6200ecbb591b163e54",
+      "vuil": true
     }
   },
   "online-afspraken-agenda": {
@@ -296,22 +296,22 @@
   "portaal-overzicht": {
     "route": "/portal-intermediary/overzicht",
     "app": {
-      "sha": "2557087994d651110029a1fc58ac7624501ac479",
-      "vuil": false
+      "sha": "2000405307af6cfa2faf3d6200ecbb591b163e54",
+      "vuil": true
     }
   },
   "portaal-dossiers": {
     "route": "/portal-intermediary/dossiers",
     "app": {
-      "sha": "f9400da5108f40d7cdd65dc426fe2c715fb8f218",
-      "vuil": false
+      "sha": "2000405307af6cfa2faf3d6200ecbb591b163e54",
+      "vuil": true
     }
   },
   "portaal-commissies": {
     "route": "/portal-intermediary/commissies",
     "app": {
-      "sha": "2557087994d651110029a1fc58ac7624501ac479",
-      "vuil": false
+      "sha": "2000405307af6cfa2faf3d6200ecbb591b163e54",
+      "vuil": true
     }
   },
   "aanbrengers-fiche": {
@@ -366,8 +366,8 @@
   "borderel-fiche": {
     "route": "/commissie/borderel/000245d0-80b0-4ba8-8354-cdcb377fc5bd",
     "app": {
-      "sha": "2557087994d651110029a1fc58ac7624501ac479",
-      "vuil": false
+      "sha": "2000405307af6cfa2faf3d6200ecbb591b163e54",
+      "vuil": true
     }
   },
   "navigatie": {
@@ -443,15 +443,15 @@
   "borderel-borderellen": {
     "route": "/commissie/borderel",
     "app": {
-      "sha": "2557087994d651110029a1fc58ac7624501ac479",
-      "vuil": false
+      "sha": "2000405307af6cfa2faf3d6200ecbb591b163e54",
+      "vuil": true
     }
   },
   "borderel-nieuwe-ronde": {
     "route": "/commissie/borderel",
     "app": {
-      "sha": "2557087994d651110029a1fc58ac7624501ac479",
-      "vuil": false
+      "sha": "2000405307af6cfa2faf3d6200ecbb591b163e54",
+      "vuil": true
     }
   },
   "online-afspraken-instellingen": {
@@ -478,8 +478,8 @@
   "portaal-toegang": {
     "route": "/contributors/05b820be-792d-4ecb-b41e-c8b00619b872",
     "app": {
-      "sha": "4e8f98f31b71f91c6e3085c5326cc6a9cad682c0",
-      "vuil": false
+      "sha": "2000405307af6cfa2faf3d6200ecbb591b163e54",
+      "vuil": true
     }
   },
   "commissieschemas-journaal": {
@@ -555,15 +555,15 @@
   "portaal-dossier-detail": {
     "route": "/portal-intermediary/dossiers",
     "app": {
-      "sha": "abfeceb216fc7e32a00b98374372cf8aaac5945a",
+      "sha": "2000405307af6cfa2faf3d6200ecbb591b163e54",
       "vuil": true
     }
   },
   "klantportaal-klant": {
     "route": "/beheer/klantportaal",
     "app": {
-      "sha": "2557087994d651110029a1fc58ac7624501ac479",
-      "vuil": false
+      "sha": "2000405307af6cfa2faf3d6200ecbb591b163e54",
+      "vuil": true
     }
   },
   "rapporten-periode": {
@@ -765,8 +765,8 @@
   "klantportaal-vormgeving-fr": {
     "route": "/beheer/klantportaal",
     "app": {
-      "sha": "2557087994d651110029a1fc58ac7624501ac479",
-      "vuil": false
+      "sha": "2000405307af6cfa2faf3d6200ecbb591b163e54",
+      "vuil": true
     }
   },
   "mailsjablonen-fr": {
@@ -870,8 +870,8 @@
   "borderel-overzicht-fr": {
     "route": "/commissie/borderel",
     "app": {
-      "sha": "2557087994d651110029a1fc58ac7624501ac479",
-      "vuil": false
+      "sha": "2000405307af6cfa2faf3d6200ecbb591b163e54",
+      "vuil": true
     }
   },
   "online-afspraken-agenda-fr": {
@@ -912,22 +912,22 @@
   "portaal-overzicht-fr": {
     "route": "/portal-intermediary/overzicht",
     "app": {
-      "sha": "2557087994d651110029a1fc58ac7624501ac479",
-      "vuil": false
+      "sha": "2000405307af6cfa2faf3d6200ecbb591b163e54",
+      "vuil": true
     }
   },
   "portaal-dossiers-fr": {
     "route": "/portal-intermediary/dossiers",
     "app": {
-      "sha": "f9400da5108f40d7cdd65dc426fe2c715fb8f218",
-      "vuil": false
+      "sha": "2000405307af6cfa2faf3d6200ecbb591b163e54",
+      "vuil": true
     }
   },
   "portaal-commissies-fr": {
     "route": "/portal-intermediary/commissies",
     "app": {
-      "sha": "2557087994d651110029a1fc58ac7624501ac479",
-      "vuil": false
+      "sha": "2000405307af6cfa2faf3d6200ecbb591b163e54",
+      "vuil": true
     }
   },
   "aanbrengers-fiche-fr": {
@@ -982,8 +982,8 @@
   "borderel-fiche-fr": {
     "route": "/commissie/borderel/000245d0-80b0-4ba8-8354-cdcb377fc5bd",
     "app": {
-      "sha": "2557087994d651110029a1fc58ac7624501ac479",
-      "vuil": false
+      "sha": "2000405307af6cfa2faf3d6200ecbb591b163e54",
+      "vuil": true
     }
   },
   "navigatie-fr": {
@@ -1059,15 +1059,15 @@
   "borderel-borderellen-fr": {
     "route": "/commissie/borderel",
     "app": {
-      "sha": "2557087994d651110029a1fc58ac7624501ac479",
-      "vuil": false
+      "sha": "2000405307af6cfa2faf3d6200ecbb591b163e54",
+      "vuil": true
     }
   },
   "borderel-nieuwe-ronde-fr": {
     "route": "/commissie/borderel",
     "app": {
-      "sha": "2557087994d651110029a1fc58ac7624501ac479",
-      "vuil": false
+      "sha": "2000405307af6cfa2faf3d6200ecbb591b163e54",
+      "vuil": true
     }
   },
   "online-afspraken-instellingen-fr": {
@@ -1094,8 +1094,8 @@
   "portaal-toegang-fr": {
     "route": "/contributors/05b820be-792d-4ecb-b41e-c8b00619b872",
     "app": {
-      "sha": "4e8f98f31b71f91c6e3085c5326cc6a9cad682c0",
-      "vuil": false
+      "sha": "2000405307af6cfa2faf3d6200ecbb591b163e54",
+      "vuil": true
     }
   },
   "commissieschemas-journaal-fr": {
@@ -1171,15 +1171,15 @@
   "portaal-dossier-detail-fr": {
     "route": "/portal-intermediary/dossiers",
     "app": {
-      "sha": "abfeceb216fc7e32a00b98374372cf8aaac5945a",
+      "sha": "2000405307af6cfa2faf3d6200ecbb591b163e54",
       "vuil": true
     }
   },
   "klantportaal-klant-fr": {
     "route": "/beheer/klantportaal",
     "app": {
-      "sha": "2557087994d651110029a1fc58ac7624501ac479",
-      "vuil": false
+      "sha": "2000405307af6cfa2faf3d6200ecbb591b163e54",
+      "vuil": true
     }
   },
   "rapporten-periode-fr": {
@@ -1276,15 +1276,15 @@
   "portaal-documenten": {
     "route": "/portal-intermediary/documenten",
     "app": {
-      "sha": "2557087994d651110029a1fc58ac7624501ac479",
-      "vuil": false
+      "sha": "2000405307af6cfa2faf3d6200ecbb591b163e54",
+      "vuil": true
     }
   },
   "portaal-documenten-fr": {
     "route": "/portal-intermediary/documenten",
     "app": {
-      "sha": "2557087994d651110029a1fc58ac7624501ac479",
-      "vuil": false
+      "sha": "2000405307af6cfa2faf3d6200ecbb591b163e54",
+      "vuil": true
     }
   },
   "kantoorprofiel-vragenlijst": {
@@ -1794,29 +1794,29 @@
   "portaal-aangebracht": {
     "route": "/portal-intermediary/aangebracht",
     "app": {
-      "sha": "2557087994d651110029a1fc58ac7624501ac479",
-      "vuil": false
+      "sha": "2000405307af6cfa2faf3d6200ecbb591b163e54",
+      "vuil": true
     }
   },
   "portaal-klant-aanbrengen": {
     "route": "/portal-intermediary/aangebracht/nieuw",
     "app": {
-      "sha": "2557087994d651110029a1fc58ac7624501ac479",
-      "vuil": false
+      "sha": "2000405307af6cfa2faf3d6200ecbb591b163e54",
+      "vuil": true
     }
   },
   "portaal-aangebracht-fr": {
     "route": "/portal-intermediary/aangebracht",
     "app": {
-      "sha": "2557087994d651110029a1fc58ac7624501ac479",
-      "vuil": false
+      "sha": "2000405307af6cfa2faf3d6200ecbb591b163e54",
+      "vuil": true
     }
   },
   "portaal-klant-aanbrengen-fr": {
     "route": "/portal-intermediary/aangebracht/nieuw",
     "app": {
-      "sha": "2557087994d651110029a1fc58ac7624501ac479",
-      "vuil": false
+      "sha": "2000405307af6cfa2faf3d6200ecbb591b163e54",
+      "vuil": true
     }
   },
   "kredietdossier-advies": {
@@ -1878,29 +1878,29 @@
   "portaal-nieuwe-klant": {
     "route": "/portal-intermediary/dossiers",
     "app": {
-      "sha": "abfeceb216fc7e32a00b98374372cf8aaac5945a",
+      "sha": "2000405307af6cfa2faf3d6200ecbb591b163e54",
       "vuil": true
     }
   },
   "portaal-nieuwe-klant-fr": {
     "route": "/portal-intermediary/dossiers",
     "app": {
-      "sha": "abfeceb216fc7e32a00b98374372cf8aaac5945a",
+      "sha": "2000405307af6cfa2faf3d6200ecbb591b163e54",
       "vuil": true
     }
   },
   "portaal-advies": {
     "route": "/portal-intermediary/dossiers/168d73ec-1423-4765-9da2-a9e23f8dd4fd/advies",
     "app": {
-      "sha": "2557087994d651110029a1fc58ac7624501ac479",
-      "vuil": false
+      "sha": "2000405307af6cfa2faf3d6200ecbb591b163e54",
+      "vuil": true
     }
   },
   "portaal-advies-fr": {
     "route": "/portal-intermediary/dossiers/168d73ec-1423-4765-9da2-a9e23f8dd4fd/advies",
     "app": {
-      "sha": "2557087994d651110029a1fc58ac7624501ac479",
-      "vuil": false
+      "sha": "2000405307af6cfa2faf3d6200ecbb591b163e54",
+      "vuil": true
     }
   },
   "commissiebarema-versies": {
