@@ -85,17 +85,27 @@ if (opdracht === 'check') {
   // ⚠️ ALLE PAGINA'S (24/09/2026). Hier stond één opvraging van 100, en de bibliotheek telde er 104. Vier
   //    video's leken VERDWENEN na een publiceerronde die niets wiste — de lijst was gewoon afgekapt, en de
   //    weesdetectie hieronder zag alles voorbij de 100 niet. Een lijst die stil stopt, leest als volledig.
-  const items = [];
+  // ⚠️ EN TEL OP UNIEKE GUID (01/11/2026). Vlak na een `wis` van 46 video's gaf Bunny 112 regels voor 102
+  //    video's: de paginering verschoof en bladzijde 2 herhaalde er tien van bladzijde 1. De telling las als
+  //    "tien niet gewist", en erger: de stopvoorwaarde hieronder telde de dubbels mee, dus de lus kon stoppen
+  //    vóór de laatste unieke video binnen was — dezelfde stille afkapping als die van 24/09.
+  const perGuid = new Map();
+  let regels = 0;
   for (let pagina = 1; ; pagina++) {
     const r = await api(`/videos?page=${pagina}&itemsPerPage=100`);
     if (pagina === 1) console.log(`GET /videos → HTTP ${r.status}`);
     if (!r.ok) { console.log(r.tekst.slice(0, 300)); process.exit(1); }
     const deel = r.json?.items ?? [];
-    items.push(...deel);
+    regels += deel.length;
+    for (const v of deel) perGuid.set(v.guid, v);
     const totaal = r.json?.totalItems;
-    if (!deel.length || (totaal != null && items.length >= totaal)) break;
+    if (!deel.length || (totaal != null && perGuid.size >= totaal)) break;
     if (totaal == null && deel.length < 100) break;
   }
+  const items = [...perGuid.values()];
+  if (regels !== items.length)
+    console.log(`⚠️ Bunny gaf ${regels} regels voor ${items.length} video('s): ${regels - items.length} dubbel over de `
+                + 'pagina\'s heen (paginering verschoof). Geteld op unieke guid.');
   console.log(`✅ verbonden met library ${LIB} — ${items.length} video('s)`);
   for (const v of items) console.log(`   ${v.guid}  ${String(v.length ?? '?').padStart(4)}s  ${v.title}`);
 
