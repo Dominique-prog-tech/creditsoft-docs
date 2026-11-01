@@ -373,3 +373,12 @@ html {
   height: 100%;
   border: 0;
 }
+
+
+/* Het logo VOLLEDIG dekkend (vlootafspraak 01/11/2026, docs-site-vormgeving.md). Material zet elke knop in de kop op
+   opacity: 0.7 (`.md-header__button`), ook de logoknop; daardoor oogde het logo op wit altijd een derde vervaagd, welke
+   kleur het ook had. Gevonden door CrediMatch bij Dominiques opmerking "het logo is nog redelijk licht"; hier nagemeten
+   (docs.cleanops.eu: opacity 0.7 op a.md-header__button.md-logo, het beeld zelf 1). */
+.md-header__button.md-logo {
+  opacity: 1;
+}
