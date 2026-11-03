@@ -1614,7 +1614,7 @@
     "film": "commissie-uitbetalen",
     "taal": "nl-BE",
     "pagina": "credit-management/commission-statements",
-    "lengte": 147.88,
+    "lengte": 148.05,
     "uitvoering": "handleiding",
     "routes": [
       "/commissie/borderel",
@@ -1624,76 +1624,79 @@
       "/commissie/fiche-28150"
     ],
     "app": {
-      "sha": "424b44913925712136081d528d42e7f30cb3dc56",
+      "sha": "faf5e95109d5c940cd322b529642ce066cc457c9",
       "vuil": true
     },
     "titel": "Commissie uitbetalen — borderel, vooruitzicht en restanten",
     "omschrijving": "Wat er uit uw commissieschema’s komt: het borderel per aanbrenger met zijn lijnen, het vooruitzicht dat toont wat er de komende maanden nog uitbetaald moet worden, de restanten die nooit op een borderel belandden en waarom, en de fiche 281.50 voor de fiscus.",
     "hash": "2e2508af22aac459",
-    "guid": "5087a0b2-ac0b-44ea-9e9c-1c23678d6b3b",
-    "vorigeGuid": "3d9cac4f-300b-489b-9b50-55cc136dbaee",
+    "guid": "e77edade-56d5-49f1-b500-1167d44855d3",
+    "vorigeGuid": "5087a0b2-ac0b-44ea-9e9c-1c23678d6b3b",
     "hoofdstukken": [
       {
         "titel": "De borderellen",
-        "start": 4.61,
-        "eind": 13.57
+        "start": 4.58,
+        "eind": 13.55
       },
       {
         "titel": "Openstaand of betaald",
-        "start": 17.46,
-        "eind": 27.77
+        "start": 17.44,
+        "eind": 27.75
       },
       {
         "titel": "Eén borderel",
-        "start": 32.66,
-        "eind": 39.44
+        "start": 32.72,
+        "eind": 39.5
       },
       {
         "titel": "De commissielijnen",
-        "start": 43.51,
-        "eind": 52.89
+        "start": 43.56,
+        "eind": 52.95
       },
       {
         "titel": "Het vooruitzicht",
-        "start": 57.87,
-        "eind": 66.7
+        "start": 57.99,
+        "eind": 66.81
       },
       {
         "titel": "De transacties van een maand",
-        "start": 72.74,
-        "eind": 85.56
+        "start": 72.87,
+        "eind": 85.69
       },
       {
         "titel": "Wat is blijven liggen",
-        "start": 90.55,
-        "eind": 100.58
+        "start": 90.68,
+        "eind": 100.71
       },
       {
         "titel": "De fiche 281.50",
-        "start": 105.47,
-        "eind": 116.15
+        "start": 105.64,
+        "eind": 116.32
       },
       {
         "titel": "Wat er nog moet gebeuren",
-        "start": 120.23,
-        "eind": 131.93
+        "start": 120.39,
+        "eind": 132.09
       },
       {
         "titel": "Tot slot",
-        "start": 136.51,
-        "eind": 145.38
+        "start": 136.68,
+        "eind": 145.55
       }
     ],
-    "gepubliceerdOp": "2026-10-31T19:55:32.237",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/5087a0b2-ac0b-44ea-9e9c-1c23678d6b3b/thumbnail.jpg",
+    "gepubliceerdOp": "2026-11-03T10:25:00.93",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/e77edade-56d5-49f1-b500-1167d44855d3/thumbnail.jpg",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/e77edade-56d5-49f1-b500-1167d44855d3",
     "gepubliceerdeHash": "2e2508af22aac459",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/5087a0b2-ac0b-44ea-9e9c-1c23678d6b3b"
+    "opTeRuimen": [
+      "3d9cac4f-300b-489b-9b50-55cc136dbaee"
+    ]
   },
   "commissie-uitbetalen-fr": {
     "film": "commissie-uitbetalen",
     "taal": "fr-BE",
     "pagina": "credit-management/commission-statements",
-    "lengte": 138.82,
+    "lengte": 138.81,
     "uitvoering": "handleiding",
     "routes": [
       "/commissie/borderel",
@@ -1703,70 +1706,73 @@
       "/commissie/fiche-28150"
     ],
     "app": {
-      "sha": "424b44913925712136081d528d42e7f30cb3dc56",
+      "sha": "faf5e95109d5c940cd322b529642ce066cc457c9",
       "vuil": true
     },
     "titel": "Payer la commission — bordereau, prévisions et reliquats",
     "omschrijving": "Ce qui découle de vos schémas de commission : le bordereau par apporteur avec ses lignes, les prévisions de ce qu’il reste à payer les mois à venir, les reliquats qui ne sont jamais arrivés sur un bordereau et pourquoi, et la fiche 281.50 pour le fisc.",
     "hash": "6decbcf5484e1c78",
-    "guid": "974a2742-e3c5-4325-9b49-ecc06ed4a245",
-    "vorigeGuid": "d97a237f-449e-4848-a79e-c8a7bafe3ebf",
+    "guid": "591e833a-b20c-4f23-99b6-92a15a9f6fa0",
+    "vorigeGuid": "974a2742-e3c5-4325-9b49-ecc06ed4a245",
     "hoofdstukken": [
       {
         "titel": "Les bordereaux",
-        "start": 4.43,
+        "start": 4.44,
         "eind": 11.77
       },
       {
         "titel": "En attente ou payé",
-        "start": 15.66,
-        "eind": 25.64
+        "start": 15.67,
+        "eind": 25.66
       },
       {
         "titel": "Un bordereau",
-        "start": 30.47,
-        "eind": 36.27
+        "start": 30.52,
+        "eind": 36.33
       },
       {
         "titel": "Les lignes de commission",
-        "start": 40.34,
-        "eind": 48.84
+        "start": 40.39,
+        "eind": 48.89
       },
       {
         "titel": "Les prévisions",
-        "start": 53.89,
-        "eind": 61.83
+        "start": 53.83,
+        "eind": 61.77
       },
       {
         "titel": "Les transactions d'un mois",
-        "start": 67.89,
-        "eind": 80.11
+        "start": 67.81,
+        "eind": 80.02
       },
       {
         "titel": "Ce qui est resté en souffrance",
-        "start": 85.06,
-        "eind": 94.53
+        "start": 85.02,
+        "eind": 94.49
       },
       {
         "titel": "La fiche 281.50",
-        "start": 99.41,
-        "eind": 108.79
+        "start": 99.37,
+        "eind": 108.75
       },
       {
         "titel": "Ce qui doit encore être fait",
-        "start": 112.88,
-        "eind": 123.7
+        "start": 112.82,
+        "eind": 123.64
       },
       {
         "titel": "Pour conclure",
         "start": 128.28,
-        "eind": 136.32
+        "eind": 136.31
       }
     ],
-    "gepubliceerdOp": "2026-10-31T19:55:45.428",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/974a2742-e3c5-4325-9b49-ecc06ed4a245/thumbnail.jpg",
+    "gepubliceerdOp": "2026-11-03T10:25:19.395",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/591e833a-b20c-4f23-99b6-92a15a9f6fa0/thumbnail.jpg",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/591e833a-b20c-4f23-99b6-92a15a9f6fa0",
     "gepubliceerdeHash": "6decbcf5484e1c78",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/974a2742-e3c5-4325-9b49-ecc06ed4a245"
+    "opTeRuimen": [
+      "d97a237f-449e-4848-a79e-c8a7bafe3ebf"
+    ]
   },
   "verzekeringen-nl": {
     "film": "verzekeringen",
