@@ -92,7 +92,7 @@ Le dossier tient sur une seule page. En haut, le bloc principal reprend les donn
 
 ### Données du dossier
 
-Le bloc d'en-tête porte ce dont vous avez le plus souvent besoin : numéro interne, **propriétaire**, **sales**, **statut**, institution financière, apporteur, le montant du crédit avec la case *Retenir*, et la date de l'acte.
+Le bloc d'en-tête porte ce dont vous avez le plus souvent besoin : numéro interne, **propriétaire**, **sales**, **statut**, institution financière, apporteur, le montant du crédit avec la case *Retenir*, et la date de l'acte. Si votre bureau travaille sans liste de produits, **Type de crédit** y figure aussi : la nature du crédit, par exemple un crédit à la consommation ou un leasing.
 
 Dans la carte en dessous à gauche figurent en haut les dates de dépôt et d'approbation, avec le type de dossier. En dessous, la signature de l'offre se trouve à côté de la date limite de l'offre, suivie des dates limites de l'acte et des conditions suspensives. Ces trois dates limites apparaissent sur le [tableau de bord](../getting-started/dashboard.md) parmi les délais. En dessous figure **À revoir le** avec un **motif** : la date à laquelle vous voulez réexaminer le dossier, même longtemps après l'acte. Si la date de l'acte est remplie, le lien **Un an après l'acte** complète la date pour vous. Le dossier apparaît alors sur le [tableau de bord](../getting-started/dashboard.md#le-suivi-des-credits-en-cours) sous *À revoir*, avec le motif. Le bas de la carte reprend le but, la valeur estimée et la quotité.
 
@@ -239,6 +239,8 @@ L'onglet **Factures** montre la **charte** de ce dossier et les **factures** qui
 ### Contrats
 
 Les contrats de crédit rattachés à ce dossier. La liste affiche le numéro, le produit, le statut, le montant, la durée, le taux d'intérêt et l'institution ; la charge mensuelle et la date de début se trouvent sur le contrat lui-même.
+
+Un contrat a toujours un produit. Si votre bureau travaille sans liste de produits, vous ne pouvez pas ajouter de contrat et vous choisissez la nature du crédit avec **Type de crédit** en haut du dossier.
 
 La fenêtre du contrat s'adapte au **type de produit** : pour un crédit ordinaire elle demande le type de produit, le taux, la variabilité et la charge mensuelle ; pour une assurance solde restant dû s'y ajoutent la prime, le type et la périodicité, ainsi que la désignation des personnes assurées.
 

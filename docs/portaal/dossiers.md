@@ -38,6 +38,9 @@ Mag uw kantoor zelf dossiers inleiden, dan kunt u de dossiers in uw lijst ook **
 backoffice, u past aan en klikt op **Bewaren**. Dat geldt ook voor de dossiers van de kantoren onder u. De interne opmerkingen
 van uw kantoor ziet u niet.
 
+De aard van het krediet kiest u bij het contract, als **product**. Werkt uw kantoor zonder productenlijst, dan staat bovenaan het
+dossier **Type krediet**, bijvoorbeeld consumentenkrediet of leasing.
+
 Mag uw kantoor dat niet, dan kunt u een dossier enkel **bekijken**, en staat dat ook bovenaan het dossier. Bijlagen opladen,
 documenten opvragen bij uw klant en commissie doorgeven aan uw makelaars kan wel.
 

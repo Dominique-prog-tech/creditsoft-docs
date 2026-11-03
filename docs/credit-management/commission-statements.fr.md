@@ -85,7 +85,7 @@ il n'a pas sa place à côté d'un bouton que vous utilisez tous les jours.
 
 ### Imprimer
 
-Ouvre l'**aperçu avant impression** : un pdf en format paysage, avec votre en-tête — logo, adresse, coordonnées et numéro FSMA issus de votre fiche d'entreprise — et à droite l'adresse de l'apporteur avec son numéro de TVA, de sorte que le document se lise comme un décompte qui lui est adressé.
+Ouvre l'**aperçu avant impression** : un pdf en format paysage, avec votre en-tête — logo, adresse, coordonnées et numéro FSMA issus de votre fiche d'entreprise — et à droite l'adresse de l'apporteur avec son numéro d'entreprise, de sorte que le document se lise comme un décompte qui lui est adressé.
 
 Chaque ligne de commission indique la **date d'acte**, **votre référence**, le **client**, le **bien**, le **prêteur**, le **montant du crédit** et la **commission**. Les lignes sont triées par date d'acte. Une commission libre n'a pas de dossier : vous y lisez la description à la place. Le total figure en bas, et les en-têtes de colonnes se répètent sur chaque page avec un numéro de page.
 

@@ -92,7 +92,7 @@ Het dossier is één pagina. Bovenaan staat het kernblok met de gegevens die u h
 
 ### Dossiergegevens
 
-Het kopblok bovenaan draagt wat u het vaakst nodig hebt: intern nummer, **eigenaar**, **sales**, **status**, financiële instelling, aanbrenger, het kredietbedrag met het vinkje *Inhouden*, en de datum van de akte.
+Het kopblok bovenaan draagt wat u het vaakst nodig hebt: intern nummer, **eigenaar**, **sales**, **status**, financiële instelling, aanbrenger, het kredietbedrag met het vinkje *Inhouden*, en de datum van de akte. Werkt uw kantoor zonder productenlijst, dan staat er ook **Type krediet**: de aard van het krediet, bijvoorbeeld consumentenkrediet of leasing.
 
 In de kaart eronder links staan bovenaan de datums van indiening en goedkeuring, met het type dossier. Daaronder staat de ondertekening van het aanbod naast de uiterste datum voor het aanbod, en dan de uiterste datums voor de akte en de opschortende voorwaarden. Die drie uiterste datums verschijnen op het [dashboard](../getting-started/dashboard.md) bij de termijnen. Daaronder staat **Herbekijken op** met een **reden**: de datum waarop u het dossier wil nalopen, ook lang nadat het krediet geakteerd is. Is de datum van de akte ingevuld, dan vult de link **Eén jaar na de akte** de datum voor u in. Het dossier verschijnt dan op het [dashboard](../getting-started/dashboard.md#opvolging-van-lopende-kredieten) bij *Herbekijken*, met de reden erbij. Onderaan de kaart volgen het doel, de schattingswaarde en de quotiteit.
 
@@ -239,6 +239,8 @@ Het tabblad **Facturen** toont het **charter** van dit dossier en de **facturen*
 ### Contracten
 
 De kredietcontracten onder dit dossier. De lijst toont nummer, product, status, bedrag, looptijd, rentevoet en instelling; maandlast en startdatum vindt u op het contract zelf.
+
+Een contract heeft altijd een product. Werkt uw kantoor zonder productenlijst, dan kunt u geen contract toevoegen en kiest u de aard van het krediet met **Type krediet** bovenaan het dossier.
 
 Het contractvenster past zich aan de **productsoort** aan: bij een gewoon krediet vraagt het producttype, rentevoet, variabiliteit en maandlast, bij een schuldsaldoverzekering komen daar premie, type en periodiciteit bij, plus het aanvinken van wie verzekerd is.
 

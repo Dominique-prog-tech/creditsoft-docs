@@ -54,10 +54,10 @@ consulter. Le tiroir et la fiche affichent la même chose et fonctionnent de man
 
 ### Identité
 
-Qui est cet apporteur et quel rôle il joue : **type d'apporteur** (principal, bureau ou sous-agent), **rattaché à** — l'apporteur sous lequel il se trouve dans l'arborescence —, **forme juridique**, **relation**, **formule d'appel**, **qualité**, le nom ou la **raison sociale** avec le **type d'entreprise**, le **numéro de TVA**, le **numéro d'agent**, la **langue des documents** (obligatoire) et le **groupement** — le groupe auquel appartient cet apporteur, issu de votre liste sous [Groupes](groups.md).
+Qui est cet apporteur et quel rôle il joue : **type d'apporteur** (principal, bureau ou sous-agent), **rattaché à** — l'apporteur sous lequel il se trouve dans l'arborescence —, **forme juridique**, **relation**, **formule d'appel**, **qualité**, le nom ou la **raison sociale** avec le **type d'entreprise**, le **numéro d'entreprise**, le **numéro d'agent**, la **langue des documents** (obligatoire) et le **groupement** — le groupe auquel appartient cet apporteur, issu de votre liste sous [Groupes](groups.md).
 
 !!! tip "Récupérer automatiquement les données d'entreprise"
-    Saisissez le **numéro de TVA** et cliquez sur **Récupérer** : CreditSoft reprend le nom, la forme juridique
+    Saisissez le **numéro d'entreprise** et cliquez sur **Récupérer** : CreditSoft reprend le nom, la forme juridique
     et l'adresse directement depuis la Banque-Carrefour des Entreprises.
 
 ### Agrément et statut
@@ -168,7 +168,7 @@ haut. Sélectionnez d'abord la fiche que vous voulez **conserver**, cliquez sur 
 la fenêtre celle qui doit y être absorbée.
 
 Avant que vous confirmiez, la fenêtre affiche les **coordonnées qui seront perdues** : l'adresse e-mail, le
-numéro de téléphone et le numéro de TVA de la fiche appelée à disparaître. Vous voyez ainsi d'emblée s'il s'y
+numéro de téléphone et le numéro d'entreprise de la fiche appelée à disparaître. Vous voyez ainsi d'emblée s'il s'y
 trouve quelque chose que vous préférez reprendre au préalable.
 
 **Après** la fusion, vous obtenez un aperçu de **ce qui a été déplacé**, par type : dossiers, commissions,

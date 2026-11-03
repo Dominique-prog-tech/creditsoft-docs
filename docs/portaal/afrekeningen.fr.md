@@ -22,14 +22,18 @@ courtier. Cliquez en haut sur **+ Reverser une commission**. Dans la fenêtre qu
 | Champ | Signification |
 |---|---|
 | **Courtier** | La personne que vous voulez payer. La liste reprend les courtiers rattachés à votre bureau. |
-| **Montant** | Ce que ce courtier reçoit. C'est vous qui le déterminez — indépendamment de ce que vous percevez. |
+| **Pourcentage de votre commission** | Le pourcentage de votre propre commission sur ce dossier que ce courtier reçoit. Dès que vous quittez le champ, CreditSoft calcule le montant. Vous pouvez aussi laisser ce champ vide et saisir directement un montant. |
+| **Montant** | Ce que ce courtier reçoit. Si vous saisissez vous-même un montant, la fenêtre indique le pourcentage correspondant. |
 | **Date de début** | À partir de quand la comptabilisation commence. CreditSoft remplit la date de l'acte ; s'il n'y a pas encore d'acte, vous la choisissez vous-même. |
 | **Payé directement (%)** | La part payée immédiatement. À 100, vous payez la totalité en une fois. |
 | **Étalé sur (mois)** | Sur combien de mois le solde est réparti. Obligatoire dès que vous payez moins de 100 % immédiatement. |
 
 Cliquez sur **Reverser**. S'il manque encore quelque chose, la fenêtre l'indique. Si tout est en ordre, la fenêtre se
-ferme et le courtier figure dans le tableau. Ce que vous percevez vous-même est indiqué à titre informatif. C'est une
-aide, pas une limite : la décision vous appartient.
+ferme et le courtier figure dans le tableau. Ce que vous percevez vous-même est indiqué à titre informatif : la somme de votre
+commission en cours sur ce dossier, sans ce qui est arrêté. C'est une aide, pas une limite : la décision vous appartient.
+
+!!! note "C'est le montant qui est enregistré"
+    Le pourcentage vous aide uniquement à calculer au moment où vous reversez. Si votre propre commission change par la suite, le montant de votre courtier ne suit pas. Si aucune commission n'est en cours pour vous sur le dossier, vous ne pouvez pas saisir de pourcentage, mais bien un montant.
 
 !!! warning "La première comptabilisation tombe le mois suivant la date de début"
     Si vous indiquez le 15 janvier, la première ligne de commission se situe en **février**. C'est la même

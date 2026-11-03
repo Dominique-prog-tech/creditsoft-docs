@@ -40,6 +40,9 @@ Si votre bureau peut introduire lui-même des dossiers, vous pouvez aussi **mett
 l'écran fonctionne comme dans le back-office, vous adaptez et cliquez sur **Enregistrer**. Cela vaut aussi pour les dossiers
 des bureaux qui dépendent de vous. Les remarques internes de votre bureau ne vous sont pas affichées.
 
+Vous choisissez la nature du crédit au niveau du contrat, comme **produit**. Si votre bureau travaille sans liste de produits, **Type de crédit**
+figure en haut du dossier, par exemple un crédit à la consommation ou un leasing.
+
 Sinon, vous pouvez uniquement **consulter** un dossier, et c'est indiqué en haut du dossier. Vous pouvez toutefois ajouter des
 pièces jointes, demander des documents à votre client et transmettre une commission à vos courtiers.
 

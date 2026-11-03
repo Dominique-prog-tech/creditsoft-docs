@@ -21,13 +21,17 @@ Klik bovenaan op **+ Commissie doorgeven**. In het venster dat opengaat, vult u 
 | Veld | Wat het betekent |
 |---|---|
 | **Makelaar** | Wie u wilt betalen. De lijst bevat de makelaars die onder uw kantoor hangen. |
-| **Bedrag** | Wat die makelaar krijgt. U bepaalt dit zelf — het staat los van wat u zelf ontvangt. |
+| **Percentage van uw commissie** | Hoeveel procent van uw eigen commissie op dit dossier die makelaar krijgt. Zodra u het veld verlaat, rekent CreditSoft het bedrag uit. U mag dit veld ook leeg laten en meteen een bedrag invullen. |
+| **Bedrag** | Wat die makelaar krijgt. Vult u zelf een bedrag in, dan toont het venster welk percentage dat is. |
 | **Startdatum** | Vanaf wanneer er geboekt wordt. CreditSoft vult de datum van de akte in; is er nog geen akte, dan kiest u ze zelf. |
 | **Direct uitbetaald (%)** | Welk deel meteen betaald wordt. Op 100 betaalt u het volledige bedrag in één keer. |
 | **Gespreid over (maanden)** | Over hoeveel maanden de rest gespreid wordt. Verplicht zodra u minder dan 100 % direct uitbetaalt. |
 
 Klik op **Doorgeven**. Ontbreekt er nog iets, dan zegt het venster wat. Lukt het, dan sluit het venster en staat de
-makelaar in de tabel. Wat u zelf ontvangt, staat er ter informatie bij. Dat is een hulpmiddel, geen grens: u beslist zelf.
+makelaar in de tabel. Wat u zelf ontvangt, staat er ter informatie bij: de som van uw lopende commissie op dit dossier, zonder wat gestopt is. Dat is een hulpmiddel, geen grens: u beslist zelf.
+
+!!! note "Bewaard wordt het bedrag"
+    Het percentage helpt u enkel rekenen op het moment dat u doorgeeft. Wijzigt uw eigen commissie later, dan beweegt het bedrag van uw makelaar niet mee. Loopt er op het dossier geen commissie voor u, dan kunt u geen percentage invullen, maar wel een bedrag.
 
 !!! warning "De eerste boeking valt in de maand ná de startdatum"
     Zet u de startdatum op 15 januari, dan staat de eerste commissielijn op **februari**. Dat is dezelfde

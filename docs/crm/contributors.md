@@ -55,10 +55,10 @@ fiche tonen hetzelfde en werken op elk scherm gelijk;
 
 ### Identiteit
 
-Wie deze aanbrenger is en welke rol hij speelt: **type aanbrenger** (hoofd, kantoor of sub), **valt onder** — de aanbrenger waaronder hij hangt in de boom —, **rechtsvorm**, **relatie**, **aanspreking**, **hoedanigheid**, de naam of **bedrijfsnaam** met het **bedrijfstype**, het **btw-nummer**, het **aanbrengernummer**, de **documenttaal** (verplicht) en de **groepering** — de groep waartoe deze aanbrenger behoort, uit uw lijst bij [Groepen](groups.md).
+Wie deze aanbrenger is en welke rol hij speelt: **type aanbrenger** (hoofd, kantoor of sub), **valt onder** — de aanbrenger waaronder hij hangt in de boom —, **rechtsvorm**, **relatie**, **aanspreking**, **hoedanigheid**, de naam of **bedrijfsnaam** met het **bedrijfstype**, het **ondernemingsnummer**, het **aanbrengernummer**, de **documenttaal** (verplicht) en de **groepering** — de groep waartoe deze aanbrenger behoort, uit uw lijst bij [Groepen](groups.md).
 
 !!! tip "Bedrijfsgegevens automatisch ophalen"
-    Vul het **btw-nummer** in en klik op **Ophalen**: CreditSoft haalt naam, rechtsvorm en adres rechtstreeks
+    Vul het **ondernemingsnummer** in en klik op **Ophalen**: CreditSoft haalt naam, rechtsvorm en adres rechtstreeks
     uit de Kruispuntbank van Ondernemingen.
 
 ### Erkenning en status
@@ -169,7 +169,7 @@ bovenaan. Selecteer eerst de fiche die u wil **behouden**, klik dan op de knop e
 fiche daarin moet opgaan.
 
 Voor u bevestigt, toont het venster de **contactgegevens die verloren gaan**: het e-mailadres, het
-telefoonnummer en het btw-nummer van de fiche die verdwijnt. Zo ziet u meteen of daar iets bij staat dat u
+telefoonnummer en het ondernemingsnummer van de fiche die verdwijnt. Zo ziet u meteen of daar iets bij staat dat u
 liever eerst overneemt.
 
 Ná het samenvoegen krijgt u een overzicht van **wat er verhuisd is**, per soort: dossiers, commissies, taken,

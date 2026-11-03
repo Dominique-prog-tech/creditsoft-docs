@@ -85,7 +85,7 @@ ongedaan, en die knop hoort niet naast een knop die u elke dag gebruikt.
 
 ### Afdrukken
 
-Opent het **afdrukvoorbeeld**: een pdf op een liggend blad, met uw briefhoofd — logo, adres, contactgegevens en FSMA-nr. uit uw bedrijfsfiche — en rechts het adres van de aanbrenger met zijn btw-nummer, zodat het document leest als een afrekening die aan hém gericht is.
+Opent het **afdrukvoorbeeld**: een pdf op een liggend blad, met uw briefhoofd — logo, adres, contactgegevens en FSMA-nr. uit uw bedrijfsfiche — en rechts het adres van de aanbrenger met zijn ondernemingsnummer, zodat het document leest als een afrekening die aan hém gericht is.
 
 Per commissielijn staat er: de **aktedatum**, **uw kenmerk**, de **klant**, het **pand**, de **kredietverstrekker**, het **kredietbedrag** en de **commissie**. De lijnen staan op aktedatum gesorteerd. Een vrije commissie heeft geen dossier: daar leest u de omschrijving in de plaats. Onderaan het totaal, en de kolomkoppen staan op elke bladzijde opnieuw met een paginanummer.
 
