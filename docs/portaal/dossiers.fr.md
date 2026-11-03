@@ -70,6 +70,34 @@ Cliquez sur **Créer**. Le client est aussitôt sélectionné ; **Enregistrer** 
     Si votre client est déjà connu d'un autre bureau, vous ne le voyez pas dans la liste, et CreditSoft ne vous
     dit pas non plus qu'il existe. Créez-le sans crainte : votre bureau fusionne les clients en double.
 
+## Modifier les données d'un client
+
+Si votre bureau peut introduire lui-même des dossiers, vous modifiez aussi les données de vos clients. Ouvrez le client sous
+**Demandeurs de crédit** et cliquez sur **Données du client**. Le bouton concerne le client lié au dossier : si vous
+choisissez un autre client dans la fenêtre, enregistrez d'abord.
+
+![La page Données du client dans le portail apporteurs, avec en haut le lien de retour au dossier et en dessous les parties Identité, Famille, Adresse et contact et Profession.](../images/portaal-klantgegevens-fr.png "Les données d'un client dans le portail apporteurs")
+
+| Partie | Contenu |
+|---|---|
+| **Identité** | Appellation, nom, données de naissance, sexe, nationalité, langues, numéro de registre national et carte d'identité |
+| **Famille** | État civil, mariage, partenaire, enfants et autres personnes à charge |
+| **Adresse et contact** | L'adresse, le téléphone, le GSM et l'adresse e-mail |
+| **Profession** | Profession, type de contrat, employeur, fonction, date d'entrée en service, ou l'activité indépendante |
+
+Le **Nom** et la **Langue des documents** sont obligatoires. L'e-mail, le téléphone et le numéro de registre national sont
+vérifiés. Vous choisissez le **partenaire** parmi les clients de votre bureau et des bureaux placés sous le vôtre.
+
+Cliquez sur **Enregistrer**. **Fermer** ou le lien en haut vous ramène au dossier. Si vous n'avez pas encore enregistré,
+CreditSoft vous demande d'abord si vous voulez quitter la page.
+
+Ces données valent pour ce client sur tous ses dossiers. Votre bureau voit dans l'**Historique** du client qui a modifié quoi.
+
+!!! info "Ce que vous ne voyez pas ici"
+    Les données internes de votre bureau, comme les remarques et le responsable, ne figurent pas sur cette page et restent
+    inchangées. Les données d'une **société** sont modifiées par votre bureau. Si vous ouvrez un client hors de votre
+    périmètre, vous obtenez *« Ce client n'est pas disponible. »*
+
 ## Les onglets à droite
 
 À droite du dossier se trouvent des onglets. Ceux que vous voyez dépendent du dossier et de vos droits.

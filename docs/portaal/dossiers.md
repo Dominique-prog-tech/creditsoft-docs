@@ -67,6 +67,34 @@ Klik op **Aanmaken**. De klant staat meteen gekozen; met **Bewaren** hangt u hem
     Is uw klant al bekend bij een ander kantoor, dan ziet u hem niet in de lijst, en CreditSoft zegt
     ook niet dat hij bestaat. Maak hem gerust aan: uw kantoor voegt dubbele klanten samen.
 
+## De gegevens van een klant wijzigen
+
+Mag uw kantoor zelf dossiers inleiden, dan wijzigt u ook de gegevens van uw klanten. Open de klant bij
+**Kredietaanvragers** en klik op **Klantgegevens**. De knop hoort bij de klant die aan het dossier hangt: kiest u in het
+venster een andere klant, bewaar dan eerst.
+
+![De pagina Klantgegevens in het aanbrengersportaal, met bovenaan de link terug naar het dossier en daaronder de delen Identiteit, Gezin, Adres en contact en Beroep.](../images/portaal-klantgegevens.png "De gegevens van een klant in het aanbrengersportaal")
+
+| Deel | Wat erin staat |
+|---|---|
+| **Identiteit** | Aanspreking, naam, geboortegegevens, geslacht, nationaliteit, talen, rijksregisternummer en identiteitskaart |
+| **Gezin** | Burgerlijke staat, huwelijk, partner, kinderen en andere personen ten laste |
+| **Adres en contact** | Het adres, de telefoon, de gsm en het e-mailadres |
+| **Beroep** | Beroep, soort contract, werkgever, functie, datum van indiensttreding, of de zelfstandige activiteit |
+
+**Naam** en **Documenttaal** zijn verplicht. E-mail, telefoon en rijksregisternummer worden nagekeken. De **partner** kiest u
+uit de klanten van uw kantoor en van de kantoren onder u.
+
+Klik op **Bewaren**. Met **Sluiten** of de link bovenaan gaat u terug naar het dossier. Hebt u nog niet bewaard, dan vraagt
+CreditSoft eerst of u de pagina wil verlaten.
+
+De gegevens gelden voor deze klant op al zijn dossiers. Uw kantoor ziet in het **Logboek** van de klant wie wat gewijzigd heeft.
+
+!!! info "Wat u hier niet ziet"
+    De interne gegevens van uw kantoor, zoals de opmerkingen en de verantwoordelijke, staan niet op deze pagina en blijven
+    ongewijzigd. De gegevens van een **bedrijf** wijzigt uw kantoor. Opent u een klant die buiten uw bereik valt, dan
+    krijgt u *"Deze klant is niet beschikbaar."*
+
 ## De tabbladen rechts
 
 Rechts op het dossier staan tabbladen. Welke u ziet, hangt af van het dossier en van uw rechten.

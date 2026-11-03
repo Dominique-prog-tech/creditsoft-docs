@@ -148,7 +148,7 @@ Le reste du bien se trouve derrière le bouton **Fiche d'investissement & bien�
 
 ### Demandeurs de crédit
 
-Qui demande le crédit. Liez une relation existante avec **+ Lier un demandeur**. La liste indique, pour chaque demandeur, combien de **revenus** et combien de **charges** ont été saisis.
+Qui demande le crédit. Liez une relation existante avec **+ Lier un demandeur**. La liste indique, pour chaque demandeur, combien de **revenus** et combien de **charges** ont été saisis. Ouvrez un demandeur et cliquez sur **Données du client** pour ouvrir sa fiche de relation.
 
 Si la personne que vous liez porte encore un **type de contact**, comme *Prospect*, CreditSoft demande après
 l'enregistrement s'il peut être effacé. Elle disparaît ainsi de votre liste de prospects : elle est désormais

@@ -79,6 +79,11 @@ export const ID = {
   // 1.199.0 — het advies in het AANBRENGERSPORTAAL, als aanbrenger2 (Horizon Makelaars Oostende, mag inleiden): DEMO-3418
   // (een kantoor onder hem, Nederlandstalige klant) en DEMO-4043 (zijn eigen kantoor, Franstalige klant). Gekozen met een query
   // op credit_file.advice binnen zijn tak; valt om na een her-seed.
+  // 1.205.0 — de klantgegevens in het AANBRENGERSPORTAAL, als aanbrenger2: een klant op DEMO-1229, zijn eigen kantoor. De generator van
+  // de demo vult burgerlijke staat, beroep en identiteitskaart niet, dus die zijn voor dit beeld met de hand gezet op tenant_demo
+  // (fictief, met een rijksregisternummer dat de controle doorstaat). Valt om na een her-seed.
+  klantPortaal: 'cc0fc683-4b0f-4ba6-b386-b191ebc7e8ad',
+  dossierKlantPortaal: 'e058dcbc-6a68-4dd5-8a18-6320686644a0',
   dossierAdviesPortaal: '168d73ec-1423-4765-9da2-a9e23f8dd4fd',
   dossierAdviesPortaalFr: '6b7f5acd-00ba-4a96-8c1c-d70ea3f1c23f',
   schema:   'a9b48983-8066-4209-a315-8f950e6983dd',   // het actieve schema van DEMO-1089

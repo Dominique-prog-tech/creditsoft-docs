@@ -148,7 +148,7 @@ De rest van het pand zit achter de knop **Investeringsfiche & pand…**: het pan
 
 ### Kredietaanvragers
 
-Wie het krediet aanvraagt. Koppel een bestaande relatie met **+ Aanvrager koppelen**. De lijst toont per aanvrager hoeveel **inkomsten** en hoeveel **lasten** er ingevuld zijn.
+Wie het krediet aanvraagt. Koppel een bestaande relatie met **+ Aanvrager koppelen**. De lijst toont per aanvrager hoeveel **inkomsten** en hoeveel **lasten** er ingevuld zijn. Open een aanvrager en klik op **Klantgegevens** om zijn relatiefiche te openen.
 
 Draagt de persoon die u koppelt nog een **type contact**, zoals *Prospect*, dan vraagt CreditSoft na het bewaren
 of dat type gewist mag worden. Zo verdwijnt die persoon uit uw lijst van prospecten: het is nu een klant. **Laten staan**

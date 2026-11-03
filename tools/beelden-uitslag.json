@@ -2000,5 +2000,19 @@
       "sha": "424b44913925712136081d528d42e7f30cb3dc56",
       "vuil": true
     }
+  },
+  "portaal-klantgegevens": {
+    "route": "/portal-intermediary/klanten/cc0fc683-4b0f-4ba6-b386-b191ebc7e8ad",
+    "app": {
+      "sha": "32a36080df07dbf763e33ecc0d10a74b1384ee86",
+      "vuil": true
+    }
+  },
+  "portaal-klantgegevens-fr": {
+    "route": "/portal-intermediary/klanten/cc0fc683-4b0f-4ba6-b386-b191ebc7e8ad",
+    "app": {
+      "sha": "32a36080df07dbf763e33ecc0d10a74b1384ee86",
+      "vuil": true
+    }
   }
 }

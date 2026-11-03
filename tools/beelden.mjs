@@ -63,7 +63,8 @@ const VORM = JSON.parse(readFileSync(new URL('./beeldvorm.json', import.meta.url
 // opgeeft, krijgt de beheerder.
 const AANBRENGER_PORTAAL = ['portaal-overzicht', 'portaal-dossiers', 'portaal-commissies',
                             'portaal-documenten', 'portaal-dossier-detail',
-                            'portaal-aangebracht', 'portaal-klant-aanbrengen', 'portaal-nieuwe-klant', 'portaal-advies'];
+                            'portaal-aangebracht', 'portaal-klant-aanbrengen', 'portaal-nieuwe-klant', 'portaal-advies',
+                            'portaal-klantgegevens'];
 
 // ⚠️ MET DE HAND UITGESNEDEN. Deze twee beelden tonen een stuk scherm dat geen enkel element is:
 // rapporten-voorbeeld is één blad uit een gerenderd rapport, kantoorprofiel-vragenlijst een uitsnede
@@ -377,6 +378,8 @@ const SCHOTEN = [
   ['portaal-dossiers',             '/portal-intermediary/dossiers'],
   ['portaal-aangebracht',          '/portal-intermediary/aangebracht'],
   ['portaal-klant-aanbrengen',     '/portal-intermediary/aangebracht/nieuw'],
+  // 1.205.0: de klantgegevens. Haar eerste vorm staat met de hand in beeldvorm.json: een nieuw beeld heeft nog geen PNG.
+  ['portaal-klantgegevens',        `/portal-intermediary/klanten/${ID.klantPortaal}?dossier=${ID.dossierKlantPortaal}`],
   ['portaal-commissies',           '/portal-intermediary/commissies'],
   ['portaal-documenten',           '/portal-intermediary/documenten'],
   // ── fiches ──
@@ -1189,6 +1192,8 @@ const VERWACHT = {
   'portaal-aangebracht':        /Ellen Maes/,
   // Enkel op de pagina met het formulier: de knop die doorgeeft. "Klant aanbrengen" staat ook op de knop van de lijst.
   'portaal-klant-aanbrengen':   /Doorgeven aan kantoor|Transmettre au bureau/i,
+  // Het formulier zelf, met een veld dat enkel daar staat. De titel staat ook boven "Deze klant is niet beschikbaar".
+  'portaal-klantgegevens':      /Burgerlijke staat|État civil/,
   'bedrijfsfiche-logo':         /Logo/i,
   'commissieschema-fiche':      /Algemene gegevens|Données générales/i,
   // "Omzetting" staat enkel op het tabblad Productie — niet op de fiche, niet op het dashboard.
