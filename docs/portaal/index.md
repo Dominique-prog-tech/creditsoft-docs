@@ -40,10 +40,13 @@ In hetzelfde venster staan de rechten. Ze bepalen samen wat er in het portaal ve
     portaal staat een zin die zegt over hoeveel kantoren de getoonde cijfers gaan — zo weet de lezer altijd
     waar hij naar kijkt.
 
-Met de schakelaar **Mag zelf een kredietdossier inleiden** krijgt de aanbrenger in *Mijn dossiers* de knop
+Met de schakelaar **Mag zelf kredietdossiers inleiden en wijzigen** krijgt de aanbrenger in *Mijn dossiers* de knop
 **Nieuw dossier**. Het dossier wordt meteen aangemaakt, met hem als aanbrenger en met de beginstatus van uw
 kantoor, en opent als fiche. Er is geen stap waarin u het eerst aanvaardt: u ziet het dossier gewoon in uw
-eigen lijst verschijnen.
+eigen lijst verschijnen. Hij wijzigt dan ook de dossiers die hij ziet en de gegevens van zijn klanten.
+
+Zonder deze schakelaar kan hij de dossiers enkel bekijken. Bijlagen opladen, documenten opvragen bij de klant en commissie
+doorgeven aan zijn makelaars kan wel.
 
 Met de schakelaar **Ziet het commissiebedrag op de dossierfiche en vult het in** vult de aanbrenger de commissie van een
 dossier zelf in, en legt u dat bedrag naast de borderellen van de maatschappijen. Zodra u de commissie verdeeld hebt, kan

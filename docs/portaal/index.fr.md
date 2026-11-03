@@ -40,10 +40,13 @@ Les droits se trouvent dans la même fenêtre. Ensemble, ils déterminent ce qui
     portail porte une phrase indiquant sur combien de bureaux portent les chiffres affichés — le lecteur sait
     ainsi toujours ce qu'il a sous les yeux.
 
-Avec l'interrupteur **Peut introduire lui-même un dossier de crédit**, l'apporteur obtient dans *Mes dossiers*
+Avec l'interrupteur **Peut introduire et modifier lui-même des dossiers de crédit**, l'apporteur obtient dans *Mes dossiers*
 le bouton **Nouveau dossier**. Le dossier est créé immédiatement, avec lui comme apporteur et avec le statut de
 départ de votre bureau, et s'ouvre comme fiche. Il n'y a pas d'étape où vous l'acceptez d'abord : vous voyez
-simplement le dossier apparaître dans votre propre liste.
+simplement le dossier apparaître dans votre propre liste. Il modifie alors aussi les dossiers qu'il voit et les données de ses clients.
+
+Sans cet interrupteur, il peut uniquement consulter les dossiers. Il peut toutefois ajouter des pièces jointes, demander des
+documents au client et transmettre une commission à ses courtiers.
 
 Avec l'interrupteur **Voit le montant de commission sur la fiche du dossier et le saisit**, l'apporteur saisit lui-même la
 commission d'un dossier, et vous comparez ce montant aux bordereaux des compagnies. Dès que vous avez réparti la commission,

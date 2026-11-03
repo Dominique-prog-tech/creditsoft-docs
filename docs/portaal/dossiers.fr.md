@@ -36,9 +36,12 @@ Cliquez sur un numéro de dossier pour l'ouvrir. Avec **Ctrl-clic** (Cmd sur un 
 Le dossier s'ouvre sur une page distincte, avec le même contenu que celui que voit votre bureau : les
 données du crédit, le bien, les demandeurs, les contrats, les parties concernées et le journal.
 
-Vous pouvez aussi **mettre à jour** les dossiers de votre liste : l'écran fonctionne comme dans le back-office,
-vous adaptez et cliquez sur **Enregistrer**. Cela vaut aussi pour les dossiers des bureaux qui dépendent de vous.
-Les remarques internes de votre bureau ne vous sont pas affichées.
+Si votre bureau peut introduire lui-même des dossiers, vous pouvez aussi **mettre à jour** les dossiers de votre liste :
+l'écran fonctionne comme dans le back-office, vous adaptez et cliquez sur **Enregistrer**. Cela vaut aussi pour les dossiers
+des bureaux qui dépendent de vous. Les remarques internes de votre bureau ne vous sont pas affichées.
+
+Sinon, vous pouvez uniquement **consulter** un dossier, et c'est indiqué en haut du dossier. Vous pouvez toutefois ajouter des
+pièces jointes, demander des documents à votre client et transmettre une commission à vos courtiers.
 
 Si votre bureau l'a activé pour vous, la fiche porte aussi le **Montant de commission**. Vous y saisissez la commission du
 dossier, et votre bureau compare ce montant aux bordereaux qu'il reçoit des compagnies. Dès que votre bureau a réparti la

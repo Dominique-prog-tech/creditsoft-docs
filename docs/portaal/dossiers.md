@@ -34,8 +34,12 @@ Klik op een dossiernummer om het dossier te openen. Met **Ctrl-klik** (Cmd op ee
 Het dossier opent op een eigen pagina, met dezelfde inhoud als uw kantoor ziet: kredietgegevens, het pand,
 de aanvragers, de contracten, de betrokken partijen en het journaal.
 
-U kunt de dossiers in uw lijst ook **bijwerken**: het scherm werkt zoals in de backoffice, u past aan en klikt op
-**Bewaren**. Dat geldt ook voor de dossiers van de kantoren onder u. De interne opmerkingen van uw kantoor ziet u niet.
+Mag uw kantoor zelf dossiers inleiden, dan kunt u de dossiers in uw lijst ook **bijwerken**: het scherm werkt zoals in de
+backoffice, u past aan en klikt op **Bewaren**. Dat geldt ook voor de dossiers van de kantoren onder u. De interne opmerkingen
+van uw kantoor ziet u niet.
+
+Mag uw kantoor dat niet, dan kunt u een dossier enkel **bekijken**, en staat dat ook bovenaan het dossier. Bijlagen opladen,
+documenten opvragen bij uw klant en commissie doorgeven aan uw makelaars kan wel.
 
 Heeft uw kantoor het voor u aangezet, dan staat op de fiche ook het **Commissiebedrag**. U vult er de commissie van het
 dossier in, en uw kantoor legt dat bedrag naast de borderellen die het van de maatschappijen ontvangt. Zodra uw kantoor
