@@ -92,7 +92,10 @@ niet. Concreet:
 - bij een nieuw commissieschema stelt CreditSoft het kantoor voor, en staan de aanbrengers onder dat kantoor niet in de
   lijst;
 - in de [verdeling volgens het barema](../beheer/commissie-instellingen.md#hoofdkantoor-voor-de-commissieverdeling)
-  krijgt het kantoor het deel van het aanbrengende kantoor.
+  krijgt het kantoor het deel van het aanbrengende kantoor;
+- de fiches van die aanbrengers beheert het kantoor zelf, bij [Mijn makelaars](../portaal/makelaars.md) in het portaal.
+  Ze staan niet in de lijst *Aanbrengers*, niet in de zoekfunctie en niet in de prullenbak, en de fiche opent niet.
+  Hun naam en de bedragen ziet u wel op de dossiers en in de rapporten.
 
 Laat het uit bij een kantoor waarvan u de aanbrengers zelf betaalt. Een schema dat al bestond, blijft zoals het is.
 

@@ -155,6 +155,7 @@ plugins:
             Overzicht: Aperçu
             Mijn dossiers: Mes dossiers
             Aangebracht: Apportés
+            Mijn makelaars: Mes courtiers
             Mijn commissies: Mes commissions
             Afrekeningen: Décomptes
             Documenten: Documents
@@ -349,6 +350,7 @@ nav:
     - Overzicht: portaal/overzicht.md
     - Mijn dossiers: portaal/dossiers.md
     - Aangebracht: portaal/aangebracht.md
+    - Mijn makelaars: portaal/makelaars.md
     - Mijn commissies: portaal/commissies.md
     - Afrekeningen: portaal/afrekeningen.md
     - Fiche 281.50: portaal/fiches-281-50.md

@@ -20,8 +20,8 @@ Klik bovenaan op **+ Commissie doorgeven**. In het venster dat opengaat, vult u 
 
 | Veld | Wat het betekent |
 |---|---|
-| **Makelaar** | Wie u wilt betalen. De lijst bevat de makelaars die onder uw kantoor hangen. |
-| **Percentage van uw commissie** | Hoeveel procent van uw eigen commissie op dit dossier die makelaar krijgt. Zodra u het veld verlaat, rekent CreditSoft het bedrag uit. U mag dit veld ook leeg laten en meteen een bedrag invullen. |
+| **Makelaar** | Wie u wilt betalen. De lijst bevat de makelaars die onder uw kantoor hangen. Hangt het dossier aan een van uw makelaars, dan staat hij al gekozen. |
+| **Percentage van uw commissie (%)** | Hoeveel procent van uw eigen commissie op dit dossier die makelaar krijgt. Zodra u het veld verlaat, rekent CreditSoft het bedrag uit. U mag dit veld ook leeg laten en meteen een bedrag invullen. Staat op de fiche van de makelaar een [afspraak](makelaars.md#de-afspraak), dan staan het percentage, het direct deel en de spreiding al ingevuld. |
 | **Bedrag** | Wat die makelaar krijgt. Vult u zelf een bedrag in, dan toont het venster welk percentage dat is. |
 | **Startdatum** | Vanaf wanneer er geboekt wordt. CreditSoft vult de datum van de akte in; is er nog geen akte, dan kiest u ze zelf. |
 | **Direct uitbetaald (%)** | Welk deel meteen betaald wordt. Op 100 betaalt u het volledige bedrag in één keer. |

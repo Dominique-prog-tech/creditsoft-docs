@@ -59,6 +59,7 @@ l'activez pour lui.
 - [Mes dossiers](dossiers.fr.md) — la liste, et ce que contient un dossier
 - [Apportés](aangebracht.fr.md) — les clients que l'apporteur a transmis, avec leur statut, et la transmission d'un nouveau client
 - [Mes commissions](commissies.fr.md) — par année, par mois et par écriture
+- [Mes courtiers](makelaars.fr.md) — pour un bureau qui règle lui-même ses courtiers : leurs fiches et leur accès au portail
 - [Décomptes à mes courtiers](afrekeningen.fr.md) — pour un bureau avec ses propres courtiers : ce qu'il leur a reversé et décompte
 - [Fiches 281.50 pour mes courtiers](fiches-281-50.fr.md) — pour un bureau avec ses propres courtiers : la fiche fiscale de ce qu'il leur a versé
 - [Documents](documenten.fr.md) — les documents que votre bureau partage avec les apporteurs

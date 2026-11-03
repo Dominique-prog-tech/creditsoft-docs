@@ -82,6 +82,9 @@ export const ID = {
   // 1.205.0 — de klantgegevens in het AANBRENGERSPORTAAL, als aanbrenger2: een klant op DEMO-1229, zijn eigen kantoor. De generator van
   // de demo vult burgerlijke staat, beroep en identiteitskaart niet, dus die zijn voor dit beeld met de hand gezet op tenant_demo
   // (fictief, met een rijksregisternummer dat de controle doorstaat). Valt om na een her-seed.
+  // 1.208.0 — Mijn makelaars, als aanbrenger2. Horizon Makelaars Oostende draagt op tenant_demo het vinkje "rekent zelf af", en deze makelaar
+  // (Demo Zuid Krediet Sint-Niklaas 61) een standaard percentage van 50 % met spreiding. Met de hand gezet: de generator doet het niet. Valt om na een her-seed.
+  makelaarPortaal: '5a09da98-9e26-4bd5-94aa-9153348607c4',
   klantPortaal: 'cc0fc683-4b0f-4ba6-b386-b191ebc7e8ad',
   dossierKlantPortaal: 'e058dcbc-6a68-4dd5-8a18-6320686644a0',
   dossierAdviesPortaal: '168d73ec-1423-4765-9da2-a9e23f8dd4fd',

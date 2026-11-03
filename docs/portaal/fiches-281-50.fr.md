@@ -37,7 +37,7 @@ Le total de ce qui est affiché figure au bas de la liste.
 
 Une fiche 281.50 s'adresse en principe à qui possède un **numéro d'entreprise** ou, pour une personne physique, un **numéro national**. Le filtre en haut porte par défaut sur *Tous les bénéficiaires*, afin que vous ayez d'abord la vue complète ; placez-le sur *Avec numéro* au moment d'imprimer.
 
-Ceux qui n'ont ni l'un ni l'autre apparaissent en orange, avec la mention **Manquant**. En haut de l'écran, vous voyez combien de courtiers ont une donnée manquante : un numéro d'entreprise ou une adresse complète. Vous ne modifiez pas vous-même les données de vos courtiers dans le portail ; demandez au bureau de les compléter.
+Ceux qui n'ont ni l'un ni l'autre apparaissent en orange, avec la mention **Manquant**. En haut de l'écran, vous voyez combien de courtiers ont une donnée manquante : un numéro d'entreprise ou une adresse complète. Si votre bureau règle lui-même ses courtiers, vous complétez leurs données dans [Mes courtiers](makelaars.md) ; le message en haut vous y mène. Sinon, demandez au bureau de les compléter.
 
 !!! warning "Vos propres données figurent sur chaque fiche"
     Vous figurez sur chaque fiche comme **débiteur des revenus**, avec votre nom, votre adresse et votre numéro d'entreprise. S'il manque quelque chose, un message apparaît en haut. Demandez au bureau de compléter vos données avant d'établir les fiches.
@@ -69,7 +69,7 @@ Après votre confirmation :
 La commission que vous n'avez pas encore décomptée reste en attente. Si vous la décomptez avec une date du document dans une année suivante, elle compte sur la fiche de cette année-là.
 
 !!! warning "Une fiche est figée telle qu'elle est à ce moment"
-    S'il manque un numéro d'entreprise ou une adresse, demandez au bureau de le compléter avant de rendre l'année définitive. Un courtier avec un total annuel négatif ne reçoit pas de fiche.
+    S'il manque un numéro d'entreprise ou une adresse, complétez-le dans [Mes courtiers](makelaars.md) avant de rendre l'année définitive, ou demandez-le au bureau si vous n'y avez pas accès. Un courtier avec un total annuel négatif ne reçoit pas de fiche.
 
 Si une fiche définitive doit malgré tout changer, demandez au bureau de rouvrir l'année. Les numéros sont conservés.
 

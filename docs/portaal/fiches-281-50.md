@@ -37,7 +37,7 @@ Onderaan de lijst staat het totaal van wat er zichtbaar is.
 
 Een fiche 281.50 gaat in principe naar wie een **ondernemingsnummer** heeft, of als natuurlijk persoon een **rijksregisternummer**. De filter bovenaan staat standaard op *Alle begunstigden*, zodat u eerst het volledige beeld hebt; zet hem op *Met nummer* wanneer u gaat afdrukken.
 
-Wie geen van beide heeft, staat in het oranje met de vermelding **Ontbreekt**. Bovenaan het scherm ziet u hoeveel makelaars er iets missen: een ondernemingsnummer of een volledig adres. De gegevens van uw makelaars past u niet zelf aan in het portaal; vraag het kantoor om ze aan te vullen.
+Wie geen van beide heeft, staat in het oranje met de vermelding **Ontbreekt**. Bovenaan het scherm ziet u hoeveel makelaars er iets missen: een ondernemingsnummer of een volledig adres. Rekent uw kantoor zelf af met zijn makelaars, dan vult u hun gegevens aan bij [Mijn makelaars](makelaars.md); de melding bovenaan brengt u daarheen. Anders vraagt u het kantoor om ze aan te vullen.
 
 !!! warning "Uw eigen gegevens staan op elke fiche"
     U staat op elke fiche als **schuldenaar van de inkomsten**, met uw naam, uw adres en uw ondernemingsnummer. Ontbreekt daar iets, dan staat er bovenaan een melding. Vraag het kantoor om uw gegevens aan te vullen vóór u de fiches opmaakt.
@@ -69,7 +69,7 @@ Na uw bevestiging:
 Commissie die u nog niet afrekende, blijft openstaan. Rekent u ze af met een documentdatum in een volgend jaar, dan telt ze op de fiche van dat jaar.
 
 !!! warning "Een fiche ligt vast zoals ze op dat moment is"
-    Ontbreekt er een ondernemingsnummer of een adres, vraag het kantoor dan om dat aan te vullen vóór u het jaar definitief maakt. Een makelaar met een negatief jaartotaal krijgt geen fiche.
+    Ontbreekt er een ondernemingsnummer of een adres, vul dat dan aan bij [Mijn makelaars](makelaars.md) vóór u het jaar definitief maakt, of vraag het kantoor erom als u daar geen toegang toe hebt. Een makelaar met een negatief jaartotaal krijgt geen fiche.
 
 Moet een definitieve fiche toch veranderen, vraag het kantoor dan om het jaar te heropenen. De nummers blijven daarbij behouden.
 

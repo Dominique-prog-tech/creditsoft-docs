@@ -64,7 +64,7 @@ const VORM = JSON.parse(readFileSync(new URL('./beeldvorm.json', import.meta.url
 const AANBRENGER_PORTAAL = ['portaal-overzicht', 'portaal-dossiers', 'portaal-commissies',
                             'portaal-documenten', 'portaal-dossier-detail',
                             'portaal-aangebracht', 'portaal-klant-aanbrengen', 'portaal-nieuwe-klant', 'portaal-advies',
-                            'portaal-klantgegevens'];
+                            'portaal-klantgegevens', 'portaal-makelaars', 'portaal-makelaar-fiche'];
 
 // ⚠️ MET DE HAND UITGESNEDEN. Deze twee beelden tonen een stuk scherm dat geen enkel element is:
 // rapporten-voorbeeld is één blad uit een gerenderd rapport, kantoorprofiel-vragenlijst een uitsnede
@@ -380,6 +380,8 @@ const SCHOTEN = [
   ['portaal-klant-aanbrengen',     '/portal-intermediary/aangebracht/nieuw'],
   // 1.205.0: de klantgegevens. Haar eerste vorm staat met de hand in beeldvorm.json: een nieuw beeld heeft nog geen PNG.
   ['portaal-klantgegevens',        `/portal-intermediary/klanten/${ID.klantPortaal}?dossier=${ID.dossierKlantPortaal}`],
+  ['portaal-makelaars',            '/portal-intermediary/makelaars'],
+  ['portaal-makelaar-fiche',       `/portal-intermediary/makelaars/${ID.makelaarPortaal}`],
   ['portaal-commissies',           '/portal-intermediary/commissies'],
   ['portaal-documenten',           '/portal-intermediary/documenten'],
   // ── fiches ──
@@ -1194,6 +1196,10 @@ const VERWACHT = {
   'portaal-klant-aanbrengen':   /Doorgeven aan kantoor|Transmettre au bureau/i,
   // Het formulier zelf, met een veld dat enkel daar staat. De titel staat ook boven "Deze klant is niet beschikbaar".
   'portaal-klantgegevens':      /Burgerlijke staat|État civil/,
+  // DATA: een makelaar in de lijst. De titel staat er ook boven de melding voor wie dit scherm niet mag openen.
+  'portaal-makelaars':          /Sint-Niklaas 61/,
+  // Een veld dat enkel op het formulier staat, niet op "Deze makelaar is niet beschikbaar".
+  'portaal-makelaar-fiche':     /Standaard percentage|Pourcentage standard/,
   'bedrijfsfiche-logo':         /Logo/i,
   'commissieschema-fiche':      /Algemene gegevens|Données générales/i,
   // "Omzetting" staat enkel op het tabblad Productie — niet op de fiche, niet op het dashboard.

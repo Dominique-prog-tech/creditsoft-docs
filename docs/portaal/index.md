@@ -58,6 +58,7 @@ hij het niet meer wijzigen. Rechten erven niet: een makelaar onder een kantoor k
 - [Mijn dossiers](dossiers.md) — de lijst, en wat er op een dossier staat
 - [Aangebracht](aangebracht.md) — de klanten die de aanbrenger doorgaf, met hun status, en een nieuwe klant doorgeven
 - [Mijn commissies](commissies.md) — per jaar, per maand en per boeking
+- [Mijn makelaars](makelaars.md) — voor een kantoor dat zelf afrekent: de fiches van zijn makelaars en hun toegang tot het portaal
 - [Afrekeningen aan mijn makelaars](afrekeningen.md) — voor een kantoor met eigen makelaars: wat het hun doorgaf en afrekent
 - [Fiches 281.50 voor mijn makelaars](fiches-281-50.md) — voor een kantoor met eigen makelaars: de fiscale fiche van wat het hun uitbetaalde
 - [Documenten](documenten.md) — de documenten die uw kantoor met de aanbrengers deelt

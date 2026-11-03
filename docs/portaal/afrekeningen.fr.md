@@ -21,8 +21,8 @@ courtier. Cliquez en haut sur **+ Reverser une commission**. Dans la fenêtre qu
 
 | Champ | Signification |
 |---|---|
-| **Courtier** | La personne que vous voulez payer. La liste reprend les courtiers rattachés à votre bureau. |
-| **Pourcentage de votre commission** | Le pourcentage de votre propre commission sur ce dossier que ce courtier reçoit. Dès que vous quittez le champ, CreditSoft calcule le montant. Vous pouvez aussi laisser ce champ vide et saisir directement un montant. |
+| **Courtier** | La personne que vous voulez payer. La liste reprend les courtiers rattachés à votre bureau. Si le dossier est lié à l'un de vos courtiers, il est déjà sélectionné. |
+| **Pourcentage de votre commission (%)** | Le pourcentage de votre propre commission sur ce dossier que ce courtier reçoit. Dès que vous quittez le champ, CreditSoft calcule le montant. Vous pouvez aussi laisser ce champ vide et saisir directement un montant. Si la fiche du courtier porte un [accord](makelaars.md#laccord), le pourcentage, la part directe et l'étalement sont déjà remplis. |
 | **Montant** | Ce que ce courtier reçoit. Si vous saisissez vous-même un montant, la fenêtre indique le pourcentage correspondant. |
 | **Date de début** | À partir de quand la comptabilisation commence. CreditSoft remplit la date de l'acte ; s'il n'y a pas encore d'acte, vous la choisissez vous-même. |
 | **Payé directement (%)** | La part payée immédiatement. À 100, vous payez la totalité en une fois. |

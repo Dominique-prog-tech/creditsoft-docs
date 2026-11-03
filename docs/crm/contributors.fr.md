@@ -91,7 +91,10 @@ pas besoin. Concrètement :
 - lors d'un nouveau schéma de commission, CreditSoft propose le bureau, et les apporteurs de ce bureau ne figurent pas dans
   la liste ;
 - dans la [répartition selon le barème](../beheer/commissie-instellingen.md#bureau-principal-pour-la-repartition-des-commissions),
-  le bureau reçoit la part du bureau apporteur.
+  le bureau reçoit la part du bureau apporteur ;
+- le bureau gère lui-même les fiches de ces apporteurs, dans [Mes courtiers](../portaal/makelaars.md) dans le portail.
+  Elles ne figurent ni dans la liste *Apporteurs*, ni dans la recherche, ni dans la corbeille, et la fiche ne s'ouvre pas.
+  Vous voyez bien leur nom et les montants sur les dossiers et dans les rapports.
 
 Laissez la case vide pour un bureau dont vous payez vous-même les apporteurs. Un schéma qui existait déjà reste tel quel.
 

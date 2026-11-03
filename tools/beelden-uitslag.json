@@ -16,7 +16,7 @@
   "aanbrengers-lijst": {
     "route": "/contributors",
     "app": {
-      "sha": "4210818808513d735fa81b7d91e9e6d4aaa1a586",
+      "sha": "28e29ffd5088f17dafbfecab9104892dfe9dc5a4",
       "vuil": true
     }
   },
@@ -142,7 +142,7 @@
   "commissie-instellingen": {
     "route": "/beheer/commissie-instellingen",
     "app": {
-      "sha": "424b44913925712136081d528d42e7f30cb3dc56",
+      "sha": "28e29ffd5088f17dafbfecab9104892dfe9dc5a4",
       "vuil": true
     }
   },
@@ -247,7 +247,7 @@
   "fiche-281-50": {
     "route": "/commissie/fiche-28150",
     "app": {
-      "sha": "5737ba370779cffd45c7d1ba7fa93ebc556f3d3b",
+      "sha": "28e29ffd5088f17dafbfecab9104892dfe9dc5a4",
       "vuil": true
     }
   },
@@ -296,28 +296,28 @@
   "portaal-overzicht": {
     "route": "/portal-intermediary/overzicht",
     "app": {
-      "sha": "424b44913925712136081d528d42e7f30cb3dc56",
+      "sha": "28e29ffd5088f17dafbfecab9104892dfe9dc5a4",
       "vuil": true
     }
   },
   "portaal-dossiers": {
     "route": "/portal-intermediary/dossiers",
     "app": {
-      "sha": "424b44913925712136081d528d42e7f30cb3dc56",
+      "sha": "28e29ffd5088f17dafbfecab9104892dfe9dc5a4",
       "vuil": true
     }
   },
   "portaal-commissies": {
     "route": "/portal-intermediary/commissies",
     "app": {
-      "sha": "424b44913925712136081d528d42e7f30cb3dc56",
+      "sha": "28e29ffd5088f17dafbfecab9104892dfe9dc5a4",
       "vuil": true
     }
   },
   "aanbrengers-fiche": {
     "route": "/contributors/0447a42c-66a4-4afd-9939-80050a0b3279",
     "app": {
-      "sha": "4210818808513d735fa81b7d91e9e6d4aaa1a586",
+      "sha": "28e29ffd5088f17dafbfecab9104892dfe9dc5a4",
       "vuil": true
     }
   },
@@ -478,7 +478,7 @@
   "portaal-toegang": {
     "route": "/contributors/05b820be-792d-4ecb-b41e-c8b00619b872",
     "app": {
-      "sha": "4210818808513d735fa81b7d91e9e6d4aaa1a586",
+      "sha": "28e29ffd5088f17dafbfecab9104892dfe9dc5a4",
       "vuil": true
     }
   },
@@ -527,7 +527,7 @@
   "aanbrenger-groepering": {
     "route": "/contributors/0447a42c-66a4-4afd-9939-80050a0b3279",
     "app": {
-      "sha": "4210818808513d735fa81b7d91e9e6d4aaa1a586",
+      "sha": "28e29ffd5088f17dafbfecab9104892dfe9dc5a4",
       "vuil": true
     }
   },
@@ -555,7 +555,7 @@
   "portaal-dossier-detail": {
     "route": "/portal-intermediary/dossiers",
     "app": {
-      "sha": "bd802147c2d43d0895784c9697e394bb6138be52",
+      "sha": "28e29ffd5088f17dafbfecab9104892dfe9dc5a4",
       "vuil": true
     }
   },
@@ -632,7 +632,7 @@
   "aanbrengers-lijst-fr": {
     "route": "/contributors",
     "app": {
-      "sha": "4210818808513d735fa81b7d91e9e6d4aaa1a586",
+      "sha": "28e29ffd5088f17dafbfecab9104892dfe9dc5a4",
       "vuil": true
     }
   },
@@ -758,7 +758,7 @@
   "commissie-instellingen-fr": {
     "route": "/beheer/commissie-instellingen",
     "app": {
-      "sha": "424b44913925712136081d528d42e7f30cb3dc56",
+      "sha": "28e29ffd5088f17dafbfecab9104892dfe9dc5a4",
       "vuil": true
     }
   },
@@ -863,7 +863,7 @@
   "fiche-281-50-fr": {
     "route": "/commissie/fiche-28150",
     "app": {
-      "sha": "5737ba370779cffd45c7d1ba7fa93ebc556f3d3b",
+      "sha": "28e29ffd5088f17dafbfecab9104892dfe9dc5a4",
       "vuil": true
     }
   },
@@ -912,28 +912,28 @@
   "portaal-overzicht-fr": {
     "route": "/portal-intermediary/overzicht",
     "app": {
-      "sha": "424b44913925712136081d528d42e7f30cb3dc56",
+      "sha": "28e29ffd5088f17dafbfecab9104892dfe9dc5a4",
       "vuil": true
     }
   },
   "portaal-dossiers-fr": {
     "route": "/portal-intermediary/dossiers",
     "app": {
-      "sha": "424b44913925712136081d528d42e7f30cb3dc56",
+      "sha": "28e29ffd5088f17dafbfecab9104892dfe9dc5a4",
       "vuil": true
     }
   },
   "portaal-commissies-fr": {
     "route": "/portal-intermediary/commissies",
     "app": {
-      "sha": "424b44913925712136081d528d42e7f30cb3dc56",
+      "sha": "28e29ffd5088f17dafbfecab9104892dfe9dc5a4",
       "vuil": true
     }
   },
   "aanbrengers-fiche-fr": {
     "route": "/contributors/0447a42c-66a4-4afd-9939-80050a0b3279",
     "app": {
-      "sha": "4210818808513d735fa81b7d91e9e6d4aaa1a586",
+      "sha": "28e29ffd5088f17dafbfecab9104892dfe9dc5a4",
       "vuil": true
     }
   },
@@ -1094,7 +1094,7 @@
   "portaal-toegang-fr": {
     "route": "/contributors/05b820be-792d-4ecb-b41e-c8b00619b872",
     "app": {
-      "sha": "4210818808513d735fa81b7d91e9e6d4aaa1a586",
+      "sha": "28e29ffd5088f17dafbfecab9104892dfe9dc5a4",
       "vuil": true
     }
   },
@@ -1143,7 +1143,7 @@
   "aanbrenger-groepering-fr": {
     "route": "/contributors/0447a42c-66a4-4afd-9939-80050a0b3279",
     "app": {
-      "sha": "4210818808513d735fa81b7d91e9e6d4aaa1a586",
+      "sha": "28e29ffd5088f17dafbfecab9104892dfe9dc5a4",
       "vuil": true
     }
   },
@@ -1171,7 +1171,7 @@
   "portaal-dossier-detail-fr": {
     "route": "/portal-intermediary/dossiers",
     "app": {
-      "sha": "bd802147c2d43d0895784c9697e394bb6138be52",
+      "sha": "28e29ffd5088f17dafbfecab9104892dfe9dc5a4",
       "vuil": true
     }
   },
@@ -1248,14 +1248,14 @@
   "commissie-vooruitzicht-aanbrengers": {
     "route": "/commissie/vooruitzicht",
     "app": {
-      "sha": "4210818808513d735fa81b7d91e9e6d4aaa1a586",
+      "sha": "28e29ffd5088f17dafbfecab9104892dfe9dc5a4",
       "vuil": true
     }
   },
   "commissie-vooruitzicht-aanbrengers-fr": {
     "route": "/commissie/vooruitzicht",
     "app": {
-      "sha": "4210818808513d735fa81b7d91e9e6d4aaa1a586",
+      "sha": "28e29ffd5088f17dafbfecab9104892dfe9dc5a4",
       "vuil": true
     }
   },
@@ -1276,14 +1276,14 @@
   "portaal-documenten": {
     "route": "/portal-intermediary/documenten",
     "app": {
-      "sha": "424b44913925712136081d528d42e7f30cb3dc56",
+      "sha": "28e29ffd5088f17dafbfecab9104892dfe9dc5a4",
       "vuil": true
     }
   },
   "portaal-documenten-fr": {
     "route": "/portal-intermediary/documenten",
     "app": {
-      "sha": "424b44913925712136081d528d42e7f30cb3dc56",
+      "sha": "28e29ffd5088f17dafbfecab9104892dfe9dc5a4",
       "vuil": true
     }
   },
@@ -1304,14 +1304,14 @@
   "aanbrengers-productie": {
     "route": "/contributors/05b820be-792d-4ecb-b41e-c8b00619b872",
     "app": {
-      "sha": "4210818808513d735fa81b7d91e9e6d4aaa1a586",
+      "sha": "28e29ffd5088f17dafbfecab9104892dfe9dc5a4",
       "vuil": true
     }
   },
   "aanbrengers-productie-fr": {
     "route": "/contributors/05b820be-792d-4ecb-b41e-c8b00619b872",
     "app": {
-      "sha": "4210818808513d735fa81b7d91e9e6d4aaa1a586",
+      "sha": "28e29ffd5088f17dafbfecab9104892dfe9dc5a4",
       "vuil": true
     }
   },
@@ -1325,7 +1325,7 @@
   "dashboard-aanbrengers": {
     "route": "/dashboard",
     "app": {
-      "sha": "4210818808513d735fa81b7d91e9e6d4aaa1a586",
+      "sha": "28e29ffd5088f17dafbfecab9104892dfe9dc5a4",
       "vuil": true
     }
   },
@@ -1339,7 +1339,7 @@
   "dashboard-aanbrengers-fr": {
     "route": "/dashboard",
     "app": {
-      "sha": "4210818808513d735fa81b7d91e9e6d4aaa1a586",
+      "sha": "28e29ffd5088f17dafbfecab9104892dfe9dc5a4",
       "vuil": true
     }
   },
@@ -1794,28 +1794,28 @@
   "portaal-aangebracht": {
     "route": "/portal-intermediary/aangebracht",
     "app": {
-      "sha": "424b44913925712136081d528d42e7f30cb3dc56",
+      "sha": "28e29ffd5088f17dafbfecab9104892dfe9dc5a4",
       "vuil": true
     }
   },
   "portaal-klant-aanbrengen": {
     "route": "/portal-intermediary/aangebracht/nieuw",
     "app": {
-      "sha": "424b44913925712136081d528d42e7f30cb3dc56",
+      "sha": "28e29ffd5088f17dafbfecab9104892dfe9dc5a4",
       "vuil": true
     }
   },
   "portaal-aangebracht-fr": {
     "route": "/portal-intermediary/aangebracht",
     "app": {
-      "sha": "424b44913925712136081d528d42e7f30cb3dc56",
+      "sha": "28e29ffd5088f17dafbfecab9104892dfe9dc5a4",
       "vuil": true
     }
   },
   "portaal-klant-aanbrengen-fr": {
     "route": "/portal-intermediary/aangebracht/nieuw",
     "app": {
-      "sha": "424b44913925712136081d528d42e7f30cb3dc56",
+      "sha": "28e29ffd5088f17dafbfecab9104892dfe9dc5a4",
       "vuil": true
     }
   },
@@ -1878,28 +1878,28 @@
   "portaal-nieuwe-klant": {
     "route": "/portal-intermediary/dossiers",
     "app": {
-      "sha": "424b44913925712136081d528d42e7f30cb3dc56",
+      "sha": "28e29ffd5088f17dafbfecab9104892dfe9dc5a4",
       "vuil": true
     }
   },
   "portaal-nieuwe-klant-fr": {
     "route": "/portal-intermediary/dossiers",
     "app": {
-      "sha": "424b44913925712136081d528d42e7f30cb3dc56",
+      "sha": "28e29ffd5088f17dafbfecab9104892dfe9dc5a4",
       "vuil": true
     }
   },
   "portaal-advies": {
     "route": "/portal-intermediary/dossiers/168d73ec-1423-4765-9da2-a9e23f8dd4fd/advies",
     "app": {
-      "sha": "424b44913925712136081d528d42e7f30cb3dc56",
+      "sha": "28e29ffd5088f17dafbfecab9104892dfe9dc5a4",
       "vuil": true
     }
   },
   "portaal-advies-fr": {
     "route": "/portal-intermediary/dossiers/168d73ec-1423-4765-9da2-a9e23f8dd4fd/advies",
     "app": {
-      "sha": "424b44913925712136081d528d42e7f30cb3dc56",
+      "sha": "28e29ffd5088f17dafbfecab9104892dfe9dc5a4",
       "vuil": true
     }
   },
@@ -2004,14 +2004,42 @@
   "portaal-klantgegevens": {
     "route": "/portal-intermediary/klanten/cc0fc683-4b0f-4ba6-b386-b191ebc7e8ad",
     "app": {
-      "sha": "32a36080df07dbf763e33ecc0d10a74b1384ee86",
+      "sha": "28e29ffd5088f17dafbfecab9104892dfe9dc5a4",
       "vuil": true
     }
   },
   "portaal-klantgegevens-fr": {
     "route": "/portal-intermediary/klanten/cc0fc683-4b0f-4ba6-b386-b191ebc7e8ad",
     "app": {
-      "sha": "32a36080df07dbf763e33ecc0d10a74b1384ee86",
+      "sha": "28e29ffd5088f17dafbfecab9104892dfe9dc5a4",
+      "vuil": true
+    }
+  },
+  "portaal-makelaars": {
+    "route": "/portal-intermediary/makelaars",
+    "app": {
+      "sha": "28e29ffd5088f17dafbfecab9104892dfe9dc5a4",
+      "vuil": true
+    }
+  },
+  "portaal-makelaar-fiche": {
+    "route": "/portal-intermediary/makelaars/5a09da98-9e26-4bd5-94aa-9153348607c4",
+    "app": {
+      "sha": "28e29ffd5088f17dafbfecab9104892dfe9dc5a4",
+      "vuil": true
+    }
+  },
+  "portaal-makelaars-fr": {
+    "route": "/portal-intermediary/makelaars",
+    "app": {
+      "sha": "28e29ffd5088f17dafbfecab9104892dfe9dc5a4",
+      "vuil": true
+    }
+  },
+  "portaal-makelaar-fiche-fr": {
+    "route": "/portal-intermediary/makelaars/5a09da98-9e26-4bd5-94aa-9153348607c4",
+    "app": {
+      "sha": "28e29ffd5088f17dafbfecab9104892dfe9dc5a4",
       "vuil": true
     }
   }
