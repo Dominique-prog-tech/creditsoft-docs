@@ -45,6 +45,10 @@ Met de schakelaar **Mag zelf een kredietdossier inleiden** krijgt de aanbrenger 
 kantoor, en opent als fiche. Er is geen stap waarin u het eerst aanvaardt: u ziet het dossier gewoon in uw
 eigen lijst verschijnen.
 
+Met de schakelaar **Ziet het commissiebedrag op de dossierfiche en vult het in** vult de aanbrenger de commissie van een
+dossier zelf in, en legt u dat bedrag naast de borderellen van de maatschappijen. Zodra u de commissie verdeeld hebt, kan
+hij het niet meer wijzigen. Rechten erven niet: een makelaar onder een kantoor krijgt dit enkel als u het bij hem aanzet.
+
 ## De schermen
 
 - [Overzicht](overzicht.md) — de cijfers van het jaar, een grafiek per maand en de laatst afgesloten kredieten

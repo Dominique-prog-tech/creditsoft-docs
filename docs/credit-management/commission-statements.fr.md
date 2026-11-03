@@ -46,7 +46,7 @@ Cliquez en haut sur **Créer une nouvelle série**. Vous choisissez trois élém
 
 - l'**année** ;
 - la **période** — un mois, ou un trimestre si votre bureau décompte par trimestre ;
-- la **date du document**, celle qui figurera sur le bordereau. Aujourd'hui par défaut. Si vous décomptez le mois de décembre début janvier, vous pouvez librement l'adapter ici.
+- la **date du document**, celle qui figurera sur le bordereau. Aujourd'hui par défaut. Si vous décomptez le mois de décembre début janvier, vous pouvez librement l'adapter ici. Une date dans une année dont les fiches 281.50 sont [définitives](fiche-281-50.md#rendre-une-annee-definitive) est refusée.
 
 ![La fenêtre Créer une nouvelle série avec les champs Année, Mois et Date du document remplis, et les boutons Afficher l'aperçu et Annuler en dessous.](../images/borderel-nieuwe-ronde-fr.png "Choisir l'année, la période et la date du document"){ .volle-breedte }
 
@@ -112,7 +112,7 @@ Vous indiquez la **date de paiement** et vous confirmez. Le bordereau figure dè
 
 Retire le bordereau dans son entièreté. Les lignes de commission redeviennent disponibles et réapparaissent sous *En attente* dans l'aperçu, ce qui vous permet de décompter cette période à nouveau.
 
-C'est possible **tant que le bordereau n'est pas payé**. S'il l'est, le bouton disparaît : annulez d'abord le paiement.
+C'est possible **tant que le bordereau n'est pas payé**. S'il l'est, le bouton disparaît : annulez d'abord le paiement. S'il figure sur les fiches d'une année [définitive](fiche-281-50.md#rendre-une-annee-definitive), CreditSoft le refuse : rouvrez d'abord cette année.
 
 !!! info "La colonne Votre référence"
     Il s'agit de la **référence que l'apporteur a lui-même donnée au dossier** — pas d'un numéro attribué par CreditSoft. Si un bureau ne travaille pas avec des références, cette colonne reste vide pour tous ses dossiers. Ce n'est pas une information manquante.

@@ -45,6 +45,11 @@ le bouton **Nouveau dossier**. Le dossier est créé immédiatement, avec lui co
 départ de votre bureau, et s'ouvre comme fiche. Il n'y a pas d'étape où vous l'acceptez d'abord : vous voyez
 simplement le dossier apparaître dans votre propre liste.
 
+Avec l'interrupteur **Voit le montant de commission sur la fiche du dossier et le saisit**, l'apporteur saisit lui-même la
+commission d'un dossier, et vous comparez ce montant aux bordereaux des compagnies. Dès que vous avez réparti la commission,
+il ne peut plus la modifier. Les droits ne se transmettent pas : un courtier sous un bureau n'y a accès que si vous
+l'activez pour lui.
+
 ## Les écrans
 
 - [Aperçu](overzicht.fr.md) — les chiffres de l'année, un graphique par mois et les derniers crédits conclus

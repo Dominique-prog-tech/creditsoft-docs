@@ -35,8 +35,12 @@ Het dossier opent op een eigen pagina, met dezelfde inhoud als uw kantoor ziet: 
 de aanvragers, de contracten, de betrokken partijen en het journaal.
 
 U kunt de dossiers in uw lijst ook **bijwerken**: het scherm werkt zoals in de backoffice, u past aan en klikt op
-**Bewaren**. Dat geldt ook voor de dossiers van de kantoren onder u. De interne opmerkingen en de commissie van uw
-kantoor ziet u niet.
+**Bewaren**. Dat geldt ook voor de dossiers van de kantoren onder u. De interne opmerkingen van uw kantoor ziet u niet.
+
+Heeft uw kantoor het voor u aangezet, dan staat op de fiche ook het **Commissiebedrag**. U vult er de commissie van het
+dossier in, en uw kantoor legt dat bedrag naast de borderellen die het van de maatschappijen ontvangt. Zodra uw kantoor
+de commissie verdeeld heeft, staat naast het veld **verdeeld** en kunt u het niet meer wijzigen. Klopt het dan niet,
+neem contact op met uw kantoor.
 
 Het veld **Aanbrenger** toont enkel uw eigen kantoor en de kantoren onder u. Hebt u geen kantoren onder u, dan
 staat het vast op uw naam.

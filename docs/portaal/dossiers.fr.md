@@ -38,7 +38,12 @@ données du crédit, le bien, les demandeurs, les contrats, les parties concern�
 
 Vous pouvez aussi **mettre à jour** les dossiers de votre liste : l'écran fonctionne comme dans le back-office,
 vous adaptez et cliquez sur **Enregistrer**. Cela vaut aussi pour les dossiers des bureaux qui dépendent de vous.
-Les remarques internes et la commission de votre bureau ne vous sont pas affichées.
+Les remarques internes de votre bureau ne vous sont pas affichées.
+
+Si votre bureau l'a activé pour vous, la fiche porte aussi le **Montant de commission**. Vous y saisissez la commission du
+dossier, et votre bureau compare ce montant aux bordereaux qu'il reçoit des compagnies. Dès que votre bureau a réparti la
+commission, **réparti** apparaît à côté du champ et vous ne pouvez plus le modifier. Si le montant n'est alors pas correct,
+contactez votre bureau.
 
 Le champ **Apporteur** ne propose que votre propre bureau et les bureaux qui dépendent de vous. Si aucun bureau ne
 dépend de vous, il reste fixé à votre nom.

@@ -46,7 +46,7 @@ Klik bovenaan op **Nieuwe ronde aanmaken**. U kiest drie dingen:
 
 - het **jaar**;
 - de **periode** — een maand, of een kwartaal wanneer uw kantoor per kwartaal afrekent;
-- de **documentdatum**, de datum die op het borderel komt te staan. Standaard vandaag. Rekent u begin januari de maand december af, dan zet u die hier gerust op de datum die u wil.
+- de **documentdatum**, de datum die op het borderel komt te staan. Standaard vandaag. Rekent u begin januari de maand december af, dan zet u die hier gerust op de datum die u wil. Een datum in een jaar waarvan de fiches 281.50 [definitief](fiche-281-50.md#een-jaar-definitief-maken) zijn, wordt geweigerd.
 
 ![Het venster Nieuwe ronde aanmaken met de velden Jaar, Maand en Documentdatum ingevuld, en de knoppen Voorbeeld tonen en Annuleren eronder.](../images/borderel-nieuwe-ronde.png "Jaar, periode en documentdatum kiezen"){ .volle-breedte }
 
@@ -112,7 +112,7 @@ U geeft de **betaaldatum** op en bevestigt. Het borderel staat vanaf dan als bet
 
 Trekt het hele borderel terug. De commissielijnen komen weer vrij en verschijnen opnieuw onder *Openstaand* in het overzicht, zodat u die periode opnieuw kan afrekenen.
 
-Dat kan **zolang het borderel niet betaald is**. Is het wel betaald, dan verdwijnt de knop: zet eerst de betaling terug.
+Dat kan **zolang het borderel niet betaald is**. Is het wel betaald, dan verdwijnt de knop: zet eerst de betaling terug. Staat het op de fiches van een jaar dat [definitief](fiche-281-50.md#een-jaar-definitief-maken) is, dan weigert CreditSoft het: heropen eerst dat jaar.
 
 !!! info "De kolom Uw kenmerk"
     Dat is het **kenmerk dat de aanbrenger zelf aan het dossier gaf** — geen nummer dat CreditSoft uitdeelt. Werkt een kantoor daar niet mee, dan blijft die kolom leeg voor al zijn dossiers. Dat is geen ontbrekende informatie.
