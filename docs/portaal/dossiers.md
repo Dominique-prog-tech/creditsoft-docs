@@ -73,7 +73,7 @@ Mag uw kantoor zelf dossiers inleiden, dan wijzigt u ook de gegevens van uw klan
 **Kredietaanvragers** en klik op **Klantgegevens**. De knop hoort bij de klant die aan het dossier hangt: kiest u in het
 venster een andere klant, bewaar dan eerst.
 
-![De pagina Klantgegevens in het aanbrengersportaal, met bovenaan de link terug naar het dossier en daaronder de delen Identiteit, Gezin, Adres en contact en Beroep.](../images/portaal-klantgegevens.png "De gegevens van een klant in het aanbrengersportaal")
+![De pagina Klantgegevens in het aanbrengersportaal, met bovenaan de link terug naar het dossier en daaronder de delen Identiteit, Gezin, Adres en contact en Beroep.](../images/portaal-klantgegevens.png "De gegevens van een klant in het aanbrengersportaal"){ .volle-breedte }
 
 | Deel | Wat erin staat |
 |---|---|

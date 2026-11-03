@@ -76,7 +76,7 @@ Si votre bureau peut introduire lui-même des dossiers, vous modifiez aussi les 
 **Demandeurs de crédit** et cliquez sur **Données du client**. Le bouton concerne le client lié au dossier : si vous
 choisissez un autre client dans la fenêtre, enregistrez d'abord.
 
-![La page Données du client dans le portail apporteurs, avec en haut le lien de retour au dossier et en dessous les parties Identité, Famille, Adresse et contact et Profession.](../images/portaal-klantgegevens-fr.png "Les données d'un client dans le portail apporteurs")
+![La page Données du client dans le portail apporteurs, avec en haut le lien de retour au dossier et en dessous les parties Identité, Famille, Adresse et contact et Profession.](../images/portaal-klantgegevens-fr.png "Les données d'un client dans le portail apporteurs"){ .volle-breedte }
 
 | Partie | Contenu |
 |---|---|
