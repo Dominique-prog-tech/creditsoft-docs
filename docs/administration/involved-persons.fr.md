@@ -7,7 +7,7 @@ En tant qu'intermédiaire de crédit, vous conservez pour chaque personne concer
 
 ## Ouvrir l'écran
 
-Dans la barre latérale, cliquez sur **Administration**, puis sur la tuile **Registre des personnes concernées** (sous *Entreprise*). Toute personne qui peut consulter la fiche d'entreprise voit aussi ce registre. Toute personne qui peut modifier la fiche d'entreprise peut aussi le remplir.
+Dans la barre latérale, cliquez sur **Administration**, puis sur la tuile **Registre des personnes concernées** (sous *Entreprise*). Seules les personnes autorisées à modifier la fiche d'entreprise voient ce registre et peuvent le remplir. Un utilisateur ordinaire ne voit pas la tuile, car le registre contient des dates de naissance.
 
 ## La liste
 

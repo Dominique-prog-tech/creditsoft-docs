@@ -7,7 +7,7 @@ Als kredietbemiddelaar bewaart u voor elke betrokken persoon de naam, de voornam
 
 ## Het scherm openen
 
-Klik in de zijbalk op **Platformbeheer** en daarna op de tegel **Register betrokken personen** (onder *Bedrijf*). Wie de Bedrijfsfiche mag bekijken, ziet ook dit register. Wie de Bedrijfsfiche mag wijzigen, kan het ook invullen.
+Klik in de zijbalk op **Platformbeheer** en daarna op de tegel **Register betrokken personen** (onder *Bedrijf*). Enkel wie de Bedrijfsfiche mag wijzigen, ziet dit register en kan het invullen. Een gewone gebruiker ziet de tegel niet, want er staan geboortedatums in.
 
 ## De lijst
 
