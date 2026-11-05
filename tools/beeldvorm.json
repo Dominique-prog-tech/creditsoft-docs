@@ -717,5 +717,21 @@
   "commissiebarema-inlezen": {
     "breedte": 1700,
     "hoogte": 1220
+  },
+  "betrokken-personen-lijst": {
+    "breedte": 1440,
+    "hoogte": 820
+  },
+  "betrokken-personen-lijst-fr": {
+    "breedte": 1440,
+    "hoogte": 820
+  },
+  "betrokken-personen-fiche": {
+    "breedte": 1440,
+    "hoogte": 820
+  },
+  "betrokken-personen-fiche-fr": {
+    "breedte": 1440,
+    "hoogte": 820
   }
 }

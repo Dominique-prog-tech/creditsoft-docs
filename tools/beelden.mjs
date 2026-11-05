@@ -228,6 +228,9 @@ const SCHOTEN = [
   //    het aanmeldscherm bij en werd 289 px hoger: op 1127 viel het tweede sleepvak half achter de knoppenbalk, terwijl
   //    het bijschrift "de sleepvakken voor het logo en de foto" belooft. De vorm bewaart een keuze, geen waarheid.
   ['bedrijfsfiche',                '/administration/company-profile'],
+  // 1.209.0: het register. De gegevens komen uit tools/register-demo.mjs; zonder die stap valt de controle hieronder op "Kantoorhoofd" en "Onvolledig".
+  ['betrokken-personen-lijst',     '/administration/betrokken-personen'],
+  ['betrokken-personen-fiche',     `/administration/betrokken-personen/${ID.persoonRegister}`],
   ['kantoorprofiel-vragenlijst',   '/beheer/kantoorprofiel', async p => {
       // ⛔ NOOIT OP BEWAREN KLIKKEN. Het kantoorprofiel wordt bewaard in ADM One, en de lokale app praat met de
       //    ECHTE hub (AdmOne:BaseUrl in appsettings.json). Alles hieronder leeft enkel in het scherm en verdwijnt
@@ -1201,6 +1204,9 @@ const VERWACHT = {
   // Een veld dat enkel op het formulier staat, niet op "Deze makelaar is niet beschikbaar".
   'portaal-makelaar-fiche':     /Standaard percentage|Pourcentage standard/,
   'bedrijfsfiche-logo':         /Logo/i,
+  // DATA, geen titel: de melding en de status tonen samen dat het randgeval op het beeld staat.
+  'betrokken-personen-lijst':   /Onvolledig|Incomplet/,
+  'betrokken-personen-fiche':   /Kantoorhoofd/,
   'commissieschema-fiche':      /Algemene gegevens|Données générales/i,
   // "Omzetting" staat enkel op het tabblad Productie — niet op de fiche, niet op het dashboard.
   'aanbrengers-productie':      /Omzetting|Taux de conversion/,

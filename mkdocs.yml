@@ -166,6 +166,7 @@ plugins:
             # de laatste wint — dus "Gestion" deed niets. Hier weggehaald; de
             # overgebleven "Beheer: Configuration" verderop is de werkende.
             Bedrijfsfiche: Fiche d'entreprise
+            Register betrokken personen: Registre des personnes concernées
             Gebruikers: Utilisateurs
             Mailsjablonen: Modèles d'e-mail
             Mails per moment: E-mails par moment
@@ -359,6 +360,7 @@ nav:
 
   - Beheer:
     - Bedrijfsfiche: administration/company-profile.md
+    - Register betrokken personen: administration/involved-persons.md
     - Gebruikers: administration/users.md
     - Mailsjablonen: administration/mail-templates.md
     - Mails per moment: beheer/mail-momenten.md
