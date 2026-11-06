@@ -152,6 +152,13 @@ Ce champ est **obligatoire**. Si vous le laissez vide, le programme ne sait pas 
     Pour une **adresse à l'étranger**, avec un autre pays que la Belgique, le code postal est un simple champ de
     texte : saisissez-le tel quel (par exemple *8121 DM*).
 
+### Onglet « Signature » (particulier) { #tabblad-ondertekenen }
+
+Pour une **personne**, l'onglet **Signature** apparaît dès que la fiche est enregistrée. Vous y faites signer la
+**déclaration de confidentialité** de façon électronique, avec OKSign. La date à laquelle la personne l'a signée
+figure en haut. Votre bureau a besoin pour cela d'un contrat avec OKSign. Le fonctionnement est expliqué dans
+[Signature électronique](../credit-management/ondertekenen.md).
+
 ## Documents demandés
 
 La fiche comporte l'onglet **Demandés** : les pièces que vous attendez de cette personne. Vous

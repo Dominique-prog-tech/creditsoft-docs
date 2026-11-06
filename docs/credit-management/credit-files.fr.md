@@ -226,6 +226,13 @@ Le patrimoine figure aussi sur l'impression du dossier, avec la même ligne de t
 
 L'onglet **Conseil** résume le conseil donné au client : conseil ou pas de conseil, sur quelle base, combien d'offres vous avez comparées et quelles copies le client a reçues. **Enregistrer un conseil** ou **Ouvrir le conseil** mène à la [page de conseil](advice.md) du dossier. Un apporteur ne voit pas cet onglet.
 
+### Signature { #ondertekenen }
+
+Dans l'onglet **Signature**, vous faites signer le **document de mission** par les demandeurs, de façon
+électronique, avec OKSign. Chaque demandeur reçoit un e-mail avec son propre lien, et le document signé revient
+automatiquement dans les pièces jointes du dossier. Votre bureau a besoin pour cela d'un contrat avec OKSign. Le
+fonctionnement est expliqué dans [Signature électronique](ondertekenen.md). Un apporteur ne voit pas cet onglet.
+
 ### Factures
 
 L'onglet **Factures** montre la **charte** de ce dossier et les **factures** qui s'y rattachent. Vous le voyez avec le droit *Voir les factures*.

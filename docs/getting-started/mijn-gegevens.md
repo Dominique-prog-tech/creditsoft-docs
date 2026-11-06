@@ -28,6 +28,45 @@ U opent het scherm via uw **avatar** rechtsboven → **Alle voorkeuren…**
 Wat u hier invult, verschijnt onderaan de e-mails die u vanuit CreditSoft verstuurt — bijvoorbeeld vanuit het
 [Mailverkeer](../journaal/mailverkeer.md) van een dossier. U maakt de tekst op met de opmaakknoppen erboven.
 
+## Agenda koppelen { #agenda-koppelen }
+
+Met het blok **Agenda koppelen** zet u uw afspraken uit CreditSoft in uw eigen Outlook-agenda. U ziet het blok
+enkel als uw kantoor het toelaat, met het vinkje op de [Bedrijfsfiche](../administration/company-profile.md#agenda-koppelen).
+
+1. Klik op **Koppelen met Microsoft 365**.
+2. U komt bij Microsoft. Meld u aan met het account van uw agenda en geef toestemming.
+3. U komt terug op Mijn gegevens, met de melding *Uw agenda is gekoppeld*.
+
+Uw afspraken verschijnen in een **aparte agenda CreditSoft**, naast uw eigen agenda. Het gaat om de afspraken waarvan
+u verantwoordelijke bent, van de voorbije maand tot twaalf maanden vooruit. Van elke afspraak gaan de titel, de
+klantnaam, de locatie en een link mee. Telefoonnummers, e-mailadressen en dossierbedragen niet.
+
+Is uw agenda gekoppeld, dan toont het blok met welk account, wanneer de laatste synchronisatie was en hoeveel
+afspraken er in de agenda staan. CreditSoft werkt de agenda elk kwartier bij. Met **Nu synchroniseren** doet u dat
+meteen. Met **Ontkoppelen** stopt de synchronisatie; de agenda CreditSoft blijft in uw account staan tot u ze zelf
+verwijdert.
+
+!!! warning "Wijzig afspraken in CreditSoft"
+    De koppeling werkt in één richting. Wijzigt u een afspraak in Outlook, dan zet de volgende synchronisatie ze
+    terug zoals ze in CreditSoft staat.
+
+!!! note "Microsoft vraagt de goedkeuring van een beheerder"
+    Toont Microsoft *Beheerdersgoedkeuring vereist*, dan laat uw organisatie zulke koppelingen enkel toe met de
+    toestemming van haar IT-beheerder. Vraag die dan eerst, en koppel daarna opnieuw.
+
+Soms staat er een melding in het blok:
+
+- **Uw koppeling werkt niet meer.** Uw toestemming bij Microsoft is verlopen of ingetrokken. Klik op
+  **Opnieuw koppelen**.
+- **CreditSoft vond plots geen afspraken meer voor u.** CreditSoft maakt uw agenda dan niet zomaar leeg. Klopt het
+  dat u geen afspraken meer hebt, klik dan op **Toch synchroniseren**.
+- **Uw agenda kon niet bijgewerkt worden.** CreditSoft probeert het vanzelf opnieuw.
+- **Uw account is nog niet klaar om een agenda te koppelen.** Vraag dit na bij uw beheerder of bij ADM-Concept.
+- **Exporteren staat uit voor dit kantoor.** Dan gaat er niets meer naar uw agenda. Wat er al stond, blijft staan
+  maar wordt niet meer bijgewerkt.
+
+Wordt uw gekoppelde agenda niet meer bijgewerkt, dan staat dat ook bovenaan de [agenda](../crm/meetings.md).
+
 ## Wat u hier niet kunt wijzigen
 
 **Uw naam, uw e-mailadres en uw functie** staan er niet bij. Die worden centraal beheerd — ze horen bij uw

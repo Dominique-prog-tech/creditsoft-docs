@@ -61,6 +61,26 @@ chacun se connecte comme toujours avec son propre nom d'utilisateur et son mot d
     Pour une **adresse à l'étranger**, avec un autre pays que la Belgique, le code postal est un simple champ de
     texte : saisissez-le tel quel (par exemple *8121 DM*).
 
+## Associer l'agenda à Microsoft 365 { #agenda-koppelen }
+
+Dans le bloc **Identité**, sous *Base de notre conseil*, figure la case **Les collaborateurs peuvent associer leur
+agenda à Microsoft 365**. Elle est décochée par défaut. Si vous la cochez, chaque collaborateur peut placer ses
+rendez-vous CreditSoft dans son propre agenda Outlook, depuis [Mes données](../getting-started/mijn-gegevens.md#agenda-koppelen).
+
+Pour chaque rendez-vous, le titre, le nom du client, le lieu et un lien sont transmis à Microsoft. Les numéros de
+téléphone, les adresses e-mail et les montants des dossiers ne le sont pas. C'est pourquoi votre bureau en décide
+lui-même.
+
+## Signature électronique (OKSign) { #digitaal-ondertekenen-oksign }
+
+Dans la carte **Signature électronique (OKSign)**, vous rédigez le texte des deux documents que vos clients signent
+de façon électronique : le **document de mission** et la **déclaration de confidentialité**, chacun en néerlandais
+et en français. CreditSoft y ajoute le titre, le dossier, les noms, la date et les cadres de signature.
+
+Un champ vide signifie : pas de document dans cette langue. Un client ne reçoit jamais un texte dans une autre
+langue que la sienne. Vous enregistrez les textes avec le bouton **Enregistrer** de la fiche. La manière de faire
+signer un document est expliquée dans [Signature électronique](../credit-management/ondertekenen.md).
+
 ## Enregistrer
 
 Cliquez sur **Enregistrer** en bas — ce bouton reste visible pendant que vous faites défiler l'écran. Si vous saisissez une adresse e-mail, elle doit avoir une forme

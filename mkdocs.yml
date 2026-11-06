@@ -222,6 +222,7 @@ plugins:
             # speelt dat niet — daar staat Logboek in de lade Journaal. Ook zo in de toepassing zelf.
             Logboek: Historique
             Kredietdossiers: Dossiers de crédit
+            Digitaal ondertekenen: Signature électronique
             Te valideren documenten: Documents à valider
             Advies: Conseil
             Opvolging na de akte: Suivi après l'acte
@@ -302,6 +303,7 @@ nav:
   # Groeit mee per gevalideerd scherm — voeg hier telkens één regel toe.
   - Kredieten:
     - Kredietdossiers: credit-management/credit-files.md
+    - Digitaal ondertekenen: credit-management/ondertekenen.md
     - Advies: credit-management/advice.md
     - Te valideren documenten: credit-management/document-validation.md
     - Opvolging na de akte: credit-management/after-deed.md

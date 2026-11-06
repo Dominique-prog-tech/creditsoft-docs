@@ -31,6 +31,47 @@ Ce que vous saisissez ici apparaît au bas des e-mails que vous envoyez depuis C
 le [Courrier](../journaal/mailverkeer.md) d'un dossier. Vous mettez le texte en forme avec les boutons de
 mise en forme situés au-dessus.
 
+## Associer l'agenda { #agenda-koppelen }
+
+Avec le bloc **Associer l'agenda**, vous placez vos rendez-vous CreditSoft dans votre propre agenda Outlook. Vous ne
+voyez ce bloc que si votre bureau l'autorise, avec la case de la [fiche d'entreprise](../administration/company-profile.md#agenda-koppelen).
+
+1. Cliquez sur **Associer à Microsoft 365**.
+2. Vous arrivez chez Microsoft. Connectez-vous avec le compte de votre agenda et donnez votre accord.
+3. Vous revenez sur Mes données, avec le message *Votre agenda est associé*.
+
+Vos rendez-vous apparaissent dans un **agenda distinct nommé CreditSoft**, à côté de votre propre agenda. Il s'agit
+des rendez-vous dont vous êtes responsable, du mois écoulé jusqu'à douze mois à l'avance. Pour chaque rendez-vous, le
+titre, le nom du client, le lieu et un lien sont transmis. Les numéros de téléphone, les adresses e-mail et les
+montants des dossiers ne le sont pas.
+
+Une fois votre agenda associé, le bloc indique avec quel compte, quand a eu lieu la dernière synchronisation et
+combien de rendez-vous figurent dans l'agenda. CreditSoft met l'agenda à jour tous les quarts d'heure. Avec
+**Synchroniser maintenant**, vous le faites tout de suite. Avec **Dissocier**, la synchronisation s'arrête ; l'agenda
+CreditSoft reste dans votre compte jusqu'à ce que vous le supprimiez vous-même.
+
+!!! warning "Modifiez vos rendez-vous dans CreditSoft"
+    L'association fonctionne dans un seul sens. Si vous modifiez un rendez-vous dans Outlook, la synchronisation
+    suivante le rétablit tel qu'il figure dans CreditSoft.
+
+!!! note "Microsoft demande l'approbation d'un administrateur"
+    Si Microsoft indique qu'une approbation de l'administrateur est nécessaire, votre organisation n'autorise ce type
+    d'association qu'avec l'accord de son administrateur informatique. Demandez-le d'abord, puis associez à nouveau.
+
+Un message apparaît parfois dans le bloc :
+
+- **Votre liaison ne fonctionne plus.** Votre accord chez Microsoft a expiré ou a été retiré. Cliquez sur
+  **Associer à nouveau**.
+- **CreditSoft ne trouve soudain plus aucun rendez-vous pour vous.** CreditSoft ne vide alors pas votre agenda
+  sans plus. Si vous n'avez effectivement plus de rendez-vous, cliquez sur **Synchroniser quand même**.
+- **Votre agenda n'a pas pu être mis à jour.** CreditSoft réessaie automatiquement.
+- **Votre compte n'est pas encore prêt pour associer un agenda.** Adressez-vous à votre administrateur ou à
+  ADM-Concept.
+- **L'exportation est désactivée pour ce bureau.** Plus rien n'est alors envoyé vers votre agenda. Ce qui s'y
+  trouvait déjà reste en place, mais n'est plus mis à jour.
+
+Si votre agenda associé n'est plus mis à jour, c'est aussi indiqué en haut de l'[agenda](../crm/meetings.md).
+
 ## Ce que vous ne pouvez pas modifier ici
 
 **Vos nom, adresse e-mail et fonction** n'y figurent pas. Ils sont gérés de manière centrale — ils relèvent de

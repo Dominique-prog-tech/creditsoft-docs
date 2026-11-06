@@ -149,6 +149,13 @@ Dit veld is **verplicht**. Laat u het leeg, dan weet het programma niet welke sj
     Bij een **buitenlands adres**, met een ander land dan België, is de postcode een gewoon tekstvak: u typt ze
     zoals ze is (bijvoorbeeld *8121 DM*).
 
+### Tabblad "Ondertekenen" (particulier) { #tabblad-ondertekenen }
+
+Bij een **persoon** staat het tabblad **Ondertekenen**, zodra de fiche bewaard is. Daar laat u de
+**privacyverklaring** digitaal ondertekenen met OKSign. Bovenaan staat de datum waarop de persoon ze ondertekende.
+Uw kantoor heeft daarvoor een contract met OKSign nodig. Hoe het werkt, leest u bij
+[Digitaal ondertekenen](../credit-management/ondertekenen.md).
+
 ## Gevraagde documenten
 
 Op de fiche staat het tabblad **Gevraagd**: de stukken die u van deze persoon verwacht. U hebt

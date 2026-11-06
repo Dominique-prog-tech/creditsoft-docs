@@ -226,6 +226,13 @@ Het patrimonium staat ook op de afdruk van het dossier, met dezelfde somregel.
 
 Het tabblad **Advies** vat samen welk advies u de klant gaf: advies of geen advies, op welke basis, hoeveel aanbiedingen u vergeleek en welke afschriften de klant kreeg. Met **Advies vastleggen** of **Advies openen** gaat u naar de [adviespagina](advice.md) van het dossier. Een aanbrenger ziet dit tabblad niet.
 
+### Ondertekenen { #ondertekenen }
+
+Op het tabblad **Ondertekenen** laat u het **opdrachtdocument** digitaal ondertekenen door de aanvragers, met
+OKSign. Elke aanvrager krijgt een mail met zijn eigen link, en het getekende document komt vanzelf terug bij de
+bijlagen van het dossier. Uw kantoor heeft daarvoor een contract met OKSign nodig. Hoe het werkt, leest u bij
+[Digitaal ondertekenen](ondertekenen.md). Een aanbrenger ziet dit tabblad niet.
+
 ### Facturen
 
 Het tabblad **Facturen** toont het **charter** van dit dossier en de **facturen** die eraan hangen. U ziet het met het recht *Facturen bekijken*.

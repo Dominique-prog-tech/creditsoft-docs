@@ -60,6 +60,25 @@ aanmeldt, doet dat zoals altijd met zijn eigen gebruikersnaam en wachtwoord.
     Bij een **buitenlands adres**, met een ander land dan België, is de postcode een gewoon tekstvak: u typt ze
     zoals ze is (bijvoorbeeld *8121 DM*).
 
+## Agenda koppelen met Microsoft 365 { #agenda-koppelen }
+
+In het blok **Identiteit**, onder *Basis van ons advies*, staat het vinkje **Medewerkers mogen hun agenda koppelen
+met Microsoft 365**. Het staat standaard uit. Zet u het aan, dan kan elke medewerker zijn afspraken uit CreditSoft
+in zijn eigen Outlook-agenda zetten, vanuit [Mijn gegevens](../getting-started/mijn-gegevens.md#agenda-koppelen).
+
+Van elke afspraak gaan de titel, de klantnaam, de locatie en een link mee naar Microsoft. Telefoonnummers,
+e-mailadressen en dossierbedragen niet. Daarom beslist uw kantoor dit zelf.
+
+## Digitaal ondertekenen (OKSign) { #digitaal-ondertekenen-oksign }
+
+In de kaart **Digitaal ondertekenen (OKSign)** schrijft u de tekst van de twee documenten die uw klanten digitaal
+ondertekenen: het **opdrachtdocument** en de **privacyverklaring**, elk in het Nederlands en in het Frans.
+CreditSoft zet er de titel, het dossier, de namen, de datum en de handtekeningvakken bij.
+
+Een leeg vak betekent: in die taal geen document. Een klant krijgt nooit een tekst in een andere taal dan de zijne.
+U bewaart de teksten met de knop **Bewaren** van de fiche. Hoe u een document laat ondertekenen, leest u bij
+[Digitaal ondertekenen](../credit-management/ondertekenen.md).
+
 ## Bewaren
 
 Klik onderaan op **Bewaren** — die knop blijft in beeld terwijl u door het scherm scrolt. Vult u een e-mailadres in, dan moet dat een geldige vorm hebben. Het
