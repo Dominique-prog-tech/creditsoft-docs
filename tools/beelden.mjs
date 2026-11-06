@@ -1778,9 +1778,23 @@ for (const taal of ['nl-BE', 'fr-BE']) {
       // ⚠️ ENKEL BINNEN DEZELFDE LAAG (02/10/2026). Een label in een open venster lag "over" een label van de pagina
       // erachter: "Reden" (dossierrij, achtergrond) <> "Maandlast" (contractvenster) — vals alarm, en een controle
       // die vals alarm slaat, leert men negeren. Een venster bedekt de pagina; botsen kan enkel naast elkaar.
+      // ⚠️ EN ENKEL WAT IN BEELD STAAT (06/11/2026). Een label dat weggescrold is binnen zijn kader, telt niet: op
+      // kredietdossier-advies lagen de vijf datumlabels van het weggescrolde linkerkader "onder" de labels van het
+      // bovenste kader, en de controle meldde tien botsingen die op het scherm niet te zien waren. Een echte
+      // botsing ligt naast elkaar en zichtbaar; die blijft hier gewoon staan.
       const botsingen = await page.evaluate(() => {
+        const inBeeld = e => {
+          const r = e.getBoundingClientRect();
+          for (let p = e.parentElement; p; p = p.parentElement) {
+            const s = getComputedStyle(p);
+            if (!/(auto|scroll|hidden|clip)/.test(s.overflow + ' ' + s.overflowX + ' ' + s.overflowY)) continue;
+            const q = p.getBoundingClientRect();
+            if (r.bottom <= q.top || r.top >= q.bottom || r.right <= q.left || r.left >= q.right) return false;
+          }
+          return true;
+        };
         const labels = [...document.querySelectorAll('.dxbl-fl-cpt')]
-          .filter(e => e.getBoundingClientRect().width > 0);
+          .filter(e => e.getBoundingClientRect().width > 0 && inBeeld(e));
         const laag = e => e.closest('.dxbl-popup');
         const uit = [];
         for (let i = 0; i < labels.length; i++)
