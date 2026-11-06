@@ -67,6 +67,10 @@ export const ID = {
   // afsluitende status toont het veld niet, dus een lopend dossier bewijst niets. Gekozen met een query na "Opvolging,
   // patrimonium en redenen van afvallen aanvullen"; valt om na een her-seed (de reden hangt aan het nummer).
   dossierAfgevallen: '141a60e1-654d-413a-bfae-c70eae530b2f',
+  // De dossierkop (06/11/2026): een LOPEND dossier met een verstreken uiterste datum (opschortende voorwaarden 17/08) en
+  // documenten die nog niet in orde zijn, op de klok van de ronde (01/09/2026). ID.dossier staat in een afsluitende fase,
+  // en daar toont de kop terecht geen termijnen.
+  dossierKop: '1edb1b88-526f-400f-9ffa-0c4b46141c13',
   // DEMO-1004 (w2, 20/10/2026) — advies met drie aanbiedingen: het aanbevolen contract (226.000, 240 maanden, 3,58 %), een
   // alternatief bij een andere bank met een hogere rente en een met een kortere looptijd; de klant volgt het advies. Gekozen
   // met een query na de knop "Opvolging, patrimonium, advies en redenen van afvallen aanvullen"; valt om na een her-seed.

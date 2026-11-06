@@ -122,6 +122,15 @@ async function adviesInDeTaalVanHetBeeld(p) {
 
 // Een rij van een AdmGrid openen. De RijLink is een anker met target=_blank: een klik opent een tabblad dat het schot niet
 // ziet. Daarom de href van de rij die het merkteken draagt, en er in DIT tabblad naartoe. Geen rij = luid falen.
+// ⚠️ De dossierkop is inklapbaar, en die keuze volgt de GEBRUIKER (IAdmUserPreferences). De ronde meldt aan als admin;
+//    staat de kop bij hem ingeklapt, dan erft elk dossierbeeld dat (zoals pref_size=compact op 06/11/2026 de hele ronde
+//    compact maakte). Daarom: open hem als hij dicht staat. Dat bewaart "open" voor admin, en dat is de standaard.
+async function kopOpen(p) {
+  const knop = p.locator('.cf-kop-knop').first();
+  await knop.waitFor({ timeout: 15000 });
+  if (await knop.getAttribute('aria-expanded') === 'false') { await knop.click(); await p.waitForTimeout(800); }
+  if (await knop.getAttribute('aria-expanded') !== 'true') throw new Error('de dossierkop gaat niet open');
+}
 async function naarRij(p, merkteken) {
   const rij = p.locator('tr').filter({ hasText: merkteken }).first();
   await rij.waitFor({ timeout: 15000 });
@@ -407,11 +416,17 @@ const SCHOTEN = [
   ['professionals-fiche',          `/crm/professionals/${ID.prof}`],
   ['kredietinstellingen-fiche',    `/credit/financial-institutions/${ID.fin}`],
   ['verzekeraars-fiche',           `/credit/insurance-institutions/${ID.verz}`],
+  // ⚠️ 1920×1200 sinds 06/11/2026: de dossierkop duwt de pagina ±105 px omlaag, en op 1080 vielen de rijen van Patrimonium,
+  //    Leningen en lasten en de aanvragers weer onder de rand (gezien in de beelden zelf; de merktekens lieten het door).
   // ⚠️ 1920×1080 en niet ×860 sinds 02/10/2026 (beeldvorm.json). Bij 860 schuift de dossierpagina, en vielen de
   //    rijen van de aanvragerslijst en van het tabblad Leningen en lasten ONDER de rand — terwijl hun tekst wél in
   //    de pagina stond, dus de belofte "Valt weg" haalde de controle. Aanwezig is niet zichtbaar. Gemeten: de
   //    laatste rij eindigt op 983 px.
-  ['kredietdossier-fiche',         `/credit-files/${ID.dossier}`],
+  ['kredietdossier-fiche',         `/credit-files/${ID.dossier}`, async p => kopOpen(p)],
+  // De dossierkop (06/11/2026). Een ELEMENTschot van de kop alleen. Het demodossier toont een gezette stap, een verstreken
+  // uiterste datum en documenten die nog niet in orde zijn: het merkteken eist die laatste twee (VERWACHT), zodat een lege
+  // of ingeklapte kop het schot laat falen.
+  ['kredietdossier-overzicht',     `/credit-files/${ID.dossierKop}`, async p => kopOpen(p)],
   // kv2 (02/10/2026). ⚠️ Het tablabel draagt een teller — zie de nota bij relaties-gevraagde-documenten: geen tab().
   ['kredietdossier-leningen-lasten', `/credit-files/${ID.dossierLasten}`, async p => {
       await p.getByRole('tab', { name: /^(Leningen en lasten|Prêts et charges)\s*\(/i }).first().click();
@@ -1103,6 +1118,9 @@ const avatar = async (p) => {
 // Werkwijze: het merkteken komt uit VERWACHT als het er staat, anders wordt het uit de alt-tekst afgeleid.
 // Staat het niet op het scherm, dan wordt het beeld NIET geschreven en volgt de naam in het verslag.
 const VERWACHT = {
+  // De dossierkop: de documenten die niet in orde zijn én een verstreken termijn. Een lege kop ("Niets dringends") of een
+  // ingeklapte ("2 punten vragen aandacht") draagt geen van beide.
+  'kredietdossier-overzicht':   /gevraagde documenten nog niet in orde[\s\S]*verstreken|documents demandés pas encore en ordre[\s\S]*dépassée/,
   // Staat de vraag in het live voorbeeld, dan werkte de editor écht (tekst, geen veldwaarde). Op een statisch
   // scherm blijft het voorbeeld leeg — precies wat van 22/08 tot 24/09 onopgemerkt bleef.
   'kantoorprofiel-vragenlijst': /Wat is uw netto maandinkomen|Quel est votre revenu net mensuel/,
