@@ -112,6 +112,10 @@ Alleen dossiers die **nog lopen** tellen mee: staat de status van een dossier in
 uit deze blokken. Een dossier waarvan de status nergens is ingedeeld blijft er wél in staan — niet-ingedeeld is
 geen bewijs dat een dossier af is.
 
+Ook een termijn waarvan de **stap al gezet is**, verdwijnt. De offerte is getekend zodra er een *Datum
+ondertekening aanbod* staat of het vinkje *Getekend aanbod verzonden* aan staat. Is de akte verleden, dan vragen
+ook de akte, de opschortende voorwaarden en het EPC-attest niets meer.
+
 !!! tip "Hoever het vooruitkijkt, kiest u zelf"
     Standaard veertien dagen. U verzet dat bij **Platformbeheer &rarr; Dashboard-fases**.
 

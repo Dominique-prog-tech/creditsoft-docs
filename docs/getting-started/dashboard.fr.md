@@ -116,6 +116,10 @@ Seuls les dossiers **en cours** sont pris en compte : si le statut d'un dossier 
 disparaît de ces blocs. Un dossier dont le statut n'est classé nulle part y reste — non classé ne prouve pas
 qu'un dossier est terminé.
 
+Un délai dont l'**étape est déjà franchie** disparaît aussi. L'offre est signée dès qu'une *Date de signature de
+l'offre* est remplie ou que la case *Offre signée envoyée* est cochée. Une fois l'acte passé, l'acte, les
+conditions suspensives et le certificat PEB ne demandent plus rien non plus.
+
 !!! tip "L'horizon, c'est vous qui le choisissez"
     Quatorze jours par défaut. Vous le modifiez sous **Administration &rarr; Phases du tableau de bord**.
 
