@@ -234,6 +234,7 @@ plugins:
             Loonfiche laten lezen door AI: Faire lire une fiche de paie par l'IA
             Advies: Conseil
             Opvolging na de akte: Suivi après l'acte
+            Simulatie: Simulation
             # Het nav-item heet Contractenoverzicht (één woord); zonder deze regel bleef het onvertaald
             # in de Franse navigatie staan. Gezien 18/08/2026.
             Contractenoverzicht: Aperçu des contrats
@@ -321,6 +322,7 @@ nav:
     - Te valideren documenten: credit-management/document-validation.md
     - Loonfiche laten lezen door AI: credit-management/ai-loonfiche.md
     - Opvolging na de akte: credit-management/after-deed.md
+    - Simulatie: credit-management/simulation.md
     - Kredietinstellingen: credit-management/financial-institutions.md
     - Verzekeraars: credit-management/insurance-companies.md
     - Borderel: credit-management/commission-statements.md

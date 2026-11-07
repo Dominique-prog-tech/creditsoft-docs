@@ -641,6 +641,42 @@ const SCHOTEN = [
       await p.mouse.move(5, 5);
       await p.waitForTimeout(1200);
   }],
+  // F7 golf 2, laag A (07/11/2026, 1.216.0): de losse simulatie, met het ijkpunt van het rekenpakket (255.000 over 300 maanden aan
+  // 3,99 %; een aankoop van 300.000 in Vlaanderen, enige woning). Velden op hun OPSCHRIFT, niet op volgorde; de keuzelijsten via
+  // het pijltje (een klik in het vak opent de lijst niet, zie kredietdossier-raming). Na elk getal Tab: de pagina rekent bij het
+  // verlaten van een veld.
+  ['simulatie', '/krediet/simulatie', async p => {
+      const veld = naam => p.locator('.dxbl-fl-item').filter({ hasText: naam });
+      // ⚠️ GEEN fill(): het DevExpress-getalveld gooit een met fill gezette waarde weg bij het verlaten (gemeten 07/11: leeg na Tab).
+      //    Echte toetsen, maar pas een halve seconde na de klik: anders valt het eerste cijfer weg ("55.000,00" voor 255000).
+      const getal = async (naam, waarde) => {
+        await veld(naam).locator('input').first().click(); await p.waitForTimeout(500);
+        await p.keyboard.press('Meta+A'); await p.keyboard.type(waarde, { delay: 30 });
+        await p.keyboard.press('Tab'); await p.waitForTimeout(500);
+      };
+      const kies = async (naam, optie) => {
+        await veld(naam).locator('.dxbl-edit-btn-dropdown').first().click(); await p.waitForTimeout(700);
+        await p.getByRole('option', { name: optie }).click(); await p.waitForTimeout(700);
+      };
+      // ⚠️ Vlak na het laden is de live verbinding er soms nog niet, en dan valt wat je invult in het niets (gezien 07/11: de eerste
+      //    ronde lukte in het Nederlands, de volgende twee keer niet). Dus: invullen tot de eerste termijn er staat, hoogstens drie keer.
+      const termijn = p.getByText(/^(Eerste termijn|Première échéance)$/).first();
+      for (let i = 0; i < 3 && !(await termijn.isVisible()); i++) {
+        await p.waitForTimeout(2000);
+        await getal(/^(Bedrag|Montant)/, '255000');
+        await getal(/^(Looptijd|Durée)/, '300');
+        await getal(/^(Rentevoet per jaar|Taux annuel)/, '3,99');
+        await kies(/^(Aflossingswijze|Mode de remboursement)/, /^(Gelijkblijvende maandlast|Mensualité constante)$/);
+      }
+      await termijn.waitFor({ timeout: 10000 });
+      await getal(/^(Aankoopprijs|Prix d'achat)/, '300000');
+      await kies(/^(Doel van de raming|Objet de l'estimation)/, /^(Aankoop \(met of zonder werken\)|Achat \(avec ou sans travaux\))$/);
+      await kies(/^(Gewest van het pand|Région du bien)/, /^(Vlaams Gewest|Région flamande)$/);
+      await kies(/^(Enige eigen woning|Seule habitation propre)/, /^(Ja|Oui)$/);
+      await p.getByText(/totale investering van|investissement total de/).first().waitFor({ timeout: 15000 });
+      await p.mouse.move(5, 5);
+      await p.waitForTimeout(1000);
+  }],
   ['keuzelijsten-variabiliteit', '/beheer/keuzelijsten', async p => {
       await p.getByText(/Kies een lijsttype|Choisissez un type de liste/).first().click();
       await p.waitForTimeout(1200);
@@ -1299,6 +1335,8 @@ const VERWACHT = {
   // kolom van de kredietdoelen.
   'kredietdossier-raming':      /Tarieven geldig vanaf \d|Barème en vigueur depuis le \d/,
   'keuzelijsten-kredietdoel':   /Aankoop \(met of zonder werken\)|Achat \(avec ou sans travaux\)/,
+  // Golf 2, laag A: de zin over de investering staat er enkel bij een volledige raming én een maandlast erboven.
+  'simulatie':                  /totale investering van|investissement total de/,
   // kv5: de somregel draagt het woord VOOR het bedrag ("Waarde € 1.320.000,00"); de cellen van de lijst niet. Het venster:
   // de hint over de maandlast staat enkel daar.
   'kredietdossier-patrimonium': /(Waarde|Valeur) € \d/,

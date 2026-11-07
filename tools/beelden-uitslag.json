@@ -2154,5 +2154,19 @@
       "sha": "56785acb4a84be958003dea51d4688e0fd514354",
       "vuil": true
     }
+  },
+  "simulatie": {
+    "route": "/krediet/simulatie",
+    "app": {
+      "sha": "1dc91a005f28fedfea819e4f005fbf23866ce9d1",
+      "vuil": true
+    }
+  },
+  "simulatie-fr": {
+    "route": "/krediet/simulatie",
+    "app": {
+      "sha": "1dc91a005f28fedfea819e4f005fbf23866ce9d1",
+      "vuil": true
+    }
   }
 }
