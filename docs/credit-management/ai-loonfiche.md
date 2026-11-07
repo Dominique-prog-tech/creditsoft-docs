@@ -97,7 +97,7 @@ Wijzigde iemand anders een veld nadat u het bestand liet lezen, dan wordt dat ve
 
 ## Wat er met de gegevens gebeurt
 
-- CreditSoft en ADM One draaien op servers in de Europese Unie, in Nederland.
+- CreditSoft en ADM One draaien op servers in de Europese Unie.
 - Het bestand gaat via ADM One naar de AI-leverancier van de sleutel van uw kantoor, om het te laten lezen. ADM One bewaart de inhoud niet.
 - **Het lezen zelf gebeurt buiten de Europese Unie.** Vandaag is de leverancier Anthropic. Die verwerkt het bestand buiten de EU, onder de standaardcontractbepalingen van de Europese Commissie. Anthropic gebruikt het niet om modellen te trainen en verwijdert het binnen 30 dagen. Een bestand dat als mogelijke overtreding van haar gebruiksbeleid gemarkeerd wordt, kan tot 2 jaar bewaard worden.
 - **Uw kantoor kiest zelf** of het dit aanzet. Zonder de vinkjes in ADM One wordt er niets gelezen. Een loonfiche bevat een rijksregisternummer en loongegevens: overweeg als kantoor een gegevensbeschermingseffectbeoordeling (DPIA) vóór u het aanzet.
