@@ -283,7 +283,35 @@ avez ensuite choisi une autre variabilité — la proposition s'affiche en desso
 suivantes. Pour vos contrats existants, la première révision est déjà remplie lorsque la variabilité connaît ses
 années et que la date de début ou d'acte est connue.
 
-![La fenêtre Modifier le contrat d'un contrat hypothécaire réalisé : en haut l'avis que le contrat est finalisé, en dessous notamment Montant, Durée et Taux d'intérêt, et la Variabilité Variable 5/5/5 avec à côté la Première révision au 23/04/2031. Sous ce champ figure la proposition : 23/04/2031 — début ou acte + 5 ans.](../images/kredietdossier-contract-herziening-fr.png "La première révision du taux à côté de la variabilité, avec la proposition en dessous"){ .volle-breedte }
+![La fenêtre Modifier le contrat d'un contrat hypothécaire réalisé : en haut l'avis que le contrat est finalisé, en dessous notamment Montant, Durée et Taux d'intérêt, et la Variabilité Variable 5/5/5 avec à côté la Première révision au 23/04/2031. Sous ce champ figure la proposition : 23/04/2031 — début ou acte + 5 ans. À côté de la mensualité figure le lien Tableau d'amortissement.](../images/kredietdossier-contract-herziening-fr.png "La première révision du taux à côté de la variabilité, avec la proposition en dessous"){ .volle-breedte }
+
+#### Le tableau d'amortissement
+
+À côté de la mensualité figure **Tableau d'amortissement…**. Il ouvre le tableau d'amortissement de ce contrat, avec les
+montants tels qu'ils figurent maintenant dans la fenêtre, même avant d'enregistrer.
+
+- La première année figure par mois, avec un sous-total. Suit ensuite une ligne par année, et en bas le total. Chaque
+  ligne indique le montant de l'échéance, les intérêts, le capital remboursé et le capital restant dû.
+- Au-dessus figure le mode de calcul, par exemple *Mensualité constante ; taux mensuel 0,3266 % issu de 3,99 % par an*.
+  Le taux mensuel découle du taux annuel comme la loi le prévoit.
+- Si une mensualité figure sur le contrat, vous la voyez à côté de la première échéance du tableau. Une petite
+  différence est possible : la banque arrondit parfois autrement.
+- Si le contrat a une variabilité avec une première révision, la fenêtre indique que le taux peut changer à partir de
+  cette date, et que le tableau calcule jusqu'à la fin avec le taux actuel.
+- **Imprimer (pdf)** en fait un pdf à télécharger. Il n'est pas conservé dans le dossier.
+
+![La fenêtre Tableau d'amortissement d'un contrat hypothécaire : en haut le montant, la durée, le taux et le type de produit Mensualités, en dessous le mode de calcul Mensualité constante avec le taux mensuel, la phrase indiquant que la mensualité du contrat est égale à la première échéance, et la phrase sur la première révision. En dessous le tableau avec les colonnes Échéance, Montant, Intérêts, Capital et Capital restant dû : les échéances 1 à 12, le sous-total de l'année 1, puis une ligne par année.](../images/kredietdossier-aflossingstabel-fr.png "Le tableau d'amortissement d'un contrat"){ .volle-breedte }
+
+CreditSoft ne calcule un tableau que s'il sait comment le crédit est remboursé : le mode de remboursement du **type de
+produit**, tel que votre bureau l'a confirmé dans les
+[Listes de choix](../beheer/keuzelijsten.md#le-mode-de-remboursement-dun-type-de-produit). Pour une mensualité
+constante, un remboursement in fine et un amortissement fixe du capital, vous obtenez un tableau. Pour des mensualités
+croissantes, non : le pourcentage d'augmentation n'est pas connu. S'il manque quelque chose (le type de produit, un
+mode confirmé, le montant, la durée ou le taux), la fenêtre dit ce qui manque et où le compléter.
+
+!!! info "Le tableau de la banque fait foi"
+    Ceci est un calcul de CreditSoft, sans frais ni assurances dans l'échéance. Le tableau d'amortissement que la
+    banque joint à son offre est celui qui compte.
 
 #### Un e-mail lors d'un nouveau statut
 

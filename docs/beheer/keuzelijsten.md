@@ -70,7 +70,7 @@ Bij de lijsten **Producttype hypothecair** en **Producttype persoonlijke lening*
 | **Stijgende maandlast** | De maandlast begint lager en stijgt daarna |
 | **Vaste kapitaalaflossing (dalende maandlast)** | Elke maand hetzelfde deel van het kapitaal, met de rente erbovenop; de maandlast daalt |
 
-![Het scherm Keuzelijsten met de lijst Producttype hypothecair gekozen. De tabel toont per producttype de naam in het Nederlands en het Frans, en de kolom Aflossingswijze. Bij Mensualiteiten staat cursief Voorstel: Gelijkblijvende maandlast, bij Crescendo Voorstel: Stijgende maandlast, bij Aflossingsvrij Voorstel: Aflossingsvrij (enkel rente); bij Overbrugging en Light home staat Onbekend.](../images/keuzelijsten-aflossingswijze.png "De aflossingswijze per producttype, met het voorstel uit de naam"){ .volle-breedte }
+![Het scherm Keuzelijsten met de lijst Producttype hypothecair gekozen. De tabel toont per producttype de naam in het Nederlands en het Frans, en de kolom Aflossingswijze. Bij Mensualiteiten staat de bevestigde wijze Gelijkblijvende maandlast en bij Crescendo Stijgende maandlast; bij Aflossingsvrij staat cursief het voorstel Voorstel: Aflossingsvrij (enkel rente); bij Overbrugging en Light home staat Onbekend.](../images/keuzelijsten-aflossingswijze.png "De aflossingswijze per producttype, met het voorstel uit de naam"){ .volle-breedte }
 
 Koos uw kantoor nog geen aflossingswijze, dan toont de kolom een **voorstel** in schuine letters, bijvoorbeeld
 *Voorstel: Gelijkblijvende maandlast*. CreditSoft leidt dat af uit de naam van het producttype: *Mensualiteiten*
@@ -80,6 +80,10 @@ wijst op een gelijkblijvende maandlast, *Crescendo* op een stijgende. Zegt de na
 Klik op een producttype om de aflossingswijze te kiezen. Onder het veld staat het voorstel, met de knop
 **Overnemen** ernaast. Het voorstel geldt pas als u op **Bewaren** klikt. Weet u het niet zeker, laat dan
 *Onbekend* staan.
+
+Met de bevestigde aflossingswijze rekent CreditSoft de
+[aflossingstabel](../credit-management/credit-files.md#de-aflossingstabel) van een contract. Het voorstel alleen
+volstaat daarvoor niet.
 
 ## De reden van afvallen
 

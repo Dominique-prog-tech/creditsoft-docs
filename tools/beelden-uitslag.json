@@ -1388,14 +1388,14 @@
   "kredietdossier-contract-herziening": {
     "route": "/credit-files/bc566763-9860-48e3-b8a3-f464904a9810",
     "app": {
-      "sha": "783738f277bb8bf9e41004b7074b24f9a3341a82",
+      "sha": "094a9872a5e8b27e106071e6dd942c1e55f4a911",
       "vuil": true
     }
   },
   "kredietdossier-contract-herziening-fr": {
     "route": "/credit-files/bc566763-9860-48e3-b8a3-f464904a9810",
     "app": {
-      "sha": "783738f277bb8bf9e41004b7074b24f9a3341a82",
+      "sha": "094a9872a5e8b27e106071e6dd942c1e55f4a911",
       "vuil": true
     }
   },
@@ -1836,7 +1836,7 @@
   "advies-aanbieding-venster": {
     "route": "/credit-files/02b9011d-19dc-4b40-9d9d-08314975c8d6/advies",
     "app": {
-      "sha": "a6a073bc14ab8a5efc895cc40f0a515a845c6a51",
+      "sha": "094a9872a5e8b27e106071e6dd942c1e55f4a911",
       "vuil": true
     }
   },
@@ -1857,7 +1857,7 @@
   "advies-aanbieding-venster-fr": {
     "route": "/credit-files/02b9011d-19dc-4b40-9d9d-08314975c8d6/advies",
     "app": {
-      "sha": "a6a073bc14ab8a5efc895cc40f0a515a845c6a51",
+      "sha": "094a9872a5e8b27e106071e6dd942c1e55f4a911",
       "vuil": true
     }
   },
@@ -2102,14 +2102,28 @@
   "keuzelijsten-aflossingswijze": {
     "route": "/beheer/keuzelijsten",
     "app": {
-      "sha": "4947cc2e9141b72fdb88c2f22437a2edcbdd7baf",
+      "sha": "094a9872a5e8b27e106071e6dd942c1e55f4a911",
       "vuil": true
     }
   },
   "keuzelijsten-aflossingswijze-fr": {
     "route": "/beheer/keuzelijsten",
     "app": {
-      "sha": "4947cc2e9141b72fdb88c2f22437a2edcbdd7baf",
+      "sha": "094a9872a5e8b27e106071e6dd942c1e55f4a911",
+      "vuil": true
+    }
+  },
+  "kredietdossier-aflossingstabel": {
+    "route": "/credit-files/bc566763-9860-48e3-b8a3-f464904a9810",
+    "app": {
+      "sha": "094a9872a5e8b27e106071e6dd942c1e55f4a911",
+      "vuil": true
+    }
+  },
+  "kredietdossier-aflossingstabel-fr": {
+    "route": "/credit-files/bc566763-9860-48e3-b8a3-f464904a9810",
+    "app": {
+      "sha": "094a9872a5e8b27e106071e6dd942c1e55f4a911",
       "vuil": true
     }
   }

@@ -609,6 +609,18 @@ const SCHOTEN = [
         await p.waitForTimeout(2500);
       }
   }],
+  // F7 laag 4 (07/11/2026, 1.214.0): de aflossingstabel van hetzelfde contract (C-021-1 draagt sinds de demo-aanvulling het producttype
+  // Mensualiteiten, met een bevestigde wijze). Een elementschot van het tabelvenster; eerste vorm met de hand in beeldvorm.json.
+  ['kredietdossier-aflossingstabel', `/credit-files/${ID.dossierOpvolging}`, async p => {
+      const venster = p.locator('.dxbl-popup').filter({ hasText: /Contract bewerken|Modifier le contrat/ });
+      for (let i = 0; i < 3 && !(await venster.count()); i++) {
+        await p.getByRole('gridcell', { name: /C-021-1/ }).first().dblclick();
+        await p.waitForTimeout(2500);
+      }
+      await venster.getByRole('button', { name: /Aflossingstabel…|Tableau d'amortissement…/ }).click();
+      await p.getByText(/Gelijkblijvende maandlast; maandrente|Mensualité constante ; taux mensuel/).first().waitFor({ timeout: 15000 });
+      await p.waitForTimeout(1200);
+  }],
   ['keuzelijsten-variabiliteit', '/beheer/keuzelijsten', async p => {
       await p.getByText(/Kies een lijsttype|Choisissez un type de liste/).first().click();
       await p.waitForTimeout(1200);
@@ -1252,6 +1264,9 @@ const VERWACHT = {
   'dashboard-opvolging':        /· Variabel \d|· Variable \d/,
   // \s en geen spatie: het Frans draagt een VASTE spatie vóór de dubbele punt (\u00a0, 02/10/2026).
   'kredietdossier-contract-herziening': /Voorstel:\s\d|Proposition\s:\s\d/,
+  // F7 laag 4: de rekenwijze staat enkel in het tabelvenster; het voorstel in cursief enkel bij een onbevestigd producttype.
+  'kredietdossier-aflossingstabel': /maandrente \d|taux mensuel \d/,
+  'keuzelijsten-aflossingswijze': /Voorstel: Aflossingsvrij|Proposition\s:\sRemboursement in fine/,
   // kv5: de somregel draagt het woord VOOR het bedrag ("Waarde € 1.320.000,00"); de cellen van de lijst niet. Het venster:
   // de hint over de maandlast staat enkel daar.
   'kredietdossier-patrimonium': /(Waarde|Valeur) € \d/,

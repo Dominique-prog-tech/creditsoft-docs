@@ -71,7 +71,7 @@ Les listes **Type de produit hypothécaire** et **Type de produit prêt à temp�
 | **Mensualités croissantes** | La mensualité commence plus bas et augmente ensuite |
 | **Amortissement fixe du capital (mensualités dégressives)** | Chaque mois la même part du capital, avec les intérêts en plus ; la mensualité diminue |
 
-![L'écran Listes de choix avec la liste Type de produit hypothécaire sélectionnée. Le tableau affiche pour chaque type de produit le nom en néerlandais et en français, et la colonne Mode de remboursement. Pour Mensualités figure en italique Proposition : Mensualité constante, pour Crescendo Proposition : Mensualités croissantes, pour Sans amortissement Proposition : Remboursement in fine (intérêts seuls) ; pour Crédit-pont et Light home figure Inconnu.](../images/keuzelijsten-aflossingswijze-fr.png "Le mode de remboursement par type de produit, avec la proposition tirée du nom"){ .volle-breedte }
+![L'écran Listes de choix avec la liste Type de produit hypothécaire sélectionnée. Le tableau affiche pour chaque type de produit le nom en néerlandais et en français, et la colonne Mode de remboursement. Pour Mensualités figure le mode confirmé Mensualité constante et pour Crescendo Mensualités croissantes ; pour Sans amortissement figure en italique la proposition Proposition : Remboursement in fine (intérêts seuls) ; pour Crédit-pont et Light home figure Inconnu.](../images/keuzelijsten-aflossingswijze-fr.png "Le mode de remboursement par type de produit, avec la proposition tirée du nom"){ .volle-breedte }
 
 Si votre bureau n'a pas encore choisi de mode de remboursement, la colonne affiche une **proposition** en
 italique, par exemple *Proposition : Mensualité constante*. CreditSoft la déduit du nom du type de produit :
@@ -81,6 +81,10 @@ certain, comme pour *Crédit-pont* ou un nom de marque, la colonne indique **Inc
 Cliquez sur un type de produit pour choisir son mode de remboursement. Sous le champ figure la proposition, avec
 le bouton **Reprendre** à côté. La proposition ne vaut qu'après un clic sur **Enregistrer**. Si vous n'êtes pas
 sûr, laissez *Inconnu*.
+
+Avec le mode de remboursement confirmé, CreditSoft calcule le
+[tableau d'amortissement](../credit-management/credit-files.md#le-tableau-damortissement) d'un contrat. La
+proposition seule ne suffit pas.
 
 ## Le motif d'abandon
 

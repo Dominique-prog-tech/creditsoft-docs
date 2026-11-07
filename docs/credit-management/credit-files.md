@@ -283,7 +283,35 @@ andere variabiliteit koos — dan staat het voorstel eronder, met **Voorstel geb
 verder. Bij uw bestaande contracten is de eerste herziening al ingevuld waar de variabiliteit haar jaren kent en
 de start- of aktedatum bekend is.
 
-![Het venster Contract bewerken van een gerealiseerd hypothecair contract: bovenaan de melding dat het contract afgerond is, daaronder onder meer Bedrag, Looptijd en Rentevoet, en de Variabiliteit Variabel 5/5/5 met ernaast de Eerste herziening op 23/04/2031. Onder dat veld staat het voorstel: 23/04/2031 — start of akte + 5 jaar.](../images/kredietdossier-contract-herziening.png "De eerste renteherziening naast de variabiliteit, met het voorstel eronder"){ .volle-breedte }
+![Het venster Contract bewerken van een gerealiseerd hypothecair contract: bovenaan de melding dat het contract afgerond is, daaronder onder meer Bedrag, Looptijd en Rentevoet, en de Variabiliteit Variabel 5/5/5 met ernaast de Eerste herziening op 23/04/2031. Onder dat veld staat het voorstel: 23/04/2031 — start of akte + 5 jaar. Naast de maandlast staat de link Aflossingstabel.](../images/kredietdossier-contract-herziening.png "De eerste renteherziening naast de variabiliteit, met het voorstel eronder"){ .volle-breedte }
+
+#### De aflossingstabel
+
+Naast de maandlast staat **Aflossingstabel…**. Die opent de aflossingstabel van dit contract, met de bedragen zoals ze
+nu in het venster staan, ook vóór u bewaart.
+
+- Het eerste jaar staat per maand, met een subtotaal. Daarna volgt één regel per jaar, en onderaan het totaal. Per
+  regel ziet u het bedrag van de termijn, de rente, het afgelost kapitaal en het kapitaal dat nog uitstaat.
+- Erboven staat de rekenwijze, bijvoorbeeld *Gelijkblijvende maandlast; maandrente 0,3266 % uit 3,99 % per jaar*. De
+  maandrente volgt uit de jaarrente zoals de wet het voorschrijft.
+- Staat er een maandlast op het contract, dan ziet u ze naast de eerste termijn van de tabel. Een klein verschil kan:
+  de bank rondt soms anders af.
+- Heeft het contract een variabiliteit met een eerste herziening, dan zegt het venster dat de rentevoet vanaf die datum
+  kan wijzigen, en dat de tabel tot het einde met de huidige rentevoet rekent.
+- **Afdrukken (pdf)** maakt er een pdf van om te downloaden. Die wordt niet bij het dossier bewaard.
+
+![Het venster Aflossingstabel van een hypothecair contract: bovenaan het bedrag, de looptijd, de rentevoet en het producttype Mensualiteiten, daaronder de rekenwijze Gelijkblijvende maandlast met de maandrente, de zin dat de maandlast op het contract gelijk is aan de eerste termijn, en de zin over de eerste herziening. Daaronder de tabel met de kolommen Termijn, Bedrag, Rente, Kapitaal en Uitstaand kapitaal: de termijnen 1 tot 12, het subtotaal van jaar 1 en daarna een regel per jaar.](../images/kredietdossier-aflossingstabel.png "De aflossingstabel van een contract"){ .volle-breedte }
+
+CreditSoft rekent enkel een tabel als het weet hoe het krediet afgelost wordt: de aflossingswijze van het
+**producttype**, zoals uw kantoor ze bevestigde in
+[Keuzelijsten](../beheer/keuzelijsten.md#de-aflossingswijze-van-een-producttype). Bij een gelijkblijvende maandlast,
+een aflossingsvrij krediet en een vaste kapitaalaflossing krijgt u een tabel. Bij een stijgende maandlast niet: het
+stijgingspercentage is niet gekend. Ontbreekt er iets (het producttype, een bevestigde wijze, het bedrag, de looptijd of
+de rentevoet), dan zegt het venster wat er ontbreekt en waar u het invult.
+
+!!! info "De tabel van de bank geldt"
+    Dit is een berekening van CreditSoft, zonder kosten of verzekeringen in de termijn. De aflossingstabel die de bank
+    bij haar voorstel geeft, is de juiste.
 
 #### Een mail bij een nieuwe status
 

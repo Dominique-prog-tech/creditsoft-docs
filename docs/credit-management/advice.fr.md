@@ -39,7 +39,7 @@ Les crédits que vous avez comparés pour ce client, y compris ceux que vous n'a
 
 ![Plus bas sur la page de conseil : Offres comparées avec trois crédits pour le même montant — le crédit recommandé avec le badge Recommandé, un auprès d'une autre banque à un taux plus élevé et un d'une durée plus courte avec une mensualité plus haute —, ensuite Motivation et avertissements avec si le client suit le conseil, et en bas Copies pour le client avec le bouton Établir une copie.](../images/advies-aanbiedingen-fr.png "Trois offres côte à côte, une recommandée"){ .volle-breedte }
 
-![La fenêtre Ajouter une offre, complétée à partir d'un contrat : en haut la liste Reprendre d'un contrat de ce dossier avec le contrat choisi, ensuite l'institution de crédit, le produit, le montant, la durée en mois, le taux, le TAEG, la mensualité, la case Nous recommandons ceci et le champ Pourquoi oui ou non.](../images/advies-aanbieding-venster-fr.png "Une offre comparée"){ .volle-breedte }
+![La fenêtre Ajouter une offre, complétée à partir d'un contrat : en haut la liste Reprendre d'un contrat de ce dossier avec le contrat choisi, ensuite l'institution de crédit, le produit, le montant, la durée en mois, le taux, le TAEG, la mensualité, la case Nous recommandons ceci, le lien Tableau d'amortissement et le champ Pourquoi oui ou non.](../images/advies-aanbieding-venster-fr.png "Une offre comparée"){ .volle-breedte }
 
 | Champ | À quoi il sert |
 |---|---|
@@ -50,6 +50,10 @@ Les crédits que vous avez comparés pour ce client, y compris ceux que vous n'a
 | **Pourquoi oui ou non** | Ce qui rend cette offre plus ou moins adaptée |
 
 Chaque offre s'enregistre séparément dans sa fenêtre. **Supprimer** la retire.
+
+Avec **Tableau d'amortissement…** dans la fenêtre, vous voyez le [tableau d'amortissement](credit-files.md#le-tableau-damortissement)
+de l'offre, avec les chiffres tels qu'ils figurent dans la fenêtre. Le mode de remboursement vient du type de produit du
+contrat dont vous avez repris l'offre. Une offre qui n'est liée à aucun contrat n'a pas de tableau : la fenêtre le dit.
 
 ### Motivation et avertissements
 

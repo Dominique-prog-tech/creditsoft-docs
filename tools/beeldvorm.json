@@ -755,5 +755,14 @@
   "keuzelijsten-aflossingswijze": {
     "breedte": 1280,
     "hoogte": 860
+  },
+  "kredietdossier-aflossingstabel": {
+    "breedte": 1700,
+    "hoogte": 900,
+    "element": {
+      "kies": ".dxbl-popup",
+      "bevat": "Aflossingstabel ·|Tableau d'amortissement ·",
+      "minBreed": 500
+    }
   }
 }

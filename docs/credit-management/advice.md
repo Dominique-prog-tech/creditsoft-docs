@@ -39,7 +39,7 @@ De kredieten die u voor deze klant naast elkaar legde, ook wat u nooit indiende.
 
 ![Verderop op de adviespagina: Vergeleken aanbiedingen met drie kredieten voor hetzelfde bedrag — het aanbevolen krediet met de badge Aanbevolen, een bij een andere bank met een hogere rente en een met een kortere looptijd en een hogere maandlast —, daaronder Motivering en waarschuwingen met of de klant het advies volgt, en onderaan Afschriften voor de klant met de knop Afschrift maken.](../images/advies-aanbiedingen.png "Drie aanbiedingen naast elkaar, één aanbevolen"){ .volle-breedte }
 
-![Het venster Aanbieding toevoegen, ingevuld uit een contract: bovenaan de keuzelijst Overnemen uit een contract van dit dossier met het gekozen contract, daaronder de kredietinstelling, het product, het bedrag, de looptijd in maanden, de rente, het JKP, de maandlast, het vinkje Dit raden wij aan en het veld Waarom wel of niet.](../images/advies-aanbieding-venster.png "Een vergeleken aanbieding"){ .volle-breedte }
+![Het venster Aanbieding toevoegen, ingevuld uit een contract: bovenaan de keuzelijst Overnemen uit een contract van dit dossier met het gekozen contract, daaronder de kredietinstelling, het product, het bedrag, de looptijd in maanden, de rente, het JKP, de maandlast, het vinkje Dit raden wij aan, de link Aflossingstabel en het veld Waarom wel of niet.](../images/advies-aanbieding-venster.png "Een vergeleken aanbieding"){ .volle-breedte }
 
 | Veld | Waarvoor |
 |---|---|
@@ -50,6 +50,10 @@ De kredieten die u voor deze klant naast elkaar legde, ook wat u nooit indiende.
 | **Waarom wel of niet** | Wat deze aanbieding beter of minder geschikt maakt |
 
 Elke aanbieding bewaart u apart in haar venster. Met **Verwijderen** haalt u ze weg.
+
+Met **Aflossingstabel…** in het venster ziet u de [aflossingstabel](credit-files.md#de-aflossingstabel) van de
+aanbieding, met de cijfers zoals ze in het venster staan. De aflossingswijze komt van het producttype van het contract
+waaruit u de aanbieding overnam. Een aanbieding die niet aan een contract hangt, krijgt geen tabel: het venster zegt dat.
 
 ### Motivering en waarschuwingen
 
