@@ -86,6 +86,32 @@ Avec le mode de remboursement confirmé, CreditSoft calcule le
 [tableau d'amortissement](../credit-management/credit-files.md#le-tableau-damortissement) d'un contrat. La
 proposition seule ne suffit pas.
 
+## L'objet pour l'estimation d'un but du crédit
+
+La liste **But du crédit** comporte une colonne **Objet pour l'estimation** : ce avec quoi
+l'[estimation des frais d'achat](../credit-management/credit-files.md#estimer-les-frais-dachat) calcule pour un
+dossier qui porte ce but. Les noms des buts du crédit sont gérés par nous ; vous choisissez uniquement l'objet.
+
+| Objet pour l'estimation | Ce que l'estimation calcule |
+|---|---|
+| **Achat (avec ou sans travaux)** | Les droits d'enregistrement, l'acte d'achat et l'acte de crédit |
+| **Crédit seul (travaux, rénovation)** | Uniquement l'acte de crédit |
+| **Refinancement** | Uniquement l'acte de crédit, avec la remarque que les honoraires peuvent être moins élevés |
+| **Construction neuve** | Pas d'estimation : la TVA s'applique en partie à une construction neuve |
+| **Autre objet (pas d'estimation)** | Pas d'estimation, par exemple pour un rachat ou des droits de succession |
+
+![L'écran Listes de choix avec la liste But du crédit sélectionnée. Le tableau affiche pour chaque but le nom en néerlandais et en français, et la colonne Objet pour l'estimation. Pour Achat et Achat avec travaux de rénovation figure Achat (avec ou sans travaux), pour Refinancement et Refinancement avec travaux de rénovation Refinancement, pour Construction neuve et Achat d'un terrain et construction neuve Construction neuve, et pour Travaux de rénovation Crédit seul (travaux, rénovation). Pour Achat d'un terrain à bâtir, Centralisation et Sortie d'indivision figure Non confirmé.](../images/keuzelijsten-kredietdoel-fr.png "L'objet pour l'estimation par but du crédit"){ .volle-breedte }
+
+Tant que votre bureau n'a rien choisi, la colonne affiche une **proposition** en italique, ou **Non confirmé**.
+CreditSoft déduit la proposition du nom : *Achat avec travaux de rénovation* est un achat, *Refinancement avec
+travaux de rénovation* un refinancement, *Construction neuve* une construction neuve. Un nom qui porte deux objets,
+comme *Achat + Refinancement*, ne reçoit pas de proposition. Un nom qui indique un autre tarif non plus : un
+terrain, un rachat, une sortie d'indivision, des droits de succession ou de donation.
+
+Cliquez sur un but du crédit pour choisir l'objet. Sous le champ figure la proposition, avec **Reprendre** à côté.
+Elle ne vaut qu'après **Enregistrer**. Laissez vide si vous n'êtes pas sûr : le collaborateur choisira alors l'objet
+dans la fenêtre de calcul.
+
 ## Le motif d'abandon
 
 Sous **Motif d'abandon** figurent les motifs que vous choisissez sur un [dossier de crédit](../credit-management/credit-files.md#motif-dabandon) abandonné. Chaque bureau commence avec onze : six pour lesquels la banque a refusé, quatre pour lesquels le client a renoncé, et *Autre*. Le nom commence par *Banque :* ou *Client :* — ainsi, le graphique de l'onglet *Production* du [tableau de bord](../getting-started/dashboard.md#longlet-production) distingue les deux sortes.
@@ -102,7 +128,9 @@ relations et vos contacts. Deux groupes n'y figurent volontairement pas.
 **Les listes sur lesquelles le programme s'appuie.** Les statuts de dossier et de contrat, les types de dossier
 de crédit, le but de l'achat : une logique y est attachée. CreditSoft en déduit des calculs
 et des écrans, et modifier le nom d'un statut ferait plus que changer un mot. Si vous souhaitez y apporter une
-modification, demandez-le à ADM-Concept — nous examinerons ensemble ce que cela touche.
+modification, demandez-le à ADM-Concept — nous examinerons ensemble ce que cela touche. Pour la variabilité, les
+types de produit et le but du crédit, la liste figure bien dans le sélecteur, mais vous gérez uniquement ce qui s'y
+rattache : les années de révision, le mode de remboursement ou l'objet pour l'estimation. Les noms sont gérés par nous.
 
 **Les listes identiques pour tout le monde.** Les pays et les codes postaux proviennent de manière centralisée
 d'ADM One et y sont entretenus, afin d'être les mêmes dans chaque logiciel.

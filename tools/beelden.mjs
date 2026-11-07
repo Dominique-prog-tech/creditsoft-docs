@@ -621,6 +621,26 @@ const SCHOTEN = [
       await p.getByText(/Gelijkblijvende maandlast; maandrente|Mensualité constante ; taux mensuel/).first().waitFor({ timeout: 15000 });
       await p.waitForTimeout(1200);
   }],
+  // F7 laag 3 (07/11/2026, 1.215.0): de raming van de aankoopkosten. Het gewest kiest de recept (R12: er is geen voorstel), het
+  // doel komt uit het bevestigde kredietdoel. Een elementschot van het rekenvenster; eerste vorm met de hand in beeldvorm.json.
+  ['kredietdossier-raming', `/credit-files/${ID.dossierRaming}`, async p => {
+      const raming = p.locator('.dxbl-popup').filter({ hasText: /Raming aankoopkosten|Estimation des frais d'achat/ });
+      for (let i = 0; i < 3 && !(await raming.count()); i++) {
+        const fiche = p.locator('.dxbl-popup').filter({ hasText: /Investeringsfiche & pand|Fiche d'investissement & bien/ });
+        if (!(await fiche.count())) { await p.getByText(/^(Investeringsfiche & pand|Fiche d'investissement & bien)$/).first().click(); await p.waitForTimeout(2000); }
+        await p.getByText(/^(Aankoopkosten ramen…|Estimer les frais d'achat…)$/).first().click();
+        await p.waitForTimeout(2000);
+      }
+      // ⚠️ Het PIJLTJE van het gewestveld, niet het invulvak: een klik in het vak zet enkel de cursor, de lijst gaat pas open op
+      //    het pijltje (gezien 07/11: de optie werd nooit zichtbaar, 30 s wachten). Het veld op zijn opschrift, niet op volgorde.
+      await raming.locator('.dxbl-fl-item').filter({ hasText: /^(Gewest van het pand|Région du bien)/ })
+        .locator('.dxbl-edit-btn-dropdown').first().click();
+      await p.waitForTimeout(800);
+      await p.getByRole('option', { name: /^(Vlaams Gewest|Région flamande)$/ }).click();
+      await p.getByText(/^(Totaal|Total)$/).first().waitFor({ timeout: 15000 });
+      await p.mouse.move(5, 5);
+      await p.waitForTimeout(1200);
+  }],
   ['keuzelijsten-variabiliteit', '/beheer/keuzelijsten', async p => {
       await p.getByText(/Kies een lijsttype|Choisissez un type de liste/).first().click();
       await p.waitForTimeout(1200);
@@ -633,6 +653,14 @@ const SCHOTEN = [
       await p.getByText(/Kies een lijsttype|Choisissez un type de liste/).first().click();
       await p.waitForTimeout(1200);
       await p.getByText(/^(Producttype hypothecair|Type de produit hypothécaire)$/).first().click();
+      await p.waitForTimeout(2500);
+  }],
+  // F7 laag 3 (07/11/2026, 1.215.0): het doel voor de raming per kredietdoel. Na de demo-aanvulling zijn er zeven bevestigd en
+  // drie niet (geen voorstel uit de naam).
+  ['keuzelijsten-kredietdoel', '/beheer/keuzelijsten', async p => {
+      await p.getByText(/Kies een lijsttype|Choisissez un type de liste/).first().click();
+      await p.waitForTimeout(1200);
+      await p.getByText(/^(Kredietdoel|But du crédit)$/).first().click();
       await p.waitForTimeout(2500);
   }],
   ['borderel-fiche',               `/commissie/borderel/${ID.borderel}`],
@@ -1267,6 +1295,10 @@ const VERWACHT = {
   // F7 laag 4: de rekenwijze staat enkel in het tabelvenster; het voorstel in cursief enkel bij een onbevestigd producttype.
   'kredietdossier-aflossingstabel': /maandrente \d|taux mensuel \d/,
   'keuzelijsten-aflossingswijze': /Voorstel: Aflossingsvrij|Proposition\s:\sRemboursement in fine/,
+  // F7 laag 3: "Tarieven geldig vanaf" staat er enkel als er posten zijn (een raming, geen reden); het bevestigde doel enkel in de
+  // kolom van de kredietdoelen.
+  'kredietdossier-raming':      /Tarieven geldig vanaf \d|Barème en vigueur depuis le \d/,
+  'keuzelijsten-kredietdoel':   /Aankoop \(met of zonder werken\)|Achat \(avec ou sans travaux\)/,
   // kv5: de somregel draagt het woord VOOR het bedrag ("Waarde € 1.320.000,00"); de cellen van de lijst niet. Het venster:
   // de hint over de maandlast staat enkel daar.
   'kredietdossier-patrimonium': /(Waarde|Valeur) € \d/,

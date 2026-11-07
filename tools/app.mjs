@@ -55,6 +55,11 @@ export const ID = {
   // niet doorging toont het verkeerde geval. Gekozen met een query op tenant_demo, ná de knop "Opvolging kredieten
   // aanvullen"; valt om na een her-seed (de variabiliteit hangt aan het contractnummer).
   dossierOpvolging: 'bc566763-9860-48e3-b8a3-f464904a9810',
+  // DEMO-1387 (F7 laag 3, 07/11/2026) — een lopende aankoop (Kredietaanbod getekend, nog geen akte) met kredietdoel Aankoop,
+  // aankoopprijs 298.000, gevraagd krediet 238.000 en enige eigen woning ja. Zonder compromis of akte rekent de raming met
+  // vandaag, dus met de vaste klok van de ronde (01/09/2026). Gekozen met een query na de knop "Opvolging, aflossingstabel,
+  // raming, …"; valt om na een her-seed (de fiche en enige eigen woning hangen aan het dossiernummer).
+  dossierRaming: 'a780b72b-2d6d-48be-8c35-64c131c58dad',
   // DEMO-1768 (kv5, 02/10/2026) — drie panden: twee met een eigenaar (elk een andere aanvrager) en één Samen, huur
   // bij twee, een saldo bij één. Zo toont de lijst elk geval en draagt de somregel drie bedragen. Gekozen met een
   // query na "Opvolging en patrimonium aanvullen"; valt om na een her-seed (het patrimonium hangt aan het nummer).

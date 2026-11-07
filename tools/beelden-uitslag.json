@@ -2126,5 +2126,33 @@
       "sha": "094a9872a5e8b27e106071e6dd942c1e55f4a911",
       "vuil": true
     }
+  },
+  "keuzelijsten-kredietdoel": {
+    "route": "/beheer/keuzelijsten",
+    "app": {
+      "sha": "56785acb4a84be958003dea51d4688e0fd514354",
+      "vuil": true
+    }
+  },
+  "keuzelijsten-kredietdoel-fr": {
+    "route": "/beheer/keuzelijsten",
+    "app": {
+      "sha": "56785acb4a84be958003dea51d4688e0fd514354",
+      "vuil": true
+    }
+  },
+  "kredietdossier-raming": {
+    "route": "/credit-files/a780b72b-2d6d-48be-8c35-64c131c58dad",
+    "app": {
+      "sha": "56785acb4a84be958003dea51d4688e0fd514354",
+      "vuil": true
+    }
+  },
+  "kredietdossier-raming-fr": {
+    "route": "/credit-files/a780b72b-2d6d-48be-8c35-64c131c58dad",
+    "app": {
+      "sha": "56785acb4a84be958003dea51d4688e0fd514354",
+      "vuil": true
+    }
   }
 }

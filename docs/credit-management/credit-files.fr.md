@@ -167,6 +167,51 @@ Sous l'achat figurent deux champs qui déterminent ensemble les droits d'enregis
 propre** (*Oui*, *Non* ou *Inconnu*) et la **Date du compromis**. Le taux réduit ne vaut que pour la seule
 habitation propre, et en Flandre la date du compromis compte à partir de 2027.
 
+#### Estimer les frais d'achat
+
+Sous l'achat figure **Estimer les frais d'achat…**. Ce bouton ouvre une fenêtre qui estime trois frais selon les
+tarifs légaux et les montants fixes des notaires : les **droits d'enregistrement**, les **frais de notaire** (de
+l'acte d'achat et de l'acte de crédit) et l'**inscription hypothécaire**. Rien n'est rempli tout seul.
+
+En haut, vous choisissez avec quoi le calcul se fait :
+
+- **Objet de l'estimation** : un achat, un crédit seul, un refinancement, une construction neuve ou un autre objet.
+  CreditSoft le remplit à partir du but du dossier, si votre bureau l'a confirmé dans les
+  [Listes de choix](../beheer/keuzelijsten.md#lobjet-pour-lestimation-dun-but-du-credit). Sinon, vous le choisissez
+  ici, pour cette estimation uniquement.
+- **Région du bien** : vous la choisissez toujours vous-même. CreditSoft ne la déduit pas de l'adresse.
+- **Crédit** : proposé avec le crédit demandé de la fiche. Vous pouvez l'adapter.
+- Trois cases pour un bien particulier : un **terrain** (bois, terre agricole, terrain), un **bien mixte** (pas
+  uniquement habitation) et un bien **à l'étranger**.
+
+Le prix d'achat, **Seule habitation propre** et le mandat hypothécaire viennent de la fiche ; la fenêtre les affiche
+sur une ligne. En dessous figure la date utilisée pour le calcul : la date du compromis, sinon celle de l'acte,
+sinon aujourd'hui.
+
+L'estimation est présentée par champ de la fiche : **Frais d'achat du bien** (les droits d'enregistrement),
+**Frais de notaire** et **Inscription hypothécaire**. Sous chaque champ figurent les postes, avec l'origine du tarif.
+À côté de chaque champ, vous voyez ce que la fiche contient actuellement. **Reprendre** place le montant dans ce
+champ ; ensuite, la fenêtre indique *repris*. Enregistrez ensuite la fiche.
+
+![La fenêtre Estimation des frais d'achat d'un dossier. En haut, l'objet Achat (avec ou sans travaux) d'après le but du crédit, la région Région flamande, le crédit et trois cases pour un terrain, un bien mixte et un bien à l'étranger. En dessous, la ligne avec le prix d'achat, seule habitation propre oui et aucun mandat hypothécaire, et la date utilisée pour le calcul. Ensuite les trois champs Frais d'achat du bien, Frais de notaire et Inscription hypothécaire, chacun avec son montant, le contenu actuel de la fiche et le bouton Reprendre, et en dessous les postes avec leur origine. En bas, le total.](../images/kredietdossier-raming-fr.png "L'estimation des frais d'achat, par champ de la fiche d'investissement"){ .volle-breedte }
+
+La reprise n'est possible que si l'estimation est complète. Pour un achat sans crédit, vous voyez déjà les frais de
+l'achat, mais pas encore ceux du crédit ; saisissez alors d'abord le crédit.
+
+S'il manque quelque chose, la fenêtre indique quoi et où le saisir. Parfois il n'y a pas d'estimation, et la fenêtre
+dit pourquoi : pour une construction neuve (la TVA s'applique en partie), avec un mandat hypothécaire, pour un
+terrain, pour un bien à l'étranger, pour un objet que l'estimation ne connaît pas, et pour une date antérieure à 2026
+(CreditSoft n'a pas de tarifs pour cette période). Saisissez alors les frais vous-même.
+
+!!! tip "Le crédit demandé augmente aussi"
+    Le crédit demandé est l'investissement total moins l'apport propre. Si vous reprenez les frais, il augmente de
+    ces frais à l'enregistrement, et les frais du crédit augmentent donc un peu aussi. Si vous voulez que
+    l'estimation calcule avec ce crédit plus élevé, adaptez le crédit dans la fenêtre.
+
+!!! info "Le décompte du notaire fait foi"
+    Ceci est une estimation de CreditSoft. Une remarque l'accompagne parfois, par exemple que le taux réduit flamand
+    pourrait changer pour un compromis à partir de 2027.
+
 ### Demandeurs de crédit
 
 Qui demande le crédit. Liez une relation existante avec **+ Lier un demandeur**. La liste indique, pour chaque demandeur, combien de **revenus** et combien de **charges** ont été saisis. Ouvrez un demandeur et cliquez sur **Données du client** pour ouvrir sa fiche de relation.

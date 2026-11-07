@@ -85,6 +85,32 @@ Met de bevestigde aflossingswijze rekent CreditSoft de
 [aflossingstabel](../credit-management/credit-files.md#de-aflossingstabel) van een contract. Het voorstel alleen
 volstaat daarvoor niet.
 
+## Het doel voor de raming van een kredietdoel
+
+Bij de lijst **Kredietdoel** staat een kolom **Doel voor de raming**: waarmee de
+[raming van de aankoopkosten](../credit-management/credit-files.md#de-aankoopkosten-ramen) rekent voor een dossier
+met dat kredietdoel. De namen van de kredietdoelen beheren wij; u kiest enkel het doel.
+
+| Doel voor de raming | Wat de raming rekent |
+|---|---|
+| **Aankoop (met of zonder werken)** | De registratierechten, de akte van aankoop en de kredietakte |
+| **Enkel een krediet (werken, verbouwing)** | Enkel de kredietakte |
+| **Herfinanciering** | Enkel de kredietakte, met de melding dat het ereloon lager kan liggen |
+| **Nieuwbouw of bouwen** | Geen raming: bij nieuwbouw geldt deels btw |
+| **Ander doel (niet te ramen)** | Geen raming, bijvoorbeeld bij een uitkoop of bij successierechten |
+
+![Het scherm Keuzelijsten met de lijst Kredietdoel gekozen. De tabel toont per kredietdoel de naam in het Nederlands en het Frans, en de kolom Doel voor de raming. Bij Aankoop en Aankoop met verbouwingen staat Aankoop (met of zonder werken), bij Herfinanciering en Herfinanciering met verbouwingen Herfinanciering, bij Nieuwbouw en Aankoop grond en nieuwbouw Nieuwbouw of bouwen, en bij Verbouwingen Enkel een krediet (werken, verbouwing). Bij Aankoop bouwgrond, Centralisatie en Uit onverdeeldheid treden staat Niet bevestigd.](../images/keuzelijsten-kredietdoel.png "Het doel voor de raming per kredietdoel"){ .volle-breedte }
+
+Zolang uw kantoor niets koos, toont de kolom een **voorstel** in schuine letters, of **Niet bevestigd**. CreditSoft
+leidt het voorstel af uit de naam: *Aankoop met verbouwingen* is een aankoop, *Herfinanciering met verbouwingen*
+een herfinanciering, *Nieuwbouw* nieuwbouw. Een naam met twee doelen, zoals *Aankoop + Herfinanciering*, krijgt geen
+voorstel. Een naam die op een ander tarief wijst ook niet: grond, een uitkoop, uit onverdeeldheid treden,
+successie- of schenkingsrechten.
+
+Klik op een kredietdoel om het doel te kiezen. Onder het veld staat het voorstel, met **Overnemen** ernaast. Het
+geldt pas na **Bewaren**. Laat het leeg als u het niet zeker weet: dan kiest de medewerker het doel in het
+rekenvenster.
+
 ## De reden van afvallen
 
 Bij **Reden van afvallen** staan de redenen die u op een afgevallen [kredietdossier](../credit-management/credit-files.md#reden-van-afvallen) kiest. Elk kantoor start met elf: zes waarom de bank weigerde, vier waarom de klant afzag, en *Overige*. De naam begint met *Bank:* of *Klant:* — zo houdt de grafiek op het tabblad *Productie* van het [dashboard](../getting-started/dashboard.md#het-tabblad-productie) beide soorten uit elkaar.
@@ -101,7 +127,9 @@ beschrijft. Twee groepen staan er bewust niet tussen.
 **De lijsten waar het programma op rekent.** De dossier- en contractstatussen, de soorten kredietdossier, het
 doel van de aankoop: daar hangt logica aan. CreditSoft leidt er berekeningen en schermen uit
 af, en een statusnaam wijzigen zou meer doen dan een woord veranderen. Wilt u daar iets aan wijzigen, vraag
-het dan aan ADM-Concept — dan kijken we samen wat het raakt.
+het dan aan ADM-Concept — dan kijken we samen wat het raakt. Bij de variabiliteit, de producttypes en het
+kredietdoel staat de lijst wel in de kiezer, maar beheert u enkel wat erbij hoort: de herzieningsjaren, de
+aflossingswijze of het doel voor de raming. De namen beheren wij.
 
 **De lijsten die voor iedereen gelijk zijn.** Landen en postcodes komen centraal uit ADM One en worden daar
 onderhouden, zodat ze in elk pakket dezelfde zijn.

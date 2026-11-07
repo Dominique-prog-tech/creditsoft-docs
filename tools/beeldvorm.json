@@ -764,5 +764,18 @@
       "bevat": "Aflossingstabel ·|Tableau d'amortissement ·",
       "minBreed": 500
     }
+  },
+  "keuzelijsten-kredietdoel": {
+    "breedte": 1280,
+    "hoogte": 860
+  },
+  "kredietdossier-raming": {
+    "breedte": 1700,
+    "hoogte": 1100,
+    "element": {
+      "kies": ".dxbl-popup",
+      "bevat": "Raming aankoopkosten|Estimation des frais d'achat",
+      "minBreed": 500
+    }
   }
 }

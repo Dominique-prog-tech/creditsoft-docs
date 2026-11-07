@@ -167,6 +167,51 @@ Onder de aankoop staan twee velden die samen het verkooprecht bepalen: **Enige e
 *Onbekend*) en de **Datum compromis**. Het verlaagde tarief geldt enkel voor de enige eigen woning, en in
 Vlaanderen telt vanaf 2027 de datum van het compromis.
 
+#### De aankoopkosten ramen
+
+Onder de aankoop staat **Aankoopkosten ramen…**. Die opent een venster dat drie kosten raamt met de wettelijke
+tarieven en de vaste bedragen van de notarissen: de **registratierechten**, de **notariskosten** (van de akte van
+aankoop en van de kredietakte) en de **hypotheekinschrijving**. Er wordt niets vanzelf ingevuld.
+
+Bovenaan kiest u waarmee gerekend wordt:
+
+- **Doel van de raming**: een aankoop, enkel een krediet, een herfinanciering, nieuwbouw of een ander doel.
+  CreditSoft vult het in vanuit het doel van het dossier, als uw kantoor dat bevestigde in
+  [Keuzelijsten](../beheer/keuzelijsten.md#het-doel-voor-de-raming-van-een-kredietdoel). Anders kiest u het hier,
+  enkel voor deze raming.
+- **Gewest van het pand**: dat kiest u altijd zelf. CreditSoft leidt het niet af uit het adres.
+- **Krediet**: voorgesteld met het gevraagde krediet van de fiche. U kunt het aanpassen.
+- Drie vinkjes voor een pand dat afwijkt: **grond** (bos, landbouwgrond, een terrein), een **gemengd pand** (niet
+  enkel bewoning) en een pand **in het buitenland**.
+
+De aankoopprijs, **Enige eigen woning** en het hypotheekmandaat komen uit de fiche; het venster toont ze op één
+regel. Daaronder staat met welke datum gerekend is: de datum van het compromis, anders die van de akte, anders
+vandaag.
+
+De raming staat per veld van de fiche: **Aankoopkosten pand** (de registratierechten), **Notariskosten** en
+**Hypotheekinschrijving**. Onder elk veld staan de posten, met waar het tarief vandaan komt. Naast elk veld ziet u
+wat er nu in de fiche staat. Met **Overnemen** zet u het bedrag in dat veld; daarna staat er *overgenomen*. Bewaar
+daarna de fiche.
+
+![Het venster Raming aankoopkosten van een dossier. Bovenaan het doel Aankoop (met of zonder werken) uit het kredietdoel, het gewest Vlaams Gewest, het krediet en drie vinkjes voor grond, een gemengd pand en een pand in het buitenland. Daaronder de regel met de aankoopprijs, enige eigen woning ja en geen hypotheekmandaat, en de datum waarmee gerekend is. Dan de drie velden Aankoopkosten pand, Notariskosten en Hypotheekinschrijving, elk met zijn bedrag, wat er nu in de fiche staat en de knop Overnemen, en eronder de posten met hun bron. Onderaan het totaal.](../images/kredietdossier-raming.png "De raming van de aankoopkosten, per veld van de investeringsfiche"){ .volle-breedte }
+
+Overnemen kan enkel als de raming volledig is. Bij een aankoop zonder krediet ziet u de kosten van de aankoop al,
+maar ontbreken die van het krediet; vul dan eerst het krediet in.
+
+Ontbreekt er iets, dan zegt het venster wat en waar u het invult. Soms is er geen raming, en dan zegt het venster
+waarom: bij nieuwbouw (er geldt deels btw), bij een hypotheekmandaat, voor grond, voor een pand in het buitenland,
+voor een doel dat de raming niet kent, en voor een datum vóór 2026 (daarvoor kent CreditSoft geen tarieven). Vul de
+kosten dan zelf in.
+
+!!! tip "Het gevraagde krediet stijgt mee"
+    Het gevraagde krediet is de totale investering min de eigen inbreng. Neemt u de kosten over, dan stijgt het bij
+    het bewaren met die kosten, en daarmee ook de kosten van het krediet een beetje. Wilt u dat de raming met het
+    hogere krediet rekent, pas het krediet dan aan in het venster.
+
+!!! info "De afrekening van de notaris geldt"
+    Dit is een raming van CreditSoft. Soms staat er een melding bij, bijvoorbeeld dat het verlaagde Vlaamse tarief
+    voor een compromis vanaf 2027 kan wijzigen.
+
 ### Kredietaanvragers
 
 Wie het krediet aanvraagt. Koppel een bestaande relatie met **+ Aanvrager koppelen**. De lijst toont per aanvrager hoeveel **inkomsten** en hoeveel **lasten** er ingevuld zijn. Open een aanvrager en klik op **Klantgegevens** om zijn relatiefiche te openen.
