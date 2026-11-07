@@ -134,7 +134,8 @@ Rien à signaler ? Le bloc le dit, au lieu de rester vide.
 ## Le suivi des crédits en cours
 
 Un crédit dont l'acte est passé demande encore de l'attention par la suite. Pour cela, deux cartes figurent sous
-les délais : *À revoir* et *Révision du taux*. Elles apparaissent dès qu'il y a quelque chose à suivre.
+les délais : *À revoir* et *Révision du taux*. Elles apparaissent dès qu'il y a quelque chose à suivre. Si votre
+bureau a activé le **contrôle annuel**, une troisième carte s'y ajoute.
 
 ![Les deux cartes À revoir et Révision du taux sous les délais du tableau de bord. À gauche, À revoir avec le compteur 6 et « dans les 14 jours » : par ligne le client, le motif et la date, les deux dates déjà dépassées en rouge. À droite, Révision du taux avec le compteur 74 et « dans les 6 mois » : par ligne le client, la variabilité Variable 1/1/1 et la date de la révision, avec en bas le lien pour afficher les autres.](../images/dashboard-opvolging-fr.png "Le suivi des crédits en cours : dossiers à revoir et prochaines révisions du taux"){ .volle-breedte }
 
@@ -154,8 +155,17 @@ Les années par variabilité sont encodées par votre bureau sous
 [Administration → Listes de choix](../beheer/keuzelijsten.md#la-variabilite-quand-le-taux-est-revise).
 Si elles manquent, CreditSoft ne connaît pas de prochaine révision et la carte reste vide pour ces contrats.
 
-Les deux cartes affichent les huit premières lignes, la date la plus proche en haut. S'il y en a davantage,
+**Contrôle annuel** affiche les dossiers dont l'acte a son anniversaire dans la période des délais, tant que le
+crédit court. La carte n'apparaît que si votre bureau a activé le contrôle annuel sous
+[Administration → Signaux de gestion](../beheer/beheersignalen.md#controle-annuel).
+
+Les cartes affichent les huit premières lignes, la date la plus proche en haut. S'il y en a davantage,
 cliquez sur **Afficher les … autres**, comme pour les délais.
+
+!!! tip "Une tâche plutôt que de vérifier vous-même"
+    Si vous ne voulez pas parcourir ces cartes chaque jour, laissez CreditSoft créer lui-même une tâche pour le
+    responsable du dossier, lors d'une révision du taux, d'un anniversaire de l'acte ou d'une date *À revoir le*.
+    Cela se règle sous [Administration → Signaux de gestion](../beheer/beheersignalen.md).
 
 !!! info "Pourquoi le statut ne compte pas ici"
     Pour les délais, un dossier disparaît dès que son statut relève d'une phase finale. Pas ici : un crédit

@@ -22,6 +22,10 @@ Il y a deux voies, et la différence tient à l'endroit où la tâche se retrouv
 Vous hésitez ? Choisissez la seconde. Une tâche qui relève d'un dossier sans y être rattachée reste
 introuvable pour votre collègue qui ouvre ce dossier.
 
+CreditSoft crée aussi lui-même des tâches sur un dossier de crédit : lors d'une révision du taux qui approche, à
+l'anniversaire de l'acte ou à la date *À revoir le*. Lesquelles, votre bureau le règle sous
+[Administration → Signaux de gestion](../beheer/beheersignalen.md). Une telle tâche va au responsable du dossier.
+
 ## Ce que vous voyez par défaut
 
 La liste s'ouvre sur les tâches **en cours**. C'est voulu : c'est ce qui reste à faire. Réglez la première liste de choix sur *Traitées* pour voir les tâches terminées et annulées, ou sur *Tous les statuts* pour l'ensemble.

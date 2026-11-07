@@ -198,7 +198,7 @@
   "platformbeheer-hub": {
     "route": "/administration",
     "app": {
-      "sha": "a6a073bc14ab8a5efc895cc40f0a515a845c6a51",
+      "sha": "4947cc2e9141b72fdb88c2f22437a2edcbdd7baf",
       "vuil": true
     }
   },
@@ -814,7 +814,7 @@
   "platformbeheer-hub-fr": {
     "route": "/administration",
     "app": {
-      "sha": "a6a073bc14ab8a5efc895cc40f0a515a845c6a51",
+      "sha": "4947cc2e9141b72fdb88c2f22437a2edcbdd7baf",
       "vuil": true
     }
   },
@@ -2082,6 +2082,34 @@
     "route": "/credit-files/1edb1b88-526f-400f-9ffa-0c4b46141c13",
     "app": {
       "sha": "783738f277bb8bf9e41004b7074b24f9a3341a82",
+      "vuil": true
+    }
+  },
+  "beheersignalen": {
+    "route": "/beheer/beheersignalen",
+    "app": {
+      "sha": "4947cc2e9141b72fdb88c2f22437a2edcbdd7baf",
+      "vuil": true
+    }
+  },
+  "beheersignalen-fr": {
+    "route": "/beheer/beheersignalen",
+    "app": {
+      "sha": "4947cc2e9141b72fdb88c2f22437a2edcbdd7baf",
+      "vuil": true
+    }
+  },
+  "keuzelijsten-aflossingswijze": {
+    "route": "/beheer/keuzelijsten",
+    "app": {
+      "sha": "4947cc2e9141b72fdb88c2f22437a2edcbdd7baf",
+      "vuil": true
+    }
+  },
+  "keuzelijsten-aflossingswijze-fr": {
+    "route": "/beheer/keuzelijsten",
+    "app": {
+      "sha": "4947cc2e9141b72fdb88c2f22437a2edcbdd7baf",
       "vuil": true
     }
   }

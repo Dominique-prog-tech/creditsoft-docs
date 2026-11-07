@@ -130,7 +130,8 @@ Staat er niets? Dan zegt het blok dat, in plaats van leeg te blijven.
 ## Opvolging van lopende kredieten
 
 Een krediet dat geakteerd is, vraagt later nog aandacht. Daarvoor staan onder de termijnen twee kaarten:
-*Herbekijken* en *Renteherziening*. Ze verschijnen zodra er iets op te volgen is.
+*Herbekijken* en *Renteherziening*. Ze verschijnen zodra er iets op te volgen is. Zette uw kantoor de
+**jaarlijkse check** aan, dan staat er een derde kaart naast.
 
 ![De twee kaarten Herbekijken en Renteherziening onder de termijnen op het dashboard. Links Herbekijken met de teller 6 en "binnen 14 dagen": per regel de klant, de reden en de datum, de twee datums die al voorbij zijn in het rood. Rechts Renteherziening met de teller 74 en "binnen 6 maanden": per regel de klant, de variabiliteit Variabel 1/1/1 en de datum van de herziening, met onderaan de link om de overige te tonen.](../images/dashboard-opvolging.png "Opvolging van lopende kredieten: te herbekijken dossiers en komende renteherzieningen"){ .volle-breedte }
 
@@ -151,8 +152,17 @@ De jaren per variabiliteit vult uw kantoor in onder
 [Platformbeheer → Keuzelijsten](../beheer/keuzelijsten.md#de-variabiliteit-wanneer-de-rente-herzien-wordt).
 Staan ze er niet, dan kent CreditSoft geen volgende herziening en blijft de kaart voor die contracten leeg.
 
-Beide kaarten tonen de eerste acht, de vroegste datum bovenaan. Zitten er meer achter, dan klikt u op
+**Jaarlijkse check** toont de dossiers waarvan de akte binnen het venster van de termijnen verjaart, zolang
+het krediet loopt. De kaart staat er enkel als uw kantoor de jaarlijkse check aanzette onder
+[Platformbeheer → Beheersignalen](../beheer/beheersignalen.md#jaarlijkse-check).
+
+De kaarten tonen de eerste acht, de vroegste datum bovenaan. Zitten er meer achter, dan klikt u op
 **Toon de … andere**, zoals bij de termijnen.
+
+!!! tip "Een taak in plaats van zelf kijken"
+    Wilt u niet elke dag deze kaarten nalopen, laat CreditSoft dan zelf een taak maken voor de eigenaar van het
+    dossier, bij een renteherziening, een verjaardag van de akte of een datum *Herbekijken op*. Dat stelt u in
+    onder [Platformbeheer → Beheersignalen](../beheer/beheersignalen.md).
 
 !!! info "Waarom de status hier niet meetelt"
     Bij de termijnen verdwijnt een dossier zodra zijn status in een eindfase staat. Hier niet: een geakteerd

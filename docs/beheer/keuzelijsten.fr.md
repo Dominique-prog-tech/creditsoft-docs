@@ -59,6 +59,29 @@ Avec ces chiffres, un contrat propose sa **première révision du taux**, et le
 [tableau de bord](../getting-started/dashboard.md#le-suivi-des-credits-en-cours) affiche les révisions à venir.
 Si vous laissez *Ensuite tous les* vide, seule la première révision apparaît.
 
+## Le mode de remboursement d'un type de produit
+
+Les listes **Type de produit hypothécaire** et **Type de produit prêt à tempérament** comportent une colonne
+**Mode de remboursement** : la manière dont un crédit de ce type est remboursé.
+
+| Mode de remboursement | Ce que cela signifie |
+|---|---|
+| **Mensualité constante** | Chaque mois le même montant, intérêts et capital ensemble |
+| **Remboursement in fine (intérêts seuls)** | La mensualité ne comprend que les intérêts ; le capital est remboursé à la fin |
+| **Mensualités croissantes** | La mensualité commence plus bas et augmente ensuite |
+| **Amortissement fixe du capital (mensualités dégressives)** | Chaque mois la même part du capital, avec les intérêts en plus ; la mensualité diminue |
+
+![L'écran Listes de choix avec la liste Type de produit hypothécaire sélectionnée. Le tableau affiche pour chaque type de produit le nom en néerlandais et en français, et la colonne Mode de remboursement. Pour Mensualités figure en italique Proposition : Mensualité constante, pour Crescendo Proposition : Mensualités croissantes, pour Sans amortissement Proposition : Remboursement in fine (intérêts seuls) ; pour Crédit-pont et Light home figure Inconnu.](../images/keuzelijsten-aflossingswijze-fr.png "Le mode de remboursement par type de produit, avec la proposition tirée du nom"){ .volle-breedte }
+
+Si votre bureau n'a pas encore choisi de mode de remboursement, la colonne affiche une **proposition** en
+italique, par exemple *Proposition : Mensualité constante*. CreditSoft la déduit du nom du type de produit :
+*Mensualités* indique une mensualité constante, *Crescendo* une mensualité croissante. Si le nom ne dit rien de
+certain, comme pour *Crédit-pont* ou un nom de marque, la colonne indique **Inconnu**.
+
+Cliquez sur un type de produit pour choisir son mode de remboursement. Sous le champ figure la proposition, avec
+le bouton **Reprendre** à côté. La proposition ne vaut qu'après un clic sur **Enregistrer**. Si vous n'êtes pas
+sûr, laissez *Inconnu*.
+
 ## Le motif d'abandon
 
 Sous **Motif d'abandon** figurent les motifs que vous choisissez sur un [dossier de crédit](../credit-management/credit-files.md#motif-dabandon) abandonné. Chaque bureau commence avec onze : six pour lesquels la banque a refusé, quatre pour lesquels le client a renoncé, et *Autre*. Le nom commence par *Banque :* ou *Client :* — ainsi, le graphique de l'onglet *Production* du [tableau de bord](../getting-started/dashboard.md#longlet-production) distingue les deux sortes.

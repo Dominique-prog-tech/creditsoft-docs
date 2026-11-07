@@ -201,6 +201,7 @@ plugins:
             Btw-codes en artikelen: Codes TVA et articles
             Factuurinstellingen: Paramètres de facturation
             Dashboard-fases: Phases du tableau de bord
+            Beheersignalen: Signaux de gestion
             Mededelingen: Communications
             Uw publieke pagina's: Vos pages publiques
             Verlof & sluitingsdagen: Congés & jours de fermeture
@@ -379,6 +380,7 @@ nav:
     - Btw-codes en artikelen: beheer/btw-codes-en-artikelen.md
     - Factuurinstellingen: beheer/factuurinstellingen.md
     - Dashboard-fases: beheer/dashboard-fases.md
+    - Beheersignalen: beheer/beheersignalen.md
     - Mededelingen: beheer/mededelingen.md
     - Uw publieke pagina's: beheer/kantoorprofiel.md
     - Verlof & sluitingsdagen: beheer/afwezigheden.md

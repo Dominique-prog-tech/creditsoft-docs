@@ -163,6 +163,10 @@ Op de fiche zelf staat de **schattingswaarde**, met de quotiteit ernaast.
 
 De rest van het pand zit achter de knop **Investeringsfiche & pand…**: het pandadres, het pandtype, tot wanneer het EPC geldig is en het vinkje **Vrije keuze brandverzekering**. In datzelfde venster maakt u de volledige investeringsberekening — aankoop, nieuwbouw, renovatie, notariskosten, hypotheekinschrijving en alle overige posten, met onderaan de **totale investering** en de **eigen inbreng**.
 
+Onder de aankoop staan twee velden die samen het verkooprecht bepalen: **Enige eigen woning** (*Ja*, *Nee* of
+*Onbekend*) en de **Datum compromis**. Het verlaagde tarief geldt enkel voor de enige eigen woning, en in
+Vlaanderen telt vanaf 2027 de datum van het compromis.
+
 ### Kredietaanvragers
 
 Wie het krediet aanvraagt. Koppel een bestaande relatie met **+ Aanvrager koppelen**. De lijst toont per aanvrager hoeveel **inkomsten** en hoeveel **lasten** er ingevuld zijn. Open een aanvrager en klik op **Klantgegevens** om zijn relatiefiche te openen.
@@ -383,6 +387,8 @@ De knop **Klant uitnodigen** boven de lijst stuurt uw klant een e-mail met een *
 U kiest de ontvanger uit de aanvragers van het dossier; hun naam en adres staan erbij, en u kan ook een ander adres intikken. De mail vertrekt uit uw sjabloon *Uitnodiging klantenportaal* en wordt **bewaard bij het mailverkeer van dit dossier**, zodat u later kan terugvinden wanneer en naar wie u ze stuurde.
 
 Heeft uw klant geen e-mailadres, gebruik dan **Enkel de link maken**: u krijgt de link te zien en bezorgt hem zelf, bijvoorbeeld telefonisch.
+
+Kan de mail niet vertrekken, bijvoorbeeld omdat uw kantoor nog geen [verzendadres](../administration/sender-addresses.md) heeft, dan zegt het venster dat meteen. Er wordt dan ook geen link aangemaakt.
 
 In hetzelfde venster staan onder **Uitgegeven links** alle uitnodigingen van dit dossier, met de datum waarop ze vertrokken en **wanneer de klant de link het laatst opende** — of *nog niet geopend*. Zo ziet u of uw klant al gekeken heeft. Die datum verschuift telkens hij op de link klikt; blijft hij aangemeld en komt hij later terug zonder opnieuw te klikken, dan blijft ze staan.
 

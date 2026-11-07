@@ -747,5 +747,13 @@
   "betrokken-personen-fiche-fr": {
     "breedte": 1440,
     "hoogte": 820
+  },
+  "beheersignalen": {
+    "breedte": 1280,
+    "hoogte": 1040
+  },
+  "keuzelijsten-aflossingswijze": {
+    "breedte": 1280,
+    "hoogte": 860
   }
 }

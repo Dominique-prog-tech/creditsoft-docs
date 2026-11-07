@@ -213,6 +213,12 @@ const SCHOTEN = [
   }],
   ['documenttypes',                '/beheer/documenttypes'],
   ['dashboard-fases',              '/beheer/dashboard-fases'],
+  // F8 (07/11/2026, 1.213.0): de beheersignalen. Haar eerste vorm staat met de hand in beeldvorm.json: een nieuw beeld heeft nog geen
+  // PNG. Wachten tot de kaart "Wat de ronde vandaag zou doen" er staat: daarvoor toont het scherm enkel "Laden…".
+  ['beheersignalen',               '/beheer/beheersignalen', async p => {
+      await p.getByText(/Wat de ronde vandaag zou doen|Ce que la tournée ferait aujourd'hui/).first().waitFor({ timeout: 15000 });
+      await p.waitForTimeout(1200);
+  }],
   ['commissie-instellingen',       '/beheer/commissie-instellingen'],
   ['klantportaal-vormgeving',      '/beheer/klantportaal'],
   ['mededelingen',                 '/beheer/mededelingen'],
@@ -607,6 +613,14 @@ const SCHOTEN = [
       await p.getByText(/Kies een lijsttype|Choisissez un type de liste/).first().click();
       await p.waitForTimeout(1200);
       await p.getByText(/^(Variabiliteit \(rentevoetformule\)|Variabilité \(formule de taux\))$/).first().click();
+      await p.waitForTimeout(2500);
+  }],
+  // F7 laag 2 (07/11/2026, 1.213.0): de aflossingswijze per producttype, met het voorstel uit de naam. Eerste vorm met de hand
+  // (beeldvorm.json), zoals de variabiliteit.
+  ['keuzelijsten-aflossingswijze', '/beheer/keuzelijsten', async p => {
+      await p.getByText(/Kies een lijsttype|Choisissez un type de liste/).first().click();
+      await p.waitForTimeout(1200);
+      await p.getByText(/^(Producttype hypothecair|Type de produit hypothécaire)$/).first().click();
       await p.waitForTimeout(2500);
   }],
   ['borderel-fiche',               `/commissie/borderel/${ID.borderel}`],

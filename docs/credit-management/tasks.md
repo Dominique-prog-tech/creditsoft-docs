@@ -22,6 +22,10 @@ Er zijn twee wegen, en het verschil zit hem in waar de taak nadien te vinden is.
 Twijfelt u? Kies de tweede. Een taak die bij een dossier hoort maar er niet aan hangt, vindt uw collega niet
 terug wanneer hij dat dossier opent.
 
+CreditSoft maakt ook zelf taken op een kredietdossier: bij een renteherziening die nadert, op de verjaardag van
+de akte of op de datum *Herbekijken op*. Welke daarvan, stelt uw kantoor in onder
+[Platformbeheer → Beheersignalen](../beheer/beheersignalen.md). Zo'n taak gaat naar de eigenaar van het dossier.
+
 ## Wat u standaard ziet
 
 De lijst opent op de **openstaande** taken. Dat is bewust: dat is wat er nog moet gebeuren. Zet de eerste keuzelijst op *Afgehandeld* om de afgewerkte en geannuleerde te zien, of op *Alle statussen* voor het geheel.

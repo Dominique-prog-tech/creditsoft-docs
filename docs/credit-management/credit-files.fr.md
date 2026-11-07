@@ -163,6 +163,10 @@ Sur la fiche elle-même figure la **valeur estimée**, avec la quotité à côt�
 
 Le reste du bien se trouve derrière le bouton **Fiche d'investissement & bien…** : l'adresse du bien, le type de bien, la date de validité du PEB et la case **Libre choix de l'assurance incendie**. Dans cette même fenêtre, vous établissez le calcul d'investissement complet — achat, construction neuve, rénovation, frais de notaire, inscription hypothécaire et tous les autres postes, avec en bas l'**investissement total** et l'**apport propre**.
 
+Sous l'achat figurent deux champs qui déterminent ensemble les droits d'enregistrement : **Seule habitation
+propre** (*Oui*, *Non* ou *Inconnu*) et la **Date du compromis**. Le taux réduit ne vaut que pour la seule
+habitation propre, et en Flandre la date du compromis compte à partir de 2027.
+
 ### Demandeurs de crédit
 
 Qui demande le crédit. Liez une relation existante avec **+ Lier un demandeur**. La liste indique, pour chaque demandeur, combien de **revenus** et combien de **charges** ont été saisis. Ouvrez un demandeur et cliquez sur **Données du client** pour ouvrir sa fiche de relation.
@@ -383,6 +387,8 @@ Le bouton **Inviter le client**, au-dessus de la liste, envoie à votre client u
 Vous choisissez le destinataire parmi les demandeurs du dossier ; leur nom et leur adresse sont indiqués, et vous pouvez aussi saisir une autre adresse. Le courriel provient de votre modèle *Invitation portail client* et est **conservé dans le courrier de ce dossier**, afin que vous puissiez retrouver quand et à qui vous l'avez envoyé.
 
 Si votre client n'a pas d'adresse e-mail, utilisez **Créer uniquement le lien** : le lien s'affiche et vous le transmettez vous-même, par téléphone par exemple.
+
+Si le courriel ne peut pas partir, par exemple parce que votre bureau n'a pas encore d'[adresse d'envoi](../administration/sender-addresses.md), la fenêtre le dit aussitôt. Aucun lien n'est alors créé.
 
 Dans la même fenêtre, **Liens émis** reprend toutes les invitations de ce dossier, avec la date d'envoi et **la dernière fois que le client a ouvert le lien** — ou *pas encore ouvert*. Vous voyez ainsi si votre client a déjà regardé. Cette date change chaque fois qu'il clique sur le lien ; s'il reste connecté et revient plus tard sans cliquer à nouveau, elle ne bouge pas.
 
