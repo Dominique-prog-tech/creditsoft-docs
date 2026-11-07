@@ -56,5 +56,10 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
+      # De standaardlimiet van deploy-pages is 10 minuten. Op 07/11/2026 brak de publicatie van 7e868b2 er drie keer op af
+      # (GitHub Pages hing op syncing_files, finished_file_sync en een lege status), terwijl dezelfde 84 MB de dag ervoor
+      # in 6 s tot 2 min online stond. Een ruimere limiet laat GitHub uitlopen in plaats van halverwege af te breken.
       - id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          timeout: 1800000
