@@ -31,6 +31,8 @@ Met het **speldje** bovenaan het paneel zet u het vast, zodat het openblijft ter
 
 De knop **Dossier openen** brengt u vanuit het paneel naar het volledige dossier. Bij een stuk op een relatie heet hij **Relatie openen**.
 
+Is het stuk een loonfiche, dan staat naast elk bestand ook **Lezen als loonfiche**. CreditSoft laat het bestand dan lezen door AI en stelt de gegevens voor; u kiest wat u overneemt. Zie [Een loonfiche laten lezen door AI](ai-loonfiche.md).
+
 Daarna kiest u:
 
 - **Goedkeuren** — het stuk staat afgevinkt op de documentchecklist van het dossier. Klaar.

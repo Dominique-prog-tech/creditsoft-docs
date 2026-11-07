@@ -311,6 +311,8 @@ De kolom **Status** zegt in één woord waar elk stuk staat: *Gevraagd* (nog nie
 - **Goedkeuren** — het stuk staat in orde en telt mee in de teller bovenaan.
 - **Afkeuren** — u geeft een reden op. Die is verplicht: uw klant leest ze in zijn portaal en weet zo wat er scheelt. Standaard vertrekt er ook een e-mail met een **nieuwe portaallink**, zodat hij meteen opnieuw kan aanleveren. Wat hij eerder stuurde, blijft bewaard.
 
+Is het stuk een loonfiche, klik dan **Lezen als loonfiche** naast een bestand. De AI stelt de tewerkstelling en de inkomsten van de aanvrager voor, en u kiest wat u overneemt. Zie [Een loonfiche laten lezen door AI](ai-loonfiche.md).
+
 Vraagt u een stuk toch niet, dan haalt **Verwijderen** in datzelfde venster het van de lijst. Het verhuist naar de [prullenbak](../administration/recycle-bin.md) en is dus niet definitief weg; de teller bovenaan telt er meteen één minder.
 
 #### Stukken die de klant al aanleverde

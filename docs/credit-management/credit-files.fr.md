@@ -311,6 +311,8 @@ La colonne **Statut** indique en un mot où en est chaque pièce : *Demandé* (r
 - **Approuver** — la pièce est en ordre et compte dans le compteur en haut.
 - **Refuser** — vous indiquez un motif. Il est obligatoire : votre client le lit dans son portail et sait ainsi ce qui ne va pas. Par défaut, un e-mail part également avec un **nouveau lien vers le portail**, afin qu'il puisse fournir à nouveau immédiatement. Ce qu'il avait envoyé est conservé.
 
+Si la pièce est une fiche de paie, cliquez sur **Lire comme fiche de paie** à côté d'un fichier. L'IA propose l'emploi et les revenus du demandeur, et vous choisissez ce que vous reprenez. Voir [Faire lire une fiche de paie par l'IA](ai-loonfiche.md).
+
 Si finalement vous ne demandez pas une pièce, **Supprimer** dans cette même fenêtre la retire de la liste. Elle part à la [corbeille](../administration/recycle-bin.md) et n'est donc pas définitivement effacée ; le compteur en haut en décompte une aussitôt.
 
 #### Pièces déjà fournies par le client

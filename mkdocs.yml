@@ -224,6 +224,7 @@ plugins:
             Kredietdossiers: Dossiers de crédit
             Digitaal ondertekenen: Signature électronique
             Te valideren documenten: Documents à valider
+            Loonfiche laten lezen door AI: Faire lire une fiche de paie par l'IA
             Advies: Conseil
             Opvolging na de akte: Suivi après l'acte
             # Het nav-item heet Contractenoverzicht (één woord); zonder deze regel bleef het onvertaald
@@ -306,6 +307,7 @@ nav:
     - Digitaal ondertekenen: credit-management/ondertekenen.md
     - Advies: credit-management/advice.md
     - Te valideren documenten: credit-management/document-validation.md
+    - Loonfiche laten lezen door AI: credit-management/ai-loonfiche.md
     - Opvolging na de akte: credit-management/after-deed.md
     - Kredietinstellingen: credit-management/financial-institutions.md
     - Verzekeraars: credit-management/insurance-companies.md

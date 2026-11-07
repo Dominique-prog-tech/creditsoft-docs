@@ -31,6 +31,8 @@ L'**épingle** en haut du panneau le fixe, afin qu'il reste ouvert pendant que v
 
 Le bouton **Ouvrir le dossier** vous mène du panneau au dossier complet. Pour une pièce sur une relation, il s'appelle **Ouvrir la relation**.
 
+Si la pièce est une fiche de paie, le bouton **Lire comme fiche de paie** figure aussi à côté de chaque fichier. CreditSoft fait alors lire le fichier par l'IA et propose les données ; vous choisissez ce que vous reprenez. Voir [Faire lire une fiche de paie par l'IA](ai-loonfiche.md).
+
 Ensuite, vous choisissez :
 
 - **Approuver** — la pièce est cochée sur la liste des documents du dossier. C'est fait.
