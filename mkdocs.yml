@@ -95,7 +95,11 @@ plugins:
   - i18n:
       docs_structure: suffix
       reconfigure_material: true
-      reconfigure_search: true
+      # false — en dat is geen smaak: met true gooit de plugin Franse zoekregels weg waarvan de titel gelijk is aan de
+      # Nederlandse ("Documentbibliotheek" zonder vertaling, of "Leads"), en hun secties linkten dan naar /undefined.
+      # De hook zoeken_per_taal.py (hieronder) WEIGERT te bouwen met true.
+      # Zie adm-appkit/docs/docs-site-vormgeving.md, "Zoeken per taal" (07/11/2026).
+      reconfigure_search: false
       languages:
         - locale: nl
           default: true
@@ -263,6 +267,11 @@ hooks:
   - hooks/films.py
   # Eigen omschrijving per pagina voor zoekmachines — zie het bestand zelf (24/09/2026).
   - hooks/beschrijving.py
+  # Zoeken per taal (07/11/2026): de Nederlandse pagina's zoeken enkel in het Nederlands, de Franse enkel in het Frans.
+  # Zonder deze hook voegt mkdocs-static-i18n beide talen samen tot één index, en gaf "ai" op de Nederlandse site
+  # eerst Franse pagina's. De hook woont in adm-appkit (gedeeld door de vier handleidingen). Lokaal: een symlink
+  # _appkit → ~/projects/adm-appkit; in de uitrol checkt deploy.yml adm-appkit mee uit.
+  - _appkit/tools/docs-site/zoeken_per_taal.py
 
 nav:
   - Home: index.md

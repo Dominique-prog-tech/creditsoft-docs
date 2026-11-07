@@ -1,4 +1,6 @@
 .venv/
+# Symlink naar ~/projects/adm-appkit (gedeelde hooks); in de uitrol een checkout. Zie mkdocs.yml, hooks:.
+_appkit
 site/
 __pycache__/
 .DS_Store
