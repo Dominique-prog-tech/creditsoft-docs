@@ -99,7 +99,7 @@ Si quelqu'un d'autre a modifié un champ après la lecture du fichier, ce champ 
 
 - CreditSoft et ADM One fonctionnent sur des serveurs situés dans l'Union européenne.
 - Le fichier passe par ADM One vers le fournisseur d'IA de la clé de votre bureau, pour être lu. ADM One ne conserve pas le contenu.
-- **La lecture elle-même se fait en dehors de l'Union européenne.** Aujourd'hui, le fournisseur est Anthropic. Il traite le fichier en dehors de l'UE, dans le cadre des clauses contractuelles types de la Commission européenne. Anthropic ne l'utilise pas pour entraîner des modèles et le supprime dans les 30 jours. Un fichier signalé comme une possible violation de sa politique d'utilisation peut être conservé jusqu'à 2 ans.
+- **La lecture elle-même se fait en dehors de l'Union européenne.** Aujourd'hui, le fournisseur est Anthropic. Il traite le fichier en dehors de l'UE, notamment aux États-Unis, dans le cadre des clauses contractuelles types de la Commission européenne. Anthropic ne l'utilise pas pour entraîner des modèles et le supprime dans les 30 jours. Un fichier signalé comme une possible violation de sa politique d'utilisation peut être conservé jusqu'à 2 ans.
 - **Votre bureau choisit lui-même** de l'activer ou non. Sans les cases cochées dans ADM One, rien n'est lu. Une fiche de paie contient un numéro de registre national et des données salariales : en tant que bureau, envisagez une analyse d'impact relative à la protection des données (AIPD) avant de l'activer.
 - La proposition n'est pas enregistrée. Si vous fermez le bloc, ou ouvrez une autre pièce, elle disparaît.
 - Le **journal des actions** indique qu'un fichier a été lu, et quels champs vous avez repris. Les valeurs elles-mêmes n'y figurent jamais.
