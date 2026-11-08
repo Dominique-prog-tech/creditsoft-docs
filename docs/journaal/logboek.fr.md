@@ -17,7 +17,12 @@ qui dit ce qui s'est passé :
 | **Supprimé** | La fiche est partie vers la [Corbeille](../administration/recycle-bin.md). |
 
 À côté de l'étiquette figurent le **moment** et l'**utilisateur**. Un champ qui était vide ou qui l'est devenu
-affiche un tiret.
+affiche un tiret. Sous **Créé** ne figurent que les champs qui ont reçu une valeur.
+
+Les valeurs s'affichent comme à l'écran : un choix dans une liste avec son nom, un organisme avec son nom, un
+montant en euros, une date en jour/mois/année. Si un numéro ou un code apparaît malgré tout, cette valeur n'existe
+plus nulle part, par exemple un élément supprimé. L'historique montre alors ce que contenait réellement le champ
+ce jour-là.
 
 Si beaucoup de champs ont changé d'un coup, l'historique affiche les quatre premiers et, en dessous, un bouton
 **+ tant d'autres champs**. Cliquez dessus pour tout voir.
@@ -26,14 +31,29 @@ Si beaucoup de champs ont changé d'un coup, l'historique affiche les quatre pre
     D'une fiche à la longue histoire, l'historique montre les deux cents modifications les plus récentes. Si la
     liste est pleine, il le signale en bas.
 
+## Sur un dossier de crédit : aussi les contrats
+
+L'historique d'un dossier de crédit montre aussi les modifications de ses **contrats**, mêlées à celles du
+dossier lui-même et classées dans le temps. Vous voyez ainsi en un seul endroit qui a adapté le taux d'intérêt,
+le montant ou la première révision d'un contrat.
+
+Une ligne qui porte sur un contrat affiche sous le moment une deuxième ligne qui indique **de quel contrat** il
+s'agit : le numéro de contrat (ou à défaut le numéro provisoire), le produit, l'organisme et le montant, et pour
+une assurance solde restant dû, l'assuré. Ce sont les données du contrat tel qu'il est maintenant, donc telles
+que vous les retrouvez dans la liste **Contrats**.
+
+- Sur la fiche du dossier, **un clic** sur cette ligne ouvre le contrat.
+- Un contrat supprimé porte *(supprimé)* après son nom. Ses modifications restent dans l'historique.
+
 ## Ce qui n'y figure pas
 
 - **Les horodatages techniques.** Les champs que l'application tient elle-même à jour — quand le dernier
   enregistrement a eu lieu, et par qui — n'apparaissent pas comme modification dans la liste. Ce moment figure
   d'ailleurs déjà à droite de chaque ligne. Sans ce filtre, chaque ligne commencerait par là et la vraie
   modification disparaîtrait en dessous.
-- **Les lignes sous-jacentes.** L'historique porte sur la fiche elle-même. Si vous modifiez une **adresse** sur
-  une relation, il s'agit d'un enregistrement distinct qui n'apparaît pas ici.
+- **Les lignes sous-jacentes.** L'historique porte sur la fiche elle-même et, pour un dossier de crédit, aussi
+  sur ses contrats. Si vous modifiez une **adresse** sur une relation, ou un **demandeur** sur un dossier, il
+  s'agit d'un enregistrement distinct qui n'apparaît pas ici.
 
 ## Vous ne pouvez rien y changer
 
@@ -62,3 +82,6 @@ jour-là ? Regardez dans le Journal des actions.
 
 L'Historique figure sur les six fiches principales : dossiers de crédit, relations, professionnels, apporteurs,
 organismes de crédit et assureurs. Sur une fiche sans historique, la partie n'apparaît pas.
+
+Un élément d'une [liste de choix](../beheer/keuzelijsten.md) a lui aussi un historique. Vous le trouvez dans sa
+fenêtre de modification, sous **Afficher l'historique de cet élément**.

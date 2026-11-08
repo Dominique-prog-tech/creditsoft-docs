@@ -137,6 +137,18 @@ Pour chaque motif, vous indiquez dans la colonne **Qui a donné le motif** s'il 
 
 Renommez, ajoutez ou supprimez librement. Un motif que vous supprimez reste sur les dossiers qui le portent déjà et ne revient pas de lui-même.
 
+## L'historique d'un élément
+
+En bas de la fenêtre de modification d'un élément figure **Afficher l'historique de cet élément**. Cliquez dessus
+et vous voyez qui a modifié quoi sur cet élément, quand, et de quelle valeur à quelle valeur : le nom dans les
+deux langues, l'ordre, les années de révision, l'indice de référence, le mode de remboursement, l'objet pour
+l'estimation et, pour un motif d'abandon, s'il vient de la banque ou du client. Il fonctionne comme l'[Historique](../journaal/logboek.md) d'une
+fiche, et il demande le même droit.
+
+!!! tip "L'ancien nom d'un élément"
+    Partout où un élément est utilisé, c'est son nom actuel qui apparaît, y compris dans l'historique d'un
+    dossier. Si vous renommez un statut, c'est seulement ici que vous lisez encore son ancien nom.
+
 ## Quelles listes ne pouvez-vous pas modifier ?
 
 Le sélecteur en haut reprend les listes qui sont **les vôtres** : les libellés avec lesquels vous décrivez vos

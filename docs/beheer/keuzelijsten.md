@@ -135,6 +135,17 @@ Bij elke reden zet u in de kolom **Wie gaf de reden** of ze van de *Bank* of van
 
 Hernoem, voeg toe of verwijder gerust. Een reden die u verwijdert, blijft staan op de dossiers die ze al dragen en komt niet vanzelf terug.
 
+## De historiek van een item
+
+Onderaan het bewerkvenster van een item staat **Historiek van dit item tonen**. Klik erop en u ziet wie wat aan
+dit item wijzigde, wanneer, en van welke waarde naar welke: de naam in beide talen, de volgorde, de
+herzieningsjaren, de referte-index, de aflossingswijze, het doel voor de raming, en bij een reden van afvallen of die van de bank of van de
+klant kwam. Het werkt zoals het [Logboek](../journaal/logboek.md) van een fiche, en het vraagt hetzelfde recht.
+
+!!! tip "De oude naam van een item"
+    Overal waar een item gebruikt wordt, staat de naam van vandaag, ook in het logboek van een dossier. Hernoemt u
+    een status, dan leest u alleen hier nog hoe die vroeger heette.
+
 ## Welke lijsten kunt u niet aanpassen?
 
 In de kiezer bovenaan staan de lijsten die **van u** zijn: de labels waarmee u uw relaties en contacten
