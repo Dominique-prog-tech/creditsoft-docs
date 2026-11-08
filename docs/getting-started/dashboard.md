@@ -1,6 +1,7 @@
 # Het dashboard
 
-Het dashboard is uw startscherm. In één oogopslag ziet u hoeveel dossiers er in welke fase zitten en wat de kerncijfers doen.
+Het dashboard is uw startscherm. Van boven naar onder: de vier kerncijfers, uw dossiers per fase, de grafieken van het jaar, en
+naast elkaar de laatste dossiers en wat er vandaag aandacht vraagt.
 
 ![Het dashboard op het tabblad Vandaag, naast het tabblad Productie: bovenaan het blok Aan de slag met de drie eerste instellingen, daaronder de vier kerncijfers — Aktes met het jaartal erbij, In te dienen, Ingediend en LOA met de vermelding "alle jaren" —, dan naast elkaar de drie grafieken van 2026: het gerealiseerde volume per maand, het volume per instelling en het volume per verantwoordelijke; onderaan het begin van de blokken Termijn verstreken en Termijn nadert.](../images/dashboard-startscherm.png "Het dashboard: kerncijfers, de grafieken van het jaar en de aflopende termijnen"){ .volle-breedte }
 
@@ -26,6 +27,10 @@ wijst u de drie instellingen aan die de rest bepalen, met een teller die zegt ho
 | **Voeg uw Gebruikers toe** | Zij verschijnen daarna als eigenaar van een dossier en als verantwoordelijke van een taak |
 
 Klik op **Openen** bij een stap en u staat op het juiste scherm.
+
+Zodra u één stap gedaan hebt, krimpt het blok tot **één regel**, bijvoorbeeld *2 van de 3 stappen gedaan*, met
+rechts **Toon de stappen**. Zo begint het dashboard bij uw dossiers. Klik op **Toon de stappen** om de kaarten
+opnieuw te zien.
 
 **U hoeft nergens een vinkje te zetten.** Een stap vinkt zichzelf af zodra u er iets aan gewijzigd hebt. De
 teller kijkt naar wat *u* hebt gedaan, niet naar wat er staat: uw omgeving komt met een voorbeeldnaam, een
@@ -53,6 +58,9 @@ De gekleurde tegels tellen **contracten**, niet dossiers. Elke tegel is een comb
 | **Ingediend** | Ingediende **hypothecaire** kredieten | alle jaren |
 | **LOA** | Gerealiseerde **leningen op afbetaling** | alle jaren |
 
+Achter de periode staat het bedrag van de tegel, kort geschreven: *€ 36,8 mln* voor 36,8 miljoen euro. Onder een
+miljoen staat het voluit.
+
 **LOA staat voor Lening Op Afbetaling.** Die tegel telt dus hetzelfde als *Aktes* — gerealiseerde contracten — maar voor een andere productsoort. Dat onderscheid komt uit uw productenlijst en ligt vast; u hoeft het niet in te stellen.
 
 U geeft alleen aan **wat een contractstatus betekent**: *gerealiseerd*, *in te dienen* of *ingediend*. Dat doet u onder [Platformbeheer → Dashboard-fases](../beheer/dashboard-fases.md), onderaan bij *Contractstatussen*. Statussen zonder betekenis tellen nergens mee.
@@ -73,9 +81,35 @@ U geeft alleen aan **wat een contractstatus betekent**: *gerealiseerd*, *in te d
     gerealiseerde dossiers zonder akte, op de datum waarop het aanbod getekend werd. Koppel wel uw statussen aan [fases](../beheer/dashboard-fases.md): zonder fases
     herkent het dashboard geen afgesloten dossier, en telt het dat als *In te dienen*.
 
+## De pijplijn per fase
+
+Vlak onder de vier tegels staat een rij smallere tegels: één per **fase**, met het aantal dossiers en het bedrag. Een fase
+is een groep statussen die u zelf samenstelt, bijvoorbeeld *In behandeling*, *Ingediend*, *Afgewerkt*. De vier tegels
+erboven tellen contracten; deze rij telt **dossiers**, zoals ze vandaag staan.
+
+![De pijplijn Dossiers per fase met vier kaarten: In behandeling met 365 dossiers, Ingediend met 1464, Afgewerkt met 430 en Zonder gevolg met 1741, de laatste twee met het merkteken eindfase. Elke kaart toont het totaalbedrag en daaronder de statussen die eronder vallen, met per status het aantal dossiers en het bedrag. Erboven het einde van de lijst Stilgevallen dossiers.](../images/dashboard-pijplijn.png "Uw dossiers gegroepeerd per fase, met de statussen eronder"){ .volle-breedte }
+
+- **Klik op een tegel** en eronder klapt de lijst van haar statussen open, met per status het aantal dossiers en het
+  bedrag. Klik nog eens en ze klapt dicht.
+- **Klik op de naam van de fase of op een status** in die lijst, en de lijst [Kredietdossiers](../credit-management/credit-files.md)
+  opent met precies die dossiers.
+- Dossiers met een status die u niet hebt ingedeeld, komen samen onder **Niet ingedeeld**.
+
+**Elke fase heeft een vaste kleur.** Die volgt uit wat de fase is, niet uit haar naam: de open fases zijn om beurten
+blauw en paars, een afsluitende fase die als geslaagd telt is groen, een andere afsluitende fase is grijs. Dezelfde
+kleur staat bij de status in *Laatste dossiers* en bovenaan elk [kredietdossier](../credit-management/credit-files.md#overzicht).
+Hernoemt u een fase, dan houdt ze haar kleur.
+
+Hebt u **nog geen enkele** status aan een fase gekoppeld, dan staan al uw dossiers onder *Niet ingedeeld*
+en zegt het dashboard dat met één zin en een knop **Fases instellen**. Er ontbreekt dan niets aan uw
+dossiers, enkel de indeling.
+
+!!! tip "Staat er iets in de verkeerde kolom?"
+    Dan ligt dat aan de indeling en niet aan het dossier. Een dossier volgt de fase van zijn status; verhuist u een status naar een andere fase, dan verhuizen alle dossiers met die status mee. U past dat aan onder **Platformbeheer → Dashboard-fases**.
+
 ## De drie grafieken
 
-Meteen onder de tegels staan drie grafieken, naast elkaar. Ze gaan alle drie over **hetzelfde jaar** — dat u met de pijltjes
+Onder de pijplijn staan drie grafieken, naast elkaar. Ze gaan alle drie over **hetzelfde jaar** — dat u met de pijltjes
 bovenaan kiest — en over het **gerealiseerde volume**, dus over kredieten die effectief doorgingen.
 
 ![De drie grafieken van het dashboard voor 2026, naast elkaar: links de staafgrafiek Gerealiseerd volume per maand met een staaf per maand van januari tot december, in het midden de ringgrafiek Volume per instelling en rechts de ringgrafiek Volume per verantwoordelijke, elk met een legende van de kleuren.](../images/dashboard-grafieken.png "De grafieken: gerealiseerd volume per maand, per instelling en per verantwoordelijke"){ .volle-breedte }
@@ -98,10 +132,30 @@ hierboven niet staat waar u denkt. Bemiddelt uw kantoor vooral leningen op afbet
 *Gerealiseerd zonder akte* aan staat.
 
 
+## Laatste dossiers
+
+Onder de grafieken staat links **Laatste dossiers**: de acht dossiers die het laatst gewijzigd werden, of aangemaakt
+als er nog niets aan gewijzigd is. Per regel ziet u de klant, het dossiernummer, de status in de kleur van haar fase
+en het kredietbedrag. Klik op een naam en het dossier opent. **Alle dossiers** opent de volledige lijst.
+
+## Vraagt aandacht
+
+Rechts ernaast staat **Vraagt aandacht**: drie regels, elk met een teller en een korte toelichting.
+
+| Regel | Wat de teller zegt | De toelichting |
+|---|---|---|
+| **Termijnen** | Rood: hoeveel termijnen verstreken zijn. Is er niets verstreken, dan geel: hoeveel er naderen | Hoeveel verstreken en hoeveel er binnen uw horizon vallen |
+| **Opvolging** | Rood: hoeveel te herbekijken dossiers hun datum voorbij zijn. Anders geel: alles samen | Te herbekijken (waarvan verstreken), renteherzieningen en, als uw kantoor ze aanzette, jaarlijkse checks |
+| **Stilgevallen dossiers** | Hoeveel lopende dossiers al lang stilliggen | Hetzelfde aantal, in woorden |
+
+**Klik op een regel en de lijst erachter klapt open**, onder de twee blokken, op het dashboard zelf. Een tweede
+klik klapt ze weer dicht. Zo blijft het eerste scherm rustig, en staan de namen toch één klik ver. Wat er in elke
+lijst staat, leest u hieronder. Vraagt niets aandacht, dan zegt het blok dat.
+
 ## Wat er afloopt
 
-Onder de vier tegels staan twee blokken die zeggen wat er **vandaag actie vraagt**: *Termijn verstreken* en
-*Termijn nadert*. Ze kijken naar vier datums op een kredietdossier — de uiterste datum om de **offerte** te
+Klik in *Vraagt aandacht* op **Termijnen** en twee blokken klappen open die zeggen wat er **vandaag actie vraagt**:
+*Termijn verstreken* en *Termijn nadert*. Ze kijken naar vier datums op een kredietdossier — de uiterste datum om de **offerte** te
 tekenen, om de **akte** te verlijden, de vervaldag van de **opschortende voorwaarden**, en tot wanneer het
 **EPC-attest** geldig is. U vult ze in op het kredietdossier: de eerste drie in de kaart met de datums, het
 EPC-attest bij het pand.
@@ -129,8 +183,8 @@ Staat er niets? Dan zegt het blok dat, in plaats van leeg te blijven.
 
 ## Opvolging van lopende kredieten
 
-Een krediet dat geakteerd is, vraagt later nog aandacht. Daarvoor staan onder de termijnen twee kaarten:
-*Herbekijken* en *Renteherziening*. Ze verschijnen zodra er iets op te volgen is. Zette uw kantoor de
+Een krediet dat geakteerd is, vraagt later nog aandacht. Klik in *Vraagt aandacht* op **Opvolging** en twee kaarten
+klappen open: *Herbekijken* en *Renteherziening*. Ze verschijnen zodra er iets op te volgen is. Zette uw kantoor de
 **jaarlijkse check** aan, dan staat er een derde kaart naast.
 
 ![De twee kaarten Herbekijken en Renteherziening onder de termijnen op het dashboard. Links Herbekijken met de teller 6 en "binnen 14 dagen": per regel de klant, de reden en de datum, de twee datums die al voorbij zijn in het rood. Rechts Renteherziening met de teller 74 en "binnen 6 maanden": per regel de klant, de variabiliteit Variabel 1/1/1 en de datum van de herziening, met onderaan de link om de overige te tonen.](../images/dashboard-opvolging.png "Opvolging van lopende kredieten: te herbekijken dossiers en komende renteherzieningen"){ .volle-breedte }
@@ -170,7 +224,7 @@ De kaarten tonen de eerste acht, de vroegste datum bovenaan. Zitten er meer acht
 
 ## Stilgevallen dossiers
 
-Onder de opvolging staat **Stilgevallen dossiers**: de lopende dossiers waarop al **60 dagen of langer** niets gebeurde. Het recentst stilgevallen dossier staat bovenaan — dat is nog te redden.
+Klik in *Vraagt aandacht* op **Stilgevallen dossiers** en de lijst klapt open: de lopende dossiers waarop al **60 dagen of langer** niets gebeurde. Het recentst stilgevallen dossier staat bovenaan — dat is nog te redden.
 
 ![Het blok Stilgevallen dossiers op het dashboard: de titel met het aantal, de vermelding lopend en 60 dagen of langer niets gebeurd, en per regel de klant, de status en de eigenaar, met rechts stil sinds een datum en wat het laatste spoor was.](../images/dashboard-stilgevallen.png "Wat al twee maanden stilligt, met het laatste spoor erbij"){ .volle-breedte }
 
@@ -178,22 +232,6 @@ Onder de opvolging staat **Stilgevallen dossiers**: de lopende dossiers waarop a
 - **Lopend** betekent: geen akte, en een status die niet in een afsluitende fase staat — dezelfde regel als het tabblad *Productie*. Zonder ingestelde [Dashboard-fases](../beheer/dashboard-fases.md) toont het blok hoe u ze instelt, en geen getal.
 - **Meer dan een jaar stil** staat apart onderaan, met een link naar die dossiers. Vaak zijn het dossiers die afgesloten moeten worden.
 - **Toon alle** opent de lijst [Kredietdossiers](../credit-management/credit-files.md) met precies de stilgevallen dossiers.
-
-## De pijplijn: dossiers per fase
-
-Onder de tegels staan uw dossiers gegroepeerd per **fase**. Een fase is een groep statussen die u zelf samenstelt — bijvoorbeeld *In behandeling*, *Ingediend*, *Afgewerkt*.
-
-![De pijplijn Dossiers per fase met vier kaarten: In behandeling met 365 dossiers, Ingediend met 1464, Afgewerkt met 430 en Zonder gevolg met 1741, de laatste twee met het merkteken eindfase. Elke kaart toont het totaalbedrag en daaronder de statussen die eronder vallen, met per status het aantal dossiers en het bedrag. Erboven het einde van de lijst Stilgevallen dossiers.](../images/dashboard-pijplijn.png "Uw dossiers gegroepeerd per fase, met de statussen eronder"){ .volle-breedte }
-
-- Klik op een fase om de dossiers erachter te zien.
-- Dossiers met een status die u niet hebt ingedeeld, komen samen onder **niet ingedeeld**.
-
-Hebt u **nog geen enkele** status aan een fase gekoppeld, dan staan al uw dossiers onder *niet ingedeeld*
-en zegt het dashboard dat met één zin en een knop **Fases instellen**. Er ontbreekt dan niets aan uw
-dossiers — enkel de indeling.
-
-!!! tip "Staat er iets in de verkeerde kolom?"
-    Dan ligt dat aan de indeling en niet aan het dossier. Een dossier volgt de fase van zijn status; verhuist u een status naar een andere fase, dan verhuizen alle dossiers met die status mee. U past dat aan onder **Platformbeheer → Dashboard-fases**.
 
 ## Het tabblad Productie
 

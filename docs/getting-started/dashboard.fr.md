@@ -1,6 +1,7 @@
 # Le tableau de bord
 
-Le tableau de bord est votre écran d'accueil. D'un coup d'œil, vous voyez combien de dossiers se trouvent dans quelle phase et ce que font les indicateurs.
+Le tableau de bord est votre écran d'accueil. De haut en bas : les quatre indicateurs, vos dossiers par phase, les graphiques
+de l'année, puis côte à côte les derniers dossiers et ce qui demande de l'attention aujourd'hui.
 
 ![Le tableau de bord sur l'onglet Aujourd'hui, à côté de l'onglet Production : en haut le bloc Pour commencer avec les trois premiers réglages, en dessous les quatre indicateurs — Actes avec l'année, À introduire, Introduit et LOA avec la mention « toutes les années » —, puis côte à côte les trois graphiques de 2026 : le volume réalisé par mois, le volume par institution et le volume par responsable ; en bas le début des blocs Délai dépassé et Délai proche.](../images/dashboard-startscherm-fr.png "Le tableau de bord : indicateurs, graphiques de l'année et délais qui arrivent à échéance"){ .volle-breedte }
 
@@ -28,6 +29,10 @@ combien vous en avez faits.
 | **Ajoutez vos Utilisateurs** | Ils apparaîtront ensuite comme propriétaire d'un dossier et comme responsable d'une tâche |
 
 Cliquez sur **Ouvrir** à côté d'une étape et vous arrivez sur le bon écran.
+
+Dès qu'une étape est faite, le bloc se réduit à **une ligne**, par exemple *2 étapes sur 3 effectuées*, avec à
+droite **Afficher les étapes**. Le tableau de bord commence ainsi par vos dossiers. Cliquez sur **Afficher les
+étapes** pour revoir les cartes.
 
 **Vous n'avez aucune case à cocher.** Une étape se coche d'elle-même dès que vous y avez modifié quelque
 chose. Le compteur regarde ce que *vous* avez fait, pas ce qui est présent : votre environnement arrive avec
@@ -57,6 +62,9 @@ Les tuiles colorées comptent des **contrats**, pas des dossiers. Chaque tuile c
 | **Introduits** | Les crédits **hypothécaires** introduits | toutes les années |
 | **LOA** | Les **prêts à tempérament** réalisés | toutes les années |
 
+Après la période figure le montant de la tuile, en abrégé : *€ 36,8 mio* pour 36,8 millions d'euros. Sous le million,
+il est écrit en entier.
+
 **LOA signifie prêt à tempérament** (*lening op afbetaling*). Cette tuile compte donc la même chose que *Actes* — des contrats réalisés — mais pour une autre catégorie de produit. Cette distinction provient de votre liste de produits et est fixe ; vous n'avez pas à la configurer.
 
 Vous indiquez uniquement **ce que signifie un statut de contrat** : *réalisé*, *à introduire* ou *introduit*. Cela se fait sous [Administration → Phases du tableau de bord](../beheer/dashboard-fases.md), en bas, sous *Statuts de contrat*. Les statuts sans signification ne comptent nulle part.
@@ -77,9 +85,35 @@ Vous indiquez uniquement **ce que signifie un statut de contrat** : *réalisé*,
     sans acte, à la date de signature de l'offre. Liez toutefois vos statuts à des [phases](../beheer/dashboard-fases.md) :
     sans phases, le tableau de bord ne reconnaît aucun dossier clôturé et le compte comme *À introduire*.
 
+## Le pipeline par phase
+
+Juste sous les quatre tuiles figure une rangée de tuiles plus étroites : une par **phase**, avec le nombre de dossiers et le
+montant. Une phase est un groupe de statuts que vous composez vous-même, par exemple *En traitement*, *Introduit*,
+*Finalisé*. Les quatre tuiles du haut comptent des contrats ; cette rangée compte des **dossiers**, tels qu'ils sont aujourd'hui.
+
+![Le pipeline Dossiers par phase avec quatre cartes : En traitement avec 365 dossiers, Introduit avec 1464, Finalisé avec 430 et Sans suite avec 1741, ces deux dernières portant la mention phase finale. Chaque carte affiche le montant total et, en dessous, les statuts qui en relèvent, avec par statut le nombre de dossiers et le montant. Au-dessus, la fin de la liste Dossiers à l'arrêt.](../images/dashboard-pijplijn-fr.png "Vos dossiers regroupés par phase, avec les statuts en dessous"){ .volle-breedte }
+
+- **Cliquez sur une tuile** et la liste de ses statuts s'ouvre en dessous, avec par statut le nombre de dossiers et le
+  montant. Cliquez à nouveau et elle se referme.
+- **Cliquez sur le nom de la phase ou sur un statut** dans cette liste, et la liste [Dossiers de crédit](../credit-management/credit-files.md)
+  s'ouvre avec exactement ces dossiers.
+- Les dossiers dont le statut n'a pas été classé sont regroupés sous **Non classé**.
+
+**Chaque phase a une couleur fixe.** Elle découle de la nature de la phase, pas de son nom : les phases ouvertes sont
+tour à tour bleues et violettes, une phase de clôture qui compte comme réussie est verte, une autre phase de clôture est
+grise. La même couleur accompagne le statut dans *Derniers dossiers* et en haut de chaque
+[dossier de crédit](../credit-management/credit-files.md#overzicht). Si vous renommez une phase, elle garde sa couleur.
+
+Si **aucun** statut n'est encore lié à une phase, tous vos dossiers figurent sous *Non classé* et le
+tableau de bord le signale en une phrase, avec un bouton **Configurer les phases**. Rien ne manque alors
+à vos dossiers, seule la répartition.
+
+!!! tip "Quelque chose figure dans la mauvaise colonne ?"
+    Cela tient alors à la répartition et non au dossier. Un dossier suit la phase de son statut ; si vous déplacez un statut vers une autre phase, tous les dossiers portant ce statut suivent. Vous ajustez cela sous **Administration → Phases du tableau de bord**.
+
 ## Les trois graphiques
 
-Juste sous les tuiles figurent trois graphiques, côte à côte. Ils portent tous les trois sur **la même année** — celle que vous
+Sous le pipeline figurent trois graphiques, côte à côte. Ils portent tous les trois sur **la même année** — celle que vous
 choisissez avec les flèches en haut — et sur le **volume réalisé**, donc sur les crédits effectivement
 aboutis.
 
@@ -102,10 +136,30 @@ graphique qui reste vide alors que les tuiles affichent des chiffres signifie pr
 en haut n'est pas celle que vous croyez. Si votre bureau propose surtout des prêts à tempérament, vérifiez aussi
 si *Réalisé sans acte* est activé.
 
+## Derniers dossiers
+
+Sous les graphiques, à gauche, figure **Derniers dossiers** : les huit dossiers modifiés en dernier, ou créés s'ils n'ont
+pas encore été modifiés. Par ligne, vous voyez le client, le numéro de dossier, le statut dans la couleur de sa phase et
+le montant du crédit. Cliquez sur un nom et le dossier s'ouvre. **Tous les dossiers** ouvre la liste complète.
+
+## Demande de l'attention
+
+À droite figure **Demande de l'attention** : trois lignes, chacune avec un compteur et une courte explication.
+
+| Ligne | Ce que dit le compteur | L'explication |
+|---|---|---|
+| **Échéances** | En rouge : combien d'échéances sont dépassées. Si aucune ne l'est, en jaune : combien approchent | Combien sont dépassées et combien tombent dans votre horizon |
+| **Suivi** | En rouge : combien de dossiers à revoir ont dépassé leur date. Sinon en jaune : le total | À revoir (dont dépassés), révisions du taux et, si votre bureau l'a activé, contrôles annuels |
+| **Dossiers à l'arrêt** | Combien de dossiers en cours sont à l'arrêt depuis longtemps | Le même nombre, en mots |
+
+**Cliquez sur une ligne et la liste correspondante s'ouvre**, sous les deux blocs, sur le tableau de bord même. Un
+deuxième clic la referme. Le premier écran reste ainsi calme, et les noms restent à un clic. Ce que contient chaque
+liste est expliqué ci-dessous. Si rien ne demande d'attention, le bloc le dit.
+
 ## Ce qui arrive à échéance
 
-Sous les quatre tuiles figurent deux blocs qui indiquent ce qui **demande une action aujourd'hui** : *Délai
-dépassé* et *Délai proche*. Ils examinent quatre dates d'un dossier de crédit — la date limite pour signer
+Cliquez sur **Échéances** dans *Demande de l'attention* et deux blocs s'ouvrent, qui indiquent ce qui **demande une
+action aujourd'hui** : *Délai dépassé* et *Délai proche*. Ils examinent quatre dates d'un dossier de crédit — la date limite pour signer
 l'**offre**, pour passer l'**acte**, l'échéance des **conditions suspensives**, et la validité du **certificat
 PEB**. Vous les encodez dans le dossier de crédit : les trois premières dans la carte des dates, le
 certificat PEB avec le bien.
@@ -133,8 +187,8 @@ Rien à signaler ? Le bloc le dit, au lieu de rester vide.
 
 ## Le suivi des crédits en cours
 
-Un crédit dont l'acte est passé demande encore de l'attention par la suite. Pour cela, deux cartes figurent sous
-les délais : *À revoir* et *Révision du taux*. Elles apparaissent dès qu'il y a quelque chose à suivre. Si votre
+Un crédit dont l'acte est passé demande encore de l'attention par la suite. Cliquez sur **Suivi** dans *Demande de
+l'attention* et deux cartes s'ouvrent : *À revoir* et *Révision du taux*. Elles apparaissent dès qu'il y a quelque chose à suivre. Si votre
 bureau a activé le **contrôle annuel**, une troisième carte s'y ajoute.
 
 ![Les deux cartes À revoir et Révision du taux sous les délais du tableau de bord. À gauche, À revoir avec le compteur 6 et « dans les 14 jours » : par ligne le client, le motif et la date, les deux dates déjà dépassées en rouge. À droite, Révision du taux avec le compteur 74 et « dans les 6 mois » : par ligne le client, la variabilité Variable 1/1/1 et la date de la révision, avec en bas le lien pour afficher les autres.](../images/dashboard-opvolging-fr.png "Le suivi des crédits en cours : dossiers à revoir et prochaines révisions du taux"){ .volle-breedte }
@@ -173,7 +227,7 @@ cliquez sur **Afficher les … autres**, comme pour les délais.
 
 ## Dossiers à l'arrêt
 
-Sous le suivi figure **Dossiers à l'arrêt** : les dossiers en cours sur lesquels rien ne s'est passé depuis **60 jours ou plus**. Le dossier arrêté le plus récemment figure en haut — il est encore à sauver.
+Cliquez sur **Dossiers à l'arrêt** dans *Demande de l'attention* et la liste s'ouvre : les dossiers en cours sur lesquels rien ne s'est passé depuis **60 jours ou plus**. Le dossier arrêté le plus récemment figure en haut — il est encore à sauver.
 
 ![Le bloc Dossiers à l'arrêt du tableau de bord : le titre avec le nombre, la mention en cours et rien depuis 60 jours ou plus, et par ligne le client, le statut et le propriétaire, avec à droite à l'arrêt depuis une date et la dernière trace.](../images/dashboard-stilgevallen-fr.png "Ce qui est à l'arrêt depuis deux mois, avec la dernière trace"){ .volle-breedte }
 
@@ -181,22 +235,6 @@ Sous le suivi figure **Dossiers à l'arrêt** : les dossiers en cours sur lesque
 - **En cours** signifie : pas d'acte, et un statut qui ne se trouve pas dans une phase de clôture — la même règle que l'onglet *Production*. Sans [Phases du tableau de bord](../beheer/dashboard-fases.md) réglées, le bloc indique comment les régler, sans chiffre.
 - **À l'arrêt depuis plus d'un an** figure à part en bas, avec un lien vers ces dossiers. Ce sont souvent des dossiers à clôturer.
 - **Afficher les …** ouvre la liste des [dossiers de crédit](../credit-management/credit-files.md) avec exactement les dossiers à l'arrêt.
-
-## Le pipeline : les dossiers par phase
-
-Sous les tuiles, vos dossiers sont regroupés par **phase**. Une phase est un groupe de statuts que vous composez vous-même — par exemple *En traitement*, *Introduit*, *Finalisé*.
-
-![Le pipeline Dossiers par phase avec quatre cartes : En traitement avec 365 dossiers, Introduit avec 1464, Finalisé avec 430 et Sans suite avec 1741, ces deux dernières portant la mention phase finale. Chaque carte affiche le montant total et, en dessous, les statuts qui en relèvent, avec par statut le nombre de dossiers et le montant. Au-dessus, la fin de la liste Dossiers à l'arrêt.](../images/dashboard-pijplijn-fr.png "Vos dossiers regroupés par phase, avec les statuts en dessous"){ .volle-breedte }
-
-- Cliquez sur une phase pour voir les dossiers concernés.
-- Les dossiers dont le statut n'a pas été classé sont regroupés sous **non classés**.
-
-Si **aucun** statut n'est encore lié à une phase, tous vos dossiers figurent sous *non classés* et le
-tableau de bord le signale en une phrase, avec un bouton **Configurer les phases**. Rien ne manque alors
-à vos dossiers — seule la répartition.
-
-!!! tip "Quelque chose figure dans la mauvaise colonne ?"
-    Cela tient alors à la répartition et non au dossier. Un dossier suit la phase de son statut ; si vous déplacez un statut vers une autre phase, tous les dossiers portant ce statut suivent. Vous ajustez cela sous **Administration → Phases du tableau de bord**.
 
 ## L'onglet Production
 
