@@ -669,6 +669,10 @@ const SCHOTEN = [
         await kies(/^(Aflossingswijze|Mode de remboursement)/, /^(Gelijkblijvende maandlast|Mensualité constante)$/);
       }
       await termijn.waitFor({ timeout: 10000 });
+      // Golf 2, laag B (08/11/2026, 1.217.0): de kosten van het krediet voor het JKP; met de aankoop erbij telt ook de kredietakte.
+      await getal(/^(Dossierkosten|Frais de dossier)/, '500');
+      await getal(/^(Schattingskosten|Frais d'expertise)/, '300');
+      await getal(/^(Verzekeringen per maand|Assurances par mois)/, '45');
       await getal(/^(Aankoopprijs|Prix d'achat)/, '300000');
       await kies(/^(Doel van de raming|Objet de l'estimation)/, /^(Aankoop \(met of zonder werken\)|Achat \(avec ou sans travaux\))$/);
       await kies(/^(Gewest van het pand|Région du bien)/, /^(Vlaams Gewest|Région flamande)$/);
@@ -676,6 +680,14 @@ const SCHOTEN = [
       await p.getByText(/totale investering van|investissement total de/).first().waitFor({ timeout: 15000 });
       await p.mouse.move(5, 5);
       await p.waitForTimeout(1000);
+      // ⚠️ De zin over de investering staat ONDERAAN, en ook buiten het beeld in innerText: met het JKP-blok (1.217.0) schoof ze
+      //    onder de rand van 1150 px en de belofte liet het beeld toch door (08/11/2026). Dus meten dat ze IN het venster staat.
+      const onder = await p.evaluate(() => {
+        const z = [...document.querySelectorAll('p, div')].find(e => e.children.length === 0
+          && /totale investering van|investissement total de/.test(e.textContent || ''));
+        return z ? z.getBoundingClientRect().bottom - window.innerHeight : null;
+      });
+      if (onder === null || onder > 0) throw new Error(`investering buiten beeld (${onder} px te laag)`);
   }],
   ['keuzelijsten-variabiliteit', '/beheer/keuzelijsten', async p => {
       await p.getByText(/Kies een lijsttype|Choisissez un type de liste/).first().click();
@@ -1335,8 +1347,9 @@ const VERWACHT = {
   // kolom van de kredietdoelen.
   'kredietdossier-raming':      /Tarieven geldig vanaf \d|Barème en vigueur depuis le \d/,
   'keuzelijsten-kredietdoel':   /Aankoop \(met of zonder werken\)|Achat \(avec ou sans travaux\)/,
-  // Golf 2, laag A: de zin over de investering staat er enkel bij een volledige raming én een maandlast erboven.
-  'simulatie':                  /totale investering van|investissement total de/,
+  // Golf 2, laag A: de zin over de investering staat er enkel bij een volledige raming én een maandlast erboven. Laag B: het JKP
+  // met een percentage, en GEEN "Niet meegeteld": dan telt de kredietakte mee en zijn de drie kosten ingevuld.
+  'simulatie':                  /^(?![\s\S]*(Niet meegeteld|Non compris))(?=[\s\S]*(totale investering van|investissement total de))[\s\S]*(JKP|TAEG) \((illustratief|illustratif)\)\s*\d+,\d\d\s?%/,
   // kv5: de somregel draagt het woord VOOR het bedrag ("Waarde € 1.320.000,00"); de cellen van de lijst niet. Het venster:
   // de hint over de maandlast staat enkel daar.
   'kredietdossier-patrimonium': /(Waarde|Valeur) € \d/,
