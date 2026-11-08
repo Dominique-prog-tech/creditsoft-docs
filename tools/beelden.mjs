@@ -731,6 +731,12 @@ const SCHOTEN = [
       await p.getByText(/^(Kredietdoel|But du crédit)$/).first().click();
       await p.waitForTimeout(2500);
   }],
+  // F7 golf 2, laag C2 (08/11/2026, 1.219.0): de kopie van de referte-indexen. Vraagt een gevulde kopie in de Default-databank: lokaal
+  // via een nagebootste CrediMatch met de echte historiek tot 08/2026 (de vaste klok staat op 01/09/2026, dan is 08/2026 de nieuwste
+  // die er hoort te zijn). Eerste vorm met de hand in beeldvorm.json.
+  ['referte-indexen', '/beheer/referte-indexen', async p => {
+      await p.waitForTimeout(2500);
+  }],
   ['borderel-fiche',               `/commissie/borderel/${ID.borderel}`],
   ['navigatie',                    '/dashboard'],
   // ── Facturatie (vrijgegeven 06/10/2026). Vraagt de demostap "Facturatie aanvullen" (td13) in tenant_demo. ──
@@ -1410,6 +1416,9 @@ const VERWACHT = {
   'dashboard-redenen':          /Reden opgegeven bij \d+ van \d+|Motif indiqué pour \d+ des \d+/,
   // F7 golf 2 (1.218.0): de kolom Referte-index met het voorstel uit het ritme (Variabel 5/5/5 en 10/5/5: E).
   'keuzelijsten-variabiliteit': /^(?=[\s\S]*(Eerste herziening na|Première révision après))[\s\S]*(Voorstel:\sE|Proposition\s:\sE)/,
+  // F7 golf 2 (1.219.0): de stand met de nieuwste maand én het label Actueel. Een lege kopie ("Nog geen referte-indexen") of een kopie
+  // zonder sleutel (geen label) haalt dit niet.
+  'referte-indexen': /^(?=[\s\S]*(Nieuwste maand: 08\/2026|Mois le plus récent : 08\/2026))[\s\S]*(Actueel|À jour)/,
 };
 
 // Merktekens uit de alt-tekst: hoofdletterwoord + eventuele vervolgwoorden, zonder verbindingswoord op het

@@ -73,7 +73,8 @@ ne vaut qu'après **Enregistrer**. Si la banque suit un autre indice, choisissez
 laissez le champ vide : CreditSoft ne complète jamais un indice lui-même.
 
 Sur le contrat lui-même, vous encodez ensuite le cap, le floor et l'indice de départ de l'offre : voir
-[la fenêtre du contrat](../credit-management/credit-files.md#contrats).
+[la fenêtre du contrat](../credit-management/credit-files.md#contrats). Les valeurs des indices eux-mêmes, mois par mois,
+figurent sur l'écran [Indices de référence](referte-indexen.md).
 
 ## Le mode de remboursement d'un type de produit
 

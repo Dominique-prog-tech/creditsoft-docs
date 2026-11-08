@@ -71,7 +71,8 @@ de bank een andere index, kies dan die. Weet u het niet zeker, laat het veld dan
 index in.
 
 Op het contract zelf vult u daarna de cap, de floor en de begin-index uit het aanbod in: zie
-[het contractvenster](../credit-management/credit-files.md#contracten).
+[het contractvenster](../credit-management/credit-files.md#contracten). De waarden van de indexen zelf, maand per maand,
+staan op het scherm [Referte-indexen](referte-indexen.md).
 
 ## De aflossingswijze van een producttype
 

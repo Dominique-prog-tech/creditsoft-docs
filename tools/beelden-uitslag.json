@@ -2168,5 +2168,19 @@
       "sha": "8aaf519a6649fececbb1944e11887b99449fac6d",
       "vuil": true
     }
+  },
+  "referte-indexen": {
+    "route": "/beheer/referte-indexen",
+    "app": {
+      "sha": "b5198381915fecc4c89b9abda63cea2a58cd0317",
+      "vuil": true
+    }
+  },
+  "referte-indexen-fr": {
+    "route": "/beheer/referte-indexen",
+    "app": {
+      "sha": "b5198381915fecc4c89b9abda63cea2a58cd0317",
+      "vuil": true
+    }
   }
 }
