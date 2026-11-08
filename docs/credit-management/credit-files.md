@@ -328,7 +328,22 @@ andere variabiliteit koos — dan staat het voorstel eronder, met **Voorstel geb
 verder. Bij uw bestaande contracten is de eerste herziening al ingevuld waar de variabiliteit haar jaren kent en
 de start- of aktedatum bekend is.
 
-![Het venster Contract bewerken van een gerealiseerd hypothecair contract: bovenaan de melding dat het contract afgerond is, daaronder onder meer Bedrag, Looptijd en Rentevoet, en de Variabiliteit Variabel 5/5/5 met ernaast de Eerste herziening op 23/04/2031. Onder dat veld staat het voorstel: 23/04/2031 — start of akte + 5 jaar. Naast de maandlast staat de link Aflossingstabel.](../images/kredietdossier-contract-herziening.png "De eerste renteherziening naast de variabiliteit, met het voorstel eronder"){ .volle-breedte }
+Daaronder staan vier velden die u overneemt uit het **aanbod van de bank**. Ze verschijnen bij een variabiliteit met
+herzieningsjaren, en blijven zichtbaar zolang er iets in staat:
+
+| Veld | Wat u invult |
+|---|---|
+| **Cap: grootste stijging (procentpunt)** | Hoeveel procentpunt de rente per jaar hoogstens mag stijgen, bijvoorbeeld 2 |
+| **Floor: grootste daling (procentpunt)** | Hoeveel procentpunt ze hoogstens mag dalen, als positief getal, bijvoorbeeld 2 |
+| **Begin-index (jaarlijkse vorm, %)** | De waarde van de referte-index die het aanbod noemt, bijvoorbeeld 3,738. In 2019 tot 2021 was die negatief |
+| **Maand van de begin-index** | De maand van die waarde, bijvoorbeeld 10/2026. Typ het jaar om de lijst in te korten |
+
+Onder de velden staat welke **referte-index** de variabiliteit volgt, zoals uw kantoor ze bevestigde in
+[Keuzelijsten](../beheer/keuzelijsten.md#de-referte-index). Is de cap groter dan de floor, dan verschijnt een
+waarschuwing: de wet laat geen grotere stijging dan daling toe. Bewaren kan toch, want het aanbod blijft wat de bank
+schreef, maar kijk het na. CreditSoft vult geen van de vier velden zelf in en rekent er nog niets mee.
+
+![Het venster Contract bewerken van een gerealiseerd hypothecair contract: bovenaan de melding dat het contract afgerond is, daaronder onder meer Bedrag, Looptijd en Rentevoet, en de Variabiliteit Variabel 5/5/5 met ernaast de Eerste herziening op 23/04/2031. Onder dat veld staat het voorstel: 23/04/2031 — start of akte + 5 jaar. Daaronder de vier velden uit het aanbod: Cap 2, Floor 2, Begin-index 3,738 en de maand 10/2026, met eronder de zin dat de variabiliteit nog geen referte-index draagt. Naast de maandlast staat de link Aflossingstabel.](../images/kredietdossier-contract-herziening.png "De eerste renteherziening naast de variabiliteit, met eronder cap, floor en begin-index uit het aanbod"){ .volle-breedte }
 
 #### De aflossingstabel
 

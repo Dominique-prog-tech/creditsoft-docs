@@ -47,7 +47,7 @@ wij — u kiest ze op een contract — maar per variabiliteit vult u zelf **twee
 | **Eerste herziening na (jaar)** | Na hoeveel jaar de rente voor het eerst herzien wordt |
 | **Daarna om de (jaar)** | Om de hoeveel jaar daarna opnieuw |
 
-![Het scherm Keuzelijsten met bovenaan de lijst Variabiliteit (rentevoetformule) gekozen. De tabel toont per variabiliteit de naam in de kolommen Nederlands en Frans, en de twee getallen Eerste herziening na (jaar) en Daarna om de (jaar): bij Variabel 10/5/5 bijvoorbeeld 10 en 5. Bij Vast staan beide leeg.](../images/keuzelijsten-variabiliteit.png "De variabiliteiten met hun herzieningsjaren")
+![Het scherm Keuzelijsten met bovenaan de lijst Variabiliteit (rentevoetformule) gekozen. De tabel toont per variabiliteit de naam in de kolommen Nederlands en Frans, de twee getallen Eerste herziening na (jaar) en Daarna om de (jaar), bij Variabel 10/5/5 bijvoorbeeld 10 en 5, en de kolom Referte-index met cursief het voorstel, bij Variabel 10/5/5 Voorstel: E. Bij Vast staan beide getallen leeg en staat er Niet bevestigd.](../images/keuzelijsten-variabiliteit.png "De variabiliteiten met hun herzieningsjaren en het voorstel voor de referte-index")
 
 Klik op een variabiliteit om de getallen te wijzigen; naam en volgorde staan grijs. Bij *Variabel 10/5/5* is
 dat 10 en 5. Staan de getallen in de naam, dan zijn ze al ingevuld. Bij een productnaam zoals *Record Light
@@ -57,6 +57,21 @@ dag zetten. Bij een vaste rente laat u ze leeg.
 Met die getallen stelt een contract zijn **eerste renteherziening** voor, en toont het
 [dashboard](../getting-started/dashboard.md#opvolging-van-lopende-kredieten) de herzieningen die eraan komen.
 Laat u *Daarna om de* leeg, dan verschijnt enkel de eerste herziening.
+
+### De referte-index
+
+Naast de twee getallen kiest u per variabiliteit de **Referte-index**: welke index van het Federaal Agentschap van de
+Schuld een krediet met die variabiliteit volgt. Er zijn er tien. Index **A** volgt de schatkistcertificaten op een jaar,
+**B** tot **J** de lineaire obligaties op 2 tot 10 jaar. Welke index een krediet volgt, staat in het aanbod van de bank.
+
+Koos uw kantoor nog geen index, dan toont de kolom een **voorstel** in schuine letters, uit het ritme van de latere
+herzieningen: om het jaar geeft *A*, om de 3 jaar *C*, om de 5 jaar *E* en om de 10 jaar *J*. Bij *Variabel 10/5/5* is
+dat dus *E*. Klik op de variabiliteit en kies **Overnemen** onder het veld; het voorstel geldt pas na **Bewaren**. Volgt
+de bank een andere index, kies dan die. Weet u het niet zeker, laat het veld dan leeg: CreditSoft vult nooit zelf een
+index in.
+
+Op het contract zelf vult u daarna de cap, de floor en de begin-index uit het aanbod in: zie
+[het contractvenster](../credit-management/credit-files.md#contracten).
 
 ## De aflossingswijze van een producttype
 

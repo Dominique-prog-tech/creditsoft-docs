@@ -608,6 +608,26 @@ const SCHOTEN = [
         await p.getByRole('gridcell', { name: /C-021-1/ }).first().dblclick();
         await p.waitForTimeout(2500);
       }
+      // F7 golf 2, laag C1 (08/11/2026, 1.218.0): cap, floor en begin-index uit het aanbod. De demo draagt ze niet (een kantoor vult
+      // ze in uit het aanbod), dus het recept TYPT ze in het venster en BEWAART NIET: er blijft niets achter in de demo. De tekst
+      // belooft Cap 2, Floor 2, 3,738 en 10/2026; het recept meet ze na in de velden zelf, want innerText ziet geen invulvak.
+      const veld = naam => venster.locator('.dxbl-fl-item').filter({ hasText: naam }).first();
+      const getal = async (naam, waarde) => {
+        await veld(naam).locator('input').first().click(); await p.waitForTimeout(300);
+        await p.keyboard.press('Meta+A'); await p.keyboard.type(waarde, { delay: 30 }); await p.keyboard.press('Tab'); await p.waitForTimeout(600);
+      };
+      await getal(/^(Cap: grootste stijging|Cap : hausse maximale)/, '2');
+      await getal(/^(Floor: grootste daling|Floor : baisse maximale)/, '2');
+      await getal(/^(Begin-index|Indice de départ)/, '3,738');
+      await veld(/^(Maand van de begin-index|Mois de l'indice de départ)/).locator('input').first().click(); await p.waitForTimeout(400);
+      await p.keyboard.type('10/2026', { delay: 40 }); await p.waitForTimeout(900);
+      await p.getByRole('option', { name: '10/2026' }).first().click(); await p.waitForTimeout(800);
+      const gezien = [];
+      for (const n of [/^(Cap: grootste stijging|Cap : hausse maximale)/, /^(Floor: grootste daling|Floor : baisse maximale)/,
+                       /^(Begin-index|Indice de départ)/, /^(Maand van de begin-index|Mois de l'indice de départ)/])
+        gezien.push(await veld(n).locator('input').first().inputValue());
+      if (JSON.stringify(gezien) !== JSON.stringify(['2', '2', '3,738', '10/2026']))
+        throw new Error(`de vier velden uit het aanbod staan niet zoals de tekst belooft: ${JSON.stringify(gezien)}`);
   }],
   // F7 laag 4 (07/11/2026, 1.214.0): de aflossingstabel van hetzelfde contract (C-021-1 draagt sinds de demo-aanvulling het producttype
   // Mensualiteiten, met een bevestigde wijze). Een elementschot van het tabelvenster; eerste vorm met de hand in beeldvorm.json.
@@ -1339,7 +1359,8 @@ const VERWACHT = {
   // de jarenkolom enkel bij de variabiliteitslijst (niet bij Nationaliteit).
   'dashboard-opvolging':        /· Variabel \d|· Variable \d/,
   // \s en geen spatie: het Frans draagt een VASTE spatie vóór de dubbele punt (\u00a0, 02/10/2026).
-  'kredietdossier-contract-herziening': /Voorstel:\s\d|Proposition\s:\s\d/,
+  // F7 golf 2 (1.218.0): ook de zin onder de vier velden uit het aanbod, die enkel bij die velden staat.
+  'kredietdossier-contract-herziening': /^(?=[\s\S]*(Voorstel:\s\d|Proposition\s:\s\d))[\s\S]*(draagt nog geen referte-index|ne porte pas encore d'indice de référence)/,
   // F7 laag 4: de rekenwijze staat enkel in het tabelvenster; het voorstel in cursief enkel bij een onbevestigd producttype.
   'kredietdossier-aflossingstabel': /maandrente \d|taux mensuel \d/,
   'keuzelijsten-aflossingswijze': /Voorstel: Aflossingsvrij|Proposition\s:\sRemboursement in fine/,
@@ -1387,7 +1408,8 @@ const VERWACHT = {
   'dashboard-verstrekkers':     /Geweigerd door de bank|Refusé par la banque/,
   // De teller bestaat enkel sinds k1b — een beeld van vóór 1.150.0 haalt hem niet.
   'dashboard-redenen':          /Reden opgegeven bij \d+ van \d+|Motif indiqué pour \d+ des \d+/,
-  'keuzelijsten-variabiliteit': /Eerste herziening na|Première révision après/,
+  // F7 golf 2 (1.218.0): de kolom Referte-index met het voorstel uit het ritme (Variabel 5/5/5 en 10/5/5: E).
+  'keuzelijsten-variabiliteit': /^(?=[\s\S]*(Eerste herziening na|Première révision après))[\s\S]*(Voorstel:\sE|Proposition\s:\sE)/,
 };
 
 // Merktekens uit de alt-tekst: hoofdletterwoord + eventuele vervolgwoorden, zonder verbindingswoord op het

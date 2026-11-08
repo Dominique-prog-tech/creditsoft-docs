@@ -1388,28 +1388,28 @@
   "kredietdossier-contract-herziening": {
     "route": "/credit-files/bc566763-9860-48e3-b8a3-f464904a9810",
     "app": {
-      "sha": "094a9872a5e8b27e106071e6dd942c1e55f4a911",
+      "sha": "c0ffc2228025e2972915aadc3e20ac59a538d2db",
       "vuil": true
     }
   },
   "kredietdossier-contract-herziening-fr": {
     "route": "/credit-files/bc566763-9860-48e3-b8a3-f464904a9810",
     "app": {
-      "sha": "094a9872a5e8b27e106071e6dd942c1e55f4a911",
+      "sha": "c0ffc2228025e2972915aadc3e20ac59a538d2db",
       "vuil": true
     }
   },
   "keuzelijsten-variabiliteit": {
     "route": "/beheer/keuzelijsten",
     "app": {
-      "sha": "a6a073bc14ab8a5efc895cc40f0a515a845c6a51",
+      "sha": "c0ffc2228025e2972915aadc3e20ac59a538d2db",
       "vuil": true
     }
   },
   "keuzelijsten-variabiliteit-fr": {
     "route": "/beheer/keuzelijsten",
     "app": {
-      "sha": "a6a073bc14ab8a5efc895cc40f0a515a845c6a51",
+      "sha": "c0ffc2228025e2972915aadc3e20ac59a538d2db",
       "vuil": true
     }
   },

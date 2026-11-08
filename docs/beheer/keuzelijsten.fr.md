@@ -48,7 +48,7 @@ gérés par nous — vous les choisissez sur un contrat — mais pour chaque var
 | **Première révision après (ans)** | Après combien d'années le taux est révisé pour la première fois |
 | **Ensuite tous les (ans)** | Tous les combien d'années ensuite |
 
-![L'écran Listes de choix avec, en haut, la liste Variabilité (formule de taux) sélectionnée. Le tableau affiche pour chaque variabilité le nom néerlandais et français et les deux chiffres Première révision après (ans) et Ensuite tous les (ans) : pour Variable 10/5/5 par exemple 10 et 5. Pour Fixe, les deux sont vides.](../images/keuzelijsten-variabiliteit-fr.png "Les variabilités avec leurs années de révision")
+![L'écran Listes de choix avec, en haut, la liste Variabilité (formule de taux) sélectionnée. Le tableau affiche pour chaque variabilité le nom néerlandais et français, les deux chiffres Première révision après (ans) et Ensuite tous les (ans), pour Variable 10/5/5 par exemple 10 et 5, et la colonne Indice de référence avec la proposition en italique, pour Variable 10/5/5 Proposition : E. Pour Fixe, les deux chiffres sont vides et la colonne indique Non confirmé.](../images/keuzelijsten-variabiliteit-fr.png "Les variabilités avec leurs années de révision et la proposition d'indice de référence")
 
 Cliquez sur une variabilité pour modifier les chiffres ; le nom et l'ordre sont grisés. Pour *Variable 10/5/5*,
 c'est 10 et 5. Si les chiffres figurent dans le nom, ils sont déjà remplis. Pour un nom de produit comme
@@ -58,6 +58,22 @@ placerait un rappel au mauvais jour. Pour un taux fixe, laissez-les vides.
 Avec ces chiffres, un contrat propose sa **première révision du taux**, et le
 [tableau de bord](../getting-started/dashboard.md#le-suivi-des-credits-en-cours) affiche les révisions à venir.
 Si vous laissez *Ensuite tous les* vide, seule la première révision apparaît.
+
+### L'indice de référence
+
+À côté des deux chiffres, vous choisissez pour chaque variabilité l'**Indice de référence** : l'indice de l'Agence
+fédérale de la Dette que suit un crédit avec cette variabilité. Il y en a dix. L'indice **A** suit les certificats de
+trésorerie à un an, **B** à **J** les obligations linéaires de 2 à 10 ans. L'indice que suit un crédit figure dans
+l'offre de la banque.
+
+Si votre bureau n'a pas encore choisi d'indice, la colonne affiche une **proposition** en italique, d'après le rythme
+des révisions suivantes : tous les ans donne *A*, tous les 3 ans *C*, tous les 5 ans *E* et tous les 10 ans *J*. Pour
+*Variable 10/5/5*, c'est donc *E*. Cliquez sur la variabilité et choisissez **Reprendre** sous le champ ; la proposition
+ne vaut qu'après **Enregistrer**. Si la banque suit un autre indice, choisissez celui-là. Si vous n'êtes pas sûr,
+laissez le champ vide : CreditSoft ne complète jamais un indice lui-même.
+
+Sur le contrat lui-même, vous encodez ensuite le cap, le floor et l'indice de départ de l'offre : voir
+[la fenêtre du contrat](../credit-management/credit-files.md#contrats).
 
 ## Le mode de remboursement d'un type de produit
 

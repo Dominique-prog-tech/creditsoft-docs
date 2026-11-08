@@ -328,7 +328,23 @@ avez ensuite choisi une autre variabilité — la proposition s'affiche en desso
 suivantes. Pour vos contrats existants, la première révision est déjà remplie lorsque la variabilité connaît ses
 années et que la date de début ou d'acte est connue.
 
-![La fenêtre Modifier le contrat d'un contrat hypothécaire réalisé : en haut l'avis que le contrat est finalisé, en dessous notamment Montant, Durée et Taux d'intérêt, et la Variabilité Variable 5/5/5 avec à côté la Première révision au 23/04/2031. Sous ce champ figure la proposition : 23/04/2031 — début ou acte + 5 ans. À côté de la mensualité figure le lien Tableau d'amortissement.](../images/kredietdossier-contract-herziening-fr.png "La première révision du taux à côté de la variabilité, avec la proposition en dessous"){ .volle-breedte }
+En dessous figurent quatre champs que vous reprenez de l'**offre de la banque**. Ils apparaissent pour une variabilité
+avec des années de révision, et restent visibles tant qu'ils contiennent quelque chose :
+
+| Champ | Ce que vous encodez |
+|---|---|
+| **Cap : hausse maximale (point de pourcentage)** | De combien de points le taux peut au plus augmenter par an, par exemple 2 |
+| **Floor : baisse maximale (point de pourcentage)** | De combien de points il peut au plus baisser, en nombre positif, par exemple 2 |
+| **Indice de départ (forme annuelle, %)** | La valeur de l'indice de référence que cite l'offre, par exemple 3,738. De 2019 à 2021, elle était négative |
+| **Mois de l'indice de départ** | Le mois de cette valeur, par exemple 10/2026. Tapez l'année pour raccourcir la liste |
+
+Sous les champs figure l'**indice de référence** que suit la variabilité, tel que votre bureau l'a confirmé dans
+[Listes de choix](../beheer/keuzelijsten.md#lindice-de-reference). Si le cap est plus grand que le floor, un
+avertissement apparaît : la loi n'admet pas une hausse plus grande que la baisse. Vous pouvez quand même enregistrer,
+car l'offre reste ce que la banque a écrit, mais vérifiez-la. CreditSoft ne complète aucun des quatre champs lui-même
+et ne calcule encore rien avec eux.
+
+![La fenêtre Modifier le contrat d'un contrat hypothécaire réalisé : en haut l'avis que le contrat est finalisé, en dessous notamment Montant, Durée et Taux d'intérêt, et la Variabilité Variable 5/5/5 avec à côté la Première révision au 23/04/2031. Sous ce champ figure la proposition : 23/04/2031 — début ou acte + 5 ans. En dessous, les quatre champs de l'offre : Cap 2, Floor 2, Indice de départ 3,738 et le mois 10/2026, avec en dessous la phrase indiquant que la variabilité ne porte pas encore d'indice de référence. À côté de la mensualité figure le lien Tableau d'amortissement.](../images/kredietdossier-contract-herziening-fr.png "La première révision du taux à côté de la variabilité, avec en dessous le cap, le floor et l'indice de départ de l'offre"){ .volle-breedte }
 
 #### Le tableau d'amortissement
 
