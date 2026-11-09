@@ -3,7 +3,7 @@
 Het dashboard is uw startscherm. Van boven naar onder: de vier kerncijfers, uw dossiers per fase, de grafieken van het jaar, en
 naast elkaar de laatste dossiers en wat er vandaag aandacht vraagt.
 
-![Het dashboard op het tabblad Vandaag, naast het tabblad Productie: bovenaan het blok Aan de slag met de drie eerste instellingen, daaronder de vier kerncijfers — Aktes met het jaartal erbij, In te dienen, Ingediend en LOA met de vermelding "alle jaren" —, dan naast elkaar de drie grafieken van 2026: het gerealiseerde volume per maand, het volume per instelling en het volume per verantwoordelijke; onderaan het begin van de blokken Termijn verstreken en Termijn nadert.](../images/dashboard-startscherm.png "Het dashboard: kerncijfers, de grafieken van het jaar en de aflopende termijnen"){ .volle-breedte }
+![Het dashboard op het tabblad Vandaag, naast het tabblad Productie: bovenaan de regel Aan de slag met 2 van de 3 stappen gedaan en rechts de link Toon de stappen. Daaronder de vier kerncijfers Aktes met het jaartal erbij, In te dienen, Ingediend en LOA met de vermelding "alle jaren", en de rij met de vier fases In behandeling, Ingediend, Afgewerkt en Zonder gevolg, elk in haar eigen kleur met het aantal dossiers en het bedrag. Dan naast elkaar de drie grafieken van 2026: het gerealiseerde volume per maand, het volume per instelling en het volume per verantwoordelijke. Onderaan links Laatste dossiers, met per regel de klant, het dossiernummer, de status in de kleur van haar fase en het bedrag, en rechts Vraagt aandacht met de drie regels Termijnen, Opvolging en Stilgevallen dossiers, elk met een teller en een korte toelichting.](../images/dashboard-startscherm.png "Het dashboard: kerncijfers, de fases, de grafieken van het jaar en wat aandacht vraagt"){ .volle-breedte }
 
 ## Mededelingen van het kantoor
 
@@ -18,7 +18,7 @@ bericht blijft staan, leest u bij [Mededelingen](../beheer/mededelingen.md).
 Draagt uw omgeving nog **voorbeeldgegevens**, dan staat bovenaan het dashboard het blok *Aan de slag*. Het
 wijst u de drie instellingen aan die de rest bepalen, met een teller die zegt hoeveel u er af hebt.
 
-![Het blok Aan de slag bovenaan het dashboard: links de titel met de uitleg dat de gegevens voorbeelden zijn, rechts een ring met de teller 1 van 3, daaronder drie kaarten naast elkaar — Vul uw Bedrijfsfiche in, die al afgevinkt is, en Stel uw Verzendadressen in en Voeg uw Gebruikers toe, elk met een korte uitleg en een knop Openen — en rechtsonder de link Verbergen. Onder de bovenbalk staat de strook Opstartomgeving.](../images/dashboard-aan-de-slag.png "De drie instellingen die u het best als eerste doet, met de teller die meeloopt met uw werk"){ .volle-breedte }
+![Het blok Aan de slag bovenaan het dashboard, opengeklikt: links de titel met de uitleg dat de gegevens voorbeelden zijn, rechts een ring met de teller 2 van 3. Daaronder drie kaarten naast elkaar: Vul uw Bedrijfsfiche in en Voeg uw Gebruikers toe zijn al afgevinkt, Stel uw Verzendadressen in staat nog open, met een korte uitleg en een knop Openen. Rechtsonder de link Verbergen. Onder de bovenbalk staat de strook Opstartomgeving.](../images/dashboard-aan-de-slag.png "De drie instellingen die u het best als eerste doet, met de teller die meeloopt met uw werk"){ .volle-breedte }
 
 | Stap | Waarom die eerst |
 |---|---|
@@ -87,7 +87,7 @@ Vlak onder de vier tegels staat een rij smallere tegels: één per **fase**, met
 is een groep statussen die u zelf samenstelt, bijvoorbeeld *In behandeling*, *Ingediend*, *Afgewerkt*. De vier tegels
 erboven tellen contracten; deze rij telt **dossiers**, zoals ze vandaag staan.
 
-![De pijplijn Dossiers per fase met vier kaarten: In behandeling met 365 dossiers, Ingediend met 1464, Afgewerkt met 430 en Zonder gevolg met 1741, de laatste twee met het merkteken eindfase. Elke kaart toont het totaalbedrag en daaronder de statussen die eronder vallen, met per status het aantal dossiers en het bedrag. Erboven het einde van de lijst Stilgevallen dossiers.](../images/dashboard-pijplijn.png "Uw dossiers gegroepeerd per fase, met de statussen eronder"){ .volle-breedte }
+![De rij met de vier fases In behandeling, Ingediend, Afgewerkt en Zonder gevolg, elk met het aantal dossiers en het bedrag. De tegel Ingediend is aangeklikt: eronder staat de lijst van haar vier statussen, met per status het aantal dossiers en het bedrag. Onder die lijst begint de rij grafieken.](../images/dashboard-pijplijn.png "Uw dossiers gegroepeerd per fase, met de statussen eronder"){ .volle-breedte }
 
 - **Klik op een tegel** en eronder klapt de lijst van haar statussen open, met per status het aantal dossiers en het
   bedrag. Klik nog eens en ze klapt dicht.
@@ -187,7 +187,7 @@ Een krediet dat geakteerd is, vraagt later nog aandacht. Klik in *Vraagt aandach
 klappen open: *Herbekijken* en *Renteherziening*. Ze verschijnen zodra er iets op te volgen is. Zette uw kantoor de
 **jaarlijkse check** aan, dan staat er een derde kaart naast.
 
-![De twee kaarten Herbekijken en Renteherziening onder de termijnen op het dashboard. Links Herbekijken met de teller 6 en "binnen 14 dagen": per regel de klant, de reden en de datum, de twee datums die al voorbij zijn in het rood. Rechts Renteherziening met de teller 74 en "binnen 6 maanden": per regel de klant, de variabiliteit Variabel 1/1/1 en de datum van de herziening, met onderaan de link om de overige te tonen.](../images/dashboard-opvolging.png "Opvolging van lopende kredieten: te herbekijken dossiers en komende renteherzieningen"){ .volle-breedte }
+![De twee kaarten Herbekijken en Renteherziening, opengeklikt vanuit de regel Opvolging in Vraagt aandacht. Links Herbekijken met de teller 6 en "binnen 14 dagen": per regel de klant, de reden en de datum, de twee datums die al voorbij zijn in het rood. Rechts Renteherziening met de teller 75 en "binnen 6 maanden": per regel de klant, de variabiliteit Variabel 1/1/1 en de datum van de herziening, met onderaan de link Toon de 67 andere.](../images/dashboard-opvolging.png "Opvolging van lopende kredieten: te herbekijken dossiers en komende renteherzieningen"){ .volle-breedte }
 
 **Herbekijken** toont de dossiers waarop iemand een datum **Herbekijken op** zette — bijvoorbeeld een jaar na
 de akte, bij een dossier dat u wil nalopen. U zet die datum op het
@@ -226,7 +226,7 @@ De kaarten tonen de eerste acht, de vroegste datum bovenaan. Zitten er meer acht
 
 Klik in *Vraagt aandacht* op **Stilgevallen dossiers** en de lijst klapt open: de lopende dossiers waarop al **60 dagen of langer** niets gebeurde. Het recentst stilgevallen dossier staat bovenaan — dat is nog te redden.
 
-![Het blok Stilgevallen dossiers op het dashboard: de titel met het aantal, de vermelding lopend en 60 dagen of langer niets gebeurd, en per regel de klant, de status en de eigenaar, met rechts stil sinds een datum en wat het laatste spoor was.](../images/dashboard-stilgevallen.png "Wat al twee maanden stilligt, met het laatste spoor erbij"){ .volle-breedte }
+![Het blok Stilgevallen dossiers, opengeklikt vanuit de regel Stilgevallen dossiers in Vraagt aandacht, onder de blokken Laatste dossiers en Vraagt aandacht: de titel met het aantal, de vermelding lopend en 60 dagen of langer niets gebeurd, en per regel de klant, de status en de eigenaar, met rechts stil sinds een datum en wat het laatste spoor was. Onderaan de link Toon alle 188 en de link naar de dossiers die al meer dan een jaar stilliggen.](../images/dashboard-stilgevallen.png "Wat al twee maanden stilligt, met het laatste spoor erbij"){ .volle-breedte }
 
 - **Wat telt als activiteit:** het dossier bewaren, een opmerking, een taak, een mail, een gesprek, een notitie of bijlage in het journaal, een gewijzigd contract, een gevraagd document dat binnenkwam of beoordeeld werd, en de datums van invoer, indiening, goedkeuring en ondertekening van het aanbod. Een dossier **openen** telt niet. Achter *laatste:* ziet u wat het laatste spoor was.
 - **Lopend** betekent: geen akte, en een status die niet in een afsluitende fase staat — dezelfde regel als het tabblad *Productie*. Zonder ingestelde [Dashboard-fases](../beheer/dashboard-fases.md) toont het blok hoe u ze instelt, en geen getal.

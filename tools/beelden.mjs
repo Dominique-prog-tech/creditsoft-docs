@@ -561,8 +561,8 @@ const SCHOTEN = [
   // Het blok heeft een eigen anker (data-blok). Merkteken "stil sinds" staat enkel in een GEVULDE regel; het recept eist
   // bovendien dat het blok in beeld staat — de teller staat ook in innerText als hij buiten beeld valt.
   ['dashboard-stilgevallen',    '/dashboard', async p => {
-      const blok = p.locator('[data-blok="stilgevallen"]');
-      await blok.waitFor({ timeout: 15000 });
+      // Sinds 1.221.0 opent het blok via Vraagt aandacht (zie aandachtOpen).
+      const blok = await aandachtOpen(p, /^\s*[▸▾]?\s*(Stilgevallen dossiers|Dossiers à l'arrêt)/, 'stilgevallen');
       await blok.evaluate(e => e.scrollIntoView({ block: 'start' }));
       await p.waitForTimeout(1200);
       const inBeeld = await blok.evaluate(e => { const r = e.getBoundingClientRect(); return r.top >= 0 && r.bottom <= window.innerHeight; });
@@ -595,8 +595,10 @@ const SCHOTEN = [
   // Het blok heeft een eigen anker (data-blok): een ".row met deze tekst" koos ook elke omvattende rij.
   ['dashboard-opvolging',       '/dashboard', async p => {
       // Twee lege kaarten halen het merkteken niet, maar één lege kaart wél — dus beide hier nagekeken.
-      const blok = p.locator('[data-blok="opvolging"]');
-      await blok.waitFor({ timeout: 15000 });
+      // Sinds 1.221.0 opent het blok via Vraagt aandacht (zie aandachtOpen).
+      const blok = await aandachtOpen(p, /^\s*[▸▾]?\s*(Opvolging|Suivi)/, 'opvolging');
+      await blok.evaluate(e => e.scrollIntoView({ block: 'start' }));
+      await p.waitForTimeout(1200);
       const regels = await blok.locator('.adm-card').evaluateAll(ks => ks.map(k => k.querySelectorAll('li').length));
       if (regels.length !== 2 || regels.some(n => n === 0))
         throw new Error(`het opvolgingsblok hoort twee gevulde kaarten te tonen, gezien: ${JSON.stringify(regels)}`);
@@ -861,11 +863,24 @@ const SCHOTEN = [
   // handleiding beschrijft hem in een eigen sectie en had er geen beeld bij. Dit schot scrolt ernaartoe.
   // Vraagt een INGEVULDE fase-indeling in tenant_demo: zonder koppeling status→fase valt alles onder
   // "Niet ingedeeld" en toont het scherm één kaart plus een melding. Die indeling is er sinds 30/08/2026.
+  // ⚠️ L3a (1.221.0): "Dossiers per fase" is geen blok onderaan meer, maar een rij fasetegels bovenaan (data-blok="pijplijn").
+  // Tot dan scrolde dit recept naar een h5 die niet meer bestaat: dan scrolde er STIL niets. Nu het anker, en nameten dat er
+  // tegels staan met een getal.
+  // De tekst belooft "klik op een tegel en eronder klapt de lijst van haar statussen open": het beeld toont dus één tegel open
+  // (Ingediend), en het recept eist dat die lijst er staat met meerdere statussen.
   ['dashboard-pijplijn',        '/dashboard', async p => {
-      await p.evaluate(() => {
-        const h = [...document.querySelectorAll('h5')].find(e => /Dossiers per fase|Dossiers par phase/i.test(e.textContent||''));
-        h?.scrollIntoView({ block: 'start' });
-      });
+      const blok = p.locator('[data-blok="pijplijn"]');
+      await blok.waitFor({ timeout: 15000 });
+      const tegels = blok.locator('.fase-tegel');
+      const aantal = await tegels.count();
+      if (aantal < 2) throw new Error(`de pijplijn hoort meerdere fasetegels te tonen, gezien: ${aantal}`);
+      const ingediend = tegels.filter({ hasText: /(Ingediend|Introduit)/ }).first();
+      await ((await ingediend.count()) ? ingediend : tegels.first()).click();
+      const statussen = p.locator('[data-blok="fase-statussen"]');
+      await statussen.waitFor({ timeout: 10000 });
+      const regels = await statussen.locator('li').count();
+      if (regels < 2) throw new Error(`onder de open tegel horen meerdere statussen te staan, gezien: ${regels}`);
+      await blok.evaluate(e => e.scrollIntoView({ block: 'start' }));
       await p.waitForTimeout(1500);
   }],
   // ⚠️ DE GRAFIEKEN KREGEN EEN EIGEN SCHOT (02/10/2026), en sinds 06/10/2026 een ELEMENTschot. Tot 06/10 stonden ze
@@ -908,6 +923,10 @@ const SCHOTEN = [
   // Daarom controleert dit recept dat het blok er ÉCHT staat en faalt het luid als dat niet zo is.
   ['dashboard-aan-de-slag',     '/dashboard', async p => {
       await p.waitForTimeout(1200);
+      // ⚠️ L3a (1.221.0): zodra er één stap gedaan is, toont het dashboard enkel een regel met "Toon de stappen". Het beeld en
+      // de tekst tonen het hele blok, dus eerst openklikken.
+      const toon = p.locator('[data-blok="aandeslag-regel"]').getByText(/^(Toon de stappen|Afficher les étapes)$/);
+      if (await toon.count()) { await toon.first().click(); await p.waitForTimeout(1500); }
       const blok = p.locator('.adm-aan-de-slag, [class*="aan-de-slag"], [class*="aandeslag"]').first();
       if (await blok.count() === 0) {
         const tekst = await p.locator('body').innerText();
@@ -1211,6 +1230,25 @@ const rechterTab = async (p, naam) => {
   }, naam);
   await p.waitForTimeout(3000);
 };
+// ⚠️ L3a (CreditSoft 1.221.0, 08/11/2026): de lijsten Opvolging en Stilgevallen staan niet meer altijd op het dashboard.
+// Ze openen ter plaatse met een klik op hun regel in het blok Vraagt aandacht. Deze hulp klikt de regel aan en eist daarna dat
+// ze open staat (aria-expanded) én dat het blok met het anker er is: een klik die niet aankwam, levert anders een beeld van
+// het dashboard zonder lijst, en het merkteken van de lijst staat dan nergens.
+// ⚠️ Het patroon van de regel moet ▸ én ▾ toelaten: na de klik draait het pijltje, en een patroon met enkel ▸ vindt de knop
+// dan niet meer (30 s wachten op getAttribute). En geen \b na de naam: het getal staat er vlak tegen ("Opvolging36").
+async function aandachtOpen(p, regel, anker) {
+  const knop = p.locator('[data-blok="vraagt-aandacht"] button.aandacht-regel').filter({ hasText: regel }).first();
+  await knop.waitFor({ timeout: 15000 });
+  for (let i = 0; i < 3 && (await knop.getAttribute('aria-expanded')) !== 'true'; i++) {
+    await knop.click(); await p.waitForTimeout(1200);
+  }
+  if ((await knop.getAttribute('aria-expanded')) !== 'true')
+    throw new Error(`de regel ${regel} in Vraagt aandacht ging niet open`);
+  const blok = p.locator(`[data-blok="${anker}"]`);
+  await blok.waitFor({ timeout: 15000 });
+  return blok;
+}
+
 // Het tabblad Productie op het dashboard openen en wachten tot de vier grafieken getekend zijn — zelfde reden
 // als bij aanbrengers-productie: DevExpress tekent ze pas na de eerste paint, en lege kaders zijn een fout beeld.
 async function dashboardProductie(p) {

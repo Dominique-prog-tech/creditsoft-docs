@@ -2,7 +2,7 @@
 
 Les listes de choix sont les valeurs qui apparaissent partout dans les fiches, dans les champs à choisir : civilité, type d'entreprise, nationalité, profession, état civil et toute une série d'autres.
 
-![L'écran Listes de choix dans CreditSoft : en haut le sélecteur qui permet de choisir une liste — ici Nationalité — et en dessous un tableau avec les colonnes Ordre, Néerlandais et Français, avec en haut à droite les boutons Nouvel élément, Choisir les colonnes, Exporter et un champ de recherche.](../images/keuzelijsten-fr.png "La gestion des listes de choix, avec la liste des nationalités ouverte")
+![L'écran Listes de choix dans CreditSoft : en haut le sélecteur qui permet de choisir une liste, ici Nationalité, et en dessous un tableau avec les colonnes Ordre, Néerlandais et Français. En haut à droite le bouton Nouvel élément, les icônes pour les filtres avancés et pour le choix des colonnes, le bouton Exporter et un champ de recherche.](../images/keuzelijsten-fr.png "La gestion des listes de choix, avec la liste des nationalités ouverte")
 
 ## Ouvrir l'écran
 

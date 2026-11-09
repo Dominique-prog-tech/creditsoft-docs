@@ -18,7 +18,12 @@ export const PAKKET = {
   // Nooit printen; enkel invullen.
   secrets: `${process.env.HOME}/.microsoft/usersecrets/511bd113-63f8-48dc-8980-fa97f73c7fe6/secrets.json`,
   cfg:     '/Users/dominique/projects/adm-creditsoft/src/Host/CreditSoft.Host.Web/appsettings.Development.json',
-  tenant:  'demo',
+  // ⚠️ GEEN KALE 'demo' MEER (09/11/2026). meldAan (adm-appkit/tools/schermmachinerie) zoekt de rij met `hasText`, en dat is
+  // een DEELREEKS: zodra er lokaal een omgeving `adm-demo…` bestaat (punt 27), staat die alfabetisch vóór `demo` en koos
+  // de beeldronde haar — inactief, dus elk beeld toonde "Kies eerst een klant". De NAAM van de omgeving is uniek en is een gewone
+  // tekst, zoals vroegere rondes gebruikten. (Een RegExp op de code werkte los, maar vond na de wissel aanbrenger → beheerder
+  // binnen de ronde geen rij meer; niet verklaard.) Het gat zelf zit in de gedeelde tooling (gemeld aan Dominique).
+  tenant:  'Demo (testpartij)',
   // de zijlade-teksten van dit pakket — raakt.mjs leest hier welke schermen een helptekst dragen
   help:    '/Users/dominique/projects/adm-creditsoft/src/Host/CreditSoft.Host.Web/Help/CreditSoftHelpProvider.cs',
 };

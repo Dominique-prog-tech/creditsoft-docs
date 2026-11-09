@@ -3,7 +3,7 @@
 Le tableau de bord est votre écran d'accueil. De haut en bas : les quatre indicateurs, vos dossiers par phase, les graphiques
 de l'année, puis côte à côte les derniers dossiers et ce qui demande de l'attention aujourd'hui.
 
-![Le tableau de bord sur l'onglet Aujourd'hui, à côté de l'onglet Production : en haut le bloc Pour commencer avec les trois premiers réglages, en dessous les quatre indicateurs — Actes avec l'année, À introduire, Introduit et LOA avec la mention « toutes les années » —, puis côte à côte les trois graphiques de 2026 : le volume réalisé par mois, le volume par institution et le volume par responsable ; en bas le début des blocs Délai dépassé et Délai proche.](../images/dashboard-startscherm-fr.png "Le tableau de bord : indicateurs, graphiques de l'année et délais qui arrivent à échéance"){ .volle-breedte }
+![Le tableau de bord sur l'onglet Aujourd'hui, à côté de l'onglet Production : en haut la ligne Pour commencer avec 2 étapes sur 3 effectuées et à droite le lien Afficher les étapes. En dessous les quatre indicateurs Actes avec l'année, À introduire, Introduit et LOA avec la mention « toutes les années », et la rangée des quatre phases En traitement, Introduit, Finalisé et Sans suite, chacune dans sa couleur avec le nombre de dossiers et le montant. Puis côte à côte les trois graphiques de 2026 : le volume réalisé par mois, le volume par institution et le volume par responsable. En bas à gauche Derniers dossiers, avec par ligne le client, le numéro de dossier, le statut dans la couleur de sa phase et le montant, et à droite Demande de l'attention avec les trois lignes Échéances, Suivi et Dossiers à l'arrêt, chacune avec un compteur et une courte explication.](../images/dashboard-startscherm-fr.png "Le tableau de bord : indicateurs, phases, graphiques de l'année et ce qui demande de l'attention"){ .volle-breedte }
 
 ## Communications du bureau
 
@@ -20,7 +20,7 @@ Si votre environnement contient encore des **données d'exemple**, le bloc *Pour
 du tableau de bord. Il vous indique les trois réglages qui déterminent le reste, avec un compteur indiquant
 combien vous en avez faits.
 
-![Le bloc Pour commencer en haut du tableau de bord : à gauche le titre avec l'explication que les données sont des exemples, à droite un anneau affichant le compteur 1 sur 3, en dessous trois cartes côte à côte — Complétez votre Fiche d'entreprise, déjà cochée, puis Configurez vos Adresses d'envoi et Ajoutez vos Utilisateurs, chacune avec une courte explication et un bouton Ouvrir — et en bas à droite le lien Masquer. Sous la barre supérieure figure le bandeau Environnement de démarrage.](../images/dashboard-aan-de-slag-fr.png "Les trois réglages à faire en priorité, avec le compteur qui suit votre travail"){ .volle-breedte }
+![Le bloc Pour commencer en haut du tableau de bord, ouvert : à gauche le titre avec l'explication que les données sont des exemples, à droite un anneau affichant le compteur 2 sur 3. En dessous trois cartes côte à côte : Complétez votre Fiche d'entreprise et Ajoutez vos Utilisateurs sont déjà cochées, Configurez vos Adresses d'envoi reste ouverte, avec une courte explication et un bouton Ouvrir. En bas à droite le lien Masquer. Sous la barre supérieure figure le bandeau Environnement de démarrage.](../images/dashboard-aan-de-slag-fr.png "Les trois réglages à faire en priorité, avec le compteur qui suit votre travail"){ .volle-breedte }
 
 | Étape | Pourquoi celle-ci d'abord |
 |---|---|
@@ -91,7 +91,7 @@ Juste sous les quatre tuiles figure une rangée de tuiles plus étroites : une p
 montant. Une phase est un groupe de statuts que vous composez vous-même, par exemple *En traitement*, *Introduit*,
 *Finalisé*. Les quatre tuiles du haut comptent des contrats ; cette rangée compte des **dossiers**, tels qu'ils sont aujourd'hui.
 
-![Le pipeline Dossiers par phase avec quatre cartes : En traitement avec 365 dossiers, Introduit avec 1464, Finalisé avec 430 et Sans suite avec 1741, ces deux dernières portant la mention phase finale. Chaque carte affiche le montant total et, en dessous, les statuts qui en relèvent, avec par statut le nombre de dossiers et le montant. Au-dessus, la fin de la liste Dossiers à l'arrêt.](../images/dashboard-pijplijn-fr.png "Vos dossiers regroupés par phase, avec les statuts en dessous"){ .volle-breedte }
+![La rangée des quatre phases En traitement, Introduit, Finalisé et Sans suite, chacune avec le nombre de dossiers et le montant. La tuile Introduit est cliquée : en dessous s'affiche la liste de ses quatre statuts, avec par statut le nombre de dossiers et le montant. Sous cette liste commence la rangée des graphiques.](../images/dashboard-pijplijn-fr.png "Vos dossiers regroupés par phase, avec les statuts en dessous"){ .volle-breedte }
 
 - **Cliquez sur une tuile** et la liste de ses statuts s'ouvre en dessous, avec par statut le nombre de dossiers et le
   montant. Cliquez à nouveau et elle se referme.
@@ -191,7 +191,7 @@ Un crédit dont l'acte est passé demande encore de l'attention par la suite. Cl
 l'attention* et deux cartes s'ouvrent : *À revoir* et *Révision du taux*. Elles apparaissent dès qu'il y a quelque chose à suivre. Si votre
 bureau a activé le **contrôle annuel**, une troisième carte s'y ajoute.
 
-![Les deux cartes À revoir et Révision du taux sous les délais du tableau de bord. À gauche, À revoir avec le compteur 6 et « dans les 14 jours » : par ligne le client, le motif et la date, les deux dates déjà dépassées en rouge. À droite, Révision du taux avec le compteur 74 et « dans les 6 mois » : par ligne le client, la variabilité Variable 1/1/1 et la date de la révision, avec en bas le lien pour afficher les autres.](../images/dashboard-opvolging-fr.png "Le suivi des crédits en cours : dossiers à revoir et prochaines révisions du taux"){ .volle-breedte }
+![Les deux cartes À revoir et Révision du taux, ouvertes depuis la ligne Suivi de Demande de l'attention. À gauche, À revoir avec le compteur 6 et « dans les 14 jours » : par ligne le client, le motif et la date, les deux dates déjà dépassées en rouge. À droite, Révision du taux avec le compteur 75 et « dans les 6 mois » : par ligne le client, la variabilité Variable 1/1/1 et la date de la révision, avec en bas le lien Afficher les 67 autres.](../images/dashboard-opvolging-fr.png "Le suivi des crédits en cours : dossiers à revoir et prochaines révisions du taux"){ .volle-breedte }
 
 **À revoir** affiche les dossiers sur lesquels quelqu'un a placé une date **À revoir le** — par exemple un an
 après l'acte, pour un dossier que vous voulez réexaminer. Vous placez cette date sur le
@@ -229,7 +229,7 @@ cliquez sur **Afficher les … autres**, comme pour les délais.
 
 Cliquez sur **Dossiers à l'arrêt** dans *Demande de l'attention* et la liste s'ouvre : les dossiers en cours sur lesquels rien ne s'est passé depuis **60 jours ou plus**. Le dossier arrêté le plus récemment figure en haut — il est encore à sauver.
 
-![Le bloc Dossiers à l'arrêt du tableau de bord : le titre avec le nombre, la mention en cours et rien depuis 60 jours ou plus, et par ligne le client, le statut et le propriétaire, avec à droite à l'arrêt depuis une date et la dernière trace.](../images/dashboard-stilgevallen-fr.png "Ce qui est à l'arrêt depuis deux mois, avec la dernière trace"){ .volle-breedte }
+![Le bloc Dossiers à l'arrêt, ouvert depuis la ligne Dossiers à l'arrêt de Demande de l'attention, sous les blocs Derniers dossiers et Demande de l'attention : le titre avec le nombre, la mention en cours et rien depuis 60 jours ou plus, et par ligne le client, le statut et le propriétaire, avec à droite à l'arrêt depuis une date et la dernière trace. En bas le lien Afficher les 188 et le lien vers les dossiers à l'arrêt depuis plus d'un an.](../images/dashboard-stilgevallen-fr.png "Ce qui est à l'arrêt depuis deux mois, avec la dernière trace"){ .volle-breedte }
 
 - **Ce qui compte comme activité :** enregistrer le dossier, une remarque, une tâche, un e-mail, un appel, une note ou une pièce jointe dans le journal, un contrat modifié, un document demandé reçu ou évalué, et les dates d'introduction, de dépôt, d'approbation et de signature de l'offre. **Ouvrir** un dossier ne compte pas. Après *dernier :*, vous voyez quelle a été la dernière trace.
 - **En cours** signifie : pas d'acte, et un statut qui ne se trouve pas dans une phase de clôture — la même règle que l'onglet *Production*. Sans [Phases du tableau de bord](../beheer/dashboard-fases.md) réglées, le bloc indique comment les régler, sans chiffre.

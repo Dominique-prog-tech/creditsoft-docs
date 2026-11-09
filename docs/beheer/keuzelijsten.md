@@ -2,7 +2,7 @@
 
 De keuzelijsten zijn de waarden die overal in de fiches in de keuzevelden verschijnen: aanspreking, bedrijfstype, nationaliteit, beroep, burgerlijke staat en nog een reeks andere.
 
-![Het scherm Keuzelijsten in CreditSoft: bovenaan de kiezer waarmee u een lijst selecteert — hier Nationaliteit — en daaronder een tabel met de kolommen Volgorde, Nederlands en Frans, met rechtsboven de knoppen Nieuw item, Kolommen kiezen, Exporteren en een zoekveld.](../images/keuzelijsten.png "Het beheer van de keuzelijsten, met de nationaliteitenlijst geopend")
+![Het scherm Keuzelijsten in CreditSoft: bovenaan de kiezer waarmee u een lijst selecteert, hier Nationaliteit, en daaronder een tabel met de kolommen Volgorde, Nederlands en Frans. Rechtsboven de knop Nieuw item, de icoontjes om uitgebreid te filteren en om kolommen te kiezen, de knop Exporteren en een zoekveld.](../images/keuzelijsten.png "Het beheer van de keuzelijsten, met de nationaliteitenlijst geopend")
 
 ## Het scherm openen
 

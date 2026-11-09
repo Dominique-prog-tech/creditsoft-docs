@@ -27,15 +27,15 @@ Bovenaan links staat een knop om het menu **in te klappen**. Klapt u het in, dan
 
 ## De balk bovenaan
 
-![De balk bovenaan met links het CreditSoft-logo en rechts de knoppen: Nieuwe taak, de maan voor donkere weergave, het belletje met een teller, feedback, de vraagteken-hulp, de AI-assistent en de avatar met uw initialen.](../images/hoofdbalk.png "De balk bovenaan, met de knoppen die u overal bij u hebt")
+![De balk bovenaan met links de knop om het menu in te klappen en het CreditSoft-logo, en rechts van links naar rechts: Nieuwe taak, de maan voor donkere weergave, het vergrootglas om te zoeken, het grafiekje van de data-assistent, het belletje voor meldingen, de tekstballon voor feedback, het vraagteken voor hulp, de AI-assistent van de handleiding en de avatar met uw initialen.](../images/hoofdbalk.png "De balk bovenaan, met de knoppen die u overal bij u hebt")
 
 Rechtsboven staan de knoppen die u overal bij u hebt, van links naar rechts:
 
 - **Nieuwe taak** — noteer iets dat moet gebeuren **zonder eerst een dossier of relatie te openen**. Handig
   wanneer u aan de telefoon zit en iets niet wil vergeten. Wat u hier maakt, komt in het scherm
   [Taken](../credit-management/tasks.md) terecht, samen met de taken die bij een dossier of relatie horen.
-- **Zoeken** (het vergrootglas) — zoek vanaf elk scherm naar een relatie, een dossier, een aanbrenger, een professional of een lead. Zie [Zoeken vanaf elk scherm](zoeken.md).
 - **Licht of donker** (het maantje) — wisselt tussen de lichte en de donkere weergave.
+- **Zoeken** (het vergrootglas) — zoek vanaf elk scherm naar een relatie, een dossier, een aanbrenger, een professional of een lead. Zie [Zoeken vanaf elk scherm](zoeken.md).
 - **Meldingen** (het belletje) — zie hieronder.
 - **Feedback** (het tekstballon-icoon) — stuur ons een melding of suggestie. Uw bericht komt rechtstreeks bij
   ons terecht.
