@@ -39,9 +39,9 @@ export const FILMS = [
   ['creditsoft-overzicht', {
     pagina: null,                                  // hoort op de website, niet op een handleidingpagina
     titel: {
-      nl: 'CreditSoft in het kort — een overzicht van de modules',
-      fr: 'CreditSoft en bref — les modules en un coup d\u2019\u0153il',
-      en: 'CreditSoft at a glance — the modules in brief',
+      nl: 'CreditSoft in het kort: een overzicht van de modules',
+      fr: 'CreditSoft en bref : les modules en un coup d\u2019\u0153il',
+      en: 'CreditSoft at a glance: the modules in brief',
     },
     omschrijving: {
       nl: 'Een kort overzicht van CreditSoft voor kredietmakelaars: kredietdossiers, klanten, documenten, '
@@ -157,17 +157,17 @@ export const FILMS = [
   ['aan-de-slag', {
     pagina: 'getting-started/navigatie',
     titel: {
-      nl: 'Uw weg vinden in CreditSoft — het scherm, het zoeken en uw voorkeuren',
-      fr: 'Se repérer dans CreditSoft — l’écran, la recherche et vos préférences',
+      nl: 'Uw weg vinden in CreditSoft: het scherm, het zoeken en uw voorkeuren',
+      fr: 'Se repérer dans CreditSoft : l’écran, la recherche et vos préférences',
     },
     omschrijving: {
       nl: 'De eerste rondleiding: het startscherm met het blok Aan de slag, het menu links, zoeken over uw '
         + 'hele omgeving met ⌘K, de hulp bij elk scherm en de twee assistenten, werken in een lijst '
-        + '(sorteren, filteren, exporteren) en uw eigen voorkeuren — grootte, thema en taal.',
+        + '(sorteren, filteren, exporteren) en uw eigen voorkeuren voor grootte, thema en taal.',
       fr: 'La première visite guidée : l’écran d’accueil avec le bloc Pour commencer, '
         + 'le menu de gauche, la recherche dans tout votre environnement avec ⌘K, l’aide sur chaque '
         + 'écran et les deux assistants, le travail dans une liste (trier, filtrer, exporter) et vos '
-        + 'préférences — taille, thème et langue.',
+        + 'préférences de taille, de thème et de langue.',
     },
     uitvoeringen: { handleiding: { stem: true } },
     scenes: [
@@ -293,8 +293,8 @@ export const FILMS = [
   ['relaties', {
     pagina: 'crm/relations',
     titel: {
-      nl: 'Relaties in CreditSoft — de fiche waar alles aan hangt',
-      fr: 'Les relations dans CreditSoft — la fiche à laquelle tout se rattache',
+      nl: 'Relaties in CreditSoft: de fiche waar alles aan hangt',
+      fr: 'Les relations dans CreditSoft : la fiche à laquelle tout se rattache',
     },
     omschrijving: {
       nl: 'De relatiefiche van dichtbij: de lijst doorzoeken, een fiche openen, de algemene en bijkomende '
@@ -400,17 +400,17 @@ export const FILMS = [
   ['leads', {
     pagina: 'crm/leads',
     titel: {
-      nl: 'Leads in CreditSoft — van aanvraag tot klant',
-      fr: 'Les leads dans CreditSoft — de la demande au client',      en: 'Leads in CreditSoft — from enquiry to client',
+      nl: 'Leads in CreditSoft: van aanvraag tot klant',
+      fr: 'Les leads dans CreditSoft : de la demande au client',      en: 'Leads in CreditSoft: from enquiry to client',
 
     },
     omschrijving: {
       nl: 'De werklijst van uw instroom: wie er wacht en hoe lang, uit welk kanaal hij kwam, en wie hem '
-        + 'opvolgt. Daarna de fiche van een lead — wie hij is, wat hij vraagt, en waar hij staat — de vijf '
+        + 'opvolgt. Daarna de fiche van een lead: wie hij is, wat hij vraagt en waar hij staat. Dan de vijf '
         + 'statussen, en tot slot een lead die klant geworden is, met de doorverwijzing naar zijn relatiefiche.',
       fr: 'La liste de travail de vos demandes entrantes : qui attend et depuis combien de temps, de quel '
-        + 'canal il provient, et qui le suit. Ensuite la fiche d’un lead — qui il est, ce qu’il demande et où '
-        + 'il en est — les cinq statuts, et pour finir un lead devenu client, avec le renvoi vers sa fiche.',      en: 'Everyone who gets in touch on one worklist, with how long they have waited and where they came from.',
+        + 'canal il provient, et qui le suit. Ensuite la fiche d’un lead : qui il est, ce qu’il demande et où '
+        + 'il en est. Puis les cinq statuts, et pour finir un lead devenu client, avec le renvoi vers sa fiche.',      en: 'Everyone who gets in touch on one worklist, with how long they have waited and where they came from.',
 
     },
     uitvoeringen: {
@@ -518,17 +518,17 @@ export const FILMS = [
   ['documentketen', {
     pagina: 'credit-management/document-validation',
     titel: {
-      nl: 'De documentketen — van vragen tot beoordelen',
-      fr: 'La chaîne des documents — de la demande à la validation',
+      nl: 'De documentketen: van vragen tot beoordelen',
+      fr: 'La chaîne des documents : de la demande à la validation',
     },
     omschrijving: {
       nl: 'Hoe u stukken opvraagt bij uw klant en ze weer binnenkrijgt: de gevraagde documenten op een '
         + 'dossier met hun drie toestanden, de uitnodiging naar het klantenportaal, het portaal zoals uw '
-        + 'klant het ziet, en het centrale scherm waar alles wat op beoordeling wacht bij elkaar staat — '
+        + 'klant het ziet, en het centrale scherm waar alles wat op beoordeling wacht bij elkaar staat, '
         + 'gesorteerd op wie het langst wacht. Plus de andere richting: de documentbibliotheek.',
       fr: 'Comment vous demandez des pièces à votre client et les recevez : les documents demandés sur un '
         + 'dossier avec leurs trois statuts, l’invitation au portail client, le portail tel que votre client '
-        + 'le voit, et l’écran central où tout ce qui attend une validation est rassemblé — trié par ordre '
+        + 'le voit, et l’écran central où tout ce qui attend une validation est rassemblé, trié par ordre '
         + 'd’attente. Ainsi que l’autre sens : la bibliothèque de documents.',
     },
     dossier: ID.dossierMetSchema,
@@ -628,8 +628,8 @@ export const FILMS = [
   ['journaal', {
     pagina: 'journaal/overzicht',
     titel: {
-      nl: 'Het journaal — alles wat er met een klant gebeurde, op één plaats',
-      fr: 'Le journal — tout ce qui s’est passé avec un client, au même endroit',
+      nl: 'Het journaal: alles wat er met een klant gebeurde, op één plaats',
+      fr: 'Le journal : tout ce qui s’est passé avec un client, au même endroit',
     },
     omschrijving: {
       nl: 'Het journaal hangt aan elke fiche en werkt overal hetzelfde: taken met hun vervaldag en wie ze '
@@ -730,8 +730,8 @@ export const FILMS = [
   ['afspraken', {
     pagina: 'crm/meetings',
     titel: {
-      nl: 'De agenda — afspraken maken en laten maken',
-      fr: 'L’agenda — prendre et faire prendre des rendez-vous',
+      nl: 'De agenda: afspraken maken en laten maken',
+      fr: 'L’agenda : prendre et faire prendre des rendez-vous',
     },
     omschrijving: {
       nl: 'De agenda van uw kantoor: de kleuren die zeggen wie afwezig is en wanneer u gesloten bent, de '
@@ -826,8 +826,8 @@ export const FILMS = [
   ['commissie-instellen', {
     pagina: 'credit-management/commission-schemes',
     titel: {
-      nl: 'Commissie instellen — het schema per dossier',
-      fr: 'Configurer la commission — le schéma par dossier',
+      nl: 'Commissie instellen: het schema per dossier',
+      fr: 'Configurer la commission : le schéma par dossier',
     },
     omschrijving: {
       nl: 'Wat u met een aanbrenger afspreekt en hoe u het vastlegt: het overzicht van alle schema’s met '
@@ -922,8 +922,8 @@ export const FILMS = [
   ['commissie-uitbetalen', {
     pagina: 'credit-management/commission-statements',
     titel: {
-      nl: 'Commissie uitbetalen — borderel, vooruitzicht en restanten',
-      fr: 'Payer la commission — bordereau, prévisions et reliquats',      en: 'Paying commission — statements, forecast and remainders',
+      nl: 'Commissie uitbetalen: borderel, vooruitzicht en restanten',
+      fr: 'Payer la commission : bordereau, prévisions et reliquats',      en: 'Paying commission: statements, forecast and remainders',
 
     },
     omschrijving: {
@@ -1053,17 +1053,17 @@ export const FILMS = [
   ['verzekeringen', {
     pagina: 'credit-management/insurance-contracts',
     titel: {
-      nl: 'Verzekeringen — het overzicht en uw verzekeraars',
-      fr: 'Assurances — l’aperçu et vos assureurs',
+      nl: 'Verzekeringen: het overzicht en uw verzekeraars',
+      fr: 'Assurances : l’aperçu et vos assureurs',
     },
     omschrijving: {
       nl: 'Alle schuldsaldoverzekeringen bij uw dossiers op één lijst: kiezen wat u wil zien met de drie '
-        + 'filters bovenaan, de kolommen die ertoe doen — wie er verzekerd is, of de polis nog voorlopig is '
-        + 'en of de aanvraaglink vertrokken is — het verschil tussen de status van de polis en die van het '
+        + 'filters bovenaan, en de kolommen die ertoe doen, zoals wie er verzekerd is, of de polis nog voorlopig is '
+        + 'en of de aanvraaglink vertrokken is. Verder het verschil tussen de status van de polis en die van het '
         + 'dossier, de lijst afdrukken of exporteren, en de fiches van uw verzekeraars.',
       fr: 'Toutes les assurances solde restant dû de vos dossiers sur une seule liste : choisir ce que vous '
-        + 'voulez voir avec les trois filtres du haut, les colonnes qui comptent — qui est assuré, si la '
-        + 'police est encore provisoire et si le lien de demande est parti — la différence entre le statut '
+        + 'voulez voir avec les trois filtres du haut, et les colonnes qui comptent, comme qui est assuré, si la '
+        + 'police est encore provisoire et si le lien de demande est parti. Ensuite la différence entre le statut '
         + 'de la police et celui du dossier, imprimer ou exporter la liste, et les fiches de vos assureurs.',
     },
     uitvoeringen: { handleiding: { stem: true } },
@@ -1148,8 +1148,8 @@ export const FILMS = [
   ['dashboard', {
     pagina: 'getting-started/dashboard',
     titel: {
-      nl: 'Het dashboard — uw kantoor in één scherm',
-      fr: 'Le tableau de bord — votre bureau en un écran',      en: 'The dashboard — your working screen',
+      nl: 'Het dashboard: uw kantoor in één scherm',
+      fr: 'Le tableau de bord : votre bureau en un écran',      en: 'The dashboard: your working screen',
 
     },
     omschrijving: {
@@ -1165,7 +1165,7 @@ export const FILMS = [
       fr: 'L’écran d’accueil lu comme il se doit : l’année en haut, les quatre tuiles avec les nombres et les '
         + 'montants, le pipeline de vos dossiers par phase, les trois graphiques du volume réalisé, le bloc '
         + 'Demande de l’attention avec les échéances, et l’écran où vous composez les phases. Ainsi que la '
-        + 'raison pour laquelle tout le bureau voit les mêmes chiffres.',      en: 'Your files by group, what needs action today, and every file in the phase it is in.',
+        + 'raison pour laquelle tout le bureau voit les mêmes chiffres.',      en: 'The year at a glance: four tiles with numbers and amounts, your files in the pipeline by phase, and the volume you realised.',
 
     },
     uitvoeringen: {
@@ -1293,17 +1293,17 @@ export const FILMS = [
   ['lijsten-en-rapporten', {
     pagina: 'credit-management/filteren-in-lijsten',
     titel: {
-      nl: 'Lijsten en rapporten — zoeken, filteren en meenemen',
-      fr: 'Listes et rapports — chercher, filtrer et emporter',
+      nl: 'Lijsten en rapporten: zoeken, filteren en meenemen',
+      fr: 'Listes et rapports : chercher, filtrer et emporter',
     },
     omschrijving: {
       nl: 'Elke lijst in CreditSoft werkt hetzelfde, en dit is hoe u ze naar uw hand zet: de keuzelijsten '
         + 'bovenaan, het trechtertje op een kolomkop, groeperen door een kolom te verslepen, en wat u '
-        + 'meeneemt — afdrukken en exporteren volgen altijd uw filters. Plus de negen rapporten, waar u een '
+        + 'meeneemt. Afdrukken en exporteren volgen altijd uw filters. Plus de negen rapporten, waar u een '
         + 'periode kiest en een voorbeeld krijgt dat u kan downloaden of doorsturen.',
       fr: 'Toutes les listes de CreditSoft fonctionnent de la même manière, et voici comment les adapter : '
         + 'les listes déroulantes du haut, l’entonnoir sur un en-tête de colonne, le regroupement en '
-        + 'déplaçant une colonne, et ce que vous emportez — l’impression et l’export suivent toujours vos '
+        + 'déplaçant une colonne, et ce que vous emportez. L’impression et l’export suivent toujours vos '
         + 'filtres. Ainsi que les neuf rapports, où vous choisissez une période et obtenez un aperçu.',
     },
     uitvoeringen: { handleiding: { stem: true } },
@@ -1382,18 +1382,18 @@ export const FILMS = [
   ['mailketen', {
     pagina: 'administration/sender-addresses',
     titel: {
-      nl: 'De mailketen — van uw gegevens tot een verzonden bericht',
-      fr: 'La chaîne d’e-mails — de vos données au message envoyé',
+      nl: 'De mailketen: van uw gegevens tot een verzonden bericht',
+      fr: 'La chaîne d’e-mails : de vos données au message envoyé',
     },
     omschrijving: {
       nl: 'Wat er allemaal klopt moet zijn vóór er één mail vertrekt, in de volgorde waarin het samenhangt: '
         + 'uw bedrijfsfiche die de variabelen vult, het verzendadres waar alles vanuit vertrekt, de '
         + 'tweetalige sjablonen met hun variabelenpalet en voorbeeld, en tot slot waar u ziet of een bericht '
-        + 'werkelijk afgeleverd is — inclusief de reden wanneer dat niet lukte.',
+        + 'werkelijk afgeleverd is, met de reden wanneer dat niet lukte.',
       fr: 'Tout ce qui doit être en ordre avant qu’un seul e-mail parte, dans l’ordre où cela s’enchaîne : '
         + 'votre fiche d’entreprise qui alimente les variables, l’adresse d’expédition d’où tout part, les '
         + 'modèles bilingues avec leur panneau de variables et leur aperçu, et enfin l’endroit où vous voyez '
-        + 'si un message a réellement été distribué — motif compris lorsque cela échoue.',
+        + 'si un message a réellement été distribué, avec le motif lorsque cela échoue.',
     },
     uitvoeringen: { handleiding: { stem: true } },
     scenes: [
@@ -1466,18 +1466,18 @@ export const FILMS = [
   ['klantportaal', {
     pagina: 'beheer/klantportaal',
     titel: {
-      nl: 'Het klantenportaal — hoe uw klant u ziet',
-      fr: 'Le portail client — comment votre client vous voit',      en: 'The client portal — how your client sees you',
+      nl: 'Het klantenportaal: hoe uw klant u ziet',
+      fr: 'Le portail client : comment votre client vous voit',      en: 'The client portal: how your client sees you',
 
     },
     omschrijving: {
       nl: 'Uw klant krijgt een link en belandt op een portaal. Dit is waar u bepaalt wat hij daar ziet: uw '
         + 'naam, uw kleur, uw logo en een welkomsttekst in beide talen. Elk veld dat u leeg laat, valt terug '
-        + 'op uw bedrijfsfiche — u hoeft dus niets in te vullen om te beginnen. En tot slot het resultaat, '
+        + 'op uw bedrijfsfiche. U hoeft dus niets in te vullen om te beginnen. En tot slot het resultaat, '
         + 'zoals uw klant het krijgt.',
       fr: 'Votre client reçoit un lien et arrive sur un portail. C’est ici que vous déterminez ce qu’il y '
         + 'voit : votre nom, votre couleur, votre logo et un texte d’accueil dans les deux langues. Chaque '
-        + 'champ laissé vide reprend votre fiche d’entreprise — vous n’avez donc rien à remplir pour '
+        + 'champ laissé vide reprend votre fiche d’entreprise. Vous n’avez donc rien à remplir pour '
         + 'démarrer. Et pour finir le résultat, tel que votre client le reçoit.',      en: 'Your clients and brokers follow their own file, in your name and your colours.',
 
     },
@@ -1553,9 +1553,9 @@ export const FILMS = [
     // Belangrijker nog: deze twee voeden de schema.org-VideoObject op de handleidingpagina, en dát is wat
     // een zoekmachine leest. Bunny zelf wordt niet geïndexeerd — docs.creditsoft.be wel.
     titel: {
-      nl: 'Het kredietdossier in CreditSoft — van lijst tot journaal',
-      fr: 'Le dossier de crédit dans CreditSoft — de la liste au journal',
-      en: 'The credit file in CreditSoft — from list to journal',
+      nl: 'Het kredietdossier in CreditSoft: van lijst tot journaal',
+      fr: 'Le dossier de crédit dans CreditSoft : de la liste au journal',
+      en: 'The credit file in CreditSoft: from list to journal',
     },
     omschrijving: {
       nl: 'Een rondleiding door het kredietdossier: de lijst filteren en doorzoeken, een dossier openen, '
@@ -1727,9 +1727,9 @@ export const FILMS = [
   ['adviesdossier', {
     pagina: 'credit-management/advice',
     titel: {
-      nl: 'Het adviesdossier in CreditSoft — vastleggen wat u voorstelde',
-      fr: 'Le dossier de conseil dans CreditSoft — garder ce que vous avez proposé',
-      en: 'The advice file in CreditSoft — recording what you proposed',
+      nl: 'Het adviesdossier in CreditSoft: vastleggen wat u voorstelde',
+      fr: 'Le dossier de conseil dans CreditSoft : garder ce que vous avez proposé',
+      en: 'The advice file in CreditSoft: recording what you proposed',
     },
     omschrijving: {
       nl: 'Per kredietdossier legt u vast of u advies geeft en op welke basis, wat de klant u vertelde, welke kredieten '

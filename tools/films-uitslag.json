@@ -13,7 +13,7 @@
       "sha": "4a84aa8def9da015f97e3f273f3bfe1e32adbbe3",
       "vuil": false
     },
-    "titel": "Het kredietdossier in CreditSoft — van lijst tot journaal",
+    "titel": "Het kredietdossier in CreditSoft: van lijst tot journaal",
     "omschrijving": "Een rondleiding door het kredietdossier: de lijst filteren en doorzoeken, een dossier openen, de dossiergegevens, de kredietaanvragers, het pand, de gevraagde documenten, en het journaal met de taken, notities, gesprekken en commissieschema’s die bij dat ene dossier horen.",
     "hash": "21666a339fc92753",
     "guid": "20ec880d-3902-4459-a5b3-7edcb2f63714",
@@ -97,7 +97,7 @@
       "sha": "4a84aa8def9da015f97e3f273f3bfe1e32adbbe3",
       "vuil": false
     },
-    "titel": "Le dossier de crédit dans CreditSoft — de la liste au journal",
+    "titel": "Le dossier de crédit dans CreditSoft : de la liste au journal",
     "omschrijving": "Une visite guidée du dossier de crédit : filtrer et rechercher dans la liste, ouvrir un dossier, les données du dossier, les demandeurs de crédit, le bien, les documents demandés, et le journal avec les tâches, notes, appels et schémas de commission liés à ce dossier.",
     "hash": "dc66fd53d27ce137",
     "guid": "aa026982-6c2b-4c8f-bc3c-41d9ee3f2628",
@@ -181,7 +181,7 @@
       "sha": "4a84aa8def9da015f97e3f273f3bfe1e32adbbe3",
       "vuil": false
     },
-    "titel": "Het kredietdossier in CreditSoft — van lijst tot journaal",
+    "titel": "Het kredietdossier in CreditSoft: van lijst tot journaal",
     "omschrijving": "Een rondleiding door het kredietdossier: de lijst filteren en doorzoeken, een dossier openen, de dossiergegevens, de kredietaanvragers, het pand, de gevraagde documenten, en het journaal met de taken, notities, gesprekken en commissieschema’s die bij dat ene dossier horen.",
     "hash": "4bb15372297d92ca",
     "guid": "a33a71e4-238d-4a42-a26d-087a3d4e8a33",
@@ -235,7 +235,7 @@
       "sha": "4a84aa8def9da015f97e3f273f3bfe1e32adbbe3",
       "vuil": false
     },
-    "titel": "Le dossier de crédit dans CreditSoft — de la liste au journal",
+    "titel": "Le dossier de crédit dans CreditSoft : de la liste au journal",
     "omschrijving": "Une visite guidée du dossier de crédit : filtrer et rechercher dans la liste, ouvrir un dossier, les données du dossier, les demandeurs de crédit, le bien, les documents demandés, et le journal avec les tâches, notes, appels et schémas de commission liés à ce dossier.",
     "hash": "3420347d61ba7b36",
     "guid": "14d0dc5f-b7f2-4ce6-b645-5d9b4cce2804",
@@ -295,7 +295,7 @@
       "sha": "4a84aa8def9da015f97e3f273f3bfe1e32adbbe3",
       "vuil": false
     },
-    "titel": "CreditSoft in het kort — een overzicht van de modules",
+    "titel": "CreditSoft in het kort: een overzicht van de modules",
     "omschrijving": "Een kort overzicht van CreditSoft voor kredietmakelaars: kredietdossiers, klanten, documenten, de portalen voor klant en aanbrenger, de commissieberekening, borderellen en fiche 281.50, het vooruitzicht en het beheer van uw kredietverstrekkers.",
     "hash": "2ba034757547cf75",
     "guid": "f53b64e3-1310-402f-9d12-481104ec8619",
@@ -370,7 +370,7 @@
       "sha": "4a84aa8def9da015f97e3f273f3bfe1e32adbbe3",
       "vuil": false
     },
-    "titel": "CreditSoft en bref — les modules en un coup d’œil",
+    "titel": "CreditSoft en bref : les modules en un coup d’œil",
     "omschrijving": "Un bref aperçu de CreditSoft pour les courtiers en crédit : dossiers de crédit, clients, documents, les portails client et apporteur, le calcul des commissions, les bordereaux et la fiche 281.50, la perspective et la gestion de vos prêteurs.",
     "hash": "0896bc79eefd88bc",
     "guid": "bf79168b-6d18-427c-8ea8-234177721f45",
@@ -445,7 +445,7 @@
       "sha": "4a84aa8def9da015f97e3f273f3bfe1e32adbbe3",
       "vuil": false
     },
-    "titel": "CreditSoft at a glance — the modules in brief",
+    "titel": "CreditSoft at a glance: the modules in brief",
     "omschrijving": "A short overview of CreditSoft for credit brokers: credit files, clients, documents, the client and intermediary portals, commission calculation, statements and the 281.50 form, the forecast, and managing your lenders.",
     "hash": "682a154e1ab2d163",
     "guid": "1e2e31e2-6961-4dbf-8b3d-39cc6be8e065",
@@ -514,7 +514,7 @@
       "sha": "4a84aa8def9da015f97e3f273f3bfe1e32adbbe3",
       "vuil": false
     },
-    "titel": "The credit file in CreditSoft — from list to journal",
+    "titel": "The credit file in CreditSoft: from list to journal",
     "omschrijving": "A guided tour of the credit file: filtering and searching the list, opening a file, the file details, the credit applicants, the property, the requested documents, and the journal with the tasks, notes, calls and commission schemes belonging to that one file.",
     "hash": "8dc94713f6ed6628",
     "guid": "9170ce3b-6af1-4cd0-a82a-770df50b06df",
@@ -568,8 +568,8 @@
       "sha": "4a84aa8def9da015f97e3f273f3bfe1e32adbbe3",
       "vuil": false
     },
-    "titel": "Uw weg vinden in CreditSoft — het scherm, het zoeken en uw voorkeuren",
-    "omschrijving": "De eerste rondleiding: het startscherm met het blok Aan de slag, het menu links, zoeken over uw hele omgeving met ⌘K, de hulp bij elk scherm en de twee assistenten, werken in een lijst (sorteren, filteren, exporteren) en uw eigen voorkeuren — grootte, thema en taal.",
+    "titel": "Uw weg vinden in CreditSoft: het scherm, het zoeken en uw voorkeuren",
+    "omschrijving": "De eerste rondleiding: het startscherm met het blok Aan de slag, het menu links, zoeken over uw hele omgeving met ⌘K, de hulp bij elk scherm en de twee assistenten, werken in een lijst (sorteren, filteren, exporteren) en uw eigen voorkeuren voor grootte, thema en taal.",
     "hash": "e75435e35e78cd4e",
     "guid": "ac07ea69-7694-44bc-8512-313fd46dbe1d",
     "vorigeGuid": "db8100cf-820d-4012-8884-bda311cd67f6",
@@ -652,8 +652,8 @@
       "sha": "4a84aa8def9da015f97e3f273f3bfe1e32adbbe3",
       "vuil": false
     },
-    "titel": "Se repérer dans CreditSoft — l’écran, la recherche et vos préférences",
-    "omschrijving": "La première visite guidée : l’écran d’accueil avec le bloc Pour commencer, le menu de gauche, la recherche dans tout votre environnement avec ⌘K, l’aide sur chaque écran et les deux assistants, le travail dans une liste (trier, filtrer, exporter) et vos préférences — taille, thème et langue.",
+    "titel": "Se repérer dans CreditSoft : l’écran, la recherche et vos préférences",
+    "omschrijving": "La première visite guidée : l’écran d’accueil avec le bloc Pour commencer, le menu de gauche, la recherche dans tout votre environnement avec ⌘K, l’aide sur chaque écran et les deux assistants, le travail dans une liste (trier, filtrer, exporter) et vos préférences de taille, de thème et de langue.",
     "hash": "949d8d75c1a78949",
     "guid": "d0ac3f56-c517-4dc0-8a5f-62c9e02008a6",
     "vorigeGuid": "15c2d5d3-98df-454f-adad-45d552d34f23",
@@ -736,7 +736,7 @@
       "sha": "4a84aa8def9da015f97e3f273f3bfe1e32adbbe3",
       "vuil": false
     },
-    "titel": "Relaties in CreditSoft — de fiche waar alles aan hangt",
+    "titel": "Relaties in CreditSoft: de fiche waar alles aan hangt",
     "omschrijving": "De relatiefiche van dichtbij: de lijst doorzoeken, een fiche openen, de algemene en bijkomende gegevens, de documenttaal die bepaalt in welke taal uw klant post krijgt, de gevraagde documenten met hun drie toestanden, de kredietdossiers van die klant, en het journaal met notities en gesprekken. Plus het samenvoegen van twee fiches die dezelfde persoon blijken te zijn.",
     "hash": "998cd6ca42ee4c0c",
     "guid": "edef4c60-7a81-426b-8044-96d50b899ff1",
@@ -820,7 +820,7 @@
       "sha": "4a84aa8def9da015f97e3f273f3bfe1e32adbbe3",
       "vuil": false
     },
-    "titel": "Les relations dans CreditSoft — la fiche à laquelle tout se rattache",
+    "titel": "Les relations dans CreditSoft : la fiche à laquelle tout se rattache",
     "omschrijving": "La fiche de relation de près : parcourir la liste, ouvrir une fiche, les données générales et complémentaires, la langue des documents qui détermine dans quelle langue votre client reçoit son courrier, les documents demandés avec leurs trois statuts, les dossiers de crédit de ce client, et le journal avec les notes et les appels. Ainsi que la fusion de deux fiches.",
     "hash": "2c00fc53cdb421f6",
     "guid": "723e3d9b-c320-43a5-83f0-f892862f4b0f",
@@ -903,8 +903,8 @@
       "sha": "4a84aa8def9da015f97e3f273f3bfe1e32adbbe3",
       "vuil": false
     },
-    "titel": "Leads in CreditSoft — van aanvraag tot klant",
-    "omschrijving": "De werklijst van uw instroom: wie er wacht en hoe lang, uit welk kanaal hij kwam, en wie hem opvolgt. Daarna de fiche van een lead — wie hij is, wat hij vraagt, en waar hij staat — de vijf statussen, en tot slot een lead die klant geworden is, met de doorverwijzing naar zijn relatiefiche.",
+    "titel": "Leads in CreditSoft: van aanvraag tot klant",
+    "omschrijving": "De werklijst van uw instroom: wie er wacht en hoe lang, uit welk kanaal hij kwam, en wie hem opvolgt. Daarna de fiche van een lead: wie hij is, wat hij vraagt en waar hij staat. Dan de vijf statussen, en tot slot een lead die klant geworden is, met de doorverwijzing naar zijn relatiefiche.",
     "hash": "a0f68c76e18f1b68",
     "guid": "836767c8-8f16-4077-9236-abe0e8574500",
     "vorigeGuid": "d28ff101-ebfc-4784-be36-f79f82f13175",
@@ -981,8 +981,8 @@
       "sha": "4a84aa8def9da015f97e3f273f3bfe1e32adbbe3",
       "vuil": false
     },
-    "titel": "Les leads dans CreditSoft — de la demande au client",
-    "omschrijving": "La liste de travail de vos demandes entrantes : qui attend et depuis combien de temps, de quel canal il provient, et qui le suit. Ensuite la fiche d’un lead — qui il est, ce qu’il demande et où il en est — les cinq statuts, et pour finir un lead devenu client, avec le renvoi vers sa fiche.",
+    "titel": "Les leads dans CreditSoft : de la demande au client",
+    "omschrijving": "La liste de travail de vos demandes entrantes : qui attend et depuis combien de temps, de quel canal il provient, et qui le suit. Ensuite la fiche d’un lead : qui il est, ce qu’il demande et où il en est. Puis les cinq statuts, et pour finir un lead devenu client, avec le renvoi vers sa fiche.",
     "hash": "f1ee7e577747fe4d",
     "guid": "65b06f1b-a1a7-4d85-b65b-3cb9ce1f15a9",
     "vorigeGuid": "fcac94bb-9d88-4591-9b6d-24373937aa06",
@@ -1062,8 +1062,8 @@
       "sha": "4a84aa8def9da015f97e3f273f3bfe1e32adbbe3",
       "vuil": false
     },
-    "titel": "De documentketen — van vragen tot beoordelen",
-    "omschrijving": "Hoe u stukken opvraagt bij uw klant en ze weer binnenkrijgt: de gevraagde documenten op een dossier met hun drie toestanden, de uitnodiging naar het klantenportaal, het portaal zoals uw klant het ziet, en het centrale scherm waar alles wat op beoordeling wacht bij elkaar staat — gesorteerd op wie het langst wacht. Plus de andere richting: de documentbibliotheek.",
+    "titel": "De documentketen: van vragen tot beoordelen",
+    "omschrijving": "Hoe u stukken opvraagt bij uw klant en ze weer binnenkrijgt: de gevraagde documenten op een dossier met hun drie toestanden, de uitnodiging naar het klantenportaal, het portaal zoals uw klant het ziet, en het centrale scherm waar alles wat op beoordeling wacht bij elkaar staat, gesorteerd op wie het langst wacht. Plus de andere richting: de documentbibliotheek.",
     "hash": "0cf82166a00c1aa3",
     "guid": "a68da08b-582a-446e-bc88-ace5c435d175",
     "vorigeGuid": "e2fc8b9e-76ce-43fb-9394-5ef99921391a",
@@ -1143,8 +1143,8 @@
       "sha": "4a84aa8def9da015f97e3f273f3bfe1e32adbbe3",
       "vuil": false
     },
-    "titel": "La chaîne des documents — de la demande à la validation",
-    "omschrijving": "Comment vous demandez des pièces à votre client et les recevez : les documents demandés sur un dossier avec leurs trois statuts, l’invitation au portail client, le portail tel que votre client le voit, et l’écran central où tout ce qui attend une validation est rassemblé — trié par ordre d’attente. Ainsi que l’autre sens : la bibliothèque de documents.",
+    "titel": "La chaîne des documents : de la demande à la validation",
+    "omschrijving": "Comment vous demandez des pièces à votre client et les recevez : les documents demandés sur un dossier avec leurs trois statuts, l’invitation au portail client, le portail tel que votre client le voit, et l’écran central où tout ce qui attend une validation est rassemblé, trié par ordre d’attente. Ainsi que l’autre sens : la bibliothèque de documents.",
     "hash": "28578f8e3ed8da88",
     "guid": "96f012d6-d32c-46cd-b629-34351e11ec35",
     "vorigeGuid": "9d898994-00ce-4053-ac29-22cf48c91779",
@@ -1223,7 +1223,7 @@
       "sha": "4a84aa8def9da015f97e3f273f3bfe1e32adbbe3",
       "vuil": false
     },
-    "titel": "Het journaal — alles wat er met een klant gebeurde, op één plaats",
+    "titel": "Het journaal: alles wat er met een klant gebeurde, op één plaats",
     "omschrijving": "Het journaal hangt aan elke fiche en werkt overal hetzelfde: taken met hun vervaldag en wie ze opvolgt, notities, gesprekken, bijlagen, het mailverkeer met de status van elke verzending, en het logboek dat elke veldwijziging bewaart. Plus de takenlijst die over alle fiches heen kijkt.",
     "hash": "85c870ff3cc0585d",
     "guid": "229c9611-bbe4-4e34-9387-62b66d2fe77e",
@@ -1303,7 +1303,7 @@
       "sha": "4a84aa8def9da015f97e3f273f3bfe1e32adbbe3",
       "vuil": false
     },
-    "titel": "Le journal — tout ce qui s’est passé avec un client, au même endroit",
+    "titel": "Le journal : tout ce qui s’est passé avec un client, au même endroit",
     "omschrijving": "Le journal est rattaché à chaque fiche et fonctionne partout de la même manière : tâches avec leur échéance et leur responsable, notes, appels, pièces jointes, le courrier avec le statut de chaque envoi, et l’historique qui conserve chaque modification. Ainsi que la liste des tâches qui regarde par-dessus toutes les fiches.",
     "hash": "ca2bb2b956e41256",
     "guid": "49f6dfff-4cba-43ed-be6d-94d2e0e388b9",
@@ -1382,7 +1382,7 @@
       "sha": "4a84aa8def9da015f97e3f273f3bfe1e32adbbe3",
       "vuil": false
     },
-    "titel": "De agenda — afspraken maken en laten maken",
+    "titel": "De agenda: afspraken maken en laten maken",
     "omschrijving": "De agenda van uw kantoor: de kleuren die zeggen wie afwezig is en wanneer u gesloten bent, de weergave per medewerker of samengevoegd, een afspraak met haar verantwoordelijken en de bevestiging naar uw klant. En de andere kant: uren openzetten zodat mensen zelf een moment kiezen.",
     "hash": "ae4c6ed1d4635650",
     "guid": "e8baa5ba-274b-4861-8b28-0b859a6f260f",
@@ -1461,7 +1461,7 @@
       "sha": "4a84aa8def9da015f97e3f273f3bfe1e32adbbe3",
       "vuil": false
     },
-    "titel": "L’agenda — prendre et faire prendre des rendez-vous",
+    "titel": "L’agenda : prendre et faire prendre des rendez-vous",
     "omschrijving": "L’agenda de votre bureau : les couleurs qui indiquent qui est absent et quand vous êtes fermé, l’affichage par collaborateur ou fusionné, un rendez-vous avec ses responsables et la confirmation au client. Et l’autre côté : ouvrir des plages pour que les gens choisissent eux-mêmes un moment.",
     "hash": "66c10fd7171d2a29",
     "guid": "ced67129-9284-4a87-bafc-11e3812f2b42",
@@ -1541,7 +1541,7 @@
       "sha": "4a84aa8def9da015f97e3f273f3bfe1e32adbbe3",
       "vuil": false
     },
-    "titel": "Commissie instellen — het schema per dossier",
+    "titel": "Commissie instellen: het schema per dossier",
     "omschrijving": "Wat u met een aanbrenger afspreekt en hoe u het vastlegt: het overzicht van alle schema’s met hun vorm en toestand, de schemafiche op een dossier met de totale commissie, het deel dat direct uitbetaald wordt en de spreiding over de maanden, de geplande betalingen die daaruit volgen, en de twee kantoorinstellingen die bepalen hoe er afgerekend wordt.",
     "hash": "ba62771970047916",
     "guid": "6a3ce0b6-4921-4686-883b-670d8dc0f55c",
@@ -1616,7 +1616,7 @@
       "sha": "4a84aa8def9da015f97e3f273f3bfe1e32adbbe3",
       "vuil": false
     },
-    "titel": "Configurer la commission — le schéma par dossier",
+    "titel": "Configurer la commission : le schéma par dossier",
     "omschrijving": "Ce que vous convenez avec un apporteur et comment vous le fixez : l’aperçu de tous les schémas avec leur forme et leur statut, la fiche du schéma sur un dossier avec la commission totale, la part payée immédiatement et l’étalement sur les mois, les paiements planifiés qui en découlent, et les deux paramètres du bureau qui déterminent le mode de décompte.",
     "hash": "15ba0bf469428dbe",
     "guid": "03c9f2a8-b13c-4cdf-9dc9-c8d9a24ccf99",
@@ -1693,7 +1693,7 @@
       "sha": "4a84aa8def9da015f97e3f273f3bfe1e32adbbe3",
       "vuil": false
     },
-    "titel": "Commissie uitbetalen — borderel, vooruitzicht en restanten",
+    "titel": "Commissie uitbetalen: borderel, vooruitzicht en restanten",
     "omschrijving": "Wat er uit uw commissieschema’s komt: het borderel per aanbrenger met zijn lijnen, het vooruitzicht dat toont wat er de komende maanden nog uitbetaald moet worden, de restanten die nooit op een borderel belandden en waarom, en de fiche 281.50 voor de fiscus.",
     "hash": "2168b3bc29101165",
     "guid": "f9bba912-fe88-4336-a926-da7e41e458b4",
@@ -1776,7 +1776,7 @@
       "sha": "4a84aa8def9da015f97e3f273f3bfe1e32adbbe3",
       "vuil": false
     },
-    "titel": "Payer la commission — bordereau, prévisions et reliquats",
+    "titel": "Payer la commission : bordereau, prévisions et reliquats",
     "omschrijving": "Ce qui découle de vos schémas de commission : le bordereau par apporteur avec ses lignes, les prévisions de ce qu’il reste à payer les mois à venir, les reliquats qui ne sont jamais arrivés sur un bordereau et pourquoi, et la fiche 281.50 pour le fisc.",
     "hash": "6c902713565085ed",
     "guid": "e13627ed-6512-4629-95b2-e2f5fc34b538",
@@ -1856,8 +1856,8 @@
       "sha": "4a84aa8def9da015f97e3f273f3bfe1e32adbbe3",
       "vuil": false
     },
-    "titel": "Verzekeringen — het overzicht en uw verzekeraars",
-    "omschrijving": "Alle schuldsaldoverzekeringen bij uw dossiers op één lijst: kiezen wat u wil zien met de drie filters bovenaan, de kolommen die ertoe doen — wie er verzekerd is, of de polis nog voorlopig is en of de aanvraaglink vertrokken is — het verschil tussen de status van de polis en die van het dossier, de lijst afdrukken of exporteren, en de fiches van uw verzekeraars.",
+    "titel": "Verzekeringen: het overzicht en uw verzekeraars",
+    "omschrijving": "Alle schuldsaldoverzekeringen bij uw dossiers op één lijst: kiezen wat u wil zien met de drie filters bovenaan, en de kolommen die ertoe doen, zoals wie er verzekerd is, of de polis nog voorlopig is en of de aanvraaglink vertrokken is. Verder het verschil tussen de status van de polis en die van het dossier, de lijst afdrukken of exporteren, en de fiches van uw verzekeraars.",
     "hash": "7231f312fdbba471",
     "guid": "e1c4d303-7486-4013-a7f6-0baa8fc11679",
     "vorigeGuid": "5ca7d27d-75cb-4155-aac0-09d6f56d5d35",
@@ -1930,8 +1930,8 @@
       "sha": "4a84aa8def9da015f97e3f273f3bfe1e32adbbe3",
       "vuil": false
     },
-    "titel": "Assurances — l’aperçu et vos assureurs",
-    "omschrijving": "Toutes les assurances solde restant dû de vos dossiers sur une seule liste : choisir ce que vous voulez voir avec les trois filtres du haut, les colonnes qui comptent — qui est assuré, si la police est encore provisoire et si le lien de demande est parti — la différence entre le statut de la police et celui du dossier, imprimer ou exporter la liste, et les fiches de vos assureurs.",
+    "titel": "Assurances : l’aperçu et vos assureurs",
+    "omschrijving": "Toutes les assurances solde restant dû de vos dossiers sur une seule liste : choisir ce que vous voulez voir avec les trois filtres du haut, et les colonnes qui comptent, comme qui est assuré, si la police est encore provisoire et si le lien de demande est parti. Ensuite la différence entre le statut de la police et celui du dossier, imprimer ou exporter la liste, et les fiches de vos assureurs.",
     "hash": "b262375c68b85143",
     "guid": "25a74900-8e8e-4575-a67d-8badbad8f1c5",
     "vorigeGuid": "0072f8d0-1924-4a32-857f-a348bbb1b77a",
@@ -2004,7 +2004,7 @@
       "sha": "4a84aa8def9da015f97e3f273f3bfe1e32adbbe3",
       "vuil": false
     },
-    "titel": "Het dashboard — uw kantoor in één scherm",
+    "titel": "Het dashboard: uw kantoor in één scherm",
     "omschrijving": "Het startscherm gelezen zoals het bedoeld is: het jaar bovenaan, de vier tegels met aantallen en bedragen, de pijplijn met uw dossiers per fase, de drie grafieken over het gerealiseerde volume, het blok Vraagt aandacht met de termijnen, en het scherm waar u de fases zelf samenstelt. Plus waarom iedereen op het kantoor dezelfde cijfers ziet.",
     "hash": "faed20db733abc45",
     "guid": "b998179c-7a2b-4557-b735-40b1330931de",
@@ -2083,7 +2083,7 @@
       "sha": "4a84aa8def9da015f97e3f273f3bfe1e32adbbe3",
       "vuil": false
     },
-    "titel": "Le tableau de bord — votre bureau en un écran",
+    "titel": "Le tableau de bord : votre bureau en un écran",
     "omschrijving": "L’écran d’accueil lu comme il se doit : l’année en haut, les quatre tuiles avec les nombres et les montants, le pipeline de vos dossiers par phase, les trois graphiques du volume réalisé, le bloc Demande de l’attention avec les échéances, et l’écran où vous composez les phases. Ainsi que la raison pour laquelle tout le bureau voit les mêmes chiffres.",
     "hash": "b20e4ba919c8b9a7",
     "guid": "74bef2b4-5982-4ab4-aed1-bf2633515591",
@@ -2162,8 +2162,8 @@
       "sha": "4a84aa8def9da015f97e3f273f3bfe1e32adbbe3",
       "vuil": false
     },
-    "titel": "Lijsten en rapporten — zoeken, filteren en meenemen",
-    "omschrijving": "Elke lijst in CreditSoft werkt hetzelfde, en dit is hoe u ze naar uw hand zet: de keuzelijsten bovenaan, het trechtertje op een kolomkop, groeperen door een kolom te verslepen, en wat u meeneemt — afdrukken en exporteren volgen altijd uw filters. Plus de negen rapporten, waar u een periode kiest en een voorbeeld krijgt dat u kan downloaden of doorsturen.",
+    "titel": "Lijsten en rapporten: zoeken, filteren en meenemen",
+    "omschrijving": "Elke lijst in CreditSoft werkt hetzelfde, en dit is hoe u ze naar uw hand zet: de keuzelijsten bovenaan, het trechtertje op een kolomkop, groeperen door een kolom te verslepen, en wat u meeneemt. Afdrukken en exporteren volgen altijd uw filters. Plus de negen rapporten, waar u een periode kiest en een voorbeeld krijgt dat u kan downloaden of doorsturen.",
     "hash": "1bbe19b1f6cd139c",
     "guid": "d0def427-cc96-48fe-bc49-67c24c39b39e",
     "vorigeGuid": "3202e102-3e40-4c15-9c8d-0bb9ed0ce8a6",
@@ -2236,8 +2236,8 @@
       "sha": "4a84aa8def9da015f97e3f273f3bfe1e32adbbe3",
       "vuil": false
     },
-    "titel": "Listes et rapports — chercher, filtrer et emporter",
-    "omschrijving": "Toutes les listes de CreditSoft fonctionnent de la même manière, et voici comment les adapter : les listes déroulantes du haut, l’entonnoir sur un en-tête de colonne, le regroupement en déplaçant une colonne, et ce que vous emportez — l’impression et l’export suivent toujours vos filtres. Ainsi que les neuf rapports, où vous choisissez une période et obtenez un aperçu.",
+    "titel": "Listes et rapports : chercher, filtrer et emporter",
+    "omschrijving": "Toutes les listes de CreditSoft fonctionnent de la même manière, et voici comment les adapter : les listes déroulantes du haut, l’entonnoir sur un en-tête de colonne, le regroupement en déplaçant une colonne, et ce que vous emportez. L’impression et l’export suivent toujours vos filtres. Ainsi que les neuf rapports, où vous choisissez une période et obtenez un aperçu.",
     "hash": "169070b87bb9e5a0",
     "guid": "7ca792f6-02e0-4d7c-91be-e68ec824d518",
     "vorigeGuid": "9e6fc280-e5f3-4ed7-80ab-cc6bb01fac49",
@@ -2313,8 +2313,8 @@
       "sha": "4a84aa8def9da015f97e3f273f3bfe1e32adbbe3",
       "vuil": false
     },
-    "titel": "De mailketen — van uw gegevens tot een verzonden bericht",
-    "omschrijving": "Wat er allemaal klopt moet zijn vóór er één mail vertrekt, in de volgorde waarin het samenhangt: uw bedrijfsfiche die de variabelen vult, het verzendadres waar alles vanuit vertrekt, de tweetalige sjablonen met hun variabelenpalet en voorbeeld, en tot slot waar u ziet of een bericht werkelijk afgeleverd is — inclusief de reden wanneer dat niet lukte.",
+    "titel": "De mailketen: van uw gegevens tot een verzonden bericht",
+    "omschrijving": "Wat er allemaal klopt moet zijn vóór er één mail vertrekt, in de volgorde waarin het samenhangt: uw bedrijfsfiche die de variabelen vult, het verzendadres waar alles vanuit vertrekt, de tweetalige sjablonen met hun variabelenpalet en voorbeeld, en tot slot waar u ziet of een bericht werkelijk afgeleverd is, met de reden wanneer dat niet lukte.",
     "hash": "658a7851e50d2e1b",
     "guid": "d5aa8242-7965-4b4c-9ce9-ddfcc2a4696d",
     "vorigeGuid": "e34c4797-0d1e-4b55-aa59-d82c2dab5c30",
@@ -2385,8 +2385,8 @@
       "sha": "4a84aa8def9da015f97e3f273f3bfe1e32adbbe3",
       "vuil": false
     },
-    "titel": "La chaîne d’e-mails — de vos données au message envoyé",
-    "omschrijving": "Tout ce qui doit être en ordre avant qu’un seul e-mail parte, dans l’ordre où cela s’enchaîne : votre fiche d’entreprise qui alimente les variables, l’adresse d’expédition d’où tout part, les modèles bilingues avec leur panneau de variables et leur aperçu, et enfin l’endroit où vous voyez si un message a réellement été distribué — motif compris lorsque cela échoue.",
+    "titel": "La chaîne d’e-mails : de vos données au message envoyé",
+    "omschrijving": "Tout ce qui doit être en ordre avant qu’un seul e-mail parte, dans l’ordre où cela s’enchaîne : votre fiche d’entreprise qui alimente les variables, l’adresse d’expédition d’où tout part, les modèles bilingues avec leur panneau de variables et leur aperçu, et enfin l’endroit où vous voyez si un message a réellement été distribué, avec le motif lorsque cela échoue.",
     "hash": "b32af4f15d4d05c8",
     "guid": "a8b527ee-7251-490b-9c42-6436fdb5eb46",
     "vorigeGuid": "d2fefec3-e89a-45f4-8045-2556b5e312d9",
@@ -2454,8 +2454,8 @@
       "sha": "4a84aa8def9da015f97e3f273f3bfe1e32adbbe3",
       "vuil": false
     },
-    "titel": "Het klantenportaal — hoe uw klant u ziet",
-    "omschrijving": "Uw klant krijgt een link en belandt op een portaal. Dit is waar u bepaalt wat hij daar ziet: uw naam, uw kleur, uw logo en een welkomsttekst in beide talen. Elk veld dat u leeg laat, valt terug op uw bedrijfsfiche — u hoeft dus niets in te vullen om te beginnen. En tot slot het resultaat, zoals uw klant het krijgt.",
+    "titel": "Het klantenportaal: hoe uw klant u ziet",
+    "omschrijving": "Uw klant krijgt een link en belandt op een portaal. Dit is waar u bepaalt wat hij daar ziet: uw naam, uw kleur, uw logo en een welkomsttekst in beide talen. Elk veld dat u leeg laat, valt terug op uw bedrijfsfiche. U hoeft dus niets in te vullen om te beginnen. En tot slot het resultaat, zoals uw klant het krijgt.",
     "hash": "7befb05fd43224a4",
     "guid": "4b1d08bc-211e-4d8b-a72a-c578e28baf04",
     "vorigeGuid": "c16a4c13-e717-4c44-a8c5-84e097c1d86b",
@@ -2513,8 +2513,8 @@
       "sha": "4a84aa8def9da015f97e3f273f3bfe1e32adbbe3",
       "vuil": false
     },
-    "titel": "Le portail client — comment votre client vous voit",
-    "omschrijving": "Votre client reçoit un lien et arrive sur un portail. C’est ici que vous déterminez ce qu’il y voit : votre nom, votre couleur, votre logo et un texte d’accueil dans les deux langues. Chaque champ laissé vide reprend votre fiche d’entreprise — vous n’avez donc rien à remplir pour démarrer. Et pour finir le résultat, tel que votre client le reçoit.",
+    "titel": "Le portail client : comment votre client vous voit",
+    "omschrijving": "Votre client reçoit un lien et arrive sur un portail. C’est ici que vous déterminez ce qu’il y voit : votre nom, votre couleur, votre logo et un texte d’accueil dans les deux langues. Chaque champ laissé vide reprend votre fiche d’entreprise. Vous n’avez donc rien à remplir pour démarrer. Et pour finir le résultat, tel que votre client le reçoit.",
     "hash": "ed1360d46f46c79b",
     "guid": "8ab5ceb4-1557-4a7a-9aa7-7b700cb08d0c",
     "vorigeGuid": "499595bf-3c18-4442-8a0c-1d1756d92383",
@@ -2572,8 +2572,8 @@
       "sha": "4a84aa8def9da015f97e3f273f3bfe1e32adbbe3",
       "vuil": false
     },
-    "titel": "Het klantenportaal — hoe uw klant u ziet",
-    "omschrijving": "Uw klant krijgt een link en belandt op een portaal. Dit is waar u bepaalt wat hij daar ziet: uw naam, uw kleur, uw logo en een welkomsttekst in beide talen. Elk veld dat u leeg laat, valt terug op uw bedrijfsfiche — u hoeft dus niets in te vullen om te beginnen. En tot slot het resultaat, zoals uw klant het krijgt.",
+    "titel": "Het klantenportaal: hoe uw klant u ziet",
+    "omschrijving": "Uw klant krijgt een link en belandt op een portaal. Dit is waar u bepaalt wat hij daar ziet: uw naam, uw kleur, uw logo en een welkomsttekst in beide talen. Elk veld dat u leeg laat, valt terug op uw bedrijfsfiche. U hoeft dus niets in te vullen om te beginnen. En tot slot het resultaat, zoals uw klant het krijgt.",
     "hash": "cd8e21ed4bbd1742",
     "guid": "e3043585-8577-452b-b60b-fb689677205e",
     "hoofdstukken": [
@@ -2626,8 +2626,8 @@
       "sha": "4a84aa8def9da015f97e3f273f3bfe1e32adbbe3",
       "vuil": false
     },
-    "titel": "Le portail client — comment votre client vous voit",
-    "omschrijving": "Votre client reçoit un lien et arrive sur un portail. C’est ici que vous déterminez ce qu’il y voit : votre nom, votre couleur, votre logo et un texte d’accueil dans les deux langues. Chaque champ laissé vide reprend votre fiche d’entreprise — vous n’avez donc rien à remplir pour démarrer. Et pour finir le résultat, tel que votre client le reçoit.",
+    "titel": "Le portail client : comment votre client vous voit",
+    "omschrijving": "Votre client reçoit un lien et arrive sur un portail. C’est ici que vous déterminez ce qu’il y voit : votre nom, votre couleur, votre logo et un texte d’accueil dans les deux langues. Chaque champ laissé vide reprend votre fiche d’entreprise. Vous n’avez donc rien à remplir pour démarrer. Et pour finir le résultat, tel que votre client le reçoit.",
     "hash": "ceb35d1581ac9a43",
     "guid": "2e59649b-ac02-4ef8-9c1d-ae021a4de9ff",
     "hoofdstukken": [
@@ -2680,7 +2680,7 @@
       "sha": "4a84aa8def9da015f97e3f273f3bfe1e32adbbe3",
       "vuil": false
     },
-    "titel": "The client portal — how your client sees you",
+    "titel": "The client portal: how your client sees you",
     "omschrijving": "Your clients and brokers follow their own file, in your name and your colours.",
     "hash": "63b28dd1a8312cdc",
     "guid": "90670e70-ef44-4508-88d1-af49e888a649",
@@ -2735,7 +2735,7 @@
       "sha": "4a84aa8def9da015f97e3f273f3bfe1e32adbbe3",
       "vuil": false
     },
-    "titel": "Commissie uitbetalen — borderel, vooruitzicht en restanten",
+    "titel": "Commissie uitbetalen: borderel, vooruitzicht en restanten",
     "omschrijving": "Wat er uit uw commissieschema’s komt: het borderel per aanbrenger met zijn lijnen, het vooruitzicht dat toont wat er de komende maanden nog uitbetaald moet worden, de restanten die nooit op een borderel belandden en waarom, en de fiche 281.50 voor de fiscus.",
     "hash": "f56701a666ea6689",
     "guid": "4df84736-b79b-45a8-85d0-b8221270e942",
@@ -2790,7 +2790,7 @@
       "sha": "4a84aa8def9da015f97e3f273f3bfe1e32adbbe3",
       "vuil": false
     },
-    "titel": "Payer la commission — bordereau, prévisions et reliquats",
+    "titel": "Payer la commission : bordereau, prévisions et reliquats",
     "omschrijving": "Ce qui découle de vos schémas de commission : le bordereau par apporteur avec ses lignes, les prévisions de ce qu’il reste à payer les mois à venir, les reliquats qui ne sont jamais arrivés sur un bordereau et pourquoi, et la fiche 281.50 pour le fisc.",
     "hash": "1eec6c6a4d3c7e22",
     "guid": "877e88e4-e849-4524-9877-4e5e9c244d9d",
@@ -2845,7 +2845,7 @@
       "sha": "4a84aa8def9da015f97e3f273f3bfe1e32adbbe3",
       "vuil": false
     },
-    "titel": "Paying commission — statements, forecast and remainders",
+    "titel": "Paying commission: statements, forecast and remainders",
     "omschrijving": "From the commission scheme to the 281.50 tax form, without retyping a single amount.",
     "hash": "7ba3311fe76c4f14",
     "guid": "3157e0b3-dc9c-4d68-922d-127b7124e77d",
@@ -2898,7 +2898,7 @@
       "sha": "4a84aa8def9da015f97e3f273f3bfe1e32adbbe3",
       "vuil": false
     },
-    "titel": "Het dashboard — uw kantoor in één scherm",
+    "titel": "Het dashboard: uw kantoor in één scherm",
     "omschrijving": "Het startscherm gelezen zoals het bedoeld is: het jaar bovenaan, de vier tegels met aantallen en bedragen, de pijplijn met uw dossiers per fase, de drie grafieken over het gerealiseerde volume, het blok Vraagt aandacht met de termijnen, en het scherm waar u de fases zelf samenstelt. Plus waarom iedereen op het kantoor dezelfde cijfers ziet.",
     "hash": "94cb2fba614c47df",
     "guid": "d2ef1455-a00e-498e-b3d9-23f080f8b741",
@@ -2951,7 +2951,7 @@
       "sha": "4a84aa8def9da015f97e3f273f3bfe1e32adbbe3",
       "vuil": false
     },
-    "titel": "Le tableau de bord — votre bureau en un écran",
+    "titel": "Le tableau de bord : votre bureau en un écran",
     "omschrijving": "L’écran d’accueil lu comme il se doit : l’année en haut, les quatre tuiles avec les nombres et les montants, le pipeline de vos dossiers par phase, les trois graphiques du volume réalisé, le bloc Demande de l’attention avec les échéances, et l’écran où vous composez les phases. Ainsi que la raison pour laquelle tout le bureau voit les mêmes chiffres.",
     "hash": "d17497aa0201993d",
     "guid": "a40d0515-123b-4203-be60-c583f380991d",
@@ -3004,8 +3004,8 @@
       "sha": "4a84aa8def9da015f97e3f273f3bfe1e32adbbe3",
       "vuil": false
     },
-    "titel": "The dashboard — your working screen",
-    "omschrijving": "Your files by group, what needs action today, and every file in the phase it is in.",
+    "titel": "The dashboard: your working screen",
+    "omschrijving": "The year at a glance: four tiles with numbers and amounts, your files in the pipeline by phase, and the volume you realised.",
     "hash": "52c42a859ce6633f",
     "guid": "2fcc6d55-97f6-4e49-9b8f-5777ee05db93",
     "vorigeGuid": "b84165fa-bdac-4a6c-b31a-13f0a418a100",
@@ -3057,8 +3057,8 @@
       "sha": "4a84aa8def9da015f97e3f273f3bfe1e32adbbe3",
       "vuil": false
     },
-    "titel": "Leads in CreditSoft — van aanvraag tot klant",
-    "omschrijving": "De werklijst van uw instroom: wie er wacht en hoe lang, uit welk kanaal hij kwam, en wie hem opvolgt. Daarna de fiche van een lead — wie hij is, wat hij vraagt, en waar hij staat — de vijf statussen, en tot slot een lead die klant geworden is, met de doorverwijzing naar zijn relatiefiche.",
+    "titel": "Leads in CreditSoft: van aanvraag tot klant",
+    "omschrijving": "De werklijst van uw instroom: wie er wacht en hoe lang, uit welk kanaal hij kwam, en wie hem opvolgt. Daarna de fiche van een lead: wie hij is, wat hij vraagt en waar hij staat. Dan de vijf statussen, en tot slot een lead die klant geworden is, met de doorverwijzing naar zijn relatiefiche.",
     "hash": "1346184757aed050",
     "guid": "dc444df5-825e-41d5-92dd-9a27454d9077",
     "vorigeGuid": "3e42b28f-a453-4798-8163-4155151ed53b",
@@ -3110,8 +3110,8 @@
       "sha": "4a84aa8def9da015f97e3f273f3bfe1e32adbbe3",
       "vuil": false
     },
-    "titel": "Les leads dans CreditSoft — de la demande au client",
-    "omschrijving": "La liste de travail de vos demandes entrantes : qui attend et depuis combien de temps, de quel canal il provient, et qui le suit. Ensuite la fiche d’un lead — qui il est, ce qu’il demande et où il en est — les cinq statuts, et pour finir un lead devenu client, avec le renvoi vers sa fiche.",
+    "titel": "Les leads dans CreditSoft : de la demande au client",
+    "omschrijving": "La liste de travail de vos demandes entrantes : qui attend et depuis combien de temps, de quel canal il provient, et qui le suit. Ensuite la fiche d’un lead : qui il est, ce qu’il demande et où il en est. Puis les cinq statuts, et pour finir un lead devenu client, avec le renvoi vers sa fiche.",
     "hash": "0351665e1d8ddb27",
     "guid": "ae994439-58c2-421c-888d-50a27e59e6ee",
     "vorigeGuid": "7c5888de-18ed-4a70-b6e3-c5f73e9cbda3",
@@ -3163,7 +3163,7 @@
       "sha": "4a84aa8def9da015f97e3f273f3bfe1e32adbbe3",
       "vuil": false
     },
-    "titel": "Leads in CreditSoft — from enquiry to client",
+    "titel": "Leads in CreditSoft: from enquiry to client",
     "omschrijving": "Everyone who gets in touch on one worklist, with how long they have waited and where they came from.",
     "hash": "eddcbf7e0bdd7cb8",
     "guid": "fd958ce2-f67c-4797-84f2-57223dcc067e",
@@ -3217,7 +3217,7 @@
       "sha": "4a84aa8def9da015f97e3f273f3bfe1e32adbbe3",
       "vuil": false
     },
-    "titel": "Het adviesdossier in CreditSoft — vastleggen wat u voorstelde",
+    "titel": "Het adviesdossier in CreditSoft: vastleggen wat u voorstelde",
     "omschrijving": "Per kredietdossier legt u vast of u advies geeft en op welke basis, wat de klant u vertelde, welke kredieten u naast elkaar legde en waarom u er één voorstelt. Uw klant krijgt een afschrift in zijn taal, als kredietvergelijking, en CreditSoft houdt bij hoe en wanneer hij het kreeg.",
     "hash": "fb1de07c7572bcd9",
     "guid": "21cd24e3-73ed-44ce-ad8c-7f4ecfd088eb",
@@ -3301,7 +3301,7 @@
       "sha": "4a84aa8def9da015f97e3f273f3bfe1e32adbbe3",
       "vuil": false
     },
-    "titel": "Le dossier de conseil dans CreditSoft — garder ce que vous avez proposé",
+    "titel": "Le dossier de conseil dans CreditSoft : garder ce que vous avez proposé",
     "omschrijving": "Pour chaque dossier de crédit, vous indiquez si vous donnez un conseil et sur quelle base, ce que le client vous a dit, quels crédits vous avez comparés et pourquoi vous en proposez un. Votre client reçoit une copie dans sa langue, sous forme de comparaison de crédits, et CreditSoft garde comment et quand il l’a reçue.",
     "hash": "a475261cd649890a",
     "guid": "46b6c226-9ef6-4729-b3a3-d55865390061",
@@ -3385,7 +3385,7 @@
       "sha": "4a84aa8def9da015f97e3f273f3bfe1e32adbbe3",
       "vuil": false
     },
-    "titel": "Het adviesdossier in CreditSoft — vastleggen wat u voorstelde",
+    "titel": "Het adviesdossier in CreditSoft: vastleggen wat u voorstelde",
     "omschrijving": "Per kredietdossier legt u vast of u advies geeft en op welke basis, wat de klant u vertelde, welke kredieten u naast elkaar legde en waarom u er één voorstelt. Uw klant krijgt een afschrift in zijn taal, als kredietvergelijking, en CreditSoft houdt bij hoe en wanneer hij het kreeg.",
     "hash": "57075b6d7f3977f7",
     "guid": "aa1c21eb-e2ea-4da5-aa9a-282ee715154c",
@@ -3439,7 +3439,7 @@
       "sha": "4a84aa8def9da015f97e3f273f3bfe1e32adbbe3",
       "vuil": false
     },
-    "titel": "Le dossier de conseil dans CreditSoft — garder ce que vous avez proposé",
+    "titel": "Le dossier de conseil dans CreditSoft : garder ce que vous avez proposé",
     "omschrijving": "Pour chaque dossier de crédit, vous indiquez si vous donnez un conseil et sur quelle base, ce que le client vous a dit, quels crédits vous avez comparés et pourquoi vous en proposez un. Votre client reçoit une copie dans sa langue, sous forme de comparaison de crédits, et CreditSoft garde comment et quand il l’a reçue.",
     "hash": "db21d980fb4c5bba",
     "guid": "03f3f2f9-59c2-4387-b923-77fd3ab56b05",
@@ -3493,7 +3493,7 @@
       "sha": "4a84aa8def9da015f97e3f273f3bfe1e32adbbe3",
       "vuil": false
     },
-    "titel": "The advice file in CreditSoft — recording what you proposed",
+    "titel": "The advice file in CreditSoft: recording what you proposed",
     "omschrijving": "For each credit file you record whether you give advice and on what basis, what the client told you, which credits you compared and why you propose one. Your client receives a copy in their language, as a credit comparison, and CreditSoft keeps track of how and when they received it.",
     "hash": "ee4e48796a920cce",
     "guid": "a508e9da-18f8-4eb6-b8a2-5a9b666876ec",
