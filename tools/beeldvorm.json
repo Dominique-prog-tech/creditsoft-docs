@@ -490,7 +490,7 @@
   },
   "kredietdossier-contract-herziening": {
     "breedte": 1700,
-    "hoogte": 900,
+    "hoogte": 1500,
     "element": {
       "kies": ".dxbl-popup",
       "bevat": "Contract bewerken|Modifier le contrat",
@@ -785,5 +785,23 @@
   "simulatie": {
     "breedte": 1440,
     "hoogte": 1300
+  },
+  "kredietdossier-herziening-voorbij": {
+    "breedte": 1700,
+    "hoogte": 1400,
+    "element": {
+      "kies": "[data-blok=\"herziening\"]",
+      "bevat": "Rentevoet sinds|Taux depuis",
+      "minBreed": 400
+    }
+  },
+  "kredietdossier-aflossingstabel-herziening": {
+    "breedte": 1700,
+    "hoogte": 900,
+    "element": {
+      "kies": ".dxbl-popup",
+      "bevat": "Aflossingstabel ·|Tableau d'amortissement ·",
+      "minBreed": 500
+    }
   }
 }

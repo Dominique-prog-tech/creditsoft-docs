@@ -36,6 +36,8 @@ Une tâche un certain nombre de jours avant la prochaine **révision du taux** d
 
 Dans le champ **Combien de jours à l'avance**, vous choisissez combien de temps à l'avance la tâche apparaît : de 1 à 366 jours, 90 par défaut. Cliquez ensuite sur **Enregistrer**. L'échéance de la tâche est le jour de la révision.
 
+La tâche n'indique pas de nouveau taux : un chiffre dans une tâche est dépassé dès qu'un nouvel indice paraît. Elle renvoie au bloc [Révision](../credit-management/credit-files.md#la-revision) du contrat, où le chiffre est toujours à jour, et demande de reprendre le cap, le floor et l'indice de départ de l'offre de la banque s'ils n'y figurent pas encore.
+
 Ce signal est **activé** par défaut.
 
 ### Contrôle annuel

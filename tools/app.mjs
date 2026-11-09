@@ -60,6 +60,9 @@ export const ID = {
   // niet doorging toont het verkeerde geval. Gekozen met een query op tenant_demo, ná de knop "Opvolging kredieten
   // aanvullen"; valt om na een her-seed (de variabiliteit hangt aan het contractnummer).
   dossierOpvolging: 'bc566763-9860-48e3-b8a3-f464904a9810',
+  // C3 (09/11/2026): het dossier van C-1562-1, een 1/1/1-contract met voorbije herzieningen; cap, floor en begin-index uit de demostap
+  // "Herziening in de demo" (AanvullenHerzieningAsync). Gekozen met een query op tenant_demo.
+  dossierHerziening: 'c5b80752-69e5-46dd-a553-40dc39dfa695',
   // DEMO-1387 (F7 laag 3, 07/11/2026) — een lopende aankoop (Kredietaanbod getekend, nog geen akte) met kredietdoel Aankoop,
   // aankoopprijs 298.000, gevraagd krediet 238.000 en enige eigen woning ja. Zonder compromis of akte rekent de raming met
   // vandaag, dus met de vaste klok van de ronde (01/09/2026). Gekozen met een query na de knop "Opvolging, aflossingstabel,
@@ -80,7 +83,10 @@ export const ID = {
   // De dossierkop (06/11/2026): een LOPEND dossier met een verstreken uiterste datum (opschortende voorwaarden 17/08) en
   // documenten die nog niet in orde zijn, op de klok van de ronde (01/09/2026). ID.dossier staat in een afsluitende fase,
   // en daar toont de kop terecht geen termijnen.
-  dossierKop: '1edb1b88-526f-400f-9ffa-0c4b46141c13',
+  // ⚠️ 09/11/2026: hier stond DEMO-4294 (1edb1b88…). Sinds de demofix "het dossier volgt zijn contract" (DEMO-3587) staat dat in Afgewerkt,
+  // en een afgewerkt dossier toont geen verstreken termijn of open documenten meer. Nu DEMO-1377: lopend, termijn 27/07/2026 verstreken,
+  // 3 gevraagde documenten niet in orde (query op tenant_demo).
+  dossierKop: 'b7f0e58b-6b6b-4f7f-89ce-caf3afcf59cf',
   // DEMO-1004 (w2, 20/10/2026) — advies met drie aanbiedingen: het aanbevolen contract (226.000, 240 maanden, 3,58 %), een
   // alternatief bij een andere bank met een hogere rente en een met een kortere looptijd; de klant volgt het advies. Gekozen
   // met een query na de knop "Opvolging, patrimonium, advies en redenen van afvallen aanvullen"; valt om na een her-seed.

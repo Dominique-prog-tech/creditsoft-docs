@@ -86,7 +86,7 @@ Qui est ignoré et pourquoi, et comment fonctionne le lien de désinscription : 
 
 ## Le dossier
 
-![Un dossier de crédit ouvert : en haut l'aperçu avec les demandeurs, les données clés, les cinq étapes du dossier et Demande attention ; en dessous le bloc principal avec le statut, le numéro de dossier, le propriétaire et le responsable commercial sous forme de listes déroulantes — pour ce statut de clôture, aussi le motif d'abandon avec la précision —, l'institution financière, l'apporteur, le montant du crédit, le montant de commission avec la case Retenir à côté et la date d'acte, et à droite les boutons Enregistrer, Annuler, Imprimer l'aperçu et Supprimer. En dessous, à gauche les dates de dépôt et d'approbation avec le type de dossier, la signature de l'offre à côté de la date limite de l'offre, les dates limites de l'acte et des conditions suspensives, À revoir le avec le motif à côté, le but, la valeur estimée et la quotité avec la case Offre signée envoyée ainsi que le champ Remarques internes. À droite les demandeurs de crédit avec, pour chacun, le nombre de revenus et de charges, en dessous les contrats et les onglets Parties, Remarques, Demandés, Prêts et charges et Patrimoine, chacun avec un compteur, ainsi que Conseil, Signature et Factures.](../images/kredietdossier-fiche-fr.png "Le dossier de crédit : tout sur une seule page"){ .volle-breedte }
+![Un dossier de crédit ouvert : en haut l'aperçu avec les demandeurs, les données clés, les cinq étapes du dossier et Demande attention ; en dessous le bloc principal avec le statut, le numéro de dossier, le propriétaire et le responsable commercial sous forme de listes déroulantes, l'institution financière, l'apporteur, le montant du crédit, le montant de commission avec la case Retenir à côté et la date d'acte, et à droite les boutons Enregistrer, Annuler, Imprimer l'aperçu et Supprimer. En dessous, à gauche les dates de dépôt et d'approbation avec le type de dossier, la signature de l'offre à côté de la date limite de l'offre, les dates limites de l'acte et des conditions suspensives, À revoir le avec le motif à côté, le but, la valeur estimée et la quotité avec la case Offre signée envoyée ainsi que le champ Remarques internes. À droite les demandeurs de crédit avec, pour chacun, le nombre de revenus et de charges, en dessous les contrats et les onglets Parties, Remarques, Demandés, Prêts et charges et Patrimoine, chacun avec un compteur, ainsi que Conseil, Signature et Factures.](../images/kredietdossier-fiche-fr.png "Le dossier de crédit : tout sur une seule page"){ .volle-breedte }
 
 Le dossier tient sur une seule page. En haut figure un [aperçu](#overzicht) de tout le dossier, puis le bloc principal qui reprend les données dont vous avez le plus souvent besoin ; en dessous, les dates et le bien à gauche, les demandeurs de crédit et les contrats à droite, chacun aussi haut que son contenu. À côté du numéro de dossier, tout en haut, figure le statut, dans la couleur de sa phase, comme sur le [tableau de bord](../getting-started/dashboard.md). En bas à droite, **Parties**, **Remarques**, **Demandés** et **Prêts et charges** figurent côte à côte sous forme d'onglets — quatre listes qui partagent le même emplacement, pour que vous puissiez les atteindre toutes les quatre sans faire défiler la page.
 
@@ -341,10 +341,38 @@ avec des années de révision, et restent visibles tant qu'ils contiennent quelq
 Sous les champs figure l'**indice de référence** que suit la variabilité, tel que votre bureau l'a confirmé dans
 [Listes de choix](../beheer/keuzelijsten.md#lindice-de-reference). Si le cap est plus grand que le floor, un
 avertissement apparaît : la loi n'admet pas une hausse plus grande que la baisse. Vous pouvez quand même enregistrer,
-car l'offre reste ce que la banque a écrit, mais vérifiez-la. CreditSoft ne complète aucun des quatre champs lui-même
-et ne calcule encore rien avec eux.
+car l'offre reste ce que la banque a écrit, mais vérifiez-la. CreditSoft ne complète aucun des quatre champs lui-même.
 
-![La fenêtre Modifier le contrat d'un contrat hypothécaire réalisé : en haut l'avis que le contrat est finalisé, en dessous notamment Montant, Durée et Taux d'intérêt, et la Variabilité Variable 5/5/5 avec à côté la Première révision au 23/04/2031. Sous ce champ figure la proposition : 23/04/2031 — début ou acte + 5 ans. En dessous, les quatre champs de l'offre : Cap 2, Floor 2, Indice de départ 3,738 et le mois 10/2026, avec en dessous la phrase indiquant que la variabilité ne porte pas encore d'indice de référence. À côté de la mensualité figure le lien Tableau d'amortissement.](../images/kredietdossier-contract-herziening-fr.png "La première révision du taux à côté de la variabilité, avec en dessous le cap, le floor et l'indice de départ de l'offre"){ .volle-breedte }
+Si l'indice de départ ne correspond pas à la [liste des indices de référence](../beheer/referte-indexen.md) pour ce mois
+et cet indice, la fenêtre affiche la valeur de la liste, avec **Reprendre** à côté. Si votre valeur ressemble à la forme
+mensuelle, trimestrielle ou semestrielle de l'indice, la fenêtre le signale : le champ demande la forme annuelle. Vous
+pouvez quand même enregistrer comme l'offre l'écrit.
+
+![La fenêtre Modifier le contrat d'un contrat hypothécaire réalisé : en haut l'avis que le contrat est finalisé, en dessous notamment Montant, Durée et Taux d'intérêt, et la Variabilité Variable 5/5/5 avec à côté la Première révision au 23/04/2031. Sous ce champ figure la proposition : 23/04/2031 — début ou acte + 5 ans. En dessous, les quatre champs de l'offre : Cap 2, Floor 2, Indice de départ 2,59 et le mois 03/2026, avec en dessous la phrase indiquant que la variabilité suit l'indice de référence E. En dessous, le bloc Révision : calculé à partir du taux initial de 4,02 % du contrat avec l'indice E, la révision du 23/04/2031 à 4,74 % à titre indicatif avec l'indice de 09/2026 comme liste la plus récente et 03/2031 comme mois qui compte, et la mensualité avec celle au cap et au floor. En dessous, la mensualité avec le lien Tableau d'amortissement.](../images/kredietdossier-contract-herziening-fr.png "La première révision du taux à côté de la variabilité, avec en dessous le cap, le floor et l'indice de départ de l'offre et le bloc Révision"){ .volle-breedte }
+
+#### La révision
+
+Pour une variabilité avec des années de révision, le bloc **Révision** figure sous les quatre champs. Il calcule comme
+la loi le prévoit (art. VII.143 CDE) : avec le taux du contrat comme taux initial, avec le cap, le floor et l'indice de
+départ, avec l'indice de référence de la variabilité, et avec la liste des indices de référence que CreditSoft récupère
+chaque jour.
+
+- **La prochaine révision** : la date, le nouveau taux indicatif et la mensualité, ainsi que la mensualité au cap et au
+  floor. Vous voyez ainsi ce que cela peut devenir. L'indice qui compte est celui du mois qui précède la révision. Si
+  cette liste n'existe pas encore, le bloc calcule avec la liste la plus récente et indique le mois qui compte.
+- **Une révision déjà passée** : le taux actuel, recalculé à partir des indices, avec l'indice de cette fois-là. Ce que
+  CreditSoft ne peut pas savoir est indiqué : un remboursement anticipé, un écart minimum ou une réduction prévue au
+  contrat.
+- **Une limite appliquée** : le cap, le floor, ou la limite légale de la deuxième ou de la troisième année.
+- S'il manque quelque chose, le bloc dit quoi : l'indice de référence de la variabilité, le cap, le floor, l'indice de
+  départ ou son mois, la date de début ou de l'acte, la première révision, le montant, la durée ou le taux. Si la liste
+  des indices de référence n'est pas à jour, il le dit aussi.
+
+![Le bloc Révision d'un contrat à révision annuelle : calculé à partir du taux initial de 3,00 % du contrat avec l'indice de référence A, le taux depuis le 30/04/2026 de 1,98 %, recalculé à partir des indices et limité par le floor, avec ce que CreditSoft ne peut pas savoir. En dessous, la révision du 30/04/2027, à 2,32 % à titre indicatif, avec la liste la plus récente et le mois qui compte, et la mensualité avec celle au cap et au floor.](../images/kredietdossier-herziening-voorbij-fr.png "Après une révision passée : le taux actuel, recalculé à partir des indices")
+
+!!! info "Indicatif : le courrier de la banque fait foi"
+    Le bloc n'enregistre rien et recalcule chaque fois que vous ouvrez la fenêtre, avec la liste du moment. Ce n'est pas
+    un courrier de la banque : le taux que la banque communique est le bon.
 
 #### Le tableau d'amortissement
 
@@ -357,8 +385,14 @@ montants tels qu'ils figurent maintenant dans la fenêtre, même avant d'enregis
   Le taux mensuel découle du taux annuel comme la loi le prévoit.
 - Si une mensualité figure sur le contrat, vous la voyez à côté de la première échéance du tableau. Une petite
   différence est possible : la banque arrondit parfois autrement.
-- Si le contrat a une variabilité avec une première révision, la fenêtre indique que le taux peut changer à partir de
-  cette date, et que le tableau calcule jusqu'à la fin avec le taux actuel.
+- Si le contrat a une variabilité avec une première révision encore à venir, la fenêtre indique que le taux peut
+  changer à partir de cette date, et que le tableau calcule jusqu'à la fin avec le taux actuel.
+- Si une révision est déjà passée, vous choisissez en haut entre **Tel qu'il court aujourd'hui** et **Initial**. *Tel
+  qu'il court aujourd'hui* applique chaque révision passée au capital restant dû à ce moment, avec au-dessus une ligne
+  par révision. Une révision à venir n'est pas appliquée : elle figure à titre indicatif dans le bloc Révision.
+  *Initial* est le tableau au taux du contrat. Le pdf suit votre choix.
+
+![La fenêtre Tableau d'amortissement d'un contrat avec des révisions passées : en haut le montant, la durée, le taux et le type de produit, le mode de calcul et la mensualité du contrat. En dessous le choix Tel qu'il court aujourd'hui, qui est sélectionné, et Initial, deux lignes pour les révisions du 30/04/2025 et du 30/04/2026, chacune à 1,98 % recalculé à partir des indices, et la phrase indiquant que le tableau applique les révisions passées. En dessous, les échéances de la première année à la mensualité initiale, et à partir de l'année 2 une échéance plus basse par année.](../images/kredietdossier-aflossingstabel-herziening-fr.png "Tel que le crédit court aujourd'hui : les révisions passées appliquées"){ .volle-breedte }
 - **Imprimer (pdf)** en fait un pdf à télécharger. Il n'est pas conservé dans le dossier.
 
 ![La fenêtre Tableau d'amortissement d'un contrat hypothécaire : en haut le montant, la durée, le taux et le type de produit Mensualités, en dessous le mode de calcul Mensualité constante avec le taux mensuel, la phrase indiquant que la mensualité du contrat est égale à la première échéance, et la phrase sur la première révision. En dessous le tableau avec les colonnes Échéance, Montant, Intérêts, Capital et Capital restant dû : les échéances 1 à 12, le sous-total de l'année 1, puis une ligne par année.](../images/kredietdossier-aflossingstabel-fr.png "Le tableau d'amortissement d'un contrat"){ .volle-breedte }

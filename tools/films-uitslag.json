@@ -1994,14 +1994,14 @@
     "film": "dashboard",
     "taal": "nl-BE",
     "pagina": "getting-started/dashboard",
-    "lengte": 168.88,
+    "lengte": 168.32,
     "uitvoering": "handleiding",
     "routes": [
       "/dashboard",
       "/beheer/dashboard-fases"
     ],
     "app": {
-      "sha": "4a84aa8def9da015f97e3f273f3bfe1e32adbbe3",
+      "sha": "46f50d4f34c59b4b8a15e9e8b9280cf44e30a632",
       "vuil": false
     },
     "titel": "Het dashboard: uw kantoor in één scherm",
@@ -2012,59 +2012,58 @@
     "hoofdstukken": [
       {
         "titel": "Het jaar stuurt alles",
-        "start": 5.52,
-        "eind": 16.75
+        "start": 5.41,
+        "eind": 16.65
       },
       {
         "titel": "De vier tegels",
-        "start": 20.74,
-        "eind": 31.33
+        "start": 20.61,
+        "eind": 31.2
       },
       {
         "titel": "De pijplijn",
-        "start": 36.23,
-        "eind": 48.08
+        "start": 36.03,
+        "eind": 47.88
       },
       {
         "titel": "Gerealiseerd volume",
-        "start": 52.14,
-        "eind": 61.8
+        "start": 51.94,
+        "eind": 61.6
       },
       {
         "titel": "Per instelling en per collega",
-        "start": 65.88,
-        "eind": 74.61
+        "start": 65.67,
+        "eind": 74.4
       },
       {
         "titel": "Geen eigenaar is werk",
-        "start": 78.68,
-        "eind": 89.78
+        "start": 78.46,
+        "eind": 89.56
       },
       {
         "titel": "Wat aandacht vraagt",
-        "start": 97.25,
-        "eind": 118.84
+        "start": 97.01,
+        "eind": 118.6
       },
       {
         "titel": "De fases zijn van u",
-        "start": 124.07,
-        "eind": 137.67
+        "start": 123.53,
+        "eind": 137.13
       },
       {
         "titel": "Eén kantoor, één beeld",
-        "start": 143.1,
-        "eind": 157.12
+        "start": 142.53,
+        "eind": 156.55
       },
       {
         "titel": "Tot slot",
-        "start": 159.84,
-        "eind": 166.48
+        "start": 159.26,
+        "eind": 165.9
       }
     ],
     "gepubliceerdOp": "2026-11-09T12:53:35.812",
     "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/b998179c-7a2b-4557-b735-40b1330931de/thumbnail.jpg",
     "embed": "https://iframe.mediadelivery.net/embed/741183/b998179c-7a2b-4557-b735-40b1330931de",
-    "gepubliceerdeHash": "faed20db733abc45",
     "opTeRuimen": [
       "e21be71b-5ef7-4b8e-9a96-af68c403f58b"
     ]
@@ -2073,14 +2072,14 @@
     "film": "dashboard",
     "taal": "fr-BE",
     "pagina": "getting-started/dashboard",
-    "lengte": 158.88,
+    "lengte": 159.48,
     "uitvoering": "handleiding",
     "routes": [
       "/dashboard",
       "/beheer/dashboard-fases"
     ],
     "app": {
-      "sha": "4a84aa8def9da015f97e3f273f3bfe1e32adbbe3",
+      "sha": "46f50d4f34c59b4b8a15e9e8b9280cf44e30a632",
       "vuil": false
     },
     "titel": "Le tableau de bord : votre bureau en un écran",
@@ -2091,59 +2090,58 @@
     "hoofdstukken": [
       {
         "titel": "L’année pilote tout",
-        "start": 5.3,
-        "eind": 14.82
+        "start": 5.35,
+        "eind": 14.87
       },
       {
         "titel": "Les quatre tuiles",
-        "start": 18.81,
-        "eind": 27.77
+        "start": 18.86,
+        "eind": 27.82
       },
       {
         "titel": "Le pipeline",
-        "start": 32.62,
-        "eind": 44.09
+        "start": 32.67,
+        "eind": 44.14
       },
       {
         "titel": "Volume réalisé",
-        "start": 48.15,
-        "eind": 57.35
+        "start": 48.2,
+        "eind": 57.39
       },
       {
         "titel": "Par institution et par collègue",
-        "start": 61.42,
-        "eind": 69.6
+        "start": 61.45,
+        "eind": 69.62
       },
       {
         "titel": "Sans responsable, c’est du travail",
-        "start": 73.65,
-        "eind": 84.94
+        "start": 73.73,
+        "eind": 85.01
       },
       {
         "titel": "Ce qui demande de l’attention",
-        "start": 92.44,
-        "eind": 111.94
+        "start": 92.48,
+        "eind": 111.99
       },
       {
         "titel": "Les phases sont les vôtres",
-        "start": 116.96,
-        "eind": 128.15
+        "start": 117.02,
+        "eind": 128.21
       },
       {
         "titel": "Un bureau, une vue",
-        "start": 133.55,
-        "eind": 147.02
+        "start": 134.05,
+        "eind": 147.52
       },
       {
         "titel": "Pour conclure",
-        "start": 149.74,
-        "eind": 156.57
+        "start": 150.24,
+        "eind": 157.06
       }
     ],
     "gepubliceerdOp": "2026-11-09T12:59:04.476",
     "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/74bef2b4-5982-4ab4-aed1-bf2633515591/thumbnail.jpg",
     "embed": "https://iframe.mediadelivery.net/embed/741183/74bef2b4-5982-4ab4-aed1-bf2633515591",
-    "gepubliceerdeHash": "b20e4ba919c8b9a7",
     "opTeRuimen": [
       "a6faf5a5-0a15-4b30-8107-17e5016c841b"
     ]
@@ -2889,13 +2887,13 @@
     "film": "dashboard",
     "taal": "nl-BE",
     "pagina": "getting-started/dashboard",
-    "lengte": 37.24,
+    "lengte": 37.4,
     "uitvoering": "website",
     "routes": [
       "/dashboard"
     ],
     "app": {
-      "sha": "4a84aa8def9da015f97e3f273f3bfe1e32adbbe3",
+      "sha": "46f50d4f34c59b4b8a15e9e8b9280cf44e30a632",
       "vuil": false
     },
     "titel": "Het dashboard: uw kantoor in één scherm",
@@ -2906,34 +2904,33 @@
     "hoofdstukken": [
       {
         "titel": "Het jaar stuurt alles",
-        "start": 5.54,
-        "eind": 8.14
+        "start": 5.75,
+        "eind": 8.35
       },
       {
         "titel": "De vier tegels",
-        "start": 12.13,
-        "eind": 14.77
+        "start": 12.35,
+        "eind": 14.99
       },
       {
         "titel": "De pijplijn",
-        "start": 19.63,
-        "eind": 22.56
+        "start": 19.82,
+        "eind": 22.75
       },
       {
         "titel": "Gerealiseerd volume",
-        "start": 26.65,
-        "eind": 29.51
+        "start": 26.81,
+        "eind": 29.67
       },
       {
         "titel": "Tot slot",
-        "start": 32.22,
-        "eind": 34.82
+        "start": 32.38,
+        "eind": 34.98
       }
     ],
     "gepubliceerdOp": "2026-11-09T13:33:49.132",
     "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/d2ef1455-a00e-498e-b3d9-23f080f8b741/thumbnail.jpg",
     "embed": "https://iframe.mediadelivery.net/embed/741183/d2ef1455-a00e-498e-b3d9-23f080f8b741",
-    "gepubliceerdeHash": "94cb2fba614c47df",
     "opTeRuimen": [
       "d1fce8d4-46e0-4f6e-81bb-595c0699fea3"
     ]
@@ -2942,13 +2939,13 @@
     "film": "dashboard",
     "taal": "fr-BE",
     "pagina": "getting-started/dashboard",
-    "lengte": 37.44,
+    "lengte": 37.24,
     "uitvoering": "website",
     "routes": [
       "/dashboard"
     ],
     "app": {
-      "sha": "4a84aa8def9da015f97e3f273f3bfe1e32adbbe3",
+      "sha": "46f50d4f34c59b4b8a15e9e8b9280cf44e30a632",
       "vuil": false
     },
     "titel": "Le tableau de bord : votre bureau en un écran",
@@ -2959,34 +2956,33 @@
     "hoofdstukken": [
       {
         "titel": "L’année pilote tout",
-        "start": 5.41,
-        "eind": 8.01
+        "start": 5.42,
+        "eind": 8.02
       },
       {
         "titel": "Les quatre tuiles",
-        "start": 12.02,
-        "eind": 14.62
+        "start": 11.99,
+        "eind": 14.59
       },
       {
         "titel": "Le pipeline",
-        "start": 19.52,
-        "eind": 22.95
+        "start": 19.44,
+        "eind": 22.87
       },
       {
         "titel": "Volume réalisé",
-        "start": 27.05,
-        "eind": 29.65
+        "start": 26.92,
+        "eind": 29.52
       },
       {
         "titel": "Pour conclure",
-        "start": 32.4,
-        "eind": 35
+        "start": 32.24,
+        "eind": 34.84
       }
     ],
     "gepubliceerdOp": "2026-11-09T13:34:51.009",
     "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/a40d0515-123b-4203-be60-c583f380991d/thumbnail.jpg",
     "embed": "https://iframe.mediadelivery.net/embed/741183/a40d0515-123b-4203-be60-c583f380991d",
-    "gepubliceerdeHash": "d17497aa0201993d",
     "opTeRuimen": [
       "39be8492-cded-454a-b4df-ed63a90651e4"
     ]
@@ -2995,13 +2991,13 @@
     "film": "dashboard",
     "taal": "nl-BE",
     "pagina": "getting-started/dashboard",
-    "lengte": 36.76,
+    "lengte": 36.44,
     "uitvoering": "website",
     "routes": [
       "/dashboard"
     ],
     "app": {
-      "sha": "4a84aa8def9da015f97e3f273f3bfe1e32adbbe3",
+      "sha": "46f50d4f34c59b4b8a15e9e8b9280cf44e30a632",
       "vuil": false
     },
     "titel": "The dashboard: your working screen",
@@ -3012,34 +3008,33 @@
     "hoofdstukken": [
       {
         "titel": "Your home screen",
-        "start": 5.55,
-        "eind": 8.15
+        "start": 5.34,
+        "eind": 7.94
       },
       {
         "titel": "The four tiles",
-        "start": 12.13,
-        "eind": 14.73
+        "start": 11.92,
+        "eind": 14.52
       },
       {
         "titel": "The pipeline",
-        "start": 19.61,
-        "eind": 22.25
+        "start": 19.37,
+        "eind": 22.01
       },
       {
         "titel": "Realised volume",
-        "start": 26.31,
-        "eind": 28.95
+        "start": 26.08,
+        "eind": 28.72
       },
       {
         "titel": "In closing",
-        "start": 31.75,
-        "eind": 34.34
+        "start": 31.43,
+        "eind": 34.03
       }
     ],
     "gepubliceerdOp": "2026-11-09T13:35:47.809",
     "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/2fcc6d55-97f6-4e49-9b8f-5777ee05db93/thumbnail.jpg",
     "embed": "https://iframe.mediadelivery.net/embed/741183/2fcc6d55-97f6-4e49-9b8f-5777ee05db93",
-    "gepubliceerdeHash": "52c42a859ce6633f",
     "opTeRuimen": [
       "fe87b050-424d-4485-bb5e-d27c4e1d60c1"
     ]

@@ -48,7 +48,7 @@ gérés par nous — vous les choisissez sur un contrat — mais pour chaque var
 | **Première révision après (ans)** | Après combien d'années le taux est révisé pour la première fois |
 | **Ensuite tous les (ans)** | Tous les combien d'années ensuite |
 
-![L'écran Listes de choix avec, en haut, la liste Variabilité (formule de taux) sélectionnée. Le tableau affiche pour chaque variabilité le nom néerlandais et français, les deux chiffres Première révision après (ans) et Ensuite tous les (ans), pour Variable 10/5/5 par exemple 10 et 5, et la colonne Indice de référence avec la proposition en italique, pour Variable 10/5/5 Proposition : E. Pour Fixe, les deux chiffres sont vides et la colonne indique Non confirmé.](../images/keuzelijsten-variabiliteit-fr.png "Les variabilités avec leurs années de révision et la proposition d'indice de référence")
+![L'écran Listes de choix avec, en haut, la liste Variabilité (formule de taux) sélectionnée. Le tableau affiche pour chaque variabilité le nom néerlandais et français, les deux chiffres Première révision après (ans) et Ensuite tous les (ans), pour Variable 10/5/5 par exemple 10 et 5, et la colonne Indice de référence avec la lettre confirmée, pour Variable 10/5/5 E. Pour Fixe, les deux chiffres sont vides et la colonne indique Non confirmé.](../images/keuzelijsten-variabiliteit-fr.png "Les variabilités avec leurs années de révision et la proposition d'indice de référence")
 
 Cliquez sur une variabilité pour modifier les chiffres ; le nom et l'ordre sont grisés. Pour *Variable 10/5/5*,
 c'est 10 et 5. Si les chiffres figurent dans le nom, ils sont déjà remplis. Pour un nom de produit comme

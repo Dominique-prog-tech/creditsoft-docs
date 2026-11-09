@@ -36,6 +36,8 @@ Een taak een aantal dagen vóór de volgende **renteherziening** van een contrac
 
 In het veld **Hoeveel dagen vooraf** kiest u hoe ver op voorhand de taak verschijnt: van 1 tot 366 dagen, standaard 90. Klik daarna op **Bewaren**. De vervaldatum van de taak is de dag van de herziening.
 
+De taak noemt geen nieuwe rentevoet: een getal in een taak veroudert zodra er een nieuwe index verschijnt. Ze verwijst naar het blok [Herziening](../credit-management/credit-files.md#de-herziening) in het contract, waar het getal altijd vers is, en vraagt cap, floor en begin-index in te vullen uit het aanbod van de bank als die er nog niet staan.
+
 Dit signaal staat standaard **aan**.
 
 ### Jaarlijkse check

@@ -610,9 +610,11 @@ const SCHOTEN = [
         await p.getByRole('gridcell', { name: /C-021-1/ }).first().dblclick();
         await p.waitForTimeout(2500);
       }
-      // F7 golf 2, laag C1 (08/11/2026, 1.218.0): cap, floor en begin-index uit het aanbod. De demo draagt ze niet (een kantoor vult
-      // ze in uit het aanbod), dus het recept TYPT ze in het venster en BEWAART NIET: er blijft niets achter in de demo. De tekst
-      // belooft Cap 2, Floor 2, 3,738 en 10/2026; het recept meet ze na in de velden zelf, want innerText ziet geen invulvak.
+      // F7 golf 2, laag C1 (08/11/2026, 1.218.0): cap, floor en begin-index uit het aanbod. C-021-1 draagt ze niet, dus het recept TYPT
+      // ze in het venster en BEWAART NIET: er blijft niets achter in de demo. De tekst belooft Cap 2, Floor 2, 2,590 en 03/2026; het recept
+      // meet ze na in de velden zelf, want innerText ziet geen invulvak.
+      // ⚠️ C3 (09/11/2026): de begin-index is nu die van 03/2026 (index E: 2,590), de maand vóór de start van het contract (04/2026). Hier
+      //    stond 3,738 en 10/2026: een maand NA de start, en sinds het blok Herziening rekent, geeft dat een onzinnig voorbeeld.
       const veld = naam => venster.locator('.dxbl-fl-item').filter({ hasText: naam }).first();
       const getal = async (naam, waarde) => {
         await veld(naam).locator('input').first().click(); await p.waitForTimeout(300);
@@ -620,16 +622,40 @@ const SCHOTEN = [
       };
       await getal(/^(Cap: grootste stijging|Cap : hausse maximale)/, '2');
       await getal(/^(Floor: grootste daling|Floor : baisse maximale)/, '2');
-      await getal(/^(Begin-index|Indice de départ)/, '3,738');
+      await getal(/^(Begin-index|Indice de départ)/, '2,59');
       await veld(/^(Maand van de begin-index|Mois de l'indice de départ)/).locator('input').first().click(); await p.waitForTimeout(400);
-      await p.keyboard.type('10/2026', { delay: 40 }); await p.waitForTimeout(900);
-      await p.getByRole('option', { name: '10/2026' }).first().click(); await p.waitForTimeout(800);
+      await p.keyboard.type('03/2026', { delay: 40 }); await p.waitForTimeout(900);
+      await p.getByRole('option', { name: '03/2026' }).first().click(); await p.waitForTimeout(800);
+      await venster.locator('[data-herziening="maandlast"]').waitFor({ timeout: 15000 });
       const gezien = [];
       for (const n of [/^(Cap: grootste stijging|Cap : hausse maximale)/, /^(Floor: grootste daling|Floor : baisse maximale)/,
                        /^(Begin-index|Indice de départ)/, /^(Maand van de begin-index|Mois de l'indice de départ)/])
         gezien.push(await veld(n).locator('input').first().inputValue());
-      if (JSON.stringify(gezien) !== JSON.stringify(['2', '2', '3,738', '10/2026']))
+      if (JSON.stringify(gezien) !== JSON.stringify(['2', '2', '2,59', '03/2026']))
         throw new Error(`de vier velden uit het aanbod staan niet zoals de tekst belooft: ${JSON.stringify(gezien)}`);
+  }],
+  // C3 (09/11/2026): het blok Herziening bij een herziening die al voorbij is (V13), op een 1/1/1-contract van de demo dat sinds de
+  // demostap "Herziening in de demo" cap, floor en begin-index draagt. Een elementschot van het blok zelf.
+  ['kredietdossier-herziening-voorbij', `/credit-files/${ID.dossierHerziening}`, async p => {
+      const venster = p.locator('.dxbl-popup').filter({ hasText: /Contract bewerken|Modifier le contrat/ });
+      for (let i = 0; i < 3 && !(await venster.count()); i++) {
+        await p.getByRole('gridcell', { name: /C-1562-1/ }).first().dblclick();
+        await p.waitForTimeout(2500);
+      }
+      const blok = venster.locator('[data-blok="herziening"]');
+      await blok.locator('[data-herziening="huidig"]').waitFor({ timeout: 15000 });
+      await blok.scrollIntoViewIfNeeded(); await p.waitForTimeout(800);
+  }],
+  // C3 (09/11/2026, K3): de aflossingstabel van datzelfde contract, zoals het krediet nu loopt (de standaardweergave na een herziening).
+  ['kredietdossier-aflossingstabel-herziening', `/credit-files/${ID.dossierHerziening}`, async p => {
+      const venster = p.locator('.dxbl-popup').filter({ hasText: /Contract bewerken|Modifier le contrat/ });
+      for (let i = 0; i < 3 && !(await venster.count()); i++) {
+        await p.getByRole('gridcell', { name: /C-1562-1/ }).first().dblclick();
+        await p.waitForTimeout(2500);
+      }
+      await venster.getByRole('button', { name: /Aflossingstabel…|Tableau d'amortissement…/ }).click();
+      await p.locator('[data-herziening="toegepast"]').first().waitFor({ timeout: 15000 });
+      await p.waitForTimeout(1200);
   }],
   // F7 laag 4 (07/11/2026, 1.214.0): de aflossingstabel van hetzelfde contract (C-021-1 draagt sinds de demo-aanvulling het producttype
   // Mensualiteiten, met een bevestigde wijze). Een elementschot van het tabelvenster; eerste vorm met de hand in beeldvorm.json.
@@ -1287,6 +1313,9 @@ const VERWACHT = {
   // De dossierkop: de documenten die niet in orde zijn én een verstreken termijn. Een lege kop ("Niets dringends") of een
   // ingeklapte ("2 punten vragen aandacht") draagt geen van beide.
   'kredietdossier-overzicht':   /gevraagde documenten nog niet in orde[\s\S]*verstreken|documents demandés pas encore en ordre[\s\S]*dépassée/,
+  // 09/11/2026: een eigen merkteken. Het afgeleide uit de beschrijving viel weg toen DEMO-3587 (terecht) van "Krediet zonder gevolg" naar
+  // "Commissie uitbetaald" ging: de beschrijving sprak van een afgesloten status met een reden van afvallen.
+  'kredietdossier-fiche':       /^(?=[\s\S]*(Commissie uitbetaald|Commission payée))[\s\S]*(Kredietaanvragers \(\d|Demandeurs de crédit \(\d)/,
   // Staat de vraag in het live voorbeeld, dan werkte de editor écht (tekst, geen veldwaarde). Op een statisch
   // scherm blijft het voorbeeld leeg — precies wat van 22/08 tot 24/09 onopgemerkt bleef.
   'kantoorprofiel-vragenlijst': /Wat is uw netto maandinkomen|Quel est votre revenu net mensuel/,
@@ -1404,7 +1433,11 @@ const VERWACHT = {
   'dashboard-opvolging':        /· Variabel \d|· Variable \d/,
   // \s en geen spatie: het Frans draagt een VASTE spatie vóór de dubbele punt (\u00a0, 02/10/2026).
   // F7 golf 2 (1.218.0): ook de zin onder de vier velden uit het aanbod, die enkel bij die velden staat.
-  'kredietdossier-contract-herziening': /^(?=[\s\S]*(Voorstel:\s\d|Proposition\s:\s\d))[\s\S]*(draagt nog geen referte-index|ne porte pas encore d'indice de référence)/,
+  // C3 (09/11/2026): het merkteken is het blok Herziening met een getal, niet meer de zin "draagt nog geen referte-index" (de demo geeft
+  // haar variabiliteiten sinds de demostap een letter).
+  'kredietdossier-contract-herziening': /^(?=[\s\S]*(Voorstel:\s\d|Proposition\s:\s\d))[\s\S]*(Herziening op \d\d\/\d\d\/\d{4}: indicatief \d|Révision le \d\d\/\d\d\/\d{4} : indicatif \d)/,
+  'kredietdossier-herziening-voorbij': /(Rentevoet sinds \d\d\/\d\d\/\d{4}: \d|Taux depuis le \d\d\/\d\d\/\d{4} : \d)/,
+  'kredietdossier-aflossingstabel-herziening': /(Herziening op \d\d\/\d\d\/\d{4}: [\d,]+ %, herberekend|Révision le \d\d\/\d\d\/\d{4} : [\d,]+ %, recalculé)/,
   // F7 laag 4: de rekenwijze staat enkel in het tabelvenster; het voorstel in cursief enkel bij een onbevestigd producttype.
   'kredietdossier-aflossingstabel': /maandrente \d|taux mensuel \d/,
   'keuzelijsten-aflossingswijze': /Voorstel: Aflossingsvrij|Proposition\s:\sRemboursement in fine/,
@@ -1453,7 +1486,9 @@ const VERWACHT = {
   // De teller bestaat enkel sinds k1b — een beeld van vóór 1.150.0 haalt hem niet.
   'dashboard-redenen':          /Reden opgegeven bij \d+ van \d+|Motif indiqué pour \d+ des \d+/,
   // F7 golf 2 (1.218.0): de kolom Referte-index met het voorstel uit het ritme (Variabel 5/5/5 en 10/5/5: E).
-  'keuzelijsten-variabiliteit': /^(?=[\s\S]*(Eerste herziening na|Première révision après))[\s\S]*(Voorstel:\sE|Proposition\s:\sE)/,
+  // ⚠️ 09/11/2026: de demo BEVESTIGT haar letters sinds de demostap "Herziening in de demo" (C3): het scherm toont de letter zelf, geen
+  // "Voorstel: E" meer. Het merkteken eist de rij 5/5/5 met haar jaren en de bevestigde E (de kolom toont de letter kaal).
+  'keuzelijsten-variabiliteit': /^(?=[\s\S]*(Eerste herziening na|Première révision après))[\s\S]*Variabel 5\/5\/5\s+Variable 5\/5\/5\s+5\s+5\s+E\b/,
   // F7 golf 2 (1.219.0): de stand met de nieuwste maand én het label Actueel. Een lege kopie ("Nog geen referte-indexen") of een kopie
   // zonder sleutel (geen label) haalt dit niet.
   'referte-indexen': /^(?=[\s\S]*(Nieuwste maand: 08\/2026|Mois le plus récent : 08\/2026))[\s\S]*(Actueel|À jour)/,

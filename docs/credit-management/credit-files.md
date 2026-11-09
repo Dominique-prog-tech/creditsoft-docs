@@ -86,7 +86,7 @@ Wie wordt overgeslagen en waarom, en hoe de afmeldlink werkt, leest u bij
 
 ## Het dossier
 
-![Een geopend kredietdossier: bovenaan het overzicht met de aanvragers, de kerngegevens, de vijf stappen van het dossier en Vraagt aandacht; daaronder de kopkaart met status, dossiernummer, eigenaar en sales als keuzelijst — bij deze afgesloten status ook de reden van afvallen met de toelichting —, de financiële instelling, de aanbrenger, het kredietbedrag, het commissiebedrag met het vinkje inhouden ernaast en de datum akte, met rechts de knoppen Bewaren, Annuleren, Afdruk overzicht en Verwijderen. Daaronder links de datums van indiening en goedkeuring met het type dossier, de ondertekening van het aanbod naast de uiterste datum voor het aanbod, de uiterste datums voor de akte en de opschortende voorwaarden, Herbekijken op met de reden ernaast, het doel, de schattingswaarde en de quotiteit met het vinkje Getekend aanbod verzonden en het veld Interne opmerkingen. Rechts daarvan de kredietaanvragers met per aanvrager het aantal inkomsten en lasten, daaronder de contracten en de tabbladen Partijen, Opmerkingen, Gevraagd, Leningen en lasten en Patrimonium, elk met een teller, en Advies, Ondertekenen en Facturen.](../images/kredietdossier-fiche.png "Het kredietdossier: alles op één pagina"){ .volle-breedte }
+![Een geopend kredietdossier: bovenaan het overzicht met de aanvragers, de kerngegevens, de vijf stappen van het dossier en Vraagt aandacht; daaronder de kopkaart met status, dossiernummer, eigenaar en sales als keuzelijst, de financiële instelling, de aanbrenger, het kredietbedrag, het commissiebedrag met het vinkje inhouden ernaast en de datum akte, met rechts de knoppen Bewaren, Annuleren, Afdruk overzicht en Verwijderen. Daaronder links de datums van indiening en goedkeuring met het type dossier, de ondertekening van het aanbod naast de uiterste datum voor het aanbod, de uiterste datums voor de akte en de opschortende voorwaarden, Herbekijken op met de reden ernaast, het doel, de schattingswaarde en de quotiteit met het vinkje Getekend aanbod verzonden en het veld Interne opmerkingen. Rechts daarvan de kredietaanvragers met per aanvrager het aantal inkomsten en lasten, daaronder de contracten en de tabbladen Partijen, Opmerkingen, Gevraagd, Leningen en lasten en Patrimonium, elk met een teller, en Advies, Ondertekenen en Facturen.](../images/kredietdossier-fiche.png "Het kredietdossier: alles op één pagina"){ .volle-breedte }
 
 Het dossier is één pagina. Bovenaan staat een [overzicht](#overzicht) van het hele dossier, daaronder het kernblok met de gegevens die u het vaakst nodig hebt; daaronder staan links de datums en het pand, rechts de kredietaanvragers en de contracten, elk zo hoog als hun inhoud. Naast het dossiernummer helemaal bovenaan staat de status, in de kleur van haar fase, zoals op het [dashboard](../getting-started/dashboard.md). Onderaan rechts staan **Partijen**, **Opmerkingen**, **Gevraagd** en **Leningen en lasten** naast elkaar als tabbladen — vier lijsten die dezelfde plaats delen, zodat u niet hoeft te scrollen om ze alle vier te bereiken.
 
@@ -341,9 +341,37 @@ herzieningsjaren, en blijven zichtbaar zolang er iets in staat:
 Onder de velden staat welke **referte-index** de variabiliteit volgt, zoals uw kantoor ze bevestigde in
 [Keuzelijsten](../beheer/keuzelijsten.md#de-referte-index). Is de cap groter dan de floor, dan verschijnt een
 waarschuwing: de wet laat geen grotere stijging dan daling toe. Bewaren kan toch, want het aanbod blijft wat de bank
-schreef, maar kijk het na. CreditSoft vult geen van de vier velden zelf in en rekent er nog niets mee.
+schreef, maar kijk het na. CreditSoft vult geen van de vier velden zelf in.
 
-![Het venster Contract bewerken van een gerealiseerd hypothecair contract: bovenaan de melding dat het contract afgerond is, daaronder onder meer Bedrag, Looptijd en Rentevoet, en de Variabiliteit Variabel 5/5/5 met ernaast de Eerste herziening op 23/04/2031. Onder dat veld staat het voorstel: 23/04/2031 — start of akte + 5 jaar. Daaronder de vier velden uit het aanbod: Cap 2, Floor 2, Begin-index 3,738 en de maand 10/2026, met eronder de zin dat de variabiliteit nog geen referte-index draagt. Naast de maandlast staat de link Aflossingstabel.](../images/kredietdossier-contract-herziening.png "De eerste renteherziening naast de variabiliteit, met eronder cap, floor en begin-index uit het aanbod"){ .volle-breedte }
+Klopt de begin-index niet met de [lijst van de referte-indexen](../beheer/referte-indexen.md) voor die maand en die
+index, dan toont het venster de waarde uit de lijst, met **Overnemen** ernaast. Lijkt uw waarde de maandelijkse,
+trimestriële of semestriële vorm van de index, dan zegt het venster dat: het veld vraagt de jaarlijkse vorm. Ook dan
+kunt u bewaren zoals het aanbod het schrijft.
+
+![Het venster Contract bewerken van een gerealiseerd hypothecair contract: bovenaan de melding dat het contract afgerond is, daaronder onder meer Bedrag, Looptijd en Rentevoet, en de Variabiliteit Variabel 5/5/5 met ernaast de Eerste herziening op 23/04/2031. Onder dat veld staat het voorstel: 23/04/2031 — start of akte + 5 jaar. Daaronder de vier velden uit het aanbod: Cap 2, Floor 2, Begin-index 2,59 en de maand 03/2026, met eronder de zin dat de variabiliteit referte-index E volgt. Daaronder het blok Herziening: gerekend vanaf de beginrente 4,02 % van het contract met index E, de herziening op 23/04/2031 indicatief aan 4,74 % met de index van 09/2026 als nieuwste lijst en 03/2031 als de maand die telt, en de maandlast met die bij de cap en bij de floor. Daaronder de maandlast met de link Aflossingstabel.](../images/kredietdossier-contract-herziening.png "De eerste renteherziening naast de variabiliteit, met eronder cap, floor en begin-index uit het aanbod en het blok Herziening"){ .volle-breedte }
+
+#### De herziening
+
+Bij een variabiliteit met herzieningsjaren staat onder de vier velden het blok **Herziening**. Het rekent zoals de wet
+het voorschrijft (art. VII.143 WER): met de rentevoet van het contract als beginrente, met cap, floor en begin-index, met
+de referte-index van de variabiliteit, en met de lijst van de referte-indexen die CreditSoft elke dag ophaalt.
+
+- **De volgende herziening**: de datum, de indicatieve nieuwe rentevoet en de maandlast, en de maandlast bij de cap en
+  bij de floor. Zo ziet u wat het kan worden. De index die telt, is die van de maand vóór de herziening. Is die lijst
+  er nog niet, dan rekent het blok met de nieuwste lijst, en noemt het de maand die telt.
+- **Een herziening die al voorbij is**: de rentevoet van nu, herberekend uit de indexen, met de index van die keer.
+  Wat CreditSoft niet kan weten, staat erbij: een vervroegde terugbetaling, een minimumverschil of een korting uit het
+  contract.
+- **Een grens die greep**: de cap, de floor, of de wettelijke grens van het tweede of het derde jaar.
+- Ontbreekt er iets, dan zegt het blok wat: de referte-index van de variabiliteit, cap, floor, de begin-index of haar
+  maand, de start- of aktedatum, de eerste herziening, het bedrag, de looptijd of de rentevoet. Is de lijst van de
+  referte-indexen niet bij, dan zegt het dat ook.
+
+![Het blok Herziening van een contract met een jaarlijkse herziening: gerekend vanaf de beginrente 3,00 % van het contract met referte-index A, de rentevoet sinds 30/04/2026 van 1,98 %, herberekend uit de indexen en begrensd door de floor, met wat CreditSoft niet kan weten. Daaronder de herziening op 30/04/2027, indicatief aan 2,32 %, met de nieuwste lijst en de maand die telt, en de maandlast met die bij de cap en bij de floor.](../images/kredietdossier-herziening-voorbij.png "Na een voorbije herziening: de rentevoet van nu, herberekend uit de indexen")
+
+!!! info "Indicatief: de brief van de bank geldt"
+    Het blok bewaart niets en rekent opnieuw telkens u het venster opent, met de lijst van dat moment. Het is geen brief
+    van de bank: de rentevoet die de bank meedeelt, is de juiste.
 
 #### De aflossingstabel
 
@@ -356,8 +384,14 @@ nu in het venster staan, ook vóór u bewaart.
   maandrente volgt uit de jaarrente zoals de wet het voorschrijft.
 - Staat er een maandlast op het contract, dan ziet u ze naast de eerste termijn van de tabel. Een klein verschil kan:
   de bank rondt soms anders af.
-- Heeft het contract een variabiliteit met een eerste herziening, dan zegt het venster dat de rentevoet vanaf die datum
-  kan wijzigen, en dat de tabel tot het einde met de huidige rentevoet rekent.
+- Heeft het contract een variabiliteit met een eerste herziening die nog komt, dan zegt het venster dat de rentevoet
+  vanaf die datum kan wijzigen, en dat de tabel tot het einde met de huidige rentevoet rekent.
+- Is er al een herziening voorbij, dan kiest u bovenaan tussen **Zoals het nu loopt** en **Oorspronkelijk**. *Zoals het
+  nu loopt* past elke voorbije herziening toe op het kapitaal dat toen nog uitstond, met erboven een regel per
+  herziening. Een herziening die nog komt, past het niet toe: die staat indicatief in het blok Herziening.
+  *Oorspronkelijk* is de tabel aan de rentevoet van het contract. De pdf volgt uw keuze.
+
+![Het venster Aflossingstabel van een contract met voorbije herzieningen: bovenaan het bedrag, de looptijd, de rentevoet en het producttype, de rekenwijze en de maandlast op het contract. Daaronder de keuze Zoals het nu loopt, die gekozen is, en Oorspronkelijk, twee regels voor de herzieningen op 30/04/2025 en 30/04/2026, elk aan 1,98 % herberekend uit de indexen, en de zin dat de tabel de voorbije herzieningen toepast. Daaronder de termijnen van het eerste jaar aan de oorspronkelijke maandlast, en vanaf jaar 2 een lagere termijn per jaar.](../images/kredietdossier-aflossingstabel-herziening.png "Zoals het krediet nu loopt: de voorbije herzieningen toegepast"){ .volle-breedte }
 - **Afdrukken (pdf)** maakt er een pdf van om te downloaden. Die wordt niet bij het dossier bewaard.
 
 ![Het venster Aflossingstabel van een hypothecair contract: bovenaan het bedrag, de looptijd, de rentevoet en het producttype Mensualiteiten, daaronder de rekenwijze Gelijkblijvende maandlast met de maandrente, de zin dat de maandlast op het contract gelijk is aan de eerste termijn, en de zin over de eerste herziening. Daaronder de tabel met de kolommen Termijn, Bedrag, Rente, Kapitaal en Uitstaand kapitaal: de termijnen 1 tot 12, het subtotaal van jaar 1 en daarna een regel per jaar.](../images/kredietdossier-aflossingstabel.png "De aflossingstabel van een contract"){ .volle-breedte }

@@ -47,7 +47,7 @@ wij — u kiest ze op een contract — maar per variabiliteit vult u zelf **twee
 | **Eerste herziening na (jaar)** | Na hoeveel jaar de rente voor het eerst herzien wordt |
 | **Daarna om de (jaar)** | Om de hoeveel jaar daarna opnieuw |
 
-![Het scherm Keuzelijsten met bovenaan de lijst Variabiliteit (rentevoetformule) gekozen. De tabel toont per variabiliteit de naam in de kolommen Nederlands en Frans, de twee getallen Eerste herziening na (jaar) en Daarna om de (jaar), bij Variabel 10/5/5 bijvoorbeeld 10 en 5, en de kolom Referte-index met cursief het voorstel, bij Variabel 10/5/5 Voorstel: E. Bij Vast staan beide getallen leeg en staat er Niet bevestigd.](../images/keuzelijsten-variabiliteit.png "De variabiliteiten met hun herzieningsjaren en het voorstel voor de referte-index")
+![Het scherm Keuzelijsten met bovenaan de lijst Variabiliteit (rentevoetformule) gekozen. De tabel toont per variabiliteit de naam in de kolommen Nederlands en Frans, de twee getallen Eerste herziening na (jaar) en Daarna om de (jaar), bij Variabel 10/5/5 bijvoorbeeld 10 en 5, en de kolom Referte-index met de bevestigde letter, bij Variabel 10/5/5 E. Bij Vast staan beide getallen leeg en staat er Niet bevestigd.](../images/keuzelijsten-variabiliteit.png "De variabiliteiten met hun herzieningsjaren en het voorstel voor de referte-index")
 
 Klik op een variabiliteit om de getallen te wijzigen; naam en volgorde staan grijs. Bij *Variabel 10/5/5* is
 dat 10 en 5. Staan de getallen in de naam, dan zijn ze al ingevuld. Bij een productnaam zoals *Record Light
