@@ -2007,8 +2007,8 @@
     "titel": "Het dashboard: uw kantoor in één scherm",
     "omschrijving": "Het startscherm gelezen zoals het bedoeld is: het jaar bovenaan, de vier tegels met aantallen en bedragen, de pijplijn met uw dossiers per fase, de drie grafieken over het gerealiseerde volume, het blok Vraagt aandacht met de termijnen, en het scherm waar u de fases zelf samenstelt. Plus waarom iedereen op het kantoor dezelfde cijfers ziet.",
     "hash": "faed20db733abc45",
-    "guid": "b998179c-7a2b-4557-b735-40b1330931de",
-    "vorigeGuid": "502073d8-8608-44aa-98f5-1a617ea68fa8",
+    "guid": "ec05d0f9-b6e6-4e8d-a04f-ac72d76b7a04",
+    "vorigeGuid": "b998179c-7a2b-4557-b735-40b1330931de",
     "hoofdstukken": [
       {
         "titel": "Het jaar stuurt alles",
@@ -2061,12 +2061,14 @@
         "eind": 165.9
       }
     ],
-    "gepubliceerdOp": "2026-11-09T12:53:35.812",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/b998179c-7a2b-4557-b735-40b1330931de/thumbnail.jpg",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/b998179c-7a2b-4557-b735-40b1330931de",
+    "gepubliceerdOp": "2026-11-09T16:44:24.012",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/ec05d0f9-b6e6-4e8d-a04f-ac72d76b7a04/thumbnail.jpg",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/ec05d0f9-b6e6-4e8d-a04f-ac72d76b7a04",
     "opTeRuimen": [
-      "e21be71b-5ef7-4b8e-9a96-af68c403f58b"
-    ]
+      "e21be71b-5ef7-4b8e-9a96-af68c403f58b",
+      "502073d8-8608-44aa-98f5-1a617ea68fa8"
+    ],
+    "gepubliceerdeHash": "faed20db733abc45"
   },
   "dashboard-fr": {
     "film": "dashboard",
@@ -2085,8 +2087,8 @@
     "titel": "Le tableau de bord : votre bureau en un écran",
     "omschrijving": "L’écran d’accueil lu comme il se doit : l’année en haut, les quatre tuiles avec les nombres et les montants, le pipeline de vos dossiers par phase, les trois graphiques du volume réalisé, le bloc Demande de l’attention avec les échéances, et l’écran où vous composez les phases. Ainsi que la raison pour laquelle tout le bureau voit les mêmes chiffres.",
     "hash": "b20e4ba919c8b9a7",
-    "guid": "74bef2b4-5982-4ab4-aed1-bf2633515591",
-    "vorigeGuid": "529b87bf-b676-4e18-bdaf-387680ac0e07",
+    "guid": "67bb7190-b0df-42e0-b921-386fa14c1d80",
+    "vorigeGuid": "74bef2b4-5982-4ab4-aed1-bf2633515591",
     "hoofdstukken": [
       {
         "titel": "L’année pilote tout",
@@ -2139,12 +2141,14 @@
         "eind": 157.06
       }
     ],
-    "gepubliceerdOp": "2026-11-09T12:59:04.476",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/74bef2b4-5982-4ab4-aed1-bf2633515591/thumbnail.jpg",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/74bef2b4-5982-4ab4-aed1-bf2633515591",
+    "gepubliceerdOp": "2026-11-09T16:45:02.879",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/67bb7190-b0df-42e0-b921-386fa14c1d80/thumbnail.jpg",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/67bb7190-b0df-42e0-b921-386fa14c1d80",
     "opTeRuimen": [
-      "a6faf5a5-0a15-4b30-8107-17e5016c841b"
-    ]
+      "a6faf5a5-0a15-4b30-8107-17e5016c841b",
+      "529b87bf-b676-4e18-bdaf-387680ac0e07"
+    ],
+    "gepubliceerdeHash": "b20e4ba919c8b9a7"
   },
   "lijsten-en-rapporten-nl": {
     "film": "lijsten-en-rapporten",
@@ -2899,8 +2903,8 @@
     "titel": "Het dashboard: uw kantoor in één scherm",
     "omschrijving": "Het startscherm gelezen zoals het bedoeld is: het jaar bovenaan, de vier tegels met aantallen en bedragen, de pijplijn met uw dossiers per fase, de drie grafieken over het gerealiseerde volume, het blok Vraagt aandacht met de termijnen, en het scherm waar u de fases zelf samenstelt. Plus waarom iedereen op het kantoor dezelfde cijfers ziet.",
     "hash": "94cb2fba614c47df",
-    "guid": "d2ef1455-a00e-498e-b3d9-23f080f8b741",
-    "vorigeGuid": "559e406e-85f0-4a2c-a64e-62e5fc9da849",
+    "guid": "cc156e52-0095-41a0-bca1-464840114b43",
+    "vorigeGuid": "d2ef1455-a00e-498e-b3d9-23f080f8b741",
     "hoofdstukken": [
       {
         "titel": "Het jaar stuurt alles",
@@ -2928,12 +2932,14 @@
         "eind": 34.98
       }
     ],
-    "gepubliceerdOp": "2026-11-09T13:33:49.132",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/d2ef1455-a00e-498e-b3d9-23f080f8b741/thumbnail.jpg",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/d2ef1455-a00e-498e-b3d9-23f080f8b741",
+    "gepubliceerdOp": "2026-11-09T16:45:32.314",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/cc156e52-0095-41a0-bca1-464840114b43/thumbnail.jpg",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/cc156e52-0095-41a0-bca1-464840114b43",
     "opTeRuimen": [
-      "d1fce8d4-46e0-4f6e-81bb-595c0699fea3"
-    ]
+      "d1fce8d4-46e0-4f6e-81bb-595c0699fea3",
+      "559e406e-85f0-4a2c-a64e-62e5fc9da849"
+    ],
+    "gepubliceerdeHash": "94cb2fba614c47df"
   },
   "dashboard-website-fr": {
     "film": "dashboard",
@@ -2951,8 +2957,8 @@
     "titel": "Le tableau de bord : votre bureau en un écran",
     "omschrijving": "L’écran d’accueil lu comme il se doit : l’année en haut, les quatre tuiles avec les nombres et les montants, le pipeline de vos dossiers par phase, les trois graphiques du volume réalisé, le bloc Demande de l’attention avec les échéances, et l’écran où vous composez les phases. Ainsi que la raison pour laquelle tout le bureau voit les mêmes chiffres.",
     "hash": "d17497aa0201993d",
-    "guid": "a40d0515-123b-4203-be60-c583f380991d",
-    "vorigeGuid": "ad08950b-3e92-4231-bb65-0aec0cea1ddb",
+    "guid": "0409aeab-0480-4211-a995-7420878abfbe",
+    "vorigeGuid": "a40d0515-123b-4203-be60-c583f380991d",
     "hoofdstukken": [
       {
         "titel": "L’année pilote tout",
@@ -2980,12 +2986,14 @@
         "eind": 34.84
       }
     ],
-    "gepubliceerdOp": "2026-11-09T13:34:51.009",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/a40d0515-123b-4203-be60-c583f380991d/thumbnail.jpg",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/a40d0515-123b-4203-be60-c583f380991d",
+    "gepubliceerdOp": "2026-11-09T16:45:48.637",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/0409aeab-0480-4211-a995-7420878abfbe/thumbnail.jpg",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/0409aeab-0480-4211-a995-7420878abfbe",
     "opTeRuimen": [
-      "39be8492-cded-454a-b4df-ed63a90651e4"
-    ]
+      "39be8492-cded-454a-b4df-ed63a90651e4",
+      "ad08950b-3e92-4231-bb65-0aec0cea1ddb"
+    ],
+    "gepubliceerdeHash": "d17497aa0201993d"
   },
   "dashboard-website-en": {
     "film": "dashboard",
@@ -3003,8 +3011,8 @@
     "titel": "The dashboard: your working screen",
     "omschrijving": "The year at a glance: four tiles with numbers and amounts, your files in the pipeline by phase, and the volume you realised.",
     "hash": "52c42a859ce6633f",
-    "guid": "2fcc6d55-97f6-4e49-9b8f-5777ee05db93",
-    "vorigeGuid": "b84165fa-bdac-4a6c-b31a-13f0a418a100",
+    "guid": "ec88b7e0-56ba-4b78-ba78-1562db2302f9",
+    "vorigeGuid": "2fcc6d55-97f6-4e49-9b8f-5777ee05db93",
     "hoofdstukken": [
       {
         "titel": "Your home screen",
@@ -3032,12 +3040,14 @@
         "eind": 34.03
       }
     ],
-    "gepubliceerdOp": "2026-11-09T13:35:47.809",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/2fcc6d55-97f6-4e49-9b8f-5777ee05db93/thumbnail.jpg",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/2fcc6d55-97f6-4e49-9b8f-5777ee05db93",
+    "gepubliceerdOp": "2026-11-09T16:45:59.963",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/ec88b7e0-56ba-4b78-ba78-1562db2302f9/thumbnail.jpg",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/ec88b7e0-56ba-4b78-ba78-1562db2302f9",
     "opTeRuimen": [
-      "fe87b050-424d-4485-bb5e-d27c4e1d60c1"
-    ]
+      "fe87b050-424d-4485-bb5e-d27c4e1d60c1",
+      "b84165fa-bdac-4a6c-b31a-13f0a418a100"
+    ],
+    "gepubliceerdeHash": "52c42a859ce6633f"
   },
   "leads-website-nl": {
     "film": "leads",
