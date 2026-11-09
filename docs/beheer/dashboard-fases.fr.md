@@ -17,6 +17,14 @@ Tant que vous ne réglez rien ici, **CreditSoft demande le statut à chaque nouv
 
 Si vous en définissez un, cette question disparaît et chaque dossier démarre dans ce statut. Vous pouvez toujours effacer ce choix ; la question réapparaît alors.
 
+## Le tableau des dossiers de crédit { #bord }
+
+Le [tableau](../credit-management/credit-files.md#bord) montre les dossiers en cours par étape. Choisissez ici une fois si votre bureau suit ces étapes dans le **statut du dossier** ou dans le **statut du contrat de crédit**. Votre choix est enregistré immédiatement. Les colonnes du tableau suivent la répartition de cette page : les phases pour un statut de dossier, la signification pour un statut de contrat.
+
+En cas de doute, regardez où vos dossiers en cours sont répartis sur plusieurs statuts. S'ils sont presque tous sur un seul statut de dossier, par exemple *Actif*, alors que le contrat passe par *À introduire*, *Introduit* et *Prêt pour l'acte*, choisissez le contrat.
+
+Tant que rien n'est choisi, le tableau le demande à la première utilisation, avec une proposition tirée de vos dossiers.
+
 ## Suivi après l'acte
 
 Dans quel statut se trouve un dossier à suivre après l'acte — l'assurance solde restant dû, des pièces manquantes ? Choisissez ce statut ici ; vous pouvez en choisir plusieurs. Les dossiers dans ces statuts apparaissent dans la liste [Suivi après l'acte](../credit-management/after-deed.md). Si vous ne choisissez rien, cette liste reste vide.

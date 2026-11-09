@@ -84,6 +84,31 @@ Elke aanvrager met een mailadres krijgt zijn eigen mail, en die staat daarna in 
 Wie wordt overgeslagen en waarom, en hoe de afmeldlink werkt, leest u bij
 [Mailverkeer](../journaal/mailverkeer.md#een-groepsmail). De knop vraagt het recht **Groepsmail versturen**.
 
+### Het bord { #bord }
+
+Met de knop **Bord** in de werkbalk van de lijst, naast het aantal dossiers, ziet u dezelfde dossiers als kaarten, in kolommen per stap. Met **Lijst** rechts bovenaan het bord gaat u terug. CreditSoft onthoudt uw keuze voor de volgende keer.
+
+**Wat het bord volgt.** Bij het ene kantoor staat de stap van een dossier in de status van het dossier, bij het andere in de status van het kredietcontract. Uw kantoor kiest dat één keer, bij **Platformbeheer → Dashboard-fases** (zie [Het bord van Kredietdossiers](../beheer/dashboard-fases.md#bord)). Is er nog niets gekozen, dan vraagt het bord het aan wie de fases mag beheren, met een voorstel uit uw dossiers.
+
+- Volgt het bord het **dossier**, dan is elke kaart een dossier en elke kolom een dossierstatus, onder haar fase.
+- Volgt het bord het **contract**, dan is elke kaart een kredietcontract van een lopend dossier, met het contractnummer en het dossiernummer, en elke kolom een contractstatus, onder haar betekenis (*In te dienen*, *Ingediend*). Schuldsaldoverzekeringen staan er niet op.
+
+**De kolommen.**
+
+- Een afgesloten stap (een fase zoals *Afgewerkt* of *Zonder gevolg*, of de betekenis *Gerealiseerd*) toont enkel het aantal.
+- Een kolom toont de 50 laatst gewijzigde kaarten. Zijn er meer, dan staat onderaan hoeveel nog. Volgt het bord het dossier, dan opent een klik daarop de lijst met die status.
+- Een status die aan geen fase hangt, of bij een contract geen betekenis heeft, staat onder **Niet ingedeeld**, met een eigen kolom. U deelt ze in bij [Dashboard-fases](../beheer/dashboard-fases.md).
+- Een dossier op een status die uw kantoor archiveerde, staat in **Andere statussen**. Open het dossier om een status te kiezen.
+
+**Een kaart.** Het nummer, de aanvragers, het bedrag, de instelling, de verantwoordelijke en wanneer de kaart laatst gewijzigd werd. Klik op het nummer om het dossier te openen.
+
+**Filters.** De keuzelijsten **Status**, **Aanbrenger** en **Eigenaar** werken zoals in de lijst. Het zoekveld van het bord zoekt op nummer, aanvrager, instelling en verantwoordelijke.
+
+**Een kaart verplaatsen.** Klik op het icoon met de twee pijltjes rechts op de kaart, kies bij **Naar** de nieuwe stap en klik op **Verplaatsen**. Dat is hetzelfde als de status op de fiche wijzigen en bewaren: dezelfde rechten en dezelfde verplichte velden. Ontbreekt er een verplicht veld, dan zegt het venster dat, met een koppeling naar de fiche. Het icoon staat er enkel voor wie dossiers mag wijzigen.
+
+!!! warning "Een nieuwe stap kan een mail versturen"
+    Hangt er een [mail per moment](../beheer/mail-momenten.md) aan de nieuwe status, dan zegt het venster dat vóór u verplaatst: of de mail meteen vertrekt, of dat het mailvenster opent en u zelf verstuurt. Zie [Een mail bij een nieuwe status](#een-mail-bij-een-nieuwe-status).
+
 ## Het dossier
 
 ![Een geopend kredietdossier: bovenaan het overzicht met de aanvragers, de kerngegevens, de vijf stappen van het dossier en Vraagt aandacht; daaronder de kopkaart met status, dossiernummer, eigenaar en sales als keuzelijst, de financiële instelling, de aanbrenger, het kredietbedrag, het commissiebedrag met het vinkje inhouden ernaast en de datum akte, met rechts de knoppen Bewaren, Annuleren, Afdruk overzicht en Verwijderen. Daaronder links de datums van indiening en goedkeuring met het type dossier, de ondertekening van het aanbod naast de uiterste datum voor het aanbod, de uiterste datums voor de akte en de opschortende voorwaarden, Herbekijken op met de reden ernaast, het doel, de schattingswaarde en de quotiteit met het vinkje Getekend aanbod verzonden en het veld Interne opmerkingen. Rechts daarvan de kredietaanvragers met per aanvrager het aantal inkomsten en lasten, daaronder de contracten en de tabbladen Partijen, Opmerkingen, Gevraagd, Leningen en lasten en Patrimonium, elk met een teller, en Advies, Ondertekenen en Facturen.](../images/kredietdossier-fiche.png "Het kredietdossier: alles op één pagina"){ .volle-breedte }

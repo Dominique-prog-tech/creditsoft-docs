@@ -84,6 +84,31 @@ Chaque demandeur ayant une adresse e-mail reçoit son propre e-mail, qui figure 
 Qui est ignoré et pourquoi, et comment fonctionne le lien de désinscription : voir
 [Courrier](../journaal/mailverkeer.md#un-e-mail-groupe). Le bouton requiert le droit **Envoyer un e-mail groupé**.
 
+### Le tableau { #bord }
+
+Avec le bouton **Tableau** dans la barre d'outils de la liste, à côté du nombre de dossiers, vous voyez les mêmes dossiers sous forme de cartes, en colonnes par étape. **Liste**, en haut à droite du tableau, vous ramène à la liste. CreditSoft retient votre choix pour la prochaine fois.
+
+**Ce que suit le tableau.** Dans certains bureaux, l'étape d'un dossier se trouve dans le statut du dossier, dans d'autres dans le statut du contrat de crédit. Votre bureau le choisit une fois, sous **Administration → Phases du tableau de bord** (voir [Le tableau des dossiers de crédit](../beheer/dashboard-fases.md#bord)). Tant que rien n'est choisi, le tableau le demande à la personne qui peut gérer les phases, avec une proposition tirée de vos dossiers.
+
+- Si le tableau suit le **dossier**, chaque carte est un dossier et chaque colonne un statut de dossier, sous sa phase.
+- Si le tableau suit le **contrat**, chaque carte est un contrat de crédit d'un dossier en cours, avec le numéro du contrat et celui du dossier, et chaque colonne un statut de contrat, sous sa signification (*À introduire*, *Introduit*). Les assurances solde restant dû n'y figurent pas.
+
+**Les colonnes.**
+
+- Une étape clôturée (une phase comme *Finalisé* ou *Sans suite*, ou la signification *Réalisé*) ne montre que le nombre.
+- Une colonne montre les 50 cartes modifiées en dernier. S'il y en a davantage, le nombre restant figure en bas. Si le tableau suit le dossier, un clic dessus ouvre la liste avec ce statut.
+- Un statut qui n'est lié à aucune phase, ou qui n'a pas de signification pour un contrat, figure sous **Non classé**, dans sa propre colonne. Vous le classez sous [Phases du tableau de bord](../beheer/dashboard-fases.md).
+- Un dossier sur un statut que votre bureau a archivé figure dans **Autres statuts**. Ouvrez le dossier pour choisir un statut.
+
+**Une carte.** Le numéro, les demandeurs, le montant, l'institution, le responsable et la date de la dernière modification. Cliquez sur le numéro pour ouvrir le dossier.
+
+**Filtres.** Les listes **Statut**, **Apporteur** et **Propriétaire** fonctionnent comme dans la liste. Le champ de recherche du tableau cherche sur le numéro, le demandeur, l'institution et le responsable.
+
+**Déplacer une carte.** Cliquez sur l'icône aux deux flèches à droite de la carte, choisissez la nouvelle étape sous **Vers** et cliquez sur **Déplacer**. C'est la même chose que modifier le statut sur la fiche et enregistrer : les mêmes droits et les mêmes champs obligatoires. S'il manque un champ obligatoire, la fenêtre l'indique, avec un lien vers la fiche. L'icône n'apparaît que pour les personnes qui peuvent modifier les dossiers.
+
+!!! warning "Une nouvelle étape peut envoyer un e-mail"
+    Si un [e-mail par moment](../beheer/mail-momenten.md) est lié au nouveau statut, la fenêtre le signale avant que vous déplaciez : soit l'e-mail part immédiatement, soit la fenêtre d'e-mail s'ouvre et vous l'envoyez vous-même. Voir [Un e-mail lors d'un nouveau statut](#un-e-mail-lors-dun-nouveau-statut).
+
 ## Le dossier
 
 ![Un dossier de crédit ouvert : en haut l'aperçu avec les demandeurs, les données clés, les cinq étapes du dossier et Demande attention ; en dessous le bloc principal avec le statut, le numéro de dossier, le propriétaire et le responsable commercial sous forme de listes déroulantes, l'institution financière, l'apporteur, le montant du crédit, le montant de commission avec la case Retenir à côté et la date d'acte, et à droite les boutons Enregistrer, Annuler, Imprimer l'aperçu et Supprimer. En dessous, à gauche les dates de dépôt et d'approbation avec le type de dossier, la signature de l'offre à côté de la date limite de l'offre, les dates limites de l'acte et des conditions suspensives, À revoir le avec le motif à côté, le but, la valeur estimée et la quotité avec la case Offre signée envoyée ainsi que le champ Remarques internes. À droite les demandeurs de crédit avec, pour chacun, le nombre de revenus et de charges, en dessous les contrats et les onglets Parties, Remarques, Demandés, Prêts et charges et Patrimoine, chacun avec un compteur, ainsi que Conseil, Signature et Factures.](../images/kredietdossier-fiche-fr.png "Le dossier de crédit : tout sur une seule page"){ .volle-breedte }

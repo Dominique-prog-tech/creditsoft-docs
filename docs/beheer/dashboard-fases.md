@@ -17,6 +17,14 @@ Zolang u hier niets instelt, **vraagt CreditSoft de status bij elk nieuw dossier
 
 Stelt u er wel een in, dan verdwijnt die vraag en start elk dossier in die status. U kan de keuze altijd weer wissen; dan komt de vraag terug.
 
+## Het bord van Kredietdossiers { #bord }
+
+Het [bord](../credit-management/credit-files.md#bord) toont de lopende dossiers per stap. Kies hier één keer of uw kantoor die stappen volgt in de **status van het dossier** of in de **status van het kredietcontract**. Uw keuze wordt meteen bewaard. De kolommen van het bord volgen de indeling op deze pagina: de fases voor een dossierstatus, de betekenis voor een contractstatus.
+
+Twijfelt u, kijk dan waar uw lopende dossiers over verschillende statussen verdeeld zijn. Staan ze bijna allemaal op één dossierstatus, bijvoorbeeld *Actief*, terwijl het contract wisselt tussen *In te dienen*, *Ingediend* en *Klaar voor akte*, kies dan het contract.
+
+Zolang er niets gekozen is, vraagt het bord het bij het eerste gebruik, met een voorstel uit uw dossiers.
+
 ## Opvolging na de akte
 
 In welke status staat een dossier dat na de akte nog opgevolgd moet worden — de schuldsaldoverzekering, ontbrekende stukken? Kies die status hier; u mag er meer dan één kiezen. De dossiers in die statussen verschijnen in de lijst [Opvolging na de akte](../credit-management/after-deed.md). Kiest u niets, dan blijft die lijst leeg.
