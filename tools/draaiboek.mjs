@@ -171,8 +171,18 @@ export const FILMS = [
     },
     uitvoeringen: { handleiding: { stem: true } },
     scenes: [
+      // ⚠️ L3a (1.221.0): zodra er één stap gedaan is, toont het dashboard Aan de slag als ÉÉN REGEL ("2 van de 3 stappen
+      // gedaan · Toon de stappen"). De zin belooft het blok met de drie dingen, dus eerst openklikken. Die klik wordt niet
+      // bewaard (aanDeSlagOpen leeft enkel in de pagina), dus hij laat de dashboardfilm ongemoeid. NIET op Verbergen
+      // klikken: dat wordt WEL per gebruiker bewaard.
       { naam: 'start', kop: { nl: 'Het startscherm', fr: "L'écran d'accueil" },
-        doe: async (p) => { await p.goto(`${BASIS}/dashboard`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(1200); },
+        doe: async (p) => {
+          await p.goto(`${BASIS}/dashboard`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(1200);
+          const toon = p.locator('[data-blok="aandeslag-regel"]').getByText('Toon de stappen', { exact: true })
+            .or(p.locator('[data-blok="aandeslag-regel"]').getByText('Afficher les étapes', { exact: true }));
+          if (await toon.count()) { await klik(p, toon.first()); await p.waitForTimeout(1200); }
+          await p.getByText(/Vul uw Bedrijfsfiche in|Complétez votre Fiche d.entreprise/).first().waitFor({ timeout: 10000 });
+        },
         merk: /Aan de slag|Pour commencer/i,
         nl: 'Dit is uw startscherm. Zolang uw omgeving voorbeeldgegevens draagt, staat bovenaan het blok Aan de slag met de drie dingen die u het eerst instelt.',
         fr: "Voici votre écran d’accueil. Tant que votre environnement contient des données d’exemple, le bloc Pour commencer affiche en haut les trois choses à configurer en premier." },
@@ -206,7 +216,10 @@ export const FILMS = [
         // ⚠️ GEEN APOSTROF IN EEN MERKTEKEN. Hier stond `d’accueil` met een typografische apostrof en de
         // app schrijft `d'accueil` met een rechte — de Franse film viel op zijn eigen beloftecontrole
         // terwijl het scherm perfect klopte. Kies een stuk zin zonder leesteken; dat kan altijd.
-        merk: /in welke fase zitten|dans quelle phase/i,
+        // ⚠️ 09/11/2026: hier stond `in welke fase zitten`. De hulptekst van het dashboard werd herschreven
+        // (1.221.0) en de film viel op een time-out terwijl het paneel perfect openging. De openingszin van
+        // CreditSoftHelpProvider is het merkteken: verandert die, dan moet dit mee.
+        merk: /van boven naar onder|de haut en bas/i,
         nl: 'Op elk scherm zit rechtsboven een vraagteken. Dat opent de hulp voor precies dit scherm, niet een algemene handleiding.',
         fr: "Sur chaque écran, un point d’interrogation en haut à droite ouvre l’aide de cet écran précis, et non un manuel général." },
 
@@ -1010,10 +1023,12 @@ export const FILMS = [
         website: { nl: 'De fiche 281.50 rolt eruit.', fr: 'La fiche 281.50 en sort directement.', en: 'The 281.50 tax form comes straight out.' } },
 
       { naam: 'ontbreekt', kop: { nl: 'Wat er nog moet gebeuren', fr: 'Ce qui doit encore être fait' },
-        doe: async (p) => { await beweegNaar(p, p.getByText(/btw-nummer|numéro de TVA/i).first()); await p.waitForTimeout(1800); },
-        merk: /btw-nummer|numéro de TVA/i,
-        nl: 'Bovenaan waarschuwt het scherm wanneer begunstigden een btw-nummer of een volledig adres missen. Vul die aan vóór u de documenten opmaakt — achteraf is elk blad opnieuw.',
-        fr: "En haut, l’écran avertit lorsque des bénéficiaires n’ont pas de numéro de TVA ou d’adresse complète. Complétez-les avant d’établir les documents — après coup, chaque feuille est à refaire." },
+        // ⚠️ 09/11/2026: het scherm zegt ONDERNEMINGSNUMMER, niet meer btw-nummer (de handleiding volgde al).
+        // Op de waarschuwing zelf mikken, niet op het woord: dat staat ook als kolomkop in de lijst.
+        doe: async (p) => { await beweegNaar(p, p.getByText(/missen een ondernemingsnummer|pas de numéro d.entreprise/i).first()); await p.waitForTimeout(1800); },
+        merk: /missen een ondernemingsnummer|pas de numéro d.entreprise/i,
+        nl: 'Bovenaan waarschuwt het scherm wanneer begunstigden een ondernemingsnummer of een volledig adres missen. Vul die aan vóór u de documenten opmaakt, want achteraf is elk blad opnieuw.',
+        fr: "En haut, l’écran avertit lorsque des bénéficiaires n’ont pas de numéro d’entreprise ou d’adresse complète. Complétez-les avant d’établir les documents, car après coup, chaque feuille est à refaire." },
 
       { naam: 'slot', kop: { nl: 'Tot slot', fr: 'Pour conclure' , en: 'In closing' },
         doe: async (p) => { await p.goto(`${BASIS}/commissie/borderel`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(2200); },
@@ -1138,14 +1153,19 @@ export const FILMS = [
 
     },
     omschrijving: {
-      nl: 'Het startscherm gelezen zoals het bedoeld is: het jaar bovenaan dat alles stuurt, de vier tegels '
-        + 'met aantallen en bedragen, de termijnen die vandaag actie vragen, de drie grafieken over het '
-        + 'gerealiseerde volume, de pijplijn met uw dossiers per fase, en het scherm waar u die fases zelf '
-        + 'samenstelt. Plus waarom uw dashboard er anders uitziet dan dat van een collega.',
-      fr: 'L’écran d’accueil lu comme il se doit : l’année en haut qui pilote tout, les quatre tuiles avec '
-        + 'les nombres et les montants, les délais qui demandent une action aujourd’hui, les trois graphiques '
-        + 'du volume réalisé, le pipeline de vos dossiers par phase, et l’écran où vous composez ces phases. '
-        + 'Ainsi que la raison pour laquelle votre tableau de bord diffère de celui d’un collègue.',      en: 'Your files by group, what needs action today, and every file in the phase it is in.',
+      // ⚠️ HERSCHREVEN OP 09/11/2026 voor de indeling van 1.221.0 (L3a): de pijplijn staat nu als rij fasetegels
+      //    vlak onder de vier tegels, en de termijnen staan niet meer op het scherm maar klappen open vanuit het
+      //    blok Vraagt aandacht. De film volgt het scherm van boven naar onder. Ook rechtgezet: enkel de tegel Aktes
+      //    volgt het jaar (de film zei "de tegels en de grafieken gaan allemaal over dat jaar"), en de tegels tellen
+      //    CONTRACTEN, geen dossiers (dashboard.md, "De vier tegels bovenaan").
+      nl: 'Het startscherm gelezen zoals het bedoeld is: het jaar bovenaan, de vier tegels met aantallen en '
+        + 'bedragen, de pijplijn met uw dossiers per fase, de drie grafieken over het gerealiseerde volume, '
+        + 'het blok Vraagt aandacht met de termijnen, en het scherm waar u de fases zelf samenstelt. Plus '
+        + 'waarom iedereen op het kantoor dezelfde cijfers ziet.',
+      fr: 'L’écran d’accueil lu comme il se doit : l’année en haut, les quatre tuiles avec les nombres et les '
+        + 'montants, le pipeline de vos dossiers par phase, les trois graphiques du volume réalisé, le bloc '
+        + 'Demande de l’attention avec les échéances, et l’écran où vous composez les phases. Ainsi que la '
+        + 'raison pour laquelle tout le bureau voit les mêmes chiffres.',      en: 'Your files by group, what needs action today, and every file in the phase it is in.',
 
     },
     uitvoeringen: {
@@ -1154,7 +1174,7 @@ export const FILMS = [
       //    teksten (`scene.website`) — niet de handleidingzinnen met scènes eruit. Zie films.mjs.
       website: {
         stem: false,
-        scenes: ['jaar', 'tegels', 'volume', 'pijplijn', 'slot'],
+        scenes: ['jaar', 'tegels', 'pijplijn', 'volume', 'slot'],
         talen: [{ ui: 'nl-BE', tekst: 'nl' }, { ui: 'fr-BE', tekst: 'fr' }, { ui: 'nl-BE', tekst: 'en' }],
       },
     },
@@ -1162,23 +1182,37 @@ export const FILMS = [
       { naam: 'jaar', kop: { nl: 'Het jaar stuurt alles', fr: 'L’année pilote tout' , en: 'Your home screen' },
         doe: async (p) => { await p.goto(`${BASIS}/dashboard`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(3200); },
         merk: /Aktes|Actes/i,
-        nl: 'Dit is uw startscherm. Bovenaan staat een jaartal met twee pijltjes, en dat is de belangrijkste knop van dit scherm: de tegels en de grafieken eronder gaan allemaal over dát jaar.',
-        fr: "Voici votre écran d’accueil. En haut figure une année avec deux flèches, et c’est le bouton le plus important de cet écran : les tuiles et les graphiques en dessous portent tous sur cette année-là." ,
+        nl: 'Dit is uw startscherm. Bovenaan staat een jaartal met twee pijltjes. Dat jaar stuurt de tegel Aktes en de drie grafieken; de andere tegels tellen over alle jaren.',
+        fr: "Voici votre écran d’accueil. En haut figure une année avec deux flèches. Cette année pilote la tuile Actes et les trois graphiques ; les autres tuiles comptent toutes les années." ,
         website: { nl: 'Alles van uw kantoor op één scherm.', fr: 'Tout votre bureau sur un seul écran.', en: 'Your whole office on one screen.' } },
 
       { naam: 'tegels', kop: { nl: 'De vier tegels', fr: 'Les quatre tuiles' , en: 'The four tiles' },
         doe: async (p) => { await beweegNaar(p, p.getByText(/In te dienen|À introduire/i).first()); await p.waitForTimeout(1700); },
         merk: /In te dienen|À introduire/i,
-        nl: 'De vier tegels tellen uw dossiers per groep, met het bedrag erbij: wat er nog in te dienen is, wat ingediend is, wat er getekend werd, en de aktes.',
-        fr: "Les quatre tuiles comptent vos dossiers par groupe, montant compris : ce qui reste à introduire, ce qui est introduit, ce qui a été signé, et les actes." ,
-        website: { nl: 'Uw dossiers per groep, met het bedrag erbij.', fr: 'Vos dossiers par groupe, montant compris.', en: 'Your files by group, with the amount.' } },
+        nl: 'De vier tegels tellen uw contracten, met het bedrag erbij: de aktes van dat jaar, wat nog in te dienen is, wat ingediend is, en de leningen op afbetaling.',
+        fr: "Les quatre tuiles comptent vos contrats, montant compris : les actes de cette année, ce qui reste à introduire, ce qui est introduit, et les prêts à tempérament." ,
+        website: { nl: 'Uw kerncijfers, met het bedrag erbij.', fr: 'Vos chiffres clés, montant compris.', en: 'Your key figures, with the amount.' } },
 
-      { naam: 'termijnen', kop: { nl: 'Wat vandaag actie vraagt', fr: 'Ce qui demande une action' , en: 'What needs action' },
-        doe: async (p) => { await beweegNaar(p, p.getByText(/Termijn nadert|Délai proche/i).first()); await p.waitForTimeout(1800); },
-        merk: /Termijn nadert|Délai proche/i,
-        nl: 'Daaronder staan twee blokken die zeggen wat er nu ligt: termijn verstreken en termijn nadert. Ze kijken naar vier datums — de offerte tekenen, de akte verlijden, de opschortende voorwaarden, en het EPC-attest.',
-        fr: "En dessous, deux blocs disent ce qui est en jeu : délai dépassé et délai proche. Ils regardent quatre dates — signer l’offre, passer l’acte, les conditions suspensives, et le certificat PEB." ,
-        website: { nl: 'Wat vandaag actie vraagt, staat bovenaan.', fr: 'Ce qui demande une action aujourd’hui, en haut.', en: 'What needs action today sits at the top.' } },
+      // ⚠️ L3a (1.221.0): de pijplijn is een rij fasetegels VLAK ONDER de vier tegels, niet meer een blok onderaan met
+      // de kop "Dossiers per fase" (die kop bestaat niet meer; het oude merkteken zou nergens meer matchen). De zin
+      // belooft "klik op een fase en haar statussen klappen open", dus de handeling klikt de tegel Ingediend open en
+      // EIST dat de statuslijst er staat met meer dan één status. Het merkteken zelf (de fasenaam) staat ook dicht in
+      // beeld; het bewijs van de open toestand zit daarom in de handeling, niet in het merkteken.
+      { naam: 'pijplijn', kop: { nl: 'De pijplijn', fr: 'Le pipeline' , en: 'The pipeline' },
+        doe: async (p) => {
+          const tegel = p.locator('[data-blok="pijplijn"] .fase-tegel').filter({ hasText: /Ingediend|Introduit/ }).first();
+          await klik(p, tegel);
+          const lijst = p.locator('[data-blok="fase-statussen"]');
+          await lijst.waitFor({ timeout: 10000 });
+          const n = await lijst.locator('li').count();
+          if (n < 2) throw new Error(`onder de open fasetegel horen meerdere statussen te staan, gezien: ${n}`);
+          await beweegNaar(p, lijst);
+          await p.waitForTimeout(1800);
+        },
+        merk: /Ingediend|Introduit/,
+        nl: 'Daaronder staan uw dossiers per fase, elk met het aantal en het bedrag. Klik op een fase en haar statussen klappen open. Klik op een status en u ziet de dossiers erachter.',
+        fr: "En dessous, vos dossiers par phase, chacune avec le nombre et le montant. Cliquez sur une phase et ses statuts s’affichent. Cliquez sur un statut et vous voyez les dossiers derrière." ,
+        website: { nl: 'En elk dossier in de fase waar het staat.', fr: 'Et chaque dossier dans la phase où il se trouve.', en: 'And every file in the phase it is in.' } },
 
       { naam: 'volume', kop: { nl: 'Gerealiseerd volume', fr: 'Volume réalisé' , en: 'Realised volume' },
         doe: async (p) => { await beweegNaar(p, p.getByText(/Gerealiseerd volume per maand|Volume réalisé par mois/i).first()); await p.waitForTimeout(1800); },
@@ -1199,12 +1233,29 @@ export const FILMS = [
         nl: 'Ziet u een groot stuk Geen eigenaar staan, dan is dat geen storing maar werk: er is bij die dossiers nog niemand aangeduid. Hetzelfde geldt voor Onbekend bij de instellingen.',
         fr: "Si vous voyez une grande part Sans responsable, ce n’est pas un dysfonctionnement mais du travail : personne n’a encore été désigné sur ces dossiers. Il en va de même pour Inconnu chez les organismes." },
 
-      { naam: 'pijplijn', kop: { nl: 'De pijplijn', fr: 'Le pipeline' , en: 'The pipeline' },
-        doe: async (p) => { await beweegNaar(p, p.getByText(/Dossiers per fase|Dossiers par phase/i).first()); await p.waitForTimeout(1800); },
-        merk: /Dossiers per fase|Dossiers par phase/i,
-        nl: 'Onderaan staan uw dossiers gegroepeerd per fase, met per fase het aantal, het bedrag, en de statussen die eronder vallen. Klik op een fase en u ziet de dossiers erachter.',
-        fr: "En bas, vos dossiers sont regroupés par phase, avec par phase le nombre, le montant, et les statuts qui en relèvent. Cliquez sur une phase et vous voyez les dossiers derrière." ,
-        website: { nl: 'En elk dossier in de fase waar het staat.', fr: 'Et chaque dossier dans la phase où il se trouve.', en: 'And every file in the phase it is in.' } },
+      // ⚠️ L3a (1.221.0): de termijnen staan niet meer altijd op het scherm. Onderaan staat Vraagt aandacht met drie
+      // regels (Termijnen, Opvolging, Stilgevallen dossiers); een klik op een regel klapt de lijst ter plaatse open.
+      // Tot 09/11/2026 heette deze scène `termijnen` en stond ze vlak onder de tegels. De handeling klikt de regel
+      // Termijnen open en eist aria-expanded; het merkteken ("Termijn nadert/verstreken") staat ENKEL in de open lijst
+      // (de regel zelf zegt "72 verstreken, 7 binnen 14 dagen"), dus het bewijst de open toestand.
+      // ⚠️ Het patroon laat ▸ én ▾ toe en heeft geen \b na de naam: het getal staat er vlak tegen (zie beelden.mjs,
+      // aandachtOpen).
+      { naam: 'aandacht', kop: { nl: 'Wat aandacht vraagt', fr: 'Ce qui demande de l’attention' , en: 'What needs attention' },
+        doe: async (p) => {
+          const regel = p.locator('[data-blok="vraagt-aandacht"] button.aandacht-regel')
+            .filter({ hasText: /^\s*[▸▾]?\s*(Termijnen|Échéances)/ }).first();
+          await beweegNaar(p, regel);
+          await p.waitForTimeout(900);
+          await klik(p, regel);
+          await p.waitForTimeout(1200);
+          if ((await regel.getAttribute('aria-expanded')) !== 'true') throw new Error('de regel Termijnen in Vraagt aandacht ging niet open');
+          await beweegNaar(p, p.getByText(/Termijn (nadert|verstreken)|Délai (proche|dépassé)/i).first());
+          await p.waitForTimeout(1600);
+        },
+        merk: /Termijn (nadert|verstreken)|Délai (proche|dépassé)/i,
+        nl: 'Onderaan zegt het blok Vraagt aandacht wat er nu ligt: de termijnen, de opvolging van lopende kredieten, en de dossiers die stilvallen. Klik op een regel en de lijst klapt open. Bij de termijnen zijn dat vier datums: de offerte tekenen, de akte verlijden, de opschortende voorwaarden en het EPC-attest.',
+        fr: "En bas, le bloc Demande de l’attention dit ce qui est en jeu : les échéances, le suivi des crédits en cours, et les dossiers à l’arrêt. Cliquez sur une ligne et la liste s’ouvre. Pour les échéances, ce sont quatre dates : signer l’offre, passer l’acte, les conditions suspensives et le certificat PEB." ,
+        website: { nl: 'Wat vandaag actie vraagt, op één klik.', fr: 'Ce qui demande une action, en un clic.', en: 'What needs action, one click away.' } },
 
       { naam: 'fases', kop: { nl: 'De fases zijn van u', fr: 'Les phases sont les vôtres' },
         doe: async (p) => { await p.goto(`${BASIS}/beheer/dashboard-fases`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(2600); },
