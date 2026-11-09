@@ -1388,14 +1388,14 @@
   "kredietdossier-contract-herziening": {
     "route": "/credit-files/bc566763-9860-48e3-b8a3-f464904a9810",
     "app": {
-      "sha": "509cc786d8c26c4fa781ef4a4be217c55d642e49",
+      "sha": "7fb3559007ed5ca3ca9c2aac2459a939f5464f1e",
       "vuil": false
     }
   },
   "kredietdossier-contract-herziening-fr": {
     "route": "/credit-files/bc566763-9860-48e3-b8a3-f464904a9810",
     "app": {
-      "sha": "509cc786d8c26c4fa781ef4a4be217c55d642e49",
+      "sha": "7fb3559007ed5ca3ca9c2aac2459a939f5464f1e",
       "vuil": false
     }
   },

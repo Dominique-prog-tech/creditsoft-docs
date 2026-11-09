@@ -22,7 +22,7 @@ export const PAKKET = {
   // een DEELREEKS: zodra er lokaal een omgeving `adm-demo…` bestaat (punt 27), staat die alfabetisch vóór `demo` en koos
   // de beeldronde haar — inactief, dus elk beeld toonde "Kies eerst een klant". De NAAM van de omgeving is uniek en is een gewone
   // tekst, zoals vroegere rondes gebruikten. (Een RegExp op de code werkte los, maar vond na de wissel aanbrenger → beheerder
-  // binnen de ronde geen rij meer; niet verklaard.) Het gat zelf zit in de gedeelde tooling (gemeld aan Dominique).
+  // binnen de ronde geen rij meer; niet verklaard.) Het gat zelf zit in de gedeelde tooling: adm-creditsoft/docs/fundering-meldingen.md, FUND-CS-001.
   tenant:  'Demo (testpartij)',
   // de zijlade-teksten van dit pakket — raakt.mjs leest hier welke schermen een helptekst dragen
   help:    '/Users/dominique/projects/adm-creditsoft/src/Host/CreditSoft.Host.Web/Help/CreditSoftHelpProvider.cs',

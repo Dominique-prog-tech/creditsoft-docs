@@ -333,8 +333,8 @@ avec des années de révision, et restent visibles tant qu'ils contiennent quelq
 
 | Champ | Ce que vous encodez |
 |---|---|
-| **Cap : hausse maximale (point de pourcentage)** | De combien de points le taux peut au plus augmenter par an, par exemple 2 |
-| **Floor : baisse maximale (point de pourcentage)** | De combien de points il peut au plus baisser, en nombre positif, par exemple 2 |
+| **Cap : hausse maximale (en points)** | De combien de points le taux peut au plus augmenter par an, par exemple 2 |
+| **Floor : baisse maximale (en points)** | De combien de points il peut au plus baisser, en nombre positif, par exemple 2 |
 | **Indice de départ (forme annuelle, %)** | La valeur de l'indice de référence que cite l'offre, par exemple 3,738. De 2019 à 2021, elle était négative |
 | **Mois de l'indice de départ** | Le mois de cette valeur, par exemple 10/2026. Tapez l'année pour raccourcir la liste |
 
