@@ -1994,79 +1994,80 @@
     "film": "dashboard",
     "taal": "nl-BE",
     "pagina": "getting-started/dashboard",
-    "lengte": 168.32,
+    "lengte": 169.08,
     "uitvoering": "handleiding",
     "routes": [
       "/dashboard",
       "/beheer/dashboard-fases"
     ],
     "app": {
-      "sha": "46f50d4f34c59b4b8a15e9e8b9280cf44e30a632",
+      "sha": "f4e27423c628c41c49fcc67063e7122912ed10c5",
       "vuil": false
     },
     "titel": "Het dashboard: uw kantoor in één scherm",
     "omschrijving": "Het startscherm gelezen zoals het bedoeld is: het jaar bovenaan, de vier tegels met aantallen en bedragen, de pijplijn met uw dossiers per fase, de drie grafieken over het gerealiseerde volume, het blok Vraagt aandacht met de termijnen, en het scherm waar u de fases zelf samenstelt. Plus waarom iedereen op het kantoor dezelfde cijfers ziet.",
     "hash": "faed20db733abc45",
-    "guid": "ec05d0f9-b6e6-4e8d-a04f-ac72d76b7a04",
-    "vorigeGuid": "b998179c-7a2b-4557-b735-40b1330931de",
+    "guid": "2dfab4c8-0d93-4f57-9509-856abebe52c6",
+    "vorigeGuid": "ec05d0f9-b6e6-4e8d-a04f-ac72d76b7a04",
     "hoofdstukken": [
       {
         "titel": "Het jaar stuurt alles",
-        "start": 5.41,
-        "eind": 16.65
+        "start": 5.42,
+        "eind": 16.66
       },
       {
         "titel": "De vier tegels",
-        "start": 20.61,
-        "eind": 31.2
+        "start": 20.66,
+        "eind": 31.24
       },
       {
         "titel": "De pijplijn",
-        "start": 36.03,
-        "eind": 47.88
+        "start": 36.09,
+        "eind": 47.93
       },
       {
         "titel": "Gerealiseerd volume",
-        "start": 51.94,
-        "eind": 61.6
+        "start": 52.03,
+        "eind": 61.69
       },
       {
         "titel": "Per instelling en per collega",
-        "start": 65.67,
-        "eind": 74.4
+        "start": 65.77,
+        "eind": 74.5
       },
       {
         "titel": "Geen eigenaar is werk",
-        "start": 78.46,
-        "eind": 89.56
+        "start": 78.62,
+        "eind": 89.72
       },
       {
         "titel": "Wat aandacht vraagt",
-        "start": 97.01,
-        "eind": 118.6
+        "start": 97.23,
+        "eind": 118.83
       },
       {
         "titel": "De fases zijn van u",
-        "start": 123.53,
-        "eind": 137.13
+        "start": 124.49,
+        "eind": 138.1
       },
       {
         "titel": "Eén kantoor, één beeld",
-        "start": 142.53,
-        "eind": 156.55
+        "start": 143.4,
+        "eind": 157.42
       },
       {
         "titel": "Tot slot",
-        "start": 159.26,
-        "eind": 165.9
+        "start": 160.16,
+        "eind": 166.8
       }
     ],
-    "gepubliceerdOp": "2026-11-09T16:44:24.012",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/ec05d0f9-b6e6-4e8d-a04f-ac72d76b7a04/thumbnail.jpg",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/ec05d0f9-b6e6-4e8d-a04f-ac72d76b7a04",
+    "gepubliceerdOp": "2026-11-10T14:30:38.462",
+    "thumbnail": null,
+    "embed": "https://iframe.mediadelivery.net/embed/741183/2dfab4c8-0d93-4f57-9509-856abebe52c6",
     "opTeRuimen": [
       "e21be71b-5ef7-4b8e-9a96-af68c403f58b",
-      "502073d8-8608-44aa-98f5-1a617ea68fa8"
+      "502073d8-8608-44aa-98f5-1a617ea68fa8",
+      "b998179c-7a2b-4557-b735-40b1330931de"
     ],
     "gepubliceerdeHash": "faed20db733abc45"
   },
@@ -2074,79 +2075,80 @@
     "film": "dashboard",
     "taal": "fr-BE",
     "pagina": "getting-started/dashboard",
-    "lengte": 159.48,
+    "lengte": 158.96,
     "uitvoering": "handleiding",
     "routes": [
       "/dashboard",
       "/beheer/dashboard-fases"
     ],
     "app": {
-      "sha": "46f50d4f34c59b4b8a15e9e8b9280cf44e30a632",
+      "sha": "f4e27423c628c41c49fcc67063e7122912ed10c5",
       "vuil": false
     },
     "titel": "Le tableau de bord : votre bureau en un écran",
     "omschrijving": "L’écran d’accueil lu comme il se doit : l’année en haut, les quatre tuiles avec les nombres et les montants, le pipeline de vos dossiers par phase, les trois graphiques du volume réalisé, le bloc Demande de l’attention avec les échéances, et l’écran où vous composez les phases. Ainsi que la raison pour laquelle tout le bureau voit les mêmes chiffres.",
     "hash": "b20e4ba919c8b9a7",
-    "guid": "67bb7190-b0df-42e0-b921-386fa14c1d80",
-    "vorigeGuid": "74bef2b4-5982-4ab4-aed1-bf2633515591",
+    "guid": "dcc945fb-7fb2-4fe7-a687-dd300801277f",
+    "vorigeGuid": "67bb7190-b0df-42e0-b921-386fa14c1d80",
     "hoofdstukken": [
       {
         "titel": "L’année pilote tout",
-        "start": 5.35,
-        "eind": 14.87
+        "start": 5.29,
+        "eind": 14.81
       },
       {
         "titel": "Les quatre tuiles",
-        "start": 18.86,
-        "eind": 27.82
+        "start": 18.78,
+        "eind": 27.75
       },
       {
         "titel": "Le pipeline",
-        "start": 32.67,
-        "eind": 44.14
+        "start": 32.61,
+        "eind": 44.08
       },
       {
         "titel": "Volume réalisé",
-        "start": 48.2,
-        "eind": 57.39
+        "start": 48.14,
+        "eind": 57.34
       },
       {
         "titel": "Par institution et par collègue",
-        "start": 61.45,
-        "eind": 69.62
+        "start": 61.43,
+        "eind": 69.6
       },
       {
         "titel": "Sans responsable, c’est du travail",
-        "start": 73.73,
-        "eind": 85.01
+        "start": 73.66,
+        "eind": 84.94
       },
       {
         "titel": "Ce qui demande de l’attention",
-        "start": 92.48,
-        "eind": 111.99
+        "start": 92.44,
+        "eind": 111.94
       },
       {
         "titel": "Les phases sont les vôtres",
-        "start": 117.02,
-        "eind": 128.21
+        "start": 117,
+        "eind": 128.19
       },
       {
         "titel": "Un bureau, une vue",
-        "start": 134.05,
-        "eind": 147.52
+        "start": 133.65,
+        "eind": 147.12
       },
       {
         "titel": "Pour conclure",
-        "start": 150.24,
-        "eind": 157.06
+        "start": 149.83,
+        "eind": 156.66
       }
     ],
-    "gepubliceerdOp": "2026-11-09T16:45:02.879",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/67bb7190-b0df-42e0-b921-386fa14c1d80/thumbnail.jpg",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/67bb7190-b0df-42e0-b921-386fa14c1d80",
+    "gepubliceerdOp": "2026-11-10T14:40:51.566",
+    "thumbnail": null,
+    "embed": "https://iframe.mediadelivery.net/embed/741183/dcc945fb-7fb2-4fe7-a687-dd300801277f",
     "opTeRuimen": [
       "a6faf5a5-0a15-4b30-8107-17e5016c841b",
-      "529b87bf-b676-4e18-bdaf-387680ac0e07"
+      "529b87bf-b676-4e18-bdaf-387680ac0e07",
+      "74bef2b4-5982-4ab4-aed1-bf2633515591"
     ],
     "gepubliceerdeHash": "b20e4ba919c8b9a7"
   },

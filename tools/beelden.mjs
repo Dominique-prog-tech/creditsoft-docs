@@ -131,6 +131,14 @@ async function kopOpen(p) {
   if (await knop.getAttribute('aria-expanded') === 'false') { await knop.click(); await p.waitForTimeout(800); }
   if (await knop.getAttribute('aria-expanded') !== 'true') throw new Error('de dossierkop gaat niet open');
 }
+// Kredietdossiers toont de lijst of het bord, naar de bewaarde keuze van de gebruiker (L4a). De wisselknop draagt data-weergave
+// met het doel ("bord" op de lijst, "lijst" op het bord), dus taalneutraal. Na de klik moet de ANDERE knop er staan, anders faalt het.
+async function naarWeergave(p, doel) {
+  const ander = doel === 'bord' ? 'lijst' : 'bord';
+  const knop = p.locator(`[data-weergave="${doel}"]`);
+  if (await knop.count()) { await knop.first().click(); await p.waitForTimeout(2500); }
+  await p.locator(`[data-weergave="${ander}"]`).first().waitFor({ timeout: 15000 });
+}
 async function naarRij(p, merkteken) {
   const rij = p.locator('tr').filter({ hasText: merkteken }).first();
   await rij.waitFor({ timeout: 15000 });
@@ -147,7 +155,27 @@ const SCHOTEN = [
   ['leads-lijst',                  '/crm/leads'],
   ['professionals-lijst',          '/crm/professionals'],
   ['groepen-lijst',                '/crm/groepen'],
-  ['kredietdossiers-lijst',        '/credit-files'],
+  // ── L4b (10/11/2026, 1.225.0): het bord van Kredietdossiers ──
+  // ⚠️ LIJST OF BORD IS EEN VOORKEUR VAN DE GEBRUIKER, en die staat in de databank (credit_files_bord), niet in localStorage: de
+  //    lege browseropslag per beeld wist ze NIET. Dit recept zet admin op het bord; de twee lijstrecepten hieronder zetten hem
+  //    eerst terug (naarWeergave 'lijst'). Daarom staat dit beeld VÓÓR kredietdossiers-lijst: na de Franse doorgang staat admin
+  //    weer op de lijst, en de film kredietdossiers-basis opent de lijst. ⚠️ Een gefilterde ronde met enkel dit beeld laat admin
+  //    op het bord staan: neem dan kredietdossiers-lijst mee in het filter.
+  // ⚠️ De demo moet het DOSSIER volgen (Platformbeheer → Dashboard-fases → Het bord). Staat ze op contract of nog op niets, dan
+  //    faalt het recept luid: het bijschrift beschrijft fases en dossierstatussen, niet de vraag "Wat volgt het bord?".
+  ['kredietdossiers-bord',         '/credit-files', async p => {
+      await naarWeergave(p, 'bord');
+      const bord = p.locator('.cs-bord');
+      await bord.waitFor({ timeout: 15000 });
+      await p.locator('.cs-bord-kaart').first().waitFor({ timeout: 20000 });
+      const volgt = await bord.getAttribute('data-bord');
+      if (volgt !== 'dossier') throw new Error(`het bord volgt "${volgt}", niet het dossier — kies "dossier" op Dashboard-fases in tenant_demo`);
+      // De belofte is "kolommen met kaarten": tel ze in de DOM, niet in tekst (een kolomkop staat er ook boven een lege kolom).
+      const gevuld = await p.locator('.cs-bord-kolom').evaluateAll(ks => ks.filter(k => k.querySelector('.cs-bord-kaart')).length);
+      if (gevuld < 3) throw new Error(`maar ${gevuld} kolom(men) met kaarten op het bord; het bijschrift belooft er meer`);
+      await p.waitForTimeout(1200);
+  }],
+  ['kredietdossiers-lijst',        '/credit-files', async p => { await naarWeergave(p, 'lijst'); }],
   ['kredietinstellingen-lijst',    '/credit/financial-institutions'],
   ['verzekeraars-lijst',           '/credit/insurance-institutions'],
   ['verzekeringen-lijst',          '/insurance-contracts'],
@@ -164,6 +192,7 @@ const SCHOTEN = [
   // ⚠️ Het menu-item en niet getByText: "Lotte Cools" staat ook in de kolom Eigenaar, en een klik op die CEL filtert
   // niets — zo ging het bij de eerste meting.
   ['kredietdossiers-overdragen',   '/credit-files', async p => {
+      await naarWeergave(p, 'lijst');
       await p.locator('button', { hasText: /Alle eigenaars|Tous les propriétaires/ }).first().click();
       await p.waitForTimeout(600);
       await p.locator('button.adm-menu-item', { hasText: 'Lotte Cools' }).click();
@@ -1396,6 +1425,8 @@ const VERWACHT = {
   'rapporten-periode':          /Afdrukken|Imprimer/,
   'professionals-fiche':        /Baken Immo Aalst/,
   'kredietdossiers-lijst':      /Kenmerk aanbr|Référence apporteur|Kredietbedrag|Montant du crédit/i,
+  // De zin boven de kolommen: staat er enkel als het bord het DOSSIER volgt en de kolommen getoond worden (niet bij de keuzevraag).
+  'kredietdossiers-bord':       /Het bord volgt de status van het dossier|Le tableau suit le statut du dossier/,
   // ⚠️ De ARCERING is niet in tekst te vatten. Dit merkteken bewijst enkel dat we op de kolomweergave
   // zitten; dát twee kolommen gearceerd staan, moet een mens zien. Beter een controle die zegt wat ze
   // wél meet dan een beeld dat helemaal ongecontroleerd blijft.

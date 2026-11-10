@@ -88,6 +88,8 @@ Qui est ignoré et pourquoi, et comment fonctionne le lien de désinscription : 
 
 Avec le bouton **Tableau** dans la barre d'outils de la liste, à côté du nombre de dossiers, vous voyez les mêmes dossiers sous forme de cartes, en colonnes par étape. **Liste**, en haut à droite du tableau, vous ramène à la liste. CreditSoft retient votre choix pour la prochaine fois.
 
+![Le tableau des Dossiers de crédit : en haut le champ de recherche, les filtres Tous les statuts, Tous les apporteurs et Tous les propriétaires, le nombre de dossiers et à droite le bouton Liste. En dessous, la phrase indiquant que le tableau suit le statut du dossier, avec le lien Modifier, puis les colonnes par statut de dossier sous leur phase : Crédit en négociation et Nouveau dossier sous En traitement, Crédit approuvé, Crédit introduit et Date d'acte fixée sous Introduit, chacune avec le nombre de dossiers. Chaque carte montre le numéro du dossier, les demandeurs, le montant, l'institution et le responsable, avec en haut à droite l'icône pour déplacer la carte.](../images/kredietdossiers-bord-fr.png "Le tableau : les dossiers en cartes, par statut sous leur phase"){ .volle-breedte }
+
 **Ce que suit le tableau.** Dans certains bureaux, l'étape d'un dossier se trouve dans le statut du dossier, dans d'autres dans le statut du contrat de crédit. Votre bureau le choisit une fois, sous **Administration → Phases du tableau de bord** (voir [Le tableau des dossiers de crédit](../beheer/dashboard-fases.md#bord)). Tant que rien n'est choisi, le tableau le demande à la personne qui peut gérer les phases, avec une proposition tirée de vos dossiers.
 
 - Si le tableau suit le **dossier**, chaque carte est un dossier et chaque colonne un statut de dossier, sous sa phase.

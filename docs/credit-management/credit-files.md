@@ -88,6 +88,8 @@ Wie wordt overgeslagen en waarom, en hoe de afmeldlink werkt, leest u bij
 
 Met de knop **Bord** in de werkbalk van de lijst, naast het aantal dossiers, ziet u dezelfde dossiers als kaarten, in kolommen per stap. Met **Lijst** rechts bovenaan het bord gaat u terug. CreditSoft onthoudt uw keuze voor de volgende keer.
 
+![Het bord van Kredietdossiers: bovenaan het zoekveld, de filters Alle statussen, Alle aanbrengers en Alle eigenaars, het aantal dossiers en rechts de knop Lijst. Daaronder de zin dat het bord de status van het dossier volgt, met de link Wijzigen, en de kolommen per dossierstatus onder hun fase: Krediet in onderhandeling en Nieuw dossier onder In behandeling, Aktedatum vastgesteld, Krediet goedgekeurd en Krediet ingediend onder Ingediend, elk met het aantal dossiers. Elke kaart toont het dossiernummer, de aanvragers, het bedrag, de instelling en de verantwoordelijke, met rechts bovenaan het icoon om de kaart te verplaatsen.](../images/kredietdossiers-bord.png "Het bord: de dossiers als kaarten, per status onder hun fase"){ .volle-breedte }
+
 **Wat het bord volgt.** Bij het ene kantoor staat de stap van een dossier in de status van het dossier, bij het andere in de status van het kredietcontract. Uw kantoor kiest dat één keer, bij **Platformbeheer → Dashboard-fases** (zie [Het bord van Kredietdossiers](../beheer/dashboard-fases.md#bord)). Is er nog niets gekozen, dan vraagt het bord het aan wie de fases mag beheren, met een voorstel uit uw dossiers.
 
 - Volgt het bord het **dossier**, dan is elke kaart een dossier en elke kolom een dossierstatus, onder haar fase.

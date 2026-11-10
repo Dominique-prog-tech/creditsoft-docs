@@ -232,6 +232,10 @@
     "breedte": 1700,
     "hoogte": 860
   },
+  "kredietdossiers-bord": {
+    "breedte": 1700,
+    "hoogte": 900
+  },
   "kredietdossiers-overdragen": {
     "breedte": 1600,
     "element": {

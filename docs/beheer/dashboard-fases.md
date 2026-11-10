@@ -2,7 +2,7 @@
 
 Op dit scherm bepaalt u zelf hoe uw dossiers op het dashboard **gegroepeerd en geteld** worden, en wat er met een dossier gebeurt zodra het rond is. Het bevat een reeks losse instellingen die weinig met elkaar te maken hebben.
 
-![Het scherm Dashboard-fases in CreditSoft: bovenaan de beginstatus van een nieuw dossier, de status voor opvolging na de akte en het aantal dagen dat het signaalblok vooruitkijkt, elk met een eigen knop Bewaren; daaronder de fases met hun naam in beide talen, hun volgorde en de vinkjes eindfase en geslaagd, met rechts de koppeling van elke dossierstatus aan een fase.](../images/dashboard-fases.png "Instellen hoe dossiers gegroepeerd en geteld worden op het dashboard"){ .volle-breedte }
+![Het scherm Dashboard-fases in CreditSoft: bovenaan de beginstatus van een nieuw dossier; daaronder Het bord van Kredietdossiers met de knoppen Status van het dossier en Status van het kredietcontract; dan de status voor opvolging na de akte en het aantal dagen dat het signaalblok vooruitkijkt. De beginstatus, de opvolging en het signaalblok hebben elk een eigen knop Bewaren. Daaronder de fases met hun naam in beide talen, hun volgorde en de vinkjes eindfase en geslaagd, met rechts de koppeling van elke dossierstatus aan een fase.](../images/dashboard-fases.png "Instellen hoe dossiers gegroepeerd en geteld worden op het dashboard"){ .volle-breedte }
 
 !!! info "Let op waar wél en niet een bewaarknop staat"
     De **fases**, de **koppelingen** en de **vinkjes** onderaan worden meteen bewaard: past u iets aan, dan staat het er. Wilt u een koppeling ongedaan maken, klik dan op het kruisje in de keuzelijst.
