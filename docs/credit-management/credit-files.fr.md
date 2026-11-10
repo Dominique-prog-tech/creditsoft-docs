@@ -450,6 +450,8 @@ Un moment part au maximum une fois par contrat ou dossier. Vous retrouvez l'e-ma
 
 Les professionnels concernés — agence immobilière, notaire, expert ou comptable. Pour chaque partie, vous suivez si elle est **désignée** et si le **rapport a été reçu**, avec les dates et coordonnées correspondantes.
 
+Avec **E-mail…** sur la ligne d'une partie, vous lui écrivez directement. La fenêtre d'envoi complète l'adresse : celle de la personne de contact sur la partie, sinon celle de la fiche du notaire, de l'expert ou de l'agence immobilière. L'e-mail est rédigé dans la langue de ce professionnel, avec une formule d'appel neutre. Si la partie n'a d'adresse e-mail nulle part, *À* reste vide et la fenêtre explique pourquoi : vous tapez alors l'adresse vous-même, ou vous la complétez sur la partie. L'e-mail figure ensuite dans le **courrier** du dossier.
+
 ### Garants, ASRD & réductions
 
 Derrière le bouton **Garants, ASRD & réductions…**, trois listes sont réunies : les garants et prêteurs, les assurances solde restant dû (avec l'assureur, le pourcentage de capital assuré, le volet fiscal et fumeur) et les réductions accordées.

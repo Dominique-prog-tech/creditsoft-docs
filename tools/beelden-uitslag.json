@@ -359,7 +359,7 @@
   "kredietdossier-fiche": {
     "route": "/credit-files/00038c40-df6b-4992-83e4-13847c7a0a59",
     "app": {
-      "sha": "b366261e43d894cbc9c5b5ce39374e4e0525bb03",
+      "sha": "07bf58b512321473e84b25719bbf1b6d03c665b1",
       "vuil": false
     }
   },
@@ -975,7 +975,7 @@
   "kredietdossier-fiche-fr": {
     "route": "/credit-files/00038c40-df6b-4992-83e4-13847c7a0a59",
     "app": {
-      "sha": "b366261e43d894cbc9c5b5ce39374e4e0525bb03",
+      "sha": "07bf58b512321473e84b25719bbf1b6d03c665b1",
       "vuil": false
     }
   },
