@@ -106,6 +106,8 @@ Met de knop **Bord** in de werkbalk van de lijst, naast het aantal dossiers, zie
 
 **Een kaart verplaatsen.** Klik op het icoon met de twee pijltjes rechts op de kaart, kies bij **Naar** de nieuwe stap en klik op **Verplaatsen**. Dat is hetzelfde als de status op de fiche wijzigen en bewaren: dezelfde rechten en dezelfde verplichte velden. Ontbreekt er een verplicht veld, dan zegt het venster dat, met een koppeling naar de fiche. Het icoon staat er enkel voor wie dossiers mag wijzigen.
 
+**Slepen.** U kan een kaart ook met de muis naar een andere kolom slepen. Tijdens het slepen krijgen de kolommen waar de kaart heen mag een stippellijn. Laat u de kaart los, dan wordt ze verplaatst zoals met het icoon. Kan er een mail vertrekken, dan opent eerst het venster, met de nieuwe stap al ingevuld; u kiest zelf of u verplaatst. Lukt het bewaren niet, dan opent het venster met de reden en blijft de kaart staan waar ze stond. Op een tablet gebruikt u het icoon.
+
 !!! warning "Een nieuwe stap kan een mail versturen"
     Hangt er een [mail per moment](../beheer/mail-momenten.md) aan de nieuwe status, dan zegt het venster dat vóór u verplaatst: of de mail meteen vertrekt, of dat het mailvenster opent en u zelf verstuurt. Zie [Een mail bij een nieuwe status](#een-mail-bij-een-nieuwe-status).
 

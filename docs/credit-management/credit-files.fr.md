@@ -106,6 +106,8 @@ Avec le bouton **Tableau** dans la barre d'outils de la liste, à côté du nomb
 
 **Déplacer une carte.** Cliquez sur l'icône aux deux flèches à droite de la carte, choisissez la nouvelle étape sous **Vers** et cliquez sur **Déplacer**. C'est la même chose que modifier le statut sur la fiche et enregistrer : les mêmes droits et les mêmes champs obligatoires. S'il manque un champ obligatoire, la fenêtre l'indique, avec un lien vers la fiche. L'icône n'apparaît que pour les personnes qui peuvent modifier les dossiers.
 
+**Glisser.** Vous pouvez aussi faire glisser une carte avec la souris vers une autre colonne. Pendant le glissement, les colonnes où la carte peut aller reçoivent un contour en pointillé. Quand vous lâchez la carte, elle est déplacée comme avec l'icône. Si un e-mail peut partir, la fenêtre s'ouvre d'abord, avec la nouvelle étape déjà remplie ; vous choisissez vous-même de déplacer ou non. Si l'enregistrement échoue, la fenêtre s'ouvre avec la raison et la carte reste où elle était. Sur une tablette, utilisez l'icône.
+
 !!! warning "Une nouvelle étape peut envoyer un e-mail"
     Si un [e-mail par moment](../beheer/mail-momenten.md) est lié au nouveau statut, la fenêtre le signale avant que vous déplaciez : soit l'e-mail part immédiatement, soit la fenêtre d'e-mail s'ouvre et vous l'envoyez vous-même. Voir [Un e-mail lors d'un nouveau statut](#un-e-mail-lors-dun-nouveau-statut).
 
