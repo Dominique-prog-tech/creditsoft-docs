@@ -83,11 +83,13 @@ Hangt er geen enkele status aan een fase met het vinkje *Geslaagd*, dan meldt he
 
 ## Wat betekent elke contractstatus?
 
-Onderaan geeft u per **contractstatus** aan wat hij betekent: *gerealiseerd*, *in te dienen* of *ingediend*. Daarmee vullen de vier gekleurde tegels bovenaan het dashboard zich vanzelf. Dit staat helemaal los van de fases: fases gaan over dossiers, dit gaat over contracten.
+Onderaan geeft u per **contractstatus** aan wat hij betekent: *gerealiseerd*, *in te dienen*, *ingediend* of *zonder gevolg*. Daarmee vullen de vier gekleurde tegels bovenaan het dashboard zich vanzelf. Dit staat helemaal los van de fases: fases gaan over dossiers, dit gaat over contracten.
 
 U kiest dus **niet** rechtstreeks een tegel. Dat kan ook niet: *Aktes* en *LOA* tellen allebei **gerealiseerde** contracten en verschillen alleen in productsoort — hypothecair krediet tegenover lening op afbetaling. Welk product bij welke tegel hoort, ligt vast in uw productenlijst.
 
 Statussen zonder betekenis tellen nergens mee. Staat een tegel op nul terwijl u weet dat er contracten zijn, dan draagt de betrokken status waarschijnlijk nog geen betekenis.
+
+*Zonder gevolg* is voor een contract dat afgesloten werd zonder akte, bijvoorbeeld een geweigerd krediet. Zo'n contract telt in geen enkele tegel. Op het [bord](../credit-management/credit-files.md#bord) toont die kolom enkel het aantal, net als bij *Gerealiseerd*. Zonder betekenis zou het bord die contracten als kaarten tonen onder *Niet ingedeeld*.
 
 !!! info "De lijst is gegroepeerd per herkomst"
     Contractstatussen komen uit drie verschillende lijsten: die van de **kredietcontracten**, een **historische** lijst van vóór het contractmodel, en die van de **schuldsaldoverzekeringen**. Verzekeringsstatussen kan u geen betekenis geven — de kerncijfers zijn kredietcijfers. Ze staan er wel bij, met de vermelding *niet van toepassing*, zodat u niet zoekt naar een status die u meent te missen.

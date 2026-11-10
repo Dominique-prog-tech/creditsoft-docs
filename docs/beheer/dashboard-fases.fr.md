@@ -83,11 +83,13 @@ Si aucun statut n'est lié à une phase cochée *Réussi*, l'écran signale que 
 
 ## Que signifie chaque statut de contrat ?
 
-En bas, vous indiquez pour chaque **statut de contrat** ce qu'il signifie : *réalisé*, *à introduire* ou *introduit*. Les quatre tuiles colorées en haut du tableau de bord se remplissent alors d'elles-mêmes. Cela n'a rien à voir avec les phases : les phases concernent les dossiers, ceci concerne les contrats.
+En bas, vous indiquez pour chaque **statut de contrat** ce qu'il signifie : *réalisé*, *à introduire*, *introduit* ou *sans suite*. Les quatre tuiles colorées en haut du tableau de bord se remplissent alors d'elles-mêmes. Cela n'a rien à voir avec les phases : les phases concernent les dossiers, ceci concerne les contrats.
 
 Vous ne choisissez donc **pas** directement une tuile. Ce ne serait d'ailleurs pas possible : *Actes* et *LOA* comptent toutes deux des contrats **réalisés** et ne diffèrent que par la catégorie de produit — crédit hypothécaire d'un côté, prêt à tempérament de l'autre. Quel produit relève de quelle tuile est fixé dans votre liste de produits.
 
 Les statuts sans signification ne comptent nulle part. Si une tuile reste à zéro alors que vous savez qu'il existe des contrats, c'est probablement que le statut concerné ne porte pas encore de signification.
+
+*Sans suite* sert pour un contrat clôturé sans acte, par exemple un crédit refusé. Un tel contrat ne compte dans aucune tuile. Sur le [tableau](../credit-management/credit-files.md#bord), cette colonne ne montre que le nombre, comme pour *Réalisé*. Sans signification, le tableau montrerait ces contrats comme des cartes sous *Non classé*.
 
 !!! info "La liste est groupée par origine"
     Les statuts de contrat proviennent de trois listes différentes : celle des **contrats de crédit**, une liste **historique** antérieure au modèle de contrat, et celle des **assurances solde restant dû**. Vous ne pouvez pas donner de signification aux statuts d'assurance — les indicateurs sont des chiffres de crédit. Ils figurent tout de même dans la liste, avec la mention *sans objet*, pour que vous ne cherchiez pas un statut que vous croiriez manquant.
