@@ -8,14 +8,12 @@ Klik in de zijbalk op **Platformbeheer** en daarna op de tegel **Gebruikers** (o
 
 ## Een collega toevoegen
 
-Vul bovenaan de velden in:
+Klik boven de lijst op **Nieuwe gebruiker**. Vul in het venster de **Gebruikersnaam** in (waarmee de collega aanmeldt, meestal zijn e-mailadres) en de **Weergavenaam**, en kies zijn **Rol**. Kies daarna hoe hij aan een wachtwoord komt:
 
-- **Gebruikersnaam** — waarmee de collega inlogt (meestal zijn e-mailadres).
-- **E-mail** — verplicht; hiermee wordt de gebruiker gekoppeld aan het centrale register.
-- **Weergavenaam** — de naam zoals die in de app verschijnt.
-- **Wachtwoord** — een tijdelijk wachtwoord.
+- **Uitnodigen per mail**: de collega krijgt een mail om zelf een wachtwoord te kiezen. Kies de **Taal van de mail**. De link is 7 dagen geldig en werkt één keer. De gebruikersnaam moet daarvoor een e-mailadres zijn.
+- **Wachtwoord zelf instellen**: u typt een tijdelijk wachtwoord en geeft het zelf door, liefst langs een andere weg dan de gebruikersnaam. De collega wijzigt het bij de eerste aanmelding.
 
-Klik op **Gebruiker aanmaken**. De collega verschijnt in de lijst en wijzigt zijn wachtwoord bij de eerste login.
+Klik op **Gebruiker aanmaken**. De collega verschijnt in de lijst.
 
 ## De fiche bewerken
 
@@ -32,9 +30,13 @@ Klik bij een gebruiker op **Fiche**. Hier vult u de CreditSoft-gegevens in:
 
 Klik op **Bewaren**.
 
-## Wachtwoord resetten
+## Een nieuw wachtwoord geven
 
-Klik bij een gebruiker op **Wachtwoord resetten**. Er verschijnt een nieuw tijdelijk wachtwoord — geef dit door aan de gebruiker. Hij wijzigt het bij de eerste login.
+Klik bij een gebruiker op de drie puntjes. Daar staan drie mogelijkheden:
+
+- **Uitnodigen…** stuurt opnieuw een uitnodiging per mail. Een nieuwe uitnodiging maakt de vorige ongeldig.
+- **Tijdelijk** maakt een leesbaar tijdelijk wachtwoord dat u zelf doorgeeft. De gebruiker wijzigt het bij de eerste aanmelding.
+- **Reset-link** geeft een link die u kopieert en zelf doorgeeft. Ze werkt één keer.
 
 ## Een gebruiker verwijderen
 

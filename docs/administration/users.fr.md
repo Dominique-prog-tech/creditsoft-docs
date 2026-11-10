@@ -8,14 +8,12 @@ Dans la barre latérale, cliquez sur **Administration**, puis sur la tuile **Uti
 
 ## Ajouter un collègue
 
-Complétez les champs en haut :
+Au-dessus de la liste, cliquez sur **Nouvel utilisateur**. Dans la fenêtre, complétez le nom d'utilisateur (avec lequel le collègue se connecte, généralement son adresse e-mail) et le nom affiché, et choisissez son rôle. Choisissez ensuite comment il obtient un mot de passe :
 
-- **Nom d'utilisateur** — avec lequel le collègue se connecte (généralement son adresse e-mail).
-- **E-mail** — obligatoire ; il relie l'utilisateur au registre central.
-- **Nom affiché** — le nom tel qu'il apparaît dans l'application.
-- **Mot de passe** — un mot de passe temporaire.
+- **Inviter par courriel** : le collègue reçoit un e-mail pour choisir lui-même un mot de passe. Choisissez la langue de l'e-mail. Le lien est valable 7 jours et ne fonctionne qu'une fois. Le nom d'utilisateur doit pour cela être une adresse e-mail.
+- **Définir le mot de passe moi-même** : vous tapez un mot de passe temporaire et vous le transmettez vous-même, de préférence par un autre canal que le nom d'utilisateur. Le collègue le modifie à la première connexion.
 
-Cliquez sur **Créer l'utilisateur**. Le collègue apparaît dans la liste et modifie son mot de passe à la première connexion.
+Cliquez sur **Créer l'utilisateur**. Le collègue apparaît dans la liste.
 
 ## Modifier la fiche
 
@@ -32,9 +30,13 @@ Cliquez sur **Créer l'utilisateur**. Le collègue apparaît dans la liste et mo
 
 Cliquez sur **Enregistrer**.
 
-## Réinitialiser un mot de passe
+## Donner un nouveau mot de passe
 
-À côté d'un utilisateur, cliquez sur **Réinitialiser le mot de passe**. Un nouveau mot de passe temporaire apparaît — transmettez-le à l'utilisateur. Il le modifie à la première connexion.
+À côté d'un utilisateur, cliquez sur les trois points. Vous y trouvez trois possibilités :
+
+- **Inviter…** envoie une nouvelle invitation par e-mail. Une nouvelle invitation annule la précédente.
+- **Temporaire** crée un mot de passe temporaire lisible que vous transmettez vous-même. L'utilisateur le modifie à la première connexion.
+- **Lien de réinit.** donne un lien que vous copiez et transmettez vous-même. Il ne fonctionne qu'une fois.
 
 ## Supprimer un utilisateur
 
