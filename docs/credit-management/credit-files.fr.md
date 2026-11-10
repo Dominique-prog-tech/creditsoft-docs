@@ -97,7 +97,7 @@ Avec le bouton **Tableau** dans la barre d'outils de la liste, à côté du nomb
 
 - Une étape clôturée (une phase comme *Finalisé* ou *Sans suite*, ou la signification *Réalisé* ou *Sans suite*) ne montre que le nombre.
 - Une colonne montre les 50 cartes modifiées en dernier. S'il y en a davantage, le nombre restant figure en bas. Si le tableau suit le dossier, un clic dessus ouvre la liste avec ce statut.
-- Un statut qui n'est lié à aucune phase, ou qui n'a pas de signification pour un contrat, figure sous **Non classé**, dans sa propre colonne. Vous le classez sous [Phases du tableau de bord](../beheer/dashboard-fases.md).
+- Un statut qui n'est lié à aucune phase, ou qui n'a pas de signification pour un contrat, figure sous **Non classé**, dans sa propre colonne. Vous le classez sous [Phases du tableau de bord](../beheer/dashboard-fases.md). Cette colonne n'apparaît que lorsqu'une carte s'y trouve : un statut que personne n'utilise ne figure pas non plus dans Phases du tableau de bord.
 - Un dossier sur un statut que votre bureau a archivé figure dans **Autres statuts**. Ouvrez le dossier pour choisir un statut.
 
 **Une carte.** Le numéro, les demandeurs, le montant, l'institution, le responsable et la date de la dernière modification. Cliquez sur le numéro pour ouvrir le dossier.

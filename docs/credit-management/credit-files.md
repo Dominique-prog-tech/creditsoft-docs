@@ -97,7 +97,7 @@ Met de knop **Bord** in de werkbalk van de lijst, naast het aantal dossiers, zie
 
 - Een afgesloten stap (een fase zoals *Afgewerkt* of *Zonder gevolg*, of de betekenis *Gerealiseerd* of *Zonder gevolg*) toont enkel het aantal.
 - Een kolom toont de 50 laatst gewijzigde kaarten. Zijn er meer, dan staat onderaan hoeveel nog. Volgt het bord het dossier, dan opent een klik daarop de lijst met die status.
-- Een status die aan geen fase hangt, of bij een contract geen betekenis heeft, staat onder **Niet ingedeeld**, met een eigen kolom. U deelt ze in bij [Dashboard-fases](../beheer/dashboard-fases.md).
+- Een status die aan geen fase hangt, of bij een contract geen betekenis heeft, staat onder **Niet ingedeeld**, met een eigen kolom. U deelt ze in bij [Dashboard-fases](../beheer/dashboard-fases.md). Zo'n kolom verschijnt pas wanneer er een kaart op staat: een status die niemand gebruikt, staat ook op Dashboard-fases niet.
 - Een dossier op een status die uw kantoor archiveerde, staat in **Andere statussen**. Open het dossier om een status te kiezen.
 
 **Een kaart.** Het nummer, de aanvragers, het bedrag, de instelling, de verantwoordelijke en wanneer de kaart laatst gewijzigd werd. Klik op het nummer om het dossier te openen.
