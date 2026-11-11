@@ -485,7 +485,7 @@
   "commissieschemas-journaal": {
     "route": "/credit-files/903a2553-1e1d-4a9d-baab-f456bd96145c",
     "app": {
-      "sha": "b366261e43d894cbc9c5b5ce39374e4e0525bb03",
+      "sha": "4f49e00794ee2bb7fbf488e21716439af9a0e12f",
       "vuil": false
     }
   },
@@ -1101,7 +1101,7 @@
   "commissieschemas-journaal-fr": {
     "route": "/credit-files/903a2553-1e1d-4a9d-baab-f456bd96145c",
     "app": {
-      "sha": "b366261e43d894cbc9c5b5ce39374e4e0525bb03",
+      "sha": "4f49e00794ee2bb7fbf488e21716439af9a0e12f",
       "vuil": false
     }
   },

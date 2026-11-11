@@ -31,6 +31,10 @@ Le document est rédigé dans la langue du premier signataire : la *langue des d
 pas remplie, c'est la langue de votre bureau qui s'applique. Si le texte n'est pas rempli dans cette langue, vous ne
 pouvez pas envoyer.
 
+La page de signature d'OKSign s'ouvre pour chaque signataire dans **sa propre langue des documents**. Un partenaire
+francophone signe ainsi sur une page en français, même dans un dossier en néerlandais. Si une personne n'a pas de langue
+des documents, elle reçoit la langue du document.
+
 Seules les personnes autorisées à modifier la fiche voient le bouton **Faire signer**. La déclaration de
 confidentialité n'existe que pour une personne, pas pour une entreprise, et seulement une fois la fiche enregistrée.
 
@@ -42,7 +46,7 @@ Sous le bouton figure chaque demande, avec la date et l'auteur de l'envoi :
   combien ont déjà signé.
 - **Signé** : le document signé se trouve dans les [pièces jointes](../journaal/bijlagen.md) du dossier ou de la
   relation. Juste avant, vous pouvez voir *Signé, le document est en cours de récupération*.
-- **Refusé par un signataire**.
+- **Retirée** : vous avez retiré la demande. Plus personne ne peut signer. Vous voyez quand et par qui.
 - **Échec chez OKSign**.
 
 CreditSoft consulte l'état tous les quarts d'heure, et chaque fois que vous ouvrez l'onglet. Pour la déclaration de
@@ -55,11 +59,27 @@ Pour une demande en attente, deux boutons figurent à côté de chaque signatair
 
 Si *(e-mail non parti)* figure à côté d'un nom, cette personne n'a pas reçu d'e-mail. Copiez alors le lien.
 
+## Retirer une demande
+
+Si une demande en attente ne doit plus l'être, par exemple parce que le mauvais document est parti ou que le client y
+renonce, vous la retirez.
+
+1. Cliquez sur **Retirer…** à côté de la demande.
+2. CreditSoft affiche qui devait signer et demande une confirmation. Confirmez avec **Retirer**.
+
+Ensuite, plus personne ne peut signer ce document, et la demande passe à *Retirée*. C'est irréversible : si vous voulez
+tout de même faire signer, envoyez une nouvelle demande.
+
+- Si le document est entre-temps **déjà signé**, il ne peut plus être retiré. CreditSoft affiche alors la signature.
+- Si CreditSoft indique qu'**OKSign traite encore la demande**, réessayez dans une minute.
+- Un signataire ne peut **pas refuser** dans OKSign : il peut seulement fermer la page. Si votre client vous fait savoir
+  qu'il ne veut pas signer, retirez la demande.
+
 ## Erreurs fréquentes
 
-!!! warning "Une demande envoyée ne s'annule pas"
-    Ce qui est envoyé reste chez les signataires. Si vous envoyez à nouveau, une deuxième demande s'ajoute et la
-    première reste valable. La fenêtre de confirmation vous en avertit.
+!!! warning "Envoyer à nouveau ne retire pas la première demande"
+    Si vous envoyez à nouveau, une deuxième demande s'ajoute et la première reste valable. La fenêtre de confirmation
+    vous en avertit. Si la première ne doit plus l'être, [retirez-la](#retirer-une-demande).
 
 !!! warning "Pas de numéro de GSM"
     Sans numéro de GSM, ou avec un numéro fixe, cette personne ne peut pas signer. Indiquez le numéro sur sa fiche
@@ -67,7 +87,8 @@ Si *(e-mail non parti)* figure à côté d'un nom, cette personne n'a pas reçu 
 
 !!! note "Un bureau dont le compte est limité"
     Si le compte de votre bureau est limité, vous ne pouvez rien faire signer de nouveau. Un document déjà envoyé
-    qui revient signé est en revanche bien reçu.
+    qui revient signé est en revanche bien reçu. Retirer une demande reste possible, sauf si le compte ne permet plus
+    que la consultation.
 
 ## Voir aussi
 

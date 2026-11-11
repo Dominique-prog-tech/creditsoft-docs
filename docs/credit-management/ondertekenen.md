@@ -28,6 +28,10 @@ voor twee documenten:
 Het document staat in de taal van de eerste ondertekenaar: de *documenttaal* op zijn fiche. Is die niet ingevuld,
 dan geldt de taal van uw kantoor. Is de tekst in die taal niet ingevuld, dan kunt u niet versturen.
 
+De tekenpagina van OKSign opent voor elke ondertekenaar in **zijn eigen documenttaal**. Zo tekent een Franstalige
+partner op een Franse pagina, ook in een Nederlands dossier. Heeft iemand geen documenttaal, dan krijgt hij de taal van
+het document.
+
 Enkel wie de fiche mag bewerken, ziet de knop **Laten ondertekenen**. De privacyverklaring bestaat enkel voor een
 persoon, niet voor een bedrijf, en pas nadat de fiche bewaard is.
 
@@ -39,7 +43,7 @@ Onder de knop staat elk verzoek, met wanneer en door wie het verstuurd is:
   tekenden.
 - **Ondertekend**: het getekende document staat bij de [bijlagen](../journaal/bijlagen.md) van het dossier of van
   de relatie. Kort daarvoor kan er *Ondertekend, het document wordt opgehaald* staan.
-- **Geweigerd door een ondertekenaar**.
+- **Ingetrokken**: u trok het verzoek in. Niemand kan nog tekenen. U ziet wanneer en door wie.
 - **Mislukt bij OKSign**.
 
 CreditSoft vraagt de stand elk kwartier op, en telkens u het tabblad opent. Bij de privacyverklaring staat
@@ -52,11 +56,27 @@ Bij een verzoek dat wacht, staan bij elke ondertekenaar twee knoppen:
 
 Staat er *(mail niet vertrokken)* naast een naam, dan kreeg die persoon geen mail. Kopieer dan de link.
 
+## Een verzoek intrekken
+
+Mag een verzoek dat wacht niet meer, bijvoorbeeld omdat het verkeerde document vertrok of de klant ervan afziet, dan
+trekt u het in.
+
+1. Klik naast het verzoek op **Intrekken…**.
+2. CreditSoft toont wie er moest tekenen en vraagt een bevestiging. Bevestig met **Intrekken**.
+
+Daarna kan niemand dit document nog tekenen, en het verzoek staat op *Ingetrokken*. Dat is niet terug te draaien: wilt
+u toch laten tekenen, verstuur dan een nieuw verzoek.
+
+- Is het document intussen **al getekend**, dan kan intrekken niet meer. CreditSoft toont dan de handtekening.
+- Zegt CreditSoft dat **OKSign het verzoek nog verwerkt**, probeer het dan binnen een minuut opnieuw.
+- Een ondertekenaar kan in OKSign **niet weigeren**: hij kan de pagina enkel sluiten. Laat uw klant weten dat hij niet
+  wil tekenen, trek het verzoek dan in.
+
 ## Veelgemaakte fouten
 
-!!! warning "Een verstuurd verzoek trekt u niet in"
-    Wat verstuurd is, blijft bij de ondertekenaars. Verstuurt u opnieuw, dan komt er een tweede verzoek bij, en
-    het eerste blijft bestaan. Het bevestigingsvenster waarschuwt u daarvoor.
+!!! warning "Opnieuw versturen trekt het eerste verzoek niet in"
+    Verstuurt u opnieuw, dan komt er een tweede verzoek bij, en het eerste blijft bestaan. Het bevestigingsvenster
+    waarschuwt u daarvoor. Mag het eerste niet meer, [trek het dan in](#een-verzoek-intrekken).
 
 !!! warning "Geen gsm-nummer"
     Zonder gsm-nummer, of met een vast nummer, kan die persoon niet tekenen. Vul het nummer in op zijn fiche en
@@ -64,7 +84,8 @@ Staat er *(mail niet vertrokken)* naast een naam, dan kreeg die persoon geen mai
 
 !!! note "Een kantoor met een beperkt account"
     Is het account van uw kantoor beperkt, dan kunt u niets nieuws laten ondertekenen. Een document dat al
-    verstuurd was en getekend terugkomt, komt wel binnen.
+    verstuurd was en getekend terugkomt, komt wel binnen. Een verzoek intrekken kan ook, behalve als het account enkel
+    nog lezen toelaat.
 
 ## Zie ook
 
