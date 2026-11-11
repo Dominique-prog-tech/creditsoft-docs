@@ -264,6 +264,25 @@ De tabel **Per kredietverstrekker** zet dezelfde cijfers naast elkaar per bank �
 !!! tip "Een streepje bij Omzetting en Afgevallen?"
     Dan is er nog geen dossierstatus aan een afsluitende fase gekoppeld, en valt er niet te zeggen welk dossier afgelopen is. Het tabblad zegt dat zelf; u stelt het in bij **Platformbeheer → Dashboard-fases**.
 
+### Per medewerker
+
+De tabel **Per medewerker** zet dezelfde cijfers naast elkaar per medewerker van uw kantoor: de dossiers, de akten met hun volume, hoeveel dossiers afvielen, de omzetting, hoeveel er nu lopen en de doorlooptijd van indiening tot akte. In de laatste kolom staan de drie redenen van afvallen die het vaakst voorkomen. De onderste regel is het kantoor, met dezelfde cijfers als de tegels bovenaan.
+
+![De tabel Per medewerker op het tabblad Productie, op de keuze Eigenaar: rechtsboven de knoppen Sales en Eigenaar en de knop Exporteren naar Excel, daaronder per medewerker de dossiers, de akten, het kredietvolume, het aantal afgevallen dossiers, de omzetting, het aantal dat nu loopt, de doorlooptijd van indiening tot akte met het aantal akten tussen haakjes en de redenen van afvallen met hun aantal, en onderaan de regel Kantoor.](../images/dashboard-medewerkers.png "Dezelfde cijfers, per medewerker"){ .volle-breedte }
+
+- **Sales of Eigenaar.** Een dossier draagt twee medewerkers: de *Sales* en de *Eigenaar*. Met de knoppen boven de tabel kiest u wie er telt. De tabel opent op *Sales*. Staat er bij geen enkel dossier een Sales, dan opent ze op *Eigenaar* en zegt ze waarom.
+- **Zonder medewerker** telt de dossiers waar op die plaats niemand staat. Staat er een medewerkernummer dat bij geen medewerkerfiche hoort, dan leest u onder de naam hoeveel dossiers dat zijn. Zo telt de tabel altijd op tot het kantoor.
+- **(uit dienst)** staat achter de naam van wie het kantoor verliet: die dossiers horen bij de geschiedenis van uw kantoor en blijven dus staan. Uit dienst betekent dat de toegang van die persoon ingetrokken is, of dat de medewerkerfiche zonder account niet meer in de keuzelijsten verschijnt.
+- Een percentage verschijnt pas vanaf vijf afgesloten dossiers, zoals per kredietverstrekker. Zonder gekoppelde [Dashboard-fases](../beheer/dashboard-fases.md) staat er bij *Afgevallen*, *Omzetting* en *Lopend nu* een streepje: niet te tellen, en nooit 0.
+- Een **⚠️** bij de doorlooptijd betekent dat bij die medewerker de indieningsdatum vaak op of na de akte ligt. Dan zegt de doorlooptijd weinig; kijk de indieningsdatums na.
+- **Exporteren naar Excel** neemt de tabel mee zoals u ze ziet: dezelfde periode, dezelfde soort en dezelfde keuze tussen Sales en Eigenaar. Elke export komt in het [Actielogboek](../administration/activity-log.md).
+
+!!! note "Wie ziet welke rijen?"
+    Met het recht **Prestaties van alle medewerkers bekijken** ziet u alle rijen. Standaard heeft enkel de Tenant-beheerder dat recht; via [Rollen & rechten](../administration/roles.md) kunt u het aan een eigen rol geven. Zonder dat recht ziet u enkel uw eigen rij, naast die van het kantoor. Uw eigen rij is die van de medewerkerfiche die aan uw account hangt. Hangt er geen fiche aan, dan zegt de tabel dat, en kan uw beheerder het nakijken bij **Platformbeheer → Gebruikers** (actie *Fiche*). De export volgt dezelfde regel.
+
+!!! tip "Cijfers over uw personeel"
+    Deze tabel toont cijfers per persoon. Ga na of u uw medewerkers moet laten weten dat deze cijfers bestaan en wie ze kan zien.
+
 ## Iedereen ziet hetzelfde kantoor
 
-Het dashboard toont de cijfers van het hele kantoor. Iedereen die het mag openen, ziet dezelfde aantallen. Hoe het volume over uw medewerkers verdeeld is, ziet u in de grafiek per verantwoordelijke. De twee lijsten met aanbrengers op het tabblad *Productie* ziet u enkel als u ook aanbrengers mag bekijken.
+Het dashboard toont de cijfers van het hele kantoor. Iedereen die het mag openen, ziet dezelfde aantallen. Hoe het volume over uw medewerkers verdeeld is, ziet u in de grafiek per verantwoordelijke. Op het tabblad *Productie* zijn er twee uitzonderingen: de twee lijsten met aanbrengers ziet u enkel als u ook aanbrengers mag bekijken, en in de tabel [Per medewerker](#per-medewerker) ziet u de rijen van uw collega's enkel met het recht *Prestaties van alle medewerkers bekijken*.

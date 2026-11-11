@@ -39,6 +39,10 @@ Pour les [factures](../facturatie/facturen.md), il y en a trois : **Voir les fac
 troisième droit s'attribue par un rôle à qui peut l'exercer : une facture définitive reçoit un numéro qui ne disparaît
 jamais, et part vers votre client.
 
+Sur le [tableau de bord](../getting-started/dashboard.md#par-collaborateur), un droit n'appartient pas à un utilisateur ordinaire :
+**Voir les performances de tous les collaborateurs**. Il permet de voir, dans le tableau *Par collaborateur*, les chiffres de tous
+les collègues. Sans ce droit, chaque collaborateur n'y voit que sa propre ligne. Attribuez-le par un rôle à qui peut l'exercer.
+
 ## Attribuer un rôle à des utilisateurs
 
 Lorsqu'un rôle est ouvert, vous voyez la liste **Utilisateurs ayant ce rôle**. Cochez les utilisateurs qui doivent recevoir le rôle (ou décochez pour le retirer).

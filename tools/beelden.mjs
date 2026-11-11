@@ -617,6 +617,24 @@ const SCHOTEN = [
       });
       if (!inBeeld) throw new Error('de regel Kantoor onder de tabel per kredietverstrekker staat niet in beeld');
   }],
+  // F9 (11/11/2026): de tabel per medewerker, op de keuze Eigenaar. In de demo draagt maar 1.767 van de 4.003 dossiers een Sales,
+  // waardoor de rij Zonder medewerker op Sales de grootste is; op Eigenaar staat er één dossier zonder, en toont het beeld waar de
+  // tabel over gaat. De alt-tekst noemt die keuze. Ook hier moet de regel Kantoor in beeld staan: zij is het ijkpunt.
+  ['dashboard-medewerkers',     '/dashboard', async p => {
+      await dashboardProductie(p);
+      const kaart = p.locator('[data-kaart="per-medewerker"]');
+      await kaart.waitFor({ timeout: 15000 });
+      await kaart.getByRole('button', { name: /^(Eigenaar|Propriétaire)$/ }).click();
+      await p.waitForFunction(() => /(Eigenaar|Propriétaire)\s+Dossiers/.test(
+        document.querySelector('[data-kaart="per-medewerker"] thead')?.innerText || ''), null, { timeout: 10000 });
+      await p.evaluate(() => document.querySelector('[data-kaart="per-medewerker"]')?.scrollIntoView({ block: 'start' }));
+      await p.waitForTimeout(1200);
+      const inBeeld = await p.evaluate(() => {
+        const r = document.querySelector('[data-kaart="per-medewerker"] tfoot')?.getBoundingClientRect();
+        return !!r && r.top >= 0 && r.bottom <= window.innerHeight;
+      });
+      if (!inBeeld) throw new Error('de regel Kantoor onder de tabel per medewerker staat niet in beeld');
+  }],
   // ── kv4 (02/10/2026): de opvolging van lopende kredieten ──
   // ⚠️ Vraagt de knop "Opvolging kredieten aanvullen" ONDER DE VASTE KLOK: de demodatums Herbekijken op liggen
   // rond de verjaardag van de akte, gerekend vanaf de dag waarop de knop gedrukt werd. Gedrukt op 1 september
@@ -1514,6 +1532,8 @@ const VERWACHT = {
   'dashboard-stilgevallen':     /stil sinds \d{2}\/\d{2}\/\d{4}|à l'arrêt depuis le \d{2}\/\d{2}\/\d{4}/,
   // k2: de kolomkop bestaat enkel sinds 1.151.0.
   'dashboard-verstrekkers':     /Geweigerd door de bank|Refusé par la banque/,
+  // F9: de tabel bestaat enkel sinds 1.230.0, en het beeld staat op Eigenaar (de kop van de eerste kolom).
+  'dashboard-medewerkers':      /(Per medewerker|Par collaborateur)[\s\S]*(Eigenaar|Propriétaire)\s+Dossiers/,
   // De teller bestaat enkel sinds k1b — een beeld van vóór 1.150.0 haalt hem niet.
   'dashboard-redenen':          /Reden opgegeven bij \d+ van \d+|Motif indiqué pour \d+ des \d+/,
   // F7 golf 2 (1.218.0): de kolom Referte-index met het voorstel uit het ritme (Variabel 5/5/5 en 10/5/5: E).

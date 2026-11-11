@@ -38,6 +38,10 @@ Bij [facturen](../facturatie/facturen.md) zijn het er drie: **Facturen bekijken*
 definitief maken en versturen**. Een gewone gebruiker kan facturen bekijken en opmaken. Het derde recht geeft u via een
 rol aan wie het mag: een definitieve factuur krijgt een nummer dat nooit meer weggaat, en vertrekt naar uw klant.
 
+Op het [dashboard](../getting-started/dashboard.md#per-medewerker) is er een recht dat een gewone gebruiker niet heeft:
+**Prestaties van alle medewerkers bekijken**. Daarmee ziet iemand in de tabel *Per medewerker* de cijfers van alle collega's.
+Zonder dat recht ziet elke medewerker daar enkel de eigen rij. Geef het via een rol aan wie het mag.
+
 ## Gebruikers aan een rol toewijzen
 
 Bij een geopende rol ziet u de lijst **Gebruikers met deze rol**. Vink de gebruikers aan die de rol moeten krijgen (of uit om ze weer weg te halen).

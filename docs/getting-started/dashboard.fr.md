@@ -267,6 +267,25 @@ Le tableau **Par prêteur** place les mêmes chiffres côte à côte par banque 
 !!! tip "Un tiret pour Taux de conversion et Abandonnés ?"
     Aucun statut de dossier n'est alors encore lié à une phase de clôture, et il est impossible de dire quel dossier est terminé. L'onglet le signale lui-même ; vous le configurez sous **Administration → Phases du tableau de bord**.
 
+### Par collaborateur
+
+Le tableau **Par collaborateur** place les mêmes chiffres côte à côte par collaborateur de votre bureau : les dossiers, les actes avec leur volume, le nombre de dossiers abandonnés, le taux de conversion, le nombre de dossiers en cours et le délai de l'introduction à l'acte. La dernière colonne reprend les trois motifs d'abandon les plus fréquents. La dernière ligne est le bureau, avec les mêmes chiffres que les tuiles en haut.
+
+![Le tableau Par collaborateur de l'onglet Production, sur le choix Propriétaire : en haut à droite les boutons Sales et Propriétaire et le bouton Exporter vers Excel, en dessous par collaborateur les dossiers, les actes, le volume de crédit, le nombre de dossiers abandonnés, le taux de conversion, le nombre en cours, le délai de l'introduction à l'acte avec le nombre d'actes entre parenthèses et les motifs d'abandon avec leur nombre, et en bas la ligne Bureau.](../images/dashboard-medewerkers-fr.png "Les mêmes chiffres, par collaborateur"){ .volle-breedte }
+
+- **Sales ou Propriétaire.** Un dossier porte deux collaborateurs : le *Sales* et le *Propriétaire*. Les boutons au-dessus du tableau déterminent qui compte. Le tableau s'ouvre sur *Sales*. Si aucun dossier ne porte de Sales, il s'ouvre sur *Propriétaire* et en donne la raison.
+- **Sans collaborateur** compte les dossiers où personne ne figure à cet endroit. Si un numéro de collaborateur ne correspond à aucune fiche, vous lisez sous le nom combien de dossiers sont concernés. Ainsi, le tableau totalise toujours le bureau.
+- **(a quitté le bureau)** suit le nom de la personne qui a quitté le bureau : ses dossiers font partie de l'histoire de votre bureau et restent donc visibles. Cela signifie que l'accès de cette personne a été retiré, ou que la fiche de collaborateur sans compte n'apparaît plus dans les listes de choix.
+- Un pourcentage n'apparaît qu'à partir de cinq dossiers clôturés, comme par prêteur. Sans [phases du tableau de bord](../beheer/dashboard-fases.md) liées, *Abandonnés*, *Taux de conversion* et *En cours* affichent un tiret : pas comptable, et jamais 0.
+- Un **⚠️** au délai signifie que chez ce collaborateur, la date d'introduction tombe souvent le jour de l'acte ou après. Le délai dit alors peu de chose ; vérifiez les dates d'introduction.
+- **Exporter vers Excel** reprend le tableau tel que vous le voyez : la même période, le même type et le même choix entre Sales et Propriétaire. Chaque export figure dans le [Journal des actions](../administration/activity-log.md).
+
+!!! note "Qui voit quelles lignes ?"
+    Avec le droit **Voir les performances de tous les collaborateurs**, vous voyez toutes les lignes. Par défaut, seul l'Administrateur de tenant a ce droit ; via [Rôles & droits](../administration/roles.md), vous pouvez l'attribuer à un rôle propre. Sans ce droit, vous ne voyez que votre propre ligne, à côté de celle du bureau. Votre ligne est celle de la fiche de collaborateur liée à votre compte. Si aucune fiche n'y est liée, le tableau le signale, et votre administrateur peut le vérifier sous **Administration → Utilisateurs** (action *Fiche*). L'export suit la même règle.
+
+!!! tip "Des chiffres sur votre personnel"
+    Ce tableau montre des chiffres par personne. Vérifiez si vous devez informer vos collaborateurs que ces chiffres existent et qui peut les voir.
+
 ## Tout le monde voit le même bureau
 
-Le tableau de bord affiche les chiffres de l'ensemble du bureau. Toute personne autorisée à l'ouvrir voit les mêmes nombres. La répartition du volume entre vos collaborateurs, vous la voyez dans le graphique par responsable. Les deux listes d'apporteurs de l'onglet *Production* ne sont visibles que si vous pouvez aussi consulter les apporteurs.
+Le tableau de bord affiche les chiffres de l'ensemble du bureau. Toute personne autorisée à l'ouvrir voit les mêmes nombres. La répartition du volume entre vos collaborateurs, vous la voyez dans le graphique par responsable. L'onglet *Production* connaît deux exceptions : les deux listes d'apporteurs ne sont visibles que si vous pouvez aussi consulter les apporteurs, et dans le tableau [Par collaborateur](#par-collaborateur), vous ne voyez les lignes de vos collègues qu'avec le droit *Voir les performances de tous les collaborateurs*.
