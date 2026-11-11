@@ -76,6 +76,8 @@ Ook een dubbele verzending van het formulier zelf — iemand die twee keer op *V
 
 ## Als er niets binnenkomt
 
+Op **Platformbeheer → Communicatie → Leadmeldingen** staat bovenaan de kaart **Uw websiteformulier**: wanneer de laatste lead van uw website binnenkwam en uit welk formulier, en hoeveel leads elk formulier de laatste 90 dagen aanleverde. Kwam er nog nooit een lead van uw website, dan zegt de kaart dat, met een link naar deze pagina en naar de uitleg voor uw webbouwer. De kaart ziet enkel wat er binnenkwam: of uw formulier al gekoppeld is, ziet ze niet.
+
 - **Is de sleutel al aangevraagd en ingesteld?** Zolang die er niet is, komt er niets door.
 - **Post het formulier naar het juiste adres?** Dat staat op de pagina voor uw webbouwer.
 - **Kijk in de leadlijst op *Alle statussen*.** Een lead van iemand die al klant is, kan bij een bestaande lead gezet zijn in plaats van als nieuwe rij te verschijnen.

@@ -76,6 +76,8 @@ Un double envoi du formulaire lui-même — quelqu'un qui clique deux fois sur *
 
 ## Si rien n'arrive
 
+Sous **Administration → Communication → Notifications de leads**, la carte **Votre formulaire web** figure en haut : quand le dernier lead de votre site web est arrivé et depuis quel formulaire, et combien de leads chaque formulaire a apportés au cours des 90 derniers jours. Si aucun lead n'est encore arrivé de votre site web, la carte l'indique, avec un lien vers cette page et vers l'explication pour le constructeur de votre site. La carte ne voit que ce qui est arrivé : elle ne voit pas si votre formulaire est déjà relié.
+
 - **La clé a-t-elle déjà été demandée et configurée ?** Tant qu'elle n'existe pas, rien ne passe.
 - **Le formulaire poste-t-il vers la bonne adresse ?** Cela figure sur la page destinée à votre constructeur de site.
 - **Regardez la liste de leads sur *Tous les statuts*.** Un lead d'une personne déjà cliente peut avoir été rattaché à un lead existant au lieu d'apparaître comme nouvelle ligne.
