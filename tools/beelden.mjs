@@ -899,7 +899,14 @@ const SCHOTEN = [
       await p.waitForTimeout(2000);
   }],
   ['mail-momenten-termijn',     '/beheer/mail-momenten',          async p => {
-      await p.locator('.dxbl-grid-table tbody tr', { hasText: /nadert|approche/ }).first().dblclick();
+      // ⚠️ Sinds F8 stap 6 (1.231.0) staat er ook een renteherziening die "nadert"/"approche". De woorden maken het eenduidig.
+      await p.locator('.dxbl-grid-table tbody tr', { hasText: /uiterste datum van het aanbod nadert|date limite de l'offre approche/ }).first().dblclick();
+      await p.waitForTimeout(2000);
+  }],
+  // F8 stap 6 (11/11/2026): het venster van een klantsignaal. Het moment "renteherziening nadert" staat in de demo (aangemaakt bij de
+  // proef van 11/11); dit recept opent het, net als de termijn.
+  ['mail-momenten-klantsignaal', '/beheer/mail-momenten',         async p => {
+      await p.locator('.dxbl-grid-table tbody tr', { hasText: /renteherziening van een contract nadert|révision du taux d'un contrat approche/ }).first().dblclick();
       await p.waitForTimeout(2000);
   }],
   ['documenttypes-herinnering', '/beheer/documenttypes',          p => knop(p, 'Herinneringen: na 7 dagen', 'Rappels : après 7 jours')],
@@ -1380,6 +1387,8 @@ const VERWACHT = {
   'mail-momenten':              /krijgt de status|reçoit le statut/,
   'mail-momenten-venster':      /Voorstellen —|Proposer —/,
   'mail-momenten-termijn':      /Dagen vooraf|Jours avant/,
+  // F8 stap 6: de vaste ontvanger met de afmeldlink bestaat enkel bij een klantsignaal (sinds 1.231.0).
+  'mail-momenten-klantsignaal': /eigen mail met een afmeldlink|e-mail personnel avec un lien de désinscription/,
   'voorkeuren-paneel':          /Kies foto|Choisir une photo|Omgevingsgrootte|Taille/i,
   'voorkeuren':                 /Kies foto|Choisir une photo|Omgevingsgrootte|Taille/i,
   'journaal-lade':              /Kredietdossiers|Dossiers de crédit/i,

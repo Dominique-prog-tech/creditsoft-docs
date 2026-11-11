@@ -324,7 +324,7 @@
   "relaties-fiche": {
     "route": "/crm/relaties/09ee4eb1-5c32-4e3d-ade5-a0fe4fd9ded2",
     "app": {
-      "sha": "b366261e43d894cbc9c5b5ce39374e4e0525bb03",
+      "sha": "6d88fd39a1d5a2193cd7f2b58ce9f40cc0197457",
       "vuil": false
     }
   },
@@ -380,56 +380,56 @@
   "journaal-taken": {
     "route": "/crm/relaties/09ee4eb1-5c32-4e3d-ade5-a0fe4fd9ded2",
     "app": {
-      "sha": "b366261e43d894cbc9c5b5ce39374e4e0525bb03",
+      "sha": "6d88fd39a1d5a2193cd7f2b58ce9f40cc0197457",
       "vuil": false
     }
   },
   "journaal-notities": {
     "route": "/crm/relaties/09ee4eb1-5c32-4e3d-ade5-a0fe4fd9ded2",
     "app": {
-      "sha": "b366261e43d894cbc9c5b5ce39374e4e0525bb03",
+      "sha": "6d88fd39a1d5a2193cd7f2b58ce9f40cc0197457",
       "vuil": false
     }
   },
   "journaal-gesprekken": {
     "route": "/crm/relaties/09ee4eb1-5c32-4e3d-ade5-a0fe4fd9ded2",
     "app": {
-      "sha": "b366261e43d894cbc9c5b5ce39374e4e0525bb03",
+      "sha": "6d88fd39a1d5a2193cd7f2b58ce9f40cc0197457",
       "vuil": false
     }
   },
   "journaal-bijlagen": {
     "route": "/crm/relaties/09ee4eb1-5c32-4e3d-ade5-a0fe4fd9ded2",
     "app": {
-      "sha": "b366261e43d894cbc9c5b5ce39374e4e0525bb03",
+      "sha": "6d88fd39a1d5a2193cd7f2b58ce9f40cc0197457",
       "vuil": false
     }
   },
   "journaal-mailverkeer": {
     "route": "/crm/relaties/09ee4eb1-5c32-4e3d-ade5-a0fe4fd9ded2",
     "app": {
-      "sha": "b366261e43d894cbc9c5b5ce39374e4e0525bb03",
+      "sha": "6d88fd39a1d5a2193cd7f2b58ce9f40cc0197457",
       "vuil": false
     }
   },
   "journaal-logboek": {
     "route": "/crm/relaties/09ee4eb1-5c32-4e3d-ade5-a0fe4fd9ded2",
     "app": {
-      "sha": "b366261e43d894cbc9c5b5ce39374e4e0525bb03",
+      "sha": "6d88fd39a1d5a2193cd7f2b58ce9f40cc0197457",
       "vuil": false
     }
   },
   "journaal-kredietdossiers": {
     "route": "/crm/relaties/09ee4eb1-5c32-4e3d-ade5-a0fe4fd9ded2",
     "app": {
-      "sha": "b366261e43d894cbc9c5b5ce39374e4e0525bb03",
+      "sha": "6d88fd39a1d5a2193cd7f2b58ce9f40cc0197457",
       "vuil": false
     }
   },
   "relaties-fiche-journaal": {
     "route": "/crm/relaties/09ee4eb1-5c32-4e3d-ade5-a0fe4fd9ded2",
     "app": {
-      "sha": "b366261e43d894cbc9c5b5ce39374e4e0525bb03",
+      "sha": "6d88fd39a1d5a2193cd7f2b58ce9f40cc0197457",
       "vuil": false
     }
   },
@@ -625,7 +625,7 @@
   "journaal-lade": {
     "route": "/crm/relaties",
     "app": {
-      "sha": "b366261e43d894cbc9c5b5ce39374e4e0525bb03",
+      "sha": "6d88fd39a1d5a2193cd7f2b58ce9f40cc0197457",
       "vuil": false
     }
   },
@@ -940,7 +940,7 @@
   "relaties-fiche-fr": {
     "route": "/crm/relaties/09ee4eb1-5c32-4e3d-ade5-a0fe4fd9ded2",
     "app": {
-      "sha": "b366261e43d894cbc9c5b5ce39374e4e0525bb03",
+      "sha": "6d88fd39a1d5a2193cd7f2b58ce9f40cc0197457",
       "vuil": false
     }
   },
@@ -996,56 +996,56 @@
   "journaal-taken-fr": {
     "route": "/crm/relaties/09ee4eb1-5c32-4e3d-ade5-a0fe4fd9ded2",
     "app": {
-      "sha": "b366261e43d894cbc9c5b5ce39374e4e0525bb03",
+      "sha": "6d88fd39a1d5a2193cd7f2b58ce9f40cc0197457",
       "vuil": false
     }
   },
   "journaal-notities-fr": {
     "route": "/crm/relaties/09ee4eb1-5c32-4e3d-ade5-a0fe4fd9ded2",
     "app": {
-      "sha": "b366261e43d894cbc9c5b5ce39374e4e0525bb03",
+      "sha": "6d88fd39a1d5a2193cd7f2b58ce9f40cc0197457",
       "vuil": false
     }
   },
   "journaal-gesprekken-fr": {
     "route": "/crm/relaties/09ee4eb1-5c32-4e3d-ade5-a0fe4fd9ded2",
     "app": {
-      "sha": "b366261e43d894cbc9c5b5ce39374e4e0525bb03",
+      "sha": "6d88fd39a1d5a2193cd7f2b58ce9f40cc0197457",
       "vuil": false
     }
   },
   "journaal-bijlagen-fr": {
     "route": "/crm/relaties/09ee4eb1-5c32-4e3d-ade5-a0fe4fd9ded2",
     "app": {
-      "sha": "b366261e43d894cbc9c5b5ce39374e4e0525bb03",
+      "sha": "6d88fd39a1d5a2193cd7f2b58ce9f40cc0197457",
       "vuil": false
     }
   },
   "journaal-mailverkeer-fr": {
     "route": "/crm/relaties/09ee4eb1-5c32-4e3d-ade5-a0fe4fd9ded2",
     "app": {
-      "sha": "b366261e43d894cbc9c5b5ce39374e4e0525bb03",
+      "sha": "6d88fd39a1d5a2193cd7f2b58ce9f40cc0197457",
       "vuil": false
     }
   },
   "journaal-logboek-fr": {
     "route": "/crm/relaties/09ee4eb1-5c32-4e3d-ade5-a0fe4fd9ded2",
     "app": {
-      "sha": "b366261e43d894cbc9c5b5ce39374e4e0525bb03",
+      "sha": "6d88fd39a1d5a2193cd7f2b58ce9f40cc0197457",
       "vuil": false
     }
   },
   "journaal-kredietdossiers-fr": {
     "route": "/crm/relaties/09ee4eb1-5c32-4e3d-ade5-a0fe4fd9ded2",
     "app": {
-      "sha": "b366261e43d894cbc9c5b5ce39374e4e0525bb03",
+      "sha": "6d88fd39a1d5a2193cd7f2b58ce9f40cc0197457",
       "vuil": false
     }
   },
   "relaties-fiche-journaal-fr": {
     "route": "/crm/relaties/09ee4eb1-5c32-4e3d-ade5-a0fe4fd9ded2",
     "app": {
-      "sha": "b366261e43d894cbc9c5b5ce39374e4e0525bb03",
+      "sha": "6d88fd39a1d5a2193cd7f2b58ce9f40cc0197457",
       "vuil": false
     }
   },
@@ -1241,7 +1241,7 @@
   "journaal-lade-fr": {
     "route": "/crm/relaties",
     "app": {
-      "sha": "b366261e43d894cbc9c5b5ce39374e4e0525bb03",
+      "sha": "6d88fd39a1d5a2193cd7f2b58ce9f40cc0197457",
       "vuil": false
     }
   },
@@ -1598,42 +1598,42 @@
   "mail-momenten": {
     "route": "/beheer/mail-momenten",
     "app": {
-      "sha": "116216131f0ac7632f78f83b06db6485687e814e",
+      "sha": "6d88fd39a1d5a2193cd7f2b58ce9f40cc0197457",
       "vuil": false
     }
   },
   "mail-momenten-venster": {
     "route": "/beheer/mail-momenten",
     "app": {
-      "sha": "116216131f0ac7632f78f83b06db6485687e814e",
+      "sha": "6d88fd39a1d5a2193cd7f2b58ce9f40cc0197457",
       "vuil": false
     }
   },
   "mail-momenten-fr": {
     "route": "/beheer/mail-momenten",
     "app": {
-      "sha": "116216131f0ac7632f78f83b06db6485687e814e",
+      "sha": "6d88fd39a1d5a2193cd7f2b58ce9f40cc0197457",
       "vuil": false
     }
   },
   "mail-momenten-venster-fr": {
     "route": "/beheer/mail-momenten",
     "app": {
-      "sha": "116216131f0ac7632f78f83b06db6485687e814e",
+      "sha": "6d88fd39a1d5a2193cd7f2b58ce9f40cc0197457",
       "vuil": false
     }
   },
   "mail-momenten-termijn": {
     "route": "/beheer/mail-momenten",
     "app": {
-      "sha": "116216131f0ac7632f78f83b06db6485687e814e",
+      "sha": "6d88fd39a1d5a2193cd7f2b58ce9f40cc0197457",
       "vuil": false
     }
   },
   "mail-momenten-termijn-fr": {
     "route": "/beheer/mail-momenten",
     "app": {
-      "sha": "116216131f0ac7632f78f83b06db6485687e814e",
+      "sha": "6d88fd39a1d5a2193cd7f2b58ce9f40cc0197457",
       "vuil": false
     }
   },
@@ -2236,6 +2236,20 @@
     "route": "/dashboard",
     "app": {
       "sha": "c44fb07ca7c1b9dac1db68120778808889df8f9a",
+      "vuil": false
+    }
+  },
+  "mail-momenten-klantsignaal": {
+    "route": "/beheer/mail-momenten",
+    "app": {
+      "sha": "6d88fd39a1d5a2193cd7f2b58ce9f40cc0197457",
+      "vuil": false
+    }
+  },
+  "mail-momenten-klantsignaal-fr": {
+    "route": "/beheer/mail-momenten",
+    "app": {
+      "sha": "6d88fd39a1d5a2193cd7f2b58ce9f40cc0197457",
       "vuil": false
     }
   }

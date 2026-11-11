@@ -78,6 +78,10 @@ Parfois, une carte apparaît encore en bas : **Contrats sans prochaine révision
 
 Pour un taux fixe, c'est correct. Pour un taux variable, complétez les années sous [Listes de choix → Variabilité](keuzelijsten.md#la-variabilite-quand-le-taux-est-revise). Le lien **Vers les listes de choix** vous y mène.
 
+## Un e-mail au client
+
+Les signaux ci-dessus créent une **tâche pour votre collaborateur**. Vous souhaitez aussi envoyer un e-mail au client lui-même avant une révision du taux ou à l'anniversaire de l'acte ? Configurez-le sous [E-mails par moment](mail-momenten.md#pendant-la-duree-du-credit). Un tel e-mail suit les mêmes règles (uniquement pour un crédit en cours, au maximum une fois par révision ou anniversaire), part vers chaque demandeur séparément et porte un lien de désinscription. Par défaut, il n'y en a aucun.
+
 ## Erreurs fréquentes
 
 !!! warning "Pas de tâche pour un dossier sans responsable"
@@ -92,3 +96,4 @@ Pour un taux fixe, c'est correct. Pour un taux variable, complétez les années 
 - [Phases du tableau de bord](dashboard-fases.md)
 - [Tâches](../credit-management/tasks.md)
 - [Listes de choix](keuzelijsten.md)
+- [E-mails par moment](mail-momenten.md)

@@ -1,6 +1,6 @@
 # Mails per moment
 
-Op dit scherm bepaalt u welke mail uw klant, de **aanbrenger**, de **notaris**, de **schatter** of het **immokantoor** krijgt wanneer een **contract** of het **dossier** een bepaalde status krijgt — bijvoorbeeld een bericht dat de aanvraag ingediend is, of dat het aanbod beschikbaar is —, wanneer de **datum akte** ingevuld wordt, wanneer een **partij aangesteld** wordt, of wanneer een **uiterste datum** nadert.
+Op dit scherm bepaalt u welke mail uw klant, de **aanbrenger**, de **notaris**, de **schatter** of het **immokantoor** krijgt wanneer een **contract** of het **dossier** een bepaalde status krijgt — bijvoorbeeld een bericht dat de aanvraag ingediend is, of dat het aanbod beschikbaar is —, wanneer de **datum akte** ingevuld wordt, wanneer een **partij aangesteld** wordt, wanneer een **uiterste datum** nadert, of tijdens de looptijd van het krediet: vóór een **renteherziening** en op de **verjaardag van de akte**.
 
 ![Het scherm Mails per moment: een lijst met per moment de kolommen Wanneer, Status, Naar, Tekst en Hoe, met bijvoorbeeld Een contract krijgt de status Ingediend, naar De aanvragers, op Voorstellen.](../images/mail-momenten.png "De mails per moment van uw kantoor")
 
@@ -16,7 +16,7 @@ Met **Nieuw moment** — of een dubbelklik op een bestaand moment — opent het 
 
 | Veld | Waarvoor |
 |---|---|
-| **Wanneer** | *Een contract krijgt de status* of *Het dossier krijgt de status* — werkt uw kantoor met contractstatussen, dan kiest u de eerste. Of *De datum akte wordt ingevuld*: zie [De datum akte](#de-datum-akte). Of *Een partij wordt aangesteld*: zie [Bij een aanstelling](#bij-een-aanstelling). Of *De uiterste datum van het aanbod nadert* of *… van de akte nadert*: zie [Bij een uiterste datum](#bij-een-uiterste-datum). |
+| **Wanneer** | *Een contract krijgt de status* of *Het dossier krijgt de status* — werkt uw kantoor met contractstatussen, dan kiest u de eerste. Of *De datum akte wordt ingevuld*: zie [De datum akte](#de-datum-akte). Of *Een partij wordt aangesteld*: zie [Bij een aanstelling](#bij-een-aanstelling). Of *De uiterste datum van het aanbod nadert* of *… van de akte nadert*: zie [Bij een uiterste datum](#bij-een-uiterste-datum). Of *De renteherziening van een contract nadert* of *De akte verjaart*: zie [Tijdens de looptijd van het krediet](#tijdens-de-looptijd-van-het-krediet). |
 | **Status** | De status waarbij de mail vertrekt. |
 | **Naar** | *De aanvragers* of *De aanbrenger* van het dossier: zie [Naar de aanbrenger](#naar-de-aanbrenger). Of *De notaris*, *De schatter* of *Het immokantoor*: zie [Naar een notaris, schatter of immokantoor](#naar-een-notaris-schatter-of-immokantoor). |
 | **Tekst** | De mail zelf. Met *Nieuwe tekst* krijgt u een standaardtekst; met **Tekst aanpassen** past u die aan bij [Mailsjablonen](../administration/mail-templates.md). |
@@ -95,6 +95,25 @@ Zo'n mail vertrekt altijd **automatisch**, elke ochtend om 6 uur:
 - enkel bij een **lopend** dossier, en zolang de datum niet verstreken is;
 - niet meer als de stap al gezet is: bij het aanbod als het getekend is (ondertekeningsdatum, *Getekend aanbod verzonden*, of de akte is verleden), bij de akte als die verleden is;
 - **één keer per datum**: wordt de uiterste datum verlengd, dan volgt er voor de nieuwe datum één nieuwe mail.
+
+## Tijdens de looptijd van het krediet
+
+Twee momenten mailen uw klant nadat de akte verleden is, op dezelfde momenten als de [beheersignalen](beheersignalen.md) die een taak maken voor uw medewerkers:
+
+- **De renteherziening van een contract nadert**: zoveel **dagen vooraf** als u invult (standaard 60), vóór de volgende herziening van een contract met een veranderlijke rentevoet. Hoogstens één mail per herziening.
+- **De akte verjaart**: op de verjaardag van de akte, elk jaar zolang het krediet loopt. Een moment dat u vandaag aanmaakt, mailt niets over vorige verjaardagen. Liep de ronde een dag niet, dan vertrekt de mail hoogstens 7 dagen later alsnog.
+
+![Het venster Moment wijzigen voor een renteherziening: Wanneer staat op De renteherziening van een contract nadert, met daarnaast Dagen vooraf 60; bij Naar staat dat de aanvragers elk een eigen mail met een afmeldlink krijgen, bij Tekst dat het een commerciële mail is, en bij Hoe dat de mail automatisch vertrekt, elke ochtend om 6 uur.](../images/mail-momenten-klantsignaal.png "Een mail aan de klant, ruim vóór de renteherziening")
+
+Dit zijn **commerciële mails**, en daarom gelden er strengere regels dan bij de andere momenten:
+
+- Ze vertrekken altijd **automatisch**, elke ochtend om 6 uur, en enkel bij een **lopend krediet**.
+- Ze gaan enkel naar **de aanvragers**, en **elke aanvrager krijgt een eigen mail**, met de eigen aanhef en in de eigen documenttaal.
+- Onder elke mail staat een **afmeldlink**. Wie erop klikt, krijgt op de [relatiefiche](../crm/relations.md) het vinkje *Geen groepsmail* en krijgt deze mails en uw groepsmails niet meer.
+- Wie dat vinkje al heeft, of een adres dat als ongeldig gemarkeerd staat, krijgt niets. Twee aanvragers met hetzelfde adres krijgen samen één mail.
+- Laat uw omgeving geen mail vertrekken (een demo of een opleiding), dan vertrekt er niets.
+
+Met *Nieuwe tekst* krijgt u een standaardtekst die de klant met de eigen aanhef aanspreekt en uitnodigt om de lening en de verzekeringen samen te bekijken. Bij de renteherziening staat de datum van de herziening in `{{moment.termijn}}`, bij de verjaardag de verjaardag zelf.
 
 !!! tip "Variabelen voor deze teksten"
     In de tekst kan u onder meer `{{client.firstnames}}` (de voornamen van de klanten), `{{file.applicants}}` (de namen van de aanvragers), `{{file.institution}}` (de kredietinstelling — bij een contractmoment die van het contract), `{{file.amount}}`, `{{file.number}}`, `{{file.deeddate}}` (de datum akte), `{{moment.status}}` (de status die de mail deed vertrekken) en `{{moment.termijn}}` (de uiterste datum, bij een termijn) gebruiken. In een mail aan de aanbrenger of een partij staat `{{recipient.name}}` voor zijn naam en `{{recipient.greeting}}` voor de aanhef. Voor het pand en de partijen: `{{property.address}}` (het adres van het pand), `{{notary.name}}`, `{{notary.email}}` en `{{notary.phone}}`, en hetzelfde met `valuator` voor de schatter en `realestate` voor het immokantoor.

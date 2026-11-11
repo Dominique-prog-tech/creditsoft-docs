@@ -78,6 +78,10 @@ Soms verschijnt onderaan nog een kaart: **Contracten zonder volgende herziening*
 
 Bij een vaste rente klopt dat. Bij een variabele rente vult u de jaren in onder [Keuzelijsten → Variabiliteit](keuzelijsten.md#de-variabiliteit-wanneer-de-rente-herzien-wordt). De link **Naar Keuzelijsten** brengt u er.
 
+## Een mail aan de klant
+
+De signalen hierboven maken een **taak voor uw medewerker**. Wilt u de klant zelf ook een mail sturen vóór een renteherziening of op de verjaardag van de akte, stel dat dan in bij [Mails per moment](mail-momenten.md#tijdens-de-looptijd-van-het-krediet). Zo'n mail volgt dezelfde regels (enkel bij een lopend krediet, hoogstens één keer per herziening of verjaardag), gaat naar elke aanvrager apart en draagt een afmeldlink. Standaard staat er geen.
+
 ## Veelgemaakte fouten
 
 !!! warning "Geen taak voor een dossier zonder eigenaar"
@@ -92,3 +96,4 @@ Bij een vaste rente klopt dat. Bij een variabele rente vult u de jaren in onder 
 - [Dashboard-fases](dashboard-fases.md)
 - [Taken](../credit-management/tasks.md)
 - [Keuzelijsten](keuzelijsten.md)
+- [Mails per moment](mail-momenten.md)

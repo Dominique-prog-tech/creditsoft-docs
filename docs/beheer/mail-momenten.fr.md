@@ -1,6 +1,6 @@
 # E-mails par moment
 
-Sur cet écran, vous déterminez quel e-mail votre client, l'**apporteur**, le **notaire**, l'**expert** ou l'**agence immobilière** reçoit lorsqu'un **contrat** ou le **dossier** reçoit un certain statut — par exemple un message indiquant que la demande a été introduite, ou que l'offre est disponible —, lorsque la **date de l'acte** est complétée, lorsqu'une **partie est désignée**, ou lorsqu'une **date limite** approche.
+Sur cet écran, vous déterminez quel e-mail votre client, l'**apporteur**, le **notaire**, l'**expert** ou l'**agence immobilière** reçoit lorsqu'un **contrat** ou le **dossier** reçoit un certain statut — par exemple un message indiquant que la demande a été introduite, ou que l'offre est disponible —, lorsque la **date de l'acte** est complétée, lorsqu'une **partie est désignée**, lorsqu'une **date limite** approche, ou pendant la durée du crédit : avant une **révision du taux** et à l'**anniversaire de l'acte**.
 
 ![L'écran E-mails par moment : une liste avec pour chaque moment les colonnes Quand, Statut, À, Texte et Comment, avec par exemple Un contrat reçoit le statut Introduit, aux demandeurs, en mode Proposer.](../images/mail-momenten-fr.png "Les e-mails par moment de votre bureau")
 
@@ -16,7 +16,7 @@ Avec **Nouveau moment** — ou un double-clic sur un moment existant — la fen�
 
 | Champ | Utilité |
 |---|---|
-| **Quand** | *Un contrat reçoit le statut* ou *Le dossier reçoit le statut* — si votre bureau travaille avec des statuts de contrat, choisissez le premier. Ou *La date de l'acte est complétée* : voir [La date de l'acte](#la-date-de-lacte). Ou *Une partie est désignée* : voir [Lors d'une désignation](#lors-dune-designation). Ou *La date limite de l'offre approche* ou *… de l'acte approche* : voir [Lors d'une date limite](#lors-dune-date-limite). |
+| **Quand** | *Un contrat reçoit le statut* ou *Le dossier reçoit le statut* — si votre bureau travaille avec des statuts de contrat, choisissez le premier. Ou *La date de l'acte est complétée* : voir [La date de l'acte](#la-date-de-lacte). Ou *Une partie est désignée* : voir [Lors d'une désignation](#lors-dune-designation). Ou *La date limite de l'offre approche* ou *… de l'acte approche* : voir [Lors d'une date limite](#lors-dune-date-limite). Ou *La révision du taux d'un contrat approche* ou *L'acte a son anniversaire* : voir [Pendant la durée du crédit](#pendant-la-duree-du-credit). |
 | **Statut** | Le statut auquel l'e-mail part. |
 | **À** | *Les demandeurs* ou *L'apporteur* du dossier : voir [À l'apporteur](#a-lapporteur). Ou *Le notaire*, *L'expert* ou *L'agence immobilière* : voir [À un notaire, un expert ou une agence immobilière](#a-un-notaire-un-expert-ou-une-agence-immobiliere). |
 | **Texte** | L'e-mail lui-même. Avec *Nouveau texte*, vous recevez un texte standard ; avec **Adapter le texte**, vous l'adaptez sous [Modèles d'e-mail](../administration/mail-templates.md). |
@@ -96,6 +96,25 @@ Un tel e-mail part toujours **automatiquement**, chaque matin à 6 h :
 - uniquement pour un dossier **en cours**, et tant que la date n'est pas dépassée ;
 - plus du tout si l'étape est franchie : pour l'offre si elle est signée (date de signature, *Offre signée envoyée*, ou l'acte est passé), pour l'acte s'il est passé ;
 - **une fois par date** : si la date limite est prolongée, un nouvel e-mail suit pour la nouvelle date.
+
+## Pendant la durée du crédit
+
+Deux moments envoient un e-mail à votre client après la passation de l'acte, aux mêmes moments que les [signaux de gestion](beheersignalen.md) qui créent une tâche pour vos collaborateurs :
+
+- **La révision du taux d'un contrat approche** : autant de **jours avant** que vous l'indiquez (60 par défaut), avant la prochaine révision d'un contrat à taux variable. Au maximum un e-mail par révision.
+- **L'acte a son anniversaire** : à l'anniversaire de l'acte, chaque année tant que le crédit court. Un moment créé aujourd'hui n'envoie rien pour les anniversaires passés. Si la tournée n'a pas eu lieu un jour, l'e-mail part encore au plus 7 jours plus tard.
+
+![La fenêtre Modifier le moment pour une révision du taux : Quand est réglé sur La révision du taux d'un contrat approche, avec à côté Jours avant 60 ; sous À, il est indiqué que les demandeurs reçoivent chacun un e-mail personnel avec un lien de désinscription, sous Texte qu'il s'agit d'un e-mail commercial, et sous Comment que l'e-mail part automatiquement, chaque matin à 6 h.](../images/mail-momenten-klantsignaal-fr.png "Un e-mail au client, bien avant la révision du taux")
+
+Ce sont des **e-mails commerciaux**, et des règles plus strictes s'appliquent donc que pour les autres moments :
+
+- Ils partent toujours **automatiquement**, chaque matin à 6 h, et uniquement pour un **crédit en cours**.
+- Ils vont uniquement aux **demandeurs**, et **chaque demandeur reçoit son propre e-mail**, avec sa formule d'appel et dans sa langue des documents.
+- Sous chaque e-mail figure un **lien de désinscription**. Qui clique dessus reçoit sur sa [fiche de relation](../crm/relations.md) la coche *Pas d'e-mail groupé* et ne reçoit plus ces e-mails ni vos e-mails groupés.
+- Qui porte déjà cette coche, ou dont l'adresse est marquée comme non valable, ne reçoit rien. Deux demandeurs avec la même adresse reçoivent ensemble un seul e-mail.
+- Si votre environnement ne laisse partir aucun e-mail (une démo ou une formation), rien ne part.
+
+Avec *Nouveau texte*, vous obtenez un texte standard qui s'adresse au client avec sa formule d'appel et l'invite à revoir ensemble le prêt et les assurances. Pour la révision, `{{moment.termijn}}` contient la date de la révision ; pour l'anniversaire, l'anniversaire lui-même.
 
 !!! tip "Variables pour ces textes"
     Dans le texte, vous pouvez notamment utiliser `{{client.firstnames}}` (les prénoms des clients), `{{file.applicants}}` (les noms des demandeurs), `{{file.institution}}` (l'institution de crédit — pour un moment de contrat, celle du contrat), `{{file.amount}}`, `{{file.number}}`, `{{file.deeddate}}` (la date de l'acte), `{{moment.status}}` (le statut qui a déclenché l'e-mail) et `{{moment.termijn}}` (la date limite, pour une échéance). Dans un e-mail à l'apporteur ou à une partie, `{{recipient.name}}` désigne son nom et `{{recipient.greeting}}` la formule d'appel. Pour le bien et les parties : `{{property.address}}` (l'adresse du bien), `{{notary.name}}`, `{{notary.email}}` et `{{notary.phone}}`, et de même avec `valuator` pour l'expert et `realestate` pour l'agence immobilière.

@@ -629,6 +629,14 @@
     "breedte": 1280,
     "hoogte": 860
   },
+  "mail-momenten-klantsignaal": {
+    "breedte": 1280,
+    "hoogte": 860
+  },
+  "mail-momenten-klantsignaal-fr": {
+    "breedte": 1280,
+    "hoogte": 860
+  },
   "groepsmail-venster": {
     "breedte": 1600,
     "element": {
