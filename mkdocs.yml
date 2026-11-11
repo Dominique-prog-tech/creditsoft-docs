@@ -141,6 +141,7 @@ plugins:
             Home: Accueil
             Video's: Vidéos
             Aan de slag: Premiers pas
+            Overstappen vanuit de vorige CreditSoft: Passer de l'ancien CreditSoft
             Navigeren in CreditSoft: Naviguer dans CreditSoft
             Tweestapsverificatie (2FA): Vérification en deux étapes (2FA)
             De mobiele app: L'application mobile
@@ -285,6 +286,9 @@ nav:
   - "Video's": videos.md
 
   - Aan de slag:
+    # Overstappen (11/11/2026, masterplan B4, punt 15): bovenaan, want een kantoor dat overstapt leest dit eerst. Bron:
+    # adm-creditsoft docs/overname-inventaris.md — wat daar niet staat, belooft deze pagina niet.
+    - Overstappen vanuit de vorige CreditSoft: getting-started/overstappen.md
     - Navigeren in CreditSoft: getting-started/navigatie.md
     - Zoeken vanaf elk scherm: getting-started/zoeken.md
     # Stond tot 16/08/2026 wél op de schijf maar niet hier: de pagina was enkel te bereiken via een
