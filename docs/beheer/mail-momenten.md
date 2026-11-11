@@ -1,6 +1,6 @@
 # Mails per moment
 
-Op dit scherm bepaalt u welke mail uw klant of de **aanbrenger** krijgt wanneer een **contract** of het **dossier** een bepaalde status krijgt — bijvoorbeeld een bericht dat de aanvraag ingediend is, of dat het aanbod beschikbaar is —, wanneer de **datum akte** ingevuld wordt, of wanneer een **uiterste datum** nadert.
+Op dit scherm bepaalt u welke mail uw klant, de **aanbrenger**, de **notaris**, de **schatter** of het **immokantoor** krijgt wanneer een **contract** of het **dossier** een bepaalde status krijgt — bijvoorbeeld een bericht dat de aanvraag ingediend is, of dat het aanbod beschikbaar is —, wanneer de **datum akte** ingevuld wordt, wanneer een **partij aangesteld** wordt, of wanneer een **uiterste datum** nadert.
 
 ![Het scherm Mails per moment: een lijst met per moment de kolommen Wanneer, Status, Naar, Tekst en Hoe, met bijvoorbeeld Een contract krijgt de status Ingediend, naar De aanvragers, op Voorstellen.](../images/mail-momenten.png "De mails per moment van uw kantoor")
 
@@ -16,9 +16,9 @@ Met **Nieuw moment** — of een dubbelklik op een bestaand moment — opent het 
 
 | Veld | Waarvoor |
 |---|---|
-| **Wanneer** | *Een contract krijgt de status* of *Het dossier krijgt de status* — werkt uw kantoor met contractstatussen, dan kiest u de eerste. Of *De datum akte wordt ingevuld*: zie [De datum akte](#de-datum-akte). Of *De uiterste datum van het aanbod nadert* of *… van de akte nadert*: zie [Bij een uiterste datum](#bij-een-uiterste-datum). |
+| **Wanneer** | *Een contract krijgt de status* of *Het dossier krijgt de status* — werkt uw kantoor met contractstatussen, dan kiest u de eerste. Of *De datum akte wordt ingevuld*: zie [De datum akte](#de-datum-akte). Of *Een partij wordt aangesteld*: zie [Bij een aanstelling](#bij-een-aanstelling). Of *De uiterste datum van het aanbod nadert* of *… van de akte nadert*: zie [Bij een uiterste datum](#bij-een-uiterste-datum). |
 | **Status** | De status waarbij de mail vertrekt. |
-| **Naar** | *De aanvragers* of *De aanbrenger* van het dossier: zie [Naar de aanbrenger](#naar-de-aanbrenger). |
+| **Naar** | *De aanvragers* of *De aanbrenger* van het dossier: zie [Naar de aanbrenger](#naar-de-aanbrenger). Of *De notaris*, *De schatter* of *Het immokantoor*: zie [Naar een notaris, schatter of immokantoor](#naar-een-notaris-schatter-of-immokantoor). |
 | **Tekst** | De mail zelf. Met *Nieuwe tekst* krijgt u een standaardtekst; met **Tekst aanpassen** past u die aan bij [Mailsjablonen](../administration/mail-templates.md). |
 | **Hoe** | **Voorstellen**: na *Bewaren* opent de mail, ingevuld, en u verstuurt ze zelf. **Automatisch**: de mail vertrekt meteen. |
 
@@ -28,7 +28,7 @@ Met **Nieuw moment** — of een dubbelklik op een bestaand moment — opent het 
 
 Bewaart u een contract of dossier en krijgt het daarbij een status waarvoor een moment bestaat, dan:
 
-- gaat de mail naar wie bij **Naar** staat: **de aanvragers met een mailadres**, of **de aanbrenger**;
+- gaat de mail naar wie bij **Naar** staat: **de aanvragers met een mailadres**, **de aanbrenger**, of een **partij** op het dossier;
 - vertrekt ze **hoogstens één keer** per contract of dossier — zet u de status terug en daarna opnieuw, dan volgt er geen tweede;
 - staat ze daarna bij het **mailverkeer** van het dossier.
 
@@ -48,6 +48,33 @@ ingediend is, of wanneer de datum akte gekend is.
 
 Wil u bij hetzelfde moment de klant én de aanbrenger een mail sturen, maak dan **twee momenten**: één naar de aanvragers en
 één naar de aanbrenger, elk met een eigen tekst.
+
+## Naar een notaris, schatter of immokantoor
+
+Kies bij **Naar** *De notaris*, *De schatter* of *Het immokantoor* om een partij van het dossier te mailen, bijvoorbeeld de
+notaris wanneer het aanbod beschikbaar is. Het gaat om de partijen op het tabblad
+[Partijen](../credit-management/credit-files.md#partijen) van het dossier.
+
+- De mail gaat naar de partij van die soort die **aangesteld** is. Staan er meerdere aangesteld, dan gaan ze samen in *Aan*. Is er
+  geen enkele aangesteld, dan gaat ze naar alle partijen van die soort.
+- Het adres is dat van de **contactpersoon** bij de partij, en anders dat op de fiche van de notaris, de schatter of het
+  immokantoor.
+- De mail komt in de **documenttaal** van die professional, met een neutrale aanhef. Is de documenttaal niet ingevuld, dan in de
+  taal van uw kantoor.
+- Staat er geen partij van die soort op het dossier, of heeft ze nergens een mailadres, dan meldt het scherm na *Bewaren* dat de
+  mail niet kon vertrekken.
+- Met *Nieuwe tekst* krijgt u een standaardtekst die het dossier, de klant en de status noemt.
+
+## Bij een aanstelling
+
+Kiest u bij **Wanneer** *Een partij wordt aangesteld*, dan kiest u ernaast **welke partij**: notaris, schatter of immokantoor. De
+mail vertrekt wanneer iemand op het tabblad *Partijen* van het dossier het vinkje **Aangesteld** aanzet, ook bij een nieuwe partij
+die meteen aangevinkt bewaard wordt.
+
+- Kiest u bij **Naar** dezelfde soort, dan gaat de mail enkel naar de partij die net aangesteld werd. Zo vraagt u een schatting
+  aan zodra u de schatter aanstelt: met *Nieuwe tekst* krijgt u daar een standaardtekst voor, met het adres van het pand.
+- De mail vertrekt **hoogstens één keer per partij**. Zet u het vinkje uit en weer aan, dan volgt er geen tweede.
+- Bij **Naar** kan u ook *De aanvragers* kiezen, om uw klant te laten weten dat de notaris of de schatter aangesteld is.
 
 ## De datum akte
 
@@ -70,4 +97,4 @@ Zo'n mail vertrekt altijd **automatisch**, elke ochtend om 6 uur:
 - **één keer per datum**: wordt de uiterste datum verlengd, dan volgt er voor de nieuwe datum één nieuwe mail.
 
 !!! tip "Variabelen voor deze teksten"
-    In de tekst kan u onder meer `{{client.firstnames}}` (de voornamen van de klanten), `{{file.applicants}}` (de namen van de aanvragers), `{{file.institution}}` (de kredietinstelling — bij een contractmoment die van het contract), `{{file.amount}}`, `{{file.number}}`, `{{file.deeddate}}` (de datum akte), `{{moment.status}}` (de status die de mail deed vertrekken) en `{{moment.termijn}}` (de uiterste datum, bij een termijn) gebruiken. In een mail aan de aanbrenger staat `{{recipient.name}}` voor zijn naam.
+    In de tekst kan u onder meer `{{client.firstnames}}` (de voornamen van de klanten), `{{file.applicants}}` (de namen van de aanvragers), `{{file.institution}}` (de kredietinstelling — bij een contractmoment die van het contract), `{{file.amount}}`, `{{file.number}}`, `{{file.deeddate}}` (de datum akte), `{{moment.status}}` (de status die de mail deed vertrekken) en `{{moment.termijn}}` (de uiterste datum, bij een termijn) gebruiken. In een mail aan de aanbrenger of een partij staat `{{recipient.name}}` voor zijn naam en `{{recipient.greeting}}` voor de aanhef. Voor het pand en de partijen: `{{property.address}}` (het adres van het pand), `{{notary.name}}`, `{{notary.email}}` en `{{notary.phone}}`, en hetzelfde met `valuator` voor de schatter en `realestate` voor het immokantoor.

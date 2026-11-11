@@ -452,6 +452,8 @@ Les professionnels concernés — agence immobilière, notaire, expert ou compta
 
 Avec **E-mail…** sur la ligne d'une partie, vous lui écrivez directement. La fenêtre d'envoi complète l'adresse : celle de la personne de contact sur la partie, sinon celle de la fiche du notaire, de l'expert ou de l'agence immobilière. L'e-mail est rédigé dans la langue de ce professionnel, avec une formule d'appel neutre. Si la partie n'a d'adresse e-mail nulle part, *À* reste vide et la fenêtre explique pourquoi : vous tapez alors l'adresse vous-même, ou vous la complétez sur la partie. L'e-mail figure ensuite dans le **courrier** du dossier.
 
+Si votre bureau a configuré un [e-mail lors d'une désignation](../beheer/mail-momenten.fr.md#lors-dune-designation), cocher **Désigné** peut entraîner un e-mail, par exemple une demande d'expertise à l'expert. Si le moment est en mode *Proposer*, la fenêtre d'envoi s'ouvre après *Enregistrer*, déjà complétée.
+
 ### Garants, ASRD & réductions
 
 Derrière le bouton **Garants, ASRD & réductions…**, trois listes sont réunies : les garants et prêteurs, les assurances solde restant dû (avec l'assureur, le pourcentage de capital assuré, le volet fiscal et fumeur) et les réductions accordées.

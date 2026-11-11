@@ -1598,42 +1598,42 @@
   "mail-momenten": {
     "route": "/beheer/mail-momenten",
     "app": {
-      "sha": "b366261e43d894cbc9c5b5ce39374e4e0525bb03",
+      "sha": "116216131f0ac7632f78f83b06db6485687e814e",
       "vuil": false
     }
   },
   "mail-momenten-venster": {
     "route": "/beheer/mail-momenten",
     "app": {
-      "sha": "b366261e43d894cbc9c5b5ce39374e4e0525bb03",
+      "sha": "116216131f0ac7632f78f83b06db6485687e814e",
       "vuil": false
     }
   },
   "mail-momenten-fr": {
     "route": "/beheer/mail-momenten",
     "app": {
-      "sha": "b366261e43d894cbc9c5b5ce39374e4e0525bb03",
+      "sha": "116216131f0ac7632f78f83b06db6485687e814e",
       "vuil": false
     }
   },
   "mail-momenten-venster-fr": {
     "route": "/beheer/mail-momenten",
     "app": {
-      "sha": "b366261e43d894cbc9c5b5ce39374e4e0525bb03",
+      "sha": "116216131f0ac7632f78f83b06db6485687e814e",
       "vuil": false
     }
   },
   "mail-momenten-termijn": {
     "route": "/beheer/mail-momenten",
     "app": {
-      "sha": "b366261e43d894cbc9c5b5ce39374e4e0525bb03",
+      "sha": "116216131f0ac7632f78f83b06db6485687e814e",
       "vuil": false
     }
   },
   "mail-momenten-termijn-fr": {
     "route": "/beheer/mail-momenten",
     "app": {
-      "sha": "b366261e43d894cbc9c5b5ce39374e4e0525bb03",
+      "sha": "116216131f0ac7632f78f83b06db6485687e814e",
       "vuil": false
     }
   },

@@ -451,6 +451,8 @@ De betrokken professionals — immokantoor, notaris, schatter of accountant. Per
 
 Met **Mailen…** op de rij van een partij schrijft u haar meteen een mail. Het mailvenster vult het adres in: dat van de contactpersoon bij de partij, anders dat op de fiche van de notaris, de schatter of het immokantoor. De mail staat in de taal van die professional, met een neutrale aanhef. Heeft de partij nergens een mailadres, dan blijft *Aan* leeg en zegt het venster waarom: u typt het adres dan zelf, of u vult het in bij de partij. De mail staat daarna bij het **mailverkeer** van het dossier.
 
+Heeft uw kantoor een [mail bij een aanstelling](../beheer/mail-momenten.md#bij-een-aanstelling) ingesteld, dan kan het aanvinken van **Aangesteld** een mail meebrengen, bijvoorbeeld een aanvraag van een schatting aan de schatter. Staat het moment op *Voorstellen*, dan opent na *Bewaren* het mailvenster, al ingevuld.
+
 ### Borgen, SSV & reducties
 
 Achter de knop **Borgen, SSV & reducties…** vindt u drie lijsten bij elkaar: borgen en kredietgevers, de schuldsaldoverzekeringen (met verzekeraar, verzekerd percentage, fiscaal en roker) en de toegekende reducties.
