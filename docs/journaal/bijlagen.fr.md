@@ -36,9 +36,14 @@ Un nom de fichier long ou une description longue se répartit sur plusieurs lign
 ## Ouvrir une pièce jointe
 
 - **Cliquez sur le nom du fichier** pour le télécharger.
-- S'il s'agit d'un **PDF**, le menu de droite propose également **Consulter** : le document s'ouvre alors dans
-  une fenêtre au sein même de CreditSoft, sans téléchargement préalable. Pour les autres types de fichiers, le
-  téléchargement est la voie à suivre.
+- Un **PDF**, une **photo** et un **e-mail** (un fichier `.eml` ou `.msg`, par exemple un e-mail enregistré depuis
+  Outlook) peuvent aussi être **consultés** sans téléchargement préalable : avec la loupe devant le nom du fichier,
+  ou avec **Consulter** dans le menu de droite. Le fichier s'ouvre dans une fenêtre au sein même de CreditSoft. Pour
+  les autres types de fichiers, le téléchargement est la voie à suivre.
+- Pour un **e-mail**, vous voyez l'expéditeur, les destinataires, la date, l'objet, le texte et les pièces jointes de
+  l'e-mail. Un PDF ou une photo joints à l'e-mail s'ouvrent dans la même fenêtre ; une autre pièce jointe est
+  téléchargée. CreditSoft ne charge pas les images qui viendraient de l'extérieur, pour que l'expéditeur ne voie pas
+  que vous avez ouvert l'e-mail. Au-dessus de l'e-mail, un message indique combien d'images ont été omises.
 
 ## Modifier ou supprimer
 

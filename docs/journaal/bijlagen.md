@@ -34,8 +34,14 @@ Een lange bestandsnaam of een lange omschrijving breekt over meerdere regels.
 ## Een bijlage openen
 
 - **Klik op de bestandsnaam** om het bestand te downloaden.
-- Is het een **PDF**, dan staat er in het menu rechts ook **Bekijken**: die opent het document in een venster
-  in CreditSoft zelf, zonder dat u het eerst moet downloaden. Voor andere bestandssoorten is downloaden de weg.
+- Een **PDF**, een **foto** en een **mail** (een `.eml`- of `.msg`-bestand, bijvoorbeeld een mail die u uit Outlook
+  opsloeg) kunt u ook **bekijken** zonder ze eerst te downloaden: met het vergrootglas vóór de bestandsnaam, of met
+  **Bekijken** in het menu rechts. Het bestand opent in een venster in CreditSoft zelf. Voor andere bestandssoorten
+  is downloaden de weg.
+- Bij een **mail** ziet u de afzender, de ontvangers, de datum, het onderwerp, de tekst en de bijlagen van de mail.
+  Een PDF of foto uit de mail opent in hetzelfde venster; een andere bijlage wordt gedownload. Beelden die van
+  buitenaf geladen zouden worden, laadt CreditSoft niet, zodat de afzender niet ziet dat u de mail opende. Boven de
+  mail staat dan hoeveel beelden er weggelaten zijn.
 
 ## Aanpassen of verwijderen
 
