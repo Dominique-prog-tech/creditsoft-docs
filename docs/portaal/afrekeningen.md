@@ -28,10 +28,10 @@ Klik bovenaan op **+ Commissie doorgeven**. In het venster dat opengaat, vult u 
 | **Gespreid over (maanden)** | Over hoeveel maanden de rest gespreid wordt. Verplicht zodra u minder dan 100 % direct uitbetaalt. |
 
 Klik op **Doorgeven**. Ontbreekt er nog iets, dan zegt het venster wat. Lukt het, dan sluit het venster en staat de
-makelaar in de tabel. Wat u zelf ontvangt, staat er ter informatie bij: de som van uw lopende commissie op dit dossier, zonder wat gestopt is. Dat is een hulpmiddel, geen grens: u beslist zelf.
+makelaar in de tabel. Wat u zelf ontvangt, staat er ter informatie bij: de commissie op het dossier maal het standaardpercentage op de fiche van uw kantoor, met de berekening ernaast, bijvoorbeeld *€ 1.117,75 (85 % van € 1.315,00)*. Het percentage van een makelaar rekent op dat bedrag. Dat is een hulpmiddel, geen grens: u beslist zelf.
 
 !!! note "Bewaard wordt het bedrag"
-    Het percentage helpt u enkel rekenen op het moment dat u doorgeeft. Wijzigt uw eigen commissie later, dan beweegt het bedrag van uw makelaar niet mee. Loopt er op het dossier geen commissie voor u, dan kunt u geen percentage invullen, maar wel een bedrag.
+    Het percentage helpt u enkel rekenen op het moment dat u doorgeeft. Wijzigt uw eigen commissie later, dan beweegt het bedrag van uw makelaar niet mee. Staat er op het dossier geen commissiebedrag, of op de fiche van uw kantoor geen standaardpercentage, dan kunt u geen percentage invullen, maar wel een bedrag. Het standaardpercentage van uw kantoor vult de backoffice in.
 
 !!! warning "De eerste boeking valt in de maand ná de startdatum"
     Zet u de startdatum op 15 januari, dan staat de eerste commissielijn op **februari**. Dat is dezelfde

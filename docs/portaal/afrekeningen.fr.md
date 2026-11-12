@@ -29,11 +29,13 @@ courtier. Cliquez en haut sur **+ Reverser une commission**. Dans la fenêtre qu
 | **Étalé sur (mois)** | Sur combien de mois le solde est réparti. Obligatoire dès que vous payez moins de 100 % immédiatement. |
 
 Cliquez sur **Reverser**. S'il manque encore quelque chose, la fenêtre l'indique. Si tout est en ordre, la fenêtre se
-ferme et le courtier figure dans le tableau. Ce que vous percevez vous-même est indiqué à titre informatif : la somme de votre
-commission en cours sur ce dossier, sans ce qui est arrêté. C'est une aide, pas une limite : la décision vous appartient.
+ferme et le courtier figure dans le tableau. Ce que vous percevez vous-même est indiqué à titre informatif : la commission
+du dossier multipliée par le pourcentage standard de la fiche de votre bureau, avec le calcul à côté, par exemple
+*€ 1.117,75 (85 % de € 1.315,00)*. Le pourcentage d'un courtier se calcule sur ce montant. C'est une aide, pas une limite :
+la décision vous appartient.
 
 !!! note "C'est le montant qui est enregistré"
-    Le pourcentage vous aide uniquement à calculer au moment où vous reversez. Si votre propre commission change par la suite, le montant de votre courtier ne suit pas. Si aucune commission n'est en cours pour vous sur le dossier, vous ne pouvez pas saisir de pourcentage, mais bien un montant.
+    Le pourcentage vous aide uniquement à calculer au moment où vous reversez. Si votre propre commission change par la suite, le montant de votre courtier ne suit pas. Si le dossier n'a pas de montant de commission, ou si la fiche de votre bureau n'a pas de pourcentage standard, vous ne pouvez pas saisir de pourcentage, mais bien un montant. Le pourcentage standard de votre bureau est rempli par le backoffice.
 
 !!! warning "La première comptabilisation tombe le mois suivant la date de début"
     Si vous indiquez le 15 janvier, la première ligne de commission se situe en **février**. C'est la même
