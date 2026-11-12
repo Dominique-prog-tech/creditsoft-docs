@@ -25,6 +25,10 @@ kantoren en medewerkers onder u. Anders ziet u enkel uw eigen dossiers.
 In dat geval staat er ook een kolom **Aanbrenger**: bij wie elk dossier hoort. Typ een naam in het zoekveld, of
 filter op die kolom, en u ziet enkel de dossiers van die aanbrenger.
 
+Werkt uw kantoor zonder productenlijst, dan staat er ook een kolom **Type krediet**, bijvoorbeeld consumentenkrediet of
+leasing. Klik op het trechtertje in die kolomkop en vink een type aan: u ziet enkel die dossiers. Met **Exporteren** krijgt u
+dan een Excel van precies die lijst, met het type erbij.
+
 Klik op een dossiernummer om het dossier te openen. Met **Ctrl-klik** (Cmd op een Mac), het muiswiel of het **pijltje** vooraan de rij opent het in een **nieuw tabblad** van uw browser; de lijst blijft staan.
 
 ## Een dossier openen

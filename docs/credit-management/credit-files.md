@@ -16,6 +16,7 @@ Per dossier ziet u wie het aanvraagt, via wie het loopt en waar het staat:
 |---|---|
 | **Dossiernr** | Het interne nummer van het dossier |
 | **Status** | Waar het dossier staat |
+| **Type krediet** | De aard van het krediet, bijvoorbeeld consumentenkrediet of leasing; enkel bij een kantoor zonder productenlijst |
 | **Kredietbedrag** | Het effectief toegekende bedrag |
 | **Aanvrager** | Alle aanvragers van het dossier, na elkaar |
 | **Aanbrenger** | De aanbrenger via wie het dossier binnenkwam |

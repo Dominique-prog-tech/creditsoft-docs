@@ -16,6 +16,7 @@ Par dossier, vous voyez qui en fait la demande, par qui il passe et où il en es
 |---|---|
 | **N° de dossier** | Le numéro interne du dossier |
 | **Statut** | Où en est le dossier |
+| **Type de crédit** | La nature du crédit, par exemple un crédit à la consommation ou un leasing ; uniquement pour un bureau sans liste de produits |
 | **Montant du crédit** | Le montant effectivement accordé |
 | **Demandeur** | Tous les demandeurs du dossier, à la suite |
 | **Apporteur** | L'apporteur par lequel le dossier est arrivé |

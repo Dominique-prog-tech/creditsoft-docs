@@ -27,6 +27,10 @@ collaborateurs qui dépendent de vous apparaissent également ici. Sinon, vous n
 Dans ce cas, une colonne **Apporteur** indique à qui appartient chaque dossier. Tapez un nom dans le champ de
 recherche, ou filtrez sur cette colonne, et vous ne voyez que les dossiers de cet apporteur.
 
+Si votre bureau travaille sans liste de produits, une colonne **Type de crédit** s'y ajoute, par exemple un crédit à la
+consommation ou un leasing. Cliquez sur l'entonnoir dans l'en-tête de cette colonne et cochez un type : vous ne voyez plus
+que ces dossiers. Avec **Exporter**, vous obtenez alors un fichier Excel de cette liste précise, avec le type.
+
 Cliquez sur un numéro de dossier pour l'ouvrir. Avec **Ctrl-clic** (Cmd sur un Mac), la molette ou la **flèche** en début de ligne, il s'ouvre dans un **nouvel onglet** de votre navigateur ; la liste reste affichée.
 
 ## Ouvrir un dossier
