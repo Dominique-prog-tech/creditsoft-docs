@@ -22,6 +22,7 @@ courtier. Cliquez en haut sur **+ Reverser une commission**. Dans la fenêtre qu
 | Champ | Signification |
 |---|---|
 | **Courtier** | La personne que vous voulez payer. La liste reprend les courtiers rattachés à votre bureau. Si le dossier est lié à l'un de vos courtiers, il est déjà sélectionné. |
+| **Déduire de cette proposition** | Apparaît si vous avez déjà reversé à quelqu'un d'autre sur ce dossier, par exemple un bureau immobilier ou d'assurances qui a apporté le client. Ce que vous cochez est déduit du montant proposé ; le calcul figure sous les champs. Si vous choisissez le courtier du dossier, tout est déjà coché. |
 | **Pourcentage de votre commission (%)** | Le pourcentage de votre propre commission sur ce dossier que ce courtier reçoit. Dès que vous quittez le champ, CreditSoft calcule le montant. Vous pouvez aussi laisser ce champ vide et saisir directement un montant. Si la fiche du courtier porte un [accord](makelaars.md#laccord), le pourcentage, la part directe et l'étalement sont déjà remplis. |
 | **Montant** | Ce que ce courtier reçoit. Si vous saisissez vous-même un montant, la fenêtre indique le pourcentage correspondant. |
 | **Date de début** | À partir de quand la comptabilisation commence. CreditSoft remplit la date de l'acte ; s'il n'y a pas encore d'acte, vous la choisissez vous-même. |
@@ -42,6 +43,20 @@ la décision vous appartient.
     règle que pour votre propre commission.
 
 Ce que vous reversez apparaît immédiatement chez le courtier sous *Mes commissions*.
+
+### Modifier ou arrêter un reversement
+
+Dans le tableau, chaque reversement en cours porte **Modifier** et **Arrêter**.
+
+- **Modifier** ouvre la même fenêtre, avec le courtier fixé. Vous adaptez le montant, la date de début, la part directe
+  ou l'étalement. Sous les champs, vous voyez à l'avance ce qui se passe : ce qui est déjà réglé reste acquis ; le reste
+  est recalculé. Si quelqu'un d'autre doit recevoir l'argent, arrêtez le reversement et reversez à nouveau.
+- **Arrêter** demande une date d'arrêt et éventuellement un motif. Ce qui est déjà réglé reste acquis. Les échéances à
+  partir du mois de la date d'arrêt qui ne sont pas encore réglées sont supprimées. Un reversement arrêté reste dans le
+  tableau, avec sa date, et n'est plus compté dans *Déjà reversé*.
+
+Si le backoffice a configuré un reversement autrement, par exemple avec des dates de paiement fixes, c'est lui qui le
+modifie ; vous pouvez toutefois l'arrêter.
 
 
 ## Décompter

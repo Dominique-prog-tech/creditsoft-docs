@@ -21,6 +21,7 @@ Klik bovenaan op **+ Commissie doorgeven**. In het venster dat opengaat, vult u 
 | Veld | Wat het betekent |
 |---|---|
 | **Makelaar** | Wie u wilt betalen. De lijst bevat de makelaars die onder uw kantoor hangen. Hangt het dossier aan een van uw makelaars, dan staat hij al gekozen. |
+| **Aftrekken van dit voorstel** | Verschijnt als u op dit dossier al aan iemand anders doorgaf, bijvoorbeeld een immo- of verzekeringskantoor dat de klant aanbracht. Wat u aanvinkt, gaat van het voorgestelde bedrag af; de berekening staat onder de velden. Kiest u de makelaar van het dossier, dan staat alles al aangevinkt. |
 | **Percentage van uw commissie (%)** | Hoeveel procent van uw eigen commissie op dit dossier die makelaar krijgt. Zodra u het veld verlaat, rekent CreditSoft het bedrag uit. U mag dit veld ook leeg laten en meteen een bedrag invullen. Staat op de fiche van de makelaar een [afspraak](makelaars.md#de-afspraak), dan staan het percentage, het direct deel en de spreiding al ingevuld. |
 | **Bedrag** | Wat die makelaar krijgt. Vult u zelf een bedrag in, dan toont het venster welk percentage dat is. |
 | **Startdatum** | Vanaf wanneer er geboekt wordt. CreditSoft vult de datum van de akte in; is er nog geen akte, dan kiest u ze zelf. |
@@ -38,6 +39,20 @@ makelaar in de tabel. Wat u zelf ontvangt, staat er ter informatie bij: de commi
     regel als bij uw eigen commissie.
 
 Wat u doorgeeft, verschijnt meteen bij de makelaar onder *Mijn commissies*.
+
+### Een doorgave wijzigen of stopzetten
+
+In de tabel staat bij elke doorgave die nog loopt **Wijzigen** en **Stopzetten**.
+
+- **Wijzigen** opent hetzelfde venster, met de makelaar vast. U past het bedrag, de startdatum, het direct deel of de
+  spreiding aan. Onder de velden ziet u vooraf wat er gebeurt: wat al afgerekend is, blijft staan; de rest wordt opnieuw
+  gerekend. Moet iemand anders het geld krijgen, zet de doorgave dan stop en geef opnieuw door.
+- **Stopzetten** vraagt een stopdatum en eventueel een reden. Wat al afgerekend is, blijft staan. De termijnen vanaf de
+  maand van de stopdatum die nog niet afgerekend zijn, vervallen. Een gestopte doorgave blijft in de tabel staan, met de
+  datum, en telt niet meer mee bij *Al doorgegeven*.
+
+Heeft de backoffice een doorgave anders ingesteld, bijvoorbeeld met vaste betalingsdata, dan wijzigt de backoffice ze;
+stopzetten kunt u wel.
 
 ## Afrekenen
 
