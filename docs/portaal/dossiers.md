@@ -48,6 +48,9 @@ dossier **Type krediet**, bijvoorbeeld consumentenkrediet of leasing.
 Mag uw kantoor dat niet, dan kunt u een dossier enkel **bekijken**, en staat dat ook bovenaan het dossier. Bijlagen opladen,
 documenten opvragen bij uw klant en commissie doorgeven aan uw makelaars kan wel.
 
+Een bijlage verwijderen of haar omschrijving aanpassen kan in het portaal niet, ook niet bij een bijlage die u zelf toevoegde.
+Staat er een verkeerd bestand bij een dossier, vraag dan aan uw kantoor om het weg te halen.
+
 Heeft uw kantoor het voor u aangezet, dan staat op de fiche ook het **Commissiebedrag**. U vult er de commissie van het
 dossier in, en uw kantoor legt dat bedrag naast de borderellen die het van de maatschappijen ontvangt. Zodra uw kantoor
 de commissie verdeeld heeft, staat naast het veld **verdeeld** en kunt u het niet meer wijzigen. Klopt het dan niet,

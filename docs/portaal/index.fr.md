@@ -48,6 +48,9 @@ simplement le dossier apparaître dans votre propre liste. Il modifie alors auss
 Sans cet interrupteur, il peut uniquement consulter les dossiers. Il peut toutefois ajouter des pièces jointes, demander des
 documents au client et transmettre une commission à ses courtiers.
 
+Un apporteur ne peut pas supprimer une pièce jointe ni modifier sa description dans le portail, même pour une pièce jointe qu'il
+a ajoutée lui-même. C'est votre bureau qui le fait dans le back-office.
+
 Avec l'interrupteur **Voit le montant de commission sur la fiche du dossier et le saisit**, l'apporteur saisit lui-même la
 commission d'un dossier, et vous comparez ce montant aux bordereaux des compagnies. Dès que vous avez réparti la commission,
 il ne peut plus la modifier. Les droits ne se transmettent pas : un courtier sous un bureau n'y a accès que si vous

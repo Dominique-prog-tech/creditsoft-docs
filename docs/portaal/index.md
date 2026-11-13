@@ -48,6 +48,9 @@ eigen lijst verschijnen. Hij wijzigt dan ook de dossiers die hij ziet en de gege
 Zonder deze schakelaar kan hij de dossiers enkel bekijken. Bijlagen opladen, documenten opvragen bij de klant en commissie
 doorgeven aan zijn makelaars kan wel.
 
+Een bijlage verwijderen of haar omschrijving aanpassen kan een aanbrenger in het portaal niet, ook niet bij een bijlage die hij
+zelf toevoegde. Dat doet uw kantoor in de backoffice.
+
 Met de schakelaar **Ziet het commissiebedrag op de dossierfiche en vult het in** vult de aanbrenger de commissie van een
 dossier zelf in, en legt u dat bedrag naast de borderellen van de maatschappijen. Zodra u de commissie verdeeld hebt, kan
 hij het niet meer wijzigen. Rechten erven niet: een makelaar onder een kantoor krijgt dit enkel als u het bij hem aanzet.

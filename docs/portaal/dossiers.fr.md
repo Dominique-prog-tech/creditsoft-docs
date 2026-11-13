@@ -50,6 +50,9 @@ figure en haut du dossier, par exemple un crédit à la consommation ou un leasi
 Sinon, vous pouvez uniquement **consulter** un dossier, et c'est indiqué en haut du dossier. Vous pouvez toutefois ajouter des
 pièces jointes, demander des documents à votre client et transmettre une commission à vos courtiers.
 
+Supprimer une pièce jointe ou modifier sa description n'est pas possible dans le portail, même pour une pièce jointe que vous
+avez ajoutée vous-même. Si un mauvais fichier figure dans un dossier, demandez à votre bureau de le retirer.
+
 Si votre bureau l'a activé pour vous, la fiche porte aussi le **Montant de commission**. Vous y saisissez la commission du
 dossier, et votre bureau compare ce montant aux bordereaux qu'il reçoit des compagnies. Dès que votre bureau a réparti la
 commission, **réparti** apparaît à côté du champ et vous ne pouvez plus le modifier. Si le montant n'est alors pas correct,
