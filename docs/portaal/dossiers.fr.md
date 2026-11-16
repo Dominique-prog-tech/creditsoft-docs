@@ -27,6 +27,9 @@ collaborateurs qui dépendent de vous apparaissent également ici. Sinon, vous n
 Dans ce cas, une colonne **Apporteur** indique à qui appartient chaque dossier. Tapez un nom dans le champ de
 recherche, ou filtrez sur cette colonne, et vous ne voyez que les dossiers de cet apporteur.
 
+Si vous remplacez un collègue, ses dossiers figurent aussi dans cette liste, avec son nom dans la colonne **En remplacement
+de**. Cochez **Uniquement les dossiers que je remplace** pour ne voir que ceux-là.
+
 Si votre bureau travaille sans liste de produits, une colonne **Type de crédit** s'y ajoute, par exemple un crédit à la
 consommation ou un leasing. Cliquez sur l'entonnoir dans l'en-tête de cette colonne et cochez un type : vous ne voyez plus
 que ces dossiers. Avec **Exporter**, vous obtenez alors un fichier Excel de cette liste précise, avec le type.
@@ -164,6 +167,12 @@ Le lien apparaît aussi à l'écran — pratique pour qui préfère le communiqu
     Si votre adresse relève du domaine de votre bureau, cela fonctionne immédiatement. Si elle relève d'un
     domaine propre ou d'une adresse générique comme Gmail, vous lisez brièvement pourquoi ce n'est pas
     possible. Votre bureau peut faire enregistrer ce domaine.
+
+## Un dossier d'un collègue que vous remplacez
+
+Une barre s'affiche alors en haut : vous traitez le dossier en remplacement de votre collègue. Vous le mettez à jour comme vos propres
+dossiers, avec les droits que votre bureau vous a donnés. Deux choses restent à votre collègue : il reste l'**apporteur**, et vous ne
+voyez pas sa **commission** ici. Votre bureau détermine la durée du remplacement ; ensuite, le dossier disparaît de votre liste.
 
 ## Retour à la liste
 

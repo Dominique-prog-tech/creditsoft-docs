@@ -70,6 +70,22 @@ In hetzelfde venster bepaalt u wat hij in het portaal ziet. Klik daarna op **Rec
 | **Documenten tonen in het portaal** | Toont hem de documenten op een dossier. |
 | **Mag zelf kredietdossiers inleiden en wijzigen** | Laat hem dossiers aanmaken en wijzigen. U kunt dit enkel geven als uw kantoor het zelf mag. |
 
+## Een collega laten vervangen
+
+Is een makelaar een tijd afwezig, bijvoorbeeld door ziekte, dan laat u een collega zijn dossiers zien en verder behandelen. De dossiers
+blijven op naam van de afwezige makelaar staan.
+
+1. Open de fiche van de afwezige makelaar.
+2. Kies onderaan bij **Vervanging** de collega bij **Vervanger**.
+3. Vul **Vanaf** in, en **Tot en met** als het einde al vaststaat. Laat u **Tot en met** leeg, dan loopt de vervanging tot u ze stopzet.
+4. Klik op **Vervanging zetten**.
+
+De vervanger ziet de dossiers van zijn collega in *Mijn dossiers*, met diens naam in de kolom **Ter vervanging van**. Hij werkt ze bij
+met zijn eigen rechten. De commissie van zijn collega ziet hij niet, en de afwezige makelaar blijft de aanbrenger. Na de einddatum
+verdwijnen de dossiers vanzelf uit zijn lijst. Met **Stopzetten** beëindigt u een vervanging eerder.
+
+U kunt enkel een collega kiezen die ook onder uw kantoor hangt.
+
 ## Veelgemaakte fouten
 
 !!! warning "Dit e-mailadres is al in gebruik"

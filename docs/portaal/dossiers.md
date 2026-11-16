@@ -25,6 +25,9 @@ kantoren en medewerkers onder u. Anders ziet u enkel uw eigen dossiers.
 In dat geval staat er ook een kolom **Aanbrenger**: bij wie elk dossier hoort. Typ een naam in het zoekveld, of
 filter op die kolom, en u ziet enkel de dossiers van die aanbrenger.
 
+Vervangt u een collega, dan staan zijn dossiers ook in deze lijst, met zijn naam in de kolom **Ter vervanging van**. Vink
+**Enkel de dossiers die ik vervang** aan om alleen die te zien.
+
 Werkt uw kantoor zonder productenlijst, dan staat er ook een kolom **Type krediet**, bijvoorbeeld consumentenkrediet of
 leasing. Klik op het trechtertje in die kolomkop en vink een type aan: u ziet enkel die dossiers. Met **Exporteren** krijgt u
 dan een Excel van precies die lijst, met het type erbij.
@@ -162,6 +165,12 @@ De link verschijnt ook op uw scherm — wie hem liever telefonisch doorgeeft, he
     Staat uw adres op het domein van uw kantoor, dan werkt het meteen. Staat het op een eigen domein of op
     een algemeen adres zoals Gmail, dan leest u in plaats van de knop kort waarom het niet kan. Uw kantoor
     kan dat domein laten registreren.
+
+## Een dossier van een collega die u vervangt
+
+Bovenaan staat dan een balk: u behandelt het dossier ter vervanging van uw collega. U werkt het bij zoals uw eigen dossiers, met de
+rechten die uw kantoor u gaf. Twee dingen blijven van uw collega: hij blijft de **aanbrenger**, en zijn **commissie** ziet u hier niet.
+Uw kantoor bepaalt hoe lang de vervanging loopt; daarna verdwijnt het dossier uit uw lijst.
 
 ## Terug naar de lijst
 

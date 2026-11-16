@@ -209,6 +209,13 @@ Per aanbrenger bepaalt u of hij het commissie-tabblad en het documenten-tabblad 
 !!! warning "Een aanbrenger ziet enkel zijn eigen gegevens"
     Het portaal is afgeschermd per aanbrenger. Een kantoor ziet de dossiers van zijn eigen medewerkers, maar nooit die van een ander kantoor.
 
+## Een vervanging zetten
+
+Hangt een aanbrenger onder een kantoor, dan staat onderaan zijn fiche het blok **Vervanging**. Daarmee laat u een andere aanbrenger
+onder hetzelfde kantoor tijdelijk zijn dossiers zien en behandelen in het portaal, bijvoorbeeld bij ziekte: kies de **Vervanger**, vul
+**Vanaf** en eventueel **Tot en met** in, en klik op **Vervanging zetten**. De vervanger ziet niets van de commissie van de afwezige, en
+de afwezige blijft de aanbrenger op zijn dossiers. Een kantoor dat zijn makelaars zelf beheert, doet hetzelfde in het portaal.
+
 ## Bewaren
 
 De knoppenbalk onderaan blijft in beeld. De knoppen staan rechts: **Bewaren**, **Portaal** en

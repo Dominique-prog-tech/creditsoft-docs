@@ -208,6 +208,14 @@ Vous déterminez par apporteur s'il voit l'onglet des commissions et celui des d
 !!! warning "Un apporteur ne voit que ses propres données"
     Le portail est cloisonné par apporteur. Un bureau voit les dossiers de ses propres collaborateurs, mais jamais ceux d'un autre bureau.
 
+## Définir un remplacement
+
+Si un apporteur dépend d'un bureau, le bloc **Remplacement** figure en bas de sa fiche. Vous y permettez à un autre apporteur du même
+bureau de voir et de traiter temporairement ses dossiers dans le portail, par exemple en cas de maladie : choisissez le **Remplaçant**,
+remplissez **À partir du** et éventuellement **Jusqu'au**, puis cliquez sur **Définir le remplacement**. Le remplaçant ne voit rien de la
+commission de l'absent, et l'absent reste l'apporteur de ses dossiers. Un bureau qui gère lui-même ses courtiers fait de même dans le
+portail.
+
 ## Enregistrer
 
 La barre de boutons du bas reste visible. Les boutons se trouvent à droite : **Enregistrer**, **Portail**

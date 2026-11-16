@@ -70,6 +70,23 @@ Dans la même fenêtre, vous déterminez ce qu'il voit dans le portail. Cliquez 
 | **Afficher les documents dans le portail** | Lui montre les documents sur un dossier. |
 | **Peut introduire et modifier lui-même des dossiers de crédit** | Lui permet de créer et de modifier des dossiers. Vous ne pouvez le donner que si votre bureau en a lui-même le droit. |
 
+## Faire remplacer un courtier par un collègue
+
+Si un courtier est absent pendant un certain temps, par exemple pour maladie, vous permettez à un collègue de voir et de continuer à
+traiter ses dossiers. Les dossiers restent au nom du courtier absent.
+
+1. Ouvrez la fiche du courtier absent.
+2. En bas, sous **Remplacement**, choisissez le collègue dans **Remplaçant**.
+3. Remplissez **À partir du**, et **Jusqu'au** si la fin est déjà connue. Si vous laissez **Jusqu'au** vide, le remplacement dure
+   jusqu'à ce que vous l'arrêtiez.
+4. Cliquez sur **Définir le remplacement**.
+
+Le remplaçant voit les dossiers de son collègue dans *Mes dossiers*, avec le nom de celui-ci dans la colonne **En remplacement de**. Il
+les traite avec ses propres droits. Il ne voit pas la commission de son collègue, et le courtier absent reste l'apporteur. Après la
+date de fin, les dossiers disparaissent d'eux-mêmes de sa liste. Avec **Arrêter**, vous mettez fin à un remplacement plus tôt.
+
+Vous ne pouvez choisir qu'un collègue qui dépend également de votre bureau.
+
 ## Erreurs fréquentes
 
 !!! warning "Cette adresse e-mail est déjà utilisée"
