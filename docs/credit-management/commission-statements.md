@@ -2,6 +2,9 @@
 
 CreditSoft rekent bij elk kredietdossier uit welke commissie uw aanbrenger toekomt, en boekt die per maand. Op dit scherm zet u de volgende stap: u **rekent af**. Per aanbrenger maakt u een borderel, drukt het af of mailt het door, en legt vast wanneer het betaald werd.
 
+!!! info "Commissie kan per kantoor uitgeschakeld zijn"
+    Gebruikt uw kantoor geen commissie, dan zet ADM dit onderdeel op uw vraag uit. De commissieschermen en de commissie op dossiers, aanbrengers en kredietinstellingen verdwijnen dan voor iedereen in uw kantoor, ook in het portaal. Er wordt niets gewist: weer aanzetten toont alles zoals het was.
+
 ## Het scherm openen
 
 Klik in het menu links op **Borderel**, onder *Krediet*.

@@ -64,6 +64,9 @@ En haut de chaque rapport figurent le nom et les coordonnées de votre **fiche d
 !!! tip "Un dossier peut donner plusieurs lignes"
     Si un dossier porte plus d'un contrat, il figure plusieurs fois dans les rapports détaillés : chaque ligne est un contrat, avec son propre montant. Le **montant de commission** appartient au dossier et ne figure donc qu'une seule fois, sur sa première ligne. Les totaux en bas comptent chaque dossier une seule fois.
 
+!!! note "Les montants de commission demandent le droit de voir les commissions"
+    Sans ce droit, le rapport **Réalisés + montant de commission** n'apparaît pas dans la bibliothèque, et les rapports *Statut par période sur la date d'encodage*, *Statut par période sur la date d'acte* et *Introduits par mois* n'affichent pas de colonne de commission. Si votre bureau n'utilise pas le module commissions, cela vaut pour tout le monde dans le bureau.
+
 ## Ouvrir un rapport directement
 
 Chaque rapport a sa propre adresse. Si vous placez dans vos favoris un rapport que vous utilisez souvent, la fenêtre s'ouvre directement sur ce rapport — sans passer par la bibliothèque.

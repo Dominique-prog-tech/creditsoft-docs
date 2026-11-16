@@ -2,6 +2,9 @@
 
 Pour chaque dossier de crédit, CreditSoft calcule la commission qui revient à votre apporteur et la comptabilise par mois. Sur cet écran, vous passez à l'étape suivante : vous **décomptez**. Par apporteur, vous créez un bordereau, vous l'imprimez ou vous l'envoyez, et vous enregistrez la date de paiement.
 
+!!! info "Les commissions peuvent être désactivées par bureau"
+    Si votre bureau n'utilise pas les commissions, ADM désactive ce module à votre demande. Les écrans de commission et la commission sur les dossiers, les apporteurs et les organismes de crédit disparaissent alors pour tout le monde dans votre bureau, aussi dans le portail. Rien n'est supprimé : le réactiver affiche tout comme avant.
+
 ## Ouvrir l'écran
 
 Dans le menu de gauche, cliquez sur **Bordereau**, sous *Crédit*.

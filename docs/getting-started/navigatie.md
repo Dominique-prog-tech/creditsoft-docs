@@ -106,6 +106,8 @@ gewone taal en krijgt een tabel terug. Zes vragen zijn voorbereid:
     Deze zes vragen lopen over precies dezelfde berekening als de rapporten onder **Lijsten**. Ze geven dus
     altijd hetzelfde getal — anders zou u niet weten welk van de twee u moet geloven.
 
+    Ook hier geldt: de commissie staat enkel in het antwoord als u het recht hebt om commissie te bekijken.
+
 ## Meerdere fiches naast elkaar
 
 Wilt u twee dossiers of fiches tegelijk open houden, open ze dan elk in een eigen **tabblad van uw browser**. Elk

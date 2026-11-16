@@ -109,6 +109,8 @@ question en langage courant et recevez un tableau. Six questions sont préparée
     Ces six questions utilisent exactement le même calcul que les rapports sous **Listes**. Elles donnent donc
     toujours le même chiffre — sinon, vous ne sauriez auquel des deux vous fier.
 
+    Ici aussi, la commission ne figure dans la réponse que si vous avez le droit de voir les commissions.
+
 ## Plusieurs fiches côte à côte
 
 Pour garder deux dossiers ou deux fiches ouverts en même temps, ouvrez-les chacun dans son propre **onglet de votre

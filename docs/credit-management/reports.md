@@ -64,6 +64,9 @@ Bovenaan elk rapport staan de naam en de gegevens uit uw **bedrijfsfiche**, met 
 !!! tip "Eén dossier kan meerdere regels geven"
     Draagt een dossier meer dan één contract, dan staat het in de detailrapporten meer dan één keer: elke regel is een contract, met zijn eigen bedrag. Het **commissiebedrag** hoort bij het dossier en staat daarom maar één keer, op de eerste regel ervan. De totalen onderaan tellen elk dossier één keer.
 
+!!! note "Commissiebedragen vragen het recht om commissie te bekijken"
+    Zonder dat recht staat het rapport **Gerealiseerd + commissiebedrag** niet in de bibliotheek, en tonen *Status periodiek op ingavedatum*, *Status periodiek op aktedatum* en *Ingediend gegroepeerd per maand* geen commissiekolom. Gebruikt uw kantoor het onderdeel commissie niet, dan geldt dat voor iedereen in het kantoor.
+
 ## Een rapport rechtstreeks openen
 
 Elk rapport heeft een eigen adres. Zet u een rapport dat u vaak gebruikt bij uw favorieten, dan opent het venster meteen op dat rapport — u hoeft niet eerst langs de bibliotheek.
