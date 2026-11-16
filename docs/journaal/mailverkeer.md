@@ -61,9 +61,10 @@ Elk bericht toont een label **Uitgaand** of **Inkomend**, het onderwerp, en daar
 **bestemmeling**. Berichten zonder onderwerp krijgen een vervangende tekst, zodat er altijd iets aanklikbaars
 staat.
 
-!!! note "Vandaag is dit uitgaand verkeer"
-    CreditSoft registreert wat het zelf verstuurt. Binnenkomende mail wordt niet opgehaald uit uw mailbox — die
-    blijft staan waar ze staat.
+!!! note "Binnenkomende mail haalt CreditSoft niet op"
+    CreditSoft registreert wat het zelf verstuurt. Binnenkomende mail wordt niet opgehaald uit uw mailbox: die
+    blijft staan waar ze staat. Een mail met het label **Inkomend** is een mail die als bestand bij deze fiche
+    bewaard is.
 
 ## Een bericht openen
 
@@ -73,6 +74,16 @@ tekst zoals ze verstuurd is. In dat venster staan drie knoppen:
 - **Afdrukken** — maakt een PDF van het bericht.
 - **Verwijderen** — haalt het uit de lijst; het gaat naar de [Prullenbak](../administration/recycle-bin.md).
 - **Sluiten**.
+
+### Een mail die als bestand bewaard is
+
+Sommige mails staan in de lijst met hun afzender, onderwerp en datum, terwijl de mail zelf als bestand in het
+archief van uw kantoor bewaard is. Opent u zo'n mail, dan haalt CreditSoft ze daaruit. Het venster zegt kort dat
+de mail geladen wordt, en toont dan de afzender, de ontvangers, de datum, de tekst en de bijlagen, zoals bij een
+mail in [Bijlagen](bijlagen.md#een-bijlage-openen). Een bijlage van zo'n mail downloadt u met een klik.
+
+Staat het bestand niet in het archief, of is het geen leesbare mail, dan zegt het venster dat. De mail blijft wel
+in de lijst staan, met haar afzender, onderwerp en datum.
 
 ## De status van een bericht
 

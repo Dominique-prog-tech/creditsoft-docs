@@ -62,9 +62,10 @@ Chaque message porte une étiquette **Sortant** ou **Entrant**, l'objet, et en d
 **destinataire**. Les messages sans objet reçoivent un texte de remplacement, afin qu'il y ait toujours quelque
 chose de cliquable.
 
-!!! note "Aujourd'hui, il s'agit de courrier sortant"
+!!! note "CreditSoft ne récupère pas le courrier entrant"
     CreditSoft enregistre ce qu'il envoie lui-même. Le courrier entrant n'est pas récupéré depuis votre boîte
-    aux lettres — il reste où il est.
+    aux lettres : il reste où il est. Un e-mail portant l'étiquette **Entrant** est un e-mail conservé sous forme
+    de fichier pour cette fiche.
 
 ## Ouvrir un message
 
@@ -74,6 +75,17 @@ texte tel qu'il a été envoyé. Cette fenêtre comporte trois boutons :
 - **Imprimer** — crée un PDF du message.
 - **Supprimer** — le retire de la liste ; il part vers la [Corbeille](../administration/recycle-bin.md).
 - **Fermer**.
+
+### Un e-mail conservé sous forme de fichier
+
+Certains e-mails figurent dans la liste avec leur expéditeur, leur objet et leur date, alors que l'e-mail lui-même
+est conservé sous forme de fichier dans l'archive de votre bureau. Lorsque vous ouvrez un tel e-mail, CreditSoft
+le récupère dans cette archive. La fenêtre indique brièvement que l'e-mail est en cours de chargement, puis affiche
+l'expéditeur, les destinataires, la date, le texte et les pièces jointes, comme pour un e-mail dans les
+[Pièces jointes](bijlagen.md#ouvrir-une-piece-jointe). Une pièce jointe d'un tel e-mail se télécharge d'un clic.
+
+Si le fichier ne se trouve pas dans l'archive, ou s'il ne s'agit pas d'un e-mail lisible, la fenêtre l'indique.
+L'e-mail reste toutefois dans la liste, avec son expéditeur, son objet et sa date.
 
 ## Le statut d'un message
 
