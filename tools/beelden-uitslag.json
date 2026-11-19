@@ -289,7 +289,7 @@
   "tweestapsverificatie": {
     "route": "/account/2fa",
     "app": {
-      "sha": "a59c62f2040229c73c3d0da01706f12d125442ec",
+      "sha": "df8ba5a5575fc5dca7de2bc0752b20ccb7c3c155",
       "vuil": false
     }
   },
@@ -905,7 +905,7 @@
   "tweestapsverificatie-fr": {
     "route": "/account/2fa",
     "app": {
-      "sha": "a59c62f2040229c73c3d0da01706f12d125442ec",
+      "sha": "df8ba5a5575fc5dca7de2bc0752b20ccb7c3c155",
       "vuil": false
     }
   },
