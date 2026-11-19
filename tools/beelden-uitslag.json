@@ -2172,15 +2172,15 @@
   "referte-indexen": {
     "route": "/beheer/referte-indexen",
     "app": {
-      "sha": "b5198381915fecc4c89b9abda63cea2a58cd0317",
-      "vuil": true
+      "sha": "a59c62f2040229c73c3d0da01706f12d125442ec",
+      "vuil": false
     }
   },
   "referte-indexen-fr": {
     "route": "/beheer/referte-indexen",
     "app": {
-      "sha": "b5198381915fecc4c89b9abda63cea2a58cd0317",
-      "vuil": true
+      "sha": "a59c62f2040229c73c3d0da01706f12d125442ec",
+      "vuil": false
     }
   },
   "kredietdossier-herziening-voorbij": {
