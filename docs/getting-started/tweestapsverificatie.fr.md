@@ -49,4 +49,6 @@ et à l'appareil sur lequel vous l'avez créée.
 
 Si vous souhaitez désactiver la vérification en deux étapes, retournez sur **avatar → Vérification en deux étapes**,
 cliquez sur **Désactiver** et confirmez avec votre mot de passe. Vos **clés d'accès sont alors supprimées** — sans
-vérification en deux étapes, vous ne pouvez plus vous connecter avec elles.
+vérification en deux étapes, vous ne pouvez plus vous connecter avec elles. Le lien avec votre application d'authentification
+et vos codes de récupération sont également supprimés. Si vous réactivez plus tard la vérification en deux étapes, vous liez à
+nouveau votre application et vous recevez de nouveaux codes de récupération.

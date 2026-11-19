@@ -49,4 +49,5 @@ het toestel waarop u hem maakte.
 
 Wilt u tweestapsverificatie weer uitzetten, ga dan opnieuw naar **avatar → Tweestapsverificatie**, klik op
 **Uitschakelen** en bevestig met uw wachtwoord. Uw **passkeys worden daarbij verwijderd** — zonder
-tweestapsverificatie kan u er niet meer mee aanmelden.
+tweestapsverificatie kan u er niet meer mee aanmelden. Ook de koppeling met uw authenticator-app en uw herstelcodes
+vervallen. Zet u tweestapsverificatie later weer aan, dan koppelt u uw app opnieuw en krijgt u nieuwe herstelcodes.
