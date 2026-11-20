@@ -876,8 +876,8 @@
     "titel": "Leads in CreditSoft: van aanvraag tot klant",
     "omschrijving": "De werklijst van uw instroom: wie er wacht en hoe lang, uit welk kanaal hij kwam, en wie hem opvolgt. Daarna de fiche van een lead: wie hij is, wat hij vraagt en waar hij staat. Dan de vijf statussen, en tot slot een lead die klant geworden is, met de doorverwijzing naar zijn relatiefiche.",
     "hash": "a0f68c76e18f1b68",
-    "guid": "836767c8-8f16-4077-9236-abe0e8574500",
-    "vorigeGuid": "d28ff101-ebfc-4784-be36-f79f82f13175",
+    "guid": "3e63eff9-5911-45dd-9e13-6515d656b9cb",
+    "vorigeGuid": "836767c8-8f16-4077-9236-abe0e8574500",
     "hoofdstukken": [
       {
         "titel": "De werklijst",
@@ -930,12 +930,14 @@
         "eind": 133.85
       }
     ],
-    "gepubliceerdOp": "2026-11-09T12:15:38.36",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/836767c8-8f16-4077-9236-abe0e8574500/thumbnail.jpg",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/836767c8-8f16-4077-9236-abe0e8574500",
+    "gepubliceerdOp": "2026-11-20T17:06:05.582",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/3e63eff9-5911-45dd-9e13-6515d656b9cb/thumbnail.jpg",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/3e63eff9-5911-45dd-9e13-6515d656b9cb",
     "opTeRuimen": [
-      "334da821-0176-4a76-87c5-8a93965f531e"
-    ]
+      "334da821-0176-4a76-87c5-8a93965f531e",
+      "d28ff101-ebfc-4784-be36-f79f82f13175"
+    ],
+    "gepubliceerdeHash": "a0f68c76e18f1b68"
   },
   "leads-fr": {
     "film": "leads",
@@ -953,8 +955,8 @@
     "titel": "Les leads dans CreditSoft : de la demande au client",
     "omschrijving": "La liste de travail de vos demandes entrantes : qui attend et depuis combien de temps, de quel canal il provient, et qui le suit. Ensuite la fiche d’un lead : qui il est, ce qu’il demande et où il en est. Puis les cinq statuts, et pour finir un lead devenu client, avec le renvoi vers sa fiche.",
     "hash": "f1ee7e577747fe4d",
-    "guid": "65b06f1b-a1a7-4d85-b65b-3cb9ce1f15a9",
-    "vorigeGuid": "fcac94bb-9d88-4591-9b6d-24373937aa06",
+    "guid": "c3d05388-f0e2-483f-a7c2-82873770e4be",
+    "vorigeGuid": "65b06f1b-a1a7-4d85-b65b-3cb9ce1f15a9",
     "hoofdstukken": [
       {
         "titel": "La liste de travail",
@@ -1007,12 +1009,14 @@
         "eind": 133.33
       }
     ],
-    "gepubliceerdOp": "2026-11-09T12:16:16.464",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/65b06f1b-a1a7-4d85-b65b-3cb9ce1f15a9/thumbnail.jpg",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/65b06f1b-a1a7-4d85-b65b-3cb9ce1f15a9",
+    "gepubliceerdOp": "2026-11-20T17:11:50.571",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/c3d05388-f0e2-483f-a7c2-82873770e4be/thumbnail.jpg",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/c3d05388-f0e2-483f-a7c2-82873770e4be",
     "opTeRuimen": [
-      "9e7e3ca9-edd5-4b1a-861d-a8bbd74e8b9e"
-    ]
+      "9e7e3ca9-edd5-4b1a-861d-a8bbd74e8b9e",
+      "fcac94bb-9d88-4591-9b6d-24373937aa06"
+    ],
+    "gepubliceerdeHash": "f1ee7e577747fe4d"
   },
   "documentketen-nl": {
     "film": "documentketen",
@@ -1827,8 +1831,8 @@
     "titel": "Verzekeringen: het overzicht en uw verzekeraars",
     "omschrijving": "Alle schuldsaldoverzekeringen bij uw dossiers op één lijst: kiezen wat u wil zien met de drie filters bovenaan, en de kolommen die ertoe doen, zoals wie er verzekerd is, of de polis nog voorlopig is en of de aanvraaglink vertrokken is. Verder het verschil tussen de status van de polis en die van het dossier, de lijst afdrukken of exporteren, en de fiches van uw verzekeraars.",
     "hash": "7231f312fdbba471",
-    "guid": "cc139c29-09b7-4565-987f-1259bbadaf02",
-    "vorigeGuid": "e1c4d303-7486-4013-a7f6-0baa8fc11679",
+    "guid": "60e82524-64d1-4059-b9f6-6941fa17eb07",
+    "vorigeGuid": "cc139c29-09b7-4565-987f-1259bbadaf02",
     "hoofdstukken": [
       {
         "titel": "Alle polissen samen",
@@ -1876,13 +1880,15 @@
         "eind": 132.41
       }
     ],
-    "gepubliceerdOp": "2026-11-20T15:22:12.742",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/cc139c29-09b7-4565-987f-1259bbadaf02/thumbnail.jpg",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/cc139c29-09b7-4565-987f-1259bbadaf02",
+    "gepubliceerdOp": "2026-11-20T17:16:34.129",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/60e82524-64d1-4059-b9f6-6941fa17eb07/thumbnail.jpg",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/60e82524-64d1-4059-b9f6-6941fa17eb07",
     "opTeRuimen": [
       "4ce1d0c5-c72f-4c4e-bcd0-bb32adc13078",
-      "5ca7d27d-75cb-4155-aac0-09d6f56d5d35"
-    ]
+      "5ca7d27d-75cb-4155-aac0-09d6f56d5d35",
+      "e1c4d303-7486-4013-a7f6-0baa8fc11679"
+    ],
+    "gepubliceerdeHash": "7231f312fdbba471"
   },
   "verzekeringen-fr": {
     "film": "verzekeringen",
@@ -1901,8 +1907,8 @@
     "titel": "Assurances : l’aperçu et vos assureurs",
     "omschrijving": "Toutes les assurances solde restant dû de vos dossiers sur une seule liste : choisir ce que vous voulez voir avec les trois filtres du haut, et les colonnes qui comptent, comme qui est assuré, si la police est encore provisoire et si le lien de demande est parti. Ensuite la différence entre le statut de la police et celui du dossier, imprimer ou exporter la liste, et les fiches de vos assureurs.",
     "hash": "b262375c68b85143",
-    "guid": "a0460f82-9464-41a4-9ee3-c0392797af00",
-    "vorigeGuid": "25a74900-8e8e-4575-a67d-8badbad8f1c5",
+    "guid": "88da9bac-578a-43fc-a596-ed9f7b82f5a1",
+    "vorigeGuid": "a0460f82-9464-41a4-9ee3-c0392797af00",
     "hoofdstukken": [
       {
         "titel": "Toutes les polices ensemble",
@@ -1950,13 +1956,15 @@
         "eind": 124.13
       }
     ],
-    "gepubliceerdOp": "2026-11-20T15:24:42.679",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/a0460f82-9464-41a4-9ee3-c0392797af00/thumbnail.jpg",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/a0460f82-9464-41a4-9ee3-c0392797af00",
+    "gepubliceerdOp": "2026-11-20T17:20:21.148",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/88da9bac-578a-43fc-a596-ed9f7b82f5a1/thumbnail.jpg",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/88da9bac-578a-43fc-a596-ed9f7b82f5a1",
     "opTeRuimen": [
       "8e9aee19-7604-494e-ade9-388bd3c6572e",
-      "0072f8d0-1924-4a32-857f-a348bbb1b77a"
-    ]
+      "0072f8d0-1924-4a32-857f-a348bbb1b77a",
+      "25a74900-8e8e-4575-a67d-8badbad8f1c5"
+    ],
+    "gepubliceerdeHash": "b262375c68b85143"
   },
   "dashboard-nl": {
     "film": "dashboard",
@@ -3029,8 +3037,8 @@
     "titel": "Leads in CreditSoft: van aanvraag tot klant",
     "omschrijving": "Iedereen die zich meldt op één werklijst, met hoe lang hij wacht en via welk kanaal hij binnenkwam. Per lead ziet u wat hij vraagt en wie hem opvolgt, tot hij klant wordt.",
     "hash": "1346184757aed050",
-    "guid": "dc444df5-825e-41d5-92dd-9a27454d9077",
-    "vorigeGuid": "3e42b28f-a453-4798-8163-4155151ed53b",
+    "guid": "1a1bafd2-0d77-46c3-a964-33200d06b064",
+    "vorigeGuid": "dc444df5-825e-41d5-92dd-9a27454d9077",
     "hoofdstukken": [
       {
         "titel": "De werklijst",
@@ -3058,12 +3066,14 @@
         "eind": 38.57
       }
     ],
-    "gepubliceerdOp": "2026-11-09T13:36:42.539",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/dc444df5-825e-41d5-92dd-9a27454d9077/thumbnail.jpg",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/dc444df5-825e-41d5-92dd-9a27454d9077",
+    "gepubliceerdOp": "2026-11-20T17:23:57.305",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/1a1bafd2-0d77-46c3-a964-33200d06b064/thumbnail.jpg",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/1a1bafd2-0d77-46c3-a964-33200d06b064",
     "opTeRuimen": [
-      "5d6e4c5c-d1c5-4161-bb23-153ff30f78f7"
-    ]
+      "5d6e4c5c-d1c5-4161-bb23-153ff30f78f7",
+      "3e42b28f-a453-4798-8163-4155151ed53b"
+    ],
+    "gepubliceerdeHash": "1346184757aed050"
   },
   "leads-website-fr": {
     "film": "leads",
@@ -3081,8 +3091,8 @@
     "titel": "Les leads dans CreditSoft : de la demande au client",
     "omschrijving": "Toute demande entrante sur une seule liste, avec son temps d’attente et son canal d’arrivée. Pour chaque lead : ce qu’il demande et qui le suit, jusqu’à ce qu’il devienne client.",
     "hash": "0351665e1d8ddb27",
-    "guid": "ae994439-58c2-421c-888d-50a27e59e6ee",
-    "vorigeGuid": "7c5888de-18ed-4a70-b6e3-c5f73e9cbda3",
+    "guid": "547eaf23-f98c-4c73-ba38-ed3440e0b6a7",
+    "vorigeGuid": "ae994439-58c2-421c-888d-50a27e59e6ee",
     "hoofdstukken": [
       {
         "titel": "La liste de travail",
@@ -3110,12 +3120,14 @@
         "eind": 39.18
       }
     ],
-    "gepubliceerdOp": "2026-11-09T13:37:24.179",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/ae994439-58c2-421c-888d-50a27e59e6ee/thumbnail.jpg",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/ae994439-58c2-421c-888d-50a27e59e6ee",
+    "gepubliceerdOp": "2026-11-20T17:27:06.397",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/547eaf23-f98c-4c73-ba38-ed3440e0b6a7/thumbnail.jpg",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/547eaf23-f98c-4c73-ba38-ed3440e0b6a7",
     "opTeRuimen": [
-      "c195357a-24ff-4357-a64f-4590a89df40e"
-    ]
+      "c195357a-24ff-4357-a64f-4590a89df40e",
+      "7c5888de-18ed-4a70-b6e3-c5f73e9cbda3"
+    ],
+    "gepubliceerdeHash": "0351665e1d8ddb27"
   },
   "leads-website-en": {
     "film": "leads",
@@ -3133,8 +3145,8 @@
     "titel": "Leads in CreditSoft: from enquiry to client",
     "omschrijving": "Everyone who gets in touch on one worklist, with how long they have waited and which channel they came through. Per lead: what they ask and who follows up, until they become a client.",
     "hash": "eddcbf7e0bdd7cb8",
-    "guid": "fd958ce2-f67c-4797-84f2-57223dcc067e",
-    "vorigeGuid": "369f9a83-4c02-40dc-a389-d10cbfe71fe5",
+    "guid": "66dd6aff-b485-4cf7-b3c4-a095f081db49",
+    "vorigeGuid": "fd958ce2-f67c-4797-84f2-57223dcc067e",
     "hoofdstukken": [
       {
         "titel": "The worklist",
@@ -3162,12 +3174,14 @@
         "eind": 39.38
       }
     ],
-    "gepubliceerdOp": "2026-11-09T13:38:10.983",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/fd958ce2-f67c-4797-84f2-57223dcc067e/thumbnail.jpg",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/fd958ce2-f67c-4797-84f2-57223dcc067e",
+    "gepubliceerdOp": "2026-11-20T17:30:25.663",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/66dd6aff-b485-4cf7-b3c4-a095f081db49/thumbnail.jpg",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/66dd6aff-b485-4cf7-b3c4-a095f081db49",
     "opTeRuimen": [
-      "a9f6a1b8-59ae-46d9-9aa5-32bc9be6f5fd"
-    ]
+      "a9f6a1b8-59ae-46d9-9aa5-32bc9be6f5fd",
+      "369f9a83-4c02-40dc-a389-d10cbfe71fe5"
+    ],
+    "gepubliceerdeHash": "eddcbf7e0bdd7cb8"
   },
   "adviesdossier-nl": {
     "film": "adviesdossier",
@@ -3186,7 +3200,7 @@
     "titel": "Het adviesdossier in CreditSoft: vastleggen wat u voorstelde",
     "omschrijving": "Per kredietdossier legt u vast of u advies geeft en op welke basis, wat de klant u vertelde, welke kredieten u naast elkaar legde en waarom u er één voorstelt. Uw klant krijgt een afschrift in zijn taal, als kredietvergelijking, en CreditSoft houdt bij hoe en wanneer hij het kreeg.",
     "hash": "fb1de07c7572bcd9",
-    "guid": "220f4916-8911-4345-834e-7f4f9d6371df",
+    "guid": "b11d5042-47e9-49ff-83c8-1cd5cf169a31",
     "hoofdstukken": [
       {
         "titel": "Het tabblad Advies",
@@ -3244,14 +3258,16 @@
         "eind": 159.88
       }
     ],
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/220f4916-8911-4345-834e-7f4f9d6371df/thumbnail.jpg",
-    "gepubliceerdOp": "2026-11-20T15:41:39.9",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/220f4916-8911-4345-834e-7f4f9d6371df",
-    "vorigeGuid": "21cd24e3-73ed-44ce-ad8c-7f4ecfd088eb",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/b11d5042-47e9-49ff-83c8-1cd5cf169a31/thumbnail.jpg",
+    "gepubliceerdOp": "2026-11-20T17:33:50.536",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/b11d5042-47e9-49ff-83c8-1cd5cf169a31",
+    "vorigeGuid": "220f4916-8911-4345-834e-7f4f9d6371df",
     "opTeRuimen": [
       "b53b2eae-8cda-4ddb-906d-efd0b42710b2",
-      "3b0b78c4-b086-4c63-bcad-6646c18b022f"
-    ]
+      "3b0b78c4-b086-4c63-bcad-6646c18b022f",
+      "21cd24e3-73ed-44ce-ad8c-7f4ecfd088eb"
+    ],
+    "gepubliceerdeHash": "fb1de07c7572bcd9"
   },
   "adviesdossier-fr": {
     "film": "adviesdossier",
@@ -3270,7 +3286,7 @@
     "titel": "Le dossier de conseil dans CreditSoft : garder ce que vous avez proposé",
     "omschrijving": "Pour chaque dossier de crédit, vous indiquez si vous donnez un conseil et sur quelle base, ce que le client vous a dit, quels crédits vous avez comparés et pourquoi vous en proposez un. Votre client reçoit une copie dans sa langue, sous forme de comparaison de crédits, et CreditSoft garde comment et quand il l’a reçue.",
     "hash": "a475261cd649890a",
-    "guid": "25671168-77e2-4b7a-aca2-35c5032e0c56",
+    "guid": "aaa803c5-a807-4cb2-af54-9b6ceb1fca1b",
     "hoofdstukken": [
       {
         "titel": "L’onglet Conseil",
@@ -3328,14 +3344,16 @@
         "eind": 147.6
       }
     ],
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/25671168-77e2-4b7a-aca2-35c5032e0c56/thumbnail.jpg",
-    "gepubliceerdOp": "2026-11-20T15:42:03.296",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/25671168-77e2-4b7a-aca2-35c5032e0c56",
-    "vorigeGuid": "46b6c226-9ef6-4729-b3a3-d55865390061",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/aaa803c5-a807-4cb2-af54-9b6ceb1fca1b/thumbnail.jpg",
+    "gepubliceerdOp": "2026-11-20T17:37:13.686",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/aaa803c5-a807-4cb2-af54-9b6ceb1fca1b",
+    "vorigeGuid": "25671168-77e2-4b7a-aca2-35c5032e0c56",
     "opTeRuimen": [
       "15d20cd0-9c60-44ed-8e0e-276ccae0908d",
-      "24678914-035c-4e48-aff6-0658a1151398"
-    ]
+      "24678914-035c-4e48-aff6-0658a1151398",
+      "46b6c226-9ef6-4729-b3a3-d55865390061"
+    ],
+    "gepubliceerdeHash": "a475261cd649890a"
   },
   "adviesdossier-website-nl": {
     "film": "adviesdossier",
