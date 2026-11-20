@@ -254,6 +254,8 @@ plugins:
 
 extra:
   generator: false
+  # De Bunny-library van CreditSoft, voor de filmhook: zonder faalt de bouw (er is bewust geen standaard).
+  bunny_library: "741183"
 
 # Een dode link of een dood anker laat de bouw FALEN in plaats van online te komen: de uitrol bouwt met --strict
 # (.github/workflows/deploy.yml), en dan telt elke waarschuwing hieronder als een fout.
@@ -269,7 +271,10 @@ validation:
     absolute_links: warn
 
 hooks:
-  - hooks/films.py
+  # De filmspeler en het VideoObject op elke filmpagina, en de lijst op videos.md. Sinds 20/11/2026 de gedeelde hook van de
+  # filmmotor (adm-appkit/tools/filmgenerator/films_hook.py), met de tabel tools/films-uitslag.json van DEZE repo en het
+  # library-nummer uit `extra: bunny_library` hieronder. Was hooks/films.py, onze eigen kopie.
+  - _appkit/tools/filmgenerator/films_hook.py
   # Eigen omschrijving per pagina voor zoekmachines — zie het bestand zelf (24/09/2026).
   - hooks/beschrijving.py
   # Zoeken per taal (07/11/2026): de Nederlandse pagina's zoeken enkel in het Nederlands, de Franse enkel in het Frans.
@@ -280,7 +285,7 @@ hooks:
 
 nav:
   - Home: index.md
-  # Eén overzicht van alle films. De LIJST wordt gegenereerd door hooks/films.py uit
+  # Eén overzicht van alle films. De LIJST wordt gegenereerd door de filmhook (films_hook.py) uit
   # tools/films-uitslag.json — met de hand bijhouden zou betekenen dat hij stil veroudert zodra
   # er een film bij komt, en precies dat gebeurt bij elke lijst die niemand hoeft bij te werken.
   - "Video's": videos.md
