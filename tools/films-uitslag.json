@@ -864,13 +864,13 @@
     "film": "leads",
     "taal": "nl-BE",
     "pagina": "crm/leads",
-    "lengte": 135.82,
+    "lengte": 136.03,
     "uitvoering": "handleiding",
     "routes": [
       "/crm/leads"
     ],
     "app": {
-      "sha": "4a84aa8def9da015f97e3f273f3bfe1e32adbbe3",
+      "sha": "801e287c9d3450341383f553289ced0c7ca14d78",
       "vuil": false
     },
     "titel": "Leads in CreditSoft: van aanvraag tot klant",
@@ -881,59 +881,58 @@
     "hoofdstukken": [
       {
         "titel": "De werklijst",
-        "start": 3.83,
-        "eind": 12.65
+        "start": 3.98,
+        "eind": 12.81
       },
       {
         "titel": "Hoe lang iemand wacht",
-        "start": 16.34,
-        "eind": 24.56
+        "start": 16.5,
+        "eind": 24.72
       },
       {
         "titel": "Wie volgt hem op",
-        "start": 28.22,
-        "eind": 35.42
+        "start": 28.39,
+        "eind": 35.58
       },
       {
         "titel": "Waar hij vandaan komt",
-        "start": 39.09,
-        "eind": 49.45
+        "start": 39.25,
+        "eind": 49.61
       },
       {
         "titel": "De fiche van een lead",
-        "start": 53.97,
-        "eind": 64.65
+        "start": 54.12,
+        "eind": 64.8
       },
       {
         "titel": "Wat hij vraagt",
-        "start": 68.52,
-        "eind": 77.2
+        "start": 68.67,
+        "eind": 77.36
       },
       {
         "titel": "De opvolging",
-        "start": 81.09,
-        "eind": 88.19
+        "start": 81.22,
+        "eind": 88.33
       },
       {
         "titel": "De vijf statussen",
-        "start": 94.7,
-        "eind": 107.71
+        "start": 94.9,
+        "eind": 107.9
       },
       {
         "titel": "Van lead naar klant",
-        "start": 112.36,
-        "eind": 122.62
+        "start": 112.55,
+        "eind": 122.81
       },
       {
         "titel": "Tot slot",
-        "start": 125.33,
-        "eind": 133.32
+        "start": 125.53,
+        "eind": 133.52
       }
     ],
     "gepubliceerdOp": "2026-11-09T12:15:38.36",
     "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/836767c8-8f16-4077-9236-abe0e8574500/thumbnail.jpg",
     "embed": "https://iframe.mediadelivery.net/embed/741183/836767c8-8f16-4077-9236-abe0e8574500",
-    "gepubliceerdeHash": "a0f68c76e18f1b68",
     "opTeRuimen": [
       "334da821-0176-4a76-87c5-8a93965f531e"
     ]
@@ -942,13 +941,13 @@
     "film": "leads",
     "taal": "fr-BE",
     "pagina": "crm/leads",
-    "lengte": 135.64,
+    "lengte": 135.95,
     "uitvoering": "handleiding",
     "routes": [
       "/crm/leads"
     ],
     "app": {
-      "sha": "4a84aa8def9da015f97e3f273f3bfe1e32adbbe3",
+      "sha": "801e287c9d3450341383f553289ced0c7ca14d78",
       "vuil": false
     },
     "titel": "Les leads dans CreditSoft : de la demande au client",
@@ -959,59 +958,58 @@
     "hoofdstukken": [
       {
         "titel": "La liste de travail",
-        "start": 3.81,
-        "eind": 12.63
+        "start": 3.89,
+        "eind": 12.71
       },
       {
         "titel": "Depuis combien de temps on attend",
-        "start": 16.33,
-        "eind": 24.69
+        "start": 16.43,
+        "eind": 24.79
       },
       {
         "titel": "Qui assure le suivi",
-        "start": 28.36,
-        "eind": 35.42
+        "start": 28.47,
+        "eind": 35.53
       },
       {
         "titel": "D’où il provient",
-        "start": 39.08,
-        "eind": 51.39
+        "start": 39.19,
+        "eind": 51.5
       },
       {
         "titel": "La fiche d’un lead",
-        "start": 55.93,
-        "eind": 67.07
+        "start": 56.07,
+        "eind": 67.22
       },
       {
         "titel": "Ce qu’il demande",
-        "start": 70.94,
-        "eind": 80.37
+        "start": 71.08,
+        "eind": 80.51
       },
       {
         "titel": "Le suivi",
-        "start": 84.24,
-        "eind": 90.51
+        "start": 84.38,
+        "eind": 90.65
       },
       {
         "titel": "Les cinq statuts",
-        "start": 97.03,
-        "eind": 108.69
+        "start": 97.35,
+        "eind": 109
       },
       {
         "titel": "Du lead au client",
-        "start": 113.33,
-        "eind": 122.67
+        "start": 113.65,
+        "eind": 122.99
       },
       {
         "titel": "Pour conclure",
-        "start": 125.38,
-        "eind": 133.14
+        "start": 125.7,
+        "eind": 133.45
       }
     ],
     "gepubliceerdOp": "2026-11-09T12:16:16.464",
     "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/65b06f1b-a1a7-4d85-b65b-3cb9ce1f15a9/thumbnail.jpg",
     "embed": "https://iframe.mediadelivery.net/embed/741183/65b06f1b-a1a7-4d85-b65b-3cb9ce1f15a9",
-    "gepubliceerdeHash": "f1ee7e577747fe4d",
     "opTeRuimen": [
       "9e7e3ca9-edd5-4b1a-861d-a8bbd74e8b9e"
     ]
@@ -3021,13 +3019,13 @@
     "film": "leads",
     "taal": "nl-BE",
     "pagina": "crm/leads",
-    "lengte": 41.56,
+    "lengte": 41.72,
     "uitvoering": "website",
     "routes": [
       "/crm/leads"
     ],
     "app": {
-      "sha": "4a84aa8def9da015f97e3f273f3bfe1e32adbbe3",
+      "sha": "801e287c9d3450341383f553289ced0c7ca14d78",
       "vuil": false
     },
     "titel": "Leads in CreditSoft: van aanvraag tot klant",
@@ -3043,8 +3041,8 @@
       },
       {
         "titel": "Waar hij vandaan komt",
-        "start": 10.48,
-        "eind": 13.08
+        "start": 10.49,
+        "eind": 13.09
       },
       {
         "titel": "De fiche van een lead",
@@ -3053,19 +3051,18 @@
       },
       {
         "titel": "De vijf statussen",
-        "start": 27.23,
-        "eind": 30.87
+        "start": 27.24,
+        "eind": 30.88
       },
       {
         "titel": "Van lead naar klant",
-        "start": 35.52,
-        "eind": 38.52
+        "start": 35.55,
+        "eind": 38.55
       }
     ],
     "gepubliceerdOp": "2026-11-09T13:36:42.539",
     "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/dc444df5-825e-41d5-92dd-9a27454d9077/thumbnail.jpg",
     "embed": "https://iframe.mediadelivery.net/embed/741183/dc444df5-825e-41d5-92dd-9a27454d9077",
-    "gepubliceerdeHash": "1346184757aed050",
     "opTeRuimen": [
       "5d6e4c5c-d1c5-4161-bb23-153ff30f78f7"
     ]
@@ -3074,13 +3071,13 @@
     "film": "leads",
     "taal": "fr-BE",
     "pagina": "crm/leads",
-    "lengte": 42.36,
+    "lengte": 42.8,
     "uitvoering": "website",
     "routes": [
       "/crm/leads"
     ],
     "app": {
-      "sha": "4a84aa8def9da015f97e3f273f3bfe1e32adbbe3",
+      "sha": "801e287c9d3450341383f553289ced0c7ca14d78",
       "vuil": false
     },
     "titel": "Les leads dans CreditSoft : de la demande au client",
@@ -3092,7 +3089,7 @@
       {
         "titel": "La liste de travail",
         "start": 3.8,
-        "eind": 6.94
+        "eind": 6.95
       },
       {
         "titel": "D’où il provient",
@@ -3106,19 +3103,18 @@
       },
       {
         "titel": "Les cinq statuts",
-        "start": 27.27,
-        "eind": 31.56
+        "start": 27.69,
+        "eind": 31.97
       },
       {
         "titel": "Du lead au client",
-        "start": 36.22,
-        "eind": 39.15
+        "start": 36.63,
+        "eind": 39.56
       }
     ],
     "gepubliceerdOp": "2026-11-09T13:37:24.179",
     "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/ae994439-58c2-421c-888d-50a27e59e6ee/thumbnail.jpg",
     "embed": "https://iframe.mediadelivery.net/embed/741183/ae994439-58c2-421c-888d-50a27e59e6ee",
-    "gepubliceerdeHash": "0351665e1d8ddb27",
     "opTeRuimen": [
       "c195357a-24ff-4357-a64f-4590a89df40e"
     ]
@@ -3127,13 +3123,13 @@
     "film": "leads",
     "taal": "nl-BE",
     "pagina": "crm/leads",
-    "lengte": 42.64,
+    "lengte": 42.68,
     "uitvoering": "website",
     "routes": [
       "/crm/leads"
     ],
     "app": {
-      "sha": "4a84aa8def9da015f97e3f273f3bfe1e32adbbe3",
+      "sha": "801e287c9d3450341383f553289ced0c7ca14d78",
       "vuil": false
     },
     "titel": "Leads in CreditSoft: from enquiry to client",
@@ -3144,34 +3140,33 @@
     "hoofdstukken": [
       {
         "titel": "The worklist",
-        "start": 3.81,
-        "eind": 6.95
+        "start": 3.83,
+        "eind": 6.97
       },
       {
         "titel": "Where they came from",
-        "start": 10.67,
-        "eind": 13.45
+        "start": 10.7,
+        "eind": 13.49
       },
       {
         "titel": "The lead’s record",
-        "start": 17.98,
-        "eind": 21.2
+        "start": 18.02,
+        "eind": 21.23
       },
       {
         "titel": "The five statuses",
-        "start": 27.68,
-        "eind": 31.82
+        "start": 27.73,
+        "eind": 31.87
       },
       {
         "titel": "From lead to client",
-        "start": 36.47,
-        "eind": 39.4
+        "start": 36.52,
+        "eind": 39.45
       }
     ],
     "gepubliceerdOp": "2026-11-09T13:38:10.983",
     "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/fd958ce2-f67c-4797-84f2-57223dcc067e/thumbnail.jpg",
     "embed": "https://iframe.mediadelivery.net/embed/741183/fd958ce2-f67c-4797-84f2-57223dcc067e",
-    "gepubliceerdeHash": "eddcbf7e0bdd7cb8",
     "opTeRuimen": [
       "a9f6a1b8-59ae-46d9-9aa5-32bc9be6f5fd"
     ]
