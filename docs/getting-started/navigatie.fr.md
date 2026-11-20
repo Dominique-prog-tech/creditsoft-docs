@@ -93,6 +93,8 @@ lacune du manuel, non un manque de l'application. Faites-le-nous savoir via le b
     ADM One. À défaut, ce panneau n'existe pas et rien ne change pour vous. L'assistant d'aide ci-dessus
     fonctionne toujours : il utilise notre clé centrale.
 
+    Et cet assistant n'apparaît que pour qui peut consulter les dossiers de crédit : toutes les questions portent sur des dossiers.
+
 Là où l'assistant d'aide puise dans le manuel, celui-ci consulte **vos propres dossiers**. Vous posez votre
 question en langage courant et recevez un tableau. Six questions sont préparées :
 

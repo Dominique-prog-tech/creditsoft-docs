@@ -90,6 +90,8 @@ handleiding, geen gebrek aan de toepassing. Laat het ons weten via de feedback-k
     AI-sleutel heeft ingesteld. Staat die er niet, dan bestaat deze lade niet en verandert er niets voor u.
     De hulp-assistent hierboven werkt wél altijd — die loopt op onze centrale sleutel.
 
+    En de assistent verschijnt enkel voor wie kredietdossiers mag bekijken: alle vragen gaan over dossiers.
+
 Waar de hulp-assistent uit de handleiding put, kijkt deze naar **uw eigen dossiers**. U stelt uw vraag in
 gewone taal en krijgt een tabel terug. Zes vragen zijn voorbereid:
 
