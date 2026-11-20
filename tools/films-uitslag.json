@@ -864,13 +864,13 @@
     "film": "leads",
     "taal": "nl-BE",
     "pagina": "crm/leads",
-    "lengte": 136.03,
+    "lengte": 136.36,
     "uitvoering": "handleiding",
     "routes": [
       "/crm/leads"
     ],
     "app": {
-      "sha": "801e287c9d3450341383f553289ced0c7ca14d78",
+      "sha": "54c8b8c543e4590a3c17b92a735eb4252e3cd7cc",
       "vuil": false
     },
     "titel": "Leads in CreditSoft: van aanvraag tot klant",
@@ -881,53 +881,53 @@
     "hoofdstukken": [
       {
         "titel": "De werklijst",
-        "start": 3.98,
-        "eind": 12.81
+        "start": 4.08,
+        "eind": 12.91
       },
       {
         "titel": "Hoe lang iemand wacht",
-        "start": 16.5,
-        "eind": 24.72
+        "start": 16.68,
+        "eind": 24.9
       },
       {
         "titel": "Wie volgt hem op",
-        "start": 28.39,
-        "eind": 35.58
+        "start": 28.59,
+        "eind": 35.79
       },
       {
         "titel": "Waar hij vandaan komt",
-        "start": 39.25,
-        "eind": 49.61
+        "start": 39.46,
+        "eind": 49.82
       },
       {
         "titel": "De fiche van een lead",
-        "start": 54.12,
-        "eind": 64.8
+        "start": 54.32,
+        "eind": 65
       },
       {
         "titel": "Wat hij vraagt",
-        "start": 68.67,
-        "eind": 77.36
+        "start": 68.89,
+        "eind": 77.57
       },
       {
         "titel": "De opvolging",
-        "start": 81.22,
-        "eind": 88.33
+        "start": 81.43,
+        "eind": 88.54
       },
       {
         "titel": "De vijf statussen",
-        "start": 94.9,
-        "eind": 107.9
+        "start": 95.22,
+        "eind": 108.23
       },
       {
         "titel": "Van lead naar klant",
-        "start": 112.55,
-        "eind": 122.81
+        "start": 112.87,
+        "eind": 123.14
       },
       {
         "titel": "Tot slot",
-        "start": 125.53,
-        "eind": 133.52
+        "start": 125.87,
+        "eind": 133.85
       }
     ],
     "gepubliceerdOp": "2026-11-09T12:15:38.36",
@@ -941,13 +941,13 @@
     "film": "leads",
     "taal": "fr-BE",
     "pagina": "crm/leads",
-    "lengte": 135.95,
+    "lengte": 135.83,
     "uitvoering": "handleiding",
     "routes": [
       "/crm/leads"
     ],
     "app": {
-      "sha": "801e287c9d3450341383f553289ced0c7ca14d78",
+      "sha": "54c8b8c543e4590a3c17b92a735eb4252e3cd7cc",
       "vuil": false
     },
     "titel": "Les leads dans CreditSoft : de la demande au client",
@@ -958,53 +958,53 @@
     "hoofdstukken": [
       {
         "titel": "La liste de travail",
-        "start": 3.89,
-        "eind": 12.71
+        "start": 3.83,
+        "eind": 12.65
       },
       {
         "titel": "Depuis combien de temps on attend",
-        "start": 16.43,
-        "eind": 24.79
+        "start": 16.35,
+        "eind": 24.71
       },
       {
         "titel": "Qui assure le suivi",
-        "start": 28.47,
-        "eind": 35.53
+        "start": 28.38,
+        "eind": 35.44
       },
       {
         "titel": "D’où il provient",
-        "start": 39.19,
-        "eind": 51.5
+        "start": 39.1,
+        "eind": 51.41
       },
       {
         "titel": "La fiche d’un lead",
-        "start": 56.07,
-        "eind": 67.22
+        "start": 56.03,
+        "eind": 67.17
       },
       {
         "titel": "Ce qu’il demande",
-        "start": 71.08,
-        "eind": 80.51
+        "start": 71.09,
+        "eind": 80.52
       },
       {
         "titel": "Le suivi",
-        "start": 84.38,
-        "eind": 90.65
+        "start": 84.39,
+        "eind": 90.66
       },
       {
         "titel": "Les cinq statuts",
-        "start": 97.35,
-        "eind": 109
+        "start": 97.23,
+        "eind": 108.89
       },
       {
         "titel": "Du lead au client",
-        "start": 113.65,
-        "eind": 122.99
+        "start": 113.53,
+        "eind": 122.86
       },
       {
         "titel": "Pour conclure",
-        "start": 125.7,
-        "eind": 133.45
+        "start": 125.58,
+        "eind": 133.33
       }
     ],
     "gepubliceerdOp": "2026-11-09T12:16:16.464",
@@ -1814,14 +1814,14 @@
     "film": "verzekeringen",
     "taal": "nl-BE",
     "pagina": "credit-management/insurance-contracts",
-    "lengte": 135.59,
+    "lengte": 134.91,
     "uitvoering": "handleiding",
     "routes": [
       "/insurance-contracts",
       "/credit/insurance-institutions"
     ],
     "app": {
-      "sha": "37595350a884118b0ae3e4494f1dd450b80696c9",
+      "sha": "54c8b8c543e4590a3c17b92a735eb4252e3cd7cc",
       "vuil": false
     },
     "titel": "Verzekeringen: het overzicht en uw verzekeraars",
@@ -1832,48 +1832,48 @@
     "hoofdstukken": [
       {
         "titel": "Alle polissen samen",
-        "start": 4.86,
-        "eind": 15.16
+        "start": 4.63,
+        "eind": 14.94
       },
       {
         "titel": "Kiezen wat u ziet",
-        "start": 19.18,
-        "eind": 27.4
+        "start": 18.96,
+        "eind": 27.18
       },
       {
         "titel": "Wie er verzekerd is",
-        "start": 31.37,
-        "eind": 42.65
+        "start": 31.14,
+        "eind": 42.42
       },
       {
         "titel": "Voorlopig en de link",
-        "start": 46.7,
-        "eind": 58.59
+        "start": 46.4,
+        "eind": 58.29
       },
       {
         "titel": "Twee statussen, twee dingen",
-        "start": 62.65,
-        "eind": 79.7
+        "start": 62.38,
+        "eind": 79.42
       },
       {
         "titel": "Afdrukken of exporteren",
-        "start": 83.66,
-        "eind": 92.9
+        "start": 83.39,
+        "eind": 92.63
       },
       {
         "titel": "Uw verzekeraars",
-        "start": 97.78,
-        "eind": 104.28
+        "start": 97.36,
+        "eind": 103.86
       },
       {
         "titel": "De fiche van een verzekeraar",
-        "start": 108.96,
-        "eind": 119.64
+        "start": 108.56,
+        "eind": 119.24
       },
       {
         "titel": "Tot slot",
-        "start": 124.45,
-        "eind": 133.08
+        "start": 123.77,
+        "eind": 132.41
       }
     ],
     "gepubliceerdOp": "2026-11-20T15:22:12.742",
@@ -1882,21 +1882,20 @@
     "opTeRuimen": [
       "4ce1d0c5-c72f-4c4e-bcd0-bb32adc13078",
       "5ca7d27d-75cb-4155-aac0-09d6f56d5d35"
-    ],
-    "gepubliceerdeHash": "7231f312fdbba471"
+    ]
   },
   "verzekeringen-fr": {
     "film": "verzekeringen",
     "taal": "fr-BE",
     "pagina": "credit-management/insurance-contracts",
-    "lengte": 126.4,
+    "lengte": 126.63,
     "uitvoering": "handleiding",
     "routes": [
       "/insurance-contracts",
       "/credit/insurance-institutions"
     ],
     "app": {
-      "sha": "37595350a884118b0ae3e4494f1dd450b80696c9",
+      "sha": "54c8b8c543e4590a3c17b92a735eb4252e3cd7cc",
       "vuil": false
     },
     "titel": "Assurances : l’aperçu et vos assureurs",
@@ -1907,48 +1906,48 @@
     "hoofdstukken": [
       {
         "titel": "Toutes les polices ensemble",
-        "start": 4.6,
-        "eind": 13.94
+        "start": 4.58,
+        "eind": 13.91
       },
       {
         "titel": "Choisir ce que vous voyez",
-        "start": 17.92,
-        "eind": 27.02
+        "start": 17.95,
+        "eind": 27.05
       },
       {
         "titel": "Qui est assuré",
-        "start": 31,
-        "eind": 41.83
+        "start": 31.03,
+        "eind": 41.85
       },
       {
         "titel": "Provisoire et le lien",
-        "start": 45.78,
-        "eind": 56.41
+        "start": 45.85,
+        "eind": 56.48
       },
       {
         "titel": "Deux statuts, deux choses",
-        "start": 60.5,
-        "eind": 74.66
+        "start": 60.56,
+        "eind": 74.72
       },
       {
         "titel": "Imprimer ou exporter",
-        "start": 78.61,
-        "eind": 87.02
+        "start": 78.7,
+        "eind": 87.11
       },
       {
         "titel": "Vos assureurs",
-        "start": 91.79,
-        "eind": 98.33
+        "start": 91.92,
+        "eind": 98.46
       },
       {
         "titel": "La fiche d’un assureur",
-        "start": 103.01,
-        "eind": 111.51
+        "start": 103.16,
+        "eind": 111.66
       },
       {
         "titel": "Pour conclure",
-        "start": 116,
-        "eind": 123.9
+        "start": 116.23,
+        "eind": 124.13
       }
     ],
     "gepubliceerdOp": "2026-11-20T15:24:42.679",
@@ -1957,8 +1956,7 @@
     "opTeRuimen": [
       "8e9aee19-7604-494e-ade9-388bd3c6572e",
       "0072f8d0-1924-4a32-857f-a348bbb1b77a"
-    ],
-    "gepubliceerdeHash": "b262375c68b85143"
+    ]
   },
   "dashboard-nl": {
     "film": "dashboard",
@@ -3025,7 +3023,7 @@
       "/crm/leads"
     ],
     "app": {
-      "sha": "801e287c9d3450341383f553289ced0c7ca14d78",
+      "sha": "54c8b8c543e4590a3c17b92a735eb4252e3cd7cc",
       "vuil": false
     },
     "titel": "Leads in CreditSoft: van aanvraag tot klant",
@@ -3036,28 +3034,28 @@
     "hoofdstukken": [
       {
         "titel": "De werklijst",
-        "start": 3.8,
-        "eind": 6.8
+        "start": 3.83,
+        "eind": 6.83
       },
       {
         "titel": "Waar hij vandaan komt",
-        "start": 10.49,
-        "eind": 13.09
+        "start": 10.53,
+        "eind": 13.13
       },
       {
         "titel": "De fiche van een lead",
-        "start": 17.6,
-        "eind": 20.74
+        "start": 17.64,
+        "eind": 20.78
       },
       {
         "titel": "De vijf statussen",
-        "start": 27.24,
-        "eind": 30.88
+        "start": 27.27,
+        "eind": 30.91
       },
       {
         "titel": "Van lead naar klant",
-        "start": 35.55,
-        "eind": 38.55
+        "start": 35.57,
+        "eind": 38.57
       }
     ],
     "gepubliceerdOp": "2026-11-09T13:36:42.539",
@@ -3071,13 +3069,13 @@
     "film": "leads",
     "taal": "fr-BE",
     "pagina": "crm/leads",
-    "lengte": 42.8,
+    "lengte": 42.36,
     "uitvoering": "website",
     "routes": [
       "/crm/leads"
     ],
     "app": {
-      "sha": "801e287c9d3450341383f553289ced0c7ca14d78",
+      "sha": "54c8b8c543e4590a3c17b92a735eb4252e3cd7cc",
       "vuil": false
     },
     "titel": "Les leads dans CreditSoft : de la demande au client",
@@ -3088,28 +3086,28 @@
     "hoofdstukken": [
       {
         "titel": "La liste de travail",
-        "start": 3.8,
-        "eind": 6.95
+        "start": 3.83,
+        "eind": 6.97
       },
       {
         "titel": "D’où il provient",
-        "start": 10.64,
-        "eind": 13.24
+        "start": 10.69,
+        "eind": 13.29
       },
       {
         "titel": "La fiche d’un lead",
-        "start": 17.77,
-        "eind": 20.77
+        "start": 17.82,
+        "eind": 20.82
       },
       {
         "titel": "Les cinq statuts",
-        "start": 27.69,
-        "eind": 31.97
+        "start": 27.31,
+        "eind": 31.59
       },
       {
         "titel": "Du lead au client",
-        "start": 36.63,
-        "eind": 39.56
+        "start": 36.25,
+        "eind": 39.18
       }
     ],
     "gepubliceerdOp": "2026-11-09T13:37:24.179",
@@ -3123,13 +3121,13 @@
     "film": "leads",
     "taal": "nl-BE",
     "pagina": "crm/leads",
-    "lengte": 42.68,
+    "lengte": 42.64,
     "uitvoering": "website",
     "routes": [
       "/crm/leads"
     ],
     "app": {
-      "sha": "801e287c9d3450341383f553289ced0c7ca14d78",
+      "sha": "54c8b8c543e4590a3c17b92a735eb4252e3cd7cc",
       "vuil": false
     },
     "titel": "Leads in CreditSoft: from enquiry to client",
@@ -3140,28 +3138,28 @@
     "hoofdstukken": [
       {
         "titel": "The worklist",
-        "start": 3.83,
-        "eind": 6.97
+        "start": 3.82,
+        "eind": 6.96
       },
       {
         "titel": "Where they came from",
-        "start": 10.7,
-        "eind": 13.49
+        "start": 10.66,
+        "eind": 13.45
       },
       {
         "titel": "The lead’s record",
-        "start": 18.02,
-        "eind": 21.23
+        "start": 17.95,
+        "eind": 21.16
       },
       {
         "titel": "The five statuses",
-        "start": 27.73,
-        "eind": 31.87
+        "start": 27.65,
+        "eind": 31.8
       },
       {
         "titel": "From lead to client",
-        "start": 36.52,
-        "eind": 39.45
+        "start": 36.45,
+        "eind": 39.38
       }
     ],
     "gepubliceerdOp": "2026-11-09T13:38:10.983",
@@ -3175,14 +3173,14 @@
     "film": "adviesdossier",
     "taal": "nl-BE",
     "pagina": "credit-management/advice",
-    "lengte": 162.24,
+    "lengte": 162.28,
     "uitvoering": "handleiding",
     "routes": [
       "/credit-files/{id}",
       "/credit-files/{id}/advies"
     ],
     "app": {
-      "sha": "37595350a884118b0ae3e4494f1dd450b80696c9",
+      "sha": "54c8b8c543e4590a3c17b92a735eb4252e3cd7cc",
       "vuil": false
     },
     "titel": "Het adviesdossier in CreditSoft: vastleggen wat u voorstelde",
@@ -3192,58 +3190,58 @@
     "hoofdstukken": [
       {
         "titel": "Het tabblad Advies",
-        "start": 8.63,
-        "eind": 21.59
+        "start": 9.01,
+        "eind": 21.97
       },
       {
         "titel": "De adviespagina",
-        "start": 27.1,
-        "eind": 40.75
+        "start": 27.25,
+        "eind": 40.91
       },
       {
         "titel": "De basis",
-        "start": 44.53,
-        "eind": 54.24
+        "start": 44.67,
+        "eind": 54.38
       },
       {
         "titel": "De klant",
-        "start": 58.02,
-        "eind": 67.13
+        "start": 58.14,
+        "eind": 67.24
       },
       {
         "titel": "Behoeften",
-        "start": 70.91,
-        "eind": 77.37
+        "start": 71.01,
+        "eind": 77.47
       },
       {
         "titel": "Vergeleken aanbiedingen",
-        "start": 81.42,
-        "eind": 92.99
+        "start": 81.53,
+        "eind": 93.09
       },
       {
         "titel": "Uit een contract",
-        "start": 100.03,
-        "eind": 109.97
+        "start": 100.13,
+        "eind": 110.07
       },
       {
         "titel": "Motivering",
-        "start": 115.52,
-        "eind": 122.11
+        "start": 115.62,
+        "eind": 122.21
       },
       {
         "titel": "Het afschrift",
-        "start": 125.92,
-        "eind": 138.73
+        "start": 125.99,
+        "eind": 138.8
       },
       {
         "titel": "Bezorgen",
-        "start": 142.82,
-        "eind": 150.99
+        "start": 142.87,
+        "eind": 151.05
       },
       {
         "titel": "Tot slot",
-        "start": 154.78,
-        "eind": 159.85
+        "start": 154.82,
+        "eind": 159.88
       }
     ],
     "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/220f4916-8911-4345-834e-7f4f9d6371df/thumbnail.jpg",
@@ -3253,21 +3251,20 @@
     "opTeRuimen": [
       "b53b2eae-8cda-4ddb-906d-efd0b42710b2",
       "3b0b78c4-b086-4c63-bcad-6646c18b022f"
-    ],
-    "gepubliceerdeHash": "fb1de07c7572bcd9"
+    ]
   },
   "adviesdossier-fr": {
     "film": "adviesdossier",
     "taal": "fr-BE",
     "pagina": "credit-management/advice",
-    "lengte": 150.04,
+    "lengte": 149.88,
     "uitvoering": "handleiding",
     "routes": [
       "/credit-files/{id}",
       "/credit-files/{id}/advies"
     ],
     "app": {
-      "sha": "37595350a884118b0ae3e4494f1dd450b80696c9",
+      "sha": "54c8b8c543e4590a3c17b92a735eb4252e3cd7cc",
       "vuil": false
     },
     "titel": "Le dossier de conseil dans CreditSoft : garder ce que vous avez proposé",
@@ -3277,58 +3274,58 @@
     "hoofdstukken": [
       {
         "titel": "L’onglet Conseil",
-        "start": 8.58,
-        "eind": 20.61
+        "start": 8.63,
+        "eind": 20.66
       },
       {
         "titel": "La page de conseil",
-        "start": 25.86,
-        "eind": 37.33
+        "start": 25.91,
+        "eind": 37.38
       },
       {
         "titel": "La base",
-        "start": 41.1,
-        "eind": 50.02
+        "start": 41.13,
+        "eind": 50.04
       },
       {
         "titel": "Le client",
         "start": 53.79,
-        "eind": 61.82
+        "eind": 61.83
       },
       {
         "titel": "Besoins",
         "start": 65.58,
-        "eind": 71.48
+        "eind": 71.47
       },
       {
         "titel": "Offres comparées",
-        "start": 75.56,
-        "eind": 83.92
+        "start": 75.53,
+        "eind": 83.88
       },
       {
         "titel": "À partir d’un contrat",
-        "start": 90.96,
-        "eind": 99.64
+        "start": 90.87,
+        "eind": 99.56
       },
       {
         "titel": "Motivation",
-        "start": 105.2,
-        "eind": 111.89
+        "start": 105.07,
+        "eind": 111.75
       },
       {
         "titel": "La copie",
-        "start": 115.66,
-        "eind": 126.39
+        "start": 115.51,
+        "eind": 126.24
       },
       {
         "titel": "Remettre",
-        "start": 130.47,
-        "eind": 138.42
+        "start": 130.29,
+        "eind": 138.23
       },
       {
         "titel": "Pour conclure",
-        "start": 142.2,
-        "eind": 147.77
+        "start": 142.02,
+        "eind": 147.6
       }
     ],
     "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/25671168-77e2-4b7a-aca2-35c5032e0c56/thumbnail.jpg",
@@ -3338,8 +3335,7 @@
     "opTeRuimen": [
       "15d20cd0-9c60-44ed-8e0e-276ccae0908d",
       "24678914-035c-4e48-aff6-0658a1151398"
-    ],
-    "gepubliceerdeHash": "a475261cd649890a"
+    ]
   },
   "adviesdossier-website-nl": {
     "film": "adviesdossier",
