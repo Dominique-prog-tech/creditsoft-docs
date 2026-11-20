@@ -420,6 +420,13 @@ export const FILMS = [
       website: {
         stem: false,
         scenes: ['lijst', 'bron', 'openen', 'statussen', 'gewonnen'],
+        // Eigen omschrijving (20/11/2026; voorstel in adm-creditsoft, docs/websitefilms-omschrijvingen-voorstel.md):
+        // deze film toont 5 scènes, en de tekst van de handleidingfilm beloofde meer. Hoogstens 190 tekens: Bunny toont ze volledig.
+        omschrijving: {
+          nl: 'Iedereen die zich meldt op één werklijst, met hoe lang hij wacht en via welk kanaal hij binnenkwam. Per lead ziet u wat hij vraagt en wie hem opvolgt, tot hij klant wordt.',
+          fr: 'Toute demande entrante sur une seule liste, avec son temps d’attente et son canal d’arrivée. Pour chaque lead : ce qu’il demande et qui le suit, jusqu’à ce qu’il devienne client.',
+          en: 'Everyone who gets in touch on one worklist, with how long they have waited and which channel they came through. Per lead: what they ask and who follows up, until they become a client.',
+        },
         talen: [{ ui: 'nl-BE', tekst: 'nl' }, { ui: 'fr-BE', tekst: 'fr' }, { ui: 'nl-BE', tekst: 'en' }],
       },
     },
@@ -942,6 +949,18 @@ export const FILMS = [
       website: {
         stem: false,
         scenes: ['lijst', 'borderel', 'lijnen', 'fiche', 'slot'],
+        // Eigen omschrijving en titel (20/11/2026; voorstel in adm-creditsoft, docs/websitefilms-omschrijvingen-voorstel.md):
+        // deze film toont 5 scènes, en de tekst van de handleidingfilm beloofde meer. Hoogstens 190 tekens: Bunny toont ze volledig.
+        titel: {
+          nl: 'Commissie uitbetalen: van borderel tot fiche 281.50',
+          fr: 'Payer la commission : du bordereau à la fiche 281.50',
+          en: 'Paying commission: from statement to 281.50 tax form',
+        },
+        omschrijving: {
+          nl: 'De afrekening van elke aanbrenger per periode, tot op de lijn: welk dossier en welk krediet elk bedrag opleverde. Uit dezelfde boekingen komt de fiche 281.50, zonder iets over te typen.',
+          fr: 'Le décompte de chaque apporteur par période, jusqu’à la ligne : le dossier et le crédit d’où vient chaque montant. Des mêmes écritures sort la fiche 281.50, sans rien recopier.',
+          en: 'Each broker’s statement per period, down to the line: which file and which credit produced each amount. The 281.50 tax form comes from the same entries, without retyping anything.',
+        },
         talen: [{ ui: 'nl-BE', tekst: 'nl' }, { ui: 'fr-BE', tekst: 'fr' }, { ui: 'nl-BE', tekst: 'en' }],
       },
     },
@@ -1175,6 +1194,13 @@ export const FILMS = [
       website: {
         stem: false,
         scenes: ['jaar', 'tegels', 'pijplijn', 'volume', 'slot'],
+        // Eigen omschrijving (20/11/2026; voorstel in adm-creditsoft, docs/websitefilms-omschrijvingen-voorstel.md):
+        // deze film toont 5 scènes, en de tekst van de handleidingfilm beloofde meer. Hoogstens 190 tekens: Bunny toont ze volledig.
+        omschrijving: {
+          nl: 'Het jaar van uw kantoor op één scherm: aktes en dossiers met hun bedrag, elk dossier in zijn fase, en het gerealiseerde volume per maand, per instelling en per verantwoordelijke.',
+          fr: 'L’année de votre bureau sur un écran : actes et dossiers avec leur montant, chaque dossier dans sa phase, et le volume réalisé par mois, par institution et par responsable.',
+          en: 'Your office’s year on one screen: deeds and files with their amounts, every file in the phase it is in, and the realised volume by month, by lender and by person responsible.',
+        },
         talen: [{ ui: 'nl-BE', tekst: 'nl' }, { ui: 'fr-BE', tekst: 'fr' }, { ui: 'nl-BE', tekst: 'en' }],
       },
     },
@@ -1488,6 +1514,13 @@ export const FILMS = [
       website: {
         stem: false,
         scenes: ['scherm', 'gezicht', 'welkomst', 'resultaat', 'slot'],
+        // Eigen omschrijving (20/11/2026; voorstel in adm-creditsoft, docs/websitefilms-omschrijvingen-voorstel.md):
+        // deze film toont 5 scènes, en de tekst van de handleidingfilm beloofde meer. Hoogstens 190 tekens: Bunny toont ze volledig.
+        omschrijving: {
+          nl: 'Stel uw klantenportaal één keer in: uw naam, uw kleur en een welkomsttekst in beide talen. Daarna ziet elke klant zijn dossier in uw huisstijl, met de documenten die u nog nodig hebt.',
+          fr: 'Configurez votre portail client une fois : votre nom, votre couleur et un texte d’accueil bilingue. Chaque client voit ensuite son dossier à vos couleurs, avec les documents attendus.',
+          en: 'Set up your client portal once: your name, your colour and a welcome text in both languages. Every client then sees their file in your style, with the documents you still need.',
+        },
         talen: [{ ui: 'nl-BE', tekst: 'nl' }, { ui: 'fr-BE', tekst: 'fr' }, { ui: 'nl-BE', tekst: 'en' }],
       },
     },
@@ -1586,6 +1619,18 @@ export const FILMS = [
       website: {
         stem: false,
         scenes: ['lijst', 'openen', 'gegevens', 'documenten', 'slot'],
+        // Eigen omschrijving en titel (20/11/2026; voorstel in adm-creditsoft, docs/websitefilms-omschrijvingen-voorstel.md):
+        // deze film toont 5 scènes, en de tekst van de handleidingfilm beloofde meer. Hoogstens 190 tekens: Bunny toont ze volledig.
+        titel: {
+          nl: 'Het kredietdossier in CreditSoft: één aanvraag, één pagina',
+          fr: 'Le dossier de crédit dans CreditSoft : une demande, une page',
+          en: 'The credit file in CreditSoft: one application, one page',
+        },
+        omschrijving: {
+          nl: 'Al uw kredietdossiers op één lijst, met status en bedrag. Open er één en u ziet de aanvraag, de aanvragers, het pand en de gevraagde documenten met hun toestand, op één pagina.',
+          fr: 'Tous vos dossiers de crédit sur une liste, avec statut et montant. Ouvrez-en un : la demande, les demandeurs, le bien et les documents demandés avec leur statut, sur une seule page.',
+          en: 'All your credit files on one list, with status and amount. Open one and you see the application, the applicants, the property and the requested documents with their status, on one page.',
+        },
         // ⚠️ Óók Engels, want de site draagt drie talen. Zonder deze regel zou de Engelse
         // functionaliteitspagina een BOUWFOUT geven — het Film-component weigert een ontbrekende taal in
         // plaats van stil niets te tonen. Engelse tekst over een Nederlands scherm; de app spreekt geen Engels.
@@ -1748,6 +1793,13 @@ export const FILMS = [
       website: {
         stem: false,
         scenes: ['tabblad', 'aanbiedingen', 'overnemen', 'afschrift', 'slot'],
+        // Eigen omschrijving (20/11/2026; voorstel in adm-creditsoft, docs/websitefilms-omschrijvingen-voorstel.md):
+        // deze film toont 5 scènes, en de tekst van de handleidingfilm beloofde meer. Hoogstens 190 tekens: Bunny toont ze volledig.
+        omschrijving: {
+          nl: 'Leg per dossier vast welk advies u gaf: de kredieten die u vergeleek naast elkaar, bank en cijfers overgenomen uit het contract, en een afschrift voor uw klant in zijn taal.',
+          fr: 'Consignez dans chaque dossier le conseil donné : les crédits comparés côte à côte, banque et chiffres repris du contrat, et une copie pour votre client dans sa langue.',
+          en: 'Record the advice you gave in each file: the credits you compared side by side, bank and figures taken from the contract, and a copy for your client in their language.',
+        },
         talen: [{ ui: 'nl-BE', tekst: 'nl' }, { ui: 'fr-BE', tekst: 'fr' }, { ui: 'nl-BE', tekst: 'en' }],
       },
     },
