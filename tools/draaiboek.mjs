@@ -43,16 +43,15 @@ export const FILMS = [
       fr: 'CreditSoft en bref : les modules en un coup d\u2019\u0153il',
       en: 'CreditSoft at a glance: the modules in brief',
     },
+    // ⚠️ Hoogstens 190 tekens (21/11/2026): de speler van Bunny kapt daarboven af met "...", en Google leest die speler mee
+    //    (gemeld door content-hub: 244, 241 en 218 tekens). Alle acht scènes staan er nog in.
     omschrijving: {
-      nl: 'Een kort overzicht van CreditSoft voor kredietmakelaars: kredietdossiers, klanten, documenten, '
-        + 'de portalen voor klant en aanbrenger, de commissieberekening, borderellen en fiche 281.50, het '
-        + 'vooruitzicht en het beheer van uw kredietverstrekkers.',
-      fr: 'Un bref aper\u00e7u de CreditSoft pour les courtiers en cr\u00e9dit : dossiers de cr\u00e9dit, '
-        + 'clients, documents, les portails client et apporteur, le calcul des commissions, les bordereaux '
-        + 'et la fiche 281.50, la perspective et la gestion de vos pr\u00eateurs.',
-      en: 'A short overview of CreditSoft for credit brokers: credit files, clients, documents, the client '
-        + 'and intermediary portals, commission calculation, statements and the 281.50 form, the forecast, '
-        + 'and managing your lenders.',
+      nl: 'CreditSoft in het kort: kredietdossiers, klanten, documenten, de portalen voor klant en aanbrenger, '
+        + 'commissie met borderel, fiche 281.50 en vooruitzicht, en uw kredietverstrekkers.',
+      fr: 'CreditSoft en bref : dossiers de cr\u00e9dit, clients, documents, les portails client et apporteur, '
+        + 'commissions avec bordereau, fiche 281.50 et perspective, et vos pr\u00eateurs.',
+      en: 'CreditSoft at a glance: credit files, clients, documents, the client and intermediary portals, '
+        + 'commission with statements, the 281.50 form and forecast, and your lenders.',
     },
     uitvoeringen: {
       // ⚠️ SCHERMTAAL ≠ TEKSTTAAL. De site draagt drie talen, de app maar twee — Program.cs zet
