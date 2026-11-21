@@ -89,6 +89,8 @@ Vous ne choisissez donc **pas** directement une tuile. Ce ne serait d'ailleurs p
 
 Les statuts sans signification ne comptent nulle part. Si une tuile reste à zéro alors que vous savez qu'il existe des contrats, c'est probablement que le statut concerné ne porte pas encore de signification.
 
+Pour les contrats de crédit, les statuts qui ne figurent encore sur aucun contrat sont aussi affichés, avec la mention *sur aucun contrat pour l'instant*. Vous pouvez déjà leur donner une signification : les tuiles seront justes dès que le premier contrat reçoit ce statut. Un statut supprimé qui ne figure sur aucun contrat n'apparaît pas ici.
+
 *Sans suite* sert pour un contrat clôturé sans acte, par exemple un crédit refusé. Un tel contrat ne compte dans aucune tuile. Sur le [tableau](../credit-management/credit-files.md#bord), cette colonne ne montre que le nombre, comme pour *Réalisé*. Sans signification, le tableau montrerait ces contrats comme des cartes sous *Non classé*.
 
 !!! info "La liste est groupée par origine"

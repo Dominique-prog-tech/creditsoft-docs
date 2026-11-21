@@ -89,6 +89,8 @@ U kiest dus **niet** rechtstreeks een tegel. Dat kan ook niet: *Aktes* en *LOA* 
 
 Statussen zonder betekenis tellen nergens mee. Staat een tegel op nul terwijl u weet dat er contracten zijn, dan draagt de betrokken status waarschijnlijk nog geen betekenis.
 
+Bij de kredietcontracten staan ook de statussen die nog op geen enkel contract staan, met de vermelding *nog op geen contract*. U kan ze toch al een betekenis geven: dan kloppen de tegels zodra het eerste contract die status krijgt. Een verwijderde status die op geen contract staat, ziet u hier niet.
+
 *Zonder gevolg* is voor een contract dat afgesloten werd zonder akte, bijvoorbeeld een geweigerd krediet. Zo'n contract telt in geen enkele tegel. Op het [bord](../credit-management/credit-files.md#bord) toont die kolom enkel het aantal, net als bij *Gerealiseerd*. Zonder betekenis zou het bord die contracten als kaarten tonen onder *Niet ingedeeld*.
 
 !!! info "De lijst is gegroepeerd per herkomst"
