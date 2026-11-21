@@ -1,6 +1,6 @@
 # Mailmonitoring
 
-Op het scherm **Mailmonitoring** ziet u in één overzicht **al het verstuurde mailverkeer** met de **afleverstatus**. Zo weet een beheerder meteen wat afgeleverd is en wat niet toegekomen is, zonder per kredietinstelling, verzekeraar of relatie te moeten gaan kijken.
+Op het scherm **Mailmonitoring** ziet u in één overzicht **het verstuurde mailverkeer van uw kantoor** met de **afleverstatus**. Zo weet een beheerder meteen wat afgeleverd is en wat niet toegekomen is, zonder per kredietinstelling, verzekeraar of relatie te moeten gaan kijken.
 
 ![Het scherm Mailmonitoring in CreditSoft: een tabel met per verstuurde mail het tijdstip, de bestemmeling, het onderwerp en twee statuskolommen — Verzonden en Aflevering — plus een kolom voor de reden bij een fout.](../images/mailmonitoring.png "De status van elke mail die CreditSoft verstuurde")
 
@@ -30,5 +30,7 @@ Elke rij is één verstuurde mail. De kolommen:
 
 ## Goed om weten
 
+- U ziet enkel de mail van **uw eigen kantoor**. Mail die vóór eind augustus 2026 vertrok, staat er niet bij: die droeg nog geen kenmerk van het kantoor.
+- De lijst toont hoogstens de **500 nieuwste** mails. Staan er meer, dan zegt een regel bovenaan dat; kies dan een status om gerichter te zoeken.
 - De afleverstatus komt rechtstreeks van het verzendplatform: **Afgeleverd**, **Geweigerd (bounce)**, **Mislukt**, … Dat is de betrouwbare bron.
 - De kolommen **Type** en **Naam** vullen zich voor mail die u **vanuit een fiche** verstuurt (bv. vanuit een kredietinstelling). Mail die daarvóór verstuurd werd, blijft in die twee kolommen leeg.

@@ -101,17 +101,18 @@ question en langage courant et recevez un tableau. Six questions sont préparée
 | Question | Ce que vous obtenez |
 |---|---|
 | Dossiers par statut | Nombre de dossiers de crédit par statut sur une période — comptés sur la date d'encodage ou la date d'acte |
-| Introduits par mois | Nombre de dossiers introduits par mois, avec le montant total du crédit et des commissions |
+| Introduits par mois | Nombre de dossiers introduits par mois, avec le montant total du crédit |
 | Dossiers actés | Les dossiers avec un acte sur une période, avec le prêteur, le montant et la date d'acte |
-| Dossiers réalisés | Les dossiers réalisés sur une période, avec le montant du crédit et la commission par dossier |
-| Par apporteur | Ce que chaque apporteur a rapporté : nombre de dossiers, montant du crédit et commission |
+| Dossiers réalisés | Les dossiers réalisés sur une période, avec le montant du crédit par dossier |
+| Par apporteur | Ce que chaque apporteur a rapporté : nombre de dossiers et montant du crédit |
 | Par prêteur | Ce qui a été réalisé par prêteur, avec la quotité moyenne |
 
 !!! note "Les mêmes chiffres que vos rapports"
     Ces six questions utilisent exactement le même calcul que les rapports sous **Listes**. Elles donnent donc
     toujours le même chiffre — sinon, vous ne sauriez auquel des deux vous fier.
 
-    Ici aussi, la commission ne figure dans la réponse que si vous avez le droit de voir les commissions.
+    L'assistant n'affiche pas de montants de commission. Vous les trouvez dans les rapports sous **Listes** et
+    sous **Commission**, si vous avez le droit de consulter les commissions.
 
 ## Plusieurs fiches côte à côte
 

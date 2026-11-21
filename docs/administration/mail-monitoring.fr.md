@@ -1,6 +1,6 @@
 # Suivi des e-mails
 
-L'écran **Suivi des e-mails** vous montre en un seul aperçu **tout le courrier envoyé** avec son **statut de livraison**. Un administrateur sait ainsi immédiatement ce qui a été livré et ce qui n'est pas arrivé, sans devoir consulter chaque établissement de crédit, assureur ou relation individuellement.
+L'écran **Suivi des e-mails** vous montre en un seul aperçu **le courrier envoyé par votre bureau** avec son **statut de livraison**. Un administrateur sait ainsi immédiatement ce qui a été livré et ce qui n'est pas arrivé, sans devoir consulter chaque établissement de crédit, assureur ou relation individuellement.
 
 ![L'écran Suivi des e-mails dans CreditSoft : un tableau reprenant pour chaque e-mail envoyé le moment, le destinataire, l'objet et deux colonnes de statut — Envoyé et Livraison — ainsi qu'une colonne pour le motif en cas d'erreur.](../images/mailmonitoring-fr.png "Le statut de chaque e-mail envoyé par CreditSoft")
 
@@ -30,5 +30,7 @@ Chaque ligne correspond à un e-mail envoyé. Les colonnes :
 
 ## Bon à savoir
 
+- Vous ne voyez que le courrier de **votre propre bureau**. Le courrier parti avant fin août 2026 n'y figure pas : il ne portait pas encore de référence du bureau.
+- La liste affiche au maximum les **500 e-mails les plus récents**. S'il y en a davantage, une ligne en haut le signale ; choisissez alors un statut pour affiner.
 - Le statut de livraison provient directement de la plateforme d'envoi : **Livré**, **Rejeté (bounce)**, **Échoué**, … C'est la source fiable.
 - Les colonnes **Type** et **Nom** se remplissent pour le courrier que vous envoyez **depuis une fiche** (p. ex. depuis un établissement de crédit). Le courrier envoyé auparavant reste vide dans ces deux colonnes.

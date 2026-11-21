@@ -98,17 +98,18 @@ gewone taal en krijgt een tabel terug. Zes vragen zijn voorbereid:
 | Vraag | Wat u krijgt |
 |---|---|
 | Dossiers per status | Aantal kredietdossiers per status in een periode — te tellen op ingavedatum of op aktedatum |
-| Ingediend per maand | Aantal ingediende dossiers per maand, met het totale krediet- en commissiebedrag |
+| Ingediend per maand | Aantal ingediende dossiers per maand, met het totale kredietbedrag |
 | Geakteerde dossiers | De dossiers met een akte in een periode, met kredietverstrekker, bedrag en aktedatum |
-| Gerealiseerde dossiers | De gerealiseerde dossiers in een periode, met kredietbedrag en commissie per dossier |
-| Per aanbrenger | Wat elke aanbrenger opbracht: aantal dossiers, kredietbedrag en commissie |
+| Gerealiseerde dossiers | De gerealiseerde dossiers in een periode, met het kredietbedrag per dossier |
+| Per aanbrenger | Wat elke aanbrenger opbracht: aantal dossiers en kredietbedrag |
 | Per kredietverstrekker | Wat er per kredietverstrekker gerealiseerd is, met de gemiddelde quotiteit |
 
 !!! note "Dezelfde cijfers als uw rapporten"
     Deze zes vragen lopen over precies dezelfde berekening als de rapporten onder **Lijsten**. Ze geven dus
     altijd hetzelfde getal — anders zou u niet weten welk van de twee u moet geloven.
 
-    Ook hier geldt: de commissie staat enkel in het antwoord als u het recht hebt om commissie te bekijken.
+    De assistent toont geen commissiebedragen. Die vindt u in de rapporten onder **Lijsten** en onder
+    **Commissie**, voor wie het recht heeft om commissie te bekijken.
 
 ## Meerdere fiches naast elkaar
 
