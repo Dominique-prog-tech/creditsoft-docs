@@ -34,7 +34,7 @@ De knop **Alles op standaard** wist uw keuzes en zet alles terug op uw bedrijfsf
 
 Eén pagina met de documenten die u van hem vraagt. Per stuk staat er of het nog **gevraagd** is, **ontvangen**, **in orde**, of **opnieuw te sturen** — bij dat laatste met uw reden erbij. Hij sleept zijn bestand in de zone eronder; u ziet het meteen bij dat document op het kredietdossier staan.
 
-![Het portaal met bovenaan de gele balk Voorbeeld, de welkomsttekst, het dossiernummer, een voortgangsbalk en zes documenten met hun status: drie in orde, twee ontvangen en één met de melding opnieuw sturen en de reden erbij.](../images/klantportaal-klant.png "Het portaal zoals u het ziet met Bekijk als klant"){ .volle-breedte }
+![Het portaal met bovenaan de gele balk Voorbeeld en de knop Voorbeeld sluiten, de welkomsttekst, het dossiernummer en een voortgangsbalk in twee tinten: ontvangen 4 van de 6 documenten, waarvan 3 nagekeken en in orde. Daaronder een ontvangen stuk met de naam van het bestand als link, het vak voor een opmerking en de zone om op te laden, en drie stukken in orde.](../images/klantportaal-klant.png "Het portaal zoals u het ziet met Bekijk als klant"){ .volle-breedte }
 
 Dit beeld komt uit **Bekijk als klant**, vandaar de gele balk bovenaan en de knop *← Voorbeeld sluiten*. Uw klant ziet die twee niet, maar krijgt dezelfde pagina met een afmeldknop.
 

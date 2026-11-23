@@ -42,7 +42,7 @@ Il n'y a délibérément pas davantage d'états. Un bureau de cinq personnes n'a
 
 Double-cliquez un lead pour ouvrir sa fiche. En haut figurent son nom, son statut et depuis combien de temps il attend.
 
-![La fiche d'un lead dans CreditSoft : en haut le nom avec le statut Nouveau et la mention attend depuis 3 jours, en dessous les blocs Qui, La demande et Suivi.](../images/lead-fiche-fr.png "La fiche d'un lead : qui, ce qu'il a demandé, et qui assure le suivi"){ .volle-breedte }
+![La fiche d'un lead dans CreditSoft : en haut le nom avec le statut Nouveau et depuis combien de temps il attend, en dessous les blocs Qui, La demande (avec la source, le montant, la langue du prospect et la demande) et Suivi, et en bas les boutons Enregistrer, En faire un client, Planifier un rendez-vous, Annuler et Supprimer.](../images/lead-fiche-fr.png "La fiche d'un lead : qui, ce qu'il a demandé, et qui assure le suivi"){ .volle-breedte }
 
 La fiche comporte trois blocs.
 

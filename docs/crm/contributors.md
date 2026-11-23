@@ -8,7 +8,7 @@ Klik in de zijbalk op **CRM** en dan op **Aanbrengers**.
 
 ## De lijst
 
-![Het scherm Aanbrengers in CreditSoft: een boomlijst met hoofdaanbrengers en de kantoren eronder, met kolommen voor naam, type, hoedanigheid, groepering, e-mail, agentnummer, gemeente, gsm en actief, en bovenaan de filter Groepering en de knoppen Samenvoegen, Nieuw en Exporteren.](../images/aanbrengers-lijst.png "Overzicht van de aanbrengers, geordend als een boom")
+![Het scherm Aanbrengers in CreditSoft: een boomlijst met hoofdaanbrengers en de kantoren eronder, met kolommen voor naam, type, hoedanigheid, groepering en e-mail (de andere kolommen staan rechts buiten beeld), en bovenaan de filters Groepering en FSMA en de knoppen Samenvoegen, Nieuw en Exporteren.](../images/aanbrengers-lijst.png "Overzicht van de aanbrengers, geordend als een boom")
 
 De tabel toont per aanbrenger: **naam**, **type**, **hoedanigheid**, **groepering**, **e-mail**, **agentnummer**, **gemeente**, **gsm**, **actief**, **FSMA in orde** en het **FSMA-nummer**.
 

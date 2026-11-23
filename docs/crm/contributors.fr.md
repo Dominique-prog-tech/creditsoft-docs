@@ -8,7 +8,7 @@ Dans la barre latérale, cliquez sur **CRM**, puis sur **Apporteurs**.
 
 ## La liste
 
-![L'écran Apporteurs dans CreditSoft : une arborescence avec les apporteurs principaux et les bureaux en dessous, avec les colonnes nom, type, qualité, groupement, e-mail, numéro d'agent, commune, GSM et actif, et en haut le filtre Groupement et les boutons Fusionner, Nouveau et Exporter.](../images/aanbrengers-lijst-fr.png "Aperçu des apporteurs, organisés en arborescence")
+![L'écran Apporteurs dans CreditSoft : une arborescence avec les apporteurs principaux et les bureaux en dessous, avec les colonnes nom, type, qualité, groupement et e-mail (les autres colonnes sont à droite, hors de l'image), et en haut les filtres Groupement et FSMA et les boutons Fusionner, Nouveau et Exporter.](../images/aanbrengers-lijst-fr.png "Aperçu des apporteurs, organisés en arborescence")
 
 Le tableau affiche par apporteur : **nom**, **type**, **qualité**, **groupement**, **e-mail**, **numéro d'agent**, **commune**, **GSM**, **actif**, **FSMA en ordre** et le **numéro FSMA**.
 

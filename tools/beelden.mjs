@@ -1165,7 +1165,10 @@ const SCHOTEN = [
         await p.waitForTimeout(2500);
       }
   }],
-  ['klantportaal-klant',        '/beheer/klantportaal'],
+  // ⚠️ Stond van 29/08 tot 23/11/2026 op '/beheer/klantportaal': het BEHEERSCHERM Portaalvormgeving, terwijl het bijschrift
+  //    "Bekijk als klant" belooft (gele balk, ← Voorbeeld sluiten, de stukken met hun status). Achttien rondes groen, want de
+  //    controle zocht "Voorbeeld", en dat woord staat ook in het voorbeeldpaneel van het beheerscherm.
+  ['klantportaal-klant',        `/klantportaal/voorbeeld/${ID.dossierKlantportaal}`],
   ['rapporten-periode',         '/rapporten', async p => {
       // ⚠️ Een kaal paginabezoek gaf de rapportenBIBLIOTHEEK, niet het venster met Van/Tot en met en de
       // knoppen Afdrukken en Sluiten. Het rapport moet eerst aangeklikt worden.
@@ -1466,7 +1469,8 @@ const VERWACHT = {
   'verzendadressen-bewerken':   /Verzendnaam|Nom d'expéditeur|E-mailadres/i,
   'globaal-overzicht-voorinstelling': /Alle dossiers|Tous les dossiers/i,
   'rapporten-periode':          /Periode|Période/i,
-  'klantportaal-klant':         /Voorbeeld|Aperçu/i,
+  // De knop van de voorbeeldbalk: staat ENKEL op "Bekijk als klant", niet op het beheerscherm (dat het vorige merkteken ook haalde).
+  'klantportaal-klant':         /Voorbeeld sluiten|Fermer l'aperçu/,
   'portaal-dossier-detail':     /Aanvragers|Demandeurs/i,   // staat op het DETAIL, niet op de lijst
   // De aangebrachte klant van de proefaanbrenger (de demolead uit de mobiele app): DATA, geen schermtitel — de titel
   // "Aangebracht" staat er ook boven een lege lijst.

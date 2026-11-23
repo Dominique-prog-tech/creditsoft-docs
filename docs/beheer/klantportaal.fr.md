@@ -34,7 +34,7 @@ Le bouton **Tout par défaut** efface vos choix et rétablit votre fiche d'entre
 
 Une seule page, avec les documents que vous lui demandez. Pour chaque pièce, il voit si elle est encore **demandée**, **reçue**, **en ordre**, ou **à renvoyer** — dans ce dernier cas avec votre motif. Il glisse son fichier dans la zone en dessous ; vous le retrouvez aussitôt sur le document concerné dans le dossier de crédit.
 
-![Le portail avec en haut le bandeau jaune Aperçu, le texte d'accueil, le numéro de dossier, une barre de progression et six documents avec leur statut : trois en ordre, deux reçus et un à renvoyer avec le motif.](../images/klantportaal-klant-fr.png "Le portail tel que vous le voyez via Voir comme le client"){ .volle-breedte }
+![Le portail avec en haut le bandeau jaune Aperçu et le bouton Fermer l'aperçu, le texte d'accueil, le numéro de dossier et une barre de progression en deux teintes : documents reçus 4 sur 6, dont 3 vérifiés et en ordre. En dessous, une pièce reçue avec le nom du fichier en lien, le champ pour une remarque et la zone de dépôt, et trois pièces en ordre.](../images/klantportaal-klant-fr.png "Le portail tel que vous le voyez via Voir comme le client"){ .volle-breedte }
 
 Cette image provient de **Voir comme le client**, d'où le bandeau jaune en haut et le bouton *← Fermer l'aperçu*. Votre client ne voit ni l'un ni l'autre, mais obtient la même page avec un bouton de déconnexion.
 

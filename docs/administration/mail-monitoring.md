@@ -2,7 +2,7 @@
 
 Op het scherm **Mailmonitoring** ziet u in één overzicht **het verstuurde mailverkeer van uw kantoor** met de **afleverstatus**. Zo weet een beheerder meteen wat afgeleverd is en wat niet toegekomen is, zonder per kredietinstelling, verzekeraar of relatie te moeten gaan kijken.
 
-![Het scherm Mailmonitoring in CreditSoft: een tabel met per verstuurde mail het tijdstip, de bestemmeling, het onderwerp en twee statuskolommen — Verzonden en Aflevering — plus een kolom voor de reden bij een fout.](../images/mailmonitoring.png "De status van elke mail die CreditSoft verstuurde")
+![Het scherm Mailmonitoring in CreditSoft: bovenaan de keuze van de soort mails en van de periode, daaronder een tabel met per verstuurde mail het tijdstip, de bestemmeling, het onderwerp en twee statuskolommen — Verzonden en Aflevering — plus een kolom voor de reden bij een fout.](../images/mailmonitoring.png "De status van elke mail die CreditSoft verstuurde")
 
 ## Het scherm openen
 

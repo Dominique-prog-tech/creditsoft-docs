@@ -23,7 +23,7 @@ Een gewone gebruiker kan facturen bekijken en opmaken. Wie ze definitief mag mak
 
 ## De lijst
 
-![De lijst Facturen met bovenaan het jaar 2026, de filter Alle documenten met het aantal, de knoppen Nieuwe factuur en Exporteren, en per rij het nummer, de datum, de vervaldatum, de klant, het dossier, de soort Factuur of Creditnota, het totaal incl. btw, het betaalde en het openstaande bedrag en de kolom Verzonden; op F-2026-0002 is 400,00 betaald; bovenaan een klad zonder nummer met het label Klad.](../images/facturen-lijst.png "Uw facturen en creditnota's van dit jaar"){ .volle-breedte }
+![De lijst Facturen met bovenaan het jaar 2026, de filter Alle documenten met het aantal, de knoppen Exporteren voor de boekhouder, Creditnota's koppelen, Nieuwe factuur en Exporteren, en de regel Openstaand in deze lijst met wat er te ontvangen en terug te betalen is. Per rij het nummer, de datum, de vervaldatum, de klant, het dossier, het totaal incl. btw, het openstaande bedrag en de kolom Verzonden; bovenaan een klad zonder nummer met het label Klad, daaronder een creditnota en vier facturen.](../images/facturen-lijst.png "Uw facturen en creditnota's van dit jaar"){ .volle-breedte }
 
 Per factuur ziet u het **nummer**, de **datum**, de **vervaldatum**, de **klant**, het **dossier**, het **totaal incl. btw**, wat er nog **open** staat, en of ze **verzonden** werd: *Gemaild*, en bij een factuur die via Peppol vertrok *Peppol:* met de status, bijvoorbeeld *Peppol: afgeleverd*. Is de vervaldatum voorbij en staat er nog iets open, dan staat dat bedrag in het **rood**. Een klad heeft nog geen nummer: daar staat het label *Klad*. Via **Kolommen kiezen** zet u er twee bij: de **soort** (factuur of creditnota) en wat er al **betaald** is.
 

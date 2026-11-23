@@ -49,6 +49,10 @@ export const ID = {
   // ⚠️ En de oude opmerking hier — "het enige met een ACTIEF schema" — was gewoon onwaar: 1832 dossiers
   // dragen er een, honderden daarvan een actief. Gemeten, niet aangenomen.
   dossierMetSchema: '903a2553-1e1d-4a9d-baab-f456bd96145c',
+  // DEMO-2098 (23/11/2026) — het klantenportaal zoals "Bekijk als klant" het toont: zes gevraagde stukken in de vier toestanden die
+  // een klant ziet (drie in orde, één ontvangen met een bestand, één gevraagd, één afgekeurd met de reden "Onleesbaar", niet door een
+  // aanbrenger, want die weigering ziet de klant niet). Gekozen met een query op tenant_demo; valt om na een her-seed.
+  dossierKlantportaal: '56d41dcf-40fc-4c46-bf99-320e3a5156f3',
   // DEMO-4885 — twee aanvragers met vijf SOORTEN leningen en lasten: huur die wegvalt, alimentatie, een
   // kredietopening, een lening op afbetaling en een overgenomen hypothecair krediet bij een niet-partnerbank;
   // Sam Cools draagt een eindejaarspremie PER JAAR. Gekozen met een query op tenant_demo (02/10/2026), ná de

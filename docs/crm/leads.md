@@ -42,7 +42,7 @@ Meer standen zijn er bewust niet. Een kantoor van vijf mensen heeft geen verkoop
 
 Dubbelklik een lead om zijn fiche te openen. Bovenaan staat zijn naam, zijn status, en hoe lang hij al wacht.
 
-![De fiche van een lead in CreditSoft: bovenaan de naam met de status Nieuw en de melding wacht al 3 dagen, daaronder de blokken Wie, De vraag en Opvolging.](../images/lead-fiche.png "De fiche van een lead: wie, wat hij vroeg, en wie opvolgt"){ .volle-breedte }
+![De fiche van een lead in CreditSoft: bovenaan de naam met de status Nieuw en hoelang hij al wacht, daaronder de blokken Wie, De vraag (met bron, bedrag, taal van de prospect en de vraag) en Opvolging, en onderaan de knoppen Bewaren, Klant van maken, Afspraak inplannen, Annuleren en Verwijderen.](../images/lead-fiche.png "De fiche van een lead: wie, wat hij vroeg, en wie opvolgt"){ .volle-breedte }
 
 De fiche heeft drie blokken.
 
