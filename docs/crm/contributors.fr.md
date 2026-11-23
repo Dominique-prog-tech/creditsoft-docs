@@ -10,11 +10,12 @@ Dans la barre latérale, cliquez sur **CRM**, puis sur **Apporteurs**.
 
 ![L'écran Apporteurs dans CreditSoft : une arborescence avec les apporteurs principaux et les bureaux en dessous, avec les colonnes nom, type, qualité, groupement, e-mail, numéro d'agent, commune, GSM et actif, et en haut le filtre Groupement et les boutons Fusionner, Nouveau et Exporter.](../images/aanbrengers-lijst-fr.png "Aperçu des apporteurs, organisés en arborescence")
 
-Le tableau affiche par apporteur : **nom**, **type**, **qualité**, **groupement**, **e-mail**, **numéro d'agent**, **commune**, **GSM** et **actif**.
+Le tableau affiche par apporteur : **nom**, **type**, **qualité**, **groupement**, **e-mail**, **numéro d'agent**, **commune**, **GSM**, **actif**, **FSMA en ordre** et le **numéro FSMA**.
 
 - **Déplier et replier** — cliquez sur le triangle devant une ligne pour afficher ou masquer un niveau.
 - **Rechercher** — le champ de recherche cherche dans toutes les colonnes à la fois, y compris sur le nom d'un groupe.
 - **Filtrer par groupement** — si vous avez des [groupes](groups.md), le filtre **Groupement** figure au-dessus de la liste. Choisissez un groupe et vous ne voyez que les apporteurs qui le portent ; avec **Sans groupement**, vous voyez ceux qui ne sont encore classés nulle part. Un apporteur principal ou un bureau n'y figure que s'il porte lui-même le groupement : celui-ci ne s'étend pas automatiquement à ceux qui en dépendent.
+- **Filtrer par FSMA** — avec le filtre **FSMA** au-dessus de la liste, vous voyez qui est **en ordre**, ou quels apporteurs ne sont **pas en ordre**. Ce second choix ne montre que ceux qui sont encore actifs : un apporteur arrêté ne demande plus de travail.
 - **Choisir les colonnes** — affichez ou masquez des colonnes ; les largeurs que vous réglez sont également conservées pour la prochaine fois.
 - **Exporter** — vers Excel ou CSV, avec toutes les colonnes.
 - **Fusionner** — si deux fiches existent pour le même apporteur, vous les fusionnez ; voir ci-dessous.

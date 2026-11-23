@@ -10,11 +10,12 @@ Klik in de zijbalk op **CRM** en dan op **Aanbrengers**.
 
 ![Het scherm Aanbrengers in CreditSoft: een boomlijst met hoofdaanbrengers en de kantoren eronder, met kolommen voor naam, type, hoedanigheid, groepering, e-mail, agentnummer, gemeente, gsm en actief, en bovenaan de filter Groepering en de knoppen Samenvoegen, Nieuw en Exporteren.](../images/aanbrengers-lijst.png "Overzicht van de aanbrengers, geordend als een boom")
 
-De tabel toont per aanbrenger: **naam**, **type**, **hoedanigheid**, **groepering**, **e-mail**, **agentnummer**, **gemeente**, **gsm** en **actief**.
+De tabel toont per aanbrenger: **naam**, **type**, **hoedanigheid**, **groepering**, **e-mail**, **agentnummer**, **gemeente**, **gsm**, **actief**, **FSMA in orde** en het **FSMA-nummer**.
 
 - **Open- en dichtklappen** — klik op het driehoekje voor een rij om een niveau te tonen of te verbergen.
 - **Zoeken** — het zoekveld zoekt in alle kolommen tegelijk, ook op de naam van een groep.
 - **Filteren op groepering** — hebt u [groepen](groups.md), dan staat boven de lijst de filter **Groepering**. Kies een groep en u ziet enkel de aanbrengers die ze dragen; met **Zonder groepering** ziet u wie nog nergens is ingedeeld. Een hoofdaanbrenger of een kantoor staat er enkel bij als hij de groepering zelf draagt: ze gaat niet vanzelf over op wie eronder hangt.
+- **Filteren op FSMA** — met de filter **FSMA** boven de lijst ziet u wie **in orde** is, of welke aanbrengers **niet in orde** zijn. Die tweede keuze toont enkel wie nog actief is: een gestopte aanbrenger vraagt geen werk meer.
 - **Kolommen kiezen** — toon of verberg kolommen; ook de breedtes die u instelt, blijven bewaard voor de volgende keer.
 - **Exporteren** — naar Excel of CSV, met alle kolommen.
 - **Samenvoegen** — staan er twee fiches voor dezelfde aanbrenger, dan voegt u ze samen: de gekozen rij blijft, de andere gaat erin op.
