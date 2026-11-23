@@ -22,7 +22,9 @@ Par défaut, la liste est triée sur **Nom**. Pour une personne, cette colonne c
 - **Nouveau / modifier** — cliquez sur **Nouveau**, ou **double-cliquez** une ligne pour ouvrir la fiche.
 - **Dans un nouvel onglet** — avec **Ctrl-clic** (Cmd sur un Mac), la molette ou la **flèche** en début de ligne ; la liste reste affichée. Voir [Travailler avec les listes](../getting-started/lijsten.md#dans-un-nouvel-onglet).
 - **Fusionner** — fusionner deux fiches de la même partie ; voir ci-dessous.
-- **Supprimer** — une relation est **archivée** (suppression douce), pas définitivement effacée.
+- **Supprimer** — une relation est **archivée** (suppression douce), pas définitivement effacée. Si elle est demandeur
+  dans un dossier de crédit, ou figure comme partenaire de quelqu'un, la question préalable indique dans combien de
+  dossiers et chez qui.
 - **Grouper par colonne** — faites glisser un en-tête de colonne dans la barre au-dessus de la liste. Vous voyez
   ainsi, par exemple, les prospects suivis par chaque collègue : filtrez sur le type de contact de vos prospects
   et groupez par **Responsable**. Faites glisser l'en-tête en retour pour annuler le groupement.

@@ -22,7 +22,8 @@ De lijst staat standaard gesorteerd op **Naam**. Bij een persoon staat daar de f
 - **Nieuw / bewerken** — klik op **Nieuw**, of **dubbelklik** een rij om de fiche te openen.
 - **In een nieuw tabblad** — met **Ctrl-klik** (Cmd op een Mac), het muiswiel of het **pijltje** vooraan de rij; de lijst blijft staan. Zie [Werken met lijsten](../getting-started/lijsten.md#in-een-nieuw-tabblad).
 - **Samenvoegen** — twee fiches voor dezelfde partij samenvoegen; zie hieronder.
-- **Verwijderen** — een relatie wordt **gearchiveerd** (soft-delete), niet definitief gewist.
+- **Verwijderen** — een relatie wordt **gearchiveerd** (soft-delete), niet definitief gewist. Is ze aanvrager in een
+  kredietdossier, of staat ze bij iemand als partner, dan zegt de vraag vooraf in hoeveel dossiers en bij wie.
 - **Groeperen op een kolom** — sleep een kolomkop naar de balk boven de lijst. Zo ziet u bijvoorbeeld per
   collega welke prospecten er opgevolgd worden: filter op het type contact van uw prospecten en groepeer op
   **Verantwoordelijke**. Sleep de kop terug om het groeperen op te heffen.
