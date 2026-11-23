@@ -69,9 +69,11 @@ staat.
 ## Een bericht openen
 
 **Klik het bericht aan** om het volledig te lezen: afzender, bestemmelingen, de status van de aflevering en de
-tekst zoals ze verstuurd is. In dat venster staan drie knoppen:
+tekst zoals ze verstuurd is. In dat venster staan deze knoppen:
 
 - **Afdrukken** — maakt een PDF van het bericht.
+- **Beantwoorden** — opent een nieuw bericht aan de afzender (bij een binnengekomen mail) of aan de bestemmeling (bij een verstuurde mail), met *Re:* voor het onderwerp en de oorspronkelijke tekst als citaat eronder. U schrijft erboven.
+- **Doorsturen** — opent een nieuw bericht met *Fwd:* voor het onderwerp en de kop en tekst van de oorspronkelijke mail; u vult zelf de bestemmeling in. De bijlagen gaan enkel mee bij een mail die als bestand bewaard is (zie hieronder): van een mail die CreditSoft verstuurde, worden de bijlagen niet bewaard, en het venster zegt dat.
 - **Verwijderen** — haalt het uit de lijst; het gaat naar de [Prullenbak](../administration/recycle-bin.md). Het [Actielogboek](../administration/activity-log.md) noteert wie de mail verwijderde, met haar onderwerp en datum.
 - **Sluiten**.
 

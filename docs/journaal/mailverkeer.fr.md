@@ -70,9 +70,11 @@ chose de cliquable.
 ## Ouvrir un message
 
 **Cliquez sur le message** pour le lire intégralement : expéditeur, destinataires, statut de la remise et le
-texte tel qu'il a été envoyé. Cette fenêtre comporte trois boutons :
+texte tel qu'il a été envoyé. Cette fenêtre comporte ces boutons :
 
 - **Imprimer** — crée un PDF du message.
+- **Répondre** — ouvre un nouveau message à l'expéditeur (pour un e-mail reçu) ou au destinataire (pour un e-mail envoyé), avec *Re:* devant l'objet et le texte d'origine cité en dessous. Vous écrivez au-dessus.
+- **Transférer** — ouvre un nouveau message avec *Fwd:* devant l'objet et l'en-tête et le texte de l'e-mail d'origine ; vous indiquez vous-même le destinataire. Les pièces jointes ne suivent que pour un e-mail conservé sous forme de fichier (voir ci-dessous) : CreditSoft ne conserve pas les pièces jointes d'un e-mail qu'il a envoyé, et la fenêtre le dit.
 - **Supprimer** — le retire de la liste ; il part vers la [Corbeille](../administration/recycle-bin.md). Le [Journal des actions](../administration/activity-log.md) note qui a supprimé l'e-mail, avec son objet et sa date.
 - **Fermer**.
 
