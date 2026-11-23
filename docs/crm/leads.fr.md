@@ -54,6 +54,7 @@ La fiche comporte trois blocs.
 
 - **Source** — d'où vient ce lead : *site web*, *téléphone*, *recommandation*, *Facebook*, ce que vous utilisez. Le champ propose ce que vous avez déjà saisi auparavant, afin que l'orthographe reste constante, mais vous pouvez saisir librement. Ainsi, la liste des sources reste celle de **votre** bureau, et non celle que nous aurions imaginée.
 - **Montant** — le montant dont il est question, pour autant que vous le sachiez déjà.
+- **Langue du prospect** — néerlandais ou français. Vide signifie *la langue du bureau*. L'e-mail de suivi mensuel part dans cette langue, et **En faire un client** la reprend comme langue des documents.
 - **Provenance** — par quelle voie ce lead est arrivé : *Application mobile*, *Portail apporteurs*, *Saisi manuellement*, ou pour une connexion la page ou la référence d'où il provient. Ce champ n'est pas modifiable : c'est un constat, pas une saisie.
 - **Apporté par** — uniquement pour un lead d'un apporteur : qui l'a transmis, avec un lien vers sa fiche. Non modifiable.
 - **Consentement du client confirmé** — le moment où l'apporteur a confirmé que le client accepte d'être contacté par vous. Sans cette confirmation, il ne peut pas transmettre de client.
@@ -67,6 +68,8 @@ La fiche comporte trois blocs.
 - **Motif de la perte** — apparaît dès que vous mettez le statut sur *Perdu*.
 - **E-mail de suivi mensuel** — avec la case **Suivre chaque mois**, le lead reçoit chaque mois un court e-mail : voir [Suivre chaque mois](#suivre-chaque-mois).
 
+**Planifier un rendez-vous** — le bouton en haut de la fiche ouvre l'[agenda](meetings.md) avec un nouveau rendez-vous déjà prêt pour ce lead : l'heure pleine suivante, le nom du lead comme objet et le lead renseigné. Vous adaptez l'heure et enregistrez. Le bouton apparaît tant que le lead est en cours (ni gagné ni perdu) et si vous pouvez créer des rendez-vous.
+
 ## Du lead au client
 
 Si cela aboutit, cliquez sur la fiche sur **En faire un client**.
@@ -76,7 +79,7 @@ Si cela aboutit, cliquez sur la fiche sur **En faire un client**.
 CreditSoft ne demande que ce que le lead ignore :
 
 - **Type** — particulier ou société. Si le lead porte un nom de société, ce champ est déjà sur *Société*.
-- **Langue des documents** — obligatoire sur toute fiche client : elle détermine dans quelle langue ce client reçoit ses courriers et ses e-mails.
+- **Langue des documents** — obligatoire sur toute fiche client : elle détermine dans quelle langue ce client reçoit ses courriers et ses e-mails. Si le lead porte une langue, elle est déjà remplie.
 - **Forme juridique** — uniquement pour une société.
 
 Le nom, l'e-mail et le téléphone proviennent du lead. Vous complétez le reste sur la fiche client, vers laquelle vous êtes dirigé immédiatement.

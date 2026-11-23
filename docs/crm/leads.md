@@ -54,6 +54,7 @@ De fiche heeft drie blokken.
 
 - **Bron** — waar deze lead vandaan komt: *website*, *telefoon*, *doorverwijzing*, *Facebook*, wat u ook gebruikt. Het veld stelt voor wat u eerder al invulde, zodat de schrijfwijze gelijk blijft, maar u kunt vrij typen. Zo blijft de bronlijst van úw kantoor, en niet van een lijst die wij bedacht hebben.
 - **Bedrag** — het bedrag waar het over gaat, voor zover u het al weet.
+- **Taal van de prospect** — Nederlands of Frans. Leeg betekent *de taal van het kantoor*. De maandelijkse opvolgmail gaat in deze taal, en **Klant van maken** neemt ze over als documenttaal.
 - **Herkomst** — langs welke weg deze lead binnenkwam: *Mobiele app*, *Aanbrengersportaal*, *Handmatig ingevoerd*, of bij een koppeling de pagina of de referentie waar hij vandaan komt. Dit veld is niet bewerkbaar; het is een vaststelling, geen invoer.
 - **Aangebracht door** — enkel bij een lead van een aanbrenger: wie hem doorgaf, met een link naar diens fiche. Niet bewerkbaar.
 - **Toestemming klant bevestigd** — wanneer de aanbrenger bevestigde dat de klant akkoord gaat om door u gecontacteerd te worden. Zonder die bevestiging kan hij geen klant doorgeven.
@@ -67,6 +68,8 @@ De fiche heeft drie blokken.
 - **Reden van verlies** — verschijnt zodra u de status op *Verloren* zet.
 - **Maandelijkse opvolgmail** — met het vinkje **Maandelijks opvolgen** krijgt de lead elke maand een korte mail: zie [Maandelijks opvolgen](#maandelijks-opvolgen).
 
+**Afspraak inplannen** — de knop bovenaan de fiche opent de [agenda](meetings.md) met een nieuwe afspraak voor deze lead al klaar: het volgende volle uur, de naam van de lead als onderwerp en de lead ingevuld. U past het tijdstip aan en bewaart. De knop staat er zolang de lead loopt (niet gewonnen of verloren) en als u afspraken mag maken.
+
 ## Van lead naar klant
 
 Wordt er iets van, dan klikt u op de fiche op **Klant van maken**.
@@ -76,7 +79,7 @@ Wordt er iets van, dan klikt u op de fiche op **Klant van maken**.
 CreditSoft vraagt alleen wat de lead niet weet:
 
 - **Soort** — particulier of bedrijf. Staat er een bedrijfsnaam op de lead, dan staat dit al op *Bedrijf*.
-- **Documenttaal** — verplicht op elke klantenfiche: ze bepaalt in welke taal die klant zijn brieven en mails krijgt.
+- **Documenttaal** — verplicht op elke klantenfiche: ze bepaalt in welke taal die klant zijn brieven en mails krijgt. Staat er een taal op de lead, dan is ze al ingevuld.
 - **Rechtsvorm** — enkel bij een bedrijf.
 
 Naam, e-mailadres en telefoonnummer komen uit de lead. De rest vult u aan op de klantenfiche, waar u meteen naartoe springt.
