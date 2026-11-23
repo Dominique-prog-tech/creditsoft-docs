@@ -25,7 +25,7 @@ En haut, vous pouvez filtrer par **propriétaire** — pour ne garder que vos pr
 
 ## Évaluer une pièce
 
-Cliquez une ligne. Un panneau s'ouvre à droite — de lui-même, vous n'avez rien à déplier — avec ce que le client a envoyé : chaque fichier avec sa taille et l'heure. Cliquez le nom du fichier pour le télécharger, ou **Consulter** pour ouvrir un PDF sans l'enregistrer.
+Cliquez une ligne. Un panneau s'ouvre à droite — de lui-même, vous n'avez rien à déplier — avec ce que le client a envoyé : chaque fichier avec sa taille et l'heure. Si le client y a ajouté une remarque dans le [portail client](../beheer/klantportaal.md#ouvrir-retirer-ou-commenter-son-propre-fichier), elle figure en italique sous le nom du fichier. Cliquez le nom du fichier pour le télécharger, ou **Consulter** pour ouvrir un PDF sans l'enregistrer.
 
 L'**épingle** en haut du panneau le fixe, afin qu'il reste ouvert pendant que vous parcourez la liste. Sur un écran plus étroit, mieux vaut le laisser flotter : il ne masque alors que ce que vous ne lisez pas à ce moment-là.
 

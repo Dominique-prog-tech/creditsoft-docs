@@ -38,6 +38,17 @@ Eén pagina met de documenten die u van hem vraagt. Per stuk staat er of het nog
 
 Dit beeld komt uit **Bekijk als klant**, vandaar de gele balk bovenaan en de knop *← Voorbeeld sluiten*. Uw klant ziet die twee niet, maar krijgt dezelfde pagina met een afmeldknop.
 
+### Zijn eigen bestand openen, intrekken of toelichten
+
+Onder elk stuk staan de bestanden die hij stuurde. Hij klikt een bestandsnaam om het te **openen** en na te kijken of hij het juiste bestand koos.
+
+Zolang u het stuk nog niet goedkeurde of afkeurde, staat naast zijn eigen bestand **Intrekken**. Hij bevestigt, en het bestand verdwijnt van zijn lijst én van het kredietdossier. Was dat zijn enige bestand voor dat stuk, dan staat het weer als **gevraagd**. Hebt u het stuk al beoordeeld, dan kan hij niet meer intrekken: na een afkeuring stuurt hij gewoon een nieuw bestand.
+
+Boven de zone om op te laden kan hij een **opmerking** typen, bijvoorbeeld *pagina 2 volgt morgen*. Die opmerking staat bij elk bestand dat hij op dat moment oplaadt, en u leest ze onder de bestandsnaam wanneer u het stuk [beoordeelt](../credit-management/document-validation.md#een-stuk-beoordelen).
+
+!!! info "Een ingetrokken bestand is niet weg"
+    CreditSoft verwijdert het niet echt: het blijft bewaard, en het actielogboek noteert dat de klant het introk.
+
 De taalknop **NL · FR** in de kopbalk wisselt in dat voorbeeld enkel de taal van het voorbeeld. Uw eigen scherm in CreditSoft blijft in uw taal.
 
 Uw **welkomsttitel en -tekst** staan enkel bovenaan wanneer u de documenten op een **kredietdossier** vraagt. Vraagt u documenten op een [relatie](../crm/relations.md#gevraagde-documenten) zonder dossier, dan ziet uw klant de standaardtitel *Uw documenten* en de standaardtekst *Hieronder ziet u welke stukken wij van u nodig hebben.* Uw eigen tekst kan immers over een dossier of een kredietaanvraag gaan, en die is er dan nog niet.

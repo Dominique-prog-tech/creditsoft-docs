@@ -25,7 +25,7 @@ Bovenaan kan u filteren op **eigenaar** — zo houdt u enkel uw eigen dossiers o
 
 ## Een stuk beoordelen
 
-Klik een rij aan. Rechts klapt een paneel open — vanzelf, u hoeft het niet open te doen — met wat de klant stuurde: elk bestand met zijn grootte en het tijdstip. Klik de bestandsnaam om te downloaden, of **Bekijken** om een PDF te openen zonder hem op te slaan.
+Klik een rij aan. Rechts klapt een paneel open — vanzelf, u hoeft het niet open te doen — met wat de klant stuurde: elk bestand met zijn grootte en het tijdstip. Schreef de klant er in het [klantenportaal](../beheer/klantportaal.md#zijn-eigen-bestand-openen-intrekken-of-toelichten) een opmerking bij, dan staat die schuin gedrukt onder de bestandsnaam. Klik de bestandsnaam om te downloaden, of **Bekijken** om een PDF te openen zonder hem op te slaan.
 
 Met het **speldje** bovenaan het paneel zet u het vast, zodat het openblijft terwijl u door de lijst gaat. Op een smaller scherm laat u het beter zweven: dan dekt het enkel af wat u op dat moment toch niet leest.
 

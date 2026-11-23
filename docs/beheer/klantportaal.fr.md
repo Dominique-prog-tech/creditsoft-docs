@@ -38,6 +38,17 @@ Une seule page, avec les documents que vous lui demandez. Pour chaque pièce, il
 
 Cette image provient de **Voir comme le client**, d'où le bandeau jaune en haut et le bouton *← Fermer l'aperçu*. Votre client ne voit ni l'un ni l'autre, mais obtient la même page avec un bouton de déconnexion.
 
+### Ouvrir, retirer ou commenter son propre fichier
+
+Sous chaque pièce figurent les fichiers qu'il a envoyés. Il clique sur un nom de fichier pour l'**ouvrir** et vérifier qu'il a choisi le bon.
+
+Tant que vous n'avez ni approuvé ni refusé la pièce, **Retirer** figure à côté de son propre fichier. Il confirme, et le fichier disparaît de sa liste et du dossier de crédit. S'il s'agissait de son seul fichier pour cette pièce, elle redevient **demandée**. Si vous avez déjà évalué la pièce, il ne peut plus retirer : après un refus, il envoie simplement un nouveau fichier.
+
+Au-dessus de la zone de dépôt, il peut taper une **remarque**, par exemple *la page 2 suit demain*. Cette remarque accompagne chaque fichier qu'il dépose à ce moment-là, et vous la lisez sous le nom du fichier lorsque vous [évaluez](../credit-management/document-validation.md#evaluer-une-piece) la pièce.
+
+!!! info "Un fichier retiré n'est pas perdu"
+    CreditSoft ne le supprime pas vraiment : il reste conservé, et le journal des actions note que le client l'a retiré.
+
 Dans cet aperçu, le bouton de langue **NL · FR** du bandeau ne change que la langue de l'aperçu. Votre propre écran dans CreditSoft reste dans votre langue.
 
 Votre **titre et texte d'accueil** n'apparaissent en haut que lorsque vous demandez les documents sur un **dossier de crédit**. Si vous demandez des documents sur une [relation](../crm/relations.md#documents-demandes) sans dossier, votre client voit le titre standard *Vos documents* et le texte standard *Vous trouverez ci-dessous les pièces dont nous avons besoin.* Votre propre texte peut en effet parler d'un dossier ou d'une demande de crédit, qui n'existe pas encore à ce moment-là.
