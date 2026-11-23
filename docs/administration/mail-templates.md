@@ -22,7 +22,7 @@ Kies bovenaan bij **Sjabloon** welk sjabloon u wilt aanpassen. Elk sjabloon hoor
 | **Herinnering ontbrekende stukken (klantenportaal)** | Er ontbreken nog stukken, en de herinnering vertrekt |
 | **Bevestiging afspraak** | U bevestigt een afspraak |
 | **Commissieborderel** | U mailt een [borderel](../credit-management/commission-statements.md) naar de aanbrenger |
-| **Nieuwe lead via de website** | Er komt een lead binnen via uw website — deze mail gaat naar uw kantoor |
+| **Nieuwe lead binnengekomen** | Er komt een lead binnen via uw website, het aanbrengersportaal of de mobiele app — deze mail gaat naar uw kantoor |
 | **Dagelijks leadoverzicht** | Het overzicht van de leads die aandacht vragen — ook naar uw kantoor |
 | **Factuur of creditnota** | U mailt een [factuur of creditnota](../facturatie/facturen.md#mailen) naar uw klant |
 

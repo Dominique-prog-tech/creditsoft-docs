@@ -46,12 +46,13 @@ Si vous souhaitez tout de même un e-mail dès que quelqu'un se manifeste, régl
 !!! tip "Une boîte partagée vaut souvent mieux qu'une seule personne"
     `info@bureau.be` continue de fonctionner quand quelqu'un est en congé. Un seul nom dans ce champ signifie que personne ne regarde pendant deux semaines.
 
-**Le contenu de ce message** — qui c'est, ce qu'il a demandé, par quel formulaire il est arrivé, et un lien qui ouvre directement le lead — se modifie dans les [modèles d'e-mail](../administration/mail-templates.md). Cherchez-y le modèle *Nouveau lead via le site web*.
+**Le contenu de ce message** — qui c'est, ce qu'il a demandé, par quel formulaire il est arrivé, et un lien qui ouvre directement le lead — se modifie dans les [modèles d'e-mail](../administration/mail-templates.md). Cherchez-y le modèle *Nouveau lead reçu*.
 
 Sur ce même écran, vous réglez aussi l'**avis quotidien** sur les leads qui restent en plan — voir [L'avis quotidien](leads.md#lavis-quotidien) — et vous activez l'**e-mail de suivi mensuel** aux leads — voir [Suivre chaque mois](leads.md#suivre-chaque-mois).
 
 Deux points fonctionnent délibérément ainsi :
 
+- **Si un apporteur transmet un client** via le [portail des apporteurs](../portaal/aangebracht.md) ou l'application mobile, vous recevez le même message. La source indique alors *Portail apporteurs* ou *Application mobile*.
 - **Si vous ajoutez vous-même un lead** dans l'écran, aucun e-mail ne suit. Vous l'avez déjà sous les yeux, et une notification pour quelque chose que vous venez de faire vous apprend à ignorer les notifications.
 - **Si la même personne pose une deuxième question**, vous êtes averti, mais avec la mention qu'elle a été rattachée à un lead existant. Sinon, vous chercheriez une nouvelle ligne qui n'existe pas.
 

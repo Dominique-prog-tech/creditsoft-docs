@@ -46,12 +46,13 @@ Wilt u wél een mail zodra er iemand aanklopt, dan stelt u dat in bij **Platform
 !!! tip "Een gedeelde bus is vaak beter dan één persoon"
     `info@kantoor.be` blijft werken wanneer iemand met verlof is. Eén naam in dat veld betekent dat er twee weken lang niemand kijkt.
 
-**Wat er in dat bericht staat** — wie het is, wat hij vroeg, via welk formulier hij binnenkwam, en een link die de lead meteen opent — past u aan bij de [mailsjablonen](../administration/mail-templates.md). Zoek daar het sjabloon *Nieuwe lead via de website*.
+**Wat er in dat bericht staat** — wie het is, wat hij vroeg, via welk formulier hij binnenkwam, en een link die de lead meteen opent — past u aan bij de [mailsjablonen](../administration/mail-templates.md). Zoek daar het sjabloon *Nieuwe lead binnengekomen*.
 
 Op datzelfde scherm stelt u ook het **dagelijkse bericht** in over leads die blijven liggen — zie [Het dagelijkse bericht](leads.md#het-dagelijkse-bericht) — en zet u de **maandelijkse opvolgmail** aan leads aan — zie [Maandelijks opvolgen](leads.md#maandelijks-opvolgen).
 
 Twee dingen die bewust zo werken:
 
+- **Geeft een aanbrenger een klant door** via het [aanbrengersportaal](../portaal/aangebracht.md) of de mobiele app, dan krijgt u hetzelfde bericht. Als bron staat er dan *Aanbrengersportaal* of *Mobiele app*.
 - **Voegt u zelf een lead toe** in het scherm, dan volgt er géén mail. U staat er op dat moment al naar te kijken, en een melding over iets wat u net zelf deed, leert u meldingen wegklikken.
 - **Stelt dezelfde persoon een tweede vraag**, dan krijgt u wél bericht, maar met de vermelding dat ze bij een bestaande lead gezet is. Anders zou u een nieuwe rij zoeken die er niet is.
 

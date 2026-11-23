@@ -22,7 +22,7 @@ En haut, sous **Modèle**, choisissez le modèle à modifier. Chaque modèle cor
 | **Rappel pièces manquantes (portail client)** | Des pièces manquent encore, et le rappel part |
 | **Confirmation de rendez-vous** | Vous confirmez un rendez-vous |
 | **Bordereau de commission** | Vous envoyez un [bordereau](../credit-management/commission-statements.md) à l'apporteur |
-| **Nouveau lead via le site web** | Un lead arrive par votre site web — cet e-mail part vers votre bureau |
+| **Nouveau lead reçu** | Un lead arrive par votre site web, le portail des apporteurs ou l'application mobile — cet e-mail part vers votre bureau |
 | **Aperçu quotidien des leads** | L'aperçu des leads qui demandent votre attention — également vers votre bureau |
 | **Facture ou note de crédit** | Vous envoyez une [facture ou une note de crédit](../facturatie/facturen.md#envoyer-par-e-mail) à votre client |
 
