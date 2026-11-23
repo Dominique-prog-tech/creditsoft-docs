@@ -5,7 +5,7 @@ Op dit scherm bepaalt u zelf hoe uw dossiers op het dashboard **gegroepeerd en g
 ![Het scherm Dashboard-fases in CreditSoft: bovenaan de beginstatus van een nieuw dossier; daaronder Het bord van Kredietdossiers met de knoppen Status van het dossier en Status van het kredietcontract; dan de status voor opvolging na de akte en het aantal dagen dat het signaalblok vooruitkijkt. De beginstatus, de opvolging en het signaalblok hebben elk een eigen knop Bewaren. Daaronder de fases met hun naam in beide talen, hun volgorde en de vinkjes eindfase en geslaagd, met rechts de koppeling van elke dossierstatus aan een fase.](../images/dashboard-fases.png "Instellen hoe dossiers gegroepeerd en geteld worden op het dashboard"){ .volle-breedte }
 
 !!! info "Let op waar wél en niet een bewaarknop staat"
-    De **fases**, de **koppelingen** en de **vinkjes** onderaan worden meteen bewaard: past u iets aan, dan staat het er. Wilt u een koppeling ongedaan maken, klik dan op het kruisje in de keuzelijst.
+    De **fases**, de **koppelingen**, de **volgorde op het bord** en de **vinkjes** onderaan worden meteen bewaard: past u iets aan, dan staat het er. Wilt u een koppeling ongedaan maken, klik dan op het kruisje in de keuzelijst.
 
     De twee instellingen **bovenaan** — de beginstatus en het signaalblok — hebben elk hun eigen knop **Bewaren**. Klikt u die niet, dan is uw wijziging niet opgeslagen.
 
@@ -56,7 +56,17 @@ Onderaan de tabel staat een lege regel: vul daar een naam in om een fase toe te 
 
 ## Dossierstatussen aan een fase koppelen
 
-Onder de fasetabel staan al uw dossierstatussen. Kies per status in welke fase hij thuishoort.
+Onder de fasetabel staan al uw dossierstatussen. Kies per status in welke fase hij thuishoort. Elke wijziging wordt
+meteen bewaard.
+
+De statussen staan per fase gegroepeerd, in de volgorde van de fases; de statussen zonder fase staan achteraan. Binnen
+een fase staan ze op hun volgorde op het bord, en bij een gelijke waarde op naam. Die volgorde in de tabel wordt
+bijgewerkt wanneer u het scherm opnieuw opent.
+
+In de kolom **Volgorde op het bord** bepaalt u waar de status binnen zijn fase op het
+[bord van Kredietdossiers](../credit-management/credit-files.md#bord) staat: lager staat eerst. Bij een gelijke waarde
+volgt het bord de volgorde van de keuzelijst. Bij een status zonder fase staat het veld uit. Dit geldt wanneer het bord
+de [status van het dossier](#bord) volgt.
 
 - Een status hoort bij **hoogstens één** fase.
 - Ook een status die nog op geen enkel dossier staat, staat in de lijst, met de vermelding *nog op geen dossier*. Koppel hem gerust vooraf: het eerste dossier met die status komt dan meteen in de juiste fase.

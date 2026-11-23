@@ -119,6 +119,9 @@ Retire le bordereau dans son entièreté. Les lignes de commission redeviennent 
 
 C'est possible **tant que le bordereau n'est pas payé**. S'il l'est, le bouton disparaît : annulez d'abord le paiement. S'il figure sur les fiches d'une année [définitive](fiche-281-50.md#rendre-une-annee-definitive), CreditSoft le refuse : rouvrez d'abord cette année.
 
+Si le bordereau retiré était le dernier de sa série, la série disparaît aussi : cette période est alors considérée comme
+non décomptée. Une série qui contient encore un autre bordereau reste en place.
+
 !!! info "La colonne Votre référence"
     Il s'agit de la **référence que l'apporteur a lui-même donnée au dossier** — pas d'un numéro attribué par CreditSoft. Si un bureau ne travaille pas avec des références, cette colonne reste vide pour tous ses dossiers. Ce n'est pas une information manquante.
 

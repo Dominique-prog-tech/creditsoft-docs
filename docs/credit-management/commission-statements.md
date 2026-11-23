@@ -119,6 +119,9 @@ Trekt het hele borderel terug. De commissielijnen komen weer vrij en verschijnen
 
 Dat kan **zolang het borderel niet betaald is**. Is het wel betaald, dan verdwijnt de knop: zet eerst de betaling terug. Staat het op de fiches van een jaar dat [definitief](fiche-281-50.md#een-jaar-definitief-maken) is, dan weigert CreditSoft het: heropen eerst dat jaar.
 
+Was het ingetrokken borderel het laatste van zijn ronde, dan verdwijnt ook de ronde: die periode geldt dan als niet afgerekend.
+Een ronde waarin nog een ander borderel staat, blijft bestaan.
+
 !!! info "De kolom Uw kenmerk"
     Dat is het **kenmerk dat de aanbrenger zelf aan het dossier gaf** — geen nummer dat CreditSoft uitdeelt. Werkt een kantoor daar niet mee, dan blijft die kolom leeg voor al zijn dossiers. Dat is geen ontbrekende informatie.
 

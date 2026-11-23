@@ -20,12 +20,16 @@ Saisissez à gauche :
 - le **mode de remboursement** : mensualité constante, remboursement in fine, mensualités croissantes ou amortissement
   fixe du capital.
 
+Si vous choisissez des **mensualités croissantes**, le champ **Augmentation annuelle (%)** apparaît : le pourcentage
+dont la mensualité augmente chaque année, entre 0 et 20. CreditSoft répartit cette augmentation sur les mois : la
+mensualité augmente un peu chaque mois, de sorte qu'après un an elle a augmenté de ce pourcentage.
+
 À droite apparaissent la **première échéance**, le **total des intérêts** et le **total remboursé**, avec le mode de calcul
 en dessous. **Tableau d'amortissement…** ouvre le tableau complet, comme pour un
 [contrat](credit-files.md#le-tableau-damortissement). Vous pouvez aussi le télécharger en pdf.
 
-S'il manque quelque chose, la page le dit. Pour des mensualités croissantes, CreditSoft ne calcule pas de tableau : le
-pourcentage d'augmentation n'est pas connu.
+S'il manque quelque chose, la page le dit. Si, pour des mensualités croissantes, vous laissez l'augmentation annuelle
+vide, CreditSoft ne calcule pas de tableau.
 
 ## L'achat
 

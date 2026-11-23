@@ -4,7 +4,7 @@ Een aanvrager stuurt zijn loonfiches, en u neemt de gegevens over in zijn dossie
 
 ## Wat er nodig is
 
-- **Uw kantoor zet het lezen door AI aan in ADM One.** Klik onderaan het menu op **Klantenportaal** en open de tegel **AI-sleutel**. Daar staan drie dingen:
+- **Uw kantoor zet het lezen door AI aan in ADM One.** Klik onderaan het menu op **ADM One-portaal** en open de tegel **AI-sleutel**. Daar staan drie dingen:
     1. de **sleutel** van het AI-abonnement van uw kantoor. Het lezen gebeurt op dat abonnement;
     2. het vinkje **Documentanalyse**;
     3. het vinkje **Scans, foto's en pdf's**. Dat is nodig voor elke loonfiche, want een loonfiche is altijd een bestand.

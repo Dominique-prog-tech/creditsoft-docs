@@ -18,12 +18,16 @@ Vul links in:
 - de **rentevoet** per jaar, in procent;
 - de **aflossingswijze**: gelijkblijvende maandlast, aflossingsvrij, stijgende maandlast of vaste kapitaalaflossing.
 
+Kiest u een **stijgende maandlast**, dan verschijnt het veld **Stijging per jaar (%)**: het percentage waarmee de
+maandlast elk jaar stijgt, tussen 0 en 20. CreditSoft verdeelt die stijging over de maanden: de maandlast stijgt elke
+maand een klein beetje, zodat ze na een jaar met dat percentage gestegen is.
+
 Rechts verschijnen de **eerste termijn**, de **totale rente** en het **totaal terugbetaald**, met de rekenwijze eronder.
 Met **Aflossingstabel…** opent u de volledige tabel, zoals bij een
 [contract](credit-files.md#de-aflossingstabel). Ook die kunt u als pdf downloaden.
 
-Ontbreekt er iets, dan zegt de pagina wat. Bij een stijgende maandlast rekent CreditSoft geen tabel: het
-stijgingspercentage is niet gekend.
+Ontbreekt er iets, dan zegt de pagina wat. Laat u bij een stijgende maandlast de stijging per jaar leeg, dan rekent
+CreditSoft geen tabel.
 
 ## De aankoop
 

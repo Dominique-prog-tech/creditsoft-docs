@@ -43,6 +43,33 @@ Cliquez sur **+ Ajouter une fonction**, indiquez la **fonction** et la **date de
 - **Une personne arrête :** ouvrez la ligne et indiquez la date de fin. La personne reste au registre.
 - **Une ligne a été saisie par erreur :** ouvrez la ligne et cliquez sur **Supprimer**.
 
+## Supprimer une personne ou indiquer son départ { #verwijderen }
+
+Sur la fiche, le bouton **Supprimer la personne** figure à l'écart, en rouge. La suppression n'est possible que pour
+une personne :
+
+- sans **compte utilisateur** ;
+- sans **ligne de fonction**, même terminée : le registre conserve une fonction même après le départ. Si une ligne a
+  été saisie par erreur, supprimez-la d'abord ;
+- à laquelle plus aucune donnée ne fait référence : dossiers, remarques, relations, leads, rendez-vous, tâches ou
+  apporteurs, y compris ce qui se trouve dans la Corbeille.
+
+Si c'est possible, CreditSoft demande une confirmation. La personne disparaît de la liste et figure dans la
+[Corbeille](recycle-bin.md), sous *Personnes concernées*. Vous pouvez y restaurer la fiche.
+
+Si ce n'est pas possible, la fenêtre **Supprimer la personne** s'ouvre et indique pourquoi, par exemple *des données y
+font encore référence, y compris dans la corbeille : 3 dossiers, 1 rendez-vous*. Si la personne est partie, la fenêtre
+propose **Indiquer le départ** :
+
+- chaque fonction en cours reçoit la date de fin que vous indiquez sous **Date de fin des fonctions**. Cette date ne
+  peut pas précéder la date de début d'une fonction en cours ;
+- une personne sans compte disparaît des listes de choix des collaborateurs. Les données qui y font référence
+  continuent d'afficher son nom.
+
+Si la personne a un compte, désactivez-le ensuite dans [Utilisateurs](users.md). S'il n'y a plus rien à clôturer,
+parce qu'aucune fonction n'est en cours et que la personne ne figure pas dans les listes de choix, la fenêtre le dit.
+Vous la fermez avec **Fermer**.
+
 ## Imprimer le registre
 
 Dans la liste, cliquez sur **Imprimer le registre**. Vous obtenez un aperçu que vous pouvez télécharger, avec en haut votre bureau et votre numéro FSMA repris de la [fiche d'entreprise](company-profile.md). Chaque fonction figure sur sa propre ligne, y compris celles des personnes parties. Les personnes incomplètes y figurent aussi, avec les champs vides visibles.

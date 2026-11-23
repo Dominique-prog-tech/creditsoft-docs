@@ -32,6 +32,16 @@ Het sjabloon *Factuur of creditnota* heeft eigen variabelen, zoals `{{invoice.nu
 
 Een sjabloon kan **variabelen** bevatten die bij het versturen automatisch ingevuld worden, bijvoorbeeld `{{company.name}}` of `{{employee.firstname}}`. U vindt ze in het **variabelen-palet**: **sleep** een variabele naar het onderwerp of de body, of **klik** erop om ze te kopiëren. Het **Voorbeeld** rechts toont het sjabloon met voorbeeldwaarden, zodat u meteen ziet hoe het eruitziet.
 
+### Telefoon en e-mail van de medewerker op één regel
+
+Voor een handtekening is er `{{employee.contact}}`: de telefoon en het e-mailadres van de medewerker op één regel,
+bijvoorbeeld *T: 02 123 45 68 · E: jan.janssens@voorbeeld.be*. Er staat enkel in wat ingevuld is: heeft de medewerker
+geen telefoonnummer, dan staat er enkel het e-mailadres, zonder een lege *T:*. Het standaardsjabloon *Algemeen*
+gebruikt deze variabele in de handtekening.
+
+Staat er in een sjabloon `T: {{employee.phone}} · E: {{employee.email}}`, dan blijft bij een lege telefoon of een
+leeg e-mailadres de *T:* of *E:* alleen staan. Vervang die regel door `{{employee.contact}}` om dat te vermijden.
+
 ## Aanpassen
 
 - **Afzender** — kies (optioneel) welk verzendadres als afzender gebruikt wordt. Leeg = het standaardadres.

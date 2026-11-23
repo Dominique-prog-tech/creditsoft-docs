@@ -5,7 +5,7 @@ Sur cet écran, vous déterminez vous-même comment vos dossiers sont **regroup�
 ![L'écran Phases du tableau de bord dans CreditSoft : en haut le statut initial d'un nouveau dossier ; en dessous Le tableau des dossiers de crédit avec les boutons Statut du dossier et Statut du contrat de crédit ; puis le statut de suivi après l'acte et le nombre de jours que le bloc de signaux regarde en avant. Le statut initial, le suivi et le bloc de signaux ont chacun leur propre bouton Enregistrer. En dessous les phases avec leur nom dans les deux langues, leur ordre et les cases phase finale et réussi, avec à droite le lien entre chaque statut de dossier et une phase.](../images/dashboard-fases-fr.png "Configurer comment les dossiers sont groupés et comptés sur le tableau de bord"){ .volle-breedte }
 
 !!! info "Attention à l'endroit où il y a — ou non — un bouton d'enregistrement"
-    Les **phases**, les **rattachements** et les **cases** du bas sont enregistrés immédiatement : si vous modifiez quelque chose, c'est aussitôt pris en compte. Pour défaire un rattachement, cliquez sur la croix dans la liste de choix.
+    Les **phases**, les **rattachements**, l'**ordre sur le tableau** et les **cases** du bas sont enregistrés immédiatement : si vous modifiez quelque chose, c'est aussitôt pris en compte. Pour défaire un rattachement, cliquez sur la croix dans la liste de choix.
 
     Les deux réglages **du haut** — le statut initial et le bloc de signaux — ont chacun leur propre bouton **Enregistrer**. Si vous ne cliquez pas dessus, votre modification n'est pas enregistrée.
 
@@ -57,6 +57,16 @@ En bas du tableau figure une ligne vide : saisissez-y un nom pour ajouter une ph
 ## Rattacher les statuts de dossier à une phase
 
 Sous le tableau des phases figurent tous vos statuts de dossier. Choisissez pour chacun la phase à laquelle il appartient.
+Chaque modification est enregistrée immédiatement.
+
+Les statuts sont regroupés par phase, dans l'ordre des phases ; les statuts sans phase figurent à la fin. Dans une
+phase, ils sont classés selon leur ordre sur le tableau, puis par nom à valeur égale. Cet ordre dans la liste est mis à
+jour lorsque vous rouvrez l'écran.
+
+Dans la colonne **Ordre sur le tableau**, vous déterminez la place du statut dans sa phase sur le
+[tableau des dossiers de crédit](../credit-management/credit-files.md#bord) : le plus petit d'abord. À valeur égale, le
+tableau suit l'ordre de la liste de choix. Pour un statut sans phase, le champ est désactivé. Cela vaut lorsque le
+tableau suit le [statut du dossier](#bord).
 
 - Un statut relève d'**une phase au maximum**.
 - Un statut qui ne figure encore sur aucun dossier apparaît aussi dans la liste, avec la mention *sur aucun dossier pour l'instant*. Vous pouvez le rattacher à l'avance : le premier dossier avec ce statut arrive alors directement dans la bonne phase.

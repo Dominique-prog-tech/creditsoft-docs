@@ -21,7 +21,8 @@ Bovenaan links staat een knop om het menu **in te klappen**. Klapt u het in, dan
 
 ### Onderaan het menu
 
-- **Klantenportaal** — opent het klantenportaal van ADM One in een **nieuw tabblad**.
+- **ADM One-portaal**: opent het portaal van uw kantoor in ADM One in een **nieuw tabblad**. Dat is niet het
+  klantenportaal waar uw klanten hun documenten aanleveren.
 - **Afmelden** — meldt u veilig af.
 - **Het versienummer** (bijvoorbeeld *v0.3.0*) — klik erop om **"Wat is nieuw"** te openen: de release notes met de nieuwste updates en verbeteringen.
 

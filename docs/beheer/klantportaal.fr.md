@@ -20,7 +20,7 @@ C'est le principe. Chaque champ laissé vide est repris de votre **fiche d'entre
 | **Couleur principale** | Une seule couleur suffit : les tons plus clairs et plus foncés en sont déduits |
 | **Bandeau** | Dégradé, uni, ou clair avec un liseré |
 | **Logo** | Un logo propre au portail. Vide = le logo de votre fiche d'entreprise |
-| **Titre et texte d'accueil** | Les premières phrases que lit votre client, en néerlandais et en français |
+| **Titre et texte d'accueil** | Les premières phrases que lit votre client avec les documents d'un dossier, en néerlandais et en français |
 | **Contact** | À qui le client peut s'adresser. Vide = les données de votre fiche d'entreprise |
 
 À droite, un **aperçu** suit aussitôt vos choix. Vous ne devez donc pas enregistrer pour voir le résultat.
@@ -36,7 +36,11 @@ Une seule page, avec les documents que vous lui demandez. Pour chaque pièce, il
 
 ![Le portail avec en haut le bandeau jaune Aperçu, le texte d'accueil, le numéro de dossier, une barre de progression et six documents avec leur statut : trois en ordre, deux reçus et un à renvoyer avec le motif.](../images/klantportaal-klant-fr.png "Le portail tel que vous le voyez via Voir comme le client"){ .volle-breedte }
 
-Cette image provient de **Voir comme le client**, d'où le bandeau jaune en haut et le bouton *Retour au dossier*. Votre client ne voit ni l'un ni l'autre — il obtient la même page avec un bouton de déconnexion.
+Cette image provient de **Voir comme le client**, d'où le bandeau jaune en haut et le bouton *← Fermer l'aperçu*. Votre client ne voit ni l'un ni l'autre, mais obtient la même page avec un bouton de déconnexion.
+
+Dans cet aperçu, le bouton de langue **NL · FR** du bandeau ne change que la langue de l'aperçu. Votre propre écran dans CreditSoft reste dans votre langue.
+
+Votre **titre et texte d'accueil** n'apparaissent en haut que lorsque vous demandez les documents sur un **dossier de crédit**. Si vous demandez des documents sur une [relation](../crm/relations.md#documents-demandes) sans dossier, votre client voit le titre standard *Vos documents* et le texte standard *Vous trouverez ci-dessous les pièces dont nous avons besoin.* Votre propre texte peut en effet parler d'un dossier ou d'une demande de crédit, qui n'existe pas encore à ce moment-là.
 
 !!! info "Votre client n'a pas besoin de mot de passe"
     Il entre par un lien personnel que vous lui transmettez. Ce lien vaut pour **un seul dossier** et expire après trente jours.

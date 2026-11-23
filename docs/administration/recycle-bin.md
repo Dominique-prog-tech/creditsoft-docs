@@ -10,7 +10,7 @@ Klik in de zijbalk op **Platformbeheer** en daarna op de tegel **Prullenbak** (o
 
 ## Wat u ziet
 
-De verwijderde records staan **gegroepeerd per soort** — bijvoorbeeld *Relaties*, *Leads*, *Kredietinstellingen*, *Verzekeraars*, *Aanbrengers*, *Kredietdossiers*, *Afspraken* en de journaal-items (*Taken*, *Notities*, *Bijlagen*, *Mailverkeer*). Per record ziet u:
+De verwijderde records staan **gegroepeerd per soort**, bijvoorbeeld *Relaties*, *Leads*, *Kredietinstellingen*, *Verzekeraars*, *Aanbrengers*, *Betrokken personen*, *Kredietdossiers*, *Afspraken* en de journaal-items (*Taken*, *Notities*, *Bijlagen*, *Mailverkeer*). Per record ziet u:
 
 - **Naam** — de naam of titel van het verwijderde record.
 - **Verwijderd op** — wanneer het naar de Prullenbak ging.
@@ -19,6 +19,10 @@ De verwijderde records staan **gegroepeerd per soort** — bijvoorbeeld *Relatie
 ## Een record herstellen
 
 Klik naast het record op **Herstellen**. Het record verdwijnt uit de Prullenbak en is meteen weer beschikbaar op zijn gewone plaats, precies zoals voordien.
+
+**Een kredietdossier.** Verwijdert u een [kredietdossier](../credit-management/credit-files.md#een-dossier-verwijderen), dan gaan zijn taken mee naar de Prullenbak, onder *Taken*. Herstelt u het dossier, dan komen die taken mee terug. Een taak die al vóór het dossier apart verwijderd werd, blijft staan; die herstelt u zelf onder *Taken*.
+
+**Een betrokken persoon.** Onder *Betrokken personen* staan de personen die verwijderd werden in het [Register betrokken personen](involved-persons.md#verwijderen). Herstellen zet de fiche terug in de lijst van het register.
 
 ## Goed om weten
 

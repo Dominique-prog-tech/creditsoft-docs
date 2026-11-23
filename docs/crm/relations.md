@@ -10,7 +10,9 @@ Klik in de zijbalk op **CRM** en dan op **Relaties**.
 
 ![Het scherm Relaties in CreditSoft: een lijst van particulieren en bedrijven met de kolommen naam, type, geboortedatum, e-mail, telefoon en gemeente — de overige kolommen staan rechts, buiten beeld —, de balk om te groeperen, met bovenaan een filter op soort, de knoppen Samenvoegen, Nieuwe relatie en Exporteren en een zoekveld.](../images/relaties-lijst.png "Overzicht van alle relaties van het kantoor")
 
-De tabel toont per relatie: **naam**, **type**, **geboortedatum**, **e-mail**, **telefoon**, **gemeente**, **gsm**, **intern nummer**, **type contact** en **verantwoordelijke**. Is uw scherm smaller dan de lijst, dan schuift ze opzij; de naam en het e-mailadres blijven altijd leesbaar.
+De tabel toont per relatie: **naam**, **voornaam**, **type**, **geboortedatum**, **e-mail**, **telefoon**, **gemeente**, **gsm**, **intern nummer**, **type contact** en **verantwoordelijke**. Is uw scherm smaller dan de lijst, dan schuift ze opzij; de naam en het e-mailadres blijven altijd leesbaar.
+
+De lijst staat standaard gesorteerd op **Naam**. Bij een persoon staat daar de familienaam, en in **Voornaam** de voornaam. Bij een bedrijf staat de bedrijfsnaam in **Naam** en blijft **Voornaam** leeg. Is bij een persoon geen familienaam ingevuld, dan staat de volledige naam in **Naam**.
 
 - **Filter op soort** — bovenaan kiest u alles, enkel de particulieren of enkel de bedrijven.
 - **Zoeken** — het zoekveld zoekt in alle kolommen tegelijk.
@@ -148,6 +150,8 @@ duidt u aan of het bedrijf een **klant** en/of een **leverancier** is.
 Op elke fiche staat een **documenttaal**. Die bepaalt in welke taal deze relatie haar brieven en e-mails krijgt — los van de taal waarin u zelf werkt. Een Franstalige klant krijgt dus Franse documenten, ook als uw scherm in het Nederlands staat.
 
 Dit veld is **verplicht**. Laat u het leeg, dan weet het programma niet welke sjabloontaal het moet gebruiken.
+Staat het op een bestaande fiche nog leeg, dan zegt een waarschuwing bovenaan de fiche dat, en kunt u toch bewaren;
+zie [Wat er op een bestaande fiche al niet klopte](#bestaand-gebrek).
 
 !!! tip "Postcode en gemeente"
     Typ in het veld **Postcode**: de keuzelijst toont zowel de postcode als de gemeente, dus u kunt op
@@ -187,7 +191,8 @@ vraagt.
   gemaakt, en wanneer ze de link het laatst opende, of *nog niet geopend*. Trekt u de link in die net in het
   venster staat, dan verdwijnt hij en zegt het venster dat hij niet meer werkt.
 - **Bekijken als klant** — opent in een nieuw tabblad wat uw klant te zien krijgt. Uw fiche blijft
-  openstaan, zodat u beide naast elkaar kunt leggen.
+  openstaan, zodat u beide naast elkaar kunt leggen. De taalknop **NL · FR** in dat voorbeeld wisselt enkel de
+  taal van het voorbeeld; uw eigen scherm blijft in uw taal.
 
 **Dubbelklik** een regel om ze te beoordelen: u ziet de bestanden die binnenkwamen en keurt ze goed of af,
 net als [op een kredietdossier](../credit-management/credit-files.md#gevraagde-documenten). Vraagt u een stuk
@@ -223,8 +228,9 @@ Kwam deze klant binnen als lead van een aanbrenger, dan staat op het tabblad **A
 vult **Nieuw kredietdossier** die aanbrenger vooraf in op het dossier — zie
 [Leads van een aanbrenger](leads.md#leads-van-een-aanbrenger).
 
-Bij het opslaan worden **ontbrekende verplichte velden** en een **ongeldig e-mailadres** gemeld. Het
-e-mailadres wordt gecontroleerd zolang er iets in het veld staat, ook als u het niet zelf hebt gewijzigd.
+Bij het opslaan worden **ontbrekende verplichte velden**, een **ongeldig e-mailadres** en een **ongeldig
+telefoonnummer** gemeld, en wordt de fiche niet bewaard. Op een bestaande fiche geldt dat enkel voor wat u zelf
+wijzigt; zie [Wat er op een bestaande fiche al niet klopte](#bestaand-gebrek).
 **Telefoonnummers worden opgemaakt** in de officiële notatie: typt u `09/3724829`, dan staat er na het bewaren
 `09 372 48 29`.
 
@@ -232,3 +238,14 @@ e-mailadres wordt gecontroleerd zolang er iets in het veld staat, ook als u het 
     Bestaat er al een relatie met **dezelfde naam of hetzelfde e-mailadres**, dan toont CreditSoft welke, en
     vraagt of u toch wil bewaren. Dat is een waarschuwing, geen blokkade — naamgenoten bestaan. Ze houdt tegen
     dat u een tweede keer aanmaakt wat er al staat.
+
+### Wat er op een bestaande fiche al niet klopte { #bestaand-gebrek }
+
+Op een bestaande relatie kan er al iets ontbreken of niet kloppen: geen documenttaal, geen rechtsvorm bij een
+bedrijf, of een e-mailadres, telefoon- of gsm-nummer dat niet geldig is. Dat staat dan als **gele waarschuwing**
+bovenaan de fiche, bijvoorbeeld: *Op deze fiche ontbreekt of klopt nog niet: de documenttaal, een geldig
+e-mailadres. U kunt toch bewaren; vul het aan wanneer u kunt.*
+
+U kunt de fiche dus bewaren zonder dat eerst te herstellen, bijvoorbeeld wanneer u enkel het adres aanpast. Enkel
+een waarde die u **zelf wijzigt** naar iets wat ontbreekt of niet klopt, houdt het bewaren tegen. Bij een nieuwe
+relatie moet alles meteen in orde zijn.

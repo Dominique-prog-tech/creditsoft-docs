@@ -43,6 +43,32 @@ Klik op **+ Functie toevoegen**, vul de **functie** en de **begindatum** in, en 
 - **Iemand stopt:** open de regel en vul de einddatum in. De persoon blijft in het register staan.
 - **Een regel is verkeerd ingevoerd:** open de regel en klik op **Verwijderen**.
 
+## Een persoon verwijderen of uit dienst zetten { #verwijderen }
+
+Op de fiche staat apart, in het rood, de knop **Persoon verwijderen**. Verwijderen kan enkel bij een persoon:
+
+- zonder **gebruikersaccount**;
+- zonder **functieregel**, ook geen beëindigde: het register bewaart een functie ook na het vertrek. Was een regel
+  verkeerd ingevoerd, verwijder die dan eerst;
+- waarnaar geen gegevens meer verwijzen: dossiers, opmerkingen, relaties, leads, afspraken, taken of aanbrengers, ook
+  niet wat in de Prullenbak ligt.
+
+Kan het, dan vraagt CreditSoft een bevestiging. De persoon verdwijnt uit de lijst en staat in de
+[Prullenbak](recycle-bin.md), onder *Betrokken personen*. Daar kunt u de fiche herstellen.
+
+Kan het niet, dan opent het venster **Persoon verwijderen** en zegt het waarom, bijvoorbeeld *er verwijzen nog gegevens
+naar, ook in de Prullenbak: 3 dossiers, 1 afspraak*. Is de persoon vertrokken, dan biedt het venster
+**Uit dienst zetten** aan:
+
+- elke lopende functie krijgt de einddatum die u invult bij **Einddatum van de functies**. Die datum mag niet vóór de
+  begindatum van een lopende functie liggen;
+- een persoon zonder account verdwijnt uit de keuzelijsten met medewerkers. De gegevens die naar de persoon verwijzen,
+  blijven de naam tonen.
+
+Heeft de persoon een account, zet dat dan daarna uit in [Gebruikers](users.md). Is er niets meer uit dienst te zetten,
+omdat geen enkele functie nog loopt en de persoon niet in de keuzelijsten staat, dan zegt het venster dat. U sluit het
+met **Sluiten**.
+
 ## Het register afdrukken
 
 Klik in de lijst op **Register afdrukken**. U krijgt een voorbeeld dat u kunt downloaden, met bovenaan uw kantoor en uw FSMA-nummer uit de [Bedrijfsfiche](company-profile.md). Elke functie staat op een eigen regel, ook die van wie vertrokken is. Wie onvolledig is, staat er ook op, met de lege velden zichtbaar.

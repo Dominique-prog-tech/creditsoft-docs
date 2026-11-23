@@ -32,6 +32,16 @@ Le modèle *Facture ou note de crédit* a ses propres variables, comme `{{invoic
 
 Un modèle peut contenir des **variables** remplies automatiquement à l'envoi, par exemple `{{company.name}}` ou `{{employee.firstname}}`. Vous les trouvez dans le **panneau de variables** : **glissez** une variable vers l'objet ou le corps, ou **cliquez** dessus pour la copier. L'**Aperçu** à droite montre le modèle avec des valeurs d'exemple, pour voir immédiatement le rendu.
 
+### Téléphone et e-mail du collaborateur sur une ligne
+
+Pour une signature, il existe `{{employee.contact}}` : le téléphone et l'adresse e-mail du collaborateur sur une
+seule ligne, par exemple *T : 02 123 45 68 · E : jan.janssens@voorbeeld.be*. Seul ce qui est rempli y figure : si le
+collaborateur n'a pas de numéro de téléphone, seule l'adresse e-mail apparaît, sans *T :* vide. Le modèle standard
+*Général* utilise cette variable dans la signature.
+
+Si un modèle contient `T : {{employee.phone}} · E : {{employee.email}}`, le *T :* ou le *E :* reste seul lorsque le
+téléphone ou l'adresse e-mail est vide. Remplacez cette ligne par `{{employee.contact}}` pour l'éviter.
+
 ## Modifier
 
 - **Expéditeur** — choisissez (facultatif) l'adresse d'envoi utilisée comme expéditeur. Vide = l'adresse par défaut.

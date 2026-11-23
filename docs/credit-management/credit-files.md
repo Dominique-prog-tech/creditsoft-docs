@@ -93,7 +93,7 @@ Met de knop **Bord** in de werkbalk van de lijst, naast het aantal dossiers, zie
 
 **Wat het bord volgt.** Bij het ene kantoor staat de stap van een dossier in de status van het dossier, bij het andere in de status van het kredietcontract. Uw kantoor kiest dat één keer, bij **Platformbeheer → Dashboard-fases** (zie [Het bord van Kredietdossiers](../beheer/dashboard-fases.md#bord)). Is er nog niets gekozen, dan vraagt het bord het aan wie de fases mag beheren, met een voorstel uit uw dossiers.
 
-- Volgt het bord het **dossier**, dan is elke kaart een dossier en elke kolom een dossierstatus, onder haar fase.
+- Volgt het bord het **dossier**, dan is elke kaart een dossier en elke kolom een dossierstatus, onder haar fase. Binnen een fase staan de statussen in de **Volgorde op het bord** die uw kantoor bij [Dashboard-fases](../beheer/dashboard-fases.md#dossierstatussen-aan-een-fase-koppelen) koos; bij een gelijke waarde in de volgorde van de keuzelijst.
 - Volgt het bord het **contract**, dan is elke kaart een kredietcontract van een lopend dossier, met het contractnummer en het dossiernummer, en elke kolom een contractstatus, onder haar betekenis (*In te dienen*, *Ingediend*). Schuldsaldoverzekeringen staan er niet op.
 
 **De kolommen.**
@@ -191,7 +191,18 @@ Sluit de **status** het dossier af zonder akte — bijvoorbeeld *Krediet geweige
 
 Op de fiche zelf staat de **schattingswaarde**, met de quotiteit ernaast.
 
-De rest van het pand zit achter de knop **Investeringsfiche & pand…**: het pandadres, het pandtype, tot wanneer het EPC geldig is en het vinkje **Vrije keuze brandverzekering**. In datzelfde venster maakt u de volledige investeringsberekening — aankoop, nieuwbouw, renovatie, notariskosten, hypotheekinschrijving en alle overige posten, met onderaan de **totale investering** en de **eigen inbreng**.
+De rest van het pand staat op het tabblad **Investeringsfiche & pand**, onderaan het dossier naast *Patrimonium*. De
+knop **Investeringsfiche & pand** onderaan het kopblok opent dat tabblad en brengt het in beeld. Bovenaan het tabblad
+staan het pandadres, het pandtype, tot wanneer het EPC geldig is en het vinkje **Vrije keuze brandverzekering**.
+Daaronder maakt u de volledige investeringsberekening: aankoop, nieuwbouw, renovatie, notariskosten,
+hypotheekinschrijving en alle overige posten, met onderaan de **totale investering**, de **eigen inbreng** en het
+**gevraagde krediet**.
+
+De velden van het tabblad horen bij het dossier: u bewaart ze met **Bewaren** van het dossier, zoals elk ander veld.
+
+**Totale investering** en **Gevraagd krediet** vult u niet zelf in. CreditSoft berekent ze uit de bedragen erboven en
+uw eigen inbreng, en ze rekenen meteen mee wanneer u een bedrag wijzigt. Het gevraagde krediet is de totale
+investering min de eigen inbreng. Zolang u op het tabblad niets wijzigt, staan er de bewaarde bedragen.
 
 Onder de aankoop staan twee velden die samen het verkooprecht bepalen: **Enige eigen woning** (*Ja*, *Nee* of
 *Onbekend*) en de **Datum compromis**. Het verlaagde tarief geldt enkel voor de enige eigen woning, en in
@@ -221,7 +232,7 @@ vandaag.
 De raming staat per veld van de fiche: **Aankoopkosten pand** (de registratierechten), **Notariskosten** en
 **Hypotheekinschrijving**. Onder elk veld staan de posten, met waar het tarief vandaan komt. Naast elk veld ziet u
 wat er nu in de fiche staat. Met **Overnemen** zet u het bedrag in dat veld; daarna staat er *overgenomen*. Bewaar
-daarna de fiche.
+daarna het dossier.
 
 ![Het venster Raming aankoopkosten van een dossier. Bovenaan het doel Aankoop (met of zonder werken) uit het kredietdoel, het gewest Vlaams Gewest, het krediet en drie vinkjes voor grond, een gemengd pand en een pand in het buitenland. Daaronder de regel met de aankoopprijs, enige eigen woning ja en geen hypotheekmandaat, en de datum waarmee gerekend is. Dan de drie velden Aankoopkosten pand, Notariskosten en Hypotheekinschrijving, elk met zijn bedrag, wat er nu in de fiche staat en de knop Overnemen, en eronder de posten met hun bron. Onderaan het totaal.](../images/kredietdossier-raming.png "De raming van de aankoopkosten, per veld van de investeringsfiche"){ .volle-breedte }
 
@@ -234,8 +245,8 @@ voor een doel dat de raming niet kent, en voor een datum vóór 2026 (daarvoor k
 kosten dan zelf in.
 
 !!! tip "Het gevraagde krediet stijgt mee"
-    Het gevraagde krediet is de totale investering min de eigen inbreng. Neemt u de kosten over, dan stijgt het bij
-    het bewaren met die kosten, en daarmee ook de kosten van het krediet een beetje. Wilt u dat de raming met het
+    Het gevraagde krediet is de totale investering min de eigen inbreng. Neemt u de kosten over, dan stijgt het
+    meteen met die kosten, en daarmee ook de kosten van het krediet een beetje. Wilt u dat de raming met het
     hogere krediet rekent, pas het krediet dan aan in het venster.
 
 !!! info "De afrekening van de notaris geldt"
@@ -550,7 +561,7 @@ Kan de mail niet vertrekken, bijvoorbeeld omdat uw kantoor nog geen [verzendadre
 
 In hetzelfde venster staan onder **Uitgegeven links** alle uitnodigingen van dit dossier, met de datum waarop ze vertrokken, of ze *gemaild* werden of *enkel als link* gemaakt, en **wanneer de klant de link het laatst opende** — of *nog niet geopend*. Zo ziet u of uw klant al gekeken heeft. Die datum verschuift telkens hij op de link klikt; blijft hij aangemeld en komt hij later terug zonder opnieuw te klikken, dan blijft ze staan.
 
-Met **Bekijk als klant** ernaast opent u het portaal in een nieuw tabblad, precies zoals uw klant het ziet. Handig om te controleren wat u vraagt vóór u de uitnodiging verstuurt. Wat u daar oplaadt, komt écht op het dossier terecht — een gele balk bovenaan herinnert u daaraan.
+Met **Bekijk als klant** ernaast opent u het portaal in een nieuw tabblad, precies zoals uw klant het ziet. Handig om te controleren wat u vraagt vóór u de uitnodiging verstuurt. Wat u daar oplaadt, komt écht op het dossier terecht: een gele balk bovenaan herinnert u daaraan. De taalknop **NL · FR** in dat voorbeeld wisselt enkel de taal van het voorbeeld; uw eigen scherm blijft in uw taal.
 
 !!! warning "De link is elke keer nieuw"
     Een uitnodiging wordt niet bewaard en kan niet teruggehaald worden — enkel een afdruk ervan. Verstuurt u er een tweede, dan krijgt uw klant een nieuwe link; de oude blijft werken tot ze vervalt.
@@ -582,6 +593,16 @@ Met **Bestanden** beheert u de bijlagen zelf — handig wanneer een stuk per pos
 ### Opmerkingen
 
 Het tabblad naast *Partijen*. Hier noteert u alles wat bij dit dossier gezegd of afgesproken is — een telefoon met de klant, een afspraak met de bank, een stuk dat u nog verwacht. Elke regel draagt wie ze schreef en wanneer. Een opmerking heeft een datum en een inhoud nodig; de datum staat standaard op vandaag.
+
+### Een dossier verwijderen
+
+Met **Verwijderen**, apart rechts in het kopblok, verwijdert u het dossier na een bevestiging. Daarvoor is het recht
+**Kredietdossiers verwijderen** nodig (zie [Rollen & rechten](../administration/roles.md)). Het dossier verhuist naar
+de [Prullenbak](../administration/recycle-bin.md) en is dus niet definitief weg.
+
+De **taken** van het dossier gaan mee naar de Prullenbak: ze verdwijnen uit de [takenlijst](tasks.md) en tellen niet
+meer mee bij het belletje. Herstelt u het dossier, dan komen die taken mee terug. Een taak die u vooraf apart
+verwijderde, blijft in de Prullenbak.
 
 ## Afdrukken
 

@@ -20,7 +20,7 @@ Dat is het uitgangspunt. Elk veld dat u leeg laat, wordt overgenomen van uw **be
 | **Hoofdkleur** | Eén kleur volstaat: de lichtere en donkerdere tinten worden er automatisch uit afgeleid |
 | **Kopbalk** | Verloop, effen of licht met een accentlijn |
 | **Logo** | Een eigen portaallogo. Leeg = het logo van uw bedrijfsfiche |
-| **Welkomsttitel en -tekst** | De eerste zinnen die uw klant leest, in het Nederlands en het Frans |
+| **Welkomsttitel en -tekst** | De eerste zinnen die uw klant leest bij de documenten van een dossier, in het Nederlands en het Frans |
 | **Contact** | Bij wie de klant terechtkan. Leeg = de gegevens van uw bedrijfsfiche |
 
 Rechts staat een **voorbeeld** dat meteen meebeweegt met wat u kiest. U hoeft dus niet te bewaren om te zien hoe het wordt.
@@ -36,7 +36,11 @@ Eén pagina met de documenten die u van hem vraagt. Per stuk staat er of het nog
 
 ![Het portaal met bovenaan de gele balk Voorbeeld, de welkomsttekst, het dossiernummer, een voortgangsbalk en zes documenten met hun status: drie in orde, twee ontvangen en één met de melding opnieuw sturen en de reden erbij.](../images/klantportaal-klant.png "Het portaal zoals u het ziet met Bekijk als klant"){ .volle-breedte }
 
-Dit beeld komt uit **Bekijk als klant**, vandaar de gele balk bovenaan en de knop *Terug naar het dossier*. Uw klant ziet die twee niet — hij krijgt dezelfde pagina met een afmeldknop.
+Dit beeld komt uit **Bekijk als klant**, vandaar de gele balk bovenaan en de knop *← Voorbeeld sluiten*. Uw klant ziet die twee niet, maar krijgt dezelfde pagina met een afmeldknop.
+
+De taalknop **NL · FR** in de kopbalk wisselt in dat voorbeeld enkel de taal van het voorbeeld. Uw eigen scherm in CreditSoft blijft in uw taal.
+
+Uw **welkomsttitel en -tekst** staan enkel bovenaan wanneer u de documenten op een **kredietdossier** vraagt. Vraagt u documenten op een [relatie](../crm/relations.md#gevraagde-documenten) zonder dossier, dan ziet uw klant de standaardtitel *Uw documenten* en de standaardtekst *Hieronder ziet u welke stukken wij van u nodig hebben.* Uw eigen tekst kan immers over een dossier of een kredietaanvraag gaan, en die is er dan nog niet.
 
 !!! info "Uw klant heeft geen wachtwoord nodig"
     Hij komt binnen via een persoonlijke link die u hem bezorgt. Die link geldt voor **één dossier** en vervalt na dertig dagen.

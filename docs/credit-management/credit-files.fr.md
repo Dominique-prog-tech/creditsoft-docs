@@ -93,7 +93,7 @@ Avec le bouton **Tableau** dans la barre d'outils de la liste, à côté du nomb
 
 **Ce que suit le tableau.** Dans certains bureaux, l'étape d'un dossier se trouve dans le statut du dossier, dans d'autres dans le statut du contrat de crédit. Votre bureau le choisit une fois, sous **Administration → Phases du tableau de bord** (voir [Le tableau des dossiers de crédit](../beheer/dashboard-fases.md#bord)). Tant que rien n'est choisi, le tableau le demande à la personne qui peut gérer les phases, avec une proposition tirée de vos dossiers.
 
-- Si le tableau suit le **dossier**, chaque carte est un dossier et chaque colonne un statut de dossier, sous sa phase.
+- Si le tableau suit le **dossier**, chaque carte est un dossier et chaque colonne un statut de dossier, sous sa phase. Dans une phase, les statuts suivent l'**Ordre sur le tableau** que votre bureau a choisi dans les [Phases du tableau de bord](../beheer/dashboard-fases.md#rattacher-les-statuts-de-dossier-a-une-phase) ; à valeur égale, l'ordre de la liste de choix.
 - Si le tableau suit le **contrat**, chaque carte est un contrat de crédit d'un dossier en cours, avec le numéro du contrat et celui du dossier, et chaque colonne un statut de contrat, sous sa signification (*À introduire*, *Introduit*). Les assurances solde restant dû n'y figurent pas.
 
 **Les colonnes.**
@@ -191,7 +191,20 @@ Si le **statut** clôture le dossier sans acte — par exemple *Crédit refusé*
 
 Sur la fiche elle-même figure la **valeur estimée**, avec la quotité à côté.
 
-Le reste du bien se trouve derrière le bouton **Fiche d'investissement & bien…** : l'adresse du bien, le type de bien, la date de validité du PEB et la case **Libre choix de l'assurance incendie**. Dans cette même fenêtre, vous établissez le calcul d'investissement complet — achat, construction neuve, rénovation, frais de notaire, inscription hypothécaire et tous les autres postes, avec en bas l'**investissement total** et l'**apport propre**.
+Le reste du bien se trouve dans l'onglet **Fiche d'investissement & bien**, en bas du dossier, à côté de
+*Patrimoine*. Le bouton **Fiche d'investissement & bien**, en bas du bloc d'en-tête, ouvre cet onglet et l'amène à
+l'écran. En haut de l'onglet figurent l'adresse du bien, le type de bien, la date de validité du PEB et la case
+**Libre choix de l'assurance incendie**. En dessous, vous établissez le calcul d'investissement complet : achat,
+construction neuve, rénovation, frais de notaire, inscription hypothécaire et tous les autres postes, avec en bas
+l'**investissement total**, l'**apport propre** et le **crédit demandé**.
+
+Les champs de l'onglet font partie du dossier : vous les enregistrez avec **Enregistrer** du dossier, comme tout autre
+champ.
+
+Vous ne saisissez pas vous-même l'**Investissement total** et le **Crédit demandé**. CreditSoft les calcule à partir
+des montants au-dessus et de votre apport propre, et ils se mettent à jour immédiatement lorsque vous modifiez un
+montant. Le crédit demandé est l'investissement total moins l'apport propre. Tant que vous ne modifiez rien dans
+l'onglet, ce sont les montants enregistrés qui figurent.
 
 Sous l'achat figurent deux champs qui déterminent ensemble les droits d'enregistrement : **Seule habitation
 propre** (*Oui*, *Non* ou *Inconnu*) et la **Date du compromis**. Le taux réduit ne vaut que pour la seule
@@ -221,7 +234,7 @@ sinon aujourd'hui.
 L'estimation est présentée par champ de la fiche : **Frais d'achat du bien** (les droits d'enregistrement),
 **Frais de notaire** et **Inscription hypothécaire**. Sous chaque champ figurent les postes, avec l'origine du tarif.
 À côté de chaque champ, vous voyez ce que la fiche contient actuellement. **Reprendre** place le montant dans ce
-champ ; ensuite, la fenêtre indique *repris*. Enregistrez ensuite la fiche.
+champ ; ensuite, la fenêtre indique *repris*. Enregistrez ensuite le dossier.
 
 ![La fenêtre Estimation des frais d'achat d'un dossier. En haut, l'objet Achat (avec ou sans travaux) d'après le but du crédit, la région Région flamande, le crédit et trois cases pour un terrain, un bien mixte et un bien à l'étranger. En dessous, la ligne avec le prix d'achat, seule habitation propre oui et aucun mandat hypothécaire, et la date utilisée pour le calcul. Ensuite les trois champs Frais d'achat du bien, Frais de notaire et Inscription hypothécaire, chacun avec son montant, le contenu actuel de la fiche et le bouton Reprendre, et en dessous les postes avec leur origine. En bas, le total.](../images/kredietdossier-raming-fr.png "L'estimation des frais d'achat, par champ de la fiche d'investissement"){ .volle-breedte }
 
@@ -234,8 +247,8 @@ terrain, pour un bien à l'étranger, pour un objet que l'estimation ne connaît
 (CreditSoft n'a pas de tarifs pour cette période). Saisissez alors les frais vous-même.
 
 !!! tip "Le crédit demandé augmente aussi"
-    Le crédit demandé est l'investissement total moins l'apport propre. Si vous reprenez les frais, il augmente de
-    ces frais à l'enregistrement, et les frais du crédit augmentent donc un peu aussi. Si vous voulez que
+    Le crédit demandé est l'investissement total moins l'apport propre. Si vous reprenez les frais, il augmente
+    aussitôt de ces frais, et les frais du crédit augmentent donc un peu aussi. Si vous voulez que
     l'estimation calcule avec ce crédit plus élevé, adaptez le crédit dans la fenêtre.
 
 !!! info "Le décompte du notaire fait foi"
@@ -551,7 +564,7 @@ Si le courriel ne peut pas partir, par exemple parce que votre bureau n'a pas en
 
 Dans la même fenêtre, **Liens émis** reprend toutes les invitations de ce dossier, avec la date d'envoi, si elles ont été *envoyées par e-mail* ou créées comme *lien uniquement*, et **la dernière fois que le client a ouvert le lien** — ou *pas encore ouvert*. Vous voyez ainsi si votre client a déjà regardé. Cette date change chaque fois qu'il clique sur le lien ; s'il reste connecté et revient plus tard sans cliquer à nouveau, elle ne bouge pas.
 
-Avec **Voir comme le client** à côté, vous ouvrez le portail dans un nouvel onglet, exactement tel que votre client le voit. Pratique pour vérifier ce que vous demandez avant d'envoyer l'invitation. Ce que vous y déposez arrive réellement sur le dossier — un bandeau jaune en haut vous le rappelle.
+Avec **Voir comme le client** à côté, vous ouvrez le portail dans un nouvel onglet, exactement tel que votre client le voit. Pratique pour vérifier ce que vous demandez avant d'envoyer l'invitation. Ce que vous y déposez arrive réellement sur le dossier : un bandeau jaune en haut vous le rappelle. Dans cet aperçu, le bouton de langue **NL · FR** ne change que la langue de l'aperçu ; votre propre écran reste dans votre langue.
 
 !!! warning "Le lien est nouveau à chaque fois"
     Une invitation n'est pas conservée et ne peut pas être récupérée — seule une empreinte l'est. Si vous en envoyez une deuxième, votre client reçoit un nouveau lien ; l'ancien continue de fonctionner jusqu'à son expiration.
@@ -583,6 +596,16 @@ Le bouton **Fichiers** vous permet de gérer les pièces jointes vous-même — 
 ### Remarques
 
 L'onglet à côté de *Parties*. Vous y notez tout ce qui a été dit ou convenu sur ce dossier — un appel avec le client, un rendez-vous à la banque, une pièce que vous attendez encore. Chaque ligne porte son auteur et sa date. Une remarque a besoin d'une date et d'un contenu ; la date est celle du jour par défaut.
+
+### Supprimer un dossier
+
+**Supprimer**, à l'écart à droite dans le bloc d'en-tête, supprime le dossier après confirmation. Il faut pour cela le
+droit **Supprimer les dossiers de crédit** (voir [Rôles et droits](../administration/roles.md)). Le dossier part dans
+la [Corbeille](../administration/recycle-bin.md) et n'est donc pas définitivement effacé.
+
+Les **tâches** du dossier l'accompagnent dans la Corbeille : elles disparaissent de la [liste des tâches](tasks.md) et
+ne comptent plus dans la cloche. Si vous restaurez le dossier, ces tâches reviennent avec lui. Une tâche que vous
+aviez déjà supprimée séparément reste dans la Corbeille.
 
 ## Impression
 

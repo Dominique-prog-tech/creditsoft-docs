@@ -10,7 +10,9 @@ Dans la barre latérale, cliquez sur **CRM**, puis sur **Relations**.
 
 ![L'écran Relations dans CreditSoft : une liste de particuliers et d'entreprises avec les colonnes nom, type, date de naissance, e-mail, téléphone et commune — les autres colonnes se trouvent à droite, hors de l'écran —, la barre pour grouper, avec en haut un filtre par type, les boutons Fusionner, Nouvelle relation et Exporter ainsi qu'un champ de recherche.](../images/relaties-lijst-fr.png "Aperçu de toutes les relations du bureau")
 
-Le tableau affiche par relation : **nom**, **type**, **date de naissance**, **e-mail**, **téléphone**, **commune**, **GSM**, **numéro interne**, **type de contact** et **responsable**. Si votre écran est plus étroit que la liste, elle défile sur le côté ; le nom et l'adresse e-mail restent toujours lisibles.
+Le tableau affiche par relation : **nom**, **prénom**, **type**, **date de naissance**, **e-mail**, **téléphone**, **commune**, **GSM**, **numéro interne**, **type de contact** et **responsable**. Si votre écran est plus étroit que la liste, elle défile sur le côté ; le nom et l'adresse e-mail restent toujours lisibles.
+
+Par défaut, la liste est triée sur **Nom**. Pour une personne, cette colonne contient le nom de famille, et **Prénom** le prénom. Pour une entreprise, **Nom** contient la raison sociale et **Prénom** reste vide. Si le nom de famille d'une personne n'est pas rempli, **Nom** contient le nom complet.
 
 - **Filtrer par type** — en haut, choisissez tout, uniquement les particuliers ou uniquement les entreprises.
 - **Rechercher** — le champ de recherche cherche dans toutes les colonnes à la fois.
@@ -151,6 +153,8 @@ coordonnées ; sur le second, vous indiquez si l'entreprise est un **client** et
 Chaque fiche porte une **langue des documents**. Elle détermine la langue dans laquelle cette relation reçoit ses courriers et e-mails — indépendamment de la langue dans laquelle vous travaillez vous-même. Un client francophone reçoit donc des documents en français, même si votre écran est en néerlandais.
 
 Ce champ est **obligatoire**. Si vous le laissez vide, le programme ne sait pas quelle langue de modèle utiliser.
+S'il est encore vide sur une fiche existante, un avertissement en haut de la fiche le signale, et vous pouvez quand
+même enregistrer ; voir [Ce qui n'était déjà pas correct sur une fiche existante](#bestaand-gebrek).
 
 !!! tip "Code postal et commune"
     Tapez dans le champ **Code postal** : la liste affiche à la fois le code postal et la commune, vous
@@ -190,7 +194,8 @@ Le titre affiche deux nombres. *Demandés (2/5)* signifie deux validés sur les 
   *pas encore ouvert*. Si vous révoquez le lien qui vient de s'afficher dans la fenêtre, il disparaît et la
   fenêtre indique qu'il ne fonctionne plus.
 - **Voir comme le client** — ouvre dans un nouvel onglet ce que votre client voit. Votre fiche reste
-  ouverte, ce qui vous permet de comparer les deux côte à côte.
+  ouverte, ce qui vous permet de comparer les deux côte à côte. Dans cet aperçu, le bouton de langue **NL · FR**
+  ne change que la langue de l'aperçu ; votre propre écran reste dans votre langue.
 
 **Double-cliquez** une ligne pour l'évaluer : vous voyez les fichiers reçus et les approuvez ou les refusez,
 comme [sur un dossier de crédit](../credit-management/credit-files.md). Si finalement
@@ -226,12 +231,25 @@ Si ce client est arrivé comme lead d'un apporteur, l'onglet **Général** indiq
 **Nouveau dossier de crédit** remplit cet apporteur à l'avance sur le dossier — voir
 [Leads d'un apporteur](leads.md#leads-dun-apporteur).
 
-À l'enregistrement, les **champs obligatoires manquants** et une **adresse e-mail invalide** sont signalés.
-L'adresse e-mail est contrôlée dès qu'il y a quelque chose dans le champ, même si vous ne l'avez pas modifiée
-vous-même. Les **numéros de téléphone sont mis en forme** dans la notation officielle : si vous tapez
+À l'enregistrement, les **champs obligatoires manquants**, une **adresse e-mail invalide** et un **numéro de
+téléphone invalide** sont signalés, et la fiche n'est pas enregistrée. Sur une fiche existante, cela ne vaut que pour
+ce que vous modifiez vous-même ; voir [Ce qui n'était déjà pas correct sur une fiche existante](#bestaand-gebrek).
+Les **numéros de téléphone sont mis en forme** dans la notation officielle : si vous tapez
 `09/3724829`, vous lirez `09 372 48 29` après l'enregistrement.
 
 !!! warning "Cette relation existe peut-être déjà"
     S'il existe déjà une relation portant **le même nom ou la même adresse e-mail**, CreditSoft vous montre
     laquelle et vous demande si vous voulez tout de même enregistrer. C'est un avertissement, pas un blocage —
     les homonymes existent. Cela évite de créer une deuxième fois ce qui existe déjà.
+
+### Ce qui n'était déjà pas correct sur une fiche existante { #bestaand-gebrek }
+
+Sur une relation existante, il peut déjà manquer quelque chose ou une donnée peut être incorrecte : pas de langue des
+documents, pas de forme juridique pour une entreprise, ou une adresse e-mail, un numéro de téléphone ou de GSM non
+valide. Cela apparaît alors sous forme d'**avertissement jaune** en haut de la fiche, par exemple : *Sur cette fiche,
+il manque ou n'est pas encore correct : la langue des documents, une adresse e-mail valide. Vous pouvez quand même
+enregistrer ; complétez-le quand vous le pouvez.*
+
+Vous pouvez donc enregistrer la fiche sans corriger cela d'abord, par exemple lorsque vous adaptez seulement
+l'adresse. Seule une valeur que vous **modifiez vous-même** en quelque chose de manquant ou d'incorrect empêche
+l'enregistrement. Pour une nouvelle relation, tout doit être en ordre d'emblée.

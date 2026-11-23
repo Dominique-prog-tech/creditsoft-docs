@@ -4,7 +4,7 @@ Un demandeur envoie ses fiches de paie, et vous reprenez les données dans son d
 
 ## Ce qu'il faut
 
-- **Votre bureau active la lecture par l'IA dans ADM One.** Cliquez en bas du menu sur **Portail client** et ouvrez la tuile **Clé IA**. Vous y trouvez trois choses :
+- **Votre bureau active la lecture par l'IA dans ADM One.** Cliquez en bas du menu sur **Portail ADM One** et ouvrez la tuile **Clé IA**. Vous y trouvez trois choses :
     1. la **clé** de l'abonnement IA de votre bureau. La lecture se fait sur cet abonnement ;
     2. la case **Analyse de documents** ;
     3. la case **Scans, photos et PDF**. Elle est nécessaire pour chaque fiche de paie, car une fiche de paie est toujours un fichier.

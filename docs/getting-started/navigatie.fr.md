@@ -21,7 +21,8 @@ En haut à gauche se trouve un bouton pour **réduire** le menu. Une fois rédui
 
 ### En bas du menu
 
-- **Portail client** — ouvre le portail client d'ADM One dans un **nouvel onglet**.
+- **Portail ADM One** : ouvre dans un **nouvel onglet** le portail de votre bureau dans ADM One. Ce n'est pas le
+  portail client où vos clients fournissent leurs documents.
 - **Se déconnecter** — vous déconnecte en toute sécurité.
 - **Le numéro de version** (par exemple *v0.3.0*) — cliquez dessus pour ouvrir **« Quoi de neuf »** : les notes de version avec les dernières mises à jour et améliorations.
 
