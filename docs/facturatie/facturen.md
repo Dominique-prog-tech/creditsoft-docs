@@ -31,7 +31,10 @@ Per factuur ziet u het **nummer**, de **datum**, de **vervaldatum**, de **klant*
 - Daarnaast toont u enkel wat **Openstaand** is, of wat **Vervallen** is: open, en de vervaldatum is voorbij. Ook een losse creditnota die u nog moet terugbetalen, telt mee.
 - **Nieuwe factuur** opent een lege factuur.
 - **Exporteren** zet de lijst in Excel of CSV — zie [Werken met lijsten](../getting-started/lijsten.md).
+- **Exporteren voor de boekhouder…** maakt één zip voor een periode. Het venster opent op het vorige kwartaal (de btw-aangifte); u past de datums aan voor een maand of een jaar, en ziet meteen hoeveel facturen en creditnota's erin zitten. De periode telt op **factuurdatum**. In de zip: de **pdf** en de **e-factuur (UBL)** van elke definitieve factuur en creditnota, en een **overzicht.csv** met per document het nummer, de soort, de datums, de klant en zijn btw-nummer, de bedragen excl. btw, btw en incl. btw, wat betaald is en wat nog openstaat. Kladfacturen zitten er niet in. Ontbreekt een pdf of UBL — een factuur uit het vorige programma, of een factuur waarvoor geen UBL te maken is — dan zegt de kolom *Opmerking* waarom.
 - Staan er creditnota's klaar om aan hun factuur gekoppeld te worden, dan verschijnt de knop **Creditnota's koppelen** met het aantal erbij — zie [Creditnota's koppelen](creditnotas-koppelen.md).
+
+Onder de knoppen staat **Openstaand in deze lijst**: wat u nog moet **ontvangen** (facturen) en wat u nog moet **terugbetalen** (creditnota's). Het volgt het jaar en de filter die u koos, net als de teller ernaast.
 
 Dubbelklik een rij om de factuur te openen.
 

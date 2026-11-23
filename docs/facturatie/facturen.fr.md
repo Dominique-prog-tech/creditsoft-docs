@@ -31,7 +31,10 @@ Pour chaque facture, vous voyez le **numéro**, la **date**, l'**échéance**, l
 - À côté, vous n'affichez que ce qui est **Ouvert**, ou ce qui est **Échu** : ouvert, et l'échéance est dépassée. Une note de crédit non liée que vous devez encore rembourser compte aussi.
 - **Nouvelle facture** ouvre une facture vide.
 - **Exporter** place la liste dans Excel ou en CSV — voir [Travailler avec les listes](../getting-started/lijsten.md).
+- **Exporter pour le comptable…** crée un seul zip pour une période. La fenêtre s'ouvre sur le trimestre précédent (la déclaration TVA) ; vous adaptez les dates pour un mois ou une année, et voyez tout de suite combien de factures et de notes de crédit s'y trouvent. La période compte selon la **date de facture**. Dans le zip : le **PDF** et la **facture électronique (UBL)** de chaque facture et note de crédit définitive, et un **overzicht.csv** avec par document le numéro, le type, les dates, le client et son numéro de TVA, les montants hors TVA, TVA et TVA comprise, ce qui est payé et ce qui reste ouvert. Les brouillons n'y sont pas. S'il manque un PDF ou un UBL — une facture de l'ancien programme, ou une facture pour laquelle aucun UBL ne peut être créé — la colonne *Remarque* dit pourquoi.
 - Si des notes de crédit attendent d'être liées à leur facture, le bouton **Lier les notes de crédit** apparaît, avec leur nombre — voir [Lier les notes de crédit](creditnotas-koppelen.md).
+
+Sous les boutons figure **Ouvert dans cette liste** : ce que vous devez encore **recevoir** (factures) et ce que vous devez encore **rembourser** (notes de crédit). Il suit l'année et le filtre choisis, comme le compteur à côté.
 
 Double-cliquez une ligne pour ouvrir la facture.
 
