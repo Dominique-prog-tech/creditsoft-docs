@@ -52,6 +52,9 @@ Sous le bouton figure chaque demande, avec la date et l'auteur de l'envoi :
 CreditSoft consulte l'état tous les quarts d'heure, et chaque fois que vous ouvrez l'onglet. Pour la déclaration de
 confidentialité, la date à laquelle la personne l'a signée figure aussi en haut.
 
+Si tout le monde signe, ou si quelqu'un refuse de signer, la personne qui a envoyé la demande reçoit une
+[tâche](../journaal/taken.md) pour le jour même, sur le dossier ou la relation. Elle compte parmi ce que vous avez à faire aujourd'hui.
+
 Pour une demande en attente, deux boutons figurent à côté de chaque signataire :
 
 - **Copier le lien** : le lien personnel, pour le transmettre vous-même. Ne le donnez qu'à ce signataire.

@@ -49,6 +49,9 @@ Onder de knop staat elk verzoek, met wanneer en door wie het verstuurd is:
 CreditSoft vraagt de stand elk kwartier op, en telkens u het tabblad opent. Bij de privacyverklaring staat
 bovenaan ook de datum waarop de persoon ze ondertekende.
 
+Tekent iedereen, of weigert iemand te tekenen, dan krijgt wie het verzoek verstuurde een [taak](../journaal/taken.md)
+voor die dag, op het dossier of de relatie. Ze telt mee bij wat u vandaag te doen hebt.
+
 Bij een verzoek dat wacht, staan bij elke ondertekenaar twee knoppen:
 
 - **Link kopiëren**: de persoonlijke link, om hem zelf door te geven. Geef hem enkel aan die ondertekenaar.
