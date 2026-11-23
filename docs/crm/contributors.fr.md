@@ -76,6 +76,13 @@ Téléphone, GSM, e-mail, site web et l'adresse.
 
 L'**IBAN** sur lequel sa commission est versée, le **pourcentage standard** et le **mode de paiement**.
 
+!!! info "L'IBAN et le numéro d'entreprise sont vérifiés"
+    L'IBAN doit être un numéro de compte valide. Un numéro d'entreprise belge doit être correct : dix chiffres
+    avec le bon nombre de contrôle, avec ou sans *BE*, *BTW* ou *TVA* devant. Un numéro étranger commence par un
+    code pays existant, comme *NL* ou *FR*. Si l'un des deux est mal tapé, la fiche le signale et n'est pas
+    enregistrée. Un numéro qui figurait déjà sur la fiche et que vous ne modifiez pas n'empêche pas
+    l'enregistrement.
+
 Le mode de paiement détermine les champs qui apparaissent ensuite :
 
 - **Paiement récurrent** — le pourcentage versé immédiatement, et sur combien de mois le solde est étalé.

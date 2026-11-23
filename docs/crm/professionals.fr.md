@@ -50,6 +50,13 @@ La fiche se compose de trois blocs, avec en bas une barre de boutons qui reste v
 - **Compte bancaire** et **numéro interne**.
 - **Langue des documents** (obligatoire) — la langue dans laquelle vous correspondez avec cette partie (néerlandais ou français). Elle détermine la langue des modèles d'e-mail et des documents établis pour elle.
 
+!!! info "Le numéro de TVA et le compte bancaire sont vérifiés"
+    Un numéro de TVA belge doit être correct : dix chiffres avec le bon nombre de contrôle, avec ou sans *BE*,
+    *BTW* ou *TVA* devant. Un numéro étranger commence par un code pays existant, comme *NL* ou *FR*. Le compte
+    bancaire doit être un IBAN valide. Un numéro mal tapé est refusé avec un message, et la fiche n'est pas
+    enregistrée. Un numéro qui figurait déjà sur la fiche et que vous ne modifiez pas n'empêche pas
+    l'enregistrement.
+
 !!! tip "Récupérer les données via le numéro de TVA"
     Saisissez le **numéro de TVA** et cliquez sur **Récupérer**. CreditSoft récupère l'entreprise depuis la
     Banque-Carrefour des Entreprises (BCE) et remplit automatiquement le **nom et l'adresse**. Rien trouvé ?

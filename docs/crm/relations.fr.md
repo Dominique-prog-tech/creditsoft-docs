@@ -55,9 +55,13 @@ Si la même personne ou la même entreprise figure deux fois dans la liste, fusi
 **Fusionner** en haut. Sélectionnez d'abord la fiche que vous voulez **conserver**, cliquez sur le bouton,
 puis choisissez dans la fenêtre celle qui doit y être absorbée.
 
-Avant que vous confirmiez, la fenêtre affiche les **données qui seront perdues** : adresse e-mail, téléphone,
-GSM, numéro de TVA, et la présence éventuelle de remarques sur la fiche. Vous voyez ainsi d'emblée s'il s'y
-trouve quelque chose que vous préférez reprendre au préalable.
+Avant que vous confirmiez, la fenêtre affiche les **données qui seront perdues** : ce qui, sur la fiche appelée
+à disparaître, diffère de la fiche conservée. Pour un particulier, ce sont le prénom, le nom de famille, la date
+de naissance, le numéro de registre national et le numéro de la carte d'identité ; pour une entreprise, la raison
+sociale. Dans les deux cas s'y ajoutent une adresse d'un type que la fiche conservée possède déjà, l'adresse
+e-mail, les numéros de téléphone, le numéro de TVA et la présence éventuelle de remarques sur la fiche. Ce qui est
+identique sur les deux fiches n'y figure pas. Vous voyez ainsi d'emblée s'il s'y trouve quelque chose que vous
+préférez reprendre au préalable.
 
 **Après** la fusion, vous obtenez un aperçu de **ce qui a été déplacé**, par type : dossiers de crédit,
 adresses, adresses e-mail supplémentaires, contacts liés, rendez-vous, tâches, notes, pièces jointes et courriers.
@@ -81,6 +85,12 @@ Une relation est soit un **particulier**, soit une **entreprise**. Vous le chois
     Si vous renseignez le **numéro de TVA** d'une entreprise et cliquez sur **Récupérer**, CreditSoft reprend
     le nom, la forme juridique et l'adresse directement depuis la Banque-Carrefour des Entreprises. Vous n'avez
     rien à retaper et aucune faute de frappe ne s'y glisse.
+
+!!! info "Le numéro de TVA est vérifié"
+    Un numéro de TVA belge doit être correct : dix chiffres avec le bon nombre de contrôle, avec ou sans *BE*,
+    *BTW* ou *TVA* devant. Un numéro étranger commence par un code pays existant, comme *NL* ou *FR*. Un numéro
+    mal tapé est refusé avec un message, et la fiche n'est pas enregistrée. Un numéro qui figurait déjà sur la
+    fiche et que vous ne modifiez pas n'empêche pas l'enregistrement.
 
 ## La fiche d'une relation
 

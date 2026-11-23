@@ -32,7 +32,7 @@ Zet u een signaal aan, dan geldt het **vanaf vandaag**. Een renteherziening of e
 
 ### Renteherziening nadert
 
-Een taak een aantal dagen vóór de volgende **renteherziening** van een contract met een variabele rentevoet. Het is dezelfde herziening die het blok [Opvolging van lopende kredieten](../getting-started/dashboard.md#opvolging-van-lopende-kredieten) op het dashboard toont, dus enkel voor dossiers waarvan de akte verleden is.
+Een taak een aantal dagen vóór de volgende **renteherziening** van een contract met een variabele rentevoet. Het is dezelfde herziening die het blok [Opvolging van lopende kredieten](../getting-started/dashboard.md#opvolging-van-lopende-kredieten) op het dashboard toont: enkel voor een dossier met een akte dat in een geslaagde eindfase staat, en enkel voor een contract met de betekenis *Gerealiseerd*. Zie [Welke dossiers meetellen](#welke-dossiers-meetellen).
 
 In het veld **Hoeveel dagen vooraf** kiest u hoe ver op voorhand de taak verschijnt: van 1 tot 366 dagen, standaard 90. Klik daarna op **Bewaren**. De vervaldatum van de taak is de dag van de herziening.
 
@@ -42,7 +42,7 @@ Dit signaal staat standaard **aan**.
 
 ### Jaarlijkse check
 
-Een taak op de **verjaardag van de akte**, zolang het krediet loopt. Het is het moment om met de klant de rentevoet, de schuldsaldoverzekering en de brandverzekering te bekijken.
+Een taak op de **verjaardag van de akte**, zolang het krediet loopt, voor een dossier in een geslaagde eindfase. Het is het moment om met de klant de rentevoet, de schuldsaldoverzekering en de brandverzekering te bekijken.
 
 Dit signaal staat standaard **uit**: het maakt elke maand taken, voor elk geakteerd dossier. Zet u het aan, dan vraagt CreditSoft eerst een bevestiging en zegt het hoeveel akten de komende 30 dagen verjaren.
 
@@ -52,7 +52,24 @@ Staat de jaarlijkse check aan, dan toont het dashboard er een eigen kaart voor, 
 
 Een taak op de datum **Herbekijken op** die iemand op een [kredietdossier](../credit-management/credit-files.md#dossiergegevens) zette. De reden staat op de dossierfiche.
 
+Een dossier dat afviel, zonder gevolg bleef of geweigerd werd, krijgt geen taak: het staat in een eindfase zonder het vinkje *Geslaagd*. Een lopend dossier houdt zijn datum.
+
 Dit signaal staat standaard **aan**.
+
+## Welke dossiers meetellen
+
+Een signaal gaat enkel naar een dossier dat er nog iets aan heeft. CreditSoft kijkt daarvoor naar de [Dashboard-fases](dashboard-fases.md#de-fases) van uw kantoor:
+
+| Signaal | Enkel voor |
+|---|---|
+| **Renteherziening nadert** | een dossier met een akte, in een eindfase met het vinkje **Geslaagd**, en een contract met de [betekenis](dashboard-fases.md#wat-betekent-elke-contractstatus) **Gerealiseerd** |
+| **Jaarlijkse check** | een dossier met een akte, in een eindfase met het vinkje **Geslaagd** |
+| **Herbekijken op** | elk dossier, behalve een dossier in een eindfase **zonder** het vinkje *Geslaagd* |
+
+Het blok [Opvolging van lopende kredieten](../getting-started/dashboard.md#opvolging-van-lopende-kredieten) op het dashboard en *Vraagt aandacht* bovenaan een [kredietdossier](../credit-management/credit-files.md) volgen dezelfde regel.
+
+!!! info "Nog niets ingesteld bij de Dashboard-fases?"
+    Hangt er bij uw kantoor nog geen enkele status aan een eindfase, dan let CreditSoft voor de renteherziening en de jaarlijkse check niet op de fase: elk dossier met een akte telt dan mee. Draagt nog geen enkele contractstatus de betekenis *Gerealiseerd*, dan telt voor de renteherziening elk contract mee. Zo valt er geen signaal weg omdat een instelling ontbreekt.
 
 ## Wie de taak krijgt
 

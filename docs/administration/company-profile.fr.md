@@ -22,6 +22,14 @@ Les champs sont regroupés en blocs :
 - **Banque** — IBAN, BIC et numéro de compte (avec un second compte si nécessaire).
 - **Documents et charte graphique** — votre logo et la photo de l'écran de connexion.
 
+!!! info "Le numéro de TVA et l'IBAN sont vérifiés"
+    Le numéro de TVA figure sur chaque facture, l'IBAN dans l'e-mail de facture et sur le QR code de paiement.
+    Un numéro de TVA belge doit donc être correct : dix chiffres avec le bon nombre de contrôle, avec ou sans
+    *BE*, *BTW* ou *TVA* devant. Un numéro étranger commence par un code pays existant, comme *NL* ou *FR*. Les
+    deux IBAN doivent être des numéros de compte valides. Un numéro mal tapé est refusé avec un message, et la
+    fiche n'est pas enregistrée. Un numéro qui figurait déjà sur la fiche et que vous ne modifiez pas n'empêche
+    pas l'enregistrement.
+
 **Base de notre conseil** est la valeur par défaut de chaque nouveau [conseil](../credit-management/advice.md) sur un dossier : *Large gamme du marché (courtier en crédit)* ou *Propre gamme (agent lié)*, si vous travaillez avec la gamme de votre ou vos prêteurs. Vous adaptez la base par dossier sur la page de conseil ; un conseil qui porte déjà une base ne change pas.
 
 ## Récupérer les données depuis la BCE

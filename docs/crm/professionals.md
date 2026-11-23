@@ -49,6 +49,12 @@ De fiche bestaat uit drie blokken, met onderaan een knoppenbalk die in beeld bli
 - **Bankrekening** en **intern nummer**.
 - **Documenttaal** (verplicht) — de taal waarin u met deze partij correspondeert (Nederlands of Frans). Ze bepaalt in welke taal de mailsjablonen en documenten voor deze partij worden opgemaakt.
 
+!!! info "Btw-nummer en bankrekening worden nagekeken"
+    Een Belgisch btw-nummer moet kloppen: tien cijfers met het juiste controlegetal, met of zonder *BE*, *BTW*
+    of *TVA* ervoor. Een buitenlands nummer begint met een bestaande landcode, zoals *NL* of *FR*. De
+    bankrekening moet een geldige IBAN zijn. Een fout getypt nummer wordt geweigerd met een melding, en de fiche
+    wordt niet bewaard. Een nummer dat er al stond en dat u niet wijzigt, houdt het bewaren niet tegen.
+
 !!! tip "Gegevens ophalen via het btw-nummer"
     Vul het **btw-nummer** in en klik op **Ophalen**. CreditSoft haalt de onderneming op uit de Kruispuntbank
     van Ondernemingen (KBO) en vult **naam en adres** automatisch in. Niet gevonden? Dan verschijnt een melding

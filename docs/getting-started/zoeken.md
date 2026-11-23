@@ -5,16 +5,28 @@ te navigeren. Sneltoets: **Ctrl + K** (op een Mac **⌘ + K**).
 
 Typ een naam, een nummer of een woord. De resultaten verschijnen terwijl u typt, gegroepeerd per soort:
 
-- **Relaties** — op naam
-- **Kredietdossiers** — op dossiernummer én op de naam van de aanvrager
+- **Relaties** — op naam, e-mailadres of telefoonnummer
+- **Kredietdossiers** — op dossiernummer én op de aanvrager: zijn naam, e-mailadres of telefoonnummer
 - **Aanbrengers** — op naam
-- **Professionals** — op naam
-- **Leads** — op naam
+- **Professionals** — op naam of e-mailadres
+- **Leads** — op voornaam, familienaam, bedrijfsnaam, e-mailadres of telefoonnummer
 - **Notities** — op titel en inhoud, op welke fiche ze ook staan
 - **Taken** — op titel en omschrijving
 - **Opmerkingen** — op de inhoud van de opmerkingen op een kredietdossier
 
 Klik op een resultaat om er meteen naartoe te gaan.
+
+## Een naam, e-mailadres of telefoonnummer typen
+
+Bij relaties, professionals en leads, en bij kredietdossiers op de aanvrager, zoekt het vak zo:
+
+- **De volgorde van de woorden telt niet.** *Peeters Jan* vindt ook *Jan Peeters*. Elk woord dat u typt, moet
+  ergens in de naam of het e-mailadres staan.
+- **Accenten en hoofdletters tellen niet.** *gerard* vindt *Gérard*.
+- **Een stuk van een e-mailadres** volstaat, bijvoorbeeld het deel vóór de @.
+- **Een telefoonnummer** vindt u in elke schrijfwijze: *0475 12 34 56*, *0475/12.34.56* en *+32 475 12 34 56*
+  geven hetzelfde. Typ enkel cijfers en tekens, geen letters, en minstens zes cijfers zonder de 0 of de 32
+  vooraan. Bij professionals zoekt het vak niet op telefoonnummer.
 
 ## Dossiers vindt u ook op de naam van uw klant
 

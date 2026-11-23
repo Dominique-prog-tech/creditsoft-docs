@@ -72,7 +72,7 @@ staat.
 tekst zoals ze verstuurd is. In dat venster staan drie knoppen:
 
 - **Afdrukken** — maakt een PDF van het bericht.
-- **Verwijderen** — haalt het uit de lijst; het gaat naar de [Prullenbak](../administration/recycle-bin.md).
+- **Verwijderen** — haalt het uit de lijst; het gaat naar de [Prullenbak](../administration/recycle-bin.md). Het [Actielogboek](../administration/activity-log.md) noteert wie de mail verwijderde, met haar onderwerp en datum.
 - **Sluiten**.
 
 ### Een mail die als bestand bewaard is

@@ -54,8 +54,12 @@ Staat dezelfde persoon of hetzelfde bedrijf twee keer in de lijst, dan voegt u d
 **Samenvoegen** bovenaan. Selecteer eerst de fiche die u wil **behouden**, klik dan op de knop en kies in het
 venster welke fiche daarin moet opgaan.
 
-Voor u bevestigt, toont het venster de **gegevens die verloren gaan**: e-mailadres, telefoon, gsm, btw-nummer
-en of er opmerkingen op de fiche staan. Zo ziet u meteen of daar iets bij is dat u liever eerst overneemt.
+Voor u bevestigt, toont het venster de **gegevens die verloren gaan**: wat er op de fiche die verdwijnt anders
+staat dan op de fiche die blijft. Bij een particulier zijn dat de voornaam, de familienaam, de geboortedatum, het
+rijksregisternummer en het nummer van de identiteitskaart, bij een bedrijf de bedrijfsnaam. Bij allebei komen
+daar een adres bij van een soort die de behouden fiche al heeft, het e-mailadres, de telefoonnummers, het
+btw-nummer en of er opmerkingen op de fiche staan. Wat op beide fiches hetzelfde is, staat er niet bij. Zo ziet
+u meteen of daar iets bij is dat u liever eerst overneemt.
 
 Ná het samenvoegen krijgt u een overzicht van **wat er verhuisd is**, per soort: kredietdossiers, adressen,
 extra e-mailadressen, gelinkte contacten, afspraken, taken, notities, bijlagen en mailverkeer. Een extra e-mailadres
@@ -79,6 +83,12 @@ Een relatie is ofwel een **particulier** ofwel een **bedrijf**. Dat kiest u bove
     Vult u bij een bedrijf het **btw-nummer** in en klikt u op **Ophalen**, dan haalt CreditSoft de naam, de
     rechtsvorm en het adres rechtstreeks op uit de Kruispuntbank van Ondernemingen. U hoeft ze niet over te
     typen en er sluipen geen tikfouten in.
+
+!!! info "Het btw-nummer wordt nagekeken"
+    Een Belgisch btw-nummer moet kloppen: tien cijfers met het juiste controlegetal, met of zonder *BE*, *BTW*
+    of *TVA* ervoor. Een buitenlands nummer begint met een bestaande landcode, zoals *NL* of *FR*. Een fout
+    getypt nummer wordt geweigerd met een melding, en de fiche wordt niet bewaard. Een nummer dat er al stond en
+    dat u niet wijzigt, houdt het bewaren niet tegen.
 
 ## De fiche van een relatie
 

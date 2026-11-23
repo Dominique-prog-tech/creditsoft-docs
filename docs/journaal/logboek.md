@@ -15,7 +15,7 @@ gebeurde:
 |---|---|
 | **Aangemaakt** | De fiche werd toegevoegd. Eronder staan de waarden waarmee ze begon. |
 | **Gewijzigd** | Er veranderde iets. Per veld staat de oude waarde doorstreept, dan een pijl, dan de nieuwe. |
-| **Verwijderd** | De fiche ging naar de [Prullenbak](../administration/recycle-bin.md). |
+| **Verwijderd** | De fiche ging naar de [Prullenbak](../administration/recycle-bin.md), of een notitie, taak of gesprek werd verwijderd. |
 
 Naast het label staan het **tijdstip** en de **gebruiker**. Een veld dat leeg was of leeg werd, toont een
 streepje. Bij **Aangemaakt** staan enkel de velden die een waarde kregen.
@@ -45,14 +45,32 @@ de lijst **Contracten** terugvindt.
 - Op de dossierfiche **opent een klik** op die regel het contract.
 - Een verwijderd contract krijgt *(verwijderd)* achter zijn naam. Zijn wijzigingen blijven in het logboek staan.
 
+## Notities, taken en gesprekken
+
+Het logboek toont ook wat er met de [notities](notities.md), [taken](taken.md) en [gesprekken](gesprekken.md)
+van de fiche gebeurde: wie er een aanmaakte, wijzigde of verwijderde, en wanneer. Die regels staan door elkaar
+met de wijzigingen aan de fiche zelf, op tijd gerangschikt.
+
+- Zo'n regel draagt onder het tijdstip een tweede regel die zegt waarover het gaat: *Notitie*, *Taak* of
+  *Gesprek*, met de titel erachter, bijvoorbeeld *Taak: Bel de notaris*.
+- Bij een gewijzigde notitie staat de oude tekst doorstreept, met de nieuwe erachter. De status, de prioriteit,
+  de richting en de uitkomst staan er met dezelfde woorden als op de tabbladen.
+- Een verwijderde notitie, taak of gesprek krijgt *(verwijderd)* achter de titel, en blijft met haar inhoud in
+  het logboek staan.
+
+Het logboek kent de notities, taken en gesprekken vanaf 22 november 2026. Wat er vóór die dag mee gebeurde, staat
+er niet in.
+
 ## Wat er niet in staat
 
 - **Technische stempels.** Velden die de toepassing zelf bijhoudt — wanneer er laatst bewaard werd, en door wie
   — staan niet als wijziging in de lijst. Dat tijdstip staat immers al rechts naast elke regel. Zonder die
   filter zou elke regel ermee beginnen en zou de échte wijziging eronder verdwijnen.
-- **Onderliggende regels.** Het logboek gaat over de fiche zelf, en bij een kredietdossier ook over zijn
-  contracten. Wijzigt u bij een relatie een **adres**, of bij een dossier een **aanvrager**, dan is dat een eigen
-  record en verschijnt het hier niet.
+- **Onderliggende regels.** Het logboek gaat over de fiche zelf, haar notities, taken en gesprekken, en bij een
+  kredietdossier ook over zijn contracten. Wijzigt u bij een relatie een **adres**, of bij een dossier een
+  **aanvrager**, dan is dat een eigen record en verschijnt het hier niet.
+- **Mails.** Wie een mail uit het [mailverkeer](mailverkeer.md) verwijdert, ziet u in het
+  [Actielogboek](../administration/activity-log.md), met het onderwerp en de datum van de mail.
 
 ## U kunt er niets aan veranderen
 

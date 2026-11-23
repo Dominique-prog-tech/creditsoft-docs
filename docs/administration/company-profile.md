@@ -22,6 +22,13 @@ De velden staan gegroepeerd in blokken:
 - **Bank** — IBAN, BIC en rekeningnummer (met een tweede rekening indien nodig).
 - **Documenten & huisstijl** — uw logo en de foto van het aanmeldscherm.
 
+!!! info "Btw-nummer en IBAN worden nagekeken"
+    Het btw-nummer komt op elke factuur, de IBAN in de factuurmail en op de betaal-QR. Een Belgisch btw-nummer
+    moet daarom kloppen: tien cijfers met het juiste controlegetal, met of zonder *BE*, *BTW* of *TVA* ervoor.
+    Een buitenlands nummer begint met een bestaande landcode, zoals *NL* of *FR*. Beide IBAN's moeten geldige
+    rekeningnummers zijn. Een fout getypt nummer wordt geweigerd met een melding, en de fiche wordt niet bewaard.
+    Een nummer dat er al stond en dat u niet wijzigt, houdt het bewaren niet tegen.
+
 **Basis van ons advies** is de standaard voor elk nieuw [advies](../credit-management/advice.md) op een dossier: *Breed marktaanbod (kredietmakelaar)* of *Eigen assortiment (verbonden agent)*, als u met het assortiment van uw kredietgever(s) werkt. Per dossier past u de basis aan op de adviespagina; een advies waarop al een basis staat, verandert niet mee.
 
 ## Gegevens ophalen uit de KBO

@@ -77,6 +77,12 @@ Telefoon, gsm, e-mail, website en het adres.
 
 De **IBAN** waarop zijn commissie betaald wordt, het **standaard percentage** en de **betaalwijze**.
 
+!!! info "IBAN en ondernemingsnummer worden nagekeken"
+    De IBAN moet een geldig rekeningnummer zijn. Een Belgisch ondernemingsnummer moet kloppen: tien cijfers met
+    het juiste controlegetal, met of zonder *BE*, *BTW* of *TVA* ervoor. Een buitenlands nummer begint met een
+    bestaande landcode, zoals *NL* of *FR*. Is een van beide fout getypt, dan noemt de fiche het en wordt ze niet
+    bewaard. Een nummer dat er al stond en dat u niet wijzigt, houdt het bewaren niet tegen.
+
 De betaalwijze bepaalt welke velden er daarna bijkomen:
 
 - **Recurrente betaling** — het percentage dat direct uitbetaald wordt, en over hoeveel maanden de rest gespreid wordt.

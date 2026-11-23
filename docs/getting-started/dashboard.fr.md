@@ -197,20 +197,22 @@ bureau a activé le **contrôle annuel**, une troisième carte s'y ajoute.
 après l'acte, pour un dossier que vous voulez réexaminer. Vous placez cette date sur le
 [dossier de crédit](../credit-management/credit-files.md#donnees-du-dossier), avec un court motif qui apparaît
 ici après le nom. La carte regarde aussi loin que les délais. Une date dépassée s'affiche en rouge et reste
-visible jusqu'à ce que vous la vidiez ou la déplaciez sur le dossier.
+visible jusqu'à ce que vous la vidiez ou la déplaciez sur le dossier. Un dossier abandonné, resté sans suite
+ou refusé n'y figure pas.
 
 **Révision du taux** affiche les dossiers dont un contrat voit son taux révisé dans les **six mois**, avec la
 variabilité après le nom. Elle part de la **première révision** du contrat et continue ensuite avec les années
 de la variabilité : avec *Variable 10/5/5*, un contrat apparaît après dix ans, puis à nouveau tous les cinq
 ans, sans que vous deviez faire quoi que ce soit. Une révision qui tombe après la fin de la durée n'apparaît
-pas : le crédit est alors remboursé. Seuls les dossiers dont l'acte est passé sont pris en compte.
+pas : le crédit est alors remboursé. Seul un dossier avec un acte dans une phase finale réussie est pris en
+compte, et uniquement avec un contrat qui porte la signification *Réalisé*.
 
 Les années par variabilité sont encodées par votre bureau sous
 [Administration → Listes de choix](../beheer/keuzelijsten.md#la-variabilite-quand-le-taux-est-revise).
 Si elles manquent, CreditSoft ne connaît pas de prochaine révision et la carte reste vide pour ces contrats.
 
-**Contrôle annuel** affiche les dossiers dont l'acte a son anniversaire dans la période des délais, tant que le
-crédit court. La carte n'apparaît que si votre bureau a activé le contrôle annuel sous
+**Contrôle annuel** affiche les dossiers dans une phase finale réussie dont l'acte a son anniversaire dans la
+période des délais, tant que le crédit court. La carte n'apparaît que si votre bureau a activé le contrôle annuel sous
 [Administration → Signaux de gestion](../beheer/beheersignalen.md#controle-annuel).
 
 Les cartes affichent les huit premières lignes, la date la plus proche en haut. S'il y en a davantage,
@@ -221,9 +223,13 @@ cliquez sur **Afficher les … autres**, comme pour les délais.
     responsable du dossier, lors d'une révision du taux, d'un anniversaire de l'acte ou d'une date *À revoir le*.
     Cela se règle sous [Administration → Signaux de gestion](../beheer/beheersignalen.md).
 
-!!! info "Pourquoi le statut ne compte pas ici"
-    Pour les délais, un dossier disparaît dès que son statut relève d'une phase finale. Pas ici : un crédit
-    dont l'acte est passé *est* dans une phase finale, et c'est précisément là que ce suivi commence.
+!!! info "Quelle phase finale compte ici"
+    Pour les délais, un dossier disparaît dès que son statut relève d'une phase finale. Ici, c'est justement une
+    phase finale cochée **Réussi** qui compte : un crédit dont l'acte est passé *s'y trouve*, et c'est
+    précisément là que ce suivi commence. Un dossier dans une phase finale **sans** cette case ne reçoit ni
+    révision du taux, ni contrôle annuel, ni date à revoir. Les signaux de gestion suivent la même règle ; voir
+    [Quels dossiers comptent](../beheer/beheersignalen.md#quels-dossiers-comptent), aussi pour un bureau qui n'a
+    pas encore configuré ses phases.
 
 ## Dossiers à l'arrêt
 

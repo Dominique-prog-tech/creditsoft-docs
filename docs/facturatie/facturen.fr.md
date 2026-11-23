@@ -17,7 +17,7 @@ Trois droits déterminent ce que vous pouvez faire ici :
 |---|---|
 | **Voir les factures** | Ouvrir la liste, les fiches et le PDF |
 | **Préparer des factures** | Préparer, modifier et supprimer un brouillon |
-| **Rendre définitives et envoyer les factures** | Rendre définitive, envoyer par e-mail et créer une note de crédit |
+| **Rendre définitives et envoyer les factures** | Rendre définitive, envoyer par e-mail, envoyer via Peppol et créer une note de crédit |
 
 Un utilisateur ordinaire peut consulter et préparer des factures. Qui peut les rendre définitives et les envoyer reçoit de votre administrateur un rôle avec ce droit — voir [Rôles](../administration/roles.md).
 
@@ -25,7 +25,7 @@ Un utilisateur ordinaire peut consulter et préparer des factures. Qui peut les 
 
 ![La liste Factures avec en haut l'année 2026, le filtre Tous les documents avec le nombre, les boutons Nouvelle facture et Exporter, et par ligne le numéro, la date, l'échéance, le client, le dossier, le type Facture ou Note de crédit, le total TVA comprise, le montant payé et le montant ouvert et la colonne Envoyée ; sur F-2026-0002, 400,00 est payé ; en haut, un brouillon sans numéro avec l'étiquette Brouillon.](../images/facturen-lijst-fr.png "Vos factures et notes de crédit de l'année"){ .volle-breedte }
 
-Pour chaque facture, vous voyez le **numéro**, la **date**, l'**échéance**, le **client**, le **dossier**, le **total TVA comprise**, ce qui reste **ouvert**, et si elle a été **envoyée** : *Envoyée par e-mail*. Si l'échéance est dépassée et qu'un montant reste ouvert, ce montant apparaît en **rouge**. Un brouillon n'a pas encore de numéro : il porte l'étiquette *Brouillon*. Via **Choisir les colonnes**, vous en ajoutez deux : le **type** (facture ou note de crédit) et ce qui est déjà **payé**.
+Pour chaque facture, vous voyez le **numéro**, la **date**, l'**échéance**, le **client**, le **dossier**, le **total TVA comprise**, ce qui reste **ouvert**, et si elle a été **envoyée** : *Envoyée par e-mail*, et pour une facture partie via Peppol *Peppol:* avec le statut, par exemple *Peppol: livrée*. Si l'échéance est dépassée et qu'un montant reste ouvert, ce montant apparaît en **rouge**. Un brouillon n'a pas encore de numéro : il porte l'étiquette *Brouillon*. Via **Choisir les colonnes**, vous en ajoutez deux : le **type** (facture ou note de crédit) et ce qui est déjà **payé**.
 
 - En haut, vous choisissez l'**année**, ou *Toutes les années*.
 - À côté, vous n'affichez que ce qui est **Ouvert**, ou ce qui est **Échu** : ouvert, et l'échéance est dépassée. Une note de crédit non liée que vous devez encore rembourser compte aussi.
@@ -164,11 +164,80 @@ Le texte du courriel s'adapte dans les [Modèles d'e-mail](../administration/mai
 
 Pour une facture à une **entreprise belge** — un client avec un numéro de TVA belge — vous trouvez sous le bouton **Plus…** l'action **Facture électronique (UBL)**. Elle télécharge la facture en **facture électronique** : le fichier que lisent un logiciel comptable et le réseau Peppol, selon la norme européenne (Peppol BIS Billing 3.0). Le PDF y est inclus, de sorte que qui ouvre le fichier dispose aussi de l'image de la facture.
 
-- La facture électronique est créée **une seule fois**, la première fois que vous cliquez dessus. Ensuite, vous recevez toujours le même fichier, même si votre fiche d'entreprise change entre-temps — comme le PDF.
+- La facture électronique est créée **une seule fois**, la première fois que vous cliquez dessus ou qu'elle part [via Peppol](#envoyer-via-peppol). Ensuite, vous recevez toujours le même fichier, même si votre fiche d'entreprise change entre-temps — comme le PDF.
 - Le fichier porte le nom du PDF, avec *.xml* au lieu de *.pdf*.
 - Si la facture électronique ne peut pas être créée, un message en donne la raison, et rien n'est enregistré. Par exemple : l'IBAN manque sur votre [Fiche d'entreprise](../administration/company-profile.md), ou la facture n'a pas de *Votre référence* (uniquement pour les factures rendues définitives avant que celle-ci ne soit obligatoire).
 
 Le bouton n'est **pas** présent pour une facture à un particulier — un particulier ne reçoit pas de factures électroniques —, ni pour un client étranger, un brouillon ou une facture du programme précédent.
+
+## Envoyer via Peppol
+
+**Peppol** est le réseau européen par lequel les entreprises échangent des factures électroniques. Via Peppol, votre facture arrive directement dans le logiciel comptable de votre client, sans e-mail et sans que personne doive la retaper. Ce qui part, c'est la facture électronique décrite ci-dessus : le même fichier que celui que vous téléchargez avec **Facture électronique (UBL)**, PDF inclus.
+
+### Quand le bouton apparaît
+
+Sur une facture ou une note de crédit définitive, le bouton **Envoyer via Peppol** apparaît quand :
+
+- **Peppol est activé pour votre bureau.** C'est ADM qui l'active pour vous, bureau par bureau, après avoir enregistré votre bureau comme expéditeur Peppol sous le numéro d'entreprise de votre [Fiche d'entreprise](../administration/company-profile.md). Sans cet enregistrement, le réseau refuserait chaque facture. Vous souhaitez envoyer via Peppol ? Demandez-le à ADM.
+- le client a un **numéro de TVA belge** : la même condition que pour la facture électronique. Un particulier et un client étranger ne reçoivent rien via Peppol ;
+- vous avez le droit **Rendre définitives et envoyer les factures** ;
+- la facture n'est **pas encore partie via Peppol**, ou la tentative précédente a été [refusée](#en-cas-de-refus).
+
+### Envoyer la facture
+
+1. Ouvrez la facture et cliquez sur **Envoyer via Peppol**.
+2. La fenêtre crée la facture électronique et recherche votre client sur le réseau. Elle affiche l'**adresse Peppol du client** : *0208:* suivi des dix chiffres de son numéro d'entreprise.
+3. En dessous, elle indique si le client peut recevoir la facture.
+4. S'il le peut, cliquez sur **Envoyer**. Sinon, seul le bouton **Fermer** apparaît.
+
+| Ce que dit la fenêtre | Ce que vous faites |
+|---|---|
+| *Le client est sur Peppol et peut recevoir des factures électroniques.* | Cliquez sur **Envoyer**. |
+| *Le client n'est pas sur Peppol et ne peut pas (encore) recevoir de factures électroniques.* | Fermez la fenêtre et [envoyez la facture par e-mail](#envoyer-par-e-mail). |
+| *Le client est sur Peppol, mais ne peut pas y recevoir de factures.* | Fermez la fenêtre et envoyez la facture par e-mail. |
+| *Non vérifié : ADM One n'a pas répondu.* | Réessayez plus tard. CreditSoft ne sait pas alors si le client est sur Peppol, et n'envoie rien. |
+
+Pour une note de crédit, la fenêtre parle de *notes de crédit* au lieu de *factures électroniques*. Si la facture électronique ne peut pas être créée, la raison apparaît en rouge, comme avec **Facture électronique (UBL)**.
+
+Quand vous cliquez sur **Envoyer**, la fenêtre indique comment cela s'est passé :
+
+- *Envoyée via Peppol.* Le réseau a la facture. La livraison chez votre client suit généralement dans la minute.
+- *Proposée. Le réseau Peppol est temporairement indisponible.* ADM enverra la facture lui-même dès que possible, pendant 24 heures au maximum. Ne la renvoyez pas.
+- *Proposée. Il n'est pas encore certain que le réseau ait reçu la facture.* ADM vérifie. Ne la renvoyez pas.
+- *Non envoyée : le réseau Peppol a refusé la facture.* Avec la raison à la suite. Rien n'est parti : voir [En cas de refus](#en-cas-de-refus).
+- *Pas de réponse du réseau Peppol : la facture est peut-être partie.* Réessayez sans crainte. Une facture déjà partie ne repart pas une seconde fois ; vous voyez alors son statut.
+
+### Après l'envoi : le statut
+
+Une facture partie via Peppol porte en haut l'étiquette **Via Peppol le** avec la date et le statut :
+
+| Statut | Signification |
+|---|---|
+| *acceptée par le réseau* | Le réseau a la facture. La confirmation de livraison doit encore suivre. |
+| *en file d'attente chez ADM* | Le réseau était momentanément indisponible. ADM envoie la facture lui-même. |
+| *incertain — ADM vérifie* | Il n'est pas encore certain que le réseau ait reçu la facture. |
+| *livrée* (vert) | La facture est arrivée chez votre client. |
+| *échec* ou *refusée par le destinataire* (rouge) | La facture n'est pas arrivée. Voir [En cas de refus](#en-cas-de-refus). |
+
+Si une facture est encore sur *acceptée par le réseau* après une heure, l'étiquette ajoute qu'il n'y a pas encore de confirmation de livraison. Renseignez-vous alors auprès d'ADM.
+
+- CreditSoft récupère **lui-même** le statut quand vous ouvrez la facture, tant qu'il peut encore changer.
+- Avec **Plus…** puis **Actualiser le statut Peppol**, vous le demandez immédiatement. Toute personne qui peut consulter la facture peut le faire.
+- Dans la liste, le statut figure dans la colonne **Envoyée**.
+
+L'e-mail et Peppol sont indépendants : une facture peut recevoir les deux, et porte alors les deux étiquettes.
+
+### En cas de refus
+
+Vous voyez un refus à deux moments :
+
+- **à l'envoi** : la fenêtre indique *Non envoyée : le réseau Peppol a refusé la facture*, avec la raison. Rien n'est parti ;
+- **plus tard** : le statut devient *échec* ou *refusée par le destinataire*. Si vous rouvrez **Envoyer via Peppol**, la fenêtre affiche en haut *Tentative précédente :* avec le statut et la raison.
+
+Dans les deux cas, le bouton **Envoyer via Peppol** réapparaît. Ce que vous faites ensuite dépend de la question de savoir si la facture électronique est déjà figée. La fenêtre indique elle-même de quel cas il s'agit :
+
+- **La facture électronique n'est pas encore figée.** Corrigez ce que la raison indique, par exemple sur votre [Fiche d'entreprise](../administration/company-profile.md), et renvoyez. La facture électronique est alors recréée, avec votre correction. Elle n'est figée que lorsque le réseau l'accepte.
+- **La facture électronique est déjà figée**, parce qu'elle a été téléchargée ou déjà envoyée. Renvoyer aide si l'erreur venait du destinataire ou du réseau. Si elle se trouvait dans la facture ou sur votre fiche d'entreprise, établissez une [note de crédit](#corriger-une-facture-la-note-de-credit) et une nouvelle facture.
 
 ## Corriger une facture : la note de crédit
 
@@ -196,6 +265,7 @@ Vous pouvez aussi y saisir des **paiements**. Un paiement repris de l'ancien pro
     - **Rendre définitive une facture pour un client sans adresse complète.** Complétez d'abord l'adresse principale sur sa fiche de relation — pays compris.
     - **Envoyer une facture en français à un client néerlandophone.** La langue de la facture vient de la langue des documents du client. Si elle est erronée, corrigez-la avant de rendre la facture définitive.
     - **Chercher le bouton Facture électronique pour une entreprise sans numéro de TVA.** Ce bouton n'apparaît que si le client a un numéro de TVA belge. Complétez-le sur sa fiche de relation avant de rendre la facture définitive : la facture fige les données du client telles qu'elles sont à ce moment.
+    - **Télécharger la facture électronique avant de l'envoyer via Peppol.** Un téléchargement fige la facture électronique. Si le réseau la refuse ensuite à cause d'une erreur sur votre fiche d'entreprise, la renvoyer ne reprend pas votre correction. Envoyez d'abord, téléchargez ensuite.
 
 ## Voir aussi
 

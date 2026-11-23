@@ -73,7 +73,7 @@ chose de cliquable.
 texte tel qu'il a été envoyé. Cette fenêtre comporte trois boutons :
 
 - **Imprimer** — crée un PDF du message.
-- **Supprimer** — le retire de la liste ; il part vers la [Corbeille](../administration/recycle-bin.md).
+- **Supprimer** — le retire de la liste ; il part vers la [Corbeille](../administration/recycle-bin.md). Le [Journal des actions](../administration/activity-log.md) note qui a supprimé l'e-mail, avec son objet et sa date.
 - **Fermer**.
 
 ### Un e-mail conservé sous forme de fichier

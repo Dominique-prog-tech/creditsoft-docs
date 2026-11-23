@@ -14,7 +14,7 @@ qui dit ce qui s'est passé :
 |---|---|
 | **Créé** | La fiche a été ajoutée. En dessous figurent les valeurs de départ. |
 | **Modifié** | Quelque chose a changé. Par champ, l'ancienne valeur est barrée, puis une flèche, puis la nouvelle. |
-| **Supprimé** | La fiche est partie vers la [Corbeille](../administration/recycle-bin.md). |
+| **Supprimé** | La fiche est partie vers la [Corbeille](../administration/recycle-bin.md), ou une note, une tâche ou un appel a été supprimé. |
 
 À côté de l'étiquette figurent le **moment** et l'**utilisateur**. Un champ qui était vide ou qui l'est devenu
 affiche un tiret. Sous **Créé** ne figurent que les champs qui ont reçu une valeur.
@@ -45,15 +45,33 @@ que vous les retrouvez dans la liste **Contrats**.
 - Sur la fiche du dossier, **un clic** sur cette ligne ouvre le contrat.
 - Un contrat supprimé porte *(supprimé)* après son nom. Ses modifications restent dans l'historique.
 
+## Notes, tâches et appels
+
+L'historique montre aussi ce qui est arrivé aux [notes](notities.md), aux [tâches](taken.md) et aux
+[appels](gesprekken.md) de la fiche : qui en a créé, modifié ou supprimé un, et quand. Ces lignes sont mêlées aux
+modifications de la fiche elle-même, classées dans le temps.
+
+- Une telle ligne affiche sous le moment une deuxième ligne qui indique de quoi il s'agit : *Note*, *Tâche* ou
+  *Appel*, suivi du titre, par exemple *Tâche: Appeler le notaire*.
+- Pour une note modifiée, l'ancien texte est barré, suivi du nouveau. Le statut, la priorité, le sens et le
+  résultat y figurent avec les mêmes mots que dans les onglets.
+- Une note, une tâche ou un appel supprimé porte *(supprimé)* après le titre, et reste dans l'historique avec
+  son contenu.
+
+L'historique connaît les notes, tâches et appels à partir du 22 novembre 2026. Ce qui leur est arrivé avant ce
+jour n'y figure pas.
+
 ## Ce qui n'y figure pas
 
 - **Les horodatages techniques.** Les champs que l'application tient elle-même à jour — quand le dernier
   enregistrement a eu lieu, et par qui — n'apparaissent pas comme modification dans la liste. Ce moment figure
   d'ailleurs déjà à droite de chaque ligne. Sans ce filtre, chaque ligne commencerait par là et la vraie
   modification disparaîtrait en dessous.
-- **Les lignes sous-jacentes.** L'historique porte sur la fiche elle-même et, pour un dossier de crédit, aussi
-  sur ses contrats. Si vous modifiez une **adresse** sur une relation, ou un **demandeur** sur un dossier, il
-  s'agit d'un enregistrement distinct qui n'apparaît pas ici.
+- **Les lignes sous-jacentes.** L'historique porte sur la fiche elle-même, ses notes, tâches et appels et, pour
+  un dossier de crédit, aussi sur ses contrats. Si vous modifiez une **adresse** sur une relation, ou un
+  **demandeur** sur un dossier, il s'agit d'un enregistrement distinct qui n'apparaît pas ici.
+- **Les e-mails.** Qui supprime un e-mail du [courrier](mailverkeer.md) apparaît dans le
+  [Journal des actions](../administration/activity-log.md), avec l'objet et la date de l'e-mail.
 
 ## Vous ne pouvez rien y changer
 

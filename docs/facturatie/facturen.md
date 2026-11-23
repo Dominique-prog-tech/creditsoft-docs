@@ -17,7 +17,7 @@ Drie rechten bepalen wat u hier kan:
 |---|---|
 | **Facturen bekijken** | De lijst en de fiches openen, en de pdf |
 | **Facturen opmaken** | Een klad opstellen, wijzigen en verwijderen |
-| **Facturen definitief maken en versturen** | Definitief maken, mailen en een creditnota maken |
+| **Facturen definitief maken en versturen** | Definitief maken, mailen, via Peppol versturen en een creditnota maken |
 
 Een gewone gebruiker kan facturen bekijken en opmaken. Wie ze definitief mag maken en versturen, krijgt van uw beheerder een rol met dat recht — zie [Rollen](../administration/roles.md).
 
@@ -25,7 +25,7 @@ Een gewone gebruiker kan facturen bekijken en opmaken. Wie ze definitief mag mak
 
 ![De lijst Facturen met bovenaan het jaar 2026, de filter Alle documenten met het aantal, de knoppen Nieuwe factuur en Exporteren, en per rij het nummer, de datum, de vervaldatum, de klant, het dossier, de soort Factuur of Creditnota, het totaal incl. btw, het betaalde en het openstaande bedrag en de kolom Verzonden; op F-2026-0002 is 400,00 betaald; bovenaan een klad zonder nummer met het label Klad.](../images/facturen-lijst.png "Uw facturen en creditnota's van dit jaar"){ .volle-breedte }
 
-Per factuur ziet u het **nummer**, de **datum**, de **vervaldatum**, de **klant**, het **dossier**, het **totaal incl. btw**, wat er nog **open** staat, en of ze **verzonden** werd: *Gemaild*. Is de vervaldatum voorbij en staat er nog iets open, dan staat dat bedrag in het **rood**. Een klad heeft nog geen nummer: daar staat het label *Klad*. Via **Kolommen kiezen** zet u er twee bij: de **soort** (factuur of creditnota) en wat er al **betaald** is.
+Per factuur ziet u het **nummer**, de **datum**, de **vervaldatum**, de **klant**, het **dossier**, het **totaal incl. btw**, wat er nog **open** staat, en of ze **verzonden** werd: *Gemaild*, en bij een factuur die via Peppol vertrok *Peppol:* met de status, bijvoorbeeld *Peppol: afgeleverd*. Is de vervaldatum voorbij en staat er nog iets open, dan staat dat bedrag in het **rood**. Een klad heeft nog geen nummer: daar staat het label *Klad*. Via **Kolommen kiezen** zet u er twee bij: de **soort** (factuur of creditnota) en wat er al **betaald** is.
 
 - Bovenaan kiest u het **jaar**, of *Alle jaren*.
 - Daarnaast toont u enkel wat **Openstaand** is, of wat **Vervallen** is: open, en de vervaldatum is voorbij. Ook een losse creditnota die u nog moet terugbetalen, telt mee.
@@ -164,11 +164,80 @@ De tekst van de mail past u aan bij de [Mailsjablonen](../administration/mail-te
 
 Bij een factuur aan een **Belgisch bedrijf** — een klant met een Belgisch btw-nummer — vindt u onder de knop **Meer…** de handeling **E-factuur (UBL)**. Die downloadt de factuur als **e-factuur**: het bestand dat een boekhoudpakket en het Peppol-netwerk lezen, volgens de Europese norm (Peppol BIS Billing 3.0). De pdf zit erin, zodat wie het bestand opent ook het beeld van de factuur heeft.
 
-- De e-factuur wordt **één keer** gemaakt, de eerste keer dat u erop klikt. Daarna krijgt u altijd hetzelfde bestand, ook als uw bedrijfsfiche intussen verandert — net zoals de pdf.
+- De e-factuur wordt **één keer** gemaakt, de eerste keer dat u erop klikt of dat ze [via Peppol](#versturen-via-peppol) vertrekt. Daarna krijgt u altijd hetzelfde bestand, ook als uw bedrijfsfiche intussen verandert — net zoals de pdf.
 - Het bestand draagt de naam van de pdf, met *.xml* in plaats van *.pdf*.
 - Kan de e-factuur niet gemaakt worden, dan zegt een melding waarom, en wordt er niets bewaard. Bijvoorbeeld: de IBAN op uw [Bedrijfsfiche](../administration/company-profile.md) ontbreekt, of de factuur heeft geen *Uw referentie* (enkel bij facturen die definitief werden vóór die verplicht was).
 
 De knop staat **niet** bij een factuur aan een particulier — een particulier ontvangt geen e-facturen —, en ook niet bij een buitenlandse klant, een klad of een factuur uit het vorige programma.
+
+## Versturen via Peppol
+
+**Peppol** is het Europese netwerk waarlangs bedrijven e-facturen uitwisselen. Via Peppol komt uw factuur rechtstreeks in het boekhoudpakket van uw klant, zonder mail en zonder dat iemand ze moet overtypen. Wat er vertrekt, is de e-factuur van hierboven: hetzelfde bestand dat u met **E-factuur (UBL)** downloadt, met de pdf erin.
+
+### Wanneer u de knop ziet
+
+Op een definitieve factuur of creditnota staat de knop **Versturen via Peppol** wanneer:
+
+- **Peppol aan staat voor uw kantoor.** Dat zet ADM voor u aan, per kantoor, nadat ADM uw kantoor als Peppol-verzender registreerde onder het ondernemingsnummer van uw [Bedrijfsfiche](../administration/company-profile.md). Zonder die registratie zou het netwerk elke factuur weigeren. Wilt u via Peppol versturen, vraag het dan aan ADM.
+- de klant een **Belgisch btw-nummer** heeft: dezelfde voorwaarde als voor de e-factuur. Een particulier en een buitenlandse klant ontvangen niets via Peppol;
+- u het recht **Facturen definitief maken en versturen** hebt;
+- de factuur nog **niet via Peppol vertrok**, of de vorige poging [geweigerd](#bij-een-weigering) werd.
+
+### De factuur versturen
+
+1. Open de factuur en klik op **Versturen via Peppol**.
+2. Het venster maakt de e-factuur en zoekt uw klant op het netwerk op. Het toont het **Peppol-adres van de klant**: *0208:* gevolgd door de tien cijfers van zijn ondernemingsnummer.
+3. Daaronder staat of de klant de factuur kan ontvangen.
+4. Kan hij dat, klik dan op **Versturen**. Anders staat er enkel **Sluiten**.
+
+| Wat het venster zegt | Wat u doet |
+|---|---|
+| *De klant staat op Peppol en kan e-facturen ontvangen.* | Klik op **Versturen**. |
+| *De klant staat niet op Peppol en kan (nog) geen e-facturen ontvangen.* | Sluit het venster en [mail](#mailen) de factuur. |
+| *De klant staat op Peppol, maar kan er geen facturen ontvangen.* | Sluit het venster en mail de factuur. |
+| *Niet gecontroleerd: ADM One antwoordde niet.* | Probeer het later opnieuw. CreditSoft weet dan niet of de klant op Peppol staat, en verstuurt niets. |
+
+Bij een creditnota spreekt het venster van *creditnota's* in plaats van *e-facturen*. Kan de e-factuur niet gemaakt worden, dan staat de reden in het rood, zoals bij **E-factuur (UBL)**.
+
+Klikt u op **Versturen**, dan zegt het venster hoe het afliep:
+
+- *Verstuurd via Peppol.* Het netwerk heeft de factuur. De aflevering bij uw klant volgt doorgaans binnen een minuut.
+- *Aangeboden. Het Peppol-netwerk is tijdelijk niet bereikbaar.* ADM verstuurt de factuur zelf zodra het kan, tot 24 uur lang. Verstuur ze niet opnieuw.
+- *Aangeboden. Of het netwerk de factuur kreeg, is nog niet zeker.* ADM gaat het na. Verstuur ze niet opnieuw.
+- *Niet verstuurd: het Peppol-netwerk weigerde de factuur.* Met de reden erachter. Er is niets vertrokken: zie [Bij een weigering](#bij-een-weigering).
+- *Geen antwoord van het Peppol-netwerk: de factuur kan vertrokken zijn.* Probeer gerust opnieuw. Een factuur die al vertrok, vertrekt geen tweede keer; u ziet dan haar status.
+
+### Na het versturen: de status
+
+Een factuur die via Peppol vertrok, draagt bovenaan het label **Via Peppol op** met de datum en de status:
+
+| Status | Betekenis |
+|---|---|
+| *aanvaard door het netwerk* | Het netwerk heeft de factuur. De bevestiging van aflevering volgt nog. |
+| *in de wachtrij bij ADM* | Het netwerk was even niet bereikbaar. ADM verstuurt de factuur zelf. |
+| *onzeker — ADM gaat het na* | Het is nog niet zeker of het netwerk de factuur kreeg. |
+| *afgeleverd* (groen) | De factuur is bij uw klant aangekomen. |
+| *mislukt* of *geweigerd door de ontvanger* (rood) | De factuur kwam niet aan. Zie [Bij een weigering](#bij-een-weigering). |
+
+Staat een factuur na een uur nog op *aanvaard door het netwerk*, dan zegt het label erbij dat er nog geen bevestiging van aflevering is. Vraag het dan na bij ADM.
+
+- CreditSoft haalt de status **zelf** op wanneer u de factuur opent, zolang ze nog kan veranderen.
+- Met **Meer…** en dan **Peppol-status vernieuwen** vraagt u ze meteen op. Dat kan iedereen die de factuur mag bekijken.
+- In de lijst staat de status in de kolom **Verzonden**.
+
+Mailen en Peppol staan los van elkaar: een factuur kan allebei krijgen, en draagt dan ook allebei de labels.
+
+### Bij een weigering
+
+Een weigering ziet u op twee momenten:
+
+- **bij het versturen**: het venster zegt *Niet verstuurd: het Peppol-netwerk weigerde de factuur*, met de reden. Er is niets vertrokken;
+- **later**: de status wordt *mislukt* of *geweigerd door de ontvanger*. Opent u **Versturen via Peppol** opnieuw, dan staat bovenaan *Vorige poging:* met de status en de reden.
+
+In beide gevallen staat de knop **Versturen via Peppol** er weer. Wat u dan doet, hangt af van de vraag of de e-factuur al vastligt. Het venster zegt zelf welk geval het is:
+
+- **De e-factuur ligt nog niet vast.** Verbeter wat de reden noemt, bijvoorbeeld op uw [Bedrijfsfiche](../administration/company-profile.md), en verstuur opnieuw. De e-factuur wordt dan opnieuw gemaakt, met uw verbetering. Ze ligt pas vast wanneer het netwerk ze aanneemt.
+- **De e-factuur ligt al vast**, omdat ze gedownload of al verstuurd werd. Opnieuw versturen helpt als de fout bij de ontvanger of bij het netwerk lag. Zat de fout in de factuur of op uw Bedrijfsfiche, maak dan een [creditnota](#een-factuur-rechtzetten-de-creditnota) en een nieuwe factuur.
 
 ## Een factuur rechtzetten: de creditnota
 
@@ -196,6 +265,7 @@ U kunt er ook **betalingen** op ingeven. Een betaling die uit het vorige program
     - **Definitief maken voor een klant zonder volledig adres.** Vul eerst het hoofdadres aan op zijn relatiefiche — met het land erbij.
     - **Een Franstalige klant een Nederlandse factuur sturen.** De taal van de factuur komt uit de documenttaal van de klant. Staat die verkeerd, verbeter ze dan vóór u de factuur definitief maakt.
     - **De knop E-factuur zoeken bij een bedrijf zonder btw-nummer.** Die knop verschijnt enkel als de klant een Belgisch btw-nummer heeft. Vul het aan op zijn relatiefiche vóór u de factuur definitief maakt: de factuur legt de gegevens van de klant vast zoals ze op dat moment zijn.
+    - **De e-factuur downloaden vóór u via Peppol verstuurt.** Een download legt de e-factuur vast. Weigert het netwerk ze daarna om een fout op uw Bedrijfsfiche, dan neemt opnieuw versturen uw verbetering niet mee. Verstuur eerst, en download daarna.
 
 ## Zie ook
 

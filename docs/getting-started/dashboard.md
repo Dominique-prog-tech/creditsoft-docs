@@ -193,21 +193,22 @@ klappen open: *Herbekijken* en *Renteherziening*. Ze verschijnen zodra er iets o
 de akte, bij een dossier dat u wil nalopen. U zet die datum op het
 [kredietdossier](../credit-management/credit-files.md#dossiergegevens), met een korte reden die hier achter de
 naam verschijnt. De kaart kijkt even ver vooruit als de termijnen. Een datum die voorbij is, staat in het rood
-en blijft staan tot u ze op het dossier leegmaakt of verzet.
+en blijft staan tot u ze op het dossier leegmaakt of verzet. Een dossier dat afviel, zonder gevolg bleef of
+geweigerd werd, staat er niet op.
 
 **Renteherziening** toont de dossiers met een contract waarvan de rente binnen **zes maanden** herzien wordt,
 met de variabiliteit achter de naam. Ze vertrekt van de **eerste renteherziening** op het contract en telt
 daarna verder met de jaren van de variabiliteit: bij *Variabel 10/5/5* staat een contract na tien jaar op de
 lijst, en daarna om de vijf jaar opnieuw, zonder dat u iets hoeft te doen. Een herziening die na het einde van
-de looptijd valt, verschijnt niet: dan is het krediet afbetaald. Alleen dossiers waarvan de akte verleden is,
-tellen mee.
+de looptijd valt, verschijnt niet: dan is het krediet afbetaald. Alleen een dossier met een akte in een
+geslaagde eindfase telt mee, en enkel met een contract met de betekenis *Gerealiseerd*.
 
 De jaren per variabiliteit vult uw kantoor in onder
 [Platformbeheer → Keuzelijsten](../beheer/keuzelijsten.md#de-variabiliteit-wanneer-de-rente-herzien-wordt).
 Staan ze er niet, dan kent CreditSoft geen volgende herziening en blijft de kaart voor die contracten leeg.
 
-**Jaarlijkse check** toont de dossiers waarvan de akte binnen het venster van de termijnen verjaart, zolang
-het krediet loopt. De kaart staat er enkel als uw kantoor de jaarlijkse check aanzette onder
+**Jaarlijkse check** toont de dossiers in een geslaagde eindfase waarvan de akte binnen het venster van de
+termijnen verjaart, zolang het krediet loopt. De kaart staat er enkel als uw kantoor de jaarlijkse check aanzette onder
 [Platformbeheer → Beheersignalen](../beheer/beheersignalen.md#jaarlijkse-check).
 
 De kaarten tonen de eerste acht, de vroegste datum bovenaan. Zitten er meer achter, dan klikt u op
@@ -218,9 +219,13 @@ De kaarten tonen de eerste acht, de vroegste datum bovenaan. Zitten er meer acht
     dossier, bij een renteherziening, een verjaardag van de akte of een datum *Herbekijken op*. Dat stelt u in
     onder [Platformbeheer → Beheersignalen](../beheer/beheersignalen.md).
 
-!!! info "Waarom de status hier niet meetelt"
-    Bij de termijnen verdwijnt een dossier zodra zijn status in een eindfase staat. Hier niet: een geakteerd
-    krediet stáát in een eindfase, en precies dan begint deze opvolging.
+!!! info "Welke eindfase hier meetelt"
+    Bij de termijnen verdwijnt een dossier zodra zijn status in een eindfase staat. Hier telt net een eindfase
+    met het vinkje **Geslaagd**: een geakteerd krediet stáát daar, en precies dan begint deze opvolging. Een
+    dossier in een eindfase **zonder** dat vinkje krijgt geen renteherziening, geen jaarlijkse check en geen
+    herbekijken. De beheersignalen volgen dezelfde regel; zie
+    [Welke dossiers meetellen](../beheer/beheersignalen.md#welke-dossiers-meetellen), ook voor een kantoor dat
+    zijn fases nog niet instelde.
 
 ## Stilgevallen dossiers
 

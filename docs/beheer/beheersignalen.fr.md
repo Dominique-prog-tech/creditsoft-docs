@@ -32,7 +32,7 @@ Si vous activez un signal, il vaut **à partir d'aujourd'hui**. Une révision ou
 
 ### Révision du taux à venir
 
-Une tâche un certain nombre de jours avant la prochaine **révision du taux** d'un contrat à taux variable. C'est la même révision que celle du bloc [Le suivi des crédits en cours](../getting-started/dashboard.md#le-suivi-des-credits-en-cours) sur le tableau de bord, donc uniquement pour les dossiers dont l'acte est passé.
+Une tâche un certain nombre de jours avant la prochaine **révision du taux** d'un contrat à taux variable. C'est la même révision que celle du bloc [Le suivi des crédits en cours](../getting-started/dashboard.md#le-suivi-des-credits-en-cours) sur le tableau de bord : uniquement pour un dossier avec un acte qui se trouve dans une phase finale réussie, et uniquement pour un contrat avec la signification *Réalisé*. Voir [Quels dossiers comptent](#quels-dossiers-comptent).
 
 Dans le champ **Combien de jours à l'avance**, vous choisissez combien de temps à l'avance la tâche apparaît : de 1 à 366 jours, 90 par défaut. Cliquez ensuite sur **Enregistrer**. L'échéance de la tâche est le jour de la révision.
 
@@ -42,7 +42,7 @@ Ce signal est **activé** par défaut.
 
 ### Contrôle annuel
 
-Une tâche à l'**anniversaire de l'acte**, tant que le crédit court. C'est le moment de revoir avec le client le taux, l'assurance solde restant dû et l'assurance incendie.
+Une tâche à l'**anniversaire de l'acte**, tant que le crédit court, pour un dossier dans une phase finale réussie. C'est le moment de revoir avec le client le taux, l'assurance solde restant dû et l'assurance incendie.
 
 Ce signal est **désactivé** par défaut : il crée des tâches chaque mois, pour chaque dossier dont l'acte est passé. Si vous l'activez, CreditSoft demande d'abord une confirmation et indique combien d'actes ont leur anniversaire dans les 30 prochains jours.
 
@@ -52,7 +52,24 @@ Quand le contrôle annuel est activé, le tableau de bord lui consacre sa propre
 
 Une tâche à la date **À revoir le** que quelqu'un a placée sur un [dossier de crédit](../credit-management/credit-files.md#donnees-du-dossier). Le motif figure sur la fiche du dossier.
 
+Un dossier abandonné, resté sans suite ou refusé ne reçoit pas de tâche : il se trouve dans une phase finale sans la case *Réussi*. Un dossier en cours garde sa date.
+
 Ce signal est **activé** par défaut.
+
+## Quels dossiers comptent
+
+Un signal ne va qu'à un dossier qui en a encore l'utilité. CreditSoft se base pour cela sur les [Phases du tableau de bord](dashboard-fases.md#les-phases) de votre bureau :
+
+| Signal | Uniquement pour |
+|---|---|
+| **Révision du taux à venir** | un dossier avec un acte, dans une phase finale cochée **Réussi**, et un contrat avec la [signification](dashboard-fases.md#que-signifie-chaque-statut-de-contrat) **Réalisé** |
+| **Contrôle annuel** | un dossier avec un acte, dans une phase finale cochée **Réussi** |
+| **À revoir le** | tout dossier, sauf un dossier dans une phase finale **sans** la case *Réussi* |
+
+Le bloc [Le suivi des crédits en cours](../getting-started/dashboard.md#le-suivi-des-credits-en-cours) du tableau de bord et *Demande attention* en haut d'un [dossier de crédit](../credit-management/credit-files.md) suivent la même règle.
+
+!!! info "Rien encore configuré dans les Phases du tableau de bord ?"
+    Si, dans votre bureau, aucun statut n'est encore lié à une phase finale, CreditSoft ne tient pas compte de la phase pour la révision du taux et le contrôle annuel : tout dossier avec un acte compte alors. Si aucun statut de contrat ne porte encore la signification *Réalisé*, tout contrat compte pour la révision du taux. Ainsi, aucun signal ne disparaît parce qu'un réglage manque.
 
 ## Qui reçoit la tâche
 
