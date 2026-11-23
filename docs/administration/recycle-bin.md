@@ -10,7 +10,7 @@ Klik in de zijbalk op **Platformbeheer** en daarna op de tegel **Prullenbak** (o
 
 ## Wat u ziet
 
-De verwijderde records staan **gegroepeerd per soort** — bijvoorbeeld *Relaties*, *Kredietinstellingen*, *Verzekeraars*, *Aanbrengers*, *Kredietdossiers*, *Afspraken* en de journaal-items (*Taken*, *Notities*, *Bijlagen*, *Mailverkeer*). Per record ziet u:
+De verwijderde records staan **gegroepeerd per soort** — bijvoorbeeld *Relaties*, *Leads*, *Kredietinstellingen*, *Verzekeraars*, *Aanbrengers*, *Kredietdossiers*, *Afspraken* en de journaal-items (*Taken*, *Notities*, *Bijlagen*, *Mailverkeer*). Per record ziet u:
 
 - **Naam** — de naam of titel van het verwijderde record.
 - **Verwijderd op** — wanneer het naar de Prullenbak ging.

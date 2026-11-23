@@ -10,7 +10,7 @@ Cliquez dans la barre latérale sur **Administration**, puis sur la tuile **Corb
 
 ## Ce que vous voyez
 
-Les enregistrements supprimés sont **regroupés par type** — par exemple *Relations*, *Institutions de crédit*, *Assureurs*, *Apporteurs*, *Dossiers de crédit*, *Rendez-vous* et les éléments du journal (*Tâches*, *Notes*, *Pièces jointes*, *Courrier*). Pour chaque enregistrement, vous voyez :
+Les enregistrements supprimés sont **regroupés par type** — par exemple *Relations*, *Leads*, *Institutions de crédit*, *Assureurs*, *Apporteurs*, *Dossiers de crédit*, *Rendez-vous* et les éléments du journal (*Tâches*, *Notes*, *Pièces jointes*, *Courrier*). Pour chaque enregistrement, vous voyez :
 
 - **Nom** — le nom ou le titre de l'enregistrement supprimé.
 - **Supprimé le** — la date à laquelle il a été placé dans la Corbeille.
