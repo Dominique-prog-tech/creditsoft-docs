@@ -1,7 +1,8 @@
 # Simulation
 
 Avec la simulation, vous calculez un crédit sans dossier : la mensualité, le tableau d'amortissement, le TAEG et les frais d'un achat.
-Pratique lors d'un premier entretien, quand il n'y a pas encore de dossier. Rien n'est enregistré.
+Pratique lors d'un premier entretien, quand il n'y a pas encore de dossier. CreditSoft n'enregistre rien : votre saisie reste
+uniquement dans votre navigateur, jusqu'à ce que vous cliquiez sur **Effacer**.
 
 ## Ouvrir l'écran
 
@@ -66,15 +67,33 @@ TAEG est égal au taux.
 
 Le TAEG calcule avec un taux qui reste fixe sur toute la durée.
 
+## Continuer avec un lead
+
+Un prospect appelle et vous voulez assurer son suivi ? Cliquez en haut sur **Nouveau lead avec ces chiffres**. Le formulaire
+d'un [nouveau lead](../crm/leads.md) s'ouvre, avec le **montant** rempli et dans **Demande** un résumé de la simulation : la
+durée, le taux, le mode de remboursement, la première échéance, le TAEG et l'achat, dans la mesure où vous les avez saisis.
+
+Vous complétez le nom et les coordonnées du prospect et enregistrez. Si vous quittez la page sans enregistrer, CreditSoft vous
+demande d'abord si vous voulez la quitter : les chiffres sont alors perdus.
+
+Le bouton n'apparaît que si vous pouvez modifier les leads, et fonctionne dès qu'un montant ou un prix d'achat est saisi.
+
+## Votre saisie est conservée
+
+Si vous quittez la simulation, votre saisie s'y retrouve la fois suivante, dans le même navigateur. Elle reste sur votre
+ordinateur et pas dans CreditSoft, et un collègue qui se connecte sur le même ordinateur ne la voit pas. **Effacer** vide tous
+les champs.
+
 ## Erreurs fréquentes
 
 !!! warning "Une simulation n'est pas une offre"
     Les montants sont un calcul de CreditSoft. L'offre de la banque et le décompte du notaire font foi, de même que le
-    TAEG de la banque : ne reprenez pas le TAEG de la simulation dans une offre. La simulation n'enregistre rien : si vous
-    voulez continuer, créez un [dossier de crédit](credit-files.md).
+    TAEG de la banque : ne reprenez pas le TAEG de la simulation dans une offre. La simulation n'enregistre rien dans
+    CreditSoft : si vous voulez continuer, créez un [lead](#continuer-avec-un-lead) ou un [dossier de crédit](credit-files.md).
 
 ## Voir aussi
 
+- [Leads](../crm/leads.md)
 - [Dossiers de crédit : le tableau d'amortissement](credit-files.md#le-tableau-damortissement)
 - [Dossiers de crédit : estimer les frais d'achat](credit-files.md#estimer-les-frais-dachat)
 - [Listes de choix : le mode de remboursement et l'objet pour l'estimation](../beheer/keuzelijsten.md#lobjet-pour-lestimation-dun-but-du-credit)

@@ -1,7 +1,8 @@
 # Simulatie
 
 Met de simulatie rekent u een krediet door zonder dossier: de maandlast, de aflossingstabel, het JKP en de kosten van een aankoop.
-Handig in een eerste gesprek, wanneer er nog geen dossier is. Er wordt niets bewaard.
+Handig in een eerste gesprek, wanneer er nog geen dossier is. CreditSoft bewaart niets: uw invoer blijft enkel in uw
+browser staan, tot u op **Wissen** klikt.
 
 ## Het scherm openen
 
@@ -62,15 +63,33 @@ laat, telt niet stil als nul. Is er echt geen kost, vul dan 0 in. Zonder enige k
 
 Het JKP rekent met een rentevoet die vast blijft over de hele looptijd.
 
+## Verder met een lead
+
+Belt een prospect en wilt u hem opvolgen, klik dan bovenaan op **Nieuwe lead met deze cijfers**. Het formulier van een
+[nieuwe lead](../crm/leads.md) opent, met het **bedrag** ingevuld en in **Vraag** een samenvatting van de simulatie: de
+looptijd, de rentevoet, de aflossingswijze, de eerste termijn, het JKP en de aankoop, voor zover u die invulde.
+
+U vult de naam en de gegevens van de prospect in en bewaart. Klikt u weg zonder te bewaren, dan vraagt CreditSoft eerst of u
+de pagina wil verlaten: de cijfers zijn dan weg.
+
+De knop staat er enkel als u leads mag bewerken, en werkt zodra er een bedrag of een aankoopprijs ingevuld is.
+
+## Uw invoer blijft staan
+
+Verlaat u de simulatie, dan staat uw invoer er de volgende keer weer, in dezelfde browser. Ze blijft op uw computer en
+niet in CreditSoft, en een collega die zich op dezelfde computer aanmeldt, ziet ze niet. Met **Wissen** maakt u alle velden
+leeg.
+
 ## Veelgemaakte fouten
 
 !!! warning "Een simulatie is geen aanbod"
     De bedragen zijn een berekening van CreditSoft. Het aanbod van de bank en de afrekening van de notaris gelden, en ook
-    het JKP van de bank: neem het JKP van de simulatie niet over in een aanbieding. De simulatie bewaart niets: wilt u
-    ermee verder, maak dan een [kredietdossier](credit-files.md) aan.
+    het JKP van de bank: neem het JKP van de simulatie niet over in een aanbieding. De simulatie bewaart niets in CreditSoft:
+    wilt u ermee verder, maak dan een [lead](#verder-met-een-lead) of een [kredietdossier](credit-files.md) aan.
 
 ## Zie ook
 
+- [Leads](../crm/leads.md)
 - [Kredietdossiers: de aflossingstabel](credit-files.md#de-aflossingstabel)
 - [Kredietdossiers: de aankoopkosten ramen](credit-files.md#de-aankoopkosten-ramen)
 - [Keuzelijsten: de aflossingswijze en het doel voor de raming](../beheer/keuzelijsten.md#het-doel-voor-de-raming-van-een-kredietdoel)
