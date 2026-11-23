@@ -18,11 +18,12 @@ Chaque ligne correspond à un e-mail envoyé. Les colonnes :
 - **Livraison** — le **statut de livraison** : **Livré** (vert) si l'e-mail est arrivé, ou un problème en rouge (p. ex. **Rejeté (bounce)** ou **Échoué**).
 - **Raison / erreur** — en cas de problème : la raison pour laquelle l'e-mail n'est pas arrivé. Si la plateforme d'envoi n'a transmis aucune raison, la cellule indique *aucune raison reçue*.
 - **Objet** — l'objet de l'e-mail.
-- **Type** et **Nom** — le type d'entité à laquelle l'e-mail se rapporte (p. ex. *Établissement de crédit*, *Relation*, *Dossier de crédit*) et son nom. Ces deux colonnes n'apparaissent que si au moins un e-mail de la liste les renseigne.
+- **Type** et **Nom** — le type d'entité à laquelle l'e-mail se rapporte (p. ex. *Établissement de crédit*, *Relation*, *Dossier de crédit*) et son nom. Ces deux colonnes n'apparaissent que si au moins un e-mail de la liste les renseigne. Si l'e-mail concerne un dossier de crédit, le nom est un lien : il ouvre **Dossiers de crédit** avec ce nom ou ce numéro de dossier dans le champ de recherche.
 
 ## Filtrer et rechercher
 
 - **Filtre de statut** (en haut à gauche) — affichez par exemple uniquement **Non livrés**, **Rejetés (bounce)** ou **Échoués** pour repérer rapidement les cas problématiques. Par défaut, il est sur **Tous**.
+- **Période** — affichez uniquement les e-mails des **7, 30 ou 90 derniers jours**. Sur **Toute période**, vous voyez, comme avant, les 500 plus récents.
 - **Actualiser** — récupère à nouveau le statut le plus récent.
 - **Rechercher** (en haut à droite) — recherchez librement dans la liste, par exemple par destinataire ou objet.
 - Le bouton **…** en haut à droite permet d'**exporter** la liste (Excel ou CSV).

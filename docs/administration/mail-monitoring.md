@@ -18,11 +18,12 @@ Elke rij is één verstuurde mail. De kolommen:
 - **Aflevering** — de **afleverstatus**: **Afgeleverd** (groen) als de mail is aangekomen, of een probleem in het rood (bv. **Geweigerd (bounce)** of **Mislukt**).
 - **Reden / fout** — bij een probleem: de reden waarom de mail niet is toegekomen. Gaf het verzendplatform geen reden door, dan staat er *geen reden ontvangen*.
 - **Onderwerp** — het onderwerp van de mail.
-- **Type** en **Naam** — het soort entiteit waar de mail bij hoort (bv. *Kredietinstelling*, *Relatie*, *Kredietdossier*) en haar naam. Deze twee kolommen staan er enkel als minstens één mail in de lijst ze invult.
+- **Type** en **Naam** — het soort entiteit waar de mail bij hoort (bv. *Kredietinstelling*, *Relatie*, *Kredietdossier*) en haar naam. Deze twee kolommen staan er enkel als minstens één mail in de lijst ze invult. Gaat de mail over een kredietdossier, dan is de naam een link: ze opent **Kredietdossiers** met die naam of dat dossiernummer in het zoekveld.
 
 ## Filteren en zoeken
 
 - **Statusfilter** (bovenaan links) — toon bijvoorbeeld enkel **Niet afgeleverd**, **Geweigerd (bounce)** of **Mislukt** om snel de probleemgevallen te vinden. Standaard staat hij op **Alle**.
+- **Periode** — toon enkel de mails van de **laatste 7, 30 of 90 dagen**. Op **Elke periode** ziet u, zoals voorheen, de recentste 500.
 - **Vernieuwen** — haalt de recentste status opnieuw op.
 - **Zoeken** (rechtsboven) — zoek vrij in de lijst, bijvoorbeeld op ontvanger of onderwerp.
 - Met de knop **…** rechtsboven kunt u de lijst **exporteren** (Excel of CSV).
