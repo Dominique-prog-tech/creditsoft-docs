@@ -92,6 +92,9 @@ Vous ne pouvez choisir qu'un collègue qui dépend également de votre bureau.
 !!! warning "Cette adresse e-mail est déjà utilisée"
     Une adresse e-mail appartient à un seul apporteur, car elle sert de nom d'utilisateur pour le portail. Choisissez une autre adresse, enregistrez la fiche et cliquez à nouveau sur **Donner accès**.
 
+!!! warning "Cette adresse e-mail ne peut pas servir de nom d'utilisateur"
+    Le portail n'accepte pas cette adresse comme nom d'utilisateur. Choisissez une autre adresse, enregistrez la fiche et cliquez à nouveau sur **Donner accès**. Si cela échoue pour une autre raison, la fenêtre l'indique ; réessayez alors et contactez le bureau de crédit si le problème persiste.
+
 !!! warning "Le bouton Donner accès est grisé"
     La fiche n'a pas encore d'adresse e-mail. Indiquez-la, cliquez sur **Enregistrer** et ouvrez à nouveau **Accès au portail**.
 

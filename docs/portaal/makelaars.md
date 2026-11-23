@@ -91,6 +91,9 @@ U kunt enkel een collega kiezen die ook onder uw kantoor hangt.
 !!! warning "Dit e-mailadres is al in gebruik"
     Een e-mailadres hoort bij één aanbrenger, want het is de gebruikersnaam voor het portaal. Kies een ander adres, bewaar de fiche en klik opnieuw op **Toegang geven**.
 
+!!! warning "Dit e-mailadres kan niet als gebruikersnaam dienen"
+    Het portaal aanvaardt dit adres niet als gebruikersnaam. Kies een ander adres, bewaar de fiche en klik opnieuw op **Toegang geven**. Lukt het om een andere reden niet, dan zegt het venster dat; probeer het dan opnieuw en neem contact op met het kredietkantoor als het blijft.
+
 !!! warning "De knop Toegang geven staat uit"
     Op de fiche staat nog geen e-mailadres. Vul het in, klik op **Bewaren** en open **Portaaltoegang** opnieuw.
 

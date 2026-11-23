@@ -174,8 +174,9 @@ vraagt.
   onder zijn eigen categorie staan, zodat u ziet welke u nodig hebt.
 - **Klant uitnodigen** — stuurt een e-mail met een link naar het **klantenportaal**,
   waar deze persoon zijn stukken oplaadt. Heeft ze geen e-mailadres, dan maakt u enkel de link en bezorgt u
-  die zelf. Onder **Uitgegeven links** in dat venster ziet u per uitnodiging wanneer ze de link het laatst
-  opende, of *nog niet geopend*.
+  die zelf. Onder **Uitgegeven links** in dat venster ziet u per uitnodiging of ze *gemaild* werd of *enkel als link*
+  gemaakt, en wanneer ze de link het laatst opende, of *nog niet geopend*. Trekt u de link in die net in het
+  venster staat, dan verdwijnt hij en zegt het venster dat hij niet meer werkt.
 - **Bekijken als klant** — opent in een nieuw tabblad wat uw klant te zien krijgt. Uw fiche blijft
   openstaan, zodat u beide naast elkaar kunt leggen.
 

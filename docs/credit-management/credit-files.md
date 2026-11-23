@@ -546,7 +546,7 @@ Heeft uw klant geen e-mailadres, gebruik dan **Enkel de link maken**: u krijgt d
 
 Kan de mail niet vertrekken, bijvoorbeeld omdat uw kantoor nog geen [verzendadres](../administration/sender-addresses.md) heeft, dan zegt het venster dat meteen. Er wordt dan ook geen link aangemaakt.
 
-In hetzelfde venster staan onder **Uitgegeven links** alle uitnodigingen van dit dossier, met de datum waarop ze vertrokken en **wanneer de klant de link het laatst opende** — of *nog niet geopend*. Zo ziet u of uw klant al gekeken heeft. Die datum verschuift telkens hij op de link klikt; blijft hij aangemeld en komt hij later terug zonder opnieuw te klikken, dan blijft ze staan.
+In hetzelfde venster staan onder **Uitgegeven links** alle uitnodigingen van dit dossier, met de datum waarop ze vertrokken, of ze *gemaild* werden of *enkel als link* gemaakt, en **wanneer de klant de link het laatst opende** — of *nog niet geopend*. Zo ziet u of uw klant al gekeken heeft. Die datum verschuift telkens hij op de link klikt; blijft hij aangemeld en komt hij later terug zonder opnieuw te klikken, dan blijft ze staan.
 
 Met **Bekijk als klant** ernaast opent u het portaal in een nieuw tabblad, precies zoals uw klant het ziet. Handig om te controleren wat u vraagt vóór u de uitnodiging verstuurt. Wat u daar oplaadt, komt écht op het dossier terecht — een gele balk bovenaan herinnert u daaraan.
 

@@ -60,7 +60,7 @@ ajoutés cette année et combien d'actes sont planifiés. En dessous :
   déplacement.
 - **Prochain rendez-vous** — votre prochain rendez-vous, avec le jour, l'heure et l'objet.
 - **Pièces à fournir** — combien de documents manquent encore ou ont été refusés, sur l'ensemble de vos
-  dossiers.
+  dossiers en cours. Un dossier dans une phase de clôture n'est pas compté.
 
 La barre du bas mène à **Dossiers**, aux clients que vous avez **Apportés**, et à vos **Rendez-vous** par jour.
 

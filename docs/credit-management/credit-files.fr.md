@@ -547,7 +547,7 @@ Si votre client n'a pas d'adresse e-mail, utilisez **Créer uniquement le lien**
 
 Si le courriel ne peut pas partir, par exemple parce que votre bureau n'a pas encore d'[adresse d'envoi](../administration/sender-addresses.md), la fenêtre le dit aussitôt. Aucun lien n'est alors créé.
 
-Dans la même fenêtre, **Liens émis** reprend toutes les invitations de ce dossier, avec la date d'envoi et **la dernière fois que le client a ouvert le lien** — ou *pas encore ouvert*. Vous voyez ainsi si votre client a déjà regardé. Cette date change chaque fois qu'il clique sur le lien ; s'il reste connecté et revient plus tard sans cliquer à nouveau, elle ne bouge pas.
+Dans la même fenêtre, **Liens émis** reprend toutes les invitations de ce dossier, avec la date d'envoi, si elles ont été *envoyées par e-mail* ou créées comme *lien uniquement*, et **la dernière fois que le client a ouvert le lien** — ou *pas encore ouvert*. Vous voyez ainsi si votre client a déjà regardé. Cette date change chaque fois qu'il clique sur le lien ; s'il reste connecté et revient plus tard sans cliquer à nouveau, elle ne bouge pas.
 
 Avec **Voir comme le client** à côté, vous ouvrez le portail dans un nouvel onglet, exactement tel que votre client le voit. Pratique pour vérifier ce que vous demandez avant d'envoyer l'invitation. Ce que vous y déposez arrive réellement sur le dossier — un bandeau jaune en haut vous le rappelle.
 

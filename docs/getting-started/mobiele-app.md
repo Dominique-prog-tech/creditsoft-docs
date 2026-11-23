@@ -53,7 +53,7 @@ en hoeveel aktes er gepland zijn. Daaronder:
 
 - **Klant aanbrengen** en **Dossier zoeken** — de twee dingen die u onderweg het vaakst doet.
 - **Volgende afspraak** — uw eerstvolgende afspraak, met dag, uur en onderwerp.
-- **Stukken te bezorgen** — hoeveel documenten er nog ontbreken of geweigerd werden, over al uw dossiers heen.
+- **Stukken te bezorgen** — hoeveel documenten er nog ontbreken of geweigerd werden, over uw lopende dossiers heen. Een dossier in een afsluitende fase telt niet mee.
 
 Met de balk onderaan gaat u naar **Dossiers**, naar de klanten die u **Aangebracht** heeft, en naar uw
 **Afspraken** per dag.
