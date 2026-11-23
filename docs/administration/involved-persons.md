@@ -35,7 +35,7 @@ Hoort iemand in het register die geen account heeft, klik dan in de lijst op **N
 
 ## Een functie toevoegen
 
-![De fiche van een betrokken persoon met de naam, voornaam en geboortedatum, en daaronder de lijst Functies met twee regels: een beëindigde functie met een begin en een einde, en een lopende functie met enkel een begin.](../images/betrokken-personen-fiche.png "Een persoon met een vroegere en een lopende functie"){ .screenshot }
+![De fiche van een betrokken persoon met de naam, voornaam en geboortedatum, en daaronder de lijst Functies met twee regels: een beëindigde functie met een begin en een einde, en een lopende functie met enkel een begin; rechts onderaan de knop Persoon verwijderen.](../images/betrokken-personen-fiche.png "Een persoon met een vroegere en een lopende functie"){ .screenshot }
 
 Klik op **+ Functie toevoegen**, vul de **functie** en de **begindatum** in, en klik op **Bewaren**. Een functie wordt meteen bewaard. Bij een nieuwe persoon bewaart u eerst de fiche, daarna kunt u een functie toevoegen.
 

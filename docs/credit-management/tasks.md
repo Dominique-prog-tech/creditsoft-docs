@@ -2,7 +2,7 @@
 
 Op dit scherm staan al uw taken samen, **over alle modules heen**: taken op een kredietdossier, op een relatiefiche, bij een aanbrenger of bij een instelling — én de losse taken die aan niets hangen.
 
-![Het takenscherm met bovenaan de filters op status, verantwoordelijke en soort, en daaronder de lijst met vóór elke taak een cirkel om ze af te vinken, en per taak de omschrijving, waar ze aan hangt, de start- en vervaldatum, de status, de prioriteit en de verantwoordelijke.](../images/taken-overzicht.png "Al uw taken op één scherm")
+![Het takenscherm met bovenaan de filters op status, verantwoordelijke en soort, en daaronder de lijst met vóór elke taak een cirkel om ze af te vinken, en per taak de omschrijving, waar ze aan hangt, de vervaldatum, de status en de verantwoordelijke.](../images/taken-overzicht.png "Al uw taken op één scherm")
 
 ## Het scherm openen
 

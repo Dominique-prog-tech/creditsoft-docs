@@ -2,7 +2,7 @@
 
 Cet écran rassemble toutes vos tâches, **tous modules confondus** : les tâches sur un dossier de crédit, sur une fiche de relation, chez un apporteur ou chez une institution — ainsi que les tâches libres, qui ne se rattachent à rien.
 
-![L'écran des tâches avec, en haut, les filtres sur le statut, le responsable et le type, et en dessous la liste avec, devant chaque tâche, un cercle permettant de la cocher, et indiquant, par tâche, la description, ce à quoi elle se rattache, les dates de début et d'échéance, le statut, la priorité et le responsable.](../images/taken-overzicht-fr.png "Toutes vos tâches sur un écran")
+![L'écran des tâches avec, en haut, les filtres sur le statut, le responsable et le type, et en dessous la liste avec, devant chaque tâche, un cercle permettant de la cocher, et indiquant, par tâche, la description, ce à quoi elle se rattache, la date d'échéance, le statut et le responsable.](../images/taken-overzicht-fr.png "Toutes vos tâches sur un écran")
 
 ## Ouvrir l'écran
 

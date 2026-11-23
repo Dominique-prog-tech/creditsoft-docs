@@ -8,7 +8,7 @@ Klik in de zijbalk op **CRM** en dan op **Relaties**.
 
 ## De lijst
 
-![Het scherm Relaties in CreditSoft: een lijst van particulieren en bedrijven met de kolommen naam, type, geboortedatum, e-mail, telefoon en gemeente — de overige kolommen staan rechts, buiten beeld —, de balk om te groeperen, met bovenaan een filter op soort, de knoppen Samenvoegen, Nieuwe relatie en Exporteren en een zoekveld.](../images/relaties-lijst.png "Overzicht van alle relaties van het kantoor")
+![Het scherm Relaties in CreditSoft: een lijst van particulieren en bedrijven met de kolommen naam, voornaam, type, geboortedatum, e-mail en telefoon — de overige kolommen staan rechts, buiten beeld —, de balk om te groeperen, met bovenaan een filter op soort, de knoppen Samenvoegen, Nieuwe relatie en Exporteren en een zoekveld.](../images/relaties-lijst.png "Overzicht van alle relaties van het kantoor")
 
 De tabel toont per relatie: **naam**, **voornaam**, **type**, **geboortedatum**, **e-mail**, **telefoon**, **gemeente**, **gsm**, **intern nummer**, **type contact** en **verantwoordelijke**. Is uw scherm smaller dan de lijst, dan schuift ze opzij; de naam en het e-mailadres blijven altijd leesbaar.
 

@@ -35,7 +35,7 @@ Si une personne sans compte doit figurer au registre, cliquez dans la liste sur 
 
 ## Ajouter une fonction
 
-![La fiche d'une personne concernée avec le nom, le prénom et la date de naissance et, en dessous, la liste Fonctions avec deux lignes : une fonction terminée avec un début et une fin, et une fonction en cours avec uniquement un début.](../images/betrokken-personen-fiche-fr.png "Une personne avec une fonction passée et une fonction en cours"){ .screenshot }
+![La fiche d'une personne concernée avec le nom, le prénom et la date de naissance et, en dessous, la liste Fonctions avec deux lignes : une fonction terminée avec un début et une fin, et une fonction en cours avec uniquement un début ; en bas à droite le bouton Supprimer la personne.](../images/betrokken-personen-fiche-fr.png "Une personne avec une fonction passée et une fonction en cours"){ .screenshot }
 
 Cliquez sur **+ Ajouter une fonction**, indiquez la **fonction** et la **date de début**, puis cliquez sur **Enregistrer**. Une fonction est enregistrée immédiatement. Pour une nouvelle personne, enregistrez d'abord la fiche, vous pourrez ensuite ajouter une fonction.
 

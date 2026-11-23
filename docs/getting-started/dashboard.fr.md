@@ -258,7 +258,7 @@ En haut du tableau de bord figurent deux onglets. **Aujourd'hui** est ce qui est
 
 **Motifs d'abandon** affiche le [motif d'abandon](../credit-management/credit-files.md#motif-dabandon) indiqué sur les dossiers. Un dossier sans motif y figure sous le nom de sa phase, avec *aucun motif indiqué*. Sous le graphique, vous lisez pour combien de dossiers abandonnés un motif est rempli — vous voyez ainsi si le graphique raconte toute l'histoire. S'il y a plus de huit sortes, les plus petites sont regroupées sous *Autres motifs* : le graphique compte toujours tous les dossiers abandonnés.
 
-![Le graphique Motifs d'abandon de l'onglet Production : un anneau avec une légende des motifs — en haut Sans suite, aucun motif indiqué, en dessous des motifs commençant par Banque : et Client :, et en bas Autres motifs — et sous la carte la ligne Motif indiqué pour le nombre des dossiers abandonnés.](../images/dashboard-redenen-fr.png "Pourquoi des dossiers sont abandonnés, et pour combien le motif est connu"){ .volle-breedte }
+![Le graphique Motifs d'abandon de l'onglet Production : un anneau avec une légende des motifs — en haut Sans suite, aucun motif indiqué, en dessous des motifs commençant par Banque :, et en bas Autres motifs — et sous la carte la ligne Motif indiqué pour le nombre des dossiers abandonnés.](../images/dashboard-redenen-fr.png "Pourquoi des dossiers sont abandonnés, et pour combien le motif est connu"){ .volle-breedte }
 
 ### Par prêteur
 

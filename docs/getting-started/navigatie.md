@@ -2,7 +2,7 @@
 
 Deze pagina geeft een kort overzicht van hoe u uw weg vindt in CreditSoft: het menu links, de balk bovenaan en uw persoonlijke voorkeuren.
 
-![Het hoofdvenster van CreditSoft: links het hoofdmenu met de groepen CRM, Krediet, Lijsten en Beheer, rechtsboven de knoppenrij met feedback, help en de avatar, en onderaan links Platformbeheer, Klantenportaal en Afmelden.](../images/navigatie.png "De vaste onderdelen van het hoofdvenster")
+![Het hoofdvenster van CreditSoft: links het hoofdmenu met de groepen CRM, Krediet, Lijsten en Beheer, rechtsboven de knoppenrij met feedback, help en de avatar, en onderaan links Platformbeheer, ADM One-portaal en Afmelden.](../images/navigatie.png "De vaste onderdelen van het hoofdvenster")
 
 Na het aanmelden komt u op uw **dashboard**. Geeft uw rol daar geen toegang toe, dan ziet u een korte
 startpagina die u naar het menu verwijst.
@@ -11,7 +11,7 @@ startpagina die u naar het menu verwijst.
 
 Aan de linkerkant staat het **hoofdmenu**. Het toont de schermen waartoe u toegang hebt; klik op een item om het te openen. Het menu is gegroepeerd — de dagelijkse werkschermen staan bovenaan, beheer-schermen onder de kop **Beheer**.
 
-![Het hoofdmenu links, met Dashboard bovenaan, de opengeklapte groep CRM met Leads, Relaties, Professionals, Afspraken, Online afspraken, Aanbrengers en Groepen, de opengeklapte groep Krediet met Kredietdossiers, Te valideren met een blauw teller-bolletje, Kredietinstellingen, Verzekeraars, Borderel en Fiche 281.50, daaronder de dichtgeklapte groepen Lijsten en Beheer, en onderaan Platformbeheer, Klantenportaal en Afmelden.](../images/menu-links.png "Het hoofdmenu links, met twee groepen opengeklapt"){ .eigen-breedte style="width:240px" }
+![Het hoofdmenu links, met Dashboard bovenaan, de opengeklapte groep CRM met Leads, Relaties, Professionals, Afspraken, Online afspraken, Aanbrengers en Groepen, de opengeklapte groep Krediet met Kredietdossiers, Te valideren met een blauw teller-bolletje, Kredietinstellingen, Verzekeraars, Borderel en Fiche 281.50, daaronder de dichtgeklapte groepen Lijsten en Beheer, en onderaan Platformbeheer, ADM One-portaal en Afmelden.](../images/menu-links.png "Het hoofdmenu links, met twee groepen opengeklapt"){ .eigen-breedte style="width:240px" }
 
 Welke items u ziet, hangt af van uw rol: niet iedereen heeft toegang tot alle schermen.
 

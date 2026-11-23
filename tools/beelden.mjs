@@ -213,6 +213,10 @@ const SCHOTEN = [
   // VulGroepsmailAfmeldingAsync), dus de eerste drie rijen tonen één overgeslagen ontvanger. De taal leest het recept
   // af aan de knop: een Franse vrije tekst in het Franse beeld.
   ['groepsmail-venster',           '/crm/relaties', async p => {
+      // ⚠️ Sinds 1.239.30 (W-157) staat de lijst op familienaam: de eerste drie rijen zijn "Adam …", zonder de enige afgemelde
+      //    relatie (Alain Blondeel). Eerst zoeken op "Alain": dan zijn het Adriaenssens, Blondeel en Callens, 2 ontvangers en 1 overgeslagen.
+      const z = p.locator('input[type="search"]:visible, input[placeholder*="oek" i]:visible, input[placeholder*="recherch" i]:visible').first();
+      await z.fill('Alain'); await p.waitForTimeout(2500);
       const vakjes = p.locator('.dxbl-grid-table tbody tr td.dxbl-grid-selection-cell input[type=checkbox]');
       for (let i = 0; i < 3; i++) { await vakjes.nth(i).click({ force: true }); await p.waitForTimeout(300); }
       const fr = await p.getByRole('button', { name: /E-mail groupé/ }).count() > 0;
@@ -1432,7 +1436,8 @@ const VERWACHT = {
   'relaties-gevraagde-documenten': /Laatste 3 loonfiches|3 derniers|Ontvangen|Reçu/i,
   // Enkel als er een link GETOOND wordt: "Ex-partner" staat in de kolom Soort, niet op een leeg tabblad (dat zegt "Nog geen …").
   'relaties-gelinkt': /Ex-partner|Ex-partenaire/,
-  'taken-overzicht':            /Vervaldatum|Échéance|Prioriteit|Priorité/i,
+  // Sinds 1.239.28 (W-263) staan Begin en Prioriteit standaard verborgen (kolomkiezer); de vervaldatum heet "Tegen".
+  'taken-overzicht':            /^(?=[\s\S]*(Tegen|Échéance))(?=[\s\S]*(Verantwoordelijke|Responsable))/,
   // mak12: de kolomkop Hangt aan staat op Taken én op Notities; 'Inhoud' enkel op Notities.
   'notities-lijst':             /Inhoud|Contenu/,
   // Een kolomkop: staat er enkel als de lijst getoond wordt, NIET bij de melding "nog geen opvolgstatus ingesteld".

@@ -254,7 +254,7 @@ Bovenaan het dashboard staan twee tabbladen. **Vandaag** is wat hierboven beschr
 
 **Waarom afgevallen** toont de [reden van afvallen](../credit-management/credit-files.md#reden-van-afvallen) die op de dossiers staat. Een dossier zonder reden staat er onder de naam van zijn fase, met *geen reden opgegeven*. Onder de grafiek leest u bij hoeveel afgevallen dossiers er een reden is ingevuld — zo ziet u of de grafiek het hele verhaal vertelt. Zijn er meer dan acht soorten, dan komen de kleinste samen onder *Andere redenen*: de grafiek telt altijd alle afgevallen dossiers.
 
-![De grafiek Waarom afgevallen op het tabblad Productie: een ring met een legende van de redenen — bovenaan Zonder gevolg, geen reden opgegeven, daaronder redenen die met Bank: en Klant: beginnen, en onderaan Andere redenen — en onder de kaart de regel Reden opgegeven bij het aantal van de afgevallen dossiers.](../images/dashboard-redenen.png "Waarom dossiers afvallen, en bij hoeveel de reden gekend is"){ .volle-breedte }
+![De grafiek Waarom afgevallen op het tabblad Productie: een ring met een legende van de redenen — bovenaan Zonder gevolg, geen reden opgegeven, daaronder redenen die met Bank: beginnen, en onderaan Andere redenen — en onder de kaart de regel Reden opgegeven bij het aantal van de afgevallen dossiers.](../images/dashboard-redenen.png "Waarom dossiers afvallen, en bij hoeveel de reden gekend is"){ .volle-breedte }
 
 ### Per kredietverstrekker
 

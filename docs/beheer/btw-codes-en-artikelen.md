@@ -10,7 +10,7 @@ Het scherm heeft twee tabbladen: **Btw-codes** en **Artikelen**.
 
 ## Btw-codes
 
-![Het tabblad Btw-codes met de vier codes V21, V12, V6 en V0: per rij de code, de omschrijving, het tarief, de categorie Standaardtarief of Nultarief, de wettelijke vermelding en een vinkje bij de standaardcode V21; bovenaan de knop Nieuwe btw-code.](../images/btw-codes-en-artikelen.png "De btw-codes van uw kantoor"){ .volle-breedte }
+![Het tabblad Btw-codes met de vier codes V21, V12, V6 en V0: per rij de code, de omschrijving, het tarief, de categorie Belast (standaard of verlaagd tarief) of Nultarief, de wettelijke vermelding en een vinkje bij de standaardcode V21; bovenaan de knop Nieuwe btw-code.](../images/btw-codes-en-artikelen.png "De btw-codes van uw kantoor"){ .volle-breedte }
 
 Elk kantoor start met vier codes: **21 %**, **12 %**, **6 %** en het **nultarief**. De code **V21** is de **standaardcode**: die staat voorgesteld op elke nieuwe lijn.
 

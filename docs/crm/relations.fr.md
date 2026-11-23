@@ -8,7 +8,7 @@ Dans la barre latérale, cliquez sur **CRM**, puis sur **Relations**.
 
 ## La liste
 
-![L'écran Relations dans CreditSoft : une liste de particuliers et d'entreprises avec les colonnes nom, type, date de naissance, e-mail, téléphone et commune — les autres colonnes se trouvent à droite, hors de l'écran —, la barre pour grouper, avec en haut un filtre par type, les boutons Fusionner, Nouvelle relation et Exporter ainsi qu'un champ de recherche.](../images/relaties-lijst-fr.png "Aperçu de toutes les relations du bureau")
+![L'écran Relations dans CreditSoft : une liste de particuliers et d'entreprises avec les colonnes nom, prénom, type, date de naissance, e-mail et téléphone — les autres colonnes se trouvent à droite, hors de l'écran —, la barre pour grouper, avec en haut un filtre par type, les boutons Fusionner, Nouvelle relation et Exporter ainsi qu'un champ de recherche.](../images/relaties-lijst-fr.png "Aperçu de toutes les relations du bureau")
 
 Le tableau affiche par relation : **nom**, **prénom**, **type**, **date de naissance**, **e-mail**, **téléphone**, **commune**, **GSM**, **numéro interne**, **type de contact** et **responsable**. Si votre écran est plus étroit que la liste, elle défile sur le côté ; le nom et l'adresse e-mail restent toujours lisibles.
 

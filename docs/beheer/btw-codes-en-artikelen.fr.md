@@ -10,7 +10,7 @@ L'écran a deux onglets : **Codes TVA** et **Articles**.
 
 ## Codes TVA
 
-![L'onglet Codes TVA avec les quatre codes V21, V12, V6 et V0 : par ligne le code, le libellé, le taux, la catégorie Taux normal ou Taux zéro, la mention légale et une coche pour le code par défaut V21 ; en haut, le bouton Nouveau code TVA.](../images/btw-codes-en-artikelen-fr.png "Les codes TVA de votre bureau"){ .volle-breedte }
+![L'onglet Codes TVA avec les quatre codes V21, V12, V6 et V0 : par ligne le code, le libellé, le taux, la catégorie Taxé (taux normal ou réduit) ou Taux zéro, la mention légale et une coche pour le code par défaut V21 ; en haut, le bouton Nouveau code TVA.](../images/btw-codes-en-artikelen-fr.png "Les codes TVA de votre bureau"){ .volle-breedte }
 
 Chaque bureau démarre avec quatre codes : **21 %**, **12 %**, **6 %** et le **taux zéro**. Le code **V21** est le **code par défaut** : il est proposé sur chaque nouvelle ligne.
 
