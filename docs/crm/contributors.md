@@ -138,7 +138,7 @@ Elke tegel toont het cijfer van deze aanbrenger. De kleine vermelding ernaast ze
 ### De grafieken en de tabel
 
 - **Dossiers en akten per maand** — altijd de laatste 24 maanden, los van de gekozen periode.
-- **Omzetting per jaar van invoer** — van de dossiers die dat jaar binnenkwamen: hoeveel werden een akte, voor deze aanbrenger en voor het kantoor. Een jaar met een **\*** heeft nog lopende dossiers; dat cijfer kan nog stijgen.
+- **Omzetting per jaar van invoer** — van de dossiers die dat jaar binnenkwamen: hoeveel werden een akte, voor deze aanbrenger en voor het kantoor. Tussen haakjes onder elk jaar staat hoeveel dossiers dat jaar binnenkwamen: een jaar met één dossier staat anders als balk van 100 %. Een jaar met een **\*** heeft nog lopende dossiers; dat cijfer kan nog stijgen.
 - **Akten per kredietverstrekker** — de acht grootste; de rest staat samen onder *Overige*.
 - **Waarom afgevallen** — de afgevallen dossiers per reden. Een dossier zonder reden staat er onder zijn fase, met *geen reden opgegeven*; zijn er meer dan acht soorten, dan komen de kleinste samen onder *Andere redenen*. Eronder leest u bij hoeveel afgevallen dossiers er een reden is ingevuld.
 

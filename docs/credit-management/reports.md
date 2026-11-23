@@ -59,7 +59,7 @@ Bovenaan elk rapport staan de naam en de gegevens uit uw **bedrijfsfiche**, met 
     Op twee rapporten na kijken alle rapporten naar de **aktedatum** van het dossier om te bepalen of het in uw periode valt. *Ingediend gegroepeerd per maand* gebruikt de indieningsdatum, en *Status periodiek op ingavedatum* de datum van ingave.
 
 !!! warning "Vijf rapporten hangen af van uw statusinstellingen"
-    De rapporten over **gerealiseerde** en **geakteerde** dossiers moeten weten welke contractstatus bij uw kantoor "gerealiseerd" of "ingediend" betekent. Die koppeling legt u onder **Platformbeheer → Dashboard-fases**, onderaan bij *KPI-tegels*. Zolang dat niet ingevuld is, zegt het scherm dat vóór het afdrukt — u krijgt geen leeg blad zonder uitleg.
+    De rapporten over **gerealiseerde** en **geakteerde** dossiers moeten weten welke contractstatus bij uw kantoor "gerealiseerd" of "ingediend" betekent. Die koppeling legt u onder **Platformbeheer → Dashboard-fases**, in het blok *Contractstatussen*. Zolang dat niet ingevuld is, zegt het scherm dat vóór het afdrukt — u krijgt geen leeg blad zonder uitleg.
 
 !!! tip "Eén dossier kan meerdere regels geven"
     Draagt een dossier meer dan één contract, dan staat het in de detailrapporten meer dan één keer: elke regel is een contract, met zijn eigen bedrag. Het **commissiebedrag** hoort bij het dossier en staat daarom maar één keer, op de eerste regel ervan. De totalen onderaan tellen elk dossier één keer.

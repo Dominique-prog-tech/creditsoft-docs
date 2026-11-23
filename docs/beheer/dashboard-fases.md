@@ -56,9 +56,10 @@ Onderaan de tabel staat een lege regel: vul daar een naam in om een fase toe te 
 
 ## Dossierstatussen aan een fase koppelen
 
-Rechts staan al uw dossierstatussen. Kies per status in welke fase hij thuishoort.
+Onder de fasetabel staan al uw dossierstatussen. Kies per status in welke fase hij thuishoort.
 
 - Een status hoort bij **hoogstens één** fase.
+- Ook een status die nog op geen enkel dossier staat, staat in de lijst, met de vermelding *nog op geen dossier*. Koppel hem gerust vooraf: het eerste dossier met die status komt dan meteen in de juiste fase.
 - Koppelt u een status niet, dan komen die dossiers op het dashboard onder **niet ingedeeld**.
 - Statussen die u niet meer gebruikt maar die nog aan oude dossiers hangen, blijven in deze lijst staan. Dat is bewust: die dossiers moeten ergens terechtkunnen.
 

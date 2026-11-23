@@ -136,7 +136,7 @@ Chaque tuile affiche le chiffre de cet apporteur. La petite mention à côté le
 ### Les graphiques et le tableau
 
 - **Dossiers et actes par mois** — toujours les 24 derniers mois, indépendamment de la période choisie.
-- **Conversion par année d'introduction** — parmi les dossiers introduits cette année-là : combien sont devenus un acte, pour cet apporteur et pour le bureau. Une année marquée d'un **\*** a encore des dossiers en cours ; ce chiffre peut encore augmenter.
+- **Conversion par année d'introduction** — parmi les dossiers introduits cette année-là : combien sont devenus un acte, pour cet apporteur et pour le bureau. Sous chaque année figure entre parenthèses le nombre de dossiers introduits cette année-là : sans cela, une année avec un seul dossier apparaît comme une barre de 100 %. Une année marquée d'un **\*** a encore des dossiers en cours ; ce chiffre peut encore augmenter.
 - **Actes par prêteur** — les huit plus importants ; le reste figure ensemble sous *Autres*.
 - **Motifs d'abandon** — les dossiers abandonnés par motif. Un dossier sans motif y figure sous sa phase, avec *aucun motif indiqué* ; s'il y a plus de huit sortes, les plus petites sont regroupées sous *Autres motifs*. En dessous, vous lisez pour combien de dossiers abandonnés un motif est rempli.
 

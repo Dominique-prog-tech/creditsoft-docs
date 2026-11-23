@@ -59,7 +59,7 @@ En haut de chaque rapport figurent le nom et les coordonnées de votre **fiche d
     À deux rapports près, tous les rapports regardent la **date d'acte** du dossier pour déterminer s'il tombe dans votre période. *Introduits par mois* utilise la date d'introduction, et *Statut par période sur la date d'encodage* la date d'encodage.
 
 !!! warning "Cinq rapports dépendent de vos réglages de statut"
-    Les rapports sur les dossiers **réalisés** et **actés** doivent savoir quel statut de contrat signifie « réalisé » ou « introduit » dans votre bureau. Vous établissez ce lien sous **Administration → Phases du tableau de bord**, en bas, sous *Tuiles KPI*. Tant que ce n'est pas configuré, l'écran vous le dit avant d'imprimer — vous n'obtenez pas une page blanche sans explication.
+    Les rapports sur les dossiers **réalisés** et **actés** doivent savoir quel statut de contrat signifie « réalisé » ou « introduit » dans votre bureau. Vous établissez ce lien sous **Administration → Phases du tableau de bord**, dans le bloc *Statuts de contrat*. Tant que ce n'est pas configuré, l'écran vous le dit avant d'imprimer — vous n'obtenez pas une page blanche sans explication.
 
 !!! tip "Un dossier peut donner plusieurs lignes"
     Si un dossier porte plus d'un contrat, il figure plusieurs fois dans les rapports détaillés : chaque ligne est un contrat, avec son propre montant. Le **montant de commission** appartient au dossier et ne figure donc qu'une seule fois, sur sa première ligne. Les totaux en bas comptent chaque dossier une seule fois.

@@ -56,9 +56,10 @@ En bas du tableau figure une ligne vide : saisissez-y un nom pour ajouter une ph
 
 ## Rattacher les statuts de dossier à une phase
 
-À droite figurent tous vos statuts de dossier. Choisissez pour chacun la phase à laquelle il appartient.
+Sous le tableau des phases figurent tous vos statuts de dossier. Choisissez pour chacun la phase à laquelle il appartient.
 
 - Un statut relève d'**une phase au maximum**.
+- Un statut qui ne figure encore sur aucun dossier apparaît aussi dans la liste, avec la mention *sur aucun dossier pour l'instant*. Vous pouvez le rattacher à l'avance : le premier dossier avec ce statut arrive alors directement dans la bonne phase.
 - Si vous ne rattachez pas un statut, ces dossiers apparaissent sur le tableau de bord sous **non classés**.
 - Les statuts que vous n'utilisez plus mais qui restent liés à d'anciens dossiers demeurent dans cette liste. C'est voulu : ces dossiers doivent pouvoir aboutir quelque part.
 
