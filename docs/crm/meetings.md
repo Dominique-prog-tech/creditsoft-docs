@@ -39,6 +39,8 @@ Klik op een leeg tijdvak. In het venster dat opent, vult u in:
 
 Onder **Contact** en **Aanbrenger** staan twee vinkjes: **Bevestiging naar het contact** en **Bevestiging naar de aanbrenger**. Vinkt u er één aan en bewaart u, dan opent het mailvenster met de bevestiging al ingevuld: de ontvanger, het onderwerp met de datum, en een blok met wanneer en waar de afspraak doorgaat.
 
+Wijzigt u later een afspraak waarbij een vinkje aan staat, dan opent het mailvenster opnieuw als de datum, het uur of de plaats veranderde, ook wanneer u de afspraak in de agenda versleept. Bij een andere wijziging, zoals het onderwerp, opent het niet.
+
 Kiest u een aanbrenger die op zijn fiche **Mails bij momenten** aangevinkt heeft (zie [Aanbrengers](contributors.md#erkenning-en-status)), dan staat **Bevestiging naar de aanbrenger** al aan. Wil u hem deze keer niets sturen, vink het dan uit.
 
 De mail vertrekt **niet vanzelf**. U leest ze na, voegt eventueel een zin toe, en verstuurt zelf. Vinkt u beide aan, dan komt eerst het contact en daarna de aanbrenger.

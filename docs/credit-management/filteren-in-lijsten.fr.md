@@ -51,4 +51,4 @@ Vos filtres, l'ordre de vos colonnes, leurs largeurs et les colonnes que vous av
 
 ## L'exportation et l'impression suivent vos filtres
 
-Ce que vous exportez vers Excel ou CSV, et ce qui figure sur une impression, correspond à **ce que vous voyez à cet instant**. Si vous filtrez d'abord et exportez ensuite, seule cette sélection se retrouve dans le fichier.
+Ce que vous exportez vers Excel ou CSV, et ce qui figure sur une impression, correspond à **ce que vous voyez à cet instant**. Si vous filtrez d'abord et exportez ensuite, seule cette sélection se retrouve dans le fichier. Une exception : **Imprimer selon ces filtres** sur [Suivi après l'acte](after-deed.md) ne suit que les deux filtres du haut, pas le champ de recherche ni le tri.

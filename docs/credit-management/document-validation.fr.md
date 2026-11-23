@@ -38,7 +38,7 @@ Ensuite, vous choisissez :
 - **Approuver** — la pièce est cochée sur la liste des documents du dossier. C'est fait.
 - **Refuser** — vous indiquez un motif. Il est obligatoire : sans motif, votre client ne sait pas quoi faire différemment. La pièce réapparaît sur sa liste, accompagnée de votre motif, et il peut la fournir à nouveau.
 
-Pour traiter plusieurs pièces à la fois — un client qui a envoyé six fichiers d'un coup — cochez les lignes. Une barre apparaît alors au-dessus de la liste avec **Approuver** et **Refuser** pour toute la sélection. Pour le refus, CreditSoft demande ici aussi un motif unique, valable pour toutes les pièces cochées.
+Pour traiter plusieurs pièces à la fois — un client qui a envoyé six fichiers d'un coup — cochez les lignes. Une barre apparaît alors au-dessus de la liste avec **Approuver** et **Refuser** pour toute la sélection. Pour le refus, CreditSoft demande ici aussi un motif unique, valable pour toutes les pièces cochées. Tant que quelque chose est coché, le panneau de droite n'évalue pas de pièce séparée ; décochez tout pour y évaluer une seule pièce.
 
 !!! info "Ce que le client a envoyé est conservé"
     Même après un refus, les fichiers restent en place. Vous pouvez donc toujours vérifier ce qui a été fourni et pourquoi cela ne suffisait pas.

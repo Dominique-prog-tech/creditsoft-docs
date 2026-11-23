@@ -69,9 +69,9 @@ Percentages voert u in van **0 tot 100** met twee decimalen; ze worden getoond m
 Onder de lijst met geplande betalingen ziet u een **lopend totaal**: *Totaal: 75 % van 100 %*. Zodra u op 100 % staat, kleurt het groen.
 
 !!! warning "Wat CreditSoft controleert bij het opslaan"
-    - **Eén type tegelijk** — er kan slechts **0 of 1** type van commissionering gekozen worden. Kiest u zowel *Gespreide betaling* als *Geplande betalingen*, dan wordt het opslaan geweigerd.
+    - **Eén type tegelijk** — er kan slechts **0 of 1** type van commissionering gekozen worden. Kiest u zowel *Gespreide betaling* als *Geplande betalingen*, dan zegt de melding bovenaan de fiche dat u er één moet kiezen, en wordt er niet bewaard.
     - **Aantal maanden** — vinkt u *Gespreide betaling* aan, dan moet het **aantal maanden** ingevuld zijn.
-    - **Samen 100 %** — bij *Geplande betalingen* moeten het **percentage direct** en alle geplande percentages **samen exact 100 %** vormen. De melding toont het huidige totaal, zodat u ziet hoeveel er ontbreekt.
+    - **Samen 100 %** — bij *Geplande betalingen* moeten het **percentage direct** en alle geplande percentages **samen exact 100 %** vormen. De melding bovenaan de fiche zegt het, en onder de lijst staat het lopende totaal, bijvoorbeeld *Totaal: 75 % van 100 %*, zodat u ziet hoeveel er ontbreekt.
 
 ### Opmerkingen
 
@@ -86,6 +86,6 @@ De knoppenbalk onderaan blijft in beeld terwijl u door de fiche scrolt:
 - **Annuleren** — keert terug naar de lijst zonder te bewaren. Hebt u iets gewijzigd, dan vraagt CreditSoft eerst of u wilt blijven.
 - **Verwijderen** — archiveert de instelling (rechts in de balk).
 
-Bij het opslaan worden **ontbrekende verplichte velden** (naam, documenttaal), een **ongeldig e-mailadres** en
-een ongeldige commissiekeuze gemeld. Het e-mailadres wordt gecontroleerd zolang er iets in het veld staat, ook
+**Ontbrekende verplichte velden** (naam, documenttaal), een **ongeldig e-mailadres of telefoonnummer** en een
+ongeldige commissiekeuze staan samen in de melding bovenaan de fiche, en er wordt pas bewaard als ze in orde zijn. Het e-mailadres wordt gecontroleerd zolang er iets in het veld staat, ook
 als u het niet zelf hebt gewijzigd.

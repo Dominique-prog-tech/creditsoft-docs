@@ -10,7 +10,7 @@ Klik in de zijbalk op **CRM** en dan op **Groepen**.
 
 ## De lijst
 
-De tabel toont per groep de **naam**. Meer is er niet: een groep is een etiket, geen fiche.
+De tabel toont per groep de **naam** en het aantal **aanbrengers** dat ze draagt. Klik op dat aantal en de lijst Aanbrengers opent, gefilterd op die groep. Meer is er niet: een groep is een etiket, geen fiche. Twee groepen met dezelfde naam kan niet.
 
 - **Zoeken** — het zoekveld zoekt op naam.
 - **Exporteren** — naar Excel of CSV.
@@ -29,7 +29,7 @@ Dat doet u niet hier, maar op de fiche van de aanbrenger zelf: **CRM → Aanbren
 
 ## De aanbrengers van een groep terugvinden
 
-In **CRM → Aanbrengers** staat de groepering als kolom. Boven die lijst staat de filter **Groepering**: kies een groep en u ziet enkel de aanbrengers die ze dragen; met **Zonder groepering** ziet u wie nog nergens is ingedeeld. Het zoekveld vindt een groep ook op haar naam, en de export neemt de kolom mee.
+In **CRM → Aanbrengers** staat de groepering als kolom. Boven die lijst staat de filter **Groepering**: kies een groep en u ziet enkel de aanbrengers die ze dragen; met **Zonder groepering** ziet u wie nog nergens is ingedeeld. Het zoekveld vindt een groep ook op haar naam, en de export neemt de kolom mee. Sneller: klik in de lijst Groepen op het aantal aanbrengers van die groep.
 
 Een hoofdaanbrenger of een kantoor staat enkel in de uitkomst als hij de groepering zelf draagt: ze gaat niet vanzelf over op wie eronder hangt.
 

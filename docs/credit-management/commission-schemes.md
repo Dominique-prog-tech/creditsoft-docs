@@ -26,9 +26,9 @@ Elke regel is één afspraak tussen een **dossier** en een **aanbrenger**. Hange
 
 ## De drie vormen
 
-- **Gespreid** — de commissie wordt over een aantal maanden verdeeld, eventueel met een percentage dat meteen bij de start wordt uitbetaald. De maandbedragen worden op de cent afgerond. Wat dat aan centen verschuift, komt op een van de maandlijnen: het totaal is altijd het commissiebedrag, en een rond bedrag bij de start blijft rond.
+- **Gespreid** — de commissie wordt over een aantal maanden verdeeld, eventueel met een direct deel in procent. Het directe deel komt op het borderel van de maand na de startdatum; de rest wordt gelijk verdeeld over het aantal maanden, vanaf de maand daarna. De maandbedragen worden op de cent afgerond. Wat dat aan centen verschuift, komt op een van de maandlijnen: het totaal is altijd het commissiebedrag, en een rond bedrag bij de start blijft rond.
 - **Gepland** — u bepaalt zelf de termijnen: in welke maand welk percentage.
-- **Vast bedrag** — het volledige bedrag wordt in één keer uitbetaald op de startdatum. Het bedrag zelf
+- **Vast bedrag** — het volledige bedrag komt in één keer op het borderel van de maand na de startdatum. Het bedrag zelf
   is de **totale commissie** die u bovenaan invult; er is geen apart veld voor.
 
 ## De toestanden

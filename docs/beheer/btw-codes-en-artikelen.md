@@ -16,8 +16,8 @@ Elk kantoor start met vier codes: **21 %**, **12 %**, **6 %** en het **nultarief
 
 Klik op **Nieuwe btw-code**, of dubbelklik een code om ze te openen. Een btw-code heeft:
 
-- een **code** en een **omschrijving** in het Nederlands en het Frans;
-- een **categorie**: *Standaardtarief*, *Nultarief*, *Vrijgesteld*, *Verlegd (medecontractant)*, *Intracommunautair*, *Uitvoer* of *Buiten het toepassingsgebied*. Enkel het standaardtarief draagt een **tarief** in procent;
+- een **code** en een **omschrijving** in het Nederlands en het Frans. De code wordt in hoofdletters bewaard, en twee codes die enkel in hoofdletters verschillen, zoals *v21* naast *V21*, kan niet;
+- een **categorie**: *Belast (standaard of verlaagd tarief)*, *Nultarief*, *Vrijgesteld*, *Verlegd (medecontractant)*, *Intracommunautair*, *Uitvoer* of *Buiten het toepassingsgebied*. Enkel een belaste code draagt een **tarief** in procent, bijvoorbeeld 21 % of 6 %. Op de factuur heet die regel in de btw-uitsplitsing *Btw 21 %* of *Btw 6 %*;
 - **Standaardcode op een nieuwe lijn** — aan te vinken bij één code;
 - een **wettelijke vermelding**, in het Nederlands en het Frans. Bij een vrijgestelde of verlegde code is die verplicht: ze komt op elke factuur met die code, in de taal van de klant;
 - een **VATEX-code (Peppol)**.

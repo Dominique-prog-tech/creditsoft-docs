@@ -38,7 +38,7 @@ Daarna kiest u:
 - **Goedkeuren** — het stuk staat afgevinkt op de documentchecklist van het dossier. Klaar.
 - **Afkeuren** — u geeft een reden op. Die is verplicht, want zonder reden weet uw klant niet wat hij anders moet doen. Het stuk komt terug op zijn lijstje te staan, met uw reden erbij, en hij kan opnieuw aanleveren.
 
-Wilt u meerdere stukken tegelijk afhandelen — een klant die zes bestanden in één keer opstuurde — vink dan de rijen aan. Boven de lijst verschijnt een balk met **Goedkeuren** en **Afkeuren** voor de hele selectie. Bij het afkeuren vraagt CreditSoft ook hier één reden, die voor alle aangevinkte stukken geldt.
+Wilt u meerdere stukken tegelijk afhandelen — een klant die zes bestanden in één keer opstuurde — vink dan de rijen aan. Boven de lijst verschijnt een balk met **Goedkeuren** en **Afkeuren** voor de hele selectie. Bij het afkeuren vraagt CreditSoft ook hier één reden, die voor alle aangevinkte stukken geldt. Zolang er iets aangevinkt is, beoordeelt het paneel rechts geen afzonderlijk stuk; vink alles uit om één stuk daar te beoordelen.
 
 !!! info "Wat de klant stuurde, blijft bewaard"
     Ook na een afkeuring blijven de bestanden staan. Zo kan u achteraf nog nagaan wat er precies aangeleverd werd en waarom het niet volstond.

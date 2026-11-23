@@ -22,7 +22,7 @@ crédit** ; en dessous, en gris, le reste :
 |---|---|
 | Le **statut** | Où en est le dossier — *Actif*, *Réalisé*, *Sans suite*… |
 | **Introduit le** | Quand le dossier a été introduit. La liste est triée sur cette date, la plus récente en haut. |
-| **acte** ou **en cours** | Si l'acte a été passé, sa date figure ici. Sinon, le dossier est toujours en cours. |
+| **acte**, **clôturé** ou **en cours** | Si l'acte a été passé, sa date figure ici. Si un dossier sans acte se trouve dans une [phase finale](../beheer/dashboard-fases.md#les-phases), par exemple refusé ou sans suite, il indique *clôturé*. Sinon, le dossier est toujours en cours. |
 
 **Cliquez sur une ligne** pour ouvrir le dossier. Pour retrouver un dossier précis, le champ de recherche en
 haut filtre sur le numéro et le statut.

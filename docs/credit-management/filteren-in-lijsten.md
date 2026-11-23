@@ -51,4 +51,4 @@ Uw filters, uw kolomvolgorde, uw kolombreedtes en welke kolommen u aan of uit ze
 
 ## Exporteren en afdrukken volgen uw filters
 
-Wat u exporteert naar Excel of CSV, en wat op een afdruk komt, is **wat u op dat moment ziet**. Filtert u eerst en exporteert u daarna, dan zit alleen die selectie in het bestand.
+Wat u exporteert naar Excel of CSV, en wat op een afdruk komt, is **wat u op dat moment ziet**. Filtert u eerst en exporteert u daarna, dan zit alleen die selectie in het bestand. Eén uitzondering: **Afdruk van deze filters** op [Opvolging na de akte](after-deed.md) volgt enkel de twee filters bovenaan, niet het zoekveld of de sortering.

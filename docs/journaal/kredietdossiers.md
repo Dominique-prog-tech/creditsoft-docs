@@ -21,7 +21,7 @@ eronder in het grijs de rest:
 |---|---|
 | De **status** | Waar het dossier staat — *Actief*, *Gerealiseerd*, *Zonder gevolg* … |
 | **Ingediend** | Wanneer het dossier is ingediend. Hierop is de lijst gesorteerd, recentste bovenaan. |
-| **akte** of **loopt nog** | Is de akte verleden, dan staat die datum er. Zo niet, dan loopt het dossier nog. |
+| **akte**, **afgesloten** of **loopt nog** | Is de akte verleden, dan staat die datum er. Staat een dossier zonder akte in een [eindfase](../beheer/dashboard-fases.md#de-fases), bijvoorbeeld geweigerd of zonder gevolg, dan staat er *afgesloten*. Anders loopt het dossier nog. |
 
 **Klik op een regel** om het dossier te openen. Zoekt u iets bepaalds, dan filtert het zoekveld bovenaan op
 dossiernummer en status.

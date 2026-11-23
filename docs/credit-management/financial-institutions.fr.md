@@ -70,9 +70,9 @@ Les pourcentages se saisissent de **0 à 100** avec deux décimales ; ils sont a
 Sous la liste des paiements planifiés, un **total courant** s'affiche : *Total : 75 % sur 100 %*. Dès que vous atteignez 100 %, il passe au vert.
 
 !!! warning "Ce que CreditSoft contrôle à l'enregistrement"
-    - **Un seul type à la fois** — il n'est possible de choisir que **0 ou 1** type de commissionnement. Si vous choisissez à la fois *Paiement échelonné* et *Paiements planifiés*, l'enregistrement est refusé.
+    - **Un seul type à la fois** — il n'est possible de choisir que **0 ou 1** type de commissionnement. Si vous choisissez à la fois *Paiement échelonné* et *Paiements planifiés*, le message en haut de la fiche indique qu'il faut en choisir un, et rien n'est enregistré.
     - **Nombre de mois** — si vous cochez *Paiement échelonné*, le **nombre de mois** doit être renseigné.
-    - **Total de 100 %** — pour les *Paiements planifiés*, le **pourcentage direct** et tous les pourcentages planifiés doivent totaliser **exactement 100 %**. Le message affiche le total actuel, pour que vous voyiez ce qu'il manque.
+    - **Total de 100 %** — pour les *Paiements planifiés*, le **pourcentage direct** et tous les pourcentages planifiés doivent totaliser **exactement 100 %**. Le message en haut de la fiche le signale, et le total en cours figure sous la liste, par exemple *Total : 75 % sur 100 %*, pour que vous voyiez ce qu'il manque.
 
 ### Remarques
 
@@ -87,6 +87,7 @@ La barre de boutons du bas reste visible pendant que vous faites défiler la fic
 - **Annuler** — retourne à la liste sans sauvegarder. Si vous avez modifié quelque chose, CreditSoft vous demande d'abord si vous voulez rester.
 - **Supprimer** — archive l'institution (à droite dans la barre).
 
-À l'enregistrement, les **champs obligatoires manquants** (nom, langue des documents), une **adresse e-mail
-invalide** et un choix de commission invalide sont signalés. L'adresse e-mail est contrôlée dès qu'il y a
+Les **champs obligatoires manquants** (nom, langue des documents), une **adresse e-mail ou un numéro de
+téléphone invalide** et un choix de commission invalide figurent ensemble dans le message en haut de la fiche, et
+rien n'est enregistré tant qu'ils ne sont pas en ordre. L'adresse e-mail est contrôlée dès qu'il y a
 quelque chose dans le champ, même si vous ne l'avez pas modifiée vous-même.

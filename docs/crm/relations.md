@@ -24,7 +24,6 @@ De tabel toont per relatie: **naam**, **type**, **geboortedatum**, **e-mail**, *
 - **Groeperen op een kolom** — sleep een kolomkop naar de balk boven de lijst. Zo ziet u bijvoorbeeld per
   collega welke prospecten er opgevolgd worden: filter op het type contact van uw prospecten en groepeer op
   **Verantwoordelijke**. Sleep de kop terug om het groeperen op te heffen.
-- **Groepen** — met [groepen](groups.md) deelt u relaties in zoals het u past: per regio, per kantoor, per campagne.
 
 ### Journaal
 

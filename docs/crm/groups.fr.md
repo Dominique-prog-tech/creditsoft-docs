@@ -10,7 +10,7 @@ Dans la barre latérale, cliquez sur **CRM**, puis sur **Groupes**.
 
 ## La liste
 
-Le tableau affiche le **nom** de chaque groupe. Il n'y a rien de plus : un groupe est une étiquette, pas une fiche.
+Le tableau affiche le **nom** de chaque groupe et le nombre d'**apporteurs** qui le portent. Cliquez sur ce nombre et la liste Apporteurs s'ouvre, filtrée sur ce groupe. Il n'y a rien de plus : un groupe est une étiquette, pas une fiche. Deux groupes portant le même nom ne sont pas possibles.
 
 - **Rechercher** — le champ de recherche porte sur le nom.
 - **Exporter** — vers Excel ou CSV.
@@ -29,7 +29,7 @@ Cela ne se fait pas ici, mais sur la fiche de l'apporteur : **CRM → Apporteurs
 
 ## Retrouver les apporteurs d'un groupe
 
-Sous **CRM → Apporteurs**, le groupement figure en colonne. Au-dessus de cette liste se trouve le filtre **Groupement** : choisissez un groupe et vous ne voyez que les apporteurs qui le portent ; avec **Sans groupement**, vous voyez ceux qui ne sont encore classés nulle part. Le champ de recherche trouve aussi un groupe par son nom, et l'export reprend la colonne.
+Sous **CRM → Apporteurs**, le groupement figure en colonne. Au-dessus de cette liste se trouve le filtre **Groupement** : choisissez un groupe et vous ne voyez que les apporteurs qui le portent ; avec **Sans groupement**, vous voyez ceux qui ne sont encore classés nulle part. Le champ de recherche trouve aussi un groupe par son nom, et l'export reprend la colonne. Plus rapide : dans la liste Groupes, cliquez sur le nombre d'apporteurs de ce groupe.
 
 Un apporteur principal ou un bureau ne figure dans le résultat que s'il porte lui-même le groupement : celui-ci ne s'étend pas automatiquement à ceux qui en dépendent.
 

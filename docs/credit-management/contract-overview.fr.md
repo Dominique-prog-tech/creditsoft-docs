@@ -27,7 +27,7 @@ La manière de l'ouvrir et de le composer est décrite dans [Filtrer et recherch
 | Colonne | Ce qu'elle affiche |
 |---|---|
 | **N° interne** | Le numéro du dossier auquel le contrat se rattache |
-| **Nom des clients** | Les demandeurs de ce dossier |
+| **Nom des clients** | Les demandeurs de ce dossier. Un demandeur sans nom y figure avec son numéro, par exemple *#4512* |
 | **Produit** | Le produit du contrat |
 | **Organisme** | L'institution de crédit, ou l'assureur s'il s'agit d'une assurance solde restant dû |
 | **Montant** | Le montant du contrat |

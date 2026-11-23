@@ -250,6 +250,10 @@ Klopt een definitieve factuur niet, dan maakt u een **creditnota**. Een factuur 
 
 Op de factuur staat de creditnota daarna bij **Gecrediteerd**, en het openstaande bedrag daalt. Samen kunnen de creditnota's van een factuur niet meer bedragen dan de factuur zelf. Is de factuur volledig rechtgezet, dan verdwijnt de knop.
 
+Een tweede creditnota voor dezelfde factuur begint opnieuw met **alle** lijnen van de factuur, ook wat al rechtgezet is. Zou ze samen met de vorige meer rechtzetten dan de factuur, dan zegt de melding bovenaan het klad hoeveel er nog kan: *een totaal van ten hoogste … € (wat van de factuur nog niet gecrediteerd is)*. Verlaag de bedragen tot ze daarbinnen blijven.
+
+Een creditnota heeft geen veld *Vervaldag*: er valt niets te betalen.
+
 Op de fiche van een creditnota staat het blok **Rechtzetting**: welke factuur ze rechtzet. Een creditnota die aan geen factuur hangt, telt als openstaand; met **Koppelen aan een factuur…** kiest u de factuur van dezelfde klant die ze rechtzet, en met **Koppeling ongedaan maken** maakt u dat terug los.
 
 ## Facturen met het label "Uit het vorige programma"

@@ -29,6 +29,8 @@ Via **Kolommen kiezen** zet u er twee bij: de **instelling** (de kredietinstelli
 
 Bovenaan kiest u **Nog iets open** om enkel de dossiers over te houden waar nog werk is — geen SSV, een stuk dat niet in orde is, of een open taak. Dat zijn ook de dossiers die het getal naast het menu-item telt. Filter daarnaast op **eigenaar** om uw eigen dossiers te zien.
 
+Met **Afdruk van deze filters** drukt u de dossiers van die twee filters af. Het zoekveld en de sortering van de kolommen gelden niet voor de afdruk. De knop ziet u als u lijsten mag exporteren.
+
 **Dubbelklik** een rij om het dossier te openen. Wilt u de lijst laten staan, open de rij dan in een [nieuw tabblad](../getting-started/lijsten.md#in-een-nieuw-tabblad): met **Ctrl-klik** (Cmd op een Mac), het muiswiel of het **pijltje** vooraan de rij.
 
 !!! note "Een opmerking telt niet als open"

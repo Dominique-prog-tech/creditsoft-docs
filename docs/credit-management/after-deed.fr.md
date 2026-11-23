@@ -29,6 +29,8 @@ Via **Choisir les colonnes**, vous en ajoutez deux : l'**institution** (l'instit
 
 En haut, choisissez **Encore quelque chose d'ouvert** pour ne garder que les dossiers où il reste du travail — pas d'ASRD, une pièce pas en ordre, ou une tâche ouverte. Ce sont aussi les dossiers que compte le chiffre à côté du menu. Filtrez en plus par **propriétaire** pour voir vos propres dossiers.
 
+Avec **Imprimer selon ces filtres**, vous imprimez les dossiers de ces deux filtres. Le champ de recherche et le tri des colonnes ne s'appliquent pas à l'impression. Vous voyez le bouton si vous pouvez exporter des listes.
+
 **Double-cliquez** une ligne pour ouvrir le dossier. Pour garder la liste affichée, ouvrez la ligne dans un [nouvel onglet](../getting-started/lijsten.md#dans-un-nouvel-onglet) : avec **Ctrl-clic** (Cmd sur un Mac), la molette ou la **flèche** en début de ligne.
 
 !!! note "Une remarque ne compte pas comme ouvert"

@@ -16,8 +16,8 @@ Chaque bureau démarre avec quatre codes : **21 %**, **12 %**, **6 %** et le **t
 
 Cliquez sur **Nouveau code TVA**, ou double-cliquez un code pour l'ouvrir. Un code TVA comprend :
 
-- un **code** et un **libellé** en néerlandais et en français ;
-- une **catégorie** : *Taux normal*, *Taux zéro*, *Exonéré*, *Autoliquidation (cocontractant)*, *Intracommunautaire*, *Exportation* ou *Hors champ d'application*. Seul le taux normal porte un **taux** en pourcentage ;
+- un **code** et un **libellé** en néerlandais et en français. Le code est enregistré en majuscules, et deux codes qui ne diffèrent que par les majuscules, comme *v21* à côté de *V21*, ne sont pas possibles ;
+- une **catégorie** : *Taxé (taux normal ou réduit)*, *Taux zéro*, *Exonéré*, *Autoliquidation (cocontractant)*, *Intracommunautaire*, *Exportation* ou *Hors champ d'application*. Seul un code taxé porte un **taux** en pourcentage, par exemple 21 % ou 6 %. Sur la facture, cette ligne s'appelle *TVA 21 %* ou *TVA 6 %* dans la ventilation de la TVA ;
 - **Code par défaut sur une nouvelle ligne** — à cocher pour un seul code ;
 - une **mention légale**, en néerlandais et en français. Pour un code exonéré ou en autoliquidation, elle est obligatoire : elle figure sur chaque facture qui utilise ce code, dans la langue du client ;
 - un **code VATEX (Peppol)**.

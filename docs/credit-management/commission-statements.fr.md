@@ -90,6 +90,8 @@ il n'a pas sa place à côté d'un bouton que vous utilisez tous les jours.
 
 Ouvre l'**aperçu avant impression** : un pdf en format paysage, avec votre en-tête — logo, adresse, coordonnées et numéro FSMA issus de votre fiche d'entreprise — et à droite l'adresse de l'apporteur avec son numéro d'entreprise, de sorte que le document se lise comme un décompte qui lui est adressé.
 
+Le bordereau est établi dans la **langue des documents** de la fiche de l'apporteur, pas dans la langue de votre écran : un apporteur néerlandophone reçoit un bordereau en néerlandais. Si sa fiche ne porte pas de langue des documents, CreditSoft prend la vôtre. Cela vaut aussi pour le pdf et le texte de l'e-mail sous [Envoyer](#envoyer).
+
 Chaque ligne de commission indique la **date d'acte**, **votre référence**, le **client**, le **bien**, le **prêteur**, le **montant du crédit** et la **commission**. Les lignes sont triées par date d'acte. Une commission libre n'a pas de dossier : vous y lisez la description à la place. Le total figure en bas, et les en-têtes de colonnes se répètent sur chaque page avec un numéro de page.
 
 Depuis cette fenêtre, vous pouvez **télécharger** le fichier ou le **transférer par e-mail** à qui vous voulez. C'est autre chose que le bouton *Envoyer* voisin : celui-ci adresse le bordereau à l'apporteur lui-même, accompagné de votre texte type.

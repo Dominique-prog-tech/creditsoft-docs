@@ -250,6 +250,10 @@ Si une facture définitive n'est pas correcte, vous créez une **note de crédit
 
 Sur la facture, la note de crédit figure ensuite sous **Crédité**, et le montant ouvert diminue. Ensemble, les notes de crédit d'une facture ne peuvent pas dépasser la facture elle-même. Quand la facture est entièrement corrigée, le bouton disparaît.
 
+Une deuxième note de crédit pour la même facture reprend à nouveau **toutes** les lignes de la facture, y compris ce qui est déjà corrigé. Si, avec les précédentes, elle corrigeait plus que la facture, le message en haut du brouillon indique ce qui reste possible : *un total de … € au maximum (ce qui n'est pas encore crédité sur la facture)*. Réduisez les montants jusqu'à rester dans cette limite.
+
+Une note de crédit n'a pas de champ *Échéance* : il n'y a rien à payer.
+
 Sur la fiche d'une note de crédit figure le bloc **Correction** : la facture qu'elle corrige. Une note de crédit liée à aucune facture compte comme ouverte ; avec **Lier à une facture…**, vous choisissez la facture du même client qu'elle corrige, et avec **Annuler la liaison**, vous la détachez à nouveau.
 
 ## Factures avec l'étiquette « Du programme précédent »

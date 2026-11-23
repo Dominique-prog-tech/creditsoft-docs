@@ -24,7 +24,6 @@ Le tableau affiche par relation : **nom**, **type**, **date de naissance**, **e-
 - **Grouper par colonne** — faites glisser un en-tête de colonne dans la barre au-dessus de la liste. Vous voyez
   ainsi, par exemple, les prospects suivis par chaque collègue : filtrez sur le type de contact de vos prospects
   et groupez par **Responsable**. Faites glisser l'en-tête en retour pour annuler le groupement.
-- **Groupes** — avec les [groupes](groups.md), vous classez les relations comme il vous convient : par région, par bureau, par campagne.
 
 ### Journal
 

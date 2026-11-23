@@ -228,6 +228,6 @@ De knoppenbalk onderaan blijft in beeld. De knoppen staan rechts: **Bewaren**, *
 **Annuleren**, met **Verwijderen** op afstand aan het einde — die staat er los van, want u klikt hem
 zelden en per ongeluk nooit graag.
 
-**Bewaren** blijft uitgeschakeld zolang de naam of de documenttaal ontbreekt — u krijgt dus geen melding achteraf, de knop komt gewoon niet vrij. Een **ongeldig e-mailadres** wordt live onder het veld gemeld terwijl u typt. **Telefoonnummers worden opgemaakt** in de officiële notatie: typt u `09/3724829`, dan staat er na het bewaren `09 372 48 29`.
+Ontbreekt er iets, zoals de naam of de documenttaal, of klopt een gegeven niet, dan zegt de band bovenaan de fiche wat er nog na te kijken is: *Nog 1 punt na te kijken:* met het veld erbij. Er wordt pas bewaard als alles in orde is. Een **ongeldig e-mailadres** wordt live onder het veld gemeld terwijl u typt. **Telefoonnummers worden opgemaakt** in de officiële notatie: typt u `09/3724829`, dan staat er na het bewaren `09 372 48 29`.
 
 **Verwijderen** vraagt eerst bevestiging, met de naam van de aanbrenger erbij. De fiche verhuist dan naar de prullenbak, waar u ze desnoods terughaalt.

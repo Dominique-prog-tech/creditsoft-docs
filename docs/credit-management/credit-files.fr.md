@@ -43,7 +43,7 @@ Avec **Nouveau dossier** en haut de la liste, vous créez un dossier vide. Le st
 ### Rechercher et filtrer
 
 - **Rechercher** — le champ de recherche porte sur toutes les colonnes **visibles**. Si vous activez une colonne via le sélecteur, la recherche s'y applique aussitôt.
-- **Statut**, **Apporteur** et **Propriétaire** — les trois listes de choix du haut. Elles n'affichent que ce qui figure dans vos dossiers, donc aucun statut sans dossier. Sous *Propriétaire* figure aussi **Sans propriétaire**, s'il y a de tels dossiers.
+- **Statut**, **Apporteur** et **Propriétaire** — les trois listes de choix du haut. Elles n'affichent que ce qui figure dans vos dossiers, donc aucun statut sans dossier. *Apporteur* n'affiche en outre que les apporteurs présents dans le statut et le propriétaire choisis : si vous choisissez d'abord un statut, un apporteur sans dossier dans ce statut n'y figure pas. Sous *Propriétaire* figure aussi **Sans propriétaire**, s'il y a de tels dossiers.
 - **Par date** — les colonnes **Date de dépôt** et **Date d'effet** se filtrent via l'entonnoir sur l'en-tête de colonne, ou via le constructeur de filtres pour une plage telle que « entre le 1er janvier et le 30 juin ». Voir [Filtrer et rechercher dans les listes](filteren-in-lijsten.md).
 - **Depuis le tableau de bord** — si vous arrivez depuis une phase ou depuis les [Dossiers à l'arrêt](../getting-started/dashboard.md#dossiers-a-larret) du tableau de bord, la liste est déjà filtrée. Le filtre actif s'affiche en haut, avec un bouton **Effacer le filtre** à côté.
 - **Exporter** — vers Excel ou CSV, avec les filtres actifs à ce moment-là. L'export suit la langue de votre écran.
@@ -342,6 +342,8 @@ L'onglet **Factures** montre la **charte** de ce dossier et les **factures** qui
 ### Contrats
 
 Les contrats de crédit rattachés à ce dossier. La liste affiche le numéro, le produit, le statut, le montant, la durée, le taux d'intérêt et l'institution ; la charge mensuelle et la date de début se trouvent sur le contrat lui-même.
+
+Un nouveau contrat commence avec l'**institution financière** et le **montant du crédit** du dossier. Si le dossier compte plus d'un contrat, ramenez le montant de chaque contrat à sa propre part : la proposition de commission calcule avec les montants des contrats.
 
 Un contrat a toujours un produit. Si votre bureau travaille sans liste de produits, vous ne pouvez pas ajouter de contrat et vous choisissez la nature du crédit avec **Type de crédit** en haut du dossier.
 

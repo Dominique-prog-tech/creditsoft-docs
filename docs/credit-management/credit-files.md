@@ -43,7 +43,7 @@ Met **Nieuw dossier** bovenaan de lijst maakt u een leeg dossier aan. Welke stat
 ### Zoeken en filteren
 
 - **Zoeken** — het zoekveld zoekt over alle **zichtbare** kolommen. Zet u een kolom aan via **Kolommen kiezen**, dan zoekt u er meteen ook in.
-- **Status**, **Aanbrenger** en **Eigenaar** — de drie keuzelijsten bovenaan. Ze tonen alleen wat in uw dossiers voorkomt, dus geen statussen zonder dossier. Bij *Eigenaar* staat onderaan ook **Zonder eigenaar**, als er zulke dossiers zijn.
+- **Status**, **Aanbrenger** en **Eigenaar** — de drie keuzelijsten bovenaan. Ze tonen alleen wat in uw dossiers voorkomt, dus geen statussen zonder dossier. *Aanbrenger* toont bovendien enkel de aanbrengers binnen de gekozen status en eigenaar: kiest u eerst een status, dan staat een aanbrenger zonder dossier in die status er niet bij. Bij *Eigenaar* staat onderaan ook **Zonder eigenaar**, als er zulke dossiers zijn.
 - **Op datum** — de kolommen **Datum indiening** en **Ingangsdatum** filtert u via het trechtertje op de kolomkop, of via de filterbouwer voor een bereik zoals "tussen 1 januari en 30 juni". Zie [Filteren en zoeken in lijsten](filteren-in-lijsten.md).
 - **Vanaf het dashboard** — klikt u door vanaf een fase of vanaf [Stilgevallen dossiers](../getting-started/dashboard.md#stilgevallen-dossiers) op het dashboard, dan staat de lijst al gefilterd. Bovenaan ziet u welke filter actief is, met een knop **Filter wissen** ernaast.
 - **Exporteren** — naar Excel of CSV, met de filters die op dat moment aan staan. De export volgt de taal van uw scherm.
@@ -342,6 +342,8 @@ Het tabblad **Facturen** toont het **charter** van dit dossier en de **facturen*
 ### Contracten
 
 De kredietcontracten onder dit dossier. De lijst toont nummer, product, status, bedrag, looptijd, rentevoet en instelling; maandlast en startdatum vindt u op het contract zelf.
+
+Een nieuw contract begint met de **financiële instelling** en het **kredietbedrag** van het dossier. Telt het dossier meer dan één contract, verlaag dan het bedrag van elk contract tot zijn eigen deel: het voorstel van de commissie rekent met de bedragen van de contracten.
 
 Een contract heeft altijd een product. Werkt uw kantoor zonder productenlijst, dan kunt u geen contract toevoegen en kiest u de aard van het krediet met **Type krediet** bovenaan het dossier.
 

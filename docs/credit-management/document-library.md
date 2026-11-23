@@ -46,17 +46,20 @@ De doelgroep staat als gekleurd label bij elke map, zodat u in één oogopslag z
 
     Wilt u iets afschermen, maak er dan een aparte map voor. Dat is één handeling meer, maar u ziet aan het gekleurde label van de map meteen wat er gedeeld is — en dat is precies wat u wil kunnen nazien.
 
+!!! warning "Een submap ziet enkel wie ook de bovenliggende map ziet"
+    Zet u een submap op een ruimere doelgroep dan haar bovenliggende map, bijvoorbeeld een map op *Eindklanten* in een map op *Intern*, dan zien die extra lezers ze **niet**: in het portaal hangt ze aan een map die zij niet zien. Het venster van de map waarschuwt u daarvoor, en in de boom staat er een ⚠ bij de map. Zet dan ook de bovenliggende map open, of verplaats de submap.
+
 ## Documenten in een map
 
 Kies een map en rechts verschijnen haar documenten. Met **Bijlage** laadt u er een op — slepen mag ook. Per document kunt u een omschrijving zetten, het openen of het verwijderen.
 
 ## Wat uw aanbrengers zien
 
-In hun portaal vinden zij het onderdeel **Documenten**: dezelfde mappen, maar alleen wat voor hen bedoeld is, met de namen in hun eigen taal. Zij kunnen de documenten openen en downloaden — opladen en mappen beheren doet u.
+In hun portaal vinden zij het onderdeel **Documenten**: dezelfde mappen, maar alleen wat voor hen bedoeld is, met de namen in hun eigen taal. Een submap staat er enkel als ook haar bovenliggende map voor hen open staat. Zij kunnen de documenten openen en downloaden — opladen en mappen beheren doet u.
 
 ## Wat uw klanten zien
 
-Een klant die via zijn uitnodigingslink in het portaal komt, ziet onderaan het blok **Documenten van uw kantoor**: alles uit de mappen die u op *Eindklanten* zette. Hij kan ze openen of bewaren, meer niet.
+Een klant die via zijn uitnodigingslink in het portaal komt, ziet onderaan het blok **Documenten van uw kantoor**: alles uit de mappen die u op *Eindklanten* zette, als ook hun bovenliggende map voor hem open staat. Hij kan ze openen of bewaren, meer niet.
 
 Anders dan bij uw aanbrengers ziet hij **geen mappenstructuur** — enkel de bestanden, met de naam van hun map als bijschrift. Een klant komt daar voor één ding, en een boom om door te klikken helpt hem niet.
 

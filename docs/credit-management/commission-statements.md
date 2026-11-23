@@ -90,6 +90,8 @@ ongedaan, en die knop hoort niet naast een knop die u elke dag gebruikt.
 
 Opent het **afdrukvoorbeeld**: een pdf op een liggend blad, met uw briefhoofd — logo, adres, contactgegevens en FSMA-nr. uit uw bedrijfsfiche — en rechts het adres van de aanbrenger met zijn ondernemingsnummer, zodat het document leest als een afrekening die aan hém gericht is.
 
+Het borderel is in de **documenttaal** op de fiche van de aanbrenger, niet in de taal van uw scherm: een Franstalige aanbrenger krijgt een Frans borderel. Staat er op zijn fiche geen documenttaal, dan neemt CreditSoft uw taal. Dat geldt ook voor de pdf en de tekst bij [Mailen](#mailen).
+
 Per commissielijn staat er: de **aktedatum**, **uw kenmerk**, de **klant**, het **pand**, de **kredietverstrekker**, het **kredietbedrag** en de **commissie**. De lijnen staan op aktedatum gesorteerd. Een vrije commissie heeft geen dossier: daar leest u de omschrijving in de plaats. Onderaan het totaal, en de kolomkoppen staan op elke bladzijde opnieuw met een paginanummer.
 
 Vanuit dat venster kan u het bestand **downloaden** of **doorsturen per mail** naar wie u wil. Dat laatste is iets anders dan de knop *Mailen* hiernaast: die stuurt het borderel naar de aanbrenger zelf, met uw vaste begeleidende tekst.

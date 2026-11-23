@@ -27,7 +27,7 @@ Hoe u die opent en samenstelt, staat beschreven in [Filteren en zoeken in lijste
 | Kolom | Wat het toont |
 |---|---|
 | **Intern nr.** | Het nummer van het dossier waar het contract bij hoort |
-| **Naam klanten** | De aanvragers van dat dossier |
+| **Naam klanten** | De aanvragers van dat dossier. Een aanvrager zonder naam staat er met zijn nummer, bijvoorbeeld *#4512* |
 | **Product** | Het product van het contract |
 | **Instelling** | De kredietinstelling, of de verzekeraar wanneer het om een schuldsaldoverzekering gaat |
 | **Bedrag** | Het contractbedrag |

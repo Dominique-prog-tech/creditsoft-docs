@@ -229,6 +229,6 @@ La barre de boutons du bas reste visible. Les boutons se trouvent à droite : **
 et **Annuler**, avec **Supprimer** à distance, tout au bout — il est mis à l'écart, car on le clique
 rarement et jamais volontiers par erreur.
 
-**Enregistrer** reste désactivé tant que le nom ou la langue des documents manque — vous ne recevez donc pas de message a posteriori, le bouton ne se libère simplement pas. Une **adresse e-mail invalide** est signalée en direct sous le champ pendant que vous tapez. Les **numéros de téléphone sont mis en forme** dans la notation officielle : si vous tapez `09/3724829`, vous lirez `09 372 48 29` après l'enregistrement.
+S'il manque quelque chose, comme le nom ou la langue des documents, ou si une donnée n'est pas correcte, la bande en haut de la fiche indique ce qu'il reste à vérifier : *Encore 1 point à vérifier :* avec le champ concerné. Rien n'est enregistré tant que tout n'est pas en ordre. Une **adresse e-mail invalide** est signalée en direct sous le champ pendant que vous tapez. Les **numéros de téléphone sont mis en forme** dans la notation officielle : si vous tapez `09/3724829`, vous lirez `09 372 48 29` après l'enregistrement.
 
 **Supprimer** demande d'abord confirmation, en rappelant le nom de l'apporteur. La fiche part alors à la corbeille, où vous pouvez au besoin la récupérer.
