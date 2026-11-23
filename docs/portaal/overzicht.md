@@ -20,6 +20,15 @@ weg — er is dus geen lege plek waar u aan moet wennen.
     Een mededeling is geen taak. U kunt ze niet wegklikken en er wordt niet bijgehouden of u ze gelezen
     hebt. Ze verdwijnt vanzelf wanneer ze afloopt.
 
+## Op te volgen
+
+Bovenaan staat wat er **nu** te doen is, per dossier:
+
+- de **termijnen** die verstreken zijn (in het rood) of binnen het venster van uw kantoor vallen — offerte tekenen, akte, opschortende voorwaarden, EPC;
+- de **stukken** die nog te bezorgen zijn, en die geweigerd werden.
+
+Het dringendste staat bovenaan; klik het dossiernummer om het dossier te openen. Een termijn waarvan de stap al gezet is, en een dossier dat afgesloten is, staan er niet. Een stuk dat u aanleverde en dat op beoordeling wacht, telt niet mee: daar hoeft u niets meer voor te doen. Vervangt u tijdelijk een collega, dan staan ook zijn dossiers hier — de cijfers hieronder blijven die van uw eigen tak.
+
 ## De vier cijfers
 
 Bovenaan staan vier tegels.

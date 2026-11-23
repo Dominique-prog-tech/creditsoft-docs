@@ -21,6 +21,15 @@ ce bloc reste absent — il n'y a donc pas d'espace vide auquel vous habituer.
     Une communication n'est pas une tâche. Vous ne pouvez pas la masquer et il n'est pas enregistré si vous
     l'avez lue. Elle disparaît d'elle-même à son échéance.
 
+## À suivre
+
+En haut figure ce qu'il y a à faire **maintenant**, par dossier :
+
+- les **échéances** dépassées (en rouge) ou qui tombent dans la fenêtre de votre bureau — signer l'offre, acte, conditions suspensives, PEB ;
+- les **pièces** encore à fournir, et celles qui ont été refusées.
+
+Le plus urgent figure en haut ; cliquez le numéro de dossier pour ouvrir le dossier. Une échéance dont l'étape est déjà franchie, et un dossier clôturé, n'y figurent pas. Une pièce que vous avez fournie et qui attend d'être évaluée ne compte pas : vous n'avez plus rien à faire. Si vous remplacez temporairement un collègue, ses dossiers figurent aussi ici — les chiffres ci-dessous restent ceux de votre propre branche.
+
 ## Les quatre chiffres
 
 Quatre tuiles figurent en haut.
