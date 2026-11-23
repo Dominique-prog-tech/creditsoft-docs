@@ -152,6 +152,11 @@ Rechts ernaast staat **Vraagt aandacht**: drie regels, elk met een teller en een
 klik klapt ze weer dicht. Zo blijft het eerste scherm rustig, en staan de namen toch één klik ver. Wat er in elke
 lijst staat, leest u hieronder. Vraagt niets aandacht, dan zegt het blok dat.
 
+**Enkel mijn dossiers** — rechts in de kop van het blok staat een schakelaar. Aan, dan tellen en tonen de drie regels en de
+lijsten erachter enkel de dossiers waarvan u de eigenaar bent; uit, die van het hele kantoor. CreditSoft onthoudt uw keuze.
+De kerncijfers, de fases, de grafieken en de laatste dossiers blijven die van het kantoor. De schakelaar staat er enkel als uw
+account aan een medewerker gekoppeld is.
+
 ## Wat er afloopt
 
 Klik in *Vraagt aandacht* op **Termijnen** en twee blokken klappen open die zeggen wat er **vandaag actie vraagt**:

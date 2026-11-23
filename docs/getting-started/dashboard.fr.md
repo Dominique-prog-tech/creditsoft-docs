@@ -156,6 +156,11 @@ le montant du crédit. Cliquez sur un nom et le dossier s'ouvre. **Tous les doss
 deuxième clic la referme. Le premier écran reste ainsi calme, et les noms restent à un clic. Ce que contient chaque
 liste est expliqué ci-dessous. Si rien ne demande d'attention, le bloc le dit.
 
+**Uniquement mes dossiers** — à droite dans l'en-tête du bloc figure un interrupteur. Activé, les trois lignes et les listes
+correspondantes ne comptent et ne montrent que les dossiers dont vous êtes le propriétaire ; désactivé, ceux de tout le bureau.
+CreditSoft retient votre choix. Les indicateurs, les phases, les graphiques et les derniers dossiers restent ceux du bureau.
+L'interrupteur n'apparaît que si votre compte est lié à un collaborateur.
+
 ## Ce qui arrive à échéance
 
 Cliquez sur **Échéances** dans *Demande de l'attention* et deux blocs s'ouvrent, qui indiquent ce qui **demande une
