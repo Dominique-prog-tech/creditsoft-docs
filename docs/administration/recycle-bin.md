@@ -14,6 +14,7 @@ De verwijderde records staan **gegroepeerd per soort**, bijvoorbeeld *Relaties*,
 
 - **Naam** — de naam of titel van het verwijderde record.
 - **Verwijderd op** — wanneer het naar de Prullenbak ging.
+- **Verwijderd door** — wie het verwijderde, uit het logboek van dat record. Bij bijlagen en mails, en bij wat vóór 22/11/2026 uit het journaal verwijderd werd, is dat niet bekend; dan blijft de cel leeg.
 - **Herstellen** — de knop om het record terug te zetten.
 
 ## Een record herstellen

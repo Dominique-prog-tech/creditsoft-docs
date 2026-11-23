@@ -14,6 +14,7 @@ Les enregistrements supprimés sont **regroupés par type**, par exemple *Relati
 
 - **Nom** — le nom ou le titre de l'enregistrement supprimé.
 - **Supprimé le** — la date à laquelle il a été placé dans la Corbeille.
+- **Supprimé par** — qui l'a supprimé, d'après l'historique de cet enregistrement. Pour les pièces jointes et les e-mails, et pour ce qui a été supprimé du journal avant le 22/11/2026, ce n'est pas connu ; la cellule reste alors vide.
 - **Restaurer** — le bouton pour remettre l'enregistrement en place.
 
 ## Restaurer un enregistrement
