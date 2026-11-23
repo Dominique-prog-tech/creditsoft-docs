@@ -579,7 +579,7 @@ Met **Bestanden** beheert u de bijlagen zelf — handig wanneer een stuk per pos
 
 ### Opmerkingen
 
-Het tabblad naast *Partijen*. Hier noteert u alles wat bij dit dossier gezegd of afgesproken is — een telefoon met de klant, een afspraak met de bank, een stuk dat u nog verwacht. Elke regel draagt wie ze schreef en wanneer.
+Het tabblad naast *Partijen*. Hier noteert u alles wat bij dit dossier gezegd of afgesproken is — een telefoon met de klant, een afspraak met de bank, een stuk dat u nog verwacht. Elke regel draagt wie ze schreef en wanneer. Een opmerking heeft een datum en een inhoud nodig; de datum staat standaard op vandaag.
 
 ## Afdrukken
 

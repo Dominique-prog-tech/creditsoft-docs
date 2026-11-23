@@ -580,7 +580,7 @@ Le bouton **Fichiers** vous permet de gérer les pièces jointes vous-même — 
 
 ### Remarques
 
-L'onglet à côté de *Parties*. Vous y notez tout ce qui a été dit ou convenu sur ce dossier — un appel avec le client, un rendez-vous à la banque, une pièce que vous attendez encore. Chaque ligne porte son auteur et sa date.
+L'onglet à côté de *Parties*. Vous y notez tout ce qui a été dit ou convenu sur ce dossier — un appel avec le client, un rendez-vous à la banque, une pièce que vous attendez encore. Chaque ligne porte son auteur et sa date. Une remarque a besoin d'une date et d'un contenu ; la date est celle du jour par défaut.
 
 ## Impression
 
