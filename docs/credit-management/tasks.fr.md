@@ -39,10 +39,11 @@ Vous filtrez en outre par **responsable** et par **type** — uniquement les tâ
 | **Tâche** | Le titre. Si vous lisez *(sans titre)*, la tâche ne porte pas de nom |
 | **Description** | La description, réduite à une ligne — survolez-la pour le texte complet. La barre de recherche cherche aussi dedans |
 | **Se rattache à** | Le dossier, la relation ou l'apporteur dont relève la tâche |
-| **Type** | De quel type il s'agit — ou *Tâche libre* lorsqu'il n'y a pas de rattachement |
-| **Début** et **Échéance** | Quand la tâche commence et pour quand elle doit être prête |
-| **Statut** et **Priorité** | En cours, ouverte, terminée ou annulée |
+| **Échéance** | Pour quand la tâche doit être prête |
+| **Statut** | En cours, ouverte, terminée ou annulée |
 | **Responsable** | Qui doit s'en charger |
+
+Via **Choisir les colonnes**, vous en ajoutez trois : **Type** (le type du rattachement, ou *Tâche libre* s'il n'y en a pas), **Début** (quand la tâche commence) et **Priorité**. La barre de recherche ne cherche que dans les colonnes affichées.
 
 ## Ouvrir ou supprimer une tâche
 

@@ -27,15 +27,11 @@ Rechts van de keuzelijsten ziet u hoeveel rijen u nu toont van het totaal, bijvo
 | **Product** | Het verzekeringsproduct |
 | **Datum** | De begindatum van het contract |
 | **Bedrag** | Het verzekerde kapitaal |
-| **Looptijd** | In maanden |
 | **Status** | Waar de polis staat; leeg wanneer er nooit een status is ingevuld |
 | **Contractnr.** | Het polisnummer |
-| **Voorlopig** | Ja zolang er nog geen polisnummer is |
-| **Verzekerden** | Wie er verzekerd is — dat hoeft niet dezelfde persoon te zijn als de aanvrager |
 | **Verantwoordelijke** | De medewerker die het dossier opvolgt |
-| **Link** | Of de aanvraaglink naar de klant verstuurd is |
 
-Via **Kolommen kiezen** zet u er twee bij: de **rente** van het contract en de **status van het dossier**.
+Via **Kolommen kiezen** zet u er zes bij: de **looptijd** in maanden, **voorlopig** (*Ja* zolang er nog geen polisnummer is), de **verzekerden** (wie er verzekerd is; dat hoeft niet de aanvrager te zijn), de **link** (of de aanvraaglink naar de klant verstuurd is), de **rente** van het contract en de **status van het dossier**. De zoekbalk zoekt enkel in de kolommen die u ziet. Zoekt u op een verzekerde, zet die kolom dan eerst aan.
 
 !!! tip "Status van de polis of status van het dossier?"
     Dat zijn twee verschillende dingen, en ze staan met opzet naast elkaar. **Status** gaat over de polis — offerte, medische acceptatie, getekend. **Status dossier** gaat over het kredietdossier waar die polis bij hoort. Een polis kan al getekend zijn terwijl het dossier nog loopt, en omgekeerd. Staat *Status* vaak leeg, dan is er in uw gegevens nooit een polisstatus ingevuld; *Status dossier* is er altijd.

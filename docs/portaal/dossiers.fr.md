@@ -176,7 +176,7 @@ voyez pas sa **commission** ici. Votre bureau détermine la durée du remplaceme
 
 ## Retour à la liste
 
-En haut à gauche se trouve **Liste**. Votre recherche et votre tri sont conservés : vous revenez là où vous
+En haut à gauche se trouve **← Mes dossiers**. Votre recherche et votre tri sont conservés : vous revenez là où vous
 étiez.
 
 !!! info "Un dossier que vous n'avez pas le droit de voir"

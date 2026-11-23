@@ -27,15 +27,11 @@ En haut figurent trois listes de choix. Chacune est réglée par défaut sur « 
 | **Produit** | Le produit d'assurance |
 | **Date** | La date de début du contrat |
 | **Montant** | Le capital assuré |
-| **Durée** | En mois |
 | **Statut** | Où en est la police ; vide lorsqu'aucun statut n'a jamais été renseigné |
 | **N° de contrat** | Le numéro de police |
-| **Provisoire** | Oui tant qu'il n'y a pas encore de numéro de police |
-| **Assurés** | Qui est assuré — il ne s'agit pas nécessairement du demandeur |
 | **Responsable** | Le collaborateur qui suit le dossier |
-| **Lien** | Si le lien de demande a été envoyé au client |
 
-Via le **sélecteur de colonnes**, vous en ajoutez deux : le **taux** du contrat et le **statut du dossier**.
+Via le **sélecteur de colonnes**, vous en ajoutez six : la **durée** en mois, **provisoire** (*Oui* tant qu'il n'y a pas encore de numéro de police), les **assurés** (qui est assuré ; il ne s'agit pas nécessairement du demandeur), le **lien** (si le lien de demande a été envoyé au client), le **taux** du contrat et le **statut du dossier**. La barre de recherche ne cherche que dans les colonnes affichées. Pour rechercher un assuré, affichez d'abord cette colonne.
 
 !!! tip "Statut de la police ou statut du dossier ?"
     Ce sont deux choses différentes, volontairement placées côte à côte. **Statut** concerne la police — offre, acceptation médicale, signée. **Statut du dossier** concerne le dossier de crédit auquel cette police se rattache. Une police peut déjà être signée alors que le dossier est toujours en cours, et inversement. Si *Statut* est souvent vide, c'est qu'aucun statut de police n'a jamais été renseigné dans vos données ; *Statut du dossier* est toujours présent.

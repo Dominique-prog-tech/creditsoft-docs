@@ -174,7 +174,7 @@ Uw kantoor bepaalt hoe lang de vervanging loopt; daarna verdwijnt het dossier ui
 
 ## Terug naar de lijst
 
-Linksboven staat **Lijst**. Uw zoekopdracht en sortering blijven bewaard, dus u komt terug waar u was.
+Linksboven staat **← Mijn dossiers**. Uw zoekopdracht en sortering blijven bewaard, dus u komt terug waar u was.
 
 !!! info "Een dossier dat u niet mag zien"
     Opent u een dossier dat buiten uw bereik valt, dan krijgt u *"Dit dossier is niet beschikbaar."* Dat is

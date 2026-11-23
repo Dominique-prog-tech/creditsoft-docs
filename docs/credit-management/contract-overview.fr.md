@@ -30,12 +30,12 @@ La manière de l'ouvrir et de le composer est décrite dans [Filtrer et recherch
 | **Nom des clients** | Les demandeurs de ce dossier |
 | **Produit** | Le produit du contrat |
 | **Organisme** | L'institution de crédit, ou l'assureur s'il s'agit d'une assurance solde restant dû |
-| **Montant** · **Durée** · **Taux** | Le montant du contrat, la durée en mois et le taux d'intérêt |
+| **Montant** | Le montant du contrat |
 | **Date de l'acte** | La date d'acte du dossier |
 | **Statut du contrat** | Où en est le contrat |
 | **N° de contrat** | Le numéro de contrat |
 
-Via **Choisir les colonnes**, vous en ajoutez six : le numéro de contrat provisoire, le type de produit, le statut du dossier, l'apporteur, le sales et la date de début du contrat.
+Via **Choisir les colonnes**, vous en ajoutez huit : la **durée** en mois, le **taux** d'intérêt, le numéro de contrat provisoire, le type de produit, le statut du dossier, l'apporteur, le sales et la date de début du contrat.
 
 !!! tip "Le type de produit et le numéro de contrat sont masqués par défaut"
     Tous les bureaux n'utilisent pas ces champs. Si vous y recourez, affichez-les via **Choisir les colonnes** — votre choix est conservé.

@@ -19,11 +19,13 @@ Un dossier quitte la liste dès que vous changez son **statut**, par exemple ver
 | Colonne | Ce qu'elle signifie |
 |---|---|
 | **Dossier** · **Client** · **Acte** | Le dossier, le ou les demandeurs et la date de l'acte. L'acte le plus ancien figure en haut |
-| **Institution** · **Propriétaire** | L'institution de crédit et la personne qui suit le dossier |
+| **Propriétaire** | La personne qui suit le dossier |
 | **ASRD** | *Oui* si le dossier porte un contrat d'un produit qui est une assurance solde restant dû, sinon *Non* en rouge |
 | **Pièces ouvertes** | Les pièces demandées qui ne sont pas encore en ordre — y compris une pièce reçue mais encore à évaluer |
 | **Tâches ouvertes** | Les tâches du dossier encore ouvertes ou en cours |
 | **Dernière remarque** | La remarque la plus récente du dossier, abrégée ; survolez-la pour le texte complet |
+
+Via **Choisir les colonnes**, vous en ajoutez deux : l'**institution** (l'institution de crédit) et l'**apporteur**. La barre de recherche ne cherche que dans les colonnes affichées.
 
 En haut, choisissez **Encore quelque chose d'ouvert** pour ne garder que les dossiers où il reste du travail — pas d'ASRD, une pièce pas en ordre, ou une tâche ouverte. Ce sont aussi les dossiers que compte le chiffre à côté du menu. Filtrez en plus par **propriétaire** pour voir vos propres dossiers.
 

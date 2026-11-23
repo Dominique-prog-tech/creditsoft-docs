@@ -39,10 +39,11 @@ Daarnaast filtert u op **verantwoordelijke** en op **soort** — enkel de taken 
 | **Taak** | De titel. Staat er *(zonder titel)*, dan draagt de taak geen naam |
 | **Omschrijving** | De omschrijving, ingekort tot één regel — wijs ze aan voor de volledige tekst. De zoekbalk zoekt er ook in |
 | **Hangt aan** | Het dossier, de relatie of de aanbrenger waar de taak bij hoort. In het venster van de taak opent die naam de fiche |
-| **Soort** | Welk type dat is — of *Losse taak* wanneer er geen master is |
-| **Start** en **Tegen** | Wanneer de taak begint en wanneer ze klaar moet zijn |
-| **Status** en **Prioriteit** | Openstaand, bezig, afgewerkt of geannuleerd |
+| **Tegen** | Wanneer de taak klaar moet zijn |
+| **Status** | Openstaand, bezig, afgewerkt of geannuleerd |
 | **Verantwoordelijke** | Wie ze moet doen |
+
+Via **Kolommen kiezen** zet u er drie bij: **Soort** (welk type de master is, of *Losse taak* wanneer er geen is), **Start** (wanneer de taak begint) en **Prioriteit**. De zoekbalk zoekt enkel in de kolommen die u ziet.
 
 ## Een taak openen of verwijderen
 

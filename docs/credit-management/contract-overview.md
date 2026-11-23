@@ -30,12 +30,12 @@ Hoe u die opent en samenstelt, staat beschreven in [Filteren en zoeken in lijste
 | **Naam klanten** | De aanvragers van dat dossier |
 | **Product** | Het product van het contract |
 | **Instelling** | De kredietinstelling, of de verzekeraar wanneer het om een schuldsaldoverzekering gaat |
-| **Bedrag** · **Looptijd** · **Interest** | Het contractbedrag, de looptijd in maanden en de rentevoet |
+| **Bedrag** | Het contractbedrag |
 | **Datum akte** | De aktedatum van het dossier |
 | **Contractstatus** | Waar het contract staat |
 | **Contractnr.** | Het contractnummer |
 
-Via **Kolommen kiezen** zet u er zes bij: het tijdelijke contractnummer, het producttype, de status van het dossier, de aanbrenger, de sales en de begindatum van het contract.
+Via **Kolommen kiezen** zet u er acht bij: de **looptijd** in maanden, de **interest** (de rentevoet), het tijdelijke contractnummer, het producttype, de status van het dossier, de aanbrenger, de sales en de begindatum van het contract.
 
 !!! tip "Producttype en contractnummer staan standaard verborgen"
     Niet elk kantoor gebruikt die velden. Werkt u er wel mee, zet ze dan bij via **Kolommen kiezen** — uw keuze blijft bewaard.

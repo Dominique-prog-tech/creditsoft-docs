@@ -19,11 +19,13 @@ Een dossier verdwijnt uit de lijst zodra u zijn **status** verandert, bijvoorbee
 | Kolom | Wat het betekent |
 |---|---|
 | **Dossier** · **Klant** · **Akte** | Het dossier, de aanvrager(s) en de aktedatum. De oudste akte staat bovenaan |
-| **Instelling** · **Eigenaar** | De kredietinstelling en wie het dossier opvolgt |
+| **Eigenaar** | Wie het dossier opvolgt |
 | **SSV** | *Ja* als het dossier een contract draagt van een product dat een schuldsaldoverzekering is, anders *Nee* in het rood |
 | **Stukken open** | Gevraagde stukken die nog niet in orde zijn — ook een stuk dat binnen is maar nog beoordeeld moet worden |
 | **Taken open** | Taken op het dossier die nog open of bezig zijn |
 | **Laatste opmerking** | De jongste opmerking op het dossier, ingekort; beweeg erover voor de volledige tekst |
+
+Via **Kolommen kiezen** zet u er twee bij: de **instelling** (de kredietinstelling) en de **aanbrenger**. De zoekbalk zoekt enkel in de kolommen die u ziet.
 
 Bovenaan kiest u **Nog iets open** om enkel de dossiers over te houden waar nog werk is — geen SSV, een stuk dat niet in orde is, of een open taak. Dat zijn ook de dossiers die het getal naast het menu-item telt. Filter daarnaast op **eigenaar** om uw eigen dossiers te zien.
 
