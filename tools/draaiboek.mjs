@@ -79,7 +79,9 @@ export const FILMS = [
 
       { naam: 'klanten', kop: { nl: 'Klanten en relaties', fr: "Clients et relations", en: "Clients and relations" },
         doe: async (p) => { await p.goto(`${BASIS}/crm/relaties`); await p.waitForLoadState('networkidle'); },
-        merk: /Adriaenssens|Aerts|Peeters/,
+        // Sinds W-157 (1.239.30) staat de lijst op familienaam en begint ze bij "Adam": de drie namen die hier stonden, staan niet meer
+        // op de eerste pagina. Een e-mailadres van de demo staat in elke rij, en niet op een lege lijst.
+        merk: /@demo\.example/,
         website: {
           nl: 'Uw klant, zijn gezin en zijn geschiedenis: \u00e9\u00e9n fiche.',
           en: 'Your client, their family and their history: one record.',
@@ -864,7 +866,8 @@ export const FILMS = [
           await p.goto(`${BASIS}/credit-files/${ID.dossierMetSchema}/commissieschema/${ID.schema}`);
           await p.waitForLoadState('networkidle'); await p.waitForTimeout(2600);
         },
-        merk: /Het deel dat niet direct|La part non payée/i,
+        // 1.239.30 herschreef de uitleg ("Het directe deel komt op het borderel van de maand na de startdatum; …").
+        merk: /Het directe deel komt op het borderel|La part directe figure sur le bordereau/i,
         nl: 'Een schema hangt altijd aan één dossier. U opent het vanuit dat dossier, en bovenaan staat het dossiernummer waar het bij hoort.',
         fr: "Un schéma est toujours rattaché à un dossier. Vous l’ouvrez depuis ce dossier, et le numéro du dossier figure en haut." },
 
@@ -1454,7 +1457,9 @@ export const FILMS = [
 
       { naam: 'verzonden', kop: { nl: 'Wat de klant kreeg', fr: 'Ce que le client a reçu' },
         doe: async (p) => {
-          await p.goto(`${BASIS}/crm/relaties/${ID.relatie}`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(2400);
+          // 1600 en niet meer 2400 ms (23/11/2026): de fiche laadt trager dan bij de vorige opname, en de scène kwam op 10,1 s stilte vóór
+          // de zin (drempel 10). De klik hieronder wacht zelf tot het tabblad er is.
+          await p.goto(`${BASIS}/crm/relaties/${ID.relatie}`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(1600);
           await klik(p, tabblad(p, /^(Journaal|Journal)\b/i)); await p.waitForTimeout(1600); // Mailverkeer staat onder Journaal (1.174.0)
           await klik(p, tabblad(p, /^Mailverkeer|^Courrier/i)); await p.waitForTimeout(2200);
         },
@@ -1697,7 +1702,10 @@ export const FILMS = [
           await klik(p, p.locator('button', { hasText: /Investeringsfiche & pand|Fiche d'investissement & bien/ }).first());
           await p.waitForTimeout(1400);
         },
-        merk: /^(Pand|Bien)$/im,
+        // ⚠️ Stond tot 23/11/2026 als /^(Pand|Bien)$/im. De motor toetst op de RUWE tekst van de pagina (hasText op body), zonder
+        //    regeleinden: zo'n regelanker slaagde enkel in het oude VENSTER. Sinds 1.239.30 is het een tabblad, en daar faalde het altijd
+        //    (vóór én na de klik, gemeten). Dit merkteken staat er niet vóór de klik en wel erna (ook gemeten).
+        merk: /Totale investering|Investissement total/,
         nl: 'Achter Investeringsfiche en pand vindt u het adres, de aard en de waarde van het pand — en die waarde bepaalt mee de quotiteit.',
         fr: "Derrière Fiche d'investissement et bien, vous trouvez l'adresse, la nature et la valeur du bien — et cette valeur détermine en partie la quotité." },
 
