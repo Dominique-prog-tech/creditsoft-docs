@@ -8,7 +8,7 @@ De keuzelijsten zijn de waarden die overal in de fiches in de keuzevelden versch
 
 Klik links onderaan op **Platformbeheer** en dan op de tegel **Keuzelijsten**, in de groep *Gegevens*.
 
-Kies bovenaan **welke lijst** u wil bewerken. Daaronder verschijnen de items van die lijst.
+Kies bovenaan **welke lijst** u wil bewerken. Daaronder verschijnen de items van die lijst. De gekozen lijst staat in de adresbalk: herladen, de terugknop en een bladwijzer brengen u bij dezelfde lijst.
 
 ## Een item toevoegen of aanpassen
 
@@ -18,6 +18,8 @@ Kies bovenaan **welke lijst** u wil bewerken. Daaronder verschijnen de items van
 | **Volgorde** | Bepaalt waar het item in de lijst staat |
 
 Vul altijd **beide talen** in. Laat u het Frans leeg, dan ziet een Franstalige collega de Nederlandse tekst.
+
+Een naam die al in dezelfde lijst staat, wordt geweigerd: twee items met dezelfde naam zijn in een keuzeveld niet uit elkaar te houden. Een bestaand item dat al een naamgenoot had (uit het vorige programma), kunt u wel gewoon aanpassen.
 
 !!! tip "Wanneer u de volgorde nodig hebt"
     Laat u **Volgorde** op nul staan, dan sorteert de lijst alfabetisch — en wel **in de taal van wie kijkt**.

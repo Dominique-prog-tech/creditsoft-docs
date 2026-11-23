@@ -8,7 +8,7 @@ Les listes de choix sont les valeurs qui apparaissent partout dans les fiches, d
 
 En bas à gauche, cliquez sur **Administration**, puis sur la tuile **Listes de choix**, dans le groupe *Données*.
 
-Choisissez en haut **quelle liste** vous voulez modifier. Les éléments de cette liste apparaissent en dessous.
+Choisissez en haut **quelle liste** vous voulez modifier. Les éléments de cette liste apparaissent en dessous. La liste choisie figure dans la barre d'adresse : recharger la page, le bouton retour et un favori vous ramènent à la même liste.
 
 ## Ajouter ou modifier un élément
 
@@ -18,6 +18,8 @@ Choisissez en haut **quelle liste** vous voulez modifier. Les éléments de cett
 | **Ordre** | Détermine la position de l'élément dans la liste |
 
 Renseignez toujours **les deux langues**. Si vous laissez le français vide, un collègue francophone verra le texte néerlandais.
+
+Un nom qui figure déjà dans la même liste est refusé : deux éléments portant le même nom ne se distinguent pas dans un champ de choix. Un élément existant qui avait déjà un homonyme (repris de l'ancien programme) reste modifiable normalement.
 
 !!! tip "Quand l'ordre vous est utile"
     Si vous laissez **Ordre** à zéro, la liste est triée par ordre alphabétique — et ce **dans la langue de

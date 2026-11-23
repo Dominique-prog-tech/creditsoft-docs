@@ -23,7 +23,7 @@ Pour chaque personne, vous voyez la fonction actuelle avec son début et sa fin,
 
 Si le statut est suivi de *fonction en cours, pas de compte actif*, l'accès de cette personne a été retiré alors que sa fonction est toujours en cours. Si elle a arrêté, indiquez la date de fin. CreditSoft ne remplit pas cette date lui-même, car le jour où l'accès d'une personne a pris fin n'est pas toujours le jour où elle a cessé de travailler.
 
-Le filtre vous permet de choisir qui vous voyez : *Au registre* (avec les personnes incomplètes), *Incomplet*, *Hors registre* ou *Tout le monde*. Si personne ne figure encore au registre, vous voyez directement tout le monde.
+Le filtre vous permet de choisir qui vous voyez : *Au registre (incomplets compris)*, *Incomplet*, *Hors registre* ou *Tout le monde*. Si personne ne figure encore au registre, vous voyez directement tout le monde.
 
 Double-cliquez sur une ligne pour ouvrir la fiche. La flèche en début de ligne, Ctrl-clic ou le bouton central de la souris ouvrent la fiche dans un nouvel onglet.
 

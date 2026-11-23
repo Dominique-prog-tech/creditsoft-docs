@@ -8,7 +8,7 @@ Klik in de zijbalk op **Platformbeheer** en daarna op de tegel **Gebruikers** (o
 
 ## Een collega toevoegen
 
-Klik boven de lijst op **Nieuwe gebruiker**. Vul in het venster de **Gebruikersnaam** in (waarmee de collega aanmeldt, meestal zijn e-mailadres) en de **Weergavenaam**, en kies zijn **Rol**. Kies daarna hoe hij aan een wachtwoord komt:
+Klik boven de lijst op **Nieuwe gebruiker**. Vul in het venster de **Gebruikersnaam** in (waarmee de collega aanmeldt, meestal zijn e-mailadres) en de **Weergavenaam**, en kies zijn **Rol**: **Gebruiker** doet het dagelijkse werk (dossiers, klanten, notities, taken, mails), **Beheerder** mag alles, ook het platformbeheer, de gebruikers en de rollen. U wijzigt de rol later in de lijst; dat geldt meteen. Moet iemand iets meer kunnen zonder beheerder te worden, geef hem dan een extra rol bij [Rollen](roles.md): een rol voegt rechten toe, ze neemt er geen af. Kies daarna hoe hij aan een wachtwoord komt:
 
 - **Uitnodigen per mail**: de collega krijgt een mail om zelf een wachtwoord te kiezen. Kies de **Taal van de mail**. De link is 7 dagen geldig en werkt één keer. De gebruikersnaam moet daarvoor een e-mailadres zijn.
 - **Wachtwoord zelf instellen**: u typt een tijdelijk wachtwoord en geeft het zelf door, liefst langs een andere weg dan de gebruikersnaam. De collega wijzigt het bij de eerste aanmelding.

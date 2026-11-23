@@ -13,13 +13,12 @@ Klik in de zijbalk op **Platformbeheer** en daarna op de tegel **Mailmonitoring*
 Elke rij is één verstuurde mail. De kolommen:
 
 - **Aangemaakt** — wanneer de mail vertrok.
-- **Type** — het soort entiteit waar de mail bij hoort (bv. *Kredietinstelling*, *Verzekeraar*, *Relatie*, *Aanbrenger*, *Kredietdossier*).
-- **Naam** — de naam van die entiteit.
 - **Aan** — de ontvanger.
-- **Onderwerp** — het onderwerp van de mail.
 - **Verzonden** — of de mail door het platform verstuurd is.
 - **Aflevering** — de **afleverstatus**: **Afgeleverd** (groen) als de mail is aangekomen, of een probleem in het rood (bv. **Geweigerd (bounce)** of **Mislukt**).
-- **Reden / fout** — bij een probleem: de reden waarom de mail niet is toegekomen.
+- **Reden / fout** — bij een probleem: de reden waarom de mail niet is toegekomen. Gaf het verzendplatform geen reden door, dan staat er *geen reden ontvangen*.
+- **Onderwerp** — het onderwerp van de mail.
+- **Type** en **Naam** — het soort entiteit waar de mail bij hoort (bv. *Kredietinstelling*, *Relatie*, *Kredietdossier*) en haar naam. Deze twee kolommen staan er enkel als minstens één mail in de lijst ze invult.
 
 ## Filteren en zoeken
 
@@ -33,4 +32,4 @@ Elke rij is één verstuurde mail. De kolommen:
 - U ziet enkel de mail van **uw eigen kantoor**. Mail die vóór eind augustus 2026 vertrok, staat er niet bij: die droeg nog geen kenmerk van het kantoor.
 - De lijst toont hoogstens de **500 nieuwste** mails. Staan er meer, dan zegt een regel bovenaan dat; kies dan een status om gerichter te zoeken.
 - De afleverstatus komt rechtstreeks van het verzendplatform: **Afgeleverd**, **Geweigerd (bounce)**, **Mislukt**, … Dat is de betrouwbare bron.
-- De kolommen **Type** en **Naam** vullen zich voor mail die u **vanuit een fiche** verstuurt (bv. vanuit een kredietinstelling). Mail die daarvóór verstuurd werd, blijft in die twee kolommen leeg.
+- De kolommen **Type** en **Naam** vullen zich voor mail die u **vanuit een fiche** verstuurt (bv. vanuit een kredietinstelling). Draagt geen enkele mail in de lijst die gegevens, dan staan de twee kolommen er niet.

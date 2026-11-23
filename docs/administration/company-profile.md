@@ -26,7 +26,7 @@ De velden staan gegroepeerd in blokken:
 
 ## Gegevens ophalen uit de KBO
 
-Vul uw **BTW / ondernemingsnummer** in en klik op **Ophalen**. De adresgegevens worden dan automatisch ingevuld vanuit de Kruispuntbank van Ondernemingen. De naam wordt enkel ingevuld als dat veld nog leeg is — zo blijft een handelsnaam die u zelf koos staan.
+Vul uw **BTW / ondernemingsnummer** in en klik op **Ophalen**. De adresgegevens worden dan ingevuld vanuit de Kruispuntbank van Ondernemingen, ook het busnummer. Staat er al een ander adres, dan vraagt CreditSoft eerst of u het adres van de KBO overneemt of uw eigen adres houdt. De naam wordt enkel ingevuld als dat veld nog leeg is — zo blijft een handelsnaam die u zelf koos staan.
 
 ## Logo
 

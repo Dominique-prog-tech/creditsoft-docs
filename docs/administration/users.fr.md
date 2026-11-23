@@ -8,7 +8,7 @@ Dans la barre latérale, cliquez sur **Administration**, puis sur la tuile **Uti
 
 ## Ajouter un collègue
 
-Au-dessus de la liste, cliquez sur **Nouvel utilisateur**. Dans la fenêtre, complétez le nom d'utilisateur (avec lequel le collègue se connecte, généralement son adresse e-mail) et le nom affiché, et choisissez son rôle. Choisissez ensuite comment il obtient un mot de passe :
+Au-dessus de la liste, cliquez sur **Nouvel utilisateur**. Dans la fenêtre, complétez le nom d'utilisateur (avec lequel le collègue se connecte, généralement son adresse e-mail) et le nom affiché, et choisissez son rôle : **Utilisateur** fait le travail quotidien (dossiers, clients, notes, tâches, e-mails), **Administrateur** peut tout faire, y compris l'administration, les utilisateurs et les rôles. Vous modifiez le rôle plus tard dans la liste ; cela s'applique immédiatement. Si quelqu'un doit pouvoir faire un peu plus sans devenir administrateur, donnez-lui un rôle supplémentaire sous [Rôles](roles.md) : un rôle ajoute des droits, il n'en retire pas. Choisissez ensuite comment il obtient un mot de passe :
 
 - **Inviter par courriel** : le collègue reçoit un e-mail pour choisir lui-même un mot de passe. Choisissez la langue de l'e-mail. Le lien est valable 7 jours et ne fonctionne qu'une fois. Le nom d'utilisateur doit pour cela être une adresse e-mail.
 - **Définir le mot de passe moi-même** : vous tapez un mot de passe temporaire et vous le transmettez vous-même, de préférence par un autre canal que le nom d'utilisateur. Le collègue le modifie à la première connexion.

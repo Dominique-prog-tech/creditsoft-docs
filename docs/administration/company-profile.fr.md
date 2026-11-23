@@ -26,7 +26,7 @@ Les champs sont regroupés en blocs :
 
 ## Récupérer les données depuis la BCE
 
-Saisissez votre **numéro de TVA / d'entreprise** et cliquez sur **Récupérer**. Les données d'adresse sont alors complétées automatiquement depuis la Banque-Carrefour des Entreprises. Le nom n'est complété que si ce champ est encore vide — un nom commercial que vous avez choisi reste ainsi inchangé.
+Saisissez votre **numéro de TVA / d'entreprise** et cliquez sur **Récupérer**. Les données d'adresse sont alors complétées depuis la Banque-Carrefour des Entreprises, y compris le numéro de boîte. Si une autre adresse figure déjà sur la fiche, CreditSoft vous demande d'abord si vous reprenez l'adresse de la BCE ou si vous gardez la vôtre. Le nom n'est complété que si ce champ est encore vide — un nom commercial que vous avez choisi reste ainsi inchangé.
 
 ## Logo
 

@@ -13,13 +13,12 @@ Dans la barre latérale, cliquez sur **Administration**, puis sur la tuile **Sui
 Chaque ligne correspond à un e-mail envoyé. Les colonnes :
 
 - **Créé le** — quand l'e-mail est parti.
-- **Type** — le type d'entité à laquelle l'e-mail se rapporte (p. ex. *Établissement de crédit*, *Assureur*, *Relation*, *Apporteur*, *Dossier de crédit*).
-- **Nom** — le nom de cette entité.
 - **À** — le destinataire.
-- **Objet** — l'objet de l'e-mail.
 - **Envoyé** — si l'e-mail a été envoyé par la plateforme.
 - **Livraison** — le **statut de livraison** : **Livré** (vert) si l'e-mail est arrivé, ou un problème en rouge (p. ex. **Rejeté (bounce)** ou **Échoué**).
-- **Raison / erreur** — en cas de problème : la raison pour laquelle l'e-mail n'est pas arrivé.
+- **Raison / erreur** — en cas de problème : la raison pour laquelle l'e-mail n'est pas arrivé. Si la plateforme d'envoi n'a transmis aucune raison, la cellule indique *aucune raison reçue*.
+- **Objet** — l'objet de l'e-mail.
+- **Type** et **Nom** — le type d'entité à laquelle l'e-mail se rapporte (p. ex. *Établissement de crédit*, *Relation*, *Dossier de crédit*) et son nom. Ces deux colonnes n'apparaissent que si au moins un e-mail de la liste les renseigne.
 
 ## Filtrer et rechercher
 
@@ -33,4 +32,4 @@ Chaque ligne correspond à un e-mail envoyé. Les colonnes :
 - Vous ne voyez que le courrier de **votre propre bureau**. Le courrier parti avant fin août 2026 n'y figure pas : il ne portait pas encore de référence du bureau.
 - La liste affiche au maximum les **500 e-mails les plus récents**. S'il y en a davantage, une ligne en haut le signale ; choisissez alors un statut pour affiner.
 - Le statut de livraison provient directement de la plateforme d'envoi : **Livré**, **Rejeté (bounce)**, **Échoué**, … C'est la source fiable.
-- Les colonnes **Type** et **Nom** se remplissent pour le courrier que vous envoyez **depuis une fiche** (p. ex. depuis un établissement de crédit). Le courrier envoyé auparavant reste vide dans ces deux colonnes.
+- Les colonnes **Type** et **Nom** se remplissent pour le courrier que vous envoyez **depuis une fiche** (p. ex. depuis un établissement de crédit). Si aucun e-mail de la liste ne porte ces données, les deux colonnes n'apparaissent pas.

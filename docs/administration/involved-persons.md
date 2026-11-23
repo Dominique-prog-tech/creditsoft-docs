@@ -23,7 +23,7 @@ Per persoon ziet u de huidige functie met haar begin en einde, en een status:
 
 Staat er achter de status *functie loopt, geen actief account*, dan is de toegang van die persoon ingetrokken terwijl zijn functie nog loopt. Is hij gestopt, vul dan de einddatum in. CreditSoft vult die datum niet zelf in, want de dag waarop iemands toegang stopte, is niet altijd de dag waarop hij stopte met werken.
 
-Met de filter kiest u wie u ziet: *In het register* (met wie onvolledig is), *Onvolledig*, *Niet in het register* of *Iedereen*. Staat er nog niemand in het register, dan ziet u meteen iedereen.
+Met de filter kiest u wie u ziet: *In het register (ook onvolledig)*, *Onvolledig*, *Niet in het register* of *Iedereen*. Staat er nog niemand in het register, dan ziet u meteen iedereen.
 
 Dubbelklik een rij om de fiche te openen. Met het pijltje vooraan, Ctrl-klik of de middelste muisknop opent de fiche in een nieuw tabblad.
 
