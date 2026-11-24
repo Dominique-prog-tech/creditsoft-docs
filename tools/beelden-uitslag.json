@@ -296,14 +296,14 @@
   "portaal-overzicht": {
     "route": "/portal-intermediary/overzicht",
     "app": {
-      "sha": "e7cdddfdbd182bf4e89541d62a7e42952eaf3690",
+      "sha": "f5252862b9ffeaa20e9bd317bec0b2cbe904d509",
       "vuil": false
     }
   },
   "portaal-dossiers": {
     "route": "/portal-intermediary/dossiers",
     "app": {
-      "sha": "e7cdddfdbd182bf4e89541d62a7e42952eaf3690",
+      "sha": "f5252862b9ffeaa20e9bd317bec0b2cbe904d509",
       "vuil": false
     }
   },
@@ -485,7 +485,7 @@
   "commissieschemas-journaal": {
     "route": "/credit-files/903a2553-1e1d-4a9d-baab-f456bd96145c",
     "app": {
-      "sha": "e7cdddfdbd182bf4e89541d62a7e42952eaf3690",
+      "sha": "f5252862b9ffeaa20e9bd317bec0b2cbe904d509",
       "vuil": false
     }
   },
@@ -555,7 +555,7 @@
   "portaal-dossier-detail": {
     "route": "/portal-intermediary/dossiers",
     "app": {
-      "sha": "e7cdddfdbd182bf4e89541d62a7e42952eaf3690",
+      "sha": "f5252862b9ffeaa20e9bd317bec0b2cbe904d509",
       "vuil": false
     }
   },
@@ -912,14 +912,14 @@
   "portaal-overzicht-fr": {
     "route": "/portal-intermediary/overzicht",
     "app": {
-      "sha": "e7cdddfdbd182bf4e89541d62a7e42952eaf3690",
+      "sha": "f5252862b9ffeaa20e9bd317bec0b2cbe904d509",
       "vuil": false
     }
   },
   "portaal-dossiers-fr": {
     "route": "/portal-intermediary/dossiers",
     "app": {
-      "sha": "e7cdddfdbd182bf4e89541d62a7e42952eaf3690",
+      "sha": "f5252862b9ffeaa20e9bd317bec0b2cbe904d509",
       "vuil": false
     }
   },
@@ -1101,7 +1101,7 @@
   "commissieschemas-journaal-fr": {
     "route": "/credit-files/903a2553-1e1d-4a9d-baab-f456bd96145c",
     "app": {
-      "sha": "e7cdddfdbd182bf4e89541d62a7e42952eaf3690",
+      "sha": "f5252862b9ffeaa20e9bd317bec0b2cbe904d509",
       "vuil": false
     }
   },
@@ -1171,7 +1171,7 @@
   "portaal-dossier-detail-fr": {
     "route": "/portal-intermediary/dossiers",
     "app": {
-      "sha": "e7cdddfdbd182bf4e89541d62a7e42952eaf3690",
+      "sha": "f5252862b9ffeaa20e9bd317bec0b2cbe904d509",
       "vuil": false
     }
   },
@@ -1598,42 +1598,42 @@
   "mail-momenten": {
     "route": "/beheer/mail-momenten",
     "app": {
-      "sha": "e7cdddfdbd182bf4e89541d62a7e42952eaf3690",
+      "sha": "f5252862b9ffeaa20e9bd317bec0b2cbe904d509",
       "vuil": false
     }
   },
   "mail-momenten-venster": {
     "route": "/beheer/mail-momenten",
     "app": {
-      "sha": "e7cdddfdbd182bf4e89541d62a7e42952eaf3690",
+      "sha": "f5252862b9ffeaa20e9bd317bec0b2cbe904d509",
       "vuil": false
     }
   },
   "mail-momenten-fr": {
     "route": "/beheer/mail-momenten",
     "app": {
-      "sha": "e7cdddfdbd182bf4e89541d62a7e42952eaf3690",
+      "sha": "f5252862b9ffeaa20e9bd317bec0b2cbe904d509",
       "vuil": false
     }
   },
   "mail-momenten-venster-fr": {
     "route": "/beheer/mail-momenten",
     "app": {
-      "sha": "e7cdddfdbd182bf4e89541d62a7e42952eaf3690",
+      "sha": "f5252862b9ffeaa20e9bd317bec0b2cbe904d509",
       "vuil": false
     }
   },
   "mail-momenten-termijn": {
     "route": "/beheer/mail-momenten",
     "app": {
-      "sha": "e7cdddfdbd182bf4e89541d62a7e42952eaf3690",
+      "sha": "f5252862b9ffeaa20e9bd317bec0b2cbe904d509",
       "vuil": false
     }
   },
   "mail-momenten-termijn-fr": {
     "route": "/beheer/mail-momenten",
     "app": {
-      "sha": "e7cdddfdbd182bf4e89541d62a7e42952eaf3690",
+      "sha": "f5252862b9ffeaa20e9bd317bec0b2cbe904d509",
       "vuil": false
     }
   },
@@ -1878,14 +1878,14 @@
   "portaal-nieuwe-klant": {
     "route": "/portal-intermediary/dossiers",
     "app": {
-      "sha": "e7cdddfdbd182bf4e89541d62a7e42952eaf3690",
+      "sha": "f5252862b9ffeaa20e9bd317bec0b2cbe904d509",
       "vuil": false
     }
   },
   "portaal-nieuwe-klant-fr": {
     "route": "/portal-intermediary/dossiers",
     "app": {
-      "sha": "e7cdddfdbd182bf4e89541d62a7e42952eaf3690",
+      "sha": "f5252862b9ffeaa20e9bd317bec0b2cbe904d509",
       "vuil": false
     }
   },
@@ -1941,7 +1941,7 @@
   "terugvordering-te-bevestigen": {
     "route": "/commissie/te-bevestigen-terugvorderingen",
     "app": {
-      "sha": "e7cdddfdbd182bf4e89541d62a7e42952eaf3690",
+      "sha": "f5252862b9ffeaa20e9bd317bec0b2cbe904d509",
       "vuil": false
     }
   },
@@ -1955,7 +1955,7 @@
   "terugvordering-te-bevestigen-fr": {
     "route": "/commissie/te-bevestigen-terugvorderingen",
     "app": {
-      "sha": "e7cdddfdbd182bf4e89541d62a7e42952eaf3690",
+      "sha": "f5252862b9ffeaa20e9bd317bec0b2cbe904d509",
       "vuil": false
     }
   },
@@ -2242,28 +2242,28 @@
   "mail-momenten-klantsignaal": {
     "route": "/beheer/mail-momenten",
     "app": {
-      "sha": "e7cdddfdbd182bf4e89541d62a7e42952eaf3690",
+      "sha": "f5252862b9ffeaa20e9bd317bec0b2cbe904d509",
       "vuil": false
     }
   },
   "mail-momenten-klantsignaal-fr": {
     "route": "/beheer/mail-momenten",
     "app": {
-      "sha": "e7cdddfdbd182bf4e89541d62a7e42952eaf3690",
+      "sha": "f5252862b9ffeaa20e9bd317bec0b2cbe904d509",
       "vuil": false
     }
   },
   "portaal-op-te-volgen": {
     "route": "/portal-intermediary/overzicht",
     "app": {
-      "sha": "c635f9fa7880d409a80284d7279e0ee53dbd216f",
+      "sha": "f5252862b9ffeaa20e9bd317bec0b2cbe904d509",
       "vuil": false
     }
   },
   "portaal-op-te-volgen-fr": {
     "route": "/portal-intermediary/overzicht",
     "app": {
-      "sha": "c635f9fa7880d409a80284d7279e0ee53dbd216f",
+      "sha": "f5252862b9ffeaa20e9bd317bec0b2cbe904d509",
       "vuil": false
     }
   }

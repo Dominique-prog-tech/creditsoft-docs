@@ -6,7 +6,7 @@ Les dossiers dans lesquels vous figurez comme apporteur.
 
 Dans le portail, cliquez en haut sur **Mes dossiers**.
 
-![La liste Mes dossiers dans le portail apporteurs, avec par ligne le numéro de dossier, le demandeur, l'apporteur, le statut, l'organisme et le montant du crédit, et en haut le bouton Nouveau dossier et un champ de recherche.](../images/portaal-dossiers-fr.png "Mes dossiers dans le portail apporteurs")
+![La liste Mes dossiers dans le portail apporteurs, avec par ligne le numéro de dossier, le demandeur, l'apporteur, le statut, l'organisme, le montant du crédit et la commission reçue, et en haut le bouton Nouveau dossier et un champ de recherche.](../images/portaal-dossiers-fr.png "Mes dossiers dans le portail apporteurs")
 
 ## La liste
 

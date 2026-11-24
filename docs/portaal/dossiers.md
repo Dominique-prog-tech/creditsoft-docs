@@ -6,7 +6,7 @@ De dossiers waarin u als aanbrenger staat.
 
 Klik in het portaal bovenaan op **Mijn dossiers**.
 
-![De lijst Mijn dossiers in het aanbrengersportaal, met per rij het dossiernummer, de aanvrager, de aanbrenger, de status, de instelling en het kredietbedrag, en bovenaan de knop Nieuw dossier en een zoekveld.](../images/portaal-dossiers.png "Mijn dossiers in het aanbrengersportaal")
+![De lijst Mijn dossiers in het aanbrengersportaal, met per rij het dossiernummer, de aanvrager, de aanbrenger, de status, de instelling, het kredietbedrag en de ontvangen commissie, en bovenaan de knop Nieuw dossier en een zoekveld.](../images/portaal-dossiers.png "Mijn dossiers in het aanbrengersportaal")
 
 ## De lijst
 
