@@ -16,7 +16,7 @@
     "titel": "Het kredietdossier in CreditSoft: van lijst tot journaal",
     "omschrijving": "Een rondleiding door het kredietdossier: de lijst filteren en doorzoeken, een dossier openen, de dossiergegevens, de kredietaanvragers, het pand, de gevraagde documenten, en het journaal met de taken, notities, gesprekken en commissieschema’s die bij dat ene dossier horen.",
     "hash": "21666a339fc92753",
-    "guid": "86a73840-50b5-4109-827e-2b7d72d719d8",
+    "guid": "f51350fc-fcb9-4965-a8be-75be2f16a1ff",
     "hoofdstukken": [
       {
         "titel": "De dossierlijst",
@@ -74,10 +74,14 @@
         "eind": 96.57
       }
     ],
-    "gepubliceerdOp": "2026-11-20T13:55:11.635",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/86a73840-50b5-4109-827e-2b7d72d719d8/thumbnail.jpg",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/86a73840-50b5-4109-827e-2b7d72d719d8",
-    "vorigeGuid": "eb3b28b1-e503-44e9-9bdd-6afc66d26786"
+    "gepubliceerdOp": "2026-11-24T03:55:59.508",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/f51350fc-fcb9-4965-a8be-75be2f16a1ff/thumbnail.jpg",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/f51350fc-fcb9-4965-a8be-75be2f16a1ff",
+    "vorigeGuid": "86a73840-50b5-4109-827e-2b7d72d719d8",
+    "gepubliceerdeHash": "21666a339fc92753",
+    "opTeRuimen": [
+      "eb3b28b1-e503-44e9-9bdd-6afc66d26786"
+    ]
   },
   "kredietdossiers-basis-fr": {
     "film": "kredietdossiers-basis",
@@ -96,7 +100,7 @@
     "titel": "Le dossier de crédit dans CreditSoft : de la liste au journal",
     "omschrijving": "Une visite guidée du dossier de crédit : filtrer et rechercher dans la liste, ouvrir un dossier, les données du dossier, les demandeurs de crédit, le bien, les documents demandés, et le journal avec les tâches, notes, appels et schémas de commission liés à ce dossier.",
     "hash": "dc66fd53d27ce137",
-    "guid": "5ddf814c-b1a7-4eed-a7df-a3040dcad6ab",
+    "guid": "67927fc4-bea5-418a-bf4b-149e85392c05",
     "hoofdstukken": [
       {
         "titel": "La liste des dossiers",
@@ -154,10 +158,14 @@
         "eind": 90.37
       }
     ],
-    "gepubliceerdOp": "2026-11-20T13:59:05.048",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/5ddf814c-b1a7-4eed-a7df-a3040dcad6ab/thumbnail.jpg",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/5ddf814c-b1a7-4eed-a7df-a3040dcad6ab",
-    "vorigeGuid": "10c3d95b-0976-4307-89f2-d1ceb363c64e"
+    "gepubliceerdOp": "2026-11-24T03:56:12.648",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/67927fc4-bea5-418a-bf4b-149e85392c05/thumbnail.jpg",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/67927fc4-bea5-418a-bf4b-149e85392c05",
+    "vorigeGuid": "5ddf814c-b1a7-4eed-a7df-a3040dcad6ab",
+    "gepubliceerdeHash": "dc66fd53d27ce137",
+    "opTeRuimen": [
+      "10c3d95b-0976-4307-89f2-d1ceb363c64e"
+    ]
   },
   "kredietdossiers-basis-website-nl": {
     "film": "kredietdossiers-basis",
@@ -176,7 +184,7 @@
     "titel": "Het kredietdossier in CreditSoft: één aanvraag, één pagina",
     "omschrijving": "Al uw kredietdossiers op één lijst, met status en bedrag. Open er één en u ziet de aanvraag, de aanvragers, het pand en de gevraagde documenten met hun toestand, op één pagina.",
     "hash": "4bb15372297d92ca",
-    "guid": "5a0784c5-1394-43c5-b560-cda9c6bed670",
+    "guid": "a39c35e7-f6bb-436e-9c8e-4708adff57f7",
     "hoofdstukken": [
       {
         "titel": "De dossierlijst",
@@ -204,10 +212,14 @@
         "eind": 31.62
       }
     ],
-    "gepubliceerdOp": "2026-11-20T14:03:22.85",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/5a0784c5-1394-43c5-b560-cda9c6bed670/thumbnail.jpg",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/5a0784c5-1394-43c5-b560-cda9c6bed670",
-    "vorigeGuid": "878881c6-82c9-4965-952d-498332926024"
+    "gepubliceerdOp": "2026-11-24T03:56:26.015",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/a39c35e7-f6bb-436e-9c8e-4708adff57f7/thumbnail.jpg",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/a39c35e7-f6bb-436e-9c8e-4708adff57f7",
+    "vorigeGuid": "5a0784c5-1394-43c5-b560-cda9c6bed670",
+    "gepubliceerdeHash": "4bb15372297d92ca",
+    "opTeRuimen": [
+      "878881c6-82c9-4965-952d-498332926024"
+    ]
   },
   "kredietdossiers-basis-website-fr": {
     "film": "kredietdossiers-basis",
@@ -226,7 +238,7 @@
     "titel": "Le dossier de crédit dans CreditSoft : une demande, une page",
     "omschrijving": "Tous vos dossiers de crédit sur une liste, avec statut et montant. Ouvrez-en un : la demande, les demandeurs, le bien et les documents demandés avec leur statut, sur une seule page.",
     "hash": "3420347d61ba7b36",
-    "guid": "a10affcb-a945-4c58-9fa4-90f2f998ba59",
+    "guid": "2f5a4dc6-2d26-4e28-b14e-3a2dc1f47f8b",
     "hoofdstukken": [
       {
         "titel": "La liste des dossiers",
@@ -254,10 +266,14 @@
         "eind": 32.42
       }
     ],
-    "gepubliceerdOp": "2026-11-20T14:08:28.697",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/a10affcb-a945-4c58-9fa4-90f2f998ba59/thumbnail.jpg",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/a10affcb-a945-4c58-9fa4-90f2f998ba59",
-    "vorigeGuid": "a9ff8e72-5b7c-4398-8931-63deee65c374"
+    "gepubliceerdOp": "2026-11-24T03:56:32.843",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/2f5a4dc6-2d26-4e28-b14e-3a2dc1f47f8b/thumbnail.jpg",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/2f5a4dc6-2d26-4e28-b14e-3a2dc1f47f8b",
+    "vorigeGuid": "a10affcb-a945-4c58-9fa4-90f2f998ba59",
+    "gepubliceerdeHash": "3420347d61ba7b36",
+    "opTeRuimen": [
+      "a9ff8e72-5b7c-4398-8931-63deee65c374"
+    ]
   },
   "creditsoft-overzicht-website-nl": {
     "film": "creditsoft-overzicht",
@@ -282,7 +298,7 @@
     "titel": "CreditSoft in het kort: een overzicht van de modules",
     "omschrijving": "CreditSoft in het kort: kredietdossiers, klanten, documenten, de portalen voor klant en aanbrenger, commissie met borderel, fiche 281.50 en vooruitzicht, en uw kredietverstrekkers.",
     "hash": "2ba034757547cf75",
-    "guid": "423e6879-7ec3-4fdf-9f83-6b7f68ae5c3b",
+    "guid": "865e68ca-36c1-4d35-a9f6-08413be0c09e",
     "hoofdstukken": [
       {
         "titel": "Kredietdossiers",
@@ -325,10 +341,14 @@
         "eind": 45.18
       }
     ],
-    "gepubliceerdOp": "2026-11-20T14:13:49.649",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/423e6879-7ec3-4fdf-9f83-6b7f68ae5c3b/thumbnail.jpg",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/423e6879-7ec3-4fdf-9f83-6b7f68ae5c3b",
-    "vorigeGuid": "1b5d79ea-3388-439e-b018-464f75570302"
+    "gepubliceerdOp": "2026-11-24T03:56:44.125",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/865e68ca-36c1-4d35-a9f6-08413be0c09e/thumbnail.jpg",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/865e68ca-36c1-4d35-a9f6-08413be0c09e",
+    "vorigeGuid": "423e6879-7ec3-4fdf-9f83-6b7f68ae5c3b",
+    "gepubliceerdeHash": "2ba034757547cf75",
+    "opTeRuimen": [
+      "1b5d79ea-3388-439e-b018-464f75570302"
+    ]
   },
   "creditsoft-overzicht-website-fr": {
     "film": "creditsoft-overzicht",
@@ -353,7 +373,7 @@
     "titel": "CreditSoft en bref : les modules en un coup d’œil",
     "omschrijving": "CreditSoft en bref : dossiers de crédit, clients, documents, les portails client et apporteur, commissions avec bordereau, fiche 281.50 et perspective, et vos prêteurs.",
     "hash": "0896bc79eefd88bc",
-    "guid": "bc201590-a0d8-430f-8b26-1a4f092e08d5",
+    "guid": "dca9c45d-1a90-4130-9a07-2d24a6de979c",
     "hoofdstukken": [
       {
         "titel": "Dossiers de crédit",
@@ -396,10 +416,14 @@
         "eind": 46.68
       }
     ],
-    "gepubliceerdOp": "2026-11-20T14:19:47.812",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/bc201590-a0d8-430f-8b26-1a4f092e08d5/thumbnail.jpg",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/bc201590-a0d8-430f-8b26-1a4f092e08d5",
-    "vorigeGuid": "7b5d7d22-c356-4a9c-906f-89b1d808588f"
+    "gepubliceerdOp": "2026-11-24T03:56:51.112",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/dca9c45d-1a90-4130-9a07-2d24a6de979c/thumbnail.jpg",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/dca9c45d-1a90-4130-9a07-2d24a6de979c",
+    "vorigeGuid": "bc201590-a0d8-430f-8b26-1a4f092e08d5",
+    "gepubliceerdeHash": "0896bc79eefd88bc",
+    "opTeRuimen": [
+      "7b5d7d22-c356-4a9c-906f-89b1d808588f"
+    ]
   },
   "creditsoft-overzicht-website-en": {
     "film": "creditsoft-overzicht",
@@ -424,7 +448,7 @@
     "titel": "CreditSoft at a glance: the modules in brief",
     "omschrijving": "CreditSoft at a glance: credit files, clients, documents, the client and intermediary portals, commission with statements, the 281.50 form and forecast, and your lenders.",
     "hash": "682a154e1ab2d163",
-    "guid": "6cba36bc-d26d-4b5a-8563-038471ec818e",
+    "guid": "06f1a24e-12a3-4524-a037-4629385cc7cf",
     "hoofdstukken": [
       {
         "titel": "Credit files",
@@ -467,10 +491,14 @@
         "eind": 47.33
       }
     ],
-    "gepubliceerdOp": "2026-11-20T14:26:51.032",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/6cba36bc-d26d-4b5a-8563-038471ec818e/thumbnail.jpg",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/6cba36bc-d26d-4b5a-8563-038471ec818e",
-    "vorigeGuid": "bee3bcd4-8d9e-4f12-aad7-01296b7fe7aa"
+    "gepubliceerdOp": "2026-11-24T03:57:03.353",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/06f1a24e-12a3-4524-a037-4629385cc7cf/thumbnail.jpg",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/06f1a24e-12a3-4524-a037-4629385cc7cf",
+    "vorigeGuid": "6cba36bc-d26d-4b5a-8563-038471ec818e",
+    "gepubliceerdeHash": "682a154e1ab2d163",
+    "opTeRuimen": [
+      "bee3bcd4-8d9e-4f12-aad7-01296b7fe7aa"
+    ]
   },
   "kredietdossiers-basis-website-en": {
     "film": "kredietdossiers-basis",
@@ -489,7 +517,7 @@
     "titel": "The credit file in CreditSoft: one application, one page",
     "omschrijving": "All your credit files on one list, with status and amount. Open one and you see the application, the applicants, the property and the requested documents with their status, on one page.",
     "hash": "8dc94713f6ed6628",
-    "guid": "b5ba4478-fb52-4848-9e31-b4c90c4cb55d",
+    "guid": "2f5f6b2e-a76c-44fa-a1d6-95b41ffe843a",
     "hoofdstukken": [
       {
         "titel": "The file list",
@@ -517,10 +545,14 @@
         "eind": 32.26
       }
     ],
-    "gepubliceerdOp": "2026-11-20T14:34:04.768",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/b5ba4478-fb52-4848-9e31-b4c90c4cb55d/thumbnail.jpg",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/b5ba4478-fb52-4848-9e31-b4c90c4cb55d",
-    "vorigeGuid": "f308a693-c2f4-44ff-92e2-ee9e61f23650"
+    "gepubliceerdOp": "2026-11-24T03:57:10.557",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/2f5f6b2e-a76c-44fa-a1d6-95b41ffe843a/thumbnail.jpg",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/2f5f6b2e-a76c-44fa-a1d6-95b41ffe843a",
+    "vorigeGuid": "b5ba4478-fb52-4848-9e31-b4c90c4cb55d",
+    "gepubliceerdeHash": "8dc94713f6ed6628",
+    "opTeRuimen": [
+      "f308a693-c2f4-44ff-92e2-ee9e61f23650"
+    ]
   },
   "aan-de-slag-nl": {
     "film": "aan-de-slag",
@@ -539,8 +571,8 @@
     "titel": "Uw weg vinden in CreditSoft: het scherm, het zoeken en uw voorkeuren",
     "omschrijving": "De eerste rondleiding: het startscherm met het blok Aan de slag, het menu links, zoeken over uw hele omgeving met ⌘K, de hulp bij elk scherm en de twee assistenten, werken in een lijst (sorteren, filteren, exporteren) en uw eigen voorkeuren voor grootte, thema en taal.",
     "hash": "e75435e35e78cd4e",
-    "guid": "40243a32-1301-4637-a13d-beb78e631a09",
-    "vorigeGuid": "ac07ea69-7694-44bc-8512-313fd46dbe1d",
+    "guid": "cfa54e82-2997-4d2b-a1c1-fd8d978824a7",
+    "vorigeGuid": "40243a32-1301-4637-a13d-beb78e631a09",
     "hoofdstukken": [
       {
         "titel": "Het startscherm",
@@ -598,9 +630,13 @@
         "eind": 145.17
       }
     ],
-    "gepubliceerdOp": "2026-11-20T14:41:58.965",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/40243a32-1301-4637-a13d-beb78e631a09/thumbnail.jpg",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/40243a32-1301-4637-a13d-beb78e631a09"
+    "gepubliceerdOp": "2026-11-24T03:57:22.433",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/cfa54e82-2997-4d2b-a1c1-fd8d978824a7/thumbnail.jpg",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/cfa54e82-2997-4d2b-a1c1-fd8d978824a7",
+    "gepubliceerdeHash": "e75435e35e78cd4e",
+    "opTeRuimen": [
+      "ac07ea69-7694-44bc-8512-313fd46dbe1d"
+    ]
   },
   "aan-de-slag-fr": {
     "film": "aan-de-slag",
@@ -619,8 +655,8 @@
     "titel": "Se repérer dans CreditSoft : l’écran, la recherche et vos préférences",
     "omschrijving": "La première visite guidée : l’écran d’accueil avec le bloc Pour commencer, le menu de gauche, la recherche dans tout votre environnement avec ⌘K, l’aide sur chaque écran et les deux assistants, le travail dans une liste (trier, filtrer, exporter) et vos préférences de taille, de thème et de langue.",
     "hash": "949d8d75c1a78949",
-    "guid": "cb5483be-0eaa-4f51-bb2e-7a18cf3b7b68",
-    "vorigeGuid": "d0ac3f56-c517-4dc0-8a5f-62c9e02008a6",
+    "guid": "ba0fe78d-b0fd-401d-9a0e-b25f3a9b7880",
+    "vorigeGuid": "cb5483be-0eaa-4f51-bb2e-7a18cf3b7b68",
     "hoofdstukken": [
       {
         "titel": "L'écran d'accueil",
@@ -678,9 +714,13 @@
         "eind": 137.95
       }
     ],
-    "gepubliceerdOp": "2026-11-20T14:48:52.631",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/cb5483be-0eaa-4f51-bb2e-7a18cf3b7b68/thumbnail.jpg",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/cb5483be-0eaa-4f51-bb2e-7a18cf3b7b68"
+    "gepubliceerdOp": "2026-11-24T03:57:37.6",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/ba0fe78d-b0fd-401d-9a0e-b25f3a9b7880/thumbnail.jpg",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/ba0fe78d-b0fd-401d-9a0e-b25f3a9b7880",
+    "gepubliceerdeHash": "949d8d75c1a78949",
+    "opTeRuimen": [
+      "d0ac3f56-c517-4dc0-8a5f-62c9e02008a6"
+    ]
   },
   "relaties-nl": {
     "film": "relaties",
@@ -699,7 +739,7 @@
     "titel": "Relaties in CreditSoft: de fiche waar alles aan hangt",
     "omschrijving": "De relatiefiche van dichtbij: de lijst doorzoeken, een fiche openen, de algemene en bijkomende gegevens, de documenttaal die bepaalt in welke taal uw klant post krijgt, de gevraagde documenten met hun drie toestanden, de kredietdossiers van die klant, en het journaal met notities en gesprekken. Plus het samenvoegen van twee fiches die dezelfde persoon blijken te zijn.",
     "hash": "998cd6ca42ee4c0c",
-    "guid": "5f53bfe9-8ae1-45dc-81e0-676a6c966c38",
+    "guid": "bd50010e-9c02-4d4b-b155-341ad69608ef",
     "hoofdstukken": [
       {
         "titel": "De relatielijst",
@@ -757,9 +797,11 @@
         "eind": 158.54
       }
     ],
-    "gepubliceerdOp": "2026-11-19T17:50:34.385",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/5f53bfe9-8ae1-45dc-81e0-676a6c966c38/thumbnail.jpg",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/5f53bfe9-8ae1-45dc-81e0-676a6c966c38"
+    "gepubliceerdOp": "2026-11-24T03:57:52.045",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/bd50010e-9c02-4d4b-b155-341ad69608ef/thumbnail.jpg",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/bd50010e-9c02-4d4b-b155-341ad69608ef",
+    "gepubliceerdeHash": "998cd6ca42ee4c0c",
+    "vorigeGuid": "5f53bfe9-8ae1-45dc-81e0-676a6c966c38"
   },
   "relaties-fr": {
     "film": "relaties",
@@ -778,7 +820,7 @@
     "titel": "Les relations dans CreditSoft : la fiche à laquelle tout se rattache",
     "omschrijving": "La fiche de relation de près : parcourir la liste, ouvrir une fiche, les données générales et complémentaires, la langue des documents qui détermine dans quelle langue votre client reçoit son courrier, les documents demandés avec leurs trois statuts, les dossiers de crédit de ce client, et le journal avec les notes et les appels. Ainsi que la fusion de deux fiches.",
     "hash": "2c00fc53cdb421f6",
-    "guid": "bc2bd6c0-a236-47c6-959e-21bfb85d7fd7",
+    "guid": "985ace65-d64f-42de-b490-6bdc6eac0ebc",
     "hoofdstukken": [
       {
         "titel": "La liste des relations",
@@ -836,9 +878,11 @@
         "eind": 148.24
       }
     ],
-    "gepubliceerdOp": "2026-11-19T17:50:57.636",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/bc2bd6c0-a236-47c6-959e-21bfb85d7fd7/thumbnail.jpg",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/bc2bd6c0-a236-47c6-959e-21bfb85d7fd7"
+    "gepubliceerdOp": "2026-11-24T03:58:05.84",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/985ace65-d64f-42de-b490-6bdc6eac0ebc/thumbnail.jpg",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/985ace65-d64f-42de-b490-6bdc6eac0ebc",
+    "gepubliceerdeHash": "2c00fc53cdb421f6",
+    "vorigeGuid": "bc2bd6c0-a236-47c6-959e-21bfb85d7fd7"
   },
   "leads-nl": {
     "film": "leads",
@@ -856,8 +900,8 @@
     "titel": "Leads in CreditSoft: van aanvraag tot klant",
     "omschrijving": "De werklijst van uw instroom: wie er wacht en hoe lang, uit welk kanaal hij kwam, en wie hem opvolgt. Daarna de fiche van een lead: wie hij is, wat hij vraagt en waar hij staat. Dan de vijf statussen, en tot slot een lead die klant geworden is, met de doorverwijzing naar zijn relatiefiche.",
     "hash": "a0f68c76e18f1b68",
-    "guid": "3e63eff9-5911-45dd-9e13-6515d656b9cb",
-    "vorigeGuid": "836767c8-8f16-4077-9236-abe0e8574500",
+    "guid": "178ed753-8f40-456e-82d3-c978b0aa6164",
+    "vorigeGuid": "3e63eff9-5911-45dd-9e13-6515d656b9cb",
     "hoofdstukken": [
       {
         "titel": "De werklijst",
@@ -910,9 +954,13 @@
         "eind": 133.2
       }
     ],
-    "gepubliceerdOp": "2026-11-20T17:06:05.582",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/3e63eff9-5911-45dd-9e13-6515d656b9cb/thumbnail.jpg",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/3e63eff9-5911-45dd-9e13-6515d656b9cb"
+    "gepubliceerdOp": "2026-11-24T03:58:18.851",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/178ed753-8f40-456e-82d3-c978b0aa6164/thumbnail.jpg",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/178ed753-8f40-456e-82d3-c978b0aa6164",
+    "gepubliceerdeHash": "a0f68c76e18f1b68",
+    "opTeRuimen": [
+      "836767c8-8f16-4077-9236-abe0e8574500"
+    ]
   },
   "leads-fr": {
     "film": "leads",
@@ -930,8 +978,8 @@
     "titel": "Les leads dans CreditSoft : de la demande au client",
     "omschrijving": "La liste de travail de vos demandes entrantes : qui attend et depuis combien de temps, de quel canal il provient, et qui le suit. Ensuite la fiche d’un lead : qui il est, ce qu’il demande et où il en est. Puis les cinq statuts, et pour finir un lead devenu client, avec le renvoi vers sa fiche.",
     "hash": "f1ee7e577747fe4d",
-    "guid": "c3d05388-f0e2-483f-a7c2-82873770e4be",
-    "vorigeGuid": "65b06f1b-a1a7-4d85-b65b-3cb9ce1f15a9",
+    "guid": "fa332f0a-02b0-4e8c-a077-e5ed095000af",
+    "vorigeGuid": "c3d05388-f0e2-483f-a7c2-82873770e4be",
     "hoofdstukken": [
       {
         "titel": "La liste de travail",
@@ -984,9 +1032,13 @@
         "eind": 133.18
       }
     ],
-    "gepubliceerdOp": "2026-11-20T17:11:50.571",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/c3d05388-f0e2-483f-a7c2-82873770e4be/thumbnail.jpg",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/c3d05388-f0e2-483f-a7c2-82873770e4be"
+    "gepubliceerdOp": "2026-11-24T03:58:32.152",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/fa332f0a-02b0-4e8c-a077-e5ed095000af/thumbnail.jpg",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/fa332f0a-02b0-4e8c-a077-e5ed095000af",
+    "gepubliceerdeHash": "f1ee7e577747fe4d",
+    "opTeRuimen": [
+      "65b06f1b-a1a7-4d85-b65b-3cb9ce1f15a9"
+    ]
   },
   "documentketen-nl": {
     "film": "documentketen",
@@ -1007,8 +1059,8 @@
     "titel": "De documentketen: van vragen tot beoordelen",
     "omschrijving": "Hoe u stukken opvraagt bij uw klant en ze weer binnenkrijgt: de gevraagde documenten op een dossier met hun drie toestanden, de uitnodiging naar het klantenportaal, het portaal zoals uw klant het ziet, en het centrale scherm waar alles wat op beoordeling wacht bij elkaar staat, gesorteerd op wie het langst wacht. Plus de andere richting: de documentbibliotheek.",
     "hash": "0cf82166a00c1aa3",
-    "guid": "2ef36ff1-2aec-46da-93f9-dbdd0e5dc241",
-    "vorigeGuid": "a68da08b-582a-446e-bc88-ace5c435d175",
+    "guid": "b5ba9cc1-bebc-442b-a695-61723e6e2962",
+    "vorigeGuid": "2ef36ff1-2aec-46da-93f9-dbdd0e5dc241",
     "hoofdstukken": [
       {
         "titel": "De gevraagde stukken",
@@ -1061,9 +1113,13 @@
         "eind": 146.37
       }
     ],
-    "gepubliceerdOp": "2026-11-20T14:55:02.506",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/2ef36ff1-2aec-46da-93f9-dbdd0e5dc241/thumbnail.jpg",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/2ef36ff1-2aec-46da-93f9-dbdd0e5dc241"
+    "gepubliceerdOp": "2026-11-24T03:58:45.33",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/b5ba9cc1-bebc-442b-a695-61723e6e2962/thumbnail.jpg",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/b5ba9cc1-bebc-442b-a695-61723e6e2962",
+    "gepubliceerdeHash": "0cf82166a00c1aa3",
+    "opTeRuimen": [
+      "a68da08b-582a-446e-bc88-ace5c435d175"
+    ]
   },
   "documentketen-fr": {
     "film": "documentketen",
@@ -1084,8 +1140,8 @@
     "titel": "La chaîne des documents : de la demande à la validation",
     "omschrijving": "Comment vous demandez des pièces à votre client et les recevez : les documents demandés sur un dossier avec leurs trois statuts, l’invitation au portail client, le portail tel que votre client le voit, et l’écran central où tout ce qui attend une validation est rassemblé, trié par ordre d’attente. Ainsi que l’autre sens : la bibliothèque de documents.",
     "hash": "28578f8e3ed8da88",
-    "guid": "e0d33341-dda4-4fe5-9549-cb5510eaa3b1",
-    "vorigeGuid": "96f012d6-d32c-46cd-b629-34351e11ec35",
+    "guid": "748a039f-8db9-49c2-8fb5-2ae52ab7ae6b",
+    "vorigeGuid": "e0d33341-dda4-4fe5-9549-cb5510eaa3b1",
     "hoofdstukken": [
       {
         "titel": "Les pièces demandées",
@@ -1138,9 +1194,13 @@
         "eind": 140.64
       }
     ],
-    "gepubliceerdOp": "2026-11-20T15:00:47.214",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/e0d33341-dda4-4fe5-9549-cb5510eaa3b1/thumbnail.jpg",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/e0d33341-dda4-4fe5-9549-cb5510eaa3b1"
+    "gepubliceerdOp": "2026-11-24T03:58:59.634",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/748a039f-8db9-49c2-8fb5-2ae52ab7ae6b/thumbnail.jpg",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/748a039f-8db9-49c2-8fb5-2ae52ab7ae6b",
+    "gepubliceerdeHash": "28578f8e3ed8da88",
+    "opTeRuimen": [
+      "96f012d6-d32c-46cd-b629-34351e11ec35"
+    ]
   },
   "journaal-nl": {
     "film": "journaal",
@@ -1160,7 +1220,7 @@
     "titel": "Het journaal: alles wat er met een klant gebeurde, op één plaats",
     "omschrijving": "Het journaal hangt aan elke fiche en werkt overal hetzelfde: taken met hun vervaldag en wie ze opvolgt, notities, gesprekken, bijlagen, het mailverkeer met de status van elke verzending, en het logboek dat elke veldwijziging bewaart. Plus de takenlijst die over alle fiches heen kijkt.",
     "hash": "85c870ff3cc0585d",
-    "guid": "f49b59c3-2d79-4b5e-bf34-3ae3509124c4",
+    "guid": "d296fa5c-f117-4f3e-8067-71a0910c7244",
     "hoofdstukken": [
       {
         "titel": "Waar het journaal staat",
@@ -1213,10 +1273,14 @@
         "eind": 145.93
       }
     ],
-    "gepubliceerdOp": "2026-11-20T13:51:09.325",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/f49b59c3-2d79-4b5e-bf34-3ae3509124c4/thumbnail.jpg",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/f49b59c3-2d79-4b5e-bf34-3ae3509124c4",
-    "vorigeGuid": "fb3e1697-da10-40de-b005-02c7b7a7c2b9"
+    "gepubliceerdOp": "2026-11-24T03:59:13.212",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/d296fa5c-f117-4f3e-8067-71a0910c7244/thumbnail.jpg",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/d296fa5c-f117-4f3e-8067-71a0910c7244",
+    "vorigeGuid": "f49b59c3-2d79-4b5e-bf34-3ae3509124c4",
+    "gepubliceerdeHash": "85c870ff3cc0585d",
+    "opTeRuimen": [
+      "fb3e1697-da10-40de-b005-02c7b7a7c2b9"
+    ]
   },
   "journaal-fr": {
     "film": "journaal",
@@ -1236,7 +1300,7 @@
     "titel": "Le journal : tout ce qui s’est passé avec un client, au même endroit",
     "omschrijving": "Le journal est rattaché à chaque fiche et fonctionne partout de la même manière : tâches avec leur échéance et leur responsable, notes, appels, pièces jointes, le courrier avec le statut de chaque envoi, et l’historique qui conserve chaque modification. Ainsi que la liste des tâches qui regarde par-dessus toutes les fiches.",
     "hash": "ca2bb2b956e41256",
-    "guid": "19b7042b-99f3-4a4e-88db-e5d4e82de88e",
+    "guid": "6ef5b891-f442-449f-9aeb-ff346a5c5f4f",
     "hoofdstukken": [
       {
         "titel": "Où se trouve le journal",
@@ -1289,10 +1353,14 @@
         "eind": 138.72
       }
     ],
-    "gepubliceerdOp": "2026-11-20T15:05:28.974",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/19b7042b-99f3-4a4e-88db-e5d4e82de88e/thumbnail.jpg",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/19b7042b-99f3-4a4e-88db-e5d4e82de88e",
-    "vorigeGuid": "16599d46-a6b5-498b-a7cf-78743e421259"
+    "gepubliceerdOp": "2026-11-24T03:59:25.755",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/6ef5b891-f442-449f-9aeb-ff346a5c5f4f/thumbnail.jpg",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/6ef5b891-f442-449f-9aeb-ff346a5c5f4f",
+    "vorigeGuid": "19b7042b-99f3-4a4e-88db-e5d4e82de88e",
+    "gepubliceerdeHash": "ca2bb2b956e41256",
+    "opTeRuimen": [
+      "16599d46-a6b5-498b-a7cf-78743e421259"
+    ]
   },
   "afspraken-nl": {
     "film": "afspraken",
@@ -1311,8 +1379,8 @@
     "titel": "De agenda: afspraken maken en laten maken",
     "omschrijving": "De agenda van uw kantoor: de kleuren die zeggen wie afwezig is en wanneer u gesloten bent, de weergave per medewerker of samengevoegd, een afspraak met haar verantwoordelijken en de bevestiging naar uw klant. En de andere kant: uren openzetten zodat mensen zelf een moment kiezen.",
     "hash": "ae4c6ed1d4635650",
-    "guid": "e8baa5ba-274b-4861-8b28-0b859a6f260f",
-    "vorigeGuid": "13affd2f-240a-462a-9a18-7898cf8f2a23",
+    "guid": "d11576ba-c36c-404f-b9eb-96f9fe0d0f08",
+    "vorigeGuid": "e8baa5ba-274b-4861-8b28-0b859a6f260f",
     "hoofdstukken": [
       {
         "titel": "De agenda",
@@ -1365,9 +1433,13 @@
         "eind": 137.32
       }
     ],
-    "gepubliceerdOp": "2026-11-09T12:24:18.021",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/e8baa5ba-274b-4861-8b28-0b859a6f260f/thumbnail.jpg",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/e8baa5ba-274b-4861-8b28-0b859a6f260f"
+    "gepubliceerdOp": "2026-11-24T03:59:39.544",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/d11576ba-c36c-404f-b9eb-96f9fe0d0f08/thumbnail.jpg",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/d11576ba-c36c-404f-b9eb-96f9fe0d0f08",
+    "gepubliceerdeHash": "ae4c6ed1d4635650",
+    "opTeRuimen": [
+      "13affd2f-240a-462a-9a18-7898cf8f2a23"
+    ]
   },
   "afspraken-fr": {
     "film": "afspraken",
@@ -1386,8 +1458,8 @@
     "titel": "L’agenda : prendre et faire prendre des rendez-vous",
     "omschrijving": "L’agenda de votre bureau : les couleurs qui indiquent qui est absent et quand vous êtes fermé, l’affichage par collaborateur ou fusionné, un rendez-vous avec ses responsables et la confirmation au client. Et l’autre côté : ouvrir des plages pour que les gens choisissent eux-mêmes un moment.",
     "hash": "66c10fd7171d2a29",
-    "guid": "ced67129-9284-4a87-bafc-11e3812f2b42",
-    "vorigeGuid": "08da549c-801f-4c17-b165-fb5c05851f43",
+    "guid": "4801d150-211a-4b0b-81bc-a00cbef51574",
+    "vorigeGuid": "ced67129-9284-4a87-bafc-11e3812f2b42",
     "hoofdstukken": [
       {
         "titel": "L’agenda",
@@ -1440,9 +1512,13 @@
         "eind": 130.87
       }
     ],
-    "gepubliceerdOp": "2026-11-09T12:26:49.718",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/ced67129-9284-4a87-bafc-11e3812f2b42/thumbnail.jpg",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/ced67129-9284-4a87-bafc-11e3812f2b42"
+    "gepubliceerdOp": "2026-11-24T03:59:58.426",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/4801d150-211a-4b0b-81bc-a00cbef51574/thumbnail.jpg",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/4801d150-211a-4b0b-81bc-a00cbef51574",
+    "gepubliceerdeHash": "66c10fd7171d2a29",
+    "opTeRuimen": [
+      "08da549c-801f-4c17-b165-fb5c05851f43"
+    ]
   },
   "commissie-instellen-nl": {
     "film": "commissie-instellen",
@@ -1462,8 +1538,8 @@
     "titel": "Commissie instellen: het schema per dossier",
     "omschrijving": "Wat u met een aanbrenger afspreekt en hoe u het vastlegt: het overzicht van alle schema’s met hun vorm en toestand, de schemafiche op een dossier met de totale commissie, het deel dat direct uitbetaald wordt en de spreiding over de maanden, de geplande betalingen die daaruit volgen, en de twee kantoorinstellingen die bepalen hoe er afgerekend wordt.",
     "hash": "ba62771970047916",
-    "guid": "5090b561-c8bd-4b49-99de-c806efd6ac1e",
-    "vorigeGuid": "6a3ce0b6-4921-4686-883b-670d8dc0f55c",
+    "guid": "7bdaf52a-41fb-4e65-b871-e11490dcf5b9",
+    "vorigeGuid": "5090b561-c8bd-4b49-99de-c806efd6ac1e",
     "hoofdstukken": [
       {
         "titel": "Alle schema’s samen",
@@ -1511,9 +1587,13 @@
         "eind": 127.42
       }
     ],
-    "gepubliceerdOp": "2026-11-20T15:10:00.074",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/5090b561-c8bd-4b49-99de-c806efd6ac1e/thumbnail.jpg",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/5090b561-c8bd-4b49-99de-c806efd6ac1e"
+    "gepubliceerdOp": "2026-11-24T04:00:13.48",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/7bdaf52a-41fb-4e65-b871-e11490dcf5b9/thumbnail.jpg",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/7bdaf52a-41fb-4e65-b871-e11490dcf5b9",
+    "gepubliceerdeHash": "ba62771970047916",
+    "opTeRuimen": [
+      "6a3ce0b6-4921-4686-883b-670d8dc0f55c"
+    ]
   },
   "commissie-instellen-fr": {
     "film": "commissie-instellen",
@@ -1533,8 +1613,8 @@
     "titel": "Configurer la commission : le schéma par dossier",
     "omschrijving": "Ce que vous convenez avec un apporteur et comment vous le fixez : l’aperçu de tous les schémas avec leur forme et leur statut, la fiche du schéma sur un dossier avec la commission totale, la part payée immédiatement et l’étalement sur les mois, les paiements planifiés qui en découlent, et les deux paramètres du bureau qui déterminent le mode de décompte.",
     "hash": "15ba0bf469428dbe",
-    "guid": "06df5bc9-5c0c-4412-826f-b219895fb2b0",
-    "vorigeGuid": "03c9f2a8-b13c-4cdf-9dc9-c8d9a24ccf99",
+    "guid": "d58159ab-7015-423f-b9d1-83afa74da711",
+    "vorigeGuid": "06df5bc9-5c0c-4412-826f-b219895fb2b0",
     "hoofdstukken": [
       {
         "titel": "Tous les schémas ensemble",
@@ -1582,9 +1662,13 @@
         "eind": 119.2
       }
     ],
-    "gepubliceerdOp": "2026-11-20T15:13:51.583",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/06df5bc9-5c0c-4412-826f-b219895fb2b0/thumbnail.jpg",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/06df5bc9-5c0c-4412-826f-b219895fb2b0"
+    "gepubliceerdOp": "2026-11-24T04:00:26.419",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/d58159ab-7015-423f-b9d1-83afa74da711/thumbnail.jpg",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/d58159ab-7015-423f-b9d1-83afa74da711",
+    "gepubliceerdeHash": "15ba0bf469428dbe",
+    "opTeRuimen": [
+      "03c9f2a8-b13c-4cdf-9dc9-c8d9a24ccf99"
+    ]
   },
   "commissie-uitbetalen-nl": {
     "film": "commissie-uitbetalen",
@@ -1606,8 +1690,8 @@
     "titel": "Commissie uitbetalen: borderel, vooruitzicht en restanten",
     "omschrijving": "Wat er uit uw commissieschema’s komt: het borderel per aanbrenger met zijn lijnen, het vooruitzicht dat toont wat er de komende maanden nog uitbetaald moet worden, de restanten die nooit op een borderel belandden en waarom, en de fiche 281.50 voor de fiscus.",
     "hash": "2168b3bc29101165",
-    "guid": "666fbf82-7f9e-4ccd-a760-2ebcb94c8bc8",
-    "vorigeGuid": "f9bba912-fe88-4336-a926-da7e41e458b4",
+    "guid": "c263dd2f-d5f0-46aa-86c2-c89283ca6603",
+    "vorigeGuid": "666fbf82-7f9e-4ccd-a760-2ebcb94c8bc8",
     "hoofdstukken": [
       {
         "titel": "De borderellen",
@@ -1660,9 +1744,13 @@
         "eind": 145.36
       }
     ],
-    "gepubliceerdOp": "2026-11-20T15:17:02.034",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/666fbf82-7f9e-4ccd-a760-2ebcb94c8bc8/thumbnail.jpg",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/666fbf82-7f9e-4ccd-a760-2ebcb94c8bc8"
+    "gepubliceerdOp": "2026-11-24T04:00:40.301",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/c263dd2f-d5f0-46aa-86c2-c89283ca6603/thumbnail.jpg",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/c263dd2f-d5f0-46aa-86c2-c89283ca6603",
+    "gepubliceerdeHash": "2168b3bc29101165",
+    "opTeRuimen": [
+      "f9bba912-fe88-4336-a926-da7e41e458b4"
+    ]
   },
   "commissie-uitbetalen-fr": {
     "film": "commissie-uitbetalen",
@@ -1684,8 +1772,8 @@
     "titel": "Payer la commission : bordereau, prévisions et reliquats",
     "omschrijving": "Ce qui découle de vos schémas de commission : le bordereau par apporteur avec ses lignes, les prévisions de ce qu’il reste à payer les mois à venir, les reliquats qui ne sont jamais arrivés sur un bordereau et pourquoi, et la fiche 281.50 pour le fisc.",
     "hash": "6c902713565085ed",
-    "guid": "43d61392-fb32-400c-a775-bc4e7a3cce94",
-    "vorigeGuid": "e13627ed-6512-4629-95b2-e2f5fc34b538",
+    "guid": "e414661b-0f60-4a5c-817c-efab24c06dc6",
+    "vorigeGuid": "43d61392-fb32-400c-a775-bc4e7a3cce94",
     "hoofdstukken": [
       {
         "titel": "Les bordereaux",
@@ -1738,9 +1826,13 @@
         "eind": 136.29
       }
     ],
-    "gepubliceerdOp": "2026-11-20T15:19:41.178",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/43d61392-fb32-400c-a775-bc4e7a3cce94/thumbnail.jpg",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/43d61392-fb32-400c-a775-bc4e7a3cce94"
+    "gepubliceerdOp": "2026-11-24T04:00:55.096",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/e414661b-0f60-4a5c-817c-efab24c06dc6/thumbnail.jpg",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/e414661b-0f60-4a5c-817c-efab24c06dc6",
+    "gepubliceerdeHash": "6c902713565085ed",
+    "opTeRuimen": [
+      "e13627ed-6512-4629-95b2-e2f5fc34b538"
+    ]
   },
   "verzekeringen-nl": {
     "film": "verzekeringen",
@@ -1901,8 +1993,8 @@
     "titel": "Het dashboard: uw kantoor in één scherm",
     "omschrijving": "Het startscherm gelezen zoals het bedoeld is: het jaar bovenaan, de vier tegels met aantallen en bedragen, de pijplijn met uw dossiers per fase, de drie grafieken over het gerealiseerde volume, het blok Vraagt aandacht met de termijnen, en het scherm waar u de fases zelf samenstelt. Plus waarom iedereen op het kantoor dezelfde cijfers ziet.",
     "hash": "faed20db733abc45",
-    "guid": "5a50d24b-dbc7-488b-b936-aa57ca5370f6",
-    "vorigeGuid": "2dfab4c8-0d93-4f57-9509-856abebe52c6",
+    "guid": "4245490c-74e3-4058-b7d7-505ffaabf008",
+    "vorigeGuid": "5a50d24b-dbc7-488b-b936-aa57ca5370f6",
     "hoofdstukken": [
       {
         "titel": "Het jaar stuurt alles",
@@ -1955,9 +2047,13 @@
         "eind": 166.24
       }
     ],
-    "gepubliceerdOp": "2026-11-20T15:27:02.624",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/5a50d24b-dbc7-488b-b936-aa57ca5370f6/thumbnail.jpg",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/5a50d24b-dbc7-488b-b936-aa57ca5370f6"
+    "gepubliceerdOp": "2026-11-24T04:01:03.01",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/4245490c-74e3-4058-b7d7-505ffaabf008/thumbnail.jpg",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/4245490c-74e3-4058-b7d7-505ffaabf008",
+    "gepubliceerdeHash": "faed20db733abc45",
+    "opTeRuimen": [
+      "2dfab4c8-0d93-4f57-9509-856abebe52c6"
+    ]
   },
   "dashboard-fr": {
     "film": "dashboard",
@@ -1976,8 +2072,8 @@
     "titel": "Le tableau de bord : votre bureau en un écran",
     "omschrijving": "L’écran d’accueil lu comme il se doit : l’année en haut, les quatre tuiles avec les nombres et les montants, le pipeline de vos dossiers par phase, les trois graphiques du volume réalisé, le bloc Demande de l’attention avec les échéances, et l’écran où vous composez les phases. Ainsi que la raison pour laquelle tout le bureau voit les mêmes chiffres.",
     "hash": "b20e4ba919c8b9a7",
-    "guid": "df3883f3-68b9-47ff-a9a9-0cc3e8438074",
-    "vorigeGuid": "dcc945fb-7fb2-4fe7-a687-dd300801277f",
+    "guid": "d1a0a41a-9d85-4010-8aec-cc6f565d9494",
+    "vorigeGuid": "df3883f3-68b9-47ff-a9a9-0cc3e8438074",
     "hoofdstukken": [
       {
         "titel": "L’année pilote tout",
@@ -2030,9 +2126,13 @@
         "eind": 156.81
       }
     ],
-    "gepubliceerdOp": "2026-11-20T15:29:28.416",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/df3883f3-68b9-47ff-a9a9-0cc3e8438074/thumbnail.jpg",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/df3883f3-68b9-47ff-a9a9-0cc3e8438074"
+    "gepubliceerdOp": "2026-11-24T04:01:18.429",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/d1a0a41a-9d85-4010-8aec-cc6f565d9494/thumbnail.jpg",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/d1a0a41a-9d85-4010-8aec-cc6f565d9494",
+    "gepubliceerdeHash": "b20e4ba919c8b9a7",
+    "opTeRuimen": [
+      "dcc945fb-7fb2-4fe7-a687-dd300801277f"
+    ]
   },
   "lijsten-en-rapporten-nl": {
     "film": "lijsten-en-rapporten",
@@ -2051,7 +2151,7 @@
     "titel": "Lijsten en rapporten: zoeken, filteren en meenemen",
     "omschrijving": "Elke lijst in CreditSoft werkt hetzelfde, en dit is hoe u ze naar uw hand zet: de keuzelijsten bovenaan, het trechtertje op een kolomkop, groeperen door een kolom te verslepen, en wat u meeneemt. Afdrukken en exporteren volgen altijd uw filters. Plus de negen rapporten, waar u een periode kiest en een voorbeeld krijgt dat u kan downloaden of doorsturen.",
     "hash": "1bbe19b1f6cd139c",
-    "guid": "0f5cc466-a4eb-45fc-9eee-e6b802157607",
+    "guid": "abd7c299-919e-49ad-be5e-ec7cf58ee475",
     "hoofdstukken": [
       {
         "titel": "Het globaal overzicht",
@@ -2099,10 +2199,14 @@
         "eind": 133.68
       }
     ],
-    "gepubliceerdOp": "2026-11-20T15:31:07.594",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/0f5cc466-a4eb-45fc-9eee-e6b802157607/thumbnail.jpg",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/0f5cc466-a4eb-45fc-9eee-e6b802157607",
-    "vorigeGuid": "45f19d60-29ca-430a-8e07-b2a76fe6a068"
+    "gepubliceerdOp": "2026-11-24T04:01:31.763",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/abd7c299-919e-49ad-be5e-ec7cf58ee475/thumbnail.jpg",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/abd7c299-919e-49ad-be5e-ec7cf58ee475",
+    "vorigeGuid": "0f5cc466-a4eb-45fc-9eee-e6b802157607",
+    "gepubliceerdeHash": "1bbe19b1f6cd139c",
+    "opTeRuimen": [
+      "45f19d60-29ca-430a-8e07-b2a76fe6a068"
+    ]
   },
   "lijsten-en-rapporten-fr": {
     "film": "lijsten-en-rapporten",
@@ -2121,7 +2225,7 @@
     "titel": "Listes et rapports : chercher, filtrer et emporter",
     "omschrijving": "Toutes les listes de CreditSoft fonctionnent de la même manière, et voici comment les adapter : les listes déroulantes du haut, l’entonnoir sur un en-tête de colonne, le regroupement en déplaçant une colonne, et ce que vous emportez. L’impression et l’export suivent toujours vos filtres. Ainsi que les neuf rapports, où vous choisissez une période et obtenez un aperçu.",
     "hash": "169070b87bb9e5a0",
-    "guid": "e9bab485-79a7-472e-8a60-581aa570834c",
+    "guid": "2e375afb-e080-4474-8a98-287e94a22159",
     "hoofdstukken": [
       {
         "titel": "L’aperçu global",
@@ -2169,10 +2273,14 @@
         "eind": 129.31
       }
     ],
-    "gepubliceerdOp": "2026-11-20T15:32:48.774",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/e9bab485-79a7-472e-8a60-581aa570834c/thumbnail.jpg",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/e9bab485-79a7-472e-8a60-581aa570834c",
-    "vorigeGuid": "600ef1a3-ee4a-487d-861e-3721e6742d3c"
+    "gepubliceerdOp": "2026-11-24T04:01:50.727",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/2e375afb-e080-4474-8a98-287e94a22159/thumbnail.jpg",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/2e375afb-e080-4474-8a98-287e94a22159",
+    "vorigeGuid": "e9bab485-79a7-472e-8a60-581aa570834c",
+    "gepubliceerdeHash": "169070b87bb9e5a0",
+    "opTeRuimen": [
+      "600ef1a3-ee4a-487d-861e-3721e6742d3c"
+    ]
   },
   "mailketen-nl": {
     "film": "mailketen",
@@ -2194,7 +2302,7 @@
     "titel": "De mailketen: van uw gegevens tot een verzonden bericht",
     "omschrijving": "Wat er allemaal klopt moet zijn vóór er één mail vertrekt, in de volgorde waarin het samenhangt: uw bedrijfsfiche die de variabelen vult, het verzendadres waar alles vanuit vertrekt, de tweetalige sjablonen met hun variabelenpalet en voorbeeld, en tot slot waar u ziet of een bericht werkelijk afgeleverd is, met de reden wanneer dat niet lukte.",
     "hash": "3f96dc818439e41d",
-    "guid": "03857717-291a-4551-be7a-ffc319860e32",
+    "guid": "2d9505e5-6d8f-4bc0-ab54-1bc6a20e213d",
     "hoofdstukken": [
       {
         "titel": "Uw eigen gegevens",
@@ -2237,9 +2345,11 @@
         "eind": 131.89
       }
     ],
-    "gepubliceerdOp": "2026-11-19T17:52:54.782",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/03857717-291a-4551-be7a-ffc319860e32/thumbnail.jpg",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/03857717-291a-4551-be7a-ffc319860e32"
+    "gepubliceerdOp": "2026-11-24T04:02:08.677",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/2d9505e5-6d8f-4bc0-ab54-1bc6a20e213d/thumbnail.jpg",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/2d9505e5-6d8f-4bc0-ab54-1bc6a20e213d",
+    "gepubliceerdeHash": "3f96dc818439e41d",
+    "vorigeGuid": "03857717-291a-4551-be7a-ffc319860e32"
   },
   "mailketen-fr": {
     "film": "mailketen",
@@ -2261,7 +2371,7 @@
     "titel": "La chaîne d’e-mails : de vos données au message envoyé",
     "omschrijving": "Tout ce qui doit être en ordre avant qu’un seul e-mail parte, dans l’ordre où cela s’enchaîne : votre fiche d’entreprise qui alimente les variables, l’adresse d’expédition d’où tout part, les modèles bilingues avec leur panneau de variables et leur aperçu, et enfin l’endroit où vous voyez si un message a réellement été distribué, avec le motif lorsque cela échoue.",
     "hash": "71f4dafd7bbe031e",
-    "guid": "be4315d1-5a32-4d74-817d-7a63d32559ed",
+    "guid": "ca169691-fbbd-469f-a412-733ed24cb479",
     "hoofdstukken": [
       {
         "titel": "Vos propres données",
@@ -2304,9 +2414,11 @@
         "eind": 128.74
       }
     ],
-    "gepubliceerdOp": "2026-11-19T17:53:17.576",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/be4315d1-5a32-4d74-817d-7a63d32559ed/thumbnail.jpg",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/be4315d1-5a32-4d74-817d-7a63d32559ed"
+    "gepubliceerdOp": "2026-11-24T04:02:23.201",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/ca169691-fbbd-469f-a412-733ed24cb479/thumbnail.jpg",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/ca169691-fbbd-469f-a412-733ed24cb479",
+    "gepubliceerdeHash": "71f4dafd7bbe031e",
+    "vorigeGuid": "be4315d1-5a32-4d74-817d-7a63d32559ed"
   },
   "klantportaal-nl": {
     "film": "klantportaal",
@@ -2325,8 +2437,8 @@
     "titel": "Het klantenportaal: hoe uw klant u ziet",
     "omschrijving": "Uw klant krijgt een link en belandt op een portaal. Dit is waar u bepaalt wat hij daar ziet: uw naam, uw kleur, uw logo en een welkomsttekst in beide talen. Elk veld dat u leeg laat, valt terug op uw bedrijfsfiche. U hoeft dus niets in te vullen om te beginnen. En tot slot het resultaat, zoals uw klant het krijgt.",
     "hash": "7befb05fd43224a4",
-    "guid": "4b1d08bc-211e-4d8b-a72a-c578e28baf04",
-    "vorigeGuid": "c16a4c13-e717-4c44-a8c5-84e097c1d86b",
+    "guid": "ac85d87e-e951-456f-9fe6-f9b12de2eefe",
+    "vorigeGuid": "4b1d08bc-211e-4d8b-a72a-c578e28baf04",
     "hoofdstukken": [
       {
         "titel": "Uw portaal instellen",
@@ -2359,9 +2471,13 @@
         "eind": 78.51
       }
     ],
-    "gepubliceerdOp": "2026-11-09T13:18:43.867",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/4b1d08bc-211e-4d8b-a72a-c578e28baf04/thumbnail.jpg",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/4b1d08bc-211e-4d8b-a72a-c578e28baf04"
+    "gepubliceerdOp": "2026-11-24T04:02:35.991",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/ac85d87e-e951-456f-9fe6-f9b12de2eefe/thumbnail.jpg",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/ac85d87e-e951-456f-9fe6-f9b12de2eefe",
+    "gepubliceerdeHash": "7befb05fd43224a4",
+    "opTeRuimen": [
+      "c16a4c13-e717-4c44-a8c5-84e097c1d86b"
+    ]
   },
   "klantportaal-fr": {
     "film": "klantportaal",
@@ -2380,8 +2496,8 @@
     "titel": "Le portail client : comment votre client vous voit",
     "omschrijving": "Votre client reçoit un lien et arrive sur un portail. C’est ici que vous déterminez ce qu’il y voit : votre nom, votre couleur, votre logo et un texte d’accueil dans les deux langues. Chaque champ laissé vide reprend votre fiche d’entreprise. Vous n’avez donc rien à remplir pour démarrer. Et pour finir le résultat, tel que votre client le reçoit.",
     "hash": "ed1360d46f46c79b",
-    "guid": "8ab5ceb4-1557-4a7a-9aa7-7b700cb08d0c",
-    "vorigeGuid": "499595bf-3c18-4442-8a0c-1d1756d92383",
+    "guid": "74bfd9ea-bdee-476d-afb9-453763a7aa38",
+    "vorigeGuid": "8ab5ceb4-1557-4a7a-9aa7-7b700cb08d0c",
     "hoofdstukken": [
       {
         "titel": "Configurer votre portail",
@@ -2414,9 +2530,13 @@
         "eind": 73.93
       }
     ],
-    "gepubliceerdOp": "2026-11-09T13:21:23.48",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/8ab5ceb4-1557-4a7a-9aa7-7b700cb08d0c/thumbnail.jpg",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/8ab5ceb4-1557-4a7a-9aa7-7b700cb08d0c"
+    "gepubliceerdOp": "2026-11-24T04:02:49.059",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/74bfd9ea-bdee-476d-afb9-453763a7aa38/thumbnail.jpg",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/74bfd9ea-bdee-476d-afb9-453763a7aa38",
+    "gepubliceerdeHash": "ed1360d46f46c79b",
+    "opTeRuimen": [
+      "499595bf-3c18-4442-8a0c-1d1756d92383"
+    ]
   },
   "klantportaal-website-nl": {
     "film": "klantportaal",
@@ -2435,7 +2555,7 @@
     "titel": "Het klantenportaal: hoe uw klant u ziet",
     "omschrijving": "Stel uw klantenportaal één keer in: uw naam, uw kleur en een welkomsttekst in beide talen. Daarna ziet elke klant zijn dossier in uw huisstijl, met de documenten die u nog nodig hebt.",
     "hash": "cd8e21ed4bbd1742",
-    "guid": "e3043585-8577-452b-b60b-fb689677205e",
+    "guid": "98d06830-6398-446d-aa0f-7c8f693f57f5",
     "hoofdstukken": [
       {
         "titel": "Uw portaal instellen",
@@ -2463,10 +2583,14 @@
         "eind": 36.88
       }
     ],
-    "gepubliceerdOp": "2026-11-09T13:23:52.115",
-    "vorigeGuid": "bf7b5bf1-37ae-4d54-bda3-47e65e3ce02a",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/e3043585-8577-452b-b60b-fb689677205e/thumbnail.jpg",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/e3043585-8577-452b-b60b-fb689677205e"
+    "gepubliceerdOp": "2026-11-24T04:03:00.735",
+    "vorigeGuid": "e3043585-8577-452b-b60b-fb689677205e",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/98d06830-6398-446d-aa0f-7c8f693f57f5/thumbnail.jpg",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/98d06830-6398-446d-aa0f-7c8f693f57f5",
+    "gepubliceerdeHash": "cd8e21ed4bbd1742",
+    "opTeRuimen": [
+      "bf7b5bf1-37ae-4d54-bda3-47e65e3ce02a"
+    ]
   },
   "klantportaal-website-fr": {
     "film": "klantportaal",
@@ -2485,7 +2609,7 @@
     "titel": "Le portail client : comment votre client vous voit",
     "omschrijving": "Configurez votre portail client une fois : votre nom, votre couleur et un texte d’accueil bilingue. Chaque client voit ensuite son dossier à vos couleurs, avec les documents attendus.",
     "hash": "ceb35d1581ac9a43",
-    "guid": "2e59649b-ac02-4ef8-9c1d-ae021a4de9ff",
+    "guid": "f513320d-08af-4b80-a6af-1d38faecc54d",
     "hoofdstukken": [
       {
         "titel": "Configurer votre portail",
@@ -2513,10 +2637,14 @@
         "eind": 39.42
       }
     ],
-    "gepubliceerdOp": "2026-11-09T13:26:07.143",
-    "vorigeGuid": "eefcd23f-bb8e-4d79-b11d-b7f7a7048628",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/2e59649b-ac02-4ef8-9c1d-ae021a4de9ff/thumbnail.jpg",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/2e59649b-ac02-4ef8-9c1d-ae021a4de9ff"
+    "gepubliceerdOp": "2026-11-24T04:03:20.151",
+    "vorigeGuid": "2e59649b-ac02-4ef8-9c1d-ae021a4de9ff",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/f513320d-08af-4b80-a6af-1d38faecc54d/thumbnail.jpg",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/f513320d-08af-4b80-a6af-1d38faecc54d",
+    "gepubliceerdeHash": "ceb35d1581ac9a43",
+    "opTeRuimen": [
+      "eefcd23f-bb8e-4d79-b11d-b7f7a7048628"
+    ]
   },
   "klantportaal-website-en": {
     "film": "klantportaal",
@@ -2535,7 +2663,7 @@
     "titel": "The client portal: how your client sees you",
     "omschrijving": "Set up your client portal once: your name, your colour and a welcome text in both languages. Every client then sees their file in your style, with the documents you still need.",
     "hash": "63b28dd1a8312cdc",
-    "guid": "90670e70-ef44-4508-88d1-af49e888a649",
+    "guid": "ca447c3f-f3be-4257-93ea-d48add286654",
     "hoofdstukken": [
       {
         "titel": "Your portal",
@@ -2563,10 +2691,14 @@
         "eind": 37.16
       }
     ],
-    "gepubliceerdOp": "2026-11-09T13:28:15.239",
-    "vorigeGuid": "8e8ac8da-01da-456c-a5be-862418b897af",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/90670e70-ef44-4508-88d1-af49e888a649/thumbnail.jpg",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/90670e70-ef44-4508-88d1-af49e888a649"
+    "gepubliceerdOp": "2026-11-24T04:03:31.39",
+    "vorigeGuid": "90670e70-ef44-4508-88d1-af49e888a649",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/ca447c3f-f3be-4257-93ea-d48add286654/thumbnail.jpg",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/ca447c3f-f3be-4257-93ea-d48add286654",
+    "gepubliceerdeHash": "63b28dd1a8312cdc",
+    "opTeRuimen": [
+      "8e8ac8da-01da-456c-a5be-862418b897af"
+    ]
   },
   "commissie-uitbetalen-website-nl": {
     "film": "commissie-uitbetalen",
@@ -2586,7 +2718,7 @@
     "titel": "Commissie uitbetalen: van borderel tot fiche 281.50",
     "omschrijving": "De afrekening van elke aanbrenger per periode, tot op de lijn: welk dossier en welk krediet elk bedrag opleverde. Uit dezelfde boekingen komt de fiche 281.50, zonder iets over te typen.",
     "hash": "f56701a666ea6689",
-    "guid": "bd050713-e271-4a8a-9337-063fea736aea",
+    "guid": "bdbb63d3-2f8a-4274-81cd-003242ce3471",
     "hoofdstukken": [
       {
         "titel": "De borderellen",
@@ -2614,10 +2746,14 @@
         "eind": 37.42
       }
     ],
-    "gepubliceerdOp": "2026-11-20T15:34:03.014",
-    "vorigeGuid": "4df84736-b79b-45a8-85d0-b8221270e942",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/bd050713-e271-4a8a-9337-063fea736aea/thumbnail.jpg",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/bd050713-e271-4a8a-9337-063fea736aea"
+    "gepubliceerdOp": "2026-11-24T04:03:42.682",
+    "vorigeGuid": "bd050713-e271-4a8a-9337-063fea736aea",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/bdbb63d3-2f8a-4274-81cd-003242ce3471/thumbnail.jpg",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/bdbb63d3-2f8a-4274-81cd-003242ce3471",
+    "gepubliceerdeHash": "f56701a666ea6689",
+    "opTeRuimen": [
+      "4df84736-b79b-45a8-85d0-b8221270e942"
+    ]
   },
   "commissie-uitbetalen-website-fr": {
     "film": "commissie-uitbetalen",
@@ -2637,7 +2773,7 @@
     "titel": "Payer la commission : du bordereau à la fiche 281.50",
     "omschrijving": "Le décompte de chaque apporteur par période, jusqu’à la ligne : le dossier et le crédit d’où vient chaque montant. Des mêmes écritures sort la fiche 281.50, sans rien recopier.",
     "hash": "1eec6c6a4d3c7e22",
-    "guid": "f57b3f65-2627-45e3-a755-aaac052c5a00",
+    "guid": "94a4e829-2167-44b5-b7a3-5e217cab3b4b",
     "hoofdstukken": [
       {
         "titel": "Les bordereaux",
@@ -2665,10 +2801,14 @@
         "eind": 37.62
       }
     ],
-    "gepubliceerdOp": "2026-11-20T15:35:21.149",
-    "vorigeGuid": "877e88e4-e849-4524-9877-4e5e9c244d9d",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/f57b3f65-2627-45e3-a755-aaac052c5a00/thumbnail.jpg",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/f57b3f65-2627-45e3-a755-aaac052c5a00"
+    "gepubliceerdOp": "2026-11-24T04:03:53.879",
+    "vorigeGuid": "f57b3f65-2627-45e3-a755-aaac052c5a00",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/94a4e829-2167-44b5-b7a3-5e217cab3b4b/thumbnail.jpg",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/94a4e829-2167-44b5-b7a3-5e217cab3b4b",
+    "gepubliceerdeHash": "1eec6c6a4d3c7e22",
+    "opTeRuimen": [
+      "877e88e4-e849-4524-9877-4e5e9c244d9d"
+    ]
   },
   "commissie-uitbetalen-website-en": {
     "film": "commissie-uitbetalen",
@@ -2688,7 +2828,7 @@
     "titel": "Paying commission: from statement to 281.50 tax form",
     "omschrijving": "Each broker’s statement per period, down to the line: which file and which credit produced each amount. The 281.50 tax form comes from the same entries, without retyping anything.",
     "hash": "7ba3311fe76c4f14",
-    "guid": "89683c6a-3ba7-43f5-b725-cc84880ceaef",
+    "guid": "95bcc673-9045-49d8-a385-2403f297978e",
     "hoofdstukken": [
       {
         "titel": "The statements",
@@ -2716,10 +2856,14 @@
         "eind": 37.51
       }
     ],
-    "gepubliceerdOp": "2026-11-20T15:36:53.987",
-    "vorigeGuid": "3157e0b3-dc9c-4d68-922d-127b7124e77d",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/89683c6a-3ba7-43f5-b725-cc84880ceaef/thumbnail.jpg",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/89683c6a-3ba7-43f5-b725-cc84880ceaef"
+    "gepubliceerdOp": "2026-11-24T04:04:05.055",
+    "vorigeGuid": "89683c6a-3ba7-43f5-b725-cc84880ceaef",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/95bcc673-9045-49d8-a385-2403f297978e/thumbnail.jpg",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/95bcc673-9045-49d8-a385-2403f297978e",
+    "gepubliceerdeHash": "7ba3311fe76c4f14",
+    "opTeRuimen": [
+      "3157e0b3-dc9c-4d68-922d-127b7124e77d"
+    ]
   },
   "dashboard-website-nl": {
     "film": "dashboard",
@@ -2737,8 +2881,8 @@
     "titel": "Het dashboard: uw kantoor in één scherm",
     "omschrijving": "Het jaar van uw kantoor op één scherm: aktes en dossiers met hun bedrag, elk dossier in zijn fase, en het gerealiseerde volume per maand, per instelling en per verantwoordelijke.",
     "hash": "94cb2fba614c47df",
-    "guid": "1e04f50a-533f-446f-a77a-5d091b74f7f3",
-    "vorigeGuid": "cc156e52-0095-41a0-bca1-464840114b43",
+    "guid": "1439b312-7958-4a84-b0ac-398b9e48596c",
+    "vorigeGuid": "1e04f50a-533f-446f-a77a-5d091b74f7f3",
     "hoofdstukken": [
       {
         "titel": "Het jaar stuurt alles",
@@ -2766,9 +2910,13 @@
         "eind": 34.62
       }
     ],
-    "gepubliceerdOp": "2026-11-20T15:38:22.313",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/1e04f50a-533f-446f-a77a-5d091b74f7f3/thumbnail.jpg",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/1e04f50a-533f-446f-a77a-5d091b74f7f3"
+    "gepubliceerdOp": "2026-11-24T04:04:16.212",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/1439b312-7958-4a84-b0ac-398b9e48596c/thumbnail.jpg",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/1439b312-7958-4a84-b0ac-398b9e48596c",
+    "gepubliceerdeHash": "94cb2fba614c47df",
+    "opTeRuimen": [
+      "cc156e52-0095-41a0-bca1-464840114b43"
+    ]
   },
   "dashboard-website-fr": {
     "film": "dashboard",
@@ -2786,8 +2934,8 @@
     "titel": "Le tableau de bord : votre bureau en un écran",
     "omschrijving": "L’année de votre bureau sur un écran : actes et dossiers avec leur montant, chaque dossier dans sa phase, et le volume réalisé par mois, par institution et par responsable.",
     "hash": "d17497aa0201993d",
-    "guid": "fadd3de0-b3da-467a-ab31-48af4580f9cd",
-    "vorigeGuid": "0409aeab-0480-4211-a995-7420878abfbe",
+    "guid": "975033f5-bc90-4083-9896-f123e84e0884",
+    "vorigeGuid": "fadd3de0-b3da-467a-ab31-48af4580f9cd",
     "hoofdstukken": [
       {
         "titel": "L’année pilote tout",
@@ -2815,9 +2963,13 @@
         "eind": 34.77
       }
     ],
-    "gepubliceerdOp": "2026-11-20T15:39:54.92",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/fadd3de0-b3da-467a-ab31-48af4580f9cd/thumbnail.jpg",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/fadd3de0-b3da-467a-ab31-48af4580f9cd"
+    "gepubliceerdOp": "2026-11-24T04:04:27.297",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/975033f5-bc90-4083-9896-f123e84e0884/thumbnail.jpg",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/975033f5-bc90-4083-9896-f123e84e0884",
+    "gepubliceerdeHash": "d17497aa0201993d",
+    "opTeRuimen": [
+      "0409aeab-0480-4211-a995-7420878abfbe"
+    ]
   },
   "dashboard-website-en": {
     "film": "dashboard",
@@ -2835,8 +2987,8 @@
     "titel": "The dashboard: your working screen",
     "omschrijving": "Your office’s year on one screen: deeds and files with their amounts, every file in the phase it is in, and the realised volume by month, by lender and by person responsible.",
     "hash": "52c42a859ce6633f",
-    "guid": "aa96b4ea-858f-4b76-8e96-507b7afc0742",
-    "vorigeGuid": "ec88b7e0-56ba-4b78-ba78-1562db2302f9",
+    "guid": "211d9180-30fd-4d9c-8189-061ca8a2b20a",
+    "vorigeGuid": "aa96b4ea-858f-4b76-8e96-507b7afc0742",
     "hoofdstukken": [
       {
         "titel": "Your home screen",
@@ -2864,9 +3016,13 @@
         "eind": 34.1
       }
     ],
-    "gepubliceerdOp": "2026-11-20T15:40:57.978",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/aa96b4ea-858f-4b76-8e96-507b7afc0742/thumbnail.jpg",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/aa96b4ea-858f-4b76-8e96-507b7afc0742"
+    "gepubliceerdOp": "2026-11-24T04:04:38.757",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/211d9180-30fd-4d9c-8189-061ca8a2b20a/thumbnail.jpg",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/211d9180-30fd-4d9c-8189-061ca8a2b20a",
+    "gepubliceerdeHash": "52c42a859ce6633f",
+    "opTeRuimen": [
+      "ec88b7e0-56ba-4b78-ba78-1562db2302f9"
+    ]
   },
   "leads-website-nl": {
     "film": "leads",
@@ -2884,8 +3040,8 @@
     "titel": "Leads in CreditSoft: van aanvraag tot klant",
     "omschrijving": "Iedereen die zich meldt op één werklijst, met hoe lang hij wacht en via welk kanaal hij binnenkwam. Per lead ziet u wat hij vraagt en wie hem opvolgt, tot hij klant wordt.",
     "hash": "1346184757aed050",
-    "guid": "1a1bafd2-0d77-46c3-a964-33200d06b064",
-    "vorigeGuid": "dc444df5-825e-41d5-92dd-9a27454d9077",
+    "guid": "3b5c77f9-8bbb-49f3-9c3c-e90d1238ebe2",
+    "vorigeGuid": "1a1bafd2-0d77-46c3-a964-33200d06b064",
     "hoofdstukken": [
       {
         "titel": "De werklijst",
@@ -2913,9 +3069,13 @@
         "eind": 38.51
       }
     ],
-    "gepubliceerdOp": "2026-11-20T17:23:57.305",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/1a1bafd2-0d77-46c3-a964-33200d06b064/thumbnail.jpg",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/1a1bafd2-0d77-46c3-a964-33200d06b064"
+    "gepubliceerdOp": "2026-11-24T04:04:49.856",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/3b5c77f9-8bbb-49f3-9c3c-e90d1238ebe2/thumbnail.jpg",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/3b5c77f9-8bbb-49f3-9c3c-e90d1238ebe2",
+    "gepubliceerdeHash": "1346184757aed050",
+    "opTeRuimen": [
+      "dc444df5-825e-41d5-92dd-9a27454d9077"
+    ]
   },
   "leads-website-fr": {
     "film": "leads",
@@ -2933,8 +3093,8 @@
     "titel": "Les leads dans CreditSoft : de la demande au client",
     "omschrijving": "Toute demande entrante sur une seule liste, avec son temps d’attente et son canal d’arrivée. Pour chaque lead : ce qu’il demande et qui le suit, jusqu’à ce qu’il devienne client.",
     "hash": "0351665e1d8ddb27",
-    "guid": "547eaf23-f98c-4c73-ba38-ed3440e0b6a7",
-    "vorigeGuid": "ae994439-58c2-421c-888d-50a27e59e6ee",
+    "guid": "8262bc9a-67fa-43ed-ac4a-3dd817dfb340",
+    "vorigeGuid": "547eaf23-f98c-4c73-ba38-ed3440e0b6a7",
     "hoofdstukken": [
       {
         "titel": "La liste de travail",
@@ -2962,9 +3122,13 @@
         "eind": 39
       }
     ],
-    "gepubliceerdOp": "2026-11-20T17:27:06.397",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/547eaf23-f98c-4c73-ba38-ed3440e0b6a7/thumbnail.jpg",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/547eaf23-f98c-4c73-ba38-ed3440e0b6a7"
+    "gepubliceerdOp": "2026-11-24T04:05:02.242",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/8262bc9a-67fa-43ed-ac4a-3dd817dfb340/thumbnail.jpg",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/8262bc9a-67fa-43ed-ac4a-3dd817dfb340",
+    "gepubliceerdeHash": "0351665e1d8ddb27",
+    "opTeRuimen": [
+      "ae994439-58c2-421c-888d-50a27e59e6ee"
+    ]
   },
   "leads-website-en": {
     "film": "leads",
@@ -2982,8 +3146,8 @@
     "titel": "Leads in CreditSoft: from enquiry to client",
     "omschrijving": "Everyone who gets in touch on one worklist, with how long they have waited and which channel they came through. Per lead: what they ask and who follows up, until they become a client.",
     "hash": "eddcbf7e0bdd7cb8",
-    "guid": "66dd6aff-b485-4cf7-b3c4-a095f081db49",
-    "vorigeGuid": "fd958ce2-f67c-4797-84f2-57223dcc067e",
+    "guid": "b269786e-7e8f-4a4e-8ba2-2bbe5eac9878",
+    "vorigeGuid": "66dd6aff-b485-4cf7-b3c4-a095f081db49",
     "hoofdstukken": [
       {
         "titel": "The worklist",
@@ -3011,9 +3175,13 @@
         "eind": 39.28
       }
     ],
-    "gepubliceerdOp": "2026-11-20T17:30:25.663",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/66dd6aff-b485-4cf7-b3c4-a095f081db49/thumbnail.jpg",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/66dd6aff-b485-4cf7-b3c4-a095f081db49"
+    "gepubliceerdOp": "2026-11-24T04:05:13.322",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/b269786e-7e8f-4a4e-8ba2-2bbe5eac9878/thumbnail.jpg",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/b269786e-7e8f-4a4e-8ba2-2bbe5eac9878",
+    "gepubliceerdeHash": "eddcbf7e0bdd7cb8",
+    "opTeRuimen": [
+      "fd958ce2-f67c-4797-84f2-57223dcc067e"
+    ]
   },
   "adviesdossier-nl": {
     "film": "adviesdossier",
@@ -3032,7 +3200,7 @@
     "titel": "Het adviesdossier in CreditSoft: vastleggen wat u voorstelde",
     "omschrijving": "Per kredietdossier legt u vast of u advies geeft en op welke basis, wat de klant u vertelde, welke kredieten u naast elkaar legde en waarom u er één voorstelt. Uw klant krijgt een afschrift in zijn taal, als kredietvergelijking, en CreditSoft houdt bij hoe en wanneer hij het kreeg.",
     "hash": "fb1de07c7572bcd9",
-    "guid": "b11d5042-47e9-49ff-83c8-1cd5cf169a31",
+    "guid": "ae232427-8d5e-4b76-8434-ef34b6176275",
     "hoofdstukken": [
       {
         "titel": "Het tabblad Advies",
@@ -3090,10 +3258,14 @@
         "eind": 159.37
       }
     ],
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/b11d5042-47e9-49ff-83c8-1cd5cf169a31/thumbnail.jpg",
-    "gepubliceerdOp": "2026-11-20T17:33:50.536",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/b11d5042-47e9-49ff-83c8-1cd5cf169a31",
-    "vorigeGuid": "220f4916-8911-4345-834e-7f4f9d6371df"
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/ae232427-8d5e-4b76-8434-ef34b6176275/thumbnail.jpg",
+    "gepubliceerdOp": "2026-11-24T04:05:19.261",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/ae232427-8d5e-4b76-8434-ef34b6176275",
+    "vorigeGuid": "b11d5042-47e9-49ff-83c8-1cd5cf169a31",
+    "gepubliceerdeHash": "fb1de07c7572bcd9",
+    "opTeRuimen": [
+      "220f4916-8911-4345-834e-7f4f9d6371df"
+    ]
   },
   "adviesdossier-fr": {
     "film": "adviesdossier",
@@ -3112,7 +3284,7 @@
     "titel": "Le dossier de conseil dans CreditSoft : garder ce que vous avez proposé",
     "omschrijving": "Pour chaque dossier de crédit, vous indiquez si vous donnez un conseil et sur quelle base, ce que le client vous a dit, quels crédits vous avez comparés et pourquoi vous en proposez un. Votre client reçoit une copie dans sa langue, sous forme de comparaison de crédits, et CreditSoft garde comment et quand il l’a reçue.",
     "hash": "a475261cd649890a",
-    "guid": "aaa803c5-a807-4cb2-af54-9b6ceb1fca1b",
+    "guid": "b3566377-fb9c-4cfb-8814-bc330b3f05a3",
     "hoofdstukken": [
       {
         "titel": "L’onglet Conseil",
@@ -3170,10 +3342,14 @@
         "eind": 147.71
       }
     ],
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/aaa803c5-a807-4cb2-af54-9b6ceb1fca1b/thumbnail.jpg",
-    "gepubliceerdOp": "2026-11-20T17:37:13.686",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/aaa803c5-a807-4cb2-af54-9b6ceb1fca1b",
-    "vorigeGuid": "25671168-77e2-4b7a-aca2-35c5032e0c56"
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/b3566377-fb9c-4cfb-8814-bc330b3f05a3/thumbnail.jpg",
+    "gepubliceerdOp": "2026-11-24T04:05:34.744",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/b3566377-fb9c-4cfb-8814-bc330b3f05a3",
+    "vorigeGuid": "aaa803c5-a807-4cb2-af54-9b6ceb1fca1b",
+    "gepubliceerdeHash": "a475261cd649890a",
+    "opTeRuimen": [
+      "25671168-77e2-4b7a-aca2-35c5032e0c56"
+    ]
   },
   "adviesdossier-website-nl": {
     "film": "adviesdossier",
@@ -3192,7 +3368,7 @@
     "titel": "Het adviesdossier in CreditSoft: vastleggen wat u voorstelde",
     "omschrijving": "Leg per dossier vast welk advies u gaf: de kredieten die u vergeleek naast elkaar, bank en cijfers overgenomen uit het contract, en een afschrift voor uw klant in zijn taal.",
     "hash": "57075b6d7f3977f7",
-    "guid": "900f75a8-91e5-47e1-b1b7-c7ff81f0a65e",
+    "guid": "837da355-05dd-4ad9-b871-912dffa54391",
     "hoofdstukken": [
       {
         "titel": "Het tabblad Advies",
@@ -3220,10 +3396,14 @@
         "eind": 44.21
       }
     ],
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/900f75a8-91e5-47e1-b1b7-c7ff81f0a65e/thumbnail.jpg",
-    "gepubliceerdOp": "2026-11-20T15:42:22.06",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/900f75a8-91e5-47e1-b1b7-c7ff81f0a65e",
-    "vorigeGuid": "aa1c21eb-e2ea-4da5-aa9a-282ee715154c"
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/837da355-05dd-4ad9-b871-912dffa54391/thumbnail.jpg",
+    "gepubliceerdOp": "2026-11-24T04:05:48.466",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/837da355-05dd-4ad9-b871-912dffa54391",
+    "vorigeGuid": "900f75a8-91e5-47e1-b1b7-c7ff81f0a65e",
+    "gepubliceerdeHash": "57075b6d7f3977f7",
+    "opTeRuimen": [
+      "aa1c21eb-e2ea-4da5-aa9a-282ee715154c"
+    ]
   },
   "adviesdossier-website-fr": {
     "film": "adviesdossier",
@@ -3242,7 +3422,7 @@
     "titel": "Le dossier de conseil dans CreditSoft : garder ce que vous avez proposé",
     "omschrijving": "Consignez dans chaque dossier le conseil donné : les crédits comparés côte à côte, banque et chiffres repris du contrat, et une copie pour votre client dans sa langue.",
     "hash": "db21d980fb4c5bba",
-    "guid": "5eeddb2f-8745-4ddb-8e56-2108f51a3c93",
+    "guid": "1805999d-0275-4436-8f54-99de79b4a1f2",
     "hoofdstukken": [
       {
         "titel": "L’onglet Conseil",
@@ -3270,10 +3450,14 @@
         "eind": 43.84
       }
     ],
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/5eeddb2f-8745-4ddb-8e56-2108f51a3c93/thumbnail.jpg",
-    "gepubliceerdOp": "2026-11-20T15:42:33.379",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/5eeddb2f-8745-4ddb-8e56-2108f51a3c93",
-    "vorigeGuid": "03f3f2f9-59c2-4387-b923-77fd3ab56b05"
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/1805999d-0275-4436-8f54-99de79b4a1f2/thumbnail.jpg",
+    "gepubliceerdOp": "2026-11-24T04:05:59.669",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/1805999d-0275-4436-8f54-99de79b4a1f2",
+    "vorigeGuid": "5eeddb2f-8745-4ddb-8e56-2108f51a3c93",
+    "gepubliceerdeHash": "db21d980fb4c5bba",
+    "opTeRuimen": [
+      "03f3f2f9-59c2-4387-b923-77fd3ab56b05"
+    ]
   },
   "adviesdossier-website-en": {
     "film": "adviesdossier",
@@ -3292,7 +3476,7 @@
     "titel": "The advice file in CreditSoft: recording what you proposed",
     "omschrijving": "Record the advice you gave in each file: the credits you compared side by side, bank and figures taken from the contract, and a copy for your client in their language.",
     "hash": "ee4e48796a920cce",
-    "guid": "0e39cf5a-e5c8-4d2f-95dd-67e5461dbe4d",
+    "guid": "1cd6bc95-f99e-433a-a93e-aea0c91813fc",
     "hoofdstukken": [
       {
         "titel": "The Advice tab",
@@ -3320,9 +3504,13 @@
         "eind": 43.84
       }
     ],
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/0e39cf5a-e5c8-4d2f-95dd-67e5461dbe4d/thumbnail.jpg",
-    "gepubliceerdOp": "2026-11-20T15:42:44.857",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/0e39cf5a-e5c8-4d2f-95dd-67e5461dbe4d",
-    "vorigeGuid": "a508e9da-18f8-4eb6-b8a2-5a9b666876ec"
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/1cd6bc95-f99e-433a-a93e-aea0c91813fc/thumbnail.jpg",
+    "gepubliceerdOp": "2026-11-24T04:06:11.648",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/1cd6bc95-f99e-433a-a93e-aea0c91813fc",
+    "vorigeGuid": "0e39cf5a-e5c8-4d2f-95dd-67e5461dbe4d",
+    "gepubliceerdeHash": "ee4e48796a920cce",
+    "opTeRuimen": [
+      "a508e9da-18f8-4eb6-b8a2-5a9b666876ec"
+    ]
   }
 }
