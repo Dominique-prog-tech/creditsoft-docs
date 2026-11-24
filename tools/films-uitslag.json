@@ -1785,7 +1785,7 @@
     "titel": "Verzekeringen: het overzicht en uw verzekeraars",
     "omschrijving": "Alle schuldsaldoverzekeringen bij uw dossiers op één lijst: kiezen wat u wil zien met de drie filters bovenaan, en de kolommen die u erbij zet, zoals wie er verzekerd is, of de polis nog voorlopig is en of de aanvraaglink vertrokken is. Verder het verschil tussen de status van de polis en die van het dossier, de lijst afdrukken of exporteren, en de fiches van uw verzekeraars.",
     "hash": "6787b0ec01918ae4",
-    "guid": "60e82524-64d1-4059-b9f6-6941fa17eb07",
+    "guid": "37938964-7519-4b13-8bf9-bcc96a2c8c0d",
     "hoofdstukken": [
       {
         "titel": "Alle polissen samen",
@@ -1828,9 +1828,11 @@
         "eind": 124.9
       }
     ],
-    "gepubliceerdOp": "2026-11-20T17:16:34.129",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/60e82524-64d1-4059-b9f6-6941fa17eb07/thumbnail.jpg",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/60e82524-64d1-4059-b9f6-6941fa17eb07"
+    "gepubliceerdOp": "2026-11-24T16:23:22.458",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/37938964-7519-4b13-8bf9-bcc96a2c8c0d/thumbnail.jpg",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/37938964-7519-4b13-8bf9-bcc96a2c8c0d",
+    "gepubliceerdeHash": "6787b0ec01918ae4",
+    "vorigeGuid": "60e82524-64d1-4059-b9f6-6941fa17eb07"
   },
   "verzekeringen-fr": {
     "film": "verzekeringen",
@@ -1849,7 +1851,7 @@
     "titel": "Assurances : l’aperçu et vos assureurs",
     "omschrijving": "Toutes les assurances solde restant dû de vos dossiers sur une seule liste : choisir ce que vous voulez voir avec les trois filtres du haut, et les colonnes que vous ajoutez, comme qui est assuré, si la police est encore provisoire et si le lien de demande est parti. Ensuite la différence entre le statut de la police et celui du dossier, imprimer ou exporter la liste, et les fiches de vos assureurs.",
     "hash": "a94de511c307125b",
-    "guid": "88da9bac-578a-43fc-a596-ed9f7b82f5a1",
+    "guid": "60178b9c-02ab-4ad9-9d27-c9ff024c674b",
     "hoofdstukken": [
       {
         "titel": "Toutes les polices ensemble",
@@ -1892,9 +1894,11 @@
         "eind": 118.43
       }
     ],
-    "gepubliceerdOp": "2026-11-20T17:20:21.148",
-    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/88da9bac-578a-43fc-a596-ed9f7b82f5a1/thumbnail.jpg",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/88da9bac-578a-43fc-a596-ed9f7b82f5a1"
+    "gepubliceerdOp": "2026-11-24T16:26:29.07",
+    "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/60178b9c-02ab-4ad9-9d27-c9ff024c674b/thumbnail.jpg",
+    "embed": "https://iframe.mediadelivery.net/embed/741183/60178b9c-02ab-4ad9-9d27-c9ff024c674b",
+    "gepubliceerdeHash": "a94de511c307125b",
+    "vorigeGuid": "88da9bac-578a-43fc-a596-ed9f7b82f5a1"
   },
   "dashboard-nl": {
     "film": "dashboard",
