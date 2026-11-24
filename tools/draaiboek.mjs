@@ -1079,11 +1079,11 @@ export const FILMS = [
     },
     omschrijving: {
       nl: 'Alle schuldsaldoverzekeringen bij uw dossiers op één lijst: kiezen wat u wil zien met de drie '
-        + 'filters bovenaan, en de kolommen die ertoe doen, zoals wie er verzekerd is, of de polis nog voorlopig is '
+        + 'filters bovenaan, en de kolommen die u erbij zet, zoals wie er verzekerd is, of de polis nog voorlopig is '
         + 'en of de aanvraaglink vertrokken is. Verder het verschil tussen de status van de polis en die van het '
         + 'dossier, de lijst afdrukken of exporteren, en de fiches van uw verzekeraars.',
       fr: 'Toutes les assurances solde restant dû de vos dossiers sur une seule liste : choisir ce que vous '
-        + 'voulez voir avec les trois filtres du haut, et les colonnes qui comptent, comme qui est assuré, si la '
+        + 'voulez voir avec les trois filtres du haut, et les colonnes que vous ajoutez, comme qui est assuré, si la '
         + 'police est encore provisoire et si le lien de demande est parti. Ensuite la différence entre le statut '
         + 'de la police et celui du dossier, imprimer ou exporter la liste, et les fiches de vos assureurs.',
     },
@@ -1101,23 +1101,21 @@ export const FILMS = [
         nl: 'Bovenaan staan drie keuzes: het product, de status, en de collega die opvolgt. Zo houdt u over wat u nu nodig heeft.',
         fr: "En haut, trois choix : le produit, le statut, et le collègue qui assure le suivi. Vous ne gardez ainsi que ce dont vous avez besoin maintenant." },
 
-      { naam: 'kolommen', kop: { nl: 'Wie er verzekerd is', fr: 'Qui est assuré' },
-        doe: async (p) => { await beweegNaar(p, p.getByText(/^Verzekerden$|^Assurés$/).first()); await p.waitForTimeout(1700); },
-        merk: /Verzekerden|Assurés/i,
-        nl: 'Eén kolom verdient uw aandacht: Verzekerden. Wie verzekerd is, hoeft niet dezelfde persoon te zijn als wie het krediet aanvraagt — en dat verschil telt bij een uitkering.',
-        fr: "Une colonne mérite votre attention : Assurés. La personne assurée n’est pas nécessairement celle qui demande le crédit — et cette différence compte lors d’une intervention." },
-
-      { naam: 'voorlopig', kop: { nl: 'Voorlopig en de link', fr: 'Provisoire et le lien' },
-        doe: async (p) => { await beweegNaar(p, p.getByText(/^Voorlopig$|^Provisoire$/).first()); await p.waitForTimeout(1700); },
-        merk: /Voorlopig|Provisoire/i,
-        nl: 'Voorlopig staat op ja zolang er nog geen polisnummer is. En de laatste kolom zegt of de aanvraaglink al naar uw klant vertrokken is — twee dingen die u wil zien zonder elke polis te openen.',
-        fr: "Provisoire reste à oui tant qu’il n’y a pas de numéro de police. Et la dernière colonne indique si le lien de demande est déjà parti chez votre client — deux choses à voir sans ouvrir chaque police." },
+      // ⚠️ 24/11/2026: sinds de doorlichting (P3-blok 21) staan Verzekerden, Voorlopig, de link, de looptijd, de rente en de status van
+      // het dossier standaard VERBORGEN. Hier stonden twee scènes die naar Verzekerden en Voorlopig wezen: ze vonden niets meer op het
+      // scherm. Nu één scène die naar Kolommen kiezen wijst en zegt wat je erbij zet. Merk = een kolomkop die WEL standaard staat
+      // (de knop draagt enkel een titel, geen tekst).
+      { naam: 'kolommen', kop: { nl: 'Kolommen erbij zetten', fr: 'Ajouter des colonnes' },
+        doe: async (p) => { await beweegNaar(p, p.locator('[title="Kolommen kiezen"], [title="Choisir les colonnes"], [aria-label="Kolommen kiezen"], [aria-label="Choisir les colonnes"]').first()); await p.waitForTimeout(1900); },
+        merk: /Verantwoordelijke|Responsable/i,
+        nl: 'Met Kolommen kiezen zet u er meer bij. De verzekerden bijvoorbeeld: wie verzekerd is, hoeft niet de aanvrager te zijn, en dat verschil telt bij een uitkering. Of voorlopig, dat op ja staat zolang er geen polisnummer is, en of de aanvraaglink al naar uw klant vertrokken is.',
+        fr: "Avec Choisir les colonnes, vous en ajoutez. Les assurés par exemple : la personne assurée n’est pas forcément le demandeur, et cette différence compte lors d’une intervention. Ou provisoire, qui reste à oui tant qu’il n’y a pas de numéro de police, et si le lien de demande est déjà parti chez votre client." },
 
       { naam: 'statussen', kop: { nl: 'Twee statussen, twee dingen', fr: 'Deux statuts, deux choses' },
         doe: async (p) => { await beweegNaar(p, p.getByText(/^Status$|^Statut$/).first()); await p.waitForTimeout(1800); },
-        merk: /Contractnr|contrat/i,
-        nl: 'Let op met de status. Die gaat over de polis — offerte, medische acceptatie, getekend. De status van het dossier is iets anders, en staat er als aparte kolom naast. Een polis kan getekend zijn terwijl het dossier nog loopt.',
-        fr: "Attention au statut. Il porte sur la police — offre, acceptation médicale, signée. Le statut du dossier est autre chose et figure dans une colonne distincte. Une police peut être signée alors que le dossier est encore en cours." },
+        merk: /Contractnr\.|N° de contrat/i,   // 24/11: /contrat/ vond in het Frans ook het menu-item "Aperçu des contrats"
+        nl: 'Let op met de status. Die gaat over de polis: offerte, medische acceptatie, getekend. De status van het dossier is iets anders, en zet u erbij met Kolommen kiezen. Een polis kan getekend zijn terwijl het dossier nog loopt.',
+        fr: "Attention au statut. Il porte sur la police : offre, acceptation médicale, signée. Le statut du dossier est autre chose, et vous l’ajoutez avec Choisir les colonnes. Une police peut être signée alors que le dossier est encore en cours." },
 
       { naam: 'afdruk', kop: { nl: 'Afdrukken of exporteren', fr: 'Imprimer ou exporter' },
         doe: async (p) => { await beweegNaar(p, p.getByText('Afdruk lijst', { exact: true }).or(p.getByText('Imprimer la liste', { exact: true })).first()); await p.waitForTimeout(1700); },

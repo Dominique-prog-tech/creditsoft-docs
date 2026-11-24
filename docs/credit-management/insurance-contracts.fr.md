@@ -2,7 +2,7 @@
 
 Cet écran vous montre toutes les **assurances solde restant dû** de votre bureau au même endroit : qui est assuré, auprès de quelle compagnie, pour quel montant et où en est la police.
 
-![L'écran Assurances : en haut les listes de choix pour le produit, le statut et le responsable, avec à côté le nombre de polices affichées et le bouton Imprimer la liste ; en dessous le tableau indiquant par police les demandeurs, la compagnie, le produit, la date, le montant, la durée, le statut, le numéro de contrat, son caractère provisoire, les assurés et le responsable.](../images/verzekeringen-lijst-fr.png "Toutes les assurances solde restant dû du bureau"){ .volle-breedte }
+![L'écran Assurances : en haut les listes de choix pour le produit, le statut et le responsable, avec à côté le nombre de polices affichées et le bouton Imprimer la liste ; en dessous le tableau indiquant par police les demandeurs, la compagnie, le produit, la date, le montant, le statut, le numéro de contrat et le responsable.](../images/verzekeringen-lijst-fr.png "Toutes les assurances solde restant dû du bureau"){ .volle-breedte }
 
 ## Ouvrir l'écran
 

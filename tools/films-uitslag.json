@@ -1772,143 +1772,129 @@
     "film": "verzekeringen",
     "taal": "nl-BE",
     "pagina": "credit-management/insurance-contracts",
-    "lengte": 134.91,
+    "lengte": 127.42,
     "uitvoering": "handleiding",
     "routes": [
       "/insurance-contracts",
       "/credit/insurance-institutions"
     ],
     "app": {
-      "sha": "54c8b8c543e4590a3c17b92a735eb4252e3cd7cc",
-      "vuil": false
+      "sha": "f4e27423c628c41c49fcc67063e7122912ed10c5",
+      "vuil": true
     },
     "titel": "Verzekeringen: het overzicht en uw verzekeraars",
-    "omschrijving": "Alle schuldsaldoverzekeringen bij uw dossiers op één lijst: kiezen wat u wil zien met de drie filters bovenaan, en de kolommen die ertoe doen, zoals wie er verzekerd is, of de polis nog voorlopig is en of de aanvraaglink vertrokken is. Verder het verschil tussen de status van de polis en die van het dossier, de lijst afdrukken of exporteren, en de fiches van uw verzekeraars.",
-    "hash": "7231f312fdbba471",
+    "omschrijving": "Alle schuldsaldoverzekeringen bij uw dossiers op één lijst: kiezen wat u wil zien met de drie filters bovenaan, en de kolommen die u erbij zet, zoals wie er verzekerd is, of de polis nog voorlopig is en of de aanvraaglink vertrokken is. Verder het verschil tussen de status van de polis en die van het dossier, de lijst afdrukken of exporteren, en de fiches van uw verzekeraars.",
+    "hash": "6787b0ec01918ae4",
     "guid": "60e82524-64d1-4059-b9f6-6941fa17eb07",
-    "vorigeGuid": null,
     "hoofdstukken": [
       {
         "titel": "Alle polissen samen",
-        "start": 4.63,
-        "eind": 14.94
+        "start": 4.58,
+        "eind": 14.89
       },
       {
         "titel": "Kiezen wat u ziet",
-        "start": 18.96,
-        "eind": 27.18
+        "start": 18.94,
+        "eind": 27.16
       },
       {
-        "titel": "Wie er verzekerd is",
-        "start": 31.14,
-        "eind": 42.42
-      },
-      {
-        "titel": "Voorlopig en de link",
-        "start": 46.4,
-        "eind": 58.29
+        "titel": "Kolommen erbij zetten",
+        "start": 31.32,
+        "eind": 50.5
       },
       {
         "titel": "Twee statussen, twee dingen",
-        "start": 62.38,
-        "eind": 79.42
+        "start": 54.56,
+        "eind": 71.79
       },
       {
         "titel": "Afdrukken of exporteren",
-        "start": 83.39,
-        "eind": 92.63
+        "start": 75.78,
+        "eind": 85.02
       },
       {
         "titel": "Uw verzekeraars",
-        "start": 97.36,
-        "eind": 103.86
+        "start": 89.73,
+        "eind": 96.23
       },
       {
         "titel": "De fiche van een verzekeraar",
-        "start": 108.56,
-        "eind": 119.24
+        "start": 100.94,
+        "eind": 111.62
       },
       {
         "titel": "Tot slot",
-        "start": 123.77,
-        "eind": 132.41
+        "start": 116.26,
+        "eind": 124.9
       }
     ],
     "gepubliceerdOp": "2026-11-20T17:16:34.129",
     "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/60e82524-64d1-4059-b9f6-6941fa17eb07/thumbnail.jpg",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/60e82524-64d1-4059-b9f6-6941fa17eb07",
-    "gepubliceerdeHash": "7231f312fdbba471"
+    "embed": "https://iframe.mediadelivery.net/embed/741183/60e82524-64d1-4059-b9f6-6941fa17eb07"
   },
   "verzekeringen-fr": {
     "film": "verzekeringen",
     "taal": "fr-BE",
     "pagina": "credit-management/insurance-contracts",
-    "lengte": 126.63,
+    "lengte": 120.94,
     "uitvoering": "handleiding",
     "routes": [
       "/insurance-contracts",
       "/credit/insurance-institutions"
     ],
     "app": {
-      "sha": "54c8b8c543e4590a3c17b92a735eb4252e3cd7cc",
-      "vuil": false
+      "sha": "f4e27423c628c41c49fcc67063e7122912ed10c5",
+      "vuil": true
     },
     "titel": "Assurances : l’aperçu et vos assureurs",
-    "omschrijving": "Toutes les assurances solde restant dû de vos dossiers sur une seule liste : choisir ce que vous voulez voir avec les trois filtres du haut, et les colonnes qui comptent, comme qui est assuré, si la police est encore provisoire et si le lien de demande est parti. Ensuite la différence entre le statut de la police et celui du dossier, imprimer ou exporter la liste, et les fiches de vos assureurs.",
-    "hash": "b262375c68b85143",
+    "omschrijving": "Toutes les assurances solde restant dû de vos dossiers sur une seule liste : choisir ce que vous voulez voir avec les trois filtres du haut, et les colonnes que vous ajoutez, comme qui est assuré, si la police est encore provisoire et si le lien de demande est parti. Ensuite la différence entre le statut de la police et celui du dossier, imprimer ou exporter la liste, et les fiches de vos assureurs.",
+    "hash": "a94de511c307125b",
     "guid": "88da9bac-578a-43fc-a596-ed9f7b82f5a1",
-    "vorigeGuid": null,
     "hoofdstukken": [
       {
         "titel": "Toutes les polices ensemble",
-        "start": 4.58,
-        "eind": 13.91
+        "start": 4.65,
+        "eind": 13.99
       },
       {
         "titel": "Choisir ce que vous voyez",
-        "start": 17.95,
-        "eind": 27.05
+        "start": 18,
+        "eind": 27.1
       },
       {
-        "titel": "Qui est assuré",
-        "start": 31.03,
-        "eind": 41.85
-      },
-      {
-        "titel": "Provisoire et le lien",
-        "start": 45.85,
-        "eind": 56.48
+        "titel": "Ajouter des colonnes",
+        "start": 31.25,
+        "eind": 48.48
       },
       {
         "titel": "Deux statuts, deux choses",
-        "start": 60.56,
-        "eind": 74.72
+        "start": 52.54,
+        "eind": 68.89
       },
       {
         "titel": "Imprimer ou exporter",
-        "start": 78.7,
-        "eind": 87.11
+        "start": 72.87,
+        "eind": 81.27
       },
       {
         "titel": "Vos assureurs",
-        "start": 91.92,
-        "eind": 98.46
+        "start": 86.19,
+        "eind": 92.74
       },
       {
         "titel": "La fiche d’un assureur",
-        "start": 103.16,
-        "eind": 111.66
+        "start": 97.47,
+        "eind": 105.97
       },
       {
         "titel": "Pour conclure",
-        "start": 116.23,
-        "eind": 124.13
+        "start": 110.54,
+        "eind": 118.43
       }
     ],
     "gepubliceerdOp": "2026-11-20T17:20:21.148",
     "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/88da9bac-578a-43fc-a596-ed9f7b82f5a1/thumbnail.jpg",
-    "embed": "https://iframe.mediadelivery.net/embed/741183/88da9bac-578a-43fc-a596-ed9f7b82f5a1",
-    "gepubliceerdeHash": "b262375c68b85143"
+    "embed": "https://iframe.mediadelivery.net/embed/741183/88da9bac-578a-43fc-a596-ed9f7b82f5a1"
   },
   "dashboard-nl": {
     "film": "dashboard",

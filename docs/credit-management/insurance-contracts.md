@@ -2,7 +2,7 @@
 
 Op dit scherm ziet u alle **schuldsaldoverzekeringen** van uw kantoor op één plaats: wie verzekerd is, bij welke maatschappij, voor welk bedrag en hoe ver de polis staat.
 
-![Het scherm Verzekeringen: bovenaan de keuzelijsten voor product, status en verantwoordelijke, met daarnaast het aantal getoonde polissen en de knop Afdruk lijst; daaronder de tabel met per polis de aanvragers, de maatschappij, het product, de datum, het bedrag, de looptijd, de status, het contractnummer, of ze voorlopig is, de verzekerden en de verantwoordelijke.](../images/verzekeringen-lijst.png "Alle schuldsaldoverzekeringen van het kantoor"){ .volle-breedte }
+![Het scherm Verzekeringen: bovenaan de keuzelijsten voor product, status en verantwoordelijke, met daarnaast het aantal getoonde polissen en de knop Afdruk lijst; daaronder de tabel met per polis de aanvragers, de maatschappij, het product, de datum, het bedrag, de status, het contractnummer en de verantwoordelijke.](../images/verzekeringen-lijst.png "Alle schuldsaldoverzekeringen van het kantoor"){ .volle-breedte }
 
 ## Het scherm openen
 
