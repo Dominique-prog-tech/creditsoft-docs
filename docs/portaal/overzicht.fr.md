@@ -52,6 +52,8 @@ En haut à droite du bloc, vous lisez jusqu'où porte cette fenêtre, par exempl
 
 ![Le bloc À suivre, avec en haut à droite « échéances jusqu'à 14 jours ». Par ligne le numéro du dossier en lien et ce qu'il y a à faire : en haut un acte du 25/06/2026 en rouge, puis des dossiers avec des pièces à fournir et des pièces refusées, et en bas le lien Encore 8 dossier(s) sous Mes dossiers.](../images/portaal-op-te-volgen-fr.png "Le bloc À suivre sur l'aperçu du portail des apporteurs")
 
+Si votre bureau a désactivé les documents pour vous, le bloc ne montre que les échéances, sans les pièces.
+
 Le plus urgent figure en haut ; cliquez le numéro de dossier pour ouvrir le dossier. Le bloc affiche au plus dix dossiers ; s'il y en a davantage, le lien en bas vous mène à **Mes dossiers**. Une échéance dont l'étape est déjà franchie, et un dossier clôturé, n'y figurent pas. Une pièce que vous avez fournie et qui attend d'être évaluée ne compte pas : vous n'avez plus rien à faire. Si vous remplacez temporairement un collègue, ses dossiers figurent aussi ici. Les quatre chiffres restent ceux de votre propre branche.
 
 ## Choisir l'année

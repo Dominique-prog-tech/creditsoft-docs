@@ -51,6 +51,8 @@ Rechtsboven in het blok leest u hoe ver dat venster reikt, bijvoorbeeld *termijn
 
 ![Het blok Op te volgen, met rechtsboven "termijnen tot 14 dagen vooruit". Per regel het dossiernummer als link en wat er te doen is: bovenaan een akte van 25/06/2026 in het rood, daaronder dossiers met stukken te bezorgen en geweigerde stukken, en onderaan de link Nog 8 dossier(s) onder Mijn dossiers.](../images/portaal-op-te-volgen.png "Het blok Op te volgen op het overzicht van het aanbrengersportaal")
 
+Heeft uw kantoor de documenten voor u uitgezet, dan toont het blok enkel de termijnen, zonder stukken.
+
 Het dringendste staat bovenaan; klik het dossiernummer om het dossier te openen. Het blok toont hoogstens tien dossiers; staan er meer, dan brengt de link onderaan u naar **Mijn dossiers**. Een termijn waarvan de stap al gezet is, en een dossier dat afgesloten is, staan er niet. Een stuk dat u aanleverde en dat op beoordeling wacht, telt niet mee: daar hoeft u niets meer voor te doen. Vervangt u tijdelijk een collega, dan staan ook zijn dossiers hier. De vier cijfers blijven die van uw eigen tak.
 
 ## Het jaar kiezen
