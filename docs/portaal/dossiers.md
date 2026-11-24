@@ -32,6 +32,10 @@ Werkt uw kantoor zonder productenlijst, dan staat er ook een kolom **Type kredie
 leasing. Klik op het trechtertje in die kolomkop en vink een type aan: u ziet enkel die dossiers. Met **Exporteren** krijgt u
 dan een Excel van precies die lijst, met het type erbij.
 
+Toont uw portaal uw commissie, dan staat er ook een kolom **Ontvangen commissie**: wat u op elk dossier werkelijk ontving,
+volgens de borderellen van uw kantoor, terugvorderingen afgetrokken. Wat u zelf aan uw makelaars doorgaf, telt niet mee. Bij
+een dossier van een collega waarvan u de commissie niet ziet, blijft de cel leeg. Ook deze kolom gaat mee in de export.
+
 Klik op een dossiernummer om het dossier te openen. Met **Ctrl-klik** (Cmd op een Mac), het muiswiel of het **pijltje** vooraan de rij opent het in een **nieuw tabblad** van uw browser; de lijst blijft staan.
 
 ## Een dossier openen
@@ -127,7 +131,8 @@ of **nog te bezorgen** is.
 [Documenten opvragen](#documenten-opvragen-bij-uw-klant) hieronder.
 
 **Commissie doorgeven** — alleen wanneer u zelf commissie op dit dossier ontvangt en met eigen makelaars
-werkt. Zie [Afrekeningen aan mijn makelaars](afrekeningen.md).
+werkt. Daar ziet u ook wat u op dit dossier **ontving** volgens de borderellen, wat u **nog te ontvangen** heeft, en of
+uw commissie **gestopt** is. Zie [Afrekeningen aan mijn makelaars](afrekeningen.md).
 
 ## Het advies
 

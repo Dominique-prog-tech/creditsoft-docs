@@ -28,7 +28,7 @@ Cliquez sur le bouton de la colonne *État*. Vous voyez d'abord ce qui va se pas
 - la **commission étalée s'arrête** à partir du mois du remboursement, si le barème le prévoit — ce qui figure déjà sur un bordereau reste ;
 - le montant récupéré est comptabilisé en **ligne négative** ce mois-là, sur le schéma de commission de celui qui l'a reçu.
 
-Le bouton s'appelle **Récupérer** s'il y a un montant à récupérer, **Arrêter l'étalement** si seul l'étalement s'arrête, et **Clôturer** s'il n'y a rien à comptabiliser. Le dossier quitte ensuite la liste et la fiche indique *récupération traitée le*.
+Le bouton s'appelle **Récupérer** s'il y a un montant à récupérer, **Arrêter l'étalement** si seul l'étalement s'arrête, et **Clôturer** s'il n'y a rien à comptabiliser. Le dossier quitte ensuite la liste et la fiche indique *récupération traitée le*. Si votre bureau a un [e-mail lors d'une récupération](../beheer/mail-momenten.md#lors-dune-commission), celui qui a reçu la commission en reçoit un immédiatement, avec le montant récupéré.
 
 La ligne négative figure sur le prochain [bordereau](commission-statements.md) de ce bureau. Si elle dépasse ce qui s'ajoute ce mois-là, la différence est reportée au bordereau suivant.
 

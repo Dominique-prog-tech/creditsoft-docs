@@ -1,6 +1,6 @@
 # Mails per moment
 
-Op dit scherm bepaalt u welke mail uw klant, de **aanbrenger**, de **notaris**, de **schatter** of het **immokantoor** krijgt wanneer een **contract** of het **dossier** een bepaalde status krijgt — bijvoorbeeld een bericht dat de aanvraag ingediend is, of dat het aanbod beschikbaar is —, wanneer de **datum akte** ingevuld wordt, wanneer een **partij aangesteld** wordt, wanneer een **uiterste datum** nadert, of tijdens de looptijd van het krediet: vóór een **renteherziening** en op de **verjaardag van de akte**.
+Op dit scherm bepaalt u welke mail uw klant, de **aanbrenger**, de **notaris**, de **schatter** of het **immokantoor** krijgt wanneer een **contract** of het **dossier** een bepaalde status krijgt — bijvoorbeeld een bericht dat de aanvraag ingediend is, of dat het aanbod beschikbaar is —, wanneer de **datum akte** ingevuld wordt, wanneer een **partij aangesteld** wordt, wanneer een **uiterste datum** nadert, tijdens de looptijd van het krediet: vóór een **renteherziening** en op de **verjaardag van de akte**, of wanneer u een **commissieschema stopzet** of **commissie terugvordert**.
 
 ![Het scherm Mails per moment: een lijst met per moment de kolommen Wanneer, Status, Naar, Tekst en Hoe, met bijvoorbeeld Een contract krijgt de status Ingediend, naar De aanvragers, op Voorstellen.](../images/mail-momenten.png "De mails per moment van uw kantoor")
 
@@ -16,7 +16,7 @@ Met **Nieuw moment** — of een dubbelklik op een bestaand moment — opent het 
 
 | Veld | Waarvoor |
 |---|---|
-| **Wanneer** | *Een contract krijgt de status* of *Het dossier krijgt de status* — werkt uw kantoor met contractstatussen, dan kiest u de eerste. Of *De datum akte wordt ingevuld*: zie [De datum akte](#de-datum-akte). Of *Een partij wordt aangesteld*: zie [Bij een aanstelling](#bij-een-aanstelling). Of *De uiterste datum van het aanbod nadert* of *… van de akte nadert*: zie [Bij een uiterste datum](#bij-een-uiterste-datum). Of *De renteherziening van een contract nadert* of *De akte verjaart*: zie [Tijdens de looptijd van het krediet](#tijdens-de-looptijd-van-het-krediet). |
+| **Wanneer** | *Een contract krijgt de status* of *Het dossier krijgt de status* — werkt uw kantoor met contractstatussen, dan kiest u de eerste. Of *De datum akte wordt ingevuld*: zie [De datum akte](#de-datum-akte). Of *Een partij wordt aangesteld*: zie [Bij een aanstelling](#bij-een-aanstelling). Of *De uiterste datum van het aanbod nadert* of *… van de akte nadert*: zie [Bij een uiterste datum](#bij-een-uiterste-datum). Of *De renteherziening van een contract nadert* of *De akte verjaart*: zie [Tijdens de looptijd van het krediet](#tijdens-de-looptijd-van-het-krediet). Of *Een commissieschema wordt stopgezet* of *Commissie wordt teruggevorderd*: zie [Bij commissie](#bij-commissie). |
 | **Status** | De status waarbij de mail vertrekt. |
 | **Naar** | *De aanvragers* of *De aanbrenger* van het dossier: zie [Naar de aanbrenger](#naar-de-aanbrenger). Of *De notaris*, *De schatter* of *Het immokantoor*: zie [Naar een notaris, schatter of immokantoor](#naar-een-notaris-schatter-of-immokantoor). |
 | **Tekst** | De mail zelf. Met *Nieuwe tekst* krijgt u een standaardtekst; met **Tekst aanpassen** past u die aan bij [Mailsjablonen](../administration/mail-templates.md). |
@@ -95,6 +95,22 @@ Zo'n mail vertrekt altijd **automatisch**, elke ochtend om 6 uur:
 - enkel bij een **lopend** dossier, en zolang de datum niet verstreken is;
 - niet meer als de stap al gezet is: bij het aanbod als het getekend is (ondertekeningsdatum, *Getekend aanbod verzonden*, of de akte is verleden), bij de akte als die verleden is;
 - **één keer per datum**: wordt de uiterste datum verlengd, dan volgt er voor de nieuwe datum één nieuwe mail.
+
+## Bij commissie
+
+Met *Een commissieschema wordt stopgezet* en *Commissie wordt teruggevorderd* verwittigt u het kantoor van wie de commissie is,
+zonder er zelf een mail voor te schrijven. Het kantoor kan dan zijn eigen doorbetalingen aan zijn makelaars aanpassen.
+
+- De mail gaat naar **de ontvanger van de commissie**: het kantoor of de makelaar die de commissie van dat schema krijgt, ook
+  als het dossier op naam van iemand anders staat. Het vinkje *Mails bij momenten* op zijn fiche is hiervoor niet nodig.
+- *Stopgezet* vertrekt wanneer u op het tabblad [Commissieschema's](../credit-management/credit-files.md#commissieschemas) van een dossier een schema stopzet.
+  *Teruggevorderd* vertrekt wanneer u een terugvordering verwerkt op de lijst [Te bevestigen terugvorderingen](../credit-management/commission-clawback.md),
+  of een schema met een negatief bedrag activeert.
+- Bij het stopzetten of activeren staat het vinkje **Kantoor verwittigen**, met de naam en het mailadres van de ontvanger.
+  Vervangt u een schema enkel door een nieuw, vink het dan uit: dan vertrekt er die keer niets.
+- De mail noemt het dossier, de klant, de stopdatum, de reden die u invulde, wat het kantoor op dat dossier al ontving (volgens
+  de borderellen), bij een terugvordering het bedrag, en de makelaars aan wie het kantoor op dat dossier nog commissie doorgeeft.
+- Ze vertrekt **hoogstens één keer per schema**, en staat daarna bij het **mailverkeer** van het dossier.
 
 ## Tijdens de looptijd van het krediet
 

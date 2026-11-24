@@ -508,7 +508,7 @@ De knop **Journaal** rechtsboven, op de regel met het dossiernummer, opent een p
 
 #### Commissieschema's
 
-Op dit tabblad staat per aanbrenger wat er voor dit dossier afgesproken is: het bedrag, de vorm — gespreid, in termijnen of een vast bedrag — en de toestand. Hangen er veel schema's aan één dossier, dan staan ze gegroepeerd per aanbrenger, met het totaal ernaast; klik op een naam om de schema's eronder open te vouwen.
+Op dit tabblad staat per aanbrenger wat er voor dit dossier afgesproken is: het bedrag, de vorm — gespreid, in termijnen of een vast bedrag — en de toestand. Hangen er veel schema's aan één dossier, dan staan ze gegroepeerd per aanbrenger; klik op een naam om de schema's eronder open te vouwen. Onder elke naam staat wat die aanbrenger op dit dossier **ontving** (de lijnen die op een borderel staan, terugvorderingen afgetrokken) en wat hij **nog te ontvangen** heeft. Dat is wat er echt betaald is, ook als er schema's gestopt of teruggeboekt zijn.
 
 ![Het journaalpaneel van een kredietdossier op het tabblad Commissieschema's: bovenaan het aantal schema's, een zoekveld, de knop Toevoegen en een menu om te exporteren; daaronder de groep per aanbrenger met het aantal schema's en het totaalbedrag, en daarin één schema met zijn bedrag, de toestand Actief, de vorm en de startdatum, en de knoppen Wijzigen, Herberekenen en Stopzetten.](../images/commissieschemas-journaal.png "De commissieschema's van een kredietdossier"){ .volle-breedte }
 
@@ -532,7 +532,7 @@ Wat u verder met een schema kan doen, hangt af van zijn toestand:
 
 - **Nog niet actief** — u kan het **wijzigen** of **activeren**. Dan zet CreditSoft alle maandbedragen ineens klaar, tot het einde van de looptijd. Zolang er niets uitbetaald is, kan u het ook nog **verwijderen**.
 - **Actief** — u kan het **wijzigen**, **herberekenen** of **stopzetten**. Wijzigt u een actief schema, dan herberekent CreditSoft meteen de maanden die nog niet uitbetaald zijn. Herberekenen toont eerst wat er zou veranderen: per maand het oude en het nieuwe bedrag, hoeveel al uitbetaalde maanden ongewijzigd blijven, en het totaal daarna. Pas als u bevestigt, gebeurt het.
-- **Stopgezet** — er staat enkel nog wanneer; wijzigen kan niet meer. Bij het stopzetten geeft u zelf de datum op vanaf wanneer het schema stopt, en waarom. Vanaf die maand vervallen de maanden die nog niet uitbetaald waren; wat er vóór die maand stond, blijft.
+- **Stopgezet** — er staat enkel nog wanneer; wijzigen kan niet meer. Bij het stopzetten geeft u zelf de datum op vanaf wanneer het schema stopt, en waarom. Vanaf die maand vervallen de maanden die nog niet uitbetaald waren; wat er vóór die maand stond, blijft. Heeft uw kantoor een [mail bij het stopzetten](../beheer/mail-momenten.md#bij-commissie), dan staat er ook het vinkje **Kantoor verwittigen**: de ontvanger van de commissie krijgt dan een mail met de stopdatum en uw reden.
 
 !!! tip "Een herinnering bij het bewaren"
     Bewaart u een dossier waarvoor de aanbrenger nog geen commissieschema heeft, dan verschijnt daar een

@@ -511,7 +511,7 @@ Le bouton **Journal** en haut à droite, sur la ligne du numéro de dossier, ouv
 
 #### Schémas de commission
 
-Cet onglet indique, par apporteur, ce qui a été convenu pour ce dossier : le montant, la forme — étalé, par échéances ou montant fixe — et l'état. Si un dossier porte de nombreux schémas, ils sont regroupés par apporteur avec le total à côté ; cliquez sur un nom pour déplier les schémas en dessous.
+Cet onglet indique, par apporteur, ce qui a été convenu pour ce dossier : le montant, la forme — étalé, par échéances ou montant fixe — et l'état. Si un dossier porte de nombreux schémas, ils sont regroupés par apporteur ; cliquez sur un nom pour déplier les schémas en dessous. Sous chaque nom figure ce que cet apporteur a **reçu** sur ce dossier (les lignes qui figurent sur un bordereau, récupérations déduites) et ce qu'il a **encore à recevoir**. C'est ce qui a réellement été payé, même si des schémas ont été arrêtés ou contre-passés.
 
 ![Le panneau Journal d'un dossier de crédit sur l'onglet Schémas de commission : en haut le nombre de schémas, un champ de recherche, le bouton Ajouter et un menu pour exporter ; en dessous le groupe par apporteur avec le nombre de schémas et le montant total, et à l'intérieur un schéma avec son montant, l'état Actif, la forme et la date de début, ainsi que les boutons Modifier, Recalculer et Arrêter.](../images/commissieschemas-journaal-fr.png "Les schémas de commission d'un dossier de crédit"){ .volle-breedte }
 
@@ -535,7 +535,7 @@ Ce que vous pouvez faire ensuite dépend de l'état du schéma :
 
 - **Pas encore actif** — vous pouvez le **modifier** ou l'**activer**. CreditSoft prépare alors tous les montants mensuels en une fois, jusqu'à la fin de la durée. Tant que rien n'est payé, vous pouvez aussi le **supprimer**.
 - **Actif** — vous pouvez le **modifier**, le **recalculer** ou l'**arrêter**. Si vous modifiez un schéma actif, CreditSoft recalcule immédiatement les mois qui ne sont pas encore payés. Le recalcul montre d'abord ce qui changerait : par mois l'ancien et le nouveau montant, combien de mois déjà payés restent inchangés, et le total après. Cela ne se produit qu'après votre confirmation.
-- **Arrêté** — seule la date reste affichée ; la modification n'est plus possible. À l'arrêt, vous indiquez vous-même à partir de quelle date le schéma s'arrête, et pourquoi. À partir de ce mois, les mois non encore payés disparaissent ; ce qui précède ce mois reste.
+- **Arrêté** — seule la date reste affichée ; la modification n'est plus possible. À l'arrêt, vous indiquez vous-même à partir de quelle date le schéma s'arrête, et pourquoi. À partir de ce mois, les mois non encore payés disparaissent ; ce qui précède ce mois reste. Si votre bureau a un [e-mail lors de l'arrêt](../beheer/mail-momenten.md#lors-dune-commission), la case **Prévenir le bureau** apparaît aussi : le bénéficiaire de la commission reçoit alors un e-mail avec la date d'arrêt et votre motif.
 
 !!! tip "Un rappel lors de l'enregistrement"
     Si vous enregistrez un dossier dont l'apporteur n'a pas encore de schéma de commission, un message vous

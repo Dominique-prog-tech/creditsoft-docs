@@ -1,6 +1,6 @@
 # E-mails par moment
 
-Sur cet écran, vous déterminez quel e-mail votre client, l'**apporteur**, le **notaire**, l'**expert** ou l'**agence immobilière** reçoit lorsqu'un **contrat** ou le **dossier** reçoit un certain statut — par exemple un message indiquant que la demande a été introduite, ou que l'offre est disponible —, lorsque la **date de l'acte** est complétée, lorsqu'une **partie est désignée**, lorsqu'une **date limite** approche, ou pendant la durée du crédit : avant une **révision du taux** et à l'**anniversaire de l'acte**.
+Sur cet écran, vous déterminez quel e-mail votre client, l'**apporteur**, le **notaire**, l'**expert** ou l'**agence immobilière** reçoit lorsqu'un **contrat** ou le **dossier** reçoit un certain statut — par exemple un message indiquant que la demande a été introduite, ou que l'offre est disponible —, lorsque la **date de l'acte** est complétée, lorsqu'une **partie est désignée**, lorsqu'une **date limite** approche, pendant la durée du crédit : avant une **révision du taux** et à l'**anniversaire de l'acte**, ou lorsque vous **arrêtez un schéma de commission** ou **récupérez une commission**.
 
 ![L'écran E-mails par moment : une liste avec pour chaque moment les colonnes Quand, Statut, À, Texte et Comment, avec par exemple Un contrat reçoit le statut Introduit, aux demandeurs, en mode Proposer.](../images/mail-momenten-fr.png "Les e-mails par moment de votre bureau")
 
@@ -16,7 +16,7 @@ Avec **Nouveau moment** — ou un double-clic sur un moment existant — la fen�
 
 | Champ | Utilité |
 |---|---|
-| **Quand** | *Un contrat reçoit le statut* ou *Le dossier reçoit le statut* — si votre bureau travaille avec des statuts de contrat, choisissez le premier. Ou *La date de l'acte est complétée* : voir [La date de l'acte](#la-date-de-lacte). Ou *Une partie est désignée* : voir [Lors d'une désignation](#lors-dune-designation). Ou *La date limite de l'offre approche* ou *… de l'acte approche* : voir [Lors d'une date limite](#lors-dune-date-limite). Ou *La révision du taux d'un contrat approche* ou *L'acte a son anniversaire* : voir [Pendant la durée du crédit](#pendant-la-duree-du-credit). |
+| **Quand** | *Un contrat reçoit le statut* ou *Le dossier reçoit le statut* — si votre bureau travaille avec des statuts de contrat, choisissez le premier. Ou *La date de l'acte est complétée* : voir [La date de l'acte](#la-date-de-lacte). Ou *Une partie est désignée* : voir [Lors d'une désignation](#lors-dune-designation). Ou *La date limite de l'offre approche* ou *… de l'acte approche* : voir [Lors d'une date limite](#lors-dune-date-limite). Ou *La révision du taux d'un contrat approche* ou *L'acte a son anniversaire* : voir [Pendant la durée du crédit](#pendant-la-duree-du-credit). Ou *Un schéma de commission est arrêté* ou *Une commission est récupérée* : voir [Lors d'une commission](#lors-dune-commission). |
 | **Statut** | Le statut auquel l'e-mail part. |
 | **À** | *Les demandeurs* ou *L'apporteur* du dossier : voir [À l'apporteur](#a-lapporteur). Ou *Le notaire*, *L'expert* ou *L'agence immobilière* : voir [À un notaire, un expert ou une agence immobilière](#a-un-notaire-un-expert-ou-une-agence-immobiliere). |
 | **Texte** | L'e-mail lui-même. Avec *Nouveau texte*, vous recevez un texte standard ; avec **Adapter le texte**, vous l'adaptez sous [Modèles d'e-mail](../administration/mail-templates.md). |
@@ -96,6 +96,23 @@ Un tel e-mail part toujours **automatiquement**, chaque matin à 6 h :
 - uniquement pour un dossier **en cours**, et tant que la date n'est pas dépassée ;
 - plus du tout si l'étape est franchie : pour l'offre si elle est signée (date de signature, *Offre signée envoyée*, ou l'acte est passé), pour l'acte s'il est passé ;
 - **une fois par date** : si la date limite est prolongée, un nouvel e-mail suit pour la nouvelle date.
+
+## Lors d'une commission
+
+Avec *Un schéma de commission est arrêté* et *Une commission est récupérée*, vous prévenez le bureau à qui revient la commission,
+sans devoir écrire vous-même un e-mail. Le bureau peut alors adapter ses propres paiements à ses courtiers.
+
+- L'e-mail est envoyé au **bénéficiaire de la commission** : le bureau ou le courtier qui reçoit la commission de ce schéma, même
+  si le dossier est au nom de quelqu'un d'autre. La case *E-mails par moment* sur sa fiche n'est pas nécessaire pour cela.
+- *Arrêté* part lorsque vous arrêtez un schéma dans l'onglet [Schémas de commission](../credit-management/credit-files.md#schemas-de-commission) d'un dossier.
+  *Récupérée* part lorsque vous traitez une récupération dans la liste [Récupérations à confirmer](../credit-management/commission-clawback.md),
+  ou lorsque vous activez un schéma au montant négatif.
+- Lors de l'arrêt ou de l'activation figure la case **Prévenir le bureau**, avec le nom et l'adresse e-mail du destinataire.
+  Si vous remplacez simplement un schéma par un nouveau, décochez-la : rien ne part cette fois-là.
+- L'e-mail mentionne le dossier, le client, la date d'arrêt, le motif que vous avez indiqué, ce que le bureau a déjà reçu sur ce
+  dossier (selon les bordereaux), pour une récupération le montant, et les courtiers auxquels le bureau reverse encore une
+  commission sur ce dossier.
+- Il part **au plus une fois par schéma**, et figure ensuite dans les **e-mails** du dossier.
 
 ## Pendant la durée du crédit
 

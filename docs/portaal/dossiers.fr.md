@@ -34,6 +34,11 @@ Si votre bureau travaille sans liste de produits, une colonne **Type de crédit*
 consommation ou un leasing. Cliquez sur l'entonnoir dans l'en-tête de cette colonne et cochez un type : vous ne voyez plus
 que ces dossiers. Avec **Exporter**, vous obtenez alors un fichier Excel de cette liste précise, avec le type.
 
+Si votre portail affiche votre commission, une colonne **Commission reçue** s'y ajoute : ce que vous avez réellement reçu sur
+chaque dossier, selon les bordereaux de votre bureau, récupérations déduites. Ce que vous avez vous-même reversé à vos courtiers
+n'est pas compté. Pour le dossier d'un collègue dont vous ne voyez pas la commission, la cellule reste vide. Cette colonne est
+aussi reprise dans l'export.
+
 Cliquez sur un numéro de dossier pour l'ouvrir. Avec **Ctrl-clic** (Cmd sur un Mac), la molette ou la **flèche** en début de ligne, il s'ouvre dans un **nouvel onglet** de votre navigateur ; la liste reste affichée.
 
 ## Ouvrir un dossier
@@ -129,7 +134,8 @@ Ces données valent pour ce client sur tous ses dossiers. Votre bureau voit dans
 [Demander des documents](#demander-des-documents-a-votre-client) ci-dessous.
 
 **Reverser une commission** — uniquement si vous percevez vous-même une commission sur ce dossier et que
-vous travaillez avec vos propres courtiers. Voir [Décomptes à mes courtiers](afrekeningen.fr.md).
+vous travaillez avec vos propres courtiers. Vous y voyez aussi ce que vous avez **reçu** sur ce dossier selon les bordereaux,
+ce que vous avez **encore à recevoir**, et si votre commission est **arrêtée**. Voir [Décomptes à mes courtiers](afrekeningen.fr.md).
 
 ## Le conseil
 

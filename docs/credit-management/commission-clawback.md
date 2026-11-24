@@ -28,7 +28,7 @@ Klik op de knop in de kolom *Toestand*. U ziet eerst wat er gebeurt; bevestigt u
 - de **gespreide commissie stopt** vanaf de maand van de terugbetaling, als het barema dat zegt — wat al op een borderel staat, blijft staan;
 - het bedrag dat teruggaat, komt als **negatieve lijn** in die maand, op het commissieschema van wie het ontving.
 
-De knop heet **Terugvorderen** als er een bedrag teruggaat, **Spreiding stoppen** als enkel de spreiding stopt, en **Afsluiten** als er niets te boeken valt. Daarna verdwijnt het dossier van de lijst en staat op de fiche *terugvordering verwerkt op*.
+De knop heet **Terugvorderen** als er een bedrag teruggaat, **Spreiding stoppen** als enkel de spreiding stopt, en **Afsluiten** als er niets te boeken valt. Daarna verdwijnt het dossier van de lijst en staat op de fiche *terugvordering verwerkt op*. Heeft uw kantoor een [mail bij een terugvordering](../beheer/mail-momenten.md#bij-commissie), dan krijgt wie de commissie ontving er meteen een, met het bedrag dat teruggaat.
 
 De negatieve lijn komt op het volgende [borderel](commission-statements.md) van dat kantoor. Is ze groter dan wat er die maand bijkomt, dan schuift het verschil door naar het borderel daarna.
 
