@@ -1779,8 +1779,8 @@
       "/credit/insurance-institutions"
     ],
     "app": {
-      "sha": "f4e27423c628c41c49fcc67063e7122912ed10c5",
-      "vuil": true
+      "sha": "f496636ce9cb9755bb99682f7dba451d4479dff8",
+      "vuil": false
     },
     "titel": "Verzekeringen: het overzicht en uw verzekeraars",
     "omschrijving": "Alle schuldsaldoverzekeringen bij uw dossiers op één lijst: kiezen wat u wil zien met de drie filters bovenaan, en de kolommen die u erbij zet, zoals wie er verzekerd is, of de polis nog voorlopig is en of de aanvraaglink vertrokken is. Verder het verschil tussen de status van de polis en die van het dossier, de lijst afdrukken of exporteren, en de fiches van uw verzekeraars.",
@@ -1845,8 +1845,8 @@
       "/credit/insurance-institutions"
     ],
     "app": {
-      "sha": "f4e27423c628c41c49fcc67063e7122912ed10c5",
-      "vuil": true
+      "sha": "f496636ce9cb9755bb99682f7dba451d4479dff8",
+      "vuil": false
     },
     "titel": "Assurances : l’aperçu et vos assureurs",
     "omschrijving": "Toutes les assurances solde restant dû de vos dossiers sur une seule liste : choisir ce que vous voulez voir avec les trois filtres du haut, et les colonnes que vous ajoutez, comme qui est assuré, si la police est encore provisoire et si le lien de demande est parti. Ensuite la différence entre le statut de la police et celui du dossier, imprimer ou exporter la liste, et les fiches de vos assureurs.",
