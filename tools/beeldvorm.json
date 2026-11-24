@@ -337,6 +337,13 @@
     "breedte": 720,
     "hoogte": 400
   },
+  "portaal-op-te-volgen": {
+    "breedte": 1000,
+    "hoogte": 1400,
+    "element": {
+      "kies": "[data-blok=\"op-te-volgen\"]"
+    }
+  },
   "portaal-toegang": {
     "breedte": 1700,
     "hoogte": 860

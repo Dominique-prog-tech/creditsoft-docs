@@ -6,7 +6,7 @@ L'écran d'accueil du portail. Il montre d'un coup d'œil comment se déroule l'
 
 Dans le portail, cliquez en haut sur **Aperçu**.
 
-![L'Aperçu du portail des apporteurs avec quatre tuiles — crédits conclus, en cours, commission et nombre de bureaux — puis la phrase indiquant sur combien de bureaux portent les chiffres, un graphique mensuel en barres et la liste des derniers dossiers conclus.](../images/portaal-overzicht-fr.png "L'écran d'aperçu du portail des apporteurs")
+![L'Aperçu du portail des apporteurs : en haut la barre de menu du portail, puis le titre Aperçu avec l'année entre deux flèches, quatre tuiles (crédits conclus, commission, bureaux dans votre aperçu et en cours) et la phrase indiquant sur combien de bureaux portent les chiffres.](../images/portaal-overzicht-fr.png "L'écran d'aperçu du portail des apporteurs")
 
 ## Les communications de votre bureau
 
@@ -20,15 +20,6 @@ ce bloc reste absent — il n'y a donc pas d'espace vide auquel vous habituer.
 !!! info "Vous n'avez rien à faire"
     Une communication n'est pas une tâche. Vous ne pouvez pas la masquer et il n'est pas enregistré si vous
     l'avez lue. Elle disparaît d'elle-même à son échéance.
-
-## À suivre
-
-En haut figure ce qu'il y a à faire **maintenant**, par dossier :
-
-- les **échéances** dépassées (en rouge) ou qui tombent dans la fenêtre de votre bureau — signer l'offre, acte, conditions suspensives, PEB ;
-- les **pièces** encore à fournir, et celles qui ont été refusées.
-
-Le plus urgent figure en haut ; cliquez le numéro de dossier pour ouvrir le dossier. Une échéance dont l'étape est déjà franchie, et un dossier clôturé, n'y figurent pas. Une pièce que vous avez fournie et qui attend d'être évaluée ne compte pas : vous n'avez plus rien à faire. Si vous remplacez temporairement un collègue, ses dossiers figurent aussi ici — les chiffres ci-dessous restent ceux de votre propre branche.
 
 ## Les quatre chiffres
 
@@ -49,6 +40,19 @@ Quatre tuiles figurent en haut.
 Sous les tuiles, une phrase indique sur combien de bureaux portent les chiffres. Si vous voyez les dossiers
 de vos collaborateurs mais pas leur commission, cela y est précisé — vous savez ainsi toujours ce que vous
 avez, et ce que vous n'avez pas, sous les yeux.
+
+## À suivre
+
+Sous les quatre chiffres figure ce qu'il y a à faire **maintenant**, par dossier :
+
+- les **échéances** dépassées (en rouge) ou qui tombent dans la fenêtre de votre bureau : signer l'offre, acte, conditions suspensives, PEB ;
+- les **pièces** encore à fournir, et celles qui ont été refusées.
+
+En haut à droite du bloc, vous lisez jusqu'où porte cette fenêtre, par exemple *échéances jusqu'à 14 jours*.
+
+![Le bloc À suivre, avec en haut à droite « échéances jusqu'à 14 jours ». Par ligne le numéro du dossier en lien et ce qu'il y a à faire : en haut un acte du 25/06/2026 en rouge, puis des dossiers avec des pièces à fournir et des pièces refusées, et en bas le lien Encore 8 dossier(s) sous Mes dossiers.](../images/portaal-op-te-volgen-fr.png "Le bloc À suivre sur l'aperçu du portail des apporteurs")
+
+Le plus urgent figure en haut ; cliquez le numéro de dossier pour ouvrir le dossier. Le bloc affiche au plus dix dossiers ; s'il y en a davantage, le lien en bas vous mène à **Mes dossiers**. Une échéance dont l'étape est déjà franchie, et un dossier clôturé, n'y figurent pas. Une pièce que vous avez fournie et qui attend d'être évaluée ne compte pas : vous n'avez plus rien à faire. Si vous remplacez temporairement un collègue, ses dossiers figurent aussi ici. Les quatre chiffres restent ceux de votre propre branche.
 
 ## Choisir l'année
 

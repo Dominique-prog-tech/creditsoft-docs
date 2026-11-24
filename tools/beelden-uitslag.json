@@ -2252,5 +2252,19 @@
       "sha": "e7cdddfdbd182bf4e89541d62a7e42952eaf3690",
       "vuil": false
     }
+  },
+  "portaal-op-te-volgen": {
+    "route": "/portal-intermediary/overzicht",
+    "app": {
+      "sha": "c635f9fa7880d409a80284d7279e0ee53dbd216f",
+      "vuil": false
+    }
+  },
+  "portaal-op-te-volgen-fr": {
+    "route": "/portal-intermediary/overzicht",
+    "app": {
+      "sha": "c635f9fa7880d409a80284d7279e0ee53dbd216f",
+      "vuil": false
+    }
   }
 }

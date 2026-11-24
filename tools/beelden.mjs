@@ -61,7 +61,7 @@ const VORM = JSON.parse(readFileSync(new URL('./beeldvorm.json', import.meta.url
 // generator als `admin` was aangemeld — en dat account is geen aanbrenger. Het weigerscherm werd netjes
 // afgedrukt en over het echte beeld gezet. Een schot verklaart nu welk account het nodig heeft; wie er geen
 // opgeeft, krijgt de beheerder.
-const AANBRENGER_PORTAAL = ['portaal-overzicht', 'portaal-dossiers', 'portaal-commissies',
+const AANBRENGER_PORTAAL = ['portaal-overzicht', 'portaal-op-te-volgen', 'portaal-dossiers', 'portaal-commissies',
                             'portaal-documenten', 'portaal-dossier-detail',
                             'portaal-aangebracht', 'portaal-klant-aanbrengen', 'portaal-nieuwe-klant', 'portaal-advies',
                             'portaal-klantgegevens', 'portaal-makelaars', 'portaal-makelaar-fiche'];
@@ -426,6 +426,27 @@ const SCHOTEN = [
   ['wachtwoord',                   '/account/wachtwoord-wijzigen'],
   ['tweestapsverificatie',         '/account/2fa'],
   ['portaal-overzicht',            '/portal-intermediary/overzicht'],
+  // W-285 (1.240.0): het blok Op te volgen. Het staat ONDER de tegels en valt dus buiten portaal-overzicht (720×400, enkel de
+  // bovenkant). Een ELEMENTschot van het blok zelf (data-blok); de eerste vorm staat met de hand in beeldvorm.json.
+  // De tekst belooft per dossier een link, verstreken termijnen in het rood en stukken die te bezorgen zijn: het recept eist ze alle
+  // drie. Het lege blok ("Niets dat nu aandacht vraagt") haalt het merkteken niet, maar een blok met één soort regel wél — vandaar hier.
+  ['portaal-op-te-volgen',         '/portal-intermediary/overzicht', async p => {
+      const blok = p.locator('[data-blok="op-te-volgen"]');
+      await blok.waitFor({ timeout: 15000 });
+      await blok.evaluate(e => e.scrollIntoView({ block: 'start' }));
+      await p.waitForTimeout(1200);
+      const regels = await blok.locator('li').evaluateAll(ls => ls.map(l => ({
+        link: !!l.querySelector('a[href*="/portal-intermediary/dossiers/"]'),
+        // Een VERSTREKEN TERMIJN is rood ÉN draagt een datum. Enkel `.text-danger` telde ook "1 geweigerd" mee (eerste versie, 24/11).
+        rood: [...l.querySelectorAll('.text-danger')].some(e => /\d{2}\/\d{2}\/\d{4}/.test(e.textContent)),
+        stuk: /te bezorgen|à fournir/.test(l.innerText) })));
+      // Verwacht: minstens drie regels, elk met een link, minstens één verstreken termijn en één stuk te bezorgen.
+      // ⚠️ De TELLINGEN VOORAAN: de generator kapt een foutmelding af op 60 tekens (misluktMet), en de eerste versie van deze
+      //    melding begon met de uitleg — de sabotage gaf rood zonder dat de reden te lezen was.
+      const n = regels.length, tel = k => regels.filter(r => r[k]).length;
+      if (n < 3 || tel('link') !== n || !tel('rood') || !tel('stuk'))
+        throw new Error(`verstreken termijn ${tel('rood')}/${n} · te bezorgen ${tel('stuk')}/${n} · link ${tel('link')}/${n}`);
+  }],
   ['portaal-dossiers',             '/portal-intermediary/dossiers'],
   ['portaal-aangebracht',          '/portal-intermediary/aangebracht'],
   ['portaal-klant-aanbrengen',     '/portal-intermediary/aangebracht/nieuw'],
@@ -1498,6 +1519,8 @@ const VERWACHT = {
   // herzieningsregel; "Voorstel: <datum>" enkel bij een variabiliteit met jaren én een datum om van te vertrekken;
   // de jarenkolom enkel bij de variabiliteitslijst (niet bij Nationaliteit).
   'dashboard-opvolging':        /· Variabel \d|· Variable \d/,
+  // W-285: een TELLING van te bezorgen stukken. De titel alleen staat ook op het lege blok ("Niets dat nu aandacht vraagt").
+  'portaal-op-te-volgen':       /\d+ stuk\(ken\) te bezorgen|\d+ pièce\(s\) à fournir/,
   // \s en geen spatie: het Frans draagt een VASTE spatie vóór de dubbele punt (\u00a0, 02/10/2026).
   // F7 golf 2 (1.218.0): ook de zin onder de vier velden uit het aanbod, die enkel bij die velden staat.
   // C3 (09/11/2026): het merkteken is het blok Herziening met een getal, niet meer de zin "draagt nog geen referte-index" (de demo geeft
