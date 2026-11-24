@@ -77,7 +77,7 @@
     "gepubliceerdOp": "2026-11-24T03:55:59.508",
     "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/f51350fc-fcb9-4965-a8be-75be2f16a1ff/thumbnail.jpg",
     "embed": "https://iframe.mediadelivery.net/embed/741183/f51350fc-fcb9-4965-a8be-75be2f16a1ff",
-    "vorigeGuid": "86a73840-50b5-4109-827e-2b7d72d719d8",
+    "vorigeGuid": null,
     "gepubliceerdeHash": "21666a339fc92753"
   },
   "kredietdossiers-basis-fr": {
@@ -158,7 +158,7 @@
     "gepubliceerdOp": "2026-11-24T03:56:12.648",
     "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/67927fc4-bea5-418a-bf4b-149e85392c05/thumbnail.jpg",
     "embed": "https://iframe.mediadelivery.net/embed/741183/67927fc4-bea5-418a-bf4b-149e85392c05",
-    "vorigeGuid": "5ddf814c-b1a7-4eed-a7df-a3040dcad6ab",
+    "vorigeGuid": null,
     "gepubliceerdeHash": "dc66fd53d27ce137"
   },
   "kredietdossiers-basis-website-nl": {
@@ -548,7 +548,7 @@
     "omschrijving": "De eerste rondleiding: het startscherm met het blok Aan de slag, het menu links, zoeken over uw hele omgeving met ⌘K, de hulp bij elk scherm en de twee assistenten, werken in een lijst (sorteren, filteren, exporteren) en uw eigen voorkeuren voor grootte, thema en taal.",
     "hash": "e75435e35e78cd4e",
     "guid": "cfa54e82-2997-4d2b-a1c1-fd8d978824a7",
-    "vorigeGuid": "40243a32-1301-4637-a13d-beb78e631a09",
+    "vorigeGuid": null,
     "hoofdstukken": [
       {
         "titel": "Het startscherm",
@@ -629,7 +629,7 @@
     "omschrijving": "La première visite guidée : l’écran d’accueil avec le bloc Pour commencer, le menu de gauche, la recherche dans tout votre environnement avec ⌘K, l’aide sur chaque écran et les deux assistants, le travail dans une liste (trier, filtrer, exporter) et vos préférences de taille, de thème et de langue.",
     "hash": "949d8d75c1a78949",
     "guid": "ba0fe78d-b0fd-401d-9a0e-b25f3a9b7880",
-    "vorigeGuid": "cb5483be-0eaa-4f51-bb2e-7a18cf3b7b68",
+    "vorigeGuid": null,
     "hoofdstukken": [
       {
         "titel": "L'écran d'accueil",
@@ -771,7 +771,7 @@
     "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/bd50010e-9c02-4d4b-b155-341ad69608ef/thumbnail.jpg",
     "embed": "https://iframe.mediadelivery.net/embed/741183/bd50010e-9c02-4d4b-b155-341ad69608ef",
     "gepubliceerdeHash": "998cd6ca42ee4c0c",
-    "vorigeGuid": "5f53bfe9-8ae1-45dc-81e0-676a6c966c38"
+    "vorigeGuid": null
   },
   "relaties-fr": {
     "film": "relaties",
@@ -852,7 +852,7 @@
     "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/985ace65-d64f-42de-b490-6bdc6eac0ebc/thumbnail.jpg",
     "embed": "https://iframe.mediadelivery.net/embed/741183/985ace65-d64f-42de-b490-6bdc6eac0ebc",
     "gepubliceerdeHash": "2c00fc53cdb421f6",
-    "vorigeGuid": "bc2bd6c0-a236-47c6-959e-21bfb85d7fd7"
+    "vorigeGuid": null
   },
   "leads-nl": {
     "film": "leads",
@@ -871,7 +871,7 @@
     "omschrijving": "De werklijst van uw instroom: wie er wacht en hoe lang, uit welk kanaal hij kwam, en wie hem opvolgt. Daarna de fiche van een lead: wie hij is, wat hij vraagt en waar hij staat. Dan de vijf statussen, en tot slot een lead die klant geworden is, met de doorverwijzing naar zijn relatiefiche.",
     "hash": "a0f68c76e18f1b68",
     "guid": "178ed753-8f40-456e-82d3-c978b0aa6164",
-    "vorigeGuid": "3e63eff9-5911-45dd-9e13-6515d656b9cb",
+    "vorigeGuid": null,
     "hoofdstukken": [
       {
         "titel": "De werklijst",
@@ -946,7 +946,7 @@
     "omschrijving": "La liste de travail de vos demandes entrantes : qui attend et depuis combien de temps, de quel canal il provient, et qui le suit. Ensuite la fiche d’un lead : qui il est, ce qu’il demande et où il en est. Puis les cinq statuts, et pour finir un lead devenu client, avec le renvoi vers sa fiche.",
     "hash": "f1ee7e577747fe4d",
     "guid": "fa332f0a-02b0-4e8c-a077-e5ed095000af",
-    "vorigeGuid": "c3d05388-f0e2-483f-a7c2-82873770e4be",
+    "vorigeGuid": null,
     "hoofdstukken": [
       {
         "titel": "La liste de travail",
@@ -1024,7 +1024,7 @@
     "omschrijving": "Hoe u stukken opvraagt bij uw klant en ze weer binnenkrijgt: de gevraagde documenten op een dossier met hun drie toestanden, de uitnodiging naar het klantenportaal, het portaal zoals uw klant het ziet, en het centrale scherm waar alles wat op beoordeling wacht bij elkaar staat, gesorteerd op wie het langst wacht. Plus de andere richting: de documentbibliotheek.",
     "hash": "0cf82166a00c1aa3",
     "guid": "b5ba9cc1-bebc-442b-a695-61723e6e2962",
-    "vorigeGuid": "2ef36ff1-2aec-46da-93f9-dbdd0e5dc241",
+    "vorigeGuid": null,
     "hoofdstukken": [
       {
         "titel": "De gevraagde stukken",
@@ -1102,7 +1102,7 @@
     "omschrijving": "Comment vous demandez des pièces à votre client et les recevez : les documents demandés sur un dossier avec leurs trois statuts, l’invitation au portail client, le portail tel que votre client le voit, et l’écran central où tout ce qui attend une validation est rassemblé, trié par ordre d’attente. Ainsi que l’autre sens : la bibliothèque de documents.",
     "hash": "28578f8e3ed8da88",
     "guid": "748a039f-8db9-49c2-8fb5-2ae52ab7ae6b",
-    "vorigeGuid": "e0d33341-dda4-4fe5-9549-cb5510eaa3b1",
+    "vorigeGuid": null,
     "hoofdstukken": [
       {
         "titel": "Les pièces demandées",
@@ -1234,7 +1234,7 @@
     "gepubliceerdOp": "2026-11-24T03:59:13.212",
     "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/d296fa5c-f117-4f3e-8067-71a0910c7244/thumbnail.jpg",
     "embed": "https://iframe.mediadelivery.net/embed/741183/d296fa5c-f117-4f3e-8067-71a0910c7244",
-    "vorigeGuid": "f49b59c3-2d79-4b5e-bf34-3ae3509124c4",
+    "vorigeGuid": null,
     "gepubliceerdeHash": "85c870ff3cc0585d"
   },
   "journaal-fr": {
@@ -1311,7 +1311,7 @@
     "gepubliceerdOp": "2026-11-24T03:59:25.755",
     "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/6ef5b891-f442-449f-9aeb-ff346a5c5f4f/thumbnail.jpg",
     "embed": "https://iframe.mediadelivery.net/embed/741183/6ef5b891-f442-449f-9aeb-ff346a5c5f4f",
-    "vorigeGuid": "19b7042b-99f3-4a4e-88db-e5d4e82de88e",
+    "vorigeGuid": null,
     "gepubliceerdeHash": "ca2bb2b956e41256"
   },
   "afspraken-nl": {
@@ -1332,7 +1332,7 @@
     "omschrijving": "De agenda van uw kantoor: de kleuren die zeggen wie afwezig is en wanneer u gesloten bent, de weergave per medewerker of samengevoegd, een afspraak met haar verantwoordelijken en de bevestiging naar uw klant. En de andere kant: uren openzetten zodat mensen zelf een moment kiezen.",
     "hash": "ae4c6ed1d4635650",
     "guid": "d11576ba-c36c-404f-b9eb-96f9fe0d0f08",
-    "vorigeGuid": "e8baa5ba-274b-4861-8b28-0b859a6f260f",
+    "vorigeGuid": null,
     "hoofdstukken": [
       {
         "titel": "De agenda",
@@ -1408,7 +1408,7 @@
     "omschrijving": "L’agenda de votre bureau : les couleurs qui indiquent qui est absent et quand vous êtes fermé, l’affichage par collaborateur ou fusionné, un rendez-vous avec ses responsables et la confirmation au client. Et l’autre côté : ouvrir des plages pour que les gens choisissent eux-mêmes un moment.",
     "hash": "66c10fd7171d2a29",
     "guid": "4801d150-211a-4b0b-81bc-a00cbef51574",
-    "vorigeGuid": "ced67129-9284-4a87-bafc-11e3812f2b42",
+    "vorigeGuid": null,
     "hoofdstukken": [
       {
         "titel": "L’agenda",
@@ -1485,7 +1485,7 @@
     "omschrijving": "Wat u met een aanbrenger afspreekt en hoe u het vastlegt: het overzicht van alle schema’s met hun vorm en toestand, de schemafiche op een dossier met de totale commissie, het deel dat direct uitbetaald wordt en de spreiding over de maanden, de geplande betalingen die daaruit volgen, en de twee kantoorinstellingen die bepalen hoe er afgerekend wordt.",
     "hash": "ba62771970047916",
     "guid": "7bdaf52a-41fb-4e65-b871-e11490dcf5b9",
-    "vorigeGuid": "5090b561-c8bd-4b49-99de-c806efd6ac1e",
+    "vorigeGuid": null,
     "hoofdstukken": [
       {
         "titel": "Alle schema’s samen",
@@ -1557,7 +1557,7 @@
     "omschrijving": "Ce que vous convenez avec un apporteur et comment vous le fixez : l’aperçu de tous les schémas avec leur forme et leur statut, la fiche du schéma sur un dossier avec la commission totale, la part payée immédiatement et l’étalement sur les mois, les paiements planifiés qui en découlent, et les deux paramètres du bureau qui déterminent le mode de décompte.",
     "hash": "15ba0bf469428dbe",
     "guid": "d58159ab-7015-423f-b9d1-83afa74da711",
-    "vorigeGuid": "06df5bc9-5c0c-4412-826f-b219895fb2b0",
+    "vorigeGuid": null,
     "hoofdstukken": [
       {
         "titel": "Tous les schémas ensemble",
@@ -1631,7 +1631,7 @@
     "omschrijving": "Wat er uit uw commissieschema’s komt: het borderel per aanbrenger met zijn lijnen, het vooruitzicht dat toont wat er de komende maanden nog uitbetaald moet worden, de restanten die nooit op een borderel belandden en waarom, en de fiche 281.50 voor de fiscus.",
     "hash": "2168b3bc29101165",
     "guid": "c263dd2f-d5f0-46aa-86c2-c89283ca6603",
-    "vorigeGuid": "666fbf82-7f9e-4ccd-a760-2ebcb94c8bc8",
+    "vorigeGuid": null,
     "hoofdstukken": [
       {
         "titel": "De borderellen",
@@ -1710,7 +1710,7 @@
     "omschrijving": "Ce qui découle de vos schémas de commission : le bordereau par apporteur avec ses lignes, les prévisions de ce qu’il reste à payer les mois à venir, les reliquats qui ne sont jamais arrivés sur un bordereau et pourquoi, et la fiche 281.50 pour le fisc.",
     "hash": "6c902713565085ed",
     "guid": "e414661b-0f60-4a5c-817c-efab24c06dc6",
-    "vorigeGuid": "43d61392-fb32-400c-a775-bc4e7a3cce94",
+    "vorigeGuid": null,
     "hoofdstukken": [
       {
         "titel": "Les bordereaux",
@@ -1786,7 +1786,7 @@
     "omschrijving": "Alle schuldsaldoverzekeringen bij uw dossiers op één lijst: kiezen wat u wil zien met de drie filters bovenaan, en de kolommen die ertoe doen, zoals wie er verzekerd is, of de polis nog voorlopig is en of de aanvraaglink vertrokken is. Verder het verschil tussen de status van de polis en die van het dossier, de lijst afdrukken of exporteren, en de fiches van uw verzekeraars.",
     "hash": "7231f312fdbba471",
     "guid": "60e82524-64d1-4059-b9f6-6941fa17eb07",
-    "vorigeGuid": "cc139c29-09b7-4565-987f-1259bbadaf02",
+    "vorigeGuid": null,
     "hoofdstukken": [
       {
         "titel": "Alle polissen samen",
@@ -1857,7 +1857,7 @@
     "omschrijving": "Toutes les assurances solde restant dû de vos dossiers sur une seule liste : choisir ce que vous voulez voir avec les trois filtres du haut, et les colonnes qui comptent, comme qui est assuré, si la police est encore provisoire et si le lien de demande est parti. Ensuite la différence entre le statut de la police et celui du dossier, imprimer ou exporter la liste, et les fiches de vos assureurs.",
     "hash": "b262375c68b85143",
     "guid": "88da9bac-578a-43fc-a596-ed9f7b82f5a1",
-    "vorigeGuid": "a0460f82-9464-41a4-9ee3-c0392797af00",
+    "vorigeGuid": null,
     "hoofdstukken": [
       {
         "titel": "Toutes les polices ensemble",
@@ -1928,7 +1928,7 @@
     "omschrijving": "Het startscherm gelezen zoals het bedoeld is: het jaar bovenaan, de vier tegels met aantallen en bedragen, de pijplijn met uw dossiers per fase, de drie grafieken over het gerealiseerde volume, het blok Vraagt aandacht met de termijnen, en het scherm waar u de fases zelf samenstelt. Plus waarom iedereen op het kantoor dezelfde cijfers ziet.",
     "hash": "faed20db733abc45",
     "guid": "4245490c-74e3-4058-b7d7-505ffaabf008",
-    "vorigeGuid": "5a50d24b-dbc7-488b-b936-aa57ca5370f6",
+    "vorigeGuid": null,
     "hoofdstukken": [
       {
         "titel": "Het jaar stuurt alles",
@@ -2004,7 +2004,7 @@
     "omschrijving": "L’écran d’accueil lu comme il se doit : l’année en haut, les quatre tuiles avec les nombres et les montants, le pipeline de vos dossiers par phase, les trois graphiques du volume réalisé, le bloc Demande de l’attention avec les échéances, et l’écran où vous composez les phases. Ainsi que la raison pour laquelle tout le bureau voit les mêmes chiffres.",
     "hash": "b20e4ba919c8b9a7",
     "guid": "d1a0a41a-9d85-4010-8aec-cc6f565d9494",
-    "vorigeGuid": "df3883f3-68b9-47ff-a9a9-0cc3e8438074",
+    "vorigeGuid": null,
     "hoofdstukken": [
       {
         "titel": "L’année pilote tout",
@@ -2130,7 +2130,7 @@
     "gepubliceerdOp": "2026-11-24T04:01:31.763",
     "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/abd7c299-919e-49ad-be5e-ec7cf58ee475/thumbnail.jpg",
     "embed": "https://iframe.mediadelivery.net/embed/741183/abd7c299-919e-49ad-be5e-ec7cf58ee475",
-    "vorigeGuid": "0f5cc466-a4eb-45fc-9eee-e6b802157607",
+    "vorigeGuid": null,
     "gepubliceerdeHash": "1bbe19b1f6cd139c"
   },
   "lijsten-en-rapporten-fr": {
@@ -2201,7 +2201,7 @@
     "gepubliceerdOp": "2026-11-24T04:01:50.727",
     "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/2e375afb-e080-4474-8a98-287e94a22159/thumbnail.jpg",
     "embed": "https://iframe.mediadelivery.net/embed/741183/2e375afb-e080-4474-8a98-287e94a22159",
-    "vorigeGuid": "e9bab485-79a7-472e-8a60-581aa570834c",
+    "vorigeGuid": null,
     "gepubliceerdeHash": "169070b87bb9e5a0"
   },
   "mailketen-nl": {
@@ -2271,7 +2271,7 @@
     "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/2d9505e5-6d8f-4bc0-ab54-1bc6a20e213d/thumbnail.jpg",
     "embed": "https://iframe.mediadelivery.net/embed/741183/2d9505e5-6d8f-4bc0-ab54-1bc6a20e213d",
     "gepubliceerdeHash": "3f96dc818439e41d",
-    "vorigeGuid": "03857717-291a-4551-be7a-ffc319860e32"
+    "vorigeGuid": null
   },
   "mailketen-fr": {
     "film": "mailketen",
@@ -2340,7 +2340,7 @@
     "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/ca169691-fbbd-469f-a412-733ed24cb479/thumbnail.jpg",
     "embed": "https://iframe.mediadelivery.net/embed/741183/ca169691-fbbd-469f-a412-733ed24cb479",
     "gepubliceerdeHash": "71f4dafd7bbe031e",
-    "vorigeGuid": "be4315d1-5a32-4d74-817d-7a63d32559ed"
+    "vorigeGuid": null
   },
   "klantportaal-nl": {
     "film": "klantportaal",
@@ -2360,7 +2360,7 @@
     "omschrijving": "Uw klant krijgt een link en belandt op een portaal. Dit is waar u bepaalt wat hij daar ziet: uw naam, uw kleur, uw logo en een welkomsttekst in beide talen. Elk veld dat u leeg laat, valt terug op uw bedrijfsfiche. U hoeft dus niets in te vullen om te beginnen. En tot slot het resultaat, zoals uw klant het krijgt.",
     "hash": "7befb05fd43224a4",
     "guid": "ac85d87e-e951-456f-9fe6-f9b12de2eefe",
-    "vorigeGuid": "4b1d08bc-211e-4d8b-a72a-c578e28baf04",
+    "vorigeGuid": null,
     "hoofdstukken": [
       {
         "titel": "Uw portaal instellen",
@@ -2416,7 +2416,7 @@
     "omschrijving": "Votre client reçoit un lien et arrive sur un portail. C’est ici que vous déterminez ce qu’il y voit : votre nom, votre couleur, votre logo et un texte d’accueil dans les deux langues. Chaque champ laissé vide reprend votre fiche d’entreprise. Vous n’avez donc rien à remplir pour démarrer. Et pour finir le résultat, tel que votre client le reçoit.",
     "hash": "ed1360d46f46c79b",
     "guid": "74bfd9ea-bdee-476d-afb9-453763a7aa38",
-    "vorigeGuid": "8ab5ceb4-1557-4a7a-9aa7-7b700cb08d0c",
+    "vorigeGuid": null,
     "hoofdstukken": [
       {
         "titel": "Configurer votre portail",
@@ -3141,7 +3141,7 @@
     "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/ae232427-8d5e-4b76-8434-ef34b6176275/thumbnail.jpg",
     "gepubliceerdOp": "2026-11-24T04:05:19.261",
     "embed": "https://iframe.mediadelivery.net/embed/741183/ae232427-8d5e-4b76-8434-ef34b6176275",
-    "vorigeGuid": "b11d5042-47e9-49ff-83c8-1cd5cf169a31",
+    "vorigeGuid": null,
     "gepubliceerdeHash": "fb1de07c7572bcd9"
   },
   "adviesdossier-fr": {
@@ -3222,7 +3222,7 @@
     "thumbnail": "https://vz-dc03dc92-718.b-cdn.net/b3566377-fb9c-4cfb-8814-bc330b3f05a3/thumbnail.jpg",
     "gepubliceerdOp": "2026-11-24T04:05:34.744",
     "embed": "https://iframe.mediadelivery.net/embed/741183/b3566377-fb9c-4cfb-8814-bc330b3f05a3",
-    "vorigeGuid": "aaa803c5-a807-4cb2-af54-9b6ceb1fca1b",
+    "vorigeGuid": null,
     "gepubliceerdeHash": "a475261cd649890a"
   },
   "adviesdossier-website-nl": {
