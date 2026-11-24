@@ -51,18 +51,65 @@ code de récupération**) et saisissez l'un de vos [codes de récupération](twe
 
 ## Accueil
 
-![La page d'accueil de l'application : en haut une carte bleue avec le salut, le nom du bureau, 1 284 dossiers, le montant total des crédits et les boutons 97 cette année et 41 actes. En dessous Accès rapide avec Apporter un client et Chercher un dossier, le prochain rendez-vous, et Pièces à fournir avec 2 refusées et 7 à fournir dans 4 dossiers. En bas la barre avec Accueil, Dossiers, Apportés et Rendez-vous.](../images/app-home-fr.png "La page d'accueil de l'application"){ .eigen-breedte style="width:280px" }
+![La page d'accueil de l'application : en haut une carte bleue avec le salut, le nom du bureau, 1 284 dossiers, 9 820 000 euros comme montant des actes de cette année et les boutons 97 cette année et 41 actes. En dessous le bloc Communications avec une communication épinglée sur de nouveaux tarifs, Accès rapide avec Apporter un client et Chercher un dossier, et le début de À suivre.](../images/app-home-fr.png "La page d'accueil de l'application"){ .eigen-breedte style="width:280px" }
 
-En haut, vous voyez vos chiffres : combien de dossiers, pour quel montant total de crédit, combien se sont
-ajoutés cette année et combien d'actes sont planifiés. En dessous :
+En haut, vous voyez vos chiffres : combien de dossiers, le **montant des actes de cette année**, combien de dossiers se
+sont ajoutés cette année et combien d'actes il y a cette année. Le montant compte les mêmes actes que *Crédits conclus*
+dans [le portail des apporteurs](../portaal/overzicht.md).
 
-- **Apporter un client** et **Chercher un dossier** — les deux choses que vous faites le plus souvent en
-  déplacement.
-- **Prochain rendez-vous** — votre prochain rendez-vous, avec le jour, l'heure et l'objet.
-- **Pièces à fournir** — combien de documents manquent encore ou ont été refusés, sur l'ensemble de vos
-  dossiers en cours. Un dossier dans une phase de clôture n'est pas compté.
+En dessous, de haut en bas :
 
-La barre du bas mène à **Dossiers**, aux clients que vous avez **Apportés**, et à vos **Rendez-vous** par jour.
+- **Communications** : ce que votre bureau veut vous faire savoir (voir [Communications](#communications)).
+- **Apporter un client** et **Chercher un dossier** : les deux choses que vous faites le plus souvent en déplacement.
+- **À suivre** : les dossiers qui demandent quelque chose maintenant (voir [À suivre](#a-suivre)).
+- **Prochain rendez-vous** : votre prochain rendez-vous, avec le jour, l'heure, l'objet et le client.
+- **Mes commissions** et **Documents du bureau**, pour les apporteurs (voir [Mes commissions](#mes-commissions) et
+  [Documents du bureau](#documents-du-bureau)).
+
+Le menu en haut à gauche mène à **Dossiers**, aux clients que vous avez **Apportés**, et à vos **Rendez-vous** par jour.
+Tirez la page d'accueil vers le bas pour tout actualiser.
+
+!!! note "À partir de la version 1.4.0 de l'app"
+    Vous ne voyez pas encore les communications, À suivre, Mes commissions ou Documents du bureau ? Mettez l'app à jour
+    dans l'App Store ou sur Google Play.
+
+## Communications
+
+En haut de la page d'accueil figurent les communications de votre bureau, les mêmes que dans le portail des apporteurs.
+Un apporteur lit les communications destinées aux apporteurs, un collaborateur celles destinées aux collaborateurs. Le
+bureau les rédige dans [Communications](../beheer/mededelingen.md).
+
+Une communication **épinglée** (avec la punaise) figure en haut et est ouverte. Les autres n'affichent que leur titre et
+leur date : touchez-les pour lire le texte, et encore une fois pour les fermer. Un **avertissement** apparaît en rouge.
+
+Si votre bureau n'a pas de communication en cours, le bloc n'apparaît pas.
+
+## À suivre
+
+![Le bloc À suivre sur la page d'accueil, avec à côté du titre « échéances jusqu'à 14 jours ». Par dossier le numéro et le client, avec en dessous des étiquettes : un acte en rouge avec « en retard », une offre avec sa date, et le nombre de pièces refusées et à fournir. En bas le lien Encore 3 dossiers, puis le prochain rendez-vous et les tuiles Mes commissions et Documents du bureau.](../images/app-op-te-volgen-fr.png "À suivre sur la page d'accueil"){ .eigen-breedte style="width:280px" }
+
+Sous **Accès rapide** figure ce qu'il y a à faire maintenant, par dossier, comme le bloc À suivre sur
+[l'aperçu du portail des apporteurs](../portaal/overzicht.md) :
+
+- les **échéances** dépassées (en rouge, avec *en retard*) ou qui tombent dans la fenêtre de votre bureau, par exemple
+  un acte ou une offre à signer ;
+- les **pièces** encore **à fournir**, et celles qui ont été **refusées**.
+
+À côté du titre, vous lisez jusqu'où va la fenêtre, par exemple *échéances jusqu'à 14 jours*.
+
+Le plus urgent figure en haut. Touchez un dossier pour l'ouvrir : vous y fournissez directement une pièce (voir
+[Photographier un document](#photographier-un-document)). Le bloc affiche au plus dix dossiers ; s'il y en a plus,
+**Encore … dossiers** vous mène à **Dossiers**. Une échéance dont l'étape est déjà franchie, et un dossier clôturé, n'y
+figurent pas. Une pièce que vous avez fournie et qui attend d'être évaluée n'est pas comptée.
+
+Qui voit quoi :
+
+- Un **apporteur** voit ses propres dossiers, et aussi ceux d'un collègue qu'il remplace temporairement. Si le bureau a
+  désactivé les documents pour lui, le bloc n'affiche que les échéances.
+- Un **collaborateur** ne voit que les dossiers qui lui sont attribués. Si aucune fiche de collaborateur n'est liée à
+  son compte, le bloc n'apparaît pas.
+
+S'il n'y a rien à faire, le bloc le dit.
 
 ## Rendez-vous
 
@@ -95,14 +142,6 @@ e-mail**.
 Sous **Documents**, vous voyez l'état de chaque pièce : **À fournir**, **Approuvé** ou **Refusé**. Pour une
 pièce refusée, la raison est indiquée, pour que vous sachiez ce qui doit changer.
 
-## Pièces à fournir
-
-![La liste Pièces à fournir : trois dossiers l'un sous l'autre, chacun avec le numéro de dossier, le nom du client, une étiquette rouge avec le nombre de pièces refusées et une étiquette bleue avec le nombre de pièces encore à fournir.](../images/app-stukken-fr.png "Pièces à fournir, sur l'ensemble des dossiers"){ .eigen-breedte style="width:280px" }
-
-Touchez **Pièces à fournir** sur la page d'accueil pour voir tous les dossiers où il manque encore quelque
-chose. Pour chaque dossier, vous voyez combien de pièces sont **refusées** et combien sont encore **à fournir**.
-Touchez un dossier pour l'ouvrir et fournir la pièce.
-
 ## Photographier un document
 
 ![L'écran pour fournir un document, ici la copie de la carte d'identité : l'explication Prenez une photo par page ou par face, les boutons Prendre une photo, Depuis la galerie et Choisir un pdf, deux pages déjà prises avec chacune une croix pour la retirer, et le bouton Envoyer.](../images/app-fotograferen-fr.png "Photographier un document"){ .eigen-breedte style="width:280px" }
@@ -133,6 +172,58 @@ arrive comme [lead](../crm/leads.md).
 
 Sous **Apportés**, vous suivez où en est la demande : **Nouveau**, **En cours**, **Devenu client** ou **Sans
 suite**.
+
+## Mes commissions
+
+![L'écran Mes commissions : en haut les années 2026 et 2025, puis Total commissions 2026 avec 12 450,50 euros, dont 8 200,00 euros versés. En dessous Par mois avec novembre, octobre et septembre, le nombre d'écritures et le montant, et Bordereaux avec deux bordereaux : l'un avec la mention Pas encore payé, l'autre avec Payé le 06/10.](../images/app-commissies-fr.png "Mes commissions dans l'application"){ .eigen-breedte style="width:280px" }
+
+Pour les **apporteurs**, si votre bureau affiche les commissions dans le portail (voir
+[Mes commissions](../portaal/commissies.md) dans le portail des apporteurs). Sinon, la tuile n'apparaît pas.
+
+La tuile de la page d'accueil affiche le total de l'année. Touchez-la pour :
+
+- l'**année** : en haut, vous choisissez une autre année. Seules les années avec des commissions y figurent. L'écran
+  s'ouvre sur cette année, ou sur la dernière année avec des commissions.
+- le **total** de cette année, et combien en a été **versé** : ce qui figure sur un bordereau payé. Les commissions sont
+  comptabilisées à l'avance, donc ce qui échoit plus tard dans l'année est aussi compté. Si vous avez vous-même reversé
+  des commissions à vos courtiers, le montant est indiqué en dessous ; il n'est pas compté dans le total.
+- **Par mois** : le montant et le nombre d'écritures.
+- **Bordereaux** : chaque bordereau avec sa date, son montant et s'il est déjà **payé**. Touchez un bordereau pour
+  l'ouvrir en pdf (voir [Ouvrir un fichier](#ouvrir-un-fichier)).
+
+## Documents du bureau
+
+![L'écran Tarifs, un répertoire de Documents du bureau, avec deux fichiers pdf : Rentetabel december et Rentetabel november, chacun avec à droite une icône pour l'ouvrir.](../images/app-documenten-fr.png "Un répertoire de Documents du bureau"){ .eigen-breedte style="width:280px" }
+
+Pour les **apporteurs** : les documents que votre bureau partage avec vous, les mêmes que dans
+[Documents](../portaal/documenten.md) du portail des apporteurs. Si votre bureau a désactivé les documents pour vous,
+la tuile n'apparaît pas.
+
+La tuile indique combien de fichiers il y a. Touchez-la pour voir les répertoires ; un répertoire peut contenir des
+sous-répertoires. Touchez un fichier pour l'ouvrir.
+
+## Ouvrir un fichier
+
+Un bordereau ou un document du bureau s'ouvre dans la visionneuse de votre téléphone : sur un iPhone dans un aperçu
+au-dessus de l'application, sur Android dans l'application pdf de votre téléphone. De là, vous pouvez le partager ou
+l'enregistrer. Un fichier que votre téléphone n'affiche pas lui-même s'ouvre dans une autre application ; s'il n'y en a
+pas, l'application le dit.
+
+Le fichier ne reste pas dans l'application : elle l'efface dès que vous fermez l'aperçu (iPhone) ou revenez à
+l'application (Android), et en tout cas à la déconnexion. Si vous l'enregistrez ou le partagez vous-même, il s'y trouve
+bien.
+
+## Déverrouiller avec Face ID ou empreinte
+
+Touchez vos initiales en haut à droite et activez **Déverrouiller avec Face ID ou empreinte**. L'application demande
+alors une fois votre visage ou votre empreinte ; ce n'est que si cela réussit que l'option est activée.
+
+Ensuite, l'application le demande chaque fois que vous l'ouvrez, et quand vous revenez après cinq minutes ou plus dans
+une autre application. Si vous n'êtes pas reconnu, touchez **Réessayer**, ou **Se reconnecter** pour vous connecter
+avec votre mot de passe.
+
+Si votre téléphone n'a pas de Face ID ni d'empreinte configurés, l'interrupteur est grisé, avec la raison en dessous.
+Le choix vaut pour cet appareil ; la déconnexion ne le désactive pas.
 
 ## Langue et affichage
 
