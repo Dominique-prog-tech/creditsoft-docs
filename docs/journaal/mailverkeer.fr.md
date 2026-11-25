@@ -1,13 +1,14 @@
 # Courrier
 
-Sous **Courrier** figure la correspondance partie de CreditSoft au sujet de cette fiche — qui a reçu quoi et
-quand, et si le message est bien arrivé. Vous pouvez aussi y rédiger immédiatement un nouveau message.
+Sous **Courrier** figure la correspondance au sujet de cette fiche : ce qui est parti de CreditSoft (qui a reçu
+quoi et quand, et si le message est bien arrivé) et les e-mails que vous ajoutez vous-même depuis Outlook. Vous
+pouvez aussi y rédiger immédiatement un nouveau message.
 
 ![La partie Courrier avec deux messages sortants, chacun portant l'étiquette Sortant, le statut de remise, l'expéditeur, le destinataire et le début du texte.](../images/journaal-mailverkeer-fr.png "Le courrier lié à une relation")
 
 ## Envoyer un message
 
-Cliquez sur **Nouveau**. Dans la fenêtre qui s'ouvre :
+Cliquez sur **Nouveau courrier**. Dans la fenêtre qui s'ouvre :
 
 - **À** — l'adresse e-mail du destinataire. Obligatoire.
 - **Cc** — qui reçoit une copie. Séparez plusieurs adresses par une virgule.
@@ -56,6 +57,41 @@ ne reçoit plus d'e-mails groupés. Les e-mails ordinaires concernant son propre
 Chaque e-mail figure ensuite dans le courrier de son dossier, de sa relation ou de son apporteur. La fenêtre indique combien sont
 partis, combien ont été ignorés et, si le serveur de messagerie en a refusé un, lequel et pourquoi.
 
+## Ajouter un courrier depuis Outlook
+
+Un e-mail que vous avez reçu ou envoyé dans Outlook se conserve sur la fiche avec **Ajouter un courrier**. Il figure
+ensuite dans la liste comme tout autre e-mail : vous pouvez l'ouvrir, y répondre, le transférer et le supprimer.
+
+<!-- Na de proef op een Windows-pc met Outlook (25/11/2026, beslissing 1 in adm-creditsoft/docs/mail-toevoegen-structuuroverzicht.md):
+     lukt rechtstreeks slepen uit Outlook naar het venster, dan wordt stap 1 overbodig en past de tekst in de zone mee aan. -->
+1. Enregistrez l'e-mail comme fichier. Dans Outlook, faites-le glisser vers votre bureau ou vers un dossier. Vous
+   obtenez un fichier avec l'extension `.msg` ; un autre programme de messagerie donne un `.eml`.
+2. Cliquez sur **Ajouter un courrier**.
+3. Glissez un ou plusieurs fichiers dans la fenêtre, ou cliquez dans la zone pour les choisir. Jusqu'à 20 fichiers
+   à la fois, de 25 Mo maximum chacun.
+
+<!-- AFBEELDING: het venster "Ajouter un courrier depuis Outlook" na het neerzetten van vier bestanden, met per bestand de uitkomst;
+     tenant_demo, een dossier met Courrier, recht Envoyer un courrier aan. Bestandsnaam journaal-mail-toevoegen-fr.png. -->
+
+La fenêtre indique pour chaque fichier ce qui s'est passé :
+
+- **ajouté** — l'e-mail figure dans la liste.
+- **figurait déjà, pas ajouté une seconde fois** — le même e-mail (même moment d'envoi, même expéditeur et même
+  objet) figure déjà sur cette fiche.
+- **pas un courrier lisible** — le fichier n'est pas un e-mail ou il est endommagé. Une lettre en PDF a sa place
+  dans les [Pièces jointes](bijlagen.md).
+- **trop volumineux** — le fichier dépasse 25 Mo.
+- **échec, veuillez réessayer**.
+
+CreditSoft reprend l'expéditeur, les destinataires, la date, l'objet, le texte et les pièces jointes de l'e-mail
+lui-même. Si l'e-mail vient d'une adresse de votre bureau, il figure dans la liste comme **Sortant** ; sinon comme
+**Entrant**. Une adresse de votre bureau est l'adresse de la [fiche d'entreprise](../administration/company-profile.md),
+votre propre adresse, une [adresse d'envoi](../administration/sender-addresses.md), ou une autre adresse sur le
+domaine d'une adresse d'envoi.
+
+Le bouton est disponible pour qui dispose du droit **Envoyer un courrier**. Le
+[Journal des actions](../administration/activity-log.md) note qui a ajouté quel e-mail.
+
 ## Ce que la liste affiche
 
 Chaque message porte une étiquette **Sortant** ou **Entrant**, l'objet, et en dessous l'**expéditeur** et le
@@ -64,8 +100,8 @@ chose de cliquable.
 
 !!! note "CreditSoft ne récupère pas le courrier entrant"
     CreditSoft enregistre ce qu'il envoie lui-même. Le courrier entrant n'est pas récupéré depuis votre boîte
-    aux lettres : il reste où il est. Un e-mail portant l'étiquette **Entrant** est un e-mail conservé sous forme
-    de fichier pour cette fiche.
+    aux lettres : il reste où il est. Un e-mail reçu se conserve sur la fiche avec
+    [Ajouter un courrier](#ajouter-un-courrier-depuis-outlook).
 
 ## Ouvrir un message
 
@@ -81,8 +117,9 @@ texte tel qu'il a été envoyé. Cette fenêtre comporte ces boutons :
 ### Un e-mail conservé sous forme de fichier
 
 Certains e-mails figurent dans la liste avec leur expéditeur, leur objet et leur date, alors que l'e-mail lui-même
-est conservé sous forme de fichier dans l'archive de votre bureau. Lorsque vous ouvrez un tel e-mail, CreditSoft
-le récupère dans cette archive. La fenêtre indique brièvement que l'e-mail est en cours de chargement, puis affiche
+est conservé sous forme de fichier dans l'archive de votre bureau. C'est aussi le cas de chaque e-mail que vous
+avez conservé avec **Ajouter un courrier**. Lorsque vous ouvrez un tel e-mail, CreditSoft le récupère dans cette
+archive. La fenêtre indique brièvement que l'e-mail est en cours de chargement, puis affiche
 l'expéditeur, les destinataires, la date, le texte et les pièces jointes, comme pour un e-mail dans les
 [Pièces jointes](bijlagen.md#ouvrir-une-piece-jointe). Une pièce jointe d'un tel e-mail se télécharge d'un clic.
 

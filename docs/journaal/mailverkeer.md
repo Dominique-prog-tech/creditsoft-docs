@@ -1,13 +1,14 @@
 # Mailverkeer
 
-Onder **Mailverkeer** staat de correspondentie die vanuit CreditSoft over deze fiche vertrokken is — wie wat
-wanneer gekregen heeft, en of het aangekomen is. U kunt er ook meteen een nieuw bericht opstellen.
+Onder **Mailverkeer** staat de correspondentie over deze fiche: wat er vanuit CreditSoft vertrokken is (wie wat
+wanneer gekregen heeft, en of het aangekomen is) en de mails die u zelf uit Outlook toevoegt. U kunt er ook meteen
+een nieuw bericht opstellen.
 
 ![Het onderdeel Mailverkeer met twee uitgaande berichten, elk met het label Uitgaand, de afleverstatus, de afzender, de bestemmeling en het begin van de tekst.](../images/journaal-mailverkeer.png "Mailverkeer bij een relatie")
 
 ## Een bericht versturen
 
-Klik **Nieuw**. In het venster dat opent:
+Klik **Nieuwe mail**. In het venster dat opent:
 
 - **Aan** — het e-mailadres van de bestemmeling. Verplicht.
 - **Cc** — wie een kopie krijgt. Meerdere adressen scheidt u met een komma.
@@ -55,6 +56,41 @@ groepsmails meer. Gewone mails over het eigen dossier blijven wel komen.
 Elke mail staat daarna in het mailverkeer van haar dossier, relatie of aanbrenger. Het venster toont hoeveel er vertrokken,
 hoeveel er overgeslagen werden en, als de mailserver er een weigerde, welke en waarom.
 
+## Een mail uit Outlook toevoegen
+
+Een mail die u in Outlook ontving of verstuurde, bewaart u bij de fiche met **Mail toevoegen**. Ze staat daarna in
+de lijst zoals elke andere mail: u kunt ze openen, beantwoorden, doorsturen en verwijderen.
+
+<!-- Na de proef op een Windows-pc met Outlook (25/11/2026, beslissing 1 in adm-creditsoft/docs/mail-toevoegen-structuuroverzicht.md):
+     lukt rechtstreeks slepen uit Outlook naar het venster, dan wordt stap 1 overbodig en past de tekst in de zone mee aan. -->
+1. Bewaar de mail als bestand. In Outlook sleept u ze daarvoor naar uw bureaublad of naar een map. U krijgt een
+   bestand met de extensie `.msg`; een ander mailprogramma geeft een `.eml`.
+2. Klik **Mail toevoegen**.
+3. Sleep een of meer bestanden in het venster, of klik in het vak om ze te kiezen. Tot 20 bestanden tegelijk,
+   elk hoogstens 25 MB.
+
+<!-- AFBEELDING: het venster "Een mail uit Outlook toevoegen" na het neerzetten van vier bestanden, met per bestand de uitkomst
+     (toegevoegd, stond er al, geen leesbare mail); tenant_demo, een dossier met Mailverkeer, recht Mail versturen aan.
+     Bestandsnaam journaal-mail-toevoegen.png / -fr.png. -->
+
+Het venster toont per bestand wat er gebeurde:
+
+- **toegevoegd** — de mail staat in de lijst.
+- **stond er al, niet opnieuw toegevoegd** — dezelfde mail (zelfde verzendmoment, afzender en onderwerp) staat al
+  bij deze fiche.
+- **geen leesbare mail** — het bestand is geen mail of is beschadigd. Een brief in pdf hoort bij
+  [Bijlagen](bijlagen.md).
+- **te groot** — het bestand is groter dan 25 MB.
+- **niet gelukt, probeer het opnieuw**.
+
+CreditSoft haalt de afzender, de ontvangers, de datum, het onderwerp, de tekst en de bijlagen uit de mail zelf.
+Komt de mail van een adres van uw kantoor, dan staat ze als **Uitgaand** in de lijst; anders als **Inkomend**. Een
+adres van uw kantoor is het adres op de [bedrijfsfiche](../administration/company-profile.md), uw eigen adres, een
+[verzendadres](../administration/sender-addresses.md), of een ander adres op het domein van een verzendadres.
+
+De knop staat er voor wie het recht **Mail versturen** heeft. Het [Actielogboek](../administration/activity-log.md)
+noteert wie welke mail toevoegde.
+
 ## Wat u in de lijst ziet
 
 Elk bericht toont een label **Uitgaand** of **Inkomend**, het onderwerp, en daaronder de **afzender** en de
@@ -63,8 +99,8 @@ staat.
 
 !!! note "Binnenkomende mail haalt CreditSoft niet op"
     CreditSoft registreert wat het zelf verstuurt. Binnenkomende mail wordt niet opgehaald uit uw mailbox: die
-    blijft staan waar ze staat. Een mail met het label **Inkomend** is een mail die als bestand bij deze fiche
-    bewaard is.
+    blijft staan waar ze staat. Een ontvangen mail bewaart u bij de fiche met
+    [Mail toevoegen](#een-mail-uit-outlook-toevoegen).
 
 ## Een bericht openen
 
@@ -80,7 +116,8 @@ tekst zoals ze verstuurd is. In dat venster staan deze knoppen:
 ### Een mail die als bestand bewaard is
 
 Sommige mails staan in de lijst met hun afzender, onderwerp en datum, terwijl de mail zelf als bestand in het
-archief van uw kantoor bewaard is. Opent u zo'n mail, dan haalt CreditSoft ze daaruit. Het venster zegt kort dat
+archief van uw kantoor bewaard is. Zo staat ook elke mail die u met **Mail toevoegen** bewaarde. Opent u zo'n mail,
+dan haalt CreditSoft ze daaruit. Het venster zegt kort dat
 de mail geladen wordt, en toont dan de afzender, de ontvangers, de datum, de tekst en de bijlagen, zoals bij een
 mail in [Bijlagen](bijlagen.md#een-bijlage-openen). Een bijlage van zo'n mail downloadt u met een klik.
 
