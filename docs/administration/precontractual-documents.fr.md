@@ -1,8 +1,11 @@
 # Documents précontractuels
 
-Avant d'intervenir dans un crédit, vous remettez au client plusieurs documents. CreditSoft crée pour vous la **présentation du bureau** : le document qui reprend l'identité de votre bureau, votre inscription auprès de la FSMA, le traitement des plaintes, la commission et l'exclusion de la responsabilité extracontractuelle. Il part du modèle standard de la FVF, en néerlandais et en français, et complète les données de votre bureau à partir de la [fiche d'entreprise](company-profile.md).
+Avant d'intervenir dans un crédit, vous remettez au client plusieurs documents. CreditSoft en crée deux pour vous, chaque fois sur la base du modèle standard de la FVF, en néerlandais et en français :
 
-Cette page explique comment adapter le document à votre bureau, et comment le créer pour un dossier.
+- la **présentation du bureau** : l'identité de votre bureau, votre inscription auprès de la FSMA, le traitement des plaintes, la commission et l'exclusion de la responsabilité extracontractuelle ;
+- la **fiche d'intermédiation crédit hypothécaire** : les données des demandeurs, l'analyse de leur situation (Partie I), votre recommandation (Partie II) et les annexes (Partie III).
+
+CreditSoft complète les données de votre bureau à partir de la [fiche d'entreprise](company-profile.md), et celles du dossier lorsque vous créez le document. Cette page explique comment adapter les documents à votre bureau, et comment les créer pour un dossier.
 
 ## Ouvrir l'écran
 
@@ -49,31 +52,52 @@ Les mots entre « » sont des **champs**. CreditSoft les complète au moment où
 
 Les sept premiers proviennent de la fiche d'entreprise. Si une donnée n'y est pas remplie, une ligne pointillée apparaît, que le client ou vous complétez à la main. Vous insérez un champ par l'onglet **Publipostage** de l'éditeur.
 
+La fiche d'intermédiation compte beaucoup plus de champs : ceux des demandeurs commencent par *A1* (le premier demandeur, la colonne de gauche) ou *A2* (le deuxième, la colonne de droite), comme «A1Naam» ou «A2NettoInkomen». L'éditeur les montre tous dans l'onglet **Publipostage**.
+
 Indiquez en haut, dans **Remarque pour cette version**, ce que vous avez modifié, puis cliquez sur **Enregistrer comme nouvelle version**. À partir de ce moment, CreditSoft utilise cette version pour chaque nouveau document dans cette langue.
 
 !!! info "Responsable du texte"
     Le modèle de la FVF est un texte standard pour les courtiers en crédit. Si vous adaptez le texte, il reste celui de votre bureau : CreditSoft ne vérifie pas s'il est conforme à la loi.
 
+## Ce que CreditSoft complète dans la fiche d'intermédiation { #fiche }
+
+| Partie de la fiche | Ce que CreditSoft complète |
+|---|---|
+| En-tête | Le nom, l'adresse, l'adresse e-mail, le téléphone, le site internet et le numéro d'entreprise de votre bureau |
+| Renseignements relatifs au(x) client(s) | Par demandeur : nom, prénom, sexe, adresse, téléphone, GSM, lieu et date de naissance, adresse e-mail |
+| 1. Situation personnelle | Le nombre d'enfants à charge et l'état civil |
+| 2.1 Revenus mensuels | La date de début du statut, l'employeur, les revenus mensuels nets fixes, les allocations familiales, les revenus locatifs actuels et les autres revenus ; pour un indépendant, le numéro d'entreprise, la date de début et la nature de l'activité |
+| 2.2 Charges mensuelles | Le loyer actuel, la pension alimentaire, et une ligne par crédit en cours des deux demandeurs |
+| 4 et 5 | Les préférences et les besoins de l'onglet *Conseil* |
+| Partie II | La case *Nous vous recommandons …*, avec les offres recommandées et leur établissement de crédit, ou la case *Nous ne pouvons pas vous recommander un produit de crédit* |
+| Signature | La localité de votre bureau et la date |
+
+- **Les montants** sont mensuels. Un revenu encodé par an compte pour un douzième.
+- **Un crédit** est *à rembourser* (Oui) s'il est repris par le nouveau crédit. L'échéance finale provient de la date de fin du crédit. Sans crédit, des lignes vides restent à compléter à la main.
+- **Partie II** : la première case est cochée dès que le conseil compte au moins une offre recommandée. La deuxième est cochée pour un conseil sans offre recommandée. Sans conseil, les deux restent vides.
+- **Les autres cases** (statut professionnel, avantages, objectifs, fumeur, information électronique) restent vides : le client ou vous les cochez à la main.
+- **La fiche a deux colonnes.** La première colonne est le premier demandeur du dossier, la deuxième colonne le deuxième. Si le dossier compte trois ou quatre demandeurs, CreditSoft crée une deuxième fiche pour les demandeurs 3 et 4. Si un demandeur est une société, CreditSoft ne complète que son identité.
+
 ## Créer le document pour un dossier { #maken }
 
 Ouvrez le dossier et cliquez sur l'onglet **Conseil**. Sous le résumé du conseil se trouve le bloc **Documents précontractuels**.
 
-<!-- AFBEELDING: l'onglet Conseil d'un dossier dans tenant_demo, avec en bas le bloc Documents précontractuels, le bouton Créer la présentation du bureau et un document créé dans la liste -->
+<!-- AFBEELDING: l'onglet Conseil d'un dossier dans tenant_demo, avec en bas le bloc Documents précontractuels, les boutons Créer la présentation du bureau et Créer la fiche d'intermédiation, et deux documents créés dans la liste -->
 
-1. Cliquez sur **Créer la présentation du bureau**.
+1. Cliquez sur **Créer la présentation du bureau** ou **Créer la fiche d'intermédiation**.
 2. CreditSoft crée le document dans la langue du **premier demandeur** du dossier, avec la version actuelle de votre modèle.
 3. Le document apparaît dans la liste avec la date et la personne qui l'a créé. Cliquez sur **Ouvrir** pour le consulter.
 
 Le document est conservé dans les pièces jointes du dossier, dans la catégorie *Precontractueel*. Vous le retrouvez aussi dans le journal du dossier, sous *Pièces jointes*.
 
-Un document créé ne change plus. Si vous adaptez ensuite la fiche d'entreprise ou le modèle, créez le document à nouveau. Un deuxième document s'ajoute ; le premier reste, de sorte que vous pouvez toujours montrer ce que le client a reçu.
+Un document créé ne change plus. Si vous adaptez ensuite la fiche d'entreprise, le dossier ou le modèle, créez le document à nouveau. Un deuxième document s'ajoute ; le premier reste, de sorte que vous pouvez toujours montrer ce que le client a reçu.
 
 Vous avez besoin du droit de modifier le dossier. Le bloc ne figure pas dans le portail des apporteurs.
 
 ## Erreurs fréquentes
 
 !!! warning "Une ligne pointillée à la place d'une donnée"
-    S'il y a une ligne pointillée au lieu de votre numéro de téléphone, de votre site internet ou de votre numéro d'entreprise, cette donnée manque dans la [fiche d'entreprise](company-profile.md). Complétez-la et créez le document à nouveau.
+    S'il y a une ligne pointillée au lieu de votre numéro de téléphone, de votre site internet ou de votre numéro d'entreprise, cette donnée manque dans la [fiche d'entreprise](company-profile.md). S'il s'agit d'une donnée du client, comme le sexe ou l'état civil, elle manque sur la fiche de cette relation. Complétez-la et créez le document à nouveau.
 
 !!! warning "Le document dans la mauvaise langue"
     La langue suit la langue des documents du **premier demandeur**. Si elle est erronée, modifiez-la sur la fiche de cette relation et créez le document à nouveau.
