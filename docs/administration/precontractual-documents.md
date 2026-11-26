@@ -1,9 +1,10 @@
 # Precontractuele documenten
 
-Vóór u een krediet bemiddelt, geeft u de klant een aantal documenten. CreditSoft maakt er twee voor u, telkens vertrekkend van het standaardmodel van FVF, in het Nederlands en het Frans:
+Vóór u een krediet bemiddelt, geeft u de klant een aantal documenten. CreditSoft maakt er drie voor u, telkens vertrekkend van het standaardmodel van FVF, in het Nederlands en het Frans:
 
 - de **voorstelling van het kantoor**: de identiteit van uw kantoor, uw inschrijving bij de FSMA, de klachtenbehandeling, de commissie en de uitsluiting van buitencontractuele aansprakelijkheid;
-- de **bemiddelingsfiche hypothecair krediet**: de gegevens van de aanvragers, de analyse van hun situatie (Deel I), uw aanbeveling (Deel II) en de bijlagen (Deel III).
+- de **bemiddelingsfiche hypothecair krediet**: de gegevens van de aanvragers, de analyse van hun situatie (Deel I), uw aanbeveling (Deel II) en de bijlagen (Deel III);
+- de **analyse schuldsaldoverzekering**: de verlangens en behoeften van de klant voor een levensverzekering (Deel I), uw advies (Deel II) en de informatie die de klant kreeg (Deel III). Die is er enkel voor een kantoor dat als verzekeringsmakelaar ingeschreven is.
 
 CreditSoft vult de gegevens van uw kantoor in vanuit de [Bedrijfsfiche](company-profile.md), en die van het dossier wanneer u het document maakt. Op deze pagina leest u hoe u de documenten aanpast aan uw kantoor, en hoe u ze maakt voor een dossier.
 
@@ -54,6 +55,8 @@ De eerste zeven komen uit de Bedrijfsfiche. Staat daar een gegeven niet ingevuld
 
 De bemiddelingsfiche kent veel meer velden: die van de aanvragers beginnen met *A1* (de eerste aanvrager, de linkse kolom) of *A2* (de tweede, de rechtse kolom), zoals «A1Naam» of «A2NettoInkomen». De editor toont ze allemaal in het tabblad **Mailingen**.
 
+De analyse schuldsaldoverzekering heeft haar eigen velden. Daar is «KlantNaam» de naam van de eerste aanvrager en «KlantVoornaam» zijn voornaam; de vakjes heten «Vink…», zoals «VinkAdvies». Ook die toont de editor in het tabblad **Mailingen**.
+
 Vul bovenaan bij **Opmerking bij deze versie** kort in wat u veranderde, en klik op **Bewaren als nieuwe versie**. Vanaf dan gebruikt CreditSoft die versie voor elk nieuw document in die taal.
 
 !!! info "Verantwoordelijk voor de tekst"
@@ -78,13 +81,34 @@ Vul bovenaan bij **Opmerking bij deze versie** kort in wat u veranderde, en klik
 - **De andere vakjes** (beroep, voordelen, doel, roker, elektronische informatie) blijven leeg: die kruist de klant of u met de hand aan.
 - **De fiche heeft twee kolommen.** De eerste kolom is de eerste aanvrager van het dossier, de tweede kolom de tweede. Heeft het dossier drie of vier aanvragers, dan maakt CreditSoft een tweede fiche voor aanvragers 3 en 4. Is een aanvrager een bedrijf, dan vult CreditSoft enkel zijn identiteit in.
 
+## Wat CreditSoft invult in de analyse schuldsaldoverzekering { #ssv }
+
+De analyse is er enkel voor een kantoor dat bij de FSMA als **verzekeringsmakelaar** ingeschreven is; het document zegt dat ook. U zet dat aan met het vinkje op de [Bedrijfsfiche](company-profile.md#verzekeringsmakelaar). Zonder dat vinkje maakt CreditSoft de analyse niet.
+
+Het model van FVF is een Excel-blad. CreditSoft maakt er een Word-document van, met de tekst van FVF letterlijk. De opmaak verfijnt u in de editor, zoals bij de andere documenten.
+
+| Deel van de analyse | Wat CreditSoft invult |
+|---|---|
+| Voorstelling van ons kantoor | De naam, het adres, het e-mailadres, het telefoonnummer, de website, het ondernemingsnummer en de IBAN van uw kantoor |
+| Uw gegevens | Van de eerste aanvrager: naam, voornaam, adres, geboortedatum en ondernemingsnummer |
+| Deel I | Particulier of rechtspersoon, de verzekerden, de waarborg *Overlijden*, *in het kader van een krediet: Ja*, het totaal of een gedeelte van het kapitaal, en de fiscale aftrekbaarheid |
+| Deel II | Advies of geen advies, het product, de motivering en of de klant het advies volgt: wat u in het venster kiest |
+| Deel III | Het vakje van de klantenfiche, als u het in het venster aanvinkt |
+| Ondertekening | De gemeente van uw kantoor en de datum |
+
+- **De verzekerden** zijn de aanvragers die verzekerd zijn op een contract schuldsaldoverzekering van het dossier (tabblad *Contracten*), of die op een regel van *Borgen, SSV & reducties* staan. Het model heeft plaats voor twee.
+- **Het totaal of een gedeelte** komt uit het verzekerde percentage op de regels van *Borgen, SSV & reducties*: allemaal 100 % is het totaal, anders een gedeelte met het percentage. Een percentage van 0 of boven 100 telt niet.
+- **Fiscale aftrekbaarheid**: *Ja* staat aangekruist als elke regel *fiscaal* aangevinkt heeft. *Nee* kruist CreditSoft nooit aan, want een regel waarop niemand het vakje aanraakte, staat ook op nee.
+- **Het rijksregisternummer en roker** vult CreditSoft nooit in.
+- **De andere vakjes** (andere waarborgen, de premie, de looptijd, met welke verzekeraars uw kantoor werkt, de vergoeding) blijven leeg: die kruist de klant of u met de hand aan.
+
 ## Het document maken voor een dossier { #maken }
 
 Open het dossier en klik op het tabblad **Advies**. Onder de samenvatting van het advies staat het blok **Precontractuele documenten**.
 
-<!-- AFBEELDING: het tabblad Advies van een dossier in tenant_demo, met onderaan het blok Precontractuele documenten, de knoppen Voorstelling van het kantoor maken en Bemiddelingsfiche maken, en twee gemaakte documenten in de lijst -->
+<!-- AFBEELDING: het tabblad Advies van een dossier in tenant_demo, met onderaan het blok Precontractuele documenten, de knoppen Voorstelling van het kantoor maken, Bemiddelingsfiche maken en Analyse schuldsaldoverzekering maken, en drie gemaakte documenten in de lijst -->
 
-1. Klik op **Voorstelling van het kantoor maken** of **Bemiddelingsfiche maken**.
+1. Klik op **Voorstelling van het kantoor maken**, **Bemiddelingsfiche maken** of **Analyse schuldsaldoverzekering maken**.
 2. CreditSoft maakt het document in de taal van de **eerste aanvrager** van het dossier, met de huidige versie van uw sjabloon.
 3. Het document verschijnt in de lijst met de datum en wie het maakte. Klik op **Openen** om het te bekijken.
 
@@ -94,6 +118,19 @@ Een gemaakt document verandert niet meer. Past u daarna de Bedrijfsfiche, het do
 
 U hebt het recht nodig om het dossier te wijzigen. Het blok staat niet in het portaal van de aanbrengers.
 
+### Het venster van de analyse schuldsaldoverzekering
+
+Bij **Analyse schuldsaldoverzekering maken** opent eerst een venster met wat CreditSoft niet weet.
+
+<!-- AFBEELDING: het venster Analyse schuldsaldoverzekering in tenant_demo, met Ons kantoor verleent een advies aangeduid, Voorgesteld product en verzekeraar ingevuld, Motivering, Volgt de klant het advies? en het vinkje van de klantenfiche -->
+
+- Kies **Ons kantoor verleent een advies** of **Geen advies**.
+- **Voorgesteld product en verzekeraar** (zonder advies: het product dat de klant wenst). CreditSoft vult het product en de verzekeraar uit het dossier vooraf in; u past ze aan.
+- Bij advies vult u de **motivering** in en kiest u of de klant het advies **volgt**: *Ja*, *Nee* of *Nog niet geweten*. Volgt hij het niet, dan vult u het product in dat hij wel wenst.
+- Vink **De klantenfiche is samen met de klant overlopen** aan als dat zo is.
+
+Klik op **Analyse maken**. Wat u in het venster kiest, staat enkel in het gemaakte document; CreditSoft bewaart het nergens anders. Maakt u de analyse opnieuw, dan vult u het venster opnieuw in.
+
 ## Veelgemaakte fouten
 
 !!! warning "Een stippellijn waar een gegeven hoort"
@@ -101,6 +138,9 @@ U hebt het recht nodig om het dossier te wijzigen. Het blok staat niet in het po
 
 !!! warning "Het document in de verkeerde taal"
     De taal volgt de documenttaal van de **eerste aanvrager**. Staat die verkeerd, pas ze dan aan op de fiche van die relatie en maak het document opnieuw.
+
+!!! warning "De knop Analyse schuldsaldoverzekering maken ontbreekt"
+    Die knop verschijnt enkel als uw kantoor op de [Bedrijfsfiche](company-profile.md#verzekeringsmakelaar) als verzekeringsmakelaar staat.
 
 ## Zie ook
 

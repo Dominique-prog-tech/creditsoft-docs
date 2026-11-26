@@ -69,6 +69,13 @@ chacun se connecte comme toujours avec son propre nom d'utilisateur et son mot d
     Pour une **adresse à l'étranger**, avec un autre pays que la Belgique, le code postal est un simple champ de
     texte : saisissez-le tel quel (par exemple *8121 DM*).
 
+## Courtier d'assurance { #verzekeringsmakelaar }
+
+Dans le bloc **Identité**, sous le *N° FSMA*, figure la case **Notre bureau est inscrit auprès de la FSMA comme
+courtier d'assurance**. Elle est décochée par défaut. Ne la cochez que si votre bureau est inscrit dans cette
+catégorie : vous créez alors aussi l'[analyse assurance solde restant dû](precontractual-documents.md#ssv) dans
+l'onglet *Conseil* d'un dossier, et ce document indique que votre bureau est courtier d'assurance.
+
 ## Associer l'agenda à Microsoft 365 { #agenda-koppelen }
 
 Dans le bloc **Identité**, sous *Base de notre conseil*, figure la case **Les collaborateurs peuvent associer leur

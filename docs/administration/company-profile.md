@@ -67,6 +67,14 @@ aanmeldt, doet dat zoals altijd met zijn eigen gebruikersnaam en wachtwoord.
     Bij een **buitenlands adres**, met een ander land dan België, is de postcode een gewoon tekstvak: u typt ze
     zoals ze is (bijvoorbeeld *8121 DM*).
 
+## Verzekeringsmakelaar { #verzekeringsmakelaar }
+
+In het blok **Identiteit**, onder het *FSMA-nr.*, staat het vinkje **Ons kantoor is bij de FSMA ingeschreven als
+verzekeringsmakelaar**. Het staat standaard uit. Vink het enkel aan als uw kantoor in die categorie ingeschreven is:
+dan maakt u op het tabblad *Advies* van een dossier ook de
+[analyse schuldsaldoverzekering](precontractual-documents.md#ssv), en dat document zegt dat uw kantoor
+verzekeringsmakelaar is.
+
 ## Agenda koppelen met Microsoft 365 { #agenda-koppelen }
 
 In het blok **Identiteit**, onder *Basis van ons advies*, staat het vinkje **Medewerkers mogen hun agenda koppelen
