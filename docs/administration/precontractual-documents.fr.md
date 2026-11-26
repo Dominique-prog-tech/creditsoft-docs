@@ -131,7 +131,42 @@ Avec **Créer l'analyse assurance solde restant dû**, une fenêtre s'ouvre d'ab
 
 Cliquez sur **Créer l'analyse**. Ce que vous choisissez dans la fenêtre figure uniquement dans le document créé ; CreditSoft ne le conserve nulle part ailleurs. Si vous créez l'analyse à nouveau, vous complétez à nouveau la fenêtre.
 
+Si votre bureau a un contrat OKSign, le bas de la fenêtre indique aussi qui signe, avec le bouton **Créer et faire signer**. Voir ci-dessous.
+
+### Créer et faire signer { #ondertekenen }
+
+Si votre bureau a un contrat avec OKSign, vous faites [signer électroniquement](../credit-management/ondertekenen.md) un document précontractuel dès sa création. Sans contrat, rien ne change : les boutons créent le document comme décrit ci-dessus.
+
+<!-- AFBEELDING: la fenêtre Créer la présentation du bureau dans tenant_demo, avec l'explication, Qui signe avec le nom du client, et les boutons Créer, Annuler et Créer et faire signer -->
+
+1. Cliquez sur **Créer la présentation du bureau** ou **Créer la fiche d'intermédiation**. Une fenêtre s'ouvre d'abord. Pour l'analyse assurance solde restant dû, c'est le bas de la fenêtre que vous connaissez déjà.
+2. Sous *Qui signe* figurent les clients qui signent le document. S'il manque quelque chose chez quelqu'un, comme un numéro de GSM, c'est indiqué à côté de son nom, et vous ne pouvez pas faire signer.
+3. Cliquez sur **Créer et faire signer**. Si vous voulez seulement imprimer ou envoyer le document par e-mail, cliquez sur **Créer**.
+
+Qui signe :
+
+- **La présentation du bureau** : tous les demandeurs du dossier.
+- **La fiche d'intermédiation** : les demandeurs de cette fiche. Avec plus de deux demandeurs, CreditSoft crée une fiche par deux demandeurs, et chaque fiche part à ses propres demandeurs.
+- **L'analyse assurance solde restant dû** : le client du document, c'est-à-dire le premier demandeur.
+
+Vous, le courtier, ne signez pas électroniquement : votre bureau figure comme émetteur sur le document.
+
+Sous le titre *Signature(s)* ou *Signatures* du document, CreditSoft place pour chaque client son nom et un cadre. OKSign y place la signature. Votre modèle ne change pas pour autant. Si vous avez retiré ce titre de votre modèle, les noms et les cadres figurent à la fin du document.
+
+Chaque client reçoit un e-mail avec son propre lien. Le document n'est conservé que si OKSign l'accepte. Si OKSign refuse, ou si le service n'est pas joignable, rien n'est créé ni envoyé, et un message dans le bloc en donne la raison.
+
+La liste des documents créés affiche alors la colonne **Signature** :
+
+- **En attente de signature**, avec plusieurs clients le nombre de ceux qui ont déjà signé ;
+- **Signé le** une date, avec **Version signée** pour ouvrir le document signé ;
+- **Retirée le** une date.
+
+Sous la liste figure chaque document encore en attente, avec pour chaque client **Copier le lien** et **Renvoyer l'e-mail**, et **Retirer…** pour toute la demande. Le document signé rejoint les pièces jointes du dossier, dans la catégorie *Ondertekend*. La personne qui l'a envoyé reçoit une [tâche](../journaal/taken.md) dès que tout le monde a signé.
+
 ## Erreurs fréquentes
+
+!!! warning "Faire signer un document après coup"
+    Ce n'est pas possible : vous le choisissez à la création. Si vous voulez quand même faire signer un document déjà créé, créez-le à nouveau avec **Créer et faire signer**. Le premier document reste.
 
 !!! warning "Une ligne pointillée à la place d'une donnée"
     S'il y a une ligne pointillée au lieu de votre numéro de téléphone, de votre site internet ou de votre numéro d'entreprise, cette donnée manque dans la [fiche d'entreprise](company-profile.md). S'il s'agit d'une donnée du client, comme le sexe ou l'état civil, elle manque sur la fiche de cette relation. Complétez-la et créez le document à nouveau.
@@ -147,3 +182,4 @@ Cliquez sur **Créer l'analyse**. Ce que vous choisissez dans la fenêtre figure
 - [Fiche d'entreprise](company-profile.md)
 - [Dossiers de crédit](../credit-management/credit-files.md)
 - [Conseil](../credit-management/advice.md)
+- [Signature électronique (OKSign)](../credit-management/ondertekenen.md)

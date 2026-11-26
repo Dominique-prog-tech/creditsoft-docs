@@ -131,6 +131,38 @@ Bij **Analyse schuldsaldoverzekering maken** opent eerst een venster met wat Cre
 
 Klik op **Analyse maken**. Wat u in het venster kiest, staat enkel in het gemaakte document; CreditSoft bewaart het nergens anders. Maakt u de analyse opnieuw, dan vult u het venster opnieuw in.
 
+Heeft uw kantoor een OKSign-contract, dan staat onderaan het venster ook wie tekent, en de knop **Maken en laten ondertekenen**. Zie hieronder.
+
+### Maken en laten ondertekenen { #ondertekenen }
+
+Heeft uw kantoor een contract met OKSign, dan laat u een precontractueel document meteen [digitaal ondertekenen](../credit-management/ondertekenen.md). Zonder contract verandert er niets: de knoppen maken het document zoals hierboven.
+
+<!-- AFBEELDING: het venster Voorstelling van het kantoor maken in tenant_demo, met de uitleg, Wie tekent met de naam van de klant, en de knoppen Maken, Annuleren en Maken en laten ondertekenen -->
+
+1. Klik op **Voorstelling van het kantoor maken** of **Bemiddelingsfiche maken**. Er opent eerst een venster. Bij de analyse schuldsaldoverzekering staat dat onderaan het venster dat u al kent.
+2. Onder *Wie tekent* staan de klanten die het document tekenen. Ontbreekt er iets bij iemand, zoals een gsm-nummer, dan staat dat naast zijn naam, en kunt u niet laten ondertekenen.
+3. Klik op **Maken en laten ondertekenen**. Wilt u het document enkel afdrukken of mailen, klik dan op **Maken**.
+
+Wie tekent:
+
+- **De voorstelling van het kantoor**: alle aanvragers van het dossier.
+- **De bemiddelingsfiche**: de aanvragers van die fiche. Bij meer dan twee aanvragers maakt CreditSoft een fiche per twee, en gaat elke fiche naar haar eigen aanvragers.
+- **De analyse schuldsaldoverzekering**: de cliënt op het document, dat is de eerste aanvrager.
+
+U, de makelaar, tekent niet digitaal: uw kantoor staat als uitgever op het document.
+
+CreditSoft zet onder de kop *Handtekening* of *Handtekeningen* van het document per klant zijn naam en een kader. Daarin zet OKSign de handtekening. Uw sjabloon verandert daarvoor niet. Haalde u die kop uit uw sjabloon, dan komen de namen en de kaders achteraan in het document.
+
+Elke klant krijgt een mail met zijn eigen link. Het document wordt pas bewaard als OKSign het aanvaardt. Weigert OKSign, of is de dienst niet bereikbaar, dan is er niets gemaakt of verstuurd, en zegt een melding in het blok waarom.
+
+In de lijst van de gemaakte documenten staat dan de kolom **Ondertekening**:
+
+- **Wacht op ondertekening**, bij meer klanten met hoeveel er al tekenden;
+- **Ondertekend op** een datum, met **Getekende versie** om het getekende document te openen;
+- **Ingetrokken op** een datum.
+
+Onder de lijst staat elk document dat nog wacht, met bij elke klant **Link kopiëren** en **Opnieuw mailen**, en met **Intrekken…** voor het hele verzoek. Het getekende document komt bij de bijlagen van het dossier, in de categorie *Ondertekend*. Wie het verstuurde, krijgt een [taak](../journaal/taken.md) zodra iedereen tekende.
+
 ## Veelgemaakte fouten
 
 !!! warning "Een stippellijn waar een gegeven hoort"
@@ -138,6 +170,9 @@ Klik op **Analyse maken**. Wat u in het venster kiest, staat enkel in het gemaak
 
 !!! warning "Het document in de verkeerde taal"
     De taal volgt de documenttaal van de **eerste aanvrager**. Staat die verkeerd, pas ze dan aan op de fiche van die relatie en maak het document opnieuw.
+
+!!! warning "Een document achteraf laten ondertekenen"
+    Dat kan niet: u kiest het bij het maken. Wilt u een document dat al gemaakt is toch laten ondertekenen, maak het dan opnieuw met **Maken en laten ondertekenen**. Het eerste document blijft staan.
 
 !!! warning "De knop Analyse schuldsaldoverzekering maken ontbreekt"
     Die knop verschijnt enkel als uw kantoor op de [Bedrijfsfiche](company-profile.md#verzekeringsmakelaar) als verzekeringsmakelaar staat.
@@ -147,3 +182,4 @@ Klik op **Analyse maken**. Wat u in het venster kiest, staat enkel in het gemaak
 - [Bedrijfsfiche](company-profile.md)
 - [Kredietdossiers](../credit-management/credit-files.md)
 - [Advies](../credit-management/advice.md)
+- [Digitaal ondertekenen (OKSign)](../credit-management/ondertekenen.md)

@@ -2,10 +2,13 @@
 
 Met OKSign laat u een klant een document digitaal ondertekenen, zonder papier. CreditSoft maakt het document,
 stuurt elke ondertekenaar een eigen link en bewaart het getekende document daarna als bijlage. U gebruikt het
-voor twee documenten:
+voor:
 
 - het **opdrachtdocument**, op de fiche van een [kredietdossier](credit-files.md#ondertekenen): de aanvragers tekenen;
-- de **privacyverklaring**, op de fiche van een [persoon](../crm/relations.md#tabblad-ondertekenen): die persoon tekent.
+- de **privacyverklaring**, op de fiche van een [persoon](../crm/relations.md#tabblad-ondertekenen): die persoon tekent;
+- de **precontractuele documenten** (de voorstelling van het kantoor, de bemiddelingsfiche en de analyse schuldsaldoverzekering): u kiest het
+  bij het maken, op het tabblad *Advies* van het dossier. Zie [Maken en laten ondertekenen](../administration/precontractual-documents.md#ondertekenen).
+  Daar geldt de tekst van de Bedrijfsfiche niet: het document komt uit uw sjabloon.
 
 ## Wat u vooraf nodig hebt
 

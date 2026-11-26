@@ -2,10 +2,13 @@
 
 Avec OKSign, vous faites signer un document par un client de façon électronique, sans papier. CreditSoft crée le
 document, envoie à chaque signataire son propre lien et conserve ensuite le document signé en pièce jointe. Vous
-l'utilisez pour deux documents :
+l'utilisez pour :
 
 - le **document de mission**, sur la fiche d'un [dossier de crédit](credit-files.md#ondertekenen) : les demandeurs signent ;
-- la **déclaration de confidentialité**, sur la fiche d'une [personne](../crm/relations.md#tabblad-ondertekenen) : cette personne signe.
+- la **déclaration de confidentialité**, sur la fiche d'une [personne](../crm/relations.md#tabblad-ondertekenen) : cette personne signe ;
+- les **documents précontractuels** (la présentation du bureau, la fiche d'intermédiation et l'analyse assurance solde restant dû) : vous le
+  choisissez à la création, dans l'onglet *Conseil* du dossier. Voir [Créer et faire signer](../administration/precontractual-documents.md#ondertekenen).
+  Le texte de la fiche d'entreprise ne s'applique pas : le document provient de votre modèle.
 
 ## Ce qu'il vous faut au préalable
 
