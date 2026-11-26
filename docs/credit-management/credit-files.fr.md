@@ -335,6 +335,8 @@ Le patrimoine figure aussi sur l'impression du dossier, avec la même ligne de t
 
 L'onglet **Conseil** résume le conseil donné au client : conseil ou pas de conseil, sur quelle base, combien d'offres vous avez comparées et quelles copies le client a reçues. **Enregistrer un conseil** ou **Ouvrir le conseil** mène à la [page de conseil](advice.md) du dossier. Un apporteur ne voit pas cet onglet.
 
+Sous le résumé se trouve le bloc **Documents précontractuels**. **Créer la présentation du bureau** crée ce document dans la langue du premier demandeur ; il est conservé dans les pièces jointes du dossier. Comment adapter le document à votre bureau est expliqué dans [Documents précontractuels](../administration/precontractual-documents.md#maken).
+
 ### Signature { #ondertekenen }
 
 Dans l'onglet **Signature**, vous faites signer le **document de mission** par les demandeurs, de façon

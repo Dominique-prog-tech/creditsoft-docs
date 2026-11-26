@@ -333,6 +333,8 @@ Het patrimonium staat ook op de afdruk van het dossier, met dezelfde somregel.
 
 Het tabblad **Advies** vat samen welk advies u de klant gaf: advies of geen advies, op welke basis, hoeveel aanbiedingen u vergeleek en welke afschriften de klant kreeg. Met **Advies vastleggen** of **Advies openen** gaat u naar de [adviespagina](advice.md) van het dossier. Een aanbrenger ziet dit tabblad niet.
 
+Onder de samenvatting staat het blok **Precontractuele documenten**. Met **Voorstelling van het kantoor maken** maakt u dat document in de taal van de eerste aanvrager; het komt bij de bijlagen van het dossier. Hoe u het document aanpast aan uw kantoor, leest u bij [Precontractuele documenten](../administration/precontractual-documents.md#maken).
+
 ### Ondertekenen { #ondertekenen }
 
 Op het tabblad **Ondertekenen** laat u het **opdrachtdocument** digitaal ondertekenen door de aanvragers, met
