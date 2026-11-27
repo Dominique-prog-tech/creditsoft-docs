@@ -91,9 +91,9 @@ Vul bovenaan bij **Opmerking bij deze versie** kort in wat u veranderde, en klik
 | Gegevens van de cliënt(en) | Per aanvrager: naam, voornaam, geslacht, adres, telefoon, gsm, geboorteplaats en -datum, e-mailadres; en de keuze om de informatie elektronisch te ontvangen (invulpagina) |
 | 1. Persoonlijke situatie | Het aantal kinderen ten laste, de burgerlijke staat, en roker (invulpagina) |
 | 2.1 Maandelijkse inkomsten | De beroepssituatie en de voordelen van alle aard (invulpagina); de begindatum van het statuut, de werkgever, het netto maandinkomen, de kinderbijslag, de huidige huurinkomsten en de overige inkomsten; voor een zelfstandige het ondernemingsnummer, de begindatum en de aard van de activiteit |
-| 2.2 Maandlasten | De huidige huur, de alimentatie, en een rij per lopende lening van beide aanvragers |
+| 2.2 Maandlasten | De huidige huur, de alimentatie, en een rij per lopende lening van beide aanvragers; onder de tabel het antwoord op de vraag naar financiële problemen in het verleden (invulpagina) |
 | 3. Doel | Het doel van het krediet (invulpagina) |
-| 4 en 5 | De voorkeuren en de behoeften van het tabblad *Advies* |
+| 4 en 5 | De voorkeuren en de behoeften van het tabblad *Advies*, en de gewenste looptijd in maanden (invulpagina) |
 | Deel II | Het vakje *Wij bevelen u … aan*, met de aanbevolen aanbiedingen en hun kredietinstelling, of het vakje *Wij kunnen u geen kredietproduct aanbevelen* |
 | Ondertekening | De gemeente van uw kantoor en de datum |
 
@@ -146,6 +146,8 @@ Wat CreditSoft niet uit het dossier haalt, vraagt de invulpagina van het documen
 
 - het **doel van het krediet**, met het kredietdoel van het dossier ernaast als hulp;
 - of de aanvragers **geen lopende kredieten** hebben, als er geen in het dossier staan;
+- de **gewenste looptijd** in maanden. Hebben de hypothecaire contracten van het dossier allemaal dezelfde looptijd, dan staat die voorgesteld; ze telt pas als u bewaart. Hebben ze een verschillende looptijd, dan staan die ernaast als hulp;
+- of de aanvragers **financiële problemen** hadden in het verleden. Bij *ja* schrijft u kort wanneer, bij welke instelling en waarom; dat komt op de fiche onder de vraag;
 - per aanvrager: de keuze om de informatie **elektronisch** te ontvangen, **roker**, de **beroepssituatie** (met de soorten inkomsten van die aanvrager ernaast) en de **voordelen van alle aard**.
 
 **De analyse schuldsaldoverzekering** vraagt:

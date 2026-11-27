@@ -91,9 +91,9 @@ Indiquez en haut, dans **Remarque pour cette version**, ce que vous avez modifi�
 | Données du/des client(s) | Par demandeur : nom, prénom, sexe, adresse, téléphone, GSM, lieu et date de naissance, adresse e-mail ; et le choix de recevoir les informations par voie électronique (page de préparation) |
 | 1. Situation personnelle | Le nombre d'enfants à charge, l'état civil, et fumeur (page de préparation) |
 | 2.1 Revenus mensuels | La situation professionnelle et les avantages de toute nature (page de préparation) ; la date de début du statut, l'employeur, les revenus mensuels nets, les allocations familiales, les revenus locatifs actuels et les autres revenus ; pour un indépendant le numéro d'entreprise, la date de début et la nature de l'activité |
-| 2.2 Charges mensuelles | Le loyer actuel, la pension alimentaire, et une ligne par crédit en cours des deux demandeurs |
+| 2.2 Charges mensuelles | Le loyer actuel, la pension alimentaire, et une ligne par crédit en cours des deux demandeurs ; sous le tableau, la réponse à la question sur les problèmes financiers dans le passé (page de préparation) |
 | 3. Objectif | Le but du crédit (page de préparation) |
-| 4 et 5 | Les préférences et les besoins de l'onglet *Conseil* |
+| 4 et 5 | Les préférences et les besoins de l'onglet *Conseil*, et la durée souhaitée en mois (page de préparation) |
 | Partie II | La case *Nous vous recommandons …*, avec les offres recommandées et leur prêteur, ou la case *Nous ne pouvons pas vous recommander un produit de crédit* |
 | Signature | La commune de votre bureau et la date |
 
@@ -146,6 +146,8 @@ Ce que CreditSoft ne trouve pas dans le dossier, la page de préparation du docu
 
 - le **but du crédit**, avec le but du dossier à côté comme aide ;
 - si les demandeurs n'ont **pas de crédits en cours**, s'il n'y en a aucun dans le dossier ;
+- la **durée souhaitée** en mois. Si les contrats hypothécaires du dossier ont tous la même durée, elle est proposée ; elle ne compte qu'une fois enregistrée. S'ils ont une durée différente, celles-ci figurent à côté comme aide ;
+- si les demandeurs ont eu des **problèmes financiers** dans le passé. En cas de *oui*, vous indiquez brièvement quand, auprès de quel organisme et pourquoi ; cela figure sur la fiche sous la question ;
 - par demandeur : le choix de recevoir les informations **par voie électronique**, **fumeur**, la **situation professionnelle** (avec les types de revenus de ce demandeur à côté) et les **avantages de toute nature**.
 
 **L'analyse assurance solde restant dû** demande :
