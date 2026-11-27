@@ -54,7 +54,7 @@ Dans l'onglet de la langue, cliquez sur **Modifier le document**. Le document s'
 
 <!-- AFBEELDING: l'éditeur avec la présentation du bureau en français dans tenant_demo, avec les champs «KantoorNaam» à «KantoorWebsite» sous Identité, et en haut Remarque pour cette version, Vérifier et Aperçu en PDF -->
 
-Les mots entre « » sont des **champs**, comme «KantoorNaam» ou «A1Naam». CreditSoft les complète au moment où le document est créé. Les champs de chaque document et ce que contient chaque champ figurent sur [Champs des documents précontractuels](precontractual-documents-fields.md). Vous insérez un champ par l'onglet **Publipostage** de l'éditeur, bouton **Insérer un champ de fusion**.
+Les mots entre « » sont des **champs**, comme «KantoorNaam» ou «A1Naam». CreditSoft les complète au moment où le document est créé. Les champs de chaque document et ce que contient chaque champ figurent sur [Champs des documents précontractuels](precontractual-documents-fields.md). Vous insérez un champ avec le panneau **Champs** à droite du document : recherchez un mot et cliquez sur le champ.
 
 Les données de votre bureau proviennent de la fiche d'entreprise. S'il y manque une donnée dont le document a besoin, une ligne pointillée apparaît. Une donnée qui n'existe pas pour chaque bureau, comme le site web, devient une barre oblique (/). Les cases sont aussi des champs : CreditSoft y met ☒ ou ☐.
 

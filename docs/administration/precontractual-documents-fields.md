@@ -2,7 +2,7 @@
 
 Een **veld** is een woord tussen « », zoals «KantoorNaam», in een sjabloon van een precontractueel document. CreditSoft vult het in wanneer het document gemaakt wordt. Op deze pagina staat per document welke velden er zijn en wat erin komt.
 
-In de editor voegt u een veld in met het tabblad **Mailingen**, knop **Voeg samengevoegd veld in**: daar kiest u de **code** uit de rechterkolom. Een veld dat u in uw sjabloon verplaatst, wordt ingevuld op zijn nieuwe plaats.
+In de editor staat rechts naast het document het paneel **Velden**, met dezelfde groepen en namen als hieronder. Zoek op een woord en klik op het veld: het komt op de plaats van de cursor, met zijn **code**. Een veld dat u in uw sjabloon verplaatst, wordt ingevuld op zijn nieuwe plaats.
 
 !!! tip "Ook de vakjes zijn velden"
     Een veld met *(vakje)* wordt ☒ of ☐ in het document. Zet zelf geen vakje of stippellijn in uw sjabloon: niemand vult dat in, en dan kan het document niet digitaal ondertekend worden.

@@ -54,7 +54,7 @@ Klik op het tabblad van de taal op **Document bewerken**. Het document opent in 
 
 <!-- AFBEELDING: de editor met de Nederlandse voorstelling van het kantoor in tenant_demo, met de velden «KantoorNaam» tot «KantoorWebsite» onder Identiteit, en bovenaan Opmerking bij deze versie, Controleren en Voorbeeld als PDF -->
 
-De woorden tussen « » zijn **velden**, zoals «KantoorNaam» of «A1Naam». Die vult CreditSoft in wanneer het document gemaakt wordt. Welke velden elk document kent en wat er in elk veld komt, staat op [Velden van de precontractuele documenten](precontractual-documents-fields.md). Een veld voegt u in via het tabblad **Mailingen** van de editor, knop **Voeg samengevoegd veld in**.
+De woorden tussen « » zijn **velden**, zoals «KantoorNaam» of «A1Naam». Die vult CreditSoft in wanneer het document gemaakt wordt. Welke velden elk document kent en wat er in elk veld komt, staat op [Velden van de precontractuele documenten](precontractual-documents-fields.md). Een veld voegt u in met het paneel **Velden** rechts naast het document: zoek op een woord en klik op het veld.
 
 De gegevens van uw kantoor komen uit de Bedrijfsfiche. Ontbreekt daar een gegeven dat het document nodig heeft, dan komt er een stippellijn. Een gegeven dat niet voor elk kantoor bestaat, zoals de website, wordt een schuine streep (/). De vakjes zijn ook velden: CreditSoft zet er ☒ of ☐ in.
 

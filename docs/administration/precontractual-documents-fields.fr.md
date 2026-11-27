@@ -2,7 +2,7 @@
 
 Un **champ** est un mot entre « », comme «KantoorNaam», dans un modèle de document précontractuel. CreditSoft le complète au moment où le document est créé. Cette page indique, par document, quels champs existent et ce qu'ils contiennent.
 
-Dans l'éditeur, vous insérez un champ via l'onglet **Publipostage**, bouton **Insérer un champ de fusion** : vous y choisissez le **code** de la colonne de droite. Un champ que vous déplacez dans votre modèle est complété à sa nouvelle place.
+Dans l'éditeur, le panneau **Champs** se trouve à droite du document, avec les mêmes groupes et noms que ci-dessous. Recherchez un mot et cliquez sur le champ : il est inséré à l'endroit du curseur, avec son **code**. Un champ que vous déplacez dans votre modèle est complété à sa nouvelle place.
 
 !!! tip "Les cases sont aussi des champs"
     Un champ marqué *(case)* devient ☒ ou ☐ dans le document. Ne placez pas de case ou de ligne pointillée vous-même : personne ne la complète, et le document ne peut alors pas être signé électroniquement.
