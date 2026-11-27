@@ -100,6 +100,12 @@ export const ID = {
   // dezelfde status als DEMO-1004 — DEMO-1148 stond op "Crédit sans suite" en toonde een reden van afvallen die het
   // Nederlandse beeld niet heeft.
   dossierAdviesFr: 'dd594988-6490-4498-92d0-1e755a042d1e',
+  // 1.246.2 (27/11/2026) — de precontractuele documenten. Twee sjablonen van tenant_demo (de id's zijn willekeurig, gezaaid op 26/11:
+  // ze vallen om na een her-seed) en de demotoestand uit adm-creditsoft dev/beeldronde/precontractueel-demo.sql: de voorstelling met
+  // een versie 2 van Lotte Cools, de analyse SSV met een versie 2 van haar op het OUDE model (dus de gele melding "Nieuw model
+  // overnemen"), en DEMO-1004/DEMO-4995 (hierboven) met de drie gemaakte documenten en een ingevulde invulpagina.
+  sjabloonVoorstelling: '01a21855-122f-7874-8356-a8b074483dd4',
+  sjabloonSsv: '01a218e7-d4a7-7993-b852-fea7befe47b3',
   // 1.199.0 — het advies in het AANBRENGERSPORTAAL, als aanbrenger2 (Horizon Makelaars Oostende, mag inleiden): DEMO-3418
   // (een kantoor onder hem, Nederlandstalige klant) en DEMO-4043 (zijn eigen kantoor, Franstalige klant). Gekozen met een query
   // op credit_file.advice binnen zijn tak; valt om na een her-seed.

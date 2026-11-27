@@ -822,5 +822,45 @@
       "bevat": "Aflossingstabel ·|Tableau d'amortissement ·",
       "minBreed": 500
     }
+  },
+  "precontractueel-lijst": {
+    "breedte": 1280,
+    "hoogte": 560
+  },
+  "precontractueel-versies": {
+    "breedte": 1280,
+    "hoogte": 520
+  },
+  "precontractueel-nieuw-model": {
+    "breedte": 1280,
+    "hoogte": 640
+  },
+  "precontractueel-vaste-keuzes": {
+    "breedte": 1280,
+    "hoogte": 1300,
+    "element": {
+      "kies": "[data-ssv-vaste-keuzes]"
+    }
+  },
+  "precontractueel-editor": {
+    "breedte": 1440,
+    "hoogte": 1000
+  },
+  "kredietdossier-precontractueel": {
+    "breedte": 1700,
+    "hoogte": 1400
+  },
+  "precontractueel-invulpagina": {
+    "breedte": 1280,
+    "hoogte": 1080
+  },
+  "precontractueel-venster": {
+    "breedte": 1600,
+    "hoogte": 1000,
+    "element": {
+      "kies": ".dxbl-popup",
+      "bevat": "Wie tekent|Qui signe",
+      "minBreed": 400
+    }
   }
 }

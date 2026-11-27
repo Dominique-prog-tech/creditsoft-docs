@@ -14,7 +14,7 @@ Cliquez dans la barre latérale sur **Administration**, puis sur la tuile **Docu
 
 ## La liste
 
-<!-- AFBEELDING: la liste Documents précontractuels dans tenant_demo, avec la ligne Présentation du bureau, la colonne Documents (NL v1 · FR v1) et Dernière modification -->
+![La liste Documents précontractuels avec les trois documents : pour chaque document le nom, le type de document, la colonne Documents avec les versions par langue (par exemple NL v2 · FR v1) et la date de la dernière modification.](../images/precontractueel-lijst-fr.png "Les documents précontractuels de votre bureau")
 
 Pour chaque document, vous voyez le nom, les versions qui existent par langue (par exemple *NL v2 · FR v1*) et la date de la dernière modification. Double-cliquez sur une ligne pour ouvrir le document.
 
@@ -24,7 +24,7 @@ Chaque document n'existe qu'une fois. Vous ne pouvez pas en ajouter un deuxième
 
 Le document a un onglet par langue : **Néerlandais** et **Français**. Chaque onglet montre la version actuelle et la liste de toutes les versions, avec la date, la personne qui l'a enregistrée et la remarque qui l'accompagne.
 
-<!-- AFBEELDING: l'onglet Français de Présentation du bureau dans tenant_demo, avec Version 2 par un collaborateur et Version 1 Fourni avec l'application, les boutons Modifier le document, Rétablir et Aperçu en PDF -->
+![L'onglet Français de la Présentation du bureau : en haut la version actuelle et Modifier le document, ensuite la version 2 de Lotte Cools avec sa remarque et la version 1 fournie avec l'application, avec les boutons Rétablir et Aperçu en PDF.](../images/precontractueel-versies-fr.png "Chaque version reste conservée")
 
 - La **version 1** porte la remarque *Fourni avec l'application*. C'est le modèle standard de la FVF.
 - **Aperçu en PDF** montre une version avec les données de votre bureau et la date du jour. Vous voyez ainsi le document tel que le client le reçoit.
@@ -32,7 +32,7 @@ Le document a un onglet par langue : **Néerlandais** et **Français**. Chaque o
 
 Depuis novembre 2026, CreditSoft complète lui-même chaque case de la fiche d'intermédiation et de l'analyse. Si votre bureau n'avait jamais adapté le modèle, le nouveau modèle est déjà en place, avec la remarque *Mis à jour par CreditSoft*. Si vous l'aviez adapté et qu'il contient encore des cases ou des lignes à compléter à la main, un message apparaît en haut avec le bouton **Reprendre le nouveau modèle**. Votre version adaptée reste conservée : vous la rétablissez ou refaites vos adaptations dans le nouveau modèle.
 
-<!-- AFBEELDING: la fiche de la fiche d'intermédiation dans tenant_demo, avec le message jaune sur les cases à compléter à la main et le bouton Reprendre le nouveau modèle (FR) -->
+![L'analyse assurance solde restant dû avec en haut deux messages : le modèle néerlandais et le modèle français du bureau contiennent encore des cases à compléter à la main, chacun avec le bouton Reprendre le nouveau modèle.](../images/precontractueel-nieuw-model-fr.png "Un modèle adapté sur l'ancien modèle")
 
 ## Choix fixes de votre bureau { #vaste-keuzes }
 
@@ -46,13 +46,13 @@ Ouvrez dans la liste l'**Analyse assurance solde restant dû**. Sous les version
 
 Cliquez sur **Enregistrer les choix fixes**. Sans ces choix, une analyse n'est pas complète et ne peut pas être signée électroniquement.
 
-<!-- AFBEELDING: le bloc Choix fixes de votre bureau dans tenant_demo, avec la base, la liste des assureurs, la rémunération, le RPM et les participations -->
+![Le bloc Choix fixes de votre bureau : la base de votre conseil en assurance, où figure la liste des assureurs, comment votre bureau est rémunéré, le RPM avec le tribunal du siège et les participations, avec en bas Enregistrer les choix fixes.](../images/precontractueel-vaste-keuzes-fr.png "À régler une seule fois, pour chaque analyse")
 
 ## Adapter un document
 
 Dans l'onglet de la langue, cliquez sur **Modifier le document**. Le document s'ouvre dans un éditeur qui fonctionne comme Word.
 
-<!-- AFBEELDING: l'éditeur avec la présentation du bureau en français dans tenant_demo, avec les champs «KantoorNaam» à «KantoorWebsite» sous Identité, et en haut Remarque pour cette version, Vérifier et Aperçu en PDF -->
+![L'éditeur avec la présentation du bureau en français : en haut la remarque pour cette version, Vérifier et Aperçu en PDF, dans le document les champs «KantoorNaam» à «KantoorWebsite», et à droite le panneau Champs avec les noms par groupe.](../images/precontractueel-editor-fr.png "Adapter un modèle")
 
 Les mots entre « » sont des **champs**, comme «KantoorNaam» ou «A1Naam». CreditSoft les complète au moment où le document est créé. Les champs de chaque document et ce que contient chaque champ figurent sur [Champs des documents précontractuels](precontractual-documents-fields.md). Vous insérez un champ avec le panneau **Champs** à droite du document : recherchez un mot et cliquez sur le champ.
 
@@ -108,7 +108,7 @@ Le modèle de la FVF est une feuille Excel. CreditSoft en fait un document Word,
 
 Ouvrez le dossier et cliquez sur l'onglet **Conseil**. Sous le résumé du conseil se trouve le bloc **Documents précontractuels**.
 
-<!-- AFBEELDING: l'onglet Conseil d'un dossier dans tenant_demo, avec en bas le bloc Documents précontractuels, les boutons Créer la présentation du bureau, Créer la fiche d'intermédiation et Créer l'analyse assurance solde restant dû, et trois documents créés dans la liste -->
+![L'onglet Conseil d'un dossier avec en bas le bloc Documents précontractuels : les boutons Créer la présentation du bureau, Créer la fiche d'intermédiation et Créer l'analyse assurance solde restant dû, et trois documents créés avec la date, qui les a créés et Ouvrir.](../images/kredietdossier-precontractueel-fr.png "Les documents précontractuels d'un dossier"){ .volle-breedte }
 
 - **Créer la présentation du bureau** crée le document directement ; il n'a pas de questions. Si votre bureau a un contrat OKSign, une petite fenêtre s'ouvre d'abord (voir [Créer et faire signer](#ondertekenen)).
 - **Créer la fiche d'intermédiation** et **Créer l'analyse assurance solde restant dû** ouvrent la [page de préparation](#invulpagina) de ce document.
@@ -123,7 +123,7 @@ Vous avez besoin du droit de modifier le dossier. Le bloc ne figure pas dans le 
 
 Ce que CreditSoft ne trouve pas dans le dossier, la page de préparation du document le demande. Ce que vous y enregistrez reste dans le dossier : si vous recréez le document, il est toujours là.
 
-<!-- AFBEELDING: la page Préparer la fiche d'intermédiation dans tenant_demo, avec le but du crédit, un demandeur avec l'information électronique, fumeur, la situation professionnelle et les avantages, et en bas Ce qui manque encore avec les boutons Créer et Créer et faire signer -->
+![La page Préparer la fiche d'intermédiation : le but du crédit, la durée souhaitée et les problèmes financiers, par demandeur les informations par voie électronique, fumeur, la situation professionnelle et les avantages de toute nature, et en bas Ce qui manque encore avec les boutons Créer et Créer et faire signer.](../images/precontractueel-invulpagina-fr.png "Ce que CreditSoft ne tire pas du dossier"){ .volle-breedte }
 
 **La fiche d'intermédiation** demande :
 
@@ -151,7 +151,7 @@ Enregistrez d'abord vos modifications : le document est créé à partir de ce q
 
 Si votre bureau a un contrat avec OKSign, vous faites [signer électroniquement](../credit-management/ondertekenen.md) un document précontractuel dès sa création. Un document envoyé pour signature doit être complet : dans OKSign, le client peut seulement signer, rien compléter. Sans contrat, rien ne change.
 
-<!-- AFBEELDING: la fenêtre Créer la présentation du bureau dans tenant_demo, avec l'explication, Qui signe avec le nom du client, et les boutons Créer, Annuler et Créer et faire signer -->
+![La fenêtre Créer la présentation du bureau : l'explication sur Créer ou Créer et faire signer, Qui signe avec le nom du client, et les boutons Créer, Annuler et Créer et faire signer.](../images/precontractueel-venster-fr.png "Choisir à la création : avec ou sans signature électronique")
 
 - **La présentation du bureau** : après un clic sur **Créer la présentation du bureau**, une fenêtre s'ouvre avec qui signe et, s'il manque quelque chose sur la fiche d'entreprise, quoi. Cliquez sur **Créer et faire signer**.
 - **La fiche d'intermédiation et l'analyse** : sur la page de préparation, avec **Créer et faire signer**.

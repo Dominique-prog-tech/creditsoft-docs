@@ -14,7 +14,7 @@ Klik in de zijbalk op **Platformbeheer** en daarna op de tegel **Precontractuele
 
 ## De lijst
 
-<!-- AFBEELDING: de lijst Precontractuele documenten in tenant_demo, met de regel Voorstelling van het kantoor, de kolom Documenten (NL v1 · FR v1) en Laatst gewijzigd -->
+![De lijst Precontractuele documenten met de drie documenten: per document de naam, de kolom Documenten met de versies per taal (bijvoorbeeld NL v2 · FR v1) en Laatst gewijzigd.](../images/precontractueel-lijst.png "De precontractuele documenten van uw kantoor")
 
 Per document ziet u de naam, welke versies er zijn per taal (bijvoorbeeld *NL v2 · FR v1*) en wanneer het laatst gewijzigd werd. Dubbelklik een rij om het document te openen.
 
@@ -24,7 +24,7 @@ Elk document staat er precies één keer. U kunt er geen tweede bij maken en het
 
 Het document heeft een tabblad per taal: **Nederlands** en **Frans**. Elk tabblad toont de huidige versie en de lijst van alle versies, met de datum, wie ze bewaarde en de opmerking die erbij hoort.
 
-<!-- AFBEELDING: het tabblad Nederlands van Voorstelling van het kantoor in tenant_demo, met Versie 2 door een medewerker en Versie 1 Meegeleverd door de app, de knoppen Document bewerken, Terugzetten en Voorbeeld als PDF -->
+![Het tabblad Nederlands van de Voorstelling van het kantoor: bovenaan de huidige versie en Document bewerken, daaronder Versie 2 door Lotte Cools met haar opmerking en Versie 1 Meegeleverd door de app, met de knoppen Terugzetten en Voorbeeld als PDF.](../images/precontractueel-versies.png "Elke versie blijft bewaard")
 
 - **Versie 1** draagt de opmerking *Meegeleverd door de app*. Dat is het standaardmodel van FVF.
 - **Voorbeeld als PDF** toont een versie met de gegevens van uw kantoor en de datum van vandaag. Zo ziet u het document zoals de klant het krijgt.
@@ -32,7 +32,7 @@ Het document heeft een tabblad per taal: **Nederlands** en **Frans**. Elk tabbla
 
 Sinds november 2026 vult CreditSoft elk vakje van de bemiddelingsfiche en de analyse zelf in. Had uw kantoor het sjabloon nooit aangepast, dan staat het nieuwe model er al, met de opmerking *Bijgewerkt door CreditSoft*. Paste u het wel aan en draagt het nog vakjes of lijnen om met de hand in te vullen, dan staat er bovenaan een melding met de knop **Nieuw model overnemen**. Uw aangepaste versie blijft bewaard: u zet ze terug of maakt uw aanpassingen opnieuw in het nieuwe model.
 
-<!-- AFBEELDING: de fiche van de bemiddelingsfiche in tenant_demo, met de gele melding over vakjes om met de hand in te vullen en de knop Nieuw model overnemen (NL) -->
+![De Analyse schuldsaldoverzekering met bovenaan twee meldingen: het Nederlandse en het Franse sjabloon van het kantoor hebben nog plekken om met de hand in te vullen, elk met de knop Nieuw model overnemen.](../images/precontractueel-nieuw-model.png "Een aangepast sjabloon op het oude model")
 
 ## Vaste keuzes van uw kantoor { #vaste-keuzes }
 
@@ -46,13 +46,13 @@ Open bij de lijst de **Analyse schuldsaldoverzekering**. Onder de versies staat 
 
 Klik op **Vaste keuzes bewaren**. Zonder deze keuzes is een analyse niet volledig en kan ze niet digitaal ondertekend worden.
 
-<!-- AFBEELDING: het blok Vaste keuzes van uw kantoor in tenant_demo, met de basis, de lijst van verzekeraars, de vergoeding, het RPR en de deelnemingen -->
+![Het blok Vaste keuzes van uw kantoor: de basis van uw verzekeringsadvies, waar de lijst van verzekeraars staat, hoe uw kantoor vergoed wordt, het RPR met de rechtbank van de zetel en de deelnemingen, met onderaan Vaste keuzes bewaren.](../images/precontractueel-vaste-keuzes.png "Eén keer in te stellen, voor elke analyse")
 
 ## Een document aanpassen
 
 Klik op het tabblad van de taal op **Document bewerken**. Het document opent in een editor die werkt zoals Word.
 
-<!-- AFBEELDING: de editor met de Nederlandse voorstelling van het kantoor in tenant_demo, met de velden «KantoorNaam» tot «KantoorWebsite» onder Identiteit, en bovenaan Opmerking bij deze versie, Controleren en Voorbeeld als PDF -->
+![De editor van de Voorstelling van het kantoor in het Nederlands: bovenaan Opmerking bij deze versie, Controleren en Voorbeeld als PDF, in het document de velden «KantoorNaam» tot «KantoorWebsite» onder Identiteit, en rechts het paneel Velden met de namen per groep.](../images/precontractueel-editor.png "Een sjabloon aanpassen")
 
 De woorden tussen « » zijn **velden**, zoals «KantoorNaam» of «A1Naam». Die vult CreditSoft in wanneer het document gemaakt wordt. Welke velden elk document kent en wat er in elk veld komt, staat op [Velden van de precontractuele documenten](precontractual-documents-fields.md). Een veld voegt u in met het paneel **Velden** rechts naast het document: zoek op een woord en klik op het veld.
 
@@ -108,7 +108,7 @@ Het model van FVF is een Excel-blad. CreditSoft maakt er een Word-document van, 
 
 Open het dossier en klik op het tabblad **Advies**. Onder de samenvatting van het advies staat het blok **Precontractuele documenten**.
 
-<!-- AFBEELDING: het tabblad Advies van een dossier in tenant_demo, met onderaan het blok Precontractuele documenten, de knoppen Voorstelling van het kantoor maken, Bemiddelingsfiche maken en Analyse schuldsaldoverzekering maken, en drie gemaakte documenten in de lijst -->
+![Het tabblad Advies van een dossier met onderaan het blok Precontractuele documenten: de knoppen Voorstelling van het kantoor maken, Bemiddelingsfiche maken en Analyse schuldsaldoverzekering maken, en drie gemaakte documenten met de datum, wie ze maakte en Openen.](../images/kredietdossier-precontractueel.png "De precontractuele documenten van een dossier"){ .volle-breedte }
 
 - **Voorstelling van het kantoor maken** maakt het document meteen; die heeft geen vragen. Heeft uw kantoor een OKSign-contract, dan opent eerst een klein venster (zie [Maken en laten ondertekenen](#ondertekenen)).
 - **Bemiddelingsfiche maken** en **Analyse schuldsaldoverzekering maken** openen de [invulpagina](#invulpagina) van dat document.
@@ -123,7 +123,7 @@ U hebt het recht nodig om het dossier te wijzigen. Het blok staat niet in het po
 
 Wat CreditSoft niet uit het dossier haalt, vraagt de invulpagina van het document. Wat u daar bewaart, blijft bij het dossier: maakt u het document opnieuw, dan staat het er nog.
 
-<!-- AFBEELDING: de pagina Bemiddelingsfiche voorbereiden in tenant_demo, met het doel van het krediet, een aanvrager met elektronische informatie, roker, beroepssituatie en voordelen, en onderaan Wat nog ontbreekt met de knoppen Maken en Maken en laten ondertekenen -->
+![De pagina Bemiddelingsfiche voorbereiden: het doel van het krediet, de gewenste looptijd en de financiële problemen, per aanvrager informatie elektronisch ontvangen, roker, beroepssituatie en voordelen van alle aard, en onderaan Wat nog ontbreekt met de knoppen Maken en Maken en laten ondertekenen.](../images/precontractueel-invulpagina.png "Wat CreditSoft niet uit het dossier haalt"){ .volle-breedte }
 
 **De bemiddelingsfiche** vraagt:
 
@@ -151,7 +151,7 @@ Bewaar eerst wat u wijzigde: het document komt uit wat bewaard is.
 
 Heeft uw kantoor een contract met OKSign, dan laat u een precontractueel document meteen [digitaal ondertekenen](../credit-management/ondertekenen.md). Een document dat ter ondertekening gaat, moet volledig zijn: de klant kan in OKSign enkel tekenen, niets aanvullen. Zonder contract verandert er niets.
 
-<!-- AFBEELDING: het venster Voorstelling van het kantoor maken in tenant_demo, met de uitleg, Wie tekent met de naam van de klant, en de knoppen Maken, Annuleren en Maken en laten ondertekenen -->
+![Het venster Voorstelling van het kantoor maken: de uitleg over Maken of Maken en laten ondertekenen, Wie tekent met de naam van de klant, en de knoppen Maken, Annuleren en Maken en laten ondertekenen.](../images/precontractueel-venster.png "Kiezen bij het maken: met of zonder digitale ondertekening")
 
 - **De voorstelling van het kantoor**: na een klik op **Voorstelling van het kantoor maken** opent een venster met wie tekent en, als er iets ontbreekt op de Bedrijfsfiche, wat. Klik op **Maken en laten ondertekenen**.
 - **De bemiddelingsfiche en de analyse**: op de invulpagina, met **Maken en laten ondertekenen**.

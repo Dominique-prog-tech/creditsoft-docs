@@ -120,6 +120,15 @@ async function adviesInDeTaalVanHetBeeld(p) {
   await p.waitForTimeout(2500);
 }
 
+// De taal van het scherm, aan het menu-item Platformbeheer (Program.cs: NavItem "Platformbeheer", "Administration"). De cultuurcookie is
+// HttpOnly, dus niet leesbaar. Geen terugval: een onbekende tekst laat het recept falen in plaats van stil het Nederlandse te kiezen.
+async function schermTaal(p) {
+  const t = (await p.locator('a[href="administration"]').first().innerText({ timeout: 15000 })).trim();
+  if (t === 'Platformbeheer') return 'nl';
+  if (t === 'Administration') return 'fr';
+  throw new Error(`de taal van het scherm is niet te herkennen aan het menu-item "${t}"`);
+}
+
 // Een rij van een AdmGrid openen. De RijLink is een anker met target=_blank: een klik opent een tabblad dat het schot niet
 // ziet. Daarom de href van de rij die het merkteken draagt, en er in DIT tabblad naartoe. Geen rij = luid falen.
 // ⚠️ De dossierkop is inklapbaar, en die keuze volgt de GEBRUIKER (IAdmUserPreferences). De ronde meldt aan als admin;
@@ -576,6 +585,71 @@ const SCHOTEN = [
       const bedrag = await venster.locator('.dxbl-fl-item').filter({ has: p.locator('.dxbl-fl-cpt', { hasText: /^(Bedrag|Montant)$/ }) })
         .locator('input').first().inputValue({ timeout: 10000 });
       if (!/\d/.test(bedrag)) throw new Error(`het venster hoort een bedrag uit het contract te dragen, gezien: "${bedrag}"`);
+  }],
+  // ── 1.246.2 (27/11/2026): de precontractuele documenten ──
+  // De demotoestand staat in adm-creditsoft dev/beeldronde/precontractueel-demo.sql (zie ID.sjabloonVoorstelling). Drie gevallen uit de
+  // handleiding, elk op een eigen document: de voorstelling aangepast door Lotte Cools, de fiche bijgewerkt door CreditSoft, de analyse
+  // aangepast op het oude model (de gele melding). Elk beeld toont de taal van zijn handleiding: het tabblad Nederlands of Français, de
+  // editor van die taal, en het adviesdossier van een klant in die taal (adviesInDeTaalVanHetBeeld).
+  // ⚠️ Het venster en de knop "Maken en laten ondertekenen" bestaan enkel als de HUB zegt dat het kantoor OKSign heeft (lokaal: ja, de
+  //    productie-hub, GET oksign/connection). Geen recept klikt ooit op Maken of op Maken en laten ondertekenen.
+  ['precontractueel-lijst',          '/administration/precontractuele-documenten', async p => {
+      // De drie documenten, elk met hun versies per taal: een lege of halve lijst bewijst niets over de kolom Documenten.
+      await p.locator('.dxbl-grid tbody tr').filter({ hasText: /NL v\d+ · FR v\d+/ }).nth(2).waitFor({ timeout: 15000 });
+  }],
+  ['precontractueel-versies',        `/administration/precontractuele-documenten/${ID.sjabloonVoorstelling}`, async p => {
+      await tab(p, 'Nederlands', 'Français');
+      await p.getByText(/^(Versie|Version) 2$/).first().waitFor({ timeout: 15000 });
+  }],
+  ['precontractueel-nieuw-model',    `/administration/precontractuele-documenten/${ID.sjabloonSsv}`, async p => {
+      await p.locator('[data-sjabloon-open]').first().waitFor({ timeout: 15000 });
+      await p.waitForTimeout(1000);
+  }],
+  // Elementschot (beeldvorm.json): enkel het blok, niet de melding erboven.
+  ['precontractueel-vaste-keuzes',   `/administration/precontractuele-documenten/${ID.sjabloonSsv}`, async p => {
+      const blok = p.locator('[data-ssv-vaste-keuzes]');
+      await blok.waitFor({ timeout: 15000 });
+      await blok.scrollIntoViewIfNeeded();
+      await p.waitForTimeout(800);
+  }],
+  // De editor heeft een eigen adres per taal (…/{id}/nl of …/fr): het Franse beeld opent de Franse voorstelling.
+  ['precontractueel-editor',         `/administration/precontractuele-documenten/${ID.sjabloonVoorstelling}/nl`, async p => {
+      if (await schermTaal(p) === 'fr') await p.goto(p.url().replace(/\/nl$/, '/fr'), { waitUntil: 'networkidle' });
+      await p.locator('.adm-sjabloon-veldenpaneel').waitFor({ timeout: 20000 });
+      await p.waitForTimeout(4000);   // de briefmotor tekent het document na het paneel
+  }],
+  ['kredietdossier-precontractueel', `/credit-files/${ID.dossierAdvies}`, async p => {
+      await adviesInDeTaalVanHetBeeld(p);
+      await p.getByRole('tab', { name: /^(Advies|Conseil)$/i }).first().click();
+      await p.waitForTimeout(2500);
+      const blok = p.locator('[data-precontractueel]');
+      await blok.waitFor({ timeout: 15000 });
+      await blok.scrollIntoViewIfNeeded();
+      await p.waitForTimeout(800);
+  }],
+  ['precontractueel-invulpagina',    `/credit-files/${ID.dossierAdvies}/precontractueel/bemiddelingsfiche`, async p => {
+      await adviesInDeTaalVanHetBeeld(p);
+      await p.waitForTimeout(1000);
+  }],
+  // Elementschot van het venster. Het opent enkel bij een kantoor met OKSign; zonder dat maakt de knop het document METEEN — daarom eerst
+  // nakijken dat de hub "ja" zei (de kolom Ondertekening staat er dan), anders zou dit recept een document maken.
+  ['precontractueel-venster',        `/credit-files/${ID.dossierAdvies}`, async p => {
+      await adviesInDeTaalVanHetBeeld(p);
+      await p.getByRole('tab', { name: /^(Advies|Conseil)$/i }).first().click();
+      await p.waitForTimeout(3000);
+      const blok = p.locator('[data-precontractueel]');
+      await blok.waitFor({ timeout: 15000 });
+      if (!/Ondertekening|Signature/.test(await blok.innerText()))
+        throw new Error('geen kolom Ondertekening: de hub zegt niet dat het kantoor OKSign heeft, en dan MAAKT de knop het document — niet geklikt');
+      await blok.locator('[data-maak-voorstelling]').click();
+      await p.locator('.dxbl-popup').filter({ hasText: /Wie tekent|Qui signe/ }).first().waitFor({ timeout: 15000 });
+      await p.waitForTimeout(1500);
+      // ⚠️ Een elementschot neemt 2 à 3 px BOVEN het venster mee (het staat op een halve pixel). Op de andere vensterbeelden ligt daar effen
+      //    grijs; hier lag er een rij ingevulde velden achter, en die stond als afgesneden tekst bovenaan het beeld (27/11/2026, NL; het
+      //    Franse beeld toevallig niet). Dus de pagina achter het venster onzichtbaar: de reep wordt effen, het venster blijft zoals het is.
+      await p.addStyleTag({ content: 'main * { visibility: hidden !important; } '
+        + 'main .dxbl-modal-root, main .dxbl-modal-root * { visibility: visible !important; }' });
+      await p.waitForTimeout(300);
   }],
   // ── k1b (02/10/2026): de reden van afvallen ──
   // Het veld staat er ENKEL bij een status in een afsluitende, niet-geslaagde fase: het merkteken eist het label én een
@@ -1584,6 +1658,18 @@ const VERWACHT = {
   // F7 golf 2 (1.219.0): de stand met de nieuwste maand én het label Actueel. Een lege kopie ("Nog geen referte-indexen") of een kopie
   // zonder sleutel (geen label) haalt dit niet.
   'referte-indexen': /^(?=[\s\S]*(Nieuwste maand: 08\/2026|Mois le plus récent : 08\/2026))[\s\S]*(Actueel|À jour)/,
+  // 1.246.2: de precontractuele documenten. De lijst: drie rijen met hun versies per taal (een halve lijst zegt niets over de kolom).
+  'precontractueel-lijst':          /NL v\d+ · FR v\d+[\s\S]*NL v\d+ · FR v\d+[\s\S]*NL v\d+ · FR v\d+/,
+  // Versie 2 van een medewerker boven versie 1: een document met enkel versie 1 toont het geval niet waar de tekst over gaat.
+  'precontractueel-versies':        /(Versie|Version) 2[\s\S]*Lotte Cools[\s\S]*(Versie|Version) 1/,
+  'precontractueel-nieuw-model':    /Nieuw model overnemen|Reprendre le nouveau modèle/,
+  'precontractueel-vaste-keuzes':   /^(?=[\s\S]*(RPR: rechtbank van de zetel|RPM : tribunal du siège))[\s\S]*(Vaste keuzes bewaren|Enregistrer les choix fixes)/,
+  // Het paneel Velden met zijn namen (AppKit 0.510.0): zonder paneel is dit het beeld van vóór 1.246.2.
+  'precontractueel-editor':         /(Naam van het kantoor|Nom du bureau)[\s\S]*(Ondernemingsnummer|Numéro d'entreprise)/,
+  // Drie gemaakte documenten: de omschrijving eindigt telkens op "sjabloon versie N)".
+  'kredietdossier-precontractueel': /versie \d+\)[\s\S]*versie \d+\)[\s\S]*versie \d+\)/,
+  'precontractueel-invulpagina':    /(Wat nog ontbreekt|Ce qui manque encore)[\s\S]*(Maken en laten ondertekenen|Créer et faire signer)/,
+  'precontractueel-venster':        /(Wie tekent|Qui signe)[\s\S]*(Maken en laten ondertekenen|Créer et faire signer)/,
 };
 
 // Merktekens uit de alt-tekst: hoofdletterwoord + eventuele vervolgwoorden, zonder verbindingswoord op het
@@ -1827,7 +1913,21 @@ async function elementSchot(page, el) {
 }
 // ⚠️ meldAan(): zie tools/aansturing.mjs.
 
-await meldAan(page, gebruiker, wachtwoord, true);
+// ⚠️ ÉÉN HERKANSING BIJ DE KLANTKEUZE (27/11/2026). De volledige ronde brak af na ±230 beelden, bij het terugwisselen van het portaal
+//    naar de beheerder: "Rij Demo (testpartij) gevonden, maar geen knop Gebruiken" — terwijl die knop er een minuut later gewoon stond.
+//    meldAan (adm-appkit, bevroren) wacht al 15 s op de knop; ook op 19/11 lukte de tweede poging. Enkel voor DEZE twee meldingen van de
+//    klantkeuze, één keer, en het verslag zegt het: een tweede mislukking breekt de ronde zoals voorheen.
+async function meldAanMetHerkansing(page, user, ww, kiesTenant) {
+  try { return await meldAan(page, user, ww, kiesTenant); }
+  catch (e) {
+    if (!kiesTenant || !/geen knop|Geen rij met tenant/i.test(String(e?.message))) throw e;
+    console.log(`↻ klantkeuze mislukte (${String(e.message).slice(0, 90)}…): één herkansing na 10 s`);
+    await page.waitForTimeout(10000);
+    return await meldAan(page, user, ww, kiesTenant);
+  }
+}
+
+await meldAanMetHerkansing(page, gebruiker, wachtwoord, true);
 
 // ── De klok moet vaststaan ────────────────────────────────────────────────────────────────────────────
 // ⚠️ WAAROM DIT EEN WEIGERING IS EN GEEN WAARSCHUWING. Bij een dagwissel veranderen er ~30 van de 178
@@ -1892,7 +1992,7 @@ for (const taal of ['nl-BE', 'fr-BE']) {
       continue;
     }
     if (portaal !== alsAanbrenger) {
-      await meldAan(page, portaal ? PORTAAL_GEBRUIKER : gebruiker,
+      await meldAanMetHerkansing(page, portaal ? PORTAAL_GEBRUIKER : gebruiker,
                           portaal ? PORTAAL_WW : wachtwoord, !portaal);
       // ⚠️⚠️ meldAan CONTROLEERT DE PORTAALAANMELDING NIET. Met kiesTenant=false keert hij terug meteen
       //    na de klik (adm-appkit/tools/schermmachinerie/aansturing.mjs, bevroren). Mislukt de aanmelding,
