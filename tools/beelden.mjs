@@ -1666,8 +1666,10 @@ const VERWACHT = {
   'precontractueel-vaste-keuzes':   /^(?=[\s\S]*(RPR: rechtbank van de zetel|RPM : tribunal du siège))[\s\S]*(Vaste keuzes bewaren|Enregistrer les choix fixes)/,
   // Het paneel Velden met zijn namen (AppKit 0.510.0): zonder paneel is dit het beeld van vóór 1.246.2.
   'precontractueel-editor':         /(Naam van het kantoor|Nom du bureau)[\s\S]*(Ondernemingsnummer|Numéro d'entreprise)/,
-  // Drie gemaakte documenten: de omschrijving eindigt telkens op "sjabloon versie N)".
-  'kredietdossier-precontractueel': /versie \d+\)[\s\S]*versie \d+\)[\s\S]*versie \d+\)/,
+  // Drie gemaakte documenten, de omschrijving in de taal van het SCHERM (adm-creditsoft c30171da, 27/11/2026): Nederlands
+  // "(NL, sjabloon versie N)", Frans "(FR, version N du modèle)". De vorm hangt aan de Franse knop, zodat een Frans scherm met
+  // Nederlandse omschrijvingen (het gebrek van vóór c30171da) rood wordt; een regex die beide vormen aanvaardt, zag dat niet.
+  'kredietdossier-precontractueel': /^(?:(?=[\s\S]*Créer la présentation du bureau)(?:[\s\S]*?version \d+ du modèle[^)]*\)){3}|(?![\s\S]*Créer la présentation du bureau)(?:[\s\S]*?sjabloon versie \d+[^)]*\)){3})/,
   'precontractueel-invulpagina':    /(Wat nog ontbreekt|Ce qui manque encore)[\s\S]*(Maken en laten ondertekenen|Créer et faire signer)/,
   'precontractueel-venster':        /(Wie tekent|Qui signe)[\s\S]*(Maken en laten ondertekenen|Créer et faire signer)/,
 };
