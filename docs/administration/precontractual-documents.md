@@ -54,26 +54,9 @@ Klik op het tabblad van de taal op **Document bewerken**. Het document opent in 
 
 <!-- AFBEELDING: de editor met de Nederlandse voorstelling van het kantoor in tenant_demo, met de velden «KantoorNaam» tot «KantoorWebsite» onder Identiteit, en bovenaan Opmerking bij deze versie, Controleren en Voorbeeld als PDF -->
 
-De woorden tussen « » zijn **velden**. Die vult CreditSoft in wanneer het document gemaakt wordt:
+De woorden tussen « » zijn **velden**, zoals «KantoorNaam» of «A1Naam». Die vult CreditSoft in wanneer het document gemaakt wordt. Welke velden elk document kent en wat er in elk veld komt, staat op [Velden van de precontractuele documenten](precontractual-documents-fields.md). Een veld voegt u in via het tabblad **Mailingen** van de editor, knop **Voeg samengevoegd veld in**.
 
-| Veld | Wat er komt |
-|---|---|
-| «KantoorNaam» | De naam van uw kantoor |
-| «KantoorAdres» | Straat, nummer en bus, postcode en gemeente, op één regel |
-| «KantoorTelefoon» | Het telefoonnummer |
-| «KantoorEmail» | Het e-mailadres |
-| «KantoorWebsite» | De website |
-| «KantoorOndernemingsnummer» | Het ondernemingsnummer, zonder *BE* ervoor |
-| «KantoorFsmaNummer» | Het FSMA-nummer |
-| «Datum» | De dag waarop het document gemaakt wordt |
-| «KlantNaam» | De aanvragers van het dossier |
-| «DossierNummer» | Het dossiernummer |
-
-De eerste zeven komen uit de Bedrijfsfiche. Ontbreekt daar een gegeven dat het document nodig heeft, dan komt er een stippellijn. Een gegeven dat niet voor elk kantoor bestaat, zoals de website, wordt een schuine streep (/). Een veld voegt u in via het tabblad **Mailingen** van de editor.
-
-De bemiddelingsfiche kent veel meer velden: die van de aanvragers beginnen met *A1* (de eerste aanvrager, de linkse kolom) of *A2* (de tweede, de rechtse kolom), zoals «A1Naam» of «A2NettoInkomen». De editor toont ze allemaal in het tabblad **Mailingen**.
-
-De vakjes zijn ook velden: CreditSoft zet er ☒ of ☐ in. In de bemiddelingsfiche heten ze bijvoorbeeld «A1BeroepBediende» of «DoelAankoop»; in de analyse schuldsaldoverzekering «Vink…», zoals «VinkAdvies». Daar is «KlantNaam» de naam van de eerste aanvrager en «KlantVoornaam» zijn voornaam. Ook die velden toont de editor in het tabblad **Mailingen**.
+De gegevens van uw kantoor komen uit de Bedrijfsfiche. Ontbreekt daar een gegeven dat het document nodig heeft, dan komt er een stippellijn. Een gegeven dat niet voor elk kantoor bestaat, zoals de website, wordt een schuine streep (/). De vakjes zijn ook velden: CreditSoft zet er ☒ of ☐ in.
 
 !!! warning "Geen vakjes of stippellijnen om met de hand in te vullen"
     Zet u zelf een vakje (☐) of een stippellijn in uw sjabloon, dan vult niemand dat in, en kan het document niet digitaal ondertekend worden. CreditSoft meldt het bij het maken, met de plaats waar het staat.
@@ -212,6 +195,7 @@ Onder de lijst staat elk document dat nog wacht, met bij elke klant **Link kopi�
 
 ## Zie ook
 
+- [Velden van de precontractuele documenten](precontractual-documents-fields.md)
 - [Bedrijfsfiche](company-profile.md)
 - [Kredietdossiers](../credit-management/credit-files.md)
 - [Advies](../credit-management/advice.md)

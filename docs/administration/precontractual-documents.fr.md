@@ -54,26 +54,9 @@ Dans l'onglet de la langue, cliquez sur **Modifier le document**. Le document s'
 
 <!-- AFBEELDING: l'éditeur avec la présentation du bureau en français dans tenant_demo, avec les champs «KantoorNaam» à «KantoorWebsite» sous Identité, et en haut Remarque pour cette version, Vérifier et Aperçu en PDF -->
 
-Les mots entre « » sont des **champs**. CreditSoft les complète au moment où le document est créé :
+Les mots entre « » sont des **champs**, comme «KantoorNaam» ou «A1Naam». CreditSoft les complète au moment où le document est créé. Les champs de chaque document et ce que contient chaque champ figurent sur [Champs des documents précontractuels](precontractual-documents-fields.md). Vous insérez un champ par l'onglet **Publipostage** de l'éditeur, bouton **Insérer un champ de fusion**.
 
-| Champ | Ce qui y figure |
-|---|---|
-| «KantoorNaam» | Le nom de votre bureau |
-| «KantoorAdres» | Rue, numéro et boîte, code postal et localité, sur une ligne |
-| «KantoorTelefoon» | Le numéro de téléphone |
-| «KantoorEmail» | L'adresse e-mail |
-| «KantoorWebsite» | Le site internet |
-| «KantoorOndernemingsnummer» | Le numéro d'entreprise, sans *BE* devant |
-| «KantoorFsmaNummer» | Le numéro FSMA |
-| «Datum» | Le jour où le document est créé |
-| «KlantNaam» | Les demandeurs du dossier |
-| «DossierNummer» | Le numéro du dossier |
-
-Les sept premiers proviennent de la fiche d'entreprise. S'il y manque une donnée dont le document a besoin, une ligne pointillée apparaît. Une donnée qui n'existe pas pour chaque bureau, comme le site web, devient une barre oblique (/). Vous insérez un champ par l'onglet **Publipostage** de l'éditeur.
-
-La fiche d'intermédiation compte beaucoup plus de champs : ceux des demandeurs commencent par *A1* (le premier demandeur, la colonne de gauche) ou *A2* (le deuxième, la colonne de droite), comme «A1Naam» ou «A2NettoInkomen». L'éditeur les montre tous dans l'onglet **Publipostage**.
-
-Les cases sont aussi des champs : CreditSoft y met ☒ ou ☐. Dans la fiche d'intermédiation, elles s'appellent par exemple «A1BeroepBediende» ou «DoelAankoop» ; dans l'analyse assurance solde restant dû «Vink…», comme «VinkAdvies». «KlantNaam» y est le nom du premier demandeur et «KlantVoornaam» son prénom. L'éditeur montre aussi ces champs dans l'onglet **Publipostage**.
+Les données de votre bureau proviennent de la fiche d'entreprise. S'il y manque une donnée dont le document a besoin, une ligne pointillée apparaît. Une donnée qui n'existe pas pour chaque bureau, comme le site web, devient une barre oblique (/). Les cases sont aussi des champs : CreditSoft y met ☒ ou ☐.
 
 !!! warning "Pas de cases ni de lignes pointillées à compléter à la main"
     Si vous placez vous-même une case (☐) ou une ligne pointillée dans votre modèle, personne ne la complète, et le document ne peut pas être signé électroniquement. CreditSoft le signale à la création, avec l'endroit où elle se trouve.
@@ -212,6 +195,7 @@ Sous la liste figure chaque document encore en attente, avec pour chaque client 
 
 ## Voir aussi
 
+- [Champs des documents précontractuels](precontractual-documents-fields.md)
 - [Fiche d'entreprise](company-profile.md)
 - [Dossiers de crédit](../credit-management/credit-files.md)
 - [Conseil](../credit-management/advice.md)
