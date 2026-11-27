@@ -143,7 +143,7 @@ Dans l'éditeur, le panneau **Champs** se trouve à droite du document, avec les
 | Objet : rénovation (case) | `DoelRenovatie` |
 | Objet : achat et rénovation (case) | `DoelAankoopRenovatie` |
 | Objet : construction (case) | `DoelBouw` |
-| Objet : refinancement (case) | `DoelHerfinanciering` |
+| Objet : refinancement (case ; uniquement dans le modèle français, le néerlandais coche autre) | `DoelHerfinanciering` |
 | Objet : autre (case) | `DoelAndere` |
 | Objet : quel autre objet | `DoelAndereTekst` |
 

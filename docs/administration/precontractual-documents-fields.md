@@ -143,7 +143,7 @@ In de editor staat rechts naast het document het paneel **Velden**, met dezelfde
 | Doel: renovatie (vakje) | `DoelRenovatie` |
 | Doel: aankoop en renovatie (vakje) | `DoelAankoopRenovatie` |
 | Doel: bouw (vakje) | `DoelBouw` |
-| Doel: herfinanciering (vakje) | `DoelHerfinanciering` |
+| Doel: herfinanciering (vakje; enkel in het Franse model, het Nederlandse kruist andere aan) | `DoelHerfinanciering` |
 | Doel: andere (vakje) | `DoelAndere` |
 | Doel: welk ander doel | `DoelAndereTekst` |
 
