@@ -144,7 +144,7 @@ Wat CreditSoft niet uit het dossier haalt, vraagt de invulpagina van het documen
 
 **De bemiddelingsfiche** vraagt:
 
-- het **doel van het krediet**, met het kredietdoel van het dossier ernaast als hulp;
+- het **doel van het krediet**, met het kredietdoel van het dossier ernaast als hulp. Gaf uw kantoor het kredietdoel een *doel voor de raming* (bij de keuzelijsten), dan staat het doel voorgesteld waar dat eenduidig is: *bouw*, *herfinanciering*, *renovatie* bij een krediet zonder aankoop, en bij een aankoop *aankoop en renovatie* als de investeringsfiche renovatiebedragen draagt. Zonder renovatiebedragen kiest u zelf tussen *aankoop* en *aankoop en renovatie*. Bij *ander* staat de naam van het kredietdoel als tekst;
 - of de aanvragers **geen lopende kredieten** hebben, als er geen in het dossier staan;
 - de **gewenste looptijd** in maanden. Hebben de hypothecaire contracten van het dossier allemaal dezelfde looptijd, dan staat die voorgesteld; ze telt pas als u bewaart. Hebben ze een verschillende looptijd, dan staan die ernaast als hulp;
 - of de aanvragers **financiële problemen** hadden in het verleden. Bij *ja* schrijft u kort wanneer, bij welke instelling en waarom; dat komt op de fiche onder de vraag;

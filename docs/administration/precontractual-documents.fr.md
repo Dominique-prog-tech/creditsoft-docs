@@ -144,7 +144,7 @@ Ce que CreditSoft ne trouve pas dans le dossier, la page de préparation du docu
 
 **La fiche d'intermédiation** demande :
 
-- le **but du crédit**, avec le but du dossier à côté comme aide ;
+- le **but du crédit**, avec le but du dossier à côté comme aide. Si votre bureau a attribué un *objet pour l'estimation* au but du crédit (dans les listes de choix), le but est proposé là où c'est univoque : *construction*, *refinancement*, *rénovation* pour un crédit sans achat, et pour un achat *achat et rénovation* si la fiche d'investissement contient des montants de rénovation. Sans montants de rénovation, vous choisissez vous-même entre *achat* et *achat et rénovation*. Pour *autre*, le nom du but du crédit figure comme texte ;
 - si les demandeurs n'ont **pas de crédits en cours**, s'il n'y en a aucun dans le dossier ;
 - la **durée souhaitée** en mois. Si les contrats hypothécaires du dossier ont tous la même durée, elle est proposée ; elle ne compte qu'une fois enregistrée. S'ils ont une durée différente, celles-ci figurent à côté comme aide ;
 - si les demandeurs ont eu des **problèmes financiers** dans le passé. En cas de *oui*, vous indiquez brièvement quand, auprès de quel organisme et pourquoi ; cela figure sur la fiche sous la question ;
