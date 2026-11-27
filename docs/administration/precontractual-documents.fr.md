@@ -30,6 +30,24 @@ Le document a un onglet par langue : **Néerlandais** et **Français**. Chaque o
 - **Aperçu en PDF** montre une version avec les données de votre bureau et la date du jour. Vous voyez ainsi le document tel que le client le reçoit.
 - **Rétablir** refait d'une version précédente la version actuelle. Une nouvelle version au même contenu est créée ; rien n'est effacé. Pour revenir au modèle de la FVF, rétablissez la version 1.
 
+Depuis novembre 2026, CreditSoft complète lui-même chaque case de la fiche d'intermédiation et de l'analyse. Si votre bureau n'avait jamais adapté le modèle, le nouveau modèle est déjà en place, avec la remarque *Mis à jour par CreditSoft*. Si vous l'aviez adapté et qu'il contient encore des cases ou des lignes à compléter à la main, un message apparaît en haut avec le bouton **Reprendre le nouveau modèle**. Votre version adaptée reste conservée : vous la rétablissez ou refaites vos adaptations dans le nouveau modèle.
+
+<!-- AFBEELDING: la fiche de la fiche d'intermédiation dans tenant_demo, avec le message jaune sur les cases à compléter à la main et le bouton Reprendre le nouveau modèle (FR) -->
+
+## Choix fixes de votre bureau { #vaste-keuzes }
+
+Ouvrez dans la liste l'**Analyse assurance solde restant dû**. Sous les versions se trouve le bloc **Choix fixes de votre bureau**. Ces choix sont les mêmes dans chaque dossier, et vous les définissez une fois :
+
+- **la base de votre conseil en assurance** : un nombre limité d'assureurs, ou une analyse impartiale du marché ;
+- avec un nombre limité : **où figure la liste des assureurs**, sur votre site web (vide = le site web de la fiche d'entreprise) ou dans un document en annexe ;
+- **comment votre bureau est rémunéré** : compris dans la prime, ou directement par le client, avec le montant ou le calcul ;
+- **le RPM**, avec le tribunal du siège ;
+- les **participations** de 10 % ou plus. Vide = aucune.
+
+Cliquez sur **Enregistrer les choix fixes**. Sans ces choix, une analyse n'est pas complète et ne peut pas être signée électroniquement.
+
+<!-- AFBEELDING: le bloc Choix fixes de votre bureau dans tenant_demo, avec la base, la liste des assureurs, la rémunération, le RPM et les participations -->
+
 ## Adapter un document
 
 Dans l'onglet de la langue, cliquez sur **Modifier le document**. Le document s'ouvre dans un éditeur qui fonctionne comme Word.
@@ -51,11 +69,14 @@ Les mots entre « » sont des **champs**. CreditSoft les complète au moment où
 | «KlantNaam» | Les demandeurs du dossier |
 | «DossierNummer» | Le numéro du dossier |
 
-Les sept premiers proviennent de la fiche d'entreprise. Si une donnée n'y est pas remplie, une ligne pointillée apparaît, que le client ou vous complétez à la main. Vous insérez un champ par l'onglet **Publipostage** de l'éditeur.
+Les sept premiers proviennent de la fiche d'entreprise. S'il y manque une donnée dont le document a besoin, une ligne pointillée apparaît. Une donnée qui n'existe pas pour chaque bureau, comme le site web, devient une barre oblique (/). Vous insérez un champ par l'onglet **Publipostage** de l'éditeur.
 
 La fiche d'intermédiation compte beaucoup plus de champs : ceux des demandeurs commencent par *A1* (le premier demandeur, la colonne de gauche) ou *A2* (le deuxième, la colonne de droite), comme «A1Naam» ou «A2NettoInkomen». L'éditeur les montre tous dans l'onglet **Publipostage**.
 
-L'analyse assurance solde restant dû a ses propres champs. «KlantNaam» y est le nom du premier demandeur et «KlantVoornaam» son prénom ; les cases s'appellent «Vink…», comme «VinkAdvies». L'éditeur les montre aussi dans l'onglet **Publipostage**.
+Les cases sont aussi des champs : CreditSoft y met ☒ ou ☐. Dans la fiche d'intermédiation, elles s'appellent par exemple «A1BeroepBediende» ou «DoelAankoop» ; dans l'analyse assurance solde restant dû «Vink…», comme «VinkAdvies». «KlantNaam» y est le nom du premier demandeur et «KlantVoornaam» son prénom. L'éditeur montre aussi ces champs dans l'onglet **Publipostage**.
+
+!!! warning "Pas de cases ni de lignes pointillées à compléter à la main"
+    Si vous placez vous-même une case (☐) ou une ligne pointillée dans votre modèle, personne ne la complète, et le document ne peut pas être signé électroniquement. CreditSoft le signale à la création, avec l'endroit où elle se trouve.
 
 Indiquez en haut, dans **Remarque pour cette version**, ce que vous avez modifié, puis cliquez sur **Enregistrer comme nouvelle version**. À partir de ce moment, CreditSoft utilise cette version pour chaque nouveau document dans cette langue.
 
@@ -66,82 +87,89 @@ Indiquez en haut, dans **Remarque pour cette version**, ce que vous avez modifi�
 
 | Partie de la fiche | Ce que CreditSoft complète |
 |---|---|
-| En-tête | Le nom, l'adresse, l'adresse e-mail, le téléphone, le site internet et le numéro d'entreprise de votre bureau |
-| Renseignements relatifs au(x) client(s) | Par demandeur : nom, prénom, sexe, adresse, téléphone, GSM, lieu et date de naissance, adresse e-mail |
-| 1. Situation personnelle | Le nombre d'enfants à charge et l'état civil |
-| 2.1 Revenus mensuels | La date de début du statut, l'employeur, les revenus mensuels nets fixes, les allocations familiales, les revenus locatifs actuels et les autres revenus ; pour un indépendant, le numéro d'entreprise, la date de début et la nature de l'activité |
+| En-tête | Le nom, l'adresse, l'adresse e-mail, le téléphone, le site web et le numéro d'entreprise de votre bureau |
+| Données du/des client(s) | Par demandeur : nom, prénom, sexe, adresse, téléphone, GSM, lieu et date de naissance, adresse e-mail ; et le choix de recevoir les informations par voie électronique (page de préparation) |
+| 1. Situation personnelle | Le nombre d'enfants à charge, l'état civil, et fumeur (page de préparation) |
+| 2.1 Revenus mensuels | La situation professionnelle et les avantages de toute nature (page de préparation) ; la date de début du statut, l'employeur, les revenus mensuels nets, les allocations familiales, les revenus locatifs actuels et les autres revenus ; pour un indépendant le numéro d'entreprise, la date de début et la nature de l'activité |
 | 2.2 Charges mensuelles | Le loyer actuel, la pension alimentaire, et une ligne par crédit en cours des deux demandeurs |
+| 3. Objectif | Le but du crédit (page de préparation) |
 | 4 et 5 | Les préférences et les besoins de l'onglet *Conseil* |
-| Partie II | La case *Nous vous recommandons …*, avec les offres recommandées et leur établissement de crédit, ou la case *Nous ne pouvons pas vous recommander un produit de crédit* |
-| Signature | La localité de votre bureau et la date |
+| Partie II | La case *Nous vous recommandons …*, avec les offres recommandées et leur prêteur, ou la case *Nous ne pouvons pas vous recommander un produit de crédit* |
+| Signature | La commune de votre bureau et la date |
 
-- **Les montants** sont mensuels. Un revenu encodé par an compte pour un douzième.
-- **Un crédit** est *à rembourser* (Oui) s'il est repris par le nouveau crédit. L'échéance finale provient de la date de fin du crédit. Sans crédit, des lignes vides restent à compléter à la main.
+- **Les montants** sont mensuels. Un revenu encodé par an compte pour un douzième. Un montant qui n'existe pas, comme l'absence de revenus locatifs, devient une barre oblique (/).
+- **Un crédit** est *à rembourser* (Oui) s'il est repris par le nouveau crédit. L'échéance finale provient de la date de fin du crédit. S'il n'y a aucun crédit dans le dossier, vous confirmez sur la page de préparation qu'il n'y en a pas ; sinon, des lignes vides restent.
 - **Partie II** : la première case est cochée dès que le conseil compte au moins une offre recommandée. La deuxième est cochée pour un conseil sans offre recommandée. Sans conseil, les deux restent vides.
-- **Les autres cases** (statut professionnel, avantages, objectifs, fumeur, information électronique) restent vides : le client ou vous les cochez à la main.
-- **La fiche a deux colonnes.** La première colonne est le premier demandeur du dossier, la deuxième colonne le deuxième. Si le dossier compte trois ou quatre demandeurs, CreditSoft crée une deuxième fiche pour les demandeurs 3 et 4. Si un demandeur est une société, CreditSoft ne complète que son identité.
+- **La fiche a deux colonnes.** La première colonne est le premier demandeur du dossier, la deuxième le deuxième. Avec un seul demandeur, la deuxième colonne reste vide. Avec trois ou quatre demandeurs, CreditSoft crée une deuxième fiche pour les demandeurs 3 et 4. Si un demandeur est une entreprise, CreditSoft ne complète que son identité.
 
 ## Ce que CreditSoft complète dans l'analyse assurance solde restant dû { #ssv }
 
-L'analyse n'existe que pour un bureau inscrit auprès de la FSMA comme **courtier d'assurance** ; le document le dit aussi. Vous l'activez avec la case de la [fiche d'entreprise](company-profile.md#verzekeringsmakelaar). Sans cette case, CreditSoft ne crée pas l'analyse.
+L'analyse n'existe que pour un bureau inscrit auprès de la FSMA comme **courtier d'assurance** ; le document le dit aussi. Vous l'activez avec la case sur la [fiche d'entreprise](company-profile.md#verzekeringsmakelaar). Sans cette case, CreditSoft ne crée pas l'analyse.
 
-Le modèle de la FVF est une feuille Excel. CreditSoft en fait un document Word, avec le texte de la FVF tel quel. Vous affinez la mise en page dans l'éditeur, comme pour les autres documents.
+Le modèle de la FVF est une feuille Excel. CreditSoft en fait un document Word, avec le texte de la FVF tel quel, sans les instructions de la FVF destinées à la personne qui rédige le document. Vous affinez la mise en page dans l'éditeur, comme pour les autres documents.
 
 | Partie de l'analyse | Ce que CreditSoft complète |
 |---|---|
-| Présentation de notre bureau | Le nom, l'adresse, l'adresse e-mail, le téléphone, le site internet, le numéro d'entreprise et l'IBAN de votre bureau |
-| Vos coordonnées | Du premier demandeur : nom, prénom, adresse, date de naissance et numéro d'entreprise |
-| Partie I | Particulier ou personne morale, les assurés, la garantie *Décès*, *dans le cadre d'un crédit : Oui*, la totalité ou une partie du capital, et la déductibilité fiscale |
-| Partie II | Conseil ou pas de conseil, le produit, la motivation et si le client suit le conseil : ce que vous choisissez dans la fenêtre |
-| Partie III | La case de la fiche client, si vous la cochez dans la fenêtre |
-| Signature | La localité de votre bureau et la date |
+| Présentation de notre bureau | Le nom, l'adresse, l'adresse e-mail, le téléphone, le site web, le numéro d'entreprise, le RPM et l'IBAN de votre bureau, et les participations ([choix fixes](#vaste-keuzes)) |
+| Vos données | Du premier demandeur : nom, prénom, adresse, date de naissance, numéro de registre national et numéro d'entreprise, et la raison du contact (page de préparation) |
+| Partie I | Particulier ou personne morale, les assurés, les garanties, *dans le cadre d'un crédit : Oui*, la totalité ou une partie du capital, l'avantage fiscal, la prime, la durée et les exigences spécifiques |
+| Partie II | Conseil ou pas de conseil, le produit, la motivation et si le client suit le conseil ; avec quels assureurs votre bureau travaille ([choix fixes](#vaste-keuzes)) |
+| Partie III | L'information complémentaire, la fiche client et la rémunération |
+| Signature | La commune de votre bureau et la date |
 
 - **Les assurés** sont les demandeurs assurés sur un contrat d'assurance solde restant dû du dossier (onglet *Contrats*), ou qui figurent sur une ligne de *Cautions, ASRD & réductions*. Le modèle prévoit de la place pour deux.
-- **La totalité ou une partie** provient du pourcentage assuré sur les lignes de *Cautions, ASRD & réductions* : 100 % partout donne la totalité, sinon une partie avec le pourcentage. Un pourcentage de 0 ou supérieur à 100 ne compte pas.
-- **Déductibilité fiscale** : *Oui* est coché si chaque ligne a la case *fiscal* cochée. CreditSoft ne coche jamais *Non*, car une ligne dont personne n'a touché la case est aussi sur non.
-- **Le numéro de registre national et fumeur** ne sont jamais complétés par CreditSoft.
-- **Les autres cases** (autres garanties, la prime, la durée, les assureurs avec lesquels votre bureau travaille, la rémunération) restent vides : le client ou vous les cochez à la main.
+- **Le numéro de registre national** provient de la fiche de la relation. S'il n'y figure pas, la page de préparation le signale.
+- **Le décès** et *dans le cadre d'un crédit : Oui* sont toujours cochés. Les autres cases suivent la page de préparation.
 
 ## Créer le document pour un dossier { #maken }
 
 Ouvrez le dossier et cliquez sur l'onglet **Conseil**. Sous le résumé du conseil se trouve le bloc **Documents précontractuels**.
 
-<!-- AFBEELDING: l'onglet Conseil d'un dossier dans tenant_demo, avec en bas le bloc Documents précontractuels, les boutons Créer la présentation du bureau et Créer la fiche d'intermédiation, et deux documents créés dans la liste -->
+<!-- AFBEELDING: l'onglet Conseil d'un dossier dans tenant_demo, avec en bas le bloc Documents précontractuels, les boutons Créer la présentation du bureau, Créer la fiche d'intermédiation et Créer l'analyse assurance solde restant dû, et trois documents créés dans la liste -->
 
-1. Cliquez sur **Créer la présentation du bureau**, **Créer la fiche d'intermédiation** ou **Créer l'analyse assurance solde restant dû**.
-2. CreditSoft crée le document dans la langue du **premier demandeur** du dossier, avec la version actuelle de votre modèle.
-3. Le document apparaît dans la liste avec la date et la personne qui l'a créé. Cliquez sur **Ouvrir** pour le consulter.
+- **Créer la présentation du bureau** crée le document directement ; il n'a pas de questions. Si votre bureau a un contrat OKSign, une petite fenêtre s'ouvre d'abord (voir [Créer et faire signer](#ondertekenen)).
+- **Créer la fiche d'intermédiation** et **Créer l'analyse assurance solde restant dû** ouvrent la [page de préparation](#invulpagina) de ce document.
 
-Le document est conservé dans les pièces jointes du dossier, dans la catégorie *Precontractueel*. Vous le retrouvez aussi dans le journal du dossier, sous *Pièces jointes*.
+CreditSoft crée le document dans la langue du **premier demandeur** du dossier, avec la version actuelle de votre modèle. Le document apparaît dans la liste avec la date et la personne qui l'a créé. Cliquez sur **Ouvrir** pour le consulter. Il est conservé dans les pièces jointes du dossier, dans la catégorie *Precontractueel*.
 
-Un document créé ne change plus. Si vous adaptez ensuite la fiche d'entreprise, le dossier ou le modèle, créez le document à nouveau. Un deuxième document s'ajoute ; le premier reste, de sorte que vous pouvez toujours montrer ce que le client a reçu.
+Un document créé ne change plus. Si vous modifiez ensuite quelque chose, créez le document à nouveau. Un deuxième document s'ajoute ; le premier reste, de sorte que vous pouvez toujours montrer ce que le client a reçu.
 
 Vous avez besoin du droit de modifier le dossier. Le bloc ne figure pas dans le portail des apporteurs.
 
-### La fenêtre de l'analyse assurance solde restant dû
+### La page de préparation { #invulpagina }
 
-Avec **Créer l'analyse assurance solde restant dû**, une fenêtre s'ouvre d'abord avec ce que CreditSoft ne connaît pas.
+Ce que CreditSoft ne trouve pas dans le dossier, la page de préparation du document le demande. Ce que vous y enregistrez reste dans le dossier : si vous recréez le document, il est toujours là.
 
-<!-- AFBEELDING: la fenêtre Analyse assurance solde restant dû dans tenant_demo, avec Notre bureau fournit un conseil sélectionné, Produit proposé et assureur complété, Motivation, Le client suit-il le conseil ? et la case de la fiche client -->
+<!-- AFBEELDING: la page Préparer la fiche d'intermédiation dans tenant_demo, avec le but du crédit, un demandeur avec l'information électronique, fumeur, la situation professionnelle et les avantages, et en bas Ce qui manque encore avec les boutons Créer et Créer et faire signer -->
 
-- Choisissez **Notre bureau fournit un conseil** ou **Pas de conseil**.
-- **Produit proposé et assureur** (sans conseil : le produit souhaité par le client). CreditSoft complète au préalable le produit et l'assureur du dossier ; vous les adaptez.
-- En cas de conseil, vous complétez la **motivation** et indiquez si le client **suit** le conseil : *Oui*, *Non* ou *Pas encore connu*. S'il ne le suit pas, vous complétez le produit qu'il souhaite.
-- Cochez **La fiche client a été parcourue avec le client** si c'est le cas.
+**La fiche d'intermédiation** demande :
 
-Cliquez sur **Créer l'analyse**. Ce que vous choisissez dans la fenêtre figure uniquement dans le document créé ; CreditSoft ne le conserve nulle part ailleurs. Si vous créez l'analyse à nouveau, vous complétez à nouveau la fenêtre.
+- le **but du crédit**, avec le but du dossier à côté comme aide ;
+- si les demandeurs n'ont **pas de crédits en cours**, s'il n'y en a aucun dans le dossier ;
+- par demandeur : le choix de recevoir les informations **par voie électronique**, **fumeur**, la **situation professionnelle** (avec les types de revenus de ce demandeur à côté) et les **avantages de toute nature**.
 
-Si votre bureau a un contrat OKSign, le bas de la fenêtre indique aussi qui signe, avec le bouton **Créer et faire signer**. Voir ci-dessous.
+**L'analyse assurance solde restant dû** demande :
+
+- le **conseil** : conseil ou pas de conseil, le produit et l'assureur, la motivation, si le client suit le conseil, et si la fiche client a été parcourue ;
+- les **besoins** : la raison du contact, les garanties complémentaires, l'avantage fiscal, la totalité ou une partie du capital, la prime, la durée, les exigences spécifiques et l'information complémentaire.
+
+Chaque question a le choix **Pas encore répondu**. Ainsi, une question à laquelle personne n'a répondu ne se lit jamais comme *non*. Ce que le dossier dit sans ambiguïté, la page le propose : le produit et l'assureur, fumeur *oui* d'une ligne d'assurance solde restant dû, l'avantage fiscal, la totalité ou une partie, la prime et la durée du contrat. Une proposition ne compte qu'une fois enregistrée.
+
+Cliquez en haut sur **Enregistrer**. En bas figure **Ce qui manque encore** : chaque donnée dont le document a encore besoin, avec l'endroit où elle se trouve (par exemple *l'adresse e-mail manque sur la fiche de la relation*). En dessous se trouvent les boutons :
+
+- **Créer** : le document sur papier ou à envoyer par e-mail. C'est toujours possible ; ce qui manque reste alors une ligne pointillée.
+- **Créer et faire signer** : uniquement si plus rien ne manque et si votre bureau a un contrat OKSign.
+
+Enregistrez d'abord vos modifications : le document est créé à partir de ce qui est enregistré.
 
 ### Créer et faire signer { #ondertekenen }
 
-Si votre bureau a un contrat avec OKSign, vous faites [signer électroniquement](../credit-management/ondertekenen.md) un document précontractuel dès sa création. Sans contrat, rien ne change : les boutons créent le document comme décrit ci-dessus.
+Si votre bureau a un contrat avec OKSign, vous faites [signer électroniquement](../credit-management/ondertekenen.md) un document précontractuel dès sa création. Un document envoyé pour signature doit être complet : dans OKSign, le client peut seulement signer, rien compléter. Sans contrat, rien ne change.
 
 <!-- AFBEELDING: la fenêtre Créer la présentation du bureau dans tenant_demo, avec l'explication, Qui signe avec le nom du client, et les boutons Créer, Annuler et Créer et faire signer -->
 
-1. Cliquez sur **Créer la présentation du bureau** ou **Créer la fiche d'intermédiation**. Une fenêtre s'ouvre d'abord. Pour l'analyse assurance solde restant dû, c'est le bas de la fenêtre que vous connaissez déjà.
-2. Sous *Qui signe* figurent les clients qui signent le document. S'il manque quelque chose chez quelqu'un, comme un numéro de GSM, c'est indiqué à côté de son nom, et vous ne pouvez pas faire signer.
-3. Cliquez sur **Créer et faire signer**. Si vous voulez seulement imprimer ou envoyer le document par e-mail, cliquez sur **Créer**.
+- **La présentation du bureau** : après un clic sur **Créer la présentation du bureau**, une fenêtre s'ouvre avec qui signe et, s'il manque quelque chose sur la fiche d'entreprise, quoi. Cliquez sur **Créer et faire signer**.
+- **La fiche d'intermédiation et l'analyse** : sur la page de préparation, avec **Créer et faire signer**.
 
 Qui signe :
 
@@ -149,11 +177,11 @@ Qui signe :
 - **La fiche d'intermédiation** : les demandeurs de cette fiche. Avec plus de deux demandeurs, CreditSoft crée une fiche par deux demandeurs, et chaque fiche part à ses propres demandeurs.
 - **L'analyse assurance solde restant dû** : le client du document, c'est-à-dire le premier demandeur.
 
-Vous, le courtier, ne signez pas électroniquement : votre bureau figure comme émetteur sur le document.
+Vous, le courtier, ne signez pas électroniquement : votre bureau figure comme émetteur sur le document. S'il manque quelque chose chez un client, comme un numéro de GSM, c'est indiqué à côté de son nom.
 
 Sous le titre *Signature(s)* ou *Signatures* du document, CreditSoft place pour chaque client son nom et un cadre. OKSign y place la signature. Votre modèle ne change pas pour autant. Si vous avez retiré ce titre de votre modèle, les noms et les cadres figurent à la fin du document.
 
-Chaque client reçoit un e-mail avec son propre lien. Le document n'est conservé que si OKSign l'accepte. Si OKSign refuse, ou si le service n'est pas joignable, rien n'est créé ni envoyé, et un message dans le bloc en donne la raison.
+Chaque client reçoit un e-mail avec son propre lien. Le document n'est conservé que si OKSign l'accepte. Si OKSign refuse, ou si le service n'est pas joignable, rien n'est créé ni envoyé.
 
 La liste des documents créés affiche alors la colonne **Signature** :
 
@@ -169,7 +197,10 @@ Sous la liste figure chaque document encore en attente, avec pour chaque client 
     Ce n'est pas possible : vous le choisissez à la création. Si vous voulez quand même faire signer un document déjà créé, créez-le à nouveau avec **Créer et faire signer**. Le premier document reste.
 
 !!! warning "Une ligne pointillée à la place d'une donnée"
-    S'il y a une ligne pointillée au lieu de votre numéro de téléphone, de votre site internet ou de votre numéro d'entreprise, cette donnée manque dans la [fiche d'entreprise](company-profile.md). S'il s'agit d'une donnée du client, comme le sexe ou l'état civil, elle manque sur la fiche de cette relation. Complétez-la et créez le document à nouveau.
+    Une ligne pointillée signifie : le document a besoin de cette donnée et elle manque. S'il s'agit de votre bureau, complétez-la sur la [fiche d'entreprise](company-profile.md) ; s'il s'agit du client, sur la fiche de cette relation ; s'il s'agit d'une question, sur la [page de préparation](#invulpagina). Créez ensuite le document à nouveau. Une barre oblique (/) n'est pas une erreur : cette donnée n'existe pas pour tout le monde.
+
+!!! warning "Créer et faire signer est désactivé"
+    Regardez sous **Ce qui manque encore** sur la page de préparation : tant que quelque chose y figure, ou que vous n'avez pas enregistré une modification, le document ne peut pas être envoyé pour signature.
 
 !!! warning "Le document dans la mauvaise langue"
     La langue suit la langue des documents du **premier demandeur**. Si elle est erronée, modifiez-la sur la fiche de cette relation et créez le document à nouveau.
