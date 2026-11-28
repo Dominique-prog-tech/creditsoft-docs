@@ -78,6 +78,18 @@ u toch laten tekenen, verstuur dan een nieuw verzoek.
 - Een ondertekenaar kan in OKSign **niet weigeren**: hij kan de pagina enkel sluiten. Laat uw klant weten dat hij niet
   wil tekenen, trek het verzoek dan in.
 
+## Alle ondertekeningen op één plek { #overzicht }
+
+Klik in de zijbalk onder **Krediet** op **Ondertekeningen**. Het getal ernaast zegt hoeveel verzoeken nog wachten. U ziet daar alles wat uw kantoor liet ondertekenen, over alle dossiers en relaties heen: het opdrachtdocument, de privacyverklaring en de precontractuele documenten.
+
+- Per verzoek staan het document, voor welk dossier of welke relatie het is, wie tekent, de stand (bij meer ondertekenaars bijvoorbeeld *Wacht · 1 van 2 getekend*), wanneer en door wie het verstuurd werd, en hoeveel dagen het al wacht.
+- Standaard ziet u enkel wat **wacht**, het oudste eerst. Vanaf **7 dagen** staat het aantal dagen in het rood.
+- Kies **Alle verzoeken** om ook te zien wat getekend, geweigerd, mislukt of ingetrokken is.
+- Filter op wie het verstuurde, om het werk van een afwezige collega over te nemen.
+- Dubbelklik een rij: het dossier opent op het tabblad waar het verzoek staat, of de relatiefiche. Daar mailt u opnieuw of trekt u het verzoek in; in de lijst zelf kan dat niet.
+
+Enkel wie dossiers mag bewerken, ziet dit scherm.
+
 ## Veelgemaakte fouten
 
 !!! warning "Opnieuw versturen trekt het eerste verzoek niet in"

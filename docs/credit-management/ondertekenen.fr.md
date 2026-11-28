@@ -81,6 +81,18 @@ tout de même faire signer, envoyez une nouvelle demande.
 - Un signataire ne peut **pas refuser** dans OKSign : il peut seulement fermer la page. Si votre client vous fait savoir
   qu'il ne veut pas signer, retirez la demande.
 
+## Toutes les signatures au même endroit { #overzicht }
+
+Dans la barre latérale, sous **Crédit**, cliquez sur **Signatures**. Le nombre à côté indique combien de demandes attendent encore. Vous y voyez tout ce que votre bureau a fait signer, tous dossiers et relations confondus : le document de mission, la déclaration de confidentialité et les documents précontractuels.
+
+- Pour chaque demande figurent le document, le dossier ou la relation concernés, qui signe, l'état (avec plusieurs signataires, par exemple *En attente · 1 sur 2 signé(s)*), quand et par qui elle a été envoyée, et depuis combien de jours elle attend.
+- Par défaut, vous ne voyez que ce qui **attend**, le plus ancien en premier. À partir de **7 jours**, le nombre de jours apparaît en rouge.
+- Choisissez **Toutes les demandes** pour voir aussi ce qui est signé, refusé, en échec ou retiré.
+- Filtrez sur qui a envoyé, pour reprendre le travail d'un collègue absent.
+- Double-cliquez sur une ligne : le dossier s'ouvre sur l'onglet de la demande, ou la fiche de la relation. Vous y renvoyez l'e-mail ou retirez la demande ; ce n'est pas possible dans la liste elle-même.
+
+Seules les personnes autorisées à modifier les dossiers voient cet écran.
+
 ## Erreurs fréquentes
 
 !!! warning "Envoyer à nouveau ne retire pas la première demande"
