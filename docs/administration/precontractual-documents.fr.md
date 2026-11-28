@@ -16,7 +16,7 @@ Cliquez dans la barre latérale sur **Administration**, puis sur la tuile **Docu
 
 ## La liste
 
-![La liste Documents précontractuels avec les trois documents : pour chaque document le nom, la colonne Documents avec les versions par langue (par exemple NL v2 · FR v1) et la date de la dernière modification.](../images/precontractueel-lijst-fr.png "Les documents précontractuels de votre bureau")
+![La liste Documents pour le client avec cinq documents, les trois documents précontractuels, le document de mission et la déclaration de confidentialité : pour chaque document le nom, la colonne Documents avec les versions par langue (par exemple NL v2 · FR v1) et la date de la dernière modification.](../images/precontractueel-lijst-fr.png "Les documents pour le client de votre bureau")
 
 Pour chaque document, vous voyez le nom, les versions qui existent par langue (par exemple *NL v2 · FR v1*) et la date de la dernière modification. Double-cliquez sur une ligne pour ouvrir le document.
 

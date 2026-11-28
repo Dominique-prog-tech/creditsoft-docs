@@ -28,7 +28,11 @@ En haut à gauche se trouve un bouton pour **réduire** le menu. Une fois rédui
 
 ## La barre supérieure
 
-![La barre supérieure avec, à gauche, le bouton pour replier le menu et le logo CreditSoft et, à droite, de gauche à droite : Nouvelle tâche, la lune pour l'affichage sombre, la loupe pour rechercher, le petit graphique de l'assistant données, la cloche des notifications, la bulle pour le retour d'information, le point d'interrogation pour l'aide, l'assistant IA du manuel et l'avatar avec vos initiales.](../images/hoofdbalk-fr.png "La barre supérieure, avec les boutons que vous emportez partout")
+![La barre supérieure avec, à gauche, le bouton pour replier le menu et le logo CreditSoft avec, à côté, le champ de recherche et, à droite, de gauche à droite : Nouvelle tâche, la lune pour l'affichage sombre, le petit graphique de l'assistant données, la cloche des notifications, la bulle pour le retour d'information, le point d'interrogation pour l'aide, l'assistant IA du manuel et l'avatar avec vos initiales.](../images/hoofdbalk-fr.png "La barre supérieure, avec les boutons que vous emportez partout")
+
+En haut à gauche, à côté du logo, se trouve le **champ de recherche** : recherchez depuis n'importe quel écran une
+relation, un dossier, un apporteur, un professionnel ou un prospect. **Ctrl + K** (sur Mac **⌘ + K**) y place le curseur.
+Voir [Rechercher depuis n'importe quel écran](zoeken.fr.md).
 
 En haut à droite figurent les boutons que vous emportez partout, de gauche à droite :
 
@@ -36,7 +40,6 @@ En haut à droite figurent les boutons que vous emportez partout, de gauche à d
   Pratique lorsque vous êtes au téléphone et ne voulez rien oublier. Ce que vous créez ici se retrouve dans
   l'écran [Tâches](../credit-management/tasks.md), avec les tâches rattachées à un dossier ou une relation.
 - **Clair ou sombre** (le croissant de lune) — bascule entre l'affichage clair et sombre.
-- **Rechercher** (la loupe) — recherchez depuis n'importe quel écran une relation, un dossier, un apporteur, un professionnel ou un prospect. Voir [Rechercher depuis n'importe quel écran](zoeken.fr.md).
 - **Notifications** (la cloche) — voir ci-dessous.
 - **Retour d'information** (l'icône de bulle) — envoyez-nous une remarque ou une suggestion. Votre message
   nous parvient directement.

@@ -1,9 +1,11 @@
 # Zoeken vanaf elk scherm
 
-Rechtsboven staat een **vergrootglas**. Daarmee zoekt u vanaf elk scherm, zonder eerst naar de juiste lijst
-te navigeren. Sneltoets: **Ctrl + K** (op een Mac **⌘ + K**).
+Linksboven, naast het CreditSoft-logo, staat een **zoekveld**. Daarmee zoekt u vanaf elk scherm, zonder eerst
+naar de juiste lijst te navigeren. U klikt erin en typt meteen. Met de sneltoets **Ctrl + K** (op een Mac
+**⌘ + K**) staat de cursor in het veld, waar u ook bent.
 
-Typ een naam, een nummer of een woord. De resultaten verschijnen terwijl u typt, gegroepeerd per soort:
+Typ een naam, een nummer of een woord. De resultaten verschijnen direct onder het veld terwijl u typt,
+gegroepeerd per soort:
 
 - **Relaties** — op naam, e-mailadres of telefoonnummer
 - **Kredietdossiers** — op dossiernummer én op de aanvrager: zijn naam, e-mailadres of telefoonnummer
@@ -14,7 +16,13 @@ Typ een naam, een nummer of een woord. De resultaten verschijnen terwijl u typt,
 - **Taken** — op titel en omschrijving
 - **Opmerkingen** — op de inhoud van de opmerkingen op een kredietdossier
 
-Klik op een resultaat om er meteen naartoe te gaan.
+Klik op een resultaat om er meteen naartoe te gaan, of kies er een met de **pijltjes** en druk op **Enter**.
+Met **Escape** maakt u het veld weer leeg.
+
+!!! note "Op een smal scherm"
+    Is uw venster smal, bijvoorbeeld op een tablet, dan is er bovenaan geen plaats voor het veld. U ziet dan een
+    **vergrootglas** naast het logo: klik erop, of gebruik dezelfde sneltoets, en het zoekvenster opent in het
+    midden van het scherm. Het zoekt op precies dezelfde manier.
 
 ## Een naam, e-mailadres of telefoonnummer typen
 
@@ -50,6 +58,6 @@ Ziet u een soort niet verschijnen waarvan u weet dat er resultaten zouden moeten
 meestal een kwestie van rechten. Vraag het na bij de beheerder van uw kantoor.
 
 !!! tip "Zoeken in één lijst blijft ook bestaan"
-    Het vergrootglas bovenaan zoekt over **alle** soorten heen. Wilt u binnen één lijst zoeken of filteren —
+    Het zoekveld bovenaan zoekt over **alle** soorten heen. Wilt u binnen één lijst zoeken of filteren —
     bijvoorbeeld alle dossiers van een bepaalde status — gebruik dan het zoekvak en de filters van die lijst
     zelf. Zie [Werken met lijsten](lijsten.md).

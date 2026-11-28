@@ -16,7 +16,7 @@ Klik in de zijbalk op **Platformbeheer** en daarna op de tegel **Documenten voor
 
 ## De lijst
 
-![De lijst Precontractuele documenten met de drie documenten: per document de naam, de kolom Documenten met de versies per taal (bijvoorbeeld NL v2 · FR v1) en Laatst gewijzigd.](../images/precontractueel-lijst.png "De precontractuele documenten van uw kantoor")
+![De lijst Documenten voor de klant met vijf documenten, de drie precontractuele documenten, het opdrachtdocument en de privacyverklaring: per document de naam, de kolom Documenten met de versies per taal (bijvoorbeeld NL v2 · FR v1) en Laatst gewijzigd.](../images/precontractueel-lijst.png "De documenten voor de klant van uw kantoor")
 
 Per document ziet u de naam, welke versies er zijn per taal (bijvoorbeeld *NL v2 · FR v1*) en wanneer het laatst gewijzigd werd. Dubbelklik een rij om het document te openen.
 

@@ -1,10 +1,11 @@
 # Rechercher depuis n'importe quel écran
 
-En haut à droite se trouve une **loupe**. Elle vous permet de rechercher depuis n'importe quel écran, sans
-devoir d'abord ouvrir la bonne liste. Raccourci : **Ctrl + K** (sur Mac **⌘ + K**).
+En haut à gauche, à côté du logo CreditSoft, se trouve un **champ de recherche**. Il vous permet de rechercher
+depuis n'importe quel écran, sans devoir d'abord ouvrir la bonne liste. Vous cliquez dedans et vous tapez
+directement. Le raccourci **Ctrl + K** (sur Mac **⌘ + K**) place le curseur dans le champ, où que vous soyez.
 
-Saisissez un nom, un numéro ou un mot. Les résultats apparaissent au fur et à mesure de la frappe, regroupés par
-type :
+Saisissez un nom, un numéro ou un mot. Les résultats apparaissent juste sous le champ au fur et à mesure de la
+frappe, regroupés par type :
 
 - **Relations** — par nom, adresse e-mail ou numéro de téléphone
 - **Dossiers de crédit** — par numéro de dossier *et* par le demandeur : son nom, son adresse e-mail ou son numéro de téléphone
@@ -15,7 +16,13 @@ type :
 - **Tâches** — par titre et description
 - **Remarques** — par le contenu des remarques d'un dossier de crédit
 
-Cliquez sur un résultat pour vous y rendre directement.
+Cliquez sur un résultat pour vous y rendre directement, ou choisissez-en un avec les **flèches** et appuyez sur
+**Entrée**. **Échap** vide le champ.
+
+!!! note "Sur un écran étroit"
+    Si votre fenêtre est étroite, par exemple sur une tablette, il n'y a pas de place pour le champ en haut. Vous
+    voyez alors une **loupe** à côté du logo : cliquez dessus, ou utilisez le même raccourci, et la fenêtre de
+    recherche s'ouvre au milieu de l'écran. Elle recherche exactement de la même manière.
 
 ## Saisir un nom, une adresse e-mail ou un numéro de téléphone
 
@@ -54,6 +61,6 @@ Si un type n'apparaît pas alors que vous savez qu'il devrait y avoir des résul
 souvent d'une question de droits. Renseignez-vous auprès du responsable de votre bureau.
 
 !!! tip "La recherche dans une liste reste possible"
-    La loupe en haut recherche dans **tous** les types à la fois. Pour rechercher ou filtrer au sein d'une
+    Le champ de recherche en haut recherche dans **tous** les types à la fois. Pour rechercher ou filtrer au sein d'une
     seule liste — par exemple tous les dossiers ayant un statut donné — utilisez le champ de recherche et les
     filtres de cette liste. Voir [Travailler avec les listes](lijsten.fr.md).

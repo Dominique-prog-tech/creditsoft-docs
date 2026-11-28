@@ -199,14 +199,17 @@ export const FILMS = [
 
       { naam: 'zoeken', kop: { nl: 'Zoeken vanaf elk scherm', fr: "Rechercher depuis tout écran" },
         doe: async (p) => {
-          await klik(p, kopbalkKnop(p, /Zoeken|Rechercher/i));
+          // Sinds AppKit 0.514.0 (CreditSoft 1.246.4) een echt zoekveld naast het merk, vanaf 992 px; de film draait op 1920.
+          // Niet meer kopbalkKnop(/Zoeken/): dat vindt nu eerst het vergrootglas, dat vanaf 992 px verborgen
+          // in de kopbalk blijft staan, en loopt in een time-out. De klasse komt uit de AppKit en is dezelfde in beide talen.
+          await klik(p, p.locator('.adm-zoek-kopveld'));
           await p.waitForTimeout(900);
           await p.keyboard.type('Cuypers', { delay: 95 });
           await p.waitForTimeout(2600);
         },
         merk: /Kredietdossiers|Dossiers de crédit/i,
-        nl: 'Zoeken doet u overal vandaan, met de knop bovenaan of met Command K. U typt een naam, en CreditSoft zoekt in uw relaties, dossiers, aanbrengers en taken tegelijk.',
-        fr: "La recherche est accessible partout, via le bouton en haut ou avec Commande K. Vous tapez un nom et CreditSoft cherche simultanément dans vos relations, dossiers, apporteurs et tâches." },
+        nl: 'Zoeken doet u overal vandaan, in het zoekveld bovenaan of met Command K. U typt een naam, en CreditSoft zoekt in uw relaties, dossiers, aanbrengers en taken tegelijk.',
+        fr: "La recherche est accessible partout, via le champ en haut ou avec Commande K. Vous tapez un nom et CreditSoft cherche simultanément dans vos relations, dossiers, apporteurs et tâches." },
 
       { naam: 'hulp', kop: { nl: 'Hulp bij dit scherm', fr: "Aide sur cet écran" },
         doe: async (p) => {
