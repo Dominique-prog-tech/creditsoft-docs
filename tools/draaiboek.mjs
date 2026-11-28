@@ -12,6 +12,17 @@
 import { BASIS, ID } from './aansturing.mjs';
 import { beweegNaar, klik, kopbalkKnop, tabblad, sluitLade, zichtbareAfspraak } from '/Users/dominique/projects/adm-appkit/tools/schermmachinerie/browser.mjs';
 
+// ⚠️ SINDS APPKIT 0.513.0 (CreditSoft 1.246.4) vraagt een venster met wijzigingen "Toch sluiten?" bij Annuleren, het kruisje of Escape,
+//    met Blijven voorgeselecteerd. De scène motivering liep daarop vast (time-out in afschrift), en de websitefilm adviesdossier
+//    slaagde GROEN met de vraag "Niet bewaard" boven drie scènes (gezien op de tegels, 28/11/2026). Klasse uit AdmFormPopup.
+async function sluitZonderBewaren(p, venster) {
+  await klik(p, venster.getByRole('button', { name: /^(Annuleren|Annuler)$/ }));
+  const toch = p.locator('.adm-sluiten-vraag .adm-sluiten-toch');
+  if (await toch.waitFor({ state: 'visible', timeout: 2000 }).then(() => true, () => false)) {
+    await p.waitForTimeout(500); await klik(p, toch);
+  }
+}
+
 // Het adviesdossier in de taal van de film: het advies staat in de taal van de KLANT (zie de film adviesdossier).
 // De taal leest de film uit het cultuurkoekje dat /culture/set zet; zonder koekje: Nederlands.
 async function adviesDossier(p) {
@@ -1898,7 +1909,7 @@ export const FILMS = [
       { naam: 'motivering', kop: { nl: 'Motivering', fr: 'Motivation', en: 'Reasoning' },
         doe: async (p) => {
           const venster = p.locator('.dxbl-popup').filter({ hasText: /Aanbieding toevoegen|Ajouter une offre/ });
-          await klik(p, venster.getByRole('button', { name: /^(Annuleren|Annuler)$/ }));
+          await sluitZonderBewaren(p, venster);
           await p.waitForTimeout(1000);
           await beweegNaar(p, p.getByText(/^(Waarom dit voorstel het best past|Pourquoi cette proposition convient le mieux)$/).first());
           await p.waitForTimeout(1500);
@@ -1913,7 +1924,7 @@ export const FILMS = [
         doe: async (p) => {
           const venster = p.locator('.dxbl-popup').filter({ hasText: /Aanbieding toevoegen|Ajouter une offre/ });
           if (await venster.isVisible().catch(() => false)) {
-            await klik(p, venster.getByRole('button', { name: /^(Annuleren|Annuler)$/ })); await p.waitForTimeout(600);
+            await sluitZonderBewaren(p, venster); await p.waitForTimeout(600);
           }
           await beweegNaar(p, p.getByText(/^(Afschriften voor de klant|Copies pour le client)$/).first()); await p.waitForTimeout(1500);
         },
