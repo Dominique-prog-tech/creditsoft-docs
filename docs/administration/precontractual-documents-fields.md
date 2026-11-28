@@ -291,4 +291,4 @@ Deze velden staan in een rij van een tabel, tussen «TableStart:Leningen» en «
 
 ## Zie ook
 
-- [Precontractuele documenten](precontractual-documents.md)
+- [Documenten voor de klant](precontractual-documents.md)

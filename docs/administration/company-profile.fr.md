@@ -88,13 +88,12 @@ lui-même.
 
 ## Signature électronique (OKSign) { #digitaal-ondertekenen-oksign }
 
-Dans la carte **Signature électronique (OKSign)**, vous rédigez le texte des deux documents que vos clients signent
-de façon électronique : le **document de mission** et la **déclaration de confidentialité**, chacun en néerlandais
-et en français. CreditSoft y ajoute le titre, le dossier, les noms, la date et les cadres de signature.
-
-Un champ vide signifie : pas de document dans cette langue. Un client ne reçoit jamais un texte dans une autre
-langue que la sienne. Vous enregistrez les textes avec le bouton **Enregistrer** de la fiche. La manière de faire
-signer un document est expliquée dans [Signature électronique](../credit-management/ondertekenen.md).
+Le texte des deux documents que vos clients signent électroniquement, le **document de mission** et la
+**déclaration de confidentialité**, se gère depuis la version 1.246.4 comme modèle avec versions, sous
+[Documents pour le client](precontractual-documents.md#opdracht-privacy). La carte **Signature électronique (OKSign)**
+vous y mène avec le bouton **Vers Documents pour le client**. Si un texte figurait déjà ici, CreditSoft l'a repris comme
+version du modèle. La manière de faire signer un document est expliquée dans
+[Signature électronique](../credit-management/ondertekenen.md).
 
 ## Enregistrer
 

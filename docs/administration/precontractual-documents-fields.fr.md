@@ -291,4 +291,4 @@ Ces champs se trouvent dans une ligne de tableau entre «TableStart:Leningen» e
 
 ## Voir aussi
 
-- [Documents précontractuels](precontractual-documents.md)
+- [Documents pour le client](precontractual-documents.md)

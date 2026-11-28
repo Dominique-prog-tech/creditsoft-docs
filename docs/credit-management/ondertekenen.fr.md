@@ -8,15 +8,15 @@ l'utilisez pour :
 - la **déclaration de confidentialité**, sur la fiche d'une [personne](../crm/relations.md#tabblad-ondertekenen) : cette personne signe ;
 - les **documents précontractuels** (la présentation du bureau, la fiche d'intermédiation et l'analyse assurance solde restant dû) : vous le
   choisissez à la création, dans l'onglet *Conseil* du dossier. Voir [Créer et faire signer](../administration/precontractual-documents.md#ondertekenen).
-  Le texte de la fiche d'entreprise ne s'applique pas : le document provient de votre modèle.
+  Là aussi, le document provient de votre modèle.
 
 ## Ce qu'il vous faut au préalable
 
 - **Un contrat avec OKSign.** Sans contrat, l'onglet *Signature* indique : « Votre bureau n'a pas encore de contrat
   OKSign. » Contactez ADM-Concept à ce sujet.
-- **Le texte du document.** Votre bureau le rédige lui-même, sur la
-  [fiche d'entreprise](../administration/company-profile.md#digitaal-ondertekenen-oksign), en néerlandais et en
-  français. CreditSoft y ajoute le titre, le dossier, les noms, la date et les cadres de signature.
+- **Le texte du document.** Votre bureau le rédige lui-même, dans le modèle du document de mission ou de la
+  déclaration de confidentialité sous [Documents pour le client](../administration/precontractual-documents.md#opdracht-privacy),
+  en néerlandais et en français. Lors de l'envoi, CreditSoft place dans le document un cadre de signature par signataire.
 - **Le pays de votre bureau** sur la fiche d'entreprise. CreditSoft en a besoin pour lire correctement un numéro de
   GSM.
 - **Pour chaque signataire, une adresse e-mail et un numéro de GSM.** Le lien arrive par e-mail. Lors de la

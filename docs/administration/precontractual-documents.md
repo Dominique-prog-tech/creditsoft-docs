@@ -1,4 +1,6 @@
-# Precontractuele documenten
+# Documenten voor de klant
+
+Op dit scherm beheert u de documenten die uw klant leest of tekent: de drie precontractuele documenten, en sinds versie 1.246.4 ook het [opdrachtdocument en de privacyverklaring](#opdracht-privacy) die uw klanten digitaal ondertekenen.
 
 Vóór u een krediet bemiddelt, geeft u de klant een aantal documenten. CreditSoft maakt er drie voor u, telkens vertrekkend van het standaardmodel van FVF, in het Nederlands en het Frans:
 
@@ -10,7 +12,7 @@ CreditSoft vult de gegevens van uw kantoor in vanuit de [Bedrijfsfiche](company-
 
 ## Het scherm openen
 
-Klik in de zijbalk op **Platformbeheer** en daarna op de tegel **Precontractuele documenten** (onder *Bedrijf*). Enkel wie de Bedrijfsfiche mag wijzigen, ziet de tegel en kan de documenten aanpassen.
+Klik in de zijbalk op **Platformbeheer** en daarna op de tegel **Documenten voor de klant** (onder *Bedrijf*). Enkel wie de Bedrijfsfiche mag wijzigen, ziet de tegel en kan de documenten aanpassen.
 
 ## De lijst
 
@@ -175,6 +177,23 @@ In de lijst van de gemaakte documenten staat dan de kolom **Ondertekening**:
 - **Ingetrokken op** een datum.
 
 Onder de lijst staat elk document dat nog wacht, met bij elke klant **Link kopiëren** en **Opnieuw mailen**, en met **Intrekken…** voor het hele verzoek. Het getekende document komt bij de bijlagen van het dossier, in de categorie *Ondertekend*. Wie het verstuurde, krijgt een [taak](../journaal/taken.md) zodra iedereen tekende.
+
+## Het opdrachtdocument en de privacyverklaring { #opdracht-privacy }
+
+Het **opdrachtdocument** laat u ondertekenen door de aanvragers van een dossier, de **privacyverklaring** door een persoon op zijn relatiefiche. Hoe dat verloopt, leest u bij [Digitaal ondertekenen](../credit-management/ondertekenen.md). De tekst schrijft uw kantoor zelf: CreditSoft schrijft geen juridische tekst.
+
+U beheert beide documenten hier, zoals de precontractuele documenten: met versies per taal, **Document bewerken** in de editor, **Voorbeeld als PDF** en **Terugzetten**.
+
+- Het startdocument draagt bovenaan de gegevens van uw kantoor, daaronder de titel, het dossier (enkel bij het opdrachtdocument), voor wie het is en de datum, en onderaan de kop **Handtekening**. Daaronder zet CreditSoft bij het versturen een kader per ondertekenaar.
+- Op de plaats van de tekst staat een regel tussen vierkante haken, bijvoorbeeld *[Vul hier de tekst van uw opdrachtdocument in.]*. Vervang die door uw tekst. Zolang de regel er staat, vertrekt er in die taal niets ter ondertekening, en zegt het tabblad *Ondertekenen* waarom.
+- In het paneel **Velden** staan de gegevens die u kunt invoegen: de naam, het adres, het telefoonnummer, het e-mailadres, het ondernemingsnummer en het FSMA-nummer van uw kantoor, wie tekent en zijn adres, het dossiernummer en de datum.
+- Had uw kantoor een tekst op de Bedrijfsfiche, dan staat die hier als **versie 2**, met de opmerking *Tekst overgenomen van de Bedrijfsfiche door CreditSoft*. Versie 1 is het lege startdocument.
+
+!!! info "Welke versie tekende de klant?"
+    Bij elk document dat ter ondertekening vertrekt, bewaart CreditSoft het ongetekende document bij het dossier of de relatie, met in de omschrijving de versie van het sjabloon, bijvoorbeeld *Opdrachtdocument (NL, sjabloon versie 2), ter ondertekening verstuurd*. Het getekende document komt er later bij.
+
+!!! note "Geen logo"
+    Het startdocument draagt de gegevens van uw kantoor als tekst, zonder logo, zoals de precontractuele documenten. Wilt u uw logo erop, dan plakt u het zelf in de editor en bewaart u een nieuwe versie.
 
 ## Veelgemaakte fouten
 

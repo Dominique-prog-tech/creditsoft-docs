@@ -8,15 +8,15 @@ voor:
 - de **privacyverklaring**, op de fiche van een [persoon](../crm/relations.md#tabblad-ondertekenen): die persoon tekent;
 - de **precontractuele documenten** (de voorstelling van het kantoor, de bemiddelingsfiche en de analyse schuldsaldoverzekering): u kiest het
   bij het maken, op het tabblad *Advies* van het dossier. Zie [Maken en laten ondertekenen](../administration/precontractual-documents.md#ondertekenen).
-  Daar geldt de tekst van de Bedrijfsfiche niet: het document komt uit uw sjabloon.
+  Ook dan komt het document uit uw sjabloon.
 
 ## Wat u vooraf nodig hebt
 
 - **Een contract met OKSign.** Zonder contract staat op het tabblad *Ondertekenen*: "Uw kantoor heeft nog geen
   OKSign-contract." Neem daarvoor contact op met ADM-Concept.
-- **De tekst van het document.** Uw kantoor schrijft die zelf, op de
-  [Bedrijfsfiche](../administration/company-profile.md#digitaal-ondertekenen-oksign), in het Nederlands en in het
-  Frans. CreditSoft zet er de titel, het dossier, de namen, de datum en de handtekeningvakken bij.
+- **De tekst van het document.** Uw kantoor schrijft die zelf, in het sjabloon van het opdrachtdocument of de
+  privacyverklaring onder [Documenten voor de klant](../administration/precontractual-documents.md#opdracht-privacy),
+  in het Nederlands en in het Frans. CreditSoft zet bij het versturen een handtekeningkader per ondertekenaar in het document.
 - **Het land van uw kantoor** op de Bedrijfsfiche. CreditSoft heeft dat nodig om een gsm-nummer juist te lezen.
 - **Per ondertekenaar een e-mailadres en een gsm-nummer.** De link komt per mail. Bij het tekenen stuurt OKSign
   een code per sms, dus een vast nummer werkt niet.

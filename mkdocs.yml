@@ -172,7 +172,7 @@ plugins:
             # overgebleven "Beheer: Configuration" verderop is de werkende.
             Bedrijfsfiche: Fiche d'entreprise
             Register betrokken personen: Registre des personnes concernées
-            Precontractuele documenten: Documents précontractuels
+            Documenten voor de klant: Documents pour le client
             Velden van de precontractuele documenten: Champs des documents précontractuels
             Gebruikers: Utilisateurs
             Mailsjablonen: Modèles d'e-mail
@@ -391,7 +391,7 @@ nav:
   - Beheer:
     - Bedrijfsfiche: administration/company-profile.md
     - Register betrokken personen: administration/involved-persons.md
-    - Precontractuele documenten: administration/precontractual-documents.md
+    - Documenten voor de klant: administration/precontractual-documents.md
     - Velden van de precontractuele documenten: administration/precontractual-documents-fields.md
     - Gebruikers: administration/users.md
     - Mailsjablonen: administration/mail-templates.md

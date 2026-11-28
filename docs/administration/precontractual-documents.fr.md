@@ -1,4 +1,6 @@
-# Documents précontractuels
+# Documents pour le client
+
+Cet écran vous permet de gérer les documents que votre client lit ou signe : les trois documents précontractuels et, depuis la version 1.246.4, aussi le [document de mission et la déclaration de confidentialité](#opdracht-privacy) que vos clients signent électroniquement.
 
 Avant d'intervenir dans un crédit, vous remettez au client plusieurs documents. CreditSoft en crée trois pour vous, chaque fois sur la base du modèle standard de la FVF, en néerlandais et en français :
 
@@ -10,7 +12,7 @@ CreditSoft complète les données de votre bureau à partir de la [fiche d'entre
 
 ## Ouvrir l'écran
 
-Cliquez dans la barre latérale sur **Administration**, puis sur la tuile **Documents précontractuels** (sous *Entreprise*). Seules les personnes autorisées à modifier la fiche d'entreprise voient la tuile et peuvent adapter les documents.
+Cliquez dans la barre latérale sur **Administration**, puis sur la tuile **Documents pour le client** (sous *Entreprise*). Seules les personnes autorisées à modifier la fiche d'entreprise voient la tuile et peuvent adapter les documents.
 
 ## La liste
 
@@ -175,6 +177,24 @@ La liste des documents créés affiche alors la colonne **Signature** :
 - **Retirée le** une date.
 
 Sous la liste figure chaque document encore en attente, avec pour chaque client **Copier le lien** et **Renvoyer l'e-mail**, et **Retirer…** pour toute la demande. Le document signé rejoint les pièces jointes du dossier, dans la catégorie *Ondertekend*. La personne qui l'a envoyé reçoit une [tâche](../journaal/taken.md) dès que tout le monde a signé.
+
+
+## Le document de mission et la déclaration de confidentialité { #opdracht-privacy }
+
+Le **document de mission** se fait signer par les demandeurs d'un dossier, la **déclaration de confidentialité** par une personne sur sa fiche de relation. La marche à suivre est expliquée dans [Signature électronique](../credit-management/ondertekenen.md). Votre bureau rédige lui-même le texte : CreditSoft ne rédige pas de texte juridique.
+
+Vous gérez ces deux documents ici, comme les documents précontractuels : avec des versions par langue, **Modifier le document** dans l'éditeur, **Aperçu PDF** et **Rétablir**.
+
+- Le document de départ porte en haut les données de votre bureau, puis le titre, le dossier (uniquement pour le document de mission), pour qui il est et la date, et en bas l'intitulé **Signature**. Lors de l'envoi, CreditSoft y place un cadre par signataire.
+- À l'endroit du texte figure une ligne entre crochets, par exemple *[Complétez ici le texte de votre document de mission.]*. Remplacez-la par votre texte. Tant que cette ligne s'y trouve, rien ne part pour signature dans cette langue, et l'onglet *Signature* en indique la raison.
+- Le panneau **Champs** reprend les données que vous pouvez insérer : le nom, l'adresse, le numéro de téléphone, l'adresse e-mail, le numéro d'entreprise et le numéro FSMA de votre bureau, qui signe et son adresse, le numéro de dossier et la date.
+- Si votre bureau avait un texte sur la fiche d'entreprise, il figure ici comme **version 2**, avec la remarque *Texte repris de la fiche entreprise par CreditSoft*. La version 1 est le document de départ vide.
+
+!!! info "Quelle version le client a-t-il signée ?"
+    Pour chaque document envoyé pour signature, CreditSoft conserve le document non signé auprès du dossier ou de la relation, avec dans la description la version du modèle, par exemple *Opdrachtdocument (FR, sjabloon versie 2), ter ondertekening verstuurd*. Le document signé s'y ajoute plus tard.
+
+!!! note "Pas de logo"
+    Le document de départ porte les données de votre bureau sous forme de texte, sans logo, comme les documents précontractuels. Pour y mettre votre logo, collez-le vous-même dans l'éditeur et enregistrez une nouvelle version.
 
 ## Erreurs fréquentes
 

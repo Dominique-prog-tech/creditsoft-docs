@@ -86,12 +86,11 @@ e-mailadressen en dossierbedragen niet. Daarom beslist uw kantoor dit zelf.
 
 ## Digitaal ondertekenen (OKSign) { #digitaal-ondertekenen-oksign }
 
-In de kaart **Digitaal ondertekenen (OKSign)** schrijft u de tekst van de twee documenten die uw klanten digitaal
-ondertekenen: het **opdrachtdocument** en de **privacyverklaring**, elk in het Nederlands en in het Frans.
-CreditSoft zet er de titel, het dossier, de namen, de datum en de handtekeningvakken bij.
-
-Een leeg vak betekent: in die taal geen document. Een klant krijgt nooit een tekst in een andere taal dan de zijne.
-U bewaart de teksten met de knop **Bewaren** van de fiche. Hoe u een document laat ondertekenen, leest u bij
+De tekst van de twee documenten die uw klanten digitaal ondertekenen, het **opdrachtdocument** en de
+**privacyverklaring**, beheert u sinds versie 1.246.4 als sjabloon met versies, onder
+[Documenten voor de klant](precontractual-documents.md#opdracht-privacy). De kaart **Digitaal ondertekenen (OKSign)**
+brengt u erheen met de knop **Naar Documenten voor de klant**. Stond hier al een tekst, dan nam CreditSoft die over als
+versie van het sjabloon. Hoe u een document laat ondertekenen, leest u bij
 [Digitaal ondertekenen](../credit-management/ondertekenen.md).
 
 ## Bewaren
