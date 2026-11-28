@@ -224,7 +224,7 @@ const SCHOTEN = [
   ['groepsmail-venster',           '/crm/relaties', async p => {
       // ⚠️ Sinds 1.239.30 (W-157) staat de lijst op familienaam: de eerste drie rijen zijn "Adam …", zonder de enige afgemelde
       //    relatie (Alain Blondeel). Eerst zoeken op "Alain": dan zijn het Adriaenssens, Blondeel en Callens, 2 ontvangers en 1 overgeslagen.
-      const z = p.locator('input[type="search"]:visible, input[placeholder*="oek" i]:visible, input[placeholder*="recherch" i]:visible').first();
+      const z = p.locator('input[type="search"]:not(.adm-zoek-kopveld):visible, input[placeholder*="oek" i]:not(.adm-zoek-kopveld):visible, input[placeholder*="recherch" i]:not(.adm-zoek-kopveld):visible').first();
       await z.fill('Alain'); await p.waitForTimeout(2500);
       const vakjes = p.locator('.dxbl-grid-table tbody tr td.dxbl-grid-selection-cell input[type=checkbox]');
       for (let i = 0; i < 3; i++) { await vakjes.nth(i).click({ force: true }); await p.waitForTimeout(300); }
@@ -1121,7 +1121,7 @@ const SCHOTEN = [
   ['filteren-zoekveld',         '/crm/relaties',                  async p => {
       // ⚠️ `:visible` is hier het hele punt. Zonder dat pakte `.first()` de VERBORGEN globale zoekbalk uit de
       // kopbalk, die eerder in de DOM staat — en dan loopt `fill()` in een time-out op een veld dat niemand ziet.
-      const z = p.locator('input[type="search"]:visible, input[placeholder*="oek" i]:visible, input[placeholder*="recherch" i]:visible').first();
+      const z = p.locator('input[type="search"]:not(.adm-zoek-kopveld):visible, input[placeholder*="oek" i]:not(.adm-zoek-kopveld):visible, input[placeholder*="recherch" i]:not(.adm-zoek-kopveld):visible').first();
       if (await z.count()) { await z.fill('Cuypers'); await p.waitForTimeout(2500); }
   }],
   ['aanbrenger-groepering',     `/contributors/${ID.aanbrenger}`],

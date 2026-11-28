@@ -11,7 +11,7 @@ startpagina die u naar het menu verwijst.
 
 Aan de linkerkant staat het **hoofdmenu**. Het toont de schermen waartoe u toegang hebt; klik op een item om het te openen. Het menu is gegroepeerd — de dagelijkse werkschermen staan bovenaan, beheer-schermen onder de kop **Beheer**.
 
-![Het hoofdmenu links, met Dashboard bovenaan, de opengeklapte groep CRM met Leads, Relaties, Professionals, Afspraken, Online afspraken, Aanbrengers en Groepen, de opengeklapte groep Krediet met Kredietdossiers, Te valideren met een blauw teller-bolletje, Kredietinstellingen, Verzekeraars, Borderel en Fiche 281.50, daaronder de dichtgeklapte groepen Lijsten en Beheer, en onderaan Platformbeheer, ADM One-portaal en Afmelden.](../images/menu-links.png "Het hoofdmenu links, met twee groepen opengeklapt"){ .eigen-breedte style="width:240px" }
+![Het hoofdmenu links, met Dashboard bovenaan, de opengeklapte groep CRM met Leads (met een blauw teller-bolletje), Relaties, Professionals, Afspraken, Online afspraken, Aanbrengers en Groepen, de opengeklapte groep Krediet met Kredietdossiers, Te valideren met een blauw teller-bolletje, Ondertekeningen, Na de akte met een teller, Simulatie, Kredietinstellingen, Verzekeraars, Borderel en Fiche 281.50, en daaronder de dichtgeklapte groepen Lijsten en Facturatie.](../images/menu-links.png "Het hoofdmenu links, met twee groepen opengeklapt"){ .eigen-breedte style="width:240px" }
 
 Welke items u ziet, hangt af van uw rol: niet iedereen heeft toegang tot alle schermen.
 

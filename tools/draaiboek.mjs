@@ -254,7 +254,7 @@ export const FILMS = [
 
       { naam: 'filteren', kop: { nl: 'Filteren', fr: "Filtrer" },
         doe: async (p) => {
-          const z = p.locator('input[type="search"]:visible, input[placeholder*="oek" i]:visible, input[placeholder*="echerch" i]:visible').first();
+          const z = p.locator('input[type="search"]:not(.adm-zoek-kopveld):visible, input[placeholder*="oek" i]:not(.adm-zoek-kopveld):visible, input[placeholder*="echerch" i]:not(.adm-zoek-kopveld):visible').first();
           await klik(p, z); await z.type('Cuypers', { delay: 90 }); await p.waitForTimeout(2400);
         },
         merk: /Cuypers/i,
@@ -320,7 +320,7 @@ export const FILMS = [
 
       { naam: 'zoeken', kop: { nl: 'Zoeken in de lijst', fr: 'Rechercher dans la liste' },
         doe: async (p) => {
-          const z = p.locator('input[type="search"]:visible, input[placeholder*="oek" i]:visible, input[placeholder*="echerch" i]:visible').first();
+          const z = p.locator('input[type="search"]:not(.adm-zoek-kopveld):visible, input[placeholder*="oek" i]:not(.adm-zoek-kopveld):visible, input[placeholder*="echerch" i]:not(.adm-zoek-kopveld):visible').first();
           await klik(p, z); await z.type('Cuypers', { delay: 90 }); await p.waitForTimeout(2400);
         },
         merk: /Cuypers/i,
@@ -1663,7 +1663,7 @@ export const FILMS = [
 
       { naam: 'zoeken', kop: { nl: 'Zoeken in de lijst', fr: "Rechercher dans la liste", en: "Searching the list" },
         doe: async (p) => {
-          const vak = p.locator('input[type="search"], input[placeholder*="oek" i], input[placeholder*="echerch" i]').first();
+          const vak = p.locator('input[type="search"]:not(.adm-zoek-kopveld), input[placeholder*="oek" i]:not(.adm-zoek-kopveld), input[placeholder*="echerch" i]:not(.adm-zoek-kopveld)').first();
           await klik(p, vak); await vak.type('Demetris', { delay: 90 });
           await p.waitForTimeout(1800);
         },
