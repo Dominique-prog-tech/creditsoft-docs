@@ -46,6 +46,8 @@ Zolang u het stuk nog niet goedkeurde of afkeurde, staat naast zijn eigen bestan
 
 Boven de zone om op te laden kan hij een **opmerking** typen, bijvoorbeeld *pagina 2 volgt morgen*. Die opmerking staat bij elk bestand dat hij op dat moment oplaadt, en u leest ze onder de bestandsnaam wanneer u het stuk [beoordeelt](../credit-management/document-validation.md#een-stuk-beoordelen).
 
+Kiest hij meerdere **foto's** tegelijk, bijvoorbeeld één per bladzijde, dan maakt CreditSoft er samen **één pdf** van, met een bladzijde per foto. Een pdf of Word-bestand dat hij in dezelfde keer meestuurt, blijft een apart bestand. Een foto die CreditSoft niet kan omzetten, zoals een HEIC-foto van een iPhone, komt ongewijzigd binnen.
+
 !!! info "Een ingetrokken bestand is niet weg"
     CreditSoft verwijdert het niet echt: het blijft bewaard, en het actielogboek noteert dat de klant het introk.
 

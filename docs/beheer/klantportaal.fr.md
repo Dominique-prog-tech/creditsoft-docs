@@ -46,6 +46,8 @@ Tant que vous n'avez ni approuvé ni refusé la pièce, **Retirer** figure à c�
 
 Au-dessus de la zone de dépôt, il peut taper une **remarque**, par exemple *la page 2 suit demain*. Cette remarque accompagne chaque fichier qu'il dépose à ce moment-là, et vous la lisez sous le nom du fichier lorsque vous [évaluez](../credit-management/document-validation.md#evaluer-une-piece) la pièce.
 
+S'il choisit plusieurs **photos** à la fois, par exemple une par page, CreditSoft en fait **un seul pdf**, avec une page par photo. Un pdf ou un fichier Word envoyé en même temps reste un fichier distinct. Une photo que CreditSoft ne peut pas convertir, comme une photo HEIC d'un iPhone, arrive telle quelle.
+
 !!! info "Un fichier retiré n'est pas perdu"
     CreditSoft ne le supprime pas vraiment : il reste conservé, et le journal des actions note que le client l'a retiré.
 
